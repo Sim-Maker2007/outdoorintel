@@ -1,0 +1,169 @@
+{
+  "lakes": [
+    {
+      "name": "Lake Superior",
+      "province": "Ontario",
+      "coordinates": { "lat": 47.7, "lng": -87.5 },
+      "depth_max": "406m",
+      "primary_species": ["Lake Trout", "Coho Salmon", "Steelhead"],
+      "seasonal_tips": "Spring: Shore fishing for Steelhead in tributaries. Summer: Downrigging for Lake Trout in 100ft+.",
+      "scout_level": "Legendary",
+      "intel_grade": "v2.2",
+      "e-commerce_funnel": ["rod", "boots", "hunting-jacket"]
+    },
+    {
+      "name": "Lake Huron",
+      "province": "Ontario",
+      "coordinates": { "lat": 44.8, "lng": -82.4 },
+      "depth_max": "229m",
+      "primary_species": ["Chinook Salmon", "Walleye", "Lake Whitefish"],
+      "seasonal_tips": "Late Summer: Salmon run peaks near river mouths. Use glow-in-the-dark spoons.",
+      "scout_level": "Elite",
+      "intel_grade": "v2.1",
+      "e-commerce_funnel": ["knife", "vest", "rod"]
+    },
+    {
+      "name": "Lake Erie",
+      "province": "Ontario",
+      "coordinates": { "lat": 42.2, "lng": -81.2 },
+      "depth_max": "64m",
+      "primary_species": ["Walleye", "Yellow Perch", "Smallmouth Bass"],
+      "seasonal_tips": "World-class Walleye. Drift with worm harnesses in the Central Basin during July.",
+      "scout_level": "Elite",
+      "intel_grade": "v2.1",
+      "e-commerce_funnel": ["shrimp", "rod", "boots"]
+    },
+    {
+      "name": "Lake Ontario",
+      "province": "Ontario",
+      "coordinates": { "lat": 43.7, "lng": -77.9 },
+      "depth_max": "244m",
+      "primary_species": ["Chinook Salmon", "Rainbow Trout", "Brown Trout"],
+      "seasonal_tips": "Fall: Massive Salmon staging in the Niagara bar area. Use cut bait or large plugs.",
+      "scout_level": "Legendary",
+      "intel_grade": "v2.2",
+      "e-commerce_funnel": ["rangefinder", "hunting-jacket", "hunting-pants"]
+    },
+    {
+      "name": "Lake Nipissing",
+      "province": "Ontario",
+      "coordinates": { "lat": 46.2, "lng": -79.7 },
+      "depth_max": "69m",
+      "primary_species": ["Walleye", "Muskellunge", "Northern Pike"],
+      "seasonal_tips": "Large, shallow lake. Fish the rock shoals for Walleye at dusk with jigs.",
+      "scout_level": "Elite",
+      "intel_grade": "v2.1",
+      "e-commerce_funnel": ["knife", "vest", "belt"]
+    },
+    {
+      "name": "Lake Simcoe",
+      "province": "Ontario",
+      "coordinates": { "lat": 44.4, "lng": -79.3 },
+      "depth_max": "41m",
+      "primary_species": ["Yellow Perch", "Lake Trout", "Smallmouth Bass"],
+      "seasonal_tips": "Winter: The 'Ice Fishing Capital of Canada'. Cooke's Bay is the hotspot for Perch.",
+      "scout_level": "Elite",
+      "intel_grade": "v2.1",
+      "e-commerce_funnel": ["shrimp", "rod", "boots"]
+    },
+    {
+      "name": "Mistassini Lake",
+      "province": "Quebec",
+      "coordinates": { "lat": 50.4, "lng": -73.8 },
+      "depth_max": "Unknown",
+      "primary_species": ["Brook Trout", "Lake Trout", "Walleye"],
+      "seasonal_tips": "Quebec's largest natural lake. Trophy Brook Trout in the northern channels.",
+      "scout_level": "Legendary",
+      "intel_grade": "v2.2",
+      "e-commerce_funnel": ["rod", "vest", "hunting-boots"]
+    },
+    {
+      "name": "Baskatong Reservoir",
+      "province": "Quebec",
+      "coordinates": { "lat": 46.7, "lng": -75.9 },
+      "depth_max": "96m",
+      "primary_species": ["Walleye", "Northern Pike", "Landlocked Salmon"],
+      "seasonal_tips": "Target the old river beds for Walleye during early season high water.",
+      "scout_level": "Elite",
+      "intel_grade": "v2.1",
+      "e-commerce_funnel": ["knife", "vest", "belt"]
+    },
+    {
+      "name": "Lac Saint-Jean",
+      "province": "Quebec",
+      "coordinates": { "lat": 48.6, "lng": -72.0 },
+      "depth_max": "63m",
+      "primary_species": ["Landlocked Salmon (Ouananiche)", "Walleye"],
+      "seasonal_tips": "Ouananiche are most active in late spring. Troll with flashy spoons near surface.",
+      "scout_level": "Elite",
+      "intel_grade": "v2.1",
+      "e-commerce_funnel": ["shrimp", "rod", "boots"]
+    },
+    {
+      "name": "Memphremagog Lake",
+      "province": "Quebec",
+      "coordinates": { "lat": 45.1, "lng": -72.2 },
+      "depth_max": "107m",
+      "primary_species": ["Lake Trout", "Brown Trout", "Rainbow Trout"],
+      "seasonal_tips": "Stretches across US/Canada border. Deep basins hold big Laker schools in July.",
+      "scout_level": "Elite",
+      "intel_grade": "v2.1",
+      "e-commerce_funnel": ["rod", "vest", "hunting-boots"]
+    },
+    {
+      "name": "Caniapiscau Reservoir",
+      "province": "Quebec",
+      "coordinates": { "lat": 54.1, "lng": -69.9 },
+      "depth_max": "49m",
+      "primary_species": ["Landlocked Salmon", "Lake Trout", "Northern Pike"],
+      "seasonal_tips": "Remote expedition territory. Massive Northern Pike in the shallow, submerged forest areas.",
+      "scout_level": "Legendary",
+      "intel_grade": "v2.2",
+      "e-commerce_funnel": ["knife", "vest", "boots"]
+    },
+    {
+      "name": "Robert-Bourassa Reservoir",
+      "province": "Quebec",
+      "coordinates": { "lat": 53.8, "lng": -77.5 },
+      "depth_max": "137m",
+      "primary_species": ["Northern Pike", "Lake Trout", "Walleye"],
+      "seasonal_tips": "Gigantic hydro reservoir. Fish the structures near the spillways for active predators.",
+      "scout_level": "Elite",
+      "intel_grade": "v2.1",
+      "e-commerce_funnel": ["rangefinder", "rod", "vest"]
+    },
+    {
+      "name": "Manicouagan Reservoir",
+      "province": "Quebec",
+      "coordinates": { "lat": 51.4, "lng": -68.7 },
+      "depth_max": "350m",
+      "primary_species": ["Landlocked Salmon", "Lake Trout", "Brook Trout"],
+      "seasonal_tips": "The 'Eye of Quebec'. One of the deepest reservoirs. Use downriggers for trophy Lakers.",
+      "scout_level": "Legendary",
+      "intel_grade": "v2.2",
+      "e-commerce_funnel": ["rod", "boots", "hunting-jacket"]
+    },
+    {
+      "name": "Lake Nipigon",
+      "province": "Ontario",
+      "coordinates": { "lat": 49.8, "lng": -88.5 },
+      "depth_max": "165m",
+      "primary_species": ["Brook Trout", "Lake Trout", "Walleye"],
+      "seasonal_tips": "World-record Brook Trout potential. Focus on the rocky shorelines and river mouths.",
+      "scout_level": "Legendary",
+      "intel_grade": "v2.2",
+      "e-commerce_funnel": ["knife", "vest", "belt"]
+    },
+    {
+      "name": "Lake of the Woods",
+      "province": "Ontario",
+      "coordinates": { "lat": 49.3, "lng": -94.7 },
+      "depth_max": "64m",
+      "primary_species": ["Muskellunge", "Walleye", "Smallmouth Bass"],
+      "seasonal_tips": "Over 14,000 islands. One of the best Musky lakes in the world. Use large bucktails.",
+      "scout_level": "Legendary",
+      "intel_grade": "v2.2",
+      "e-commerce_funnel": ["rangefinder", "rod", "boots"]
+    }
+  ]
+}
