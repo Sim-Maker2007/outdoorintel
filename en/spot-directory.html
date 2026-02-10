@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fishing Spots Directory | Outdoor Intel</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#050a10] text-slate-100 min-h-screen">
+<header class="fixed top-0 w-full z-50 border-b border-white/5 bg-[#050a10]/95 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<a href="../index.html" class="text-xl font-bold">Outdoor<span class="text-blue-400">Intel</span></a>
+<nav class="hidden md:flex gap-6 text-sm">
+<a href="spot-directory.html" class="text-white">Spots</a>
+<a href="../fr/spot-directory.html" class="text-blue-400">FR</a>
+</nav>
+</div>
+</header>
+<main class="pt-32 pb-20 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-6">
+<span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>200+ Verified Spots
+</div>
+<h1 class="text-5xl font-bold mb-4">Fishing Directory</h1>
+<p class="text-xl text-slate-400 max-w-2xl mx-auto">Discover Quebec fishing spots with government-verified data on species, regulations, and locations.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4" id="spots-grid">
+<!-- Spots will be loaded here -->
+</div>
+</div>
+</main>
+<script>
+const spots=["sept-iles-lac-des","carriere-lac","long-petit-lac","armstrong-lac","mckenzie-lac","iles-lac-des","long-lac","stibre-lac-a","paul-lac","thibault-lac","sansfacon-lac","paradis-lac","roger-lac","humqui-lac","matapedia-lac","pelletier-lac","huit-mille-lac","chasseurs-lac-des","dube-lac","squatec-grand-lac","temiscouata-lac","beau-lac-le","pouliac-lac","ango-lac","jerry-lac","est-lac-de-l","grosse-truite-lac-de-la","clair-lac","violon-lac","plat-lac","york-lac","edouard-lac","blanchet-lac","amelie-lac","neigette-grand-lac","mitis-lac","freres-lac-des","sept-lacs-grand-lac-des","neigette-petit-lac","grassy-lac","mistigougèche-lac","quenon-lac-a","ferry-lac","cote-lac","grosses-truites-lacs-des","malobes-grand-lac","saint-mathieu-lac","trois-saumons-lac","plaines-lac-des","morigeau-lac"];
+const grid=document.getElementById('spots-grid');
+spots.slice(0,50).forEach(slug=>{
+const name=slug.replace(/-/g,' ').replace(/\b\w/g,l=>l.toUpperCase());
+grid.innerHTML+=`<a href="${slug}.html" class="block p-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg transition"><h3 class="font-semibold">${name}</h3><p class="text-slate-500 text-sm mt-1">View intel →</p></a>`;
+});
+</script>
+</body>
+</html>
