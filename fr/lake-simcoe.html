@@ -1,178 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outdoor Intel | Renseignement d'élite sur le plein air canadien</title>
+    <title>Lake Simcoe Rapport de terrain | Outdoor Intel</title>
+    <meta name="description" content="Renseignements détaillés pour Lake Simcoe. Données sur les espèces, conseils saisonniers et guide tactique expert.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.0/lucide.min.css">
     <style>
-        .vibe-gradient { 
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/heros/scout-hero-12.jpg');
+        .lake-hero {
+            background: linear-gradient(135deg, rgba(45,90,61,0.3), rgba(62,49,39,0.2)), url('../assets/heros/scout-hero-12.jpg');
             background-size: cover;
             background-position: center;
         }
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .hero-title {
-            text-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        }
-        .wireframe-btn {
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            background: rgba(255, 255, 255, 0.05);
-            transition: all 0.3s ease;
-        }
-        .wireframe-btn:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: rgba(255, 255, 255, 0.5);
-        }
     </style>
 </head>
-<body class="bg-[#050a10] text-slate-100 font-sans leading-relaxed">
+<body class="bg-[#f5f3f0] text-[#3e3127] font-sans leading-relaxed">
 
-    <!-- Navbar -->
-    <header class="fixed top-0 w-full z-50 border-b border-white/5 bg-[#050a10]/80 backdrop-blur-md">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <img src="../assets/logo/logo.jpg" alt="Outdoor Intel Logo" class="h-10 md:h-16 w-auto object-contain">
-            </div>
-            <nav class="hidden md:flex gap-10 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400">
-                <a href="directory.html">Lacs</a>
-                <a href="../index.html#intelligence">Renseignements</a>
-                <a href="../index.html" class="hover:text-white transition-colors"href="https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/peche-sportive">Règlements</a>
-                <a href="../index.html" class="hover:text-white transition-colors">À propos</a>
-            </nav>
-            <button class="wireframe-btn px-6 py-2 text-[10px] font-bold uppercase tracking-widest rounded">Voir les cartes</button>
+    <header class="fixed top-0 w-full z-50 border-b border-[#2d5a3d]/10 bg-white/95 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <a href="../index.html" class="flex-shrink-0">
+            <img src="../assets/logo/logo.jpg" alt="Outdoor Intel" class="h-10 md:h-14 w-auto object-contain">
+        </a>
+        <nav class="hidden md:flex gap-8 text-sm font-semibold text-[#3e3127]">
+            <a href="../fr/directory.html" class="hover:text-[#c97c5e] transition-colors">Lacs</a>
+            <a href="../fr/blog/peche-achigan-outaouais.html" class="hover:text-[#c97c5e] transition-colors">Blogue</a>
+            <a href="https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/peche-sportive" target="_blank" class="hover:text-[#c97c5e] transition-colors">Règlements</a>
+            <a href="../en/directory.html" class="text-[#c97c5e] font-bold hover:text-[#2d5a3d] transition-colors">English</a>
+        </nav>
+        <button id="menu-toggle" class="md:hidden p-2 text-[#3e3127]" aria-label="Toggle menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    </div>
+    <nav id="mobile-menu" class="hidden md:hidden bg-white border-t border-[#2d5a3d]/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 space-y-3">
+            <a href="../fr/directory.html" class="block py-2 text-[#3e3127] font-semibold hover:text-[#c97c5e]">Lacs</a>
+            <a href="../fr/blog/peche-achigan-outaouais.html" class="block py-2 text-[#3e3127] font-semibold hover:text-[#c97c5e]">Blogue</a>
+            <a href="https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/peche-sportive" target="_blank" class="block py-2 text-[#3e3127] font-semibold hover:text-[#c97c5e]">Règlements</a>
+            <a href="../en/directory.html" class="block py-2 text-[#c97c5e] font-bold">English</a>
         </div>
-    </header>
+    </nav>
+</header>
 
     <main>
-        <!-- Scalix-Inspired Hero -->
-        <section class="vibe-gradient min-h-screen flex items-center pt-20 relative">
+        <section class="lake-hero min-h-screen flex items-center pt-20 relative">
             <div class="max-w-7xl mx-auto px-6 w-full relative z-10">
                 <div class="max-w-3xl">
-                    <div class="overflow-hidden mb-6">
-                        <span class="inline-block text-blue-400 text-[10px] font-black uppercase tracking-[0.3em]">Renseignements</span>
+                    <div class="mb-6">
+                        <span class="inline-block bg-white/90 text-[#c97c5e] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full">Rapport de terrain</span>
                     </div>
-                    <h1 class="hero-title text-6xl md:text-8xl font-medium tracking-tight mb-8 leading-[0.95] text-white">
-                        Lake Simcoe<br/>
-                        <span class="text-white/60">Rapport d'éclaireur</span>
+                    <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-4 leading-tight text-white drop-shadow-lg">
+                        Lake Simcoe
                     </h1>
-                    <p class="text-lg md:text-xl text-slate-300 mb-12 max-w-xl leading-relaxed font-light">
-                        Advanced data systems for serious anglers. We provide depth metrics, species behavior patterns, and tactical loadouts for the Canadian wild.
-                    </p>
+                    <p class="text-2xl text-white/70 mb-8 drop-shadow font-light italic">Rapport d'éclaireur.</p>
+                    <p class="text-lg text-white/90 mb-10 max-w-xl leading-relaxed drop-shadow">Renseignements détaillés pour Lake Simcoe. Données sur les espèces, conseils saisonniers et guide tactique expert.</p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="directory.html" class="inline-block bg-white text-black px-8 py-4 text-[11px] font-black uppercase tracking-widest rounded-sm">Rapport de renseignement</button>
-                        <a href="directory.html" class="inline-block wireframe-btn px-8 py-4 text-[11px] font-black uppercase tracking-widest rounded-sm text-white">Voir les statistiques</button>
+                        <a href="directory.html" class="bg-[#2d5a3d] text-white px-8 py-4 font-semibold rounded-lg hover:bg-[#c97c5e] transition-colors shadow-lg">Tous les lacs</a>
                     </div>
                 </div>
 
-                <!-- Floating Stats Stats (Bottom Right) -->
-                <div class="absolute bottom-12 right-6 hidden lg:block">
-                    <div class="glass-panel p-8 rounded-sm grid grid-cols-3 gap-12 w-[600px]">
+                <div class="absolute bottom-12 right-6 hidden lg:block bg-white/95 backdrop-blur rounded-xl p-8 max-w-md" style="box-shadow: 0 4px 12px rgba(62,49,39,0.1)">
+                    <div class="grid grid-cols-3 gap-8">
                         <div>
-                            <div class="text-3xl font-light mb-1 text-white">41m</div>
-                            <div class="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Profondeur Max</div>
+                            <div class="text-2xl font-bold text-[#2d5a3d]">41m</div>
+                            <div class="text-xs uppercase tracking-widest text-[#7a9b8e] font-semibold mt-1">Profondeur max</div>
                         </div>
                         <div>
-                            <div class="text-3xl font-light mb-1 text-white">Elite</div>
-                            <div class="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Niveau d'éclaireur</div>
+                            <div class="text-2xl font-bold text-[#c97c5e]">Elite</div>
+                            <div class="text-xs uppercase tracking-widest text-[#7a9b8e] font-semibold mt-1">Niveau scout</div>
                         </div>
                         <div>
-                            <div class="text-3xl font-light mb-1 text-white">v2.1</div>
-                            <div class="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Grade d'info</div>
+                            <div class="text-2xl font-bold text-[#2d5a3d]">v2.1</div>
+                            <div class="text-xs uppercase tracking-widest text-[#7a9b8e] font-semibold mt-1">Grade</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Species & Tips Grid -->
-        <section class="max-w-7xl mx-auto px-4 -mt-8 relative z-20 pb-20">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                
-                <!-- Species Card -->
-                <div class="md:col-span-2 bg-white rounded-2xl shadow-xl shadow-slate-200/50 p-8 border border-slate-100">
-                    <h2 class="text-2xl font-black mb-6 flex items-center gap-3">
-                        <span class="p-2 bg-blue-100 text-blue-700 rounded-lg">🐟</span>
-                        Espèces principales
-                    </h2>
-                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                        
-        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-center gap-3">
-            <div class="w-2 h-2 rounded-full bg-blue-500"></div>
-            <span class="font-bold text-slate-700">Perchaude</span>
-        </div>
-    
-        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-center gap-3">
-            <div class="w-2 h-2 rounded-full bg-blue-500"></div>
-            <span class="font-bold text-slate-700">Touladi</span>
-        </div>
-    
-        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-center gap-3">
-            <div class="w-2 h-2 rounded-full bg-blue-500"></div>
-            <span class="font-bold text-slate-700">Achigan à petite bouche</span>
-        </div>
-    
+        <section class="bg-white py-16 px-6 -mt-8 relative z-20">
+            <div class="max-w-7xl mx-auto">
+                <div class="bg-[#fef9f3] rounded-xl p-8 mb-10" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <h2 class="text-2xl font-bold text-[#2d5a3d] mb-6">Espèces principales</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div class="bg-white border border-[#2d5a3d]/10 rounded-lg p-4 flex items-center gap-3">
+                        <div class="w-3 h-3 rounded-full bg-[#c97c5e]"></div>
+                        <span class="font-semibold text-[#2d5a3d]">Perchaude</span>
                     </div>
-                    
-                    <div class="mt-8 pt-8 border-t border-slate-100">
-                        <h3 class="text-lg font-black mb-4">Conseil Tactique d'Amara</h3>
-                        <p class="text-slate-600 italic">"{{seasonal_tips}}"</p>
+                    <div class="bg-white border border-[#2d5a3d]/10 rounded-lg p-4 flex items-center gap-3">
+                        <div class="w-3 h-3 rounded-full bg-[#c97c5e]"></div>
+                        <span class="font-semibold text-[#2d5a3d]">Touladi</span>
+                    </div>
+                    <div class="bg-white border border-[#2d5a3d]/10 rounded-lg p-4 flex items-center gap-3">
+                        <div class="w-3 h-3 rounded-full bg-[#c97c5e]"></div>
+                        <span class="font-semibold text-[#2d5a3d]">Achigan à petite bouche</span>
+                    </div>
                     </div>
                 </div>
 
-                <!-- Ecotone Funnel Card (Revenue) -->
-                <div class="bg-blue-900 rounded-2xl p-8 text-white shadow-xl shadow-blue-900/20 relative overflow-hidden">
-                    <div class="absolute top-0 right-0 p-4 opacity-10">
-                        <span class="text-8xl font-black italic tracking-tighter">GEAR</span>
-                    </div>
-                    <h2 class="text-xl font-black mb-2 uppercase tracking-tight">Équipement Essentiel</h2>
-                    <p class="text-blue-300 text-sm mb-6">Proven gear for Lake Simcoe conditions.</p>
-                    
-                    <div class="space-y-4 relative z-10">
-                        
-        <a href="../index.html" target="_blank" class="block bg-white/10 hover:bg-white/20 border border-white/10 p-3 rounded-lg flex items-center justify-between transition-all group">
-            <span class="font-bold capitalize">shrimp</span>
-            <span class="text-blue-400 group-hover:translate-x-1 transition-transform">→ Gear Intel</span>
-        </a>
-    
-        <a href="../index.html" target="_blank" class="block bg-white/10 hover:bg-white/20 border border-white/10 p-3 rounded-lg flex items-center justify-between transition-all group">
-            <span class="font-bold capitalize">rod</span>
-            <span class="text-blue-400 group-hover:translate-x-1 transition-transform">→ Gear Intel</span>
-        </a>
-    
-        <a href="../index.html" target="_blank" class="block bg-white/10 hover:bg-white/20 border border-white/10 p-3 rounded-lg flex items-center justify-between transition-all group">
-            <span class="font-bold capitalize">boots</span>
-            <span class="text-blue-400 group-hover:translate-x-1 transition-transform">→ Gear Intel</span>
-        </a>
-    
-                    </div>
+                <div class="bg-[#2d5a3d] text-white rounded-xl p-8 mb-10">
+                    <h2 class="text-2xl font-bold mb-4">Conseils de saison</h2>
+                    <p class="text-lg leading-relaxed text-white/90">Hiver : la « Capitale de la pêche sur glace du Canada ». La baie de Cooke est le spot pour la perchaude.</p>
+                    <div class="mt-6 text-sm text-[#c97c5e] font-semibold">&mdash; Renseignement de terrain expert</div>
                 </div>
 
+                <div class="bg-white rounded-xl p-8 border border-[#2d5a3d]/10" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <h2 class="text-2xl font-bold text-[#2d5a3d] mb-2">Équipement essentiel</h2>
+                    <p class="text-[#6b6359] mb-6">Équipement éprouvé pour les conditions de Lake Simcoe.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="border border-[#c97c5e]/20 rounded-lg p-4 hover:bg-[#fef9f3] transition-colors">
+                        <h3 class="font-bold text-[#2d5a3d]">leurre crevette</h3>
+                    </div>
+                    <div class="border border-[#c97c5e]/20 rounded-lg p-4 hover:bg-[#fef9f3] transition-colors">
+                        <h3 class="font-bold text-[#2d5a3d]">canne à pêche</h3>
+                    </div>
+                    <div class="border border-[#c97c5e]/20 rounded-lg p-4 hover:bg-[#fef9f3] transition-colors">
+                        <h3 class="font-bold text-[#2d5a3d]">bottes</h3>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#fef9f3] py-16 px-6">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl font-bold text-[#2d5a3d] mb-10">Lacs à proximité</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <a href="lake-superior.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                        <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Legendary</div>
+                        <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Lake Superior</h3>
+                        <p class="text-[#6b6359] text-sm mb-3">Touladi, Saumon coho.</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </a>
+                <a href="lake-huron.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                        <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Elite</div>
+                        <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Lake Huron</h3>
+                        <p class="text-[#6b6359] text-sm mb-3">Saumon chinook, Doré jaune.</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </a>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- SEO Footer (Programmatic Internal Links) -->
-    <footer class="bg-slate-900 text-white py-20 px-4">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-            <div>
-                <span class="text-xl font-black tracking-tighter italic">CANADIAN SCOUT</span>
-                <p class="mt-4 text-slate-400 text-sm">Intelligence autonome pour la faune canadienne. Construit par Amara.</p>
-            </div>
-            <div>
-                <h4 class="font-bold mb-4 uppercase text-xs text-blue-400 tracking-widest">Renseignements à proximité</h4>
-                <ul class="text-slate-400 text-sm space-y-2">
-                    <li><a href="../index.html" class="hover:text-white">Lake A Guide</a></li>
-                    <li><a href="../index.html" class="hover:text-white">River B Intel</a></li>
-                    <li><a href="../index.html" class="hover:text-white">Region C Scouting</a></li>
-                </ul>
-            </div>
+    <footer class="bg-[#2d5a3d] text-white py-16 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div>
+            <img src="../assets/logo/logo.jpg" alt="Outdoor Intel" class="h-10 w-auto mb-4 brightness-200">
+            <p class="text-white/70 text-sm">Renseignement de terrain pour la pêche, la chasse et l'exploration en pleine nature canadienne.</p>
         </div>
-    </footer>
+        <div>
+            <h4 class="font-bold mb-4 text-[#c97c5e]">Liens rapides</h4>
+            <ul class="space-y-2 text-white/70 text-sm">
+                <li><a href="../fr/directory.html" class="hover:text-[#c97c5e] transition-colors">Répertoire des lacs</a></li>
+                <li><a href="../fr/blog/peche-achigan-outaouais.html" class="hover:text-[#c97c5e] transition-colors">Blogue</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold mb-4 text-[#c97c5e]">Règlements</h4>
+            <ul class="space-y-2 text-white/70 text-sm">
+                <li><a href="https://www.ontario.ca/document/ontario-fishing-regulations-summary" target="_blank" class="hover:text-[#c97c5e] transition-colors">Pêche Ontario</a></li>
+                <li><a href="https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/peche-sportive" target="_blank" class="hover:text-[#c97c5e] transition-colors">Pêche Québec</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold mb-4 text-[#c97c5e]">Langue</h4>
+            <ul class="space-y-2 text-white/70 text-sm">
+                <li><a href="../en/directory.html" class="hover:text-[#c97c5e] transition-colors">English</a></li>
+                <li><a href="../fr/directory.html" class="hover:text-[#c97c5e] transition-colors">Français</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/20 text-center text-white/50 text-sm">
+        <p>OutdoorIntel.ca &mdash; 2026. Tous droits réservés.</p>
+    </div>
+</footer>
+    <script>
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('mobile-menu');
+if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        const expanded = !menu.classList.contains('hidden');
+        toggle.setAttribute('aria-expanded', expanded);
+    });
+}
+</script>
 </body>
 </html>
