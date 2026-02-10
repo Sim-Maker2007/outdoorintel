@@ -5,8 +5,15 @@
       "slug": "whistler-blackcomb",
       "province": "British Columbia",
       "type": "Downhill",
-      "coordinates": {"lat": 50.1, "lng": -122.9},
-      "features": ["200+ Runs", "Alpine Village", "Backcountry Access"],
+      "coordinates": {
+        "lat": 50.1,
+        "lng": -122.9
+      },
+      "features": [
+        "200+ Runs",
+        "Alpine Village",
+        "Backcountry Access"
+      ],
       "vertical_drop": "1,609m",
       "difficulty": "All Levels",
       "season": "November - May",
@@ -14,15 +21,34 @@
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-18.jpg",
-      "related_spots": ["sun-peaks", "big-white"]
+      "related_spots": [
+        "sun-peaks",
+        "big-white"
+      ],
+      "description": "Whistler Blackcomb is a world-renowned downhill skiing destination in British Columbia. With a vertical drop of 1,609m, it offers 200+ runs, alpine village, backcountry access against the stunning backdrop of the coastal rainforest, Rocky Mountains, interior plateau.\n\nThe resort caters to all ability levels with a good mix of beginner, intermediate, and expert terrain. Annual snowfall regularly exceeds 10 metres, ensuring a long and reliable season. Whistler Blackcomb is the kind of place that turns a ski trip into a lifelong obsession.",
+      "getting_there": "From Kelowna, the drive is approximately 3-4 hours. GPS: 50.1°N, 122.9°W. Mountain roads — winter tires mandatory from October to April. Carry chains. Airport shuttle available from the nearest regional airport. Road conditions can change rapidly — check DriveBC/511 before departure.",
+      "parking": "Large paved parking lots at the base area — free on weekdays, $10-20 on peak weekends. Overflow parking with shuttle service on busy days. Heated day lodge at the base with lockers, boot room, and washrooms. RV overnight parking available with advance booking.",
+      "best_time": "Season: November - May. December-January: Early season — base builds up. Holiday weeks are crowded but festive. January-February: Core season with the most reliable snow. March: Longer days and warmer temps make for comfortable skiing. Corn snow in the afternoons.  ",
+      "regulations": "Lift tickets or season passes required. Book online for best rates.   Respect all signage — closed areas are closed for safety reasons. Poaching closed terrain can result in pass revocation. Uphill travel policies vary — check with the resort before skinning up. Follow the Skier's Responsibility Code at all times.",
+      "terrain": "Vertical drop: 1,609m. The mountain features a mix of groomed runs, glades, bowls, and alpine terrain.  Alpine bowls above treeline offer exposed, wind-affected skiing. The terrain park has features for all levels. Aspect: Multiple aspects mean you can find good conditions throughout the day. Base elevation: 1,500-2,500m.",
+      "nearby_services": "Ski rental and repair shop at the base lodge. Lessons available — book in advance during peak periods. Nearest town with full services: Kelowna (3-4 hours). Après-ski pub and restaurant on site.",
+      "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Budget-friendly hostels and motels in the nearby town.  ",
+      "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Kelowna. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Frostbite is a real risk on cold, windy days — cover exposed skin. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion."
     },
     {
       "name": "Big White Ski Resort",
       "slug": "big-white",
       "province": "British Columbia",
       "type": "Downhill",
-      "coordinates": {"lat": 49.8, "lng": -119.3},
-      "features": ["104 Runs", "Village-at-Altitude", "Sunny Climate"],
+      "coordinates": {
+        "lat": 49.8,
+        "lng": -119.3
+      },
+      "features": [
+        "104 Runs",
+        "Village-at-Altitude",
+        "Sunny Climate"
+      ],
       "vertical_drop": "777m",
       "difficulty": "All Levels",
       "season": "November - April",
@@ -30,15 +56,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-19.jpg",
-      "related_spots": ["whistler-blackcomb", "sun-peaks"]
+      "related_spots": [
+        "whistler-blackcomb",
+        "sun-peaks"
+      ],
+      "description": "Big White Ski Resort is a premier downhill skiing destination in British Columbia. With a vertical drop of 777m, it offers 104 runs, village-at-altitude, sunny climate against the stunning backdrop of the coastal rainforest, Rocky Mountains, interior plateau.\n\nThe resort caters to all ability levels with a good mix of beginner, intermediate, and expert terrain. Annual snowfall regularly exceeds 10 metres, ensuring a long and reliable season. Big White Ski Resort is the kind of place that turns a ski trip into a lifelong obsession.",
+      "getting_there": "From Vancouver, the drive is approximately 45 minutes. GPS: 49.8°N, 119.3°W. Mountain roads — winter tires mandatory from October to April. Carry chains. Airport shuttle available from the nearest regional airport. Road conditions can change rapidly — check DriveBC/511 before departure.",
+      "parking": "Large paved parking lots at the base area — free on weekdays, $10-20 on peak weekends. Arrive before 9 AM on weekends to guarantee a spot close to the lifts. Heated day lodge at the base with lockers, boot room, and washrooms. RV overnight parking available with advance booking.",
+      "best_time": "Season: November - April.  February: Peak conditions — deepest snowpack, coldest temps, best powder. March: Spring skiing at its finest — warm sun, soft snow, and après vibes. Some of the best powder days happen in March storms. April: Closing weekend celebrations. T-shirt skiing and slush bumps. Midweek visits offer dramatically shorter lift lines and better parking.",
+      "regulations": "Lift tickets or season passes required. Book online for best rates. Helmets strongly recommended (mandatory for children at most resorts).  Respect all signage — closed areas are closed for safety reasons. Poaching closed terrain can result in pass revocation. Uphill travel policies vary — check with the resort before skinning up. Follow the Skier's Responsibility Code at all times.",
+      "terrain": "Vertical drop: 777m. The mountain features a mix of groomed runs, glades, bowls, and alpine terrain.    Aspect: North-facing slopes hold snow longest. Base elevation: 1,500-2,500m.",
+      "nearby_services": "Ski rental and repair shop at the base lodge. Ski school with group and private lessons for all levels. Nearest town with full services: Vancouver (45 minutes). Cafeteria-style food service at the day lodge.",
+      "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Vacation rentals and chalets in the surrounding area. Multi-day packages with lift tickets included offer the best value. ",
+      "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Vancouver. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Frostbite is a real risk on cold, windy days — cover exposed skin.  Hydrate and take breaks — altitude and cold mask exertion."
     },
     {
       "name": "Sun Peaks Resort",
       "slug": "sun-peaks",
       "province": "British Columbia",
       "type": "Downhill",
-      "coordinates": {"lat": 50.0, "lng": -119.6},
-      "features": ["137 Runs", "Family-Friendly", "Three Peaks"],
+      "coordinates": {
+        "lat": 50.0,
+        "lng": -119.6
+      },
+      "features": [
+        "137 Runs",
+        "Family-Friendly",
+        "Three Peaks"
+      ],
       "vertical_drop": "915m",
       "difficulty": "All Levels",
       "season": "November - April",
@@ -46,15 +91,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-20.jpg",
-      "related_spots": ["big-white", "whistler-blackcomb"]
+      "related_spots": [
+        "big-white",
+        "whistler-blackcomb"
+      ],
+      "description": "Sun Peaks Resort is a world-renowned downhill skiing destination in British Columbia. With a vertical drop of 915m, it offers 137 runs, family-friendly, three peaks against the stunning backdrop of the coastal rainforest, Rocky Mountains, interior plateau.\n\nThe resort caters to all ability levels with a good mix of beginner, intermediate, and expert terrain. Annual snowfall regularly exceeds 10 metres, ensuring a long and reliable season. Sun Peaks Resort is the kind of place that turns a ski trip into a lifelong obsession.",
+      "getting_there": "From Vancouver, the drive is approximately 45 minutes. GPS: 50.0°N, 119.6°W. Mountain roads — winter tires mandatory from October to April. Carry chains.  Road conditions can change rapidly — check DriveBC/511 before departure.",
+      "parking": "Large paved parking lots at the base area — free on weekdays, $10-20 on peak weekends. Arrive before 9 AM on weekends to guarantee a spot close to the lifts. Heated day lodge at the base with lockers, boot room, and washrooms. RV overnight parking available with advance booking.",
+      "best_time": "Season: November - April.  January-February: Core season with the most reliable snow. March: Longer days and warmer temps make for comfortable skiing. Corn snow in the afternoons. April: Closing weekend celebrations. T-shirt skiing and slush bumps. Midweek visits offer dramatically shorter lift lines and better parking.",
+      "regulations": "Lift tickets or season passes required. Book online for best rates.   Respect all signage — closed areas are closed for safety reasons. Poaching closed terrain can result in pass revocation. Uphill travel policies vary — check with the resort before skinning up. Follow the Skier's Responsibility Code at all times.",
+      "terrain": "Vertical drop: 915m. The mountain features a mix of groomed runs, glades, bowls, and alpine terrain.   The terrain park has features for all levels. Aspect: North-facing slopes hold snow longest. Base elevation: 1,500-2,500m.",
+      "nearby_services": "Ski rental and repair shop at the base lodge. Lessons available — book in advance during peak periods. Nearest town with full services: Vancouver (45 minutes). Après-ski pub and restaurant on site.",
+      "accommodation": "Base area hotels and condos within walking distance of the lifts. Vacation rentals and chalets in the surrounding area. Multi-day packages with lift tickets included offer the best value. ",
+      "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Vancouver. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Dress in layers — temperatures can swing 20°C between the base and summit. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion."
     },
     {
       "name": "Fernie Alpine Resort",
       "slug": "fernie-alpine",
       "province": "British Columbia",
       "type": "Downhill",
-      "coordinates": {"lat": 49.5, "lng": -115.3},
-      "features": ["142 Runs", "Skier's Mountain", "Powder Magnet"],
+      "coordinates": {
+        "lat": 49.5,
+        "lng": -115.3
+      },
+      "features": [
+        "142 Runs",
+        "Skier's Mountain",
+        "Powder Magnet"
+      ],
       "vertical_drop": "860m",
       "difficulty": "All Levels",
       "season": "November - April",
@@ -62,15 +126,34 @@
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-21.jpg",
-      "related_spots": ["kootenay-backcountry", "radium-hot-springs"]
+      "related_spots": [
+        "kootenay-backcountry",
+        "radium-hot-springs"
+      ],
+      "description": "Fernie Alpine Resort is a world-renowned downhill skiing destination in British Columbia. With a vertical drop of 860m, it offers 142 runs, skier's mountain, powder magnet against the stunning backdrop of the coastal rainforest, Rocky Mountains, interior plateau.\n\nThe resort caters to all ability levels with a good mix of beginner, intermediate, and expert terrain. Annual snowfall regularly exceeds 10 metres, ensuring a long and reliable season. Fernie Alpine Resort is the kind of place that turns a ski trip into a lifelong obsession.",
+      "getting_there": "From Vancouver, the drive is approximately 1.5-2 hours. GPS: 49.5°N, 115.3°W. Mountain roads — winter tires mandatory from October to April. Carry chains.  Road conditions can change rapidly — check DriveBC/511 before departure.",
+      "parking": "Large paved parking lots at the base area — free on weekdays, $10-20 on peak weekends. Arrive before 9 AM on weekends to guarantee a spot close to the lifts. Heated day lodge at the base with lockers, boot room, and washrooms. ",
+      "best_time": "Season: November - April.  January-February: Core season with the most reliable snow. March: Spring skiing at its finest — warm sun, soft snow, and après vibes. Some of the best powder days happen in March storms.  Midweek visits offer dramatically shorter lift lines and better parking.",
+      "regulations": "Lift tickets or season passes required. Book online for best rates. Helmets strongly recommended (mandatory for children at most resorts).  Respect all signage — closed areas are closed for safety reasons. Poaching closed terrain can result in pass revocation.  Follow the Skier's Responsibility Code at all times.",
+      "terrain": "Vertical drop: 860m. The mountain features a mix of groomed runs, glades, bowls, and alpine terrain. Tree skiing is excellent on storm days.   Aspect: North-facing slopes hold snow longest. Base elevation: 1,500-2,500m.",
+      "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Lessons available — book in advance during peak periods. Nearest town with full services: Vancouver (1.5-2 hours). Après-ski pub and restaurant on site.",
+      "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Vacation rentals and chalets in the surrounding area.  ",
+      "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Vancouver. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Frostbite is a real risk on cold, windy days — cover exposed skin.  Hydrate and take breaks — altitude and cold mask exertion."
     },
     {
       "name": "Kicking Horse Mountain Resort",
       "slug": "kicking-horse",
       "province": "British Columbia",
       "type": "Backcountry",
-      "coordinates": {"lat": 52.9, "lng": -116.6},
-      "features": ["84 Runs", "Golden Powder Corridor", "Heli-Access Available"],
+      "coordinates": {
+        "lat": 52.9,
+        "lng": -116.6
+      },
+      "features": [
+        "84 Runs",
+        "Golden Powder Corridor",
+        "Heli-Access Available"
+      ],
       "vertical_drop": "1,260m",
       "difficulty": "Advanced",
       "season": "December - April",
@@ -78,15 +161,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-22.jpg",
-      "related_spots": ["purcell-heli-skiing", "revelstoke"]
+      "related_spots": [
+        "purcell-heli-skiing",
+        "revelstoke"
+      ],
+      "description": "Kicking Horse Mountain Resort is a world-renowned backcountry skiing destination in British Columbia. With a vertical drop of 1,260m, it offers 84 runs, golden powder corridor, heli-access available against the stunning backdrop of the coastal rainforest, Rocky Mountains, interior plateau.\n\nThis area is best suited for advanced skiers who appreciate steep lines and deep powder. Annual snowfall regularly exceeds 10 metres, ensuring a long and reliable season. Kicking Horse Mountain Resort is the kind of place that turns a ski trip into a lifelong obsession.",
+      "getting_there": "From Kelowna, the drive is approximately 2-3 hours. GPS: 52.9°N, 116.6°W. Mountain roads — winter tires mandatory from October to April. Carry chains.  Road conditions can change rapidly — check DriveBC/511 before departure.",
+      "parking": "Plowed parking area at the trailhead. Arrive before 9 AM on weekends to guarantee a spot close to the lifts. Heated day lodge at the base with lockers, boot room, and washrooms. ",
+      "best_time": "Season: December - April. December-January: Early season — base builds up. Holiday weeks are crowded but festive. February: Peak conditions — deepest snowpack, coldest temps, best powder. March: Longer days and warmer temps make for comfortable skiing. Corn snow in the afternoons.  ",
+      "regulations": "Trail pass required — available at the trailhead or online.  Backcountry users must carry avalanche safety equipment: transceiver, probe, and shovel.   Follow the Skier's Responsibility Code at all times.",
+      "terrain": "Vertical drop: 1,260m. Trail system winds through coastal rainforest.    Aspect: North-facing slopes hold snow longest. Base elevation: 1,500-2,500m.",
+      "nearby_services": "Ski rental and repair shop at the base lodge. Ski school with group and private lessons for all levels. Nearest town with full services: Kelowna (2-3 hours). Après-ski pub and restaurant on site.",
+      "accommodation": "Base area hotels and condos within walking distance of the lifts. Vacation rentals and chalets in the surrounding area. Multi-day packages with lift tickets included offer the best value. Backcountry huts available for multi-day ski touring — reserve through the local alpine club.",
+      "safety": "No patrol — you are responsible for your own safety. Nearest hospital: Kelowna. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Frostbite is a real risk on cold, windy days — cover exposed skin. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion."
     },
     {
       "name": "Lake Louise Ski Resort",
       "slug": "lake-louise",
       "province": "Alberta",
       "type": "Downhill",
-      "coordinates": {"lat": 51.4, "lng": -116.2},
-      "features": ["139 Runs", "Glacial Backdrop", "Terrain Parks"],
+      "coordinates": {
+        "lat": 51.4,
+        "lng": -116.2
+      },
+      "features": [
+        "139 Runs",
+        "Glacial Backdrop",
+        "Terrain Parks"
+      ],
       "vertical_drop": "991m",
       "difficulty": "All Levels",
       "season": "November - May",
@@ -94,15 +196,34 @@
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-23.jpg",
-      "related_spots": ["banff-norquay", "sunshine-village"]
+      "related_spots": [
+        "banff-norquay",
+        "sunshine-village"
+      ],
+      "description": "Lake Louise Ski Resort is a world-renowned downhill skiing destination in Alberta. With a vertical drop of 991m, it offers 139 runs, glacial backdrop, terrain parks against the stunning backdrop of the Rocky Mountain foothills, prairies, badlands.\n\nThe resort caters to all ability levels with a good mix of beginner, intermediate, and expert terrain. Annual snowfall regularly exceeds 10 metres, ensuring a long and reliable season. Lake Louise Ski Resort is the kind of place that turns a ski trip into a lifelong obsession.",
+      "getting_there": "From Red Deer, the drive is approximately 1.5-2.5 hours. GPS: 51.4°N, 116.2°W. Mountain roads — winter tires mandatory from October to April. Carry chains.  Check road conditions before heading out in winter weather.",
+      "parking": "Large paved parking lots at the base area — free on weekdays, $10-20 on peak weekends. Arrive before 9 AM on weekends to guarantee a spot close to the lifts. Heated day lodge at the base with lockers, boot room, and washrooms. RV overnight parking available with advance booking.",
+      "best_time": "Season: November - May.  January-February: Core season with the most reliable snow. March: Longer days and warmer temps make for comfortable skiing. Corn snow in the afternoons.  ",
+      "regulations": "Lift tickets or season passes required. Book online for best rates. Helmets strongly recommended (mandatory for children at most resorts).  Respect all signage — closed areas are closed for safety reasons. Poaching closed terrain can result in pass revocation.  Follow the Skier's Responsibility Code at all times.",
+      "terrain": "Vertical drop: 991m. The mountain features a mix of groomed runs, glades, bowls, and alpine terrain.    Aspect: Multiple aspects mean you can find good conditions throughout the day. Base elevation: 1,500-2,500m.",
+      "nearby_services": "Ski rental and repair shop at the base lodge. Lessons available — book in advance during peak periods. Nearest town with full services: Red Deer (1.5-2.5 hours). Après-ski pub and restaurant on site.",
+      "accommodation": "Base area hotels and condos within walking distance of the lifts. Budget-friendly hostels and motels in the nearby town.  ",
+      "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Red Deer. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Dress in layers — temperatures can swing 20°C between the base and summit. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion."
     },
     {
       "name": "Banff Norquay",
       "slug": "banff-norquay",
       "province": "Alberta",
       "type": "Downhill",
-      "coordinates": {"lat": 51.1, "lng": -115.9},
-      "features": ["90 Runs", "Night Skiing", "Beginner-Friendly"],
+      "coordinates": {
+        "lat": 51.1,
+        "lng": -115.9
+      },
+      "features": [
+        "90 Runs",
+        "Night Skiing",
+        "Beginner-Friendly"
+      ],
       "vertical_drop": "513m",
       "difficulty": "All Levels",
       "season": "November - April",
@@ -110,15 +231,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-24.jpg",
-      "related_spots": ["lake-louise", "sunshine-village"]
+      "related_spots": [
+        "lake-louise",
+        "sunshine-village"
+      ],
+      "description": "Banff Norquay is a premier downhill skiing destination in Alberta. With a vertical drop of 513m, it offers 90 runs, night skiing, beginner-friendly against the stunning backdrop of the Rocky Mountain foothills, prairies, badlands.\n\nThe resort caters to all ability levels with a good mix of beginner, intermediate, and expert terrain. Annual snowfall regularly exceeds 10 metres, ensuring a long and reliable season. Banff Norquay is the kind of place that turns a ski trip into a lifelong obsession.",
+      "getting_there": "From Red Deer, the drive is approximately 3-4 hours. GPS: 51.1°N, 115.9°W. Mountain roads — winter tires mandatory from October to April. Carry chains.  Check road conditions before heading out in winter weather.",
+      "parking": "Large paved parking lots at the base area — free on weekdays, $10-20 on peak weekends. Overflow parking with shuttle service on busy days. Heated day lodge at the base with lockers, boot room, and washrooms. RV overnight parking available with advance booking.",
+      "best_time": "Season: November - April.  January-February: Core season with the most reliable snow. March: Longer days and warmer temps make for comfortable skiing. Corn snow in the afternoons.  Midweek visits offer dramatically shorter lift lines and better parking.",
+      "regulations": "Lift tickets or season passes required. Book online for best rates.   Respect all signage — closed areas are closed for safety reasons. Poaching closed terrain can result in pass revocation. Uphill travel policies vary — check with the resort before skinning up. Follow the Skier's Responsibility Code at all times.",
+      "terrain": "Vertical drop: 513m. The mountain features a mix of groomed runs, glades, bowls, and alpine terrain.  Alpine bowls above treeline offer exposed, wind-affected skiing. The terrain park has features for all levels. Aspect: Multiple aspects mean you can find good conditions throughout the day. Base elevation: 1,500-2,500m.",
+      "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Lessons available — book in advance during peak periods. Nearest town with full services: Red Deer (3-4 hours). Après-ski pub and restaurant on site.",
+      "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Vacation rentals and chalets in the surrounding area.  ",
+      "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Red Deer. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Dress in layers — temperatures can swing 20°C between the base and summit. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion."
     },
     {
       "name": "Sunshine Village",
       "slug": "sunshine-village",
       "province": "Alberta",
       "type": "Downhill",
-      "coordinates": {"lat": 51.1, "lng": -115.5},
-      "features": ["107 Runs", "High Elevation", "Spring Skiing"],
+      "coordinates": {
+        "lat": 51.1,
+        "lng": -115.5
+      },
+      "features": [
+        "107 Runs",
+        "High Elevation",
+        "Spring Skiing"
+      ],
       "vertical_drop": "1,160m",
       "difficulty": "All Levels",
       "season": "November - June",
@@ -126,15 +266,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-25.jpg",
-      "related_spots": ["lake-louise", "banff-norquay"]
+      "related_spots": [
+        "lake-louise",
+        "banff-norquay"
+      ],
+      "description": "Sunshine Village is a world-renowned downhill skiing destination in Alberta. With a vertical drop of 1,160m, it offers 107 runs, high elevation, spring skiing against the stunning backdrop of the Rocky Mountain foothills, prairies, badlands.\n\nThe resort caters to all ability levels with a good mix of beginner, intermediate, and expert terrain. Annual snowfall regularly exceeds 10 metres, ensuring a long and reliable season. Sunshine Village is the kind of place that turns a ski trip into a lifelong obsession.",
+      "getting_there": "From Red Deer, the drive is approximately 1.5-2.5 hours. GPS: 51.1°N, 115.5°W. Mountain roads — winter tires mandatory from October to April. Carry chains. Airport shuttle available from the nearest regional airport. Check road conditions before heading out in winter weather.",
+      "parking": "Large paved parking lots at the base area — free on weekdays, $10-20 on peak weekends. Arrive before 9 AM on weekends to guarantee a spot close to the lifts.  RV overnight parking available with advance booking.",
+      "best_time": "Season: November - June.  January-February: Core season with the most reliable snow. March: Spring skiing at its finest — warm sun, soft snow, and après vibes. Some of the best powder days happen in March storms. April: Closing weekend celebrations. T-shirt skiing and slush bumps. Midweek visits offer dramatically shorter lift lines and better parking.",
+      "regulations": "Lift tickets or season passes required. Book online for best rates.   Respect all signage — closed areas are closed for safety reasons. Poaching closed terrain can result in pass revocation. Uphill travel policies vary — check with the resort before skinning up. Follow the Skier's Responsibility Code at all times.",
+      "terrain": "Vertical drop: 1,160m. The mountain features a mix of groomed runs, glades, bowls, and alpine terrain. Tree skiing is excellent on storm days.  The terrain park has features for all levels. Aspect: Multiple aspects mean you can find good conditions throughout the day. Base elevation: 1,500-2,500m.",
+      "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Lessons available — book in advance during peak periods. Nearest town with full services: Red Deer (1.5-2.5 hours). Après-ski pub and restaurant on site.",
+      "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Budget-friendly hostels and motels in the nearby town. Multi-day packages with lift tickets included offer the best value. ",
+      "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Red Deer. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Frostbite is a real risk on cold, windy days — cover exposed skin.  Hydrate and take breaks — altitude and cold mask exertion."
     },
     {
       "name": "Marmot Basin",
       "slug": "marmot-basin",
       "province": "Alberta",
       "type": "Downhill",
-      "coordinates": {"lat": 53.1, "lng": -117.2},
-      "features": ["91 Runs", "Alpine Terrain", "Jasper Gateway"],
+      "coordinates": {
+        "lat": 53.1,
+        "lng": -117.2
+      },
+      "features": [
+        "91 Runs",
+        "Alpine Terrain",
+        "Jasper Gateway"
+      ],
       "vertical_drop": "914m",
       "difficulty": "All Levels",
       "season": "September - May",
@@ -142,15 +301,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-26.jpg",
-      "related_spots": ["jasper-national-park", "edith-cavell"]
+      "related_spots": [
+        "jasper-national-park",
+        "edith-cavell"
+      ],
+      "description": "Marmot Basin is a world-renowned downhill skiing destination in Alberta. With a vertical drop of 914m, it offers 91 runs, alpine terrain, jasper gateway against the stunning backdrop of the Rocky Mountain foothills, prairies, badlands.\n\nThe resort caters to all ability levels with a good mix of beginner, intermediate, and expert terrain. Annual snowfall regularly exceeds 10 metres, ensuring a long and reliable season. Marmot Basin is the kind of place that turns a ski trip into a lifelong obsession.",
+      "getting_there": "From Red Deer, the drive is approximately 3-4 hours. GPS: 53.1°N, 117.2°W. Mountain roads — winter tires mandatory from October to April. Carry chains.  Check road conditions before heading out in winter weather.",
+      "parking": "Large paved parking lots at the base area — free on weekdays, $10-20 on peak weekends. Arrive before 9 AM on weekends to guarantee a spot close to the lifts. Heated day lodge at the base with lockers, boot room, and washrooms. RV overnight parking available with advance booking.",
+      "best_time": "Season: September - May.  February: Peak conditions — deepest snowpack, coldest temps, best powder. March: Spring skiing at its finest — warm sun, soft snow, and après vibes. Some of the best powder days happen in March storms.  ",
+      "regulations": "Lift tickets or season passes required. Book online for best rates.   Respect all signage — closed areas are closed for safety reasons. Poaching closed terrain can result in pass revocation.  Follow the Skier's Responsibility Code at all times.",
+      "terrain": "Vertical drop: 914m. The mountain features a mix of groomed runs, glades, bowls, and alpine terrain. Tree skiing is excellent on storm days. Alpine bowls above treeline offer exposed, wind-affected skiing.  Aspect: Multiple aspects mean you can find good conditions throughout the day. Base elevation: 1,500-2,500m.",
+      "nearby_services": "Ski rental and repair shop at the base lodge. Lessons available — book in advance during peak periods. Nearest town with full services: Red Deer (3-4 hours). Après-ski pub and restaurant on site.",
+      "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Budget-friendly hostels and motels in the nearby town. Multi-day packages with lift tickets included offer the best value. ",
+      "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Red Deer. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Frostbite is a real risk on cold, windy days — cover exposed skin.  Hydrate and take breaks — altitude and cold mask exertion."
     },
     {
       "name": "Laurentian Mountains Resorts",
       "slug": "laurentian-mountains",
       "province": "Quebec",
       "type": "Downhill",
-      "coordinates": {"lat": 46.1, "lng": -74.8},
-      "features": ["Multiple Peaks", "Night Skiing", "Urban Access"],
+      "coordinates": {
+        "lat": 46.1,
+        "lng": -74.8
+      },
+      "features": [
+        "Multiple Peaks",
+        "Night Skiing",
+        "Urban Access"
+      ],
       "vertical_drop": "645m",
       "difficulty": "All Levels",
       "season": "November - April",
@@ -158,15 +336,34 @@
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-27.jpg",
-      "related_spots": ["mont-tremblant", "saint-sauveur"]
+      "related_spots": [
+        "mont-tremblant",
+        "saint-sauveur"
+      ],
+      "description": "Laurentian Mountains Resorts is a premier downhill skiing destination in Quebec. With a vertical drop of 645m, it offers multiple peaks, night skiing, urban access against the stunning backdrop of the Laurentian Mountains, St. Lawrence Valley, boreal shield.\n\nThe resort caters to all ability levels with a good mix of beginner, intermediate, and expert terrain. Annual snowfall regularly exceeds 10 metres, ensuring a long and reliable season. Laurentian Mountains Resorts is the kind of place that turns a ski trip into a lifelong obsession.",
+      "getting_there": "From Montreal, the drive is approximately 2-3 hours. GPS: 46.1°N, 74.8°W. Winter tires strongly recommended. Airport shuttle available from the nearest regional airport. Check road conditions before heading out in winter weather.",
+      "parking": "Large paved parking lots at the base area — free on weekdays, $10-20 on peak weekends. Overflow parking with shuttle service on busy days.  RV overnight parking available with advance booking.",
+      "best_time": "Season: November - April. December-January: Early season — base builds up. Holiday weeks are crowded but festive. January-February: Core season with the most reliable snow. March: Spring skiing at its finest — warm sun, soft snow, and après vibes. Some of the best powder days happen in March storms. April: Closing weekend celebrations. T-shirt skiing and slush bumps. ",
+      "regulations": "Lift tickets or season passes required. Book online for best rates. Helmets strongly recommended (mandatory for children at most resorts).  Respect all signage — closed areas are closed for safety reasons. Poaching closed terrain can result in pass revocation.  Follow the Skier's Responsibility Code at all times.",
+      "terrain": "Vertical drop: 645m. The mountain features a mix of groomed runs, glades, bowls, and alpine terrain. Tree skiing is excellent on storm days.   Aspect: Multiple aspects mean you can find good conditions throughout the day. Base elevation: 200-800m.",
+      "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Lessons available — book in advance during peak periods. Nearest town with full services: Montreal (2-3 hours). Cafeteria-style food service at the day lodge.",
+      "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Vacation rentals and chalets in the surrounding area.  ",
+      "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Montreal.  Dress in layers — temperatures can swing 20°C between the base and summit. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion."
     },
     {
       "name": "Mont-Tremblant",
       "slug": "mont-tremblant",
       "province": "Quebec",
       "type": "Downhill",
-      "coordinates": {"lat": 46.2, "lng": -74.6},
-      "features": ["102 Runs", "Pedestrian Village", "Quad Lifts"],
+      "coordinates": {
+        "lat": 46.2,
+        "lng": -74.6
+      },
+      "features": [
+        "102 Runs",
+        "Pedestrian Village",
+        "Quad Lifts"
+      ],
       "vertical_drop": "645m",
       "difficulty": "All Levels",
       "season": "November - April",
@@ -174,15 +371,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-28.jpg",
-      "related_spots": ["laurentian-mountains", "saint-sauveur"]
+      "related_spots": [
+        "laurentian-mountains",
+        "saint-sauveur"
+      ],
+      "description": "Mont-Tremblant is a premier downhill skiing destination in Quebec. With a vertical drop of 645m, it offers 102 runs, pedestrian village, quad lifts against the stunning backdrop of the Laurentian Mountains, St. Lawrence Valley, boreal shield.\n\nThe resort caters to all ability levels with a good mix of beginner, intermediate, and expert terrain. Annual snowfall regularly exceeds 10 metres, ensuring a long and reliable season. Mont-Tremblant is the kind of place that turns a ski trip into a lifelong obsession.",
+      "getting_there": "From Montreal, the drive is approximately 1-1.5 hours. GPS: 46.2°N, 74.6°W. Winter tires strongly recommended. Airport shuttle available from the nearest regional airport. Check road conditions before heading out in winter weather.",
+      "parking": "Large paved parking lots at the base area — free on weekdays, $10-20 on peak weekends. Arrive before 9 AM on weekends to guarantee a spot close to the lifts. Heated day lodge at the base with lockers, boot room, and washrooms. RV overnight parking available with advance booking.",
+      "best_time": "Season: November - April. December-January: Early season — base builds up. Holiday weeks are crowded but festive. January-February: Core season with the most reliable snow. March: Longer days and warmer temps make for comfortable skiing. Corn snow in the afternoons. April: Closing weekend celebrations. T-shirt skiing and slush bumps. ",
+      "regulations": "Lift tickets or season passes required. Book online for best rates.   Respect all signage — closed areas are closed for safety reasons. Poaching closed terrain can result in pass revocation. Uphill travel policies vary — check with the resort before skinning up. Follow the Skier's Responsibility Code at all times.",
+      "terrain": "Vertical drop: 645m. The mountain features a mix of groomed runs, glades, bowls, and alpine terrain. Tree skiing is excellent on storm days.  The terrain park has features for all levels. Aspect: Multiple aspects mean you can find good conditions throughout the day. Base elevation: 200-800m.",
+      "nearby_services": "Ski rental and repair shop at the base lodge. Lessons available — book in advance during peak periods. Nearest town with full services: Montreal (1-1.5 hours). Cafeteria-style food service at the day lodge.",
+      "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Budget-friendly hostels and motels in the nearby town.  ",
+      "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Montreal.  Dress in layers — temperatures can swing 20°C between the base and summit.  Hydrate and take breaks — altitude and cold mask exertion."
     },
     {
       "name": "Chantecler Resort",
       "slug": "chantecler",
       "province": "Quebec",
       "type": "Mixed",
-      "coordinates": {"lat": 46.0, "lng": -74.7},
-      "features": ["22 Runs", "Cross-Country Trails", "Beginner-Focused"],
+      "coordinates": {
+        "lat": 46.0,
+        "lng": -74.7
+      },
+      "features": [
+        "22 Runs",
+        "Cross-Country Trails",
+        "Beginner-Focused"
+      ],
       "vertical_drop": "211m",
       "difficulty": "Beginner",
       "season": "December - March",
@@ -190,15 +406,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-29.jpg",
-      "related_spots": ["mont-tremblant", "tremblant-cross-country"]
+      "related_spots": [
+        "mont-tremblant",
+        "tremblant-cross-country"
+      ],
+      "description": "Chantecler Resort is a premier mixed skiing destination in Quebec. With a vertical drop of 211m, it offers 22 runs, cross-country trails, beginner-focused against the stunning backdrop of the Laurentian Mountains, St. Lawrence Valley, boreal shield.\n\nThis area is best suited for beginner skiers who appreciate well-groomed runs and scenic cruising. Annual snowfall regularly exceeds 10 metres, ensuring a long and reliable season. Chantecler Resort is the kind of place that turns a ski trip into a lifelong obsession.",
+      "getting_there": "From Montreal, the drive is approximately 1-1.5 hours. GPS: 46.0°N, 74.7°W. Winter tires strongly recommended.  Check road conditions before heading out in winter weather.",
+      "parking": "Large paved parking lots at the base area — free on weekdays, $10-20 on peak weekends. Arrive before 9 AM on weekends to guarantee a spot close to the lifts.  RV overnight parking available with advance booking.",
+      "best_time": "Season: December - March. December-January: Early season — base builds up. Holiday weeks are crowded but festive. February: Peak conditions — deepest snowpack, coldest temps, best powder. March: Spring skiing at its finest — warm sun, soft snow, and après vibes. Some of the best powder days happen in March storms. April: Closing weekend celebrations. T-shirt skiing and slush bumps. ",
+      "regulations": "Lift tickets or season passes required. Book online for best rates.    Uphill travel policies vary — check with the resort before skinning up. Follow the Skier's Responsibility Code at all times.",
+      "terrain": "Vertical drop: 211m. The mountain features a mix of groomed runs, glades, bowls, and alpine terrain. Tree skiing is excellent on storm days.   Aspect: North-facing slopes hold snow longest. Base elevation: 200-800m.",
+      "nearby_services": "Ski rental and repair shop at the base lodge. Lessons available — book in advance during peak periods. Nearest town with full services: Montreal (1-1.5 hours). Cafeteria-style food service at the day lodge.",
+      "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Budget-friendly hostels and motels in the nearby town. Multi-day packages with lift tickets included offer the best value. ",
+      "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Montreal.  Frostbite is a real risk on cold, windy days — cover exposed skin.  Hydrate and take breaks — altitude and cold mask exertion."
     },
     {
       "name": "Camp Fortune",
       "slug": "camp-fortune",
       "province": "Quebec",
       "type": "Downhill",
-      "coordinates": {"lat": 45.3, "lng": -75.8},
-      "features": ["23 Runs", "Urban Convenience", "Night Skiing"],
+      "coordinates": {
+        "lat": 45.3,
+        "lng": -75.8
+      },
+      "features": [
+        "23 Runs",
+        "Urban Convenience",
+        "Night Skiing"
+      ],
       "vertical_drop": "197m",
       "difficulty": "Beginner",
       "season": "December - March",
@@ -206,15 +441,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-30.jpg",
-      "related_spots": ["hull-quebec", "greenbelt-trails"]
+      "related_spots": [
+        "hull-quebec",
+        "greenbelt-trails"
+      ],
+      "description": "Camp Fortune is a premier downhill skiing destination in Quebec. With a vertical drop of 197m, it offers 23 runs, urban convenience, night skiing against the stunning backdrop of the Laurentian Mountains, St. Lawrence Valley, boreal shield.\n\nThis area is best suited for beginner skiers who appreciate well-groomed runs and scenic cruising. Annual snowfall regularly exceeds 10 metres, ensuring a long and reliable season. Camp Fortune is the kind of place that turns a ski trip into a lifelong obsession.",
+      "getting_there": "From Montreal, the drive is approximately 45 minutes. GPS: 45.3°N, 75.8°W. Winter tires strongly recommended. Airport shuttle available from the nearest regional airport. Check road conditions before heading out in winter weather.",
+      "parking": "Large paved parking lots at the base area — free on weekdays, $10-20 on peak weekends. Arrive before 9 AM on weekends to guarantee a spot close to the lifts. Heated day lodge at the base with lockers, boot room, and washrooms. RV overnight parking available with advance booking.",
+      "best_time": "Season: December - March.  January-February: Core season with the most reliable snow. March: Spring skiing at its finest — warm sun, soft snow, and après vibes. Some of the best powder days happen in March storms.  Midweek visits offer dramatically shorter lift lines and better parking.",
+      "regulations": "Lift tickets or season passes required. Book online for best rates. Helmets strongly recommended (mandatory for children at most resorts).  Respect all signage — closed areas are closed for safety reasons. Poaching closed terrain can result in pass revocation. Uphill travel policies vary — check with the resort before skinning up. Follow the Skier's Responsibility Code at all times.",
+      "terrain": "Vertical drop: 197m. The mountain features a mix of groomed runs, glades, bowls, and alpine terrain. Tree skiing is excellent on storm days.   Aspect: North-facing slopes hold snow longest. Base elevation: 200-800m.",
+      "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Ski school with group and private lessons for all levels. Nearest town with full services: Montreal (45 minutes). Cafeteria-style food service at the day lodge.",
+      "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Budget-friendly hostels and motels in the nearby town. Multi-day packages with lift tickets included offer the best value. ",
+      "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Montreal.  Frostbite is a real risk on cold, windy days — cover exposed skin.  Hydrate and take breaks — altitude and cold mask exertion."
     },
     {
       "name": "Blue Mountain Resort",
       "slug": "blue-mountain",
       "province": "Ontario",
       "type": "Downhill",
-      "coordinates": {"lat": 44.4, "lng": -80.3},
-      "features": ["42 Runs", "Great Lakes Region", "Snow-Making"],
+      "coordinates": {
+        "lat": 44.4,
+        "lng": -80.3
+      },
+      "features": [
+        "42 Runs",
+        "Great Lakes Region",
+        "Snow-Making"
+      ],
       "vertical_drop": "220m",
       "difficulty": "All Levels",
       "season": "November - April",
@@ -222,15 +476,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-31.jpg",
-      "related_spots": ["horseshoe-resort", "collingwood"]
+      "related_spots": [
+        "horseshoe-resort",
+        "collingwood"
+      ],
+      "description": "Blue Mountain Resort is a premier downhill skiing destination in Ontario. With a vertical drop of 220m, it offers 42 runs, great lakes region, snow-making against the stunning backdrop of the Canadian Shield, boreal forest, Great Lakes shoreline.\n\nThe resort caters to all ability levels with a good mix of beginner, intermediate, and expert terrain. Snow conditions are generally reliable throughout the core season. Blue Mountain Resort is the kind of place that turns a ski trip into a lifelong obsession.",
+      "getting_there": "From Ottawa, the drive is approximately 1-1.5 hours. GPS: 44.4°N, 80.3°W. Winter tires strongly recommended. Airport shuttle available from the nearest regional airport. Check road conditions before heading out in winter weather.",
+      "parking": "Large paved parking lots at the base area — free on weekdays, $10-20 on peak weekends. Overflow parking with shuttle service on busy days.  RV overnight parking available with advance booking.",
+      "best_time": "Season: November - April. December-January: Early season — base builds up. Holiday weeks are crowded but festive. January-February: Core season with the most reliable snow. March: Spring skiing at its finest — warm sun, soft snow, and après vibes. Some of the best powder days happen in March storms. April: Closing weekend celebrations. T-shirt skiing and slush bumps. ",
+      "regulations": "Lift tickets or season passes required. Book online for best rates.   Respect all signage — closed areas are closed for safety reasons. Poaching closed terrain can result in pass revocation. Uphill travel policies vary — check with the resort before skinning up. Follow the Skier's Responsibility Code at all times.",
+      "terrain": "Vertical drop: 220m. The mountain features a mix of groomed runs, glades, bowls, and alpine terrain. Tree skiing is excellent on storm days.  The terrain park has features for all levels. Aspect: Multiple aspects mean you can find good conditions throughout the day. Base elevation: 200-800m.",
+      "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Ski school with group and private lessons for all levels. Nearest town with full services: Ottawa (1-1.5 hours). Cafeteria-style food service at the day lodge.",
+      "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Vacation rentals and chalets in the surrounding area.  ",
+      "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Ottawa.  Dress in layers — temperatures can swing 20°C between the base and summit. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion."
     },
     {
       "name": "Horseshoe Resort",
       "slug": "horseshoe-resort",
       "province": "Ontario",
       "type": "Mixed",
-      "coordinates": {"lat": 44.7, "lng": -79.7},
-      "features": ["15 Runs", "Cross-Country Trails", "Nordic Center"],
+      "coordinates": {
+        "lat": 44.7,
+        "lng": -79.7
+      },
+      "features": [
+        "15 Runs",
+        "Cross-Country Trails",
+        "Nordic Center"
+      ],
       "vertical_drop": "200m",
       "difficulty": "Beginner",
       "season": "December - March",
@@ -238,15 +511,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-32.jpg",
-      "related_spots": ["blue-mountain", "mono-cliffs"]
+      "related_spots": [
+        "blue-mountain",
+        "mono-cliffs"
+      ],
+      "description": "Horseshoe Resort is a premier mixed skiing destination in Ontario. With a vertical drop of 200m, it offers 15 runs, cross-country trails, nordic center against the stunning backdrop of the Canadian Shield, boreal forest, Great Lakes shoreline.\n\nThis area is best suited for beginner skiers who appreciate well-groomed runs and scenic cruising. Snow conditions are generally reliable throughout the core season. Horseshoe Resort is the kind of place that turns a ski trip into a lifelong obsession.",
+      "getting_there": "From Ottawa, the drive is approximately 45 minutes. GPS: 44.7°N, 79.7°W. Winter tires strongly recommended. Airport shuttle available from the nearest regional airport. Check road conditions before heading out in winter weather.",
+      "parking": "Large paved parking lots at the base area — free on weekdays, $10-20 on peak weekends. Overflow parking with shuttle service on busy days. Heated day lodge at the base with lockers, boot room, and washrooms. RV overnight parking available with advance booking.",
+      "best_time": "Season: December - March. December-January: Early season — base builds up. Holiday weeks are crowded but festive. January-February: Core season with the most reliable snow. March: Longer days and warmer temps make for comfortable skiing. Corn snow in the afternoons.  ",
+      "regulations": "Lift tickets or season passes required. Book online for best rates.    Uphill travel policies vary — check with the resort before skinning up. Follow the Skier's Responsibility Code at all times.",
+      "terrain": "Vertical drop: 200m. The mountain features a mix of groomed runs, glades, bowls, and alpine terrain.    Aspect: North-facing slopes hold snow longest. Base elevation: 200-800m.",
+      "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Ski school with group and private lessons for all levels. Nearest town with full services: Ottawa (45 minutes). Après-ski pub and restaurant on site.",
+      "accommodation": "Base area hotels and condos within walking distance of the lifts. Vacation rentals and chalets in the surrounding area. Multi-day packages with lift tickets included offer the best value. ",
+      "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Ottawa.  Dress in layers — temperatures can swing 20°C between the base and summit. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion."
     },
     {
       "name": "Talisman Mountain Resort",
       "slug": "talisman-mountain",
       "province": "Ontario",
       "type": "Downhill",
-      "coordinates": {"lat": 44.1, "lng": -80.8},
-      "features": ["18 Runs", "Family Friendly", "Beginner-Heavy"],
+      "coordinates": {
+        "lat": 44.1,
+        "lng": -80.8
+      },
+      "features": [
+        "18 Runs",
+        "Family Friendly",
+        "Beginner-Heavy"
+      ],
       "vertical_drop": "92m",
       "difficulty": "Beginner",
       "season": "December - March",
@@ -254,15 +546,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "hero-1.jpg",
-      "related_spots": ["blue-mountain", "horseshoe-resort"]
+      "related_spots": [
+        "blue-mountain",
+        "horseshoe-resort"
+      ],
+      "description": "Talisman Mountain Resort is a premier downhill skiing destination in Ontario. With a vertical drop of 92m, it offers 18 runs, family friendly, beginner-heavy against the stunning backdrop of the Canadian Shield, boreal forest, Great Lakes shoreline.\n\nThis area is best suited for beginner skiers who appreciate well-groomed runs and scenic cruising. Snow conditions are generally reliable throughout the core season. Talisman Mountain Resort is the kind of place that turns a ski trip into a lifelong obsession.",
+      "getting_there": "From Ottawa, the drive is approximately 45 minutes. GPS: 44.1°N, 80.8°W. Winter tires strongly recommended.  Check road conditions before heading out in winter weather.",
+      "parking": "Large paved parking lots at the base area — free on weekdays, $10-20 on peak weekends. Arrive before 9 AM on weekends to guarantee a spot close to the lifts. Heated day lodge at the base with lockers, boot room, and washrooms. ",
+      "best_time": "Season: December - March. December-January: Early season — base builds up. Holiday weeks are crowded but festive. February: Peak conditions — deepest snowpack, coldest temps, best powder. March: Longer days and warmer temps make for comfortable skiing. Corn snow in the afternoons.  ",
+      "regulations": "Lift tickets or season passes required. Book online for best rates. Helmets strongly recommended (mandatory for children at most resorts).  Respect all signage — closed areas are closed for safety reasons. Poaching closed terrain can result in pass revocation.  Follow the Skier's Responsibility Code at all times.",
+      "terrain": "Vertical drop: 92m. The mountain features a mix of groomed runs, glades, bowls, and alpine terrain.    Aspect: Multiple aspects mean you can find good conditions throughout the day. Base elevation: 200-800m.",
+      "nearby_services": "Ski rental and repair shop at the base lodge. Ski school with group and private lessons for all levels. Nearest town with full services: Ottawa (45 minutes). Cafeteria-style food service at the day lodge.",
+      "accommodation": "Base area hotels and condos within walking distance of the lifts. Vacation rentals and chalets in the surrounding area.  ",
+      "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Ottawa.  Dress in layers — temperatures can swing 20°C between the base and summit.  Hydrate and take breaks — altitude and cold mask exertion."
     },
     {
       "name": "Poley Mountain",
       "slug": "poley-mountain",
       "province": "New Brunswick",
       "type": "Mixed",
-      "coordinates": {"lat": 46.9, "lng": -64.8},
-      "features": ["12 Runs", "Cross-Country Options", "Budget-Friendly"],
+      "coordinates": {
+        "lat": 46.9,
+        "lng": -64.8
+      },
+      "features": [
+        "12 Runs",
+        "Cross-Country Options",
+        "Budget-Friendly"
+      ],
       "vertical_drop": "76m",
       "difficulty": "Beginner",
       "season": "December - March",
@@ -270,15 +581,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "hero-2.jpg",
-      "related_spots": ["cape-enrage", "maritime-trails"]
+      "related_spots": [
+        "cape-enrage",
+        "maritime-trails"
+      ],
+      "description": "Poley Mountain is a premier mixed skiing destination in New Brunswick. With a vertical drop of 76m, it offers 12 runs, cross-country options, budget-friendly against the stunning backdrop of the Appalachian uplands, Bay of Fundy coast, river valleys.\n\nThis area is best suited for beginner skiers who appreciate well-groomed runs and scenic cruising. Snow conditions are generally reliable throughout the core season. Poley Mountain is the kind of place that turns a ski trip into a lifelong obsession.",
+      "getting_there": "From Saint John, the drive is approximately 1-1.5 hours. GPS: 46.9°N, 64.8°W. Winter tires strongly recommended. Airport shuttle available from the nearest regional airport. Check road conditions before heading out in winter weather.",
+      "parking": "Large paved parking lots at the base area — free on weekdays, $10-20 on peak weekends. Overflow parking with shuttle service on busy days. Heated day lodge at the base with lockers, boot room, and washrooms. RV overnight parking available with advance booking.",
+      "best_time": "Season: December - March.  January-February: Core season with the most reliable snow. March: Longer days and warmer temps make for comfortable skiing. Corn snow in the afternoons. April: Closing weekend celebrations. T-shirt skiing and slush bumps. ",
+      "regulations": "Lift tickets or season passes required. Book online for best rates.     Follow the Skier's Responsibility Code at all times.",
+      "terrain": "Vertical drop: 76m. The mountain features a mix of groomed runs, glades, bowls, and alpine terrain. Tree skiing is excellent on storm days.   Aspect: Multiple aspects mean you can find good conditions throughout the day. Base elevation: 300-600m.",
+      "nearby_services": "Ski rental and repair shop at the base lodge. Lessons available — book in advance during peak periods. Nearest town with full services: Saint John (1-1.5 hours). Après-ski pub and restaurant on site.",
+      "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Vacation rentals and chalets in the surrounding area.  ",
+      "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Saint John.  Frostbite is a real risk on cold, windy days — cover exposed skin.  Hydrate and take breaks — altitude and cold mask exertion."
     },
     {
       "name": "Ben Eoin Ski Slope",
       "slug": "ben-eoin",
       "province": "Nova Scotia",
       "type": "Backcountry",
-      "coordinates": {"lat": 45.8, "lng": -60.4},
-      "features": ["Nordic Trails", "Scenic Views", "Community-Run"],
+      "coordinates": {
+        "lat": 45.8,
+        "lng": -60.4
+      },
+      "features": [
+        "Nordic Trails",
+        "Scenic Views",
+        "Community-Run"
+      ],
       "vertical_drop": "200m available",
       "difficulty": "Intermediate",
       "season": "December - March",
@@ -286,15 +616,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "hero-3.jpg",
-      "related_spots": ["cabot-trail", "bras-d-or-lakes"]
+      "related_spots": [
+        "cabot-trail",
+        "bras-d-or-lakes"
+      ],
+      "description": "Ben Eoin Ski Slope is a premier backcountry skiing destination in Nova Scotia. With a vertical drop of 200m available, it offers nordic trails, scenic views, community-run against the stunning backdrop of the Atlantic coastline, Annapolis Valley, Cape Breton Highlands.\n\nThis area is best suited for intermediate skiers who appreciate well-groomed runs and scenic cruising. Snow conditions are generally reliable throughout the core season. Ben Eoin Ski Slope is the kind of place that turns a ski trip into a lifelong obsession.",
+      "getting_there": "From Halifax, the drive is approximately 45 minutes. GPS: 45.8°N, 60.4°W. Winter tires strongly recommended.  Check road conditions before heading out in winter weather.",
+      "parking": "Plowed parking area at the trailhead. Arrive before 9 AM on weekends to guarantee a spot close to the lifts.  RV overnight parking available with advance booking.",
+      "best_time": "Season: December - March.  January-February: Core season with the most reliable snow. March: Spring skiing at its finest — warm sun, soft snow, and après vibes. Some of the best powder days happen in March storms.  Midweek visits offer dramatically shorter lift lines and better parking.",
+      "regulations": "Trail pass required — available at the trailhead or online.  Backcountry users must carry avalanche safety equipment: transceiver, probe, and shovel.  Uphill travel policies vary — check with the resort before skinning up. Follow the Skier's Responsibility Code at all times.",
+      "terrain": "Vertical drop: 200m available. Trail system winds through Atlantic coastline.    Aspect: North-facing slopes hold snow longest. Base elevation: 300-600m.",
+      "nearby_services": "Ski rental and repair shop at the base lodge. Lessons available — book in advance during peak periods. Nearest town with full services: Halifax (45 minutes). Après-ski pub and restaurant on site.",
+      "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Vacation rentals and chalets in the surrounding area. Multi-day packages with lift tickets included offer the best value. Backcountry huts available for multi-day ski touring — reserve through the local alpine club.",
+      "safety": "No patrol — you are responsible for your own safety. Nearest hospital: Halifax. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Dress in layers — temperatures can swing 20°C between the base and summit.  Hydrate and take breaks — altitude and cold mask exertion."
     },
     {
       "name": "Marble Mountain",
       "slug": "marble-mountain",
       "province": "Newfoundland and Labrador",
       "type": "Downhill",
-      "coordinates": {"lat": 48.8, "lng": -57.7},
-      "features": ["30 Runs", "Coastal Views", "Maritime Powder"],
+      "coordinates": {
+        "lat": 48.8,
+        "lng": -57.7
+      },
+      "features": [
+        "30 Runs",
+        "Coastal Views",
+        "Maritime Powder"
+      ],
       "vertical_drop": "520m",
       "difficulty": "All Levels",
       "season": "December - April",
@@ -302,15 +651,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "hero-4.jpg",
-      "related_spots": ["gros-morne", "marble-lake"]
+      "related_spots": [
+        "gros-morne",
+        "marble-lake"
+      ],
+      "description": "Marble Mountain is a premier downhill skiing destination in Newfoundland and Labrador. With a vertical drop of 520m, it offers 30 runs, coastal views, maritime powder against the stunning backdrop of the rugged coastline, fjords, boreal forest, tundra.\n\nThe resort caters to all ability levels with a good mix of beginner, intermediate, and expert terrain. Snow conditions are generally reliable throughout the core season. Marble Mountain is the kind of place that turns a ski trip into a lifelong obsession.",
+      "getting_there": "From St. John's, the drive is approximately 45 minutes. GPS: 48.8°N, 57.7°W. Winter tires strongly recommended. Airport shuttle available from the nearest regional airport. Check road conditions before heading out in winter weather.",
+      "parking": "Large paved parking lots at the base area — free on weekdays, $10-20 on peak weekends. Arrive before 9 AM on weekends to guarantee a spot close to the lifts.  RV overnight parking available with advance booking.",
+      "best_time": "Season: December - April.  January-February: Core season with the most reliable snow. March: Longer days and warmer temps make for comfortable skiing. Corn snow in the afternoons. April: Closing weekend celebrations. T-shirt skiing and slush bumps. ",
+      "regulations": "Lift tickets or season passes required. Book online for best rates.   Respect all signage — closed areas are closed for safety reasons. Poaching closed terrain can result in pass revocation.  Follow the Skier's Responsibility Code at all times.",
+      "terrain": "Vertical drop: 520m. The mountain features a mix of groomed runs, glades, bowls, and alpine terrain. Tree skiing is excellent on storm days.  The terrain park has features for all levels. Aspect: North-facing slopes hold snow longest. Base elevation: 300-600m.",
+      "nearby_services": "Ski rental and repair shop at the base lodge. Lessons available — book in advance during peak periods. Nearest town with full services: St. John's (45 minutes). Cafeteria-style food service at the day lodge.",
+      "accommodation": "Base area hotels and condos within walking distance of the lifts. Vacation rentals and chalets in the surrounding area.  ",
+      "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: St. John's.  Dress in layers — temperatures can swing 20°C between the base and summit. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion."
     },
     {
       "name": "Boreal Mountain Resort",
       "slug": "boreal-mountain",
       "province": "Manitoba",
       "type": "Cross-Country",
-      "coordinates": {"lat": 50.8, "lng": -95.5},
-      "features": ["Nordic Trails", "Boreal Forest", "Winterlong Season"],
+      "coordinates": {
+        "lat": 50.8,
+        "lng": -95.5
+      },
+      "features": [
+        "Nordic Trails",
+        "Boreal Forest",
+        "Winterlong Season"
+      ],
       "vertical_drop": "60m",
       "difficulty": "Beginner",
       "season": "November - March",
@@ -318,7 +686,19 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "hero-5.jpg",
-      "related_spots": ["pine-dock-lodge", "whiteshell-provincial-park"]
+      "related_spots": [
+        "pine-dock-lodge",
+        "whiteshell-provincial-park"
+      ],
+      "description": "Boreal Mountain Resort is a premier cross-country skiing destination in Manitoba. With a vertical drop of 60m, it offers nordic trails, boreal forest, winterlong season against the stunning backdrop of the boreal shield, prairie grasslands, Hudson Bay lowlands.\n\nThis area is best suited for beginner skiers who appreciate well-groomed runs and scenic cruising. Snow conditions are generally reliable throughout the core season. Boreal Mountain Resort is the kind of place that turns a ski trip into a lifelong obsession.",
+      "getting_there": "From Thompson, the drive is approximately 2-3 hours. GPS: 50.8°N, 95.5°W. Winter tires strongly recommended.  Check road conditions before heading out in winter weather.",
+      "parking": "Plowed parking area at the trailhead. Arrive before 9 AM on weekends to guarantee a spot close to the lifts.  RV overnight parking available with advance booking.",
+      "best_time": "Season: November - March.  February: Peak conditions — deepest snowpack, coldest temps, best powder. March: Longer days and warmer temps make for comfortable skiing. Corn snow in the afternoons. April: Closing weekend celebrations. T-shirt skiing and slush bumps. Midweek visits offer dramatically shorter lift lines and better parking.",
+      "regulations": "Trail pass required — available at the trailhead or online.    Uphill travel policies vary — check with the resort before skinning up. Follow the Skier's Responsibility Code at all times.",
+      "terrain": "Vertical drop: 60m. Trail system winds through boreal shield.    Aspect: Multiple aspects mean you can find good conditions throughout the day. Base elevation: 300-600m.",
+      "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Lessons available — book in advance during peak periods. Nearest town with full services: Thompson (2-3 hours). Cafeteria-style food service at the day lodge.",
+      "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Vacation rentals and chalets in the surrounding area.  ",
+      "safety": "No patrol — you are responsible for your own safety. Nearest hospital: Thompson.  Dress in layers — temperatures can swing 20°C between the base and summit. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion."
     }
   ]
 }

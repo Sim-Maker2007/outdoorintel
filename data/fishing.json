@@ -4,508 +4,1247 @@
       "name": "Lake Superior",
       "slug": "lake-superior",
       "province": "Ontario",
-      "coordinates": {"lat": 47.7, "lng": -87.5},
+      "coordinates": {
+        "lat": 47.7,
+        "lng": -87.5
+      },
       "depth_max": "406m",
-      "primary_species": ["Lake Trout", "Coho Salmon", "Steelhead"],
+      "primary_species": [
+        "Lake Trout",
+        "Coho Salmon",
+        "Steelhead"
+      ],
       "seasonal_tips": "Spring: Shore fishing for Steelhead in tributaries. Summer: Downrigging for Lake Trout in 100ft+. Fall: Salmon runs in river mouths.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-1.jpg",
-      "related_spots": ["lake-huron", "nipigon-river"]
+      "related_spots": [
+        "lake-huron",
+        "nipigon-river"
+      ],
+      "description": "Lake Superior is one of Ontario's premier fishing destinations, nestled within the Canadian Shield, boreal forest, Great Lakes shoreline. Known for its exceptional Lake Trout, Coho Salmon, Steelhead populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 406m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Lake Trout, Coho Salmon, Steelhead. The surrounding Canadian Shield provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Lake Superior delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Ottawa, head east — the drive takes approximately 1-1.5 hours. GPS coordinates: 47.7°N, 87.5°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service is generally available until the last 15 minutes of the drive.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Day-use parking fee of $5-10 applies during peak season (May-September). Shore fishing access is available along the eastern bank. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Lake Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fall colours make this an especially scenic time to visit.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Ontario fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current Ontario Fishing Regulations Summary for species-specific size and catch limits — regulations for Lake Trout are strictly enforced. Barbless hooks are mandatory in this zone. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 406m. The lake bottom features a mix of gravel beds, submerged timber, and weed beds that provide excellent habitat structure. The surrounding landscape is Canadian Shield with a mix of open meadow and forested shoreline. Water clarity is excellent — 3-5 metres visibility in summer. Watch for submerged rocks near the northern shore.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in Ottawa — stock up before heading out. Local bait shop within 10 minutes of the lake. Several fishing guides operate in the area — book in advance for peak season.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. The nearest campground has 30+ sites with fire pits and outhouses. For full-service accommodation, Ottawa offers hotels and restaurants.",
+      "safety": "Cell coverage: Basic voice service available. Data is unreliable. Nearest hospital: Ottawa (1-1.5 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Bear country — store food in bear-proof containers. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Lake Huron",
       "slug": "lake-huron",
       "province": "Ontario",
-      "coordinates": {"lat": 45.8, "lng": -83.0},
+      "coordinates": {
+        "lat": 45.8,
+        "lng": -83.0
+      },
       "depth_max": "230m",
-      "primary_species": ["Lake Trout", "Walleye", "Smallmouth Bass"],
+      "primary_species": [
+        "Lake Trout",
+        "Walleye",
+        "Smallmouth Bass"
+      ],
       "seasonal_tips": "Spring: Walleye jigging near drop-offs. Summer: Deep water trolling for Lake Trout. Fall: Shore casting near rocky points.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-2.jpg",
-      "related_spots": ["lake-superior", "georgian-bay"]
+      "related_spots": [
+        "lake-superior",
+        "georgian-bay"
+      ],
+      "description": "Lake Huron is one of Ontario's premier fishing destinations, nestled within the Canadian Shield, boreal forest, Great Lakes shoreline. Known for its exceptional Lake Trout, Walleye, Smallmouth Bass populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 230m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Lake Trout, Walleye, Smallmouth Bass. The surrounding Canadian Shield provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Lake Huron delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Ottawa, head east — the drive takes approximately 1-1.5 hours. GPS coordinates: 45.8°N, 83.0°W. The final stretch is on gravel road — high-clearance vehicle recommended during spring thaw. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Day-use parking fee of $5-10 applies during peak season (May-September). Shore fishing access is available along the eastern bank. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Lake Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fall colours make this an especially scenic time to visit.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Ontario fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops.  Check the current Ontario Fishing Regulations Summary for species-specific size and catch limits — regulations for Lake Trout are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 230m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is Canadian Shield with a mix of open meadow and forested shoreline. Water clarity is excellent — 3-5 metres visibility in summer. The eastern bay is shallow — use caution with motor boats.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in Ottawa — stock up before heading out. Local bait shop within 10 minutes of the lake. Several fishing guides operate in the area — book in advance for peak season.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. Backcountry camping is permitted on Crown land — practice Leave No Trace. Motels and B&Bs available in Ottawa for those preferring indoor comfort.",
+      "safety": "Cell coverage: Spotty — download offline maps before your trip. Nearest hospital: Ottawa (1-1.5 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Bear country — store food in bear-proof containers. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Lake Ontario",
       "slug": "lake-ontario",
       "province": "Ontario",
-      "coordinates": {"lat": 43.9, "lng": -79.2},
+      "coordinates": {
+        "lat": 43.9,
+        "lng": -79.2
+      },
       "depth_max": "802m",
-      "primary_species": ["Lake Trout", "Chinook Salmon", "Brown Trout"],
+      "primary_species": [
+        "Lake Trout",
+        "Chinook Salmon",
+        "Brown Trout"
+      ],
       "seasonal_tips": "Spring: Charter boat fishing for Chinook Salmon. Summer: Trolling off Niagara River mouth. Fall: Shore fishing at creek mouths.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-3.jpg",
-      "related_spots": ["niagara-river", "lake-erie"]
+      "related_spots": [
+        "niagara-river",
+        "lake-erie"
+      ],
+      "description": "Lake Ontario is one of Ontario's premier fishing destinations, nestled within the Canadian Shield, boreal forest, Great Lakes shoreline. Known for its exceptional Lake Trout, Chinook Salmon, Brown Trout populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 802m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Lake Trout, Chinook Salmon, Brown Trout. The surrounding Canadian Shield provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Lake Ontario delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Ottawa, head east — the drive takes approximately 45 minutes. GPS coordinates: 43.9°N, 79.2°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Day-use parking fee of $5-10 applies during peak season (May-September). Shore fishing access is available along the eastern bank. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Lake Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fall colours make this an especially scenic time to visit.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Ontario fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current Ontario Fishing Regulations Summary for species-specific size and catch limits — regulations for Lake Trout are strictly enforced. Barbless hooks are mandatory in this zone. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 802m. The lake bottom features a mix of gravel beds, submerged timber, and weed beds that provide excellent habitat structure. The surrounding landscape is Canadian Shield with a mix of open meadow and forested shoreline. Water clarity is excellent — 3-5 metres visibility in summer. Watch for submerged rocks near the northern shore.",
+      "nearby_services": "Nearest gas station: 15 minutes drive. Groceries and supplies available in Ottawa — stock up before heading out. Bait and tackle available at the general store in the nearest village. Local outfitters can arrange guided trips with advance notice.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. Backcountry camping is permitted on Crown land — practice Leave No Trace. Motels and B&Bs available in Ottawa for those preferring indoor comfort.",
+      "safety": "Cell coverage: Basic voice service available. Data is unreliable. Nearest hospital: Ottawa (45 minutes drive). Always wear a PFD when on the water and file a trip plan with someone at home. Bear country — store food in bear-proof containers. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Lake Erie",
       "slug": "lake-erie",
       "province": "Ontario",
-      "coordinates": {"lat": 42.2, "lng": -81.2},
+      "coordinates": {
+        "lat": 42.2,
+        "lng": -81.2
+      },
       "depth_max": "210m",
-      "primary_species": ["Walleye", "White Bass", "Smallmouth Bass"],
+      "primary_species": [
+        "Walleye",
+        "White Bass",
+        "Smallmouth Bass"
+      ],
       "seasonal_tips": "Spring: Shore jigging for Walleye. Summer: Boat trolling in central basin. Fall: Walleye migration through western basin.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-4.jpg",
-      "related_spots": ["lake-ontario", "sandusky-bay"]
+      "related_spots": [
+        "lake-ontario",
+        "sandusky-bay"
+      ],
+      "description": "Lake Erie is one of Ontario's premier fishing destinations, nestled within the Canadian Shield, boreal forest, Great Lakes shoreline. Known for its exceptional Walleye, White Bass, Smallmouth Bass populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 210m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Walleye, White Bass, Smallmouth Bass. The surrounding Canadian Shield provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Lake Erie delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Ottawa, head east — the drive takes approximately 1.5-2 hours. GPS coordinates: 42.2°N, 81.2°W. The final stretch is on gravel road — high-clearance vehicle recommended during spring thaw. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Shore fishing access is available along the eastern bank. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Walleye. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fall colours make this an especially scenic time to visit.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Ontario fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current Ontario Fishing Regulations Summary for species-specific size and catch limits — regulations for Walleye are strictly enforced. Barbless hooks are mandatory in this zone. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 210m. The lake bottom features a mix of gravel beds, submerged timber, and weed beds that provide excellent habitat structure. The surrounding landscape is Canadian Shield with dense tree cover right to the shoreline. Water clarity is moderate — 1-3 metres visibility depending on season. The eastern bay is shallow — use caution with motor boats.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in Ottawa — stock up before heading out. Bait and tackle available at the general store in the nearest village. Local outfitters can arrange guided trips with advance notice.",
+      "accommodation": "Rustic fishing lodges nearby offer packages including boat rental. The nearest campground has 30+ sites with fire pits and outhouses. For full-service accommodation, Ottawa offers hotels and restaurants.",
+      "safety": "Cell coverage: Basic voice service available. Data is unreliable. Nearest hospital: Ottawa (1.5-2 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Bear country — store food in bear-proof containers. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Muskoka Lakes",
       "slug": "muskoka-lakes",
       "province": "Ontario",
-      "coordinates": {"lat": 45.2, "lng": -79.4},
+      "coordinates": {
+        "lat": 45.2,
+        "lng": -79.4
+      },
       "depth_max": "110m",
-      "primary_species": ["Musky", "Smallmouth Bass", "Lake Trout"],
+      "primary_species": [
+        "Musky",
+        "Smallmouth Bass",
+        "Lake Trout"
+      ],
       "seasonal_tips": "Spring: Throw large lures near downed trees. Summer: Early morning musky fishing. Fall: Shallow water trolling for bass.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-5.jpg",
-      "related_spots": ["lake-joseph", "lake-vernon"]
+      "related_spots": [
+        "lake-joseph",
+        "lake-vernon"
+      ],
+      "description": "Muskoka Lakes is one of Ontario's premier fishing destinations, nestled within the Canadian Shield, boreal forest, Great Lakes shoreline. Known for its exceptional Musky, Smallmouth Bass, Lake Trout populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 110m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Musky, Smallmouth Bass, Lake Trout. The surrounding Canadian Shield provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Muskoka Lakes delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Ottawa, head east — the drive takes approximately 45 minutes. GPS coordinates: 45.2°N, 79.4°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service is generally available until the last 15 minutes of the drive.",
+      "parking": "Gravel pull-off area with space for 8-10 vehicles. Cartop boat launch only — no trailer ramp. Parking is free year-round. Shore fishing access is available along the eastern bank. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Musky. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fall colours make this an especially scenic time to visit.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Ontario fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current Ontario Fishing Regulations Summary for species-specific size and catch limits — regulations for Musky are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 110m. The lake bottom features a mix of gravel beds, submerged timber, and weed beds that provide excellent habitat structure. The surrounding landscape is Canadian Shield with dense tree cover right to the shoreline. Water clarity is excellent — 3-5 metres visibility in summer. The eastern bay is shallow — use caution with motor boats.",
+      "nearby_services": "Nearest gas station: 15 minutes drive. Groceries and supplies available in Ottawa — stock up before heading out. Local bait shop within 10 minutes of the lake. Local outfitters can arrange guided trips with advance notice.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. The nearest campground has 30+ sites with fire pits and outhouses. For full-service accommodation, Ottawa offers hotels and restaurants.",
+      "safety": "Cell coverage: Basic voice service available. Data is unreliable. Nearest hospital: Ottawa (45 minutes drive). Always wear a PFD when on the water and file a trip plan with someone at home. Bear country — store food in bear-proof containers. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Algonquin Park Lakes",
       "slug": "algonquin-park-lakes",
       "province": "Ontario",
-      "coordinates": {"lat": 45.6, "lng": -78.7},
+      "coordinates": {
+        "lat": 45.6,
+        "lng": -78.7
+      },
       "depth_max": "95m",
-      "primary_species": ["Lake Trout", "Smallmouth Bass", "Brook Trout"],
+      "primary_species": [
+        "Lake Trout",
+        "Smallmouth Bass",
+        "Brook Trout"
+      ],
       "seasonal_tips": "Spring: Brook Trout in shallow bays. Summer: Lake Trout in deeper basins. Fall: Canoe-in backcountry lakes.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-6.jpg",
-      "related_spots": ["lake-nipissing", "haliburton-highlands"]
+      "related_spots": [
+        "lake-nipissing",
+        "haliburton-highlands"
+      ],
+      "description": "Algonquin Park Lakes is one of Ontario's premier fishing destinations, nestled within the Canadian Shield, boreal forest, Great Lakes shoreline. Known for its exceptional Lake Trout, Smallmouth Bass, Brook Trout populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 95m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Lake Trout, Smallmouth Bass, Brook Trout. The surrounding Canadian Shield provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Algonquin Park Lakes delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Ottawa, head east — the drive takes approximately 45 minutes. GPS coordinates: 45.6°N, 78.7°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service is generally available until the last 15 minutes of the drive.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Day-use parking fee of $5-10 applies during peak season (May-September). Multiple shore fishing spots are accessible from the parking area. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Lake Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fall colours make this an especially scenic time to visit.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Ontario fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current Ontario Fishing Regulations Summary for species-specific size and catch limits — regulations for Lake Trout are strictly enforced. Barbless hooks are mandatory in this zone. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 95m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is Canadian Shield with a mix of open meadow and forested shoreline. Water clarity is moderate — 1-3 metres visibility depending on season. The eastern bay is shallow — use caution with motor boats.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in Ottawa — stock up before heading out. Local bait shop within 10 minutes of the lake. Local outfitters can arrange guided trips with advance notice.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. The nearest campground has 30+ sites with fire pits and outhouses. Motels and B&Bs available in Ottawa for those preferring indoor comfort.",
+      "safety": "Cell coverage: Basic voice service available. Data is unreliable. Nearest hospital: Ottawa (45 minutes drive). Always wear a PFD when on the water and file a trip plan with someone at home. Bear country — store food in bear-proof containers. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Lake Nipissing",
       "slug": "lake-nipissing",
       "province": "Ontario",
-      "coordinates": {"lat": 46.3, "lng": -79.8},
+      "coordinates": {
+        "lat": 46.3,
+        "lng": -79.8
+      },
       "depth_max": "120m",
-      "primary_species": ["Walleye", "Lake Trout", "Smallmouth Bass"],
+      "primary_species": [
+        "Walleye",
+        "Lake Trout",
+        "Smallmouth Bass"
+      ],
       "seasonal_tips": "Spring: Ice-out walleye fishing. Summer: Deep water trolling. Fall: Shore casting near river inlets.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-7.jpg",
-      "related_spots": ["french-river", "lake-temagami"]
+      "related_spots": [
+        "french-river",
+        "lake-temagami"
+      ],
+      "description": "Lake Nipissing is one of Ontario's premier fishing destinations, nestled within the Canadian Shield, boreal forest, Great Lakes shoreline. Known for its exceptional Walleye, Lake Trout, Smallmouth Bass populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 120m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Walleye, Lake Trout, Smallmouth Bass. The surrounding Canadian Shield provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Lake Nipissing delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Ottawa, head east — the drive takes approximately 1.5-2 hours. GPS coordinates: 46.3°N, 79.8°W. The final stretch is on gravel road — high-clearance vehicle recommended during spring thaw. Cell service is generally available until the last 15 minutes of the drive.",
+      "parking": "Gravel pull-off area with space for 8-10 vehicles. Cartop boat launch only — no trailer ramp. Day-use parking fee of $5-10 applies during peak season (May-September). Shore fishing access is available along the eastern bank. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Walleye. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fall colours make this an especially scenic time to visit.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Ontario fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current Ontario Fishing Regulations Summary for species-specific size and catch limits — regulations for Walleye are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 120m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is Canadian Shield with dense tree cover right to the shoreline. Water clarity is excellent — 3-5 metres visibility in summer. Watch for submerged rocks near the northern shore.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in Ottawa — stock up before heading out. Bait and tackle available at the general store in the nearest village. Local outfitters can arrange guided trips with advance notice.",
+      "accommodation": "Rustic fishing lodges nearby offer packages including boat rental. Backcountry camping is permitted on Crown land — practice Leave No Trace. Motels and B&Bs available in Ottawa for those preferring indoor comfort.",
+      "safety": "Cell coverage: Basic voice service available. Data is unreliable. Nearest hospital: Ottawa (1.5-2 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Bear country — store food in bear-proof containers. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Lake Temagami",
       "slug": "lake-temagami",
       "province": "Ontario",
-      "coordinates": {"lat": 46.9, "lng": -79.3},
+      "coordinates": {
+        "lat": 46.9,
+        "lng": -79.3
+      },
       "depth_max": "165m",
-      "primary_species": ["Lake Trout", "Brook Trout", "Walleye"],
+      "primary_species": [
+        "Lake Trout",
+        "Brook Trout",
+        "Walleye"
+      ],
       "seasonal_tips": "Spring: Shore spawning trout fishing. Summer: Deep basin trolling. Fall: Backcountry lake access for lake trout.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-8.jpg",
-      "related_spots": ["lake-nipissing", "nipigon-river"]
+      "related_spots": [
+        "lake-nipissing",
+        "nipigon-river"
+      ],
+      "description": "Lake Temagami is one of Ontario's premier fishing destinations, nestled within the Canadian Shield, boreal forest, Great Lakes shoreline. Known for its exceptional Lake Trout, Brook Trout, Walleye populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 165m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Lake Trout, Brook Trout, Walleye. The surrounding Canadian Shield provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Lake Temagami delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Ottawa, head east — the drive takes approximately 45 minutes. GPS coordinates: 46.9°N, 79.3°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service is generally available until the last 15 minutes of the drive.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Multiple shore fishing spots are accessible from the parking area. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Lake Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fall colours make this an especially scenic time to visit.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Ontario fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops.  Check the current Ontario Fishing Regulations Summary for species-specific size and catch limits — regulations for Lake Trout are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 165m. The lake bottom features a mix of gravel beds, submerged timber, and weed beds that provide excellent habitat structure. The surrounding landscape is Canadian Shield with dense tree cover right to the shoreline. Water clarity is excellent — 3-5 metres visibility in summer. Watch for submerged rocks near the northern shore.",
+      "nearby_services": "Nearest gas station: 15 minutes drive. Groceries and supplies available in Ottawa — stock up before heading out. Local bait shop within 10 minutes of the lake. Local outfitters can arrange guided trips with advance notice.",
+      "accommodation": "Rustic fishing lodges nearby offer packages including boat rental. The nearest campground has 30+ sites with fire pits and outhouses. Motels and B&Bs available in Ottawa for those preferring indoor comfort.",
+      "safety": "Cell coverage: Basic voice service available. Data is unreliable. Nearest hospital: Ottawa (45 minutes drive). Always wear a PFD when on the water and file a trip plan with someone at home. Bear country — store food in bear-proof containers. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Lake St-Jean",
       "slug": "lake-st-jean",
       "province": "Quebec",
-      "coordinates": {"lat": 48.7, "lng": -72.5},
+      "coordinates": {
+        "lat": 48.7,
+        "lng": -72.5
+      },
       "depth_max": "102m",
-      "primary_species": ["Ouananiche", "Brook Trout", "Walleye"],
+      "primary_species": [
+        "Ouananiche",
+        "Brook Trout",
+        "Walleye"
+      ],
       "seasonal_tips": "Spring: Ouananiche spawning runs in Peribonka River. Summer: Trolling and jigging. Fall: Brook trout in inlets.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-9.jpg",
-      "related_spots": ["peribonka-river", "mistassini-lake"]
+      "related_spots": [
+        "peribonka-river",
+        "mistassini-lake"
+      ],
+      "description": "Lake St-Jean is one of Quebec's premier fishing destinations, nestled within the Laurentian Mountains, St. Lawrence Valley, boreal shield. Known for its exceptional Ouananiche, Brook Trout, Walleye populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 102m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Ouananiche, Brook Trout, Walleye. The surrounding Laurentian Mountains provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Lake St-Jean delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Montreal, head north — the drive takes approximately 1.5-2 hours. GPS coordinates: 48.7°N, 72.5°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Multiple shore fishing spots are accessible from the parking area. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Ouananiche. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fall colours make this an especially scenic time to visit.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Quebec fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current Quebec Fishing Regulations Summary for species-specific size and catch limits — regulations for Ouananiche are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 102m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is Laurentian Mountains with a mix of open meadow and forested shoreline. Water clarity is moderate — 1-3 metres visibility depending on season. Watch for submerged rocks near the northern shore.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in Montreal — stock up before heading out. Local bait shop within 10 minutes of the lake. Local outfitters can arrange guided trips with advance notice.",
+      "accommodation": "Rustic fishing lodges nearby offer packages including boat rental. The nearest campground has 30+ sites with fire pits and outhouses. Motels and B&Bs available in Montreal for those preferring indoor comfort.",
+      "safety": "Cell coverage: Spotty — download offline maps before your trip. Nearest hospital: Montreal (1.5-2 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Wildlife encounters are rare but carry bear spray as a precaution. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Lac-Megantic",
       "slug": "lac-megantic",
       "province": "Quebec",
-      "coordinates": {"lat": 45.6, "lng": -71.0},
+      "coordinates": {
+        "lat": 45.6,
+        "lng": -71.0
+      },
       "depth_max": "105m",
-      "primary_species": ["Lake Trout", "Walleye", "Smallmouth Bass"],
+      "primary_species": [
+        "Lake Trout",
+        "Walleye",
+        "Smallmouth Bass"
+      ],
       "seasonal_tips": "Spring: Shore fishing for walleye. Summer: Downrigging for lakers in deep water. Fall: Bass fishing near rocky shorelines.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-10.jpg",
-      "related_spots": ["lac-beaumont", "fleuve-saint-laurent"]
+      "related_spots": [
+        "lac-beaumont",
+        "fleuve-saint-laurent"
+      ],
+      "description": "Lac-Megantic is one of Quebec's premier fishing destinations, nestled within the Laurentian Mountains, St. Lawrence Valley, boreal shield. Known for its exceptional Lake Trout, Walleye, Smallmouth Bass populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 105m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Lake Trout, Walleye, Smallmouth Bass. The surrounding Laurentian Mountains provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Lac-Megantic delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Montreal, head east — the drive takes approximately 45 minutes. GPS coordinates: 45.6°N, 71.0°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Day-use parking fee of $5-10 applies during peak season (May-September). Shore fishing access is available along the eastern bank. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Lake Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fall colours make this an especially scenic time to visit.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Quebec fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops.  Check the current Quebec Fishing Regulations Summary for species-specific size and catch limits — regulations for Lake Trout are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 105m. The lake bottom features a mix of gravel beds, submerged timber, and weed beds that provide excellent habitat structure. The surrounding landscape is Laurentian Mountains with a mix of open meadow and forested shoreline. Water clarity is excellent — 3-5 metres visibility in summer. The eastern bay is shallow — use caution with motor boats.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in Montreal — stock up before heading out. Bait and tackle available at the general store in the nearest village. Several fishing guides operate in the area — book in advance for peak season.",
+      "accommodation": "Rustic fishing lodges nearby offer packages including boat rental. The nearest campground has 30+ sites with fire pits and outhouses. For full-service accommodation, Montreal offers hotels and restaurants.",
+      "safety": "Cell coverage: Spotty — download offline maps before your trip. Nearest hospital: Montreal (45 minutes drive). Always wear a PFD when on the water and file a trip plan with someone at home. Wildlife encounters are rare but carry bear spray as a precaution. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Lac-Tremblant",
       "slug": "lac-tremblant",
       "province": "Quebec",
-      "coordinates": {"lat": 46.2, "lng": -74.7},
+      "coordinates": {
+        "lat": 46.2,
+        "lng": -74.7
+      },
       "depth_max": "180m",
-      "primary_species": ["Lake Trout", "Brook Trout", "Smallmouth Bass"],
+      "primary_species": [
+        "Lake Trout",
+        "Brook Trout",
+        "Smallmouth Bass"
+      ],
       "seasonal_tips": "Spring: Brook trout near tributaries. Summer: Deep water jigging for lakers. Fall: Shore casting for smallmouth.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-11.jpg",
-      "related_spots": ["diable-river", "lac-des-sables"]
+      "related_spots": [
+        "diable-river",
+        "lac-des-sables"
+      ],
+      "description": "Lac-Tremblant is one of Quebec's premier fishing destinations, nestled within the Laurentian Mountains, St. Lawrence Valley, boreal shield. Known for its exceptional Lake Trout, Brook Trout, Smallmouth Bass populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 180m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Lake Trout, Brook Trout, Smallmouth Bass. The surrounding Laurentian Mountains provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Lac-Tremblant delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Montreal, head east — the drive takes approximately 1.5-2 hours. GPS coordinates: 46.2°N, 74.7°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Gravel pull-off area with space for 8-10 vehicles. Cartop boat launch only — no trailer ramp. Day-use parking fee of $5-10 applies during peak season (May-September). Shore fishing access is available along the eastern bank. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Lake Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fall colours make this an especially scenic time to visit.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Quebec fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops.  Check the current Quebec Fishing Regulations Summary for species-specific size and catch limits — regulations for Lake Trout are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 180m. The lake bottom features a mix of gravel beds, submerged timber, and weed beds that provide excellent habitat structure. The surrounding landscape is Laurentian Mountains with a mix of open meadow and forested shoreline. Water clarity is moderate — 1-3 metres visibility depending on season. Watch for submerged rocks near the northern shore.",
+      "nearby_services": "Nearest gas station: 15 minutes drive. Groceries and supplies available in Montreal — stock up before heading out. Bait and tackle available at the general store in the nearest village. Local outfitters can arrange guided trips with advance notice.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. The nearest campground has 30+ sites with fire pits and outhouses. For full-service accommodation, Montreal offers hotels and restaurants.",
+      "safety": "Cell coverage: Spotty — download offline maps before your trip. Nearest hospital: Montreal (1.5-2 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Wildlife encounters are rare but carry bear spray as a precaution. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Lac-Masson",
       "slug": "lac-masson",
       "province": "Quebec",
-      "coordinates": {"lat": 46.0, "lng": -74.5},
+      "coordinates": {
+        "lat": 46.0,
+        "lng": -74.5
+      },
       "depth_max": "60m",
-      "primary_species": ["Smallmouth Bass", "Walleye", "Pike"],
+      "primary_species": [
+        "Smallmouth Bass",
+        "Walleye",
+        "Pike"
+      ],
       "seasonal_tips": "Spring: Pike spawning in shallows. Summer: Topwater bass fishing in early morning. Fall: Jigging walleye.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-12.jpg",
-      "related_spots": ["lac-tremblant", "rouge-river"]
+      "related_spots": [
+        "lac-tremblant",
+        "rouge-river"
+      ],
+      "description": "Lac-Masson is one of Quebec's premier fishing destinations, nestled within the Laurentian Mountains, St. Lawrence Valley, boreal shield. Known for its exceptional Smallmouth Bass, Walleye, Pike populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 60m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Smallmouth Bass, Walleye, Pike. The surrounding Laurentian Mountains provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Lac-Masson delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Montreal, head east — the drive takes approximately 1.5-2 hours. GPS coordinates: 46.0°N, 74.5°W. The final stretch is on gravel road — high-clearance vehicle recommended during spring thaw. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Day-use parking fee of $5-10 applies during peak season (May-September). Multiple shore fishing spots are accessible from the parking area. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Smallmouth Bass. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fall colours make this an especially scenic time to visit.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Quebec fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current Quebec Fishing Regulations Summary for species-specific size and catch limits — regulations for Smallmouth Bass are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 60m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is Laurentian Mountains with a mix of open meadow and forested shoreline. Water clarity is excellent — 3-5 metres visibility in summer. Watch for submerged rocks near the northern shore.",
+      "nearby_services": "Nearest gas station: 15 minutes drive. Groceries and supplies available in Montreal — stock up before heading out. Local bait shop within 10 minutes of the lake. Several fishing guides operate in the area — book in advance for peak season.",
+      "accommodation": "Rustic fishing lodges nearby offer packages including boat rental. Backcountry camping is permitted on Crown land — practice Leave No Trace. Motels and B&Bs available in Montreal for those preferring indoor comfort.",
+      "safety": "Cell coverage: Spotty — download offline maps before your trip. Nearest hospital: Montreal (1.5-2 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Wildlife encounters are rare but carry bear spray as a precaution. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Fleuve Saint-Laurent",
       "slug": "fleuve-saint-laurent",
       "province": "Quebec",
-      "coordinates": {"lat": 46.8, "lng": -71.2},
+      "coordinates": {
+        "lat": 46.8,
+        "lng": -71.2
+      },
       "depth_max": "300m",
-      "primary_species": ["Largemouth Bass", "Smallmouth Bass", "Walleye"],
+      "primary_species": [
+        "Largemouth Bass",
+        "Smallmouth Bass",
+        "Walleye"
+      ],
       "seasonal_tips": "Spring: Bass spawning near grass beds. Summer: Weed line fishing. Fall: Channel dredging for walleye.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-13.jpg",
-      "related_spots": ["lac-st-pierre", "montreal-harbour"]
+      "related_spots": [
+        "lac-st-pierre",
+        "montreal-harbour"
+      ],
+      "description": "Fleuve Saint-Laurent is one of Quebec's premier fishing destinations, nestled within the Laurentian Mountains, St. Lawrence Valley, boreal shield. Known for its exceptional Largemouth Bass, Smallmouth Bass, Walleye populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 300m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Largemouth Bass, Smallmouth Bass, Walleye. The surrounding Laurentian Mountains provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Fleuve Saint-Laurent delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Montreal, head east — the drive takes approximately 1.5-2 hours. GPS coordinates: 46.8°N, 71.2°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Multiple shore fishing spots are accessible from the parking area. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Largemouth Bass. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fall colours make this an especially scenic time to visit.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Quebec fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops.  Check the current Quebec Fishing Regulations Summary for species-specific size and catch limits — regulations for Largemouth Bass are strictly enforced. Barbless hooks are mandatory in this zone. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 300m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is Laurentian Mountains with dense tree cover right to the shoreline. Water clarity is excellent — 3-5 metres visibility in summer. The eastern bay is shallow — use caution with motor boats.",
+      "nearby_services": "Nearest gas station: 15 minutes drive. Groceries and supplies available in Montreal — stock up before heading out. Bait and tackle available at the general store in the nearest village. Local outfitters can arrange guided trips with advance notice.",
+      "accommodation": "Rustic fishing lodges nearby offer packages including boat rental. Backcountry camping is permitted on Crown land — practice Leave No Trace. For full-service accommodation, Montreal offers hotels and restaurants.",
+      "safety": "Cell coverage: Spotty — download offline maps before your trip. Nearest hospital: Montreal (1.5-2 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Wildlife encounters are rare but carry bear spray as a precaution. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Lac-des-Deux-Montagnes",
       "slug": "lac-des-deux-montagnes",
       "province": "Quebec",
-      "coordinates": {"lat": 45.5, "lng": -73.9},
+      "coordinates": {
+        "lat": 45.5,
+        "lng": -73.9
+      },
       "depth_max": "45m",
-      "primary_species": ["Largemouth Bass", "Pike", "Walleye"],
+      "primary_species": [
+        "Largemouth Bass",
+        "Pike",
+        "Walleye"
+      ],
       "seasonal_tips": "Spring: Pike and bass spawning in marshes. Summer: Weed fishing for largemouths. Fall: Walleye near channel drop-offs.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-14.jpg",
-      "related_spots": ["fleuve-saint-laurent", "carillon-locks"]
+      "related_spots": [
+        "fleuve-saint-laurent",
+        "carillon-locks"
+      ],
+      "description": "Lac-des-Deux-Montagnes is one of Quebec's premier fishing destinations, nestled within the Laurentian Mountains, St. Lawrence Valley, boreal shield. Known for its exceptional Largemouth Bass, Pike, Walleye populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 45m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Largemouth Bass, Pike, Walleye. The surrounding Laurentian Mountains provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Lac-des-Deux-Montagnes delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Montreal, head east — the drive takes approximately 45 minutes. GPS coordinates: 45.5°N, 73.9°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Multiple shore fishing spots are accessible from the parking area. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Largemouth Bass. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fall colours make this an especially scenic time to visit.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Quebec fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current Quebec Fishing Regulations Summary for species-specific size and catch limits — regulations for Largemouth Bass are strictly enforced. Barbless hooks are mandatory in this zone. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 45m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is Laurentian Mountains with a mix of open meadow and forested shoreline. Water clarity is moderate — 1-3 metres visibility depending on season. Watch for submerged rocks near the northern shore.",
+      "nearby_services": "Nearest gas station: 15 minutes drive. Groceries and supplies available in Montreal — stock up before heading out. Local bait shop within 10 minutes of the lake. Several fishing guides operate in the area — book in advance for peak season.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. Backcountry camping is permitted on Crown land — practice Leave No Trace. Motels and B&Bs available in Montreal for those preferring indoor comfort.",
+      "safety": "Cell coverage: Spotty — download offline maps before your trip. Nearest hospital: Montreal (45 minutes drive). Always wear a PFD when on the water and file a trip plan with someone at home. Wildlife encounters are rare but carry bear spray as a precaution. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Baskatong Reservoir",
       "slug": "baskatong-reservoir",
       "province": "Quebec",
-      "coordinates": {"lat": 46.7, "lng": -74.9},
+      "coordinates": {
+        "lat": 46.7,
+        "lng": -74.9
+      },
       "depth_max": "120m",
-      "primary_species": ["Lake Trout", "Walleye", "Pike"],
+      "primary_species": [
+        "Lake Trout",
+        "Walleye",
+        "Pike"
+      ],
       "seasonal_tips": "Spring: Walleye jigs near dam. Summer: Lake trout trolling in deep basins. Fall: Pike casting in bays.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-15.jpg",
-      "related_spots": ["gatineau-river", "low-water-lake"]
+      "related_spots": [
+        "gatineau-river",
+        "low-water-lake"
+      ],
+      "description": "Baskatong Reservoir is one of Quebec's premier fishing destinations, nestled within the Laurentian Mountains, St. Lawrence Valley, boreal shield. Known for its exceptional Lake Trout, Walleye, Pike populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 120m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Lake Trout, Walleye, Pike. The surrounding Laurentian Mountains provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Baskatong Reservoir delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Montreal, head east — the drive takes approximately 2-3 hours. GPS coordinates: 46.7°N, 74.9°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Gravel pull-off area with space for 8-10 vehicles. Cartop boat launch only — no trailer ramp. Parking is free year-round. Multiple shore fishing spots are accessible from the parking area. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Lake Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fall colours make this an especially scenic time to visit.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Quebec fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current Quebec Fishing Regulations Summary for species-specific size and catch limits — regulations for Lake Trout are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 120m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is Laurentian Mountains with dense tree cover right to the shoreline. Water clarity is moderate — 1-3 metres visibility depending on season. Watch for submerged rocks near the northern shore.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in Montreal — stock up before heading out. Bait and tackle available at the general store in the nearest village. Several fishing guides operate in the area — book in advance for peak season.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. Backcountry camping is permitted on Crown land — practice Leave No Trace. Motels and B&Bs available in Montreal for those preferring indoor comfort.",
+      "safety": "Cell coverage: Spotty — download offline maps before your trip. Nearest hospital: Montreal (2-3 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Wildlife encounters are rare but carry bear spray as a precaution. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Kamloops Lake",
       "slug": "kamloops-lake",
       "province": "British Columbia",
-      "coordinates": {"lat": 50.0, "lng": -120.2},
+      "coordinates": {
+        "lat": 50.0,
+        "lng": -120.2
+      },
       "depth_max": "300m",
-      "primary_species": ["Kamloops Trout", "Lake Trout", "Kokanee"],
+      "primary_species": [
+        "Kamloops Trout",
+        "Lake Trout",
+        "Kokanee"
+      ],
       "seasonal_tips": "Spring: Shore casting for trout. Summer: Trolling Apex lures. Fall: Kokanee spawning runs.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-16.jpg",
-      "related_spots": ["shuswap-lake", "paul-lake"]
+      "related_spots": [
+        "shuswap-lake",
+        "paul-lake"
+      ],
+      "description": "Kamloops Lake is one of British Columbia's premier fishing destinations, nestled within the coastal rainforest, Rocky Mountains, interior plateau. Known for its exceptional Kamloops Trout, Lake Trout, Kokanee populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 300m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Kamloops Trout, Lake Trout, Kokanee. The surrounding coastal rainforest provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Kamloops Lake delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Vancouver, head north — the drive takes approximately 1-1.5 hours. GPS coordinates: 50.0°N, 120.2°W. The final stretch is on gravel road — high-clearance vehicle recommended during spring thaw. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Shore fishing access is available along the eastern bank. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Kamloops Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fewer crowds and excellent catch rates.\nWinter: Limited winter access. Check road conditions before heading out.",
+      "regulations": "A valid British Columbia fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops.  Check the current British Columbia Fishing Regulations Summary for species-specific size and catch limits — regulations for Kamloops Trout are strictly enforced. Barbless hooks are mandatory in this zone. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 300m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is coastal rainforest with a mix of open meadow and forested shoreline. Water clarity is moderate — 1-3 metres visibility depending on season. Watch for submerged rocks near the northern shore.",
+      "nearby_services": "Nearest gas station: 15 minutes drive. Groceries and supplies available in Vancouver — stock up before heading out. Local bait shop within 10 minutes of the lake. Local outfitters can arrange guided trips with advance notice.",
+      "accommodation": "Rustic fishing lodges nearby offer packages including boat rental. Backcountry camping is permitted on Crown land — practice Leave No Trace. Motels and B&Bs available in Vancouver for those preferring indoor comfort.",
+      "safety": "Cell coverage: Basic voice service available. Data is unreliable. Nearest hospital: Vancouver (1-1.5 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Bear country — store food in bear-proof containers. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Shuswap Lake",
       "slug": "shuswap-lake",
       "province": "British Columbia",
-      "coordinates": {"lat": 50.6, "lng": -119.6},
+      "coordinates": {
+        "lat": 50.6,
+        "lng": -119.6
+      },
       "depth_max": "163m",
-      "primary_species": ["Rainbow Trout", "Kokanee", "Lake Trout"],
+      "primary_species": [
+        "Rainbow Trout",
+        "Kokanee",
+        "Lake Trout"
+      ],
       "seasonal_tips": "Spring: Kokanee spawning in tributaries. Summer: Float tube trolling. Fall: Shore fishing at creek mouths.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-17.jpg",
-      "related_spots": ["adams-river", "seymour-river"]
+      "related_spots": [
+        "adams-river",
+        "seymour-river"
+      ],
+      "description": "Shuswap Lake is one of British Columbia's premier fishing destinations, nestled within the coastal rainforest, Rocky Mountains, interior plateau. Known for its exceptional Rainbow Trout, Kokanee, Lake Trout populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 163m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Rainbow Trout, Kokanee, Lake Trout. The surrounding coastal rainforest provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Shuswap Lake delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Kelowna, head north — the drive takes approximately 3-4 hours. GPS coordinates: 50.6°N, 119.6°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Shore fishing access is available along the eastern bank. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Rainbow Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fewer crowds and excellent catch rates.\nWinter: Limited winter access. Check road conditions before heading out.",
+      "regulations": "A valid British Columbia fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current British Columbia Fishing Regulations Summary for species-specific size and catch limits — regulations for Rainbow Trout are strictly enforced. Barbless hooks are mandatory in this zone. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 163m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is coastal rainforest with a mix of open meadow and forested shoreline. Water clarity is excellent — 3-5 metres visibility in summer. Watch for submerged rocks near the northern shore.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in Kelowna — stock up before heading out. Local bait shop within 10 minutes of the lake. Several fishing guides operate in the area — book in advance for peak season.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. Backcountry camping is permitted on Crown land — practice Leave No Trace. Motels and B&Bs available in Kelowna for those preferring indoor comfort.",
+      "safety": "Cell coverage: Basic voice service available. Data is unreliable. Nearest hospital: Kelowna (3-4 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Bear country — store food in bear-proof containers. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Okanagan Lake",
       "slug": "okanagan-lake",
       "province": "British Columbia",
-      "coordinates": {"lat": 49.6, "lng": -119.4},
+      "coordinates": {
+        "lat": 49.6,
+        "lng": -119.4
+      },
       "depth_max": "258m",
-      "primary_species": ["Rainbow Trout", "Kokanee", "Lake Trout"],
+      "primary_species": [
+        "Rainbow Trout",
+        "Kokanee",
+        "Lake Trout"
+      ],
       "seasonal_tips": "Spring: Shore spawning trout. Summer: Downrigging and jigging. Fall: Kokanee in creek mouths.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-18.jpg",
-      "related_spots": ["osoyoos-lake", "vaseux-lake"]
+      "related_spots": [
+        "osoyoos-lake",
+        "vaseux-lake"
+      ],
+      "description": "Okanagan Lake is one of British Columbia's premier fishing destinations, nestled within the coastal rainforest, Rocky Mountains, interior plateau. Known for its exceptional Rainbow Trout, Kokanee, Lake Trout populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 258m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Rainbow Trout, Kokanee, Lake Trout. The surrounding coastal rainforest provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Okanagan Lake delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Vancouver, head north — the drive takes approximately 45 minutes. GPS coordinates: 49.6°N, 119.4°W. The final stretch is on gravel road — high-clearance vehicle recommended during spring thaw. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Multiple shore fishing spots are accessible from the parking area. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Rainbow Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fewer crowds and excellent catch rates.\nWinter: Limited winter access. Check road conditions before heading out.",
+      "regulations": "A valid British Columbia fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current British Columbia Fishing Regulations Summary for species-specific size and catch limits — regulations for Rainbow Trout are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 258m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is coastal rainforest with a mix of open meadow and forested shoreline. Water clarity is moderate — 1-3 metres visibility depending on season. The eastern bay is shallow — use caution with motor boats.",
+      "nearby_services": "Nearest gas station: 15 minutes drive. Groceries and supplies available in Vancouver — stock up before heading out. Bait and tackle available at the general store in the nearest village. Several fishing guides operate in the area — book in advance for peak season.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. Backcountry camping is permitted on Crown land — practice Leave No Trace. For full-service accommodation, Vancouver offers hotels and restaurants.",
+      "safety": "Cell coverage: Basic voice service available. Data is unreliable. Nearest hospital: Vancouver (45 minutes drive). Always wear a PFD when on the water and file a trip plan with someone at home. Bear country — store food in bear-proof containers. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Kootenay Lake",
       "slug": "kootenay-lake",
       "province": "British Columbia",
-      "coordinates": {"lat": 49.5, "lng": -117.2},
+      "coordinates": {
+        "lat": 49.5,
+        "lng": -117.2
+      },
       "depth_max": "280m",
-      "primary_species": ["Lake Trout", "Rainbow Trout", "Bull Trout"],
+      "primary_species": [
+        "Lake Trout",
+        "Rainbow Trout",
+        "Bull Trout"
+      ],
       "seasonal_tips": "Spring: Troll near river inlets. Summer: Jigging deep basins. Fall: Bull trout spawning in cold tributaries.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-19.jpg",
-      "related_spots": ["duncan-river", "columbia-river"]
+      "related_spots": [
+        "duncan-river",
+        "columbia-river"
+      ],
+      "description": "Kootenay Lake is one of British Columbia's premier fishing destinations, nestled within the coastal rainforest, Rocky Mountains, interior plateau. Known for its exceptional Lake Trout, Rainbow Trout, Bull Trout populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 280m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Lake Trout, Rainbow Trout, Bull Trout. The surrounding coastal rainforest provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Kootenay Lake delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Vancouver, head north — the drive takes approximately 45 minutes. GPS coordinates: 49.5°N, 117.2°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service is generally available until the last 15 minutes of the drive.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Day-use parking fee of $5-10 applies during peak season (May-September). Shore fishing access is available along the eastern bank. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Lake Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fewer crowds and excellent catch rates.\nWinter: Limited winter access. Check road conditions before heading out.",
+      "regulations": "A valid British Columbia fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current British Columbia Fishing Regulations Summary for species-specific size and catch limits — regulations for Lake Trout are strictly enforced. Barbless hooks are mandatory in this zone. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 280m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is coastal rainforest with dense tree cover right to the shoreline. Water clarity is excellent — 3-5 metres visibility in summer. The eastern bay is shallow — use caution with motor boats.",
+      "nearby_services": "Nearest gas station: 15 minutes drive. Groceries and supplies available in Vancouver — stock up before heading out. Local bait shop within 10 minutes of the lake. Several fishing guides operate in the area — book in advance for peak season.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. Backcountry camping is permitted on Crown land — practice Leave No Trace. For full-service accommodation, Vancouver offers hotels and restaurants.",
+      "safety": "Cell coverage: Spotty — download offline maps before your trip. Nearest hospital: Vancouver (45 minutes drive). Always wear a PFD when on the water and file a trip plan with someone at home. Bear country — store food in bear-proof containers. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Lake Louise",
       "slug": "lake-louise",
       "province": "Alberta",
-      "coordinates": {"lat": 53.6, "lng": -116.2},
+      "coordinates": {
+        "lat": 53.6,
+        "lng": -116.2
+      },
       "depth_max": "70m",
-      "primary_species": ["Lake Trout", "Brook Trout"],
+      "primary_species": [
+        "Lake Trout",
+        "Brook Trout"
+      ],
       "seasonal_tips": "Spring: Shore casting after ice-out. Summer: Boat trolling at surface and depth. Fall: Shore fishing returning trout.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-20.jpg",
-      "related_spots": ["moraine-lake", "lake-minnewanka"]
+      "related_spots": [
+        "moraine-lake",
+        "lake-minnewanka"
+      ],
+      "description": "Lake Louise is one of Alberta's premier fishing destinations, nestled within the Rocky Mountain foothills, prairies, badlands. Known for its exceptional Lake Trout, Brook Trout populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 70m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Lake Trout, Brook Trout. The surrounding Rocky Mountain foothills provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Lake Louise delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Red Deer, head north — the drive takes approximately 1.5-2.5 hours. GPS coordinates: 53.6°N, 116.2°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service is generally available until the last 15 minutes of the drive.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Multiple shore fishing spots are accessible from the parking area. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Lake Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fewer crowds and excellent catch rates.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Alberta fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops.  Check the current Alberta Fishing Regulations Summary for species-specific size and catch limits — regulations for Lake Trout are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 70m. The lake bottom features a mix of gravel beds, submerged timber, and weed beds that provide excellent habitat structure. The surrounding landscape is Rocky Mountain foothills with a mix of open meadow and forested shoreline. Water clarity is excellent — 3-5 metres visibility in summer. The eastern bay is shallow — use caution with motor boats.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in Red Deer — stock up before heading out. Bait and tackle available at the general store in the nearest village. Local outfitters can arrange guided trips with advance notice.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. Backcountry camping is permitted on Crown land — practice Leave No Trace. For full-service accommodation, Red Deer offers hotels and restaurants.",
+      "safety": "Cell coverage: Spotty — download offline maps before your trip. Nearest hospital: Red Deer (1.5-2.5 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Bear country — store food in bear-proof containers. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Lake Minnewanka",
       "slug": "lake-minnewanka",
       "province": "Alberta",
-      "coordinates": {"lat": 51.4, "lng": -115.5},
+      "coordinates": {
+        "lat": 51.4,
+        "lng": -115.5
+      },
       "depth_max": "143m",
-      "primary_species": ["Lake Trout", "Rainbow Trout", "Whitefish"],
+      "primary_species": [
+        "Lake Trout",
+        "Rainbow Trout",
+        "Whitefish"
+      ],
       "seasonal_tips": "Spring: Shore and boat trolling. Summer: Deep water downrigging. Fall: Shallow water casting.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-21.jpg",
-      "related_spots": ["johnson-lake", "ghost-lake"]
+      "related_spots": [
+        "johnson-lake",
+        "ghost-lake"
+      ],
+      "description": "Lake Minnewanka is one of Alberta's premier fishing destinations, nestled within the Rocky Mountain foothills, prairies, badlands. Known for its exceptional Lake Trout, Rainbow Trout, Whitefish populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 143m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Lake Trout, Rainbow Trout, Whitefish. The surrounding Rocky Mountain foothills provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Lake Minnewanka delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Red Deer, head north — the drive takes approximately 1.5-2.5 hours. GPS coordinates: 51.4°N, 115.5°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Day-use parking fee of $5-10 applies during peak season (May-September). Shore fishing access is available along the eastern bank. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Lake Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fewer crowds and excellent catch rates.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Alberta fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current Alberta Fishing Regulations Summary for species-specific size and catch limits — regulations for Lake Trout are strictly enforced. Barbless hooks are mandatory in this zone. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 143m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is Rocky Mountain foothills with dense tree cover right to the shoreline. Water clarity is moderate — 1-3 metres visibility depending on season. The eastern bay is shallow — use caution with motor boats.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in Red Deer — stock up before heading out. Bait and tackle available at the general store in the nearest village. Several fishing guides operate in the area — book in advance for peak season.",
+      "accommodation": "Rustic fishing lodges nearby offer packages including boat rental. Backcountry camping is permitted on Crown land — practice Leave No Trace. Motels and B&Bs available in Red Deer for those preferring indoor comfort.",
+      "safety": "Cell coverage: Basic voice service available. Data is unreliable. Nearest hospital: Red Deer (1.5-2.5 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Bear country — store food in bear-proof containers. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Athabasca Lake",
       "slug": "athabasca-lake",
       "province": "Alberta",
-      "coordinates": {"lat": 57.8, "lng": -107.0},
+      "coordinates": {
+        "lat": 57.8,
+        "lng": -107.0
+      },
       "depth_max": "201m",
-      "primary_species": ["Lake Trout", "Whitefish", "Pike"],
+      "primary_species": [
+        "Lake Trout",
+        "Whitefish",
+        "Pike"
+      ],
       "seasonal_tips": "Spring: Ice-out walleye and pike in shallows. Summer: Deep lake trout trolling. Fall: Shore pike casting.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-22.jpg",
-      "related_spots": ["slave-river", "lac-la-biche"]
+      "related_spots": [
+        "slave-river",
+        "lac-la-biche"
+      ],
+      "description": "Athabasca Lake is one of Alberta's premier fishing destinations, nestled within the Rocky Mountain foothills, prairies, badlands. Known for its exceptional Lake Trout, Whitefish, Pike populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 201m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Lake Trout, Whitefish, Pike. The surrounding Rocky Mountain foothills provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Athabasca Lake delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Banff, head north — the drive takes approximately 5-6 hours. GPS coordinates: 57.8°N, 107.0°W. The final stretch is on gravel road — high-clearance vehicle recommended during spring thaw. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Day-use parking fee of $5-10 applies during peak season (May-September). Multiple shore fishing spots are accessible from the parking area. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Lake Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fewer crowds and excellent catch rates.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Alberta fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current Alberta Fishing Regulations Summary for species-specific size and catch limits — regulations for Lake Trout are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 201m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is Rocky Mountain foothills with dense tree cover right to the shoreline. Water clarity is excellent — 3-5 metres visibility in summer. The eastern bay is shallow — use caution with motor boats.",
+      "nearby_services": "Nearest gas station: 15 minutes drive. Groceries and supplies available in Banff — stock up before heading out. Local bait shop within 10 minutes of the lake. Local outfitters can arrange guided trips with advance notice.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. The nearest campground has 30+ sites with fire pits and outhouses. Motels and B&Bs available in Banff for those preferring indoor comfort.",
+      "safety": "Cell coverage: Basic voice service available. Data is unreliable. Nearest hospital: Banff (5-6 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Bear country — store food in bear-proof containers. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Cedar Lake",
       "slug": "cedar-lake",
       "province": "Manitoba",
-      "coordinates": {"lat": 55.2, "lng": -99.3},
+      "coordinates": {
+        "lat": 55.2,
+        "lng": -99.3
+      },
       "depth_max": "80m",
-      "primary_species": ["Pike", "Walleye", "Lake Trout"],
+      "primary_species": [
+        "Pike",
+        "Walleye",
+        "Lake Trout"
+      ],
       "seasonal_tips": "Spring: Pike spawning in marshes. Summer: Walleye jigging. Fall: Shore casting for pike.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-23.jpg",
-      "related_spots": ["nelson-river", "split-lake"]
+      "related_spots": [
+        "nelson-river",
+        "split-lake"
+      ],
+      "description": "Cedar Lake is one of Manitoba's premier fishing destinations, nestled within the boreal shield, prairie grasslands, Hudson Bay lowlands. Known for its exceptional Pike, Walleye, Lake Trout populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 80m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Pike, Walleye, Lake Trout. The surrounding boreal shield provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Cedar Lake delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Churchill, head north — the drive takes approximately 5-6 hours. GPS coordinates: 55.2°N, 99.3°W. The final stretch is on gravel road — high-clearance vehicle recommended during spring thaw. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Multiple shore fishing spots are accessible from the parking area. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Pike. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fewer crowds and excellent catch rates.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Manitoba fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current Manitoba Fishing Regulations Summary for species-specific size and catch limits — regulations for Pike are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 80m. The lake bottom features a mix of gravel beds, submerged timber, and weed beds that provide excellent habitat structure. The surrounding landscape is boreal shield with a mix of open meadow and forested shoreline. Water clarity is excellent — 3-5 metres visibility in summer. The eastern bay is shallow — use caution with motor boats.",
+      "nearby_services": "Nearest gas station: 15 minutes drive. Groceries and supplies available in Churchill — stock up before heading out. Bait and tackle available at the general store in the nearest village. Local outfitters can arrange guided trips with advance notice.",
+      "accommodation": "Rustic fishing lodges nearby offer packages including boat rental. Backcountry camping is permitted on Crown land — practice Leave No Trace. Motels and B&Bs available in Churchill for those preferring indoor comfort.",
+      "safety": "Cell coverage: Spotty — download offline maps before your trip. Nearest hospital: Churchill (5-6 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Bear country — store food in bear-proof containers. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Winnipeg Lake",
       "slug": "winnipeg-lake",
       "province": "Manitoba",
-      "coordinates": {"lat": 52.8, "lng": -97.8},
+      "coordinates": {
+        "lat": 52.8,
+        "lng": -97.8
+      },
       "depth_max": "36m",
-      "primary_species": ["Walleye", "Northern Pike", "Whitefish"],
+      "primary_species": [
+        "Walleye",
+        "Northern Pike",
+        "Whitefish"
+      ],
       "seasonal_tips": "Spring: Shore walleye jigging. Summer: Boat trolling and drifting. Fall: Pike and walleye near downed timber.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-24.jpg",
-      "related_spots": ["red-river", "norway-house"]
+      "related_spots": [
+        "red-river",
+        "norway-house"
+      ],
+      "description": "Winnipeg Lake is one of Manitoba's premier fishing destinations, nestled within the boreal shield, prairie grasslands, Hudson Bay lowlands. Known for its exceptional Walleye, Northern Pike, Whitefish populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 36m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Walleye, Northern Pike, Whitefish. The surrounding boreal shield provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Winnipeg Lake delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Thompson, head north — the drive takes approximately 2-3 hours. GPS coordinates: 52.8°N, 97.8°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Multiple shore fishing spots are accessible from the parking area. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Walleye. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fewer crowds and excellent catch rates.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Manitoba fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current Manitoba Fishing Regulations Summary for species-specific size and catch limits — regulations for Walleye are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 36m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is boreal shield with a mix of open meadow and forested shoreline. Water clarity is moderate — 1-3 metres visibility depending on season. The eastern bay is shallow — use caution with motor boats.",
+      "nearby_services": "Nearest gas station: 15 minutes drive. Groceries and supplies available in Thompson — stock up before heading out. Local bait shop within 10 minutes of the lake. Several fishing guides operate in the area — book in advance for peak season.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. Backcountry camping is permitted on Crown land — practice Leave No Trace. Motels and B&Bs available in Thompson for those preferring indoor comfort.",
+      "safety": "Cell coverage: Basic voice service available. Data is unreliable. Nearest hospital: Thompson (2-3 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Bear country — store food in bear-proof containers. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Athabasca Lake",
       "slug": "athabasca-lake-sk",
       "province": "Saskatchewan",
-      "coordinates": {"lat": 58.9, "lng": -104.8},
+      "coordinates": {
+        "lat": 58.9,
+        "lng": -104.8
+      },
       "depth_max": "397m",
-      "primary_species": ["Lake Trout", "Walleye", "Pike"],
+      "primary_species": [
+        "Lake Trout",
+        "Walleye",
+        "Pike"
+      ],
       "seasonal_tips": "Spring: Walleye spawning near rock reefs. Summer: Deep lake trout jigging. Fall: Shore pike casting.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-25.jpg",
-      "related_spots": ["mcmurray-river", "slave-river"]
+      "related_spots": [
+        "mcmurray-river",
+        "slave-river"
+      ],
+      "description": "Athabasca Lake is one of Saskatchewan's premier fishing destinations, nestled within the northern boreal forest, central parkland, southern prairies. Known for its exceptional Lake Trout, Walleye, Pike populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 397m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Lake Trout, Walleye, Pike. The surrounding northern boreal forest provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Athabasca Lake delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Moose Jaw, head north — the drive takes approximately 3-4 hours. GPS coordinates: 58.9°N, 104.8°W. The final stretch is on gravel road — high-clearance vehicle recommended during spring thaw. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Shore fishing access is available along the eastern bank. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Lake Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fewer crowds and excellent catch rates.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Saskatchewan fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current Saskatchewan Fishing Regulations Summary for species-specific size and catch limits — regulations for Lake Trout are strictly enforced. Barbless hooks are mandatory in this zone. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 397m. The lake bottom features a mix of gravel beds, submerged timber, and weed beds that provide excellent habitat structure. The surrounding landscape is northern boreal forest with a mix of open meadow and forested shoreline. Water clarity is moderate — 1-3 metres visibility depending on season. The eastern bay is shallow — use caution with motor boats.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in Moose Jaw — stock up before heading out. Bait and tackle available at the general store in the nearest village. Local outfitters can arrange guided trips with advance notice.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. Backcountry camping is permitted on Crown land — practice Leave No Trace. Motels and B&Bs available in Moose Jaw for those preferring indoor comfort.",
+      "safety": "Cell coverage: Basic voice service available. Data is unreliable. Nearest hospital: Moose Jaw (3-4 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Wildlife encounters are rare but carry bear spray as a precaution. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Reindeer Lake",
       "slug": "reindeer-lake",
       "province": "Saskatchewan",
-      "coordinates": {"lat": 57.3, "lng": -102.1},
+      "coordinates": {
+        "lat": 57.3,
+        "lng": -102.1
+      },
       "depth_max": "250m",
-      "primary_species": ["Lake Trout", "Pike", "Walleye"],
+      "primary_species": [
+        "Lake Trout",
+        "Pike",
+        "Walleye"
+      ],
       "seasonal_tips": "Spring: Pike spawning in bays. Summer: Lake trout trolling in deep channels. Fall: Shore walleye casting.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-26.jpg",
-      "related_spots": ["churchill-river", "buffalo-narrows"]
+      "related_spots": [
+        "churchill-river",
+        "buffalo-narrows"
+      ],
+      "description": "Reindeer Lake is one of Saskatchewan's premier fishing destinations, nestled within the northern boreal forest, central parkland, southern prairies. Known for its exceptional Lake Trout, Pike, Walleye populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 250m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Lake Trout, Pike, Walleye. The surrounding northern boreal forest provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Reindeer Lake delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Moose Jaw, head north — the drive takes approximately 4-5 hours. GPS coordinates: 57.3°N, 102.1°W. The final stretch is on gravel road — high-clearance vehicle recommended during spring thaw. Cell service is generally available until the last 15 minutes of the drive.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Day-use parking fee of $5-10 applies during peak season (May-September). Multiple shore fishing spots are accessible from the parking area. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Lake Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fewer crowds and excellent catch rates.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Saskatchewan fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops.  Check the current Saskatchewan Fishing Regulations Summary for species-specific size and catch limits — regulations for Lake Trout are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 250m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is northern boreal forest with dense tree cover right to the shoreline. Water clarity is moderate — 1-3 metres visibility depending on season. Watch for submerged rocks near the northern shore.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in Moose Jaw — stock up before heading out. Local bait shop within 10 minutes of the lake. Local outfitters can arrange guided trips with advance notice.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. The nearest campground has 30+ sites with fire pits and outhouses. Motels and B&Bs available in Moose Jaw for those preferring indoor comfort.",
+      "safety": "Cell coverage: Basic voice service available. Data is unreliable. Nearest hospital: Moose Jaw (4-5 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Wildlife encounters are rare but carry bear spray as a precaution. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Miramichi River",
       "slug": "miramichi-river",
       "province": "New Brunswick",
-      "coordinates": {"lat": 47.0, "lng": -65.5},
+      "coordinates": {
+        "lat": 47.0,
+        "lng": -65.5
+      },
       "depth_max": "50m",
-      "primary_species": ["Atlantic Salmon", "Brook Trout", "Smallmouth Bass"],
+      "primary_species": [
+        "Atlantic Salmon",
+        "Brook Trout",
+        "Smallmouth Bass"
+      ],
       "seasonal_tips": "Spring: Salmon runs in lower river. Summer: Brook trout in cool tributaries. Fall: Salmon spawning season.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-27.jpg",
-      "related_spots": ["north-esk-river", "southwest-miramichi"]
+      "related_spots": [
+        "north-esk-river",
+        "southwest-miramichi"
+      ],
+      "description": "Miramichi River is one of New Brunswick's premier fishing destinations, nestled within the Appalachian uplands, Bay of Fundy coast, river valleys. Known for its exceptional Atlantic Salmon, Brook Trout, Smallmouth Bass populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 50m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Atlantic Salmon, Brook Trout, Smallmouth Bass. The surrounding Appalachian uplands provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Miramichi River delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Saint John, head east — the drive takes approximately 1.5-2 hours. GPS coordinates: 47.0°N, 65.5°W. The final stretch is on gravel road — high-clearance vehicle recommended during spring thaw. Cell service is generally available until the last 15 minutes of the drive.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Day-use parking fee of $5-10 applies during peak season (May-September). Shore fishing access is available along the eastern bank. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Atlantic Salmon. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fall colours make this an especially scenic time to visit.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid New Brunswick fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current New Brunswick Fishing Regulations Summary for species-specific size and catch limits — regulations for Atlantic Salmon are strictly enforced. Barbless hooks are mandatory in this zone. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 50m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is Appalachian uplands with dense tree cover right to the shoreline. Water clarity is moderate — 1-3 metres visibility depending on season. Watch for submerged rocks near the northern shore.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in Saint John — stock up before heading out. Local bait shop within 10 minutes of the lake. Several fishing guides operate in the area — book in advance for peak season.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. Backcountry camping is permitted on Crown land — practice Leave No Trace. For full-service accommodation, Saint John offers hotels and restaurants.",
+      "safety": "Cell coverage: Spotty — download offline maps before your trip. Nearest hospital: Saint John (1.5-2 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Wildlife encounters are rare but carry bear spray as a precaution. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Grand Lake",
       "slug": "grand-lake-nb",
       "province": "New Brunswick",
-      "coordinates": {"lat": 46.8, "lng": -66.0},
+      "coordinates": {
+        "lat": 46.8,
+        "lng": -66.0
+      },
       "depth_max": "78m",
-      "primary_species": ["Lake Trout", "Walleye", "Smallmouth Bass"],
+      "primary_species": [
+        "Lake Trout",
+        "Walleye",
+        "Smallmouth Bass"
+      ],
       "seasonal_tips": "Spring: Shore fishing for lake trout. Summer: Deep water jigging. Fall: Bass near rocky points.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-28.jpg",
-      "related_spots": ["miramichi-river", "chain-lakes"]
+      "related_spots": [
+        "miramichi-river",
+        "chain-lakes"
+      ],
+      "description": "Grand Lake is one of New Brunswick's premier fishing destinations, nestled within the Appalachian uplands, Bay of Fundy coast, river valleys. Known for its exceptional Lake Trout, Walleye, Smallmouth Bass populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 78m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Lake Trout, Walleye, Smallmouth Bass. The surrounding Appalachian uplands provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Grand Lake delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Saint John, head east — the drive takes approximately 2-3 hours. GPS coordinates: 46.8°N, 66.0°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service is generally available until the last 15 minutes of the drive.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Shore fishing access is available along the eastern bank. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Lake Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fall colours make this an especially scenic time to visit.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid New Brunswick fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current New Brunswick Fishing Regulations Summary for species-specific size and catch limits — regulations for Lake Trout are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 78m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is Appalachian uplands with dense tree cover right to the shoreline. Water clarity is moderate — 1-3 metres visibility depending on season. Watch for submerged rocks near the northern shore.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in Saint John — stock up before heading out. Local bait shop within 10 minutes of the lake. Several fishing guides operate in the area — book in advance for peak season.",
+      "accommodation": "Rustic fishing lodges nearby offer packages including boat rental. Backcountry camping is permitted on Crown land — practice Leave No Trace. For full-service accommodation, Saint John offers hotels and restaurants.",
+      "safety": "Cell coverage: Basic voice service available. Data is unreliable. Nearest hospital: Saint John (2-3 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Wildlife encounters are rare but carry bear spray as a precaution. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Bras d'Or Lake",
       "slug": "bras-dor-lake",
       "province": "Nova Scotia",
-      "coordinates": {"lat": 46.0, "lng": -60.8},
+      "coordinates": {
+        "lat": 46.0,
+        "lng": -60.8
+      },
       "depth_max": "302m",
-      "primary_species": ["Brook Trout", "Smallmouth Bass", "Rainbow Trout"],
+      "primary_species": [
+        "Brook Trout",
+        "Smallmouth Bass",
+        "Rainbow Trout"
+      ],
       "seasonal_tips": "Spring: Shore trout spawning. Summer: Deep water jigging. Fall: Bass casting in bays.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-29.jpg",
-      "related_spots": ["baddeck-river", "middle-river"]
+      "related_spots": [
+        "baddeck-river",
+        "middle-river"
+      ],
+      "description": "Bras d'Or Lake is one of Nova Scotia's premier fishing destinations, nestled within the Atlantic coastline, Annapolis Valley, Cape Breton Highlands. Known for its exceptional Brook Trout, Smallmouth Bass, Rainbow Trout populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 302m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Brook Trout, Smallmouth Bass, Rainbow Trout. The surrounding Atlantic coastline provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Bras d'Or Lake delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Halifax, head east — the drive takes approximately 2-3 hours. GPS coordinates: 46.0°N, 60.8°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Multiple shore fishing spots are accessible from the parking area. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Brook Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fall colours make this an especially scenic time to visit.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Nova Scotia fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops.  Check the current Nova Scotia Fishing Regulations Summary for species-specific size and catch limits — regulations for Brook Trout are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 302m. The lake bottom features a mix of gravel beds, submerged timber, and weed beds that provide excellent habitat structure. The surrounding landscape is Atlantic coastline with dense tree cover right to the shoreline. Water clarity is moderate — 1-3 metres visibility depending on season. Watch for submerged rocks near the northern shore.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in Halifax — stock up before heading out. Local bait shop within 10 minutes of the lake. Several fishing guides operate in the area — book in advance for peak season.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. The nearest campground has 30+ sites with fire pits and outhouses. Motels and B&Bs available in Halifax for those preferring indoor comfort.",
+      "safety": "Cell coverage: Spotty — download offline maps before your trip. Nearest hospital: Halifax (2-3 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Wildlife encounters are rare but carry bear spray as a precaution. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Shubenacadie River",
       "slug": "shubenacadie-river",
       "province": "Nova Scotia",
-      "coordinates": {"lat": 45.2, "lng": -63.2},
+      "coordinates": {
+        "lat": 45.2,
+        "lng": -63.2
+      },
       "depth_max": "40m",
-      "primary_species": ["Atlantic Salmon", "Brook Trout", "Striped Bass"],
+      "primary_species": [
+        "Atlantic Salmon",
+        "Brook Trout",
+        "Striped Bass"
+      ],
       "seasonal_tips": "Spring: Salmon runs. Summer: Striped bass estuary fishing. Fall: Brook trout in cold pools.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-30.jpg",
-      "related_spots": ["shubenacadie-lake", "windsor-estuary"]
+      "related_spots": [
+        "shubenacadie-lake",
+        "windsor-estuary"
+      ],
+      "description": "Shubenacadie River is one of Nova Scotia's premier fishing destinations, nestled within the Atlantic coastline, Annapolis Valley, Cape Breton Highlands. Known for its exceptional Atlantic Salmon, Brook Trout, Striped Bass populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 40m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Atlantic Salmon, Brook Trout, Striped Bass. The surrounding Atlantic coastline provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Shubenacadie River delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Halifax, head east — the drive takes approximately 1.5-2 hours. GPS coordinates: 45.2°N, 63.2°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Day-use parking fee of $5-10 applies during peak season (May-September). Shore fishing access is available along the eastern bank. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Atlantic Salmon. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fall colours make this an especially scenic time to visit.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Nova Scotia fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops.  Check the current Nova Scotia Fishing Regulations Summary for species-specific size and catch limits — regulations for Atlantic Salmon are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 40m. The lake bottom features a mix of gravel beds, submerged timber, and weed beds that provide excellent habitat structure. The surrounding landscape is Atlantic coastline with dense tree cover right to the shoreline. Water clarity is excellent — 3-5 metres visibility in summer. The eastern bay is shallow — use caution with motor boats.",
+      "nearby_services": "Nearest gas station: 15 minutes drive. Groceries and supplies available in Halifax — stock up before heading out. Bait and tackle available at the general store in the nearest village. Local outfitters can arrange guided trips with advance notice.",
+      "accommodation": "Rustic fishing lodges nearby offer packages including boat rental. Backcountry camping is permitted on Crown land — practice Leave No Trace. Motels and B&Bs available in Halifax for those preferring indoor comfort.",
+      "safety": "Cell coverage: Spotty — download offline maps before your trip. Nearest hospital: Halifax (1.5-2 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Wildlife encounters are rare but carry bear spray as a precaution. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Dalvay Lake",
       "slug": "dalvay-lake",
       "province": "Prince Edward Island",
-      "coordinates": {"lat": 46.4, "lng": -62.7},
+      "coordinates": {
+        "lat": 46.4,
+        "lng": -62.7
+      },
       "depth_max": "15m",
-      "primary_species": ["Brook Trout", "Rainbow Trout"],
+      "primary_species": [
+        "Brook Trout",
+        "Rainbow Trout"
+      ],
       "seasonal_tips": "Spring: Shore trout spawning. Summer: Fly fishing near aquatic plants. Fall: Cool water trout.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-31.jpg",
-      "related_spots": ["brackley-beach", "north-lake"]
+      "related_spots": [
+        "brackley-beach",
+        "north-lake"
+      ],
+      "description": "Dalvay Lake is one of Prince Edward Island's premier fishing destinations, nestled within the red sand beaches, rolling farmland, gentle coastline. Known for its exceptional Brook Trout, Rainbow Trout populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 15m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Brook Trout, Rainbow Trout. The surrounding red sand beaches provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Dalvay Lake delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Charlottetown, head east — the drive takes approximately 45 minutes. GPS coordinates: 46.4°N, 62.7°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Shore fishing access is available along the eastern bank. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Brook Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fewer crowds and excellent catch rates.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Prince Edward Island fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops.  Check the current Prince Edward Island Fishing Regulations Summary for species-specific size and catch limits — regulations for Brook Trout are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 15m. The lake bottom features a mix of gravel beds, submerged timber, and weed beds that provide excellent habitat structure. The surrounding landscape is red sand beaches with a mix of open meadow and forested shoreline. Water clarity is excellent — 3-5 metres visibility in summer. The eastern bay is shallow — use caution with motor boats.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in Charlottetown — stock up before heading out. Local bait shop within 10 minutes of the lake. Several fishing guides operate in the area — book in advance for peak season.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. Backcountry camping is permitted on Crown land — practice Leave No Trace. Motels and B&Bs available in Charlottetown for those preferring indoor comfort.",
+      "safety": "Cell coverage: Spotty — download offline maps before your trip. Nearest hospital: Charlottetown (45 minutes drive). Always wear a PFD when on the water and file a trip plan with someone at home. Wildlife encounters are rare but carry bear spray as a precaution. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Grand Lake",
       "slug": "grand-lake-nl",
       "province": "Newfoundland & Labrador",
-      "coordinates": {"lat": 49.0, "lng": -54.8},
+      "coordinates": {
+        "lat": 49.0,
+        "lng": -54.8
+      },
       "depth_max": "120m",
-      "primary_species": ["Brook Trout", "Arctic Char", "Salmon"],
+      "primary_species": [
+        "Brook Trout",
+        "Arctic Char",
+        "Salmon"
+      ],
       "seasonal_tips": "Spring: Shore trout spawning. Summer: Backcountry lake fishing. Fall: Salmon spawning in tributaries.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-32.jpg",
-      "related_spots": ["humber-river", "gander-river"]
+      "related_spots": [
+        "humber-river",
+        "gander-river"
+      ],
+      "description": "Grand Lake is one of Newfoundland & Labrador's premier fishing destinations, nestled within the Canadian wilderness. Known for its exceptional Brook Trout, Arctic Char, Salmon populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 120m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Brook Trout, Arctic Char, Salmon. The surrounding Canadian wilderness provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Grand Lake delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From the nearest town, head north — the drive takes approximately 1.5-2 hours. GPS coordinates: 49.0°N, 54.8°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Shore fishing access is available along the eastern bank. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Brook Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fewer crowds and excellent catch rates.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Newfoundland & Labrador fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current Newfoundland & Labrador Fishing Regulations Summary for species-specific size and catch limits — regulations for Brook Trout are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 120m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is Canadian wilderness with a mix of open meadow and forested shoreline. Water clarity is moderate — 1-3 metres visibility depending on season. Watch for submerged rocks near the northern shore.",
+      "nearby_services": "Nearest gas station: 15 minutes drive. Groceries and supplies available in the nearest town — stock up before heading out. Bait and tackle available at the general store in the nearest village. Local outfitters can arrange guided trips with advance notice.",
+      "accommodation": "Rustic fishing lodges nearby offer packages including boat rental. The nearest campground has 30+ sites with fire pits and outhouses. Motels and B&Bs available in the nearest town for those preferring indoor comfort.",
+      "safety": "Cell coverage: Basic voice service available. Data is unreliable. Nearest hospital: the nearest town (1.5-2 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Wildlife encounters are rare but carry bear spray as a precaution. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Gander River",
       "slug": "gander-river",
       "province": "Newfoundland & Labrador",
-      "coordinates": {"lat": 48.9, "lng": -54.1},
+      "coordinates": {
+        "lat": 48.9,
+        "lng": -54.1
+      },
       "depth_max": "30m",
-      "primary_species": ["Atlantic Salmon", "Brook Trout", "Arctic Char"],
+      "primary_species": [
+        "Atlantic Salmon",
+        "Brook Trout",
+        "Arctic Char"
+      ],
       "seasonal_tips": "Spring: Salmon spawning runs. Summer: Cool water pools for trout. Fall: Salmon migration.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-33.jpg",
-      "related_spots": ["grandy-brook", "valley-pond"]
+      "related_spots": [
+        "grandy-brook",
+        "valley-pond"
+      ],
+      "description": "Gander River is one of Newfoundland & Labrador's premier fishing destinations, nestled within the Canadian wilderness. Known for its exceptional Atlantic Salmon, Brook Trout, Arctic Char populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 30m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Atlantic Salmon, Brook Trout, Arctic Char. The surrounding Canadian wilderness provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Gander River delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From the nearest town, head north — the drive takes approximately 45 minutes. GPS coordinates: 48.9°N, 54.1°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service is generally available until the last 15 minutes of the drive.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Shore fishing access is available along the eastern bank. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Atlantic Salmon. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fewer crowds and excellent catch rates.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Newfoundland & Labrador fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops.  Check the current Newfoundland & Labrador Fishing Regulations Summary for species-specific size and catch limits — regulations for Atlantic Salmon are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 30m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is Canadian wilderness with dense tree cover right to the shoreline. Water clarity is moderate — 1-3 metres visibility depending on season. Watch for submerged rocks near the northern shore.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in the nearest town — stock up before heading out. Local bait shop within 10 minutes of the lake. Several fishing guides operate in the area — book in advance for peak season.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. The nearest campground has 30+ sites with fire pits and outhouses. For full-service accommodation, the nearest town offers hotels and restaurants.",
+      "safety": "Cell coverage: Spotty — download offline maps before your trip. Nearest hospital: the nearest town (45 minutes drive). Always wear a PFD when on the water and file a trip plan with someone at home. Wildlife encounters are rare but carry bear spray as a precaution. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Red Indian Lake",
       "slug": "red-indian-lake",
       "province": "Newfoundland & Labrador",
-      "coordinates": {"lat": 48.7, "lng": -55.8},
+      "coordinates": {
+        "lat": 48.7,
+        "lng": -55.8
+      },
       "depth_max": "210m",
-      "primary_species": ["Brook Trout", "Arctic Char", "Lake Trout"],
+      "primary_species": [
+        "Brook Trout",
+        "Arctic Char",
+        "Lake Trout"
+      ],
       "seasonal_tips": "Spring: Trout spawning near tributaries. Summer: Deep water jigging. Fall: Shore casting.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-34.jpg",
-      "related_spots": ["badger-river", "oxford-lake"]
+      "related_spots": [
+        "badger-river",
+        "oxford-lake"
+      ],
+      "description": "Red Indian Lake is one of Newfoundland & Labrador's premier fishing destinations, nestled within the Canadian wilderness. Known for its exceptional Brook Trout, Arctic Char, Lake Trout populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 210m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Brook Trout, Arctic Char, Lake Trout. The surrounding Canadian wilderness provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Red Indian Lake delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From the nearest town, head north — the drive takes approximately 1.5-2 hours. GPS coordinates: 48.7°N, 55.8°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service is generally available until the last 15 minutes of the drive.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Multiple shore fishing spots are accessible from the parking area. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Brook Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fewer crowds and excellent catch rates.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Newfoundland & Labrador fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current Newfoundland & Labrador Fishing Regulations Summary for species-specific size and catch limits — regulations for Brook Trout are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 210m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is Canadian wilderness with dense tree cover right to the shoreline. Water clarity is excellent — 3-5 metres visibility in summer. Watch for submerged rocks near the northern shore.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in the nearest town — stock up before heading out. Bait and tackle available at the general store in the nearest village. Several fishing guides operate in the area — book in advance for peak season.",
+      "accommodation": "Rustic fishing lodges nearby offer packages including boat rental. Backcountry camping is permitted on Crown land — practice Leave No Trace. For full-service accommodation, the nearest town offers hotels and restaurants.",
+      "safety": "Cell coverage: Basic voice service available. Data is unreliable. Nearest hospital: the nearest town (1.5-2 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Wildlife encounters are rare but carry bear spray as a precaution. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Teslin Lake",
       "slug": "teslin-lake",
       "province": "Yukon",
-      "coordinates": {"lat": 60.3, "lng": -130.2},
+      "coordinates": {
+        "lat": 60.3,
+        "lng": -130.2
+      },
       "depth_max": "300m",
-      "primary_species": ["Lake Trout", "Arctic Grayling", "Whitefish"],
+      "primary_species": [
+        "Lake Trout",
+        "Arctic Grayling",
+        "Whitefish"
+      ],
       "seasonal_tips": "Spring: Ice-out grayling spawning. Summer: Lake trout trolling. Fall: Shore grayling casting.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-35.jpg",
-      "related_spots": ["watson-river", "pelly-river"]
+      "related_spots": [
+        "watson-river",
+        "pelly-river"
+      ],
+      "description": "Teslin Lake is one of Yukon's premier fishing destinations, nestled within the subarctic wilderness, Kluane ranges, boreal forest. Known for its exceptional Lake Trout, Arctic Grayling, Whitefish populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 300m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Lake Trout, Arctic Grayling, Whitefish. The surrounding subarctic wilderness provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Teslin Lake delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Dawson City, head north — the drive takes approximately fly-in access required. GPS coordinates: 60.3°N, 130.2°W. The final stretch is on gravel road — high-clearance vehicle recommended during spring thaw. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Multiple shore fishing spots are accessible from the parking area. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Lake Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fewer crowds and excellent catch rates.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Yukon fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current Yukon Fishing Regulations Summary for species-specific size and catch limits — regulations for Lake Trout are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 300m. The lake bottom features a mix of gravel beds, submerged timber, and weed beds that provide excellent habitat structure. The surrounding landscape is subarctic wilderness with dense tree cover right to the shoreline. Water clarity is moderate — 1-3 metres visibility depending on season. The eastern bay is shallow — use caution with motor boats.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in Dawson City — stock up before heading out. Local bait shop within 10 minutes of the lake. Local outfitters can arrange guided trips with advance notice.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. The nearest campground has 30+ sites with fire pits and outhouses. Motels and B&Bs available in Dawson City for those preferring indoor comfort.",
+      "safety": "Cell coverage: Spotty — download offline maps before your trip. Nearest hospital: Dawson City (fly-in access required drive). Always wear a PFD when on the water and file a trip plan with someone at home. Bear country — store food in bear-proof containers. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Kluane Lake",
       "slug": "kluane-lake",
       "province": "Yukon",
-      "coordinates": {"lat": 61.1, "lng": -137.8},
+      "coordinates": {
+        "lat": 61.1,
+        "lng": -137.8
+      },
       "depth_max": "158m",
-      "primary_species": ["Lake Trout", "Grayling", "Whitefish"],
+      "primary_species": [
+        "Lake Trout",
+        "Grayling",
+        "Whitefish"
+      ],
       "seasonal_tips": "Spring: Grayling spawning in tributaries. Summer: Lake trout jigging. Fall: Shore grayling.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-36.jpg",
-      "related_spots": ["white-river", "duke-river"]
+      "related_spots": [
+        "white-river",
+        "duke-river"
+      ],
+      "description": "Kluane Lake is one of Yukon's premier fishing destinations, nestled within the subarctic wilderness, Kluane ranges, boreal forest. Known for its exceptional Lake Trout, Grayling, Whitefish populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 158m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Lake Trout, Grayling, Whitefish. The surrounding subarctic wilderness provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Kluane Lake delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Dawson City, head north — the drive takes approximately 5-8 hours. GPS coordinates: 61.1°N, 137.8°W. The final stretch is on gravel road — high-clearance vehicle recommended during spring thaw. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Multiple shore fishing spots are accessible from the parking area. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Lake Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fewer crowds and excellent catch rates.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Yukon fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current Yukon Fishing Regulations Summary for species-specific size and catch limits — regulations for Lake Trout are strictly enforced. Barbless hooks are mandatory in this zone. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 158m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is subarctic wilderness with dense tree cover right to the shoreline. Water clarity is moderate — 1-3 metres visibility depending on season. Watch for submerged rocks near the northern shore.",
+      "nearby_services": "Nearest gas station: 15 minutes drive. Groceries and supplies available in Dawson City — stock up before heading out. Bait and tackle available at the general store in the nearest village. Local outfitters can arrange guided trips with advance notice.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. Backcountry camping is permitted on Crown land — practice Leave No Trace. For full-service accommodation, Dawson City offers hotels and restaurants.",
+      "safety": "Cell coverage: Spotty — download offline maps before your trip. Nearest hospital: Dawson City (5-8 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Bear country — store food in bear-proof containers. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Great Slave Lake",
       "slug": "great-slave-lake",
       "province": "Northwest Territories",
-      "coordinates": {"lat": 62.5, "lng": -114.5},
+      "coordinates": {
+        "lat": 62.5,
+        "lng": -114.5
+      },
       "depth_max": "614m",
-      "primary_species": ["Lake Trout", "Whitefish", "Arctic Grayling"],
+      "primary_species": [
+        "Lake Trout",
+        "Whitefish",
+        "Arctic Grayling"
+      ],
       "seasonal_tips": "Spring: Grayling spawning in river mouths. Summer: Lake trout trolling. Fall: Shore fishing.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-37.jpg",
-      "related_spots": ["yellowknife-river", "slave-river"]
+      "related_spots": [
+        "yellowknife-river",
+        "slave-river"
+      ],
+      "description": "Great Slave Lake is one of Northwest Territories's premier fishing destinations, nestled within the tundra, boreal forest, Great Slave Lake, Mackenzie River. Known for its exceptional Lake Trout, Whitefish, Arctic Grayling populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 614m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Lake Trout, Whitefish, Arctic Grayling. The surrounding tundra provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Great Slave Lake delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Inuvik, head north — the drive takes approximately 3-5 hours. GPS coordinates: 62.5°N, 114.5°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service is generally available until the last 15 minutes of the drive.",
+      "parking": "Gravel pull-off area with space for 8-10 vehicles. Cartop boat launch only — no trailer ramp. Parking is free year-round. Shore fishing access is available along the eastern bank. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Lake Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fewer crowds and excellent catch rates.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Northwest Territories fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops.  Check the current Northwest Territories Fishing Regulations Summary for species-specific size and catch limits — regulations for Lake Trout are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 614m. The lake bottom features a mix of gravel beds, submerged timber, and weed beds that provide excellent habitat structure. The surrounding landscape is tundra with dense tree cover right to the shoreline. Water clarity is excellent — 3-5 metres visibility in summer. The eastern bay is shallow — use caution with motor boats.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in Inuvik — stock up before heading out. Local bait shop within 10 minutes of the lake. Local outfitters can arrange guided trips with advance notice.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. The nearest campground has 30+ sites with fire pits and outhouses. For full-service accommodation, Inuvik offers hotels and restaurants.",
+      "safety": "Cell coverage: Spotty — download offline maps before your trip. Nearest hospital: Inuvik (3-5 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Bear country — store food in bear-proof containers. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Hay River",
       "slug": "hay-river",
       "province": "Northwest Territories",
-      "coordinates": {"lat": 60.8, "lng": -115.7},
+      "coordinates": {
+        "lat": 60.8,
+        "lng": -115.7
+      },
       "depth_max": "50m",
-      "primary_species": ["Pike", "Walleye", "Arctic Grayling"],
+      "primary_species": [
+        "Pike",
+        "Walleye",
+        "Arctic Grayling"
+      ],
       "seasonal_tips": "Spring: Pike spawning in delta. Summer: Grayling in cool pools. Fall: Walleye jigging.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-38.jpg",
-      "related_spots": ["great-slave-lake", "yellowknife-bay"]
+      "related_spots": [
+        "great-slave-lake",
+        "yellowknife-bay"
+      ],
+      "description": "Hay River is one of Northwest Territories's premier fishing destinations, nestled within the tundra, boreal forest, Great Slave Lake, Mackenzie River. Known for its exceptional Pike, Walleye, Arctic Grayling populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 50m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Pike, Walleye, Arctic Grayling. The surrounding tundra provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Hay River delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Inuvik, head north — the drive takes approximately fly-in access required. GPS coordinates: 60.8°N, 115.7°W. Roads are paved all the way to the access point, making it accessible year-round. Cell service is generally available until the last 15 minutes of the drive.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Shore fishing access is available along the eastern bank. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Pike. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fewer crowds and excellent catch rates.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Northwest Territories fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current Northwest Territories Fishing Regulations Summary for species-specific size and catch limits — regulations for Pike are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 50m. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is tundra with dense tree cover right to the shoreline. Water clarity is excellent — 3-5 metres visibility in summer. The eastern bay is shallow — use caution with motor boats.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in Inuvik — stock up before heading out. Local bait shop within 10 minutes of the lake. Local outfitters can arrange guided trips with advance notice.",
+      "accommodation": "Rustic fishing lodges nearby offer packages including boat rental. The nearest campground has 30+ sites with fire pits and outhouses. Motels and B&Bs available in Inuvik for those preferring indoor comfort.",
+      "safety": "Cell coverage: Spotty — download offline maps before your trip. Nearest hospital: Inuvik (fly-in access required drive). Always wear a PFD when on the water and file a trip plan with someone at home. Bear country — store food in bear-proof containers. Water temperature can be dangerously cold even in summer — dress for immersion."
     },
     {
       "name": "Bathurst Lake",
       "slug": "bathurst-lake",
       "province": "Nunavut",
-      "coordinates": {"lat": 66.9, "lng": -107.5},
+      "coordinates": {
+        "lat": 66.9,
+        "lng": -107.5
+      },
       "depth_max": "380m",
-      "primary_species": ["Lake Trout", "Arctic Char", "Whitefish"],
+      "primary_species": [
+        "Lake Trout",
+        "Arctic Char",
+        "Whitefish"
+      ],
       "seasonal_tips": "Spring: Char spawning in cold streams. Summer: Remote lake trout fishing. Fall: Shore char casting.",
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-39.jpg",
-      "related_spots": ["stark-river", "contwoyto-lake"]
+      "related_spots": [
+        "stark-river",
+        "contwoyto-lake"
+      ],
+      "description": "Bathurst Lake is one of Nunavut's premier fishing destinations, nestled within the arctic tundra, sea ice, barren grounds, polar coastline. Known for its exceptional Lake Trout, Arctic Char, Whitefish populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.\n\nWith a maximum depth of 380m, the lake offers diverse structure and habitat that supports a healthy ecosystem of Lake Trout, Arctic Char, Whitefish. The surrounding arctic tundra provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Bathurst Lake delivers an unforgettable Canadian fishing experience.",
+      "getting_there": "From Cambridge Bay, head north — the drive takes approximately 3-5 hours. GPS coordinates: 66.9°N, 107.5°W. The final stretch is on gravel road — high-clearance vehicle recommended during spring thaw. Cell service becomes spotty about 30 minutes before arrival.",
+      "parking": "Public boat launch with paved ramp and trailer parking for 20+ vehicles. Day-use parking fee of $5-10 applies during peak season (May-September). Multiple shore fishing spots are accessible from the parking area. Arrive early on weekends during peak season — the lot fills up by 7 AM.",
+      "best_time": "Spring (May-June): Post-ice-out is prime time for Lake Trout. Water temperatures are ideal and fish are actively feeding after the long winter.\nSummer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.\nFall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fewer crowds and excellent catch rates.\nWinter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.",
+      "regulations": "A valid Nunavut fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops. Conservation licence holders have reduced catch limits. Check the current Nunavut Fishing Regulations Summary for species-specific size and catch limits — regulations for Lake Trout are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.",
+      "terrain": "Maximum depth: 380m. The lake bottom features a mix of gravel beds, submerged timber, and weed beds that provide excellent habitat structure. The surrounding landscape is arctic tundra with a mix of open meadow and forested shoreline. Water clarity is excellent — 3-5 metres visibility in summer. Watch for submerged rocks near the northern shore.",
+      "nearby_services": "Nearest gas station: 25 minutes drive. Groceries and supplies available in Cambridge Bay — stock up before heading out. Local bait shop within 10 minutes of the lake. Local outfitters can arrange guided trips with advance notice.",
+      "accommodation": "Multiple lakeside cabins and cottages available for rent within 5 km. The nearest campground has 30+ sites with fire pits and outhouses. For full-service accommodation, Cambridge Bay offers hotels and restaurants.",
+      "safety": "Cell coverage: Basic voice service available. Data is unreliable. Nearest hospital: Cambridge Bay (3-5 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Wildlife encounters are rare but carry bear spray as a precaution. Water temperature can be dangerously cold even in summer — dress for immersion."
     }
   ]
 }

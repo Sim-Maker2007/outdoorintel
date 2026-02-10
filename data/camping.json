@@ -5,8 +5,15 @@
       "slug": "algonquin-provincial-park",
       "province": "Ontario",
       "type": "Backcountry",
-      "coordinates": {"lat": 45.5, "lng": -78.3},
-      "features": ["Canoe-in Sites", "Portage Routes", "Wildlife Viewing"],
+      "coordinates": {
+        "lat": 45.5,
+        "lng": -78.3
+      },
+      "features": [
+        "Canoe-in Sites",
+        "Portage Routes",
+        "Wildlife Viewing"
+      ],
       "season": "May - October",
       "difficulty": "Beginner to Advanced",
       "sites_count": "1,200+",
@@ -14,15 +21,34 @@
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-21.jpg",
-      "related_spots": ["killarney-provincial-park", "bon-echo-provincial-park"]
+      "related_spots": [
+        "killarney-provincial-park",
+        "bon-echo-provincial-park"
+      ],
+      "description": "Algonquin Provincial Park is a backcountry gem in Ontario, offering canoe-in sites, portage routes, wildlife viewing amid the Canadian Shield, boreal forest, Great Lakes shoreline. With 1,200+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the Canadian Shield scenery and the chance to disconnect from daily life. The stargazing alone is worth the trip — minimal light pollution means you can see the Milky Way on clear nights. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Algonquin Provincial Park is a quintessential Canadian camping experience.",
+      "getting_there": "From Ottawa, it's approximately 45 minutes by car. GPS: 45.5°N, 78.3°W. The last portion requires a high-clearance vehicle or a hike in.  Trail access from the parking area — hike of 2-15 km depending on your chosen site.",
+      "parking": "Parking lot at the trailhead — spaces fill up on summer weekends. Arrive early.   Parking included with campsite reservation.",
+      "best_time": "Open season: May - October. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. Bugs can be intense in June — bring repellent and a bug net. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours (especially in the hardwood forests), and thinner crowds. May and October: Shoulder season — sites are available without reservations but nights can be cold (near or below freezing).",
+      "regulations": "First-come, first-served sites available, but reservations recommended for peak season. Campfires: Permitted in designated fire pits only. Fire bans may be in effect during dry periods — check before your trip. Quiet hours: 11 PM to 7 AM. Bear canisters or bear hangs required for food storage. Pack out all garbage — Leave No Trace principles apply. Pets permitted on leash in designated areas only.",
+      "terrain": "The campground sits within Canadian Shield, boreal forest, Great Lakes shoreline terrain. Backcountry sites range from lakeshore clearings to ridgetop perches. Rocky ground in places — bring a footprint for your tent. Nearby trails range from easy lakeside walks to moderate ridge hikes. Elevation: 200-400m above sea level.",
+      "nearby_services": "No on-site store — bring everything you need. Nearest full grocery: Ottawa (45 minutes). Outfitter and gear rental within 20 minutes. ",
+      "accommodation": "Backcountry tent sites only — flat ground at designated spots.  Nearby lodges and B&Bs for those wanting a roof overhead. Group sites available for parties of 10+ — reserve early.",
+      "safety": "Cell coverage: No service — carry a satellite communicator for backcountry sites. Nearest hospital: Ottawa. Bear-safe food storage required. Bear sightings are regular — know what to do. All water must be filtered or boiled before drinking. Ticks are active May-July — check yourself daily. Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Killarney Provincial Park",
       "slug": "killarney-provincial-park",
       "province": "Ontario",
       "type": "Backcountry",
-      "coordinates": {"lat": 46.0, "lng": -81.1},
-      "features": ["Lake Camping", "Quartzite Hills", "Scenic Vistas"],
+      "coordinates": {
+        "lat": 46.0,
+        "lng": -81.1
+      },
+      "features": [
+        "Lake Camping",
+        "Quartzite Hills",
+        "Scenic Vistas"
+      ],
       "season": "May - October",
       "difficulty": "Intermediate to Advanced",
       "sites_count": "500+",
@@ -30,15 +56,34 @@
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-22.jpg",
-      "related_spots": ["algonquin-provincial-park", "bon-echo-provincial-park"]
+      "related_spots": [
+        "algonquin-provincial-park",
+        "bon-echo-provincial-park"
+      ],
+      "description": "Killarney Provincial Park is a backcountry gem in Ontario, offering lake camping, quartzite hills, scenic vistas amid the Canadian Shield, boreal forest, Great Lakes shoreline. With 500+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the Canadian Shield scenery and the chance to disconnect from daily life. The stargazing alone is worth the trip — minimal light pollution means you can see the Milky Way on clear nights. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Killarney Provincial Park is a quintessential Canadian camping experience.",
+      "getting_there": "From Ottawa, it's approximately 1.5-2 hours by car. GPS: 46.0°N, 81.1°W. The last portion requires a high-clearance vehicle or a hike in.  Trail access from the parking area — hike of 2-15 km depending on your chosen site.",
+      "parking": "Parking lot at the trailhead — spaces fill up on summer weekends. Arrive early.  Day-use parking available for visitors not camping. $5-12 vehicle parking fee may apply.",
+      "best_time": "Open season: May - October. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. Bugs can be intense in June — bring repellent and a bug net. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours (especially in the hardwood forests), and thinner crowds. Shoulder months offer solitude but bring cold-weather gear.",
+      "regulations": "First-come, first-served sites available, but reservations recommended for peak season. Campfires: Bring your own firewood or purchase from camp host. Do not collect wood from the forest.  Bear canisters or bear hangs required for food storage. Pack out all garbage — Leave No Trace principles apply. Pets permitted on leash in designated areas only.",
+      "terrain": "The campground sits within Canadian Shield, boreal forest, Great Lakes shoreline terrain. Backcountry sites range from lakeshore clearings to ridgetop perches. Ground is generally well-drained but can get muddy after heavy rain. The surrounding area offers excellent day-hiking opportunities. Elevation: 200-400m above sea level.",
+      "nearby_services": "Camp store on site with basic supplies, firewood, and ice. Nearest full grocery: Ottawa (1.5-2 hours). Bring all gear — rental not available nearby. Restaurant and pub in the nearest village for a treat meal.",
+      "accommodation": "Backcountry tent sites only — flat ground at designated spots.  Nearby lodges and B&Bs for those wanting a roof overhead. ",
+      "safety": "Cell coverage: No service — carry a satellite communicator for backcountry sites. Nearest hospital: Ottawa. Bear-safe food storage required. Bear sightings are regular — know what to do. All water must be filtered or boiled before drinking. Ticks are active May-July — check yourself daily. Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Bon Echo Provincial Park",
       "slug": "bon-echo-provincial-park",
       "province": "Ontario",
       "type": "Car Camping",
-      "coordinates": {"lat": 44.8, "lng": -77.2},
-      "features": ["Cliff Hiking", "Water Activities", "Scenic Lake Views"],
+      "coordinates": {
+        "lat": 44.8,
+        "lng": -77.2
+      },
+      "features": [
+        "Cliff Hiking",
+        "Water Activities",
+        "Scenic Lake Views"
+      ],
       "season": "April - October",
       "difficulty": "Beginner to Intermediate",
       "sites_count": "370",
@@ -46,15 +91,34 @@
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "hero-1.jpg",
-      "related_spots": ["algonquin-provincial-park", "charleston-lake-provincial-park"]
+      "related_spots": [
+        "algonquin-provincial-park",
+        "charleston-lake-provincial-park"
+      ],
+      "description": "Bon Echo Provincial Park is a beloved campground in Ontario, offering cliff hiking, water activities, scenic lake views amid the Canadian Shield, boreal forest, Great Lakes shoreline. With 370 sites, it balances comfort and nature beautifully.\n\nCampers come here for the Canadian Shield scenery and the chance to disconnect from daily life. The sounds of nature replace the noise of civilization, making this a true retreat. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Bon Echo Provincial Park is a quintessential Canadian camping experience.",
+      "getting_there": "From Ottawa, it's approximately 2-3 hours by car. GPS: 44.8°N, 77.2°W. Paved road all the way to the campground entrance.  Check-in at the gatehouse upon arrival.",
+      "parking": "Each site includes one vehicle parking space. Overflow lot available near the entrance.   $5-12 vehicle parking fee may apply.",
+      "best_time": "Open season: April - October. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. Bugs can be intense in June — bring repellent and a bug net. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours (especially in the hardwood forests), and thinner crowds. May and October: Shoulder season — sites are available without reservations but nights can be cold (near or below freezing).",
+      "regulations": "Park permit or camping fee required — reserve online through the provincial parks system. Campfires: Permitted in designated fire pits only. Fire bans may be in effect during dry periods — check before your trip. Quiet hours: 11 PM to 7 AM. Bear canisters or bear hangs required for food storage. Pack out all garbage — Leave No Trace principles apply. Pets permitted on leash in designated areas only.",
+      "terrain": "The campground sits within Canadian Shield, boreal forest, Great Lakes shoreline terrain. Sites are on relatively flat, forested ground with natural screening between neighbours. Ground is generally well-drained but can get muddy after heavy rain. Nearby trails range from easy lakeside walks to moderate ridge hikes. Elevation: 200-400m above sea level.",
+      "nearby_services": "Camp store on site with basic supplies, firewood, and ice. Nearest full grocery: Ottawa (2-3 hours). Outfitter and gear rental within 20 minutes. ",
+      "accommodation": "Designated tent pads at each site. Yurt or oTENTik rentals available for glamping comfort.  ",
+      "safety": "Cell coverage: Available at the main campground area. Nearest hospital: Ottawa. Bear-safe food storage required. Bear sightings are regular — know what to do. Drinking water available at pump stations. Ticks are active May-July — check yourself daily. Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Charleston Lake Provincial Park",
       "slug": "charleston-lake-provincial-park",
       "province": "Ontario",
       "type": "Car Camping",
-      "coordinates": {"lat": 44.5, "lng": -76.1},
-      "features": ["Backcountry Campsites", "Lake Swimming", "Trail Network"],
+      "coordinates": {
+        "lat": 44.5,
+        "lng": -76.1
+      },
+      "features": [
+        "Backcountry Campsites",
+        "Lake Swimming",
+        "Trail Network"
+      ],
       "season": "May - October",
       "difficulty": "Beginner to Intermediate",
       "sites_count": "234",
@@ -62,15 +126,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "hero-2.jpg",
-      "related_spots": ["bon-echo-provincial-park", "algonquin-provincial-park"]
+      "related_spots": [
+        "bon-echo-provincial-park",
+        "algonquin-provincial-park"
+      ],
+      "description": "Charleston Lake Provincial Park is a beloved campground in Ontario, offering backcountry campsites, lake swimming, trail network amid the Canadian Shield, boreal forest, Great Lakes shoreline. With 234 sites, it balances comfort and nature beautifully.\n\nCampers come here for the Canadian Shield scenery and the chance to disconnect from daily life. The stargazing alone is worth the trip — minimal light pollution means you can see the Milky Way on clear nights. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Charleston Lake Provincial Park is a quintessential Canadian camping experience.",
+      "getting_there": "From Ottawa, it's approximately 2-3 hours by car. GPS: 44.5°N, 76.1°W. Paved road all the way to the campground entrance.  Check-in at the gatehouse upon arrival.",
+      "parking": "Each site includes one vehicle parking space. Overflow lot available near the entrance.   $5-12 vehicle parking fee may apply.",
+      "best_time": "Open season: May - October. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. Bugs can be intense in June — bring repellent and a bug net. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours (especially in the hardwood forests), and thinner crowds. Shoulder months offer solitude but bring cold-weather gear.",
+      "regulations": "Park permit or camping fee required — reserve online through the provincial parks system. Campfires: Bring your own firewood or purchase from camp host. Do not collect wood from the forest. Quiet hours: 11 PM to 7 AM. Bear canisters or bear hangs required for food storage. Pack out all garbage — Leave No Trace principles apply. Pets permitted on leash in designated areas only.",
+      "terrain": "The campground sits within Canadian Shield, boreal forest, Great Lakes shoreline terrain. Sites are on relatively flat, forested ground with natural screening between neighbours. Ground is generally well-drained but can get muddy after heavy rain. Nearby trails range from easy lakeside walks to moderate ridge hikes. Elevation: 200-400m above sea level.",
+      "nearby_services": "No on-site store — bring everything you need. Nearest full grocery: Ottawa (2-3 hours). Outfitter and gear rental within 20 minutes. Restaurant and pub in the nearest village for a treat meal.",
+      "accommodation": "Designated tent pads at each site.  Nearby lodges and B&Bs for those wanting a roof overhead. ",
+      "safety": "Cell coverage: Available at the main campground area. Nearest hospital: Ottawa. Bear-safe food storage required. Bear sightings are regular — know what to do. Drinking water available at pump stations. Ticks are active May-July — check yourself daily. Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Mont-Tremblant National Park",
       "slug": "mont-tremblant-national-park",
       "province": "Quebec",
       "type": "Car Camping",
-      "coordinates": {"lat": 46.5, "lng": -74.6},
-      "features": ["Mountain Biking", "Alpine Views", "Lake Camping"],
+      "coordinates": {
+        "lat": 46.5,
+        "lng": -74.6
+      },
+      "features": [
+        "Mountain Biking",
+        "Alpine Views",
+        "Lake Camping"
+      ],
       "season": "May - October",
       "difficulty": "Beginner to Intermediate",
       "sites_count": "600+",
@@ -78,15 +161,34 @@
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-23.jpg",
-      "related_spots": ["saint-anne-parc-national", "les-laurentides"]
+      "related_spots": [
+        "saint-anne-parc-national",
+        "les-laurentides"
+      ],
+      "description": "Mont-Tremblant National Park is a beloved campground in Quebec, offering mountain biking, alpine views, lake camping amid the Laurentian Mountains, St. Lawrence Valley, boreal shield. With 600+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Laurentian Mountains scenery and the chance to disconnect from daily life. The stargazing alone is worth the trip — minimal light pollution means you can see the Milky Way on clear nights. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Mont-Tremblant National Park is a quintessential Canadian camping experience.",
+      "getting_there": "From Montreal, it's approximately 45 minutes by car. GPS: 46.5°N, 74.6°W. Paved road all the way to the campground entrance.  Check-in at the gatehouse upon arrival.",
+      "parking": "Each site includes one vehicle parking space. Overflow lot available near the entrance.  Day-use parking available for visitors not camping. Parking included with campsite reservation.",
+      "best_time": "Open season: May - October. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. Bugs can be intense in June — bring repellent and a bug net. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours (especially in the hardwood forests), and thinner crowds. Shoulder months offer solitude but bring cold-weather gear.",
+      "regulations": "Park permit or camping fee required — reserve online through the provincial parks system. Campfires: Permitted in designated fire pits only. Fire bans may be in effect during dry periods — check before your trip.  Store food securely to avoid attracting wildlife. Pack out all garbage — Leave No Trace principles apply. Pets permitted on leash in designated areas only.",
+      "terrain": "The campground sits within Laurentian Mountains, St. Lawrence Valley, boreal shield terrain. Sites are on relatively flat, forested ground with natural screening between neighbours. Rocky ground in places — bring a footprint for your tent. Nearby trails range from easy lakeside walks to moderate ridge hikes. Elevation: 200-400m above sea level.",
+      "nearby_services": "No on-site store — bring everything you need. Nearest full grocery: Montreal (45 minutes). Outfitter and gear rental within 20 minutes. ",
+      "accommodation": "Designated tent pads at each site. Yurt or oTENTik rentals available for glamping comfort.  Group sites available for parties of 10+ — reserve early.",
+      "safety": "Cell coverage: Available at the main campground area. Nearest hospital: Montreal. Wildlife is present — never approach or feed wild animals. Drinking water available at pump stations. Ticks are active May-July — check yourself daily. Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Saint-Anne Provincial Park",
       "slug": "saint-anne-parc-national",
       "province": "Quebec",
       "type": "Backcountry",
-      "coordinates": {"lat": 47.0, "lng": -70.8},
-      "features": ["River Gorge", "Waterfall Hikes", "Rock Climbing"],
+      "coordinates": {
+        "lat": 47.0,
+        "lng": -70.8
+      },
+      "features": [
+        "River Gorge",
+        "Waterfall Hikes",
+        "Rock Climbing"
+      ],
       "season": "June - September",
       "difficulty": "Intermediate to Advanced",
       "sites_count": "45",
@@ -94,15 +196,33 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "hero-3.jpg",
-      "related_spots": ["mont-tremblant-national-park"]
+      "related_spots": [
+        "mont-tremblant-national-park"
+      ],
+      "description": "Saint-Anne Provincial Park is a backcountry gem in Quebec, offering river gorge, waterfall hikes, rock climbing amid the Laurentian Mountains, St. Lawrence Valley, boreal shield. With 45 sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the Laurentian Mountains scenery and the chance to disconnect from daily life. The sounds of nature replace the noise of civilization, making this a true retreat. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Saint-Anne Provincial Park is a quintessential Canadian camping experience.",
+      "getting_there": "From Montreal, it's approximately 45 minutes by car. GPS: 47.0°N, 70.8°W. The last portion requires a high-clearance vehicle or a hike in.  Trail access from the parking area — hike of 2-15 km depending on your chosen site.",
+      "parking": "Parking lot at the trailhead — spaces fill up on summer weekends. Arrive early.  Day-use parking available for visitors not camping. Parking included with campsite reservation.",
+      "best_time": "Open season: June - September. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. Bugs can be intense in June — bring repellent and a bug net. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours (especially in the hardwood forests), and thinner crowds. May and October: Shoulder season — sites are available without reservations but nights can be cold (near or below freezing).",
+      "regulations": "First-come, first-served sites available, but reservations recommended for peak season. Campfires: Bring your own firewood or purchase from camp host. Do not collect wood from the forest.  Store food securely to avoid attracting wildlife. Pack out all garbage — Leave No Trace principles apply. Dogs must be on leash at all times.",
+      "terrain": "The campground sits within Laurentian Mountains, St. Lawrence Valley, boreal shield terrain. Backcountry sites range from lakeshore clearings to ridgetop perches. Ground is generally well-drained but can get muddy after heavy rain. Nearby trails range from easy lakeside walks to moderate ridge hikes. Elevation: 200-400m above sea level.",
+      "nearby_services": "No on-site store — bring everything you need. Nearest full grocery: Montreal (45 minutes). Bring all gear — rental not available nearby. ",
+      "accommodation": "Backcountry tent sites only — flat ground at designated spots.   ",
+      "safety": "Cell coverage: No service — carry a satellite communicator for backcountry sites. Nearest hospital: Montreal. Wildlife is present — never approach or feed wild animals. All water must be filtered or boiled before drinking. Ticks are active May-July — check yourself daily. Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Lake Megantic Provincial Park",
       "slug": "lake-megantic-provincial-park",
       "province": "Quebec",
       "type": "RV Friendly",
-      "coordinates": {"lat": 45.5, "lng": -71.0},
-      "features": ["Waterfront Camping", "Marina Access", "Beach Areas"],
+      "coordinates": {
+        "lat": 45.5,
+        "lng": -71.0
+      },
+      "features": [
+        "Waterfront Camping",
+        "Marina Access",
+        "Beach Areas"
+      ],
       "season": "May - September",
       "difficulty": "Beginner",
       "sites_count": "320",
@@ -110,15 +230,33 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-24.jpg",
-      "related_spots": ["saint-anne-parc-national"]
+      "related_spots": [
+        "saint-anne-parc-national"
+      ],
+      "description": "Lake Megantic Provincial Park is a beloved campground in Quebec, offering waterfront camping, marina access, beach areas amid the Laurentian Mountains, St. Lawrence Valley, boreal shield. With 320 sites, it balances comfort and nature beautifully.\n\nCampers come here for the Laurentian Mountains scenery and the chance to disconnect from daily life. The stargazing alone is worth the trip — minimal light pollution means you can see the Milky Way on clear nights. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Lake Megantic Provincial Park is a quintessential Canadian camping experience.",
+      "getting_there": "From Montreal, it's approximately 1-1.5 hours by car. GPS: 45.5°N, 71.0°W. Paved road all the way to the campground entrance. RV-friendly access road with clearance for large units. Check-in at the gatehouse upon arrival.",
+      "parking": "Each site includes one vehicle parking space. Overflow lot available near the entrance. RV dump station and water fill available on site.  $5-12 vehicle parking fee may apply.",
+      "best_time": "Open season: May - September. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. Bugs can be intense in June — bring repellent and a bug net. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours (especially in the hardwood forests), and thinner crowds. May and October: Shoulder season — sites are available without reservations but nights can be cold (near or below freezing).",
+      "regulations": "First-come, first-served sites available, but reservations recommended for peak season. Campfires: Bring your own firewood or purchase from camp host. Do not collect wood from the forest.  Store food securely to avoid attracting wildlife. Pack out all garbage — Leave No Trace principles apply. Dogs must be on leash at all times.",
+      "terrain": "The campground sits within Laurentian Mountains, St. Lawrence Valley, boreal shield terrain. Sites are on relatively flat, forested ground with natural screening between neighbours. Rocky ground in places — bring a footprint for your tent. Nearby trails range from easy lakeside walks to moderate ridge hikes. Elevation: 200-400m above sea level.",
+      "nearby_services": "No on-site store — bring everything you need. Nearest full grocery: Montreal (1-1.5 hours). Outfitter and gear rental within 20 minutes. ",
+      "accommodation": "Tent sites, serviced RV sites, and rustic cabins available.   Group sites available for parties of 10+ — reserve early.",
+      "safety": "Cell coverage: Available at the main campground area. Nearest hospital: Montreal. Wildlife is present — never approach or feed wild animals. Drinking water available at pump stations. Ticks are active May-July — check yourself daily. Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Pacific Rim National Park Reserve",
       "slug": "pacific-rim-national-park",
       "province": "British Columbia",
       "type": "Wilderness",
-      "coordinates": {"lat": 48.8, "lng": -125.5},
-      "features": ["West Coast Beaches", "Ancient Rainforest", "Backpacking Trails"],
+      "coordinates": {
+        "lat": 48.8,
+        "lng": -125.5
+      },
+      "features": [
+        "West Coast Beaches",
+        "Ancient Rainforest",
+        "Backpacking Trails"
+      ],
       "season": "March - October",
       "difficulty": "Intermediate to Advanced",
       "sites_count": "150+",
@@ -126,15 +264,34 @@
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-25.jpg",
-      "related_spots": ["strathcona-provincial-park", "cape-scott-provincial-park"]
+      "related_spots": [
+        "strathcona-provincial-park",
+        "cape-scott-provincial-park"
+      ],
+      "description": "Pacific Rim National Park Reserve is a beloved campground in British Columbia, offering west coast beaches, ancient rainforest, backpacking trails amid the coastal rainforest, Rocky Mountains, interior plateau. With 150+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the coastal rainforest scenery and the chance to disconnect from daily life. The sounds of nature replace the noise of civilization, making this a true retreat. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Pacific Rim National Park Reserve is a quintessential Canadian camping experience.",
+      "getting_there": "From Vancouver, it's approximately 1.5-2 hours by car. GPS: 48.8°N, 125.5°W. The last portion requires a high-clearance vehicle or a hike in.  Check-in at the gatehouse upon arrival.",
+      "parking": "Parking lot at the trailhead — spaces fill up on summer weekends. Arrive early.   Parking included with campsite reservation.",
+      "best_time": "Open season: March - October. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. June is generally pleasant with longer daylight hours. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours, and thinner crowds. May and October: Shoulder season — sites are available without reservations but nights can be cold (near or below freezing).",
+      "regulations": "Park permit or camping fee required — reserve online through the provincial parks system. Campfires: Bring your own firewood or purchase from camp host. Do not collect wood from the forest. Quiet hours: 11 PM to 7 AM. Bear canisters or bear hangs required for food storage. Pack out all garbage — Leave No Trace principles apply. Dogs must be on leash at all times.",
+      "terrain": "The campground sits within coastal rainforest, Rocky Mountains, interior plateau terrain. Backcountry sites range from lakeshore clearings to ridgetop perches. Rocky ground in places — bring a footprint for your tent. The surrounding area offers excellent day-hiking opportunities. Elevation: 500-1500m.",
+      "nearby_services": "Camp store on site with basic supplies, firewood, and ice. Nearest full grocery: Vancouver (1.5-2 hours). Bring all gear — rental not available nearby. ",
+      "accommodation": "Backcountry tent sites only — flat ground at designated spots. Yurt or oTENTik rentals available for glamping comfort.  ",
+      "safety": "Cell coverage: No service — carry a satellite communicator for backcountry sites. Nearest hospital: Vancouver. Bear-safe food storage required. Bear sightings are regular — know what to do. All water must be filtered or boiled before drinking.  Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Strathcona Provincial Park",
       "slug": "strathcona-provincial-park",
       "province": "British Columbia",
       "type": "Backcountry",
-      "coordinates": {"lat": 49.7, "lng": -125.2},
-      "features": ["Alpine Lakes", "Mountain Peaks", "Glacier Views"],
+      "coordinates": {
+        "lat": 49.7,
+        "lng": -125.2
+      },
+      "features": [
+        "Alpine Lakes",
+        "Mountain Peaks",
+        "Glacier Views"
+      ],
       "season": "June - September",
       "difficulty": "Intermediate to Advanced",
       "sites_count": "200+",
@@ -142,15 +299,34 @@
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "hero-4.jpg",
-      "related_spots": ["pacific-rim-national-park", "cape-scott-provincial-park"]
+      "related_spots": [
+        "pacific-rim-national-park",
+        "cape-scott-provincial-park"
+      ],
+      "description": "Strathcona Provincial Park is a backcountry gem in British Columbia, offering alpine lakes, mountain peaks, glacier views amid the coastal rainforest, Rocky Mountains, interior plateau. With 200+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the coastal rainforest scenery and the chance to disconnect from daily life. The stargazing alone is worth the trip — minimal light pollution means you can see the Milky Way on clear nights. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Strathcona Provincial Park is a quintessential Canadian camping experience.",
+      "getting_there": "From Vancouver, it's approximately 1-1.5 hours by car. GPS: 49.7°N, 125.2°W. The last portion requires a high-clearance vehicle or a hike in.  Trail access from the parking area — hike of 2-15 km depending on your chosen site.",
+      "parking": "Parking lot at the trailhead — spaces fill up on summer weekends. Arrive early.  Day-use parking available for visitors not camping. $5-12 vehicle parking fee may apply.",
+      "best_time": "Open season: June - September. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. June is generally pleasant with longer daylight hours. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours, and thinner crowds. May and October: Shoulder season — sites are available without reservations but nights can be cold (near or below freezing).",
+      "regulations": "First-come, first-served sites available, but reservations recommended for peak season. Campfires: Permitted in designated fire pits only. Fire bans may be in effect during dry periods — check before your trip. Quiet hours: 11 PM to 7 AM. Bear canisters or bear hangs required for food storage. Pack out all garbage — Leave No Trace principles apply. Dogs must be on leash at all times.",
+      "terrain": "The campground sits within coastal rainforest, Rocky Mountains, interior plateau terrain. Backcountry sites range from lakeshore clearings to ridgetop perches. Ground is generally well-drained but can get muddy after heavy rain. The surrounding area offers excellent day-hiking opportunities. Elevation: 500-1500m.",
+      "nearby_services": "Camp store on site with basic supplies, firewood, and ice. Nearest full grocery: Vancouver (1-1.5 hours). Outfitter and gear rental within 20 minutes. ",
+      "accommodation": "Backcountry tent sites only — flat ground at designated spots.  Nearby lodges and B&Bs for those wanting a roof overhead. Group sites available for parties of 10+ — reserve early.",
+      "safety": "Cell coverage: No service — carry a satellite communicator for backcountry sites. Nearest hospital: Vancouver. Bear-safe food storage required. Bear sightings are regular — know what to do. All water must be filtered or boiled before drinking.  Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Cape Scott Provincial Park",
       "slug": "cape-scott-provincial-park",
       "province": "British Columbia",
       "type": "Wilderness",
-      "coordinates": {"lat": 50.8, "lng": -127.7},
-      "features": ["Remote Coastline", "Tide Pools", "Sand Dunes"],
+      "coordinates": {
+        "lat": 50.8,
+        "lng": -127.7
+      },
+      "features": [
+        "Remote Coastline",
+        "Tide Pools",
+        "Sand Dunes"
+      ],
       "season": "May - September",
       "difficulty": "Advanced",
       "sites_count": "80",
@@ -158,15 +334,33 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-26.jpg",
-      "related_spots": ["strathcona-provincial-park"]
+      "related_spots": [
+        "strathcona-provincial-park"
+      ],
+      "description": "Cape Scott Provincial Park is a beloved campground in British Columbia, offering remote coastline, tide pools, sand dunes amid the coastal rainforest, Rocky Mountains, interior plateau. With 80 sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the coastal rainforest scenery and the chance to disconnect from daily life. The stargazing alone is worth the trip — minimal light pollution means you can see the Milky Way on clear nights. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Cape Scott Provincial Park is a quintessential Canadian camping experience.",
+      "getting_there": "From Kelowna, it's approximately 3-4 hours by car. GPS: 50.8°N, 127.7°W. The last portion requires a high-clearance vehicle or a hike in.  Check-in at the gatehouse upon arrival.",
+      "parking": "Parking lot at the trailhead — spaces fill up on summer weekends. Arrive early.   $5-12 vehicle parking fee may apply.",
+      "best_time": "Open season: May - September. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. June is generally pleasant with longer daylight hours. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours, and thinner crowds. Shoulder months offer solitude but bring cold-weather gear.",
+      "regulations": "First-come, first-served sites available, but reservations recommended for peak season. Campfires: Bring your own firewood or purchase from camp host. Do not collect wood from the forest. Quiet hours: 11 PM to 7 AM. Bear canisters or bear hangs required for food storage. Pack out all garbage — Leave No Trace principles apply. Pets permitted on leash in designated areas only.",
+      "terrain": "The campground sits within coastal rainforest, Rocky Mountains, interior plateau terrain. Backcountry sites range from lakeshore clearings to ridgetop perches. Ground is generally well-drained but can get muddy after heavy rain. Nearby trails range from easy lakeside walks to moderate ridge hikes. Elevation: 500-1500m.",
+      "nearby_services": "Camp store on site with basic supplies, firewood, and ice. Nearest full grocery: Kelowna (3-4 hours). Outfitter and gear rental within 20 minutes. Restaurant and pub in the nearest village for a treat meal.",
+      "accommodation": "Backcountry tent sites only — flat ground at designated spots. Yurt or oTENTik rentals available for glamping comfort.  ",
+      "safety": "Cell coverage: No service — carry a satellite communicator for backcountry sites. Nearest hospital: Kelowna. Bear-safe food storage required. Bear sightings are regular — know what to do. All water must be filtered or boiled before drinking.  Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Lake Louise Backcountry",
       "slug": "lake-louise-backcountry",
       "province": "Alberta",
       "type": "Backcountry",
-      "coordinates": {"lat": 51.4, "lng": -116.2},
-      "features": ["Turquoise Alpine Lakes", "Glacial Views", "Steep Mountain Terrain"],
+      "coordinates": {
+        "lat": 51.4,
+        "lng": -116.2
+      },
+      "features": [
+        "Turquoise Alpine Lakes",
+        "Glacial Views",
+        "Steep Mountain Terrain"
+      ],
       "season": "June - September",
       "difficulty": "Intermediate to Advanced",
       "sites_count": "300+",
@@ -174,15 +368,34 @@
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-27.jpg",
-      "related_spots": ["moraine-lake-area", "icefields-parkway"]
+      "related_spots": [
+        "moraine-lake-area",
+        "icefields-parkway"
+      ],
+      "description": "Lake Louise Backcountry is a backcountry gem in Alberta, offering turquoise alpine lakes, glacial views, steep mountain terrain amid the Rocky Mountain foothills, prairies, badlands. With 300+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the Rocky Mountain foothills scenery and the chance to disconnect from daily life. The stargazing alone is worth the trip — minimal light pollution means you can see the Milky Way on clear nights. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Lake Louise Backcountry is a quintessential Canadian camping experience.",
+      "getting_there": "From Red Deer, it's approximately 1.5-2.5 hours by car. GPS: 51.4°N, 116.2°W. The last portion requires a high-clearance vehicle or a hike in.  Trail access from the parking area — hike of 2-15 km depending on your chosen site.",
+      "parking": "Parking lot at the trailhead — spaces fill up on summer weekends. Arrive early.  Day-use parking available for visitors not camping. Parking included with campsite reservation.",
+      "best_time": "Open season: June - September. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. June is generally pleasant with longer daylight hours. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours, and thinner crowds. May and October: Shoulder season — sites are available without reservations but nights can be cold (near or below freezing).",
+      "regulations": "Park permit or camping fee required — reserve online through the provincial parks system. Campfires: Bring your own firewood or purchase from camp host. Do not collect wood from the forest.  Bear canisters or bear hangs required for food storage. Pack out all garbage — Leave No Trace principles apply. Pets permitted on leash in designated areas only.",
+      "terrain": "The campground sits within Rocky Mountain foothills, prairies, badlands terrain. Backcountry sites range from lakeshore clearings to ridgetop perches. Rocky ground in places — bring a footprint for your tent. Nearby trails range from easy lakeside walks to moderate ridge hikes. Elevation: 500-1500m.",
+      "nearby_services": "Camp store on site with basic supplies, firewood, and ice. Nearest full grocery: Red Deer (1.5-2.5 hours). Outfitter and gear rental within 20 minutes. Restaurant and pub in the nearest village for a treat meal.",
+      "accommodation": "Backcountry tent sites only — flat ground at designated spots.   Group sites available for parties of 10+ — reserve early.",
+      "safety": "Cell coverage: No service — carry a satellite communicator for backcountry sites. Nearest hospital: Red Deer. Bear-safe food storage required. Bear sightings are regular — know what to do. All water must be filtered or boiled before drinking.  Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Moraine Lake Backcountry",
       "slug": "moraine-lake-area",
       "province": "Alberta",
       "type": "Backcountry",
-      "coordinates": {"lat": 51.3, "lng": -116.4},
-      "features": ["Ten Peaks Hiking", "Valley of Ten Peaks", "Crystal Clear Lakes"],
+      "coordinates": {
+        "lat": 51.3,
+        "lng": -116.4
+      },
+      "features": [
+        "Ten Peaks Hiking",
+        "Valley of Ten Peaks",
+        "Crystal Clear Lakes"
+      ],
       "season": "June - September",
       "difficulty": "Intermediate to Advanced",
       "sites_count": "250+",
@@ -190,15 +403,34 @@
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "hero-5.jpg",
-      "related_spots": ["lake-louise-backcountry", "icefields-parkway"]
+      "related_spots": [
+        "lake-louise-backcountry",
+        "icefields-parkway"
+      ],
+      "description": "Moraine Lake Backcountry is a backcountry gem in Alberta, offering ten peaks hiking, valley of ten peaks, crystal clear lakes amid the Rocky Mountain foothills, prairies, badlands. With 250+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the Rocky Mountain foothills scenery and the chance to disconnect from daily life. The sounds of nature replace the noise of civilization, making this a true retreat. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Moraine Lake Backcountry is a quintessential Canadian camping experience.",
+      "getting_there": "From Red Deer, it's approximately 2-3 hours by car. GPS: 51.3°N, 116.4°W. The last portion requires a high-clearance vehicle or a hike in.  Trail access from the parking area — hike of 2-15 km depending on your chosen site.",
+      "parking": "Parking lot at the trailhead — spaces fill up on summer weekends. Arrive early.  Day-use parking available for visitors not camping. Parking included with campsite reservation.",
+      "best_time": "Open season: June - September. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. June is generally pleasant with longer daylight hours. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours, and thinner crowds. May and October: Shoulder season — sites are available without reservations but nights can be cold (near or below freezing).",
+      "regulations": "First-come, first-served sites available, but reservations recommended for peak season. Campfires: Bring your own firewood or purchase from camp host. Do not collect wood from the forest.  Bear canisters or bear hangs required for food storage. Pack out all garbage — Leave No Trace principles apply. Dogs must be on leash at all times.",
+      "terrain": "The campground sits within Rocky Mountain foothills, prairies, badlands terrain. Backcountry sites range from lakeshore clearings to ridgetop perches. Ground is generally well-drained but can get muddy after heavy rain. Nearby trails range from easy lakeside walks to moderate ridge hikes. Elevation: 500-1500m.",
+      "nearby_services": "No on-site store — bring everything you need. Nearest full grocery: Red Deer (2-3 hours). Outfitter and gear rental within 20 minutes. ",
+      "accommodation": "Backcountry tent sites only — flat ground at designated spots.   ",
+      "safety": "Cell coverage: No service — carry a satellite communicator for backcountry sites. Nearest hospital: Red Deer. Bear-safe food storage required. Bear sightings are regular — know what to do. All water must be filtered or boiled before drinking.  Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Icefields Parkway Campgrounds",
       "slug": "icefields-parkway",
       "province": "Alberta",
       "type": "Car Camping",
-      "coordinates": {"lat": 52.5, "lng": -117.0},
-      "features": ["Glacier Access", "Mountain Pass Views", "Wildlife Spotting"],
+      "coordinates": {
+        "lat": 52.5,
+        "lng": -117.0
+      },
+      "features": [
+        "Glacier Access",
+        "Mountain Pass Views",
+        "Wildlife Spotting"
+      ],
       "season": "May - October",
       "difficulty": "Beginner to Intermediate",
       "sites_count": "500+",
@@ -206,15 +438,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-28.jpg",
-      "related_spots": ["lake-louise-backcountry", "moraine-lake-area"]
+      "related_spots": [
+        "lake-louise-backcountry",
+        "moraine-lake-area"
+      ],
+      "description": "Icefields Parkway Campgrounds is a beloved campground in Alberta, offering glacier access, mountain pass views, wildlife spotting amid the Rocky Mountain foothills, prairies, badlands. With 500+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Rocky Mountain foothills scenery and the chance to disconnect from daily life. The sounds of nature replace the noise of civilization, making this a true retreat. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Icefields Parkway Campgrounds is a quintessential Canadian camping experience.",
+      "getting_there": "From Red Deer, it's approximately 3-4 hours by car. GPS: 52.5°N, 117.0°W. Paved road all the way to the campground entrance.  Check-in at the gatehouse upon arrival.",
+      "parking": "Each site includes one vehicle parking space. Overflow lot available near the entrance.   $5-12 vehicle parking fee may apply.",
+      "best_time": "Open season: May - October. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. June is generally pleasant with longer daylight hours. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours, and thinner crowds. Shoulder months offer solitude but bring cold-weather gear.",
+      "regulations": "Park permit or camping fee required — reserve online through the provincial parks system. Campfires: Bring your own firewood or purchase from camp host. Do not collect wood from the forest.  Bear canisters or bear hangs required for food storage. Pack out all garbage — Leave No Trace principles apply. Dogs must be on leash at all times.",
+      "terrain": "The campground sits within Rocky Mountain foothills, prairies, badlands terrain. Sites are on relatively flat, forested ground with natural screening between neighbours. Rocky ground in places — bring a footprint for your tent. Nearby trails range from easy lakeside walks to moderate ridge hikes. Elevation: 500-1500m.",
+      "nearby_services": "Camp store on site with basic supplies, firewood, and ice. Nearest full grocery: Red Deer (3-4 hours). Outfitter and gear rental within 20 minutes. ",
+      "accommodation": "Designated tent pads at each site. Yurt or oTENTik rentals available for glamping comfort.  Group sites available for parties of 10+ — reserve early.",
+      "safety": "Cell coverage: Available at the main campground area. Nearest hospital: Red Deer. Bear-safe food storage required. Bear sightings are regular — know what to do. Drinking water available at pump stations.  Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Riding Mountain National Park",
       "slug": "riding-mountain-national-park",
       "province": "Manitoba",
       "type": "Car Camping",
-      "coordinates": {"lat": 50.7, "lng": -99.6},
-      "features": ["Prairie Views", "Wildlife Observing", "Lake Camping"],
+      "coordinates": {
+        "lat": 50.7,
+        "lng": -99.6
+      },
+      "features": [
+        "Prairie Views",
+        "Wildlife Observing",
+        "Lake Camping"
+      ],
       "season": "May - September",
       "difficulty": "Beginner to Intermediate",
       "sites_count": "400+",
@@ -222,15 +473,33 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "hero-6.jpg",
-      "related_spots": ["grand-beach-provincial-park"]
+      "related_spots": [
+        "grand-beach-provincial-park"
+      ],
+      "description": "Riding Mountain National Park is a beloved campground in Manitoba, offering prairie views, wildlife observing, lake camping amid the boreal shield, prairie grasslands, Hudson Bay lowlands. With 400+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the boreal shield scenery and the chance to disconnect from daily life. The stargazing alone is worth the trip — minimal light pollution means you can see the Milky Way on clear nights. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Riding Mountain National Park is a quintessential Canadian camping experience.",
+      "getting_there": "From Thompson, it's approximately 2-3 hours by car. GPS: 50.7°N, 99.6°W. Paved road all the way to the campground entrance.  Check-in at the gatehouse upon arrival.",
+      "parking": "Each site includes one vehicle parking space. Overflow lot available near the entrance.   Parking included with campsite reservation.",
+      "best_time": "Open season: May - September. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. Bugs can be intense in June — bring repellent and a bug net. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours, and thinner crowds. Shoulder months offer solitude but bring cold-weather gear.",
+      "regulations": "First-come, first-served sites available, but reservations recommended for peak season. Campfires: Bring your own firewood or purchase from camp host. Do not collect wood from the forest. Quiet hours: 11 PM to 7 AM. Store food securely to avoid attracting wildlife. Pack out all garbage — Leave No Trace principles apply. Pets permitted on leash in designated areas only.",
+      "terrain": "The campground sits within boreal shield, prairie grasslands, Hudson Bay lowlands terrain. Sites are on relatively flat, forested ground with natural screening between neighbours. Ground is generally well-drained but can get muddy after heavy rain. Nearby trails range from easy lakeside walks to moderate ridge hikes. Elevation: 200-400m above sea level.",
+      "nearby_services": "Camp store on site with basic supplies, firewood, and ice. Nearest full grocery: Thompson (2-3 hours). Outfitter and gear rental within 20 minutes. Restaurant and pub in the nearest village for a treat meal.",
+      "accommodation": "Designated tent pads at each site. Yurt or oTENTik rentals available for glamping comfort.  Group sites available for parties of 10+ — reserve early.",
+      "safety": "Cell coverage: Available at the main campground area. Nearest hospital: Thompson. Wildlife is present — never approach or feed wild animals. Drinking water available at pump stations. Ticks are active May-July — check yourself daily. Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Athabasca Sand Dunes",
       "slug": "athabasca-sand-dunes",
       "province": "Saskatchewan",
       "type": "Wilderness",
-      "coordinates": {"lat": 59.0, "lng": -109.5},
-      "features": ["Sand Dunes", "Remote Boreal Forest", "Lake Camping"],
+      "coordinates": {
+        "lat": 59.0,
+        "lng": -109.5
+      },
+      "features": [
+        "Sand Dunes",
+        "Remote Boreal Forest",
+        "Lake Camping"
+      ],
       "season": "June - September",
       "difficulty": "Advanced",
       "sites_count": "50",
@@ -238,15 +507,33 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-29.jpg",
-      "related_spots": ["riding-mountain-national-park"]
+      "related_spots": [
+        "riding-mountain-national-park"
+      ],
+      "description": "Athabasca Sand Dunes is a beloved campground in Saskatchewan, offering sand dunes, remote boreal forest, lake camping amid the northern boreal forest, central parkland, southern prairies. With 50 sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the northern boreal forest scenery and the chance to disconnect from daily life. The sounds of nature replace the noise of civilization, making this a true retreat. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Athabasca Sand Dunes is a quintessential Canadian camping experience.",
+      "getting_there": "From Moose Jaw, it's approximately 3-4 hours by car. GPS: 59.0°N, 109.5°W. The last portion requires a high-clearance vehicle or a hike in.  Check-in at the gatehouse upon arrival.",
+      "parking": "Parking lot at the trailhead — spaces fill up on summer weekends. Arrive early.   $5-12 vehicle parking fee may apply.",
+      "best_time": "Open season: June - September. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. Bugs can be intense in June — bring repellent and a bug net. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours, and thinner crowds. May and October: Shoulder season — sites are available without reservations but nights can be cold (near or below freezing).",
+      "regulations": "First-come, first-served sites available, but reservations recommended for peak season. Campfires: Bring your own firewood or purchase from camp host. Do not collect wood from the forest. Quiet hours: 11 PM to 7 AM. Store food securely to avoid attracting wildlife. Pack out all garbage — Leave No Trace principles apply. Pets permitted on leash in designated areas only.",
+      "terrain": "The campground sits within northern boreal forest, central parkland, southern prairies terrain. Backcountry sites range from lakeshore clearings to ridgetop perches. Rocky ground in places — bring a footprint for your tent. The surrounding area offers excellent day-hiking opportunities. Elevation: 200-400m above sea level.",
+      "nearby_services": "Camp store on site with basic supplies, firewood, and ice. Nearest full grocery: Moose Jaw (3-4 hours). Bring all gear — rental not available nearby. ",
+      "accommodation": "Backcountry tent sites only — flat ground at designated spots. Yurt or oTENTik rentals available for glamping comfort.  Group sites available for parties of 10+ — reserve early.",
+      "safety": "Cell coverage: No service — carry a satellite communicator for backcountry sites. Nearest hospital: Moose Jaw. Wildlife is present — never approach or feed wild animals. All water must be filtered or boiled before drinking.  Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Fundy National Park",
       "slug": "fundy-national-park",
       "province": "New Brunswick",
       "type": "Car Camping",
-      "coordinates": {"lat": 45.3, "lng": -64.8},
-      "features": ["Highest Tides", "Waterfall Hikes", "Coastal Valleys"],
+      "coordinates": {
+        "lat": 45.3,
+        "lng": -64.8
+      },
+      "features": [
+        "Highest Tides",
+        "Waterfall Hikes",
+        "Coastal Valleys"
+      ],
       "season": "May - October",
       "difficulty": "Beginner to Intermediate",
       "sites_count": "600+",
@@ -254,15 +541,34 @@
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "hero-7.jpg",
-      "related_spots": ["hopewell-rocks", "cape-enrage"]
+      "related_spots": [
+        "hopewell-rocks",
+        "cape-enrage"
+      ],
+      "description": "Fundy National Park is a beloved campground in New Brunswick, offering highest tides, waterfall hikes, coastal valleys amid the Appalachian uplands, Bay of Fundy coast, river valleys. With 600+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Appalachian uplands scenery and the chance to disconnect from daily life. The stargazing alone is worth the trip — minimal light pollution means you can see the Milky Way on clear nights. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Fundy National Park is a quintessential Canadian camping experience.",
+      "getting_there": "From Saint John, it's approximately 45 minutes by car. GPS: 45.3°N, 64.8°W. Paved road all the way to the campground entrance.  Check-in at the gatehouse upon arrival.",
+      "parking": "Each site includes one vehicle parking space. Overflow lot available near the entrance.   $5-12 vehicle parking fee may apply.",
+      "best_time": "Open season: May - October. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. June is generally pleasant with longer daylight hours. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours (especially in the hardwood forests), and thinner crowds. May and October: Shoulder season — sites are available without reservations but nights can be cold (near or below freezing).",
+      "regulations": "Park permit or camping fee required — reserve online through the provincial parks system. Campfires: Bring your own firewood or purchase from camp host. Do not collect wood from the forest.  Store food securely to avoid attracting wildlife. Pack out all garbage — Leave No Trace principles apply. Pets permitted on leash in designated areas only.",
+      "terrain": "The campground sits within Appalachian uplands, Bay of Fundy coast, river valleys terrain. Sites are on relatively flat, forested ground with natural screening between neighbours. Rocky ground in places — bring a footprint for your tent. The surrounding area offers excellent day-hiking opportunities. Elevation: 50-200m.",
+      "nearby_services": "No on-site store — bring everything you need. Nearest full grocery: Saint John (45 minutes). Bring all gear — rental not available nearby. ",
+      "accommodation": "Designated tent pads at each site.  Nearby lodges and B&Bs for those wanting a roof overhead. Group sites available for parties of 10+ — reserve early.",
+      "safety": "Cell coverage: Available at the main campground area. Nearest hospital: Saint John. Wildlife is present — never approach or feed wild animals. Drinking water available at pump stations. Ticks are active May-July — check yourself daily. Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Hopewell Rocks Area",
       "slug": "hopewell-rocks",
       "province": "New Brunswick",
       "type": "RV Friendly",
-      "coordinates": {"lat": 45.3, "lng": -64.7},
-      "features": ["Tidal Flats", "Rock Formations", "Kayaking"],
+      "coordinates": {
+        "lat": 45.3,
+        "lng": -64.7
+      },
+      "features": [
+        "Tidal Flats",
+        "Rock Formations",
+        "Kayaking"
+      ],
       "season": "April - October",
       "difficulty": "Beginner",
       "sites_count": "350",
@@ -270,15 +576,33 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-30.jpg",
-      "related_spots": ["fundy-national-park"]
+      "related_spots": [
+        "fundy-national-park"
+      ],
+      "description": "Hopewell Rocks Area is a beloved campground in New Brunswick, offering tidal flats, rock formations, kayaking amid the Appalachian uplands, Bay of Fundy coast, river valleys. With 350 sites, it balances comfort and nature beautifully.\n\nCampers come here for the Appalachian uplands scenery and the chance to disconnect from daily life. The sounds of nature replace the noise of civilization, making this a true retreat. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Hopewell Rocks Area is a quintessential Canadian camping experience.",
+      "getting_there": "From Saint John, it's approximately 1-1.5 hours by car. GPS: 45.3°N, 64.7°W. Paved road all the way to the campground entrance. RV-friendly access road with clearance for large units. Check-in at the gatehouse upon arrival.",
+      "parking": "Each site includes one vehicle parking space. Overflow lot available near the entrance. RV dump station and water fill available on site.  Parking included with campsite reservation.",
+      "best_time": "Open season: April - October. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. June is generally pleasant with longer daylight hours. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours (especially in the hardwood forests), and thinner crowds. May and October: Shoulder season — sites are available without reservations but nights can be cold (near or below freezing).",
+      "regulations": "Park permit or camping fee required — reserve online through the provincial parks system. Campfires: Bring your own firewood or purchase from camp host. Do not collect wood from the forest.  Store food securely to avoid attracting wildlife. Pack out all garbage — Leave No Trace principles apply. Dogs must be on leash at all times.",
+      "terrain": "The campground sits within Appalachian uplands, Bay of Fundy coast, river valleys terrain. Sites are on relatively flat, forested ground with natural screening between neighbours. Ground is generally well-drained but can get muddy after heavy rain. The surrounding area offers excellent day-hiking opportunities. Elevation: 50-200m.",
+      "nearby_services": "No on-site store — bring everything you need. Nearest full grocery: Saint John (1-1.5 hours). Outfitter and gear rental within 20 minutes. ",
+      "accommodation": "Tent sites, serviced RV sites, and rustic cabins available. Yurt or oTENTik rentals available for glamping comfort.  Group sites available for parties of 10+ — reserve early.",
+      "safety": "Cell coverage: Available at the main campground area. Nearest hospital: Saint John. Wildlife is present — never approach or feed wild animals. Drinking water available at pump stations. Ticks are active May-July — check yourself daily. Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Cape Breton Highlands National Park",
       "slug": "cape-breton-highlands-national-park",
       "province": "Nova Scotia",
       "type": "Car Camping",
-      "coordinates": {"lat": 46.7, "lng": -60.7},
-      "features": ["Cabot Trail Hiking", "Steep Cliffs", "Coastal Scenery"],
+      "coordinates": {
+        "lat": 46.7,
+        "lng": -60.7
+      },
+      "features": [
+        "Cabot Trail Hiking",
+        "Steep Cliffs",
+        "Coastal Scenery"
+      ],
       "season": "May - October",
       "difficulty": "Beginner to Intermediate",
       "sites_count": "350+",
@@ -286,15 +610,33 @@
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "hero-8.jpg",
-      "related_spots": ["kejimkujik-national-park"]
+      "related_spots": [
+        "kejimkujik-national-park"
+      ],
+      "description": "Cape Breton Highlands National Park is a beloved campground in Nova Scotia, offering cabot trail hiking, steep cliffs, coastal scenery amid the Atlantic coastline, Annapolis Valley, Cape Breton Highlands. With 350+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Atlantic coastline scenery and the chance to disconnect from daily life. The sounds of nature replace the noise of civilization, making this a true retreat. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Cape Breton Highlands National Park is a quintessential Canadian camping experience.",
+      "getting_there": "From Halifax, it's approximately 45 minutes by car. GPS: 46.7°N, 60.7°W. Paved road all the way to the campground entrance.  Check-in at the gatehouse upon arrival.",
+      "parking": "Each site includes one vehicle parking space. Overflow lot available near the entrance.  Day-use parking available for visitors not camping. $5-12 vehicle parking fee may apply.",
+      "best_time": "Open season: May - October. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. June is generally pleasant with longer daylight hours. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours (especially in the hardwood forests), and thinner crowds. Shoulder months offer solitude but bring cold-weather gear.",
+      "regulations": "First-come, first-served sites available, but reservations recommended for peak season. Campfires: Permitted in designated fire pits only. Fire bans may be in effect during dry periods — check before your trip.  Store food securely to avoid attracting wildlife. Pack out all garbage — Leave No Trace principles apply. Pets permitted on leash in designated areas only.",
+      "terrain": "The campground sits within Atlantic coastline, Annapolis Valley, Cape Breton Highlands terrain. Sites are on relatively flat, forested ground with natural screening between neighbours. Ground is generally well-drained but can get muddy after heavy rain. The surrounding area offers excellent day-hiking opportunities. Elevation: 50-200m.",
+      "nearby_services": "Camp store on site with basic supplies, firewood, and ice. Nearest full grocery: Halifax (45 minutes). Outfitter and gear rental within 20 minutes. Restaurant and pub in the nearest village for a treat meal.",
+      "accommodation": "Designated tent pads at each site.   Group sites available for parties of 10+ — reserve early.",
+      "safety": "Cell coverage: Available at the main campground area. Nearest hospital: Halifax. Wildlife is present — never approach or feed wild animals. Drinking water available at pump stations. Ticks are active May-July — check yourself daily. Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Kejimkujik National Park",
       "slug": "kejimkujik-national-park",
       "province": "Nova Scotia",
       "type": "Backcountry",
-      "coordinates": {"lat": 44.4, "lng": -65.2},
-      "features": ["Lake Paddling", "Inland Wilderness", "Historic Petroglyphs"],
+      "coordinates": {
+        "lat": 44.4,
+        "lng": -65.2
+      },
+      "features": [
+        "Lake Paddling",
+        "Inland Wilderness",
+        "Historic Petroglyphs"
+      ],
       "season": "April - October",
       "difficulty": "Beginner to Advanced",
       "sites_count": "450+",
@@ -302,15 +644,33 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-21.jpg",
-      "related_spots": ["cape-breton-highlands-national-park"]
+      "related_spots": [
+        "cape-breton-highlands-national-park"
+      ],
+      "description": "Kejimkujik National Park is a backcountry gem in Nova Scotia, offering lake paddling, inland wilderness, historic petroglyphs amid the Atlantic coastline, Annapolis Valley, Cape Breton Highlands. With 450+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the Atlantic coastline scenery and the chance to disconnect from daily life. The sounds of nature replace the noise of civilization, making this a true retreat. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Kejimkujik National Park is a quintessential Canadian camping experience.",
+      "getting_there": "From Halifax, it's approximately 1.5-2 hours by car. GPS: 44.4°N, 65.2°W. The last portion requires a high-clearance vehicle or a hike in.  Trail access from the parking area — hike of 2-15 km depending on your chosen site.",
+      "parking": "Parking lot at the trailhead — spaces fill up on summer weekends. Arrive early.   $5-12 vehicle parking fee may apply.",
+      "best_time": "Open season: April - October. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. June is generally pleasant with longer daylight hours. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours (especially in the hardwood forests), and thinner crowds. Shoulder months offer solitude but bring cold-weather gear.",
+      "regulations": "First-come, first-served sites available, but reservations recommended for peak season. Campfires: Bring your own firewood or purchase from camp host. Do not collect wood from the forest.  Store food securely to avoid attracting wildlife. Pack out all garbage — Leave No Trace principles apply. Pets permitted on leash in designated areas only.",
+      "terrain": "The campground sits within Atlantic coastline, Annapolis Valley, Cape Breton Highlands terrain. Backcountry sites range from lakeshore clearings to ridgetop perches. Rocky ground in places — bring a footprint for your tent. The surrounding area offers excellent day-hiking opportunities. Elevation: 50-200m.",
+      "nearby_services": "Camp store on site with basic supplies, firewood, and ice. Nearest full grocery: Halifax (1.5-2 hours). Bring all gear — rental not available nearby. Restaurant and pub in the nearest village for a treat meal.",
+      "accommodation": "Backcountry tent sites only — flat ground at designated spots.   ",
+      "safety": "Cell coverage: No service — carry a satellite communicator for backcountry sites. Nearest hospital: Halifax. Wildlife is present — never approach or feed wild animals. All water must be filtered or boiled before drinking. Ticks are active May-July — check yourself daily. Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Prince Edward Island National Park",
       "slug": "pei-national-park",
       "province": "Prince Edward Island",
       "type": "Car Camping",
-      "coordinates": {"lat": 46.3, "lng": -62.7},
-      "features": ["Red Sand Beaches", "Coastal Trails", "Dune Systems"],
+      "coordinates": {
+        "lat": 46.3,
+        "lng": -62.7
+      },
+      "features": [
+        "Red Sand Beaches",
+        "Coastal Trails",
+        "Dune Systems"
+      ],
       "season": "May - October",
       "difficulty": "Beginner",
       "sites_count": "240",
@@ -318,15 +678,33 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "hero-9.jpg",
-      "related_spots": ["cape-breton-highlands-national-park"]
+      "related_spots": [
+        "cape-breton-highlands-national-park"
+      ],
+      "description": "Prince Edward Island National Park is a beloved campground in Prince Edward Island, offering red sand beaches, coastal trails, dune systems amid the red sand beaches, rolling farmland, gentle coastline. With 240 sites, it balances comfort and nature beautifully.\n\nCampers come here for the red sand beaches scenery and the chance to disconnect from daily life. The sounds of nature replace the noise of civilization, making this a true retreat. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Prince Edward Island National Park is a quintessential Canadian camping experience.",
+      "getting_there": "From Charlottetown, it's approximately 1.5-2 hours by car. GPS: 46.3°N, 62.7°W. Paved road all the way to the campground entrance.  Check-in at the gatehouse upon arrival.",
+      "parking": "Each site includes one vehicle parking space. Overflow lot available near the entrance.   $5-12 vehicle parking fee may apply.",
+      "best_time": "Open season: May - October. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. June is generally pleasant with longer daylight hours. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours, and thinner crowds. Shoulder months offer solitude but bring cold-weather gear.",
+      "regulations": "Park permit or camping fee required — reserve online through the provincial parks system. Campfires: Bring your own firewood or purchase from camp host. Do not collect wood from the forest. Quiet hours: 11 PM to 7 AM. Store food securely to avoid attracting wildlife. Pack out all garbage — Leave No Trace principles apply. Pets permitted on leash in designated areas only.",
+      "terrain": "The campground sits within red sand beaches, rolling farmland, gentle coastline terrain. Sites are on relatively flat, forested ground with natural screening between neighbours. Rocky ground in places — bring a footprint for your tent. The surrounding area offers excellent day-hiking opportunities. Elevation: 50-200m.",
+      "nearby_services": "No on-site store — bring everything you need. Nearest full grocery: Charlottetown (1.5-2 hours). Outfitter and gear rental within 20 minutes. Restaurant and pub in the nearest village for a treat meal.",
+      "accommodation": "Designated tent pads at each site. Yurt or oTENTik rentals available for glamping comfort.  ",
+      "safety": "Cell coverage: Available at the main campground area. Nearest hospital: Charlottetown. Wildlife is present — never approach or feed wild animals. Drinking water available at pump stations.  Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Gros Morne National Park",
       "slug": "gros-morne-national-park",
       "province": "Newfoundland & Labrador",
       "type": "Car Camping",
-      "coordinates": {"lat": 49.0, "lng": -57.5},
-      "features": ["Fjord Hiking", "Glacial Valleys", "Mountain Vistas"],
+      "coordinates": {
+        "lat": 49.0,
+        "lng": -57.5
+      },
+      "features": [
+        "Fjord Hiking",
+        "Glacial Valleys",
+        "Mountain Vistas"
+      ],
       "season": "May - September",
       "difficulty": "Beginner to Intermediate",
       "sites_count": "270+",
@@ -334,15 +712,33 @@
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "hero-10.jpg",
-      "related_spots": ["western-brook-pond"]
+      "related_spots": [
+        "western-brook-pond"
+      ],
+      "description": "Gros Morne National Park is a beloved campground in Newfoundland & Labrador, offering fjord hiking, glacial valleys, mountain vistas amid the Canadian wilderness. With 270+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Canadian wilderness scenery and the chance to disconnect from daily life. The sounds of nature replace the noise of civilization, making this a true retreat. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Gros Morne National Park is a quintessential Canadian camping experience.",
+      "getting_there": "From the nearest town, it's approximately 2-3 hours by car. GPS: 49.0°N, 57.5°W. Paved road all the way to the campground entrance.  Check-in at the gatehouse upon arrival.",
+      "parking": "Each site includes one vehicle parking space. Overflow lot available near the entrance.  Day-use parking available for visitors not camping. $5-12 vehicle parking fee may apply.",
+      "best_time": "Open season: May - September. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. June is generally pleasant with longer daylight hours. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours, and thinner crowds. May and October: Shoulder season — sites are available without reservations but nights can be cold (near or below freezing).",
+      "regulations": "Park permit or camping fee required — reserve online through the provincial parks system. Campfires: Permitted in designated fire pits only. Fire bans may be in effect during dry periods — check before your trip.  Store food securely to avoid attracting wildlife. Pack out all garbage — Leave No Trace principles apply. Dogs must be on leash at all times.",
+      "terrain": "The campground sits within Canadian wilderness terrain. Sites are on relatively flat, forested ground with natural screening between neighbours. Ground is generally well-drained but can get muddy after heavy rain. The surrounding area offers excellent day-hiking opportunities. Elevation: 50-200m.",
+      "nearby_services": "Camp store on site with basic supplies, firewood, and ice. Nearest full grocery: the nearest town (2-3 hours). Outfitter and gear rental within 20 minutes. Restaurant and pub in the nearest village for a treat meal.",
+      "accommodation": "Designated tent pads at each site.   Group sites available for parties of 10+ — reserve early.",
+      "safety": "Cell coverage: Available at the main campground area. Nearest hospital: the nearest town. Wildlife is present — never approach or feed wild animals. Drinking water available at pump stations.  Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Western Brook Pond",
       "slug": "western-brook-pond",
       "province": "Newfoundland & Labrador",
       "type": "Backcountry",
-      "coordinates": {"lat": 49.1, "lng": -57.5},
-      "features": ["Steep Fjord Walls", "Boat Tours", "Backcountry Camping"],
+      "coordinates": {
+        "lat": 49.1,
+        "lng": -57.5
+      },
+      "features": [
+        "Steep Fjord Walls",
+        "Boat Tours",
+        "Backcountry Camping"
+      ],
       "season": "June - September",
       "difficulty": "Intermediate to Advanced",
       "sites_count": "60",
@@ -350,15 +746,33 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-22.jpg",
-      "related_spots": ["gros-morne-national-park"]
+      "related_spots": [
+        "gros-morne-national-park"
+      ],
+      "description": "Western Brook Pond is a backcountry gem in Newfoundland & Labrador, offering steep fjord walls, boat tours, backcountry camping amid the Canadian wilderness. With 60 sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the Canadian wilderness scenery and the chance to disconnect from daily life. The stargazing alone is worth the trip — minimal light pollution means you can see the Milky Way on clear nights. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Western Brook Pond is a quintessential Canadian camping experience.",
+      "getting_there": "From the nearest town, it's approximately 1.5-2 hours by car. GPS: 49.1°N, 57.5°W. The last portion requires a high-clearance vehicle or a hike in.  Trail access from the parking area — hike of 2-15 km depending on your chosen site.",
+      "parking": "Parking lot at the trailhead — spaces fill up on summer weekends. Arrive early.  Day-use parking available for visitors not camping. $5-12 vehicle parking fee may apply.",
+      "best_time": "Open season: June - September. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. June is generally pleasant with longer daylight hours. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours, and thinner crowds. May and October: Shoulder season — sites are available without reservations but nights can be cold (near or below freezing).",
+      "regulations": "Park permit or camping fee required — reserve online through the provincial parks system. Campfires: Bring your own firewood or purchase from camp host. Do not collect wood from the forest.  Store food securely to avoid attracting wildlife. Pack out all garbage — Leave No Trace principles apply. Dogs must be on leash at all times.",
+      "terrain": "The campground sits within Canadian wilderness terrain. Backcountry sites range from lakeshore clearings to ridgetop perches. Ground is generally well-drained but can get muddy after heavy rain. Nearby trails range from easy lakeside walks to moderate ridge hikes. Elevation: 50-200m.",
+      "nearby_services": "No on-site store — bring everything you need. Nearest full grocery: the nearest town (1.5-2 hours). Bring all gear — rental not available nearby. ",
+      "accommodation": "Backcountry tent sites only — flat ground at designated spots.   Group sites available for parties of 10+ — reserve early.",
+      "safety": "Cell coverage: No service — carry a satellite communicator for backcountry sites. Nearest hospital: the nearest town. Wildlife is present — never approach or feed wild animals. All water must be filtered or boiled before drinking.  Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Tombstone Territorial Park",
       "slug": "tombstone-territorial-park",
       "province": "Yukon",
       "type": "Wilderness",
-      "coordinates": {"lat": 64.2, "lng": -128.5},
-      "features": ["Alpine Tundra", "Midnight Sun", "Remote Hiking"],
+      "coordinates": {
+        "lat": 64.2,
+        "lng": -128.5
+      },
+      "features": [
+        "Alpine Tundra",
+        "Midnight Sun",
+        "Remote Hiking"
+      ],
       "season": "June - August",
       "difficulty": "Advanced",
       "sites_count": "100",
@@ -366,15 +780,33 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-23.jpg",
-      "related_spots": ["dawson-city-campgrounds"]
+      "related_spots": [
+        "dawson-city-campgrounds"
+      ],
+      "description": "Tombstone Territorial Park is a beloved campground in Yukon, offering alpine tundra, midnight sun, remote hiking amid the subarctic wilderness, Kluane ranges, boreal forest. With 100 sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the subarctic wilderness scenery and the chance to disconnect from daily life. The stargazing alone is worth the trip — minimal light pollution means you can see the Milky Way on clear nights. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Tombstone Territorial Park is a quintessential Canadian camping experience.",
+      "getting_there": "From Dawson City, it's approximately 4-6 hours by car. GPS: 64.2°N, 128.5°W. The last portion requires a high-clearance vehicle or a hike in.  Check-in at the gatehouse upon arrival.",
+      "parking": "Parking lot at the trailhead — spaces fill up on summer weekends. Arrive early.  Day-use parking available for visitors not camping. $5-12 vehicle parking fee may apply.",
+      "best_time": "Open season: June - August. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. June is generally pleasant with longer daylight hours. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours, and thinner crowds. Shoulder months offer solitude but bring cold-weather gear.",
+      "regulations": "Park permit or camping fee required — reserve online through the provincial parks system. Campfires: Permitted in designated fire pits only. Fire bans may be in effect during dry periods — check before your trip.  Bear canisters or bear hangs required for food storage. Pack out all garbage — Leave No Trace principles apply. Pets permitted on leash in designated areas only.",
+      "terrain": "The campground sits within subarctic wilderness, Kluane ranges, boreal forest terrain. Backcountry sites range from lakeshore clearings to ridgetop perches. Rocky ground in places — bring a footprint for your tent. The surrounding area offers excellent day-hiking opportunities. Elevation: 50-200m.",
+      "nearby_services": "Camp store on site with basic supplies, firewood, and ice. Nearest full grocery: Dawson City (4-6 hours). Outfitter and gear rental within 20 minutes. ",
+      "accommodation": "Backcountry tent sites only — flat ground at designated spots. Yurt or oTENTik rentals available for glamping comfort. Nearby lodges and B&Bs for those wanting a roof overhead. Group sites available for parties of 10+ — reserve early.",
+      "safety": "Cell coverage: No service — carry a satellite communicator for backcountry sites. Nearest hospital: Dawson City. Bear-safe food storage required. Bear sightings are regular — know what to do. All water must be filtered or boiled before drinking.  Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Hay River Territorial Park",
       "slug": "hay-river-territorial-park",
       "province": "Northwest Territories",
       "type": "Car Camping",
-      "coordinates": {"lat": 60.9, "lng": -115.8},
-      "features": ["River Camping", "Boreal Forest", "Aurora Viewing"],
+      "coordinates": {
+        "lat": 60.9,
+        "lng": -115.8
+      },
+      "features": [
+        "River Camping",
+        "Boreal Forest",
+        "Aurora Viewing"
+      ],
       "season": "May - September",
       "difficulty": "Beginner to Intermediate",
       "sites_count": "200",
@@ -382,15 +814,33 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-24.jpg",
-      "related_spots": ["tombstone-territorial-park"]
+      "related_spots": [
+        "tombstone-territorial-park"
+      ],
+      "description": "Hay River Territorial Park is a beloved campground in Northwest Territories, offering river camping, boreal forest, aurora viewing amid the tundra, boreal forest, Great Slave Lake, Mackenzie River. With 200 sites, it balances comfort and nature beautifully.\n\nCampers come here for the tundra scenery and the chance to disconnect from daily life. The stargazing alone is worth the trip — minimal light pollution means you can see the Milky Way on clear nights. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Hay River Territorial Park is a quintessential Canadian camping experience.",
+      "getting_there": "From Inuvik, it's approximately 4-6 hours by car. GPS: 60.9°N, 115.8°W. Paved road all the way to the campground entrance.  Check-in at the gatehouse upon arrival.",
+      "parking": "Each site includes one vehicle parking space. Overflow lot available near the entrance.  Day-use parking available for visitors not camping. $5-12 vehicle parking fee may apply.",
+      "best_time": "Open season: May - September. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. Bugs can be intense in June — bring repellent and a bug net. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours, and thinner crowds. May and October: Shoulder season — sites are available without reservations but nights can be cold (near or below freezing).",
+      "regulations": "First-come, first-served sites available, but reservations recommended for peak season. Campfires: Permitted in designated fire pits only. Fire bans may be in effect during dry periods — check before your trip. Quiet hours: 11 PM to 7 AM. Store food securely to avoid attracting wildlife. Pack out all garbage — Leave No Trace principles apply. Pets permitted on leash in designated areas only.",
+      "terrain": "The campground sits within tundra, boreal forest, Great Slave Lake, Mackenzie River terrain. Sites are on relatively flat, forested ground with natural screening between neighbours. Rocky ground in places — bring a footprint for your tent. Nearby trails range from easy lakeside walks to moderate ridge hikes. Elevation: 50-200m.",
+      "nearby_services": "No on-site store — bring everything you need. Nearest full grocery: Inuvik (4-6 hours). Outfitter and gear rental within 20 minutes. Restaurant and pub in the nearest village for a treat meal.",
+      "accommodation": "Designated tent pads at each site.   ",
+      "safety": "Cell coverage: Available at the main campground area. Nearest hospital: Inuvik. Wildlife is present — never approach or feed wild animals. Drinking water available at pump stations.  Always tell someone your itinerary and expected return date."
     },
     {
       "name": "Quttinirpaak National Park",
       "slug": "quttinirpaak-national-park",
       "province": "Nunavut",
       "type": "Wilderness",
-      "coordinates": {"lat": 83.1, "lng": -90.0},
-      "features": ["Arctic Tundra", "Polar Wildlife", "Extreme Remote Camping"],
+      "coordinates": {
+        "lat": 83.1,
+        "lng": -90.0
+      },
+      "features": [
+        "Arctic Tundra",
+        "Polar Wildlife",
+        "Extreme Remote Camping"
+      ],
       "season": "June - August",
       "difficulty": "Advanced",
       "sites_count": "30",
@@ -398,7 +848,16 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-25.jpg",
-      "related_spots": []
+      "related_spots": [],
+      "description": "Quttinirpaak National Park is a beloved campground in Nunavut, offering arctic tundra, polar wildlife, extreme remote camping amid the arctic tundra, sea ice, barren grounds, polar coastline. With 30 sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the arctic tundra scenery and the chance to disconnect from daily life. The stargazing alone is worth the trip — minimal light pollution means you can see the Milky Way on clear nights. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Quttinirpaak National Park is a quintessential Canadian camping experience.",
+      "getting_there": "From Cambridge Bay, it's approximately fly-in access required by car. GPS: 83.1°N, 90.0°W. The last portion requires a high-clearance vehicle or a hike in.  Check-in at the gatehouse upon arrival.",
+      "parking": "Parking lot at the trailhead — spaces fill up on summer weekends. Arrive early.   Parking included with campsite reservation.",
+      "best_time": "Open season: June - August. June-August: Peak season with warmest weather, but expect full campgrounds — reserve well in advance. June is generally pleasant with longer daylight hours. September: Arguably the best month — cooler temperatures, fewer bugs, stunning fall colours, and thinner crowds. May and October: Shoulder season — sites are available without reservations but nights can be cold (near or below freezing).",
+      "regulations": "Park permit or camping fee required — reserve online through the provincial parks system. Campfires: Bring your own firewood or purchase from camp host. Do not collect wood from the forest.  Store food securely to avoid attracting wildlife. Pack out all garbage — Leave No Trace principles apply. Dogs must be on leash at all times.",
+      "terrain": "The campground sits within arctic tundra, sea ice, barren grounds, polar coastline terrain. Backcountry sites range from lakeshore clearings to ridgetop perches. Ground is generally well-drained but can get muddy after heavy rain. Nearby trails range from easy lakeside walks to moderate ridge hikes. Elevation: 50-200m.",
+      "nearby_services": "No on-site store — bring everything you need. Nearest full grocery: Cambridge Bay (fly-in access required). Outfitter and gear rental within 20 minutes. ",
+      "accommodation": "Backcountry tent sites only — flat ground at designated spots. Yurt or oTENTik rentals available for glamping comfort. Nearby lodges and B&Bs for those wanting a roof overhead. ",
+      "safety": "Cell coverage: No service — carry a satellite communicator for backcountry sites. Nearest hospital: Cambridge Bay. Wildlife is present — never approach or feed wild animals. All water must be filtered or boiled before drinking.  Always tell someone your itinerary and expected return date."
     }
   ]
 }

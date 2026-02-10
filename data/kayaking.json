@@ -5,8 +5,15 @@
       "slug": "nahanni-river",
       "province": "Northwest Territories",
       "type": "Whitewater",
-      "coordinates": {"lat": 61.5, "lng": -125.0},
-      "features": ["Class III-IV Rapids", "Virginia Falls", "Hot Springs"],
+      "coordinates": {
+        "lat": 61.5,
+        "lng": -125.0
+      },
+      "features": [
+        "Class III-IV Rapids",
+        "Virginia Falls",
+        "Hot Springs"
+      ],
       "distance": "200 km",
       "difficulty": "Advanced",
       "season": "June - September",
@@ -14,15 +21,34 @@
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-1.jpg",
-      "related_spots": ["south-nahanni", "keele-river"]
+      "related_spots": [
+        "south-nahanni",
+        "keele-river"
+      ],
+      "description": "Nahanni River offers some of the finest whitewater paddling in Northwest Territories. Spanning 200 km, this route takes you through tundra, boreal forest, Great Slave Lake, Mackenzie River with class iii-iv rapids, virginia falls, hot springs along the way.\n\nRated advanced difficulty, this is a serious undertaking that demands experience and proper preparation. The tundra scenery is world-class, and day trips can be tailored to your schedule and skill level. Paddling Nahanni River is one of those Canadian experiences you'll talk about for years.",
+      "getting_there": "Put-in point is approximately 3-5 hours from Inuvik. GPS: 61.5°N, 125.0°W. Paved access to the launch point. Shuttle services available for one-way trips — book in advance. Plan your take-out point before launching — distances on water are deceiving.",
+      "parking": "Gravel lot at the put-in with space for 10-15 vehicles. Small parking fee ($5-10) may apply during peak season.  Kayak/canoe rental available at the launch during summer months.",
+      "best_time": "Season: June - September. Spring (May-June): Higher water levels make for exciting paddling but can increase difficulty. Cold water — wetsuit recommended. Mid-summer offers the most stable weather and warmest water temperatures. September: Less traffic on the water, spectacular fall colours, and cooler paddling conditions. Avoid spring runoff if you are not experienced with moving water.",
+      "regulations": "All watercraft must carry required Transport Canada safety equipment: PFD for each person, whistle or sound signalling device, bailer, and 15m throw rope. Whitewater helmet strongly recommended (mandatory for Class III+). Some portage routes pass through Indigenous territory — respect all posted guidelines.  Leave No Trace: pack out everything, use established campsites for multi-day trips, and respect wildlife from a distance (especially nesting birds along shorelines).",
+      "terrain": "Water type: Whitewater. River gradient creates Class II-III rapids with some Class IV sections. Total distance: 200 km.  Surrounding landscape: tundra, boreal forest, Great Slave Lake, Mackenzie River. Open water crossings can be exposed to wind — hug the shoreline when possible.",
+      "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Inuvik (3-5 hours). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
+      "accommodation": "Campgrounds and day-use areas along the waterway. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Hotels in Inuvik for pre/post-trip accommodation.",
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Inuvik. Cold water warning: Northwest Territories's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore."
     },
     {
       "name": "Liard River",
       "slug": "liard-river",
       "province": "British Columbia",
       "type": "Whitewater",
-      "coordinates": {"lat": 59.4, "lng": -126.7},
-      "features": ["Class II-III Rapids", "Portages", "Wildlife Viewing"],
+      "coordinates": {
+        "lat": 59.4,
+        "lng": -126.7
+      },
+      "features": [
+        "Class II-III Rapids",
+        "Portages",
+        "Wildlife Viewing"
+      ],
       "distance": "250 km",
       "difficulty": "Intermediate",
       "season": "May - September",
@@ -30,15 +56,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-2.jpg",
-      "related_spots": ["taku-river", "stikine-river"]
+      "related_spots": [
+        "taku-river",
+        "stikine-river"
+      ],
+      "description": "Liard River offers some of the finest whitewater paddling in British Columbia. Spanning 250 km, this route takes you through coastal rainforest, Rocky Mountains, interior plateau with class ii-iii rapids, portages, wildlife viewing along the way.\n\nRated intermediate difficulty, this route offers a satisfying challenge without being overwhelming. The coastal rainforest scenery is world-class, and day trips can be tailored to your schedule and skill level. Paddling Liard River is one of those Canadian experiences you'll talk about for years.",
+      "getting_there": "Put-in point is approximately 5-6 hours from Prince George. GPS: 59.4°N, 126.7°W. Gravel road for the last 5 km — suitable for all vehicles. Shuttle services available for one-way trips — book in advance. ",
+      "parking": "Gravel lot at the put-in with space for 10-15 vehicles. Free parking at the launch site. If doing a shuttle, you can leave your vehicle at the take-out. Kayak/canoe rental available at the launch during summer months.",
+      "best_time": "Season: May - September. Spring (May-June): Higher water levels make for exciting paddling but can increase difficulty. Cold water — wetsuit recommended. Summer (July-August): Best for beginners. Warm water, predictable weather, longest daylight. September: Less traffic on the water, spectacular fall colours, and cooler paddling conditions. Avoid spring runoff if you are not experienced with moving water.",
+      "regulations": "All watercraft must carry required Transport Canada safety equipment: PFD for each person, whistle or sound signalling device, bailer, and 15m throw rope. Whitewater helmet strongly recommended (mandatory for Class III+). Some portage routes pass through Indigenous territory — respect all posted guidelines.  Leave No Trace: pack out everything, use established campsites for multi-day trips, and respect wildlife from a distance (especially nesting birds along shorelines).",
+      "terrain": "Water type: Whitewater. River gradient creates Class II-III rapids with some Class IV sections. Total distance: 250 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: coastal rainforest, Rocky Mountains, interior plateau. Watch for submerged rocks and sweepers (fallen trees) in river sections.",
+      "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Prince George (5-6 hours). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
+      "accommodation": "Campgrounds and day-use areas along the waterway. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Hotels in Prince George for pre/post-trip accommodation.",
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Prince George. Cold water warning: British Columbia's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
     },
     {
       "name": "Skeena River",
       "slug": "skeena-river",
       "province": "British Columbia",
       "type": "Flatwater",
-      "coordinates": {"lat": 55.3, "lng": -127.6},
-      "features": ["Scenic Valleys", "Salmon Runs", "First Nations Culture"],
+      "coordinates": {
+        "lat": 55.3,
+        "lng": -127.6
+      },
+      "features": [
+        "Scenic Valleys",
+        "Salmon Runs",
+        "First Nations Culture"
+      ],
       "distance": "560 km",
       "difficulty": "Intermediate",
       "season": "May - October",
@@ -46,15 +91,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-3.jpg",
-      "related_spots": ["bulkley-river", "kispiox-river"]
+      "related_spots": [
+        "bulkley-river",
+        "kispiox-river"
+      ],
+      "description": "Skeena River offers some of the finest flatwater paddling in British Columbia. Spanning 560 km, this route takes you through coastal rainforest, Rocky Mountains, interior plateau with scenic valleys, salmon runs, first nations culture along the way.\n\nRated intermediate difficulty, this route offers a satisfying challenge without being overwhelming. The coastal rainforest scenery is world-class, and day trips can be tailored to your schedule and skill level. Paddling Skeena River is one of those Canadian experiences you'll talk about for years.",
+      "getting_there": "Put-in point is approximately 4-5 hours from Prince George. GPS: 55.3°N, 127.6°W. Gravel road for the last 5 km — suitable for all vehicles. Shuttle services available for one-way trips — book in advance. Plan your take-out point before launching — distances on water are deceiving.",
+      "parking": "Boat launch with vehicle and trailer parking. Free parking at the launch site.  Bring your own watercraft — no rentals at the site.",
+      "best_time": "Season: May - October. Late June through August is the sweet spot — warm water, long days, and calm conditions. Summer (July-August): Best for beginners. Warm water, predictable weather, longest daylight. September: Less traffic on the water, spectacular fall colours, and cooler paddling conditions. Wind can be a factor in fall — check forecasts and plan accordingly.",
+      "regulations": "All watercraft must carry required Transport Canada safety equipment: PFD for each person, whistle or sound signalling device, bailer, and 15m throw rope.    Leave No Trace: pack out everything, use established campsites for multi-day trips, and respect wildlife from a distance (especially nesting birds along shorelines).",
+      "terrain": "Water type: Flatwater. Calm, open water with occasional wind chop. Total distance: 560 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: coastal rainforest, Rocky Mountains, interior plateau. Open water crossings can be exposed to wind — hug the shoreline when possible.",
+      "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Prince George (4-5 hours). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
+      "accommodation": "Campgrounds and day-use areas along the waterway. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Hotels in Prince George for pre/post-trip accommodation.",
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Prince George. Cold water warning: British Columbia's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
     },
     {
       "name": "Kicking Horse River",
       "slug": "kicking-horse-river",
       "province": "British Columbia",
       "type": "Whitewater",
-      "coordinates": {"lat": 52.9, "lng": -116.6},
-      "features": ["Class IV Rapids", "Mountain Scenery", "Helicopter Access"],
+      "coordinates": {
+        "lat": 52.9,
+        "lng": -116.6
+      },
+      "features": [
+        "Class IV Rapids",
+        "Mountain Scenery",
+        "Helicopter Access"
+      ],
       "distance": "140 km",
       "difficulty": "Advanced",
       "season": "June - September",
@@ -62,15 +126,34 @@
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-4.jpg",
-      "related_spots": ["golden-area-creeks", "spillimacheen-river"]
+      "related_spots": [
+        "golden-area-creeks",
+        "spillimacheen-river"
+      ],
+      "description": "Kicking Horse River offers some of the finest whitewater paddling in British Columbia. Spanning 140 km, this route takes you through coastal rainforest, Rocky Mountains, interior plateau with class iv rapids, mountain scenery, helicopter access along the way.\n\nRated advanced difficulty, this is a serious undertaking that demands experience and proper preparation. The coastal rainforest scenery is world-class, and day trips can be tailored to your schedule and skill level. Paddling Kicking Horse River is one of those Canadian experiences you'll talk about for years.",
+      "getting_there": "Put-in point is approximately 1.5-2.5 hours from Kelowna. GPS: 52.9°N, 116.6°W. Paved access to the launch point. Shuttle services available for one-way trips — book in advance. Plan your take-out point before launching — distances on water are deceiving.",
+      "parking": "Boat launch with vehicle and trailer parking. Free parking at the launch site. If doing a shuttle, you can leave your vehicle at the take-out. Kayak/canoe rental available at the launch during summer months.",
+      "best_time": "Season: June - September. Spring (May-June): Higher water levels make for exciting paddling but can increase difficulty. Cold water — wetsuit recommended. Mid-summer offers the most stable weather and warmest water temperatures. September: Less traffic on the water, spectacular fall colours, and cooler paddling conditions. Avoid spring runoff if you are not experienced with moving water.",
+      "regulations": "All watercraft must carry required Transport Canada safety equipment: PFD for each person, whistle or sound signalling device, bailer, and 15m throw rope. Whitewater helmet strongly recommended (mandatory for Class III+).  Park permits required if paddling through provincial or national park waters. Leave No Trace: pack out everything, use established campsites for multi-day trips, and respect wildlife from a distance (especially nesting birds along shorelines).",
+      "terrain": "Water type: Whitewater. River gradient creates Class II-III rapids with some Class IV sections. Total distance: 140 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: coastal rainforest, Rocky Mountains, interior plateau. Watch for submerged rocks and sweepers (fallen trees) in river sections.",
+      "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Kelowna (1.5-2.5 hours). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
+      "accommodation": "Campgrounds and day-use areas along the waterway. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Hotels in Kelowna for pre/post-trip accommodation.",
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Kelowna. Cold water warning: British Columbia's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
     },
     {
       "name": "Churchill River",
       "slug": "churchill-river",
       "province": "Manitoba",
       "type": "Multi-Day Expedition",
-      "coordinates": {"lat": 55.2, "lng": -94.6},
-      "features": ["Northern Wilderness", "Arctic Wildlife", "Polar Bear Habitat"],
+      "coordinates": {
+        "lat": 55.2,
+        "lng": -94.6
+      },
+      "features": [
+        "Northern Wilderness",
+        "Arctic Wildlife",
+        "Polar Bear Habitat"
+      ],
       "distance": "240 km",
       "difficulty": "Intermediate",
       "season": "June - August",
@@ -78,15 +161,34 @@
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-5.jpg",
-      "related_spots": ["hudson-bay", "seal-river"]
+      "related_spots": [
+        "hudson-bay",
+        "seal-river"
+      ],
+      "description": "Churchill River offers some of the finest multi-day expedition paddling in Manitoba. Spanning 240 km, this route takes you through boreal shield, prairie grasslands, Hudson Bay lowlands with northern wilderness, arctic wildlife, polar bear habitat along the way.\n\nRated intermediate difficulty, this route offers a satisfying challenge without being overwhelming. The boreal shield scenery is world-class, and multi-day trips allow you to fully immerse yourself in the wilderness. Paddling Churchill River is one of those Canadian experiences you'll talk about for years.",
+      "getting_there": "Put-in point is approximately 5-6 hours from Churchill. GPS: 55.2°N, 94.6°W. Paved access to the launch point. Shuttle services available for one-way trips — book in advance. ",
+      "parking": "Gravel lot at the put-in with space for 10-15 vehicles. Free parking at the launch site. If doing a shuttle, you can leave your vehicle at the take-out. Bring your own watercraft — no rentals at the site.",
+      "best_time": "Season: June - August. Late June through August is the sweet spot — warm water, long days, and calm conditions. Summer (July-August): Best for beginners. Warm water, predictable weather, longest daylight. September: Less traffic on the water, spectacular fall colours, and cooler paddling conditions. Wind can be a factor in fall — check forecasts and plan accordingly.",
+      "regulations": "All watercraft must carry required Transport Canada safety equipment: PFD for each person, whistle or sound signalling device, bailer, and 15m throw rope.    Leave No Trace: pack out everything, use established campsites for multi-day trips, and respect wildlife from a distance (especially nesting birds along shorelines).",
+      "terrain": "Water type: Multi-Day Expedition. Mixed conditions — flatwater lakes connected by moving river sections. Total distance: 240 km.  Surrounding landscape: boreal shield, prairie grasslands, Hudson Bay lowlands. Watch for submerged rocks and sweepers (fallen trees) in river sections.",
+      "nearby_services": "Local outfitter in Churchill offers gear rental and shuttle service. Nearest supplies: Churchill (5-6 hours). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
+      "accommodation": "Backcountry campsites along the route — first-come, first-served. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Hotels in Churchill for pre/post-trip accommodation.",
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Churchill. Cold water warning: Manitoba's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
     },
     {
       "name": "Coppermine River",
       "slug": "coppermine-river",
       "province": "Nunavut",
       "type": "Whitewater",
-      "coordinates": {"lat": 67.8, "lng": -115.1},
-      "features": ["Arctic Wilderness", "Caribou Migration", "Remote Access"],
+      "coordinates": {
+        "lat": 67.8,
+        "lng": -115.1
+      },
+      "features": [
+        "Arctic Wilderness",
+        "Caribou Migration",
+        "Remote Access"
+      ],
       "distance": "340 km",
       "difficulty": "Advanced",
       "season": "July - August",
@@ -94,15 +196,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-6.jpg",
-      "related_spots": ["burnside-river", "thelon-river"]
+      "related_spots": [
+        "burnside-river",
+        "thelon-river"
+      ],
+      "description": "Coppermine River offers some of the finest whitewater paddling in Nunavut. Spanning 340 km, this route takes you through arctic tundra, sea ice, barren grounds, polar coastline with arctic wilderness, caribou migration, remote access along the way.\n\nRated advanced difficulty, this is a serious undertaking that demands experience and proper preparation. The arctic tundra scenery is world-class, and day trips can be tailored to your schedule and skill level. Paddling Coppermine River is one of those Canadian experiences you'll talk about for years.",
+      "getting_there": "Put-in point is approximately 5-8 hours from Cambridge Bay. GPS: 67.8°N, 115.1°W. Paved access to the launch point. Shuttle services available for one-way trips — book in advance. Plan your take-out point before launching — distances on water are deceiving.",
+      "parking": "Boat launch with vehicle and trailer parking. Free parking at the launch site.  Bring your own watercraft — no rentals at the site.",
+      "best_time": "Season: July - August. Spring (May-June): Higher water levels make for exciting paddling but can increase difficulty. Cold water — wetsuit recommended. Summer (July-August): Best for beginners. Warm water, predictable weather, longest daylight. September: Less traffic on the water, spectacular fall colours, and cooler paddling conditions. Avoid spring runoff if you are not experienced with moving water.",
+      "regulations": "All watercraft must carry required Transport Canada safety equipment: PFD for each person, whistle or sound signalling device, bailer, and 15m throw rope. Whitewater helmet strongly recommended (mandatory for Class III+). Some portage routes pass through Indigenous territory — respect all posted guidelines.  Leave No Trace: pack out everything, use established campsites for multi-day trips, and respect wildlife from a distance (especially nesting birds along shorelines).",
+      "terrain": "Water type: Whitewater. River gradient creates Class II-III rapids with some Class IV sections. Total distance: 340 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: arctic tundra, sea ice, barren grounds, polar coastline. Watch for submerged rocks and sweepers (fallen trees) in river sections.",
+      "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Cambridge Bay (5-8 hours). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
+      "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Hotels in Cambridge Bay for pre/post-trip accommodation.",
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Cambridge Bay. Cold water warning: Nunavut's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
     },
     {
       "name": "Pembina River",
       "slug": "pembina-river",
       "province": "Alberta",
       "type": "Flatwater",
-      "coordinates": {"lat": 53.9, "lng": -115.4},
-      "features": ["Canyons", "Scenic Valleys", "Accessible"],
+      "coordinates": {
+        "lat": 53.9,
+        "lng": -115.4
+      },
+      "features": [
+        "Canyons",
+        "Scenic Valleys",
+        "Accessible"
+      ],
       "distance": "120 km",
       "difficulty": "Beginner",
       "season": "May - September",
@@ -110,15 +231,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-8.jpg",
-      "related_spots": ["north-saskatchewan-river", "red-deer-river"]
+      "related_spots": [
+        "north-saskatchewan-river",
+        "red-deer-river"
+      ],
+      "description": "Pembina River offers some of the finest flatwater paddling in Alberta. Spanning 120 km, this route takes you through Rocky Mountain foothills, prairies, badlands with canyons, scenic valleys, accessible along the way.\n\nRated beginner difficulty, this route is accessible to paddlers with basic skills. The Rocky Mountain foothills scenery is world-class, and day trips can be tailored to your schedule and skill level. Paddling Pembina River is one of those Canadian experiences you'll talk about for years.",
+      "getting_there": "Put-in point is approximately 2-3 hours from Red Deer. GPS: 53.9°N, 115.4°W. Gravel road for the last 5 km — suitable for all vehicles. Shuttle services available for one-way trips — book in advance. Plan your take-out point before launching — distances on water are deceiving.",
+      "parking": "Boat launch with vehicle and trailer parking. Free parking at the launch site. If doing a shuttle, you can leave your vehicle at the take-out. Bring your own watercraft — no rentals at the site.",
+      "best_time": "Season: May - September. Late June through August is the sweet spot — warm water, long days, and calm conditions. Mid-summer offers the most stable weather and warmest water temperatures. September: Less traffic on the water, spectacular fall colours, and cooler paddling conditions. Wind can be a factor in fall — check forecasts and plan accordingly.",
+      "regulations": "All watercraft must carry required Transport Canada safety equipment: PFD for each person, whistle or sound signalling device, bailer, and 15m throw rope.  Some portage routes pass through Indigenous territory — respect all posted guidelines. Park permits required if paddling through provincial or national park waters. Leave No Trace: pack out everything, use established campsites for multi-day trips, and respect wildlife from a distance (especially nesting birds along shorelines).",
+      "terrain": "Water type: Flatwater. Calm, open water with occasional wind chop. Total distance: 120 km.  Surrounding landscape: Rocky Mountain foothills, prairies, badlands. Watch for submerged rocks and sweepers (fallen trees) in river sections.",
+      "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Red Deer (2-3 hours). Download the route map before you lose cell service. Beginner-friendly route, but lessons are available locally.",
+      "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Lodges and cabins available for those wanting comfort before or after the trip.",
+      "safety": "Cell service may be available along parts of the route, but carry backup communication. Nearest hospital: Red Deer. Cold water warning: Alberta's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
     },
     {
       "name": "Ottawa River",
       "slug": "ottawa-river",
       "province": "Ontario",
       "type": "Whitewater",
-      "coordinates": {"lat": 45.4, "lng": -75.7},
-      "features": ["Urban Access", "Progressive Rapids", "Training Ground"],
+      "coordinates": {
+        "lat": 45.4,
+        "lng": -75.7
+      },
+      "features": [
+        "Urban Access",
+        "Progressive Rapids",
+        "Training Ground"
+      ],
       "distance": "200 km available",
       "difficulty": "Intermediate",
       "season": "April - October",
@@ -126,15 +266,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-9.jpg",
-      "related_spots": ["gatineau-river", "madawaska-river"]
+      "related_spots": [
+        "gatineau-river",
+        "madawaska-river"
+      ],
+      "description": "Ottawa River offers some of the finest whitewater paddling in Ontario. Spanning 200 km available, this route takes you through Canadian Shield, boreal forest, Great Lakes shoreline with urban access, progressive rapids, training ground along the way.\n\nRated intermediate difficulty, this route offers a satisfying challenge without being overwhelming. The Canadian Shield scenery is world-class, and day trips can be tailored to your schedule and skill level. Paddling Ottawa River is one of those Canadian experiences you'll talk about for years.",
+      "getting_there": "Put-in point is approximately 1-1.5 hours from Ottawa. GPS: 45.4°N, 75.7°W. Paved access to the launch point. Shuttle services available for one-way trips — book in advance. ",
+      "parking": "Boat launch with vehicle and trailer parking. Small parking fee ($5-10) may apply during peak season.  Bring your own watercraft — no rentals at the site.",
+      "best_time": "Season: April - October. Spring (May-June): Higher water levels make for exciting paddling but can increase difficulty. Cold water — wetsuit recommended. Mid-summer offers the most stable weather and warmest water temperatures. September: Less traffic on the water, spectacular fall colours, and cooler paddling conditions. Avoid spring runoff if you are not experienced with moving water.",
+      "regulations": "All watercraft must carry required Transport Canada safety equipment: PFD for each person, whistle or sound signalling device, bailer, and 15m throw rope. Whitewater helmet strongly recommended (mandatory for Class III+).   Leave No Trace: pack out everything, use established campsites for multi-day trips, and respect wildlife from a distance (especially nesting birds along shorelines).",
+      "terrain": "Water type: Whitewater. River gradient creates Class II-III rapids with some Class IV sections. Total distance: 200 km available. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: Canadian Shield, boreal forest, Great Lakes shoreline. Open water crossings can be exposed to wind — hug the shoreline when possible.",
+      "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Ottawa (1-1.5 hours). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
+      "accommodation": "Campgrounds and day-use areas along the waterway. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Hotels in Ottawa for pre/post-trip accommodation.",
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Ottawa. Cold water warning: Ontario's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
     },
     {
       "name": "French River",
       "slug": "french-river",
       "province": "Ontario",
       "type": "Multi-Day Expedition",
-      "coordinates": {"lat": 46.4, "lng": -80.2},
-      "features": ["Chain of Lakes", "Historic Route", "Portages"],
+      "coordinates": {
+        "lat": 46.4,
+        "lng": -80.2
+      },
+      "features": [
+        "Chain of Lakes",
+        "Historic Route",
+        "Portages"
+      ],
       "distance": "120 km",
       "difficulty": "Intermediate",
       "season": "May - September",
@@ -142,15 +301,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-10.jpg",
-      "related_spots": ["manavalan-lake", "atik-lake"]
+      "related_spots": [
+        "manavalan-lake",
+        "atik-lake"
+      ],
+      "description": "French River offers some of the finest multi-day expedition paddling in Ontario. Spanning 120 km, this route takes you through Canadian Shield, boreal forest, Great Lakes shoreline with chain of lakes, historic route, portages along the way.\n\nRated intermediate difficulty, this route offers a satisfying challenge without being overwhelming. The Canadian Shield scenery is world-class, and multi-day trips allow you to fully immerse yourself in the wilderness. Paddling French River is one of those Canadian experiences you'll talk about for years.",
+      "getting_there": "Put-in point is approximately 1-1.5 hours from Ottawa. GPS: 46.4°N, 80.2°W. Paved access to the launch point. Shuttle services available for one-way trips — book in advance. Plan your take-out point before launching — distances on water are deceiving.",
+      "parking": "Gravel lot at the put-in with space for 10-15 vehicles. Free parking at the launch site.  Kayak/canoe rental available at the launch during summer months.",
+      "best_time": "Season: May - September. Late June through August is the sweet spot — warm water, long days, and calm conditions. Mid-summer offers the most stable weather and warmest water temperatures. September: Less traffic on the water, spectacular fall colours, and cooler paddling conditions. Wind can be a factor in fall — check forecasts and plan accordingly.",
+      "regulations": "All watercraft must carry required Transport Canada safety equipment: PFD for each person, whistle or sound signalling device, bailer, and 15m throw rope.  Some portage routes pass through Indigenous territory — respect all posted guidelines.  Leave No Trace: pack out everything, use established campsites for multi-day trips, and respect wildlife from a distance (especially nesting birds along shorelines).",
+      "terrain": "Water type: Multi-Day Expedition. Mixed conditions — flatwater lakes connected by moving river sections. Total distance: 120 km.  Surrounding landscape: Canadian Shield, boreal forest, Great Lakes shoreline. Watch for submerged rocks and sweepers (fallen trees) in river sections.",
+      "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Ottawa (1-1.5 hours). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
+      "accommodation": "Backcountry campsites along the route — first-come, first-served. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Lodges and cabins available for those wanting comfort before or after the trip.",
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Ottawa. Cold water warning: Ontario's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
     },
     {
       "name": "Rivière-Beaudette",
       "slug": "riviere-beaudette",
       "province": "Quebec",
       "type": "Whitewater",
-      "coordinates": {"lat": 45.3, "lng": -74.8},
-      "features": ["Class II-III Rapids", "Quebec Gateway", "Scenic Canyons"],
+      "coordinates": {
+        "lat": 45.3,
+        "lng": -74.8
+      },
+      "features": [
+        "Class II-III Rapids",
+        "Quebec Gateway",
+        "Scenic Canyons"
+      ],
       "distance": "90 km",
       "difficulty": "Intermediate",
       "season": "April - October",
@@ -158,15 +336,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-11.jpg",
-      "related_spots": ["rouge-river", "dumoine-river"]
+      "related_spots": [
+        "rouge-river",
+        "dumoine-river"
+      ],
+      "description": "Rivière-Beaudette offers some of the finest whitewater paddling in Quebec. Spanning 90 km, this route takes you through Laurentian Mountains, St. Lawrence Valley, boreal shield with class ii-iii rapids, quebec gateway, scenic canyons along the way.\n\nRated intermediate difficulty, this route offers a satisfying challenge without being overwhelming. The Laurentian Mountains scenery is world-class, and day trips can be tailored to your schedule and skill level. Paddling Rivière-Beaudette is one of those Canadian experiences you'll talk about for years.",
+      "getting_there": "Put-in point is approximately 2-3 hours from Montreal. GPS: 45.3°N, 74.8°W. Gravel road for the last 5 km — suitable for all vehicles. Shuttle services available for one-way trips — book in advance. ",
+      "parking": "Gravel lot at the put-in with space for 10-15 vehicles. Small parking fee ($5-10) may apply during peak season.  Bring your own watercraft — no rentals at the site.",
+      "best_time": "Season: April - October. Spring (May-June): Higher water levels make for exciting paddling but can increase difficulty. Cold water — wetsuit recommended. Summer (July-August): Best for beginners. Warm water, predictable weather, longest daylight. September: Less traffic on the water, spectacular fall colours, and cooler paddling conditions. Avoid spring runoff if you are not experienced with moving water.",
+      "regulations": "All watercraft must carry required Transport Canada safety equipment: PFD for each person, whistle or sound signalling device, bailer, and 15m throw rope. Whitewater helmet strongly recommended (mandatory for Class III+). Some portage routes pass through Indigenous territory — respect all posted guidelines. Park permits required if paddling through provincial or national park waters. Leave No Trace: pack out everything, use established campsites for multi-day trips, and respect wildlife from a distance (especially nesting birds along shorelines).",
+      "terrain": "Water type: Whitewater. River gradient creates Class II-III rapids with some Class IV sections. Total distance: 90 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: Laurentian Mountains, St. Lawrence Valley, boreal shield. Open water crossings can be exposed to wind — hug the shoreline when possible.",
+      "nearby_services": "Local outfitter in Montreal offers gear rental and shuttle service. Nearest supplies: Montreal (2-3 hours). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
+      "accommodation": "Campgrounds and day-use areas along the waterway. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Hotels in Montreal for pre/post-trip accommodation.",
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Montreal. Cold water warning: Quebec's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore."
     },
     {
       "name": "Jacques-Cartier River",
       "slug": "jacques-cartier-river",
       "province": "Quebec",
       "type": "Whitewater",
-      "coordinates": {"lat": 46.8, "lng": -71.2},
-      "features": ["Class III-IV Rapids", "Cathedral Canyons", "Provincial Park"],
+      "coordinates": {
+        "lat": 46.8,
+        "lng": -71.2
+      },
+      "features": [
+        "Class III-IV Rapids",
+        "Cathedral Canyons",
+        "Provincial Park"
+      ],
       "distance": "105 km",
       "difficulty": "Advanced",
       "season": "May - September",
@@ -174,15 +371,34 @@
       "scout_level": "Legendary",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-12.jpg",
-      "related_spots": ["montmorency-falls", "trois-lacs"]
+      "related_spots": [
+        "montmorency-falls",
+        "trois-lacs"
+      ],
+      "description": "Jacques-Cartier River offers some of the finest whitewater paddling in Quebec. Spanning 105 km, this route takes you through Laurentian Mountains, St. Lawrence Valley, boreal shield with class iii-iv rapids, cathedral canyons, provincial park along the way.\n\nRated advanced difficulty, this is a serious undertaking that demands experience and proper preparation. The Laurentian Mountains scenery is world-class, and day trips can be tailored to your schedule and skill level. Paddling Jacques-Cartier River is one of those Canadian experiences you'll talk about for years.",
+      "getting_there": "Put-in point is approximately 1.5-2 hours from Montreal. GPS: 46.8°N, 71.2°W. Gravel road for the last 5 km — suitable for all vehicles. Shuttle services available for one-way trips — book in advance. ",
+      "parking": "Boat launch with vehicle and trailer parking. Free parking at the launch site.  Kayak/canoe rental available at the launch during summer months.",
+      "best_time": "Season: May - September. Spring (May-June): Higher water levels make for exciting paddling but can increase difficulty. Cold water — wetsuit recommended. Mid-summer offers the most stable weather and warmest water temperatures. September: Less traffic on the water, spectacular fall colours, and cooler paddling conditions. Avoid spring runoff if you are not experienced with moving water.",
+      "regulations": "All watercraft must carry required Transport Canada safety equipment: PFD for each person, whistle or sound signalling device, bailer, and 15m throw rope. Whitewater helmet strongly recommended (mandatory for Class III+).  Park permits required if paddling through provincial or national park waters. Leave No Trace: pack out everything, use established campsites for multi-day trips, and respect wildlife from a distance (especially nesting birds along shorelines).",
+      "terrain": "Water type: Whitewater. River gradient creates Class II-III rapids with some Class IV sections. Total distance: 105 km.  Surrounding landscape: Laurentian Mountains, St. Lawrence Valley, boreal shield. Open water crossings can be exposed to wind — hug the shoreline when possible.",
+      "nearby_services": "Local outfitter in Montreal offers gear rental and shuttle service. Nearest supplies: Montreal (1.5-2 hours). Waterproof map/guide available for purchase at the outfitter. Guided trips highly recommended for first-timers on this route.",
+      "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Lodges and cabins available for those wanting comfort before or after the trip.",
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Montreal. Cold water warning: Quebec's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
     },
     {
       "name": "Saint John River",
       "slug": "saint-john-river",
       "province": "New Brunswick",
       "type": "Flatwater",
-      "coordinates": {"lat": 46.2, "lng": -67.8},
-      "features": ["Tidal Bore Potential", "Coastal Access", "Salmon Rivers"],
+      "coordinates": {
+        "lat": 46.2,
+        "lng": -67.8
+      },
+      "features": [
+        "Tidal Bore Potential",
+        "Coastal Access",
+        "Salmon Rivers"
+      ],
       "distance": "420 km total",
       "difficulty": "Intermediate",
       "season": "May - October",
@@ -190,15 +406,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-13.jpg",
-      "related_spots": ["reversing-falls", "fundy-bay"]
+      "related_spots": [
+        "reversing-falls",
+        "fundy-bay"
+      ],
+      "description": "Saint John River offers some of the finest flatwater paddling in New Brunswick. Spanning 420 km total, this route takes you through Appalachian uplands, Bay of Fundy coast, river valleys with tidal bore potential, coastal access, salmon rivers along the way.\n\nRated intermediate difficulty, this route offers a satisfying challenge without being overwhelming. The Appalachian uplands scenery is world-class, and day trips can be tailored to your schedule and skill level. Paddling Saint John River is one of those Canadian experiences you'll talk about for years.",
+      "getting_there": "Put-in point is approximately 45 minutes from Saint John. GPS: 46.2°N, 67.8°W. Paved access to the launch point. Shuttle services available for one-way trips — book in advance. ",
+      "parking": "Gravel lot at the put-in with space for 10-15 vehicles. Small parking fee ($5-10) may apply during peak season. If doing a shuttle, you can leave your vehicle at the take-out. Kayak/canoe rental available at the launch during summer months.",
+      "best_time": "Season: May - October. Late June through August is the sweet spot — warm water, long days, and calm conditions. Summer (July-August): Best for beginners. Warm water, predictable weather, longest daylight. September: Less traffic on the water, spectacular fall colours, and cooler paddling conditions. Wind can be a factor in fall — check forecasts and plan accordingly.",
+      "regulations": "All watercraft must carry required Transport Canada safety equipment: PFD for each person, whistle or sound signalling device, bailer, and 15m throw rope.  Some portage routes pass through Indigenous territory — respect all posted guidelines.  Leave No Trace: pack out everything, use established campsites for multi-day trips, and respect wildlife from a distance (especially nesting birds along shorelines).",
+      "terrain": "Water type: Flatwater. Calm, open water with occasional wind chop. Total distance: 420 km total. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: Appalachian uplands, Bay of Fundy coast, river valleys. Watch for submerged rocks and sweepers (fallen trees) in river sections.",
+      "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Saint John (45 minutes). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
+      "accommodation": "Campgrounds and day-use areas along the waterway. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Lodges and cabins available for those wanting comfort before or after the trip.",
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Saint John. Cold water warning: New Brunswick's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
     },
     {
       "name": "Margaret River",
       "slug": "margaret-river",
       "province": "Nova Scotia",
       "type": "Flatwater",
-      "coordinates": {"lat": 45.9, "lng": -60.5},
-      "features": ["Coastal Views", "Estuary Paddling", "Bald Eagles"],
+      "coordinates": {
+        "lat": 45.9,
+        "lng": -60.5
+      },
+      "features": [
+        "Coastal Views",
+        "Estuary Paddling",
+        "Bald Eagles"
+      ],
       "distance": "60 km",
       "difficulty": "Beginner",
       "season": "May - September",
@@ -206,15 +441,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-14.jpg",
-      "related_spots": ["bras-d-or-lakes", "shubenacadie-river"]
+      "related_spots": [
+        "bras-d-or-lakes",
+        "shubenacadie-river"
+      ],
+      "description": "Margaret River offers some of the finest flatwater paddling in Nova Scotia. Spanning 60 km, this route takes you through Atlantic coastline, Annapolis Valley, Cape Breton Highlands with coastal views, estuary paddling, bald eagles along the way.\n\nRated beginner difficulty, this route is accessible to paddlers with basic skills. The Atlantic coastline scenery is world-class, and day trips can be tailored to your schedule and skill level. Paddling Margaret River is one of those Canadian experiences you'll talk about for years.",
+      "getting_there": "Put-in point is approximately 45 minutes from Halifax. GPS: 45.9°N, 60.5°W. Gravel road for the last 5 km — suitable for all vehicles. Shuttle services available for one-way trips — book in advance. ",
+      "parking": "Boat launch with vehicle and trailer parking. Small parking fee ($5-10) may apply during peak season. If doing a shuttle, you can leave your vehicle at the take-out. Kayak/canoe rental available at the launch during summer months.",
+      "best_time": "Season: May - September. Late June through August is the sweet spot — warm water, long days, and calm conditions. Mid-summer offers the most stable weather and warmest water temperatures. September: Less traffic on the water, spectacular fall colours, and cooler paddling conditions. Wind can be a factor in fall — check forecasts and plan accordingly.",
+      "regulations": "All watercraft must carry required Transport Canada safety equipment: PFD for each person, whistle or sound signalling device, bailer, and 15m throw rope.  Some portage routes pass through Indigenous territory — respect all posted guidelines.  Leave No Trace: pack out everything, use established campsites for multi-day trips, and respect wildlife from a distance (especially nesting birds along shorelines).",
+      "terrain": "Water type: Flatwater. Calm, open water with occasional wind chop. Total distance: 60 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: Atlantic coastline, Annapolis Valley, Cape Breton Highlands. Watch for submerged rocks and sweepers (fallen trees) in river sections.",
+      "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Halifax (45 minutes). Waterproof map/guide available for purchase at the outfitter. Beginner-friendly route, but lessons are available locally.",
+      "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Lodges and cabins available for those wanting comfort before or after the trip.",
+      "safety": "Cell service may be available along parts of the route, but carry backup communication. Nearest hospital: Halifax. Cold water warning: Nova Scotia's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore."
     },
     {
       "name": "Gander River",
       "slug": "gander-river",
       "province": "Newfoundland and Labrador",
       "type": "Flatwater",
-      "coordinates": {"lat": 48.8, "lng": -54.6},
-      "features": ["Atlantic Salmon", "Remote Wilderness", "Boreal Landscape"],
+      "coordinates": {
+        "lat": 48.8,
+        "lng": -54.6
+      },
+      "features": [
+        "Atlantic Salmon",
+        "Remote Wilderness",
+        "Boreal Landscape"
+      ],
       "distance": "180 km",
       "difficulty": "Intermediate",
       "season": "June - September",
@@ -222,15 +476,34 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-16.jpg",
-      "related_spots": ["exploits-river", "brown-islands"]
+      "related_spots": [
+        "exploits-river",
+        "brown-islands"
+      ],
+      "description": "Gander River offers some of the finest flatwater paddling in Newfoundland and Labrador. Spanning 180 km, this route takes you through rugged coastline, fjords, boreal forest, tundra with atlantic salmon, remote wilderness, boreal landscape along the way.\n\nRated intermediate difficulty, this route offers a satisfying challenge without being overwhelming. The rugged coastline scenery is world-class, and day trips can be tailored to your schedule and skill level. Paddling Gander River is one of those Canadian experiences you'll talk about for years.",
+      "getting_there": "Put-in point is approximately 45 minutes from St. John's. GPS: 48.8°N, 54.6°W. Gravel road for the last 5 km — suitable for all vehicles. Shuttle services available for one-way trips — book in advance. ",
+      "parking": "Boat launch with vehicle and trailer parking. Free parking at the launch site. If doing a shuttle, you can leave your vehicle at the take-out. Bring your own watercraft — no rentals at the site.",
+      "best_time": "Season: June - September. Late June through August is the sweet spot — warm water, long days, and calm conditions. Summer (July-August): Best for beginners. Warm water, predictable weather, longest daylight. September: Less traffic on the water, spectacular fall colours, and cooler paddling conditions. Wind can be a factor in fall — check forecasts and plan accordingly.",
+      "regulations": "All watercraft must carry required Transport Canada safety equipment: PFD for each person, whistle or sound signalling device, bailer, and 15m throw rope.  Some portage routes pass through Indigenous territory — respect all posted guidelines.  Leave No Trace: pack out everything, use established campsites for multi-day trips, and respect wildlife from a distance (especially nesting birds along shorelines).",
+      "terrain": "Water type: Flatwater. Calm, open water with occasional wind chop. Total distance: 180 km.  Surrounding landscape: rugged coastline, fjords, boreal forest, tundra. Watch for submerged rocks and sweepers (fallen trees) in river sections.",
+      "nearby_services": "Local outfitter in St. John's offers gear rental and shuttle service. Nearest supplies: St. John's (45 minutes). Waterproof map/guide available for purchase at the outfitter. Guided trips highly recommended for first-timers on this route.",
+      "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Lodges and cabins available for those wanting comfort before or after the trip.",
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: St. John's. Cold water warning: Newfoundland and Labrador's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
     },
     {
       "name": "Yukon River",
       "slug": "yukon-river",
       "province": "Yukon Territory",
       "type": "Multi-Day Expedition",
-      "coordinates": {"lat": 62.2, "lng": -135.0},
-      "features": ["1,000+ km Route", "Historic Gold Rush Path", "Pristine Wilderness"],
+      "coordinates": {
+        "lat": 62.2,
+        "lng": -135.0
+      },
+      "features": [
+        "1,000+ km Route",
+        "Historic Gold Rush Path",
+        "Pristine Wilderness"
+      ],
       "distance": "750 km available sections",
       "difficulty": "Intermediate",
       "season": "June - August",
@@ -238,7 +511,19 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-17.jpg",
-      "related_spots": ["teslin-river", "klondike-river"]
+      "related_spots": [
+        "teslin-river",
+        "klondike-river"
+      ],
+      "description": "Yukon River offers some of the finest multi-day expedition paddling in Yukon Territory. Spanning 750 km available sections, this route takes you through Canadian wilderness with 1,000+ km route, historic gold rush path, pristine wilderness along the way.\n\nRated intermediate difficulty, this route offers a satisfying challenge without being overwhelming. The Canadian wilderness scenery is world-class, and multi-day trips allow you to fully immerse yourself in the wilderness. Paddling Yukon River is one of those Canadian experiences you'll talk about for years.",
+      "getting_there": "Put-in point is approximately 5-6 hours from the nearest town. GPS: 62.2°N, 135.0°W. Paved access to the launch point. Shuttle services available for one-way trips — book in advance. Plan your take-out point before launching — distances on water are deceiving.",
+      "parking": "Gravel lot at the put-in with space for 10-15 vehicles. Free parking at the launch site. If doing a shuttle, you can leave your vehicle at the take-out. Kayak/canoe rental available at the launch during summer months.",
+      "best_time": "Season: June - August. Late June through August is the sweet spot — warm water, long days, and calm conditions. Summer (July-August): Best for beginners. Warm water, predictable weather, longest daylight. September: Less traffic on the water, spectacular fall colours, and cooler paddling conditions. Wind can be a factor in fall — check forecasts and plan accordingly.",
+      "regulations": "All watercraft must carry required Transport Canada safety equipment: PFD for each person, whistle or sound signalling device, bailer, and 15m throw rope.  Some portage routes pass through Indigenous territory — respect all posted guidelines. Park permits required if paddling through provincial or national park waters. Leave No Trace: pack out everything, use established campsites for multi-day trips, and respect wildlife from a distance (especially nesting birds along shorelines).",
+      "terrain": "Water type: Multi-Day Expedition. Mixed conditions — flatwater lakes connected by moving river sections. Total distance: 750 km available sections. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: Canadian wilderness. Open water crossings can be exposed to wind — hug the shoreline when possible.",
+      "nearby_services": "Local outfitter in the nearest town offers gear rental and shuttle service. Nearest supplies: the nearest town (5-6 hours). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
+      "accommodation": "Backcountry campsites along the route — first-come, first-served. Designated tent pads with fire pits and pit toilets at most campsites. Hotels in the nearest town for pre/post-trip accommodation.",
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: the nearest town. Cold water warning: Yukon Territory's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
     }
   ]
 }
