@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outdoor Intel | Canadian Wilderness Scouting Intelligence</title>
-    <meta name="description" content="High-authority scouting intelligence for fishing, hunting, and backcountry exploration across Canada.">
+    <title>Outdoor Intel | Canada's Ultimate Outdoor Hub</title>
+    <meta name="description" content="Canada's ultimate outdoor destination. Fishing, hunting, camping, kayaking, skiing, and hiking intelligence across all provinces.">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .nature-hero {
-            background: linear-gradient(135deg, rgba(45,90,61,0.35), rgba(62,49,39,0.25)), url('assets/heros/scout-hero-2.jpg');
+            background: linear-gradient(135deg, rgba(45,90,61,0.4), rgba(62,49,39,0.3)), url('assets/heros/scout-hero-2.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -21,24 +21,120 @@
         <a href="index.html" class="flex-shrink-0">
             <img src="assets/logo/logo.jpg" alt="Outdoor Intel" class="h-10 md:h-14 w-auto object-contain">
         </a>
-        <nav class="hidden md:flex gap-8 text-sm font-semibold text-[#3e3127]">
-            <a href="en/directory.html" class="hover:text-[#c97c5e] transition-colors">Lakes</a>
-            <a href="en/blog/peche-achigan-outaouais.html" class="hover:text-[#c97c5e] transition-colors">Blog</a>
-            <a href="https://www.ontario.ca/document/ontario-fishing-regulations-summary" target="_blank" class="hover:text-[#c97c5e] transition-colors">Regulations</a>
-            <a href="fr/directory.html" class="text-[#c97c5e] font-bold hover:text-[#2d5a3d] transition-colors">Français</a>
+        <nav class="hidden lg:flex gap-6 text-sm font-semibold text-[#3e3127]">
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Fishing
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="en/fishing/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Directory</a>
+                        <a href="en/fishing/blog/peche-achigan-outaouais.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Hunting
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="en/hunting/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Directory</a>
+                        <a href="en/hunting/blog/chasse-perdrix-sans-chien.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Camping
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="en/camping/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Directory</a>
+                        <a href="en/camping/blog/best-backcountry-sites-algonquin.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Kayaking
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="en/kayaking/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Directory</a>
+                        <a href="en/kayaking/blog/beginner-kayak-guide-ontario.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Skiing
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="en/skiing/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Directory</a>
+                        <a href="en/skiing/blog/best-powder-days-bc.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Hiking
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="en/hiking/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Directory</a>
+                        <a href="en/hiking/blog/best-day-hikes-rockies.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <a href="fr/fishing/directory.html" class="text-[#c97c5e] font-bold hover:text-[#2d5a3d] transition-colors py-2">Français</a>
         </nav>
-        <button id="menu-toggle" class="md:hidden p-2 text-[#3e3127]" aria-label="Toggle menu">
+        <button id="menu-toggle" class="lg:hidden p-2 text-[#3e3127]" aria-label="Toggle menu">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
             </svg>
         </button>
     </div>
-    <nav id="mobile-menu" class="hidden md:hidden bg-white border-t border-[#2d5a3d]/10">
+    <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-[#2d5a3d]/10">
         <div class="max-w-7xl mx-auto px-6 py-4 space-y-3">
-            <a href="en/directory.html" class="block py-2 text-[#3e3127] font-semibold hover:text-[#c97c5e]">Lakes</a>
-            <a href="en/blog/peche-achigan-outaouais.html" class="block py-2 text-[#3e3127] font-semibold hover:text-[#c97c5e]">Blog</a>
-            <a href="https://www.ontario.ca/document/ontario-fishing-regulations-summary" target="_blank" class="block py-2 text-[#3e3127] font-semibold hover:text-[#c97c5e]">Regulations</a>
-            <a href="fr/directory.html" class="block py-2 text-[#c97c5e] font-bold">Français</a>
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">🎣 Fishing</div>
+                <a href="en/fishing/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Directory</a>
+                <a href="en/fishing/blog/peche-achigan-outaouais.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blog</a>
+            </div>
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">🦌 Hunting</div>
+                <a href="en/hunting/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Directory</a>
+                <a href="en/hunting/blog/chasse-perdrix-sans-chien.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blog</a>
+            </div>
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">⛺ Camping</div>
+                <a href="en/camping/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Directory</a>
+                <a href="en/camping/blog/best-backcountry-sites-algonquin.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blog</a>
+            </div>
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">🛶 Kayaking</div>
+                <a href="en/kayaking/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Directory</a>
+                <a href="en/kayaking/blog/beginner-kayak-guide-ontario.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blog</a>
+            </div>
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">⛷️ Skiing</div>
+                <a href="en/skiing/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Directory</a>
+                <a href="en/skiing/blog/best-powder-days-bc.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blog</a>
+            </div>
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">🥾 Hiking</div>
+                <a href="en/hiking/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Directory</a>
+                <a href="en/hiking/blog/best-day-hikes-rockies.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blog</a>
+            </div>
+            <a href="fr/fishing/directory.html" class="block py-2 text-[#c97c5e] font-bold">Français</a>
         </div>
     </nav>
 </header>
@@ -48,130 +144,158 @@
             <div class="max-w-7xl mx-auto px-6 w-full relative z-10">
                 <div class="max-w-3xl">
                     <div class="mb-6">
-                        <span class="inline-block bg-white/90 text-[#c97c5e] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full">Explore Canadian Wilderness</span>
+                        <span class="inline-block bg-white/90 text-[#c97c5e] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full">Canada's Outdoor Hub</span>
                     </div>
                     <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-8 leading-tight text-white drop-shadow-lg">
-                        Master the<br/>Canadian Wild.
+                        Your Gateway to<br/>Canadian Outdoor.
                     </h1>
                     <p class="text-lg md:text-xl text-white/90 mb-12 max-w-2xl leading-relaxed drop-shadow">
-                        High-authority scouting intelligence for
-                        <strong>fishing</strong>, <strong>hunting</strong>, and <strong>backcountry exploration</strong>.
-                        Discover lake profiles, seasonal species data, and expert tactical guides.
+                        <strong>141 spots</strong> across <strong>16 provinces</strong>.
+                        Fishing, hunting, camping, kayaking, skiing, and hiking intelligence — all in one place.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="en/directory.html" class="bg-[#2d5a3d] text-white px-8 py-4 font-semibold rounded-lg hover:bg-[#c97c5e] transition-colors shadow-lg">Explore Lakes</a>
-                        <a href="#featured" class="bg-white/90 text-[#2d5a3d] px-8 py-4 font-semibold rounded-lg hover:bg-white transition-colors shadow-lg">Learn More</a>
+                        <a href="en/fishing/directory.html" class="bg-[#2d5a3d] text-white px-8 py-4 font-semibold rounded-lg hover:bg-[#c97c5e] transition-colors shadow-lg">Explore Now</a>
+                        <a href="#activities" class="bg-white/90 text-[#2d5a3d] px-8 py-4 font-semibold rounded-lg hover:bg-white transition-colors shadow-lg">All Activities</a>
                     </div>
                 </div>
 
                 <div class="absolute bottom-12 left-6 right-6 hidden lg:flex justify-between items-end border-t border-white/30 pt-8">
                     <div class="grid grid-cols-4 gap-16">
                         <div>
-                            <div class="text-3xl font-bold text-white drop-shadow">15+</div>
-                            <div class="text-xs uppercase tracking-widest text-white/70 font-semibold mt-1">Indexed Lakes</div>
+                            <div class="text-3xl font-bold text-white drop-shadow">141+</div>
+                            <div class="text-xs uppercase tracking-widest text-white/70 font-semibold mt-1">Outdoor Spots</div>
                         </div>
                         <div>
-                            <div class="text-3xl font-bold text-white drop-shadow">ON &amp; QC</div>
-                            <div class="text-xs uppercase tracking-widest text-white/70 font-semibold mt-1">Province Coverage</div>
+                            <div class="text-3xl font-bold text-white drop-shadow">6</div>
+                            <div class="text-xs uppercase tracking-widest text-white/70 font-semibold mt-1">Activities</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-white drop-shadow">16</div>
+                            <div class="text-xs uppercase tracking-widest text-white/70 font-semibold mt-1">Provinces</div>
                         </div>
                         <div>
                             <div class="text-3xl font-bold text-white drop-shadow">Bilingual</div>
                             <div class="text-xs uppercase tracking-widest text-white/70 font-semibold mt-1">EN &amp; FR</div>
                         </div>
-                        <div>
-                            <div class="text-3xl font-bold text-white drop-shadow">Expert</div>
-                            <div class="text-xs uppercase tracking-widest text-white/70 font-semibold mt-1">Scout Data</div>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="featured" class="bg-white py-20 px-6">
+        <section id="activities" class="bg-white py-20 px-6">
             <div class="max-w-7xl mx-auto">
-                <div class="mb-12">
-                    <h2 class="text-4xl font-bold text-[#2d5a3d] mb-4">Featured Destinations</h2>
-                    <p class="text-[#6b6359] text-lg">Top-rated lakes for anglers and hunters across Ontario and Quebec.</p>
+                <div class="mb-12 text-center">
+                    <h2 class="text-4xl font-bold text-[#2d5a3d] mb-4">Choose Your Adventure</h2>
+                    <p class="text-[#6b6359] text-lg">Six ways to explore the Canadian wilderness.</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <a href="en/lake-superior.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <a href="en/fishing/directory.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
                 <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Legendary</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Lake Superior</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Lake Trout, Coho Salmon. Max depth: 406m.</p>
-                    <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">View Profile &rarr;</div>
+                    <div class="text-4xl mb-4">🎣</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Fishing</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">39 spots across Canada</p>
+                    <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Explore &rarr;</div>
                 </div>
             </a>
-            <a href="en/lake-simcoe.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+            <a href="en/hunting/directory.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
                 <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Lake Simcoe</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Yellow Perch, Lake Trout. Max depth: 41m.</p>
-                    <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">View Profile &rarr;</div>
+                    <div class="text-4xl mb-4">🦌</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Hunting</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">22 spots across Canada</p>
+                    <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Explore &rarr;</div>
                 </div>
             </a>
-            <a href="en/baskatong-reservoir.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+            <a href="en/camping/directory.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
                 <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Baskatong Reservoir</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Walleye, Northern Pike. Max depth: 96m.</p>
-                    <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">View Profile &rarr;</div>
+                    <div class="text-4xl mb-4">⛺</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Camping</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">25 spots across Canada</p>
+                    <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Explore &rarr;</div>
                 </div>
             </a>
-            <a href="en/lake-nipigon.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+            <a href="en/kayaking/directory.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
                 <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Legendary</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Lake Nipigon</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Brook Trout, Lake Trout. Max depth: 165m.</p>
-                    <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">View Profile &rarr;</div>
+                    <div class="text-4xl mb-4">🛶</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Kayaking</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">15 spots across Canada</p>
+                    <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Explore &rarr;</div>
                 </div>
             </a>
-            <a href="en/lac-saint-jean.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+            <a href="en/skiing/directory.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
                 <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Lac Saint-Jean</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Landlocked Salmon (Ouananiche), Walleye. Max depth: 63m.</p>
-                    <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">View Profile &rarr;</div>
+                    <div class="text-4xl mb-4">⛷️</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Skiing</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">20 spots across Canada</p>
+                    <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Explore &rarr;</div>
                 </div>
             </a>
-            <a href="en/lake-of-the-woods.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+            <a href="en/hiking/directory.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
                 <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Legendary</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Lake of the Woods</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Muskellunge, Walleye. Max depth: 64m.</p>
-                    <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">View Profile &rarr;</div>
+                    <div class="text-4xl mb-4">🥾</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Hiking</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">20 spots across Canada</p>
+                    <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Explore &rarr;</div>
                 </div>
             </a>
-                </div>
-                <div class="text-center mt-12">
-                    <a href="en/directory.html" class="inline-block bg-[#2d5a3d] text-white px-10 py-4 font-semibold rounded-lg hover:bg-[#c97c5e] transition-colors">View All Lakes &rarr;</a>
                 </div>
             </div>
         </section>
 
         <section class="bg-[#fef9f3] py-20 px-6">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-4xl font-bold text-[#2d5a3d] mb-6">Why Outdoor Intel?</h2>
-                <p class="text-lg text-[#6b6359] mb-12">
-                    We combine decades of scouting experience with modern data intelligence.
-                    Every lake profile includes species behavior data, seasonal patterns, and expert tips.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-white rounded-xl p-8" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                        <div class="text-3xl text-[#c97c5e] font-bold mb-2">15+</div>
-                        <h3 class="font-bold text-[#2d5a3d] mb-2">Lakes Profiled</h3>
-                        <p class="text-[#6b6359] text-sm">Comprehensive scouting data for Ontario and Quebec lakes.</p>
-                    </div>
-                    <div class="bg-white rounded-xl p-8" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                        <div class="text-3xl text-[#2d5a3d] font-bold mb-2">Expert</div>
-                        <h3 class="font-bold text-[#2d5a3d] mb-2">Field Intelligence</h3>
-                        <p class="text-[#6b6359] text-sm">Built by guides with real experience in the Canadian wild.</p>
-                    </div>
-                    <div class="bg-white rounded-xl p-8" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                        <div class="text-3xl text-[#7a9b8e] font-bold mb-2">Bilingual</div>
-                        <h3 class="font-bold text-[#2d5a3d] mb-2">Full Support</h3>
-                        <p class="text-[#6b6359] text-sm">Every page available in English and French.</p>
-                    </div>
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-12">
+                    <h2 class="text-4xl font-bold text-[#2d5a3d] mb-4">Featured Spots</h2>
+                    <p class="text-[#6b6359] text-lg">Hand-picked destinations from across Canada.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <a href="en/fishing/lake-superior.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Fishing &bull; Ontario</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Lake Superior</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Lake Trout, Coho Salmon</p>
+                    <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">View Profile &rarr;</div>
+                </div>
+            </a>
+            <a href="en/hiking/west-coast-trail.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Hiking &bull; British Columbia</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">West Coast Trail</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Coastal Views, Suspension Bridges</p>
+                    <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">View Profile &rarr;</div>
+                </div>
+            </a>
+            <a href="en/skiing/whistler-blackcomb.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Skiing &bull; British Columbia</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Whistler Blackcomb</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">200+ Runs, Alpine Village</p>
+                    <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">View Profile &rarr;</div>
+                </div>
+            </a>
+            <a href="en/camping/algonquin-provincial-park.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Camping &bull; Ontario</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Algonquin Provincial Park</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Canoe-in Sites, Portage Routes</p>
+                    <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">View Profile &rarr;</div>
+                </div>
+            </a>
+            <a href="en/hunting/anticosti-island.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Hunting &bull; Quebec</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Anticosti Island</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">White-tailed Deer, Moose</p>
+                    <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">View Profile &rarr;</div>
+                </div>
+            </a>
+            <a href="en/kayaking/nahanni-river.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Kayaking &bull; Northwest Territories</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Nahanni River</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Class III-IV Rapids, Virginia Falls</p>
+                    <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">View Profile &rarr;</div>
+                </div>
+            </a>
                 </div>
             </div>
         </section>
@@ -180,31 +304,42 @@
             <div class="max-w-7xl mx-auto">
                 <div class="mb-12">
                     <h2 class="text-4xl font-bold text-[#2d5a3d] mb-4">Latest from the Field</h2>
-                    <p class="text-[#6b6359] text-lg">Expert articles on fishing, hunting, and wilderness skills.</p>
+                    <p class="text-[#6b6359] text-lg">Expert articles across all outdoor activities.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <a href="en/blog/peche-achigan-outaouais.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                        <div class="bg-[#fef9f3] p-8 h-full">
-                            <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Fishing</div>
-                            <h3 class="text-lg font-bold text-[#2d5a3d] mb-2">Bass Fishing: Topwater vs Jig on the Ottawa River</h3>
-                            <p class="text-[#6b6359] text-sm">Deep dive comparing topwater and jig techniques for bass.</p>
-                        </div>
-                    </a>
-                    <a href="en/blog/chasse-perdrix-sans-chien.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                        <div class="bg-[#fef9f3] p-8 h-full">
-                            <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Hunting</div>
-                            <h3 class="text-lg font-bold text-[#2d5a3d] mb-2">Partridge Hunting Without a Dog: 5 Strategies</h3>
-                            <p class="text-[#6b6359] text-sm">Proven scouting methods for October bird season.</p>
-                        </div>
-                    </a>
-                    <a href="en/blog/setup-truite-mouchetee.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                        <div class="bg-[#fef9f3] p-8 h-full">
-                            <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Fishing</div>
-                            <h3 class="text-lg font-bold text-[#2d5a3d] mb-2">The Exact Setup for Brook Trout in Spring</h3>
-                            <p class="text-[#6b6359] text-sm">Rod, reel, line, lure — the precise brook trout setup.</p>
-                        </div>
-                    </a>
+                <a href="en/fishing/blog/peche-achigan-outaouais.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="bg-[#fef9f3] p-8 h-full">
+                        <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Fishing</div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2">Bass Fishing: Topwater vs Jig on the Ottawa River</h3>
+                        <p class="text-[#6b6359] text-sm">Deep dive comparing topwater and jig techniques for bass on the Ottawa River's shallow structure zones....</p>
+                    </div>
+                </a>
+                <a href="en/hunting/blog/chasse-perdrix-sans-chien.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="bg-[#fef9f3] p-8 h-full">
+                        <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Hunting</div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2">Partridge Hunting Without a Dog: 5 Strategies</h3>
+                        <p class="text-[#6b6359] text-sm">A tactical guide to solo partridge hunting in Ontario and Quebec forests, featuring proven scouting methods for October ...</p>
+                    </div>
+                </a>
+                <a href="en/camping/blog/best-backcountry-sites-algonquin.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="bg-[#fef9f3] p-8 h-full">
+                        <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Camping</div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2">10 Best Backcountry Sites in Algonquin Park</h3>
+                        <p class="text-[#6b6359] text-sm">Our hand-picked selection of interior canoe-in campsites in Algonquin, from beginner-friendly to remote expedition sites...</p>
+                    </div>
+                </a>
                 </div>
+            </div>
+        </section>
+
+        <section class="bg-[#2d5a3d] py-20 px-6 text-white text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold mb-6">Canada's Outdoor Intelligence</h2>
+                <p class="text-lg text-white/80 mb-8">
+                    From the Atlantic coast to the Pacific Rim, from the Great Lakes to the Arctic tundra.
+                    OutdoorIntel covers every province, every season, every adventure.
+                </p>
+                <a href="en/fishing/directory.html" class="inline-block bg-[#c97c5e] text-white px-10 py-4 font-semibold rounded-lg hover:bg-white hover:text-[#2d5a3d] transition-colors">Start Exploring &rarr;</a>
             </div>
         </section>
     </main>
@@ -213,27 +348,30 @@
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         <div>
             <img src="assets/logo/logo.jpg" alt="Outdoor Intel" class="h-10 w-auto mb-4 brightness-200">
-            <p class="text-white/70 text-sm">Canadian scouting intelligence for fishing, hunting, and wilderness exploration.</p>
+            <p class="text-white/70 text-sm">Canada's ultimate outdoor destination. Fishing, hunting, camping, kayaking, skiing, and hiking intelligence.</p>
         </div>
         <div>
-            <h4 class="font-bold mb-4 text-[#c97c5e]">Quick Links</h4>
-            <ul class="space-y-2 text-white/70 text-sm">
-                <li><a href="en/directory.html" class="hover:text-[#c97c5e] transition-colors">Lakes Directory</a></li>
-                <li><a href="en/blog/peche-achigan-outaouais.html" class="hover:text-[#c97c5e] transition-colors">Blog</a></li>
-            </ul>
+            <h4 class="font-bold mb-4 text-[#c97c5e]">Activities</h4>
+            <ul class="space-y-2 text-white/70 text-sm"><li><a href="en/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">Fishing</a></li>
+<li><a href="en/hunting/directory.html" class="hover:text-[#c97c5e] transition-colors">Hunting</a></li>
+<li><a href="en/camping/directory.html" class="hover:text-[#c97c5e] transition-colors">Camping</a></li>
+<li><a href="en/kayaking/directory.html" class="hover:text-[#c97c5e] transition-colors">Kayaking</a></li>
+<li><a href="en/skiing/directory.html" class="hover:text-[#c97c5e] transition-colors">Skiing</a></li>
+<li><a href="en/hiking/directory.html" class="hover:text-[#c97c5e] transition-colors">Hiking</a></li>
+</ul>
         </div>
         <div>
-            <h4 class="font-bold mb-4 text-[#c97c5e]">Regulations</h4>
+            <h4 class="font-bold mb-4 text-[#c97c5e]">Resources</h4>
             <ul class="space-y-2 text-white/70 text-sm">
-                <li><a href="https://www.ontario.ca/document/ontario-fishing-regulations-summary" target="_blank" class="hover:text-[#c97c5e] transition-colors">Ontario Fishing</a></li>
-                <li><a href="https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/peche-sportive" target="_blank" class="hover:text-[#c97c5e] transition-colors">Quebec Fishing</a></li>
+                <li><a href="https://www.ontario.ca/document/ontario-fishing-regulations-summary" target="_blank" class="hover:text-[#c97c5e] transition-colors">Ontario Regulations</a></li>
+                <li><a href="https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/peche-sportive" target="_blank" class="hover:text-[#c97c5e] transition-colors">Quebec Regulations</a></li>
             </ul>
         </div>
         <div>
             <h4 class="font-bold mb-4 text-[#c97c5e]">Language</h4>
             <ul class="space-y-2 text-white/70 text-sm">
-                <li><a href="en/directory.html" class="hover:text-[#c97c5e] transition-colors">English</a></li>
-                <li><a href="fr/directory.html" class="hover:text-[#c97c5e] transition-colors">Français</a></li>
+                <li><a href="en/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">English</a></li>
+                <li><a href="fr/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">Français</a></li>
             </ul>
         </div>
     </div>
@@ -247,8 +385,7 @@ const menu = document.getElementById('mobile-menu');
 if (toggle && menu) {
     toggle.addEventListener('click', () => {
         menu.classList.toggle('hidden');
-        const expanded = !menu.classList.contains('hidden');
-        toggle.setAttribute('aria-expanded', expanded);
+        toggle.setAttribute('aria-expanded', !menu.classList.contains('hidden'));
     });
 }
 </script>

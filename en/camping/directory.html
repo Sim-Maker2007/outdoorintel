@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camping Directory | Outdoor Intel</title>
+    <meta name="description" content="Explore 25 Canadian campgrounds and wilderness sites.">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f5f3f0] text-[#3e3127] font-sans leading-relaxed">
+
+    <header class="fixed top-0 w-full z-50 border-b border-[#2d5a3d]/10 bg-white/95 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <a href="../../index.html" class="flex-shrink-0">
+            <img src="../../assets/logo/logo.jpg" alt="Outdoor Intel" class="h-10 md:h-14 w-auto object-contain">
+        </a>
+        <nav class="hidden lg:flex gap-6 text-sm font-semibold text-[#3e3127]">
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Fishing
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="../../en/fishing/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Directory</a>
+                        <a href="../../en/fishing/blog/peche-achigan-outaouais.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Hunting
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="../../en/hunting/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Directory</a>
+                        <a href="../../en/hunting/blog/chasse-perdrix-sans-chien.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Camping
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="../../en/camping/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Directory</a>
+                        <a href="../../en/camping/blog/best-backcountry-sites-algonquin.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Kayaking
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="../../en/kayaking/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Directory</a>
+                        <a href="../../en/kayaking/blog/beginner-kayak-guide-ontario.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Skiing
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="../../en/skiing/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Directory</a>
+                        <a href="../../en/skiing/blog/best-powder-days-bc.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Hiking
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="../../en/hiking/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Directory</a>
+                        <a href="../../en/hiking/blog/best-day-hikes-rockies.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <a href="../../fr/fishing/directory.html" class="text-[#c97c5e] font-bold hover:text-[#2d5a3d] transition-colors py-2">Français</a>
+        </nav>
+        <button id="menu-toggle" class="lg:hidden p-2 text-[#3e3127]" aria-label="Toggle menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    </div>
+    <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-[#2d5a3d]/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 space-y-3">
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">🎣 Fishing</div>
+                <a href="../../en/fishing/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Directory</a>
+                <a href="../../en/fishing/blog/peche-achigan-outaouais.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blog</a>
+            </div>
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">🦌 Hunting</div>
+                <a href="../../en/hunting/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Directory</a>
+                <a href="../../en/hunting/blog/chasse-perdrix-sans-chien.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blog</a>
+            </div>
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">⛺ Camping</div>
+                <a href="../../en/camping/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Directory</a>
+                <a href="../../en/camping/blog/best-backcountry-sites-algonquin.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blog</a>
+            </div>
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">🛶 Kayaking</div>
+                <a href="../../en/kayaking/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Directory</a>
+                <a href="../../en/kayaking/blog/beginner-kayak-guide-ontario.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blog</a>
+            </div>
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">⛷️ Skiing</div>
+                <a href="../../en/skiing/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Directory</a>
+                <a href="../../en/skiing/blog/best-powder-days-bc.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blog</a>
+            </div>
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">🥾 Hiking</div>
+                <a href="../../en/hiking/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Directory</a>
+                <a href="../../en/hiking/blog/best-day-hikes-rockies.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blog</a>
+            </div>
+            <a href="../../fr/fishing/directory.html" class="block py-2 text-[#c97c5e] font-bold">Français</a>
+        </div>
+    </nav>
+</header>
+
+    <main class="pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8">
+                <div class="text-[#c97c5e] text-sm font-bold uppercase tracking-wider mb-2">⛺ Camping</div>
+                <h1 class="text-4xl md:text-5xl font-bold text-[#2d5a3d] mb-4">Camping Directory</h1>
+                <p class="text-lg text-[#6b6359]">Explore 25 Canadian campgrounds and wilderness sites.</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 md:p-8 mb-10" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-[#2d5a3d] mb-2">Search</label>
+                        <input type="text" id="search-input" placeholder="Search Camping..." class="w-full px-4 py-3 border border-[#2d5a3d]/20 rounded-lg focus:outline-none focus:border-[#c97c5e] focus:ring-2 focus:ring-[#c97c5e]/20 bg-[#fef9f3]">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-[#2d5a3d] mb-2">Province</label>
+                        <select id="province-filter" class="w-full px-4 py-3 border border-[#2d5a3d]/20 rounded-lg focus:outline-none focus:border-[#c97c5e] bg-[#fef9f3]">
+                            <option value="">All Provinces</option>
+                            <option value="Alberta">Alberta</option>
+<option value="British Columbia">British Columbia</option>
+<option value="Manitoba">Manitoba</option>
+<option value="New Brunswick">New Brunswick</option>
+<option value="Newfoundland & Labrador">Newfoundland & Labrador</option>
+<option value="Northwest Territories">Northwest Territories</option>
+<option value="Nova Scotia">Nova Scotia</option>
+<option value="Nunavut">Nunavut</option>
+<option value="Ontario">Ontario</option>
+<option value="Prince Edward Island">Prince Edward Island</option>
+<option value="Quebec">Quebec</option>
+<option value="Saskatchewan">Saskatchewan</option>
+<option value="Yukon">Yukon</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-[#2d5a3d] mb-2">Type</label>
+                        <select id="type-filter" class="w-full px-4 py-3 border border-[#2d5a3d]/20 rounded-lg focus:outline-none focus:border-[#c97c5e] bg-[#fef9f3]">
+                            <option value="">All Type</option>
+                            <option value="Backcountry">Backcountry</option>
+<option value="Car Camping">Car Camping</option>
+<option value="RV Friendly">RV Friendly</option>
+<option value="Wilderness">Wilderness</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-6 text-[#6b6359]">
+                <span id="result-count">25</span> spots found
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="spots-grid">
+            <a href="algonquin-provincial-park.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="algonquin provincial park" data-province="Ontario" data-filter="Canoe-in Sites,Portage Routes,Wildlife Viewing" data-type="Backcountry">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Algonquin Provincial Park</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Canoe-in Sites, Portage Routes</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: May - October</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="killarney-provincial-park.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="killarney provincial park" data-province="Ontario" data-filter="Lake Camping,Quartzite Hills,Scenic Vistas" data-type="Backcountry">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Killarney Provincial Park</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Lake Camping, Quartzite Hills</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: May - October</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="bon-echo-provincial-park.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="bon echo provincial park" data-province="Ontario" data-filter="Cliff Hiking,Water Activities,Scenic Lake Views" data-type="Car Camping">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Bon Echo Provincial Park</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Cliff Hiking, Water Activities</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: April - October</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="charleston-lake-provincial-park.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="charleston lake provincial park" data-province="Ontario" data-filter="Backcountry Campsites,Lake Swimming,Trail Network" data-type="Car Camping">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Charleston Lake Provincial Park</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Backcountry Campsites, Lake Swimming</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: May - October</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="mont-tremblant-national-park.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="mont-tremblant national park" data-province="Quebec" data-filter="Mountain Biking,Alpine Views,Lake Camping" data-type="Car Camping">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Mont-Tremblant National Park</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Mountain Biking, Alpine Views</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: May - October</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="saint-anne-parc-national.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="saint-anne provincial park" data-province="Quebec" data-filter="River Gorge,Waterfall Hikes,Rock Climbing" data-type="Backcountry">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Saint-Anne Provincial Park</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">River Gorge, Waterfall Hikes</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: June - September</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="lake-megantic-provincial-park.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="lake megantic provincial park" data-province="Quebec" data-filter="Waterfront Camping,Marina Access,Beach Areas" data-type="RV Friendly">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Lake Megantic Provincial Park</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Waterfront Camping, Marina Access</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: May - September</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="pacific-rim-national-park.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="pacific rim national park reserve" data-province="British Columbia" data-filter="West Coast Beaches,Ancient Rainforest,Backpacking Trails" data-type="Wilderness">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Pacific Rim National Park Reserve</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">West Coast Beaches, Ancient Rainforest</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: March - October</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="strathcona-provincial-park.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="strathcona provincial park" data-province="British Columbia" data-filter="Alpine Lakes,Mountain Peaks,Glacier Views" data-type="Backcountry">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Strathcona Provincial Park</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Alpine Lakes, Mountain Peaks</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: June - September</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="cape-scott-provincial-park.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="cape scott provincial park" data-province="British Columbia" data-filter="Remote Coastline,Tide Pools,Sand Dunes" data-type="Wilderness">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Cape Scott Provincial Park</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Remote Coastline, Tide Pools</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: May - September</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="lake-louise-backcountry.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="lake louise backcountry" data-province="Alberta" data-filter="Turquoise Alpine Lakes,Glacial Views,Steep Mountain Terrain" data-type="Backcountry">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Alberta &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Lake Louise Backcountry</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Turquoise Alpine Lakes, Glacial Views</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: June - September</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="moraine-lake-area.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="moraine lake backcountry" data-province="Alberta" data-filter="Ten Peaks Hiking,Valley of Ten Peaks,Crystal Clear Lakes" data-type="Backcountry">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Alberta &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Moraine Lake Backcountry</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Ten Peaks Hiking, Valley of Ten Peaks</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: June - September</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="icefields-parkway.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="icefields parkway campgrounds" data-province="Alberta" data-filter="Glacier Access,Mountain Pass Views,Wildlife Spotting" data-type="Car Camping">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Alberta &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Icefields Parkway Campgrounds</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Glacier Access, Mountain Pass Views</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: May - October</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="riding-mountain-national-park.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="riding mountain national park" data-province="Manitoba" data-filter="Prairie Views,Wildlife Observing,Lake Camping" data-type="Car Camping">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Manitoba &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Riding Mountain National Park</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Prairie Views, Wildlife Observing</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: May - September</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="athabasca-sand-dunes.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="athabasca sand dunes" data-province="Saskatchewan" data-filter="Sand Dunes,Remote Boreal Forest,Lake Camping" data-type="Wilderness">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Saskatchewan &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Athabasca Sand Dunes</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Sand Dunes, Remote Boreal Forest</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: June - September</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="fundy-national-park.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="fundy national park" data-province="New Brunswick" data-filter="Highest Tides,Waterfall Hikes,Coastal Valleys" data-type="Car Camping">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">New Brunswick &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Fundy National Park</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Highest Tides, Waterfall Hikes</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: May - October</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="hopewell-rocks.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="hopewell rocks area" data-province="New Brunswick" data-filter="Tidal Flats,Rock Formations,Kayaking" data-type="RV Friendly">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">New Brunswick &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Hopewell Rocks Area</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Tidal Flats, Rock Formations</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: April - October</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="cape-breton-highlands-national-park.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="cape breton highlands national park" data-province="Nova Scotia" data-filter="Cabot Trail Hiking,Steep Cliffs,Coastal Scenery" data-type="Car Camping">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Nova Scotia &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Cape Breton Highlands National Park</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Cabot Trail Hiking, Steep Cliffs</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: May - October</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="kejimkujik-national-park.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="kejimkujik national park" data-province="Nova Scotia" data-filter="Lake Paddling,Inland Wilderness,Historic Petroglyphs" data-type="Backcountry">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Nova Scotia &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Kejimkujik National Park</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Lake Paddling, Inland Wilderness</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: April - October</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="pei-national-park.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="prince edward island national park" data-province="Prince Edward Island" data-filter="Red Sand Beaches,Coastal Trails,Dune Systems" data-type="Car Camping">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Prince Edward Island &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Prince Edward Island National Park</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Red Sand Beaches, Coastal Trails</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: May - October</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="gros-morne-national-park.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="gros morne national park" data-province="Newfoundland & Labrador" data-filter="Fjord Hiking,Glacial Valleys,Mountain Vistas" data-type="Car Camping">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Newfoundland & Labrador &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Gros Morne National Park</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Fjord Hiking, Glacial Valleys</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: May - September</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="western-brook-pond.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="western brook pond" data-province="Newfoundland & Labrador" data-filter="Steep Fjord Walls,Boat Tours,Backcountry Camping" data-type="Backcountry">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Newfoundland & Labrador &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Western Brook Pond</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Steep Fjord Walls, Boat Tours</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: June - September</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="tombstone-territorial-park.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="tombstone territorial park" data-province="Yukon" data-filter="Alpine Tundra,Midnight Sun,Remote Hiking" data-type="Wilderness">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Yukon &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Tombstone Territorial Park</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Alpine Tundra, Midnight Sun</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: June - August</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="hay-river-territorial-park.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="hay river territorial park" data-province="Northwest Territories" data-filter="River Camping,Boreal Forest,Aurora Viewing" data-type="Car Camping">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Northwest Territories &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Hay River Territorial Park</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">River Camping, Boreal Forest</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: May - September</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="quttinirpaak-national-park.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="quttinirpaak national park" data-province="Nunavut" data-filter="Arctic Tundra,Polar Wildlife,Extreme Remote Camping" data-type="Wilderness">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Nunavut &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Quttinirpaak National Park</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Arctic Tundra, Polar Wildlife</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Season: June - August</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            </div>
+
+            <div id="no-results" class="hidden text-center py-20">
+                <h3 class="text-2xl font-bold text-[#2d5a3d] mb-4">No spots found</h3>
+                <p class="text-[#6b6359]">Try adjusting your search or filter criteria.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#2d5a3d] text-white py-16 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div>
+            <img src="../../assets/logo/logo.jpg" alt="Outdoor Intel" class="h-10 w-auto mb-4 brightness-200">
+            <p class="text-white/70 text-sm">Canada's ultimate outdoor destination. Fishing, hunting, camping, kayaking, skiing, and hiking intelligence.</p>
+        </div>
+        <div>
+            <h4 class="font-bold mb-4 text-[#c97c5e]">Activities</h4>
+            <ul class="space-y-2 text-white/70 text-sm"><li><a href="../../en/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">Fishing</a></li>
+<li><a href="../../en/hunting/directory.html" class="hover:text-[#c97c5e] transition-colors">Hunting</a></li>
+<li><a href="../../en/camping/directory.html" class="hover:text-[#c97c5e] transition-colors">Camping</a></li>
+<li><a href="../../en/kayaking/directory.html" class="hover:text-[#c97c5e] transition-colors">Kayaking</a></li>
+<li><a href="../../en/skiing/directory.html" class="hover:text-[#c97c5e] transition-colors">Skiing</a></li>
+<li><a href="../../en/hiking/directory.html" class="hover:text-[#c97c5e] transition-colors">Hiking</a></li>
+</ul>
+        </div>
+        <div>
+            <h4 class="font-bold mb-4 text-[#c97c5e]">Resources</h4>
+            <ul class="space-y-2 text-white/70 text-sm">
+                <li><a href="https://www.ontario.ca/document/ontario-fishing-regulations-summary" target="_blank" class="hover:text-[#c97c5e] transition-colors">Ontario Regulations</a></li>
+                <li><a href="https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/peche-sportive" target="_blank" class="hover:text-[#c97c5e] transition-colors">Quebec Regulations</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold mb-4 text-[#c97c5e]">Language</h4>
+            <ul class="space-y-2 text-white/70 text-sm">
+                <li><a href="../../en/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">English</a></li>
+                <li><a href="../../fr/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">Français</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/20 text-center text-white/50 text-sm">
+        <p>OutdoorIntel.ca &mdash; 2026. All rights reserved.</p>
+    </div>
+</footer>
+    <script>
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('mobile-menu');
+if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        toggle.setAttribute('aria-expanded', !menu.classList.contains('hidden'));
+    });
+}
+</script>
+
+    <script>
+    const searchInput = document.getElementById('search-input');
+    const provinceFilter = document.getElementById('province-filter');
+    const typeFilter = document.getElementById('type-filter');
+    const spotCards = document.querySelectorAll('.spot-card');
+    const resultCount = document.getElementById('result-count');
+    const noResults = document.getElementById('no-results');
+
+    function filterSpots() {
+        const term = searchInput.value.toLowerCase();
+        const prov = provinceFilter.value;
+        const typ = typeFilter.value;
+        let count = 0;
+        spotCards.forEach(card => {
+            const name = card.getAttribute('data-name');
+            const cardProv = card.getAttribute('data-province');
+            const cardFilter = card.getAttribute('data-filter');
+            const cardType = card.getAttribute('data-type');
+            const matchName = name.includes(term);
+            const matchProv = !prov || cardProv === prov;
+            const matchType = !typ || cardFilter.includes(typ) || cardType === typ;
+            const ok = matchName && matchProv && matchType;
+            card.style.display = ok ? '' : 'none';
+            if (ok) count++;
+        });
+        resultCount.textContent = count;
+        noResults.classList.toggle('hidden', count > 0);
+    }
+
+    searchInput.addEventListener('input', filterSpots);
+    provinceFilter.addEventListener('change', filterSpots);
+    typeFilter.addEventListener('change', filterSpots);
+    </script>
+</body>
+</html>

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Répertoire de chasse | Outdoor Intel</title>
+    <meta name="description" content="Explorez 22 zones de chasse canadiennes avec des données de terrain.">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f5f3f0] text-[#3e3127] font-sans leading-relaxed">
+
+    <header class="fixed top-0 w-full z-50 border-b border-[#2d5a3d]/10 bg-white/95 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <a href="../../index.html" class="flex-shrink-0">
+            <img src="../../assets/logo/logo.jpg" alt="Outdoor Intel" class="h-10 md:h-14 w-auto object-contain">
+        </a>
+        <nav class="hidden lg:flex gap-6 text-sm font-semibold text-[#3e3127]">
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Pêche
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="../../fr/fishing/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Répertoire</a>
+                        <a href="../../fr/fishing/blog/peche-achigan-outaouais.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blogue</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Chasse
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="../../fr/hunting/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Répertoire</a>
+                        <a href="../../fr/hunting/blog/chasse-perdrix-sans-chien.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blogue</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Camping
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="../../fr/camping/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Répertoire</a>
+                        <a href="../../fr/camping/blog/best-backcountry-sites-algonquin.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blogue</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Kayak
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="../../fr/kayaking/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Répertoire</a>
+                        <a href="../../fr/kayaking/blog/beginner-kayak-guide-ontario.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blogue</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Ski
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="../../fr/skiing/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Répertoire</a>
+                        <a href="../../fr/skiing/blog/best-powder-days-bc.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blogue</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Randonnée
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="../../fr/hiking/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Répertoire</a>
+                        <a href="../../fr/hiking/blog/best-day-hikes-rockies.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blogue</a>
+                    </div>
+                </div>
+            </div>
+            <a href="../../en/fishing/directory.html" class="text-[#c97c5e] font-bold hover:text-[#2d5a3d] transition-colors py-2">English</a>
+        </nav>
+        <button id="menu-toggle" class="lg:hidden p-2 text-[#3e3127]" aria-label="Toggle menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    </div>
+    <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-[#2d5a3d]/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 space-y-3">
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">🎣 Pêche</div>
+                <a href="../../fr/fishing/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Répertoire</a>
+                <a href="../../fr/fishing/blog/peche-achigan-outaouais.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blogue</a>
+            </div>
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">🦌 Chasse</div>
+                <a href="../../fr/hunting/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Répertoire</a>
+                <a href="../../fr/hunting/blog/chasse-perdrix-sans-chien.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blogue</a>
+            </div>
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">⛺ Camping</div>
+                <a href="../../fr/camping/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Répertoire</a>
+                <a href="../../fr/camping/blog/best-backcountry-sites-algonquin.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blogue</a>
+            </div>
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">🛶 Kayak</div>
+                <a href="../../fr/kayaking/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Répertoire</a>
+                <a href="../../fr/kayaking/blog/beginner-kayak-guide-ontario.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blogue</a>
+            </div>
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">⛷️ Ski</div>
+                <a href="../../fr/skiing/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Répertoire</a>
+                <a href="../../fr/skiing/blog/best-powder-days-bc.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blogue</a>
+            </div>
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">🥾 Randonnée</div>
+                <a href="../../fr/hiking/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Répertoire</a>
+                <a href="../../fr/hiking/blog/best-day-hikes-rockies.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blogue</a>
+            </div>
+            <a href="../../en/fishing/directory.html" class="block py-2 text-[#c97c5e] font-bold">English</a>
+        </div>
+    </nav>
+</header>
+
+    <main class="pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-8">
+                <div class="text-[#c97c5e] text-sm font-bold uppercase tracking-wider mb-2">🦌 Chasse</div>
+                <h1 class="text-4xl md:text-5xl font-bold text-[#2d5a3d] mb-4">Répertoire de chasse</h1>
+                <p class="text-lg text-[#6b6359]">Explorez 22 zones de chasse canadiennes avec des données de terrain.</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 md:p-8 mb-10" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-[#2d5a3d] mb-2">Rechercher</label>
+                        <input type="text" id="search-input" placeholder="Rechercher Chasse..." class="w-full px-4 py-3 border border-[#2d5a3d]/20 rounded-lg focus:outline-none focus:border-[#c97c5e] focus:ring-2 focus:ring-[#c97c5e]/20 bg-[#fef9f3]">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-[#2d5a3d] mb-2">Province</label>
+                        <select id="province-filter" class="w-full px-4 py-3 border border-[#2d5a3d]/20 rounded-lg focus:outline-none focus:border-[#c97c5e] bg-[#fef9f3]">
+                            <option value="">Toutes les provinces</option>
+                            <option value="Alberta">Alberta</option>
+<option value="British Columbia">British Columbia</option>
+<option value="Manitoba">Manitoba</option>
+<option value="New Brunswick">New Brunswick</option>
+<option value="Newfoundland & Labrador">Newfoundland & Labrador</option>
+<option value="Northwest Territories">Northwest Territories</option>
+<option value="Nova Scotia">Nova Scotia</option>
+<option value="Nunavut">Nunavut</option>
+<option value="Ontario">Ontario</option>
+<option value="PEI">PEI</option>
+<option value="Quebec">Quebec</option>
+<option value="Saskatchewan">Saskatchewan</option>
+<option value="Yukon">Yukon</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-[#2d5a3d] mb-2">Gibier</label>
+                        <select id="type-filter" class="w-full px-4 py-3 border border-[#2d5a3d]/20 rounded-lg focus:outline-none focus:border-[#c97c5e] bg-[#fef9f3]">
+                            <option value="">Tous</option>
+                            <option value="Big Game">Big Game</option>
+<option value="Mixed">Mixed</option>
+<option value="Upland Bird">Upland Bird</option>
+<option value="Waterfowl">Waterfowl</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-6 text-[#6b6359]">
+                <span id="result-count">22</span> spots trouvés
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="spots-grid">
+            <a href="anticosti-island.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="anticosti island" data-province="Quebec" data-filter="White-tailed Deer,Moose,Black Bear" data-type="Big Game">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Anticosti Island</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">White-tailed Deer, Moose</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Saison: September - December</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="laurentian-mountains.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="laurentian mountains" data-province="Quebec" data-filter="Black Bear,White-tailed Deer,Moose" data-type="Big Game">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Laurentian Mountains</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Black Bear, White-tailed Deer</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Saison: August - November</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="zec-batiscan.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="zec batiscan" data-province="Quebec" data-filter="Moose,Black Bear,White-tailed Deer" data-type="Big Game">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">ZEC Batiscan</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Moose, Black Bear</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Saison: September - October</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="kawartha-lakes.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="kawartha lakes region" data-province="Ontario" data-filter="White-tailed Deer,Black Bear" data-type="Big Game">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Kawartha Lakes Region</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">White-tailed Deer, Black Bear</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Saison: October - December</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="algonquin-park.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="algonquin park" data-province="Ontario" data-filter="Moose,Black Bear,White-tailed Deer" data-type="Big Game">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Algonquin Park</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Moose, Black Bear</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Saison: September - November</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="muskoka-region.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="muskoka region" data-province="Ontario" data-filter="White-tailed Deer,Black Bear" data-type="Big Game">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Muskoka Region</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">White-tailed Deer, Black Bear</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Saison: October - December</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="peace-river.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="peace river region" data-province="British Columbia" data-filter="Moose,Deer,Black Bear" data-type="Big Game">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Peace River Region</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Moose, Deer</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Saison: September - November</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="charlie-lake.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="charlie lake" data-province="British Columbia" data-filter="Moose,Elk,Mule Deer" data-type="Big Game">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Charlie Lake</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Moose, Elk</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Saison: September - October</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="bow-river-valley.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="canadian rockies - bow river valley" data-province="Alberta" data-filter="Elk,Mule Deer,Black Bear" data-type="Big Game">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Alberta &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Canadian Rockies - Bow River Valley</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Elk, Mule Deer</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Saison: September - November</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="foothills-red-deer.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="foothills red deer" data-province="Alberta" data-filter="Mule Deer,White-tailed Deer,Elk" data-type="Big Game">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Alberta &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Foothills Red Deer</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Mule Deer, White-tailed Deer</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Saison: October - November</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="willmore-wilderness.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="willmore wilderness" data-province="Alberta" data-filter="Mountain Goat,Elk,Bighorn Sheep" data-type="Big Game">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Alberta &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Willmore Wilderness</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Mountain Goat, Elk</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Saison: September - October</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="whitewater-lake.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="whitewater lake" data-province="Manitoba" data-filter="Canada Goose,Mallard,Pintail" data-type="Waterfowl">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Manitoba &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Whitewater Lake</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Canada Goose, Mallard</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Saison: September - October</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="delta-marsh.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="delta marsh" data-province="Manitoba" data-filter="Mallard,Pintail,Canada Goose" data-type="Waterfowl">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Manitoba &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Delta Marsh</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Mallard, Pintail</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Saison: September - October</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="northern-saskatchewan-muskeg.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="northern saskatchewan muskeg" data-province="Saskatchewan" data-filter="Moose,Black Bear,Woodland Caribou" data-type="Big Game">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Saskatchewan &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Northern Saskatchewan Muskeg</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Moose, Black Bear</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Saison: September - October</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="acadian-uplands.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="acadian uplands" data-province="New Brunswick" data-filter="White-tailed Deer,Black Bear,Moose" data-type="Big Game">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">New Brunswick &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Acadian Uplands</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">White-tailed Deer, Black Bear</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Saison: October - November</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="pictou-county-highlands.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="pictou county highlands" data-province="Nova Scotia" data-filter="Ruffed Grouse,Spruce Grouse,Woodcock" data-type="Upland Bird">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Nova Scotia &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Pictou County Highlands</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Ruffed Grouse, Spruce Grouse</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Saison: September - November</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="pei-central.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="prince edward island central" data-province="PEI" data-filter="White-tailed Deer,Ruffed Grouse" data-type="Mixed">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">PEI &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Prince Edward Island Central</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">White-tailed Deer, Ruffed Grouse</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Saison: October - November</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="gros-morne.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="gros morne" data-province="Newfoundland & Labrador" data-filter="Caribou,Moose,Black Bear" data-type="Big Game">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Newfoundland & Labrador &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Gros Morne</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Caribou, Moose</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Saison: August - September</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="central-plateau-caribou.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="central plateau caribou" data-province="Newfoundland & Labrador" data-filter="Caribou,Moose" data-type="Big Game">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Newfoundland & Labrador &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Central Plateau Caribou</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Caribou, Moose</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Saison: August - September</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="yukon-gma-1.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="yukon game management area 1" data-province="Yukon" data-filter="Moose,Grizzly Bear,Dall Sheep" data-type="Big Game">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Yukon &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Yukon Game Management Area 1</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Moose, Grizzly Bear</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Saison: August - September</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="yellowknife-region.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="yellowknife region" data-province="Northwest Territories" data-filter="Barrenland Caribou,Muskox" data-type="Big Game">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Northwest Territories &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Yellowknife Region</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Barrenland Caribou, Muskox</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Saison: August - September</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            <a href="nunavut-tundra.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="nunavut arctic tundra" data-province="Nunavut" data-filter="Muskox,Barrenland Caribou" data-type="Big Game">
+                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Nunavut &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Nunavut Arctic Tundra</h3>
+                    <p class="text-[#6b6359] text-sm mb-4">Muskox, Barrenland Caribou</p>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-[#7a9b8e] font-semibold">Saison: July - August</div>
+                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                    </div>
+                </div>
+            </a>
+            </div>
+
+            <div id="no-results" class="hidden text-center py-20">
+                <h3 class="text-2xl font-bold text-[#2d5a3d] mb-4">Aucun spot trouvé</h3>
+                <p class="text-[#6b6359]">Essayez de modifier vos critères de recherche.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#2d5a3d] text-white py-16 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div>
+            <img src="../../assets/logo/logo.jpg" alt="Outdoor Intel" class="h-10 w-auto mb-4 brightness-200">
+            <p class="text-white/70 text-sm">La destination ultime du plein air canadien. Pêche, chasse, camping, kayak, ski et randonnée.</p>
+        </div>
+        <div>
+            <h4 class="font-bold mb-4 text-[#c97c5e]">Activités</h4>
+            <ul class="space-y-2 text-white/70 text-sm"><li><a href="../../fr/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">Pêche</a></li>
+<li><a href="../../fr/hunting/directory.html" class="hover:text-[#c97c5e] transition-colors">Chasse</a></li>
+<li><a href="../../fr/camping/directory.html" class="hover:text-[#c97c5e] transition-colors">Camping</a></li>
+<li><a href="../../fr/kayaking/directory.html" class="hover:text-[#c97c5e] transition-colors">Kayak</a></li>
+<li><a href="../../fr/skiing/directory.html" class="hover:text-[#c97c5e] transition-colors">Ski</a></li>
+<li><a href="../../fr/hiking/directory.html" class="hover:text-[#c97c5e] transition-colors">Randonnée</a></li>
+</ul>
+        </div>
+        <div>
+            <h4 class="font-bold mb-4 text-[#c97c5e]">Ressources</h4>
+            <ul class="space-y-2 text-white/70 text-sm">
+                <li><a href="https://www.ontario.ca/document/ontario-fishing-regulations-summary" target="_blank" class="hover:text-[#c97c5e] transition-colors">Règlements Ontario</a></li>
+                <li><a href="https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/peche-sportive" target="_blank" class="hover:text-[#c97c5e] transition-colors">Règlements Québec</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold mb-4 text-[#c97c5e]">Langue</h4>
+            <ul class="space-y-2 text-white/70 text-sm">
+                <li><a href="../../en/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">English</a></li>
+                <li><a href="../../fr/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">Français</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/20 text-center text-white/50 text-sm">
+        <p>OutdoorIntel.ca &mdash; 2026. Tous droits réservés.</p>
+    </div>
+</footer>
+    <script>
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('mobile-menu');
+if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        toggle.setAttribute('aria-expanded', !menu.classList.contains('hidden'));
+    });
+}
+</script>
+
+    <script>
+    const searchInput = document.getElementById('search-input');
+    const provinceFilter = document.getElementById('province-filter');
+    const typeFilter = document.getElementById('type-filter');
+    const spotCards = document.querySelectorAll('.spot-card');
+    const resultCount = document.getElementById('result-count');
+    const noResults = document.getElementById('no-results');
+
+    function filterSpots() {
+        const term = searchInput.value.toLowerCase();
+        const prov = provinceFilter.value;
+        const typ = typeFilter.value;
+        let count = 0;
+        spotCards.forEach(card => {
+            const name = card.getAttribute('data-name');
+            const cardProv = card.getAttribute('data-province');
+            const cardFilter = card.getAttribute('data-filter');
+            const cardType = card.getAttribute('data-type');
+            const matchName = name.includes(term);
+            const matchProv = !prov || cardProv === prov;
+            const matchType = !typ || cardFilter.includes(typ) || cardType === typ;
+            const ok = matchName && matchProv && matchType;
+            card.style.display = ok ? '' : 'none';
+            if (ok) count++;
+        });
+        resultCount.textContent = count;
+        noResults.classList.toggle('hidden', count > 0);
+    }
+
+    searchInput.addEventListener('input', filterSpots);
+    provinceFilter.addEventListener('change', filterSpots);
+    typeFilter.addEventListener('change', filterSpots);
+    </script>
+</body>
+</html>
