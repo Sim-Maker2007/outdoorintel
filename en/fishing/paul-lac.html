@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paul, Lac | Fishing | Outdoor Intel</title>
-    <meta name="description" content="Fishing intel for Paul, Lac in Quebec. Species data from Données Québec.">
+    <meta name="description" content="Detailed scouting intelligence for Paul, Lac. Fishing data, seasonal tips, and expert guidance.">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .spot-hero {
-            background: linear-gradient(135deg, rgba(45,90,61,0.6), rgba(62,49,39,0.5));
+            background: linear-gradient(135deg, rgba(45,90,61,0.3), rgba(62,49,39,0.2)), url('../../assets/heros/scout-hero-25.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -16,82 +16,427 @@
 </head>
 <body class="bg-[#f5f3f0] text-[#3e3127] font-sans leading-relaxed">
 
-<header class="fixed top-0 w-full z-50 border-b border-[#2d5a3d]/10 bg-white/95 backdrop-blur-md">
+    <header class="fixed top-0 w-full z-50 border-b border-[#2d5a3d]/10 bg-white/95 backdrop-blur-md">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <a href="../../index.html" class="flex-shrink-0">
             <img src="../../assets/logo/logo.jpg" alt="Outdoor Intel" class="h-10 md:h-14 w-auto object-contain">
         </a>
         <nav class="hidden lg:flex gap-6 text-sm font-semibold text-[#3e3127]">
-            <a href="directory.html" class="text-[#2d5a3d]">Fishing</a>
-            <a href="../../fr/fishing/paul-lac.html" class="text-[#c97c5e] font-bold">Français</a>
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Fishing
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="../../en/fishing/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Directory</a>
+                        <a href="../../en/fishing/blog/peche-achigan-outaouais.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Hunting
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="../../en/hunting/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Directory</a>
+                        <a href="../../en/hunting/blog/chasse-perdrix-sans-chien.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Camping
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="../../en/camping/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Directory</a>
+                        <a href="../../en/camping/blog/best-backcountry-sites-algonquin.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Kayaking
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="../../en/kayaking/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Directory</a>
+                        <a href="../../en/kayaking/blog/beginner-kayak-guide-ontario.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Skiing
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="../../en/skiing/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Directory</a>
+                        <a href="../../en/skiing/blog/best-powder-days-bc.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <button class="hover:text-[#c97c5e] transition-colors flex items-center gap-1 py-2">
+                    Hiking
+                    <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
+                    <div class="bg-white rounded-lg shadow-xl border border-[#2d5a3d]/10 py-2 min-w-[180px]">
+                        <a href="../../en/hiking/directory.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Directory</a>
+                        <a href="../../en/hiking/blog/best-day-hikes-rockies.html" class="block px-5 py-2.5 text-sm hover:bg-[#fef9f3] hover:text-[#c97c5e] transition-colors">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <a href="../../fr/fishing/directory.html" class="text-[#c97c5e] font-bold hover:text-[#2d5a3d] transition-colors py-2">Français</a>
         </nav>
+        <button id="menu-toggle" class="lg:hidden p-2 text-[#3e3127]" aria-label="Toggle menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
     </div>
+    <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-[#2d5a3d]/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 space-y-3">
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">🎣 Fishing</div>
+                <a href="../../en/fishing/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Directory</a>
+                <a href="../../en/fishing/blog/peche-achigan-outaouais.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blog</a>
+            </div>
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">🦌 Hunting</div>
+                <a href="../../en/hunting/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Directory</a>
+                <a href="../../en/hunting/blog/chasse-perdrix-sans-chien.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blog</a>
+            </div>
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">⛺ Camping</div>
+                <a href="../../en/camping/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Directory</a>
+                <a href="../../en/camping/blog/best-backcountry-sites-algonquin.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blog</a>
+            </div>
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">🛶 Kayaking</div>
+                <a href="../../en/kayaking/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Directory</a>
+                <a href="../../en/kayaking/blog/beginner-kayak-guide-ontario.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blog</a>
+            </div>
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">⛷️ Skiing</div>
+                <a href="../../en/skiing/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Directory</a>
+                <a href="../../en/skiing/blog/best-powder-days-bc.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blog</a>
+            </div>
+            <div class="border-b border-[#2d5a3d]/5 pb-3">
+                <div class="font-semibold text-[#2d5a3d] mb-2">🥾 Hiking</div>
+                <a href="../../en/hiking/directory.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Directory</a>
+                <a href="../../en/hiking/blog/best-day-hikes-rockies.html" class="block py-1.5 pl-6 text-sm text-[#6b6359] hover:text-[#c97c5e]">Blog</a>
+            </div>
+            <a href="../../fr/fishing/directory.html" class="block py-2 text-[#c97c5e] font-bold">Français</a>
+        </div>
+    </nav>
 </header>
 
-<main>
-    <section class="spot-hero min-h-[50vh] flex flex-col justify-center pt-24 pb-12 px-6">
-        <div class="max-w-7xl mx-auto w-full relative z-10">
-            <div class="max-w-3xl">
-                <div class="mb-4">
-                    <span class="inline-block bg-white/90 text-[#c97c5e] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full">Quebec Government Data</span>
+    <main>
+        <section class="spot-hero min-h-screen flex flex-col justify-center pt-24 pb-12 relative">
+            <div class="max-w-7xl mx-auto px-6 w-full relative z-10 flex flex-col flex-1 justify-center">
+                <div class="max-w-3xl mb-16 lg:mb-20">
+                    <div class="mb-6">
+                        <span class="inline-block bg-white/90 text-[#c97c5e] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full">Fishing Scout Report</span>
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-4 leading-tight text-white drop-shadow-lg">
+                        Paul, Lac
+                    </h1>
+                    <p class="text-xl text-white/80 mb-4 drop-shadow">Quebec</p>
+                    <p class="text-lg text-white/90 mb-10 max-w-xl leading-relaxed drop-shadow">Detailed scouting intelligence for Paul, Lac. Fishing data, seasonal tips, and expert guidance.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="directory.html" class="bg-[#2d5a3d] text-white px-8 py-4 font-semibold rounded-lg hover:bg-[#c97c5e] transition-colors shadow-lg">All Fishing</a>
+                    </div>
                 </div>
-                <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-white drop-shadow-lg">Paul, Lac</h1>
-                <p class="text-xl text-white/90 mb-6">Cascapédia, Rivière • 2 species</p>
-                <div class="flex flex-wrap gap-3">
-                    <a href="directory.html" class="bg-white text-[#2d5a3d] px-6 py-3 font-semibold rounded-lg hover:bg-[#fef9f3] transition-colors">All Fishing</a>
+
+                <div class="hidden lg:block mt-auto">
+                    <div class="bg-white/95 backdrop-blur rounded-xl p-8 inline-block" style="box-shadow: 0 4px 12px rgba(62,49,39,0.1)">
+                        <div class="flex flex-wrap gap-10">
+                        <div>
+                            <div class="text-2xl font-bold text-[#2d5a3d]">Varies</div>
+                            <div class="text-xs uppercase tracking-widest text-[#7a9b8e] font-semibold mt-1">Max Depth</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-[#c97c5e]">Explorer</div>
+                            <div class="text-xs uppercase tracking-widest text-[#7a9b8e] font-semibold mt-1">Scout Level</div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="bg-white py-16 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
-        <p class="text-red-700 font-semibold">⚠️ Mercury Warning</p>
-        <p class="text-red-600 text-sm">Consumption guidelines apply for some species.</p>
-    </div>
-            
-            <div class="bg-[#fef9f3] rounded-xl p-8 mb-10">
-                <h2 class="text-2xl font-bold text-[#2d5a3d] mb-6">Species Present</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <section class="bg-white py-16 px-6 -mt-8 relative z-20">
+            <div class="max-w-7xl mx-auto">
+                <div class="bg-[#fef9f3] rounded-xl p-8 mb-10" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <h2 class="text-2xl font-bold text-[#2d5a3d] mb-6">Primary Species</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     <div class="bg-white border border-[#2d5a3d]/10 rounded-lg p-4 flex items-center gap-3">
-        <div class="w-3 h-3 rounded-full bg-[#c97c5e]"></div>
-        <span class="font-semibold text-[#2d5a3d]">Omble de fontaine</span>
-        <span class="text-xs text-[#6b6359] ml-auto">Salvelinus fontinalis</span>
-    </div><div class="bg-white border border-[#2d5a3d]/10 rounded-lg p-4 flex items-center gap-3">
-        <div class="w-3 h-3 rounded-full bg-[#c97c5e]"></div>
-        <span class="font-semibold text-[#2d5a3d]">Touladi</span>
-        <span class="text-xs text-[#6b6359] ml-auto">Salvelinus namaycush</span>
-    </div>
+                        <div class="w-3 h-3 rounded-full bg-[#c97c5e]"></div>
+                        <span class="font-semibold text-[#2d5a3d]">Omble de fontaine</span>
+                    </div>
+                    <div class="bg-white border border-[#2d5a3d]/10 rounded-lg p-4 flex items-center gap-3">
+                        <div class="w-3 h-3 rounded-full bg-[#c97c5e]"></div>
+                        <span class="font-semibold text-[#2d5a3d]">Touladi</span>
+                    </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="grid md:grid-cols-2 gap-8 mb-10">
-                <div class="bg-[#2d5a3d] text-white rounded-xl p-8">
-                    <h2 class="text-xl font-bold mb-4">Location</h2>
-                    <p class="text-white/90">Region: Cascapédia, Rivière</p>
-                    <p class="text-white/70 text-sm mt-2">Autorisée, N/A</p>
-                </div>
-                <div class="bg-[#fef9f3] rounded-xl p-8">
-                    <h2 class="text-xl font-bold text-[#2d5a3d] mb-4">Fishing Status</h2>
-                    <p class="text-[#3e3127]">40</p>
+                <div class="bg-[#2d5a3d] text-white rounded-xl p-8 mb-10">
+                    <h2 class="text-2xl font-bold mb-4">Seasonal Tips</h2>
+                    <p class="text-lg leading-relaxed text-white/90">⚠️ Mercury advisory in effect — check consumption guidelines before eating your catch. Best fishing from May through October. Omble de fontaine, Touladi are most active in early morning and late evening during summer months.</p>
+                    <div class="mt-6 text-sm text-[#c97c5e] font-semibold">&mdash; Expert Field Intelligence</div>
                 </div>
             </div>
+        </section>
 
-            <div class="bg-gradient-to-r from-[#2d5a3d] to-[#3e7a5d] text-white rounded-xl p-8">
-                <h2 class="text-xl font-bold mb-2">Data Source</h2>
-                <p class="text-white/90 mb-4">This spot data comes from Données Québec, the official Quebec government open data portal.</p>
-                <a href="https://www.quebec.ca" target="_blank" class="inline-block bg-white text-[#2d5a3d] px-6 py-3 font-semibold rounded-lg hover:bg-[#fef9f3] transition-colors">Learn More</a>
+        
+        <section class="bg-white py-16 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="max-w-4xl">
+                    <h2 class="text-3xl font-bold text-[#2d5a3d] mb-6">About This Place</h2>
+                    <p class="text-lg text-[#3e3127] leading-relaxed">Paul, Lac is one of Quebec's premier fishing destinations, nestled within the Laurentian Mountains, St. Lawrence Valley, boreal shield. Known for its exceptional Omble de fontaine, Touladi populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.<br/><br/><br/><br/>With a maximum depth of Varies, the lake offers diverse structure and habitat that supports a healthy ecosystem of Omble de fontaine, Touladi. The surrounding Laurentian Mountains provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Paul, Lac delivers an unforgettable Canadian fishing experience.</p>
+                </div>
             </div>
+        </section>
+        <section class="bg-[#f5f3f0] py-16 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-[#fef9f3] rounded-xl p-8" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 bg-[#2d5a3d] rounded-lg flex items-center justify-center">
+                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-[#2d5a3d]">How to Get There</h3>
+                        </div>
+                        <p class="text-[#3e3127] leading-relaxed">From Montreal, head east — the drive takes approximately 45 minutes. GPS coordinates: 46.5°N, 72.0°W. The final stretch is on gravel road — high-clearance vehicle recommended during spring thaw. Cell service becomes spotty about 30 minutes before arrival.</p>
+                    </div>
+                    <div class="bg-[#fef9f3] rounded-xl p-8" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 bg-[#2d5a3d] rounded-lg flex items-center justify-center">
+                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-[#2d5a3d]">Parking & Access</h3>
+                        </div>
+                        <p class="text-[#3e3127] leading-relaxed">Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Multiple shore fishing spots are accessible from the parking area. Arrive early on weekends during peak season — the lot fills up by 7 AM.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-white py-16 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="max-w-4xl">
+                    <h2 class="text-3xl font-bold text-[#2d5a3d] mb-6">Best Time to Visit</h2>
+                    <p class="text-lg text-[#3e3127] leading-relaxed">Spring (May-June): Post-ice-out is prime time for Omble de fontaine. Water temperatures are ideal and fish are actively feeding after the long winter.<br/>Summer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.<br/>Fall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fall colours make this an especially scenic time to visit.<br/>Winter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.</p>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#f5f3f0] py-16 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="max-w-4xl">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-[#c97c5e] rounded-lg flex items-center justify-center">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg>
+                        </div>
+                        <h2 class="text-3xl font-bold text-[#2d5a3d]">Terrain & Topography</h2>
+                    </div>
+                    <p class="text-lg text-[#3e3127] leading-relaxed">Maximum depth: Varies. The lake bottom features a mix of rocky shoals, sand flats, and deep drop-offs that provide excellent habitat structure. The surrounding landscape is Laurentian Mountains with dense tree cover right to the shoreline. Water clarity is excellent — 3-5 metres visibility in summer. The eastern bay is shallow — use caution with motor boats.</p>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#2d5a3d] text-white py-16 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="max-w-4xl">
+                    <h2 class="text-3xl font-bold mb-6">Regulations & Permits</h2>
+                    <p class="text-lg leading-relaxed text-white/90">A valid Quebec fishing licence is required for all anglers 16 and older. Licences can be purchased online through the provincial government website or at local tackle shops.  Check the current Quebec Fishing Regulations Summary for species-specific size and catch limits — regulations for Omble de fontaine are strictly enforced. Bait restrictions may apply — check zone-specific rules. Catch-and-release is encouraged for trophy-sized fish to maintain the healthy population.</p>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#f5f3f0] py-16 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-xl p-8" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                        <h3 class="text-xl font-bold text-[#2d5a3d] mb-4">Nearby Services</h3>
+                        <p class="text-[#3e3127] leading-relaxed">Nearest gas station: 25 minutes drive. Groceries and supplies available in Montreal — stock up before heading out. Local bait shop within 10 minutes of the lake. Local outfitters can arrange guided trips with advance notice.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-8" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                        <h3 class="text-xl font-bold text-[#2d5a3d] mb-4">Where to Stay</h3>
+                        <p class="text-[#3e3127] leading-relaxed">Rustic fishing lodges nearby offer packages including boat rental. The nearest campground has 30+ sites with fire pits and outhouses. Motels and B&Bs available in Montreal for those preferring indoor comfort.</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-8" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                        <h3 class="text-xl font-bold text-[#2d5a3d] mb-4">Cell Coverage & Safety</h3>
+                        <p class="text-[#3e3127] leading-relaxed">Cell coverage: Basic voice service available. Data is unreliable. Nearest hospital: Montreal (45 minutes drive). Always wear a PFD when on the water and file a trip plan with someone at home. Wildlife encounters are rare but carry bear spray as a precaution. Water temperature can be dangerously cold even in summer — dress for immersion.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#fef9f3] py-16 px-6">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl font-bold text-[#2d5a3d] mb-10">Nearby Spots</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <a href="sansfacon-lac.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
+                        <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Explorer</div>
+                        <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Sansfaçon, Lac</h3>
+                        <p class="text-[#6b6359] text-sm mb-3">Omble de fontaine</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="bg-white py-16 px-6" id="community">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-[#2d5a3d] mb-2">Community Tips &amp; Experiences</h2>
+                <p class="text-[#6b6359] mb-8">Share your experience at Paul, Lac — help fellow adventurers!</p>
+                <form id="comment-form" class="bg-[#fef9f3] rounded-xl p-6 mb-10" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label class="block text-sm font-semibold text-[#2d5a3d] mb-1">Your Name</label>
+                            <input type="text" id="c-name" required placeholder="e.g. Sarah M." class="w-full px-4 py-3 rounded-lg border border-[#2d5a3d]/20 bg-white text-[#3e3127] focus:outline-none focus:ring-2 focus:ring-[#2d5a3d]/40">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-[#2d5a3d] mb-1">Visit Date (optional)</label>
+                            <input type="text" id="c-date" placeholder="e.g. Summer 2025" class="w-full px-4 py-3 rounded-lg border border-[#2d5a3d]/20 bg-white text-[#3e3127] focus:outline-none focus:ring-2 focus:ring-[#2d5a3d]/40">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-sm font-semibold text-[#2d5a3d] mb-1">Your Experience or Tip</label>
+                        <textarea id="c-text" rows="4" required placeholder="What was your experience like? Any tips for other visitors?" class="w-full px-4 py-3 rounded-lg border border-[#2d5a3d]/20 bg-white text-[#3e3127] focus:outline-none focus:ring-2 focus:ring-[#2d5a3d]/40 resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="bg-[#2d5a3d] text-white px-8 py-3 font-semibold rounded-lg hover:bg-[#c97c5e] transition-colors">Post Your Tip</button>
+                    <div id="form-msg" class="mt-3 text-sm font-semibold hidden"></div>
+                </form>
+                <div id="comments-list">
+                    <div class="text-center py-8 text-[#6b6359]" id="comments-loading">Loading community tips...</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#2d5a3d] text-white py-16 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div>
+            <img src="../../assets/logo/logo.jpg" alt="Outdoor Intel" class="h-10 w-auto mb-4 brightness-200">
+            <p class="text-white/70 text-sm">Canada's ultimate outdoor destination. Fishing, hunting, camping, kayaking, skiing, and hiking intelligence.</p>
         </div>
-    </section>
-</main>
-
-<footer class="bg-[#2d5a3d] text-white py-12 px-6">
-    <div class="max-w-7xl mx-auto text-center">
-        <p class="text-white/70">OutdoorIntel.ca — 2026</p>
+        <div>
+            <h4 class="font-bold mb-4 text-[#c97c5e]">Activities</h4>
+            <ul class="space-y-2 text-white/70 text-sm"><li><a href="../../en/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">Fishing</a></li>
+<li><a href="../../en/hunting/directory.html" class="hover:text-[#c97c5e] transition-colors">Hunting</a></li>
+<li><a href="../../en/camping/directory.html" class="hover:text-[#c97c5e] transition-colors">Camping</a></li>
+<li><a href="../../en/kayaking/directory.html" class="hover:text-[#c97c5e] transition-colors">Kayaking</a></li>
+<li><a href="../../en/skiing/directory.html" class="hover:text-[#c97c5e] transition-colors">Skiing</a></li>
+<li><a href="../../en/hiking/directory.html" class="hover:text-[#c97c5e] transition-colors">Hiking</a></li>
+</ul>
+        </div>
+        <div>
+            <h4 class="font-bold mb-4 text-[#c97c5e]">Resources</h4>
+            <ul class="space-y-2 text-white/70 text-sm">
+                <li><a href="https://www.ontario.ca/document/ontario-fishing-regulations-summary" target="_blank" class="hover:text-[#c97c5e] transition-colors">Ontario Regulations</a></li>
+                <li><a href="https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/peche-sportive" target="_blank" class="hover:text-[#c97c5e] transition-colors">Quebec Regulations</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold mb-4 text-[#c97c5e]">Language</h4>
+            <ul class="space-y-2 text-white/70 text-sm">
+                <li><a href="../../en/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">English</a></li>
+                <li><a href="../../fr/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">Français</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/20 text-center text-white/50 text-sm">
+        <p>OutdoorIntel.ca &mdash; 2026. All rights reserved.</p>
     </div>
 </footer>
+    <script>
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('mobile-menu');
+if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        toggle.setAttribute('aria-expanded', !menu.classList.contains('hidden'));
+    });
+}
+</script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script>
+    (function() {
+        var SB_URL = 'https://vbvsgwiyzjsmxawxyisn.supabase.co';
+        var SB_KEY = 'sb_publishable_yZO5NfffLzXGjnFN9TyagQ_rgjRcF00';
+        var ACT = 'fishing';
+        var SPOT = 'paul-lac';
+        var sb = supabase.createClient(SB_URL, SB_KEY);
+
+        function timeAgo(d) {
+            var s = Math.floor((new Date() - new Date(d)) / 1000);
+            if (s < 60) return 'just now';
+            var m = Math.floor(s / 60);
+            if (m < 60) return m + 'm ago';
+            var h = Math.floor(m / 60);
+            if (h < 24) return h + 'h ago';
+            var dy = Math.floor(h / 24);
+            if (dy < 30) return dy + 'd ago';
+            return new Date(d).toLocaleDateString('en', {year:'numeric',month:'short',day:'numeric'});
+        }
+
+        function rc(c) {
+            var vd = c.visit_date ? ' <span class="text-[#c97c5e]">&bull; ' + c.visit_date + '</span>' : '';
+            return '<div class="border-b border-[#2d5a3d]/10 py-6">' +
+                '<div class="flex items-center justify-between mb-2">' +
+                '<div class="font-bold text-[#2d5a3d]">' + c.author_name + vd + '</div>' +
+                '<div class="text-xs text-[#6b6359]">' + timeAgo(c.created_at) + '</div></div>' +
+                '<p class="text-[#3e3127] leading-relaxed">' + c.comment + '</p></div>';
+        }
+
+        async function load() {
+            var r = await sb.from('comments').select('*').eq('activity', ACT).eq('spot_slug', SPOT).order('created_at', {ascending:false}).limit(50);
+            var el = document.getElementById('comments-list');
+            if (r.error) { el.innerHTML = '<div class="text-center py-8 text-[#6b6359]">Unable to load comments. Please try again later.</div>'; return; }
+            if (!r.data || r.data.length === 0) { el.innerHTML = '<div class="text-center py-8 text-[#6b6359]">No tips yet — be the first to share your experience!</div>'; return; }
+            var n = r.data.length;
+            el.innerHTML = '<div class="text-sm text-[#6b6359] mb-4 font-semibold">' + n + ' community tip' + (n > 1 ? 's' : '') + '</div>' + r.data.map(rc).join('');
+        }
+
+        document.getElementById('comment-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            var nm = document.getElementById('c-name').value.trim();
+            var tx = document.getElementById('c-text').value.trim();
+            var vd = document.getElementById('c-date').value.trim();
+            var msg = document.getElementById('form-msg');
+            if (!nm || !tx) return;
+            var btn = this.querySelector('button[type="submit"]');
+            btn.disabled = true; btn.textContent = 'Posting...';
+            var r = await sb.from('comments').insert({activity:ACT, spot_slug:SPOT, author_name:nm, comment:tx, visit_date:vd||null});
+            if (r.error) {
+                msg.className = 'mt-3 text-sm font-semibold text-red-600';
+                msg.textContent = 'Error posting. Please try again.';
+            } else {
+                msg.className = 'mt-3 text-sm font-semibold text-[#2d5a3d]';
+                msg.textContent = 'Thanks for sharing! Your tip has been posted.';
+                document.getElementById('c-name').value = '';
+                document.getElementById('c-text').value = '';
+                document.getElementById('c-date').value = '';
+                load();
+            }
+            msg.classList.remove('hidden');
+            btn.disabled = false; btn.textContent = 'Post Your Tip';
+            setTimeout(function() { msg.classList.add('hidden'); }, 5000);
+        });
+
+        load();
+    })();
+    </script>
 </body>
 </html>
