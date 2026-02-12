@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://outdoorintel.ca/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
