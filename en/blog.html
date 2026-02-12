@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Outdoor Intel</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    </style>
+</head>
+<body class="bg-[#f5f3f0]">
+    <header class="fixed top-0 w-full z-50 border-b border-[#2d5a3d]/10 bg-white/95 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <a href="../index.html" class="flex-shrink-0">
+            <img src="../assets/logo/logo.jpg" alt="Outdoor Intel" class="h-10 md:h-14 w-auto object-contain">
+        </a>
+        <nav class="hidden lg:flex gap-6 text-sm font-semibold text-[#3e3127]">
+            <a href="../en/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Fishing</a>
+            <a href="../en/hunting/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Hunting</a>
+            <a href="../en/camping/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Camping</a>
+            <a href="../en/kayaking/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Kayaking</a>
+            <a href="../en/skiing/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Skiing</a>
+            <a href="../en/hiking/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Hiking</a>
+            <a href="../en/blog.html" class="hover:text-[#c97c5e] transition-colors py-2">Blog</a>
+            <a href="../fr/fishing/directory.html" class="text-[#c97c5e] font-bold hover:text-[#2d5a3d] transition-colors py-2">Français</a>
+        </nav>
+        <button id="menu-toggle" class="lg:hidden p-2 text-[#3e3127]" aria-label="Toggle menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    </div>
+    <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-[#2d5a3d]/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 space-y-1">
+            <a href="../en/fishing/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">🎣 Fishing</a>
+            <a href="../en/hunting/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">🦌 Hunting</a>
+            <a href="../en/camping/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">⛺ Camping</a>
+            <a href="../en/kayaking/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">🛶 Kayaking</a>
+            <a href="../en/skiing/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">⛷️ Skiing</a>
+            <a href="../en/hiking/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">🥾 Hiking</a>
+            <a href="../en/blog.html" class="block py-2 text-[#2d5a3d] font-semibold hover:text-[#c97c5e]">Blog</a>
+            <a href="../fr/fishing/directory.html" class="block py-2 text-[#c97c5e] font-bold mt-2">Français</a>
+        </div>
+    </nav>
+</header>
+
+    <section class="pt-32 pb-16 px-6 bg-[#2d5a3d]">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-black text-white mb-4">Field Intelligence</h1>
+            <p class="text-lg text-white/80 max-w-2xl mx-auto">Expert guides, gear breakdowns, and real trip reports across all outdoor activities.</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="py-12 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-wrap gap-3 mb-10 justify-center"><button class="blog-tab active px-5 py-2.5 rounded-full text-sm font-bold transition-all bg-[#2d5a3d] text-white" data-filter="all">All</button>
+            <button class="blog-tab px-5 py-2.5 rounded-full text-sm font-bold transition-all bg-white text-[#3e3127] hover:bg-[#2d5a3d]/10" data-filter="fishing">🎣 Fishing</button>
+            <button class="blog-tab px-5 py-2.5 rounded-full text-sm font-bold transition-all bg-white text-[#3e3127] hover:bg-[#2d5a3d]/10" data-filter="hunting">🦌 Hunting</button>
+            <button class="blog-tab px-5 py-2.5 rounded-full text-sm font-bold transition-all bg-white text-[#3e3127] hover:bg-[#2d5a3d]/10" data-filter="camping">⛺ Camping</button>
+            <button class="blog-tab px-5 py-2.5 rounded-full text-sm font-bold transition-all bg-white text-[#3e3127] hover:bg-[#2d5a3d]/10" data-filter="kayaking">🛶 Kayaking</button>
+            <button class="blog-tab px-5 py-2.5 rounded-full text-sm font-bold transition-all bg-white text-[#3e3127] hover:bg-[#2d5a3d]/10" data-filter="skiing">⛷️ Skiing</button>
+            <button class="blog-tab px-5 py-2.5 rounded-full text-sm font-bold transition-all bg-white text-[#3e3127] hover:bg-[#2d5a3d]/10" data-filter="hiking">🥾 Hiking</button>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <a href="fishing/blog/peche-achigan-outaouais.html" class="blog-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" data-activity="fishing" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img src="../assets/heros/scout-hero-24.jpg" alt="Bass Fishing: Topwater vs Jig on the Ottawa River" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="bg-white p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[#c97c5e] text-xs font-bold uppercase">Fishing</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors leading-snug">Bass Fishing: Topwater vs Jig on the Ottawa River</h3>
+                        <p class="text-[#6b6359] text-sm mb-4 line-clamp-2">Deep dive comparing topwater and jig techniques for bass on the Ottawa River's shallow structure zones....</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Read Article &rarr;</div>
+                    </div>
+                </a>
+                <a href="fishing/blog/peche-glace-trente-et-un-milles.html" class="blog-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" data-activity="fishing" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img src="../assets/heros/scout-hero-32.jpg" alt="Ice Fishing for Walleye on 31-Mile Lake" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="bg-white p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[#c97c5e] text-xs font-bold uppercase">Fishing</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors leading-snug">Ice Fishing for Walleye on 31-Mile Lake</h3>
+                        <p class="text-[#6b6359] text-sm mb-4 line-clamp-2">Proven ice fishing strategies for walleye on Lac des Trente-et-Un-Milles, including shelter placement and jigging patterns....</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Read Article &rarr;</div>
+                    </div>
+                </a>
+                <a href="fishing/blog/setup-truite-mouchetee.html" class="blog-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" data-activity="fishing" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img src="../assets/heros/scout-hero-23.jpg" alt="The Exact Setup for Brook Trout in Spring Streams" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="bg-white p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[#c97c5e] text-xs font-bold uppercase">Fishing</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors leading-snug">The Exact Setup for Brook Trout in Spring Streams</h3>
+                        <p class="text-[#6b6359] text-sm mb-4 line-clamp-2">Rod, reel, line, lure — the precise setup for spring brook trout in Outaouais streams....</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Read Article &rarr;</div>
+                    </div>
+                </a>
+                <a href="fishing/blog/spots-riviere-gatineau-dore.html" class="blog-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" data-activity="fishing" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img src="../assets/heros/scout-hero-28.jpg" alt="4 Gatineau River Hotspots for August Walleye" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="bg-white p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[#c97c5e] text-xs font-bold uppercase">Fishing</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors leading-snug">4 Gatineau River Hotspots for August Walleye</h3>
+                        <p class="text-[#6b6359] text-sm mb-4 line-clamp-2">Four proven spots on the Gatineau River where walleye stay active through the heat of August....</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Read Article &rarr;</div>
+                    </div>
+                </a>
+                <a href="fishing/blog/kayak-poisson-blanc.html" class="blog-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" data-activity="fishing" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img src="../assets/heros/scout-hero-20.jpg" alt="Golden Hour Kayaking: 3 Bays of Poisson Blanc Reservoir" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="bg-white p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[#c97c5e] text-xs font-bold uppercase">Fishing</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors leading-snug">Golden Hour Kayaking: 3 Bays of Poisson Blanc Reservoir</h3>
+                        <p class="text-[#6b6359] text-sm mb-4 line-clamp-2">Discover the best sunset kayak routes on Poisson Blanc Reservoir for pike fishing and nature photography....</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Read Article &rarr;</div>
+                    </div>
+                </a>
+                <a href="fishing/blog/quais-publics-outaouais.html" class="blog-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" data-activity="fishing" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img src="../assets/heros/scout-hero-24.jpg" alt="Top 5 Public Boat Launches in Outaouais" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="bg-white p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[#c97c5e] text-xs font-bold uppercase">Fishing</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors leading-snug">Top 5 Public Boat Launches in Outaouais</h3>
+                        <p class="text-[#6b6359] text-sm mb-4 line-clamp-2">The best public boat launches in the Outaouais region, with parking info and seasonal conditions....</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Read Article &rarr;</div>
+                    </div>
+                </a>
+                <a href="hunting/blog/chasse-perdrix-sans-chien.html" class="blog-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" data-activity="hunting" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img src="../assets/heros/scout-hero-26.jpg" alt="Partridge Hunting Without a Dog: 5 Strategies" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="bg-white p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[#c97c5e] text-xs font-bold uppercase">Hunting</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors leading-snug">Partridge Hunting Without a Dog: 5 Strategies</h3>
+                        <p class="text-[#6b6359] text-sm mb-4 line-clamp-2">A tactical guide to solo partridge hunting in Ontario and Quebec forests, featuring proven scouting methods for October bird season....</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Read Article &rarr;</div>
+                    </div>
+                </a>
+                <a href="hunting/blog/erreurs-call-orignal.html" class="blog-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" data-activity="hunting" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img src="../assets/heros/scout-hero-21.jpg" alt="5 Errors That Spook Moose During the Rut Call" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="bg-white p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[#c97c5e] text-xs font-bold uppercase">Hunting</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors leading-snug">5 Errors That Spook Moose During the Rut Call</h3>
+                        <p class="text-[#6b6359] text-sm mb-4 line-clamp-2">Common mistakes that send bull moose running during pre-rut calling season in the Haute-Gatineau region....</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Read Article &rarr;</div>
+                    </div>
+                </a>
+                <a href="hunting/blog/premier-chevreuil-outaouais.html" class="blog-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" data-activity="hunting" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img src="../assets/heros/scout-hero-28.jpg" alt="First Deer Guide: Zone 10 vs Zone 11" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="bg-white p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[#c97c5e] text-xs font-bold uppercase">Hunting</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors leading-snug">First Deer Guide: Zone 10 vs Zone 11</h3>
+                        <p class="text-[#6b6359] text-sm mb-4 line-clamp-2">Everything you need to know for your first deer hunt in the Outaouais — zone comparison, gear, and strategy....</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Read Article &rarr;</div>
+                    </div>
+                </a>
+                <a href="hunting/blog/sac-chasse-froid.html" class="blog-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" data-activity="hunting" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img src="../assets/heros/scout-hero-17.jpg" alt="My -15°C Hunting Pack: Every Item Explained" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="bg-white p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[#c97c5e] text-xs font-bold uppercase">Hunting</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors leading-snug">My -15°C Hunting Pack: Every Item Explained</h3>
+                        <p class="text-[#6b6359] text-sm mb-4 line-clamp-2">A complete breakdown of what to pack for a full day of cold-weather hunting in Canadian forests....</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Read Article &rarr;</div>
+                    </div>
+                </a>
+                <a href="camping/blog/best-backcountry-sites-algonquin.html" class="blog-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" data-activity="camping" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img src="../assets/heros/hero-1.jpg" alt="10 Best Backcountry Sites in Algonquin Park" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="bg-white p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[#c97c5e] text-xs font-bold uppercase">Camping</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors leading-snug">10 Best Backcountry Sites in Algonquin Park</h3>
+                        <p class="text-[#6b6359] text-sm mb-4 line-clamp-2">Our hand-picked selection of interior canoe-in campsites in Algonquin, from beginner-friendly to remote expedition sites....</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Read Article &rarr;</div>
+                    </div>
+                </a>
+                <a href="camping/blog/winter-camping-gear-guide.html" class="blog-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" data-activity="camping" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img src="../assets/heros/hero-2.jpg" alt="Winter Camping in Canada: The Complete Gear Guide" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="bg-white p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[#c97c5e] text-xs font-bold uppercase">Camping</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors leading-snug">Winter Camping in Canada: The Complete Gear Guide</h3>
+                        <p class="text-[#6b6359] text-sm mb-4 line-clamp-2">Everything you need to stay warm, dry, and safe during a Canadian winter camping trip, from -20°C sleeping bags to hot tent setups....</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Read Article &rarr;</div>
+                    </div>
+                </a>
+                <a href="camping/blog/camping-with-kids-canada.html" class="blog-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" data-activity="camping" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img src="../assets/heros/hero-3.jpg" alt="Family Camping: 5 Kid-Friendly Parks Across Canada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="bg-white p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[#c97c5e] text-xs font-bold uppercase">Camping</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors leading-snug">Family Camping: 5 Kid-Friendly Parks Across Canada</h3>
+                        <p class="text-[#6b6359] text-sm mb-4 line-clamp-2">From PEI's beaches to BC's rainforests — the best campgrounds for families with young children....</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Read Article &rarr;</div>
+                    </div>
+                </a>
+                <a href="kayaking/blog/beginner-kayak-guide-ontario.html" class="blog-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" data-activity="kayaking" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img src="../assets/heros/hero-4.jpg" alt="Beginner's Guide to Kayaking in Ontario" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="bg-white p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[#c97c5e] text-xs font-bold uppercase">Kayaking</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors leading-snug">Beginner's Guide to Kayaking in Ontario</h3>
+                        <p class="text-[#6b6359] text-sm mb-4 line-clamp-2">Flatwater lakes, gear rental, and safety tips for your first paddling season in Ontario....</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Read Article &rarr;</div>
+                    </div>
+                </a>
+                <a href="kayaking/blog/whitewater-safety-essentials.html" class="blog-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" data-activity="kayaking" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img src="../assets/heros/hero-5.jpg" alt="Whitewater Safety: 7 Rules That Save Lives" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="bg-white p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[#c97c5e] text-xs font-bold uppercase">Kayaking</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors leading-snug">Whitewater Safety: 7 Rules That Save Lives</h3>
+                        <p class="text-[#6b6359] text-sm mb-4 line-clamp-2">Essential safety protocols for whitewater kayaking in Canada — from PFD selection to reading rapids....</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Read Article &rarr;</div>
+                    </div>
+                </a>
+                <a href="kayaking/blog/sea-kayaking-nova-scotia.html" class="blog-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" data-activity="kayaking" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img src="../assets/heros/hero-6.jpg" alt="Sea Kayaking the Nova Scotia Coast" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="bg-white p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[#c97c5e] text-xs font-bold uppercase">Kayaking</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors leading-snug">Sea Kayaking the Nova Scotia Coast</h3>
+                        <p class="text-[#6b6359] text-sm mb-4 line-clamp-2">Paddle past lighthouses, sea caves, and whale pods along Nova Scotia's rugged Atlantic coastline....</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Read Article &rarr;</div>
+                    </div>
+                </a>
+                <a href="skiing/blog/best-powder-days-bc.html" class="blog-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" data-activity="skiing" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img src="../assets/heros/hero-7.jpg" alt="Chasing Powder: When to Hit BC's Best Resorts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="bg-white p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[#c97c5e] text-xs font-bold uppercase">Skiing</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors leading-snug">Chasing Powder: When to Hit BC's Best Resorts</h3>
+                        <p class="text-[#6b6359] text-sm mb-4 line-clamp-2">Month-by-month breakdown of powder conditions at Whistler, Revelstoke, Fernie, and more....</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Read Article &rarr;</div>
+                    </div>
+                </a>
+                <a href="skiing/blog/cross-country-skiing-quebec.html" class="blog-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" data-activity="skiing" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img src="../assets/heros/hero-8.jpg" alt="Cross-Country Skiing in Quebec: Top 5 Trail Networks" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="bg-white p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[#c97c5e] text-xs font-bold uppercase">Skiing</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors leading-snug">Cross-Country Skiing in Quebec: Top 5 Trail Networks</h3>
+                        <p class="text-[#6b6359] text-sm mb-4 line-clamp-2">From Gatineau Park to Mont-Sainte-Anne — Quebec's best groomed trail systems for Nordic skiing....</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Read Article &rarr;</div>
+                    </div>
+                </a>
+                <a href="skiing/blog/backcountry-skiing-safety.html" class="blog-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" data-activity="skiing" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img src="../assets/heros/hero-9.jpg" alt="Backcountry Skiing Safety: Avalanche Awareness 101" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="bg-white p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[#c97c5e] text-xs font-bold uppercase">Skiing</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors leading-snug">Backcountry Skiing Safety: Avalanche Awareness 101</h3>
+                        <p class="text-[#6b6359] text-sm mb-4 line-clamp-2">Essential avalanche safety knowledge for backcountry skiing in the Canadian Rockies and Coast Mountains....</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Read Article &rarr;</div>
+                    </div>
+                </a>
+                <a href="hiking/blog/best-day-hikes-rockies.html" class="blog-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" data-activity="hiking" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img src="../assets/heros/hero-10.jpg" alt="12 Best Day Hikes in the Canadian Rockies" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="bg-white p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[#c97c5e] text-xs font-bold uppercase">Hiking</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors leading-snug">12 Best Day Hikes in the Canadian Rockies</h3>
+                        <p class="text-[#6b6359] text-sm mb-4 line-clamp-2">From Lake Louise to Jasper — jaw-dropping day hikes for all skill levels in the Rocky Mountains....</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Read Article &rarr;</div>
+                    </div>
+                </a>
+                <a href="hiking/blog/hiking-gear-checklist.html" class="blog-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" data-activity="hiking" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img src="../assets/heros/scout-hero-30.jpg" alt="The Ultimate Canadian Hiking Gear Checklist" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="bg-white p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[#c97c5e] text-xs font-bold uppercase">Hiking</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors leading-snug">The Ultimate Canadian Hiking Gear Checklist</h3>
+                        <p class="text-[#6b6359] text-sm mb-4 line-clamp-2">Season-by-season gear checklist for day hikes and multi-day treks across Canadian trails....</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Read Article &rarr;</div>
+                    </div>
+                </a>
+                <a href="hiking/blog/east-coast-trail-guide.html" class="blog-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" data-activity="hiking" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img src="../assets/heros/scout-hero-31.jpg" alt="Newfoundland's East Coast Trail: A Complete Guide" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="bg-white p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[#c97c5e] text-xs font-bold uppercase">Hiking</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors leading-snug">Newfoundland's East Coast Trail: A Complete Guide</h3>
+                        <p class="text-[#6b6359] text-sm mb-4 line-clamp-2">336 km of coastal hiking through icebergs, whales, and sea stacks — everything you need to plan your ECT adventure....</p>
+                        <div class="text-[#c97c5e] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Read Article &rarr;</div>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#2d5a3d] text-white py-16 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div>
+            <img src="../assets/logo/logo.jpg" alt="Outdoor Intel" class="h-10 w-auto mb-4 brightness-200">
+            <p class="text-white/70 text-sm">Canada's ultimate outdoor destination. Fishing, hunting, camping, kayaking, skiing, and hiking intelligence.</p>
+        </div>
+        <div>
+            <h4 class="font-bold mb-4 text-[#c97c5e]">Activities</h4>
+            <ul class="space-y-2 text-white/70 text-sm"><li><a href="../en/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">Fishing</a></li>
+<li><a href="../en/hunting/directory.html" class="hover:text-[#c97c5e] transition-colors">Hunting</a></li>
+<li><a href="../en/camping/directory.html" class="hover:text-[#c97c5e] transition-colors">Camping</a></li>
+<li><a href="../en/kayaking/directory.html" class="hover:text-[#c97c5e] transition-colors">Kayaking</a></li>
+<li><a href="../en/skiing/directory.html" class="hover:text-[#c97c5e] transition-colors">Skiing</a></li>
+<li><a href="../en/hiking/directory.html" class="hover:text-[#c97c5e] transition-colors">Hiking</a></li>
+</ul>
+        </div>
+        <div>
+            <h4 class="font-bold mb-4 text-[#c97c5e]">Resources</h4>
+            <ul class="space-y-2 text-white/70 text-sm">
+                <li><a href="https://www.ontario.ca/document/ontario-fishing-regulations-summary" target="_blank" class="hover:text-[#c97c5e] transition-colors">Ontario Regulations</a></li>
+                <li><a href="https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/peche-sportive" target="_blank" class="hover:text-[#c97c5e] transition-colors">Quebec Regulations</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold mb-4 text-[#c97c5e]">Language</h4>
+            <ul class="space-y-2 text-white/70 text-sm">
+                <li><a href="../en/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">English</a></li>
+                <li><a href="../fr/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">Français</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/20 text-center text-white/50 text-sm">
+        <p>OutdoorIntel.ca &mdash; 2026. All rights reserved.</p>
+    </div>
+</footer>
+    <script>
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('mobile-menu');
+if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        toggle.setAttribute('aria-expanded', !menu.classList.contains('hidden'));
+    });
+}
+</script>
+    <script>
+    (function() {
+        var tabs = document.querySelectorAll('.blog-tab');
+        var cards = document.querySelectorAll('.blog-card');
+        tabs.forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                var filter = tab.getAttribute('data-filter');
+                tabs.forEach(function(t) {
+                    t.classList.remove('active', 'bg-[#2d5a3d]', 'text-white');
+                    t.classList.add('bg-white', 'text-[#3e3127]');
+                });
+                tab.classList.add('active', 'bg-[#2d5a3d]', 'text-white');
+                tab.classList.remove('bg-white', 'text-[#3e3127]');
+                cards.forEach(function(card) {
+                    if (filter === 'all' || card.getAttribute('data-activity') === filter) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    })();
+    </script>
+</body>
+</html>
