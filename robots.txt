@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /data/
+Disallow: /content/
+Disallow: /*.js$
 
 Sitemap: https://outdoorintel.ca/sitemap.xml
-
-# Crawl-delay for polite crawling
-Crawl-delay: 1
