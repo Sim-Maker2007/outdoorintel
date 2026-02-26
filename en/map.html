@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#2d5a3d">
+    <link rel="alternate" type="application/rss+xml" title="Outdoor Intel Blog" href="https://outdoorintel.ca/rss.xml">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    <title>Interactive Map | Outdoor Intel</title>
+    <meta name="description" content="Explore 499+ outdoor spots across Canada on our interactive map. Filter by fishing, hunting, camping, kayaking, skiing, and hiking.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://outdoorintel.ca/en/map.html">
+    <meta property="og:title" content="Interactive Map | Outdoor Intel">
+    <meta property="og:description" content="Explore 499+ outdoor spots across Canada on our interactive map. Filter by fishing, hunting, camping, kayaking, skiing, and hiking.">
+    <meta property="og:image" content="https://outdoorintel.ca/assets/heros/scout-hero-2.jpg">
+    <meta property="og:url" content="https://outdoorintel.ca/en/map.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Outdoor Intel">
+    <meta property="og:locale" content="en_CA">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Interactive Map | Outdoor Intel">
+    <meta name="twitter:description" content="Explore 499+ outdoor spots across Canada on our interactive map.">
+    <meta name="twitter:image" content="https://outdoorintel.ca/assets/heros/scout-hero-2.jpg">
+    <link rel="alternate" hreflang="en" href="https://outdoorintel.ca/en/map.html">
+    <link rel="alternate" hreflang="x-default" href="https://outdoorintel.ca/en/map.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        #map { height: calc(100vh - 180px); min-height: 500px; }
+        .filter-btn { transition: all 0.2s; }
+        .filter-btn.active { transform: scale(1.05); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .filter-btn.inactive { opacity: 0.45; }
+        .leaflet-popup-content-wrapper { border-radius: 12px; }
+        .leaflet-popup-content { margin: 12px 16px; }
+        .spot-popup h3 { font-size: 16px; font-weight: 700; color: #2d5a3d; margin: 0 0 4px 0; }
+        .spot-popup .spot-type { font-size: 12px; color: #c97c5e; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+        .spot-popup .spot-province { font-size: 13px; color: #6b6359; margin: 4px 0; }
+        .spot-popup .spot-features { font-size: 12px; color: #7a9b8e; margin: 6px 0; }
+        .spot-popup .spot-link { display: inline-block; margin-top: 8px; padding: 6px 16px; background: #2d5a3d; color: white; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 600; }
+        .spot-popup .spot-link:hover { background: #c97c5e; }
+        .spot-popup .spot-website { display: inline-block; margin-top: 4px; margin-left: 4px; padding: 6px 16px; background: #f5f3f0; color: #2d5a3d; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 600; border: 1px solid #2d5a3d20; }
+        .spot-popup .spot-website:hover { background: #e8e4df; }
+        .legend-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; margin-right: 6px; }
+        @media (max-width: 768px) {
+            #map { height: calc(100vh - 240px); }
+        }
+    </style>
+</head>
+<body class="bg-[#f5f3f0] text-[#3e3127] font-sans leading-relaxed">
+
+    <header class="fixed top-0 w-full z-[1000] border-b border-[#2d5a3d]/10 bg-white/95 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <a href="../index.html" class="flex-shrink-0">
+            <img src="../assets/logo/logo.jpg" alt="Outdoor Intel" width="180" height="101" class="h-10 md:h-14 w-auto object-contain">
+        </a>
+        <nav class="hidden lg:flex gap-6 text-sm font-semibold text-[#3e3127]">
+            <a href="fishing/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Fishing</a>
+            <a href="hunting/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Hunting</a>
+            <a href="camping/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Camping</a>
+            <a href="kayaking/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Kayaking</a>
+            <a href="skiing/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Skiing</a>
+            <a href="hiking/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Hiking</a>
+            <a href="map.html" class="text-[#2d5a3d] border-b-2 border-[#2d5a3d] transition-colors py-2">Map</a>
+            <a href="blog.html" class="hover:text-[#c97c5e] transition-colors py-2">Blog</a>
+            <a href="../fr/fishing/directory.html" class="text-[#c97c5e] font-bold hover:text-[#2d5a3d] transition-colors py-2">Fran&ccedil;ais</a>
+        </nav>
+        <button id="menu-toggle" class="lg:hidden p-2 text-[#3e3127]" aria-label="Toggle menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    </div>
+    <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-[#2d5a3d]/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 space-y-1">
+            <a href="fishing/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">Fishing</a>
+            <a href="hunting/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">Hunting</a>
+            <a href="camping/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">Camping</a>
+            <a href="kayaking/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">Kayaking</a>
+            <a href="skiing/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">Skiing</a>
+            <a href="hiking/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">Hiking</a>
+            <a href="map.html" class="block py-2 text-[#2d5a3d] font-bold hover:text-[#c97c5e]">Map</a>
+            <a href="blog.html" class="block py-2 text-[#2d5a3d] font-semibold hover:text-[#c97c5e]">Blog</a>
+            <a href="../fr/fishing/directory.html" class="block py-2 text-[#c97c5e] font-bold mt-2">Fran&ccedil;ais</a>
+        </div>
+    </nav>
+</header>
+
+    <main class="pt-20">
+        <!-- Title & Filters -->
+        <section class="bg-white border-b border-[#2d5a3d]/10 py-6 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
+                    <div>
+                        <h1 class="text-3xl font-bold text-[#2d5a3d]">Explore Canada's Outdoor Spots</h1>
+                        <p class="text-[#6b6359] mt-1"><span id="visible-count">499</span> spots across 6 activities</p>
+                    </div>
+                    <div class="relative w-full md:w-72">
+                        <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-[#6b6359]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                        <input id="search-input" type="text" placeholder="Search spots..." class="w-full pl-10 pr-4 py-3 rounded-lg border border-[#2d5a3d]/20 focus:border-[#2d5a3d] focus:ring-1 focus:ring-[#2d5a3d] outline-none text-sm">
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-2" id="filter-buttons">
+                    <button data-cat="all" class="filter-btn active px-4 py-2 rounded-full text-sm font-semibold bg-[#2d5a3d] text-white">All Activities</button>
+                    <button data-cat="fishing" class="filter-btn active px-4 py-2 rounded-full text-sm font-semibold" style="background:#1a73e8; color:white;">Fishing</button>
+                    <button data-cat="hunting" class="filter-btn active px-4 py-2 rounded-full text-sm font-semibold" style="background:#e07b39; color:white;">Hunting</button>
+                    <button data-cat="camping" class="filter-btn active px-4 py-2 rounded-full text-sm font-semibold" style="background:#2d8a4e; color:white;">Camping</button>
+                    <button data-cat="kayaking" class="filter-btn active px-4 py-2 rounded-full text-sm font-semibold" style="background:#0891b2; color:white;">Kayaking</button>
+                    <button data-cat="skiing" class="filter-btn active px-4 py-2 rounded-full text-sm font-semibold" style="background:#7c3aed; color:white;">Skiing</button>
+                    <button data-cat="hiking" class="filter-btn active px-4 py-2 rounded-full text-sm font-semibold" style="background:#b45309; color:white;">Hiking</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map -->
+        <div id="map"></div>
+    </main>
+
+    <footer class="bg-[#2d5a3d] text-white py-6 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-white/70 text-sm">OutdoorIntel.ca &mdash; 2026</p>
+            <div class="flex gap-6 text-sm">
+                <a href="fishing/directory.html" class="text-white/70 hover:text-white">Fishing</a>
+                <a href="hunting/directory.html" class="text-white/70 hover:text-white">Hunting</a>
+                <a href="camping/directory.html" class="text-white/70 hover:text-white">Camping</a>
+                <a href="kayaking/directory.html" class="text-white/70 hover:text-white">Kayaking</a>
+                <a href="skiing/directory.html" class="text-white/70 hover:text-white">Skiing</a>
+                <a href="hiking/directory.html" class="text-white/70 hover:text-white">Hiking</a>
+            </div>
+        </div>
+    </footer>
+
+<script>
+// Mobile menu toggle
+document.getElementById('menu-toggle')?.addEventListener('click', () => {
+    document.getElementById('mobile-menu')?.classList.toggle('hidden');
+});
+
+// Activity colors & icons
+const catConfig = {
+    fishing:  { color: '#1a73e8', label: 'Fishing',  icon: 'fishing' },
+    hunting:  { color: '#e07b39', label: 'Hunting',  icon: 'hunting' },
+    camping:  { color: '#2d8a4e', label: 'Camping',  icon: 'camping' },
+    kayaking: { color: '#0891b2', label: 'Kayaking', icon: 'kayaking' },
+    skiing:   { color: '#7c3aed', label: 'Skiing',   icon: 'skiing' },
+    hiking:   { color: '#b45309', label: 'Hiking',   icon: 'hiking' }
+};
+
+// Create circle marker icons
+function createIcon(color) {
+    return L.divIcon({
+        html: `<div style="width:14px;height:14px;background:${color};border:2px solid white;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,0.3);"></div>`,
+        className: '',
+        iconSize: [14, 14],
+        iconAnchor: [7, 7],
+        popupAnchor: [0, -10]
+    });
+}
+
+// Initialize map centered on Canada
+const map = L.map('map', {
+    center: [56, -96],
+    zoom: 4,
+    minZoom: 3,
+    maxZoom: 15,
+    zoomControl: true
+});
+
+// Add tile layer (OpenStreetMap)
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 18
+}).addTo(map);
+
+// Store all markers organized by category
+const allMarkers = {};
+const markerLayers = {};
+const activeFilters = new Set(['fishing', 'hunting', 'camping', 'kayaking', 'skiing', 'hiking']);
+
+Object.keys(catConfig).forEach(cat => {
+    markerLayers[cat] = L.layerGroup().addTo(map);
+    allMarkers[cat] = [];
+});
+
+// Load all data files
+const dataFiles = ['fishing', 'hunting', 'camping', 'kayaking', 'skiing', 'hiking'];
+let totalSpots = 0;
+
+Promise.all(dataFiles.map(cat =>
+    fetch(`../data/${cat}.json`)
+        .then(r => r.json())
+        .then(data => ({ cat, spots: data.spots }))
+)).then(results => {
+    results.forEach(({ cat, spots }) => {
+        const icon = createIcon(catConfig[cat].color);
+        spots.forEach(spot => {
+            if (!spot.coordinates || !spot.coordinates.lat || !spot.coordinates.lng) return;
+
+            // Build popup content
+            const features = spot.features ? spot.features.slice(0, 3).join(' &bull; ') : '';
+            const websiteBtn = spot.website
+                ? `<a href="${spot.website}" target="_blank" rel="noopener noreferrer" class="spot-website">Official Site</a>`
+                : '';
+
+            const popupContent = `
+                <div class="spot-popup">
+                    <div class="spot-type">${catConfig[cat].label}${spot.type ? ' &mdash; ' + spot.type : ''}</div>
+                    <h3>${spot.name}</h3>
+                    <div class="spot-province">${spot.province || ''}</div>
+                    ${features ? '<div class="spot-features">' + features + '</div>' : ''}
+                    <div>
+                        <a href="${cat}/${spot.slug}.html" class="spot-link">View Profile</a>
+                        ${websiteBtn}
+                    </div>
+                </div>
+            `;
+
+            const marker = L.marker([spot.coordinates.lat, spot.coordinates.lng], { icon })
+                .bindPopup(popupContent, { maxWidth: 280 });
+
+            marker._spotData = {
+                name: spot.name.toLowerCase(),
+                province: (spot.province || '').toLowerCase(),
+                cat: cat
+            };
+
+            allMarkers[cat].push(marker);
+            markerLayers[cat].addLayer(marker);
+            totalSpots++;
+        });
+    });
+
+    document.getElementById('visible-count').textContent = totalSpots;
+});
+
+// Filter logic
+const filterButtons = document.querySelectorAll('.filter-btn');
+
+filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const cat = btn.dataset.cat;
+
+        if (cat === 'all') {
+            // Toggle all on
+            const allActive = activeFilters.size === 6;
+            if (allActive) return; // Already all on
+            activeFilters.clear();
+            Object.keys(catConfig).forEach(c => activeFilters.add(c));
+        } else {
+            if (activeFilters.has(cat)) {
+                if (activeFilters.size === 1) return; // Don't allow removing last filter
+                activeFilters.delete(cat);
+            } else {
+                activeFilters.add(cat);
+            }
+        }
+
+        updateMap();
+        updateButtons();
+    });
+});
+
+function updateMap() {
+    let visible = 0;
+    const searchTerm = document.getElementById('search-input').value.toLowerCase().trim();
+
+    Object.keys(catConfig).forEach(cat => {
+        markerLayers[cat].clearLayers();
+
+        if (!activeFilters.has(cat)) return;
+
+        allMarkers[cat].forEach(marker => {
+            const data = marker._spotData;
+            if (searchTerm && !data.name.includes(searchTerm) && !data.province.includes(searchTerm)) {
+                return;
+            }
+            markerLayers[cat].addLayer(marker);
+            visible++;
+        });
+    });
+
+    document.getElementById('visible-count').textContent = visible;
+}
+
+function updateButtons() {
+    filterButtons.forEach(btn => {
+        const cat = btn.dataset.cat;
+        if (cat === 'all') {
+            btn.classList.toggle('active', activeFilters.size === 6);
+            btn.classList.toggle('inactive', activeFilters.size !== 6);
+        } else {
+            btn.classList.toggle('active', activeFilters.has(cat));
+            btn.classList.toggle('inactive', !activeFilters.has(cat));
+        }
+    });
+}
+
+// Search functionality
+let searchTimeout;
+document.getElementById('search-input').addEventListener('input', () => {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(updateMap, 300);
+});
+</script>
+</body>
+</html>

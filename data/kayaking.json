@@ -7,7 +7,7 @@
       "type": "Whitewater",
       "coordinates": {
         "lat": 61.5,
-        "lng": -125.0
+        "lng": -125
       },
       "features": [
         "Class III-IV Rapids",
@@ -33,7 +33,8 @@
       "terrain": "Water type: Whitewater. River gradient creates Class II-III rapids with some Class IV sections. Total distance: 200 km.  Surrounding landscape: tundra, boreal forest, Great Slave Lake, Mackenzie River. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Local outfitter in Inuvik offers gear rental and shuttle service. Nearest supplies: Inuvik (fly-in access required). Waterproof map/guide available for purchase at the outfitter. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Hotels in Inuvik for pre/post-trip accommodation.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Inuvik. Cold water warning: Northwest Territories's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Inuvik. Cold water warning: Northwest Territories's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://parks.canada.ca/pn-np/nt/nahanni"
     },
     {
       "name": "Liard River",
@@ -68,7 +69,8 @@
       "terrain": "Water type: Whitewater. River gradient creates Class II-III rapids with some Class IV sections. Total distance: 250 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: coastal rainforest, Rocky Mountains, interior plateau. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Local outfitter in Prince George offers gear rental and shuttle service. Nearest supplies: Prince George (3-4 hours). Waterproof map/guide available for purchase at the outfitter. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Lodges and cabins available for those wanting comfort before or after the trip.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Prince George. Cold water warning: British Columbia's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Prince George. Cold water warning: British Columbia's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore.",
+      "website": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/camping-hiking/sites-trails"
     },
     {
       "name": "Skeena River",
@@ -103,7 +105,8 @@
       "terrain": "Water type: Flatwater. Calm, open water with occasional wind chop. Total distance: 560 km.  Surrounding landscape: coastal rainforest, Rocky Mountains, interior plateau. Watch for submerged rocks and sweepers (fallen trees) in river sections.",
       "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Prince George (4-5 hours). Waterproof map/guide available for purchase at the outfitter. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Lodges and cabins available for those wanting comfort before or after the trip.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Prince George. Cold water warning: British Columbia's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Prince George. Cold water warning: British Columbia's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore.",
+      "website": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/camping-hiking/sites-trails"
     },
     {
       "name": "Kicking Horse River",
@@ -138,7 +141,8 @@
       "terrain": "Water type: Whitewater. River gradient creates Class II-III rapids with some Class IV sections. Total distance: 140 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: coastal rainforest, Rocky Mountains, interior plateau. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Kelowna (3-4 hours). Waterproof map/guide available for purchase at the outfitter. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Lodges and cabins available for those wanting comfort before or after the trip.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Kelowna. Cold water warning: British Columbia's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Kelowna. Cold water warning: British Columbia's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://www.goldenbc.com"
     },
     {
       "name": "Churchill River",
@@ -173,7 +177,8 @@
       "terrain": "Water type: Multi-Day Expedition. Mixed conditions — flatwater lakes connected by moving river sections. Total distance: 240 km.  Surrounding landscape: boreal shield, prairie grasslands, Hudson Bay lowlands. Watch for submerged rocks and sweepers (fallen trees) in river sections.",
       "nearby_services": "Local outfitter in Churchill offers gear rental and shuttle service. Nearest supplies: Churchill (5-6 hours). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Backcountry campsites along the route — first-come, first-served. Designated tent pads with fire pits and pit toilets at most campsites. Hotels in Churchill for pre/post-trip accommodation.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Churchill. Cold water warning: Manitoba's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Churchill. Cold water warning: Manitoba's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://www.travelmanitoba.com"
     },
     {
       "name": "Coppermine River",
@@ -208,7 +213,8 @@
       "terrain": "Water type: Whitewater. River gradient creates Class II-III rapids with some Class IV sections. Total distance: 340 km.  Surrounding landscape: arctic tundra, sea ice, barren grounds, polar coastline. Watch for submerged rocks and sweepers (fallen trees) in river sections.",
       "nearby_services": "Local outfitter in Cambridge Bay offers gear rental and shuttle service. Nearest supplies: Cambridge Bay (3-5 hours). Waterproof map/guide available for purchase at the outfitter. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Hotels in Cambridge Bay for pre/post-trip accommodation.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Cambridge Bay. Cold water warning: Nunavut's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Cambridge Bay. Cold water warning: Nunavut's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://www.gov.nu.ca/environment"
     },
     {
       "name": "Pembina River",
@@ -243,7 +249,8 @@
       "terrain": "Water type: Flatwater. Calm, open water with occasional wind chop. Total distance: 120 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: Rocky Mountain foothills, prairies, badlands. Watch for submerged rocks and sweepers (fallen trees) in river sections.",
       "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Red Deer (1.5-2.5 hours). Download the route map before you lose cell service. Beginner-friendly route, but lessons are available locally.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Lodges and cabins available for those wanting comfort before or after the trip.",
-      "safety": "Cell service may be available along parts of the route, but carry backup communication. Nearest hospital: Red Deer. Cold water warning: Alberta's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "Cell service may be available along parts of the route, but carry backup communication. Nearest hospital: Red Deer. Cold water warning: Alberta's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://www.albertaparks.ca"
     },
     {
       "name": "Ottawa River",
@@ -278,7 +285,8 @@
       "terrain": "Water type: Whitewater. River gradient creates Class II-III rapids with some Class IV sections. Total distance: 200 km available.  Surrounding landscape: Canadian Shield, boreal forest, Great Lakes shoreline. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Ottawa (1-1.5 hours). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Lodges and cabins available for those wanting comfort before or after the trip.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Ottawa. Cold water warning: Ontario's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Ottawa. Cold water warning: Ontario's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://www.ottawariver.org"
     },
     {
       "name": "French River",
@@ -313,7 +321,8 @@
       "terrain": "Water type: Multi-Day Expedition. Mixed conditions — flatwater lakes connected by moving river sections. Total distance: 120 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: Canadian Shield, boreal forest, Great Lakes shoreline. Watch for submerged rocks and sweepers (fallen trees) in river sections.",
       "nearby_services": "Local outfitter in Ottawa offers gear rental and shuttle service. Nearest supplies: Ottawa (1.5-2 hours). Waterproof map/guide available for purchase at the outfitter. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Backcountry campsites along the route — first-come, first-served. Designated tent pads with fire pits and pit toilets at most campsites. Hotels in Ottawa for pre/post-trip accommodation.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Ottawa. Cold water warning: Ontario's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Ottawa. Cold water warning: Ontario's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://www.ontarioparks.com/park/frenchriver"
     },
     {
       "name": "Rivière-Beaudette",
@@ -348,7 +357,8 @@
       "terrain": "Water type: Whitewater. River gradient creates Class II-III rapids with some Class IV sections. Total distance: 90 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: Laurentian Mountains, St. Lawrence Valley, boreal shield. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Local outfitter in Montreal offers gear rental and shuttle service. Nearest supplies: Montreal (1-1.5 hours). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Lodges and cabins available for those wanting comfort before or after the trip.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Montreal. Cold water warning: Quebec's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Montreal. Cold water warning: Quebec's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://www.quebec.ca/tourisme-et-loisirs/activites-sportives-et-de-plein-air"
     },
     {
       "name": "Jacques-Cartier River",
@@ -383,7 +393,8 @@
       "terrain": "Water type: Whitewater. River gradient creates Class II-III rapids with some Class IV sections. Total distance: 105 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: Laurentian Mountains, St. Lawrence Valley, boreal shield. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Montreal (1.5-2 hours). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Hotels in Montreal for pre/post-trip accommodation.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Montreal. Cold water warning: Quebec's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Montreal. Cold water warning: Quebec's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://www.sepaq.com/pq/jac/"
     },
     {
       "name": "Saint John River",
@@ -418,7 +429,8 @@
       "terrain": "Water type: Flatwater. Calm, open water with occasional wind chop. Total distance: 420 km total. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: Appalachian uplands, Bay of Fundy coast, river valleys. Watch for submerged rocks and sweepers (fallen trees) in river sections.",
       "nearby_services": "Local outfitter in Saint John offers gear rental and shuttle service. Nearest supplies: Saint John (1-1.5 hours). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Lodges and cabins available for those wanting comfort before or after the trip.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Saint John. Cold water warning: New Brunswick's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Saint John. Cold water warning: New Brunswick's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore.",
+      "website": "https://www.tourismnewbrunswick.ca"
     },
     {
       "name": "Margaret River",
@@ -453,7 +465,8 @@
       "terrain": "Water type: Flatwater. Calm, open water with occasional wind chop. Total distance: 60 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: Atlantic coastline, Annapolis Valley, Cape Breton Highlands. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Local outfitter in Halifax offers gear rental and shuttle service. Nearest supplies: Halifax (1.5-2 hours). Waterproof map/guide available for purchase at the outfitter. Beginner-friendly route, but lessons are available locally.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Lodges and cabins available for those wanting comfort before or after the trip.",
-      "safety": "Cell service may be available along parts of the route, but carry backup communication. Nearest hospital: Halifax. Cold water warning: Nova Scotia's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore."
+      "safety": "Cell service may be available along parts of the route, but carry backup communication. Nearest hospital: Halifax. Cold water warning: Nova Scotia's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore.",
+      "website": "https://www.novascotia.com"
     },
     {
       "name": "Gander River",
@@ -488,7 +501,8 @@
       "terrain": "Water type: Flatwater. Calm, open water with occasional wind chop. Total distance: 180 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: rugged coastline, fjords, boreal forest, tundra. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: St. John's (45 minutes). Waterproof map/guide available for purchase at the outfitter. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Lodges and cabins available for those wanting comfort before or after the trip.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: St. John's. Cold water warning: Newfoundland and Labrador's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: St. John's. Cold water warning: Newfoundland and Labrador's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://www.newfoundlandlabrador.com"
     },
     {
       "name": "Yukon River",
@@ -497,7 +511,7 @@
       "type": "Multi-Day Expedition",
       "coordinates": {
         "lat": 62.2,
-        "lng": -135.0
+        "lng": -135
       },
       "features": [
         "1,000+ km Route",
@@ -523,7 +537,8 @@
       "terrain": "Water type: Multi-Day Expedition. Mixed conditions — flatwater lakes connected by moving river sections. Total distance: 750 km available sections. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: Canadian wilderness. Watch for submerged rocks and sweepers (fallen trees) in river sections.",
       "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: the nearest town (5-6 hours). Waterproof map/guide available for purchase at the outfitter. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Backcountry campsites along the route — first-come, first-served. Designated tent pads with fire pits and pit toilets at most campsites. Lodges and cabins available for those wanting comfort before or after the trip.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: the nearest town. Cold water warning: Yukon Territory's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: the nearest town. Cold water warning: Yukon Territory's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://yukon.ca/en/outdoor-recreation-and-events"
     },
     {
       "name": "Algonquin Canoe Routes",
@@ -558,14 +573,15 @@
       "terrain": "Water type: Flatwater. Calm, open water with occasional wind chop. Total distance: 50-100 km.  Surrounding landscape: Canadian Shield, boreal forest, Great Lakes shoreline. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Local outfitter in Ottawa offers gear rental and shuttle service. Nearest supplies: Ottawa (45 minutes). Waterproof map/guide available for purchase at the outfitter. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Lodges and cabins available for those wanting comfort before or after the trip.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Ottawa. Cold water warning: Ontario's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Ottawa. Cold water warning: Ontario's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://www.ontarioparks.com/park/algonquin"
     },
     {
       "name": "Killarney Georgian Bay",
       "slug": "killarney-georgian-bay",
       "province": "Ontario",
       "coordinates": {
-        "lat": 46.0,
+        "lat": 46,
         "lng": -81.1
       },
       "season": "June - September",
@@ -593,7 +609,8 @@
       "terrain": "Water type: Sea Kayaking. Mixed conditions — flatwater lakes connected by moving river sections. Total distance: 30-50 km.  Surrounding landscape: Canadian Shield, boreal forest, Great Lakes shoreline. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Ottawa (45 minutes). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Hotels in Ottawa for pre/post-trip accommodation.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Ottawa. Cold water warning: Ontario's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Ottawa. Cold water warning: Ontario's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore.",
+      "website": "https://www.ontarioparks.com/park/killarney"
     },
     {
       "name": "Madawaska River",
@@ -628,7 +645,8 @@
       "terrain": "Water type: Whitewater. River gradient creates Class II-III rapids with some Class IV sections. Total distance: 50 km.  Surrounding landscape: Canadian Shield, boreal forest, Great Lakes shoreline. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Local outfitter in Ottawa offers gear rental and shuttle service. Nearest supplies: Ottawa (1-1.5 hours). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Hotels in Ottawa for pre/post-trip accommodation.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Ottawa. Cold water warning: Ontario's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Ottawa. Cold water warning: Ontario's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore.",
+      "website": "https://www.ontarioparks.com/park/madawaskariver"
     },
     {
       "name": "Temagami Canoe Routes",
@@ -663,7 +681,8 @@
       "terrain": "Water type: Flatwater. Calm, open water with occasional wind chop. Total distance: 40-80 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: Canadian Shield, boreal forest, Great Lakes shoreline. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Ottawa (1-1.5 hours). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Lodges and cabins available for those wanting comfort before or after the trip.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Ottawa. Cold water warning: Ontario's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Ottawa. Cold water warning: Ontario's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://www.ontarioparks.com/park/ladyclairechannel"
     },
     {
       "name": "Kawartha Lakes",
@@ -698,7 +717,8 @@
       "terrain": "Water type: Flatwater. Calm, open water with occasional wind chop. Total distance: 60-100 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: Canadian Shield, boreal forest, Great Lakes shoreline. Watch for submerged rocks and sweepers (fallen trees) in river sections.",
       "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Ottawa (2-3 hours). Download the route map before you lose cell service. Beginner-friendly route, but lessons are available locally.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Lodges and cabins available for those wanting comfort before or after the trip.",
-      "safety": "Cell service may be available along parts of the route, but carry backup communication. Nearest hospital: Ottawa. Cold water warning: Ontario's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "Cell service may be available along parts of the route, but carry backup communication. Nearest hospital: Ottawa. Cold water warning: Ontario's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://www.thekawarthas.ca"
     },
     {
       "name": "Rideau Canal",
@@ -733,7 +753,8 @@
       "terrain": "Water type: Flatwater. Calm, open water with occasional wind chop. Total distance: 202 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: Canadian Shield, boreal forest, Great Lakes shoreline. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Local outfitter in Ottawa offers gear rental and shuttle service. Nearest supplies: Ottawa (45 minutes). Waterproof map/guide available for purchase at the outfitter. Beginner-friendly route, but lessons are available locally.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Hotels in Ottawa for pre/post-trip accommodation.",
-      "safety": "Cell service may be available along parts of the route, but carry backup communication. Nearest hospital: Ottawa. Cold water warning: Ontario's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore."
+      "safety": "Cell service may be available along parts of the route, but carry backup communication. Nearest hospital: Ottawa. Cold water warning: Ontario's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore.",
+      "website": "https://parks.canada.ca/lhn-nhs/on/rideau"
     },
     {
       "name": "Rouge River",
@@ -768,7 +789,8 @@
       "terrain": "Water type: Whitewater. River gradient creates Class II-III rapids with some Class IV sections. Total distance: 27 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: Laurentian Mountains, St. Lawrence Valley, boreal shield. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Local outfitter in Montreal offers gear rental and shuttle service. Nearest supplies: Montreal (45 minutes). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Hotels in Montreal for pre/post-trip accommodation.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Montreal. Cold water warning: Quebec's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Montreal. Cold water warning: Quebec's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://www.sepaq.com/pq/rou/"
     },
     {
       "name": "Saguenay Fjord",
@@ -803,14 +825,15 @@
       "terrain": "Water type: Sea Kayaking. Mixed conditions — flatwater lakes connected by moving river sections. Total distance: 50-100 km.  Surrounding landscape: Laurentian Mountains, St. Lawrence Valley, boreal shield. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Montreal (1-1.5 hours). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Lodges and cabins available for those wanting comfort before or after the trip.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Montreal. Cold water warning: Quebec's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Montreal. Cold water warning: Quebec's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore.",
+      "website": "https://www.sepaq.com/pq/sag/"
     },
     {
       "name": "Rivière Bonaventure",
       "slug": "riviere-bonaventure",
       "province": "Quebec",
       "coordinates": {
-        "lat": 48.0,
+        "lat": 48,
         "lng": -65.3
       },
       "season": "May - September",
@@ -838,7 +861,8 @@
       "terrain": "Water type: Flatwater. Calm, open water with occasional wind chop. Total distance: 45 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: Laurentian Mountains, St. Lawrence Valley, boreal shield. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Montreal (45 minutes). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Lodges and cabins available for those wanting comfort before or after the trip.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Montreal. Cold water warning: Quebec's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Montreal. Cold water warning: Quebec's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore.",
+      "website": "https://www.tourisme-gaspesie.com"
     },
     {
       "name": "Parc Jacques-Cartier Rivers",
@@ -873,7 +897,8 @@
       "terrain": "Water type: Whitewater. River gradient creates Class II-III rapids with some Class IV sections. Total distance: 30-50 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: Laurentian Mountains, St. Lawrence Valley, boreal shield. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Local outfitter in Montreal offers gear rental and shuttle service. Nearest supplies: Montreal (1.5-2 hours). Waterproof map/guide available for purchase at the outfitter. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Lodges and cabins available for those wanting comfort before or after the trip.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Montreal. Cold water warning: Quebec's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Montreal. Cold water warning: Quebec's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore.",
+      "website": "https://www.sepaq.com/pq/jac/"
     },
     {
       "name": "Johnstone Strait Orcas",
@@ -908,7 +933,8 @@
       "terrain": "Water type: Sea Kayaking. Mixed conditions — flatwater lakes connected by moving river sections. Total distance: 40-60 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: coastal rainforest, Rocky Mountains, interior plateau. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Local outfitter in Kelowna offers gear rental and shuttle service. Nearest supplies: Kelowna (3-4 hours). Waterproof map/guide available for purchase at the outfitter. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Lodges and cabins available for those wanting comfort before or after the trip.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Kelowna. Cold water warning: British Columbia's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Kelowna. Cold water warning: British Columbia's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://www.hellobc.com"
     },
     {
       "name": "Broken Group Islands",
@@ -943,7 +969,8 @@
       "terrain": "Water type: Sea Kayaking. Mixed conditions — flatwater lakes connected by moving river sections. Total distance: 30-50 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: coastal rainforest, Rocky Mountains, interior plateau. Watch for submerged rocks and sweepers (fallen trees) in river sections.",
       "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Vancouver (1.5-2 hours). Waterproof map/guide available for purchase at the outfitter. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Hotels in Vancouver for pre/post-trip accommodation.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Vancouver. Cold water warning: British Columbia's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Vancouver. Cold water warning: British Columbia's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://parks.canada.ca/pn-np/bc/pacificrim"
     },
     {
       "name": "Desolation Sound",
@@ -978,7 +1005,8 @@
       "terrain": "Water type: Sea Kayaking. Mixed conditions — flatwater lakes connected by moving river sections. Total distance: 50-80 km.  Surrounding landscape: coastal rainforest, Rocky Mountains, interior plateau. Watch for submerged rocks and sweepers (fallen trees) in river sections.",
       "nearby_services": "Local outfitter in Vancouver offers gear rental and shuttle service. Nearest supplies: Vancouver (2-3 hours). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Hotels in Vancouver for pre/post-trip accommodation.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Vancouver. Cold water warning: British Columbia's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Vancouver. Cold water warning: British Columbia's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://bcparks.ca/desolation-sound-marine-park/"
     },
     {
       "name": "Bowron Lake Canoe Circuit",
@@ -1013,7 +1041,8 @@
       "terrain": "Water type: Flatwater. Calm, open water with occasional wind chop. Total distance: 116 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: coastal rainforest, Rocky Mountains, interior plateau. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Local outfitter in Kelowna offers gear rental and shuttle service. Nearest supplies: Kelowna (3-4 hours). Waterproof map/guide available for purchase at the outfitter. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Hotels in Kelowna for pre/post-trip accommodation.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Kelowna. Cold water warning: British Columbia's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Kelowna. Cold water warning: British Columbia's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://bcparks.ca/bowron-lake-park/"
     },
     {
       "name": "Clayoquot Sound",
@@ -1048,7 +1077,8 @@
       "terrain": "Water type: Sea Kayaking. Mixed conditions — flatwater lakes connected by moving river sections. Total distance: 40-60 km.  Surrounding landscape: coastal rainforest, Rocky Mountains, interior plateau. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Vancouver (2-3 hours). Waterproof map/guide available for purchase at the outfitter. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Lodges and cabins available for those wanting comfort before or after the trip.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Vancouver. Cold water warning: British Columbia's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Vancouver. Cold water warning: British Columbia's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore.",
+      "website": "https://www.tourismtofino.com"
     },
     {
       "name": "Powell Forest Canoe Route",
@@ -1083,7 +1113,8 @@
       "terrain": "Water type: Flatwater. Calm, open water with occasional wind chop. Total distance: 65 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: coastal rainforest, Rocky Mountains, interior plateau. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Vancouver (45 minutes). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Lodges and cabins available for those wanting comfort before or after the trip.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Vancouver. Cold water warning: British Columbia's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Vancouver. Cold water warning: British Columbia's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore.",
+      "website": "https://bcparks.ca"
     },
     {
       "name": "Bow River",
@@ -1117,7 +1148,8 @@
       "terrain": "Water type: Whitewater. River gradient creates Class II-III rapids with some Class IV sections. Total distance: 50-100 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: Rocky Mountain foothills, prairies, badlands. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Local outfitter in Red Deer offers gear rental and shuttle service. Nearest supplies: Red Deer (2-3 hours). Waterproof map/guide available for purchase at the outfitter. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Lodges and cabins available for those wanting comfort before or after the trip.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Red Deer. Cold water warning: Alberta's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Red Deer. Cold water warning: Alberta's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://www.albertaparks.ca"
     },
     {
       "name": "North Saskatchewan River",
@@ -1152,7 +1184,8 @@
       "terrain": "Water type: Whitewater. River gradient creates Class II-III rapids with some Class IV sections. Total distance: 80-120 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: Rocky Mountain foothills, prairies, badlands. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Red Deer (2-3 hours). Waterproof map/guide available for purchase at the outfitter. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Hotels in Red Deer for pre/post-trip accommodation.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Red Deer. Cold water warning: Alberta's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Red Deer. Cold water warning: Alberta's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://www.albertaparks.ca"
     },
     {
       "name": "Maligne Lake",
@@ -1187,7 +1220,8 @@
       "terrain": "Water type: Flatwater. Calm, open water with occasional wind chop. Total distance: 30-50 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: Rocky Mountain foothills, prairies, badlands. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Local outfitter in Red Deer offers gear rental and shuttle service. Nearest supplies: Red Deer (1.5-2.5 hours). Waterproof map/guide available for purchase at the outfitter. Beginner-friendly route, but lessons are available locally.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Hotels in Red Deer for pre/post-trip accommodation.",
-      "safety": "Cell service may be available along parts of the route, but carry backup communication. Nearest hospital: Red Deer. Cold water warning: Alberta's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore."
+      "safety": "Cell service may be available along parts of the route, but carry backup communication. Nearest hospital: Red Deer. Cold water warning: Alberta's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore.",
+      "website": "https://parks.canada.ca/pn-np/ab/jasper"
     },
     {
       "name": "Bloodvein River",
@@ -1221,7 +1255,8 @@
       "terrain": "Water type: Whitewater. River gradient creates Class II-III rapids with some Class IV sections. Total distance: 120 km.  Surrounding landscape: boreal shield, prairie grasslands, Hudson Bay lowlands. Watch for submerged rocks and sweepers (fallen trees) in river sections.",
       "nearby_services": "Outfitter at the put-in offers kayak/canoe rental, shuttle service, and guided trips. Nearest supplies: Thompson (3-4 hours). Download the route map before you lose cell service. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Lodges and cabins available for those wanting comfort before or after the trip.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Thompson. Cold water warning: Manitoba's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Thompson. Cold water warning: Manitoba's waters can cause hypothermia quickly — wear appropriate thermal protection. Always scout rapids before running them. Portage if in doubt. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://www.travelmanitoba.com"
     },
     {
       "name": "Bay of Fundy",
@@ -1229,7 +1264,7 @@
       "province": "New Brunswick",
       "coordinates": {
         "lat": 45.4,
-        "lng": -65.0
+        "lng": -65
       },
       "season": "June - September",
       "difficulty": "Advanced",
@@ -1255,7 +1290,8 @@
       "terrain": "Water type: Sea Kayaking. Mixed conditions — flatwater lakes connected by moving river sections. Total distance: 30-60 km.  Surrounding landscape: Appalachian uplands, Bay of Fundy coast, river valleys. Watch for submerged rocks and sweepers (fallen trees) in river sections.",
       "nearby_services": "Local outfitter in Saint John offers gear rental and shuttle service. Nearest supplies: Saint John (1.5-2 hours). Waterproof map/guide available for purchase at the outfitter. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Primitive campsites — bring a trowel and be prepared to be fully self-sufficient. Lodges and cabins available for those wanting comfort before or after the trip.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Saint John. Cold water warning: New Brunswick's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Saint John. Cold water warning: New Brunswick's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Lightning on open water is extremely dangerous — get off the water at the first sign of thunderstorms. File a float plan with someone onshore.",
+      "website": "https://parks.canada.ca/pn-np/nb/fundy"
     },
     {
       "name": "Kejimkujik Kayaking",
@@ -1289,7 +1325,8 @@
       "terrain": "Water type: Flatwater. Calm, open water with occasional wind chop. Total distance: 40-100 km. Portages range from 100m to 2 km — trails are marked but can be muddy. Surrounding landscape: Atlantic coastline, Annapolis Valley, Cape Breton Highlands. Open water crossings can be exposed to wind — hug the shoreline when possible.",
       "nearby_services": "Local outfitter in Halifax offers gear rental and shuttle service. Nearest supplies: Halifax (2-3 hours). Waterproof map/guide available for purchase at the outfitter. Guided trips highly recommended for first-timers on this route.",
       "accommodation": "Campgrounds and day-use areas along the waterway. Designated tent pads with fire pits and pit toilets at most campsites. Hotels in Halifax for pre/post-trip accommodation.",
-      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Halifax. Cold water warning: Nova Scotia's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore."
+      "safety": "This is remote wilderness paddling — carry a satellite communicator. No cell service on the water. Nearest hospital: Halifax. Cold water warning: Nova Scotia's waters can cause hypothermia quickly — wear appropriate thermal protection. Wear your PFD at all times on the water. Check weather forecasts before launching — conditions change quickly. File a float plan with someone onshore.",
+      "website": "https://parks.canada.ca/pn-np/ns/kejimkujik"
     }
   ]
 }
