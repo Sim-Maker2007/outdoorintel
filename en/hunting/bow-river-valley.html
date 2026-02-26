@@ -44,6 +44,15 @@
             background-position: center;
         }
     </style>
+
+    <!-- Google Analytics (GA4) — TODO: Replace G-XXXXXXXXXX with your real Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body class="bg-[#f5f3f0] text-[#3e3127] font-sans leading-relaxed">
 
@@ -583,6 +592,8 @@
         <div>
             <h4 class="font-bold mb-4 text-[#c97c5e]">Resources</h4>
             <ul class="space-y-2 text-white/70 text-sm">
+                <li><a href="../about.html" class="hover:text-[#c97c5e] transition-colors">About</a></li>
+                <li><a href="../licenses.html" class="hover:text-[#c97c5e] transition-colors">Licenses &amp; Regs</a></li>
                 <li><a href="https://www.ontario.ca/document/ontario-fishing-regulations-summary" target="_blank" rel="noopener noreferrer" class="hover:text-[#c97c5e] transition-colors">Ontario Regulations</a></li>
                 <li><a href="https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/peche-sportive" target="_blank" rel="noopener noreferrer" class="hover:text-[#c97c5e] transition-colors">Quebec Regulations</a></li>
             </ul>
@@ -678,5 +689,6 @@ if (toggle && menu) {
         load();
     })();
     </script>
+<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js');}</script>
 </body>
 </html>

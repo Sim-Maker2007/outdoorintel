@@ -36,6 +36,15 @@
     <style>
         .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
     </style>
+
+    <!-- Google Analytics (GA4) — TODO: Replace G-XXXXXXXXXX with your real Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body class="bg-[#f5f3f0] text-[#3e3127] font-sans leading-relaxed">
     <header class="fixed top-0 w-full z-50 border-b border-[#2d5a3d]/10 bg-white/95 backdrop-blur-md">
@@ -85,6 +94,17 @@
     </section>
 
     <main>
+        <!-- Newsletter Signup — TODO: Replace form action with your email service -->
+        <section class="bg-[#fef9f3] border-b border-[#2d5a3d]/10 py-6 px-6">
+            <div class="max-w-3xl mx-auto">
+                <form id="newsletter-form" action="#newsletter-signup" method="POST" class="flex flex-col sm:flex-row items-center gap-3">
+                    <p class="text-[#2d5a3d] font-semibold text-sm whitespace-nowrap">Weekly Outdoor Intel:</p>
+                    <input type="email" name="email" required placeholder="Your email" class="flex-1 w-full sm:w-auto px-4 py-2.5 rounded-lg border border-[#2d5a3d]/20 text-sm focus:outline-none focus:ring-2 focus:ring-[#2d5a3d]">
+                    <button type="submit" class="px-6 py-2.5 bg-[#2d5a3d] text-white text-sm font-semibold rounded-lg hover:bg-[#c97c5e] transition-colors whitespace-nowrap">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
         <section class="py-12 px-6">
             <div class="max-w-7xl mx-auto">
                 <div class="flex flex-wrap gap-3 mb-10 justify-center"><button class="blog-tab active px-5 py-2.5 rounded-full text-sm font-bold transition-all bg-[#2d5a3d] text-white" data-filter="all">All</button>
@@ -666,6 +686,8 @@
         <div>
             <h4 class="font-bold mb-4 text-[#c97c5e]">Resources</h4>
             <ul class="space-y-2 text-white/70 text-sm">
+                <li><a href="about.html" class="hover:text-[#c97c5e] transition-colors">About</a></li>
+                <li><a href="licenses.html" class="hover:text-[#c97c5e] transition-colors">Licenses &amp; Regs</a></li>
                 <li><a href="https://www.ontario.ca/document/ontario-fishing-regulations-summary" target="_blank" rel="noopener noreferrer" class="hover:text-[#c97c5e] transition-colors">Ontario Regulations</a></li>
                 <li><a href="https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/peche-sportive" target="_blank" rel="noopener noreferrer" class="hover:text-[#c97c5e] transition-colors">Quebec Regulations</a></li>
             </ul>
@@ -716,5 +738,6 @@ if (toggle && menu) {
         });
     })();
     </script>
+<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js');}</script>
 </body>
 </html>

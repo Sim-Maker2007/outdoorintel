@@ -41,6 +41,15 @@
             background-position: center;
         }
     </style>
+
+    <!-- Google Analytics (GA4) — TODO: Replace G-XXXXXXXXXX with your real Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body class="bg-[#f5f3f0] text-[#3e3127] font-sans leading-relaxed">
 
@@ -289,14 +298,89 @@
             </div>
         </section>
 
-        <section class="bg-[#2d5a3d] py-20 px-6 text-white text-center">
-            <div class="max-w-3xl mx-auto">
-                <h2 class="text-4xl font-bold mb-6">Canada's Outdoor Intelligence</h2>
-                <p class="text-lg text-white/80 mb-8">
-                    From the Atlantic coast to the Pacific Rim, from the Great Lakes to the Arctic tundra.
-                    OutdoorIntel covers every province, every season, every adventure.
-                </p>
-                <a href="en/fishing/directory.html" class="inline-block bg-[#c97c5e] text-white px-10 py-4 font-semibold rounded-lg hover:bg-white hover:text-[#2d5a3d] transition-colors">Start Exploring &rarr;</a>
+        <!-- Seasonal Intel Feed — auto-rotates based on current month -->
+        <section class="bg-[#f5f3f0] py-20 px-6" id="seasonal-intel">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-12">
+                    <h2 class="text-4xl font-bold text-[#2d5a3d] mb-2">What's Good Right Now</h2>
+                    <p class="text-[#6b6359] text-lg" id="seasonal-subtitle">Seasonally relevant spots and articles for this time of year.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="seasonal-cards"></div>
+            </div>
+        </section>
+        <script>
+        (function(){
+            var m = new Date().getMonth(); // 0=Jan
+            var seasons = {
+                winter: { // Dec, Jan, Feb, Mar
+                    subtitle: 'Winter is here. Ice fishing, skiing, and winter camping across Canada.',
+                    cards: [
+                        { href: 'en/skiing/camp-fortune.html', cat: 'Skiing', loc: 'Quebec', title: 'Camp Fortune', desc: 'Night skiing 20 min from Ottawa. Perfect for after-work runs.' },
+                        { href: 'en/fishing/blog/ice-fishing-shelters.html', cat: 'Gear Guide', loc: 'Blog', title: 'Ice Fishing Shelters Compared', desc: 'Hub vs. flip-over vs. cabin. Which setup wins for Canadian winters?' },
+                        { href: 'en/skiing/whistler-blackcomb.html', cat: 'Skiing', loc: 'British Columbia', title: 'Whistler Blackcomb', desc: '200+ runs, 1,609m vertical. January brings the deepest powder.' },
+                        { href: 'en/camping/blog/winter-camping-beginners-budget.html', cat: 'Camping', loc: 'Blog', title: 'Winter Camping for Beginners', desc: 'Gear that keeps you warm without emptying your wallet.' }
+                    ]
+                },
+                spring: { // Apr, May
+                    subtitle: 'Ice-out is here. Fishing openers, early hiking, and spring paddling.',
+                    cards: [
+                        { href: 'en/fishing/lake-superior.html', cat: 'Fishing', loc: 'Ontario', title: 'Lake Superior', desc: 'Post-ice-out Lake Trout and Steelhead in tributaries. Prime time.' },
+                        { href: 'en/hiking/grouse-grind.html', cat: 'Hiking', loc: 'British Columbia', title: 'Grouse Grind', desc: 'The classic 2.9 km quad-burner opens in spring. Beat the summer crowds.' },
+                        { href: 'en/kayaking/ottawa-river.html', cat: 'Kayaking', loc: 'Ontario', title: 'Ottawa River', desc: 'Spring runoff cranks the rapids up. Perfect for whitewater season.' },
+                        { href: 'en/fishing/blog/first-fishing-rod-buyers-guide.html', cat: 'Gear Guide', loc: 'Blog', title: 'Your First Fishing Rod', desc: 'What to buy (and what to avoid) for your first season.' }
+                    ]
+                },
+                summer: { // Jun, Jul, Aug
+                    subtitle: 'Peak season. Camping, kayaking, hiking, and summer fishing across Canada.',
+                    cards: [
+                        { href: 'en/camping/algonquin-provincial-park.html', cat: 'Camping', loc: 'Ontario', title: 'Algonquin Provincial Park', desc: '1,200+ sites. Book interior canoe-in spots 5 months ahead.' },
+                        { href: 'en/kayaking/nahanni-river.html', cat: 'Kayaking', loc: 'NWT', title: 'Nahanni River', desc: 'July peak water. Class III-IV rapids and Virginia Falls.' },
+                        { href: 'en/hiking/west-coast-trail.html', cat: 'Hiking', loc: 'British Columbia', title: 'West Coast Trail', desc: '75 km of wild Pacific coastline. Book permits early.' },
+                        { href: 'en/fishing/blog/soft-hard-coolers-fishing-test.html', cat: 'Gear Guide', loc: 'Blog', title: 'Coolers: Soft vs. Hard Tested', desc: 'We packed both on 6 fishing trips. Here are the results.' }
+                    ]
+                },
+                fall: { // Sep, Oct, Nov
+                    subtitle: 'Fall colours, hunting season, and the best fishing of the year.',
+                    cards: [
+                        { href: 'en/hunting/anticosti-island.html', cat: 'Hunting', loc: 'Quebec', title: 'Anticosti Island', desc: 'November rut. One of the highest deer densities in Canada.' },
+                        { href: 'en/fishing/blog/fall-fishing-temperature-gear.html', cat: 'Fishing', loc: 'Blog', title: 'Fall Fishing Transition Guide', desc: 'How to adapt your gear and tactics as water temps drop.' },
+                        { href: 'en/hiking/skyline-trail-cape-breton.html', cat: 'Hiking', loc: 'Nova Scotia', title: 'Skyline Trail (Cape Breton)', desc: 'Peak fall colours in October. One of Canada\'s most photographed trails.' },
+                        { href: 'en/camping/killarney-provincial-park.html', cat: 'Camping', loc: 'Ontario', title: 'Killarney Provincial Park', desc: 'September: fewer bugs, stunning colours, thinner crowds.' }
+                    ]
+                }
+            };
+            var season;
+            if (m >= 3 && m <= 4) season = 'spring';
+            else if (m >= 5 && m <= 7) season = 'summer';
+            else if (m >= 8 && m <= 10) season = 'fall';
+            else season = 'winter';
+
+            var data = seasons[season];
+            document.getElementById('seasonal-subtitle').textContent = data.subtitle;
+            var html = '';
+            data.cards.forEach(function(c) {
+                html += '<a href="' + c.href + '" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow:0 4px 12px rgba(62,49,39,0.08)">' +
+                    '<div class="bg-white p-6 h-full border-b-4 border-[#c97c5e]">' +
+                    '<div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">' + c.cat + ' &bull; ' + c.loc + '</div>' +
+                    '<h3 class="text-lg font-bold text-[#2d5a3d] mb-2">' + c.title + '</h3>' +
+                    '<p class="text-[#6b6359] text-sm mb-3">' + c.desc + '</p>' +
+                    '<div class="text-[#c97c5e] text-sm font-semibold">Read more &rarr;</div>' +
+                    '</div></a>';
+            });
+            document.getElementById('seasonal-cards').innerHTML = html;
+        })();
+        </script>
+
+        <!-- Newsletter Signup — TODO: Replace form action with your email service (Mailchimp, Buttondown, etc.) -->
+        <section class="bg-[#2d5a3d] py-20 px-6 text-white text-center" id="newsletter">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="text-4xl font-bold mb-4">Weekly Outdoor Intel</h2>
+                <p class="text-lg text-white/80 mb-8">One email per week. Spotlight spots, seasonal tactics, and gear that actually works in Canadian weather. Free forever.</p>
+                <form id="newsletter-form" action="#newsletter-signup" method="POST" class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+                    <input type="email" name="email" required placeholder="Your email address" class="flex-1 px-5 py-4 rounded-lg text-[#3e3127] bg-white placeholder-[#6b6359] focus:outline-none focus:ring-2 focus:ring-[#c97c5e]">
+                    <button type="submit" class="px-8 py-4 bg-[#c97c5e] text-white font-semibold rounded-lg hover:bg-white hover:text-[#2d5a3d] transition-colors whitespace-nowrap">Subscribe</button>
+                </form>
+                <p class="text-white/50 text-sm mt-4">No spam. Unsubscribe anytime.</p>
             </div>
         </section>
     </main>
@@ -320,6 +404,8 @@
         <div>
             <h4 class="font-bold mb-4 text-[#c97c5e]">Resources</h4>
             <ul class="space-y-2 text-white/70 text-sm">
+                <li><a href="en/about.html" class="hover:text-[#c97c5e] transition-colors">About</a></li>
+                <li><a href="en/licenses.html" class="hover:text-[#c97c5e] transition-colors">Licenses &amp; Regs</a></li>
                 <li><a href="https://www.ontario.ca/document/ontario-fishing-regulations-summary" target="_blank" rel="noopener noreferrer" class="hover:text-[#c97c5e] transition-colors">Ontario Regulations</a></li>
                 <li><a href="https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/peche-sportive" target="_blank" rel="noopener noreferrer" class="hover:text-[#c97c5e] transition-colors">Quebec Regulations</a></li>
             </ul>
@@ -346,5 +432,6 @@ if (toggle && menu) {
     });
 }
 </script>
+<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js');}</script>
 </body>
 </html>
