@@ -10,6 +10,15 @@
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Analytics (GA4) — TODO: Replace G-XXXXXXXXXX with your real Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body class="bg-[#f5f3f0] text-[#3e3127] font-sans leading-relaxed min-h-screen flex flex-col">
 
@@ -81,5 +90,6 @@
         <p>&copy; 2026 Outdoor Intel. Canada's outdoor adventure intelligence.</p>
     </footer>
 
+<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js');}</script>
 </body>
 </html>
