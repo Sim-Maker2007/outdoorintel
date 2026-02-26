@@ -29,7 +29,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <style>
+        #terrain-hero { position: relative; width: 100%; height: 70vh; min-height: 420px; background: #0a0f0d; overflow: hidden; }
+        #terrain-canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        #terrain-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 3rem 1.5rem 2rem; background: linear-gradient(to top, rgba(10,15,13,0.95) 0%, rgba(10,15,13,0.5) 60%, transparent 100%); z-index: 10; pointer-events: none; }
+        #terrain-overlay * { pointer-events: auto; }
         #map { height: calc(100vh - 180px); min-height: 500px; }
         .filter-btn { transition: all 0.2s; }
         .filter-btn.active { transform: scale(1.05); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
@@ -47,6 +52,7 @@
         .legend-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; margin-right: 6px; }
         @media (max-width: 768px) {
             #map { height: calc(100vh - 240px); }
+            #terrain-hero { height: 50vh; min-height: 320px; }
         }
     </style>
 
@@ -99,13 +105,24 @@
 </header>
 
     <main class="pt-20">
+        <!-- 3D Particle Terrain Hero -->
+        <div id="terrain-hero">
+            <canvas id="terrain-canvas"></canvas>
+            <div id="terrain-overlay">
+                <div class="max-w-7xl mx-auto">
+                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-2 drop-shadow-lg">Explore Canada's Outdoor Spots</h1>
+                    <p class="text-lg text-white/70"><span id="visible-count-hero">499</span> spots across 6 activities &mdash; scroll down to explore the map</p>
+                </div>
+            </div>
+        </div>
+
         <!-- Title & Filters -->
-        <section class="bg-white border-b border-[#2d5a3d]/10 py-6 px-6">
+        <section class="bg-white border-b border-[#2d5a3d]/10 py-6 px-6 sticky top-20 z-[500]">
             <div class="max-w-7xl mx-auto">
                 <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
                     <div>
-                        <h1 class="text-3xl font-bold text-[#2d5a3d]">Explore Canada's Outdoor Spots</h1>
-                        <p class="text-[#6b6359] mt-1"><span id="visible-count">499</span> spots across 6 activities</p>
+                        <h2 class="text-xl font-bold text-[#2d5a3d]">Filter &amp; Search</h2>
+                        <p class="text-[#6b6359] text-sm mt-1"><span id="visible-count">499</span> spots shown</p>
                     </div>
                     <div class="relative w-full md:w-72">
                         <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-[#6b6359]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
@@ -141,6 +158,209 @@
             </div>
         </div>
     </footer>
+
+<script>
+// ── Three.js Particle Terrain ──
+(function() {
+    var canvas = document.getElementById('terrain-canvas');
+    var container = document.getElementById('terrain-hero');
+    if (!canvas || !container || !window.THREE) return;
+
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera(55, container.clientWidth / container.clientHeight, 0.1, 100);
+    camera.position.set(0, 6, 12);
+    camera.lookAt(0, 0, 0);
+
+    var renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: false });
+    renderer.setSize(container.clientWidth, container.clientHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setClearColor(0x0a0f0d);
+
+    // Simplex-like noise (compact 2D)
+    var perm = new Uint8Array(512);
+    for (var i = 0; i < 256; i++) perm[i] = i;
+    for (var i = 255; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = perm[i]; perm[i] = perm[j]; perm[j] = t; }
+    for (var i = 0; i < 256; i++) perm[i + 256] = perm[i];
+    var grad = [[1,1],[-1,1],[1,-1],[-1,-1],[1,0],[-1,0],[0,1],[0,-1]];
+    function noise2d(x, y) {
+        var X = Math.floor(x) & 255, Y = Math.floor(y) & 255;
+        x -= Math.floor(x); y -= Math.floor(y);
+        var u = x * x * (3 - 2 * x), v = y * y * (3 - 2 * y);
+        var g00 = grad[perm[X + perm[Y]] & 7], g10 = grad[perm[X + 1 + perm[Y]] & 7];
+        var g01 = grad[perm[X + perm[Y + 1]] & 7], g11 = grad[perm[X + 1 + perm[Y + 1]] & 7];
+        var n00 = g00[0] * x + g00[1] * y, n10 = g10[0] * (x - 1) + g10[1] * y;
+        var n01 = g01[0] * x + g01[1] * (y - 1), n11 = g11[0] * (x - 1) + g11[1] * (y - 1);
+        return (n00 * (1 - u) + n10 * u) * (1 - v) + (n01 * (1 - u) + n11 * u) * v;
+    }
+    function fbm(x, y, oct) {
+        var v = 0, a = 0.5, f = 1;
+        for (var i = 0; i < oct; i++) { v += a * noise2d(x * f, y * f); f *= 2.1; a *= 0.48; }
+        return v;
+    }
+
+    // Build particles in concentric rings
+    var ringCount = 120;
+    var maxRadius = 14;
+    var positions = [];
+    var colors = [];
+    var sizes = [];
+    var baseY = [];
+
+    // Brand colors for terrain gradient
+    // Low: deep green (#1a3a2a) → Mid: forest green (#2d5a3d) → High: copper (#c97c5e) → Peak: warm cream (#f0d9c0)
+    function terrainColor(h) {
+        // h is 0..1 normalized height
+        var r, g, b;
+        if (h < 0.25) {
+            var t = h / 0.25;
+            r = 0.10 + t * 0.08; g = 0.22 + t * 0.13; b = 0.16 + t * 0.08;
+        } else if (h < 0.55) {
+            var t = (h - 0.25) / 0.3;
+            r = 0.18 + t * 0.61; g = 0.35 + t * 0.14; b = 0.24 + t * 0.13;
+        } else if (h < 0.8) {
+            var t = (h - 0.55) / 0.25;
+            r = 0.79 + t * 0.15; g = 0.49 + t * 0.36; b = 0.37 + t * 0.38;
+        } else {
+            var t = (h - 0.8) / 0.2;
+            r = 0.94 + t * 0.06; g = 0.85 + t * 0.1; b = 0.75 + t * 0.15;
+        }
+        return [r, g, b];
+    }
+
+    for (var ring = 0; ring < ringCount; ring++) {
+        var radius = (ring / ringCount) * maxRadius + 0.1;
+        var circumference = 2 * Math.PI * radius;
+        var pointsInRing = Math.max(6, Math.floor(circumference * 4.5));
+
+        for (var p = 0; p < pointsInRing; p++) {
+            var angle = (p / pointsInRing) * Math.PI * 2;
+            // Slight jitter for organic feel
+            var jR = radius + (Math.random() - 0.5) * 0.12;
+            var jA = angle + (Math.random() - 0.5) * (0.3 / pointsInRing);
+
+            var x = Math.cos(jA) * jR;
+            var z = Math.sin(jA) * jR;
+
+            // Terrain height from noise
+            var nx = x * 0.18 + 1.3;
+            var nz = z * 0.18 + 0.7;
+            var h = fbm(nx, nz, 5) * 3.2;
+            // Add ridgelines
+            h += Math.abs(fbm(nx * 1.5 + 5.0, nz * 1.5 + 3.0, 3)) * 1.8;
+            // Edge falloff — fade to zero at edges
+            var edgeFactor = 1.0 - Math.pow(ring / ringCount, 2.5);
+            h *= edgeFactor;
+
+            var y = Math.max(h, -0.3);
+
+            positions.push(x, y, z);
+            baseY.push(y);
+
+            // Color based on height
+            var normH = Math.max(0, Math.min(1, (y + 0.3) / 4.5));
+            var c = terrainColor(normH);
+            // Opacity/brightness falloff at edges
+            var brightness = edgeFactor * (0.7 + 0.3 * normH);
+            colors.push(c[0] * brightness, c[1] * brightness, c[2] * brightness);
+
+            // Size: smaller at edges, bigger at peaks
+            var s = (0.8 + normH * 1.5) * edgeFactor;
+            sizes.push(Math.max(0.3, s) * 2.5);
+        }
+    }
+
+    var count = positions.length / 3;
+
+    var geometry = new THREE.BufferGeometry();
+    geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+    geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
+    geometry.setAttribute('size', new THREE.Float32BufferAttribute(sizes, 1));
+
+    // Custom shader for sized, colored points
+    var material = new THREE.ShaderMaterial({
+        vertexShader: [
+            'attribute float size;',
+            'varying vec3 vColor;',
+            'void main() {',
+            '  vColor = color;',
+            '  vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);',
+            '  gl_PointSize = size * (250.0 / -mvPosition.z);',
+            '  gl_Position = projectionMatrix * mvPosition;',
+            '}'
+        ].join('\n'),
+        fragmentShader: [
+            'varying vec3 vColor;',
+            'void main() {',
+            '  float d = length(gl_PointCoord - vec2(0.5));',
+            '  if (d > 0.5) discard;',
+            '  float alpha = 1.0 - smoothstep(0.3, 0.5, d);',
+            '  gl_FragColor = vec4(vColor, alpha);',
+            '}'
+        ].join('\n'),
+        vertexColors: true,
+        transparent: true,
+        depthWrite: false
+    });
+
+    var points = new THREE.Points(geometry, material);
+    scene.add(points);
+
+    // Subtle ambient glow plane below terrain
+    var glowGeo = new THREE.PlaneGeometry(30, 30);
+    var glowMat = new THREE.MeshBasicMaterial({ color: 0x1a3a2a, transparent: true, opacity: 0.15 });
+    var glow = new THREE.Mesh(glowGeo, glowMat);
+    glow.rotation.x = -Math.PI / 2;
+    glow.position.y = -0.5;
+    scene.add(glow);
+
+    // Mouse interaction
+    var mouseX = 0, mouseY = 0;
+    container.addEventListener('mousemove', function(e) {
+        mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
+        mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
+    });
+
+    // Animation
+    var time = 0;
+    var posArr = geometry.attributes.position.array;
+
+    function animate() {
+        requestAnimationFrame(animate);
+        time += 0.003;
+
+        // Gentle breathing on Y positions
+        for (var i = 0; i < count; i++) {
+            var bx = posArr[i * 3];
+            var bz = posArr[i * 3 + 2];
+            posArr[i * 3 + 1] = baseY[i] + Math.sin(time * 2 + bx * 0.4 + bz * 0.3) * 0.04;
+        }
+        geometry.attributes.position.needsUpdate = true;
+
+        // Slow auto-rotation + mouse influence
+        points.rotation.y = time * 0.15 + mouseX * 0.15;
+        camera.position.y = 6 + mouseY * -0.8;
+        camera.lookAt(0, 0.5, 0);
+
+        renderer.render(scene, camera);
+    }
+    animate();
+
+    // Resize
+    window.addEventListener('resize', function() {
+        camera.aspect = container.clientWidth / container.clientHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(container.clientWidth, container.clientHeight);
+    });
+
+    // Pause when not visible
+    var observer = new IntersectionObserver(function(entries) {
+        if (entries[0].isIntersecting) { if (!animRunning) { animRunning = true; animate(); } }
+        else { animRunning = false; }
+    }, { threshold: 0.1 });
+    var animRunning = true;
+    observer.observe(container);
+})();
+</script>
 
 <script>
 // Mobile menu toggle
@@ -243,6 +463,8 @@ Promise.all(dataFiles.map(cat =>
     });
 
     document.getElementById('visible-count').textContent = totalSpots;
+    var heroCount = document.getElementById('visible-count-hero');
+    if (heroCount) heroCount.textContent = totalSpots;
 });
 
 // Filter logic
