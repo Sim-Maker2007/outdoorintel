@@ -1,0 +1,21 @@
+{
+  "name": "Outdoor Intel",
+  "short_name": "OutdoorIntel",
+  "description": "Canada's ultimate outdoor adventure intelligence. 499+ spots for fishing, hunting, camping, kayaking, skiing, and hiking.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f3f0",
+  "theme_color": "#2d5a3d",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/assets/logo/logo.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg"
+    }
+  ]
+}
