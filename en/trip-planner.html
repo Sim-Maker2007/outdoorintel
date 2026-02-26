@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0a0a12">
+    <link rel="alternate" type="application/rss+xml" title="Outdoor Intel Blog" href="https://outdoorintel.ca/rss.xml">
+    <title>3D Trip Planner | Outdoor Intel</title>
+    <meta name="description" content="Plan your outdoor adventure across Canada with our interactive 3D trip planner. Explore 499+ spots in a stunning particle terrain visualization.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://outdoorintel.ca/en/trip-planner.html">
+    <meta property="og:title" content="3D Trip Planner | Outdoor Intel">
+    <meta property="og:description" content="Plan your outdoor adventure across Canada with our interactive 3D trip planner. Explore 499+ spots in an immersive particle terrain.">
+    <meta property="og:image" content="https://outdoorintel.ca/assets/heros/scout-hero-2.jpg">
+    <meta property="og:url" content="https://outdoorintel.ca/en/trip-planner.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Outdoor Intel">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="3D Trip Planner | Outdoor Intel">
+    <meta name="twitter:description" content="Plan your outdoor adventure across Canada with our interactive 3D trip planner.">
+    <meta name="twitter:image" content="https://outdoorintel.ca/assets/heros/scout-hero-2.jpg">
+    <link rel="alternate" hreflang="en" href="https://outdoorintel.ca/en/trip-planner.html">
+    <link rel="alternate" hreflang="x-default" href="https://outdoorintel.ca/en/trip-planner.html">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { overflow: hidden; background: #08090d; color: #e8e4df; font-family: system-ui, -apple-system, sans-serif; }
+
+        #canvas-container { position: fixed; inset: 0; z-index: 0; }
+        #canvas-container::after {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background: radial-gradient(ellipse at center, transparent 40%, rgba(8,9,13,0.5) 100%);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* Loading */
+        #loading {
+            position: fixed; inset: 0; z-index: 200;
+            background: #08090d;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            transition: opacity 0.8s ease;
+        }
+        #loading.fade { opacity: 0; pointer-events: none; }
+        .loader {
+            width: 50px; height: 50px;
+            border: 3px solid rgba(45,90,61,0.2);
+            border-top-color: #c97c5e;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* Header */
+        #header {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+            padding: 16px 24px;
+            display: flex; align-items: center; justify-content: space-between;
+            background: linear-gradient(to bottom, rgba(8,9,13,0.95) 0%, rgba(8,9,13,0.6) 70%, transparent 100%);
+            pointer-events: none;
+        }
+        #header > * { pointer-events: auto; }
+        #header a { text-decoration: none; }
+
+        /* Sidebar */
+        #sidebar {
+            position: fixed; top: 0; right: 0; bottom: 0;
+            width: 360px; z-index: 40;
+            background: rgba(8,9,13,0.94);
+            backdrop-filter: blur(24px);
+            border-left: 1px solid rgba(201,124,94,0.12);
+            transform: translateX(100%);
+            transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow-y: auto;
+            padding-top: 80px;
+        }
+        #sidebar.open { transform: translateX(0); }
+
+        /* Filters */
+        #filters {
+            position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+            z-index: 30;
+            display: flex; gap: 6px;
+            padding: 10px 16px;
+            background: rgba(8,9,13,0.88);
+            backdrop-filter: blur(16px);
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.07);
+        }
+        .fchip {
+            padding: 6px 14px; border-radius: 20px;
+            font-size: 12px; font-weight: 600;
+            border: 1px solid rgba(255,255,255,0.1);
+            background: transparent; color: #666;
+            cursor: pointer; transition: all 0.2s; white-space: nowrap;
+        }
+        .fchip.active { color: #fff; border-color: currentColor; background: rgba(255,255,255,0.05); }
+        .fchip:hover { background: rgba(255,255,255,0.08); }
+
+        /* Tooltip */
+        #tooltip {
+            position: fixed; z-index: 60; pointer-events: none;
+            padding: 10px 14px;
+            background: rgba(8,9,13,0.95);
+            backdrop-filter: blur(12px);
+            border-radius: 10px;
+            border: 1px solid rgba(201,124,94,0.2);
+            opacity: 0; transition: opacity 0.12s;
+            max-width: 260px;
+        }
+        #tooltip.visible { opacity: 1; }
+
+        /* Detail Panel */
+        #detail {
+            position: fixed; bottom: 80px; left: 24px; z-index: 35;
+            width: 320px; padding: 20px;
+            background: rgba(8,9,13,0.94);
+            backdrop-filter: blur(24px);
+            border-radius: 14px;
+            border: 1px solid rgba(201,124,94,0.12);
+            opacity: 0; transform: translateY(12px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            pointer-events: none;
+        }
+        #detail.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+
+        /* Trip Stops */
+        .trip-stop {
+            display: flex; align-items: center; gap: 12px;
+            padding: 10px 14px; border-radius: 10px;
+            background: rgba(255,255,255,0.025);
+            border: 1px solid rgba(255,255,255,0.05);
+            margin-bottom: 6px; transition: background 0.2s;
+        }
+        .trip-stop:hover { background: rgba(255,255,255,0.06); }
+        .snum {
+            width: 26px; height: 26px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 11px; font-weight: 700; flex-shrink: 0;
+        }
+        .srem { opacity: 0; transition: opacity 0.15s; cursor: pointer; color: #ff6b6b; background: none; border: none; font-size: 16px; padding: 4px; }
+        .trip-stop:hover .srem { opacity: 1; }
+
+        /* Help Hint */
+        #help-hint {
+            position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%);
+            z-index: 20; padding: 10px 24px;
+            background: rgba(8,9,13,0.7); border-radius: 10px;
+            font-size: 13px; color: #555; transition: opacity 1.5s; pointer-events: none;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: rgba(201,124,94,0.25); border-radius: 3px; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            #sidebar { width: 100%; }
+            #detail { left: 12px; right: 12px; width: auto; bottom: 90px; }
+            #filters { left: 12px; right: 12px; transform: none; overflow-x: auto; justify-content: flex-start; }
+            #help-hint { left: 12px; right: 12px; transform: none; text-align: center; }
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+
+    <!-- Loading -->
+    <div id="loading">
+        <div class="loader"></div>
+        <p style="margin-top:20px; color:#555; font-size:13px; letter-spacing:0.5px;">Loading terrain data&hellip;</p>
+    </div>
+
+    <!-- Canvas -->
+    <div id="canvas-container"></div>
+
+    <!-- Header -->
+    <div id="header">
+        <div style="display:flex; align-items:center; gap:14px;">
+            <a href="../index.html" style="display:flex; align-items:center;">
+                <img src="../assets/logo/logo.jpg" alt="Outdoor Intel" style="height:32px; filter:brightness(1.6) saturate(0.6);">
+            </a>
+            <div style="height:18px; width:1px; background:rgba(255,255,255,0.15);"></div>
+            <span style="font-size:13px; font-weight:700; color:#c97c5e; letter-spacing:1px; text-transform:uppercase;">3D Trip Planner</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:14px;">
+            <a href="map.html" style="font-size:13px; color:#666; transition:color 0.2s;" onmouseenter="this.style.color='#c97c5e'" onmouseleave="this.style.color='#666'">2D Map</a>
+            <button id="sidebar-toggle" style="padding:7px 16px; background:rgba(201,124,94,0.1); border:1px solid rgba(201,124,94,0.25); border-radius:8px; color:#c97c5e; font-size:13px; font-weight:600; cursor:pointer; display:flex; align-items:center; gap:8px; transition:all 0.2s;" onmouseenter="this.style.background='rgba(201,124,94,0.2)'" onmouseleave="this.style.background='rgba(201,124,94,0.1)'">
+                My Trip
+                <span id="trip-count" style="min-width:20px; height:20px; display:flex; align-items:center; justify-content:center; border-radius:10px; background:rgba(201,124,94,0.3); font-size:11px; font-weight:700;">0</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <div style="padding:0 20px 20px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                <h2 style="font-size:18px; font-weight:700; color:#e8e4df;">My Trip</h2>
+                <button id="clear-trip" style="font-size:12px; color:#666; background:none; border:none; cursor:pointer; padding:4px 8px; transition:color 0.2s;" onmouseenter="this.style.color='#ff6b6b'" onmouseleave="this.style.color='#666'">Clear All</button>
+            </div>
+            <div id="trip-stats" style="display:none; margin-bottom:16px; padding:10px 14px; background:rgba(201,124,94,0.06); border-radius:8px; font-size:12px; color:#999;"></div>
+            <div id="trip-list">
+                <div style="text-align:center; padding:48px 16px; color:#444;">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5" style="margin:0 auto 16px;">
+                        <path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+                    </svg>
+                    <p style="font-size:13px; line-height:1.5;">Click spots on the terrain to explore and build your route</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filters -->
+    <div id="filters">
+        <button class="fchip active" data-cat="fishing" style="color:#4a9eff;">Fishing</button>
+        <button class="fchip active" data-cat="hunting" style="color:#ff8c42;">Hunting</button>
+        <button class="fchip active" data-cat="camping" style="color:#4ade80;">Camping</button>
+        <button class="fchip active" data-cat="kayaking" style="color:#22d3ee;">Kayaking</button>
+        <button class="fchip active" data-cat="skiing" style="color:#a78bfa;">Skiing</button>
+        <button class="fchip active" data-cat="hiking" style="color:#fbbf24;">Hiking</button>
+    </div>
+
+    <!-- Tooltip -->
+    <div id="tooltip">
+        <div id="tooltip-name" style="font-weight:700; font-size:13px;"></div>
+        <div id="tooltip-info" style="font-size:11px; color:#888; margin-top:2px;"></div>
+    </div>
+
+    <!-- Detail Panel -->
+    <div id="detail">
+        <div id="detail-type" style="font-size:10px; text-transform:uppercase; letter-spacing:1.5px; font-weight:700;"></div>
+        <div id="detail-name" style="font-size:17px; font-weight:700; margin-top:4px; color:#e8e4df;"></div>
+        <div id="detail-province" style="font-size:12px; color:#888; margin-top:4px;"></div>
+        <div id="detail-features" style="font-size:11px; color:#666; margin-top:8px;"></div>
+        <div style="display:flex; gap:8px; margin-top:16px;">
+            <button id="detail-add" style="flex:1; padding:8px 0; background:rgba(201,124,94,0.15); border:1px solid rgba(201,124,94,0.3); border-radius:8px; color:#c97c5e; font-size:12px; font-weight:700; cursor:pointer; transition:all 0.2s;">Add to Trip</button>
+            <a id="detail-link" href="#" style="flex:1; padding:8px 0; background:rgba(45,90,61,0.15); border:1px solid rgba(45,90,61,0.3); border-radius:8px; color:#7a9b8e; font-size:12px; font-weight:700; text-decoration:none; text-align:center; transition:all 0.2s;">View Profile</a>
+        </div>
+    </div>
+
+    <!-- Help Hint -->
+    <div id="help-hint">Drag to rotate &middot; Scroll to zoom &middot; Click spots to explore</div>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+
+// ==================== CONFIG ====================
+const CATEGORIES = ['fishing', 'hunting', 'camping', 'kayaking', 'skiing', 'hiking'];
+const CAT_COLORS = {
+    fishing:  new THREE.Color(0x4a9eff),
+    hunting:  new THREE.Color(0xff8c42),
+    camping:  new THREE.Color(0x4ade80),
+    kayaking: new THREE.Color(0x22d3ee),
+    skiing:   new THREE.Color(0xa78bfa),
+    hiking:   new THREE.Color(0xfbbf24)
+};
+const CAT_HEX = {
+    fishing:'#4a9eff', hunting:'#ff8c42', camping:'#4ade80',
+    kayaking:'#22d3ee', skiing:'#a78bfa', hiking:'#fbbf24'
+};
+const BOUNDS = { latMin: 41, latMax: 84, lngMin: -142, lngMax: -51 };
+const SW = 120, SD = 70;
+
+// ==================== HELPERS ====================
+function geoToScene(lat, lng) {
+    const x = ((lng - BOUNDS.lngMin) / (BOUNDS.lngMax - BOUNDS.lngMin)) * SW - SW / 2;
+    const z = -((lat - BOUNDS.latMin) / (BOUNDS.latMax - BOUNDS.latMin)) * SD + SD / 2;
+    return [x, z];
+}
+
+function noise(x, y) {
+    const n = Math.sin(x * 12.9898 + y * 78.233) * 43758.5453;
+    return n - Math.floor(n);
+}
+
+function smoothNoise(x, y) {
+    const ix = Math.floor(x), iy = Math.floor(y);
+    const fx = x - ix, fy = y - iy;
+    const ux = fx * fx * (3 - 2 * fx), uy = fy * fy * (3 - 2 * fy);
+    const a = noise(ix, iy), b = noise(ix + 1, iy);
+    const c = noise(ix, iy + 1), d = noise(ix + 1, iy + 1);
+    return a + (b - a) * ux + (c - a) * uy + (a - b - c + d) * ux * uy;
+}
+
+function terrainH(lat, lng) {
+    return smoothNoise(lat * 0.3, lng * 0.2) * 2.5 + smoothNoise(lat * 0.8, lng * 0.5) * 1.2;
+}
+
+function terrainColor(lat) {
+    const t = (lat - BOUNDS.latMin) / (BOUNDS.latMax - BOUNDS.latMin);
+    const color = new THREE.Color();
+    const hue = 0.04 + t * 0.5;
+    const sat = 0.38 + Math.sin(t * Math.PI) * 0.2;
+    const light = 0.18 + noise(lat * 3.7, 0) * 0.14;
+    color.setHSL(hue, sat, light);
+    return color;
+}
+
+// ==================== STATE ====================
+const state = {
+    allSpots: [], trip: [],
+    activeFilters: new Set(CATEGORIES),
+    hoveredIdx: -1, selectedSpot: null, sidebarOpen: false
+};
+
+// ==================== RENDERER & SCENE ====================
+const container = document.getElementById('canvas-container');
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, powerPreference: 'high-performance' });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setClearColor(0x08090d);
+container.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+scene.fog = new THREE.FogExp2(0x08090d, 0.006);
+
+const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 500);
+camera.position.set(0, 100, 110);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.target.set(0, 0, -5);
+controls.enableDamping = true;
+controls.dampingFactor = 0.05;
+controls.minDistance = 15;
+controls.maxDistance = 160;
+controls.maxPolarAngle = Math.PI / 2.1;
+controls.update();
+
+// Post-processing
+const composer = new EffectComposer(renderer);
+composer.addPass(new RenderPass(scene, camera));
+const bloomPass = new UnrealBloomPass(
+    new THREE.Vector2(window.innerWidth, window.innerHeight),
+    1.3, 0.7, 0.12
+);
+composer.addPass(bloomPass);
+
+// Raycaster
+const raycaster = new THREE.Raycaster();
+raycaster.params.Points.threshold = 1.2;
+const mouse = new THREE.Vector2(-999, -999);
+
+// ==================== OBJECTS ====================
+let terrainPts, spotPts, ambientPts;
+const routeGroup = new THREE.Group();
+scene.add(routeGroup);
+let spotDataMap = [];
+
+// ==================== DATA ====================
+async function loadAllData() {
+    const results = await Promise.all(
+        CATEGORIES.map(cat =>
+            fetch(`../data/${cat}.json`)
+                .then(r => r.json())
+                .then(data => data.spots.map(s => ({ ...s, cat })))
+        )
+    );
+    return results.flat();
+}
+
+// ==================== TERRAIN PARTICLES ====================
+function createTerrain(spots) {
+    const particles = [];
+
+    // Cluster around activity spots
+    spots.forEach(spot => {
+        if (!spot.coordinates) return;
+        const { lat, lng } = spot.coordinates;
+        const count = 20 + Math.floor(Math.random() * 15);
+        for (let i = 0; i < count; i++) {
+            particles.push({
+                lat: lat + (Math.random() - 0.5) * 3.5,
+                lng: lng + (Math.random() - 0.5) * 5.5
+            });
+        }
+    });
+
+    // General scatter
+    for (let i = 0; i < 9000; i++) {
+        particles.push({
+            lat: BOUNDS.latMin + Math.random() * (BOUNDS.latMax - BOUNDS.latMin),
+            lng: BOUNDS.lngMin + Math.random() * (BOUNDS.lngMax - BOUNDS.lngMin)
+        });
+    }
+
+    const count = particles.length;
+    const positions = new Float32Array(count * 3);
+    const colors = new Float32Array(count * 3);
+
+    for (let i = 0; i < count; i++) {
+        const { lat, lng } = particles[i];
+        const [x, z] = geoToScene(lat, lng);
+        const y = terrainH(lat, lng);
+        positions[i * 3] = x;
+        positions[i * 3 + 1] = y;
+        positions[i * 3 + 2] = z;
+        const c = terrainColor(lat);
+        colors[i * 3] = c.r;
+        colors[i * 3 + 1] = c.g;
+        colors[i * 3 + 2] = c.b;
+    }
+
+    const geo = new THREE.BufferGeometry();
+    geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    geo.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
+    terrainPts = new THREE.Points(geo, new THREE.PointsMaterial({
+        size: 0.18,
+        vertexColors: true,
+        transparent: true,
+        opacity: 0.5,
+        sizeAttenuation: true,
+        blending: THREE.AdditiveBlending,
+        depthWrite: false
+    }));
+    scene.add(terrainPts);
+}
+
+// ==================== SPOT PARTICLES ====================
+function createSpots(spots) {
+    const valid = spots.filter(s => s.coordinates && s.coordinates.lat && s.coordinates.lng);
+    spotDataMap = valid;
+    const count = valid.length;
+
+    const positions = new Float32Array(count * 3);
+    const cColors = new Float32Array(count * 3);
+    const sizes = new Float32Array(count);
+    const alphas = new Float32Array(count);
+
+    for (let i = 0; i < count; i++) {
+        const s = valid[i];
+        const [x, z] = geoToScene(s.coordinates.lat, s.coordinates.lng);
+        const y = terrainH(s.coordinates.lat, s.coordinates.lng) + 1.8;
+        positions[i * 3] = x;
+        positions[i * 3 + 1] = y;
+        positions[i * 3 + 2] = z;
+
+        const col = CAT_COLORS[s.cat] || new THREE.Color(0xffffff);
+        cColors[i * 3] = col.r;
+        cColors[i * 3 + 1] = col.g;
+        cColors[i * 3 + 2] = col.b;
+
+        sizes[i] = 2.0;
+        alphas[i] = 1.0;
+    }
+
+    const geo = new THREE.BufferGeometry();
+    geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    geo.setAttribute('customColor', new THREE.BufferAttribute(cColors, 3));
+    geo.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
+    geo.setAttribute('alpha', new THREE.BufferAttribute(alphas, 1));
+
+    const mat = new THREE.ShaderMaterial({
+        uniforms: {
+            time: { value: 0 },
+            pxRatio: { value: renderer.getPixelRatio() }
+        },
+        vertexShader: `
+            attribute float size;
+            attribute vec3 customColor;
+            attribute float alpha;
+            varying vec3 vColor;
+            varying float vAlpha;
+            uniform float pxRatio;
+            void main() {
+                vColor = customColor;
+                vAlpha = alpha;
+                vec4 mv = modelViewMatrix * vec4(position, 1.0);
+                gl_PointSize = max(size * pxRatio * (220.0 / -mv.z), 2.0);
+                gl_Position = projectionMatrix * mv;
+            }
+        `,
+        fragmentShader: `
+            varying vec3 vColor;
+            varying float vAlpha;
+            void main() {
+                vec2 c = gl_PointCoord - vec2(0.5);
+                float d = length(c);
+                if (d > 0.5) discard;
+                float glow = exp(-d * 5.5) * 0.65 + smoothstep(0.5, 0.0, d) * 0.35;
+                gl_FragColor = vec4(vColor, glow * vAlpha);
+            }
+        `,
+        transparent: true,
+        blending: THREE.AdditiveBlending,
+        depthWrite: false
+    });
+
+    spotPts = new THREE.Points(geo, mat);
+    scene.add(spotPts);
+}
+
+// ==================== AMBIENT PARTICLES ====================
+function createAmbient() {
+    const count = 2500;
+    const positions = new Float32Array(count * 3);
+    const velocities = new Float32Array(count);
+
+    for (let i = 0; i < count; i++) {
+        positions[i * 3]     = (Math.random() - 0.5) * SW * 1.4;
+        positions[i * 3 + 1] = Math.random() * 40 - 5;
+        positions[i * 3 + 2] = (Math.random() - 0.5) * SD * 1.4;
+        velocities[i] = 0.008 + Math.random() * 0.025;
+    }
+
+    const geo = new THREE.BufferGeometry();
+    geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    geo.userData.velocities = velocities;
+
+    ambientPts = new THREE.Points(geo, new THREE.PointsMaterial({
+        size: 0.06,
+        color: 0xc97c5e,
+        transparent: true,
+        opacity: 0.12,
+        sizeAttenuation: true,
+        blending: THREE.AdditiveBlending,
+        depthWrite: false
+    }));
+    scene.add(ambientPts);
+}
+
+// ==================== TRIP MANAGEMENT ====================
+function addToTrip(spot) {
+    if (state.trip.find(s => s.slug === spot.slug && s.cat === spot.cat)) return;
+    state.trip.push(spot);
+    updateTripUI();
+    updateRoute();
+}
+
+window.tripRemove = function(idx) {
+    state.trip.splice(idx, 1);
+    updateTripUI();
+    updateRoute();
+};
+
+function clearTrip() {
+    state.trip = [];
+    updateTripUI();
+    updateRoute();
+}
+
+function updateRoute() {
+    while (routeGroup.children.length) {
+        const ch = routeGroup.children[0];
+        ch.geometry?.dispose();
+        ch.material?.dispose();
+        routeGroup.remove(ch);
+    }
+    if (state.trip.length < 2) return;
+
+    const lineMat = new THREE.LineBasicMaterial({
+        color: 0xc97c5e, transparent: true, opacity: 0.6
+    });
+
+    for (let i = 0; i < state.trip.length - 1; i++) {
+        const a = state.trip[i], b = state.trip[i + 1];
+        if (!a.coordinates || !b.coordinates) continue;
+
+        const [ax, az] = geoToScene(a.coordinates.lat, a.coordinates.lng);
+        const [bx, bz] = geoToScene(b.coordinates.lat, b.coordinates.lng);
+        const ay = terrainH(a.coordinates.lat, a.coordinates.lng) + 1.8;
+        const by = terrainH(b.coordinates.lat, b.coordinates.lng) + 1.8;
+
+        const start = new THREE.Vector3(ax, ay, az);
+        const end = new THREE.Vector3(bx, by, bz);
+        const mid = new THREE.Vector3().addVectors(start, end).multiplyScalar(0.5);
+        mid.y += start.distanceTo(end) * 0.22;
+
+        const curve = new THREE.QuadraticBezierCurve3(start, mid, end);
+        const pts = curve.getPoints(32);
+        const lineGeo = new THREE.BufferGeometry().setFromPoints(pts);
+        routeGroup.add(new THREE.Line(lineGeo, lineMat));
+    }
+}
+
+// ==================== UI ====================
+function updateTripUI() {
+    const list = document.getElementById('trip-list');
+    const countEl = document.getElementById('trip-count');
+    const stats = document.getElementById('trip-stats');
+
+    countEl.textContent = state.trip.length;
+
+    if (state.trip.length === 0) {
+        list.innerHTML = `<div style="text-align:center; padding:48px 16px; color:#444;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5" style="margin:0 auto 16px;">
+                <path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+            </svg>
+            <p style="font-size:13px; line-height:1.5;">Click spots on the terrain to explore and build your route</p>
+        </div>`;
+        stats.style.display = 'none';
+        return;
+    }
+
+    const provs = new Set(state.trip.map(s => s.province).filter(Boolean));
+    stats.style.display = 'block';
+    stats.innerHTML = `${state.trip.length} stop${state.trip.length !== 1 ? 's' : ''} &middot; ${provs.size} province${provs.size !== 1 ? 's' : ''}`;
+
+    list.innerHTML = state.trip.map((s, i) => `
+        <div class="trip-stop">
+            <div class="snum" style="background:${CAT_HEX[s.cat]}18; color:${CAT_HEX[s.cat]}; border:1px solid ${CAT_HEX[s.cat]}35;">${i + 1}</div>
+            <div style="flex:1; min-width:0;">
+                <div style="font-size:12px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:#ddd;">${s.name}</div>
+                <div style="font-size:10px; color:#666; text-transform:uppercase; letter-spacing:0.5px; margin-top:1px;">${s.cat}${s.province ? ' &middot; ' + s.province : ''}</div>
+            </div>
+            <button class="srem" onclick="window.tripRemove(${i})" title="Remove">&times;</button>
+        </div>
+    `).join('');
+}
+
+function showDetail(spot) {
+    state.selectedSpot = spot;
+    const d = document.getElementById('detail');
+    document.getElementById('detail-type').textContent = spot.cat.toUpperCase();
+    document.getElementById('detail-type').style.color = CAT_HEX[spot.cat];
+    document.getElementById('detail-name').textContent = spot.name;
+    document.getElementById('detail-province').textContent = spot.province || '';
+
+    const feats = spot.features
+        ? spot.features.slice(0, 3).join(' \u00B7 ')
+        : spot.primary_species
+            ? spot.primary_species.slice(0, 3).join(' \u00B7 ')
+            : '';
+    document.getElementById('detail-features').textContent = feats;
+    document.getElementById('detail-link').href = `${spot.cat}/${spot.slug}.html`;
+
+    const addBtn = document.getElementById('detail-add');
+    const inTrip = state.trip.find(s => s.slug === spot.slug && s.cat === spot.cat);
+    addBtn.textContent = inTrip ? 'Added \u2713' : 'Add to Trip';
+    addBtn.style.opacity = inTrip ? '0.5' : '1';
+    addBtn.disabled = !!inTrip;
+
+    d.classList.add('visible');
+}
+
+function hideDetail() {
+    document.getElementById('detail').classList.remove('visible');
+    state.selectedSpot = null;
+}
+
+// ==================== FILTERS ====================
+function applyFilters() {
+    if (!spotPts) return;
+    const alphas = spotPts.geometry.attributes.alpha;
+    for (let i = 0; i < spotDataMap.length; i++) {
+        alphas.array[i] = state.activeFilters.has(spotDataMap[i].cat) ? 1.0 : 0.0;
+    }
+    alphas.needsUpdate = true;
+}
+
+// ==================== INTERACTION ====================
+let pointerDownPos = null;
+
+renderer.domElement.addEventListener('pointerdown', e => {
+    pointerDownPos = { x: e.clientX, y: e.clientY };
+});
+
+renderer.domElement.addEventListener('pointerup', e => {
+    if (!pointerDownPos) return;
+    const dx = e.clientX - pointerDownPos.x;
+    const dy = e.clientY - pointerDownPos.y;
+    pointerDownPos = null;
+    if (Math.abs(dx) + Math.abs(dy) > 6) return;
+
+    // Check for spot intersection
+    mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
+    mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
+    raycaster.setFromCamera(mouse, camera);
+
+    if (spotPts) {
+        const hits = raycaster.intersectObject(spotPts);
+        const valid = hits.find(h => {
+            const s = spotDataMap[h.index];
+            return s && state.activeFilters.has(s.cat);
+        });
+        if (valid) {
+            showDetail(spotDataMap[valid.index]);
+            return;
+        }
+    }
+    hideDetail();
+});
+
+window.addEventListener('mousemove', e => {
+    mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
+    mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
+
+    if (!spotPts) return;
+    raycaster.setFromCamera(mouse, camera);
+    const hits = raycaster.intersectObject(spotPts);
+
+    const tooltip = document.getElementById('tooltip');
+    const valid = hits.find(h => {
+        const s = spotDataMap[h.index];
+        return s && state.activeFilters.has(s.cat);
+    });
+
+    if (valid) {
+        const spot = spotDataMap[valid.index];
+        state.hoveredIdx = valid.index;
+
+        document.getElementById('tooltip-name').textContent = spot.name;
+        document.getElementById('tooltip-info').textContent =
+            spot.cat.charAt(0).toUpperCase() + spot.cat.slice(1) + (spot.province ? ' \u00B7 ' + spot.province : '');
+
+        // Position tooltip, keep within viewport
+        let tx = e.clientX + 18, ty = e.clientY - 12;
+        if (tx + 260 > window.innerWidth) tx = e.clientX - 270;
+        tooltip.style.left = tx + 'px';
+        tooltip.style.top = ty + 'px';
+        tooltip.style.borderColor = CAT_HEX[spot.cat] + '30';
+        tooltip.classList.add('visible');
+        document.body.style.cursor = 'pointer';
+
+        // Highlight
+        const sizes = spotPts.geometry.attributes.size;
+        for (let i = 0; i < sizes.count; i++) sizes.array[i] = (i === valid.index) ? 3.5 : 2.0;
+        sizes.needsUpdate = true;
+    } else {
+        state.hoveredIdx = -1;
+        tooltip.classList.remove('visible');
+        document.body.style.cursor = 'default';
+        if (spotPts) {
+            const sizes = spotPts.geometry.attributes.size;
+            for (let i = 0; i < sizes.count; i++) sizes.array[i] = 2.0;
+            sizes.needsUpdate = true;
+        }
+    }
+});
+
+// ==================== EVENTS ====================
+document.querySelectorAll('.fchip').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const cat = btn.dataset.cat;
+        if (state.activeFilters.has(cat)) {
+            if (state.activeFilters.size === 1) return;
+            state.activeFilters.delete(cat);
+            btn.classList.remove('active');
+        } else {
+            state.activeFilters.add(cat);
+            btn.classList.add('active');
+        }
+        applyFilters();
+    });
+});
+
+document.getElementById('sidebar-toggle').addEventListener('click', () => {
+    state.sidebarOpen = !state.sidebarOpen;
+    document.getElementById('sidebar').classList.toggle('open', state.sidebarOpen);
+});
+
+document.getElementById('detail-add').addEventListener('click', () => {
+    if (state.selectedSpot) {
+        addToTrip(state.selectedSpot);
+        showDetail(state.selectedSpot);
+        if (!state.sidebarOpen) {
+            state.sidebarOpen = true;
+            document.getElementById('sidebar').classList.add('open');
+        }
+    }
+});
+
+document.getElementById('clear-trip').addEventListener('click', clearTrip);
+
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+        hideDetail();
+        if (state.sidebarOpen) {
+            state.sidebarOpen = false;
+            document.getElementById('sidebar').classList.remove('open');
+        }
+    }
+});
+
+window.addEventListener('resize', () => {
+    const w = window.innerWidth, h = window.innerHeight;
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+    renderer.setSize(w, h);
+    composer.setSize(w, h);
+});
+
+// ==================== ANIMATION ====================
+const clock = new THREE.Clock();
+let cameraIntro = true;
+const introTarget = new THREE.Vector3(0, 55, 60);
+const introLook = new THREE.Vector3(0, 0, -5);
+
+function animate() {
+    requestAnimationFrame(animate);
+    const elapsed = clock.getElapsedTime();
+
+    // Camera intro zoom
+    if (cameraIntro) {
+        camera.position.lerp(introTarget, 0.018);
+        controls.target.lerp(introLook, 0.018);
+        if (camera.position.distanceTo(introTarget) < 0.8) cameraIntro = false;
+    }
+    controls.update();
+
+    // Spot particle pulse (time uniform)
+    if (spotPts) spotPts.material.uniforms.time.value = elapsed;
+
+    // Ambient float
+    if (ambientPts) {
+        const pos = ambientPts.geometry.attributes.position;
+        const vel = ambientPts.geometry.userData.velocities;
+        for (let i = 0; i < pos.count; i++) {
+            pos.array[i * 3 + 1] += vel[i];
+            // Subtle horizontal drift
+            pos.array[i * 3] += Math.sin(elapsed * 0.3 + i) * 0.003;
+            if (pos.array[i * 3 + 1] > 40) {
+                pos.array[i * 3 + 1] = -3;
+                pos.array[i * 3] = (Math.random() - 0.5) * SW * 1.4;
+                pos.array[i * 3 + 2] = (Math.random() - 0.5) * SD * 1.4;
+            }
+        }
+        pos.needsUpdate = true;
+    }
+
+    composer.render();
+}
+
+// ==================== INIT ====================
+async function init() {
+    try {
+        const allSpots = await loadAllData();
+        state.allSpots = allSpots;
+
+        createTerrain(allSpots);
+        createSpots(allSpots);
+        createAmbient();
+
+        animate();
+
+        // Fade loading
+        setTimeout(() => {
+            document.getElementById('loading').classList.add('fade');
+            setTimeout(() => {
+                const el = document.getElementById('loading');
+                if (el) el.remove();
+            }, 800);
+        }, 400);
+
+        // Fade help hint
+        setTimeout(() => {
+            const hint = document.getElementById('help-hint');
+            if (hint) {
+                hint.style.opacity = '0';
+                setTimeout(() => hint.remove(), 1500);
+            }
+        }, 5000);
+
+    } catch (err) {
+        console.error('Failed to initialize:', err);
+        const ld = document.getElementById('loading');
+        if (ld) ld.innerHTML = `<p style="color:#ff6b6b; font-size:14px;">Failed to load terrain data. <a href="" style="color:#c97c5e;">Refresh</a></p>`;
+    }
+}
+
+init();
+</script>
+<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js');}</script>
+</body>
+</html>
