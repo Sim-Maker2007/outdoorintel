@@ -8,18 +8,18 @@
     <meta name="theme-color" content="#0a0a12">
     <link rel="alternate" type="application/rss+xml" title="Outdoor Intel Blog" href="https://outdoorintel.ca/rss.xml">
     <title>3D Trip Planner | Outdoor Intel</title>
-    <meta name="description" content="Plan your outdoor adventure across Canada with our interactive 3D trip planner. Explore 499+ spots in a stunning particle terrain visualization.">
+    <meta name="description" content="Plan your outdoor adventure across Canada with our interactive 3D globe trip planner. Explore 499+ spots on a stunning holographic particle globe.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://outdoorintel.ca/en/trip-planner.html">
     <meta property="og:title" content="3D Trip Planner | Outdoor Intel">
-    <meta property="og:description" content="Plan your outdoor adventure across Canada with our interactive 3D trip planner. Explore 499+ spots in an immersive particle terrain.">
+    <meta property="og:description" content="Plan your outdoor adventure across Canada with our interactive 3D globe trip planner. Explore 499+ spots on a holographic particle globe.">
     <meta property="og:image" content="https://outdoorintel.ca/assets/heros/scout-hero-2.jpg">
     <meta property="og:url" content="https://outdoorintel.ca/en/trip-planner.html">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Outdoor Intel">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="3D Trip Planner | Outdoor Intel">
-    <meta name="twitter:description" content="Plan your outdoor adventure across Canada with our interactive 3D trip planner.">
+    <meta name="twitter:description" content="Plan your outdoor adventure across Canada with our interactive 3D globe trip planner.">
     <meta name="twitter:image" content="https://outdoorintel.ca/assets/heros/scout-hero-2.jpg">
     <link rel="alternate" hreflang="en" href="https://outdoorintel.ca/en/trip-planner.html">
     <link rel="alternate" hreflang="x-default" href="https://outdoorintel.ca/en/trip-planner.html">
@@ -36,22 +36,14 @@
 
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { overflow: hidden; background: #08090d; color: #e8e4df; font-family: system-ui, -apple-system, sans-serif; }
+        body { overflow: hidden; background: #050508; color: #e8e4df; font-family: system-ui, -apple-system, sans-serif; }
 
         #canvas-container { position: fixed; inset: 0; z-index: 0; }
-        #canvas-container::after {
-            content: '';
-            position: fixed;
-            inset: 0;
-            background: radial-gradient(ellipse at center, transparent 40%, rgba(8,9,13,0.5) 100%);
-            pointer-events: none;
-            z-index: 1;
-        }
 
         /* Loading */
         #loading {
             position: fixed; inset: 0; z-index: 200;
-            background: #08090d;
+            background: #050508;
             display: flex; flex-direction: column; align-items: center; justify-content: center;
             transition: opacity 0.8s ease;
         }
@@ -70,7 +62,7 @@
             position: fixed; top: 0; left: 0; right: 0; z-index: 50;
             padding: 16px 24px;
             display: flex; align-items: center; justify-content: space-between;
-            background: linear-gradient(to bottom, rgba(8,9,13,0.95) 0%, rgba(8,9,13,0.6) 70%, transparent 100%);
+            background: linear-gradient(to bottom, rgba(5,5,8,0.95) 0%, rgba(5,5,8,0.6) 70%, transparent 100%);
             pointer-events: none;
         }
         #header > * { pointer-events: auto; }
@@ -80,7 +72,7 @@
         #sidebar {
             position: fixed; top: 0; right: 0; bottom: 0;
             width: 360px; z-index: 40;
-            background: rgba(8,9,13,0.94);
+            background: rgba(5,5,8,0.94);
             backdrop-filter: blur(24px);
             border-left: 1px solid rgba(201,124,94,0.12);
             transform: translateX(100%);
@@ -96,7 +88,7 @@
             z-index: 30;
             display: flex; gap: 6px;
             padding: 10px 16px;
-            background: rgba(8,9,13,0.88);
+            background: rgba(5,5,8,0.88);
             backdrop-filter: blur(16px);
             border-radius: 16px;
             border: 1px solid rgba(255,255,255,0.07);
@@ -115,7 +107,7 @@
         #tooltip {
             position: fixed; z-index: 60; pointer-events: none;
             padding: 10px 14px;
-            background: rgba(8,9,13,0.95);
+            background: rgba(5,5,8,0.95);
             backdrop-filter: blur(12px);
             border-radius: 10px;
             border: 1px solid rgba(201,124,94,0.2);
@@ -128,7 +120,7 @@
         #detail {
             position: fixed; bottom: 80px; left: 24px; z-index: 35;
             width: 320px; padding: 20px;
-            background: rgba(8,9,13,0.94);
+            background: rgba(5,5,8,0.94);
             backdrop-filter: blur(24px);
             border-radius: 14px;
             border: 1px solid rgba(201,124,94,0.12);
@@ -159,7 +151,7 @@
         #help-hint {
             position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%);
             z-index: 20; padding: 10px 24px;
-            background: rgba(8,9,13,0.7); border-radius: 10px;
+            background: rgba(5,5,8,0.7); border-radius: 10px;
             font-size: 13px; color: #555; transition: opacity 1.5s; pointer-events: none;
         }
 
@@ -190,7 +182,7 @@
     <!-- Loading -->
     <div id="loading">
         <div class="loader"></div>
-        <p style="margin-top:20px; color:#555; font-size:13px; letter-spacing:0.5px;">Loading terrain data&hellip;</p>
+        <p style="margin-top:20px; color:#555; font-size:13px; letter-spacing:0.5px;">Generating holographic globe&hellip;</p>
     </div>
 
     <!-- Canvas -->
@@ -203,7 +195,7 @@
                 <img src="../assets/logo/logo.jpg" alt="Outdoor Intel" style="height:32px; filter:brightness(1.6) saturate(0.6);">
             </a>
             <div style="height:18px; width:1px; background:rgba(255,255,255,0.15);"></div>
-            <span style="font-size:13px; font-weight:700; color:#c97c5e; letter-spacing:1px; text-transform:uppercase;">3D Trip Planner</span>
+            <span style="font-size:13px; font-weight:700; color:#c97c5e; letter-spacing:1px; text-transform:uppercase;">3D Globe Planner</span>
         </div>
         <div style="display:flex; align-items:center; gap:14px;">
             <a href="map.html" style="font-size:13px; color:#666; transition:color 0.2s;" onmouseenter="this.style.color='#c97c5e'" onmouseleave="this.style.color='#666'">2D Map</a>
@@ -227,7 +219,7 @@
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5" style="margin:0 auto 16px;">
                         <path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
                     </svg>
-                    <p style="font-size:13px; line-height:1.5;">Click spots on the terrain to explore and build your route</p>
+                    <p style="font-size:13px; line-height:1.5;">Click spots on the globe to explore and build your route</p>
                 </div>
             </div>
         </div>
@@ -262,7 +254,7 @@
     </div>
 
     <!-- Help Hint -->
-    <div id="help-hint">Drag to rotate &middot; Scroll to zoom &middot; Click spots to explore</div>
+    <div id="help-hint">Drag to rotate globe &middot; Scroll to zoom &middot; Click spots to explore</div>
 
 <script type="module">
 import * as THREE from 'three';
@@ -285,41 +277,126 @@ const CAT_HEX = {
     fishing:'#4a9eff', hunting:'#ff8c42', camping:'#4ade80',
     kayaking:'#22d3ee', skiing:'#a78bfa', hiking:'#fbbf24'
 };
-const BOUNDS = { latMin: 41, latMax: 84, lngMin: -142, lngMax: -51 };
-const SW = 120, SD = 70;
 
-// ==================== HELPERS ====================
-function geoToScene(lat, lng) {
-    const x = ((lng - BOUNDS.lngMin) / (BOUNDS.lngMax - BOUNDS.lngMin)) * SW - SW / 2;
-    const z = -((lat - BOUNDS.latMin) / (BOUNDS.latMax - BOUNDS.latMin)) * SD + SD / 2;
-    return [x, z];
-}
+// Globe config
+const GLOBE_RADIUS = 30;
+const ELEVATION_SCALE = 4.5;  // max terrain height displacement
+const RING_COUNT = 280;       // number of latitude rings
+const RING_DENSITY = 520;     // max particles per ring (at equator equivalent)
 
-function noise(x, y) {
-    const n = Math.sin(x * 12.9898 + y * 78.233) * 43758.5453;
+// ==================== NOISE FUNCTIONS ====================
+// Improved noise for realistic terrain
+function hash(x, y) {
+    const n = Math.sin(x * 127.1 + y * 311.7) * 43758.5453;
     return n - Math.floor(n);
 }
 
 function smoothNoise(x, y) {
     const ix = Math.floor(x), iy = Math.floor(y);
     const fx = x - ix, fy = y - iy;
-    const ux = fx * fx * (3 - 2 * fx), uy = fy * fy * (3 - 2 * fy);
-    const a = noise(ix, iy), b = noise(ix + 1, iy);
-    const c = noise(ix, iy + 1), d = noise(ix + 1, iy + 1);
+    const ux = fx * fx * (3.0 - 2.0 * fx);
+    const uy = fy * fy * (3.0 - 2.0 * fy);
+    const a = hash(ix, iy), b = hash(ix + 1, iy);
+    const c = hash(ix, iy + 1), d = hash(ix + 1, iy + 1);
     return a + (b - a) * ux + (c - a) * uy + (a - b - c + d) * ux * uy;
 }
 
-function terrainH(lat, lng) {
-    return smoothNoise(lat * 0.3, lng * 0.2) * 2.5 + smoothNoise(lat * 0.8, lng * 0.5) * 1.2;
+function fbm(x, y, octaves) {
+    let val = 0, amp = 0.5, freq = 1.0;
+    for (let i = 0; i < octaves; i++) {
+        val += amp * smoothNoise(x * freq, y * freq);
+        amp *= 0.5;
+        freq *= 2.0;
+    }
+    return val;
 }
 
-function terrainColor(lat) {
-    const t = (lat - BOUNDS.latMin) / (BOUNDS.latMax - BOUNDS.latMin);
+// ==================== TERRAIN ELEVATION ====================
+// Procedural terrain that roughly matches Canadian geography
+function getElevation(lat, lng) {
+    // Normalize to 0-1 range for noise
+    const nlat = (lat + 90) / 180;
+    const nlng = (lng + 180) / 360;
+
+    // Base continental noise
+    let elev = fbm(nlat * 8, nlng * 16, 6);
+
+    // Rocky Mountains (western Canada: lng ~-130 to ~-115, lat ~49 to ~60)
+    const rockyLng = Math.exp(-Math.pow((lng + 122) / 8, 2));
+    const rockyLat = Math.max(0, 1.0 - Math.pow((lat - 54) / 12, 2));
+    elev += rockyLng * rockyLat * 0.65 * (0.5 + fbm(nlat * 20, nlng * 20, 4) * 0.5);
+
+    // Coast Mountains (BC coast: lng ~-130 to ~-125)
+    const coastLng = Math.exp(-Math.pow((lng + 128) / 4, 2));
+    const coastLat = Math.max(0, 1.0 - Math.pow((lat - 54) / 12, 2));
+    elev += coastLng * coastLat * 0.45 * (0.4 + fbm(nlat * 25, nlng * 25, 3) * 0.6);
+
+    // Canadian Shield (Ontario/Quebec highlands)
+    const shieldLng = Math.exp(-Math.pow((lng + 80) / 15, 2));
+    const shieldLat = Math.exp(-Math.pow((lat - 52) / 10, 2));
+    elev += shieldLng * shieldLat * 0.2 * fbm(nlat * 12, nlng * 12, 4);
+
+    // Appalachians (Maritimes: lng ~-70 to ~-60)
+    const appLng = Math.exp(-Math.pow((lng + 65) / 6, 2));
+    const appLat = Math.exp(-Math.pow((lat - 47) / 5, 2));
+    elev += appLng * appLat * 0.3 * fbm(nlat * 18, nlng * 18, 4);
+
+    // Prairies depression (flat: lng ~-115 to ~-95)
+    const prairieLng = Math.exp(-Math.pow((lng + 105) / 12, 2));
+    const prairieLat = Math.max(0, 1.0 - Math.pow((lat - 52) / 8, 2));
+    elev -= prairieLng * prairieLat * 0.15;
+
+    // Arctic elevation boost
+    const arcticLat = Math.max(0, (lat - 65) / 20);
+    elev += arcticLat * 0.15 * fbm(nlat * 10, nlng * 10, 3);
+
+    // Add fine detail everywhere
+    elev += fbm(nlat * 30, nlng * 30, 3) * 0.08;
+
+    // Clamp ocean to near-zero (simplified - east of ~-52 and below ~42 is ocean)
+    // We'll just let everything be land-ish since it's Canada
+    return Math.max(0.02, Math.min(1.0, elev));
+}
+
+// ==================== GEO TO SPHERE ====================
+function geoToSphere(lat, lng, radius) {
+    const phi = (90 - lat) * Math.PI / 180;    // polar angle from top
+    const theta = (lng + 180) * Math.PI / 180;  // azimuthal angle
+    return new THREE.Vector3(
+        -radius * Math.sin(phi) * Math.cos(theta),
+        radius * Math.cos(phi),
+        radius * Math.sin(phi) * Math.sin(theta)
+    );
+}
+
+// ==================== TERRAIN COLOR ====================
+// Holographic color based on elevation: deep teal -> green -> yellow -> orange -> red
+function terrainColor(elevation) {
     const color = new THREE.Color();
-    const hue = 0.04 + t * 0.5;
-    const sat = 0.38 + Math.sin(t * Math.PI) * 0.2;
-    const light = 0.18 + noise(lat * 3.7, 0) * 0.14;
-    color.setHSL(hue, sat, light);
+    if (elevation < 0.2) {
+        // Deep teal / ocean floor
+        color.setHSL(0.52, 0.7, 0.15 + elevation * 0.3);
+    } else if (elevation < 0.35) {
+        // Teal to green
+        const t = (elevation - 0.2) / 0.15;
+        color.setHSL(0.52 - t * 0.15, 0.6 + t * 0.1, 0.21 + t * 0.08);
+    } else if (elevation < 0.5) {
+        // Green to yellow-green
+        const t = (elevation - 0.35) / 0.15;
+        color.setHSL(0.37 - t * 0.12, 0.65, 0.28 + t * 0.1);
+    } else if (elevation < 0.65) {
+        // Yellow-green to orange
+        const t = (elevation - 0.5) / 0.15;
+        color.setHSL(0.25 - t * 0.17, 0.7 + t * 0.1, 0.35 + t * 0.06);
+    } else if (elevation < 0.8) {
+        // Orange to red
+        const t = (elevation - 0.65) / 0.15;
+        color.setHSL(0.08 - t * 0.04, 0.75 + t * 0.1, 0.38 + t * 0.05);
+    } else {
+        // Red to bright red/white peaks
+        const t = (elevation - 0.8) / 0.2;
+        color.setHSL(0.04 - t * 0.02, 0.8 - t * 0.3, 0.42 + t * 0.15);
+    }
     return color;
 }
 
@@ -335,22 +412,22 @@ const container = document.getElementById('canvas-container');
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, powerPreference: 'high-performance' });
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 renderer.setSize(window.innerWidth, window.innerHeight);
-renderer.setClearColor(0x08090d);
+renderer.setClearColor(0x050508);
 container.appendChild(renderer.domElement);
 
 const scene = new THREE.Scene();
-scene.fog = new THREE.FogExp2(0x08090d, 0.006);
 
-const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 500);
-camera.position.set(0, 100, 110);
+const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+// Start far and zoom in to Canada
+camera.position.set(0, 35, 90);
 
 const controls = new OrbitControls(camera, renderer.domElement);
-controls.target.set(0, 0, -5);
 controls.enableDamping = true;
-controls.dampingFactor = 0.05;
-controls.minDistance = 15;
-controls.maxDistance = 160;
-controls.maxPolarAngle = Math.PI / 2.1;
+controls.dampingFactor = 0.06;
+controls.minDistance = 35;
+controls.maxDistance = 150;
+controls.rotateSpeed = 0.5;
+controls.zoomSpeed = 0.8;
 controls.update();
 
 // Post-processing
@@ -358,17 +435,17 @@ const composer = new EffectComposer(renderer);
 composer.addPass(new RenderPass(scene, camera));
 const bloomPass = new UnrealBloomPass(
     new THREE.Vector2(window.innerWidth, window.innerHeight),
-    1.3, 0.7, 0.12
+    0.9, 0.5, 0.2
 );
 composer.addPass(bloomPass);
 
 // Raycaster
 const raycaster = new THREE.Raycaster();
-raycaster.params.Points.threshold = 1.2;
+raycaster.params.Points.threshold = 0.8;
 const mouse = new THREE.Vector2(-999, -999);
 
 // ==================== OBJECTS ====================
-let terrainPts, spotPts, ambientPts;
+let globePts, spotPts, ambientPts;
 const routeGroup = new THREE.Group();
 scene.add(routeGroup);
 let spotDataMap = [];
@@ -385,62 +462,263 @@ async function loadAllData() {
     return results.flat();
 }
 
-// ==================== TERRAIN PARTICLES ====================
-function createTerrain(spots) {
-    const particles = [];
+// ==================== GLOBE PARTICLE TERRAIN ====================
+function createGlobe() {
+    const positions = [];
+    const colors = [];
+    const alphas = [];
 
-    // Cluster around activity spots
-    spots.forEach(spot => {
-        if (!spot.coordinates) return;
-        const { lat, lng } = spot.coordinates;
-        const count = 20 + Math.floor(Math.random() * 15);
-        for (let i = 0; i < count; i++) {
-            particles.push({
-                lat: lat + (Math.random() - 0.5) * 3.5,
-                lng: lng + (Math.random() - 0.5) * 5.5
-            });
+    // Canada bounds for focus area (full globe but denser in Canada)
+    const CAN_LAT_MIN = 41, CAN_LAT_MAX = 84;
+    const CAN_LNG_MIN = -142, CAN_LNG_MAX = -51;
+
+    // Create ring-based particles
+    for (let ring = 0; ring < RING_COUNT; ring++) {
+        // Latitude: from -90 to 90, but we focus density on Canada
+        // Map rings with higher density around Canada latitudes
+        const ringT = ring / (RING_COUNT - 1);
+
+        // Distribute rings across the full globe but pack more in Canada region
+        let lat;
+        if (ringT < 0.15) {
+            // Southern hemisphere - sparse
+            lat = -90 + ringT / 0.15 * 131; // -90 to 41
+        } else if (ringT < 0.85) {
+            // Canada region - dense
+            lat = CAN_LAT_MIN + (ringT - 0.15) / 0.7 * (CAN_LAT_MAX - CAN_LAT_MIN);
+        } else {
+            // Arctic above 84 - sparse
+            lat = CAN_LAT_MAX + (ringT - 0.85) / 0.15 * 6; // 84 to 90
         }
-    });
 
-    // General scatter
-    for (let i = 0; i < 9000; i++) {
-        particles.push({
-            lat: BOUNDS.latMin + Math.random() * (BOUNDS.latMax - BOUNDS.latMin),
-            lng: BOUNDS.lngMin + Math.random() * (BOUNDS.lngMax - BOUNDS.lngMin)
-        });
+        // Number of particles in this ring decreases at poles (like actual sphere)
+        const latRad = lat * Math.PI / 180;
+        const circumference = Math.cos(latRad);
+        const isCanada = lat >= CAN_LAT_MIN && lat <= CAN_LAT_MAX;
+        const densityMult = isCanada ? 1.0 : 0.3;
+        const particlesInRing = Math.max(8, Math.floor(Math.abs(circumference) * RING_DENSITY * densityMult));
+
+        for (let p = 0; p < particlesInRing; p++) {
+            const lngT = p / particlesInRing;
+            let lng = -180 + lngT * 360;
+
+            // Add slight jitter for organic look (more jitter outside Canada)
+            const jitterScale = isCanada ? 0.15 : 0.4;
+            const latJitter = (Math.random() - 0.5) * jitterScale;
+            const lngJitter = (Math.random() - 0.5) * jitterScale / Math.max(0.1, Math.abs(circumference));
+
+            const finalLat = lat + latJitter;
+            const finalLng = lng + lngJitter;
+
+            // Check if this is in or near Canada for elevation detail
+            const inCanada = finalLat >= CAN_LAT_MIN && finalLat <= CAN_LAT_MAX &&
+                           finalLng >= CAN_LNG_MIN && finalLng <= CAN_LNG_MAX;
+
+            // Get elevation
+            let elev = 0;
+            if (inCanada) {
+                elev = getElevation(finalLat, finalLng);
+            } else {
+                // Rest of world: gentle noise
+                elev = fbm((finalLat + 90) / 180 * 4, (finalLng + 180) / 360 * 8, 3) * 0.3;
+            }
+
+            // Displace radius by elevation
+            const radius = GLOBE_RADIUS + elev * ELEVATION_SCALE;
+            const pos = geoToSphere(finalLat, finalLng, radius);
+
+            positions.push(pos.x, pos.y, pos.z);
+
+            // Color
+            let color;
+            if (inCanada) {
+                color = terrainColor(elev);
+            } else {
+                // Rest of world: dim blue-grey
+                color = new THREE.Color();
+                color.setHSL(0.58, 0.3, 0.08 + elev * 0.1);
+            }
+            colors.push(color.r, color.g, color.b);
+
+            // Alpha - higher for Canada, falloff at edges and with elevation
+            let alpha = inCanada ? 0.7 : 0.15;
+            // Elevation-based opacity: peaks slightly brighter
+            if (inCanada) {
+                alpha = 0.45 + elev * 0.45;
+            }
+            alphas.push(alpha);
+        }
     }
 
-    const count = particles.length;
-    const positions = new Float32Array(count * 3);
-    const colors = new Float32Array(count * 3);
+    // Extra detail passes for Canadian mountain regions
+    const mountainRegions = [
+        { lat: 51, lng: -116, spread: 8, count: 4000, label: 'Rockies South' },
+        { lat: 57, lng: -124, spread: 7, count: 3000, label: 'Rockies North' },
+        { lat: 54, lng: -128, spread: 5, count: 2500, label: 'Coast Mountains' },
+        { lat: 49, lng: -123, spread: 3, count: 2000, label: 'Vancouver' },
+        { lat: 47, lng: -65, spread: 4, count: 1500, label: 'Appalachians' },
+        { lat: 46, lng: -72, spread: 5, count: 1500, label: 'Laurentians' },
+        { lat: 63, lng: -139, spread: 6, count: 2000, label: 'Yukon Mountains' },
+    ];
 
-    for (let i = 0; i < count; i++) {
-        const { lat, lng } = particles[i];
-        const [x, z] = geoToScene(lat, lng);
-        const y = terrainH(lat, lng);
-        positions[i * 3] = x;
-        positions[i * 3 + 1] = y;
-        positions[i * 3 + 2] = z;
-        const c = terrainColor(lat);
-        colors[i * 3] = c.r;
-        colors[i * 3 + 1] = c.g;
-        colors[i * 3 + 2] = c.b;
+    for (const region of mountainRegions) {
+        for (let i = 0; i < region.count; i++) {
+            // Place in rings within the region
+            const ringAngle = Math.random() * Math.PI * 2;
+            const ringRadius = Math.random() * region.spread;
+            const lat = region.lat + Math.cos(ringAngle) * ringRadius;
+            const lng = region.lng + Math.sin(ringAngle) * ringRadius / Math.cos(lat * Math.PI / 180);
+
+            if (lat < CAN_LAT_MIN || lat > CAN_LAT_MAX || lng < CAN_LNG_MIN || lng > CAN_LNG_MAX) continue;
+
+            const elev = getElevation(lat, lng);
+            const radius = GLOBE_RADIUS + elev * ELEVATION_SCALE;
+            const pos = geoToSphere(lat, lng, radius);
+
+            positions.push(pos.x, pos.y, pos.z);
+            const color = terrainColor(elev);
+            colors.push(color.r, color.g, color.b);
+            alphas.push(0.3 + elev * 0.6);
+        }
     }
+
+    const count = positions.length / 3;
+    const posArr = new Float32Array(positions);
+    const colArr = new Float32Array(colors);
+    const alphaArr = new Float32Array(alphas);
 
     const geo = new THREE.BufferGeometry();
-    geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-    geo.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+    geo.setAttribute('position', new THREE.BufferAttribute(posArr, 3));
+    geo.setAttribute('customColor', new THREE.BufferAttribute(colArr, 3));
+    geo.setAttribute('alpha', new THREE.BufferAttribute(alphaArr, 1));
 
-    terrainPts = new THREE.Points(geo, new THREE.PointsMaterial({
-        size: 0.18,
-        vertexColors: true,
+    const mat = new THREE.ShaderMaterial({
+        uniforms: {
+            time: { value: 0 },
+            pxRatio: { value: renderer.getPixelRatio() }
+        },
+        vertexShader: `
+            attribute vec3 customColor;
+            attribute float alpha;
+            varying vec3 vColor;
+            varying float vAlpha;
+            varying float vDist;
+            uniform float pxRatio;
+            void main() {
+                vColor = customColor;
+                vAlpha = alpha;
+                vec4 mv = modelViewMatrix * vec4(position, 1.0);
+                vDist = -mv.z;
+                // Size: small particles, slightly larger for closer ones
+                float size = 1.2 * pxRatio * (180.0 / max(-mv.z, 1.0));
+                gl_PointSize = clamp(size, 0.5, 3.5);
+                gl_Position = projectionMatrix * mv;
+            }
+        `,
+        fragmentShader: `
+            varying vec3 vColor;
+            varying float vAlpha;
+            varying float vDist;
+            void main() {
+                vec2 c = gl_PointCoord - vec2(0.5);
+                float d = length(c);
+                if (d > 0.5) discard;
+                // Soft glow falloff
+                float glow = exp(-d * 6.0) * 0.7 + smoothstep(0.5, 0.0, d) * 0.3;
+                // Distance fade
+                float distFade = smoothstep(200.0, 40.0, vDist);
+                gl_FragColor = vec4(vColor, glow * vAlpha * distFade);
+            }
+        `,
         transparent: true,
-        opacity: 0.5,
-        sizeAttenuation: true,
+        blending: THREE.AdditiveBlending,
+        depthWrite: false,
+        depthTest: true
+    });
+
+    globePts = new THREE.Points(geo, mat);
+    scene.add(globePts);
+}
+
+// ==================== WIREFRAME GLOBE BASE ====================
+function createGlobeFrame() {
+    // Subtle wireframe sphere to give shape reference
+    const geo = new THREE.SphereGeometry(GLOBE_RADIUS - 0.3, 64, 32);
+    const mat = new THREE.MeshBasicMaterial({
+        color: 0x0a1520,
+        wireframe: true,
+        transparent: true,
+        opacity: 0.06,
         blending: THREE.AdditiveBlending,
         depthWrite: false
-    }));
-    scene.add(terrainPts);
+    });
+    const mesh = new THREE.Mesh(geo, mat);
+    scene.add(mesh);
+
+    // Latitude/longitude grid lines (very subtle)
+    const gridMat = new THREE.LineBasicMaterial({
+        color: 0x1a3040,
+        transparent: true,
+        opacity: 0.04,
+        blending: THREE.AdditiveBlending,
+        depthWrite: false
+    });
+
+    // Latitude lines every 15 degrees
+    for (let lat = -75; lat <= 75; lat += 15) {
+        const pts = [];
+        for (let lng = -180; lng <= 180; lng += 2) {
+            pts.push(geoToSphere(lat, lng, GLOBE_RADIUS - 0.2));
+        }
+        const lineGeo = new THREE.BufferGeometry().setFromPoints(pts);
+        scene.add(new THREE.Line(lineGeo, gridMat));
+    }
+
+    // Longitude lines every 20 degrees
+    for (let lng = -180; lng < 180; lng += 20) {
+        const pts = [];
+        for (let lat = -90; lat <= 90; lat += 2) {
+            pts.push(geoToSphere(lat, lng, GLOBE_RADIUS - 0.2));
+        }
+        const lineGeo = new THREE.BufferGeometry().setFromPoints(pts);
+        scene.add(new THREE.Line(lineGeo, gridMat));
+    }
+}
+
+// ==================== ATMOSPHERE GLOW ====================
+function createAtmosphere() {
+    // Inner glow
+    const glowGeo = new THREE.SphereGeometry(GLOBE_RADIUS + 0.5, 64, 32);
+    const glowMat = new THREE.ShaderMaterial({
+        uniforms: {
+            glowColor: { value: new THREE.Color(0x0a4060) }
+        },
+        vertexShader: `
+            varying vec3 vNormal;
+            varying vec3 vWorldPos;
+            void main() {
+                vNormal = normalize(normalMatrix * normal);
+                vWorldPos = (modelMatrix * vec4(position, 1.0)).xyz;
+                gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+            }
+        `,
+        fragmentShader: `
+            uniform vec3 glowColor;
+            varying vec3 vNormal;
+            varying vec3 vWorldPos;
+            void main() {
+                vec3 viewDir = normalize(cameraPosition - vWorldPos);
+                float rim = 1.0 - max(dot(viewDir, vNormal), 0.0);
+                rim = pow(rim, 3.0) * 0.4;
+                gl_FragColor = vec4(glowColor, rim);
+            }
+        `,
+        transparent: true,
+        blending: THREE.AdditiveBlending,
+        side: THREE.BackSide,
+        depthWrite: false
+    });
+    scene.add(new THREE.Mesh(glowGeo, glowMat));
 }
 
 // ==================== SPOT PARTICLES ====================
@@ -456,18 +734,24 @@ function createSpots(spots) {
 
     for (let i = 0; i < count; i++) {
         const s = valid[i];
-        const [x, z] = geoToScene(s.coordinates.lat, s.coordinates.lng);
-        const y = terrainH(s.coordinates.lat, s.coordinates.lng) + 1.8;
-        positions[i * 3] = x;
-        positions[i * 3 + 1] = y;
-        positions[i * 3 + 2] = z;
+        const lat = s.coordinates.lat;
+        const lng = s.coordinates.lng;
+
+        // Get elevation at spot location and place slightly above terrain
+        const elev = getElevation(lat, lng);
+        const radius = GLOBE_RADIUS + elev * ELEVATION_SCALE + 0.6;
+        const pos = geoToSphere(lat, lng, radius);
+
+        positions[i * 3] = pos.x;
+        positions[i * 3 + 1] = pos.y;
+        positions[i * 3 + 2] = pos.z;
 
         const col = CAT_COLORS[s.cat] || new THREE.Color(0xffffff);
         cColors[i * 3] = col.r;
         cColors[i * 3 + 1] = col.g;
         cColors[i * 3 + 2] = col.b;
 
-        sizes[i] = 2.0;
+        sizes[i] = 2.5;
         alphas[i] = 1.0;
     }
 
@@ -493,7 +777,7 @@ function createSpots(spots) {
                 vColor = customColor;
                 vAlpha = alpha;
                 vec4 mv = modelViewMatrix * vec4(position, 1.0);
-                gl_PointSize = max(size * pxRatio * (220.0 / -mv.z), 2.0);
+                gl_PointSize = max(size * pxRatio * (250.0 / -mv.z), 2.0);
                 gl_Position = projectionMatrix * mv;
             }
         `,
@@ -504,7 +788,7 @@ function createSpots(spots) {
                 vec2 c = gl_PointCoord - vec2(0.5);
                 float d = length(c);
                 if (d > 0.5) discard;
-                float glow = exp(-d * 5.5) * 0.65 + smoothstep(0.5, 0.0, d) * 0.35;
+                float glow = exp(-d * 4.5) * 0.7 + smoothstep(0.5, 0.0, d) * 0.3;
                 gl_FragColor = vec4(vColor, glow * vAlpha);
             }
         `,
@@ -519,15 +803,24 @@ function createSpots(spots) {
 
 // ==================== AMBIENT PARTICLES ====================
 function createAmbient() {
-    const count = 2500;
+    const count = 1500;
     const positions = new Float32Array(count * 3);
-    const velocities = new Float32Array(count);
+    const velocities = new Float32Array(count * 3);
 
     for (let i = 0; i < count; i++) {
-        positions[i * 3]     = (Math.random() - 0.5) * SW * 1.4;
-        positions[i * 3 + 1] = Math.random() * 40 - 5;
-        positions[i * 3 + 2] = (Math.random() - 0.5) * SD * 1.4;
-        velocities[i] = 0.008 + Math.random() * 0.025;
+        // Distribute around the globe
+        const theta = Math.random() * Math.PI * 2;
+        const phi = Math.acos(2 * Math.random() - 1);
+        const r = GLOBE_RADIUS + 5 + Math.random() * 25;
+
+        positions[i * 3]     = r * Math.sin(phi) * Math.cos(theta);
+        positions[i * 3 + 1] = r * Math.cos(phi);
+        positions[i * 3 + 2] = r * Math.sin(phi) * Math.sin(theta);
+
+        // Slow orbital drift
+        velocities[i * 3]     = (Math.random() - 0.5) * 0.01;
+        velocities[i * 3 + 1] = (Math.random() - 0.5) * 0.008;
+        velocities[i * 3 + 2] = (Math.random() - 0.5) * 0.01;
     }
 
     const geo = new THREE.BufferGeometry();
@@ -535,10 +828,10 @@ function createAmbient() {
     geo.userData.velocities = velocities;
 
     ambientPts = new THREE.Points(geo, new THREE.PointsMaterial({
-        size: 0.06,
-        color: 0xc97c5e,
+        size: 0.08,
+        color: 0x4a7090,
         transparent: true,
-        opacity: 0.12,
+        opacity: 0.15,
         sizeAttenuation: true,
         blending: THREE.AdditiveBlending,
         depthWrite: false
@@ -576,25 +869,33 @@ function updateRoute() {
     if (state.trip.length < 2) return;
 
     const lineMat = new THREE.LineBasicMaterial({
-        color: 0xc97c5e, transparent: true, opacity: 0.6
+        color: 0xc97c5e, transparent: true, opacity: 0.7,
+        blending: THREE.AdditiveBlending, depthWrite: false
     });
 
     for (let i = 0; i < state.trip.length - 1; i++) {
         const a = state.trip[i], b = state.trip[i + 1];
         if (!a.coordinates || !b.coordinates) continue;
 
-        const [ax, az] = geoToScene(a.coordinates.lat, a.coordinates.lng);
-        const [bx, bz] = geoToScene(b.coordinates.lat, b.coordinates.lng);
-        const ay = terrainH(a.coordinates.lat, a.coordinates.lng) + 1.8;
-        const by = terrainH(b.coordinates.lat, b.coordinates.lng) + 1.8;
+        const elevA = getElevation(a.coordinates.lat, a.coordinates.lng);
+        const elevB = getElevation(b.coordinates.lat, b.coordinates.lng);
+        const rA = GLOBE_RADIUS + elevA * ELEVATION_SCALE + 0.6;
+        const rB = GLOBE_RADIUS + elevB * ELEVATION_SCALE + 0.6;
 
-        const start = new THREE.Vector3(ax, ay, az);
-        const end = new THREE.Vector3(bx, by, bz);
-        const mid = new THREE.Vector3().addVectors(start, end).multiplyScalar(0.5);
-        mid.y += start.distanceTo(end) * 0.22;
+        const posA = geoToSphere(a.coordinates.lat, a.coordinates.lng, rA);
+        const posB = geoToSphere(b.coordinates.lat, b.coordinates.lng, rB);
 
-        const curve = new THREE.QuadraticBezierCurve3(start, mid, end);
-        const pts = curve.getPoints(32);
+        // Arc above globe surface
+        const pts = [];
+        const segments = 40;
+        for (let s = 0; s <= segments; s++) {
+            const t = s / segments;
+            const p = new THREE.Vector3().lerpVectors(posA, posB, t);
+            // Push outward for arc
+            const arcHeight = Math.sin(t * Math.PI) * 3;
+            p.normalize().multiplyScalar(p.length() + arcHeight);
+            pts.push(p);
+        }
         const lineGeo = new THREE.BufferGeometry().setFromPoints(pts);
         routeGroup.add(new THREE.Line(lineGeo, lineMat));
     }
@@ -613,7 +914,7 @@ function updateTripUI() {
             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5" style="margin:0 auto 16px;">
                 <path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
             </svg>
-            <p style="font-size:13px; line-height:1.5;">Click spots on the terrain to explore and build your route</p>
+            <p style="font-size:13px; line-height:1.5;">Click spots on the globe to explore and build your route</p>
         </div>`;
         stats.style.display = 'none';
         return;
@@ -689,7 +990,6 @@ renderer.domElement.addEventListener('pointerup', e => {
     pointerDownPos = null;
     if (Math.abs(dx) + Math.abs(dy) > 6) return;
 
-    // Check for spot intersection
     mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
     mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
     raycaster.setFromCamera(mouse, camera);
@@ -730,7 +1030,6 @@ window.addEventListener('mousemove', e => {
         document.getElementById('tooltip-info').textContent =
             spot.cat.charAt(0).toUpperCase() + spot.cat.slice(1) + (spot.province ? ' \u00B7 ' + spot.province : '');
 
-        // Position tooltip, keep within viewport
         let tx = e.clientX + 18, ty = e.clientY - 12;
         if (tx + 260 > window.innerWidth) tx = e.clientX - 270;
         tooltip.style.left = tx + 'px';
@@ -739,9 +1038,8 @@ window.addEventListener('mousemove', e => {
         tooltip.classList.add('visible');
         document.body.style.cursor = 'pointer';
 
-        // Highlight
         const sizes = spotPts.geometry.attributes.size;
-        for (let i = 0; i < sizes.count; i++) sizes.array[i] = (i === valid.index) ? 3.5 : 2.0;
+        for (let i = 0; i < sizes.count; i++) sizes.array[i] = (i === valid.index) ? 4.0 : 2.5;
         sizes.needsUpdate = true;
     } else {
         state.hoveredIdx = -1;
@@ -749,7 +1047,7 @@ window.addEventListener('mousemove', e => {
         document.body.style.cursor = 'default';
         if (spotPts) {
             const sizes = spotPts.geometry.attributes.size;
-            for (let i = 0; i < sizes.count; i++) sizes.array[i] = 2.0;
+            for (let i = 0; i < sizes.count; i++) sizes.array[i] = 2.5;
             sizes.needsUpdate = true;
         }
     }
@@ -810,36 +1108,54 @@ window.addEventListener('resize', () => {
 // ==================== ANIMATION ====================
 const clock = new THREE.Clock();
 let cameraIntro = true;
-const introTarget = new THREE.Vector3(0, 55, 60);
-const introLook = new THREE.Vector3(0, 0, -5);
+// Camera target: looking at Canada from slightly above and tilted
+const introTarget = new THREE.Vector3(12, 28, 58);
+const introLook = new THREE.Vector3(5, 8, 0);
 
 function animate() {
     requestAnimationFrame(animate);
     const elapsed = clock.getElapsedTime();
 
-    // Camera intro zoom
+    // Camera intro - zoom in towards Canada
     if (cameraIntro) {
-        camera.position.lerp(introTarget, 0.018);
-        controls.target.lerp(introLook, 0.018);
-        if (camera.position.distanceTo(introTarget) < 0.8) cameraIntro = false;
+        camera.position.lerp(introTarget, 0.015);
+        controls.target.lerp(introLook, 0.015);
+        if (camera.position.distanceTo(introTarget) < 0.5) cameraIntro = false;
     }
     controls.update();
 
-    // Spot particle pulse (time uniform)
+    // Globe slow auto-rotation when not interacting
+    if (globePts && !cameraIntro) {
+        globePts.rotation.y += 0.0003;
+        if (spotPts) spotPts.rotation.y = globePts.rotation.y;
+        routeGroup.rotation.y = globePts.rotation.y;
+    }
+
+    // Spot particle pulse
     if (spotPts) spotPts.material.uniforms.time.value = elapsed;
+
+    // Globe time uniform
+    if (globePts) globePts.material.uniforms.time.value = elapsed;
 
     // Ambient float
     if (ambientPts) {
         const pos = ambientPts.geometry.attributes.position;
         const vel = ambientPts.geometry.userData.velocities;
         for (let i = 0; i < pos.count; i++) {
-            pos.array[i * 3 + 1] += vel[i];
-            // Subtle horizontal drift
-            pos.array[i * 3] += Math.sin(elapsed * 0.3 + i) * 0.003;
-            if (pos.array[i * 3 + 1] > 40) {
-                pos.array[i * 3 + 1] = -3;
-                pos.array[i * 3] = (Math.random() - 0.5) * SW * 1.4;
-                pos.array[i * 3 + 2] = (Math.random() - 0.5) * SD * 1.4;
+            pos.array[i * 3]     += vel[i * 3];
+            pos.array[i * 3 + 1] += vel[i * 3 + 1];
+            pos.array[i * 3 + 2] += vel[i * 3 + 2];
+
+            // Keep particles orbiting - if too far, reset
+            const dx = pos.array[i * 3], dy = pos.array[i * 3 + 1], dz = pos.array[i * 3 + 2];
+            const dist = Math.sqrt(dx * dx + dy * dy + dz * dz);
+            if (dist > GLOBE_RADIUS + 35 || dist < GLOBE_RADIUS + 3) {
+                const theta = Math.random() * Math.PI * 2;
+                const phi = Math.acos(2 * Math.random() - 1);
+                const r = GLOBE_RADIUS + 5 + Math.random() * 20;
+                pos.array[i * 3]     = r * Math.sin(phi) * Math.cos(theta);
+                pos.array[i * 3 + 1] = r * Math.cos(phi);
+                pos.array[i * 3 + 2] = r * Math.sin(phi) * Math.sin(theta);
             }
         }
         pos.needsUpdate = true;
@@ -854,7 +1170,9 @@ async function init() {
         const allSpots = await loadAllData();
         state.allSpots = allSpots;
 
-        createTerrain(allSpots);
+        createGlobeFrame();
+        createAtmosphere();
+        createGlobe();
         createSpots(allSpots);
         createAmbient();
 
@@ -876,12 +1194,12 @@ async function init() {
                 hint.style.opacity = '0';
                 setTimeout(() => hint.remove(), 1500);
             }
-        }, 5000);
+        }, 6000);
 
     } catch (err) {
         console.error('Failed to initialize:', err);
         const ld = document.getElementById('loading');
-        if (ld) ld.innerHTML = `<p style="color:#ff6b6b; font-size:14px;">Failed to load terrain data. <a href="" style="color:#c97c5e;">Refresh</a></p>`;
+        if (ld) ld.innerHTML = `<p style="color:#ff6b6b; font-size:14px;">Failed to load globe data. <a href="" style="color:#c97c5e;">Refresh</a></p>`;
     }
 }
 
