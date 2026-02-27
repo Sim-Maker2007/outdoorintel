@@ -1,11 +1,11 @@
 const fs = require('fs');
 const path = require('path');
 
-// TODO: Replace G-XXXXXXXXXX with your actual GA4 Measurement ID from https://analytics.google.com
-const GA4_ID = 'G-XXXXXXXXXX';
+// TODO: Replace G-QY8Q00962P with your actual GA4 Measurement ID from https://analytics.google.com
+const GA4_ID = 'G-QY8Q00962P';
 
 const GA4_SNIPPET = `
-    <!-- Google Analytics (GA4) — TODO: Replace G-XXXXXXXXXX with your real Measurement ID -->
+    <!-- Google Analytics (GA4) — GA4 Measurement ID -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=${GA4_ID}"></script>
     <script>
       window.dataLayer = window.dataLayer || [];

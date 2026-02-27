@@ -42,13 +42,13 @@
         }
     </style>
 
-    <!-- Google Analytics (GA4) — TODO: Replace G-XXXXXXXXXX with your real Measurement ID -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8Q00962P"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
+      gtag('config', 'G-QY8Q00962P');
     </script>
 </head>
 <body class="bg-[#f5f3f0] text-[#3e3127] font-sans leading-relaxed">
@@ -372,13 +372,18 @@
         })();
         </script>
 
-        <!-- Newsletter Signup — TODO: Replace form action with your email service (Mailchimp, Buttondown, etc.) -->
+        <!-- Newsletter Signup — Mailchimp integration
+             SETUP: Replace YOUR_MAILCHIMP_FORM_ACTION_URL below with your Mailchimp audience form action URL.
+             Find it at: Mailchimp > Audience > Signup forms > Embedded forms > Copy the form action URL.
+             It looks like: https://YOURDOMAIN.us1.list-manage.com/subscribe/post?u=XXXXX&amp;id=XXXXX -->
         <section class="bg-[#2d5a3d] py-20 px-6 text-white text-center" id="newsletter">
             <div class="max-w-2xl mx-auto">
                 <h2 class="text-4xl font-bold mb-4">Weekly Outdoor Intel</h2>
                 <p class="text-lg text-white/80 mb-8">One email per week. Spotlight spots, seasonal tactics, and gear that actually works in Canadian weather. Free forever.</p>
-                <form id="newsletter-form" action="#newsletter-signup" method="POST" class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
-                    <input type="email" name="email" required placeholder="Your email address" class="flex-1 px-5 py-4 rounded-lg text-[#3e3127] bg-white placeholder-[#6b6359] focus:outline-none focus:ring-2 focus:ring-[#c97c5e]">
+                <form id="newsletter-form" action="YOUR_MAILCHIMP_FORM_ACTION_URL" method="POST" target="_blank" class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+                    <input type="email" name="EMAIL" required placeholder="Your email address" autocomplete="email" class="flex-1 px-5 py-4 rounded-lg text-[#3e3127] bg-white placeholder-[#6b6359] focus:outline-none focus:ring-2 focus:ring-[#c97c5e]">
+                    <!-- Mailchimp bot signup protection — do not remove -->
+                    <div style="position:absolute;left:-5000px" aria-hidden="true"><input type="text" name="b_mailchimp_honeypot" tabindex="-1" value=""></div>
                     <button type="submit" class="px-8 py-4 bg-[#c97c5e] text-white font-semibold rounded-lg hover:bg-white hover:text-[#2d5a3d] transition-colors whitespace-nowrap">Subscribe</button>
                 </form>
                 <p class="text-white/50 text-sm mt-4">No spam. Unsubscribe anytime.</p>

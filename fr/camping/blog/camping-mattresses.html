@@ -62,13 +62,13 @@
         .prose tr:hover { background: #fef9f3; }
     </style>
 
-    <!-- Google Analytics (GA4) — TODO: Replace G-XXXXXXXXXX with your real Measurement ID -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8Q00962P"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
+      gtag('config', 'G-QY8Q00962P');
     </script>
 </head>
 <body class="bg-[#f5f3f0] text-[#3e3127] font-sans leading-relaxed">
@@ -498,6 +498,21 @@
             });
         })();
         </script>
+
+
+        <!-- Infolettre CTA — Mailchimp: remplacer YOUR_MAILCHIMP_FORM_ACTION_URL avec votre URL Mailchimp -->
+        <section class="bg-[#2d5a3d] py-12 px-6 text-white text-center">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="text-2xl font-bold mb-2">Intel plein air chaque semaine</h2>
+                <p class="text-white/80 mb-6">Tactiques saisonnières, équipement testé et nouveaux spots — dans votre boîte chaque jeudi.</p>
+                <form class="newsletter-cta-form flex flex-col sm:flex-row gap-3 max-w-md mx-auto" action="YOUR_MAILCHIMP_FORM_ACTION_URL" method="POST" target="_blank">
+                    <input type="email" name="EMAIL" required placeholder="Votre courriel" autocomplete="email" class="flex-1 px-4 py-3 rounded-lg text-[#3e3127] bg-white placeholder-[#6b6359] text-sm focus:outline-none focus:ring-2 focus:ring-[#c97c5e]">
+                    <div style="position:absolute;left:-5000px" aria-hidden="true"><input type="text" name="b_mailchimp_honeypot" tabindex="-1" value=""></div>
+                    <button type="submit" class="px-6 py-3 bg-[#c97c5e] text-white text-sm font-semibold rounded-lg hover:bg-white hover:text-[#2d5a3d] transition-colors whitespace-nowrap">S'abonner</button>
+                </form>
+                <p class="text-white/40 text-xs mt-3">Gratuit. Aucun spam. Désabonnement en un clic.</p>
+            </div>
+        </section>
     </main>
 
     <footer class="bg-[#2d5a3d] text-white py-16 px-6">
