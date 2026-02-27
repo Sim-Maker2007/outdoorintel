@@ -37,13 +37,13 @@
         .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
     </style>
 
-    <!-- Google Analytics (GA4) — TODO: Replace G-XXXXXXXXXX with your real Measurement ID -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8Q00962P"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
+      gtag('config', 'G-QY8Q00962P');
     </script>
 </head>
 <body class="bg-[#f5f3f0] text-[#3e3127] font-sans leading-relaxed">
@@ -94,12 +94,13 @@
     </section>
 
     <main>
-        <!-- Newsletter Signup — TODO: Replace form action with your email service -->
+        <!-- Newsletter Signup — Mailchimp: replace YOUR_MAILCHIMP_FORM_ACTION_URL with your audience form action URL -->
         <section class="bg-[#fef9f3] border-b border-[#2d5a3d]/10 py-6 px-6">
             <div class="max-w-3xl mx-auto">
-                <form id="newsletter-form" action="#newsletter-signup" method="POST" class="flex flex-col sm:flex-row items-center gap-3">
+                <form id="newsletter-form" action="YOUR_MAILCHIMP_FORM_ACTION_URL" method="POST" target="_blank" class="flex flex-col sm:flex-row items-center gap-3">
                     <p class="text-[#2d5a3d] font-semibold text-sm whitespace-nowrap">Weekly Outdoor Intel:</p>
-                    <input type="email" name="email" required placeholder="Your email" class="flex-1 w-full sm:w-auto px-4 py-2.5 rounded-lg border border-[#2d5a3d]/20 text-sm focus:outline-none focus:ring-2 focus:ring-[#2d5a3d]">
+                    <input type="email" name="EMAIL" required placeholder="Your email" autocomplete="email" class="flex-1 w-full sm:w-auto px-4 py-2.5 rounded-lg border border-[#2d5a3d]/20 text-sm focus:outline-none focus:ring-2 focus:ring-[#2d5a3d]">
+                    <div style="position:absolute;left:-5000px" aria-hidden="true"><input type="text" name="b_mailchimp_honeypot" tabindex="-1" value=""></div>
                     <button type="submit" class="px-6 py-2.5 bg-[#2d5a3d] text-white text-sm font-semibold rounded-lg hover:bg-[#c97c5e] transition-colors whitespace-nowrap">Subscribe</button>
                 </form>
             </div>
