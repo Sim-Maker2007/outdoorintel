@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#0a0a12">
+    <meta name="theme-color" content="#2d5a3d">
     <link rel="alternate" type="application/rss+xml" title="Outdoor Intel Blog" href="https://outdoorintel.ca/rss.xml">
     <title>Trip Planner | Outdoor Intel</title>
     <meta name="description" content="Plan your outdoor adventure across Canada with our interactive trip planner. Explore 499+ spots, build your route, and discover the best fishing, hunting, camping, kayaking, skiing, and hiking destinations.">
@@ -30,164 +30,189 @@
 
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { overflow: hidden; background: #0a0a12; color: #e8e4df; font-family: system-ui, -apple-system, sans-serif; }
+        body { overflow: hidden; background: #f5f3f0; color: #3e3127; font-family: system-ui, -apple-system, sans-serif; }
 
         #map { position: fixed; inset: 0; z-index: 0; }
 
-        /* Dark map tiles */
-        .leaflet-tile-pane { filter: saturate(0.3) brightness(0.45) contrast(1.1); }
         .leaflet-control-attribution { display: none; }
         .leaflet-control-zoom { border: none !important; }
         .leaflet-control-zoom a {
-            background: rgba(5,5,8,0.9) !important;
-            color: #888 !important;
-            border: 1px solid rgba(255,255,255,0.08) !important;
-            width: 32px !important; height: 32px !important;
-            line-height: 32px !important; font-size: 16px !important;
+            background: #fff !important;
+            color: #6b6359 !important;
+            border: 1px solid #e8e4df !important;
+            width: 34px !important; height: 34px !important;
+            line-height: 34px !important; font-size: 16px !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
         }
-        .leaflet-control-zoom a:hover { background: rgba(5,5,8,1) !important; color: #c97c5e !important; }
+        .leaflet-control-zoom a:hover { color: #2d5a3d !important; background: #f8f7f5 !important; }
 
-        /* Custom popups */
+        /* Popups - light */
         .leaflet-popup-content-wrapper {
-            background: rgba(5,5,8,0.95) !important;
-            color: #e8e4df !important;
-            border-radius: 12px !important;
-            border: 1px solid rgba(201,124,94,0.15);
-            backdrop-filter: blur(16px);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.5) !important;
+            background: #fff !important;
+            color: #3e3127 !important;
+            border-radius: 14px !important;
+            border: 1px solid #e8e4df;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12) !important;
         }
-        .leaflet-popup-tip { background: rgba(5,5,8,0.95) !important; }
+        .leaflet-popup-tip { background: #fff !important; }
         .leaflet-popup-content { margin: 14px 16px !important; }
-        .leaflet-popup-close-button { color: #666 !important; font-size: 18px !important; }
+        .leaflet-popup-close-button { color: #999 !important; font-size: 18px !important; }
         .leaflet-popup-close-button:hover { color: #c97c5e !important; }
 
         /* Header */
         #header {
             position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-            padding: 16px 24px;
+            padding: 12px 20px;
             display: flex; align-items: center; justify-content: space-between;
-            background: linear-gradient(to bottom, rgba(5,5,8,0.95) 0%, rgba(5,5,8,0.6) 70%, transparent 100%);
-            pointer-events: none;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(45,90,61,0.08);
+            box-shadow: 0 1px 8px rgba(0,0,0,0.05);
         }
-        #header > * { pointer-events: auto; }
         #header a { text-decoration: none; }
 
         /* Sidebar */
         #sidebar {
             position: fixed; top: 0; right: 0; bottom: 0;
-            width: 360px; z-index: 1001;
-            background: rgba(5,5,8,0.96);
+            width: 380px; z-index: 1001;
+            background: rgba(255,255,255,0.97);
             backdrop-filter: blur(24px);
-            border-left: 1px solid rgba(201,124,94,0.12);
+            border-left: 1px solid #e8e4df;
             transform: translateX(100%);
             transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
             overflow-y: auto;
-            padding-top: 80px;
+            padding-top: 70px;
+            box-shadow: -4px 0 24px rgba(0,0,0,0.06);
         }
         #sidebar.open { transform: translateX(0); }
-
-        /* Filters */
-        #filters {
-            position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
-            z-index: 999;
-            display: flex; gap: 6px;
-            padding: 10px 16px;
-            background: rgba(5,5,8,0.88);
-            backdrop-filter: blur(16px);
-            border-radius: 16px;
-            border: 1px solid rgba(255,255,255,0.07);
-        }
-        .fchip {
-            padding: 6px 14px; border-radius: 20px;
-            font-size: 12px; font-weight: 600;
-            border: 1px solid rgba(255,255,255,0.1);
-            background: transparent; color: #666;
-            cursor: pointer; transition: all 0.2s; white-space: nowrap;
-        }
-        .fchip.active { color: #fff; border-color: currentColor; background: rgba(255,255,255,0.05); }
-        .fchip:hover { background: rgba(255,255,255,0.08); }
 
         /* Trip Stops */
         .trip-stop {
             display: flex; align-items: center; gap: 12px;
             padding: 10px 14px; border-radius: 10px;
-            background: rgba(255,255,255,0.025);
-            border: 1px solid rgba(255,255,255,0.05);
-            margin-bottom: 6px; transition: background 0.2s;
+            background: #f8f7f5;
+            border: 1px solid #e8e4df;
+            margin-bottom: 6px; transition: all 0.2s;
             cursor: pointer;
         }
-        .trip-stop:hover { background: rgba(255,255,255,0.06); }
+        .trip-stop:hover { background: #f0ede8; border-color: #d4cfc8; }
+        .trip-stop[draggable="true"] { cursor: grab; }
+        .trip-stop.dragging { opacity: 0.4; }
         .snum {
             width: 26px; height: 26px; border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
             font-size: 11px; font-weight: 700; flex-shrink: 0;
         }
-        .srem { opacity: 0; transition: opacity 0.15s; cursor: pointer; color: #ff6b6b; background: none; border: none; font-size: 16px; padding: 4px; }
+        .srem { opacity: 0; transition: opacity 0.15s; cursor: pointer; color: #e05252; background: none; border: none; font-size: 16px; padding: 4px; }
         .trip-stop:hover .srem { opacity: 1; }
 
-        /* Help Hint */
-        #help-hint {
-            position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%);
-            z-index: 998; padding: 10px 24px;
-            background: rgba(5,5,8,0.7); border-radius: 10px;
-            font-size: 13px; color: #555; transition: opacity 1.5s; pointer-events: none;
+        .leg-info {
+            display: flex; align-items: center; gap: 6px;
+            padding: 2px 0 2px 34px; font-size: 10px; color: #999;
         }
+        .leg-info svg { flex-shrink: 0; }
 
-        /* Scrollbar */
-        ::-webkit-scrollbar { width: 5px; }
-        ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: rgba(201,124,94,0.25); border-radius: 3px; }
+        /* Activity Picker Overlay */
+        #activity-picker {
+            position: fixed; inset: 0; z-index: 3000;
+            background: rgba(245,243,240,0.97);
+            backdrop-filter: blur(20px);
+            display: flex; align-items: center; justify-content: center;
+            transition: opacity 0.4s, visibility 0.4s;
+        }
+        #activity-picker.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+        .act-card {
+            padding: 28px 20px;
+            border-radius: 16px;
+            background: #fff;
+            border: 2px solid #e8e4df;
+            cursor: pointer;
+            transition: all 0.25s;
+            text-align: center;
+        }
+        .act-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+        }
+        .act-card .act-icon { font-size: 36px; margin-bottom: 10px; }
+        .act-card .act-name { font-size: 15px; font-weight: 700; color: #3e3127; }
+        .act-card .act-count { font-size: 11px; color: #999; margin-top: 4px; }
 
-        /* Profile Modal */
+        /* Activity Chip */
+        #activity-chip {
+            position: fixed; top: 70px; left: 20px; z-index: 999;
+            display: none; align-items: center; gap: 8px;
+            padding: 8px 14px;
+            background: #fff;
+            border: 1px solid #e8e4df;
+            border-radius: 24px;
+            font-size: 13px; font-weight: 600;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        #activity-chip:hover { border-color: #c97c5e; box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+        #activity-chip .chip-x { color: #999; font-size: 14px; margin-left: 4px; }
+
+        /* Profile Modal - light */
         #profile-modal-overlay {
             position: fixed; inset: 0; z-index: 2000;
-            background: rgba(0,0,0,0.6); backdrop-filter: blur(4px);
+            background: rgba(0,0,0,0.3); backdrop-filter: blur(4px);
             display: none; align-items: center; justify-content: center;
             padding: 24px;
         }
         #profile-modal-overlay.open { display: flex; }
         #profile-modal {
-            background: rgba(10,10,18,0.98);
-            border: 1px solid rgba(201,124,94,0.15);
+            background: #fff;
+            border: 1px solid #e8e4df;
             border-radius: 16px;
             width: 100%; max-width: 520px; max-height: 80vh;
             overflow-y: auto; position: relative;
-            box-shadow: 0 24px 64px rgba(0,0,0,0.6);
+            box-shadow: 0 24px 64px rgba(0,0,0,0.15);
         }
         #profile-modal .pm-header {
-            padding: 20px 24px 16px; border-bottom: 1px solid rgba(255,255,255,0.06);
-            position: sticky; top: 0; background: rgba(10,10,18,0.98); z-index: 1;
+            padding: 20px 24px 16px; border-bottom: 1px solid #f0ede8;
+            position: sticky; top: 0; background: #fff; z-index: 1;
         }
         #profile-modal .pm-body { padding: 16px 24px 24px; }
         #profile-modal .pm-close {
             position: absolute; top: 16px; right: 16px;
-            background: none; border: none; color: #666; font-size: 20px;
+            background: none; border: none; color: #999; font-size: 20px;
             cursor: pointer; padding: 4px 8px; border-radius: 6px;
             transition: all 0.2s;
         }
-        #profile-modal .pm-close:hover { color: #c97c5e; background: rgba(255,255,255,0.05); }
-        #profile-modal .pm-section {
-            margin-bottom: 16px;
-        }
+        #profile-modal .pm-close:hover { color: #c97c5e; background: #f5f3f0; }
+        #profile-modal .pm-section { margin-bottom: 16px; }
         #profile-modal .pm-section-title {
             font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px;
-            font-weight: 700; color: #888; margin-bottom: 6px;
+            font-weight: 700; color: #999; margin-bottom: 6px;
         }
-        #profile-modal .pm-section-content {
-            font-size: 13px; color: #bbb; line-height: 1.6;
-        }
+        #profile-modal .pm-section-content { font-size: 13px; color: #6b6359; line-height: 1.6; }
         #profile-modal .pm-tag {
             display: inline-block; padding: 3px 10px; border-radius: 12px;
             font-size: 11px; font-weight: 600; margin: 2px 4px 2px 0;
-            background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);
+            background: #f8f7f5; border: 1px solid #e8e4df;
         }
+
+        /* Service markers */
+        .svc-icon {
+            width: 22px; height: 22px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 11px; border: 2px solid #fff;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: rgba(201,124,94,0.3); border-radius: 3px; }
 
         /* Responsive */
         @media (max-width: 768px) {
             #sidebar { width: 100%; }
-            #filters { left: 12px; right: 12px; transform: none; overflow-x: auto; justify-content: flex-start; }
-            #help-hint { left: 12px; right: 12px; transform: none; text-align: center; }
+            #activity-picker .act-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 12px !important; }
             #profile-modal { max-width: 100%; max-height: 90vh; }
+            #activity-chip { top: 62px; left: 12px; }
         }
     </style>
 
@@ -204,20 +229,39 @@
     <!-- Map -->
     <div id="map"></div>
 
+    <!-- Activity Picker Overlay -->
+    <div id="activity-picker">
+        <div style="text-align:center; max-width:600px; width:100%; padding:0 20px;">
+            <div style="margin-bottom:8px;">
+                <img src="../assets/logo/logo.jpg" alt="Outdoor Intel" style="height:40px; display:inline-block;">
+            </div>
+            <h1 style="font-size:28px; font-weight:800; color:#2d5a3d; margin-bottom:6px;">Plan Your Adventure</h1>
+            <p style="font-size:14px; color:#6b6359; margin-bottom:32px;">Choose an activity to start planning your trip</p>
+            <div class="act-grid" style="display:grid; grid-template-columns:repeat(3, 1fr); gap:16px;" id="act-grid"></div>
+        </div>
+    </div>
+
+    <!-- Activity Chip (shown after selection) -->
+    <div id="activity-chip" onclick="window.showActivityPicker()">
+        <span id="chip-icon"></span>
+        <span id="chip-label"></span>
+        <span class="chip-x">&#x2715;</span>
+    </div>
+
     <!-- Header -->
     <div id="header">
-        <div style="display:flex; align-items:center; gap:14px;">
+        <div style="display:flex; align-items:center; gap:12px;">
             <a href="../index.html" style="display:flex; align-items:center;">
-                <img src="../assets/logo/logo.jpg" alt="Outdoor Intel" style="height:32px; filter:brightness(1.6) saturate(0.6);">
+                <img src="../assets/logo/logo.jpg" alt="Outdoor Intel" style="height:30px;">
             </a>
-            <div style="height:18px; width:1px; background:rgba(255,255,255,0.15);"></div>
-            <span style="font-size:13px; font-weight:700; color:#c97c5e; letter-spacing:1px; text-transform:uppercase;">Trip Planner</span>
+            <div style="height:16px; width:1px; background:#e8e4df;"></div>
+            <span style="font-size:12px; font-weight:700; color:#2d5a3d; letter-spacing:1px; text-transform:uppercase;">Trip Planner</span>
         </div>
-        <div style="display:flex; align-items:center; gap:14px;">
-            <a href="map.html" style="font-size:13px; color:#666; transition:color 0.2s;" onmouseenter="this.style.color='#c97c5e'" onmouseleave="this.style.color='#666'">Full Map</a>
-            <button id="sidebar-toggle" style="padding:7px 16px; background:rgba(201,124,94,0.1); border:1px solid rgba(201,124,94,0.25); border-radius:8px; color:#c97c5e; font-size:13px; font-weight:600; cursor:pointer; display:flex; align-items:center; gap:8px; transition:all 0.2s;" onmouseenter="this.style.background='rgba(201,124,94,0.2)'" onmouseleave="this.style.background='rgba(201,124,94,0.1)'">
+        <div style="display:flex; align-items:center; gap:12px;">
+            <a href="map.html" style="font-size:13px; color:#6b6359; transition:color 0.2s; text-decoration:none;" onmouseenter="this.style.color='#c97c5e'" onmouseleave="this.style.color='#6b6359'">Full Map</a>
+            <button id="sidebar-toggle" style="padding:7px 16px; background:#2d5a3d; border:none; border-radius:8px; color:#fff; font-size:13px; font-weight:600; cursor:pointer; display:flex; align-items:center; gap:8px; transition:all 0.2s;" onmouseenter="this.style.background='#c97c5e'" onmouseleave="this.style.background='#2d5a3d'">
                 My Trip
-                <span id="trip-count" style="min-width:20px; height:20px; display:flex; align-items:center; justify-content:center; border-radius:10px; background:rgba(201,124,94,0.3); font-size:11px; font-weight:700;">0</span>
+                <span id="trip-count" style="min-width:20px; height:20px; display:flex; align-items:center; justify-content:center; border-radius:10px; background:rgba(255,255,255,0.2); font-size:11px; font-weight:700;">0</span>
             </button>
         </div>
     </div>
@@ -225,30 +269,26 @@
     <!-- Sidebar -->
     <div id="sidebar">
         <div style="padding:0 20px 20px;">
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
-                <h2 style="font-size:18px; font-weight:700; color:#e8e4df;">My Trip</h2>
-                <button id="clear-trip" style="font-size:12px; color:#666; background:none; border:none; cursor:pointer; padding:4px 8px; transition:color 0.2s;" onmouseenter="this.style.color='#ff6b6b'" onmouseleave="this.style.color='#666'">Clear All</button>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+                <h2 style="font-size:18px; font-weight:700; color:#3e3127;">My Trip</h2>
+                <button id="clear-trip" style="font-size:12px; color:#999; background:none; border:none; cursor:pointer; padding:4px 8px; transition:color 0.2s;" onmouseenter="this.style.color='#e05252'" onmouseleave="this.style.color='#999'">Clear All</button>
             </div>
-            <div id="trip-stats" style="display:none; margin-bottom:16px; padding:10px 14px; background:rgba(201,124,94,0.06); border-radius:8px; font-size:12px; color:#999;"></div>
+            <div id="trip-stats" style="display:none; margin-bottom:14px; padding:12px 14px; background:#f8f7f5; border-radius:10px; border:1px solid #e8e4df; font-size:12px; color:#6b6359;"></div>
+            <div id="services-toggle-wrap" style="display:none; margin-bottom:14px;">
+                <label style="display:flex; align-items:center; gap:8px; font-size:12px; color:#6b6359; cursor:pointer;">
+                    <input type="checkbox" id="services-toggle" style="accent-color:#2d5a3d;">
+                    Show gas, food & hotels along route
+                </label>
+            </div>
             <div id="trip-list">
-                <div style="text-align:center; padding:48px 16px; color:#444;">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5" style="margin:0 auto 16px;">
+                <div style="text-align:center; padding:48px 16px; color:#999;">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5" style="margin:0 auto 16px;">
                         <path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
                     </svg>
-                    <p style="font-size:13px; line-height:1.5;">Click spots on the map to explore and build your route</p>
+                    <p style="font-size:13px; line-height:1.5;">Click spots on the map to add them to your trip</p>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Filters -->
-    <div id="filters">
-        <button class="fchip active" data-cat="fishing" style="color:#4a9eff;">Fishing</button>
-        <button class="fchip active" data-cat="hunting" style="color:#ff8c42;">Hunting</button>
-        <button class="fchip active" data-cat="camping" style="color:#4ade80;">Camping</button>
-        <button class="fchip active" data-cat="kayaking" style="color:#22d3ee;">Kayaking</button>
-        <button class="fchip active" data-cat="skiing" style="color:#a78bfa;">Skiing</button>
-        <button class="fchip active" data-cat="hiking" style="color:#fbbf24;">Hiking</button>
     </div>
 
     <!-- Profile Modal -->
@@ -260,65 +300,69 @@
         </div>
     </div>
 
-    <!-- Help Hint -->
-    <div id="help-hint">Click spots to explore &middot; Build your route with the trip planner</div>
-
 <script>
 // ==================== CONFIG ====================
 const CATEGORIES = ['fishing', 'hunting', 'camping', 'kayaking', 'skiing', 'hiking'];
 const CAT_COLORS = {
-    fishing: '#4a9eff', hunting: '#ff8c42', camping: '#4ade80',
-    kayaking: '#22d3ee', skiing: '#a78bfa', hiking: '#fbbf24'
+    fishing: '#2563eb', hunting: '#ea580c', camping: '#16a34a',
+    kayaking: '#0891b2', skiing: '#7c3aed', hiking: '#d97706'
 };
+const CAT_ICONS = {
+    fishing: '🎣', hunting: '🦌', camping: '⛺',
+    kayaking: '🛶', skiing: '⛷️', hiking: '🥾'
+};
+const SVC_COLORS = { fuel: '#3b82f6', restaurant: '#f59e0b', hotel: '#8b5cf6' };
+const SVC_ICONS = { fuel: '⛽', restaurant: '🍽️', hotel: '🏨' };
 
 // ==================== STATE ====================
 const state = {
-    allSpots: [], trip: [],
-    activeFilters: new Set(CATEGORIES),
-    sidebarOpen: false
+    allSpots: [],
+    trip: [],
+    selectedActivity: null,
+    sidebarOpen: false,
+    routeLegs: [],
+    servicesVisible: false,
+    servicesCache: {}
 };
+
+let routeDebounce = null;
 
 // ==================== MAP ====================
 const map = L.map('map', {
-    center: [56, -96],
-    zoom: 4,
-    minZoom: 3,
-    maxZoom: 13,
-    zoomControl: false
+    center: [56, -96], zoom: 4,
+    minZoom: 3, maxZoom: 13, zoomControl: false
 });
 
 L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
     maxZoom: 19,
-    attribution: '&copy; OpenStreetMap'
+    attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>'
 }).addTo(map);
 
-// ==================== MARKERS ====================
-const markerLayers = {};
+// ==================== LAYERS ====================
 const routeLayer = L.layerGroup().addTo(map);
+const servicesLayer = L.layerGroup().addTo(map);
 let allMarkers = [];
 
+// ==================== MARKER ICONS ====================
 function createCircleIcon(color) {
     return L.divIcon({
         className: '',
-        html: `<div style="width:12px;height:12px;border-radius:50%;background:${color};border:2px solid rgba(255,255,255,0.9);box-shadow:0 0 8px ${color}80, 0 2px 6px rgba(0,0,0,0.4);"></div>`,
-        iconSize: [12, 12],
-        iconAnchor: [6, 6],
-        popupAnchor: [0, -10]
+        html: `<div style="width:13px;height:13px;border-radius:50%;background:${color};border:2.5px solid #fff;box-shadow:0 1px 6px ${color}60, 0 1px 4px rgba(0,0,0,0.2);"></div>`,
+        iconSize: [13, 13], iconAnchor: [6, 6], popupAnchor: [0, -10]
     });
 }
 
 function createTripIcon(color, num) {
     return L.divIcon({
         className: '',
-        html: `<div style="width:24px;height:24px;border-radius:50%;background:${color};border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;box-shadow:0 0 12px ${color}80, 0 2px 8px rgba(0,0,0,0.5);font-family:system-ui,sans-serif;">${num}</div>`,
-        iconSize: [24, 24],
-        iconAnchor: [12, 12],
-        popupAnchor: [0, -16]
+        html: `<div style="width:26px;height:26px;border-radius:50%;background:${color};border:2.5px solid #fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;box-shadow:0 2px 10px ${color}50, 0 2px 6px rgba(0,0,0,0.2);font-family:system-ui,sans-serif;">${num}</div>`,
+        iconSize: [26, 26], iconAnchor: [13, 13], popupAnchor: [0, -18]
     });
 }
 
+// ==================== POPUP ====================
 function popupContent(spot) {
     const feats = spot.features
         ? spot.features.slice(0, 3).join(' &middot; ')
@@ -326,18 +370,19 @@ function popupContent(spot) {
             ? spot.primary_species.slice(0, 3).join(' &middot; ')
             : '';
     const inTrip = state.trip.find(s => s.slug === spot.slug && s.cat === spot.cat);
+    const color = CAT_COLORS[spot.cat];
     const addBtnText = inTrip ? 'Added &#10003;' : 'Add to Trip';
     const addBtnOpacity = inTrip ? '0.5' : '1';
 
     return `
-        <div style="min-width:180px;">
-            <div style="font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;color:${CAT_COLORS[spot.cat]};">${spot.cat}</div>
-            <div style="font-size:15px;font-weight:700;margin-top:3px;color:#e8e4df;">${spot.name}</div>
-            <div style="font-size:12px;color:#888;margin-top:3px;">${spot.province || ''}</div>
-            ${feats ? `<div style="font-size:11px;color:#666;margin-top:6px;">${feats}</div>` : ''}
+        <div style="min-width:190px;">
+            <div style="font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;color:${color};">${spot.cat}</div>
+            <div style="font-size:15px;font-weight:700;margin-top:3px;color:#3e3127;">${spot.name}</div>
+            <div style="font-size:12px;color:#6b6359;margin-top:3px;">${spot.province || ''}</div>
+            ${feats ? `<div style="font-size:11px;color:#999;margin-top:6px;">${feats}</div>` : ''}
             <div style="display:flex;gap:8px;margin-top:14px;">
-                <button onclick="window.addSpotToTrip('${spot.slug}','${spot.cat}')" style="flex:1;padding:7px 0;background:rgba(201,124,94,0.15);border:1px solid rgba(201,124,94,0.3);border-radius:8px;color:#c97c5e;font-size:12px;font-weight:700;cursor:pointer;opacity:${addBtnOpacity};" ${inTrip ? 'disabled' : ''}>${addBtnText}</button>
-                <button onclick="window.viewProfile('${spot.slug}','${spot.cat}')" style="flex:1;padding:7px 0;background:rgba(45,90,61,0.15);border:1px solid rgba(45,90,61,0.3);border-radius:8px;color:#7a9b8e;font-size:12px;font-weight:700;cursor:pointer;">View Profile</button>
+                <button onclick="window.addSpotToTrip('${spot.slug}','${spot.cat}')" style="flex:1;padding:7px 0;background:${color}15;border:1px solid ${color}30;border-radius:8px;color:${color};font-size:12px;font-weight:700;cursor:pointer;opacity:${addBtnOpacity};" ${inTrip ? 'disabled' : ''}>${addBtnText}</button>
+                <button onclick="window.viewProfile('${spot.slug}','${spot.cat}')" style="flex:1;padding:7px 0;background:#2d5a3d15;border:1px solid #2d5a3d30;border-radius:8px;color:#2d5a3d;font-size:12px;font-weight:700;cursor:pointer;">View Profile</button>
             </div>
         </div>
     `;
@@ -355,15 +400,48 @@ async function loadAllData() {
     return results.flat();
 }
 
+// ==================== ACTIVITY PICKER ====================
+function buildActivityPicker() {
+    const grid = document.getElementById('act-grid');
+    grid.innerHTML = CATEGORIES.map(cat => {
+        const count = state.allSpots.filter(s => s.cat === cat).length;
+        const color = CAT_COLORS[cat];
+        return `<div class="act-card" onclick="window.selectActivity('${cat}')" style="border-color:${color}20;" onmouseenter="this.style.borderColor='${color}'" onmouseleave="this.style.borderColor='${color}20'">
+            <div class="act-icon">${CAT_ICONS[cat]}</div>
+            <div class="act-name" style="color:${color}">${cat.charAt(0).toUpperCase() + cat.slice(1)}</div>
+            <div class="act-count">${count} spots</div>
+        </div>`;
+    }).join('');
+}
+
+window.selectActivity = function(cat) {
+    state.selectedActivity = cat;
+    document.getElementById('activity-picker').classList.add('hidden');
+
+    // Update chip
+    const chip = document.getElementById('activity-chip');
+    chip.style.display = 'flex';
+    document.getElementById('chip-icon').textContent = CAT_ICONS[cat];
+    document.getElementById('chip-label').textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
+    chip.style.borderColor = CAT_COLORS[cat] + '50';
+
+    renderSpots();
+};
+
+window.showActivityPicker = function() {
+    document.getElementById('activity-picker').classList.remove('hidden');
+};
+
 // ==================== SPOT RENDERING ====================
 function renderSpots() {
-    // Remove all existing markers
     allMarkers.forEach(m => map.removeLayer(m.marker));
     allMarkers = [];
 
+    if (!state.selectedActivity) return;
+
     const validSpots = state.allSpots.filter(s =>
         s.coordinates && s.coordinates.lat && s.coordinates.lng &&
-        state.activeFilters.has(s.cat)
+        s.cat === state.selectedActivity
     );
 
     validSpots.forEach(spot => {
@@ -376,12 +454,10 @@ function renderSpots() {
         allMarkers.push({ marker, spot });
     });
 
-    // Re-apply trip number icons
     updateTripMarkers();
 }
 
 function updateTripMarkers() {
-    // Update markers that are in the trip to show numbered icons
     allMarkers.forEach(({ marker, spot }) => {
         const tripIdx = state.trip.findIndex(s => s.slug === spot.slug && s.cat === spot.cat);
         if (tripIdx >= 0) {
@@ -399,7 +475,7 @@ window.addSpotToTrip = function(slug, cat) {
     if (state.trip.find(s => s.slug === slug && s.cat === cat)) return;
     state.trip.push(spot);
     updateTripUI();
-    updateRoute();
+    scheduleRouteUpdate();
     updateTripMarkers();
     map.closePopup();
     if (!state.sidebarOpen) {
@@ -411,7 +487,7 @@ window.addSpotToTrip = function(slug, cat) {
 window.tripRemove = function(idx) {
     state.trip.splice(idx, 1);
     updateTripUI();
-    updateRoute();
+    scheduleRouteUpdate();
     updateTripMarkers();
 };
 
@@ -424,9 +500,158 @@ window.tripFlyTo = function(idx) {
 
 function clearTrip() {
     state.trip = [];
+    state.routeLegs = [];
+    servicesLayer.clearLayers();
     updateTripUI();
-    updateRoute();
+    routeLayer.clearLayers();
     updateTripMarkers();
+}
+
+// ==================== ROUTING (OSRM) ====================
+function scheduleRouteUpdate() {
+    clearTimeout(routeDebounce);
+    routeDebounce = setTimeout(updateRoute, 400);
+}
+
+async function updateRoute() {
+    routeLayer.clearLayers();
+    servicesLayer.clearLayers();
+    state.routeLegs = [];
+
+    if (state.trip.length < 2) {
+        updateTripUI();
+        return;
+    }
+
+    const coords = state.trip
+        .filter(s => s.coordinates)
+        .map(s => `${s.coordinates.lng},${s.coordinates.lat}`);
+
+    if (coords.length < 2) { updateTripUI(); return; }
+
+    try {
+        const url = `https://router.project-osrm.org/route/v1/driving/${coords.join(';')}?overview=full&geometries=geojson&steps=false`;
+        const resp = await fetch(url);
+        const data = await resp.json();
+
+        if (data.code === 'Ok' && data.routes && data.routes[0]) {
+            const route = data.routes[0];
+
+            // Draw route line
+            L.geoJSON(route.geometry, {
+                style: { color: '#2d5a3d', weight: 4, opacity: 0.7 }
+            }).addTo(routeLayer);
+
+            // Store leg info
+            state.routeLegs = route.legs.map(leg => ({
+                distance: leg.distance,
+                duration: leg.duration
+            }));
+
+            // Fetch services if toggle is on
+            if (state.servicesVisible) {
+                fetchNearbyServices(route.geometry);
+            }
+        } else {
+            drawFallbackRoute();
+        }
+    } catch (e) {
+        console.warn('OSRM routing failed, using fallback:', e);
+        drawFallbackRoute();
+    }
+
+    updateTripUI();
+}
+
+function drawFallbackRoute() {
+    const coords = state.trip
+        .filter(s => s.coordinates)
+        .map(s => [s.coordinates.lat, s.coordinates.lng]);
+    if (coords.length < 2) return;
+    L.polyline(coords, { color: '#2d5a3d', weight: 3, opacity: 0.6, dashArray: '8, 6' }).addTo(routeLayer);
+}
+
+// ==================== NEARBY SERVICES (OVERPASS) ====================
+function haversine(lat1, lng1, lat2, lng2) {
+    const R = 6371;
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLng = (lng2 - lng1) * Math.PI / 180;
+    const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180) * Math.cos(lat2*Math.PI/180) * Math.sin(dLng/2)**2;
+    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+}
+
+function sampleRoutePoints(geometry, intervalKm) {
+    const coords = geometry.coordinates;
+    const points = [];
+    let accumulated = 0;
+    points.push(coords[0]);
+
+    for (let i = 1; i < coords.length; i++) {
+        const d = haversine(coords[i-1][1], coords[i-1][0], coords[i][1], coords[i][0]);
+        accumulated += d;
+        if (accumulated >= intervalKm) {
+            points.push(coords[i]);
+            accumulated = 0;
+        }
+    }
+    // Always include last point
+    points.push(coords[coords.length - 1]);
+    return points;
+}
+
+async function fetchNearbyServices(geometry) {
+    servicesLayer.clearLayers();
+
+    const points = sampleRoutePoints(geometry, 60);
+    if (points.length === 0) return;
+
+    // Build around filter for sampled points
+    const aroundParts = points.map(p => `${p[1]},${p[0]}`).join(',');
+
+    const query = `[out:json][timeout:15];
+(
+  node["amenity"="fuel"](around:8000,${aroundParts});
+  node["amenity"="restaurant"](around:8000,${aroundParts});
+  node["tourism"~"hotel|motel"](around:8000,${aroundParts});
+);
+out body 80;`;
+
+    try {
+        const resp = await fetch('https://overpass-api.de/api/interpreter', {
+            method: 'POST',
+            body: 'data=' + encodeURIComponent(query),
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+        });
+        const data = await resp.json();
+        renderServiceMarkers(data.elements || []);
+    } catch (e) {
+        console.warn('Overpass query failed:', e);
+    }
+}
+
+function renderServiceMarkers(elements) {
+    elements.forEach(el => {
+        if (!el.lat || !el.lon) return;
+        let type, color, icon;
+        if (el.tags.amenity === 'fuel') { type = 'Gas Station'; color = SVC_COLORS.fuel; icon = SVC_ICONS.fuel; }
+        else if (el.tags.amenity === 'restaurant') { type = 'Restaurant'; color = SVC_COLORS.restaurant; icon = SVC_ICONS.restaurant; }
+        else { type = 'Hotel'; color = SVC_COLORS.hotel; icon = SVC_ICONS.hotel; }
+
+        const name = el.tags.name || type;
+        const marker = L.marker([el.lat, el.lon], {
+            icon: L.divIcon({
+                className: '',
+                html: `<div class="svc-icon" style="background:${color};">${icon}</div>`,
+                iconSize: [22, 22], iconAnchor: [11, 11]
+            })
+        });
+        marker.bindPopup(`
+            <div style="font-size:13px;font-weight:600;color:#3e3127;">${name}</div>
+            <div style="font-size:11px;color:#999;margin-top:2px;">${type}</div>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=${el.lat},${el.lon}" target="_blank" rel="noopener" style="font-size:11px;color:#2563eb;text-decoration:none;margin-top:6px;display:inline-block;">Get Directions &rarr;</a>
+        `, { maxWidth: 200 });
+        marker.addTo(servicesLayer);
+    });
 }
 
 // ==================== PROFILE MODAL ====================
@@ -435,16 +660,16 @@ window.viewProfile = function(slug, cat) {
     if (!spot) return;
     map.closePopup();
 
-    const color = CAT_COLORS[cat] || '#c97c5e';
+    const color = CAT_COLORS[cat] || '#2d5a3d';
     const tags = spot.features || spot.primary_species || spot.primary_game || [];
     const inTrip = state.trip.find(s => s.slug === slug && s.cat === cat);
 
     let headerHtml = `
         <div style="font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;color:${color};">${cat}</div>
-        <h2 style="font-size:20px;font-weight:800;margin-top:4px;color:#e8e4df;">${spot.name}</h2>
+        <h2 style="font-size:20px;font-weight:800;margin-top:4px;color:#3e3127;">${spot.name}</h2>
         <div style="display:flex;align-items:center;gap:10px;margin-top:6px;">
-            <span style="font-size:12px;color:#888;">${spot.province || ''}</span>
-            ${spot.scout_level ? `<span style="font-size:10px;font-weight:700;color:${color};background:${color}18;padding:2px 8px;border-radius:8px;">${spot.scout_level}</span>` : ''}
+            <span style="font-size:12px;color:#6b6359;">${spot.province || ''}</span>
+            ${spot.scout_level ? `<span style="font-size:10px;font-weight:700;color:${color};background:${color}15;padding:2px 8px;border-radius:8px;">${spot.scout_level}</span>` : ''}
         </div>
     `;
 
@@ -453,15 +678,14 @@ window.viewProfile = function(slug, cat) {
     if (tags.length) {
         bodyHtml += `<div class="pm-section">
             <div class="pm-section-title">${spot.primary_species ? 'Species' : 'Features'}</div>
-            <div>${tags.map(t => `<span class="pm-tag" style="color:${color};border-color:${color}30;">${t}</span>`).join('')}</div>
+            <div>${tags.map(t => `<span class="pm-tag" style="color:${color};border-color:${color}25;">${t}</span>`).join('')}</div>
         </div>`;
     }
 
     if (spot.description) {
-        const shortDesc = spot.description.split('\n')[0];
         bodyHtml += `<div class="pm-section">
             <div class="pm-section-title">Overview</div>
-            <div class="pm-section-content">${shortDesc}</div>
+            <div class="pm-section-content">${spot.description.split('\n')[0]}</div>
         </div>`;
     }
 
@@ -473,10 +697,9 @@ window.viewProfile = function(slug, cat) {
     }
 
     if (spot.best_time) {
-        const shortBest = spot.best_time.split('\n').slice(0, 3).join('<br>');
         bodyHtml += `<div class="pm-section">
             <div class="pm-section-title">Best Time</div>
-            <div class="pm-section-content">${shortBest}</div>
+            <div class="pm-section-content">${spot.best_time.split('\n').slice(0, 3).join('<br>')}</div>
         </div>`;
     }
 
@@ -494,13 +717,14 @@ window.viewProfile = function(slug, cat) {
         </div>`;
     }
 
-    // Action buttons
-    const addBtnDisabled = inTrip ? 'disabled style="flex:1;padding:9px 0;background:rgba(201,124,94,0.1);border:1px solid rgba(201,124,94,0.2);border-radius:8px;color:#c97c5e;font-size:13px;font-weight:700;cursor:default;opacity:0.5;"' : 'style="flex:1;padding:9px 0;background:rgba(201,124,94,0.15);border:1px solid rgba(201,124,94,0.3);border-radius:8px;color:#c97c5e;font-size:13px;font-weight:700;cursor:pointer;"';
+    const addBtnStyle = inTrip
+        ? 'style="flex:1;padding:9px 0;background:#f0ede8;border:1px solid #e8e4df;border-radius:8px;color:#999;font-size:13px;font-weight:700;cursor:default;"'
+        : `style="flex:1;padding:9px 0;background:${color}12;border:1px solid ${color}30;border-radius:8px;color:${color};font-size:13px;font-weight:700;cursor:pointer;"`;
     const addBtnText = inTrip ? 'Added &#10003;' : 'Add to Trip';
 
-    bodyHtml += `<div style="display:flex;gap:8px;margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.06);">
-        <button onclick="window.addSpotToTrip('${slug}','${cat}');window.closeProfile();" ${addBtnDisabled}>${addBtnText}</button>
-        <a href="${cat}/${slug}.html" style="flex:1;padding:9px 0;background:rgba(45,90,61,0.15);border:1px solid rgba(45,90,61,0.3);border-radius:8px;color:#7a9b8e;font-size:13px;font-weight:700;text-decoration:none;text-align:center;">Full Page</a>
+    bodyHtml += `<div style="display:flex;gap:8px;margin-top:20px;padding-top:16px;border-top:1px solid #f0ede8;">
+        <button onclick="window.addSpotToTrip('${slug}','${cat}');window.closeProfile();" ${inTrip ? 'disabled ' : ''}${addBtnStyle}>${addBtnText}</button>
+        <a href="${cat}/${slug}.html" style="flex:1;padding:9px 0;background:#2d5a3d12;border:1px solid #2d5a3d30;border-radius:8px;color:#2d5a3d;font-size:13px;font-weight:700;text-decoration:none;text-align:center;">Full Page</a>
     </div>`;
 
     document.getElementById('pm-header').innerHTML = headerHtml;
@@ -512,76 +736,117 @@ window.closeProfile = function() {
     document.getElementById('profile-modal-overlay').classList.remove('open');
 };
 
-function updateRoute() {
-    routeLayer.clearLayers();
-    if (state.trip.length < 2) return;
-
-    const coords = state.trip
-        .filter(s => s.coordinates)
-        .map(s => [s.coordinates.lat, s.coordinates.lng]);
-
-    if (coords.length < 2) return;
-
-    const routeLine = L.polyline(coords, {
-        color: '#c97c5e',
-        weight: 3,
-        opacity: 0.8,
-        dashArray: '8, 6',
-        smoothFactor: 1
-    });
-    routeLayer.addLayer(routeLine);
+// ==================== UI ====================
+function formatDist(m) {
+    return m >= 1000 ? (m / 1000).toFixed(0) + ' km' : m.toFixed(0) + ' m';
+}
+function formatTime(s) {
+    const h = Math.floor(s / 3600);
+    const m = Math.floor((s % 3600) / 60);
+    return h > 0 ? `${h}h ${m}m` : `${m}m`;
 }
 
-// ==================== UI ====================
 function updateTripUI() {
     const list = document.getElementById('trip-list');
     const countEl = document.getElementById('trip-count');
     const stats = document.getElementById('trip-stats');
+    const svcWrap = document.getElementById('services-toggle-wrap');
 
     countEl.textContent = state.trip.length;
 
     if (state.trip.length === 0) {
-        list.innerHTML = `<div style="text-align:center; padding:48px 16px; color:#444;">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5" style="margin:0 auto 16px;">
+        list.innerHTML = `<div style="text-align:center; padding:48px 16px; color:#999;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5" style="margin:0 auto 16px;">
                 <path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
             </svg>
-            <p style="font-size:13px; line-height:1.5;">Click spots on the map to explore and build your route</p>
+            <p style="font-size:13px; line-height:1.5;">Click spots on the map to add them to your trip</p>
         </div>`;
         stats.style.display = 'none';
+        svcWrap.style.display = 'none';
         return;
     }
 
+    // Stats
     const provs = new Set(state.trip.map(s => s.province).filter(Boolean));
-    stats.style.display = 'block';
-    stats.innerHTML = `${state.trip.length} stop${state.trip.length !== 1 ? 's' : ''} &middot; ${provs.size} province${provs.size !== 1 ? 's' : ''}`;
+    let statsHtml = `<div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+        <span style="font-weight:700; color:#3e3127;">${state.trip.length} stop${state.trip.length !== 1 ? 's' : ''}</span>
+        <span style="color:#ccc;">&middot;</span>
+        <span>${provs.size} province${provs.size !== 1 ? 's' : ''}</span>`;
 
-    list.innerHTML = state.trip.map((s, i) => `
-        <div class="trip-stop" onclick="window.tripFlyTo(${i})">
-            <div class="snum" style="background:${CAT_COLORS[s.cat]}18; color:${CAT_COLORS[s.cat]}; border:1px solid ${CAT_COLORS[s.cat]}35;">${i + 1}</div>
+    if (state.routeLegs.length > 0) {
+        const totalDist = state.routeLegs.reduce((a, l) => a + l.distance, 0);
+        const totalTime = state.routeLegs.reduce((a, l) => a + l.duration, 0);
+        statsHtml += `<span style="color:#ccc;">&middot;</span>
+            <span>${formatDist(totalDist)}</span>
+            <span style="color:#ccc;">&middot;</span>
+            <span>${formatTime(totalTime)} drive</span>`;
+    }
+    statsHtml += '</div>';
+    stats.style.display = 'block';
+    stats.innerHTML = statsHtml;
+
+    // Show services toggle if route exists
+    svcWrap.style.display = state.trip.length >= 2 ? 'block' : 'none';
+
+    // Trip list with leg info
+    let html = '';
+    state.trip.forEach((s, i) => {
+        const color = CAT_COLORS[s.cat];
+        html += `<div class="trip-stop" draggable="true" data-idx="${i}" onclick="window.tripFlyTo(${i})">
+            <div class="snum" style="background:${color}15; color:${color}; border:1px solid ${color}30;">${i + 1}</div>
             <div style="flex:1; min-width:0;">
-                <div style="font-size:12px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:#ddd;">${s.name}</div>
-                <div style="font-size:10px; color:#666; text-transform:uppercase; letter-spacing:0.5px; margin-top:1px;">${s.cat}${s.province ? ' &middot; ' + s.province : ''}</div>
+                <div style="font-size:12px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:#3e3127;">${s.name}</div>
+                <div style="font-size:10px; color:#999; text-transform:uppercase; letter-spacing:0.5px; margin-top:1px;">${s.province || ''}</div>
             </div>
             <button class="srem" onclick="event.stopPropagation(); window.tripRemove(${i})" title="Remove">&times;</button>
-        </div>
-    `).join('');
+        </div>`;
+
+        // Leg connector
+        if (i < state.trip.length - 1 && state.routeLegs[i]) {
+            const leg = state.routeLegs[i];
+            html += `<div class="leg-info">
+                <svg width="10" height="16" viewBox="0 0 10 16"><line x1="5" y1="0" x2="5" y2="16" stroke="#ccc" stroke-width="1.5" stroke-dasharray="2,2"/></svg>
+                ${formatDist(leg.distance)} &middot; ${formatTime(leg.duration)}
+            </div>`;
+        }
+    });
+
+    list.innerHTML = html;
+    setupDragAndDrop();
 }
 
-// ==================== FILTERS ====================
-document.querySelectorAll('.fchip').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const cat = btn.dataset.cat;
-        if (state.activeFilters.has(cat)) {
-            if (state.activeFilters.size === 1) return;
-            state.activeFilters.delete(cat);
-            btn.classList.remove('active');
-        } else {
-            state.activeFilters.add(cat);
-            btn.classList.add('active');
-        }
-        renderSpots();
+// ==================== DRAG & DROP ====================
+function setupDragAndDrop() {
+    const items = document.querySelectorAll('.trip-stop[draggable]');
+    let dragIdx = null;
+
+    items.forEach(item => {
+        item.addEventListener('dragstart', e => {
+            dragIdx = parseInt(item.dataset.idx);
+            item.classList.add('dragging');
+            e.dataTransfer.effectAllowed = 'move';
+        });
+        item.addEventListener('dragend', () => {
+            item.classList.remove('dragging');
+            dragIdx = null;
+        });
+        item.addEventListener('dragover', e => {
+            e.preventDefault();
+            e.dataTransfer.dropEffect = 'move';
+        });
+        item.addEventListener('drop', e => {
+            e.preventDefault();
+            const dropIdx = parseInt(item.dataset.idx);
+            if (dragIdx !== null && dragIdx !== dropIdx) {
+                const moved = state.trip.splice(dragIdx, 1)[0];
+                state.trip.splice(dropIdx, 0, moved);
+                updateTripUI();
+                scheduleRouteUpdate();
+                updateTripMarkers();
+            }
+        });
     });
-});
+}
 
 // ==================== EVENTS ====================
 document.getElementById('sidebar-toggle').addEventListener('click', () => {
@@ -590,6 +855,15 @@ document.getElementById('sidebar-toggle').addEventListener('click', () => {
 });
 
 document.getElementById('clear-trip').addEventListener('click', clearTrip);
+
+document.getElementById('services-toggle').addEventListener('change', function() {
+    state.servicesVisible = this.checked;
+    if (this.checked && state.trip.length >= 2) {
+        updateRoute();
+    } else {
+        servicesLayer.clearLayers();
+    }
+});
 
 document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
@@ -612,17 +886,7 @@ async function init() {
     try {
         const allSpots = await loadAllData();
         state.allSpots = allSpots;
-        renderSpots();
-
-        // Fade help hint
-        setTimeout(() => {
-            const hint = document.getElementById('help-hint');
-            if (hint) {
-                hint.style.opacity = '0';
-                setTimeout(() => hint.remove(), 1500);
-            }
-        }, 6000);
-
+        buildActivityPicker();
     } catch (err) {
         console.error('Failed to initialize:', err);
     }
@@ -655,7 +919,7 @@ init();
         var toggle = document.getElementById('global-search-toggle');
         var spotsData = null;
         var CATS = ['fishing','hunting','camping','kayaking','skiing','hiking'];
-        var CAT_ICONS = {fishing:'🎣',hunting:'🦌',camping:'⛺',kayaking:'🛶',skiing:'⛷️',hiking:'🥾'};
+        var CAT_ICONS_S = {fishing:'🎣',hunting:'🦌',camping:'⛺',kayaking:'🛶',skiing:'⛷️',hiking:'🥾'};
 
         function isEn() { return !window.location.pathname.startsWith('/fr'); }
         function basePath() {
@@ -678,9 +942,7 @@ init();
                     var d = await r.json();
                     d.spots.forEach(function(s) {
                         spotsData.push({
-                            name: s.name,
-                            slug: s.slug,
-                            province: s.province,
+                            name: s.name, slug: s.slug, province: s.province,
                             category: CATS[i],
                             species: s.primary_species || s.primary_game || s.features || [],
                             scout_level: s.scout_level || ''
@@ -700,60 +962,38 @@ init();
             var base = basePath();
             var html = matches.slice(0, 12).map(function(s) {
                 var href = (base ? base + '/' : '/') + lang + '/' + s.category + '/' + s.slug + '.html';
-                var icon = CAT_ICONS[s.category] || '';
-                var sub = s.province + ' • ' + s.category.charAt(0).toUpperCase() + s.category.slice(1);
-                if (s.species.length) sub += ' • ' + s.species.slice(0,2).join(', ');
+                var icon = CAT_ICONS_S[s.category] || '';
+                var sub = s.province + ' \u2022 ' + s.category.charAt(0).toUpperCase() + s.category.slice(1);
+                if (s.species.length) sub += ' \u2022 ' + s.species.slice(0,2).join(', ');
                 return '<a href="' + href + '" class="flex items-center gap-4 px-6 py-3 hover:bg-[#fef9f3] transition-colors">' +
                     '<span class="text-xl flex-shrink-0">' + icon + '</span>' +
                     '<div class="flex-1 min-w-0">' +
                     '<div class="font-semibold text-[#2d5a3d] truncate">' + s.name + '</div>' +
                     '<div class="text-xs text-[#6b6359] truncate">' + sub + '</div>' +
                     '</div>' +
-                    '<span class="text-xs font-bold text-[#c97c5e] flex-shrink-0">' + s.scout_level + '</span>' +
-                    '</a>';
+                    '<span class="text-xs font-bold text-[#c97c5e] flex-shrink-0">' + s.scout_level + '</span></a>';
             }).join('');
-            if (matches.length > 12) {
-                html += '<div class="px-6 py-3 text-center text-xs text-[#6b6359]">' + (matches.length - 12) + ' more results...</div>';
-            }
+            if (matches.length > 12) html += '<div class="px-6 py-3 text-center text-xs text-[#6b6359]">' + (matches.length - 12) + ' more results...</div>';
             results.innerHTML = html;
         }
 
         function search(q) {
             if (!spotsData) return;
             q = q.toLowerCase().trim();
-            if (!q) {
-                results.innerHTML = '<div class="px-6 py-8 text-center text-[#6b6359] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>';
-                return;
-            }
+            if (!q) { results.innerHTML = '<div class="px-6 py-8 text-center text-[#6b6359] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>'; return; }
             var matches = spotsData.filter(function(s) {
-                return s.name.toLowerCase().includes(q) ||
-                    s.province.toLowerCase().includes(q) ||
-                    s.category.toLowerCase().includes(q) ||
-                    s.species.some(function(sp) { return sp.toLowerCase().includes(q); });
+                return s.name.toLowerCase().includes(q) || s.province.toLowerCase().includes(q) ||
+                    s.category.toLowerCase().includes(q) || s.species.some(function(sp) { return sp.toLowerCase().includes(q); });
             });
             renderResults(matches);
         }
 
-        function open() {
-            overlay.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-            input.value = '';
-            input.focus();
-            loadSpots();
-            results.innerHTML = '<div class="px-6 py-8 text-center text-[#6b6359] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>';
-        }
-
-        function close() {
-            overlay.classList.add('hidden');
-            document.body.style.overflow = '';
-        }
+        function open() { overlay.classList.remove('hidden'); document.body.style.overflow = 'hidden'; input.value = ''; input.focus(); loadSpots(); results.innerHTML = '<div class="px-6 py-8 text-center text-[#6b6359] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>'; }
+        function close() { overlay.classList.add('hidden'); document.body.style.overflow = ''; }
 
         if (toggle) toggle.addEventListener('click', open);
         overlay.addEventListener('click', function(e) { if (e.target === overlay) close(); });
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') close();
-            if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); open(); }
-        });
+        document.addEventListener('keydown', function(e) { if (e.key === 'Escape') close(); if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); open(); } });
         input.addEventListener('input', function() { search(this.value); });
     })();
     </script>
