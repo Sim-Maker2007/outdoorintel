@@ -367,10 +367,24 @@ function renderSpots() {
     updateTripMarkers();
 }
 
+let svcTripMarkers = [];
 function updateTripMarkers() {
+    // Update activity spot markers
     allMarkers.forEach(({marker,spot}) => {
-        const idx = state.trip.findIndex(s => s.slug === spot.slug && s.cat === spot.cat);
+        const idx = state.trip.findIndex(s => s.slug === spot.slug && s.cat === spot.cat && !s._isService);
         marker.setIcon(idx >= 0 ? createTripIcon(CAT_COLORS[spot.cat], idx+1) : createCircleIcon(CAT_COLORS[spot.cat]));
+    });
+    // Update/create markers for service stops in trip
+    svcTripMarkers.forEach(m => map.removeLayer(m));
+    svcTripMarkers = [];
+    state.trip.forEach((s, i) => {
+        if (!s._isService || !s.coordinates) return;
+        const color = SVC_COLORS[s.cat] || '#6b6359';
+        const emoji = SVC_EMOJIS[s.cat] || '\u{1F4CD}';
+        const m = L.marker([s.coordinates.lat, s.coordinates.lng], {
+            icon: L.divIcon({className:'',html:`<div style="width:28px;height:28px;border-radius:50%;background:${color};border:2.5px solid #fff;display:flex;align-items:center;justify-content:center;font-size:13px;box-shadow:0 2px 10px ${color}50,0 2px 6px rgba(0,0,0,.15)">${emoji}</div>`,iconSize:[28,28],iconAnchor:[14,14]})
+        }).addTo(map);
+        svcTripMarkers.push(m);
     });
 }
 
@@ -612,7 +626,7 @@ async function fetchNearbyServices(geometry) {
 
 function renderServiceMarkers() {
     servicesLayer.clearLayers();
-    state.services.forEach(el => {
+    state.services.forEach((el, svcIdx) => {
         let type, color, emoji;
         if (el.tags.amenity === 'fuel') { type='fuel'; color=SVC_COLORS.fuel; emoji=SVC_EMOJIS.fuel; }
         else if (el.tags.amenity === 'restaurant') { type='restaurant'; color=SVC_COLORS.restaurant; emoji=SVC_EMOJIS.restaurant; }
@@ -621,12 +635,74 @@ function renderServiceMarkers() {
         if (!state.svcFilters[type]) return;
 
         const name = el.tags.name || (type==='fuel'?'Gas Station':type==='restaurant'?'Restaurant':'Hotel');
+        const typeLabel = type==='fuel'?'Gas Station':type==='restaurant'?'Restaurant':'Hotel';
+        const alreadyAdded = state.trip.some(s => s._svcId === el.id);
         L.marker([el.lat,el.lon],{
             icon: L.divIcon({className:'',html:`<div class="svc-icon" style="background:${color}">${emoji}</div>`,iconSize:[24,24],iconAnchor:[12,12]})
-        }).bindPopup(`<div style="font-size:13px;font-weight:600;color:#3e3127">${name}</div>
-            <div style="font-size:11px;color:#999;margin-top:2px">${type==='fuel'?'Gas Station':type==='restaurant'?'Restaurant':'Hotel'}</div>
-            <a href="https://www.google.com/maps/dir/?api=1&destination=${el.lat},${el.lon}" target="_blank" rel="noopener" style="font-size:11px;color:#2563eb;text-decoration:none;margin-top:6px;display:inline-block">Get Directions &rarr;</a>`,{maxWidth:200}).addTo(servicesLayer);
+        }).bindPopup(`<div style="min-width:170px">
+            <div style="font-size:13px;font-weight:600;color:#3e3127">${name}</div>
+            <div style="font-size:11px;color:#999;margin-top:2px">${typeLabel}</div>
+            <div style="display:flex;gap:6px;margin-top:10px">
+                <button onclick="window.addServiceToTrip(${svcIdx})" style="flex:1;padding:6px 0;background:${color}15;border:1px solid ${color}30;border-radius:8px;color:${color};font-size:11px;font-weight:700;cursor:pointer;opacity:${alreadyAdded?'.5':'1'}" ${alreadyAdded?'disabled':''}>
+                    ${alreadyAdded?'Added &#10003;':'Add as Stop'}
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=${el.lat},${el.lon}" target="_blank" rel="noopener" style="flex:1;padding:6px 0;background:#f5f3f0;border:1px solid #e0dbd5;border-radius:8px;color:#6b6359;font-size:11px;font-weight:600;text-decoration:none;text-align:center">Directions</a>
+            </div>
+        </div>`,{maxWidth:220}).addTo(servicesLayer);
     });
+}
+
+// Insert a service stop between the two closest consecutive trip points
+window.addServiceToTrip = function(svcIdx) {
+    const el = state.services[svcIdx];
+    if (!el || state.trip.some(s => s._svcId === el.id)) return;
+
+    const name = el.tags.name || (el.tags.amenity==='fuel'?'Gas Station':el.tags.amenity==='restaurant'?'Restaurant':'Hotel');
+    const type = el.tags.amenity==='fuel'?'fuel':el.tags.amenity==='restaurant'?'restaurant':'hotel';
+
+    // Build the full list of waypoints: start + trip stops
+    const waypoints = [];
+    if (state.startPoint) waypoints.push({lat:state.startPoint.lat, lng:state.startPoint.lng});
+    state.trip.forEach(s => { if (s.coordinates) waypoints.push({lat:s.coordinates.lat, lng:s.coordinates.lng}); });
+
+    // Find which leg (consecutive pair) the service is closest to
+    let bestInsert = state.trip.length; // default: append at end
+    let bestDist = Infinity;
+    for (let i = 0; i < waypoints.length - 1; i++) {
+        const d = distToSegment(el.lat, el.lon, waypoints[i].lat, waypoints[i].lng, waypoints[i+1].lat, waypoints[i+1].lng);
+        if (d < bestDist) { bestDist = d; bestInsert = i; }
+    }
+    // bestInsert is the index in waypoints[] of the leg start
+    // In state.trip[], index 0 = waypoints[1], so tripInsertIdx = bestInsert (after start) or bestInsert for mid-trip
+    // If start is waypoints[0], then trip item i = waypoints[i+1]
+    // Insert after trip index (bestInsert - 1), clamped
+    const tripInsertIdx = Math.max(0, Math.min(bestInsert, state.trip.length));
+
+    const svcStop = {
+        name, slug: '_svc_' + el.id, cat: type, _svcId: el.id, _isService: true,
+        province: '', coordinates: {lat: el.lat, lng: el.lon}
+    };
+    state.trip.splice(tripInsertIdx, 0, svcStop);
+    map.closePopup();
+    updateTripUI();
+    updateTripMarkers();
+    scheduleRouteUpdate();
+    renderServiceMarkers(); // refresh popup states
+    if (!state.sidebarOpen) { state.sidebarOpen = true; document.getElementById('sidebar').classList.add('open'); }
+};
+
+// Distance from point to line segment (in km, using haversine approximation)
+function distToSegment(pLat, pLng, aLat, aLng, bLat, bLng) {
+    const dAP = haversine(aLat, aLng, pLat, pLng);
+    const dBP = haversine(bLat, bLng, pLat, pLng);
+    const dAB = haversine(aLat, aLng, bLat, bLng);
+    if (dAB < 0.01) return dAP; // segment is a point
+    // Project P onto AB using cosine rule
+    const t = Math.max(0, Math.min(1, ((dAP*dAP - dBP*dBP + dAB*dAB) / (2*dAB*dAB))));
+    // Interpolate point on segment
+    const cLat = aLat + t * (bLat - aLat);
+    const cLng = aLng + t * (bLng - aLng);
+    return haversine(cLat, cLng, pLat, pLng);
 }
 
 window.toggleSvcFilter = function(btn) {
@@ -797,12 +873,15 @@ function updateTripUI() {
     }
 
     state.trip.forEach((s,i) => {
-        const color = CAT_COLORS[s.cat];
-        html += `<div class="trip-stop" draggable="true" data-idx="${i}" onclick="window.tripFlyTo(${i})">
-            <div class="snum" style="background:${color}15;color:${color};border:1px solid ${color}30">${i+1}</div>
+        const isSvc = s._isService;
+        const color = isSvc ? (SVC_COLORS[s.cat]||'#6b6359') : (CAT_COLORS[s.cat]||'#2d5a3d');
+        const svcEmoji = isSvc ? (SVC_EMOJIS[s.cat]||'\u{1F4CD}') : '';
+        const svcLabel = isSvc ? (s.cat==='fuel'?'Gas Station':s.cat==='restaurant'?'Restaurant':'Hotel') : '';
+        html += `<div class="trip-stop" draggable="true" data-idx="${i}" onclick="window.tripFlyTo(${i})" style="${isSvc?'background:'+color+'08;border-color:'+color+'25':''}">
+            <div class="snum" style="background:${color}15;color:${color};border:1px solid ${color}30;font-size:${isSvc?'13px':'11px'}">${isSvc ? svcEmoji : (i+1)}</div>
             <div style="flex:1;min-width:0">
                 <div style="font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#3e3127">${s.name}</div>
-                <div style="font-size:10px;color:#999;text-transform:uppercase;letter-spacing:.5px;margin-top:1px">${s.province||''}</div>
+                <div style="font-size:10px;color:#999;text-transform:uppercase;letter-spacing:.5px;margin-top:1px">${isSvc ? svcLabel : (s.province||'')}</div>
             </div>
             <button class="srem" onclick="event.stopPropagation();window.tripRemove(${i})" title="Remove">&times;</button>
         </div>`;
