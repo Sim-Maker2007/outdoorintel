@@ -138,11 +138,56 @@
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb { background: rgba(201,124,94,0.25); border-radius: 3px; }
 
+        /* Profile Modal */
+        #profile-modal-overlay {
+            position: fixed; inset: 0; z-index: 2000;
+            background: rgba(0,0,0,0.6); backdrop-filter: blur(4px);
+            display: none; align-items: center; justify-content: center;
+            padding: 24px;
+        }
+        #profile-modal-overlay.open { display: flex; }
+        #profile-modal {
+            background: rgba(10,10,18,0.98);
+            border: 1px solid rgba(201,124,94,0.15);
+            border-radius: 16px;
+            width: 100%; max-width: 520px; max-height: 80vh;
+            overflow-y: auto; position: relative;
+            box-shadow: 0 24px 64px rgba(0,0,0,0.6);
+        }
+        #profile-modal .pm-header {
+            padding: 20px 24px 16px; border-bottom: 1px solid rgba(255,255,255,0.06);
+            position: sticky; top: 0; background: rgba(10,10,18,0.98); z-index: 1;
+        }
+        #profile-modal .pm-body { padding: 16px 24px 24px; }
+        #profile-modal .pm-close {
+            position: absolute; top: 16px; right: 16px;
+            background: none; border: none; color: #666; font-size: 20px;
+            cursor: pointer; padding: 4px 8px; border-radius: 6px;
+            transition: all 0.2s;
+        }
+        #profile-modal .pm-close:hover { color: #c97c5e; background: rgba(255,255,255,0.05); }
+        #profile-modal .pm-section {
+            margin-bottom: 16px;
+        }
+        #profile-modal .pm-section-title {
+            font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px;
+            font-weight: 700; color: #888; margin-bottom: 6px;
+        }
+        #profile-modal .pm-section-content {
+            font-size: 13px; color: #bbb; line-height: 1.6;
+        }
+        #profile-modal .pm-tag {
+            display: inline-block; padding: 3px 10px; border-radius: 12px;
+            font-size: 11px; font-weight: 600; margin: 2px 4px 2px 0;
+            background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             #sidebar { width: 100%; }
             #filters { left: 12px; right: 12px; transform: none; overflow-x: auto; justify-content: flex-start; }
             #help-hint { left: 12px; right: 12px; transform: none; text-align: center; }
+            #profile-modal { max-width: 100%; max-height: 90vh; }
         }
     </style>
 
@@ -204,6 +249,15 @@
         <button class="fchip active" data-cat="kayaking" style="color:#22d3ee;">Kayaking</button>
         <button class="fchip active" data-cat="skiing" style="color:#a78bfa;">Skiing</button>
         <button class="fchip active" data-cat="hiking" style="color:#fbbf24;">Hiking</button>
+    </div>
+
+    <!-- Profile Modal -->
+    <div id="profile-modal-overlay">
+        <div id="profile-modal">
+            <button class="pm-close" onclick="window.closeProfile()">&times;</button>
+            <div class="pm-header" id="pm-header"></div>
+            <div class="pm-body" id="pm-body"></div>
+        </div>
     </div>
 
     <!-- Help Hint -->
@@ -283,7 +337,7 @@ function popupContent(spot) {
             ${feats ? `<div style="font-size:11px;color:#666;margin-top:6px;">${feats}</div>` : ''}
             <div style="display:flex;gap:8px;margin-top:14px;">
                 <button onclick="window.addSpotToTrip('${spot.slug}','${spot.cat}')" style="flex:1;padding:7px 0;background:rgba(201,124,94,0.15);border:1px solid rgba(201,124,94,0.3);border-radius:8px;color:#c97c5e;font-size:12px;font-weight:700;cursor:pointer;opacity:${addBtnOpacity};" ${inTrip ? 'disabled' : ''}>${addBtnText}</button>
-                <a href="${spot.cat}/${spot.slug}.html" style="flex:1;padding:7px 0;background:rgba(45,90,61,0.15);border:1px solid rgba(45,90,61,0.3);border-radius:8px;color:#7a9b8e;font-size:12px;font-weight:700;text-decoration:none;text-align:center;">View Profile</a>
+                <button onclick="window.viewProfile('${spot.slug}','${spot.cat}')" style="flex:1;padding:7px 0;background:rgba(45,90,61,0.15);border:1px solid rgba(45,90,61,0.3);border-radius:8px;color:#7a9b8e;font-size:12px;font-weight:700;cursor:pointer;">View Profile</button>
             </div>
         </div>
     `;
@@ -375,6 +429,89 @@ function clearTrip() {
     updateTripMarkers();
 }
 
+// ==================== PROFILE MODAL ====================
+window.viewProfile = function(slug, cat) {
+    const spot = state.allSpots.find(s => s.slug === slug && s.cat === cat);
+    if (!spot) return;
+    map.closePopup();
+
+    const color = CAT_COLORS[cat] || '#c97c5e';
+    const tags = spot.features || spot.primary_species || spot.primary_game || [];
+    const inTrip = state.trip.find(s => s.slug === slug && s.cat === cat);
+
+    let headerHtml = `
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;color:${color};">${cat}</div>
+        <h2 style="font-size:20px;font-weight:800;margin-top:4px;color:#e8e4df;">${spot.name}</h2>
+        <div style="display:flex;align-items:center;gap:10px;margin-top:6px;">
+            <span style="font-size:12px;color:#888;">${spot.province || ''}</span>
+            ${spot.scout_level ? `<span style="font-size:10px;font-weight:700;color:${color};background:${color}18;padding:2px 8px;border-radius:8px;">${spot.scout_level}</span>` : ''}
+        </div>
+    `;
+
+    let bodyHtml = '';
+
+    if (tags.length) {
+        bodyHtml += `<div class="pm-section">
+            <div class="pm-section-title">${spot.primary_species ? 'Species' : 'Features'}</div>
+            <div>${tags.map(t => `<span class="pm-tag" style="color:${color};border-color:${color}30;">${t}</span>`).join('')}</div>
+        </div>`;
+    }
+
+    if (spot.description) {
+        const shortDesc = spot.description.split('\n')[0];
+        bodyHtml += `<div class="pm-section">
+            <div class="pm-section-title">Overview</div>
+            <div class="pm-section-content">${shortDesc}</div>
+        </div>`;
+    }
+
+    if (spot.seasonal_tips) {
+        bodyHtml += `<div class="pm-section">
+            <div class="pm-section-title">Seasonal Tips</div>
+            <div class="pm-section-content">${spot.seasonal_tips}</div>
+        </div>`;
+    }
+
+    if (spot.best_time) {
+        const shortBest = spot.best_time.split('\n').slice(0, 3).join('<br>');
+        bodyHtml += `<div class="pm-section">
+            <div class="pm-section-title">Best Time</div>
+            <div class="pm-section-content">${shortBest}</div>
+        </div>`;
+    }
+
+    if (spot.terrain) {
+        bodyHtml += `<div class="pm-section">
+            <div class="pm-section-title">Terrain</div>
+            <div class="pm-section-content">${spot.terrain.split('.').slice(0, 3).join('.') + '.'}</div>
+        </div>`;
+    }
+
+    if (spot.regulations) {
+        bodyHtml += `<div class="pm-section">
+            <div class="pm-section-title">Regulations</div>
+            <div class="pm-section-content">${spot.regulations.split('.').slice(0, 3).join('.') + '.'}</div>
+        </div>`;
+    }
+
+    // Action buttons
+    const addBtnDisabled = inTrip ? 'disabled style="flex:1;padding:9px 0;background:rgba(201,124,94,0.1);border:1px solid rgba(201,124,94,0.2);border-radius:8px;color:#c97c5e;font-size:13px;font-weight:700;cursor:default;opacity:0.5;"' : 'style="flex:1;padding:9px 0;background:rgba(201,124,94,0.15);border:1px solid rgba(201,124,94,0.3);border-radius:8px;color:#c97c5e;font-size:13px;font-weight:700;cursor:pointer;"';
+    const addBtnText = inTrip ? 'Added &#10003;' : 'Add to Trip';
+
+    bodyHtml += `<div style="display:flex;gap:8px;margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.06);">
+        <button onclick="window.addSpotToTrip('${slug}','${cat}');window.closeProfile();" ${addBtnDisabled}>${addBtnText}</button>
+        <a href="${cat}/${slug}.html" style="flex:1;padding:9px 0;background:rgba(45,90,61,0.15);border:1px solid rgba(45,90,61,0.3);border-radius:8px;color:#7a9b8e;font-size:13px;font-weight:700;text-decoration:none;text-align:center;">Full Page</a>
+    </div>`;
+
+    document.getElementById('pm-header').innerHTML = headerHtml;
+    document.getElementById('pm-body').innerHTML = bodyHtml;
+    document.getElementById('profile-modal-overlay').classList.add('open');
+};
+
+window.closeProfile = function() {
+    document.getElementById('profile-modal-overlay').classList.remove('open');
+};
+
 function updateRoute() {
     routeLayer.clearLayers();
     if (state.trip.length < 2) return;
@@ -456,11 +593,18 @@ document.getElementById('clear-trip').addEventListener('click', clearTrip);
 
 document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
-        if (state.sidebarOpen) {
+        const modal = document.getElementById('profile-modal-overlay');
+        if (modal.classList.contains('open')) {
+            window.closeProfile();
+        } else if (state.sidebarOpen) {
             state.sidebarOpen = false;
             document.getElementById('sidebar').classList.remove('open');
         }
     }
+});
+
+document.getElementById('profile-modal-overlay').addEventListener('click', function(e) {
+    if (e.target === this) window.closeProfile();
 });
 
 // ==================== INIT ====================
