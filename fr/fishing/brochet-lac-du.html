@@ -28,7 +28,7 @@
     <link rel="alternate" hreflang="en" href="https://outdoorintel.ca/en/fishing/brochet-lac-du.html">
     <link rel="alternate" hreflang="fr" href="https://outdoorintel.ca/fr/fishing/brochet-lac-du.html">
     <link rel="alternate" hreflang="x-default" href="https://outdoorintel.ca/en/fishing/brochet-lac-du.html">
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Place", "name": "Brochet, Lac du", "description": "Renseignements de terrain pour Brochet, Lac du, Quebec. Données pêche, conseils saisonniers, topographie et guide expert pour le plein air canadien.", "address": {"@type": "PostalAddress", "addressRegion": "Quebec", "addressCountry": "CA"}, "geo": {"@type": "GeoCoordinates", "latitude": 46.5, "longitude": -72.0}, "image": "https://outdoorintel.ca/assets/heros/scout-hero-103.jpg"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":["TouristAttraction","Place"],"name":"Brochet, Lac du","description":"Brochet, Lac du is one of Quebec's premier fishing destinations, nestled within the Laurentian Mountains, St. Lawrence Valley, boreal shield. Known for its exceptional Omble de fontaine populations, this waterbody has earned a loyal following among anglers who return season after season for its cons","url":"https://outdoorintel.ca/fr/fishing/brochet-lac-du.html","address":{"@type":"PostalAddress","addressRegion":"Quebec","addressCountry":"CA"},"isAccessibleForFree":true,"publicAccess":true,"touristType":"Fishing","geo":{"@type":"GeoCoordinates","latitude":46.5,"longitude":-72},"image":"https://outdoorintel.ca/assets/heros/scout-hero-103.jpg","keywords":"Omble de fontaine, Region: Outaouais, Rivière des, 40, Mercury Advisory, fishing, Quebec, Canada, outdoor","additionalProperty":[{"@type":"PropertyValue","name":"Scout Level","value":"Explorer"},{"@type":"PropertyValue","name":"Intel Grade","value":"v2.1"}],"sameAs":"https://www.quebec.ca/tourisme-et-loisirs/activites-sportives-et-de-plein-air/peche-et-chasse/peche"}</script>
     
         <meta name="geo.position" content="46.5;-72">
     <meta name="geo.region" content="CA">
@@ -53,6 +53,10 @@
       gtag('js', new Date());
       gtag('config', 'G-QY8Q00962P');
     </script>
+
+    <meta property="og:image:alt" content="Brochet, Lac du - fishing destination in Quebec, Canada">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 <body class="bg-[#f5f3f0] text-[#3e3127] font-sans leading-relaxed">
 
@@ -159,6 +163,36 @@
                 </div>
             </div>
         </section>
+        
+        <section class="bg-white py-16 px-6" id="location-map">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex items-center justify-between mb-6 flex-wrap gap-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-[#2d5a3d] rounded-lg flex items-center justify-center">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+                        </div>
+                        <h2 class="text-3xl font-bold text-[#2d5a3d]">Localisation</h2>
+                    </div>
+                    <a href="../map.html" class="text-sm font-semibold text-[#c97c5e] hover:text-[#2d5a3d] transition-colors">Voir sur la carte complète &rarr;</a>
+                </div>
+                <div class="rounded-xl overflow-hidden border border-[#2d5a3d]/10" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div id="spot-mini-map" style="height:400px;width:100%;"></div>
+                </div>
+                <p class="text-sm text-[#6b6359] mt-3">GPS: 46.5&deg;N, 72&deg;W</p>
+            </div>
+        </section>
+        <script>
+        (function(){
+            var map = L.map('spot-mini-map', {scrollWheelZoom: false}).setView([46.5, -72], 10);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; OpenStreetMap contributors',
+                maxZoom: 18
+            }).addTo(map);
+            var marker = L.marker([46.5, -72]).addTo(map);
+            marker.bindPopup('<strong>Brochet, Lac du</strong><br>Quebec').openPopup();
+            setTimeout(function(){ map.invalidateSize(); }, 200);
+        })();
+        </script>
         <section class="bg-[#f5f3f0] py-16 px-6">
             <div class="max-w-7xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -183,6 +217,53 @@
                 </div>
             </div>
         </section>
+        
+        <section class="bg-[#f5f3f0] py-12 px-6" id="weather-widget">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 bg-[#c97c5e] rounded-lg flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-[#2d5a3d]">Météo actuelle</h2>
+                        <p class="text-xs text-[#6b6359]">Conditions en temps réel via Open-Meteo</p>
+                    </div>
+                </div>
+                <div id="weather-data" class="bg-white rounded-xl p-6" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <p class="text-[#6b6359] text-sm">Chargement de la météo...</p>
+                </div>
+            </div>
+        </section>
+        <script>
+        (function(){
+            var lat = 46.5, lng = -72;
+            var el = document.getElementById('weather-data');
+            var WMO = {0:'Clear',1:'Mostly Clear',2:'Partly Cloudy',3:'Overcast',45:'Foggy',48:'Fog',51:'Light Drizzle',53:'Drizzle',55:'Heavy Drizzle',61:'Light Rain',63:'Rain',65:'Heavy Rain',71:'Light Snow',73:'Snow',75:'Heavy Snow',80:'Rain Showers',81:'Moderate Showers',82:'Heavy Showers',85:'Snow Showers',86:'Heavy Snow Showers',95:'Thunderstorm',96:'Thunderstorm + Hail',99:'Severe Thunderstorm'};
+            var ICONS = {0:'☀️',1:'🌤️',2:'⛅',3:'☁️',45:'🌫️',48:'🌫️',51:'🌦️',53:'🌦️',55:'🌧️',61:'🌧️',63:'🌧️',65:'🌧️',71:'🌨️',73:'🌨️',75:'❄️',80:'🌦️',81:'🌧️',82:'⛈️',85:'🌨️',86:'❄️',95:'⛈️',96:'⛈️',99:'⛈️'};
+            fetch('https://api.open-meteo.com/v1/forecast?latitude='+lat+'&longitude='+lng+'&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,weather_code,wind_speed_10m&timezone=auto')
+            .then(function(r){return r.json()})
+            .then(function(d){
+                if(!d.current){el.innerHTML='<p class="text-[#6b6359]">Weather data unavailable.</p>';return;}
+                var c=d.current;
+                var code=c.weather_code||0;
+                var icon=ICONS[code]||'🌡️';
+                var desc=WMO[code]||'Unknown';
+                el.innerHTML=
+                    '<div class="flex items-center gap-6 flex-wrap">'+
+                    '<div class="flex items-center gap-3">'+
+                    '<span class="text-5xl">'+icon+'</span>'+
+                    '<div><div class="text-4xl font-bold text-[#2d5a3d]">'+Math.round(c.temperature_2m)+'°C</div>'+
+                    '<div class="text-sm text-[#6b6359]">'+desc+'</div></div></div>'+
+                    '<div class="flex gap-6 flex-wrap text-sm">'+
+                    '<div><div class="text-[#6b6359] text-xs uppercase font-semibold">Ressenti</div><div class="font-bold text-[#2d5a3d]">'+Math.round(c.apparent_temperature)+'°C</div></div>'+
+                    '<div><div class="text-[#6b6359] text-xs uppercase font-semibold">Vent</div><div class="font-bold text-[#2d5a3d]">'+Math.round(c.wind_speed_10m)+' km/h</div></div>'+
+                    '<div><div class="text-[#6b6359] text-xs uppercase font-semibold">Humidité</div><div class="font-bold text-[#2d5a3d]">'+c.relative_humidity_2m+'%</div></div>'+
+                    '<div><div class="text-[#6b6359] text-xs uppercase font-semibold">Précip.</div><div class="font-bold text-[#2d5a3d]">'+c.precipitation+' mm</div></div>'+
+                    '</div></div>';
+            })
+            .catch(function(){el.innerHTML='<p class="text-[#6b6359]">Weather data unavailable. Check back later.</p>';});
+        })();
+        </script>
         <section class="bg-white py-16 px-6">
             <div class="max-w-7xl mx-auto">
                 <div class="max-w-4xl">
@@ -654,5 +735,131 @@ if (toggle && menu) {
     })();
     </script>
 <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js');}</script>
+
+    <!-- Global Search Overlay -->
+    <div id="global-search-overlay" class="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm hidden" style="transition:opacity 0.2s">
+        <div class="flex items-start justify-center pt-[15vh] px-4">
+            <div class="bg-white rounded-2xl w-full max-w-2xl overflow-hidden" style="box-shadow:0 25px 50px rgba(0,0,0,0.25)">
+                <div class="flex items-center gap-3 px-6 py-4 border-b border-[#2d5a3d]/10">
+                    <svg class="w-5 h-5 text-[#6b6359] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                    <input id="global-search-input" type="text" placeholder="Search 499+ spots across Canada..." class="flex-1 text-lg text-[#3e3127] placeholder-[#6b6359]/50 outline-none bg-transparent" autocomplete="off">
+                    <kbd class="hidden sm:inline-block text-xs text-[#6b6359] bg-[#f5f3f0] px-2 py-1 rounded font-mono">ESC</kbd>
+                </div>
+                <div id="global-search-results" class="max-h-[50vh] overflow-y-auto">
+                    <div class="px-6 py-8 text-center text-[#6b6359] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    (function(){
+        var overlay = document.getElementById('global-search-overlay');
+        var input = document.getElementById('global-search-input');
+        var results = document.getElementById('global-search-results');
+        var toggle = document.getElementById('global-search-toggle');
+        var spotsData = null;
+        var CATS = ['fishing','hunting','camping','kayaking','skiing','hiking'];
+        var CAT_ICONS = {fishing:'🎣',hunting:'🦌',camping:'⛺',kayaking:'🛶',skiing:'⛷️',hiking:'🥾'};
+
+        function isEn() { return !window.location.pathname.startsWith('/fr'); }
+        function basePath() {
+            var p = window.location.pathname;
+            var depth = (p.match(/\//g)||[]).length - 1;
+            if (p === '/' || p === '/index.html') return '';
+            var segs = [];
+            for (var i = 0; i < depth; i++) segs.push('..');
+            return segs.join('/') || '.';
+        }
+
+        async function loadSpots() {
+            if (spotsData) return spotsData;
+            spotsData = [];
+            var lang = isEn() ? 'en' : 'fr';
+            var base = basePath();
+            for (var i = 0; i < CATS.length; i++) {
+                try {
+                    var r = await fetch((base ? base + '/' : '/') + 'data/' + CATS[i] + '.json');
+                    var d = await r.json();
+                    d.spots.forEach(function(s) {
+                        spotsData.push({
+                            name: s.name,
+                            slug: s.slug,
+                            province: s.province,
+                            category: CATS[i],
+                            species: s.primary_species || s.primary_game || s.features || [],
+                            scout_level: s.scout_level || ''
+                        });
+                    });
+                } catch(e) {}
+            }
+            return spotsData;
+        }
+
+        function renderResults(matches) {
+            if (!matches.length) {
+                results.innerHTML = '<div class="px-6 py-8 text-center text-[#6b6359] text-sm">No spots found. Try a different search term.</div>';
+                return;
+            }
+            var lang = isEn() ? 'en' : 'fr';
+            var base = basePath();
+            var html = matches.slice(0, 12).map(function(s) {
+                var href = (base ? base + '/' : '/') + lang + '/' + s.category + '/' + s.slug + '.html';
+                var icon = CAT_ICONS[s.category] || '';
+                var sub = s.province + ' • ' + s.category.charAt(0).toUpperCase() + s.category.slice(1);
+                if (s.species.length) sub += ' • ' + s.species.slice(0,2).join(', ');
+                return '<a href="' + href + '" class="flex items-center gap-4 px-6 py-3 hover:bg-[#fef9f3] transition-colors">' +
+                    '<span class="text-xl flex-shrink-0">' + icon + '</span>' +
+                    '<div class="flex-1 min-w-0">' +
+                    '<div class="font-semibold text-[#2d5a3d] truncate">' + s.name + '</div>' +
+                    '<div class="text-xs text-[#6b6359] truncate">' + sub + '</div>' +
+                    '</div>' +
+                    '<span class="text-xs font-bold text-[#c97c5e] flex-shrink-0">' + s.scout_level + '</span>' +
+                    '</a>';
+            }).join('');
+            if (matches.length > 12) {
+                html += '<div class="px-6 py-3 text-center text-xs text-[#6b6359]">' + (matches.length - 12) + ' more results...</div>';
+            }
+            results.innerHTML = html;
+        }
+
+        function search(q) {
+            if (!spotsData) return;
+            q = q.toLowerCase().trim();
+            if (!q) {
+                results.innerHTML = '<div class="px-6 py-8 text-center text-[#6b6359] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>';
+                return;
+            }
+            var matches = spotsData.filter(function(s) {
+                return s.name.toLowerCase().includes(q) ||
+                    s.province.toLowerCase().includes(q) ||
+                    s.category.toLowerCase().includes(q) ||
+                    s.species.some(function(sp) { return sp.toLowerCase().includes(q); });
+            });
+            renderResults(matches);
+        }
+
+        function open() {
+            overlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            input.value = '';
+            input.focus();
+            loadSpots();
+            results.innerHTML = '<div class="px-6 py-8 text-center text-[#6b6359] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>';
+        }
+
+        function close() {
+            overlay.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        if (toggle) toggle.addEventListener('click', open);
+        overlay.addEventListener('click', function(e) { if (e.target === overlay) close(); });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') close();
+            if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); open(); }
+        });
+        input.addEventListener('input', function() { search(this.value); });
+    })();
+    </script>
 </body>
 </html>
