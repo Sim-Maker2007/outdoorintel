@@ -173,6 +173,10 @@ body{overflow:hidden;background:#f5f3f0;color:#3e3127;font-family:system-ui,-app
 <div id="plan-bar">
     <div class="step-label" id="step-label">Click the map to set your starting point</div>
     <div class="step-sub" id="step-sub">This is where your adventure begins</div>
+    <div id="address-search-wrap" style="position:relative;margin-top:10px;display:none">
+        <input id="address-search-input" type="text" placeholder="Or search by address, city or place..." autocomplete="off" style="width:100%;padding:9px 12px;border:1px solid #e8e4df;border-radius:8px;font-size:13px;outline:none;background:#fafafa;transition:all .2s;box-sizing:border-box" onfocus="this.style.borderColor='#2d5a3d';this.style.background='#fff'" onblur="this.style.borderColor='#e8e4df';this.style.background='#fafafa'">
+        <div id="address-search-results" style="position:absolute;bottom:calc(100% + 4px);left:0;right:0;background:#fff;border:1px solid #e0dbd5;border-radius:8px;box-shadow:0 -8px 24px rgba(0,0,0,.12);max-height:260px;overflow-y:auto;z-index:1000;display:none;text-align:left"></div>
+    </div>
     <button id="generate-btn" onclick="window.generateTrip()">Generate My Trip</button>
 </div>
 
@@ -275,8 +279,60 @@ function advanceToDestinations() {
     state.phase = 'add-destinations';
     document.getElementById('step-label').textContent = 'Now click spots to add destinations';
     document.getElementById('step-sub').textContent = 'Add at least one destination, then generate your trip';
+    const wrap = document.getElementById('address-search-wrap');
+    if (wrap) wrap.style.display = 'none';
+    const results = document.getElementById('address-search-results');
+    if (results) results.style.display = 'none';
+    const input = document.getElementById('address-search-input');
+    if (input) input.value = '';
     renderSpots();
     updateGenerateBtn();
+}
+
+// ==================== GEOCODING (Nominatim/OpenStreetMap) ====================
+let geocodeDebounce = null;
+let geocodeResults = [];
+async function geocodeAddress(query) {
+    try {
+        const resp = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&countrycodes=ca&limit=6&addressdetails=1`, {
+            headers: {'Accept-Language': 'en'}
+        });
+        return await resp.json();
+    } catch(e) {
+        console.warn('Geocoding failed:', e);
+        return [];
+    }
+}
+
+function renderGeocodeResults(results) {
+    const box = document.getElementById('address-search-results');
+    if (!results || results.length === 0) {
+        box.innerHTML = '<div style="padding:12px 14px;font-size:12px;color:#999">No matches found</div>';
+        box.style.display = 'block';
+        return;
+    }
+    box.innerHTML = results.map((r, i) => {
+        const parts = r.display_name.split(',');
+        const primary = parts[0].trim();
+        const secondary = parts.slice(1).join(',').trim();
+        return `<div data-idx="${i}" class="geo-result" style="padding:10px 14px;border-bottom:1px solid #f0ede8;cursor:pointer;transition:background .15s" onmouseenter="this.style.background='#f8f7f5'" onmouseleave="this.style.background='#fff'">
+            <div style="font-size:13px;font-weight:600;color:#3e3127;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${primary}</div>
+            <div style="font-size:11px;color:#999;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${secondary}</div>
+        </div>`;
+    }).join('');
+    box.style.display = 'block';
+    box.querySelectorAll('.geo-result').forEach(el => {
+        el.addEventListener('click', () => {
+            const r = geocodeResults[parseInt(el.dataset.idx, 10)];
+            if (!r) return;
+            const lat = parseFloat(r.lat), lng = parseFloat(r.lon);
+            const name = r.display_name.split(',')[0].trim();
+            setStartPoint(lat, lng, name);
+            map.setView([lat, lng], 10);
+            document.getElementById('address-search-input').value = '';
+            box.style.display = 'none';
+        });
+    });
 }
 
 function updateGenerateBtn() {
@@ -345,8 +401,9 @@ window.selectActivity = function(cat) {
     chip.style.borderColor = CAT_COLORS[cat]+'50';
 
     document.getElementById('plan-bar').style.display = 'block';
-    document.getElementById('step-label').textContent = 'Click the map to set your starting point';
+    document.getElementById('step-label').textContent = 'Click the map or search for your starting point';
     document.getElementById('step-sub').textContent = 'This is where your adventure begins';
+    document.getElementById('address-search-wrap').style.display = 'block';
 };
 
 window.showActivityPicker = function() {
@@ -922,6 +979,29 @@ document.getElementById('sidebar-toggle').addEventListener('click', () => {
     document.getElementById('sidebar').classList.toggle('open', state.sidebarOpen);
 });
 document.getElementById('clear-trip').addEventListener('click', clearTrip);
+
+// Address search
+document.getElementById('address-search-input').addEventListener('input', function() {
+    const q = this.value.trim();
+    clearTimeout(geocodeDebounce);
+    const box = document.getElementById('address-search-results');
+    if (q.length < 3) { box.style.display = 'none'; return; }
+    geocodeDebounce = setTimeout(async () => {
+        box.innerHTML = '<div style="padding:12px 14px;font-size:12px;color:#999">Searching...</div>';
+        box.style.display = 'block';
+        geocodeResults = await geocodeAddress(q);
+        renderGeocodeResults(geocodeResults);
+    }, 350);
+});
+document.getElementById('address-search-input').addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') { document.getElementById('address-search-results').style.display = 'none'; }
+});
+document.addEventListener('click', function(e) {
+    const wrap = document.getElementById('address-search-wrap');
+    if (wrap && !wrap.contains(e.target)) {
+        document.getElementById('address-search-results').style.display = 'none';
+    }
+});
 document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
         if (document.getElementById('profile-modal-overlay').classList.contains('open')) window.closeProfile();
