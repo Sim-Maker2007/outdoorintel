@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Parcel — LandLink</title>
+<meta name="description" content="Private hunting parcel listed on LandLink. Apply with your verified PAL and insurance.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="/public/css/landlink.css">
+</head>
+<body>
+
+<main class="ll-detail">
+  <h1 class="ll-detail-title" id="title">Parcel</h1>
+  <div class="ll-detail-meta" id="meta"></div>
+
+  <div class="ll-gallery" id="gallery"></div>
+
+  <div class="ll-detail-body">
+    <div>
+      <div class="ll-detail-section">
+        <h2 id="host-title">Hosted by the landowner</h2>
+        <p id="description">Loading...</p>
+      </div>
+
+      <div class="ll-detail-section">
+        <h2>What\u2019s allowed</h2>
+        <div class="ll-feature-grid" id="features"></div>
+      </div>
+
+      <div class="ll-detail-section">
+        <h2>Access &amp; house rules</h2>
+        <p id="rules">\u2014</p>
+      </div>
+
+      <div class="ll-detail-section">
+        <h2>Parcel location</h2>
+        <div id="map" style="width:100%;height:360px;border-radius:12px;overflow:hidden;border:1px solid var(--line)"></div>
+        <p class="ll-booking-note" style="margin-top:10px">Exact stand locations shared after your request is approved.</p>
+      </div>
+
+      <div class="ll-detail-section">
+        <h2>Reviews <span style="font-weight:400;color:var(--ink-soft)" id="review-count"></span></h2>
+        <div id="reviews"><p class="ll-empty" style="padding:12px 0">No reviews yet. Be the first.</p></div>
+      </div>
+    </div>
+
+    <aside>
+      <div class="ll-booking-widget">
+        <div class="ll-booking-price">
+          <strong id="price">$200</strong><span id="price-unit">/ season</span>
+          <div style="margin-left:auto;font-size:12px;color:var(--ink-soft)" id="rating-summary">\u2014</div>
+        </div>
+        <form id="request-form" class="ll-booking-form">
+          <div class="ll-booking-row">
+            <div class="ll-booking-field"><label>Date from</label><input type="date" name="date_from" required></div>
+            <div class="ll-booking-field"><label>Date to</label><input type="date" name="date_to" required></div>
+          </div>
+          <div class="ll-booking-row">
+            <div class="ll-booking-field"><label>Party size</label><input type="number" name="party_size" min="1" value="1" required></div>
+            <div class="ll-booking-field"><label>Weapon</label>
+              <select name="weapon">
+                <option value="archery">Archery</option>
+                <option value="crossbow">Crossbow</option>
+                <option value="muzzleloader">Muzzleloader</option>
+                <option value="rifle">Rifle</option>
+                <option value="shotgun">Shotgun</option>
+              </select>
+            </div>
+          </div>
+          <div class="ll-booking-row">
+            <div class="ll-booking-field wide">
+              <label>Message to the landowner</label>
+              <textarea name="message" rows="3" placeholder="A few sentences about you, your experience, and your plans..."></textarea>
+            </div>
+          </div>
+        </form>
+        <button type="submit" form="request-form" class="ll-booking-submit">Request access</button>
+        <div class="ll-booking-note">You won\u2019t be charged until the landowner approves and the access agreement is signed.</div>
+        <div class="ll-booking-breakdown" id="breakdown"></div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script type="module">
+import { renderNav } from '/public/js/nav.js';
+import { supabase, formatPrice, getCurrentProfile } from '/public/js/supabase-client.js';
+renderNav();
+
+const parcelId = (location.pathname.split('/').pop() || '').replace('.html','');
+
+async function load() {
+  const { data } = await supabase.from('landlink_parcels').select('*').eq('id', parcelId).single();
+  const p = data || demoParcel(parcelId);
+  render(p);
+}
+
+function render(p) {
+  document.title = `${p.name} — LandLink`;
+  document.getElementById('title').textContent = p.name;
+
+  const rating = p.avg_rating ? `${p.avg_rating.toFixed(1)}` : 'New';
+  const reviewNote = p.review_count ? `${p.review_count} reviews` : 'No reviews yet';
+  const loc = [p.municipality, p.province].filter(Boolean).join(', ');
+  document.getElementById('meta').innerHTML =
+    `<span>&#9733; <b>${rating}</b></span><span class="dot">\u00b7</span>
+     <span>${reviewNote}</span><span class="dot">\u00b7</span>
+     <span>${loc || '\u2014'}</span>${p.acres ? `<span class="dot">\u00b7</span><span>${p.acres} acres</span>` : ''}`;
+
+  const photos = (p.photos && p.photos.length) ? p.photos : demoPhotos(p.id);
+  document.getElementById('gallery').innerHTML = photos.slice(0,5).map(url => `<div style="background-image:url('${url}')"></div>`).join('');
+
+  document.getElementById('description').textContent = p.description || 'The landowner hasn\u2019t added a description yet.';
+  document.getElementById('rules').textContent = p.house_rules || p.access_notes || 'Standard access rules apply. See the agreement for full terms.';
+
+  const vehicleLabel = { foot_only: 'Foot access only', atv_ok: 'ATV allowed', truck_ok: 'Truck/vehicle access' }[p.vehicle_access] || 'Foot access only';
+  const seasonLabel = (p.season_start && p.season_end) ? `${p.season_start} \u2192 ${p.season_end}` : 'See listing';
+  const featureRows = [
+    ['&#127993;', 'Species', (p.species || []).map(s => s.replace('_',' ')).join(', ') || '\u2014'],
+    ['&#128299;', 'Weapons', (p.weapons || []).join(', ') || '\u2014'],
+    ['&#128101;', 'Max hunters', `${p.max_hunters || 1} at a time`],
+    ['&#128663;', 'Vehicle access', vehicleLabel],
+    ['&#128197;', 'Season window', seasonLabel],
+    ['&#127757;', 'Province', p.province || '\u2014']
+  ];
+  document.getElementById('features').innerHTML = featureRows.map(([icon,label,val]) =>
+    `<div class="ll-feature"><div class="ll-feature-icon">${icon}</div><div><strong>${label}</strong><span>${val}</span></div></div>`
+  ).join('');
+
+  document.getElementById('price').textContent = p.price_unit === 'free' ? 'Free' : `$${Math.round((p.price_cents||0)/100)}`;
+  document.getElementById('price-unit').textContent = p.price_unit === 'free' ? 'access' : `/ ${p.price_unit}`;
+  document.getElementById('rating-summary').textContent = p.review_count ? `\u2605 ${rating} \u00b7 ${p.review_count}` : 'New';
+
+  // breakdown
+  const cents = p.price_cents || 0;
+  const fee = p.price_unit === 'free' ? 1500 : Math.round(cents * 0.10);
+  document.getElementById('breakdown').innerHTML = `
+    <div class="row"><span>${p.price_unit === 'free' ? 'Landowner fee' : formatPrice(cents, p.price_unit)}</span><span>${formatPrice(cents, p.price_unit)}</span></div>
+    <div class="row"><span>Trust &amp; safety fee</span><span>${formatPrice(fee, 'day').replace(' / day','')}</span></div>
+    <div class="row total"><span>Total</span><span>${formatPrice(cents + fee, p.price_unit).replace(/ \/ .*/,'')}</span></div>`;
+
+  // map (centroid pin; polygon if geometry exists)
+  if (p.centroid_lat && p.centroid_lng) {
+    const map = L.map('map', { zoomControl: true, scrollWheelZoom: false }).setView([p.centroid_lat, p.centroid_lng], 12);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; OSM' }).addTo(map);
+    if (p.geometry && p.geometry.type === 'Polygon') {
+      const coords = p.geometry.coordinates[0].map(([lng,lat]) => [lat,lng]);
+      const poly = L.polygon(coords, { color: '#2d5a3d', weight: 2, fillOpacity: .15 }).addTo(map);
+      map.fitBounds(poly.getBounds(), { padding: [30,30] });
+    } else {
+      // Fuzzy circle (hide exact centroid)
+      L.circle([p.centroid_lat, p.centroid_lng], { radius: 1200, color: '#2d5a3d', weight: 2, fillOpacity: .12 }).addTo(map);
+    }
+  }
+
+  // reviews
+  loadReviews(p.id);
+
+  // request form wiring
+  document.getElementById('request-form').addEventListener('submit', async e => {
+    e.preventDefault();
+    const profile = await getCurrentProfile();
+    if (!profile) { window.location.href = '/en/login?next=' + encodeURIComponent(location.pathname); return; }
+    if (!profile.pal_verified_at) { alert('Your PAL must be verified before sending a request. Upload it on your profile page.'); return; }
+    const form = new FormData(e.target);
+    const { error } = await supabase.from('landlink_hunt_requests').insert({
+      parcel_id: p.id, hunter_id: profile.user_id,
+      date_from: form.get('date_from'), date_to: form.get('date_to'),
+      party_size: parseInt(form.get('party_size'),10), weapon: form.get('weapon'),
+      message: form.get('message'), species: p.species, status: 'pending'
+    });
+    if (error) { alert('Could not send request: ' + error.message); return; }
+    alert('Request sent. The landowner will respond within 48h.');
+    window.location.href = '/en/dashboard';
+  });
+}
+
+async function loadReviews(id) {
+  const { data } = await supabase.from('landlink_reviews')
+    .select('rating,text,created_at,reviewer_id')
+    .eq('subject_id', id).eq('subject_type', 'parcel')
+    .order('created_at', { ascending: false }).limit(6);
+  document.getElementById('review-count').textContent = data && data.length ? `\u00b7 ${data.length}` : '';
+  if (!data || !data.length) return;
+  document.getElementById('reviews').innerHTML = data.map(r => `
+    <div style="padding:14px 0;border-bottom:1px solid var(--line-soft)">
+      <div style="font-size:13px;font-weight:600">\u2605 ${r.rating}.0</div>
+      <div style="font-size:13px;color:var(--ink);margin-top:6px;line-height:1.6">${(r.text || '').replace(/</g,'&lt;')}</div>
+    </div>`).join('');
+}
+
+// ---------- demo fallback ----------
+function demoParcel(id) {
+  return {
+    id, name: 'Pontiac River Woodlot', province: 'QC', municipality: 'Shawville',
+    description: 'Mixed hardwood and conifer woodlot running along the Pontiac River. Managed for deer habitat since 2008; consistent whitetail sign and bedding areas. Coyote pressure welcome. Parking by the barn, walk-in from there. Treestands are the landowner\u2019s \u2014 please don\u2019t cut branches or add permanent structures.',
+    species: ['whitetail','coyote'], weapons: ['archery','crossbow','rifle'], max_hunters: 3,
+    vehicle_access: 'foot_only', season_start: '2026-09-21', season_end: '2026-11-15',
+    price_cents: 20000, price_unit: 'season', acres: 210, avg_rating: 4.9, review_count: 14,
+    centroid_lat: 45.60, centroid_lng: -76.48,
+    house_rules: 'No permanent stands. Pack out everything. Text the owner on arrival/departure. No baiting (illegal in zone). No shooting toward the south pasture \u2014 cattle.',
+    photos: demoPhotos(id)
+  };
+}
+function demoPhotos(seed) {
+  return [
+    'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1200&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=800&auto=format&fit=crop'
+  ];
+}
+
+load();
+</script>
+
+</body>
+</html>
