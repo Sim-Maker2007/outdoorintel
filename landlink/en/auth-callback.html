@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Signing you in...</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/public/css/landlink.css">
+</head>
+<body>
+
+<main class="ll-auth">
+  <h1>One moment...</h1>
+  <p class="sub" id="status">Signing you in.</p>
+</main>
+
+<script type="module">
+import { supabase } from '/public/js/supabase-client.js';
+
+const next = new URL(location.href).searchParams.get('next') || '/en/dashboard';
+
+(async () => {
+  // Supabase SDK handles session from URL automatically (detectSessionInUrl: true)
+  // Give it a tick, then check.
+  await new Promise(r => setTimeout(r, 400));
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) {
+    document.getElementById('status').textContent = 'Could not sign you in. Please try the link again.';
+    return;
+  }
+
+  // Create profile if this is first login
+  const { data: existing } = await supabase.from('landlink_profiles').select('user_id').eq('user_id', user.id).maybeSingle();
+  if (!existing) {
+    const pending = JSON.parse(localStorage.getItem('landlink_pending_profile') || '{}');
+    await supabase.from('landlink_profiles').insert({
+      user_id: user.id,
+      role: pending.role || 'hunter',
+      full_name: pending.full_name || user.email.split('@')[0],
+      postal_code: pending.postal_code || null,
+      language: 'en'
+    });
+    localStorage.removeItem('landlink_pending_profile');
+  }
+
+  window.location.href = next;
+})();
+</script>
+
+</body>
+</html>
