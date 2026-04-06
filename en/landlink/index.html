@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LandLink — Private Hunting Access Across Canada</title>
+<meta name="description" content="Find private hunting ground on Canadian farms and woodlots. Vetted landowners, verified hunters, and a digital access agreement on every booking.">
+<link rel="alternate" hreflang="en" href="https://landlink.outdoorintel.ca/en/">
+<link rel="alternate" hreflang="fr" href="https://landlink.outdoorintel.ca/fr/">
+<link rel="alternate" hreflang="x-default" href="https://landlink.outdoorintel.ca/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/landlink/landlink.css">
+</head>
+<body>
+
+<section class="ll-hero">
+  <div class="ll-hero-inner">
+    <h1>Private land.<br>Responsible hunters.<br>Canada-wide.</h1>
+    <p>Book access to private farms, woodlots, and back-country parcels from landowners who want their game managed and their property respected.</p>
+
+    <form class="ll-search-pill" action="/en/parcels" method="get">
+      <div class="ll-search-field">
+        <label>Where</label>
+        <input type="text" name="location" placeholder="Province, region, postal code" autocomplete="off">
+      </div>
+      <div class="ll-search-field">
+        <label>Species</label>
+        <select name="species">
+          <option value="">Any species</option>
+          <option value="whitetail">Whitetail Deer</option>
+          <option value="moose">Moose</option>
+          <option value="elk">Elk</option>
+          <option value="black_bear">Black Bear</option>
+          <option value="goose">Goose</option>
+          <option value="turkey">Wild Turkey</option>
+          <option value="coyote">Coyote</option>
+        </select>
+      </div>
+      <div class="ll-search-field">
+        <label>Weapon</label>
+        <select name="weapon">
+          <option value="">Any weapon</option>
+          <option value="archery">Archery</option>
+          <option value="crossbow">Crossbow</option>
+          <option value="muzzleloader">Muzzleloader</option>
+          <option value="rifle">Rifle</option>
+          <option value="shotgun">Shotgun</option>
+        </select>
+      </div>
+      <button type="submit" class="ll-search-submit" aria-label="Search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- Category chips (Airbnb-style) -->
+<section class="ll-section ll-section-compact">
+  <div class="ll-categories" id="categories">
+    <a class="ll-cat-chip active" href="/en/parcels"><div class="ll-cat-chip-icon">&#127757;</div><div class="ll-cat-chip-label">All land</div></a>
+    <a class="ll-cat-chip" href="/en/parcels?species=whitetail"><div class="ll-cat-chip-icon">&#129420;</div><div class="ll-cat-chip-label">Whitetail</div></a>
+    <a class="ll-cat-chip" href="/en/parcels?species=moose"><div class="ll-cat-chip-icon">&#129452;</div><div class="ll-cat-chip-label">Moose</div></a>
+    <a class="ll-cat-chip" href="/en/parcels?species=elk"><div class="ll-cat-chip-icon">&#129472;</div><div class="ll-cat-chip-label">Elk</div></a>
+    <a class="ll-cat-chip" href="/en/parcels?species=black_bear"><div class="ll-cat-chip-icon">&#128059;</div><div class="ll-cat-chip-label">Black bear</div></a>
+    <a class="ll-cat-chip" href="/en/parcels?species=goose"><div class="ll-cat-chip-icon">&#129727;</div><div class="ll-cat-chip-label">Goose</div></a>
+    <a class="ll-cat-chip" href="/en/parcels?species=turkey"><div class="ll-cat-chip-icon">&#129411;</div><div class="ll-cat-chip-label">Turkey</div></a>
+    <a class="ll-cat-chip" href="/en/parcels?species=coyote"><div class="ll-cat-chip-icon">&#128021;</div><div class="ll-cat-chip-label">Coyote</div></a>
+    <a class="ll-cat-chip" href="/en/parcels?price_unit=free"><div class="ll-cat-chip-icon">&#10024;</div><div class="ll-cat-chip-label">Free access</div></a>
+    <a class="ll-cat-chip" href="/en/parcels?weapon=archery"><div class="ll-cat-chip-icon">&#127993;</div><div class="ll-cat-chip-label">Archery only</div></a>
+  </div>
+</section>
+
+<!-- Featured listings -->
+<section class="ll-section" id="featured">
+  <h2>Featured parcels</h2>
+  <p class="ll-subhead">A sample of what\u2019s on the platform right now.</p>
+  <div class="ll-grid" id="featured-grid">
+    <!-- populated by JS from Supabase; static placeholders below -->
+  </div>
+</section>
+
+<!-- Value props -->
+<section class="ll-value-strip">
+  <div class="ll-value-grid">
+    <div class="ll-value-item">
+      <div class="ll-value-icon">&#128737;&#65039;</div>
+      <h3>A real trust layer</h3>
+      <p>Every hunter on LandLink has a verified PAL and proof of liability insurance. Every booking generates a counsel-reviewed access agreement signed by both parties.</p>
+    </div>
+    <div class="ll-value-item">
+      <div class="ll-value-icon">&#128205;</div>
+      <h3>Draw your parcel, set your terms</h3>
+      <p>Landowners outline their property on a map, choose species, weapons, max hunters, vehicle access, dates, and price. You stay in control of who sets foot on your land.</p>
+    </div>
+    <div class="ll-value-item">
+      <div class="ll-value-icon">&#11088;</div>
+      <h3>Two-way reviews</h3>
+      <p>After every hunt, both sides rate each other. Responsible hunters build a track record that opens doors; landowners build a reputation that attracts the right people.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Dual CTA -->
+<section class="ll-section">
+  <div class="ll-dual-cta">
+    <div class="ll-cta-card" style="background-image:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1400&auto=format&fit=crop')">
+      <div>
+        <h3>Own land? Earn from it.</h3>
+        <p>List your parcel in 10 minutes. Control the terms. Get deer, goose, or coyote pressure managed by vetted hunters \u2014 and optionally get paid.</p>
+      </div>
+      <a href="/en/list-your-land" class="ll-btn ll-btn-lg">List your land</a>
+    </div>
+    <div class="ll-cta-card" style="background-image:url('https://images.unsplash.com/photo-1551524164-6cf2ac531400?w=1400&auto=format&fit=crop')">
+      <div>
+        <h3>Hunting? Find new ground.</h3>
+        <p>Stop cold-knocking farmhouse doors. Apply to private parcels with your verified PAL and hunter profile in a single click.</p>
+      </div>
+      <a href="/en/parcels" class="ll-btn ll-btn-lg">Browse parcels</a>
+    </div>
+  </div>
+</section>
+
+<script type="module">
+import { renderNav } from '/assets/landlink/js/nav.js';
+import { supabase as sb, formatPrice } from '/assets/landlink/js/supabase-client.js';
+renderNav();
+
+// Load 8 featured parcels from Supabase; fall back to demo placeholders
+async function loadFeatured() {
+  const grid = document.getElementById('featured-grid');
+  const { data, error } = await sb.from('landlink_parcels')
+    .select('id,name,province,municipality,species,price_cents,price_unit,photos,avg_rating,review_count,acres')
+    .eq('status', 'active')
+    .order('created_at', { ascending: false })
+    .limit(8);
+
+  const items = (!error && data && data.length) ? data : demoParcels();
+  grid.innerHTML = items.map(p => cardHTML(p)).join('');
+}
+
+function cardHTML(p) {
+  const photo = (p.photos && p.photos[0]) || demoPhoto(p.id || p.name);
+  const rating = p.avg_rating ? p.avg_rating.toFixed(1) : (p.review_count ? '\u2014' : 'New');
+  const reviews = p.review_count ? ` (${p.review_count})` : '';
+  const price = formatPrice(p.price_cents, p.price_unit);
+  const location = [p.municipality, p.province].filter(Boolean).join(', ');
+  const species = (p.species || []).slice(0, 2).map(s => s.replace('_', ' ')).join(' \u00b7 ');
+  return `
+    <a class="ll-card" href="/en/parcels/${p.id || '#'}">
+      <div class="ll-card-img" style="background-image:url('${photo}')">
+        ${p.price_unit === 'free' ? '<div class="ll-card-badge">Free access</div>' : ''}
+        <div class="ll-card-fav" aria-label="Save"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      </div>
+      <div class="ll-card-body">
+        <div class="ll-card-row">
+          <div class="ll-card-title">${p.name}</div>
+          <div class="ll-card-rating">&#9733; ${rating}${reviews}</div>
+        </div>
+        <div class="ll-card-meta">${location || '\u2014'}</div>
+        <div class="ll-card-meta">${species || 'Multi-species'}${p.acres ? ` \u00b7 ${p.acres} acres` : ''}</div>
+        <div class="ll-card-price"><strong>${price}</strong></div>
+      </div>
+    </a>`;
+}
+
+function demoPhoto(seed) {
+  const photos = [
+    'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=600&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=600&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1511497584788-876760111969?w=600&auto=format&fit=crop'
+  ];
+  let h = 0; for (const c of String(seed)) h = (h * 31 + c.charCodeAt(0)) >>> 0;
+  return photos[h % photos.length];
+}
+
+function demoParcels() {
+  return [
+    { id: 'demo-1', name: 'Pontiac River Woodlot', province: 'QC', municipality: 'Shawville', species: ['whitetail','coyote'], price_cents: 20000, price_unit: 'season', acres: 210, avg_rating: 4.9, review_count: 14 },
+    { id: 'demo-2', name: 'Northern Ontario Bush Camp', province: 'ON', municipality: 'Temiskaming Shores', species: ['moose','black_bear'], price_cents: 40000, price_unit: 'week', acres: 640, avg_rating: 4.8, review_count: 22 },
+    { id: 'demo-3', name: 'Grain Field Goose Hunt', province: 'SK', municipality: 'Moose Jaw', species: ['goose','duck'], price_cents: 5000, price_unit: 'day', acres: 320, avg_rating: 5.0, review_count: 9 },
+    { id: 'demo-4', name: 'Laurentides Mixed Forest', province: 'QC', municipality: 'Mont-Laurier', species: ['whitetail','black_bear'], price_cents: 0, price_unit: 'free', acres: 180, avg_rating: null, review_count: 0 },
+    { id: 'demo-5', name: 'Prairie Whitetail Ranch', province: 'AB', municipality: 'Red Deer', species: ['whitetail','mule_deer'], price_cents: 60000, price_unit: 'season', acres: 1200, avg_rating: 4.7, review_count: 31 },
+    { id: 'demo-6', name: 'Maritime Woodlot', province: 'NB', municipality: 'Fredericton', species: ['whitetail','turkey'], price_cents: 15000, price_unit: 'season', acres: 95, avg_rating: 4.6, review_count: 7 },
+    { id: 'demo-7', name: 'Interior BC Backcountry', province: 'BC', municipality: 'Kamloops', species: ['elk','mule_deer'], price_cents: 35000, price_unit: 'week', acres: 840, avg_rating: 4.9, review_count: 18 },
+    { id: 'demo-8', name: 'Cornfield Coyote Control', province: 'ON', municipality: 'Chatham-Kent', species: ['coyote'], price_cents: 0, price_unit: 'free', acres: 400, avg_rating: null, review_count: 0 }
+  ];
+}
+
+loadFeatured();
+</script>
+
+</body>
+</html>
