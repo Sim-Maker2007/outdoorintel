@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>List Your Land — LandLink</title>
+<meta name="description" content="List your private land on LandLink. Draw the parcel, set your terms, attract responsible hunters.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css">
+<link rel="stylesheet" href="/assets/landlink/landlink.css">
+</head>
+<body>
+
+<div class="ll-wizard">
+  <div class="ll-wizard-progress" id="progress">
+    <div class="step active"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div>
+  </div>
+
+  <!-- Step 1: Property basics -->
+  <section class="ll-wizard-step active" data-step="1">
+    <h1>Let\u2019s start with the basics</h1>
+    <p class="sub">Give your parcel a name and tell hunters where it is.</p>
+    <div class="ll-field">
+      <label>Parcel name</label>
+      <input type="text" name="name" placeholder="e.g. North Forty Woodlot" required>
+    </div>
+    <div class="ll-field">
+      <label>Province</label>
+      <select name="province" required>
+        <option value="">Select province</option>
+        <option value="AB">Alberta</option><option value="BC">British Columbia</option>
+        <option value="MB">Manitoba</option><option value="NB">New Brunswick</option>
+        <option value="NL">Newfoundland and Labrador</option><option value="NS">Nova Scotia</option>
+        <option value="ON">Ontario</option><option value="PE">Prince Edward Island</option>
+        <option value="QC">Quebec</option><option value="SK">Saskatchewan</option>
+        <option value="NT">Northwest Territories</option><option value="YT">Yukon</option>
+        <option value="NU">Nunavut</option>
+      </select>
+    </div>
+    <div class="ll-field">
+      <label>Nearest town / municipality</label>
+      <input type="text" name="municipality" placeholder="e.g. Shawville">
+    </div>
+    <div class="ll-field">
+      <label>Approximate acres</label>
+      <input type="number" name="acres" min="1" step="1" placeholder="e.g. 210">
+    </div>
+  </section>
+
+  <!-- Step 2: Draw boundary -->
+  <section class="ll-wizard-step" data-step="2">
+    <h1>Draw your parcel on the map</h1>
+    <p class="sub">Outline the property boundary. You can redraw any time. Only you and admins see this until your listing goes live.</p>
+    <div class="ll-wizard-map" id="draw-map"></div>
+    <p class="ll-wizard-map-hint">Click the polygon tool on the map, tap points to draw the boundary, close it to save.</p>
+  </section>
+
+  <!-- Step 3: Terms -->
+  <section class="ll-wizard-step" data-step="3">
+    <h1>Set your terms</h1>
+    <p class="sub">What\u2019s allowed on your land? You stay in full control.</p>
+    <div class="ll-field">
+      <label>Species allowed</label>
+      <div class="ll-checkgroup">
+        <label><input type="checkbox" name="species" value="whitetail"><span>Whitetail</span></label>
+        <label><input type="checkbox" name="species" value="mule_deer"><span>Mule Deer</span></label>
+        <label><input type="checkbox" name="species" value="moose"><span>Moose</span></label>
+        <label><input type="checkbox" name="species" value="elk"><span>Elk</span></label>
+        <label><input type="checkbox" name="species" value="black_bear"><span>Black Bear</span></label>
+        <label><input type="checkbox" name="species" value="turkey"><span>Turkey</span></label>
+        <label><input type="checkbox" name="species" value="goose"><span>Goose</span></label>
+        <label><input type="checkbox" name="species" value="duck"><span>Duck</span></label>
+        <label><input type="checkbox" name="species" value="coyote"><span>Coyote</span></label>
+        <label><input type="checkbox" name="species" value="small_game"><span>Small Game</span></label>
+      </div>
+    </div>
+    <div class="ll-field">
+      <label>Weapons allowed</label>
+      <div class="ll-checkgroup">
+        <label><input type="checkbox" name="weapons" value="archery"><span>Archery</span></label>
+        <label><input type="checkbox" name="weapons" value="crossbow"><span>Crossbow</span></label>
+        <label><input type="checkbox" name="weapons" value="muzzleloader"><span>Muzzleloader</span></label>
+        <label><input type="checkbox" name="weapons" value="rifle"><span>Rifle</span></label>
+        <label><input type="checkbox" name="weapons" value="shotgun"><span>Shotgun</span></label>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div class="ll-field"><label>Max hunters at a time</label><input type="number" name="max_hunters" min="1" value="2" required></div>
+      <div class="ll-field"><label>Vehicle access</label>
+        <select name="vehicle_access">
+          <option value="foot_only">Foot access only</option>
+          <option value="atv_ok">ATV allowed</option>
+          <option value="truck_ok">Truck / vehicle OK</option>
+        </select>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div class="ll-field"><label>Season start</label><input type="date" name="season_start"></div>
+      <div class="ll-field"><label>Season end</label><input type="date" name="season_end"></div>
+    </div>
+    <div class="ll-field">
+      <label>House rules (optional)</label>
+      <textarea name="house_rules" placeholder="No permanent stands, text before arrival, no baiting, etc."></textarea>
+    </div>
+  </section>
+
+  <!-- Step 4: Pricing -->
+  <section class="ll-wizard-step" data-step="4">
+    <h1>Pricing</h1>
+    <p class="sub">Charge for access, or offer it free if you just want pest management. You can change this any time.</p>
+    <div class="ll-field">
+      <label>Pricing model</label>
+      <div class="ll-checkgroup">
+        <label><input type="radio" name="price_unit" value="free" checked><span>Free access</span></label>
+        <label><input type="radio" name="price_unit" value="day"><span>Per day</span></label>
+        <label><input type="radio" name="price_unit" value="weekend"><span>Per weekend</span></label>
+        <label><input type="radio" name="price_unit" value="week"><span>Per week</span></label>
+        <label><input type="radio" name="price_unit" value="season"><span>Per season</span></label>
+      </div>
+    </div>
+    <div class="ll-field" id="price-field">
+      <label>Price (CAD)</label>
+      <input type="number" name="price" min="0" step="10" value="0">
+    </div>
+    <div class="ll-field">
+      <label>Description (shown to hunters)</label>
+      <textarea name="description" rows="5" placeholder="Habitat, game sign, stand locations, what you love about the property..."></textarea>
+    </div>
+  </section>
+
+  <!-- Step 5: Review -->
+  <section class="ll-wizard-step" data-step="5">
+    <h1>Review &amp; submit</h1>
+    <p class="sub">Your listing goes to our team for a quick review (usually &lt; 24h). Once approved it\u2019s live on LandLink.</p>
+    <div id="summary" style="background:var(--bg-soft);border-radius:12px;padding:24px;font-size:14px;line-height:1.7"></div>
+    <p class="ll-booking-note" style="margin-top:16px">By submitting, you confirm you have the legal right to grant hunting access on this property and that the terms you\u2019ve set comply with provincial regulations.</p>
+  </section>
+
+  <div class="ll-wizard-nav">
+    <button type="button" class="back" id="back">Back</button>
+    <button type="button" class="ll-btn-accent ll-btn-lg" id="next">Continue</button>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+<script type="module">
+import { renderNav } from '/assets/landlink/js/nav.js';
+import { supabase, getCurrentProfile } from '/assets/landlink/js/supabase-client.js';
+renderNav();
+
+const TOTAL_STEPS = 5;
+const form = { species: [], weapons: [], geometry: null, centroid: null };
+let step = 1;
+let drawMap, drawLayer;
+
+function goto(n) {
+  step = Math.max(1, Math.min(TOTAL_STEPS, n));
+  document.querySelectorAll('.ll-wizard-step').forEach(s => s.classList.toggle('active', s.dataset.step == step));
+  document.querySelectorAll('#progress .step').forEach((s, i) => {
+    s.classList.toggle('active', i + 1 === step);
+    s.classList.toggle('done', i + 1 < step);
+  });
+  document.getElementById('next').textContent = step === TOTAL_STEPS ? 'Submit listing' : 'Continue';
+  document.getElementById('back').style.visibility = step === 1 ? 'hidden' : 'visible';
+  if (step === 2 && !drawMap) initDrawMap();
+  if (step === 5) renderSummary();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function initDrawMap() {
+  drawMap = L.map('draw-map', { center: [56, -96], zoom: 4 });
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; OSM' }).addTo(drawMap);
+  drawLayer = new L.FeatureGroup();
+  drawMap.addLayer(drawLayer);
+  const draw = new L.Control.Draw({
+    draw: { polygon: { showArea: true, allowIntersection: false }, marker: false, polyline: false, rectangle: false, circle: false, circlemarker: false },
+    edit: { featureGroup: drawLayer, remove: true }
+  });
+  drawMap.addControl(draw);
+  drawMap.on(L.Draw.Event.CREATED, e => {
+    drawLayer.clearLayers();
+    drawLayer.addLayer(e.layer);
+    const gj = e.layer.toGeoJSON();
+    form.geometry = gj.geometry;
+    const c = e.layer.getBounds().getCenter();
+    form.centroid = { lat: c.lat, lng: c.lng };
+  });
+  setTimeout(() => drawMap.invalidateSize(), 200);
+}
+
+function collect() {
+  const get = name => document.querySelector(`[name="${name}"]`)?.value || '';
+  form.name = get('name'); form.province = get('province'); form.municipality = get('municipality');
+  form.acres = parseFloat(get('acres')) || null;
+  form.species = Array.from(document.querySelectorAll('[name="species"]:checked')).map(i => i.value);
+  form.weapons = Array.from(document.querySelectorAll('[name="weapons"]:checked')).map(i => i.value);
+  form.max_hunters = parseInt(get('max_hunters'), 10) || 1;
+  form.vehicle_access = get('vehicle_access');
+  form.season_start = get('season_start') || null;
+  form.season_end = get('season_end') || null;
+  form.house_rules = get('house_rules') || null;
+  form.price_unit = document.querySelector('[name="price_unit"]:checked')?.value || 'free';
+  form.price_cents = form.price_unit === 'free' ? 0 : Math.round((parseFloat(get('price')) || 0) * 100);
+  form.description = get('description') || null;
+}
+
+function validateStep() {
+  collect();
+  if (step === 1) {
+    if (!form.name || !form.province) { alert('Please fill in parcel name and province.'); return false; }
+  }
+  if (step === 2) {
+    if (!form.geometry) { alert('Please draw your parcel boundary on the map.'); return false; }
+  }
+  if (step === 3) {
+    if (!form.species.length) { alert('Pick at least one species.'); return false; }
+    if (!form.weapons.length) { alert('Pick at least one weapon.'); return false; }
+  }
+  return true;
+}
+
+function renderSummary() {
+  const price = form.price_unit === 'free' ? 'Free access' : `$${(form.price_cents/100).toLocaleString()} / ${form.price_unit}`;
+  document.getElementById('summary').innerHTML = `
+    <div><b>${form.name || '\u2014'}</b> \u00b7 ${form.municipality || ''} ${form.province}</div>
+    <div>${form.acres ? form.acres + ' acres' : ''} \u00b7 ${form.species.join(', ') || 'no species'} \u00b7 ${form.weapons.join(', ') || 'no weapons'}</div>
+    <div>Max ${form.max_hunters} hunters \u00b7 ${form.vehicle_access.replace('_',' ')}</div>
+    <div>Season: ${form.season_start || '\u2014'} \u2192 ${form.season_end || '\u2014'}</div>
+    <div>Price: <b>${price}</b></div>
+    ${form.description ? `<div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--line)">${form.description}</div>` : ''}`;
+}
+
+async function submit() {
+  const profile = await getCurrentProfile();
+  if (!profile) { window.location.href = '/en/landlink/signup?role=landowner&next=' + encodeURIComponent(location.pathname); return; }
+  const payload = {
+    owner_id: profile.user_id,
+    name: form.name, description: form.description,
+    geometry: form.geometry,
+    centroid_lat: form.centroid.lat, centroid_lng: form.centroid.lng,
+    acres: form.acres, province: form.province, municipality: form.municipality,
+    species: form.species, weapons: form.weapons,
+    max_hunters: form.max_hunters, vehicle_access: form.vehicle_access,
+    season_start: form.season_start, season_end: form.season_end,
+    price_cents: form.price_cents, price_unit: form.price_unit,
+    house_rules: form.house_rules, status: 'pending_review'
+  };
+  const { error } = await supabase.from('landlink_parcels').insert(payload);
+  if (error) { alert('Could not submit: ' + error.message); return; }
+  alert('Submitted! We\u2019ll review it within 24h and email you when it\u2019s live.');
+  window.location.href = '/en/landlink/dashboard';
+}
+
+document.getElementById('next').addEventListener('click', () => {
+  if (!validateStep()) return;
+  if (step === TOTAL_STEPS) submit(); else goto(step + 1);
+});
+document.getElementById('back').addEventListener('click', () => goto(step - 1));
+document.addEventListener('change', e => {
+  if (e.target.name === 'price_unit') {
+    document.getElementById('price-field').style.display = e.target.value === 'free' ? 'none' : 'block';
+  }
+});
+goto(1);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+{
+  "_note": "Per-province compliance config used as a soft guard during parcel creation. Season dates are approximate defaults for informational purposes only. Landowners and hunters are responsible for verifying with the provincial regulator.",
+  "provinces": {
+    "AB": {
+      "name_en": "Alberta", "name_fr": "Alberta",
+      "regulator": "Alberta Environment and Parks", "regulator_url": "https://www.alberta.ca/hunting.aspx",
+      "species_defaults": {
+        "whitetail": { "start": "09-01", "end": "11-30" },
+        "mule_deer": { "start": "09-01", "end": "11-30" },
+        "moose": { "start": "09-01", "end": "10-31" },
+        "elk": { "start": "09-01", "end": "11-30" },
+        "goose": { "start": "09-01", "end": "12-21" }
+      }
+    },
+    "BC": {
+      "name_en": "British Columbia", "name_fr": "Colombie-Britannique",
+      "regulator": "BC Ministry of Water, Land and Resource Stewardship", "regulator_url": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/hunting",
+      "species_defaults": {
+        "whitetail": { "start": "09-10", "end": "12-10" },
+        "mule_deer": { "start": "09-10", "end": "12-10" },
+        "moose": { "start": "09-10", "end": "11-15" },
+        "elk": { "start": "09-10", "end": "11-30" },
+        "goose": { "start": "09-01", "end": "12-20" }
+      }
+    },
+    "MB": {
+      "name_en": "Manitoba", "name_fr": "Manitoba",
+      "regulator": "Manitoba Natural Resources and Northern Development", "regulator_url": "https://www.gov.mb.ca/nrnd/fish-wildlife/hunting/index.html",
+      "species_defaults": {
+        "whitetail": { "start": "09-01", "end": "12-07" },
+        "moose": { "start": "09-15", "end": "10-31" },
+        "elk": { "start": "09-15", "end": "10-31" },
+        "goose": { "start": "09-01", "end": "12-15" }
+      }
+    },
+    "NB": {
+      "name_en": "New Brunswick", "name_fr": "Nouveau-Brunswick",
+      "regulator": "NB Department of Natural Resources and Energy Development", "regulator_url": "https://www2.gnb.ca/content/gnb/en/departments/erd/natural_resources/content/HuntingAndTrapping.html",
+      "species_defaults": {
+        "whitetail": { "start": "10-15", "end": "11-30" },
+        "moose": { "start": "09-24", "end": "09-30" },
+        "goose": { "start": "09-14", "end": "12-26" }
+      }
+    },
+    "NL": {
+      "name_en": "Newfoundland and Labrador", "name_fr": "Terre-Neuve-et-Labrador",
+      "regulator": "NL Fisheries, Forestry and Agriculture", "regulator_url": "https://www.gov.nl.ca/ffa/wildlife/",
+      "species_defaults": {
+        "moose": { "start": "09-14", "end": "12-31" },
+        "caribou": { "start": "10-01", "end": "12-31" },
+        "goose": { "start": "09-01", "end": "12-31" }
+      }
+    },
+    "NS": {
+      "name_en": "Nova Scotia", "name_fr": "Nouvelle-Écosse",
+      "regulator": "NS Lands and Forestry", "regulator_url": "https://novascotia.ca/natr/hunt/",
+      "species_defaults": {
+        "whitetail": { "start": "10-25", "end": "12-05" },
+        "goose": { "start": "09-14", "end": "12-26" }
+      }
+    },
+    "ON": {
+      "name_en": "Ontario", "name_fr": "Ontario",
+      "regulator": "Ministry of Natural Resources and Forestry", "regulator_url": "https://www.ontario.ca/page/hunting",
+      "species_defaults": {
+        "whitetail": { "start": "10-01", "end": "12-15" },
+        "moose": { "start": "09-20", "end": "12-15" },
+        "black_bear": { "start": "08-15", "end": "10-31" },
+        "goose": { "start": "09-01", "end": "12-15" }
+      }
+    },
+    "PE": {
+      "name_en": "Prince Edward Island", "name_fr": "Île-du-Prince-Édouard",
+      "regulator": "PEI Environment, Energy and Climate Action", "regulator_url": "https://www.princeedwardisland.ca/en/topic/hunting",
+      "species_defaults": {
+        "goose": { "start": "10-01", "end": "12-26" }
+      }
+    },
+    "QC": {
+      "name_en": "Quebec", "name_fr": "Québec",
+      "regulator": "Ministère des Forêts, de la Faune et des Parcs (MFFP)", "regulator_url": "https://mffp.gouv.qc.ca/la-faune/chasse/",
+      "species_defaults": {
+        "whitetail": { "start": "09-21", "end": "11-15" },
+        "moose": { "start": "09-21", "end": "10-20" },
+        "black_bear": { "start": "05-15", "end": "06-30" },
+        "goose": { "start": "09-01", "end": "12-26" },
+        "coyote": { "start": "01-01", "end": "12-31" }
+      }
+    },
+    "SK": {
+      "name_en": "Saskatchewan", "name_fr": "Saskatchewan",
+      "regulator": "Ministry of Environment", "regulator_url": "https://www.saskatchewan.ca/residents/environment-public-health-and-safety/wildlife-issues/hunting-trapping-and-angling",
+      "species_defaults": {
+        "whitetail": { "start": "09-01", "end": "12-05" },
+        "mule_deer": { "start": "09-01", "end": "12-05" },
+        "moose": { "start": "09-01", "end": "12-05" },
+        "elk": { "start": "09-01", "end": "11-30" },
+        "goose": { "start": "09-01", "end": "12-16" }
+      }
+    },
+    "NT": {
+      "name_en": "Northwest Territories", "name_fr": "Territoires du Nord-Ouest",
+      "regulator": "NWT Environment and Climate Change", "regulator_url": "https://www.enr.gov.nt.ca/en/services/hunting",
+      "species_defaults": {
+        "moose": { "start": "08-15", "end": "11-15" },
+        "caribou": { "start": "08-15", "end": "03-31" }
+      }
+    },
+    "YT": {
+      "name_en": "Yukon", "name_fr": "Yukon",
+      "regulator": "Yukon Environment", "regulator_url": "https://yukon.ca/en/hunting",
+      "species_defaults": {
+        "moose": { "start": "09-01", "end": "10-31" },
+        "caribou": { "start": "08-01", "end": "01-31" }
+      }
+    },
+    "NU": {
+      "name_en": "Nunavut", "name_fr": "Nunavut",
+      "regulator": "Department of Environment", "regulator_url": "https://www.gov.nu.ca/environment",
+      "species_defaults": {
+        "caribou": { "start": "01-01", "end": "12-31" }
+      }
+    }
+  },
+  "species": [
+    { "id": "whitetail", "label_en": "Whitetail Deer", "label_fr": "Cerf de Virginie" },
+    { "id": "mule_deer", "label_en": "Mule Deer", "label_fr": "Cerf mulet" },
+    { "id": "moose", "label_en": "Moose", "label_fr": "Orignal" },
+    { "id": "elk", "label_en": "Elk", "label_fr": "Wapiti" },
+    { "id": "caribou", "label_en": "Caribou", "label_fr": "Caribou" },
+    { "id": "black_bear", "label_en": "Black Bear", "label_fr": "Ours noir" },
+    { "id": "goose", "label_en": "Goose", "label_fr": "Oie" },
+    { "id": "duck", "label_en": "Duck", "label_fr": "Canard" },
+    { "id": "turkey", "label_en": "Wild Turkey", "label_fr": "Dindon sauvage" },
+    { "id": "coyote", "label_en": "Coyote", "label_fr": "Coyote" },
+    { "id": "wolf", "label_en": "Wolf", "label_fr": "Loup" },
+    { "id": "small_game", "label_en": "Small Game", "label_fr": "Petit gibier" }
+  ],
+  "weapons": [
+    { "id": "archery", "label_en": "Archery", "label_fr": "Arc" },
+    { "id": "crossbow", "label_en": "Crossbow", "label_fr": "Arbalète" },
+    { "id": "muzzleloader", "label_en": "Muzzleloader", "label_fr": "Arme à chargement frontal" },
+    { "id": "rifle", "label_en": "Rifle", "label_fr": "Carabine" },
+    { "id": "shotgun", "label_en": "Shotgun", "label_fr": "Fusil" }
+  ]
+}

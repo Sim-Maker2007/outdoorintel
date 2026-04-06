@@ -85,5 +85,8 @@
     { "source": "/fr/lake-of-the-woods", "destination": "/fr/fishing/lake-of-the-woods", "permanent": true },
     { "source": "/en/blog/:slug", "destination": "/en/fishing/blog/:slug", "permanent": true },
     { "source": "/fr/blog/:slug", "destination": "/fr/fishing/blog/:slug", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/en/landlink/parcels/:id", "destination": "/en/landlink/parcels/detail.html" }
   ]
 }
