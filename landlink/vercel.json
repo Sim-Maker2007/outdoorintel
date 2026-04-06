@@ -5,7 +5,9 @@
     { "source": "/", "destination": "/en/index.html" },
     { "source": "/fr", "destination": "/fr/index.html" },
     { "source": "/parcels/:id", "destination": "/en/parcels/detail.html" },
-    { "source": "/fr/parcels/:id", "destination": "/fr/parcels/detail.html" }
+    { "source": "/fr/parcels/:id", "destination": "/fr/parcels/detail.html" },
+    { "source": "/legal", "destination": "/en/legal/index.html" },
+    { "source": "/legal/:path*", "destination": "/en/legal/:path*" }
   ],
   "headers": [
     {
