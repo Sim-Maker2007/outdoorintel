@@ -14,7 +14,7 @@
 
 <div class="ll-wizard">
   <div class="ll-wizard-progress" id="progress">
-    <div class="step active"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div>
+    <div class="step active"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div>
   </div>
 
   <!-- Step 1: Property basics -->
@@ -105,8 +105,22 @@
     </div>
   </section>
 
-  <!-- Step 4: Pricing -->
+  <!-- Step 4: Photos -->
   <section class="ll-wizard-step" data-step="4">
+    <h1>Add photos</h1>
+    <p class="sub">Show hunters what your land looks like. Listings with photos get 5x more requests. At least 1 photo is required.</p>
+    <div class="ll-photo-upload" id="photo-grid">
+      <label class="ll-photo-add" id="photo-add-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        <span>Add photo</span>
+        <input type="file" accept="image/*" multiple hidden id="photo-input">
+      </label>
+    </div>
+    <p style="font-size:12px;color:var(--ink-soft);margin-top:8px">Max 8 photos. JPG/PNG, under 5 MB each.</p>
+  </section>
+
+  <!-- Step 5: Pricing -->
+  <section class="ll-wizard-step" data-step="5">
     <h1>Pricing</h1>
     <p class="sub">Charge for access, or offer it free if you just want pest management. You can change this any time.</p>
     <div class="ll-field">
@@ -129,8 +143,8 @@
     </div>
   </section>
 
-  <!-- Step 5: Review -->
-  <section class="ll-wizard-step" data-step="5">
+  <!-- Step 6: Review -->
+  <section class="ll-wizard-step" data-step="6">
     <h1>Review &amp; submit</h1>
     <p class="sub">Your listing goes to our team for a quick review (usually &lt; 24h). Once approved it\u2019s live on LandLink.</p>
     <div id="summary" style="background:var(--bg-soft);border-radius:12px;padding:24px;font-size:14px;line-height:1.7"></div>
@@ -148,12 +162,69 @@
 <script type="module">
 import { renderNav } from '/assets/landlink/js/nav.js';
 import { supabase, getCurrentProfile } from '/assets/landlink/js/supabase-client.js';
+import { esc, toast } from '/assets/landlink/js/utils.js';
 renderNav();
 
-const TOTAL_STEPS = 5;
-const form = { species: [], weapons: [], geometry: null, centroid: null };
+const TOTAL_STEPS = 6;
+const form = { species: [], weapons: [], geometry: null, centroid: null, photoFiles: [], photoUrls: [] };
 let step = 1;
 let drawMap, drawLayer;
+
+// --- Photo upload handling ---
+const photoInput = document.getElementById('photo-input');
+const photoGrid = document.getElementById('photo-grid');
+const photoAddBtn = document.getElementById('photo-add-btn');
+
+photoAddBtn.addEventListener('click', () => photoInput.click());
+photoInput.addEventListener('change', e => {
+  const files = Array.from(e.target.files);
+  for (const file of files) {
+    if (form.photoFiles.length >= 8) { toast('Maximum 8 photos', 'error'); break; }
+    if (file.size > 5 * 1024 * 1024) { toast(`${file.name} is too large (max 5 MB)`, 'error'); continue; }
+    form.photoFiles.push(file);
+    const reader = new FileReader();
+    reader.onload = ev => renderPhotoThumb(ev.target.result, form.photoFiles.length - 1);
+    reader.readAsDataURL(file);
+  }
+  photoInput.value = '';
+  toggleAddBtn();
+});
+
+function renderPhotoThumb(src, idx) {
+  const div = document.createElement('div');
+  div.className = 'll-photo-thumb';
+  div.dataset.idx = idx;
+  div.innerHTML = `<img src="${src}"><div class="remove" onclick="removePhoto(${idx})">&times;</div>`;
+  photoGrid.insertBefore(div, photoAddBtn);
+}
+
+window.removePhoto = function(idx) {
+  form.photoFiles[idx] = null;
+  const thumb = photoGrid.querySelector(`[data-idx="${idx}"]`);
+  if (thumb) thumb.remove();
+  toggleAddBtn();
+};
+
+function toggleAddBtn() {
+  const count = form.photoFiles.filter(Boolean).length;
+  photoAddBtn.style.display = count >= 8 ? 'none' : 'flex';
+}
+
+async function uploadPhotos(ownerId) {
+  const urls = [];
+  const validFiles = form.photoFiles.filter(Boolean);
+  for (let i = 0; i < validFiles.length; i++) {
+    const file = validFiles[i];
+    const ext = file.name.split('.').pop();
+    const path = `parcels/${ownerId}/${Date.now()}-${i}.${ext}`;
+    const { error } = await supabase.storage.from('landlink-photos').upload(path, file, { upsert: true });
+    if (!error) {
+      const { data } = supabase.storage.from('landlink-photos').getPublicUrl(path);
+      urls.push(data.publicUrl);
+    }
+  }
+  return urls;
+}
 
 function goto(n) {
   step = Math.max(1, Math.min(TOTAL_STEPS, n));
@@ -165,7 +236,7 @@ function goto(n) {
   document.getElementById('next').textContent = step === TOTAL_STEPS ? 'Submit listing' : 'Continue';
   document.getElementById('back').style.visibility = step === 1 ? 'hidden' : 'visible';
   if (step === 2 && !drawMap) initDrawMap();
-  if (step === 5) renderSummary();
+  if (step === 6) renderSummary();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
@@ -209,32 +280,51 @@ function collect() {
 function validateStep() {
   collect();
   if (step === 1) {
-    if (!form.name || !form.province) { alert('Please fill in parcel name and province.'); return false; }
+    if (!form.name || !form.province) { toast('Please fill in parcel name and province.', 'error'); return false; }
   }
   if (step === 2) {
-    if (!form.geometry) { alert('Please draw your parcel boundary on the map.'); return false; }
+    if (!form.geometry) { toast('Please draw your parcel boundary on the map.', 'error'); return false; }
   }
   if (step === 3) {
-    if (!form.species.length) { alert('Pick at least one species.'); return false; }
-    if (!form.weapons.length) { alert('Pick at least one weapon.'); return false; }
+    if (!form.species.length) { toast('Pick at least one species.', 'error'); return false; }
+    if (!form.weapons.length) { toast('Pick at least one weapon.', 'error'); return false; }
+  }
+  if (step === 4) {
+    if (!form.photoFiles.filter(Boolean).length) { toast('Add at least one photo.', 'error'); return false; }
   }
   return true;
 }
 
 function renderSummary() {
   const price = form.price_unit === 'free' ? 'Free access' : `$${(form.price_cents/100).toLocaleString()} / ${form.price_unit}`;
+  const photoCount = form.photoFiles.filter(Boolean).length;
   document.getElementById('summary').innerHTML = `
-    <div><b>${form.name || '\u2014'}</b> \u00b7 ${form.municipality || ''} ${form.province}</div>
-    <div>${form.acres ? form.acres + ' acres' : ''} \u00b7 ${form.species.join(', ') || 'no species'} \u00b7 ${form.weapons.join(', ') || 'no weapons'}</div>
-    <div>Max ${form.max_hunters} hunters \u00b7 ${form.vehicle_access.replace('_',' ')}</div>
-    <div>Season: ${form.season_start || '\u2014'} \u2192 ${form.season_end || '\u2014'}</div>
+    <div><b>${esc(form.name || '\u2014')}</b> \u00b7 ${esc(form.municipality || '')} ${esc(form.province)}</div>
+    <div>${form.acres ? form.acres + ' acres' : ''} \u00b7 ${esc(form.species.join(', ') || 'no species')} \u00b7 ${esc(form.weapons.join(', ') || 'no weapons')}</div>
+    <div>Max ${form.max_hunters} hunters \u00b7 ${esc(form.vehicle_access.replace('_',' '))}</div>
+    <div>Season: ${esc(form.season_start || '\u2014')} \u2192 ${esc(form.season_end || '\u2014')}</div>
+    <div>Photos: <b>${photoCount} uploaded</b></div>
     <div>Price: <b>${price}</b></div>
-    ${form.description ? `<div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--line)">${form.description}</div>` : ''}`;
+    ${form.description ? `<div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--line)">${esc(form.description)}</div>` : ''}`;
 }
 
 async function submit() {
   const profile = await getCurrentProfile();
   if (!profile) { window.location.href = '/en/landlink/signup?role=landowner&next=' + encodeURIComponent(location.pathname); return; }
+
+  const submitBtn = document.getElementById('next');
+  submitBtn.disabled = true; submitBtn.textContent = 'Uploading photos...';
+
+  let photos = [];
+  try {
+    photos = await uploadPhotos(profile.user_id);
+  } catch (e) {
+    toast('Photo upload failed: ' + e.message, 'error');
+    submitBtn.disabled = false; submitBtn.textContent = 'Submit listing';
+    return;
+  }
+
+  submitBtn.textContent = 'Submitting listing...';
   const payload = {
     owner_id: profile.user_id,
     name: form.name, description: form.description,
@@ -245,12 +335,12 @@ async function submit() {
     max_hunters: form.max_hunters, vehicle_access: form.vehicle_access,
     season_start: form.season_start, season_end: form.season_end,
     price_cents: form.price_cents, price_unit: form.price_unit,
-    house_rules: form.house_rules, status: 'pending_review'
+    house_rules: form.house_rules, photos, status: 'pending_review'
   };
   const { error } = await supabase.from('landlink_parcels').insert(payload);
-  if (error) { alert('Could not submit: ' + error.message); return; }
-  alert('Submitted! We\u2019ll review it within 24h and email you when it\u2019s live.');
-  window.location.href = '/en/landlink/dashboard';
+  if (error) { toast('Could not submit: ' + error.message, 'error'); submitBtn.disabled = false; submitBtn.textContent = 'Submit listing'; return; }
+  toast('Submitted! We\u2019ll review within 24h.', 'success');
+  setTimeout(() => { window.location.href = '/en/landlink/dashboard'; }, 1500);
 }
 
 document.getElementById('next').addEventListener('click', () => {

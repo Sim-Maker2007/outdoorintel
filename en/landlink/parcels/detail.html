@@ -42,6 +42,7 @@
 
       <div class="ll-detail-section">
         <h2>Reviews <span style="font-weight:400;color:var(--ink-soft)" id="review-count"></span></h2>
+        <div id="review-form-container"></div>
         <div id="reviews"><p class="ll-empty" style="padding:12px 0">No reviews yet. Be the first.</p></div>
       </div>
     </div>
@@ -52,6 +53,7 @@
           <strong id="price">$200</strong><span id="price-unit">/ season</span>
           <div style="margin-left:auto;font-size:12px;color:var(--ink-soft)" id="rating-summary">\u2014</div>
         </div>
+        <div id="availability-calendar" style="margin-bottom:12px"></div>
         <form id="request-form" class="ll-booking-form">
           <div class="ll-booking-row">
             <div class="ll-booking-field"><label>Date from</label><input type="date" name="date_from" required></div>
@@ -88,6 +90,8 @@
 <script type="module">
 import { renderNav } from '/assets/landlink/js/nav.js';
 import { supabase, formatPrice, getCurrentProfile } from '/assets/landlink/js/supabase-client.js';
+import { esc, toast } from '/assets/landlink/js/utils.js';
+import { renderCalendar } from '/assets/landlink/js/calendar.js';
 renderNav();
 
 const parcelId = (location.pathname.split('/').pop() || '').replace('.html','');
@@ -156,25 +160,49 @@ function render(p) {
     }
   }
 
+  // availability calendar
+  renderCalendar(document.getElementById('availability-calendar'), p.id, {
+    seasonStart: p.season_start,
+    seasonEnd: p.season_end,
+    onSelect: (from, to) => {
+      const dateFrom = document.querySelector('[name="date_from"]');
+      const dateTo = document.querySelector('[name="date_to"]');
+      if (dateFrom && from) dateFrom.value = from;
+      if (dateTo && to) dateTo.value = to;
+    }
+  });
+
   // reviews
   loadReviews(p.id);
+  maybeShowReviewForm(p.id);
 
   // request form wiring
   document.getElementById('request-form').addEventListener('submit', async e => {
     e.preventDefault();
     const profile = await getCurrentProfile();
     if (!profile) { window.location.href = '/en/landlink/login?next=' + encodeURIComponent(location.pathname); return; }
-    if (!profile.pal_verified_at) { alert('Your PAL must be verified before sending a request. Upload it on your profile page.'); return; }
+    if (!profile.pal_verified_at) { toast('Your PAL must be verified before sending a request. Upload it on your profile page.', 'error'); return; }
     const form = new FormData(e.target);
-    const { error } = await supabase.from('landlink_hunt_requests').insert({
+    const { data: newReq, error } = await supabase.from('landlink_hunt_requests').insert({
       parcel_id: p.id, hunter_id: profile.user_id,
       date_from: form.get('date_from'), date_to: form.get('date_to'),
       party_size: parseInt(form.get('party_size'),10), weapon: form.get('weapon'),
       message: form.get('message'), species: p.species, status: 'pending'
-    });
-    if (error) { alert('Could not send request: ' + error.message); return; }
-    alert('Request sent. The landowner will respond within 48h.');
-    window.location.href = '/en/landlink/dashboard';
+    }).select('id').single();
+    if (error) { toast('Could not send request: ' + error.message, 'error'); return; }
+
+    // Fire email notification to landowner (non-blocking)
+    try {
+      const { data: { session } } = await supabase.auth.getSession();
+      fetch('/api/landlink/hunt-requests/notify-new', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${session.access_token}` },
+        body: JSON.stringify({ request_id: newReq.id })
+      });
+    } catch (_) {}
+
+    toast('Request sent! The landowner will respond within 48h.', 'success');
+    setTimeout(() => { window.location.href = '/en/landlink/dashboard'; }, 1500);
   });
 }
 
@@ -188,8 +216,84 @@ async function loadReviews(id) {
   document.getElementById('reviews').innerHTML = data.map(r => `
     <div style="padding:14px 0;border-bottom:1px solid var(--line-soft)">
       <div style="font-size:13px;font-weight:600">\u2605 ${r.rating}.0</div>
-      <div style="font-size:13px;color:var(--ink);margin-top:6px;line-height:1.6">${(r.text || '').replace(/</g,'&lt;')}</div>
+      <div style="font-size:13px;color:var(--ink);margin-top:6px;line-height:1.6">${esc(r.text || '')}</div>
     </div>`).join('');
+}
+
+// ---------- review form ----------
+async function maybeShowReviewForm(parcelId) {
+  const profile = await getCurrentProfile();
+  if (!profile) return;
+
+  // Check if user has a completed request for this parcel and hasn't reviewed yet
+  const { data: completedRequests } = await supabase
+    .from('landlink_hunt_requests')
+    .select('id')
+    .eq('parcel_id', parcelId)
+    .eq('hunter_id', profile.user_id)
+    .eq('status', 'completed');
+
+  if (!completedRequests || !completedRequests.length) return;
+
+  // Check for existing review
+  const { data: existingReviews } = await supabase
+    .from('landlink_reviews')
+    .select('id')
+    .eq('reviewer_id', profile.user_id)
+    .eq('subject_id', parcelId)
+    .eq('subject_type', 'parcel');
+
+  if (existingReviews && existingReviews.length) return;
+
+  const requestId = completedRequests[0].id;
+  const container = document.getElementById('review-form-container');
+  container.innerHTML = `
+    <div class="ll-review-form">
+      <h3>Rate your experience</h3>
+      <div class="ll-star-input" id="star-input">
+        ${[1,2,3,4,5].map(n => `<button data-val="${n}" aria-label="${n} star">\u2605</button>`).join('')}
+      </div>
+      <textarea id="review-text" rows="3" placeholder="Tell other hunters about your experience..." style="width:100%;padding:10px 14px;border:1px solid var(--line);border-radius:8px;font-size:13px;resize:vertical;margin-bottom:12px"></textarea>
+      <button id="submit-review" class="ll-btn-accent" style="padding:10px 24px;border-radius:8px;font-size:14px">Submit review</button>
+    </div>`;
+
+  let selectedRating = 0;
+  const stars = container.querySelectorAll('#star-input button');
+  stars.forEach(btn => {
+    btn.addEventListener('click', () => {
+      selectedRating = parseInt(btn.dataset.val);
+      stars.forEach((s, i) => s.classList.toggle('active', i < selectedRating));
+    });
+    btn.addEventListener('mouseenter', () => {
+      const val = parseInt(btn.dataset.val);
+      stars.forEach((s, i) => s.classList.toggle('active', i < val));
+    });
+  });
+  container.querySelector('#star-input').addEventListener('mouseleave', () => {
+    stars.forEach((s, i) => s.classList.toggle('active', i < selectedRating));
+  });
+
+  container.querySelector('#submit-review').addEventListener('click', async () => {
+    if (!selectedRating) { toast('Please select a rating', 'error'); return; }
+    const text = container.querySelector('#review-text').value.trim();
+    const { error } = await supabase.from('landlink_reviews').insert({
+      request_id: requestId,
+      reviewer_id: profile.user_id,
+      subject_id: parcelId,
+      subject_type: 'parcel',
+      rating: selectedRating,
+      text: text || null
+    });
+    if (error) { toast('Could not submit review: ' + error.message, 'error'); return; }
+    toast('Review submitted! Thank you.', 'success');
+    container.innerHTML = '<div class="ll-review-form"><p style="color:var(--brand);font-weight:600">Thank you for your review!</p></div>';
+    loadReviews(parcelId);
+  });
+
+  // Auto-scroll to review form if ?review=1
+  if (new URL(location.href).searchParams.get('review') === '1') {
+    setTimeout(() => container.scrollIntoView({ behavior: 'smooth', block: 'center' }), 500);
+  }
 }
 
 // ---------- demo fallback ----------

@@ -32,6 +32,15 @@
       <button class="ll-filter-pill" data-filter="weapon:rifle">Rifle</button>
       <button class="ll-filter-pill" data-filter="price:free">Free access</button>
     </div>
+    <div style="display:flex;gap:8px;padding:0 20px;margin-bottom:8px">
+      <input type="text" id="search-input" placeholder="Search by name, town, or province..." style="flex:1;padding:8px 14px;border:1px solid var(--line);border-radius:8px;font-size:13px">
+      <select id="sort-select" style="padding:8px 12px;border:1px solid var(--line);border-radius:8px;font-size:13px;background:#fff">
+        <option value="newest">Newest</option>
+        <option value="price_low">Price: low to high</option>
+        <option value="price_high">Price: high to low</option>
+        <option value="rating">Highest rated</option>
+      </select>
+    </div>
     <div class="ll-search-count" id="count">Loading parcels...</div>
     <div class="ll-search-grid" id="grid"></div>
   </div>
@@ -44,15 +53,20 @@
 <script type="module">
 import { renderNav } from '/assets/landlink/js/nav.js';
 import { supabase, formatPrice } from '/assets/landlink/js/supabase-client.js';
+import { esc } from '/assets/landlink/js/utils.js';
+import { loadFavourites, attachFavHandlers, isFavourite } from '/assets/landlink/js/favourites.js';
 renderNav();
+loadFavourites();
 
 // ---------- state ----------
 const state = {
   parcels: [],
   filtered: [],
   filter: 'all',
+  locationQuery: '',
   markers: new Map(),
-  hoveredId: null
+  hoveredId: null,
+  sort: 'newest'
 };
 
 // ---------- map ----------
@@ -66,6 +80,7 @@ async function load() {
                       : url.searchParams.get('weapon') ? 'weapon:' + url.searchParams.get('weapon')
                       : url.searchParams.get('price_unit') === 'free' ? 'price:free'
                       : 'all';
+  state.locationQuery = (url.searchParams.get('location') || '').trim().toLowerCase();
   if (initialFilter !== 'all') {
     document.querySelectorAll('.ll-filter-pill').forEach(b => b.classList.toggle('active', b.dataset.filter === initialFilter));
   }
@@ -84,13 +99,27 @@ async function load() {
 
 function applyFilter() {
   const f = state.filter;
+  const q = state.locationQuery;
   state.filtered = state.parcels.filter(p => {
-    if (f === 'all') return true;
-    if (f.startsWith('species:')) return (p.species || []).includes(f.split(':')[1]);
-    if (f.startsWith('weapon:')) return (p.weapons || []).includes(f.split(':')[1]);
-    if (f === 'price:free') return p.price_unit === 'free';
+    // Species / weapon / price filter
+    if (f !== 'all') {
+      if (f.startsWith('species:') && !(p.species || []).includes(f.split(':')[1])) return false;
+      if (f.startsWith('weapon:') && !(p.weapons || []).includes(f.split(':')[1])) return false;
+      if (f === 'price:free' && p.price_unit !== 'free') return false;
+    }
+    // Location text search (matches province, municipality, or parcel name)
+    if (q) {
+      const haystack = [p.name, p.municipality, p.province].filter(Boolean).join(' ').toLowerCase();
+      if (!haystack.includes(q)) return false;
+    }
     return true;
   });
+
+  // Sort
+  if (state.sort === 'price_low') state.filtered.sort((a,b) => (a.price_cents||0) - (b.price_cents||0));
+  else if (state.sort === 'price_high') state.filtered.sort((a,b) => (b.price_cents||0) - (a.price_cents||0));
+  else if (state.sort === 'rating') state.filtered.sort((a,b) => (b.avg_rating||0) - (a.avg_rating||0));
+
   render();
 }
 
@@ -105,6 +134,7 @@ function render() {
     el.addEventListener('mouseenter', () => focusMarker(el.dataset.id));
     el.addEventListener('mouseleave', () => unfocusMarker(el.dataset.id));
   });
+  attachFavHandlers(grid);
 
   // map pins
   state.markers.forEach(m => map.removeLayer(m));
@@ -143,17 +173,18 @@ function cardHTML(p) {
   const location = [p.municipality, p.province].filter(Boolean).join(', ');
   const species = (p.species || []).slice(0, 2).map(s => s.replace('_', ' ')).join(' \u00b7 ');
   return `
-    <a class="ll-card" href="/en/parcels/${p.id}" data-id="${p.id}">
-      <div class="ll-card-img" style="background-image:url('${photo}')">
+    <a class="ll-card" href="/en/landlink/parcels/${esc(p.id)}" data-id="${esc(p.id)}">
+      <div class="ll-card-img" style="background-image:url('${esc(photo)}')">
         ${p.price_unit === 'free' ? '<div class="ll-card-badge">Free access</div>' : ''}
+        <div class="ll-card-fav ${isFavourite(p.id) ? 'active' : ''}" data-parcel-id="${esc(p.id)}" aria-label="Save"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
       </div>
       <div class="ll-card-body">
         <div class="ll-card-row">
-          <div class="ll-card-title">${p.name}</div>
+          <div class="ll-card-title">${esc(p.name)}</div>
           <div class="ll-card-rating">&#9733; ${rating}${reviews}</div>
         </div>
-        <div class="ll-card-meta">${location || '\u2014'}</div>
-        <div class="ll-card-meta">${species || 'Multi-species'}${p.acres ? ` \u00b7 ${p.acres} acres` : ''}</div>
+        <div class="ll-card-meta">${esc(location) || '\u2014'}</div>
+        <div class="ll-card-meta">${esc(species) || 'Multi-species'}${p.acres ? ` \u00b7 ${p.acres} acres` : ''}</div>
         <div class="ll-card-price"><strong>${price}</strong></div>
       </div>
     </a>`;
@@ -197,6 +228,21 @@ function demoParcels() {
     { id: 'demo-10', name: 'Mauricie Back 40', province: 'QC', municipality: 'Shawinigan', species: ['whitetail','coyote'], weapons: ['archery','crossbow'], price_cents: 12000, price_unit: 'season', acres: 120, avg_rating: 4.5, review_count: 5, centroid_lat: 46.56, centroid_lng: -72.75, max_hunters: 1 }
   ];
 }
+
+// Search input
+const searchInput = document.getElementById('search-input');
+if (state.locationQuery) searchInput.value = state.locationQuery;
+let searchTimer;
+searchInput.addEventListener('input', () => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => { state.locationQuery = searchInput.value.trim().toLowerCase(); applyFilter(); }, 250);
+});
+
+// Sort select
+document.getElementById('sort-select').addEventListener('change', e => {
+  state.sort = e.target.value;
+  applyFilter();
+});
 
 load();
 </script>

@@ -55,12 +55,22 @@
     </div>
 
     <button type="submit" class="ll-booking-submit" style="max-width:240px">Save profile</button>
+
+    <div id="stripe-section" style="display:none;margin-top:32px">
+      <h3 style="font-size:18px;margin-bottom:12px">Payouts</h3>
+      <div style="padding:20px;background:var(--bg-soft);border-radius:12px">
+        <div style="font-weight:600;font-size:14px">Stripe Connect</div>
+        <div style="font-size:12px;color:var(--ink-soft);margin-top:4px" id="stripe-status">Not set up</div>
+        <button type="button" id="stripe-onboard-btn" class="ll-btn-accent" style="margin-top:12px;padding:10px 20px;border-radius:8px;font-size:13px">Set up payouts</button>
+      </div>
+    </div>
   </form>
 </main>
 
 <script type="module">
 import { renderNav } from '/assets/landlink/js/nav.js';
 import { supabase, getCurrentProfile } from '/assets/landlink/js/supabase-client.js';
+import { toast } from '/assets/landlink/js/utils.js';
 renderNav();
 
 async function boot() {
@@ -105,12 +115,40 @@ async function boot() {
     }
 
     const { error } = await supabase.from('landlink_profiles').update(patch).eq('user_id', profile.user_id);
-    if (error) { alert('Save failed: ' + error.message); return; }
-    alert('Saved.');
-    location.reload();
+    if (error) { toast('Save failed: ' + error.message, 'error'); return; }
+    toast('Profile saved!', 'success');
+    setTimeout(() => location.reload(), 1000);
   });
 }
-boot();
+boot().then(async () => {
+  const profile = await getCurrentProfile();
+  if (!profile) return;
+  const isLandowner = ['landowner', 'both', 'admin'].includes(profile.role);
+  if (isLandowner) {
+    document.getElementById('stripe-section').style.display = 'block';
+    if (profile.stripe_account_id) {
+      document.getElementById('stripe-status').textContent = 'Connected — payouts are active';
+      document.getElementById('stripe-onboard-btn').textContent = 'Manage payouts';
+    }
+    document.getElementById('stripe-onboard-btn').addEventListener('click', async () => {
+      const btn = document.getElementById('stripe-onboard-btn');
+      btn.disabled = true; btn.textContent = 'Setting up...';
+      try {
+        const { data: { session } } = await supabase.auth.getSession();
+        const res = await fetch('/api/landlink/payments/connect-onboard', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${session.access_token}` }
+        });
+        const result = await res.json();
+        if (!res.ok) throw new Error(result.error);
+        window.location.href = result.url;
+      } catch (err) {
+        toast(err.message, 'error');
+        btn.disabled = false; btn.textContent = profile.stripe_account_id ? 'Manage payouts' : 'Set up payouts';
+      }
+    });
+  }
+});
 </script>
 
 </body>

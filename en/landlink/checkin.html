@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Check In — LandLink</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/landlink/landlink.css">
+</head>
+<body>
+
+<main class="ll-dash" style="max-width:600px;margin:0 auto">
+  <div id="content"><div class="ll-empty">Loading...</div></div>
+</main>
+
+<script type="module">
+import { renderNav } from '/assets/landlink/js/nav.js';
+import { supabase, getCurrentProfile, formatPrice } from '/assets/landlink/js/supabase-client.js';
+import { esc, fmtDate, toast } from '/assets/landlink/js/utils.js';
+renderNav();
+
+const url = new URL(location.href);
+const requestId = url.searchParams.get('request');
+
+async function boot() {
+  if (!requestId) {
+    document.getElementById('content').innerHTML = '<div class="ll-empty"><h3>Invalid link</h3><p>No request ID provided.</p></div>';
+    return;
+  }
+
+  const profile = await getCurrentProfile();
+  if (!profile) { window.location.href = '/en/landlink/login?next=' + encodeURIComponent(location.href); return; }
+
+  const { data: hr } = await supabase
+    .from('landlink_hunt_requests')
+    .select('*, landlink_parcels!inner(name, province, municipality, owner_id, house_rules)')
+    .eq('id', requestId).single();
+
+  if (!hr) {
+    document.getElementById('content').innerHTML = '<div class="ll-empty"><h3>Request not found</h3></div>';
+    return;
+  }
+
+  const parcel = hr.landlink_parcels;
+  const isHunter = hr.hunter_id === profile.user_id;
+  const isLandowner = parcel.owner_id === profile.user_id;
+
+  if (!isHunter && !isLandowner) {
+    document.getElementById('content').innerHTML = '<div class="ll-empty"><h3>Access denied</h3></div>';
+    return;
+  }
+
+  if (hr.status !== 'approved' && hr.status !== 'completed') {
+    document.getElementById('content').innerHTML = `<div class="ll-empty"><h3>This booking is ${esc(hr.status)}</h3><p>Check-in is only available for approved bookings.</p></div>`;
+    return;
+  }
+
+  const loc = [parcel.municipality, parcel.province].filter(Boolean).join(', ');
+  const el = document.getElementById('content');
+
+  if (!hr.checked_in_at && isHunter) {
+    // Show check-in card
+    el.innerHTML = `
+      <div class="ll-checkin-card">
+        <h2 style="font-size:24px;margin-bottom:4px">${esc(parcel.name)}</h2>
+        <div style="color:var(--ink-soft);font-size:14px">${esc(loc)}</div>
+        <div style="margin:16px 0;font-size:14px">${fmtDate(hr.date_from)} \u2192 ${fmtDate(hr.date_to)} \u00b7 Party of ${hr.party_size}</div>
+        ${parcel.house_rules ? `<div style="background:var(--bg-beige);padding:16px;border-radius:10px;text-align:left;font-size:13px;margin-bottom:16px"><strong>House rules:</strong><br>${esc(parcel.house_rules)}</div>` : ''}
+        <button class="ll-checkin-btn" id="checkin-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Check In Now
+        </button>
+        <p style="font-size:12px;color:var(--ink-soft);margin-top:12px">This will notify the landowner that you've arrived.</p>
+      </div>`;
+
+    document.getElementById('checkin-btn').addEventListener('click', async () => {
+      const btn = document.getElementById('checkin-btn');
+      btn.disabled = true; btn.textContent = 'Checking in...';
+
+      // Optionally capture GPS
+      let coords = null;
+      try {
+        const pos = await new Promise((resolve, reject) => {
+          navigator.geolocation.getCurrentPosition(resolve, reject, { timeout: 5000 });
+        });
+        coords = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+      } catch (_) {}
+
+      const { error } = await supabase.from('landlink_hunt_requests').update({
+        checked_in_at: new Date().toISOString()
+      }).eq('id', requestId);
+
+      if (error) { toast('Check-in failed: ' + error.message, 'error'); btn.disabled = false; btn.textContent = 'Check In Now'; return; }
+
+      // Notify landowner (non-blocking)
+      try {
+        const { data: { session } } = await supabase.auth.getSession();
+        fetch('/api/landlink/checkin/notify', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${session.access_token}` },
+          body: JSON.stringify({ request_id: requestId, action: 'checkin', coords })
+        });
+      } catch (_) {}
+
+      toast('Checked in! Have a safe hunt.', 'success');
+      setTimeout(() => location.reload(), 1500);
+    });
+
+  } else if (hr.checked_in_at && !hr.checked_out_at && isHunter) {
+    // Show check-out card
+    el.innerHTML = `
+      <div class="ll-checkin-card">
+        <div class="ll-checkin-done">\u2713 Checked in at ${new Date(hr.checked_in_at).toLocaleTimeString()}</div>
+        <h2 style="font-size:24px;margin:12px 0 4px">${esc(parcel.name)}</h2>
+        <div style="color:var(--ink-soft);font-size:14px">${esc(loc)}</div>
+        <button class="ll-checkin-btn" id="checkout-btn" style="background:var(--accent)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          Check Out
+        </button>
+        <p style="font-size:12px;color:var(--ink-soft);margin-top:12px">Check out when you leave the property.</p>
+      </div>`;
+
+    document.getElementById('checkout-btn').addEventListener('click', async () => {
+      const btn = document.getElementById('checkout-btn');
+      btn.disabled = true; btn.textContent = 'Checking out...';
+
+      const { error } = await supabase.from('landlink_hunt_requests').update({
+        checked_out_at: new Date().toISOString(),
+        status: 'completed'
+      }).eq('id', requestId);
+
+      if (error) { toast('Check-out failed: ' + error.message, 'error'); btn.disabled = false; btn.textContent = 'Check Out'; return; }
+
+      // Notify landowner
+      try {
+        const { data: { session } } = await supabase.auth.getSession();
+        fetch('/api/landlink/checkin/notify', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${session.access_token}` },
+          body: JSON.stringify({ request_id: requestId, action: 'checkout' })
+        });
+      } catch (_) {}
+
+      toast('Checked out! Don\'t forget to leave a review.', 'success');
+      setTimeout(() => { window.location.href = `/en/landlink/parcels/${hr.parcel_id}?review=1`; }, 2000);
+    });
+
+  } else if (hr.checked_out_at) {
+    el.innerHTML = `
+      <div class="ll-checkin-card">
+        <div class="ll-checkin-done">\u2713 Hunt completed</div>
+        <h2 style="font-size:20px;margin:12px 0">${esc(parcel.name)}</h2>
+        <div style="font-size:13px;color:var(--ink-soft)">
+          Checked in: ${new Date(hr.checked_in_at).toLocaleString()}<br>
+          Checked out: ${new Date(hr.checked_out_at).toLocaleString()}
+        </div>
+        <a href="/en/landlink/parcels/${esc(hr.parcel_id)}?review=1" class="ll-checkin-btn" style="text-decoration:none;margin-top:16px">Leave a review</a>
+      </div>`;
+
+  } else if (isLandowner) {
+    const statusText = hr.checked_in_at
+      ? `Hunter checked in at ${new Date(hr.checked_in_at).toLocaleTimeString()}`
+      : 'Hunter has not checked in yet';
+    el.innerHTML = `
+      <div class="ll-checkin-card">
+        <h2 style="font-size:20px;margin-bottom:8px">${esc(parcel.name)}</h2>
+        <div style="font-size:14px;color:var(--ink-soft)">${fmtDate(hr.date_from)} \u2192 ${fmtDate(hr.date_to)}</div>
+        <div style="margin-top:16px;font-size:15px;font-weight:600">${statusText}</div>
+      </div>`;
+  }
+}
+
+boot();
+</script>
+
+</body>
+</html>

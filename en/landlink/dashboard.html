@@ -22,6 +22,8 @@
 <script type="module">
 import { renderNav } from '/assets/landlink/js/nav.js';
 import { supabase, getCurrentProfile, formatPrice } from '/assets/landlink/js/supabase-client.js';
+import { esc, fmtDate, timeAgo, toast, confirm as confirmModal } from '/assets/landlink/js/utils.js';
+import { renderMessages } from '/assets/landlink/js/messaging.js';
 renderNav();
 
 const state = { profile: null, tab: null };
@@ -39,6 +41,7 @@ async function boot() {
   const tabs = [];
   if (isLandowner) { tabs.push({ id: 'my-parcels', label: 'My Parcels' }); tabs.push({ id: 'incoming', label: 'Incoming Requests' }); }
   if (isHunter) { tabs.push({ id: 'my-requests', label: 'My Requests' }); }
+  tabs.push({ id: 'saved', label: 'Saved' });
   if (role === 'admin') tabs.push({ id: 'admin', label: 'Admin' });
 
   document.getElementById('tabs').innerHTML = tabs.map((t,i) => `<button data-tab="${t.id}" class="${i===0?'active':''}">${t.label}</button>`).join('');
@@ -83,6 +86,21 @@ async function loadTab(tab) {
       : emptyState('No requests yet', 'Find a parcel and apply \u2014 your applications will show up here.', '/en/parcels', 'Browse parcels');
   }
 
+  else if (tab === 'saved') {
+    const { data: favs } = await supabase.from('landlink_favourites')
+      .select('parcel_id').eq('user_id', state.profile.user_id);
+    if (!favs || !favs.length) {
+      el.innerHTML = emptyState('No saved parcels', 'Heart a parcel to save it here for later.', '/en/landlink/parcels', 'Browse parcels');
+    } else {
+      const ids = favs.map(f => f.parcel_id);
+      const { data: parcels } = await supabase.from('landlink_parcels')
+        .select('id,name,province,municipality,species,status,photos,price_cents,price_unit,review_count,avg_rating')
+        .in('id', ids);
+      el.innerHTML = (parcels && parcels.length) ? parcels.map(parcelRow).join('')
+        : emptyState('Saved parcels are no longer available', 'Browse for new parcels.', '/en/landlink/parcels', 'Browse parcels');
+    }
+  }
+
   else if (tab === 'admin') {
     const { data } = await supabase.from('landlink_parcels')
       .select('id,name,province,owner_id,status,created_at')
@@ -99,12 +117,12 @@ async function myParcelIds() {
 
 function parcelRow(p) {
   const photo = (p.photos && p.photos[0]) || 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=200&auto=format&fit=crop';
-  const badge = `<span class="ll-badge ll-badge-${p.status.replace('_','-')}">${p.status.replace('_',' ')}</span>`;
-  return `<a class="ll-list-row" href="/en/parcels/${p.id}">
-    <div class="ll-list-thumb" style="background-image:url('${photo}')"></div>
+  const badge = `<span class="ll-badge ll-badge-${esc(p.status.replace('_','-'))}">${esc(p.status.replace('_',' '))}</span>`;
+  return `<a class="ll-list-row" href="/en/landlink/parcels/${esc(p.id)}">
+    <div class="ll-list-thumb" style="background-image:url('${esc(photo)}')"></div>
     <div class="ll-list-body">
-      <h4>${p.name} ${badge}</h4>
-      <div class="meta">${[p.municipality, p.province].filter(Boolean).join(', ')} \u00b7 ${formatPrice(p.price_cents, p.price_unit)} \u00b7 ${p.review_count || 0} reviews</div>
+      <h4>${esc(p.name)} ${badge}</h4>
+      <div class="meta">${esc([p.municipality, p.province].filter(Boolean).join(', '))} \u00b7 ${formatPrice(p.price_cents, p.price_unit)} \u00b7 ${p.review_count || 0} reviews</div>
     </div>
   </a>`;
 }
@@ -113,26 +131,128 @@ function requestRow(r) {
   const parcel = r.landlink_parcels || {};
   const photo = (parcel.photos && parcel.photos[0]) || 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=200&auto=format&fit=crop';
   const loc = [parcel.municipality, parcel.province].filter(Boolean).join(', ');
-  const badge = `<span class="ll-badge ll-badge-${r.status}">${r.status}</span>`;
-  return `<div class="ll-list-row">
-    <div class="ll-list-thumb" style="background-image:url('${photo}')"></div>
+  const badge = `<span class="ll-badge ll-badge-${esc(r.status)}">${esc(r.status)}</span>`;
+  const isIncoming = state.tab === 'incoming';
+  const isPending = r.status === 'pending';
+  return `<div class="ll-list-row" data-request-id="${esc(r.id)}">
+    <div class="ll-list-thumb" style="background-image:url('${esc(photo)}')"></div>
     <div class="ll-list-body">
-      <h4>${parcel.name || 'Parcel'} ${badge}</h4>
-      <div class="meta">${loc} \u00b7 ${r.date_from} \u2192 ${r.date_to} \u00b7 party of ${r.party_size} \u00b7 ${r.weapon}</div>
-      ${r.message ? `<div class="meta" style="margin-top:6px;color:var(--ink)">\u201C${r.message}\u201D</div>` : ''}
+      <h4>${esc(parcel.name || 'Parcel')} ${badge}</h4>
+      <div class="meta">${esc(loc)} \u00b7 ${fmtDate(r.date_from)} \u2192 ${fmtDate(r.date_to)} \u00b7 party of ${r.party_size} \u00b7 ${esc(r.weapon)}</div>
+      ${r.message ? `<div class="meta" style="margin-top:6px;color:var(--ink)">\u201C${esc(r.message)}\u201D</div>` : ''}
+      ${r.landowner_response ? `<div class="meta" style="margin-top:4px;color:var(--brand)">Response: \u201C${esc(r.landowner_response)}\u201D</div>` : ''}
+      ${isIncoming && isPending ? `
+        <div class="ll-action-row">
+          <input class="ll-response-input" placeholder="Optional message to hunter..." data-id="${esc(r.id)}">
+          <button class="ll-btn-approve" onclick="respondRequest('${esc(r.id)}','approve')">Approve</button>
+          <button class="ll-btn-decline" onclick="respondRequest('${esc(r.id)}','decline')">Decline</button>
+        </div>` : ''}
+      ${!isIncoming && r.status === 'completed' && !r._reviewed ? `
+        <div class="ll-action-row">
+          <a href="/en/landlink/parcels/${esc(r.parcel_id)}?review=1" class="ll-btn-approve">Leave a review</a>
+        </div>` : ''}
+      ${r.status === 'approved' && !r.checked_in_at ? `
+        <div class="ll-action-row">
+          <a href="/en/landlink/checkin?request=${esc(r.id)}" class="ll-btn-approve" style="background:var(--accent)">Check in</a>
+        </div>` : ''}
+      ${r.status === 'approved' ? `
+        <div class="ll-action-row">
+          <button class="ll-btn-decline" onclick="togglePayment('${esc(r.id)}')">Pay now</button>
+        </div>` : ''}
+      <div class="ll-action-row" style="margin-top:8px">
+        <button class="ll-btn-decline" onclick="toggleMessages('${esc(r.id)}')">Messages</button>
+      </div>
+      <div id="msg-panel-${esc(r.id)}" style="display:none;margin-top:12px"></div>
     </div>
   </div>`;
 }
 
+// Handle approve/decline
+window.respondRequest = async function(requestId, action) {
+  const input = document.querySelector(`.ll-response-input[data-id="${requestId}"]`);
+  const response = input ? input.value.trim() : '';
+
+  const label = action === 'approve' ? 'approve' : 'decline';
+  const ok = await confirmModal(
+    `${label.charAt(0).toUpperCase() + label.slice(1)} request?`,
+    action === 'approve'
+      ? 'The hunter will be notified and an access agreement will be generated.'
+      : 'The hunter will be notified that their request was declined.',
+    label.charAt(0).toUpperCase() + label.slice(1)
+  );
+  if (!ok) return;
+
+  const btn = document.querySelector(`[onclick="respondRequest('${requestId}','${action}')"]`);
+  if (btn) { btn.disabled = true; btn.textContent = 'Sending...'; }
+
+  try {
+    const { data: { session } } = await supabase.auth.getSession();
+    const res = await fetch('/api/landlink/hunt-requests/respond', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${session.access_token}` },
+      body: JSON.stringify({ request_id: requestId, action, response })
+    });
+    const result = await res.json();
+    if (!res.ok) throw new Error(result.error || 'Failed');
+    toast(`Request ${result.status}`, 'success');
+    loadTab('incoming');
+  } catch (err) {
+    toast(err.message, 'error');
+    if (btn) { btn.disabled = false; btn.textContent = label.charAt(0).toUpperCase() + label.slice(1); }
+  }
+};
+
 function adminRow(p) {
   return `<div class="ll-list-row">
     <div class="ll-list-body">
-      <h4>${p.name} <span class="ll-badge ll-badge-pending">pending</span></h4>
-      <div class="meta">${p.province} \u00b7 submitted ${new Date(p.created_at).toLocaleDateString()}</div>
+      <h4>${esc(p.name)} <span class="ll-badge ll-badge-pending">pending</span></h4>
+      <div class="meta">${esc(p.province)} \u00b7 submitted ${new Date(p.created_at).toLocaleDateString()}</div>
     </div>
-    <button onclick="approveParcel('${p.id}')" class="ll-btn">Approve</button>
+    <button onclick="approveParcel('${esc(p.id)}')" class="ll-btn-approve">Approve</button>
+    <button onclick="rejectParcel('${esc(p.id)}')" class="ll-btn-decline">Reject</button>
   </div>`;
 }
+
+// Toggle messaging panel
+window.toggleMessages = async function(requestId) {
+  const panel = document.getElementById(`msg-panel-${requestId}`);
+  if (!panel) return;
+  if (panel.style.display === 'none') {
+    panel.style.display = 'block';
+    if (!panel.dataset.loaded) {
+      await renderMessages(panel, requestId, state.profile.user_id);
+      panel.dataset.loaded = '1';
+    }
+  } else {
+    panel.style.display = 'none';
+  }
+};
+
+// Initiate payment for approved requests
+window.togglePayment = async function(requestId) {
+  try {
+    const { data: { session } } = await supabase.auth.getSession();
+    const res = await fetch('/api/landlink/payments/create-checkout', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${session.access_token}` },
+      body: JSON.stringify({ request_id: requestId })
+    });
+    const result = await res.json();
+    if (!res.ok) throw new Error(result.error);
+    window.location.href = result.url;
+  } catch (err) {
+    toast(err.message, 'error');
+  }
+};
+
+window.rejectParcel = async function(id) {
+  const reason = prompt('Reason for rejection (shown to landowner):');
+  if (reason === null) return;
+  const { error } = await supabase.from('landlink_parcels').update({ status: 'removed' }).eq('id', id);
+  if (error) { toast('Could not reject: ' + error.message, 'error'); return; }
+  toast('Listing rejected', 'info');
+  loadTab('admin');
+};
 
 window.approveParcel = async function(id) {
   const { error } = await supabase.from('landlink_parcels').update({ status: 'active' }).eq('id', id);
