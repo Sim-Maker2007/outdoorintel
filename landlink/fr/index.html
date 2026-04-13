@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LandLink — Terres privées en plein air, à l'année</title>
+<meta name="description" content="La place de marché canadienne pour la terre privée en plein air. Chasse, camping, pêche, quai, VTT, motoneige, cabane à sucre et plus — directement auprès des propriétaires.">
+<link rel="alternate" hreflang="en" href="https://landlink.outdoorintel.ca/en/">
+<link rel="alternate" hreflang="fr" href="https://landlink.outdoorintel.ca/fr/">
+<link rel="alternate" hreflang="x-default" href="https://landlink.outdoorintel.ca/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/public/css/landlink.css">
+</head>
+<body>
+
+<section class="ll-hero">
+  <div class="ll-hero-inner">
+    <h1>Terre privée.<br>Chaque saison.<br>Directement du propriétaire.</h1>
+    <p>Réservez un territoire de chasse, un site de camping, un lac privé, une cabane à sucre, un sentier de VTT, un quai et plus &mdash; auprès des Canadiens qui possèdent la terre.</p>
+
+    <form class="ll-search-pill" action="/fr/parcels" method="get">
+      <div class="ll-search-field">
+        <label>Où</label>
+        <input type="text" name="location" placeholder="Province, région, code postal" autocomplete="off">
+      </div>
+      <div class="ll-search-field">
+        <label>Activité</label>
+        <select name="category">
+          <option value="">Toutes activités</option>
+          <option value="hunting">Chasse</option>
+          <option value="camping">Camping</option>
+          <option value="fishing">Pêche</option>
+          <option value="ice_fishing">Pêche sur glace</option>
+          <option value="dock_shoreline">Quai et rive</option>
+          <option value="snowmobile">Motoneige</option>
+          <option value="atv_offroad">VTT / hors route</option>
+          <option value="xc_ski_snowshoe">Ski de fond / raquette</option>
+          <option value="sugar_shack">Cabane à sucre</option>
+          <option value="farm_stay">Séjour à la ferme</option>
+          <option value="foraging">Cueillette</option>
+          <option value="dog_training">Entraînement canin</option>
+          <option value="archery_shooting">Tir à l'arc / champ de tir</option>
+          <option value="equestrian">Équestre</option>
+          <option value="photography_film">Photo / film</option>
+          <option value="wellness_retreat">Mieux-être / retraite</option>
+          <option value="overlanding">Overlanding</option>
+        </select>
+      </div>
+      <div class="ll-search-field">
+        <label>Quand</label>
+        <input type="date" name="date_from">
+      </div>
+      <button type="submit" class="ll-search-submit" aria-label="Rechercher">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+    </form>
+  </div>
+</section>
+
+<section class="ll-section ll-section-compact">
+  <div class="ll-categories" id="categories"></div>
+</section>
+
+<section class="ll-section" id="featured">
+  <h2>Terres en vedette</h2>
+  <p class="ll-subhead">Un aperçu de ce qu'on trouve sur la plateforme en ce moment.</p>
+  <div class="ll-grid" id="featured-grid"></div>
+</section>
+
+<section class="ll-section" style="max-width:1100px">
+  <h2>Une parcelle, plusieurs usages</h2>
+  <p class="ll-subhead" style="max-width:700px">Le pire ennemi d'une place de marché en plein air, ce sont les huit mois morts par année. Les annonces multi-usages transforment une seule parcelle en actif de 12 mois pour son propriétaire.</p>
+  <div class="ll-seasonwheel">
+    <div class="ll-season-tile"><div class="ll-season-mo">Jan &ndash; Mars</div><div class="ll-season-act">&#10052;&#65039; Pêche blanche &middot; Motoneige &middot; Ski de fond &middot; Cabane à sucre</div></div>
+    <div class="ll-season-tile"><div class="ll-season-mo">Avr &ndash; Juin</div><div class="ll-season-act">&#127829; Cueillette &middot; Pêche &middot; Ferme &middot; Photographie</div></div>
+    <div class="ll-season-tile"><div class="ll-season-mo">Juil &ndash; Sept</div><div class="ll-season-act">&#127957; Camping &middot; Accès quai &middot; VTT &middot; Équestre</div></div>
+    <div class="ll-season-tile"><div class="ll-season-mo">Oct &ndash; Déc</div><div class="ll-season-act">&#129420; Chasse &middot; Overlanding &middot; Entraînement canin &middot; Retraite</div></div>
+  </div>
+</section>
+
+<section class="ll-value-strip">
+  <div class="ll-value-grid">
+    <div class="ll-value-item">
+      <div class="ll-value-icon">&#128205;</div>
+      <h3>Dessinez votre parcelle, fixez vos règles</h3>
+      <p>Tracez votre terrain sur une carte. Choisissez les activités que vous voulez héberger, fixez la capacité, le prix et les règles pour chacune. Vous gardez le contrôle total de qui met les pieds sur votre terre.</p>
+    </div>
+    <div class="ll-value-item">
+      <div class="ll-value-icon">&#128737;&#65039;</div>
+      <h3>Une vraie couche de confiance</h3>
+      <p>Identité vérifiée, assurance responsabilité quand elle est requise, entente d'accès révisée par conseillers juridiques à chaque réservation, et évaluations bidirectionnelles qui bâtissent une vraie réputation.</p>
+    </div>
+    <div class="ll-value-item">
+      <div class="ll-value-icon">&#128176;</div>
+      <h3>Des revenus à l'année</h3>
+      <p>Un seul lot boisé de 200 acres peut légitimement générer des revenus à la chasse en octobre, à la motoneige en janvier, au temps des sucres en mars, au VTT en juillet et au camping toutes les fins de semaine entre les deux.</p>
+    </div>
+  </div>
+</section>
+
+<section class="ll-section">
+  <div class="ll-dual-cta">
+    <div class="ll-cta-card" style="background-image:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1400&auto=format&fit=crop')">
+      <div>
+        <h3>Vous avez de la terre ? Rentabilisez-la.</h3>
+        <p>Inscrivez votre parcelle en 10 minutes. Choisissez les activités à héberger. Soyez payé par des invités vérifiés qui respectent votre terre et vos règles.</p>
+      </div>
+      <a href="/fr/list-your-land" class="ll-btn ll-btn-lg">Inscrire ma terre</a>
+    </div>
+    <div class="ll-cta-card" style="background-image:url('https://images.unsplash.com/photo-1551524164-6cf2ac531400?w=1400&auto=format&fit=crop')">
+      <div>
+        <h3>Besoin d'accès ? Réservez.</h3>
+        <p>Arrêtez de frapper aux portes des fermes. Arrêtez de vous battre pour des annulations de pourvoirie. Trouvez exactement ce qu'il vous faut, sur terre privée, à un prix qui a du sens.</p>
+      </div>
+      <a href="/fr/parcels" class="ll-btn ll-btn-lg">Parcourir les terres</a>
+    </div>
+  </div>
+</section>
+
+<script type="module">
+import { renderNav } from '/public/js/nav.js';
+import {
+  supabase as sb, formatPrice, getActivities, activityIcon, activityLabel
+} from '/public/js/supabase-client.js';
+renderNav();
+
+async function renderCategories() {
+  const { activities } = await getActivities();
+  const chips = [
+    { code: '', icon: '🌍', label: 'Toutes les terres' },
+    ...activities.map(a => ({ code: a.code, icon: a.icon, label: a.short_fr }))
+  ];
+  document.getElementById('categories').innerHTML = chips.map(c => `
+    <a class="ll-cat-chip${c.code === '' ? ' active' : ''}" href="/fr/parcels${c.code ? `?category=${c.code}` : ''}">
+      <div class="ll-cat-chip-icon">${c.icon}</div>
+      <div class="ll-cat-chip-label">${c.label}</div>
+    </a>
+  `).join('');
+}
+renderCategories();
+
+async function loadFeatured() {
+  const grid = document.getElementById('featured-grid');
+  const { data, error } = await sb
+    .from('landlink_parcels')
+    .select(`
+      id,name,province,municipality,photos,acres,avg_rating,review_count,
+      landlink_listings!inner(id,category,activity_code,price_cents,price_unit,status)
+    `)
+    .eq('status', 'active')
+    .eq('landlink_listings.status', 'active')
+    .order('created_at', { ascending: false })
+    .limit(12);
+
+  const items = (!error && data && data.length) ? data : [];
+  if (!items.length) {
+    grid.innerHTML = '<p class="ll-empty">Les premières annonces arrivent bientôt.</p>';
+    return;
+  }
+  grid.innerHTML = items.slice(0, 8).map(p => {
+    const photo = (p.photos && p.photos[0]) || 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=600&auto=format&fit=crop';
+    const listings = (p.landlink_listings || []).filter(l => l.status === 'active');
+    const cheapest = listings.slice().sort((a, b) => (a.price_cents || 0) - (b.price_cents || 0))[0];
+    const price = cheapest ? formatPrice(cheapest.price_cents, cheapest.price_unit) : 'Multi-usage';
+    const cats = [...new Set(listings.map(l => l.category))].slice(0, 3)
+      .map(c => `<span class="ll-pill">${activityIcon(c)} ${activityLabel(c, 'fr')}</span>`).join('');
+    return `
+      <a class="ll-card" href="/fr/parcels/${p.id}">
+        <div class="ll-card-img" style="background-image:url('${photo}')">
+          ${listings.length > 1 ? `<div class="ll-card-badge">${listings.length} usages</div>` : ''}
+        </div>
+        <div class="ll-card-body">
+          <div class="ll-card-row">
+            <div class="ll-card-title">${p.name}</div>
+            <div class="ll-card-rating">&#9733; ${p.avg_rating ? Number(p.avg_rating).toFixed(1) : 'Nouveau'}</div>
+          </div>
+          <div class="ll-card-meta">${[p.municipality, p.province].filter(Boolean).join(', ')}${p.acres ? ` · ${p.acres} acres` : ''}</div>
+          <div class="ll-card-pills">${cats}</div>
+          <div class="ll-card-price"><strong>à partir de ${price}</strong></div>
+        </div>
+      </a>`;
+  }).join('');
+}
+loadFeatured();
+</script>
+
+</body>
+</html>

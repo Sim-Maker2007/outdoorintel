@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inscrire ma terre — LandLink</title>
+<meta name="description" content="Inscrivez votre terre privée sur LandLink. Dessinez la parcelle, choisissez les activités à héberger, fixez vos règles et commencez à gagner toute l'année.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css">
+<link rel="stylesheet" href="/public/css/landlink.css">
+</head>
+<body>
+
+<div class="ll-wizard">
+  <div class="ll-wizard-progress" id="progress">
+    <div class="step active"></div>
+    <div class="step"></div>
+    <div class="step"></div>
+    <div class="step"></div>
+    <div class="step"></div>
+    <div class="step"></div>
+  </div>
+
+  <section class="ll-wizard-step active" data-step="1">
+    <h1>Commençons par la base</h1>
+    <p class="sub">Donnez un nom à votre parcelle et dites-nous où elle se trouve. C'est la terre elle-même &mdash; vous choisirez ses usages à une étape suivante.</p>
+    <div class="ll-field">
+      <label>Nom de la parcelle</label>
+      <input type="text" name="name" placeholder="ex. Lot boisé du Nord" required>
+    </div>
+    <div class="ll-field">
+      <label>Province</label>
+      <select name="province" required>
+        <option value="">Choisir</option>
+        <option value="AB">Alberta</option><option value="BC">Colombie-Britannique</option>
+        <option value="MB">Manitoba</option><option value="NB">Nouveau-Brunswick</option>
+        <option value="NL">Terre-Neuve-et-Labrador</option><option value="NS">Nouvelle-Écosse</option>
+        <option value="ON">Ontario</option><option value="PE">Île-du-Prince-Édouard</option>
+        <option value="QC">Québec</option><option value="SK">Saskatchewan</option>
+        <option value="NT">Territoires du Nord-Ouest</option><option value="YT">Yukon</option>
+        <option value="NU">Nunavut</option>
+      </select>
+    </div>
+    <div class="ll-field">
+      <label>Municipalité la plus proche</label>
+      <input type="text" name="municipality" placeholder="ex. Shawville">
+    </div>
+    <div class="ll-field">
+      <label>Superficie approximative (acres)</label>
+      <input type="number" name="acres" min="1" step="1" placeholder="ex. 210">
+    </div>
+    <div class="ll-field">
+      <label>Courte description</label>
+      <textarea name="description" rows="4" placeholder="Ce qui rend cette terre spéciale? Terrain, eau, vues, histoire..."></textarea>
+    </div>
+  </section>
+
+  <section class="ll-wizard-step" data-step="2">
+    <h1>Dessinez votre parcelle sur la carte</h1>
+    <p class="sub">Tracez la frontière de votre propriété. Seuls vous et les admins voyez le tracé exact &mdash; les invités voient un cercle flou jusqu'à l'approbation de leur réservation.</p>
+    <div class="ll-wizard-map" id="draw-map"></div>
+    <p class="ll-wizard-map-hint">Cliquez sur l'outil polygone, touchez les points pour dessiner le contour, fermez-le pour sauvegarder.</p>
+  </section>
+
+  <section class="ll-wizard-step" data-step="3">
+    <h1>Qu'est-ce qu'on trouve sur la terre ?</h1>
+    <p class="sub">Cochez tout ce qui s'applique. Ces caractéristiques aident les invités à trouver votre parcelle.</p>
+
+    <div class="ll-field">
+      <label>Eau</label>
+      <div class="ll-checkgroup" data-group="water"></div>
+    </div>
+    <div class="ll-field">
+      <label>Terrain</label>
+      <div class="ll-checkgroup" data-group="terrain"></div>
+    </div>
+    <div class="ll-field">
+      <label>Sentiers</label>
+      <div class="ll-checkgroup" data-group="trails"></div>
+    </div>
+    <div class="ll-field">
+      <label>Aménagements</label>
+      <div class="ll-checkgroup" data-group="built"></div>
+    </div>
+
+    <div class="ll-field">
+      <label>Accès véhicule</label>
+      <select name="vehicle_access">
+        <option value="foot_only">Accès à pied seulement</option>
+        <option value="atv_ok">VTT permis</option>
+        <option value="truck_ok">Camion / véhicule OK</option>
+        <option value="paved_road">Route pavée jusqu'à la parcelle</option>
+        <option value="marina">Marina / accès bateau</option>
+        <option value="trailhead">Accès tête de sentier</option>
+      </select>
+    </div>
+    <div class="ll-field">
+      <label>Notes d'accès / stationnement</label>
+      <textarea name="access_notes" rows="3" placeholder="Comment les invités s'y rendent, codes de barrière, où stationner..."></textarea>
+    </div>
+  </section>
+
+  <section class="ll-wizard-step" data-step="4">
+    <h1>Que peuvent y faire les invités ?</h1>
+    <p class="sub">Choisissez chaque activité que vous seriez prêt à héberger. Une parcelle peut en offrir plusieurs &mdash; le même lot boisé peut accueillir la chasse au chevreuil en octobre, la motoneige en janvier et du camping toutes les fins de semaine l'été.</p>
+    <div class="ll-activity-grid" id="activity-grid"></div>
+  </section>
+
+  <section class="ll-wizard-step" data-step="5">
+    <h1>Fixez vos prix</h1>
+    <p class="sub">Une ligne par activité choisie. Marquez gratuit si vous voulez simplement une gestion de la terre.</p>
+    <div id="pricing-rows"></div>
+    <p class="ll-booking-note" style="margin-top:16px">LandLink prélève 15 % côté propriétaire sur les réservations payantes et facture 5 % de frais de service aux invités. Les annonces gratuites n'ont aucuns frais de plateforme.</p>
+  </section>
+
+  <section class="ll-wizard-step" data-step="6">
+    <h1>Révision et envoi</h1>
+    <p class="sub">On révise votre annonce en 24 h et on vous écrit quand elle est en ligne.</p>
+    <div id="summary" style="background:var(--bg-soft);border-radius:12px;padding:24px;font-size:14px;line-height:1.7"></div>
+    <p class="ll-booking-note" style="margin-top:16px">En soumettant, vous confirmez avoir le droit légal d'accorder l'accès à cette propriété et que les activités choisies sont conformes aux règlements provinciaux.</p>
+  </section>
+
+  <div class="ll-wizard-nav">
+    <button type="button" class="back" id="back">Retour</button>
+    <button type="button" class="ll-btn-accent ll-btn-lg" id="next">Continuer</button>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+<script type="module">
+import { renderNav } from '/public/js/nav.js';
+import { supabase, getCurrentProfile, getActivities } from '/public/js/supabase-client.js';
+renderNav();
+
+const TOTAL_STEPS = 6;
+const state = {
+  parcel: { features: [] },
+  activities: [], listings: {}, geometry: null, centroid: null, activityDefs: []
+};
+let step = 1;
+let drawMap, drawLayer;
+
+(async () => {
+  const { activities, parcel_features } = await getActivities();
+  state.activityDefs = activities;
+  const groups = {};
+  parcel_features.forEach(f => { (groups[f.group] ||= []).push(f); });
+  for (const [group, feats] of Object.entries(groups)) {
+    const host = document.querySelector(`.ll-checkgroup[data-group="${group}"]`);
+    if (!host) continue;
+    host.innerHTML = feats.map(f => `<label><input type="checkbox" name="feature" value="${f.id}"><span>${f.label_en}</span></label>`).join('');
+  }
+  document.getElementById('activity-grid').innerHTML = activities.map(a => `
+    <label class="ll-activity-card" data-code="${a.code}">
+      <input type="checkbox" name="activity" value="${a.code}">
+      <div class="ll-activity-card-ico">${a.icon}</div>
+      <div class="ll-activity-card-body">
+        <div class="ll-activity-card-title">${a.short_fr}</div>
+        <div class="ll-activity-card-blurb">${a.blurb_fr}</div>
+      </div>
+    </label>
+  `).join('');
+  document.querySelectorAll('.ll-activity-card input').forEach(cb => {
+    cb.addEventListener('change', () => cb.closest('.ll-activity-card').classList.toggle('selected', cb.checked));
+  });
+})();
+
+function goto(n) {
+  step = Math.max(1, Math.min(TOTAL_STEPS, n));
+  document.querySelectorAll('.ll-wizard-step').forEach(s => s.classList.toggle('active', s.dataset.step == step));
+  document.querySelectorAll('#progress .step').forEach((s, i) => {
+    s.classList.toggle('active', i + 1 === step);
+    s.classList.toggle('done', i + 1 < step);
+  });
+  document.getElementById('next').textContent = step === TOTAL_STEPS ? 'Envoyer l\u2019annonce' : 'Continuer';
+  document.getElementById('back').style.visibility = step === 1 ? 'hidden' : 'visible';
+  if (step === 2 && !drawMap) initDrawMap();
+  if (step === 5) renderPricingRows();
+  if (step === 6) renderSummary();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+function initDrawMap() {
+  drawMap = L.map('draw-map', { center: [56, -96], zoom: 4 });
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; OSM' }).addTo(drawMap);
+  drawLayer = new L.FeatureGroup(); drawMap.addLayer(drawLayer);
+  const draw = new L.Control.Draw({
+    draw: { polygon: { showArea: true, allowIntersection: false }, marker: false, polyline: false, rectangle: false, circle: false, circlemarker: false },
+    edit: { featureGroup: drawLayer, remove: true }
+  });
+  drawMap.addControl(draw);
+  drawMap.on(L.Draw.Event.CREATED, e => {
+    drawLayer.clearLayers(); drawLayer.addLayer(e.layer);
+    const gj = e.layer.toGeoJSON();
+    state.geometry = gj.geometry;
+    const c = e.layer.getBounds().getCenter();
+    state.centroid = { lat: c.lat, lng: c.lng };
+  });
+  setTimeout(() => drawMap.invalidateSize(), 200);
+}
+function collect() {
+  const get = name => document.querySelector(`[name="${name}"]`)?.value || '';
+  state.parcel.name = get('name');
+  state.parcel.province = get('province');
+  state.parcel.municipality = get('municipality');
+  state.parcel.description = get('description') || null;
+  state.parcel.acres = parseFloat(get('acres')) || null;
+  state.parcel.features = Array.from(document.querySelectorAll('[name="feature"]:checked')).map(i => i.value);
+  state.parcel.vehicle_access = get('vehicle_access');
+  state.parcel.access_notes = get('access_notes') || null;
+  state.activities = Array.from(document.querySelectorAll('[name="activity"]:checked')).map(i => i.value);
+}
+function renderPricingRows() {
+  collect();
+  const host = document.getElementById('pricing-rows');
+  if (!state.activities.length) { host.innerHTML = '<p class="ll-empty">Retournez et choisissez au moins une activité.</p>'; return; }
+  host.innerHTML = state.activities.map(code => {
+    const a = state.activityDefs.find(x => x.code === code);
+    const current = state.listings[code] || { price: '', unit: a.default_unit };
+    const unitOpts = a.units.concat('free').map(u => `<option value="${u}" ${u === current.unit ? 'selected' : ''}>${u.replace('_', ' ')}</option>`).join('');
+    return `<div class="ll-listing-row" data-code="${code}">
+      <div class="ll-listing-row-ico">${a.icon}</div>
+      <div>
+        <div class="ll-listing-row-title">${a.short_fr}</div>
+        <div class="ll-listing-row-sub">${a.blurb_fr}</div>
+      </div>
+      <input type="number" min="0" step="5" placeholder="Prix" name="price" value="${current.price}">
+      <select name="unit">${unitOpts}</select>
+    </div>`;
+  }).join('');
+  host.querySelectorAll('.ll-listing-row').forEach(row => {
+    const code = row.dataset.code;
+    row.querySelector('[name="price"]').addEventListener('input', e => { state.listings[code] = { ...state.listings[code], price: e.target.value }; });
+    row.querySelector('[name="unit"]').addEventListener('change', e => { state.listings[code] = { ...state.listings[code], unit: e.target.value }; });
+  });
+}
+function validateStep() {
+  collect();
+  if (step === 1 && (!state.parcel.name || !state.parcel.province)) { alert('Nom et province requis.'); return false; }
+  if (step === 2 && !state.geometry) { alert('Dessinez la parcelle.'); return false; }
+  if (step === 4 && !state.activities.length) { alert('Choisissez au moins une activité.'); return false; }
+  if (step === 5) {
+    document.querySelectorAll('.ll-listing-row').forEach(row => {
+      const code = row.dataset.code;
+      state.listings[code] = {
+        price: row.querySelector('[name="price"]').value,
+        unit:  row.querySelector('[name="unit"]').value
+      };
+    });
+  }
+  return true;
+}
+function renderSummary() {
+  const rows = state.activities.map(code => {
+    const a = state.activityDefs.find(x => x.code === code);
+    const l = state.listings[code] || {};
+    const price = (l.unit === 'free' || !l.price) ? 'Gratuit' : `${l.price}$ / ${l.unit}`;
+    return `<div>${a.icon} <b>${a.short_fr}</b> — ${price}</div>`;
+  }).join('');
+  document.getElementById('summary').innerHTML = `
+    <div><b>${state.parcel.name || '—'}</b> · ${state.parcel.municipality || ''} ${state.parcel.province}</div>
+    <div>${state.parcel.acres ? state.parcel.acres + ' acres' : ''} · ${(state.parcel.vehicle_access || '').replace('_', ' ')}</div>
+    <div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--line)">${rows || '<i>Aucune activité</i>'}</div>
+    ${state.parcel.description ? `<div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--line)">${state.parcel.description}</div>` : ''}`;
+}
+async function submit() {
+  const profile = await getCurrentProfile();
+  if (!profile) { location.href = '/fr/signup?role=owner&next=' + encodeURIComponent(location.pathname); return; }
+  const parcelPayload = {
+    owner_id: profile.user_id, name: state.parcel.name, description: state.parcel.description,
+    geometry: state.geometry, centroid_lat: state.centroid.lat, centroid_lng: state.centroid.lng,
+    acres: state.parcel.acres, province: state.parcel.province, municipality: state.parcel.municipality,
+    features: state.parcel.features, vehicle_access: state.parcel.vehicle_access,
+    access_notes: state.parcel.access_notes, status: 'pending_review'
+  };
+  const { data: parcel, error: parcelErr } = await supabase.from('landlink_parcels').insert(parcelPayload).select('id').single();
+  if (parcelErr) { alert('Erreur : ' + parcelErr.message); return; }
+  const listingPayloads = state.activities.map(code => {
+    const a = state.activityDefs.find(x => x.code === code);
+    const l = state.listings[code] || {};
+    const isFree = l.unit === 'free' || !l.price;
+    return {
+      parcel_id: parcel.id, owner_id: profile.user_id,
+      category: a.code, activity_code: a.code, title: a.label_fr,
+      price_cents: isFree ? 0 : Math.round((parseFloat(l.price) || 0) * 100),
+      price_unit: isFree ? 'free' : (l.unit || a.default_unit),
+      capacity: 2, status: 'pending_review', config: {}
+    };
+  });
+  if (listingPayloads.length) {
+    const { error: listErr } = await supabase.from('landlink_listings').insert(listingPayloads);
+    if (listErr) { alert('Parcelle sauvegardée mais annonces échouées: ' + listErr.message); return; }
+  }
+  alert('Envoyé ! On révise en 24 h et on vous écrit quand c\u2019est en ligne.');
+  location.href = '/fr/dashboard';
+}
+
+document.getElementById('next').addEventListener('click', () => {
+  if (!validateStep()) return;
+  if (step === TOTAL_STEPS) submit(); else goto(step + 1);
+});
+document.getElementById('back').addEventListener('click', () => goto(step - 1));
+goto(1);
+</script>
+
+</body>
+</html>

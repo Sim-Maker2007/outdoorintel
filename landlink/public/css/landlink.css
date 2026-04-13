@@ -584,6 +584,89 @@ input, select, textarea { font-family: inherit; font-size: inherit; color: inher
 .ll-listing-card-price { font-size: 15px; font-weight: 700; color: var(--ink); }
 .ll-listing-card-price span { font-weight: 400; color: var(--ink-soft); font-size: 12px; }
 
+/* Admin stats strip */
+.ll-admin-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.ll-stat-card {
+  padding: 14px 16px; border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--bg-soft);
+}
+.ll-stat-v { font-size: 22px; font-weight: 800; color: var(--ink); letter-spacing: -0.02em; }
+.ll-stat-l { font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: var(--ink-soft); font-weight: 700; margin-top: 4px; }
+
+/* Top bar on the browse page (date range filter) */
+.ll-search-topbar {
+  padding: 14px 20px 6px;
+}
+.ll-search-daterange {
+  display: flex; gap: 10px; align-items: flex-end; flex-wrap: wrap;
+}
+.ll-search-dr-field label {
+  display: block; font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .05em; color: var(--ink); margin-bottom: 4px;
+}
+.ll-search-dr-field input {
+  padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; font-size: 13px;
+  background: #fff; min-width: 140px;
+}
+.ll-search-daterange button { font-size: 12px; padding: 8px 14px; }
+
+/* Availability calendar (public/js/calendar.js) */
+.llc {
+  border: 1px solid var(--line); border-radius: var(--radius-lg);
+  padding: 14px; background: #fff;
+}
+.llc-nav { display: flex; justify-content: space-between; margin-bottom: 10px; }
+.llc-nav button {
+  font-size: 12px; font-weight: 700; padding: 6px 10px;
+  border: 1px solid var(--line); border-radius: 8px; background: #fff;
+}
+.llc-nav button:hover { background: var(--bg-soft); }
+.llc-months { display: grid; gap: 18px; }
+.llc-month-head { font-size: 13px; font-weight: 700; text-align: center; margin-bottom: 6px; }
+.llc-dow {
+  display: grid; grid-template-columns: repeat(7, 1fr);
+  font-size: 10px; font-weight: 700; color: var(--ink-muted);
+  text-transform: uppercase; text-align: center; margin-bottom: 4px;
+}
+.llc-grid {
+  display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px;
+}
+.llc-blank { height: 32px; }
+.llc-cell {
+  height: 32px; display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 600; color: var(--ink);
+  border-radius: 6px; cursor: pointer;
+}
+.llc-cell:hover { background: var(--bg-soft); }
+.llc-disabled {
+  color: var(--ink-muted); cursor: not-allowed;
+  text-decoration: line-through;
+}
+.llc-booked  { background: #fbeae5; color: #a55f42; }
+.llc-blocked { background: #f0ede8; color: var(--ink-muted); }
+.llc-hold    { background: #fff4cc; color: #8a6d1a; }
+.llc-in-range { background: var(--brand); color: #fff; }
+.llc-range-start, .llc-range-end {
+  background: var(--brand); color: #fff; border-radius: 6px;
+}
+.llc-legend {
+  display: flex; gap: 14px; font-size: 11px; color: var(--ink-soft);
+  margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line-soft);
+  flex-wrap: wrap;
+}
+.llc-sw {
+  display: inline-block; width: 10px; height: 10px; border-radius: 2px;
+  vertical-align: middle; margin-right: 4px;
+}
+.llc-sw-avail { background: #fff; border: 1px solid var(--line); }
+.llc-sw-booked { background: #fbeae5; }
+.llc-sw-blocked { background: #f0ede8; }
+
 /* Filter bar on the browse page — horizontally scrolling pills */
 .ll-filter-scroll {
   display: flex; gap: 6px; overflow-x: auto; padding: 8px 0 14px;

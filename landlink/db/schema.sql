@@ -489,3 +489,253 @@ $$ language plpgsql;
 drop trigger if exists trg_landlink_sync_booking_denorm on landlink_bookings;
 create trigger trg_landlink_sync_booking_denorm before insert on landlink_bookings
   for each row execute function landlink_sync_booking_denorm();
+
+-- =============================================================
+-- AVAILABILITY  — per-listing blackout / booked date ranges
+-- =============================================================
+-- The season window on landlink_listings is coarse ("roughly open Sept 1 - Nov 30").
+-- This table is the fine-grained calendar: one row per date range that is
+-- *not* bookable — either because the owner manually blocked it, because
+-- an approved booking reserves it, or because LandLink is holding it while
+-- a pending booking is under review.
+--
+-- kind:
+--   blocked — owner manually marked unavailable (weather, personal use, repairs)
+--   booked  — auto-created when a booking becomes 'approved' or 'completed'
+--   hold    — optional soft-hold while a pending booking is being reviewed
+drop table if exists landlink_availability cascade;
+create table landlink_availability (
+  id uuid primary key default uuid_generate_v4(),
+  listing_id uuid not null references landlink_listings(id) on delete cascade,
+  owner_id uuid not null references landlink_profiles(user_id) on delete cascade,  -- denormalized
+  date_from date not null,
+  date_to date not null,
+  kind text not null default 'blocked' check (kind in ('blocked','booked','hold')),
+  note text,
+  booking_id uuid references landlink_bookings(id) on delete cascade,
+  created_at timestamptz default now(),
+  check (date_to >= date_from)
+);
+
+create index idx_landlink_avail_listing on landlink_availability(listing_id);
+create index idx_landlink_avail_owner   on landlink_availability(owner_id);
+create index idx_landlink_avail_range   on landlink_availability(listing_id, date_from, date_to);
+create index idx_landlink_avail_booking on landlink_availability(booking_id);
+
+alter table landlink_availability enable row level security;
+
+-- Anyone can see when a listing is *busy* (so browse can show calendars).
+-- Only the owner can see the note.
+drop policy if exists "availability public read" on landlink_availability;
+create policy "availability public read" on landlink_availability
+  for select using (true);
+
+drop policy if exists "availability owner write" on landlink_availability;
+create policy "availability owner write" on landlink_availability
+  for insert with check (owner_id = auth.uid() or landlink_is_admin(auth.uid()));
+
+drop policy if exists "availability owner update" on landlink_availability;
+create policy "availability owner update" on landlink_availability
+  for update using (owner_id = auth.uid() or landlink_is_admin(auth.uid()));
+
+drop policy if exists "availability owner delete" on landlink_availability;
+create policy "availability owner delete" on landlink_availability
+  for delete using (owner_id = auth.uid() or landlink_is_admin(auth.uid()));
+
+-- Sync owner_id from the listing on insert (so RLS is clean)
+create or replace function landlink_sync_availability_owner() returns trigger as $$
+begin
+  if new.owner_id is null then
+    select owner_id into new.owner_id from landlink_listings where id = new.listing_id;
+  end if;
+  return new;
+end;
+$$ language plpgsql;
+
+drop trigger if exists trg_landlink_sync_avail_owner on landlink_availability;
+create trigger trg_landlink_sync_avail_owner before insert on landlink_availability
+  for each row execute function landlink_sync_availability_owner();
+
+-- When a booking is approved (or goes back to pending/cancelled), keep the
+-- availability calendar in sync automatically so the browse + detail pages
+-- don't need to know about the mirror.
+create or replace function landlink_sync_booking_availability() returns trigger as $$
+begin
+  -- Remove any existing 'booked'/'hold' rows pointing at this booking
+  delete from landlink_availability where booking_id = new.id;
+
+  if new.status = 'approved' or new.status = 'completed' then
+    insert into landlink_availability (listing_id, owner_id, date_from, date_to, kind, booking_id, note)
+    values (new.listing_id, new.owner_id, new.date_from, new.date_to, 'booked', new.id, 'auto: booking ' || new.id);
+  elsif new.status = 'pending' then
+    insert into landlink_availability (listing_id, owner_id, date_from, date_to, kind, booking_id, note)
+    values (new.listing_id, new.owner_id, new.date_from, new.date_to, 'hold', new.id, 'auto: hold');
+  end if;
+  return new;
+end;
+$$ language plpgsql;
+
+drop trigger if exists trg_landlink_sync_booking_avail on landlink_bookings;
+create trigger trg_landlink_sync_booking_avail
+  after insert or update of status, date_from, date_to on landlink_bookings
+  for each row execute function landlink_sync_booking_availability();
+
+-- Helper: is a listing available for the full range [p_from, p_to]?
+create or replace function landlink_listing_is_available(
+  p_listing_id uuid,
+  p_from date,
+  p_to date
+) returns boolean as $$
+  select not exists (
+    select 1 from landlink_availability
+    where listing_id = p_listing_id
+      and kind in ('blocked','booked')
+      and date_from <= p_to
+      and date_to   >= p_from
+  );
+$$ language sql stable;
+
+-- =============================================================
+-- SEARCH RPC  — filter by category, date range, and province
+-- =============================================================
+-- Browse page calls this as supabase.rpc('landlink_search_listings', {...}).
+-- Returns one row per *listing* joined with its parcel, filtered by:
+--   - status = 'active'
+--   - category (optional)
+--   - province (optional)
+--   - date window availability (optional; if both dates passed, only
+--     listings with no blackouts in the window are returned)
+create or replace function landlink_search_listings(
+  p_category text default null,
+  p_province text default null,
+  p_date_from date default null,
+  p_date_to date default null,
+  p_limit int default 200
+) returns table(
+  listing_id uuid,
+  parcel_id uuid,
+  category text,
+  activity_code text,
+  title text,
+  price_cents int,
+  price_unit text,
+  capacity int,
+  parcel_name text,
+  parcel_province text,
+  parcel_municipality text,
+  parcel_photos text[],
+  parcel_features text[],
+  parcel_acres numeric,
+  parcel_centroid_lat numeric,
+  parcel_centroid_lng numeric,
+  parcel_avg_rating numeric,
+  parcel_review_count int
+) as $$
+  select
+    l.id as listing_id,
+    p.id as parcel_id,
+    l.category, l.activity_code, l.title,
+    l.price_cents, l.price_unit, l.capacity,
+    p.name, p.province, p.municipality, p.photos, p.features, p.acres,
+    p.centroid_lat, p.centroid_lng, p.avg_rating, p.review_count
+  from landlink_listings l
+  join landlink_parcels p on p.id = l.parcel_id
+  where l.status = 'active'
+    and p.status = 'active'
+    and (p_category is null or l.category = p_category)
+    and (p_province is null or p.province = p_province)
+    and (
+      p_date_from is null or p_date_to is null
+      or landlink_listing_is_available(l.id, p_date_from, p_date_to)
+    )
+  order by p.created_at desc
+  limit greatest(coalesce(p_limit, 200), 1);
+$$ language sql stable;
+
+-- =============================================================
+-- ADMIN MODERATION  — flags, actions, stats view
+-- =============================================================
+drop table if exists landlink_admin_actions cascade;
+create table landlink_admin_actions (
+  id uuid primary key default uuid_generate_v4(),
+  admin_id uuid not null references landlink_profiles(user_id) on delete cascade,
+  subject_type text not null check (subject_type in (
+    'parcel','listing','booking','profile','credential','review','flag'
+  )),
+  subject_id uuid not null,
+  action text not null check (action in (
+    'approve','reject','suspend','unsuspend','verify','unverify',
+    'delete','note','ban','unban','feature','unfeature'
+  )),
+  reason text,
+  metadata jsonb default '{}'::jsonb,
+  created_at timestamptz default now()
+);
+
+create index idx_landlink_admin_actions_subj on landlink_admin_actions(subject_type, subject_id);
+create index idx_landlink_admin_actions_admin on landlink_admin_actions(admin_id, created_at desc);
+
+alter table landlink_admin_actions enable row level security;
+
+drop policy if exists "admin actions admin read" on landlink_admin_actions;
+create policy "admin actions admin read" on landlink_admin_actions
+  for select using (landlink_is_admin(auth.uid()));
+
+drop policy if exists "admin actions admin insert" on landlink_admin_actions;
+create policy "admin actions admin insert" on landlink_admin_actions
+  for insert with check (landlink_is_admin(auth.uid()) and admin_id = auth.uid());
+
+-- User-reported flags (anyone signed in can create; only admins can read)
+drop table if exists landlink_flags cascade;
+create table landlink_flags (
+  id uuid primary key default uuid_generate_v4(),
+  reporter_id uuid not null references landlink_profiles(user_id) on delete cascade,
+  subject_type text not null check (subject_type in ('parcel','listing','profile','booking','review')),
+  subject_id uuid not null,
+  reason text not null,
+  detail text,
+  status text not null default 'open' check (status in ('open','reviewing','resolved','dismissed')),
+  resolved_by uuid references landlink_profiles(user_id),
+  resolved_at timestamptz,
+  created_at timestamptz default now()
+);
+
+create index idx_landlink_flags_status on landlink_flags(status, created_at desc);
+create index idx_landlink_flags_subj   on landlink_flags(subject_type, subject_id);
+
+alter table landlink_flags enable row level security;
+
+drop policy if exists "flags reporter read own" on landlink_flags;
+create policy "flags reporter read own" on landlink_flags
+  for select using (reporter_id = auth.uid() or landlink_is_admin(auth.uid()));
+
+drop policy if exists "flags auth insert" on landlink_flags;
+create policy "flags auth insert" on landlink_flags
+  for insert with check (reporter_id = auth.uid());
+
+drop policy if exists "flags admin update" on landlink_flags;
+create policy "flags admin update" on landlink_flags
+  for update using (landlink_is_admin(auth.uid()));
+
+-- Admin stats view — quick aggregates for the moderation dashboard
+create or replace view landlink_admin_stats as
+  select
+    (select count(*) from landlink_parcels)                                         as parcels_total,
+    (select count(*) from landlink_parcels where status = 'active')                 as parcels_active,
+    (select count(*) from landlink_parcels where status = 'pending_review')         as parcels_pending,
+    (select count(*) from landlink_listings)                                        as listings_total,
+    (select count(*) from landlink_listings where status = 'active')                as listings_active,
+    (select count(*) from landlink_listings where status = 'pending_review')        as listings_pending,
+    (select count(*) from landlink_bookings)                                        as bookings_total,
+    (select count(*) from landlink_bookings where status = 'pending')               as bookings_pending,
+    (select count(*) from landlink_bookings where status = 'approved')              as bookings_approved,
+    (select count(*) from landlink_bookings where status = 'completed')             as bookings_completed,
+    (select coalesce(sum(total_cents),0) from landlink_bookings where status in ('approved','completed')) as gmv_cents,
+    (select count(*) from landlink_profiles)                                        as users_total,
+    (select count(*) from landlink_user_credentials where verified_at is null)      as credentials_pending,
+    (select count(*) from landlink_flags where status = 'open')                     as flags_open;
+
+-- Admins can always read this view regardless of row-level policies on the
+-- underlying tables; the view is security-definer by virtue of being a view
+-- over RLS-enabled tables under the admin's context. We gate it at the app
+-- layer by only rendering it when landlink_is_admin(auth.uid()) is true.

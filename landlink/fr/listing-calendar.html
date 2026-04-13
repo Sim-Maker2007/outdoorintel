@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calendrier — LandLink</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/public/css/landlink.css">
+</head>
+<body>
+
+<main class="ll-dash" style="max-width:900px">
+  <div class="ll-dash-head">
+    <h1 id="title">Calendrier</h1>
+    <a href="/fr/dashboard" class="ll-btn-ghost">Retour</a>
+  </div>
+
+  <p id="sub" class="ll-booking-note" style="margin-bottom:20px"></p>
+
+  <div style="display:grid;grid-template-columns:1fr 320px;gap:24px" id="layout">
+    <div>
+      <div id="calendar"></div>
+    </div>
+    <aside>
+      <div style="padding:18px;border:1px solid var(--line);border-radius:var(--radius-lg);background:#fff">
+        <h3 style="font-size:15px;margin-bottom:10px">Bloquer des dates</h3>
+        <p style="font-size:12px;color:var(--ink-soft);margin-bottom:14px">Choisissez un jour de début puis un jour de fin sur le calendrier. Les plages bloquées empêchent toute réservation sur ces dates.</p>
+        <div id="pending" style="font-size:13px;color:var(--ink);margin-bottom:10px">&mdash;</div>
+        <input type="text" id="note" placeholder="Note (pour vous seulement)" style="width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;font-size:13px;margin-bottom:10px">
+        <button id="add-block" class="ll-btn-accent" style="width:100%" disabled>Bloquer ces dates</button>
+
+        <hr style="border:0;border-top:1px solid var(--line-soft);margin:20px 0">
+
+        <h3 style="font-size:15px;margin-bottom:10px">Vos plages bloquées</h3>
+        <div id="blocks-list" style="font-size:13px;color:var(--ink-soft)">Chargement&hellip;</div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<script type="module">
+import { renderNav } from '/public/js/nav.js';
+import { supabase, getCurrentProfile, activityLabel, activityIcon, getActivities } from '/public/js/supabase-client.js';
+import { mountCalendar } from '/public/js/calendar.js';
+renderNav();
+
+const listingId = new URL(location.href).searchParams.get('listing');
+if (!listingId) { location.href = '/fr/dashboard'; }
+
+const state = { listing: null, parcel: null, profile: null, blocks: [], calendar: null, pending: null };
+
+async function boot() {
+  state.profile = await getCurrentProfile();
+  if (!state.profile) { location.href = '/fr/login?next=' + encodeURIComponent(location.pathname + location.search); return; }
+
+  await getActivities();
+
+  const { data: listing, error } = await supabase
+    .from('landlink_listings')
+    .select('id,category,activity_code,title,owner_id,parcel_id,landlink_parcels(name,municipality,province)')
+    .eq('id', listingId).single();
+  if (error || !listing) { alert('Annonce introuvable.'); location.href = '/fr/dashboard'; return; }
+  if (listing.owner_id !== state.profile.user_id && state.profile.role !== 'admin') {
+    alert('Vous pouvez seulement gérer vos propres annonces.');
+    location.href = '/fr/dashboard'; return;
+  }
+  state.listing = listing;
+  state.parcel = listing.landlink_parcels;
+
+  document.getElementById('title').innerHTML =
+    `${activityIcon(listing.category)} ${listing.title || activityLabel(listing.category, 'fr')}`;
+  document.getElementById('sub').textContent =
+    `${state.parcel.name} · ${[state.parcel.municipality, state.parcel.province].filter(Boolean).join(', ')}`;
+
+  await loadBlocks();
+
+  state.calendar = mountCalendar(document.getElementById('calendar'), {
+    blocks: state.blocks,
+    months: 2,
+    mode: 'blockout',
+    lang: 'fr',
+    minDate: new Date().toISOString().slice(0, 10),
+    onSelect: r => {
+      state.pending = r;
+      document.getElementById('pending').textContent =
+        r.from && r.to ? `${r.from} → ${r.to}` : '—';
+      document.getElementById('add-block').disabled = !(r.from && r.to);
+    }
+  });
+
+  document.getElementById('add-block').addEventListener('click', addBlock);
+}
+
+async function loadBlocks() {
+  const { data } = await supabase
+    .from('landlink_availability')
+    .select('id,date_from,date_to,kind,note,booking_id')
+    .eq('listing_id', listingId)
+    .order('date_from', { ascending: true });
+  state.blocks = data || [];
+  if (state.calendar) state.calendar.setBlocks(state.blocks);
+  renderBlocksList();
+}
+
+function renderBlocksList() {
+  const host = document.getElementById('blocks-list');
+  if (!state.blocks.length) { host.innerHTML = '<i>Aucune plage bloquée.</i>'; return; }
+  host.innerHTML = state.blocks.map(b => {
+    const label = b.kind === 'booked' ? 'Réservé' : (b.kind === 'hold' ? 'En attente' : 'Bloqué');
+    const canDelete = b.kind === 'blocked';
+    return `
+      <div style="padding:10px 0;border-bottom:1px solid var(--line-soft);display:flex;justify-content:space-between;gap:8px">
+        <div>
+          <div style="font-weight:600;color:var(--ink)">${b.date_from} → ${b.date_to}</div>
+          <div style="font-size:11px;color:var(--ink-muted)">${label}${b.note ? ' · ' + b.note : ''}</div>
+        </div>
+        ${canDelete ? `<button data-id="${b.id}" class="ll-btn-ghost remove-block" style="font-size:11px">Retirer</button>` : ''}
+      </div>`;
+  }).join('');
+  host.querySelectorAll('.remove-block').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      if (!confirm('Retirer cette plage ?')) return;
+      await supabase.from('landlink_availability').delete().eq('id', btn.dataset.id);
+      await loadBlocks();
+    });
+  });
+}
+
+async function addBlock() {
+  if (!state.pending?.from || !state.pending?.to) return;
+  const note = document.getElementById('note').value || null;
+  const { error } = await supabase.from('landlink_availability').insert({
+    listing_id: listingId,
+    owner_id: state.profile.user_id,
+    date_from: state.pending.from,
+    date_to: state.pending.to,
+    kind: 'blocked',
+    note
+  });
+  if (error) { alert('Impossible de bloquer : ' + error.message); return; }
+  document.getElementById('note').value = '';
+  state.pending = null;
+  document.getElementById('pending').textContent = '—';
+  document.getElementById('add-block').disabled = true;
+  await loadBlocks();
+}
+
+boot();
+</script>
+
+</body>
+</html>

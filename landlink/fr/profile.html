@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Profil — LandLink</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/public/css/landlink.css">
+</head>
+<body>
+
+<main class="ll-dash">
+  <div class="ll-dash-head"><h1>Votre profil</h1></div>
+
+  <form id="profile-form" style="max-width:640px">
+    <div class="ll-field"><label>Nom complet</label><input type="text" name="full_name"></div>
+    <div class="ll-field"><label>Téléphone</label><input type="tel" name="phone"></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div class="ll-field"><label>Code postal</label><input type="text" name="postal_code" maxlength="7"></div>
+      <div class="ll-field"><label>Province</label>
+        <select name="province">
+          <option value="">Choisir</option>
+          <option>AB</option><option>BC</option><option>MB</option><option>NB</option><option>NL</option><option>NS</option>
+          <option>ON</option><option>PE</option><option>QC</option><option>SK</option><option>NT</option><option>YT</option><option>NU</option>
+        </select>
+      </div>
+    </div>
+    <div class="ll-field"><label>Langue préférée</label>
+      <select name="language"><option value="en">English</option><option value="fr">Fran&ccedil;ais</option></select>
+    </div>
+    <div class="ll-field"><label>Bio</label><textarea name="bio" rows="3" placeholder="Quelques phrases sur vous — ce que vous faites en plein air, votre éthique, ce que les hôtes devraient savoir."></textarea></div>
+
+    <h3 style="font-size:18px;margin:32px 0 12px">Qualifications</h3>
+    <p style="font-size:13px;color:var(--ink-soft);margin-bottom:16px">Téléversez tout ce qui s'applique. Vous avez seulement besoin de qualifications spécifiques à une activité quand vous réservez une annonce qui les exige &mdash; la chasse nécessite un PPA, les champs de tir exigent une assurance responsabilité, etc.</p>
+    <div id="credentials-list" style="display:grid;gap:12px;margin-bottom:20px"></div>
+
+    <button type="submit" class="ll-booking-submit" style="max-width:240px">Enregistrer</button>
+  </form>
+</main>
+
+<script type="module">
+import { renderNav } from '/public/js/nav.js';
+import { supabase, getCurrentProfile } from '/public/js/supabase-client.js';
+renderNav();
+
+const CREDENTIAL_TYPES = [
+  { type: 'gov_id',              label: 'Pièce d\u2019identité gouvernementale',       required_for: 'toutes les réservations' },
+  { type: 'pal',                 label: 'PPA (Permis de possession et acquisition)',   required_for: 'chasse, tir sportif' },
+  { type: 'hunter_ed',           label: 'Certificat d\u2019éducation chasse',          required_for: 'chasse' },
+  { type: 'liability_insurance', label: 'Assurance responsabilité',                    required_for: 'chasse, tir, film' },
+  { type: 'pleasure_craft',      label: 'Carte de conducteur d\u2019embarcation',      required_for: 'quai / bateau' },
+  { type: 'snowmobile_safety',   label: 'Cours sécurité motoneige',                    required_for: 'motoneige' },
+  { type: 'atv_safety',          label: 'Cours sécurité VTT',                          required_for: 'VTT' }
+];
+
+async function boot() {
+  const profile = await getCurrentProfile();
+  if (!profile) { location.href = '/fr/login?next=/fr/profile'; return; }
+
+  for (const [k, v] of Object.entries(profile)) {
+    const el = document.querySelector(`[name="${k}"]`);
+    if (el && v != null) el.value = v;
+  }
+
+  // Load existing credentials so we can show verification state per row
+  const { data: existing } = await supabase
+    .from('landlink_user_credentials')
+    .select('id,type,document_url,verified_at,expires_on,number')
+    .eq('user_id', profile.user_id);
+  const byType = {};
+  (existing || []).forEach(c => { byType[c.type] = c; });
+
+  document.getElementById('credentials-list').innerHTML = CREDENTIAL_TYPES.map(ct => {
+    const c = byType[ct.type];
+    const status = c
+      ? (c.verified_at ? `✓ Vérifié le ${new Date(c.verified_at).toLocaleDateString('fr-CA')}`
+         : 'Téléversé — en attente de révision')
+      : 'Non téléversé';
+    return `
+      <div style="padding:16px;background:var(--bg-soft);border-radius:12px">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:14px">
+          <div style="flex:1;min-width:0">
+            <div style="font-weight:600">${ct.label}</div>
+            <div style="font-size:11px;color:var(--ink-muted);margin-top:2px">Requis pour : ${ct.required_for}</div>
+            <div style="font-size:12px;color:var(--ink-soft);margin-top:4px" data-status="${ct.type}">${status}</div>
+          </div>
+          <input type="file" data-type="${ct.type}" accept="image/*,.pdf" style="font-size:12px;max-width:180px">
+        </div>
+      </div>`;
+  }).join('');
+
+  document.getElementById('profile-form').addEventListener('submit', async e => {
+    e.preventDefault();
+    const fd = new FormData(e.target);
+    const patch = {
+      full_name: fd.get('full_name'),
+      phone: fd.get('phone'),
+      postal_code: fd.get('postal_code'),
+      province: fd.get('province'),
+      language: fd.get('language'),
+      bio: fd.get('bio')
+    };
+
+    // 1) Update profile
+    const { error: profErr } = await supabase
+      .from('landlink_profiles').update(patch).eq('user_id', profile.user_id);
+    if (profErr) { alert('Échec : ' + profErr.message); return; }
+
+    // 2) Upload any new credential files
+    const fileInputs = document.querySelectorAll('#credentials-list input[type="file"]');
+    for (const input of fileInputs) {
+      const file = input.files[0];
+      if (!file) continue;
+      const type = input.dataset.type;
+      const path = `${profile.user_id}/${type}-${Date.now()}-${file.name}`;
+      const { error: upErr } = await supabase.storage
+        .from('landlink-docs').upload(path, file, { upsert: true });
+      if (upErr) { console.warn('upload failed', upErr); continue; }
+      // Upsert credential row (one per type per user; insert-new or update existing)
+      const existingRow = byType[type];
+      if (existingRow) {
+        await supabase.from('landlink_user_credentials')
+          .update({ document_url: path, verified_at: null })
+          .eq('id', existingRow.id);
+      } else {
+        await supabase.from('landlink_user_credentials').insert({
+          user_id: profile.user_id,
+          type,
+          document_url: path
+        });
+      }
+    }
+
+    alert('Enregistré.');
+    location.reload();
+  });
+}
+boot();
+</script>
+
+</body>
+</html>

@@ -2,12 +2,18 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/", "destination": "/en/index.html" },
-    { "source": "/fr", "destination": "/fr/index.html" },
-    { "source": "/parcels/:id", "destination": "/en/parcels/detail.html" },
-    { "source": "/fr/parcels/:id", "destination": "/fr/parcels/detail.html" },
-    { "source": "/legal", "destination": "/en/legal/index.html" },
-    { "source": "/legal/:path*", "destination": "/en/legal/:path*" }
+    { "source": "/",                      "destination": "/en/index.html" },
+    { "source": "/fr",                    "destination": "/fr/index.html" },
+    { "source": "/parcels/:id",           "destination": "/en/parcels/detail.html" },
+    { "source": "/en/parcels/:id",        "destination": "/en/parcels/detail.html" },
+    { "source": "/fr/parcels/:id",        "destination": "/fr/parcels/detail.html" },
+    { "source": "/en/admin",              "destination": "/en/admin.html" },
+    { "source": "/fr/admin",              "destination": "/fr/admin.html" },
+    { "source": "/en/listing-calendar",   "destination": "/en/listing-calendar.html" },
+    { "source": "/fr/listing-calendar",   "destination": "/fr/listing-calendar.html" },
+    { "source": "/legal",                 "destination": "/en/legal/index.html" },
+    { "source": "/legal/:path*",          "destination": "/en/legal/:path*" },
+    { "source": "/fr/legal",              "destination": "/fr/legal/index.html" }
   ],
   "headers": [
     {

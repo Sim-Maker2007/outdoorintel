@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Parcel — LandLink</title>
-<meta name="description" content="Private outdoor land on LandLink. Book the activity you want, directly from the landowner.">
+<title>Parcelle — LandLink</title>
+<meta name="description" content="Terre privée en plein air sur LandLink. Réservez l'activité que vous voulez, directement auprès du propriétaire.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="/public/css/landlink.css">
@@ -12,7 +12,7 @@
 <body>
 
 <main class="ll-detail">
-  <h1 class="ll-detail-title" id="title">Parcel</h1>
+  <h1 class="ll-detail-title" id="title">Parcelle</h1>
   <div class="ll-detail-meta" id="meta"></div>
 
   <div class="ll-gallery" id="gallery"></div>
@@ -20,35 +20,35 @@
   <div class="ll-detail-body">
     <div>
       <div class="ll-detail-section">
-        <h2 id="host-title">Hosted by the landowner</h2>
-        <p id="description">Loading&hellip;</p>
+        <h2 id="host-title">Hébergé par le propriétaire</h2>
+        <p id="description">Chargement&hellip;</p>
       </div>
 
       <div class="ll-detail-section">
-        <h2>Available here</h2>
-        <p class="ll-booking-note" style="margin-bottom:16px">Click any activity to book it. One parcel, many uses &mdash; pick what you need.</p>
+        <h2>Disponible ici</h2>
+        <p class="ll-booking-note" style="margin-bottom:16px">Cliquez sur une activité pour la réserver. Une parcelle, plusieurs usages &mdash; choisissez ce qu'il vous faut.</p>
         <div class="ll-listings-grid" id="listings"></div>
       </div>
 
       <div class="ll-detail-section">
-        <h2>Land features</h2>
+        <h2>Caractéristiques de la terre</h2>
         <div class="ll-feature-grid" id="features"></div>
       </div>
 
       <div class="ll-detail-section">
-        <h2>Access &amp; house rules</h2>
+        <h2>Accès et règles de la maison</h2>
         <p id="rules">&mdash;</p>
       </div>
 
       <div class="ll-detail-section">
-        <h2>Parcel location</h2>
+        <h2>Emplacement de la parcelle</h2>
         <div id="map" style="width:100%;height:360px;border-radius:12px;overflow:hidden;border:1px solid var(--line)"></div>
-        <p class="ll-booking-note" style="margin-top:10px">Exact boundaries and access points are shared after your booking is approved.</p>
+        <p class="ll-booking-note" style="margin-top:10px">Les frontières et points d'accès exacts sont partagés après l'approbation de votre réservation.</p>
       </div>
 
       <div class="ll-detail-section">
-        <h2>Reviews <span style="font-weight:400;color:var(--ink-soft)" id="review-count"></span></h2>
-        <div id="reviews"><p class="ll-empty" style="padding:12px 0">No reviews yet. Be the first.</p></div>
+        <h2>Évaluations <span style="font-weight:400;color:var(--ink-soft)" id="review-count"></span></h2>
+        <div id="reviews"><p class="ll-empty" style="padding:12px 0">Aucune évaluation pour le moment. Soyez la première personne à en laisser une.</p></div>
       </div>
     </div>
 
@@ -62,21 +62,21 @@
         <div id="calendar" style="margin-bottom:12px"></div>
         <form id="request-form" class="ll-booking-form">
           <div class="ll-booking-row">
-            <div class="ll-booking-field"><label>Date from</label><input type="date" name="date_from" required></div>
-            <div class="ll-booking-field"><label>Date to</label><input type="date" name="date_to" required></div>
+            <div class="ll-booking-field"><label>Du</label><input type="date" name="date_from" required></div>
+            <div class="ll-booking-field"><label>Au</label><input type="date" name="date_to" required></div>
           </div>
           <div class="ll-booking-row">
-            <div class="ll-booking-field"><label>Party size</label><input type="number" name="party_size" min="1" value="1" required></div>
+            <div class="ll-booking-field"><label>Nombre de personnes</label><input type="number" name="party_size" min="1" value="1" required></div>
           </div>
           <div class="ll-booking-row">
             <div class="ll-booking-field wide">
-              <label>Message to the landowner</label>
-              <textarea name="message" rows="3" placeholder="A few sentences about you, your experience, and what you&rsquo;re planning..."></textarea>
+              <label>Message au propriétaire</label>
+              <textarea name="message" rows="3" placeholder="Quelques phrases sur vous, votre expérience et vos plans..."></textarea>
             </div>
           </div>
         </form>
-        <button type="submit" form="request-form" class="ll-booking-submit" id="submit-btn">Request booking</button>
-        <div class="ll-booking-note">You won&rsquo;t be charged until the landowner approves and the access agreement is signed.</div>
+        <button type="submit" form="request-form" class="ll-booking-submit" id="submit-btn">Demander la réservation</button>
+        <div class="ll-booking-note">Aucun prélèvement avant que le propriétaire approuve et que l'entente d'accès soit signée.</div>
         <div class="ll-booking-breakdown" id="breakdown"></div>
       </div>
     </aside>
@@ -122,8 +122,8 @@ function render(p) {
   document.title = `${p.name} — LandLink`;
   document.getElementById('title').textContent = p.name;
 
-  const rating = p.avg_rating ? Number(p.avg_rating).toFixed(1) : 'New';
-  const reviewNote = p.review_count ? `${p.review_count} reviews` : 'No reviews yet';
+  const rating = p.avg_rating ? Number(p.avg_rating).toFixed(1) : 'Nouveau';
+  const reviewNote = p.review_count ? `${p.review_count} évaluations` : 'Aucune évaluation';
   const loc = [p.municipality, p.province].filter(Boolean).join(', ');
   document.getElementById('meta').innerHTML =
     `<span>&#9733; <b>${rating}</b></span><span class="dot">·</span>
@@ -135,24 +135,22 @@ function render(p) {
     photos.slice(0, 5).map(url => `<div style="background-image:url('${url}')"></div>`).join('');
 
   document.getElementById('description').textContent =
-    p.description || 'The landowner hasn\u2019t added a description yet.';
+    p.description || 'Le propriétaire n\u2019a pas encore ajouté de description.';
   document.getElementById('rules').textContent =
-    p.house_rules || p.access_notes || 'Standard access rules apply. See the agreement for full terms.';
+    p.house_rules || p.access_notes || 'Règles d\u2019accès standard. Voir l\u2019entente pour les termes complets.';
 
-  // Listings grid
   renderListings();
 
-  // Parcel features
   const featList = (p.features || []).slice(0, 12);
   const vehicleLabel = {
-    foot_only: 'Foot access only', atv_ok: 'ATV allowed', truck_ok: 'Truck/vehicle access',
-    paved_road: 'Paved road access', marina: 'Marina access', trailhead: 'Trailhead access'
+    foot_only: 'Accès à pied seulement', atv_ok: 'VTT permis', truck_ok: 'Camion / véhicule OK',
+    paved_road: 'Route pavée', marina: 'Accès marina', trailhead: 'Tête de sentier'
   }[p.vehicle_access] || '—';
   const featureRows = [
     ['🌍', 'Province', p.province || '—'],
-    ['📐', 'Size', p.acres ? `${p.acres} acres` : '—'],
-    ['🛻', 'Vehicle access', vehicleLabel],
-    ['🏕️', 'Features', featList.length ? featList.join(', ') : 'See description']
+    ['📐', 'Superficie', p.acres ? `${p.acres} acres` : '—'],
+    ['🛻', 'Accès véhicule', vehicleLabel],
+    ['🏕️', 'Caractéristiques', featList.length ? featList.join(', ') : 'Voir description']
   ];
   document.getElementById('features').innerHTML = featureRows.map(([icon, label, val]) =>
     `<div class="ll-feature"><div class="ll-feature-icon">${icon}</div><div><strong>${label}</strong><span>${val}</span></div></div>`
@@ -176,15 +174,15 @@ function render(p) {
 function renderListings() {
   const host = document.getElementById('listings');
   if (!state.listings.length) {
-    host.innerHTML = '<p class="ll-empty">No active listings on this parcel.</p>';
+    host.innerHTML = '<p class="ll-empty">Aucune annonce active sur cette parcelle.</p>';
     return;
   }
   host.innerHTML = state.listings.map(l => {
     const a = state.activityDefs.find(x => x.code === l.category);
     const icon = a?.icon || activityIcon(l.category);
-    const label = a?.short_en || activityLabel(l.category);
-    const blurb = l.description || a?.blurb_en || '';
-    const price = l.price_unit === 'free' ? 'Free' : formatPrice(l.price_cents, l.price_unit);
+    const label = a?.short_fr || activityLabel(l.category, 'fr');
+    const blurb = l.description || a?.blurb_fr || '';
+    const price = l.price_unit === 'free' ? 'Gratuit' : formatPrice(l.price_cents, l.price_unit);
     const isSelected = state.selected?.id === l.id;
     return `
       <div class="ll-listing-card ${isSelected ? 'selected' : ''}" data-id="${l.id}">
@@ -196,7 +194,7 @@ function renderListings() {
           </div>
         </div>
         ${blurb ? `<div class="ll-listing-card-desc">${blurb}</div>` : ''}
-        <div class="ll-listing-card-price">${price === 'Free' ? 'Free access' : price.split(' / ')[0]} ${price !== 'Free' ? `<span>/ ${price.split(' / ')[1] || ''}</span>` : ''}</div>
+        <div class="ll-listing-card-price">${price === 'Gratuit' ? 'Accès gratuit' : price.split(' / ')[0]} ${price !== 'Gratuit' ? `<span>/ ${price.split(' / ')[1] || ''}</span>` : ''}</div>
       </div>`;
   }).join('');
 
@@ -222,7 +220,7 @@ function renderBookingWidget() {
   if (!l) {
     document.getElementById('price').textContent = '—';
     document.getElementById('price-unit').textContent = '';
-    document.getElementById('selected-activity-label').textContent = 'Pick an activity';
+    document.getElementById('selected-activity-label').textContent = 'Choisissez une activité';
     document.getElementById('submit-btn').disabled = true;
     document.getElementById('breakdown').innerHTML = '';
     document.getElementById('calendar').innerHTML = '';
@@ -230,21 +228,21 @@ function renderBookingWidget() {
   }
   const a = state.activityDefs.find(x => x.code === l.category);
   document.getElementById('price').textContent =
-    l.price_unit === 'free' ? 'Free' : `$${Math.round((l.price_cents || 0) / 100)}`;
+    l.price_unit === 'free' ? 'Gratuit' : `${Math.round((l.price_cents || 0) / 100)}$`;
   document.getElementById('price-unit').textContent =
-    l.price_unit === 'free' ? ' access' : ` / ${l.price_unit.replace('_', ' ')}`;
+    l.price_unit === 'free' ? ' accès' : ` / ${l.price_unit.replace('_', ' ')}`;
   document.getElementById('selected-activity-label').innerHTML =
-    `${a?.icon || ''} <b>${a?.short_en || l.category}</b>${l.title && l.title !== a?.label_en ? ` — ${l.title}` : ''}`;
+    `${a?.icon || ''} <b>${a?.short_fr || l.category}</b>${l.title && l.title !== a?.label_fr ? ` — ${l.title}` : ''}`;
 
   const rating = state.parcel.avg_rating
     ? `★ ${Number(state.parcel.avg_rating).toFixed(1)} · ${state.parcel.review_count}`
-    : 'New';
+    : 'Nouveau';
   document.getElementById('rating-summary').textContent = rating;
 
-  // Mount calendar on first select; thereafter just swap blocks
   if (!state.calendar) {
     state.calendar = mountCalendar(document.getElementById('calendar'), {
       blocks: [], months: 2, mode: 'range',
+      lang: 'fr',
       minDate: new Date().toISOString().slice(0, 10),
       onSelect: r => {
         document.querySelector('[name="date_from"]').value = r.from || '';
@@ -254,18 +252,17 @@ function renderBookingWidget() {
   }
   loadAvailability(l.id);
 
-  // Fee breakdown (single source of truth)
   const subtotal = l.price_cents || 0;
   const m = bookingMath(subtotal);
-  const fmt = c => `$${Math.round(c / 100).toLocaleString()}`;
+  const fmt = c => `${Math.round(c / 100).toLocaleString('fr-CA')}$`;
   document.getElementById('breakdown').innerHTML = subtotal === 0 ? `
-    <div class="row"><span>Access</span><span>Free</span></div>
-    <div class="row total"><span>Total</span><span>Free</span></div>
+    <div class="row"><span>Accès</span><span>Gratuit</span></div>
+    <div class="row total"><span>Total</span><span>Gratuit</span></div>
   ` : `
-    <div class="row"><span>${l.price_unit} rate</span><span>${fmt(m.subtotal_cents)}</span></div>
-    <div class="row"><span>Service fee (5%)</span><span>${fmt(m.guest_fee_cents)}</span></div>
+    <div class="row"><span>Tarif ${l.price_unit}</span><span>${fmt(m.subtotal_cents)}</span></div>
+    <div class="row"><span>Frais de service (5%)</span><span>${fmt(m.guest_fee_cents)}</span></div>
     <div class="row total"><span>Total</span><span>${fmt(m.total_cents)}</span></div>
-    <div class="row" style="color:var(--ink-muted);font-size:11px"><span>Host payout after 15% fee</span><span>${fmt(m.host_payout_cents)}</span></div>
+    <div class="row" style="color:var(--ink-muted);font-size:11px"><span>Versement au propriétaire après 15%</span><span>${fmt(m.host_payout_cents)}</span></div>
   `;
   document.getElementById('submit-btn').disabled = false;
 }
@@ -280,20 +277,20 @@ function rangeOverlapsBlocks(fromIso, toIso) {
 function wireForm() {
   document.getElementById('request-form').addEventListener('submit', async e => {
     e.preventDefault();
-    if (!state.selected) { alert('Pick an activity first.'); return; }
+    if (!state.selected) { alert('Choisissez une activité.'); return; }
     const form = new FormData(e.target);
     const from = form.get('date_from');
     const to = form.get('date_to');
-    if (!from || !to) { alert('Pick your dates.'); return; }
-    if (to < from) { alert('End date is before start date.'); return; }
+    if (!from || !to) { alert('Choisissez vos dates.'); return; }
+    if (to < from) { alert('La date de fin est avant la date de début.'); return; }
     if (rangeOverlapsBlocks(from, to)) {
-      alert('Those dates aren\u2019t available. Pick a range that isn\u2019t highlighted on the calendar.');
+      alert('Ces dates ne sont pas disponibles. Choisissez un intervalle non surligné dans le calendrier.');
       return;
     }
 
     const profile = await getCurrentProfile();
     if (!profile) {
-      location.href = '/en/login?next=' + encodeURIComponent(location.pathname);
+      location.href = '/fr/login?next=' + encodeURIComponent(location.pathname);
       return;
     }
     const subtotal = state.selected.price_cents || 0;
@@ -313,9 +310,9 @@ function wireForm() {
       host_payout_cents: m.host_payout_cents,
       status: 'pending'
     });
-    if (error) { alert('Could not send request: ' + error.message); return; }
-    alert('Request sent. The landowner will respond within 48h.');
-    location.href = '/en/dashboard';
+    if (error) { alert('Envoi impossible : ' + error.message); return; }
+    alert('Demande envoyée. Le propriétaire répondra dans les 48 h.');
+    location.href = '/fr/dashboard';
   });
 }
 
@@ -336,19 +333,19 @@ async function loadReviews(id) {
 // ---------- demo fallback ----------
 function demoParcel(id) {
   return {
-    id, name: 'Pontiac River Woodlot', province: 'QC', municipality: 'Shawville',
-    description: 'Mixed hardwood and conifer woodlot running along the Pontiac River. Managed for wildlife habitat since 2008; consistent deer sign and bedding areas, strong mushroom flushes in spring and fall, beaver pond at the east line. Parking by the barn, walk-in from there. Cabin sleeps four. Access year-round — road is plowed in winter.',
+    id, name: 'Lot boisé de la rivière Pontiac', province: 'QC', municipality: 'Shawville',
+    description: 'Lot boisé mixte feuillus-résineux longeant la rivière Pontiac. Géré pour l\u2019habitat faunique depuis 2008; signes constants de chevreuil, zones de repos établies, excellente cueillette de champignons au printemps et à l\u2019automne, étang à castors à l\u2019est. Stationnement près de la grange, accès à pied à partir de là. Chalet pour quatre. Accès à l\u2019année — route déneigée en hiver.',
     features: ['forest_mixed','river','pond','cabin','parking','fire_pit','outhouse','plowed_access'],
     acres: 210, avg_rating: 4.9, review_count: 14,
     centroid_lat: 45.60, centroid_lng: -76.48,
     vehicle_access: 'truck_ok',
-    house_rules: 'Pack out everything. Text the owner on arrival/departure. No baiting. No shooting toward the south pasture — cattle.',
+    house_rules: 'Ramassez tout. Écrivez au propriétaire à l\u2019arrivée et au départ. Pas d\u2019appâts. Pas de tir vers le pâturage au sud — bovins.',
     photos: demoPhotos(id),
     landlink_listings: [
-      { id: 'dl1', category: 'hunting',    activity_code: 'hunting',    title: 'Whitetail & coyote hunting', description: 'Archery and rifle access during Quebec seasons. Two treestands in place, feel free to bring your own.', price_cents: 20000, price_unit: 'season', status: 'active', capacity: 2, config: { species: ['whitetail','coyote'], weapons: ['archery','rifle','crossbow'] } },
-      { id: 'dl2', category: 'camping',    activity_code: 'camping',    title: 'Primitive tent site by the river', description: 'Private flat site with fire ring, 100m from the river. No services, pack it in pack it out.', price_cents: 3500, price_unit: 'night', status: 'active', capacity: 4, config: { site_type: 'tent', fire_allowed: true } },
-      { id: 'dl3', category: 'foraging',   activity_code: 'foraging',   title: 'Mushroom & fiddlehead foraging', description: 'Chanterelles in July/August, fiddleheads in May. Personal use only, no commercial picking.', price_cents: 2500, price_unit: 'day', status: 'active', capacity: 2, config: { targets: ['mushrooms','fiddleheads'] } },
-      { id: 'dl4', category: 'wellness_retreat', activity_code: 'wellness_retreat', title: 'Forest bathing day use', description: 'Quiet trail network through mature hardwoods. Ideal for solo or small-group forest bathing sessions.', price_cents: 4000, price_unit: 'day', status: 'active', capacity: 6, config: {} }
+      { id: 'dl1', category: 'hunting',    activity_code: 'hunting',    title: 'Chasse chevreuil et coyote', description: 'Accès arc et carabine pendant les saisons québécoises. Deux miradors en place, vous pouvez apporter les vôtres.', price_cents: 20000, price_unit: 'season', status: 'active', capacity: 2, config: { species: ['whitetail','coyote'], weapons: ['archery','rifle','crossbow'] } },
+      { id: 'dl2', category: 'camping',    activity_code: 'camping',    title: 'Site de tente primitif au bord de la rivière', description: 'Site privé plat avec foyer, 100 m de la rivière. Aucun service, apportez et remportez tout.', price_cents: 3500, price_unit: 'night', status: 'active', capacity: 4, config: { site_type: 'tent', fire_allowed: true } },
+      { id: 'dl3', category: 'foraging',   activity_code: 'foraging',   title: 'Cueillette champignons et crosses de violon', description: 'Chanterelles en juillet/août, crosses de violon en mai. Usage personnel seulement.', price_cents: 2500, price_unit: 'day', status: 'active', capacity: 2, config: { targets: ['mushrooms','fiddleheads'] } },
+      { id: 'dl4', category: 'wellness_retreat', activity_code: 'wellness_retreat', title: 'Bain de forêt en journée', description: 'Réseau de sentiers calmes dans des feuillus matures. Idéal pour séances solo ou en petit groupe.', price_cents: 4000, price_unit: 'day', status: 'active', capacity: 6, config: {} }
     ]
   };
 }

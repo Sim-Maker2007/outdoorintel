@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Connexion — LandLink</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/public/css/landlink.css">
+</head>
+<body>
+
+<main class="ll-auth">
+  <h1>Bon retour</h1>
+  <p class="sub">On vous enverra un lien magique pour vous connecter.</p>
+  <form id="login-form">
+    <div class="ll-field">
+      <label>Courriel</label>
+      <input type="email" name="email" required>
+    </div>
+    <button type="submit" class="ll-booking-submit">Envoyer le lien</button>
+  </form>
+  <div class="alt">Nouveau sur LandLink ? <a href="/fr/signup">Créer un compte</a></div>
+</main>
+
+<script type="module">
+import { renderNav } from '/public/js/nav.js';
+import { supabase } from '/public/js/supabase-client.js';
+renderNav();
+
+const url = new URL(location.href);
+const next = url.searchParams.get('next') || '/fr/dashboard';
+
+document.getElementById('login-form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const email = new FormData(e.target).get('email');
+  const { error } = await supabase.auth.signInWithOtp({
+    email,
+    options: { emailRedirectTo: `${location.origin}/fr/auth-callback.html?next=${encodeURIComponent(next)}` }
+  });
+  if (error) { alert('Envoi impossible : ' + error.message); return; }
+  e.target.innerHTML = `<div class="ll-empty" style="padding:20px 0">
+    <div style="font-size:32px">\u2709\uFE0F</div>
+    <p style="margin-top:12px">Vérifiez votre boîte courriel \u2014 on a envoyé un lien magique à <b>${email}</b>.</p>
+  </div>`;
+});
+</script>
+
+</body>
+</html>

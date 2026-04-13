@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Dashboard — LandLink</title>
+<title>Tableau de bord — LandLink</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/public/css/landlink.css">
 </head>
@@ -11,12 +11,12 @@
 
 <main class="ll-dash">
   <div class="ll-dash-head">
-    <h1 id="greeting">Dashboard</h1>
+    <h1 id="greeting">Tableau de bord</h1>
     <div id="cta"></div>
   </div>
 
   <div class="ll-tabs" id="tabs"></div>
-  <div id="content"><div class="ll-empty">Loading&hellip;</div></div>
+  <div id="content"><div class="ll-empty">Chargement&hellip;</div></div>
 </main>
 
 <script type="module">
@@ -31,9 +31,9 @@ const state = { profile: null, tab: null };
 
 async function boot() {
   const profile = await getCurrentProfile();
-  if (!profile) { location.href = '/en/login?next=/en/dashboard'; return; }
+  if (!profile) { location.href = '/fr/login?next=/fr/dashboard'; return; }
   state.profile = profile;
-  document.getElementById('greeting').textContent = `Hi ${profile.full_name?.split(' ')[0] || 'there'}`;
+  document.getElementById('greeting').textContent = `Bonjour ${profile.full_name?.split(' ')[0] || ''}`.trim();
 
   // preload taxonomy for icon/label rendering
   await getActivities();
@@ -44,23 +44,22 @@ async function boot() {
 
   const tabs = [];
   if (isOwner) {
-    tabs.push({ id: 'my-parcels',  label: 'My Parcels' });
-    tabs.push({ id: 'my-listings', label: 'My Listings' });
-    tabs.push({ id: 'incoming',    label: 'Booking Requests' });
+    tabs.push({ id: 'my-parcels',  label: 'Mes parcelles' });
+    tabs.push({ id: 'my-listings', label: 'Mes annonces' });
+    tabs.push({ id: 'incoming',    label: 'Demandes reçues' });
   }
-  if (isGuest) tabs.push({ id: 'my-bookings', label: 'My Bookings' });
-  // Admins get a dedicated page
+  if (isGuest) tabs.push({ id: 'my-bookings', label: 'Mes réservations' });
   if (role === 'admin') {
     const ctaHost = document.getElementById('cta');
-    ctaHost.innerHTML = '<a href="/en/admin" class="ll-btn">Open admin &rsaquo;</a>' + ctaHost.innerHTML;
+    ctaHost.innerHTML = '<a href="/fr/admin" class="ll-btn">Ouvrir admin &rsaquo;</a>' + ctaHost.innerHTML;
   }
 
   document.getElementById('tabs').innerHTML = tabs.map((t, i) =>
     `<button data-tab="${t.id}" class="${i === 0 ? 'active' : ''}">${t.label}</button>`
   ).join('');
   document.getElementById('cta').innerHTML = isOwner
-    ? '<a href="/en/list-your-land" class="ll-btn-accent">+ List a parcel</a>'
-    : '<a href="/en/parcels" class="ll-btn-accent">Browse land</a>';
+    ? '<a href="/fr/list-your-land" class="ll-btn-accent">+ Inscrire une parcelle</a>'
+    : '<a href="/fr/parcels" class="ll-btn-accent">Parcourir les terres</a>';
 
   document.getElementById('tabs').addEventListener('click', e => {
     const b = e.target.closest('button'); if (!b) return;
@@ -74,14 +73,14 @@ async function boot() {
 async function loadTab(tab) {
   state.tab = tab;
   const el = document.getElementById('content');
-  el.innerHTML = '<div class="ll-empty">Loading&hellip;</div>';
+  el.innerHTML = '<div class="ll-empty">Chargement&hellip;</div>';
 
   if (tab === 'my-parcels') {
     const { data } = await supabase.from('landlink_parcels')
       .select('id,name,province,municipality,status,photos,review_count,avg_rating,landlink_listings(id,category,status)')
       .eq('owner_id', state.profile.user_id).order('created_at', { ascending: false });
     el.innerHTML = (data && data.length) ? data.map(parcelRow).join('')
-      : emptyState('No parcels yet', 'List your first parcel to start attracting vetted guests.', '/en/list-your-land', 'List a parcel');
+      : emptyState('Aucune parcelle', 'Inscrivez votre première parcelle pour attirer des invités vérifiés.', '/fr/list-your-land', 'Inscrire une parcelle');
   }
 
   else if (tab === 'my-listings') {
@@ -89,7 +88,7 @@ async function loadTab(tab) {
       .select('id,category,title,price_cents,price_unit,status,parcel_id,landlink_parcels(name,municipality,province)')
       .eq('owner_id', state.profile.user_id).order('created_at', { ascending: false });
     el.innerHTML = (data && data.length) ? data.map(listingRow).join('')
-      : emptyState('No listings yet', 'Add activities to any of your parcels to create listings.', '/en/list-your-land', 'List a parcel');
+      : emptyState('Aucune annonce', 'Ajoutez des activités à vos parcelles pour créer des annonces.', '/fr/list-your-land', 'Inscrire une parcelle');
   }
 
   else if (tab === 'incoming') {
@@ -102,7 +101,7 @@ async function loadTab(tab) {
       .eq('owner_id', state.profile.user_id)
       .order('created_at', { ascending: false });
     el.innerHTML = (data && data.length) ? data.map(bookingRow).join('')
-      : emptyState('No requests yet', 'When guests request your parcels they\u2019ll show up here.', null, null);
+      : emptyState('Aucune demande', 'Quand des invités demandent vos parcelles, elles apparaîtront ici.', null, null);
   }
 
   else if (tab === 'my-bookings') {
@@ -115,7 +114,7 @@ async function loadTab(tab) {
       .eq('guest_id', state.profile.user_id)
       .order('created_at', { ascending: false });
     el.innerHTML = (data && data.length) ? data.map(bookingRow).join('')
-      : emptyState('No bookings yet', 'Find a parcel and request access — your bookings will show up here.', '/en/parcels', 'Browse land');
+      : emptyState('Aucune réservation', 'Trouvez une parcelle et faites une demande — vos réservations apparaîtront ici.', '/fr/parcels', 'Parcourir les terres');
   }
 
 }
@@ -126,11 +125,11 @@ function parcelRow(p) {
   const activeCount = (p.landlink_listings || []).filter(l => l.status === 'active').length;
   const cats = [...new Set((p.landlink_listings || []).map(l => l.category))].slice(0, 4)
     .map(c => `${activityIcon(c)}`).join(' ');
-  return `<a class="ll-list-row" href="/en/parcels/${p.id}">
+  return `<a class="ll-list-row" href="/fr/parcels/${p.id}">
     <div class="ll-list-thumb" style="background-image:url('${photo}')"></div>
     <div class="ll-list-body">
       <h4>${p.name} ${badge}</h4>
-      <div class="meta">${[p.municipality, p.province].filter(Boolean).join(', ')} · ${activeCount} active listing${activeCount === 1 ? '' : 's'} ${cats}</div>
+      <div class="meta">${[p.municipality, p.province].filter(Boolean).join(', ')} · ${activeCount} annonce${activeCount === 1 ? '' : 's'} active${activeCount === 1 ? '' : 's'} ${cats}</div>
     </div>
   </a>`;
 }
@@ -141,10 +140,10 @@ function listingRow(l) {
   return `<div class="ll-list-row">
     <div class="ll-list-thumb" style="font-size:28px;display:flex;align-items:center;justify-content:center">${activityIcon(l.category)}</div>
     <div class="ll-list-body">
-      <h4>${l.title || activityLabel(l.category)} ${badge}</h4>
+      <h4>${l.title || activityLabel(l.category, 'fr')} ${badge}</h4>
       <div class="meta">${parcel.name || ''} · ${[parcel.municipality, parcel.province].filter(Boolean).join(', ')} · ${formatPrice(l.price_cents, l.price_unit)}</div>
     </div>
-    <a href="/en/listing-calendar?listing=${l.id}" class="ll-btn">Calendar</a>
+    <a href="/fr/listing-calendar?listing=${l.id}" class="ll-btn">Calendrier</a>
   </div>`;
 }
 
@@ -157,8 +156,8 @@ function bookingRow(r) {
   return `<div class="ll-list-row">
     <div class="ll-list-thumb" style="background-image:url('${photo}')"></div>
     <div class="ll-list-body">
-      <h4>${parcel.name || 'Parcel'} ${badge}</h4>
-      <div class="meta">${activityIcon(listing.category)} ${activityLabel(listing.category)} · ${loc} · ${r.date_from} → ${r.date_to} · party of ${r.party_size}</div>
+      <h4>${parcel.name || 'Parcelle'} ${badge}</h4>
+      <div class="meta">${activityIcon(listing.category)} ${activityLabel(listing.category, 'fr')} · ${loc} · ${r.date_from} → ${r.date_to} · groupe de ${r.party_size}</div>
       ${r.guest_message ? `<div class="meta" style="margin-top:6px;color:var(--ink)">&ldquo;${r.guest_message}&rdquo;</div>` : ''}
     </div>
   </div>`;

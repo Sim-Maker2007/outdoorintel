@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inscription — LandLink</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/public/css/landlink.css">
+</head>
+<body>
+
+<main class="ll-auth">
+  <h1>Créer votre compte</h1>
+  <p class="sub">Connexion par lien magique. On vous envoie un lien de connexion à usage unique par courriel.</p>
+  <form id="signup-form">
+    <div class="ll-field">
+      <label>Je m'inscris comme...</label>
+      <div class="ll-checkgroup">
+        <label><input type="radio" name="role" value="guest" checked><span>Invité (je veux réserver)</span></label>
+        <label><input type="radio" name="role" value="owner"><span>Propriétaire (je veux inscrire)</span></label>
+        <label><input type="radio" name="role" value="both"><span>Les deux</span></label>
+      </div>
+    </div>
+    <div class="ll-field">
+      <label>Nom complet</label>
+      <input type="text" name="full_name" required>
+    </div>
+    <div class="ll-field">
+      <label>Courriel</label>
+      <input type="email" name="email" required>
+    </div>
+    <div class="ll-field">
+      <label>Code postal</label>
+      <input type="text" name="postal_code" maxlength="7" placeholder="A1A 1A1">
+    </div>
+    <button type="submit" class="ll-booking-submit">Envoyer le lien</button>
+  </form>
+  <div class="alt">Déjà un compte ? <a href="/fr/login">Se connecter</a></div>
+</main>
+
+<script type="module">
+import { renderNav } from '/public/js/nav.js';
+import { supabase } from '/public/js/supabase-client.js';
+renderNav();
+
+const url = new URL(location.href);
+const roleParam = url.searchParams.get('role');
+if (roleParam) {
+  const r = document.querySelector(`[name="role"][value="${roleParam}"]`);
+  if (r) r.checked = true;
+}
+
+document.getElementById('signup-form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const fd = new FormData(e.target);
+  const email = fd.get('email');
+  const role = fd.get('role');
+  const full_name = fd.get('full_name');
+  const postal_code = fd.get('postal_code');
+  const next = url.searchParams.get('next') || '/fr/dashboard';
+
+  localStorage.setItem('landlink_pending_profile', JSON.stringify({ role, full_name, postal_code, language: 'fr' }));
+
+  const { error } = await supabase.auth.signInWithOtp({
+    email,
+    options: { emailRedirectTo: `${location.origin}/fr/auth-callback.html?next=${encodeURIComponent(next)}` }
+  });
+  if (error) { alert('Envoi impossible : ' + error.message); return; }
+  e.target.innerHTML = `<div class="ll-empty" style="padding:20px 0">
+    <div style="font-size:32px">\u2709\uFE0F</div>
+    <p style="margin-top:12px">Vérifiez votre boîte courriel \u2014 on a envoyé un lien magique à <b>${email}</b>.</p>
+  </div>`;
+});
+</script>
+
+</body>
+</html>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Browse Private Land — LandLink</title>
-<meta name="description" content="Browse private outdoor land across Canada. Hunting, camping, fishing, sugar shacks, dock access, ATV, snowmobile and more.">
+<title>Parcourir les terres — LandLink</title>
+<meta name="description" content="Parcourez la terre privée en plein air au Canada. Chasse, camping, pêche, cabanes à sucre, accès quai, VTT, motoneige et plus.">
 <link rel="alternate" hreflang="en" href="https://landlink.outdoorintel.ca/en/parcels">
 <link rel="alternate" hreflang="fr" href="https://landlink.outdoorintel.ca/fr/parcels">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -22,19 +22,19 @@
     <div class="ll-search-topbar">
       <form id="date-form" class="ll-search-daterange">
         <div class="ll-search-dr-field">
-          <label>Arrive</label>
+          <label>Arrivée</label>
           <input type="date" name="date_from">
         </div>
         <div class="ll-search-dr-field">
-          <label>Leave</label>
+          <label>Départ</label>
           <input type="date" name="date_to">
         </div>
-        <button type="submit" class="ll-btn-accent">Apply</button>
-        <button type="button" id="clear-dates" class="ll-btn-ghost" style="display:none">Clear</button>
+        <button type="submit" class="ll-btn-accent">Appliquer</button>
+        <button type="button" id="clear-dates" class="ll-btn-ghost" style="display:none">Effacer</button>
       </form>
     </div>
     <div class="ll-filter-scroll" id="filters"></div>
-    <div class="ll-search-count" id="count">Loading parcels&hellip;</div>
+    <div class="ll-search-count" id="count">Chargement&hellip;</div>
     <div class="ll-search-grid" id="grid"></div>
   </div>
   <div class="ll-map-pane">
@@ -65,8 +65,8 @@ const state = {
 async function renderFilters() {
   const { activities } = await getActivities();
   const pills = [
-    { code: '', label: 'All land', icon: '🌍' },
-    ...activities.map(a => ({ code: a.code, label: a.short_en, icon: a.icon }))
+    { code: '', label: 'Toutes les terres', icon: '🌍' },
+    ...activities.map(a => ({ code: a.code, label: a.short_fr, icon: a.icon }))
   ];
   document.getElementById('filters').innerHTML = pills.map(p => `
     <button class="ll-filter-pill ${p.code === state.category ? 'active' : ''}" data-cat="${p.code}">
@@ -176,11 +176,11 @@ function applyFilter() {
 }
 
 function render() {
-  document.getElementById('count').textContent = `${state.filtered.length} ${state.filtered.length === 1 ? 'parcel' : 'parcels'}`;
+  document.getElementById('count').textContent = `${state.filtered.length} ${state.filtered.length === 1 ? 'parcelle' : 'parcelles'}`;
 
   const grid = document.getElementById('grid');
   grid.innerHTML = state.filtered.map(cardHTML).join('') ||
-    '<p class="ll-empty">No parcels match this filter yet.</p>';
+    '<p class="ll-empty">Aucune parcelle ne correspond à ce filtre pour le moment.</p>';
 
   // map pins
   state.markers.forEach(m => map.removeLayer(m));
@@ -190,7 +190,7 @@ function render() {
     if (!p.centroid_lat || !p.centroid_lng) return;
     const cheapest = cheapestListing(p);
     const label = cheapest
-      ? (cheapest.price_unit === 'free' ? 'Free' : formatShortPrice(cheapest.price_cents))
+      ? (cheapest.price_unit === 'free' ? 'Gratuit' : formatShortPrice(cheapest.price_cents))
       : '—';
     const marker = L.marker([p.centroid_lat, p.centroid_lng], {
       icon: L.divIcon({
@@ -198,7 +198,7 @@ function render() {
         iconSize: [60, 26], iconAnchor: [30, 13]
       })
     }).addTo(map);
-    marker.on('click', () => { location.href = `/en/parcels/${p.id}`; });
+    marker.on('click', () => { location.href = `/fr/parcels/${p.id}`; });
     state.markers.set(p.id, marker);
     bounds.push([p.centroid_lat, p.centroid_lng]);
   });
@@ -215,20 +215,20 @@ function cheapestListing(p) {
 
 function cardHTML(p) {
   const photo = (p.photos && p.photos[0]) || demoPhoto(p.id);
-  const rating = p.avg_rating ? Number(p.avg_rating).toFixed(1) : (p.review_count ? '—' : 'New');
+  const rating = p.avg_rating ? Number(p.avg_rating).toFixed(1) : (p.review_count ? '—' : 'Nouveau');
   const reviews = p.review_count ? ` (${p.review_count})` : '';
   const loc = [p.municipality, p.province].filter(Boolean).join(', ');
   const listings = p.landlink_listings || [];
   const cheapest = cheapestListing(p);
   const cats = [...new Set(listings.map(l => l.category))].slice(0, 3)
-    .map(c => `<span class="ll-pill">${activityIcon(c)} ${activityLabel(c)}</span>`).join('');
+    .map(c => `<span class="ll-pill">${activityIcon(c)} ${activityLabel(c, 'fr')}</span>`).join('');
   const priceLabel = cheapest
-    ? (cheapest.price_unit === 'free' ? 'Free access' : `from ${formatPrice(cheapest.price_cents, cheapest.price_unit)}`)
-    : 'Multi-use';
+    ? (cheapest.price_unit === 'free' ? 'Accès gratuit' : `à partir de ${formatPrice(cheapest.price_cents, cheapest.price_unit)}`)
+    : 'Multi-usage';
   return `
-    <a class="ll-card" href="/en/parcels/${p.id}" data-id="${p.id}">
+    <a class="ll-card" href="/fr/parcels/${p.id}" data-id="${p.id}">
       <div class="ll-card-img" style="background-image:url('${photo}')">
-        ${listings.length > 1 ? `<div class="ll-card-badge">${listings.length} uses</div>` : ''}
+        ${listings.length > 1 ? `<div class="ll-card-badge">${listings.length} usages</div>` : ''}
       </div>
       <div class="ll-card-body">
         <div class="ll-card-row">
