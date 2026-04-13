@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>List Your Land — LandLink</title>
-<meta name="description" content="List your private land on LandLink. Draw the parcel, set your terms, attract responsible hunters.">
+<meta name="description" content="List your private land on LandLink. Draw the parcel, pick the activities you want to host, set your terms, and start earning year-round.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css">
@@ -14,13 +14,18 @@
 
 <div class="ll-wizard">
   <div class="ll-wizard-progress" id="progress">
-    <div class="step active"></div><div class="step"></div><div class="step"></div><div class="step"></div><div class="step"></div>
+    <div class="step active"></div>
+    <div class="step"></div>
+    <div class="step"></div>
+    <div class="step"></div>
+    <div class="step"></div>
+    <div class="step"></div>
   </div>
 
-  <!-- Step 1: Property basics -->
+  <!-- Step 1: Parcel basics -->
   <section class="ll-wizard-step active" data-step="1">
-    <h1>Let\u2019s start with the basics</h1>
-    <p class="sub">Give your parcel a name and tell hunters where it is.</p>
+    <h1>Let&rsquo;s start with the basics</h1>
+    <p class="sub">Give your parcel a name and tell us where it is. This is the land itself &mdash; you&rsquo;ll pick what can happen on it in a later step.</p>
     <div class="ll-field">
       <label>Parcel name</label>
       <input type="text" name="name" placeholder="e.g. North Forty Woodlot" required>
@@ -46,95 +51,80 @@
       <label>Approximate acres</label>
       <input type="number" name="acres" min="1" step="1" placeholder="e.g. 210">
     </div>
+    <div class="ll-field">
+      <label>Short description</label>
+      <textarea name="description" rows="4" placeholder="What makes this land special? Terrain, water, views, history..."></textarea>
+    </div>
   </section>
 
   <!-- Step 2: Draw boundary -->
   <section class="ll-wizard-step" data-step="2">
     <h1>Draw your parcel on the map</h1>
-    <p class="sub">Outline the property boundary. You can redraw any time. Only you and admins see this until your listing goes live.</p>
+    <p class="sub">Outline the property boundary. Only you and admins see the exact shape &mdash; guests see a fuzzy circle until their booking is approved.</p>
     <div class="ll-wizard-map" id="draw-map"></div>
     <p class="ll-wizard-map-hint">Click the polygon tool on the map, tap points to draw the boundary, close it to save.</p>
   </section>
 
-  <!-- Step 3: Terms -->
+  <!-- Step 3: Features & access -->
   <section class="ll-wizard-step" data-step="3">
-    <h1>Set your terms</h1>
-    <p class="sub">What\u2019s allowed on your land? You stay in full control.</p>
+    <h1>What&rsquo;s on the land?</h1>
+    <p class="sub">Tick anything that applies. These features are how guests will find your parcel.</p>
+
     <div class="ll-field">
-      <label>Species allowed</label>
-      <div class="ll-checkgroup">
-        <label><input type="checkbox" name="species" value="whitetail"><span>Whitetail</span></label>
-        <label><input type="checkbox" name="species" value="mule_deer"><span>Mule Deer</span></label>
-        <label><input type="checkbox" name="species" value="moose"><span>Moose</span></label>
-        <label><input type="checkbox" name="species" value="elk"><span>Elk</span></label>
-        <label><input type="checkbox" name="species" value="black_bear"><span>Black Bear</span></label>
-        <label><input type="checkbox" name="species" value="turkey"><span>Turkey</span></label>
-        <label><input type="checkbox" name="species" value="goose"><span>Goose</span></label>
-        <label><input type="checkbox" name="species" value="duck"><span>Duck</span></label>
-        <label><input type="checkbox" name="species" value="coyote"><span>Coyote</span></label>
-        <label><input type="checkbox" name="species" value="small_game"><span>Small Game</span></label>
-      </div>
+      <label>Water</label>
+      <div class="ll-checkgroup" data-group="water"></div>
     </div>
     <div class="ll-field">
-      <label>Weapons allowed</label>
-      <div class="ll-checkgroup">
-        <label><input type="checkbox" name="weapons" value="archery"><span>Archery</span></label>
-        <label><input type="checkbox" name="weapons" value="crossbow"><span>Crossbow</span></label>
-        <label><input type="checkbox" name="weapons" value="muzzleloader"><span>Muzzleloader</span></label>
-        <label><input type="checkbox" name="weapons" value="rifle"><span>Rifle</span></label>
-        <label><input type="checkbox" name="weapons" value="shotgun"><span>Shotgun</span></label>
-      </div>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
-      <div class="ll-field"><label>Max hunters at a time</label><input type="number" name="max_hunters" min="1" value="2" required></div>
-      <div class="ll-field"><label>Vehicle access</label>
-        <select name="vehicle_access">
-          <option value="foot_only">Foot access only</option>
-          <option value="atv_ok">ATV allowed</option>
-          <option value="truck_ok">Truck / vehicle OK</option>
-        </select>
-      </div>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
-      <div class="ll-field"><label>Season start</label><input type="date" name="season_start"></div>
-      <div class="ll-field"><label>Season end</label><input type="date" name="season_end"></div>
+      <label>Terrain</label>
+      <div class="ll-checkgroup" data-group="terrain"></div>
     </div>
     <div class="ll-field">
-      <label>House rules (optional)</label>
-      <textarea name="house_rules" placeholder="No permanent stands, text before arrival, no baiting, etc."></textarea>
+      <label>Trails</label>
+      <div class="ll-checkgroup" data-group="trails"></div>
+    </div>
+    <div class="ll-field">
+      <label>Built amenities</label>
+      <div class="ll-checkgroup" data-group="built"></div>
+    </div>
+
+    <div class="ll-field">
+      <label>Vehicle access</label>
+      <select name="vehicle_access">
+        <option value="foot_only">Foot access only</option>
+        <option value="atv_ok">ATV allowed</option>
+        <option value="truck_ok">Truck / vehicle OK</option>
+        <option value="paved_road">Paved road to parcel</option>
+        <option value="marina">Marina / boat access</option>
+        <option value="trailhead">Trailhead access</option>
+      </select>
+    </div>
+    <div class="ll-field">
+      <label>Access / parking notes</label>
+      <textarea name="access_notes" rows="3" placeholder="How guests get to the parcel, gate codes, where to park..."></textarea>
     </div>
   </section>
 
-  <!-- Step 4: Pricing -->
+  <!-- Step 4: Activities offered -->
   <section class="ll-wizard-step" data-step="4">
-    <h1>Pricing</h1>
-    <p class="sub">Charge for access, or offer it free if you just want pest management. You can change this any time.</p>
-    <div class="ll-field">
-      <label>Pricing model</label>
-      <div class="ll-checkgroup">
-        <label><input type="radio" name="price_unit" value="free" checked><span>Free access</span></label>
-        <label><input type="radio" name="price_unit" value="day"><span>Per day</span></label>
-        <label><input type="radio" name="price_unit" value="weekend"><span>Per weekend</span></label>
-        <label><input type="radio" name="price_unit" value="week"><span>Per week</span></label>
-        <label><input type="radio" name="price_unit" value="season"><span>Per season</span></label>
-      </div>
-    </div>
-    <div class="ll-field" id="price-field">
-      <label>Price (CAD)</label>
-      <input type="number" name="price" min="0" step="10" value="0">
-    </div>
-    <div class="ll-field">
-      <label>Description (shown to hunters)</label>
-      <textarea name="description" rows="5" placeholder="Habitat, game sign, stand locations, what you love about the property..."></textarea>
-    </div>
+    <h1>What can guests do here?</h1>
+    <p class="sub">Pick every activity you&rsquo;d consider hosting. One parcel can offer many &mdash; the same woodlot can host deer hunting in October, sledding in January, and camping every summer weekend.</p>
+    <div class="ll-activity-grid" id="activity-grid"></div>
   </section>
 
-  <!-- Step 5: Review -->
+  <!-- Step 5: Pricing per listing -->
   <section class="ll-wizard-step" data-step="5">
+    <h1>Set your pricing</h1>
+    <p class="sub">One row per selected activity. Mark free if you just want land managed (pest control, goodwill, pressure on deer, etc).</p>
+    <div id="pricing-rows"></div>
+    <p class="ll-booking-note" style="margin-top:16px">LandLink takes a 15% host fee on paid bookings and charges guests a 5% service fee. Free listings have no platform fee.</p>
+  </section>
+
+  <!-- Step 6: Review -->
+  <section class="ll-wizard-step" data-step="6">
     <h1>Review &amp; submit</h1>
-    <p class="sub">Your listing goes to our team for a quick review (usually &lt; 24h). Once approved it\u2019s live on LandLink.</p>
+    <p class="sub">We&rsquo;ll review your listing within 24h and email you when it goes live.</p>
     <div id="summary" style="background:var(--bg-soft);border-radius:12px;padding:24px;font-size:14px;line-height:1.7"></div>
-    <p class="ll-booking-note" style="margin-top:16px">By submitting, you confirm you have the legal right to grant hunting access on this property and that the terms you\u2019ve set comply with provincial regulations.</p>
+    <p class="ll-booking-note" style="margin-top:16px">By submitting, you confirm you have the legal right to grant access on this property and that the activities you&rsquo;ve selected comply with provincial regulations.</p>
   </section>
 
   <div class="ll-wizard-nav">
@@ -147,17 +137,59 @@
 <script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
 <script type="module">
 import { renderNav } from '/public/js/nav.js';
-import { supabase, getCurrentProfile } from '/public/js/supabase-client.js';
+import { supabase, getCurrentProfile, getActivities } from '/public/js/supabase-client.js';
 renderNav();
 
-const TOTAL_STEPS = 5;
-const form = { species: [], weapons: [], geometry: null, centroid: null };
+const TOTAL_STEPS = 6;
+const state = {
+  parcel: { features: [] },
+  activities: [],       // list of activity codes the owner picked
+  listings: {},         // per-activity-code: { price, unit, capacity }
+  geometry: null,
+  centroid: null,
+  activityDefs: []      // loaded from activities.json
+};
 let step = 1;
 let drawMap, drawLayer;
 
+// ---------- init ----------
+(async () => {
+  const { activities, parcel_features } = await getActivities();
+  state.activityDefs = activities;
+
+  // Features grouped by group
+  const groups = {};
+  parcel_features.forEach(f => { (groups[f.group] ||= []).push(f); });
+  for (const [group, feats] of Object.entries(groups)) {
+    const host = document.querySelector(`.ll-checkgroup[data-group="${group}"]`);
+    if (!host) continue;
+    host.innerHTML = feats.map(f =>
+      `<label><input type="checkbox" name="feature" value="${f.id}"><span>${f.label_en}</span></label>`
+    ).join('');
+  }
+
+  // Activity picker cards
+  document.getElementById('activity-grid').innerHTML = activities.map(a => `
+    <label class="ll-activity-card" data-code="${a.code}">
+      <input type="checkbox" name="activity" value="${a.code}">
+      <div class="ll-activity-card-ico">${a.icon}</div>
+      <div class="ll-activity-card-body">
+        <div class="ll-activity-card-title">${a.short_en}</div>
+        <div class="ll-activity-card-blurb">${a.blurb_en}</div>
+      </div>
+    </label>
+  `).join('');
+
+  document.querySelectorAll('.ll-activity-card input').forEach(cb => {
+    cb.addEventListener('change', () => cb.closest('.ll-activity-card').classList.toggle('selected', cb.checked));
+  });
+})();
+
+// ---------- step navigation ----------
 function goto(n) {
   step = Math.max(1, Math.min(TOTAL_STEPS, n));
-  document.querySelectorAll('.ll-wizard-step').forEach(s => s.classList.toggle('active', s.dataset.step == step));
+  document.querySelectorAll('.ll-wizard-step').forEach(s =>
+    s.classList.toggle('active', s.dataset.step == step));
   document.querySelectorAll('#progress .step').forEach((s, i) => {
     s.classList.toggle('active', i + 1 === step);
     s.classList.toggle('done', i + 1 < step);
@@ -165,7 +197,8 @@ function goto(n) {
   document.getElementById('next').textContent = step === TOTAL_STEPS ? 'Submit listing' : 'Continue';
   document.getElementById('back').style.visibility = step === 1 ? 'hidden' : 'visible';
   if (step === 2 && !drawMap) initDrawMap();
-  if (step === 5) renderSummary();
+  if (step === 5) renderPricingRows();
+  if (step === 6) renderSummary();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
@@ -183,86 +216,171 @@ function initDrawMap() {
     drawLayer.clearLayers();
     drawLayer.addLayer(e.layer);
     const gj = e.layer.toGeoJSON();
-    form.geometry = gj.geometry;
+    state.geometry = gj.geometry;
     const c = e.layer.getBounds().getCenter();
-    form.centroid = { lat: c.lat, lng: c.lng };
+    state.centroid = { lat: c.lat, lng: c.lng };
   });
   setTimeout(() => drawMap.invalidateSize(), 200);
 }
 
+// ---------- collect / pricing rows ----------
 function collect() {
   const get = name => document.querySelector(`[name="${name}"]`)?.value || '';
-  form.name = get('name'); form.province = get('province'); form.municipality = get('municipality');
-  form.acres = parseFloat(get('acres')) || null;
-  form.species = Array.from(document.querySelectorAll('[name="species"]:checked')).map(i => i.value);
-  form.weapons = Array.from(document.querySelectorAll('[name="weapons"]:checked')).map(i => i.value);
-  form.max_hunters = parseInt(get('max_hunters'), 10) || 1;
-  form.vehicle_access = get('vehicle_access');
-  form.season_start = get('season_start') || null;
-  form.season_end = get('season_end') || null;
-  form.house_rules = get('house_rules') || null;
-  form.price_unit = document.querySelector('[name="price_unit"]:checked')?.value || 'free';
-  form.price_cents = form.price_unit === 'free' ? 0 : Math.round((parseFloat(get('price')) || 0) * 100);
-  form.description = get('description') || null;
+  state.parcel.name         = get('name');
+  state.parcel.province     = get('province');
+  state.parcel.municipality = get('municipality');
+  state.parcel.description  = get('description') || null;
+  state.parcel.acres        = parseFloat(get('acres')) || null;
+  state.parcel.features     = Array.from(document.querySelectorAll('[name="feature"]:checked')).map(i => i.value);
+  state.parcel.vehicle_access = get('vehicle_access');
+  state.parcel.access_notes = get('access_notes') || null;
+  state.activities          = Array.from(document.querySelectorAll('[name="activity"]:checked')).map(i => i.value);
+}
+
+function renderPricingRows() {
+  collect();
+  const host = document.getElementById('pricing-rows');
+  if (!state.activities.length) {
+    host.innerHTML = '<p class="ll-empty">Go back and pick at least one activity.</p>';
+    return;
+  }
+  host.innerHTML = state.activities.map(code => {
+    const a = state.activityDefs.find(x => x.code === code);
+    const current = state.listings[code] || {
+      price: '', unit: a.default_unit, capacity: 2
+    };
+    const unitOpts = a.units.concat('free').map(u =>
+      `<option value="${u}" ${u === current.unit ? 'selected' : ''}>${u.replace('_', ' ')}</option>`
+    ).join('');
+    return `
+      <div class="ll-listing-row" data-code="${code}">
+        <div class="ll-listing-row-ico">${a.icon}</div>
+        <div>
+          <div class="ll-listing-row-title">${a.short_en}</div>
+          <div class="ll-listing-row-sub">${a.blurb_en}</div>
+        </div>
+        <input type="number" min="0" step="5" placeholder="Price" name="price" value="${current.price}">
+        <select name="unit">${unitOpts}</select>
+      </div>`;
+  }).join('');
+
+  host.querySelectorAll('.ll-listing-row').forEach(row => {
+    const code = row.dataset.code;
+    row.querySelector('[name="price"]').addEventListener('input', e => {
+      state.listings[code] = { ...state.listings[code], price: e.target.value };
+    });
+    row.querySelector('[name="unit"]').addEventListener('change', e => {
+      state.listings[code] = { ...state.listings[code], unit: e.target.value };
+    });
+  });
 }
 
 function validateStep() {
   collect();
   if (step === 1) {
-    if (!form.name || !form.province) { alert('Please fill in parcel name and province.'); return false; }
+    if (!state.parcel.name || !state.parcel.province) {
+      alert('Please fill in parcel name and province.'); return false;
+    }
   }
   if (step === 2) {
-    if (!form.geometry) { alert('Please draw your parcel boundary on the map.'); return false; }
+    if (!state.geometry) { alert('Please draw your parcel boundary on the map.'); return false; }
   }
-  if (step === 3) {
-    if (!form.species.length) { alert('Pick at least one species.'); return false; }
-    if (!form.weapons.length) { alert('Pick at least one weapon.'); return false; }
+  if (step === 4) {
+    if (!state.activities.length) { alert('Pick at least one activity.'); return false; }
+  }
+  if (step === 5) {
+    // Gather current form values into state.listings
+    document.querySelectorAll('.ll-listing-row').forEach(row => {
+      const code = row.dataset.code;
+      state.listings[code] = {
+        price: row.querySelector('[name="price"]').value,
+        unit:  row.querySelector('[name="unit"]').value
+      };
+    });
   }
   return true;
 }
 
 function renderSummary() {
-  const price = form.price_unit === 'free' ? 'Free access' : `$${(form.price_cents/100).toLocaleString()} / ${form.price_unit}`;
+  const featList = state.parcel.features.length ? state.parcel.features.join(', ') : 'none';
+  const rows = state.activities.map(code => {
+    const a = state.activityDefs.find(x => x.code === code);
+    const l = state.listings[code] || {};
+    const price = (l.unit === 'free' || !l.price) ? 'Free' : `$${l.price} / ${l.unit}`;
+    return `<div>${a.icon} <b>${a.short_en}</b> — ${price}</div>`;
+  }).join('');
   document.getElementById('summary').innerHTML = `
-    <div><b>${form.name || '\u2014'}</b> \u00b7 ${form.municipality || ''} ${form.province}</div>
-    <div>${form.acres ? form.acres + ' acres' : ''} \u00b7 ${form.species.join(', ') || 'no species'} \u00b7 ${form.weapons.join(', ') || 'no weapons'}</div>
-    <div>Max ${form.max_hunters} hunters \u00b7 ${form.vehicle_access.replace('_',' ')}</div>
-    <div>Season: ${form.season_start || '\u2014'} \u2192 ${form.season_end || '\u2014'}</div>
-    <div>Price: <b>${price}</b></div>
-    ${form.description ? `<div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--line)">${form.description}</div>` : ''}`;
+    <div><b>${state.parcel.name || '—'}</b> · ${state.parcel.municipality || ''} ${state.parcel.province}</div>
+    <div>${state.parcel.acres ? state.parcel.acres + ' acres' : ''} · ${state.parcel.vehicle_access?.replace('_', ' ') || ''}</div>
+    <div style="margin-top:6px;font-size:13px;color:var(--ink-soft)">Features: ${featList}</div>
+    <div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--line)">
+      ${rows || '<i>No activities selected</i>'}
+    </div>
+    ${state.parcel.description ? `<div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--line)">${state.parcel.description}</div>` : ''}
+  `;
 }
 
+// ---------- submit ----------
 async function submit() {
   const profile = await getCurrentProfile();
-  if (!profile) { window.location.href = '/en/signup?role=landowner&next=' + encodeURIComponent(location.pathname); return; }
-  const payload = {
+  if (!profile) {
+    window.location.href = '/en/signup?role=owner&next=' + encodeURIComponent(location.pathname);
+    return;
+  }
+
+  // 1) create parcel
+  const parcelPayload = {
     owner_id: profile.user_id,
-    name: form.name, description: form.description,
-    geometry: form.geometry,
-    centroid_lat: form.centroid.lat, centroid_lng: form.centroid.lng,
-    acres: form.acres, province: form.province, municipality: form.municipality,
-    species: form.species, weapons: form.weapons,
-    max_hunters: form.max_hunters, vehicle_access: form.vehicle_access,
-    season_start: form.season_start, season_end: form.season_end,
-    price_cents: form.price_cents, price_unit: form.price_unit,
-    house_rules: form.house_rules, status: 'pending_review'
+    name: state.parcel.name,
+    description: state.parcel.description,
+    geometry: state.geometry,
+    centroid_lat: state.centroid.lat,
+    centroid_lng: state.centroid.lng,
+    acres: state.parcel.acres,
+    province: state.parcel.province,
+    municipality: state.parcel.municipality,
+    features: state.parcel.features,
+    vehicle_access: state.parcel.vehicle_access,
+    access_notes: state.parcel.access_notes,
+    status: 'pending_review'
   };
-  const { error } = await supabase.from('landlink_parcels').insert(payload);
-  if (error) { alert('Could not submit: ' + error.message); return; }
+  const { data: parcel, error: parcelErr } = await supabase
+    .from('landlink_parcels').insert(parcelPayload).select('id').single();
+  if (parcelErr) { alert('Could not save parcel: ' + parcelErr.message); return; }
+
+  // 2) create one listing per selected activity
+  const listingPayloads = state.activities.map(code => {
+    const a = state.activityDefs.find(x => x.code === code);
+    const l = state.listings[code] || {};
+    const isFree = l.unit === 'free' || !l.price;
+    return {
+      parcel_id: parcel.id,
+      owner_id: profile.user_id,   // trigger will overwrite, but insert requires it for RLS
+      category: a.code,
+      activity_code: a.code,
+      title: a.label_en,
+      price_cents: isFree ? 0 : Math.round((parseFloat(l.price) || 0) * 100),
+      price_unit: isFree ? 'free' : (l.unit || a.default_unit),
+      capacity: 2,
+      status: 'pending_review',
+      config: {}
+    };
+  });
+  if (listingPayloads.length) {
+    const { error: listErr } = await supabase.from('landlink_listings').insert(listingPayloads);
+    if (listErr) { alert('Parcel saved, but listings failed: ' + listErr.message); return; }
+  }
+
   alert('Submitted! We\u2019ll review it within 24h and email you when it\u2019s live.');
   window.location.href = '/en/dashboard';
 }
 
+// ---------- wire buttons ----------
 document.getElementById('next').addEventListener('click', () => {
   if (!validateStep()) return;
   if (step === TOTAL_STEPS) submit(); else goto(step + 1);
 });
 document.getElementById('back').addEventListener('click', () => goto(step - 1));
-document.addEventListener('change', e => {
-  if (e.target.name === 'price_unit') {
-    document.getElementById('price-field').style.display = e.target.value === 'free' ? 'none' : 'block';
-  }
-});
 goto(1);
 </script>
 

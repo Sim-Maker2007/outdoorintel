@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Browse Parcels — LandLink</title>
-<meta name="description" content="Browse private hunting parcels across Canada. Filter by species, weapon, province, and price.">
+<title>Browse Private Land — LandLink</title>
+<meta name="description" content="Browse private outdoor land across Canada. Hunting, camping, fishing, sugar shacks, dock access, ATV, snowmobile and more.">
 <link rel="alternate" hreflang="en" href="https://landlink.outdoorintel.ca/en/parcels">
 <link rel="alternate" hreflang="fr" href="https://landlink.outdoorintel.ca/fr/parcels">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -19,19 +19,7 @@
 
 <div class="ll-search-layout">
   <div class="ll-search-results">
-    <div class="ll-search-filters" id="filters">
-      <button class="ll-filter-pill active" data-filter="all">All</button>
-      <button class="ll-filter-pill" data-filter="species:whitetail">Whitetail</button>
-      <button class="ll-filter-pill" data-filter="species:moose">Moose</button>
-      <button class="ll-filter-pill" data-filter="species:elk">Elk</button>
-      <button class="ll-filter-pill" data-filter="species:black_bear">Black bear</button>
-      <button class="ll-filter-pill" data-filter="species:goose">Goose</button>
-      <button class="ll-filter-pill" data-filter="species:turkey">Turkey</button>
-      <button class="ll-filter-pill" data-filter="species:coyote">Coyote</button>
-      <button class="ll-filter-pill" data-filter="weapon:archery">Archery</button>
-      <button class="ll-filter-pill" data-filter="weapon:rifle">Rifle</button>
-      <button class="ll-filter-pill" data-filter="price:free">Free access</button>
-    </div>
+    <div class="ll-filter-scroll" id="filters"></div>
     <div class="ll-search-count" id="count">Loading parcels...</div>
     <div class="ll-search-grid" id="grid"></div>
   </div>
@@ -43,17 +31,42 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script type="module">
 import { renderNav } from '/public/js/nav.js';
-import { supabase, formatPrice } from '/public/js/supabase-client.js';
+import {
+  supabase, formatPrice, formatShortPrice, getActivities,
+  activityIcon, activityLabel
+} from '/public/js/supabase-client.js';
 renderNav();
 
 // ---------- state ----------
 const state = {
   parcels: [],
   filtered: [],
-  filter: 'all',
-  markers: new Map(),
-  hoveredId: null
+  category: '',       // '' means all
+  markers: new Map()
 };
+
+// ---------- filters (populated from activities.json) ----------
+async function renderFilters() {
+  const { activities } = await getActivities();
+  const pills = [
+    { code: '', label: 'All land', icon: '🌍' },
+    ...activities.map(a => ({ code: a.code, label: a.short_en, icon: a.icon }))
+  ];
+  document.getElementById('filters').innerHTML = pills.map(p => `
+    <button class="ll-filter-pill ${p.code === state.category ? 'active' : ''}" data-cat="${p.code}">
+      <span>${p.icon}</span><span>${p.label}</span>
+    </button>
+  `).join('');
+  document.getElementById('filters').addEventListener('click', e => {
+    const btn = e.target.closest('.ll-filter-pill'); if (!btn) return;
+    state.category = btn.dataset.cat;
+    document.querySelectorAll('.ll-filter-pill').forEach(b => b.classList.toggle('active', b === btn));
+    applyFilter();
+    const url = new URL(location.href);
+    if (state.category) url.searchParams.set('category', state.category); else url.searchParams.delete('category');
+    history.replaceState(null, '', url);
+  });
+}
 
 // ---------- map ----------
 const map = L.map('map', { center: [56, -96], zoom: 4, minZoom: 3, maxZoom: 13, zoomControl: true });
@@ -61,50 +74,45 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19,
 
 // ---------- data load ----------
 async function load() {
-  const url = new URL(window.location.href);
-  const initialFilter = url.searchParams.get('species') ? 'species:' + url.searchParams.get('species')
-                      : url.searchParams.get('weapon') ? 'weapon:' + url.searchParams.get('weapon')
-                      : url.searchParams.get('price_unit') === 'free' ? 'price:free'
-                      : 'all';
-  if (initialFilter !== 'all') {
-    document.querySelectorAll('.ll-filter-pill').forEach(b => b.classList.toggle('active', b.dataset.filter === initialFilter));
-  }
-  state.filter = initialFilter;
+  const url = new URL(location.href);
+  state.category = url.searchParams.get('category') || '';
+
+  await renderFilters();
+  await getActivities(); // preload taxonomy cache for icon lookups
 
   const { data, error } = await supabase
     .from('landlink_parcels')
-    .select('id,name,province,municipality,species,weapons,price_cents,price_unit,photos,avg_rating,review_count,acres,centroid_lat,centroid_lng,season_start,season_end,max_hunters')
+    .select(`
+      id,name,province,municipality,photos,acres,avg_rating,review_count,
+      centroid_lat,centroid_lng,features,
+      landlink_listings(id,category,activity_code,price_cents,price_unit,status,title)
+    `)
     .eq('status', 'active')
     .order('created_at', { ascending: false })
     .limit(200);
 
   state.parcels = (!error && data && data.length) ? data : demoParcels();
+  // Drop listings that aren't active for display
+  state.parcels.forEach(p => {
+    p.landlink_listings = (p.landlink_listings || []).filter(l => l.status === 'active' || !l.status);
+  });
   applyFilter();
 }
 
 function applyFilter() {
-  const f = state.filter;
   state.filtered = state.parcels.filter(p => {
-    if (f === 'all') return true;
-    if (f.startsWith('species:')) return (p.species || []).includes(f.split(':')[1]);
-    if (f.startsWith('weapon:')) return (p.weapons || []).includes(f.split(':')[1]);
-    if (f === 'price:free') return p.price_unit === 'free';
-    return true;
+    if (!state.category) return (p.landlink_listings || []).length > 0;
+    return (p.landlink_listings || []).some(l => l.category === state.category);
   });
   render();
 }
 
-// ---------- render ----------
 function render() {
   document.getElementById('count').textContent = `${state.filtered.length} ${state.filtered.length === 1 ? 'parcel' : 'parcels'}`;
 
-  // list
   const grid = document.getElementById('grid');
-  grid.innerHTML = state.filtered.map(p => cardHTML(p)).join('');
-  grid.querySelectorAll('[data-id]').forEach(el => {
-    el.addEventListener('mouseenter', () => focusMarker(el.dataset.id));
-    el.addEventListener('mouseleave', () => unfocusMarker(el.dataset.id));
-  });
+  grid.innerHTML = state.filtered.map(cardHTML).join('') ||
+    '<p class="ll-empty">No parcels match this filter yet.</p>';
 
   // map pins
   state.markers.forEach(m => map.removeLayer(m));
@@ -112,61 +120,59 @@ function render() {
   const bounds = [];
   state.filtered.forEach(p => {
     if (!p.centroid_lat || !p.centroid_lng) return;
-    const priceLabel = p.price_unit === 'free' ? 'Free' : `$${Math.round((p.price_cents || 0) / 100)}`;
+    const cheapest = cheapestListing(p);
+    const label = cheapest
+      ? (cheapest.price_unit === 'free' ? 'Free' : formatShortPrice(cheapest.price_cents))
+      : '—';
     const marker = L.marker([p.centroid_lat, p.centroid_lng], {
       icon: L.divIcon({
-        className: '', html: `<div class="ll-price-pin">${priceLabel}</div>`,
+        className: '', html: `<div class="ll-price-pin">${label}</div>`,
         iconSize: [60, 26], iconAnchor: [30, 13]
       })
     }).addTo(map);
-    marker.on('click', () => { window.location.href = `/en/parcels/${p.id}`; });
+    marker.on('click', () => { location.href = `/en/parcels/${p.id}`; });
     state.markers.set(p.id, marker);
     bounds.push([p.centroid_lat, p.centroid_lng]);
   });
   if (bounds.length) map.fitBounds(bounds, { padding: [40, 40], maxZoom: 8 });
 }
 
-function focusMarker(id) {
-  const m = state.markers.get(id);
-  if (m) m.getElement().querySelector('.ll-price-pin')?.classList.add('active');
-}
-function unfocusMarker(id) {
-  const m = state.markers.get(id);
-  if (m) m.getElement().querySelector('.ll-price-pin')?.classList.remove('active');
+function cheapestListing(p) {
+  const listings = (p.landlink_listings || []).filter(l => {
+    if (!state.category) return true;
+    return l.category === state.category;
+  });
+  return listings.slice().sort((a, b) => (a.price_cents || 0) - (b.price_cents || 0))[0];
 }
 
 function cardHTML(p) {
   const photo = (p.photos && p.photos[0]) || demoPhoto(p.id);
-  const rating = p.avg_rating ? p.avg_rating.toFixed(1) : (p.review_count ? '\u2014' : 'New');
+  const rating = p.avg_rating ? Number(p.avg_rating).toFixed(1) : (p.review_count ? '—' : 'New');
   const reviews = p.review_count ? ` (${p.review_count})` : '';
-  const price = formatPrice(p.price_cents, p.price_unit);
-  const location = [p.municipality, p.province].filter(Boolean).join(', ');
-  const species = (p.species || []).slice(0, 2).map(s => s.replace('_', ' ')).join(' \u00b7 ');
+  const loc = [p.municipality, p.province].filter(Boolean).join(', ');
+  const listings = p.landlink_listings || [];
+  const cheapest = cheapestListing(p);
+  const cats = [...new Set(listings.map(l => l.category))].slice(0, 3)
+    .map(c => `<span class="ll-pill">${activityIcon(c)} ${activityLabel(c)}</span>`).join('');
+  const priceLabel = cheapest
+    ? (cheapest.price_unit === 'free' ? 'Free access' : `from ${formatPrice(cheapest.price_cents, cheapest.price_unit)}`)
+    : 'Multi-use';
   return `
     <a class="ll-card" href="/en/parcels/${p.id}" data-id="${p.id}">
       <div class="ll-card-img" style="background-image:url('${photo}')">
-        ${p.price_unit === 'free' ? '<div class="ll-card-badge">Free access</div>' : ''}
+        ${listings.length > 1 ? `<div class="ll-card-badge">${listings.length} uses</div>` : ''}
       </div>
       <div class="ll-card-body">
         <div class="ll-card-row">
           <div class="ll-card-title">${p.name}</div>
           <div class="ll-card-rating">&#9733; ${rating}${reviews}</div>
         </div>
-        <div class="ll-card-meta">${location || '\u2014'}</div>
-        <div class="ll-card-meta">${species || 'Multi-species'}${p.acres ? ` \u00b7 ${p.acres} acres` : ''}</div>
-        <div class="ll-card-price"><strong>${price}</strong></div>
+        <div class="ll-card-meta">${loc || '—'}${p.acres ? ` · ${p.acres} acres` : ''}</div>
+        <div class="ll-card-pills">${cats}</div>
+        <div class="ll-card-price"><strong>${priceLabel}</strong></div>
       </div>
     </a>`;
 }
-
-// ---------- filter UI ----------
-document.getElementById('filters').addEventListener('click', e => {
-  const btn = e.target.closest('.ll-filter-pill'); if (!btn) return;
-  document.querySelectorAll('.ll-filter-pill').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  state.filter = btn.dataset.filter;
-  applyFilter();
-});
 
 // ---------- demo fallback ----------
 function demoPhoto(seed) {
@@ -174,7 +180,7 @@ function demoPhoto(seed) {
     'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=600&auto=format&fit=crop',
     'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&auto=format&fit=crop',
     'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&auto=format&fit=crop',
     'https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop',
     'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=600&auto=format&fit=crop',
     'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&auto=format&fit=crop',
@@ -183,18 +189,94 @@ function demoPhoto(seed) {
   let h = 0; for (const c of String(seed || '')) h = (h * 31 + c.charCodeAt(0)) >>> 0;
   return photos[h % photos.length];
 }
+
 function demoParcels() {
   return [
-    { id: 'demo-1', name: 'Pontiac River Woodlot', province: 'QC', municipality: 'Shawville', species: ['whitetail','coyote'], weapons: ['archery','rifle'], price_cents: 20000, price_unit: 'season', acres: 210, avg_rating: 4.9, review_count: 14, centroid_lat: 45.60, centroid_lng: -76.48, max_hunters: 3 },
-    { id: 'demo-2', name: 'Northern Ontario Bush Camp', province: 'ON', municipality: 'Temiskaming Shores', species: ['moose','black_bear'], weapons: ['rifle','muzzleloader'], price_cents: 40000, price_unit: 'week', acres: 640, avg_rating: 4.8, review_count: 22, centroid_lat: 47.50, centroid_lng: -79.68, max_hunters: 2 },
-    { id: 'demo-3', name: 'Grain Field Goose Hunt', province: 'SK', municipality: 'Moose Jaw', species: ['goose','duck'], weapons: ['shotgun'], price_cents: 5000, price_unit: 'day', acres: 320, avg_rating: 5.0, review_count: 9, centroid_lat: 50.39, centroid_lng: -105.53, max_hunters: 6 },
-    { id: 'demo-4', name: 'Laurentides Mixed Forest', province: 'QC', municipality: 'Mont-Laurier', species: ['whitetail','black_bear'], weapons: ['archery','crossbow','rifle'], price_cents: 0, price_unit: 'free', acres: 180, avg_rating: null, review_count: 0, centroid_lat: 46.55, centroid_lng: -75.50, max_hunters: 2 },
-    { id: 'demo-5', name: 'Prairie Whitetail Ranch', province: 'AB', municipality: 'Red Deer', species: ['whitetail','mule_deer'], weapons: ['archery','rifle'], price_cents: 60000, price_unit: 'season', acres: 1200, avg_rating: 4.7, review_count: 31, centroid_lat: 52.27, centroid_lng: -113.81, max_hunters: 4 },
-    { id: 'demo-6', name: 'Maritime Woodlot', province: 'NB', municipality: 'Fredericton', species: ['whitetail','turkey'], weapons: ['archery','shotgun'], price_cents: 15000, price_unit: 'season', acres: 95, avg_rating: 4.6, review_count: 7, centroid_lat: 45.96, centroid_lng: -66.64, max_hunters: 2 },
-    { id: 'demo-7', name: 'Interior BC Backcountry', province: 'BC', municipality: 'Kamloops', species: ['elk','mule_deer'], weapons: ['rifle','archery'], price_cents: 35000, price_unit: 'week', acres: 840, avg_rating: 4.9, review_count: 18, centroid_lat: 50.67, centroid_lng: -120.33, max_hunters: 3 },
-    { id: 'demo-8', name: 'Cornfield Coyote Control', province: 'ON', municipality: 'Chatham-Kent', species: ['coyote'], weapons: ['rifle'], price_cents: 0, price_unit: 'free', acres: 400, avg_rating: null, review_count: 0, centroid_lat: 42.40, centroid_lng: -82.19, max_hunters: 2 },
-    { id: 'demo-9', name: 'Manitoba Marsh Edge', province: 'MB', municipality: 'Delta Beach', species: ['duck','goose'], weapons: ['shotgun'], price_cents: 8000, price_unit: 'day', acres: 160, avg_rating: 4.8, review_count: 11, centroid_lat: 50.19, centroid_lng: -98.35, max_hunters: 4 },
-    { id: 'demo-10', name: 'Mauricie Back 40', province: 'QC', municipality: 'Shawinigan', species: ['whitetail','coyote'], weapons: ['archery','crossbow'], price_cents: 12000, price_unit: 'season', acres: 120, avg_rating: 4.5, review_count: 5, centroid_lat: 46.56, centroid_lng: -72.75, max_hunters: 1 }
+    {
+      id: 'demo-1', name: 'Pontiac River Woodlot', province: 'QC', municipality: 'Shawville', acres: 210,
+      avg_rating: 4.9, review_count: 14, centroid_lat: 45.60, centroid_lng: -76.48,
+      landlink_listings: [
+        { id: 'l1', category: 'hunting', activity_code: 'hunting', price_cents: 20000, price_unit: 'season', status: 'active' },
+        { id: 'l2', category: 'camping', activity_code: 'camping', price_cents: 3500,  price_unit: 'night',  status: 'active' },
+        { id: 'l3', category: 'foraging', activity_code: 'foraging', price_cents: 2500, price_unit: 'day',   status: 'active' }
+      ]
+    },
+    {
+      id: 'demo-2', name: 'Lac Brûlé Private Access', province: 'QC', municipality: 'Mont-Tremblant', acres: 85,
+      avg_rating: 5.0, review_count: 9, centroid_lat: 46.11, centroid_lng: -74.58,
+      landlink_listings: [
+        { id: 'l4', category: 'dock_shoreline', activity_code: 'dock_shoreline', price_cents: 4000, price_unit: 'day', status: 'active' },
+        { id: 'l5', category: 'fishing', activity_code: 'fishing', price_cents: 8000, price_unit: 'day', status: 'active' },
+        { id: 'l6', category: 'ice_fishing', activity_code: 'ice_fishing', price_cents: 6000, price_unit: 'day', status: 'active' }
+      ]
+    },
+    {
+      id: 'demo-3', name: 'Maple Hill Sugar Bush', province: 'QC', municipality: 'Eastman', acres: 140,
+      avg_rating: 4.8, review_count: 22, centroid_lat: 45.32, centroid_lng: -72.30,
+      landlink_listings: [
+        { id: 'l7', category: 'sugar_shack', activity_code: 'sugar_shack', price_cents: 4500, price_unit: 'per_person', status: 'active' },
+        { id: 'l8', category: 'xc_ski_snowshoe', activity_code: 'xc_ski_snowshoe', price_cents: 1500, price_unit: 'day', status: 'active' },
+        { id: 'l9', category: 'hunting', activity_code: 'hunting', price_cents: 30000, price_unit: 'season', status: 'active' }
+      ]
+    },
+    {
+      id: 'demo-4', name: 'Northern Ontario Bush Camp', province: 'ON', municipality: 'Temiskaming Shores', acres: 640,
+      avg_rating: 4.7, review_count: 31, centroid_lat: 47.50, centroid_lng: -79.68,
+      landlink_listings: [
+        { id: 'l10', category: 'hunting', activity_code: 'hunting', price_cents: 80000, price_unit: 'week', status: 'active' },
+        { id: 'l11', category: 'snowmobile', activity_code: 'snowmobile', price_cents: 5000, price_unit: 'day', status: 'active' }
+      ]
+    },
+    {
+      id: 'demo-5', name: 'Grain Field Goose Hunt', province: 'SK', municipality: 'Moose Jaw', acres: 320,
+      avg_rating: 5.0, review_count: 11, centroid_lat: 50.39, centroid_lng: -105.53,
+      landlink_listings: [
+        { id: 'l12', category: 'hunting', activity_code: 'hunting', price_cents: 5000, price_unit: 'day', status: 'active' },
+        { id: 'l13', category: 'dog_training', activity_code: 'dog_training', price_cents: 3000, price_unit: 'half_day', status: 'active' }
+      ]
+    },
+    {
+      id: 'demo-6', name: 'Laurentides Mixed Forest', province: 'QC', municipality: 'Mont-Laurier', acres: 180,
+      avg_rating: 4.6, review_count: 5, centroid_lat: 46.55, centroid_lng: -75.50,
+      landlink_listings: [
+        { id: 'l14', category: 'camping', activity_code: 'camping', price_cents: 2500, price_unit: 'night', status: 'active' },
+        { id: 'l15', category: 'atv_offroad', activity_code: 'atv_offroad', price_cents: 4000, price_unit: 'day', status: 'active' },
+        { id: 'l16', category: 'wellness_retreat', activity_code: 'wellness_retreat', price_cents: 6000, price_unit: 'day', status: 'active' }
+      ]
+    },
+    {
+      id: 'demo-7', name: 'Cornfield Coyote Control', province: 'ON', municipality: 'Chatham-Kent', acres: 400,
+      avg_rating: null, review_count: 0, centroid_lat: 42.40, centroid_lng: -82.19,
+      landlink_listings: [
+        { id: 'l17', category: 'hunting', activity_code: 'hunting', price_cents: 0, price_unit: 'free', status: 'active' }
+      ]
+    },
+    {
+      id: 'demo-8', name: 'Interior BC Backcountry', province: 'BC', municipality: 'Kamloops', acres: 840,
+      avg_rating: 4.9, review_count: 18, centroid_lat: 50.67, centroid_lng: -120.33,
+      landlink_listings: [
+        { id: 'l18', category: 'overlanding', activity_code: 'overlanding', price_cents: 6000, price_unit: 'night', status: 'active' },
+        { id: 'l19', category: 'hunting',     activity_code: 'hunting',     price_cents: 45000, price_unit: 'week',  status: 'active' },
+        { id: 'l20', category: 'photography_film', activity_code: 'photography_film', price_cents: 15000, price_unit: 'day', status: 'active' }
+      ]
+    },
+    {
+      id: 'demo-9', name: 'Manitoba Marsh Edge', province: 'MB', municipality: 'Delta Beach', acres: 160,
+      avg_rating: 4.8, review_count: 11, centroid_lat: 50.19, centroid_lng: -98.35,
+      landlink_listings: [
+        { id: 'l21', category: 'hunting', activity_code: 'hunting', price_cents: 8000, price_unit: 'day', status: 'active' },
+        { id: 'l22', category: 'camping', activity_code: 'camping', price_cents: 3000, price_unit: 'night', status: 'active' }
+      ]
+    },
+    {
+      id: 'demo-10', name: 'Mauricie Back 40', province: 'QC', municipality: 'Shawinigan', acres: 120,
+      avg_rating: 4.5, review_count: 5, centroid_lat: 46.56, centroid_lng: -72.75,
+      landlink_listings: [
+        { id: 'l23', category: 'hunting', activity_code: 'hunting', price_cents: 12000, price_unit: 'season', status: 'active' },
+        { id: 'l24', category: 'foraging', activity_code: 'foraging', price_cents: 2500, price_unit: 'day', status: 'active' },
+        { id: 'l25', category: 'photography_film', activity_code: 'photography_film', price_cents: 10000, price_unit: 'day', status: 'active' }
+      ]
+    }
   ];
 }
 

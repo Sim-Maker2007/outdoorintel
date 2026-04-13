@@ -25,34 +25,14 @@
         </select>
       </div>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
-      <div class="ll-field"><label>Years of hunting experience</label><input type="number" name="experience_years" min="0"></div>
-      <div class="ll-field"><label>Preferred language</label>
-        <select name="language"><option value="en">English</option><option value="fr">Français</option></select>
-      </div>
+    <div class="ll-field"><label>Preferred language</label>
+      <select name="language"><option value="en">English</option><option value="fr">Fran&ccedil;ais</option></select>
     </div>
-    <div class="ll-field"><label>Bio</label><textarea name="bio" rows="3" placeholder="A few sentences about yourself \u2014 hunting style, ethics, what landowners should know."></textarea></div>
+    <div class="ll-field"><label>Bio</label><textarea name="bio" rows="3" placeholder="A few sentences about yourself — what you do outdoors, ethics, what hosts should know."></textarea></div>
 
-    <h3 style="font-size:18px;margin:32px 0 12px">Verification</h3>
-    <div style="padding:20px;background:var(--bg-soft);border-radius:12px;margin-bottom:16px">
-      <div style="display:flex;justify-content:space-between;align-items:center;font-size:14px">
-        <div>
-          <div style="font-weight:600">PAL (Possession and Acquisition Licence)</div>
-          <div style="font-size:12px;color:var(--ink-soft)" id="pal-status">Not uploaded</div>
-        </div>
-        <input type="file" name="pal_file" accept="image/*,.pdf" style="font-size:12px">
-      </div>
-    </div>
-    <div style="padding:20px;background:var(--bg-soft);border-radius:12px;margin-bottom:16px">
-      <div style="display:flex;justify-content:space-between;align-items:center;font-size:14px">
-        <div>
-          <div style="font-weight:600">Hunter liability insurance</div>
-          <div style="font-size:12px;color:var(--ink-soft)" id="ins-status">Not uploaded</div>
-        </div>
-        <input type="file" name="insurance_file" accept="image/*,.pdf" style="font-size:12px">
-      </div>
-      <div class="ll-field" style="margin-top:12px;margin-bottom:0"><label>Policy expiry</label><input type="date" name="insurance_expires"></div>
-    </div>
+    <h3 style="font-size:18px;margin:32px 0 12px">Credentials</h3>
+    <p style="font-size:13px;color:var(--ink-soft);margin-bottom:16px">Upload anything that applies. You only need activity-specific credentials when you book a listing that requires them &mdash; hunting needs a PAL, archery ranges ask for liability insurance, etc.</p>
+    <div id="credentials-list" style="display:grid;gap:12px;margin-bottom:20px"></div>
 
     <button type="submit" class="ll-booking-submit" style="max-width:240px">Save profile</button>
   </form>
@@ -63,49 +43,94 @@ import { renderNav } from '/public/js/nav.js';
 import { supabase, getCurrentProfile } from '/public/js/supabase-client.js';
 renderNav();
 
+const CREDENTIAL_TYPES = [
+  { type: 'gov_id',              label: 'Government-issued ID',                 required_for: 'all bookings' },
+  { type: 'pal',                 label: 'PAL (Possession and Acquisition Licence)', required_for: 'hunting, sport shooting' },
+  { type: 'hunter_ed',           label: 'Hunter education certificate',         required_for: 'hunting' },
+  { type: 'liability_insurance', label: 'Liability insurance',                  required_for: 'hunting, archery, film' },
+  { type: 'pleasure_craft',      label: 'Pleasure Craft Operator Card',         required_for: 'dock / boat access' },
+  { type: 'snowmobile_safety',   label: 'Snowmobile safety course',             required_for: 'snowmobile' },
+  { type: 'atv_safety',          label: 'ATV safety course',                    required_for: 'ATV / off-road' }
+];
+
 async function boot() {
   const profile = await getCurrentProfile();
-  if (!profile) { window.location.href = '/en/login?next=/en/profile'; return; }
+  if (!profile) { location.href = '/en/login?next=/en/profile'; return; }
 
-  for (const [k,v] of Object.entries(profile)) {
+  for (const [k, v] of Object.entries(profile)) {
     const el = document.querySelector(`[name="${k}"]`);
     if (el && v != null) el.value = v;
   }
 
-  document.getElementById('pal-status').textContent = profile.pal_verified_at
-    ? '\u2713 Verified ' + new Date(profile.pal_verified_at).toLocaleDateString()
-    : (profile.pal_image_url ? 'Uploaded \u2014 awaiting admin review' : 'Not uploaded');
-  document.getElementById('ins-status').textContent = profile.insurance_url
-    ? (profile.insurance_expires ? `Uploaded \u2014 expires ${profile.insurance_expires}` : 'Uploaded')
-    : 'Not uploaded';
+  // Load existing credentials so we can show verification state per row
+  const { data: existing } = await supabase
+    .from('landlink_user_credentials')
+    .select('id,type,document_url,verified_at,expires_on,number')
+    .eq('user_id', profile.user_id);
+  const byType = {};
+  (existing || []).forEach(c => { byType[c.type] = c; });
+
+  document.getElementById('credentials-list').innerHTML = CREDENTIAL_TYPES.map(ct => {
+    const c = byType[ct.type];
+    const status = c
+      ? (c.verified_at ? `✓ Verified ${new Date(c.verified_at).toLocaleDateString()}`
+         : 'Uploaded — awaiting admin review')
+      : 'Not uploaded';
+    return `
+      <div style="padding:16px;background:var(--bg-soft);border-radius:12px">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:14px">
+          <div style="flex:1;min-width:0">
+            <div style="font-weight:600">${ct.label}</div>
+            <div style="font-size:11px;color:var(--ink-muted);margin-top:2px">Needed for: ${ct.required_for}</div>
+            <div style="font-size:12px;color:var(--ink-soft);margin-top:4px" data-status="${ct.type}">${status}</div>
+          </div>
+          <input type="file" data-type="${ct.type}" accept="image/*,.pdf" style="font-size:12px;max-width:180px">
+        </div>
+      </div>`;
+  }).join('');
 
   document.getElementById('profile-form').addEventListener('submit', async e => {
     e.preventDefault();
     const fd = new FormData(e.target);
     const patch = {
-      full_name: fd.get('full_name'), phone: fd.get('phone'),
-      postal_code: fd.get('postal_code'), province: fd.get('province'),
-      experience_years: parseInt(fd.get('experience_years'),10) || null,
-      language: fd.get('language'), bio: fd.get('bio'),
-      insurance_expires: fd.get('insurance_expires') || null
+      full_name: fd.get('full_name'),
+      phone: fd.get('phone'),
+      postal_code: fd.get('postal_code'),
+      province: fd.get('province'),
+      language: fd.get('language'),
+      bio: fd.get('bio')
     };
 
-    // Upload files to Supabase Storage (bucket: landlink-docs, private)
-    const palFile = fd.get('pal_file');
-    if (palFile && palFile.size) {
-      const path = `${profile.user_id}/pal-${Date.now()}-${palFile.name}`;
-      const { error } = await supabase.storage.from('landlink-docs').upload(path, palFile, { upsert: true });
-      if (!error) patch.pal_image_url = path;
-    }
-    const insFile = fd.get('insurance_file');
-    if (insFile && insFile.size) {
-      const path = `${profile.user_id}/insurance-${Date.now()}-${insFile.name}`;
-      const { error } = await supabase.storage.from('landlink-docs').upload(path, insFile, { upsert: true });
-      if (!error) patch.insurance_url = path;
+    // 1) Update profile
+    const { error: profErr } = await supabase
+      .from('landlink_profiles').update(patch).eq('user_id', profile.user_id);
+    if (profErr) { alert('Save failed: ' + profErr.message); return; }
+
+    // 2) Upload any new credential files
+    const fileInputs = document.querySelectorAll('#credentials-list input[type="file"]');
+    for (const input of fileInputs) {
+      const file = input.files[0];
+      if (!file) continue;
+      const type = input.dataset.type;
+      const path = `${profile.user_id}/${type}-${Date.now()}-${file.name}`;
+      const { error: upErr } = await supabase.storage
+        .from('landlink-docs').upload(path, file, { upsert: true });
+      if (upErr) { console.warn('upload failed', upErr); continue; }
+      // Upsert credential row (one per type per user; insert-new or update existing)
+      const existingRow = byType[type];
+      if (existingRow) {
+        await supabase.from('landlink_user_credentials')
+          .update({ document_url: path, verified_at: null })
+          .eq('id', existingRow.id);
+      } else {
+        await supabase.from('landlink_user_credentials').insert({
+          user_id: profile.user_id,
+          type,
+          document_url: path
+        });
+      }
     }
 
-    const { error } = await supabase.from('landlink_profiles').update(patch).eq('user_id', profile.user_id);
-    if (error) { alert('Save failed: ' + error.message); return; }
     alert('Saved.');
     location.reload();
   });

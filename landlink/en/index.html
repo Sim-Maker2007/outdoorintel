@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>LandLink — Private Hunting Access Across Canada</title>
-<meta name="description" content="Find private hunting ground on Canadian farms and woodlots. Vetted landowners, verified hunters, and a digital access agreement on every booking.">
+<title>LandLink — Private Outdoor Land, Year-Round</title>
+<meta name="description" content="Canada's marketplace for private outdoor land. Book hunting, camping, fishing, ATV, snowmobile, sugar shack, dock access and more — directly from the landowner.">
 <link rel="alternate" hreflang="en" href="https://landlink.outdoorintel.ca/en/">
 <link rel="alternate" hreflang="fr" href="https://landlink.outdoorintel.ca/fr/">
 <link rel="alternate" hreflang="x-default" href="https://landlink.outdoorintel.ca/">
@@ -17,8 +17,8 @@
 
 <section class="ll-hero">
   <div class="ll-hero-inner">
-    <h1>Private land.<br>Responsible hunters.<br>Canada-wide.</h1>
-    <p>Book access to private farms, woodlots, and back-country parcels from landowners who want their game managed and their property respected.</p>
+    <h1>Private land.<br>Every season.<br>Directly from the owner.</h1>
+    <p>Book hunting grounds, camping spots, private lakes, sugar shacks, ATV trails, docks and more &mdash; from the Canadians who actually own the land.</p>
 
     <form class="ll-search-pill" action="/en/parcels" method="get">
       <div class="ll-search-field">
@@ -26,28 +26,31 @@
         <input type="text" name="location" placeholder="Province, region, postal code" autocomplete="off">
       </div>
       <div class="ll-search-field">
-        <label>Species</label>
-        <select name="species">
-          <option value="">Any species</option>
-          <option value="whitetail">Whitetail Deer</option>
-          <option value="moose">Moose</option>
-          <option value="elk">Elk</option>
-          <option value="black_bear">Black Bear</option>
-          <option value="goose">Goose</option>
-          <option value="turkey">Wild Turkey</option>
-          <option value="coyote">Coyote</option>
+        <label>Activity</label>
+        <select name="category">
+          <option value="">Any activity</option>
+          <option value="hunting">Hunting</option>
+          <option value="camping">Camping</option>
+          <option value="fishing">Fishing</option>
+          <option value="ice_fishing">Ice fishing</option>
+          <option value="dock_shoreline">Dock &amp; shoreline</option>
+          <option value="snowmobile">Snowmobile</option>
+          <option value="atv_offroad">ATV / off-road</option>
+          <option value="xc_ski_snowshoe">XC ski / snowshoe</option>
+          <option value="sugar_shack">Sugar shack</option>
+          <option value="farm_stay">Farm stay</option>
+          <option value="foraging">Foraging</option>
+          <option value="dog_training">Dog training</option>
+          <option value="archery_shooting">Archery / range</option>
+          <option value="equestrian">Equestrian</option>
+          <option value="photography_film">Photo / film</option>
+          <option value="wellness_retreat">Wellness / retreat</option>
+          <option value="overlanding">Overlanding</option>
         </select>
       </div>
       <div class="ll-search-field">
-        <label>Weapon</label>
-        <select name="weapon">
-          <option value="">Any weapon</option>
-          <option value="archery">Archery</option>
-          <option value="crossbow">Crossbow</option>
-          <option value="muzzleloader">Muzzleloader</option>
-          <option value="rifle">Rifle</option>
-          <option value="shotgun">Shotgun</option>
-        </select>
+        <label>When</label>
+        <input type="date" name="date_from">
       </div>
       <button type="submit" class="ll-search-submit" aria-label="Search">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -56,28 +59,27 @@
   </div>
 </section>
 
-<!-- Category chips (Airbnb-style) -->
+<!-- Category chips -->
 <section class="ll-section ll-section-compact">
-  <div class="ll-categories" id="categories">
-    <a class="ll-cat-chip active" href="/en/parcels"><div class="ll-cat-chip-icon">&#127757;</div><div class="ll-cat-chip-label">All land</div></a>
-    <a class="ll-cat-chip" href="/en/parcels?species=whitetail"><div class="ll-cat-chip-icon">&#129420;</div><div class="ll-cat-chip-label">Whitetail</div></a>
-    <a class="ll-cat-chip" href="/en/parcels?species=moose"><div class="ll-cat-chip-icon">&#129452;</div><div class="ll-cat-chip-label">Moose</div></a>
-    <a class="ll-cat-chip" href="/en/parcels?species=elk"><div class="ll-cat-chip-icon">&#129472;</div><div class="ll-cat-chip-label">Elk</div></a>
-    <a class="ll-cat-chip" href="/en/parcels?species=black_bear"><div class="ll-cat-chip-icon">&#128059;</div><div class="ll-cat-chip-label">Black bear</div></a>
-    <a class="ll-cat-chip" href="/en/parcels?species=goose"><div class="ll-cat-chip-icon">&#129727;</div><div class="ll-cat-chip-label">Goose</div></a>
-    <a class="ll-cat-chip" href="/en/parcels?species=turkey"><div class="ll-cat-chip-icon">&#129411;</div><div class="ll-cat-chip-label">Turkey</div></a>
-    <a class="ll-cat-chip" href="/en/parcels?species=coyote"><div class="ll-cat-chip-icon">&#128021;</div><div class="ll-cat-chip-label">Coyote</div></a>
-    <a class="ll-cat-chip" href="/en/parcels?price_unit=free"><div class="ll-cat-chip-icon">&#10024;</div><div class="ll-cat-chip-label">Free access</div></a>
-    <a class="ll-cat-chip" href="/en/parcels?weapon=archery"><div class="ll-cat-chip-icon">&#127993;</div><div class="ll-cat-chip-label">Archery only</div></a>
-  </div>
+  <div class="ll-categories" id="categories"></div>
 </section>
 
-<!-- Featured listings -->
+<!-- Featured parcels -->
 <section class="ll-section" id="featured">
-  <h2>Featured parcels</h2>
-  <p class="ll-subhead">A sample of what\u2019s on the platform right now.</p>
-  <div class="ll-grid" id="featured-grid">
-    <!-- populated by JS from Supabase; static placeholders below -->
+  <h2>Featured land</h2>
+  <p class="ll-subhead">A sample of what&rsquo;s on the platform right now.</p>
+  <div class="ll-grid" id="featured-grid"></div>
+</section>
+
+<!-- One parcel, many uses -->
+<section class="ll-section" style="max-width:1100px">
+  <h2>One parcel, many uses</h2>
+  <p class="ll-subhead" style="max-width:700px">The #1 killer of outdoor marketplaces is eight dead months a year. Multi-use listings turn a single parcel into a 12-month asset for the owner.</p>
+  <div class="ll-seasonwheel">
+    <div class="ll-season-tile"><div class="ll-season-mo">Jan &ndash; Mar</div><div class="ll-season-act">&#10052;&#65039; Ice fishing &middot; Snowmobile &middot; XC ski &middot; Sugar shack</div></div>
+    <div class="ll-season-tile"><div class="ll-season-mo">Apr &ndash; Jun</div><div class="ll-season-act">&#127829; Foraging &middot; Fishing &middot; Farm stay &middot; Photography</div></div>
+    <div class="ll-season-tile"><div class="ll-season-mo">Jul &ndash; Sep</div><div class="ll-season-act">&#127957; Camping &middot; Dock access &middot; ATV &middot; Equestrian</div></div>
+    <div class="ll-season-tile"><div class="ll-season-mo">Oct &ndash; Dec</div><div class="ll-season-act">&#129420; Hunting &middot; Overlanding &middot; Dog training &middot; Wellness</div></div>
   </div>
 </section>
 
@@ -85,19 +87,19 @@
 <section class="ll-value-strip">
   <div class="ll-value-grid">
     <div class="ll-value-item">
-      <div class="ll-value-icon">&#128737;&#65039;</div>
-      <h3>A real trust layer</h3>
-      <p>Every hunter on LandLink has a verified PAL and proof of liability insurance. Every booking generates a counsel-reviewed access agreement signed by both parties.</p>
-    </div>
-    <div class="ll-value-item">
       <div class="ll-value-icon">&#128205;</div>
       <h3>Draw your parcel, set your terms</h3>
-      <p>Landowners outline their property on a map, choose species, weapons, max hunters, vehicle access, dates, and price. You stay in control of who sets foot on your land.</p>
+      <p>Outline your property on a map. Choose which activities you&rsquo;ll host, set capacity, pricing and rules for each. You stay in full control of who sets foot on your land.</p>
     </div>
     <div class="ll-value-item">
-      <div class="ll-value-icon">&#11088;</div>
-      <h3>Two-way reviews</h3>
-      <p>After every hunt, both sides rate each other. Responsible hunters build a track record that opens doors; landowners build a reputation that attracts the right people.</p>
+      <div class="ll-value-icon">&#128737;&#65039;</div>
+      <h3>A real trust layer</h3>
+      <p>Verified government ID, liability insurance where it&rsquo;s required, a counsel-reviewed access agreement on every booking, and two-way reviews that build real reputation.</p>
+    </div>
+    <div class="ll-value-item">
+      <div class="ll-value-icon">&#128176;</div>
+      <h3>Year-round revenue</h3>
+      <p>A single 200-acre woodlot can legitimately earn from hunting in October, sledding in January, sugaring in March, ATV in July and camping every weekend in between.</p>
     </div>
   </div>
 </section>
@@ -108,49 +110,75 @@
     <div class="ll-cta-card" style="background-image:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1400&auto=format&fit=crop')">
       <div>
         <h3>Own land? Earn from it.</h3>
-        <p>List your parcel in 10 minutes. Control the terms. Get deer, goose, or coyote pressure managed by vetted hunters \u2014 and optionally get paid.</p>
+        <p>List your parcel in 10 minutes. Pick the activities you want to host. Get paid by vetted guests who respect your land and follow your rules.</p>
       </div>
       <a href="/en/list-your-land" class="ll-btn ll-btn-lg">List your land</a>
     </div>
     <div class="ll-cta-card" style="background-image:url('https://images.unsplash.com/photo-1551524164-6cf2ac531400?w=1400&auto=format&fit=crop')">
       <div>
-        <h3>Hunting? Find new ground.</h3>
-        <p>Stop cold-knocking farmhouse doors. Apply to private parcels with your verified PAL and hunter profile in a single click.</p>
+        <h3>Need access? Book it.</h3>
+        <p>Stop cold-knocking farmhouse doors. Stop fighting for pourvoirie cancellations. Find exactly what you need, on private land, at a price that makes sense.</p>
       </div>
-      <a href="/en/parcels" class="ll-btn ll-btn-lg">Browse parcels</a>
+      <a href="/en/parcels" class="ll-btn ll-btn-lg">Browse land</a>
     </div>
   </div>
 </section>
 
 <script type="module">
 import { renderNav } from '/public/js/nav.js';
-import { supabase as sb, formatPrice } from '/public/js/supabase-client.js';
+import {
+  supabase as sb, formatPrice, getActivities, activityIcon, activityLabel
+} from '/public/js/supabase-client.js';
 renderNav();
 
-// Load 8 featured parcels from Supabase; fall back to demo placeholders
+// ---------- Category chips (populated from activities.json) ----------
+async function renderCategories() {
+  const { activities } = await getActivities();
+  const chips = [
+    { code: '', icon: '🌍', label: 'All land' },
+    ...activities.map(a => ({ code: a.code, icon: a.icon, label: a.short_en }))
+  ];
+  document.getElementById('categories').innerHTML = chips.map(c => `
+    <a class="ll-cat-chip${c.code === '' ? ' active' : ''}" href="/en/parcels${c.code ? `?category=${c.code}` : ''}">
+      <div class="ll-cat-chip-icon">${c.icon}</div>
+      <div class="ll-cat-chip-label">${c.label}</div>
+    </a>
+  `).join('');
+}
+renderCategories();
+
+// ---------- Featured parcels (joined with active listings) ----------
 async function loadFeatured() {
   const grid = document.getElementById('featured-grid');
-  const { data, error } = await sb.from('landlink_parcels')
-    .select('id,name,province,municipality,species,price_cents,price_unit,photos,avg_rating,review_count,acres')
+  const { data, error } = await sb
+    .from('landlink_parcels')
+    .select(`
+      id,name,province,municipality,photos,acres,avg_rating,review_count,
+      landlink_listings!inner(id,category,activity_code,price_cents,price_unit,status)
+    `)
     .eq('status', 'active')
+    .eq('landlink_listings.status', 'active')
     .order('created_at', { ascending: false })
-    .limit(8);
+    .limit(12);
 
   const items = (!error && data && data.length) ? data : demoParcels();
-  grid.innerHTML = items.map(p => cardHTML(p)).join('');
+  grid.innerHTML = items.slice(0, 8).map(cardHTML).join('');
 }
 
 function cardHTML(p) {
   const photo = (p.photos && p.photos[0]) || demoPhoto(p.id || p.name);
-  const rating = p.avg_rating ? p.avg_rating.toFixed(1) : (p.review_count ? '\u2014' : 'New');
+  const rating = p.avg_rating ? Number(p.avg_rating).toFixed(1) : (p.review_count ? '—' : 'New');
   const reviews = p.review_count ? ` (${p.review_count})` : '';
-  const price = formatPrice(p.price_cents, p.price_unit);
-  const location = [p.municipality, p.province].filter(Boolean).join(', ');
-  const species = (p.species || []).slice(0, 2).map(s => s.replace('_', ' ')).join(' \u00b7 ');
+  const loc = [p.municipality, p.province].filter(Boolean).join(', ');
+  const listings = (p.landlink_listings || p.listings || []).filter(l => l.status === 'active');
+  const cheapest = listings.slice().sort((a, b) => (a.price_cents || 0) - (b.price_cents || 0))[0];
+  const price = cheapest ? formatPrice(cheapest.price_cents, cheapest.price_unit) : 'Multi-use';
+  const catBadges = [...new Set(listings.map(l => l.category))].slice(0, 3)
+    .map(c => `<span class="ll-pill">${activityIcon(c, '📍')} ${activityLabel(c)}</span>`).join('');
   return `
     <a class="ll-card" href="/en/parcels/${p.id || '#'}">
       <div class="ll-card-img" style="background-image:url('${photo}')">
-        ${p.price_unit === 'free' ? '<div class="ll-card-badge">Free access</div>' : ''}
+        ${listings.length > 1 ? `<div class="ll-card-badge">${listings.length} uses</div>` : ''}
         <div class="ll-card-fav" aria-label="Save"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
       </div>
       <div class="ll-card-body">
@@ -158,9 +186,9 @@ function cardHTML(p) {
           <div class="ll-card-title">${p.name}</div>
           <div class="ll-card-rating">&#9733; ${rating}${reviews}</div>
         </div>
-        <div class="ll-card-meta">${location || '\u2014'}</div>
-        <div class="ll-card-meta">${species || 'Multi-species'}${p.acres ? ` \u00b7 ${p.acres} acres` : ''}</div>
-        <div class="ll-card-price"><strong>${price}</strong></div>
+        <div class="ll-card-meta">${loc || '—'}${p.acres ? ` · ${p.acres} acres` : ''}</div>
+        <div class="ll-card-pills">${catBadges}</div>
+        <div class="ll-card-price"><strong>from ${price}</strong></div>
       </div>
     </a>`;
 }
@@ -170,7 +198,7 @@ function demoPhoto(seed) {
     'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=600&auto=format&fit=crop',
     'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&auto=format&fit=crop',
     'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&auto=format&fit=crop',
     'https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop',
     'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=600&auto=format&fit=crop',
     'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&auto=format&fit=crop',
@@ -182,14 +210,74 @@ function demoPhoto(seed) {
 
 function demoParcels() {
   return [
-    { id: 'demo-1', name: 'Pontiac River Woodlot', province: 'QC', municipality: 'Shawville', species: ['whitetail','coyote'], price_cents: 20000, price_unit: 'season', acres: 210, avg_rating: 4.9, review_count: 14 },
-    { id: 'demo-2', name: 'Northern Ontario Bush Camp', province: 'ON', municipality: 'Temiskaming Shores', species: ['moose','black_bear'], price_cents: 40000, price_unit: 'week', acres: 640, avg_rating: 4.8, review_count: 22 },
-    { id: 'demo-3', name: 'Grain Field Goose Hunt', province: 'SK', municipality: 'Moose Jaw', species: ['goose','duck'], price_cents: 5000, price_unit: 'day', acres: 320, avg_rating: 5.0, review_count: 9 },
-    { id: 'demo-4', name: 'Laurentides Mixed Forest', province: 'QC', municipality: 'Mont-Laurier', species: ['whitetail','black_bear'], price_cents: 0, price_unit: 'free', acres: 180, avg_rating: null, review_count: 0 },
-    { id: 'demo-5', name: 'Prairie Whitetail Ranch', province: 'AB', municipality: 'Red Deer', species: ['whitetail','mule_deer'], price_cents: 60000, price_unit: 'season', acres: 1200, avg_rating: 4.7, review_count: 31 },
-    { id: 'demo-6', name: 'Maritime Woodlot', province: 'NB', municipality: 'Fredericton', species: ['whitetail','turkey'], price_cents: 15000, price_unit: 'season', acres: 95, avg_rating: 4.6, review_count: 7 },
-    { id: 'demo-7', name: 'Interior BC Backcountry', province: 'BC', municipality: 'Kamloops', species: ['elk','mule_deer'], price_cents: 35000, price_unit: 'week', acres: 840, avg_rating: 4.9, review_count: 18 },
-    { id: 'demo-8', name: 'Cornfield Coyote Control', province: 'ON', municipality: 'Chatham-Kent', species: ['coyote'], price_cents: 0, price_unit: 'free', acres: 400, avg_rating: null, review_count: 0 }
+    {
+      id: 'demo-1', name: 'Pontiac River Woodlot', province: 'QC', municipality: 'Shawville', acres: 210,
+      avg_rating: 4.9, review_count: 14,
+      landlink_listings: [
+        { id: 'l1', category: 'hunting',    activity_code: 'hunting:whitetail', price_cents: 20000, price_unit: 'season', status: 'active' },
+        { id: 'l2', category: 'camping',    activity_code: 'camping:tent',      price_cents: 3500,  price_unit: 'night',  status: 'active' },
+        { id: 'l3', category: 'foraging',   activity_code: 'foraging:mushroom', price_cents: 2500,  price_unit: 'day',    status: 'active' }
+      ]
+    },
+    {
+      id: 'demo-2', name: 'Lac Brûlé Private Access', province: 'QC', municipality: 'Mont-Tremblant', acres: 85,
+      avg_rating: 5.0, review_count: 9,
+      landlink_listings: [
+        { id: 'l4', category: 'dock_shoreline', activity_code: 'dock:day',     price_cents: 4000, price_unit: 'day',  status: 'active' },
+        { id: 'l5', category: 'fishing',        activity_code: 'fishing:lake', price_cents: 8000, price_unit: 'day',  status: 'active' },
+        { id: 'l6', category: 'ice_fishing',    activity_code: 'ice:shack',    price_cents: 6000, price_unit: 'day',  status: 'active' }
+      ]
+    },
+    {
+      id: 'demo-3', name: 'Maple Hill Sugar Bush', province: 'QC', municipality: 'Eastman', acres: 140,
+      avg_rating: 4.8, review_count: 22,
+      landlink_listings: [
+        { id: 'l7', category: 'sugar_shack', activity_code: 'sugar:day',    price_cents: 4500,  price_unit: 'per_person', status: 'active' },
+        { id: 'l8', category: 'xc_ski_snowshoe', activity_code: 'ski:trail', price_cents: 1500, price_unit: 'day',         status: 'active' },
+        { id: 'l9', category: 'hunting',     activity_code: 'hunting:whitetail', price_cents: 30000, price_unit: 'season', status: 'active' }
+      ]
+    },
+    {
+      id: 'demo-4', name: 'Northern Ontario Bush Camp', province: 'ON', municipality: 'Temiskaming Shores', acres: 640,
+      avg_rating: 4.7, review_count: 31,
+      landlink_listings: [
+        { id: 'l10', category: 'hunting',    activity_code: 'hunting:moose', price_cents: 80000, price_unit: 'week', status: 'active' },
+        { id: 'l11', category: 'snowmobile', activity_code: 'sled:trail',    price_cents: 5000,  price_unit: 'day',  status: 'active' }
+      ]
+    },
+    {
+      id: 'demo-5', name: 'Grain Field Goose Hunt', province: 'SK', municipality: 'Moose Jaw', acres: 320,
+      avg_rating: 5.0, review_count: 11,
+      landlink_listings: [
+        { id: 'l12', category: 'hunting', activity_code: 'hunting:goose', price_cents: 5000, price_unit: 'day', status: 'active' },
+        { id: 'l13', category: 'dog_training', activity_code: 'dog:retriever', price_cents: 3000, price_unit: 'half_day', status: 'active' }
+      ]
+    },
+    {
+      id: 'demo-6', name: 'Laurentides Mixed Forest', province: 'QC', municipality: 'Mont-Laurier', acres: 180,
+      avg_rating: 4.6, review_count: 5,
+      landlink_listings: [
+        { id: 'l14', category: 'camping', activity_code: 'camping:primitive', price_cents: 2500, price_unit: 'night', status: 'active' },
+        { id: 'l15', category: 'atv_offroad', activity_code: 'atv:trail',     price_cents: 4000, price_unit: 'day',   status: 'active' },
+        { id: 'l16', category: 'wellness_retreat', activity_code: 'forest:bathing', price_cents: 6000, price_unit: 'day', status: 'active' }
+      ]
+    },
+    {
+      id: 'demo-7', name: 'Cornfield Coyote Control', province: 'ON', municipality: 'Chatham-Kent', acres: 400,
+      avg_rating: null, review_count: 0,
+      landlink_listings: [
+        { id: 'l17', category: 'hunting', activity_code: 'hunting:coyote', price_cents: 0, price_unit: 'free', status: 'active' }
+      ]
+    },
+    {
+      id: 'demo-8', name: 'Interior BC Backcountry', province: 'BC', municipality: 'Kamloops', acres: 840,
+      avg_rating: 4.9, review_count: 18,
+      landlink_listings: [
+        { id: 'l18', category: 'overlanding', activity_code: 'overland:remote', price_cents: 6000, price_unit: 'night', status: 'active' },
+        { id: 'l19', category: 'hunting',     activity_code: 'hunting:elk',     price_cents: 45000, price_unit: 'week',  status: 'active' },
+        { id: 'l20', category: 'photography_film', activity_code: 'photo:wildlife', price_cents: 15000, price_unit: 'day', status: 'active' }
+      ]
+    }
   ];
 }
 

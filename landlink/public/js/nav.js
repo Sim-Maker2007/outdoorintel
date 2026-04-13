@@ -9,14 +9,14 @@ const T = {
     browse: 'Browse Land', listYourLand: 'List Your Land', howItWorks: 'How It Works',
     login: 'Log In', signup: 'Sign Up', dashboard: 'Dashboard', profile: 'Profile',
     logout: 'Log Out', trust: 'Trust & Safety', legal: 'Legal', lang: 'Français',
-    tagline: 'Canada\u2019s marketplace for private hunting access.',
+    tagline: 'Canada\u2019s marketplace for private outdoor land \u2014 year-round.',
     copy: '\u00a9 2026 LandLink. Part of OutdoorIntel.'
   },
   fr: {
     browse: 'Parcourir les terres', listYourLand: 'Inscrire ma terre', howItWorks: 'Fonctionnement',
     login: 'Connexion', signup: 'S\u2019inscrire', dashboard: 'Tableau de bord', profile: 'Profil',
     logout: 'D\u00e9connexion', trust: 'Confiance et s\u00e9curit\u00e9', legal: 'L\u00e9gal', lang: 'English',
-    tagline: 'Le march\u00e9 canadien d\u2019acc\u00e8s \u00e0 la chasse sur terres priv\u00e9es.',
+    tagline: 'Le march\u00e9 canadien de la terre priv\u00e9e en plein air \u2014 \u00e0 l\u2019ann\u00e9e.',
     copy: '\u00a9 2026 LandLink. Partie d\u2019OutdoorIntel.'
   }
 }[LANG];

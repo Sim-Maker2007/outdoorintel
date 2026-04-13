@@ -16,40 +16,53 @@
   </div>
 
   <div class="ll-tabs" id="tabs"></div>
-  <div id="content"><div class="ll-empty">Loading...</div></div>
+  <div id="content"><div class="ll-empty">Loading&hellip;</div></div>
 </main>
 
 <script type="module">
 import { renderNav } from '/public/js/nav.js';
-import { supabase, getCurrentProfile, formatPrice } from '/public/js/supabase-client.js';
+import {
+  supabase, getCurrentProfile, formatPrice, getActivities,
+  activityIcon, activityLabel
+} from '/public/js/supabase-client.js';
 renderNav();
 
 const state = { profile: null, tab: null };
 
 async function boot() {
   const profile = await getCurrentProfile();
-  if (!profile) { window.location.href = '/en/login?next=/en/dashboard'; return; }
+  if (!profile) { location.href = '/en/login?next=/en/dashboard'; return; }
   state.profile = profile;
   document.getElementById('greeting').textContent = `Hi ${profile.full_name?.split(' ')[0] || 'there'}`;
 
+  // preload taxonomy for icon/label rendering
+  await getActivities();
+
   const role = profile.role;
-  const isLandowner = role === 'landowner' || role === 'both' || role === 'admin';
-  const isHunter = role === 'hunter' || role === 'both' || role === 'admin';
+  const isOwner = role === 'owner' || role === 'both' || role === 'admin';
+  const isGuest = role === 'guest' || role === 'both' || role === 'admin';
 
   const tabs = [];
-  if (isLandowner) { tabs.push({ id: 'my-parcels', label: 'My Parcels' }); tabs.push({ id: 'incoming', label: 'Incoming Requests' }); }
-  if (isHunter) { tabs.push({ id: 'my-requests', label: 'My Requests' }); }
+  if (isOwner) {
+    tabs.push({ id: 'my-parcels',  label: 'My Parcels' });
+    tabs.push({ id: 'my-listings', label: 'My Listings' });
+    tabs.push({ id: 'incoming',    label: 'Booking Requests' });
+  }
+  if (isGuest) tabs.push({ id: 'my-bookings', label: 'My Bookings' });
   if (role === 'admin') tabs.push({ id: 'admin', label: 'Admin' });
 
-  document.getElementById('tabs').innerHTML = tabs.map((t,i) => `<button data-tab="${t.id}" class="${i===0?'active':''}">${t.label}</button>`).join('');
-  document.getElementById('cta').innerHTML = isLandowner
+  document.getElementById('tabs').innerHTML = tabs.map((t, i) =>
+    `<button data-tab="${t.id}" class="${i === 0 ? 'active' : ''}">${t.label}</button>`
+  ).join('');
+  document.getElementById('cta').innerHTML = isOwner
     ? '<a href="/en/list-your-land" class="ll-btn-accent">+ List a parcel</a>'
-    : '<a href="/en/parcels" class="ll-btn-accent">Browse parcels</a>';
+    : '<a href="/en/parcels" class="ll-btn-accent">Browse land</a>';
 
   document.getElementById('tabs').addEventListener('click', e => {
     const b = e.target.closest('button'); if (!b) return;
     document.querySelectorAll('#tabs button').forEach(x => x.classList.remove('active'));
-    b.classList.add('active'); loadTab(b.dataset.tab);
+    b.classList.add('active');
+    loadTab(b.dataset.tab);
   });
   if (tabs.length) loadTab(tabs[0].id);
 }
@@ -57,60 +70,90 @@ async function boot() {
 async function loadTab(tab) {
   state.tab = tab;
   const el = document.getElementById('content');
-  el.innerHTML = '<div class="ll-empty">Loading...</div>';
+  el.innerHTML = '<div class="ll-empty">Loading&hellip;</div>';
 
   if (tab === 'my-parcels') {
     const { data } = await supabase.from('landlink_parcels')
-      .select('id,name,province,municipality,species,status,photos,price_cents,price_unit,review_count,avg_rating')
+      .select('id,name,province,municipality,status,photos,review_count,avg_rating,landlink_listings(id,category,status)')
       .eq('owner_id', state.profile.user_id).order('created_at', { ascending: false });
     el.innerHTML = (data && data.length) ? data.map(parcelRow).join('')
-      : emptyState('No parcels yet', 'List your first parcel to start attracting vetted hunters.', '/en/list-your-land', 'List a parcel');
+      : emptyState('No parcels yet', 'List your first parcel to start attracting vetted guests.', '/en/list-your-land', 'List a parcel');
+  }
+
+  else if (tab === 'my-listings') {
+    const { data } = await supabase.from('landlink_listings')
+      .select('id,category,title,price_cents,price_unit,status,parcel_id,landlink_parcels(name,municipality,province)')
+      .eq('owner_id', state.profile.user_id).order('created_at', { ascending: false });
+    el.innerHTML = (data && data.length) ? data.map(listingRow).join('')
+      : emptyState('No listings yet', 'Add activities to any of your parcels to create listings.', '/en/list-your-land', 'List a parcel');
   }
 
   else if (tab === 'incoming') {
-    const { data } = await supabase.from('landlink_hunt_requests')
-      .select('id,date_from,date_to,party_size,weapon,status,message,created_at,parcel_id,hunter_id,landlink_parcels(name,photos)')
-      .in('parcel_id', await myParcelIds()).order('created_at', { ascending: false });
-    el.innerHTML = (data && data.length) ? data.map(requestRow).join('')
-      : emptyState('No requests yet', 'When hunters apply to your parcels they\u2019ll show up here.', null, null);
+    const { data } = await supabase.from('landlink_bookings')
+      .select(`
+        id,date_from,date_to,party_size,status,guest_message,created_at,
+        landlink_listings(category,title),
+        landlink_parcels(name,photos)
+      `)
+      .eq('owner_id', state.profile.user_id)
+      .order('created_at', { ascending: false });
+    el.innerHTML = (data && data.length) ? data.map(bookingRow).join('')
+      : emptyState('No requests yet', 'When guests request your parcels they\u2019ll show up here.', null, null);
   }
 
-  else if (tab === 'my-requests') {
-    const { data } = await supabase.from('landlink_hunt_requests')
-      .select('id,date_from,date_to,party_size,weapon,status,message,created_at,parcel_id,landlink_parcels(name,photos,province,municipality)')
-      .eq('hunter_id', state.profile.user_id).order('created_at', { ascending: false });
-    el.innerHTML = (data && data.length) ? data.map(requestRow).join('')
-      : emptyState('No requests yet', 'Find a parcel and apply \u2014 your applications will show up here.', '/en/parcels', 'Browse parcels');
+  else if (tab === 'my-bookings') {
+    const { data } = await supabase.from('landlink_bookings')
+      .select(`
+        id,date_from,date_to,party_size,status,guest_message,created_at,
+        landlink_listings(category,title),
+        landlink_parcels(name,photos,province,municipality)
+      `)
+      .eq('guest_id', state.profile.user_id)
+      .order('created_at', { ascending: false });
+    el.innerHTML = (data && data.length) ? data.map(bookingRow).join('')
+      : emptyState('No bookings yet', 'Find a parcel and request access — your bookings will show up here.', '/en/parcels', 'Browse land');
   }
 
   else if (tab === 'admin') {
     const { data } = await supabase.from('landlink_parcels')
-      .select('id,name,province,owner_id,status,created_at')
+      .select('id,name,province,status,created_at')
       .eq('status', 'pending_review').order('created_at', { ascending: true });
-    el.innerHTML = (data && data.length) ? `<h3 style="font-size:15px;margin-bottom:12px">Pending review (${data.length})</h3>` + data.map(adminRow).join('')
+    el.innerHTML = (data && data.length)
+      ? `<h3 style="font-size:15px;margin-bottom:12px">Pending review (${data.length})</h3>` + data.map(adminRow).join('')
       : emptyState('Nothing in the queue', 'All listings are reviewed.', null, null);
   }
 }
 
-async function myParcelIds() {
-  const { data } = await supabase.from('landlink_parcels').select('id').eq('owner_id', state.profile.user_id);
-  return (data || []).map(p => p.id);
-}
-
 function parcelRow(p) {
   const photo = (p.photos && p.photos[0]) || 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=200&auto=format&fit=crop';
-  const badge = `<span class="ll-badge ll-badge-${p.status.replace('_','-')}">${p.status.replace('_',' ')}</span>`;
+  const badge = `<span class="ll-badge ll-badge-${p.status.replace('_', '-')}">${p.status.replace('_', ' ')}</span>`;
+  const activeCount = (p.landlink_listings || []).filter(l => l.status === 'active').length;
+  const cats = [...new Set((p.landlink_listings || []).map(l => l.category))].slice(0, 4)
+    .map(c => `${activityIcon(c)}`).join(' ');
   return `<a class="ll-list-row" href="/en/parcels/${p.id}">
     <div class="ll-list-thumb" style="background-image:url('${photo}')"></div>
     <div class="ll-list-body">
       <h4>${p.name} ${badge}</h4>
-      <div class="meta">${[p.municipality, p.province].filter(Boolean).join(', ')} \u00b7 ${formatPrice(p.price_cents, p.price_unit)} \u00b7 ${p.review_count || 0} reviews</div>
+      <div class="meta">${[p.municipality, p.province].filter(Boolean).join(', ')} · ${activeCount} active listing${activeCount === 1 ? '' : 's'} ${cats}</div>
     </div>
   </a>`;
 }
 
-function requestRow(r) {
+function listingRow(l) {
+  const parcel = l.landlink_parcels || {};
+  const badge = `<span class="ll-badge ll-badge-${l.status.replace('_', '-')}">${l.status.replace('_', ' ')}</span>`;
+  return `<a class="ll-list-row" href="/en/parcels/${l.parcel_id}">
+    <div class="ll-list-thumb" style="font-size:28px;display:flex;align-items:center;justify-content:center">${activityIcon(l.category)}</div>
+    <div class="ll-list-body">
+      <h4>${l.title || activityLabel(l.category)} ${badge}</h4>
+      <div class="meta">${parcel.name || ''} · ${[parcel.municipality, parcel.province].filter(Boolean).join(', ')} · ${formatPrice(l.price_cents, l.price_unit)}</div>
+    </div>
+  </a>`;
+}
+
+function bookingRow(r) {
   const parcel = r.landlink_parcels || {};
+  const listing = r.landlink_listings || {};
   const photo = (parcel.photos && parcel.photos[0]) || 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=200&auto=format&fit=crop';
   const loc = [parcel.municipality, parcel.province].filter(Boolean).join(', ');
   const badge = `<span class="ll-badge ll-badge-${r.status}">${r.status}</span>`;
@@ -118,8 +161,8 @@ function requestRow(r) {
     <div class="ll-list-thumb" style="background-image:url('${photo}')"></div>
     <div class="ll-list-body">
       <h4>${parcel.name || 'Parcel'} ${badge}</h4>
-      <div class="meta">${loc} \u00b7 ${r.date_from} \u2192 ${r.date_to} \u00b7 party of ${r.party_size} \u00b7 ${r.weapon}</div>
-      ${r.message ? `<div class="meta" style="margin-top:6px;color:var(--ink)">\u201C${r.message}\u201D</div>` : ''}
+      <div class="meta">${activityIcon(listing.category)} ${activityLabel(listing.category)} · ${loc} · ${r.date_from} → ${r.date_to} · party of ${r.party_size}</div>
+      ${r.guest_message ? `<div class="meta" style="margin-top:6px;color:var(--ink)">&ldquo;${r.guest_message}&rdquo;</div>` : ''}
     </div>
   </div>`;
 }
@@ -128,13 +171,13 @@ function adminRow(p) {
   return `<div class="ll-list-row">
     <div class="ll-list-body">
       <h4>${p.name} <span class="ll-badge ll-badge-pending">pending</span></h4>
-      <div class="meta">${p.province} \u00b7 submitted ${new Date(p.created_at).toLocaleDateString()}</div>
+      <div class="meta">${p.province} · submitted ${new Date(p.created_at).toLocaleDateString()}</div>
     </div>
     <button onclick="approveParcel('${p.id}')" class="ll-btn">Approve</button>
   </div>`;
 }
 
-window.approveParcel = async function(id) {
+window.approveParcel = async function (id) {
   const { error } = await supabase.from('landlink_parcels').update({ status: 'active' }).eq('id', id);
   if (error) { alert('Could not approve: ' + error.message); return; }
   loadTab('admin');
@@ -143,7 +186,7 @@ window.approveParcel = async function(id) {
 function emptyState(title, body, cta, ctaLabel) {
   return `<div class="ll-empty">
     <h3 style="font-size:16px;color:var(--ink);margin-bottom:6px">${title}</h3>
-    <p style="margin-bottom:${cta?'16px':'0'}">${body}</p>
+    <p style="margin-bottom:${cta ? '16px' : '0'}">${body}</p>
     ${cta ? `<a href="${cta}" class="ll-btn">${ctaLabel}</a>` : ''}
   </div>`;
 }

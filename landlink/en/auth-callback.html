@@ -34,7 +34,7 @@ const next = new URL(location.href).searchParams.get('next') || '/en/dashboard';
     const pending = JSON.parse(localStorage.getItem('landlink_pending_profile') || '{}');
     await supabase.from('landlink_profiles').insert({
       user_id: user.id,
-      role: pending.role || 'hunter',
+      role: pending.role || 'guest',
       full_name: pending.full_name || user.email.split('@')[0],
       postal_code: pending.postal_code || null,
       language: 'en'
