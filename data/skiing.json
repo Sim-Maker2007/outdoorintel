@@ -186,8 +186,8 @@
       "province": "Alberta",
       "type": "Downhill",
       "coordinates": {
-        "lat": 51.4,
-        "lng": -116.2
+        "lat": 51.4419,
+        "lng": -116.1622
       },
       "features": [
         "139 Runs",
@@ -222,8 +222,8 @@
       "province": "Alberta",
       "type": "Downhill",
       "coordinates": {
-        "lat": 51.1,
-        "lng": -115.9
+        "lat": 51.2032,
+        "lng": -115.5986
       },
       "features": [
         "90 Runs",
@@ -258,8 +258,8 @@
       "province": "Alberta",
       "type": "Downhill",
       "coordinates": {
-        "lat": 51.1,
-        "lng": -115.5
+        "lat": 51.1151,
+        "lng": -115.7631
       },
       "features": [
         "107 Runs",
@@ -294,8 +294,8 @@
       "province": "Alberta",
       "type": "Downhill",
       "coordinates": {
-        "lat": 53.1,
-        "lng": -117.2
+        "lat": 52.8011,
+        "lng": -118.0832
       },
       "features": [
         "91 Runs",
@@ -330,8 +330,8 @@
       "province": "Quebec",
       "type": "Downhill",
       "coordinates": {
-        "lat": 46.1,
-        "lng": -74.8
+        "lat": 45.9501,
+        "lng": -74.1325
       },
       "features": [
         "Multiple Peaks",
@@ -366,8 +366,8 @@
       "province": "Quebec",
       "type": "Downhill",
       "coordinates": {
-        "lat": 46.2,
-        "lng": -74.6
+        "lat": 46.2081,
+        "lng": -74.5849
       },
       "features": [
         "102 Runs",
@@ -402,8 +402,8 @@
       "province": "Quebec",
       "type": "Mixed",
       "coordinates": {
-        "lat": 46,
-        "lng": -74.7
+        "lat": 45.9497,
+        "lng": -74.14
       },
       "features": [
         "22 Runs",
@@ -438,8 +438,8 @@
       "province": "Quebec",
       "type": "Downhill",
       "coordinates": {
-        "lat": 45.3,
-        "lng": -75.8
+        "lat": 45.511,
+        "lng": -75.8516
       },
       "features": [
         "23 Runs",
@@ -474,8 +474,8 @@
       "province": "Ontario",
       "type": "Downhill",
       "coordinates": {
-        "lat": 44.4,
-        "lng": -80.3
+        "lat": 44.501,
+        "lng": -80.3162
       },
       "features": [
         "42 Runs",
@@ -510,8 +510,8 @@
       "province": "Ontario",
       "type": "Mixed",
       "coordinates": {
-        "lat": 44.7,
-        "lng": -79.7
+        "lat": 44.5497,
+        "lng": -79.6725
       },
       "features": [
         "15 Runs",
@@ -546,8 +546,8 @@
       "province": "Ontario",
       "type": "Downhill",
       "coordinates": {
-        "lat": 44.1,
-        "lng": -80.8
+        "lat": 44.3923,
+        "lng": -80.5469
       },
       "features": [
         "18 Runs",
@@ -582,8 +582,8 @@
       "province": "New Brunswick",
       "type": "Mixed",
       "coordinates": {
-        "lat": 46.9,
-        "lng": -64.8
+        "lat": 45.68,
+        "lng": -65.382
       },
       "features": [
         "12 Runs",
@@ -618,8 +618,8 @@
       "province": "Nova Scotia",
       "type": "Backcountry",
       "coordinates": {
-        "lat": 45.8,
-        "lng": -60.4
+        "lat": 45.97,
+        "lng": -60.45
       },
       "features": [
         "Nordic Trails",
@@ -654,8 +654,8 @@
       "province": "Newfoundland and Labrador",
       "type": "Downhill",
       "coordinates": {
-        "lat": 48.8,
-        "lng": -57.7
+        "lat": 48.9489,
+        "lng": -57.8301
       },
       "features": [
         "30 Runs",
@@ -725,8 +725,8 @@
       "slug": "big-white-bc",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 49.8,
-        "lng": -119.3
+        "lat": 49.7216,
+        "lng": -118.9266
       },
       "season": "November - April",
       "difficulty": "All Levels",
@@ -757,8 +757,8 @@
       "slug": "sun-peaks-bc",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 50,
-        "lng": -119.6
+        "lat": 50.8844,
+        "lng": -119.8859
       },
       "season": "November - April",
       "difficulty": "All Levels",
@@ -789,8 +789,8 @@
       "slug": "revelstoke-resort",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 50.9,
-        "lng": -118.2
+        "lat": 50.9583,
+        "lng": -118.1638
       },
       "season": "November - May",
       "difficulty": "All Levels",
@@ -821,8 +821,8 @@
       "slug": "red-mountain-bc",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 49.2,
-        "lng": -117.8
+        "lat": 49.0919,
+        "lng": -117.8211
       },
       "season": "November - April",
       "difficulty": "All Levels",
@@ -853,8 +853,8 @@
       "slug": "panorama-resort",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 50.4,
-        "lng": -115.8
+        "lat": 50.4604,
+        "lng": -116.2381
       },
       "season": "November - April",
       "difficulty": "All Levels",
@@ -885,8 +885,8 @@
       "slug": "silver-star",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 50.3,
-        "lng": -119.3
+        "lat": 50.3584,
+        "lng": -119.0644
       },
       "season": "November - April",
       "difficulty": "All Levels",
@@ -917,8 +917,8 @@
       "slug": "apex-mountain",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 49.7,
-        "lng": -120.3
+        "lat": 49.3907,
+        "lng": -119.9039
       },
       "season": "November - April",
       "difficulty": "All Levels",
@@ -949,8 +949,8 @@
       "slug": "mount-washington",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 49.7,
-        "lng": -125.3
+        "lat": 49.7413,
+        "lng": -125.3034
       },
       "season": "December - March",
       "difficulty": "All Levels",
@@ -981,8 +981,8 @@
       "slug": "nakiska",
       "province": "Alberta",
       "coordinates": {
-        "lat": 51.1,
-        "lng": -115.3
+        "lat": 50.9426,
+        "lng": -115.1517
       },
       "season": "December - March",
       "difficulty": "All Levels",
@@ -1013,8 +1013,8 @@
       "slug": "castle-mountain",
       "province": "Alberta",
       "coordinates": {
-        "lat": 49.6,
-        "lng": -114.4
+        "lat": 49.3164,
+        "lng": -114.4101
       },
       "season": "December - April",
       "difficulty": "Intermediate to Advanced",
@@ -1045,8 +1045,8 @@
       "slug": "le-massif",
       "province": "Quebec",
       "coordinates": {
-        "lat": 47.3,
-        "lng": -70.5
+        "lat": 47.2795,
+        "lng": -70.6091
       },
       "season": "November - April",
       "difficulty": "All Levels",
@@ -1077,8 +1077,8 @@
       "slug": "mont-sainte-anne",
       "province": "Quebec",
       "coordinates": {
-        "lat": 47.2,
-        "lng": -70.7
+        "lat": 47.0865,
+        "lng": -70.958
       },
       "season": "November - April",
       "difficulty": "All Levels",
@@ -1109,8 +1109,8 @@
       "slug": "stoneham",
       "province": "Quebec",
       "coordinates": {
-        "lat": 47.3,
-        "lng": -71.2
+        "lat": 47.0304,
+        "lng": -71.393
       },
       "season": "November - April",
       "difficulty": "All Levels",
@@ -1141,8 +1141,8 @@
       "slug": "mont-sutton",
       "province": "Quebec",
       "coordinates": {
-        "lat": 45.1,
-        "lng": -72.4
+        "lat": 45.1046,
+        "lng": -72.5618
       },
       "season": "November - April",
       "difficulty": "All Levels",
@@ -1173,8 +1173,8 @@
       "slug": "mount-st-louis",
       "province": "Ontario",
       "coordinates": {
-        "lat": 44.6,
-        "lng": -79.5
+        "lat": 44.6231,
+        "lng": -79.6666
       },
       "season": "November - April",
       "difficulty": "All Levels",
@@ -1205,8 +1205,8 @@
       "slug": "searchmont",
       "province": "Ontario",
       "coordinates": {
-        "lat": 46.6,
-        "lng": -84.9
+        "lat": 46.7667,
+        "lng": -84.0383
       },
       "season": "December - March",
       "difficulty": "Intermediate to Advanced",
