@@ -38,8 +38,8 @@
       "slug": "lake-huron",
       "province": "Ontario",
       "coordinates": {
-        "lat": 45.8,
-        "lng": -83
+        "lat": 44.7875,
+        "lng": -82.4
       },
       "depth_max": "230m",
       "primary_species": [
@@ -71,8 +71,8 @@
       "slug": "lake-ontario",
       "province": "Ontario",
       "coordinates": {
-        "lat": 43.9,
-        "lng": -79.2
+        "lat": 43.7,
+        "lng": -77.9
       },
       "depth_max": "802m",
       "primary_species": [
@@ -104,8 +104,8 @@
       "slug": "lake-erie",
       "province": "Ontario",
       "coordinates": {
-        "lat": 42.2,
-        "lng": -81.2
+        "lat": 42.2031,
+        "lng": -81.2528
       },
       "depth_max": "210m",
       "primary_species": [
@@ -137,8 +137,8 @@
       "slug": "muskoka-lakes",
       "province": "Ontario",
       "coordinates": {
-        "lat": 45.2,
-        "lng": -79.4
+        "lat": 45.0378,
+        "lng": -79.3108
       },
       "depth_max": "110m",
       "primary_species": [
@@ -170,8 +170,8 @@
       "slug": "algonquin-park-lakes",
       "province": "Ontario",
       "coordinates": {
-        "lat": 45.6,
-        "lng": -78.7
+        "lat": 45.8395,
+        "lng": -78.3344
       },
       "depth_max": "95m",
       "primary_species": [
@@ -203,8 +203,8 @@
       "slug": "lake-nipissing",
       "province": "Ontario",
       "coordinates": {
-        "lat": 46.3,
-        "lng": -79.8
+        "lat": 46.281,
+        "lng": -79.842
       },
       "depth_max": "120m",
       "primary_species": [
@@ -236,8 +236,8 @@
       "slug": "lake-temagami",
       "province": "Ontario",
       "coordinates": {
-        "lat": 46.9,
-        "lng": -79.3
+        "lat": 47.05,
+        "lng": -80.05
       },
       "depth_max": "165m",
       "primary_species": [
@@ -269,8 +269,8 @@
       "slug": "lake-st-jean",
       "province": "Quebec",
       "coordinates": {
-        "lat": 48.7,
-        "lng": -72.5
+        "lat": 48.6075,
+        "lng": -72.0375
       },
       "depth_max": "102m",
       "primary_species": [
@@ -302,8 +302,8 @@
       "slug": "lac-megantic",
       "province": "Quebec",
       "coordinates": {
-        "lat": 45.6,
-        "lng": -71
+        "lat": 45.576,
+        "lng": -70.878
       },
       "depth_max": "105m",
       "primary_species": [
@@ -335,8 +335,8 @@
       "slug": "lac-tremblant",
       "province": "Quebec",
       "coordinates": {
-        "lat": 46.2,
-        "lng": -74.7
+        "lat": 46.247,
+        "lng": -74.633
       },
       "depth_max": "180m",
       "primary_species": [
@@ -368,8 +368,8 @@
       "slug": "lac-masson",
       "province": "Quebec",
       "coordinates": {
-        "lat": 46,
-        "lng": -74.5
+        "lat": 45.97,
+        "lng": -74.085
       },
       "depth_max": "60m",
       "primary_species": [
@@ -401,8 +401,8 @@
       "slug": "fleuve-saint-laurent",
       "province": "Quebec",
       "coordinates": {
-        "lat": 46.8,
-        "lng": -71.2
+        "lat": 46.8123,
+        "lng": -71.2145
       },
       "depth_max": "300m",
       "primary_species": [
@@ -434,8 +434,8 @@
       "slug": "lac-des-deux-montagnes",
       "province": "Quebec",
       "coordinates": {
-        "lat": 45.5,
-        "lng": -73.9
+        "lat": 45.47,
+        "lng": -73.95
       },
       "depth_max": "45m",
       "primary_species": [
@@ -467,8 +467,8 @@
       "slug": "baskatong-reservoir",
       "province": "Quebec",
       "coordinates": {
-        "lat": 46.7,
-        "lng": -74.9
+        "lat": 46.798,
+        "lng": -75.893
       },
       "depth_max": "120m",
       "primary_species": [
@@ -500,8 +500,8 @@
       "slug": "kamloops-lake",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 50,
-        "lng": -120.2
+        "lat": 50.73,
+        "lng": -120.77
       },
       "depth_max": "300m",
       "primary_species": [
@@ -533,8 +533,8 @@
       "slug": "shuswap-lake",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 50.6,
-        "lng": -119.6
+        "lat": 50.9465,
+        "lng": -119.2586
       },
       "depth_max": "163m",
       "primary_species": [
@@ -566,8 +566,8 @@
       "slug": "okanagan-lake",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 49.6,
-        "lng": -119.4
+        "lat": 50.0,
+        "lng": -119.5
       },
       "depth_max": "258m",
       "primary_species": [
@@ -600,7 +600,7 @@
       "province": "British Columbia",
       "coordinates": {
         "lat": 49.5,
-        "lng": -117.2
+        "lng": -116.8
       },
       "depth_max": "280m",
       "primary_species": [
@@ -632,8 +632,8 @@
       "slug": "lake-louise",
       "province": "Alberta",
       "coordinates": {
-        "lat": 53.6,
-        "lng": -116.2
+        "lat": 51.4254,
+        "lng": -116.1773
       },
       "depth_max": "70m",
       "primary_species": [
@@ -664,8 +664,8 @@
       "slug": "lake-minnewanka",
       "province": "Alberta",
       "coordinates": {
-        "lat": 51.4,
-        "lng": -115.5
+        "lat": 51.254,
+        "lng": -115.44
       },
       "depth_max": "143m",
       "primary_species": [
@@ -697,8 +697,8 @@
       "slug": "athabasca-lake",
       "province": "Alberta",
       "coordinates": {
-        "lat": 57.8,
-        "lng": -107
+        "lat": 59.17,
+        "lng": -110.02
       },
       "depth_max": "201m",
       "primary_species": [
@@ -730,8 +730,8 @@
       "slug": "cedar-lake",
       "province": "Manitoba",
       "coordinates": {
-        "lat": 55.2,
-        "lng": -99.3
+        "lat": 53.317,
+        "lng": -100.05
       },
       "depth_max": "80m",
       "primary_species": [
@@ -763,8 +763,8 @@
       "slug": "winnipeg-lake",
       "province": "Manitoba",
       "coordinates": {
-        "lat": 52.8,
-        "lng": -97.8
+        "lat": 52.1167,
+        "lng": -97.25
       },
       "depth_max": "36m",
       "primary_species": [
@@ -796,8 +796,8 @@
       "slug": "athabasca-lake-sk",
       "province": "Saskatchewan",
       "coordinates": {
-        "lat": 58.9,
-        "lng": -104.8
+        "lat": 59.25,
+        "lng": -108.8
       },
       "depth_max": "397m",
       "primary_species": [
@@ -829,8 +829,8 @@
       "slug": "reindeer-lake",
       "province": "Saskatchewan",
       "coordinates": {
-        "lat": 57.3,
-        "lng": -102.1
+        "lat": 57.25,
+        "lng": -102.2503
       },
       "depth_max": "250m",
       "primary_species": [
@@ -862,8 +862,8 @@
       "slug": "miramichi-river",
       "province": "New Brunswick",
       "coordinates": {
-        "lat": 47,
-        "lng": -65.5
+        "lat": 47.0143,
+        "lng": -65.5014
       },
       "depth_max": "50m",
       "primary_species": [
@@ -895,8 +895,8 @@
       "slug": "grand-lake-nb",
       "province": "New Brunswick",
       "coordinates": {
-        "lat": 46.8,
-        "lng": -66
+        "lat": 45.97,
+        "lng": -66.09
       },
       "depth_max": "78m",
       "primary_species": [
@@ -928,8 +928,8 @@
       "slug": "bras-dor-lake",
       "province": "Nova Scotia",
       "coordinates": {
-        "lat": 46,
-        "lng": -60.8
+        "lat": 45.97,
+        "lng": -60.77
       },
       "depth_max": "302m",
       "primary_species": [
@@ -961,8 +961,8 @@
       "slug": "shubenacadie-river",
       "province": "Nova Scotia",
       "coordinates": {
-        "lat": 45.2,
-        "lng": -63.2
+        "lat": 45.1,
+        "lng": -63.42
       },
       "depth_max": "40m",
       "primary_species": [
@@ -994,8 +994,8 @@
       "slug": "dalvay-lake",
       "province": "Prince Edward Island",
       "coordinates": {
-        "lat": 46.4,
-        "lng": -62.7
+        "lat": 46.419,
+        "lng": -62.97
       },
       "depth_max": "15m",
       "primary_species": [
@@ -1026,8 +1026,8 @@
       "slug": "grand-lake-nl",
       "province": "Newfoundland & Labrador",
       "coordinates": {
-        "lat": 49,
-        "lng": -54.8
+        "lat": 49.0,
+        "lng": -57.4
       },
       "depth_max": "120m",
       "primary_species": [
@@ -1059,8 +1059,8 @@
       "slug": "gander-river",
       "province": "Newfoundland & Labrador",
       "coordinates": {
-        "lat": 48.9,
-        "lng": -54.1
+        "lat": 49.0,
+        "lng": -54.6
       },
       "depth_max": "30m",
       "primary_species": [
@@ -1092,8 +1092,8 @@
       "slug": "red-indian-lake",
       "province": "Newfoundland & Labrador",
       "coordinates": {
-        "lat": 48.7,
-        "lng": -55.8
+        "lat": 48.644,
+        "lng": -57.117
       },
       "depth_max": "210m",
       "primary_species": [
@@ -1125,8 +1125,8 @@
       "slug": "teslin-lake",
       "province": "Yukon",
       "coordinates": {
-        "lat": 60.3,
-        "lng": -130.2
+        "lat": 60.2,
+        "lng": -132.65
       },
       "depth_max": "300m",
       "primary_species": [
@@ -1158,8 +1158,8 @@
       "slug": "kluane-lake",
       "province": "Yukon",
       "coordinates": {
-        "lat": 61.1,
-        "lng": -137.8
+        "lat": 61.1139,
+        "lng": -138.4897
       },
       "depth_max": "158m",
       "primary_species": [
@@ -1191,8 +1191,8 @@
       "slug": "great-slave-lake",
       "province": "Northwest Territories",
       "coordinates": {
-        "lat": 62.5,
-        "lng": -114.5
+        "lat": 61.67,
+        "lng": -114.0
       },
       "depth_max": "614m",
       "primary_species": [
@@ -1224,8 +1224,8 @@
       "slug": "hay-river",
       "province": "Northwest Territories",
       "coordinates": {
-        "lat": 60.8,
-        "lng": -115.7
+        "lat": 60.815,
+        "lng": -115.7867
       },
       "depth_max": "50m",
       "primary_species": [
@@ -1257,8 +1257,8 @@
       "slug": "bathurst-lake",
       "province": "Nunavut",
       "coordinates": {
-        "lat": 66.9,
-        "lng": -107.5
+        "lat": 66.84,
+        "lng": -108.05
       },
       "depth_max": "380m",
       "primary_species": [
@@ -3843,8 +3843,8 @@
       "province": "Quebec",
       "region": "York, Rivière",
       "coordinates": {
-        "lat": 46.5,
-        "lng": -72
+        "lat": 47.6587,
+        "lng": -72.2742
       },
       "primary_species": [
         "Omble de fontaine",
@@ -4650,8 +4650,8 @@
       "province": "Quebec",
       "region": "Outaouais, Rivière des",
       "coordinates": {
-        "lat": 46.5,
-        "lng": -72
+        "lat": 46.2501,
+        "lng": -75.3493
       },
       "primary_species": [
         "Omble de fontaine"
@@ -4771,8 +4771,8 @@
       "province": "Quebec",
       "region": "Outaouais, Rivière des",
       "coordinates": {
-        "lat": 46.5,
-        "lng": -72
+        "lat": 49.327,
+        "lng": -68.1553
       },
       "primary_species": [
         "Omble de fontaine"
@@ -5928,8 +5928,8 @@
       "province": "Quebec",
       "region": "Nord, Rivière du",
       "coordinates": {
-        "lat": 46.5,
-        "lng": -72
+        "lat": 45.97,
+        "lng": -74.085
       },
       "primary_species": [
         "Maskinongé",
@@ -5966,8 +5966,8 @@
       "province": "Quebec",
       "region": "Ristigouche, Rivière",
       "coordinates": {
-        "lat": 46.5,
-        "lng": -72
+        "lat": 48.5534,
+        "lng": -67.5289
       },
       "primary_species": [
         "Omble de fontaine",
@@ -6878,8 +6878,8 @@
       "province": "Quebec",
       "region": "Nouvelle, Rivière",
       "coordinates": {
-        "lat": 46.5,
-        "lng": -72
+        "lat": 46.5553,
+        "lng": -75.6031
       },
       "primary_species": [
         "Omble de fontaine",
@@ -6954,8 +6954,8 @@
       "province": "Quebec",
       "region": "Ristigouche, Rivière",
       "coordinates": {
-        "lat": 46.5,
-        "lng": -72
+        "lat": 45.8444,
+        "lng": -74.1089
       },
       "primary_species": [
         "Omble de fontaine",
@@ -7957,8 +7957,8 @@
       "province": "Quebec",
       "region": "Saint-Jean, Rivière",
       "coordinates": {
-        "lat": 46.5,
-        "lng": -72
+        "lat": 48.6075,
+        "lng": -72.0375
       },
       "primary_species": [
         "Omble de fontaine",
@@ -8740,8 +8740,8 @@
       "province": "Quebec",
       "region": "Saint-Jean, Rivière",
       "coordinates": {
-        "lat": 46.5,
-        "lng": -72
+        "lat": 47.6833,
+        "lng": -68.8833
       },
       "primary_species": [
         "Grand corégone",
@@ -8899,8 +8899,8 @@
       "province": "Quebec",
       "region": "Rouge, Rivière",
       "coordinates": {
-        "lat": 46.5,
-        "lng": -72
+        "lat": 46.247,
+        "lng": -74.633
       },
       "primary_species": [
         "Maskinongé",
