@@ -6,8 +6,8 @@
       "province": "Quebec",
       "type": "Big Game",
       "coordinates": {
-        "lat": 49.5,
-        "lng": -63
+        "lat": 49.5714,
+        "lng": -63.3889
       },
       "primary_game": [
         "White-tailed Deer",
@@ -41,8 +41,8 @@
       "province": "Quebec",
       "type": "Big Game",
       "coordinates": {
-        "lat": 46,
-        "lng": -74
+        "lat": 46.55,
+        "lng": -74.6
       },
       "primary_game": [
         "Black Bear",
@@ -76,8 +76,8 @@
       "province": "Quebec",
       "type": "Big Game",
       "coordinates": {
-        "lat": 46.8,
-        "lng": -72.3
+        "lat": 47.0833,
+        "lng": -72.3167
       },
       "primary_game": [
         "Moose",
@@ -111,8 +111,8 @@
       "province": "Ontario",
       "type": "Big Game",
       "coordinates": {
-        "lat": 44.3,
-        "lng": -79.3
+        "lat": 44.353,
+        "lng": -78.742
       },
       "primary_game": [
         "White-tailed Deer",
@@ -145,8 +145,8 @@
       "province": "Ontario",
       "type": "Big Game",
       "coordinates": {
-        "lat": 45.4,
-        "lng": -78.8
+        "lat": 45.8395,
+        "lng": -78.3344
       },
       "primary_game": [
         "Moose",
@@ -180,8 +180,8 @@
       "province": "Ontario",
       "type": "Big Game",
       "coordinates": {
-        "lat": 45.3,
-        "lng": -79.6
+        "lat": 45.0378,
+        "lng": -79.3108
       },
       "primary_game": [
         "White-tailed Deer",
@@ -214,8 +214,8 @@
       "province": "British Columbia",
       "type": "Big Game",
       "coordinates": {
-        "lat": 56.2,
-        "lng": -120.8
+        "lat": 56.2493,
+        "lng": -120.8411
       },
       "primary_game": [
         "Moose",
@@ -249,8 +249,8 @@
       "province": "British Columbia",
       "type": "Big Game",
       "coordinates": {
-        "lat": 55.9,
-        "lng": -120.9
+        "lat": 56.2872,
+        "lng": -120.9463
       },
       "primary_game": [
         "Moose",
@@ -284,8 +284,8 @@
       "province": "Alberta",
       "type": "Big Game",
       "coordinates": {
-        "lat": 53.1,
-        "lng": -115.5
+        "lat": 51.1784,
+        "lng": -115.5708
       },
       "primary_game": [
         "Elk",
@@ -319,8 +319,8 @@
       "province": "Alberta",
       "type": "Big Game",
       "coordinates": {
-        "lat": 52.3,
-        "lng": -116
+        "lat": 52.2,
+        "lng": -114.8
       },
       "primary_game": [
         "Mule Deer",
@@ -354,8 +354,8 @@
       "province": "Alberta",
       "type": "Big Game",
       "coordinates": {
-        "lat": 53.9,
-        "lng": -116.7
+        "lat": 53.73,
+        "lng": -119.13
       },
       "primary_game": [
         "Mountain Goat",
@@ -389,8 +389,8 @@
       "province": "Manitoba",
       "type": "Waterfowl",
       "coordinates": {
-        "lat": 49,
-        "lng": -99.3
+        "lat": 49.22,
+        "lng": -100.33
       },
       "primary_game": [
         "Canada Goose",
@@ -424,8 +424,8 @@
       "province": "Manitoba",
       "type": "Waterfowl",
       "coordinates": {
-        "lat": 50.2,
-        "lng": -98.3
+        "lat": 50.19,
+        "lng": -98.37
       },
       "primary_game": [
         "Mallard",
@@ -460,7 +460,7 @@
       "type": "Big Game",
       "coordinates": {
         "lat": 55.5,
-        "lng": -107
+        "lng": -105.5
       },
       "primary_game": [
         "Moose",
@@ -494,7 +494,7 @@
       "province": "New Brunswick",
       "type": "Big Game",
       "coordinates": {
-        "lat": 47,
+        "lat": 47.5,
         "lng": -66.5
       },
       "primary_game": [
@@ -529,7 +529,7 @@
       "province": "Nova Scotia",
       "type": "Upland Bird",
       "coordinates": {
-        "lat": 45.5,
+        "lat": 45.68,
         "lng": -62.7
       },
       "primary_game": [
@@ -564,8 +564,8 @@
       "province": "PEI",
       "type": "Mixed",
       "coordinates": {
-        "lat": 46.2,
-        "lng": -62.5
+        "lat": 46.4,
+        "lng": -63.3
       },
       "primary_game": [
         "White-tailed Deer",
@@ -598,8 +598,8 @@
       "province": "Newfoundland & Labrador",
       "type": "Big Game",
       "coordinates": {
-        "lat": 49.5,
-        "lng": -57.7
+        "lat": 49.687,
+        "lng": -57.7362
       },
       "primary_game": [
         "Caribou",
@@ -633,8 +633,8 @@
       "province": "Newfoundland & Labrador",
       "type": "Big Game",
       "coordinates": {
-        "lat": 48.5,
-        "lng": -56
+        "lat": 48.6,
+        "lng": -56.0
       },
       "primary_game": [
         "Caribou",
@@ -667,8 +667,8 @@
       "province": "Yukon",
       "type": "Big Game",
       "coordinates": {
-        "lat": 62,
-        "lng": -130
+        "lat": 62.0,
+        "lng": -137.0
       },
       "primary_game": [
         "Moose",
@@ -702,8 +702,8 @@
       "province": "Northwest Territories",
       "type": "Big Game",
       "coordinates": {
-        "lat": 62.5,
-        "lng": -114.3
+        "lat": 62.454,
+        "lng": -114.3718
       },
       "primary_game": [
         "Barrenland Caribou",
@@ -736,8 +736,8 @@
       "province": "Nunavut",
       "type": "Big Game",
       "coordinates": {
-        "lat": 65,
-        "lng": -105
+        "lat": 65.0,
+        "lng": -100.0
       },
       "primary_game": [
         "Muskox",
@@ -769,8 +769,8 @@
       "slug": "algoma-district-on",
       "province": "Ontario",
       "coordinates": {
-        "lat": 47.2,
-        "lng": -85.5
+        "lat": 46.5239,
+        "lng": -84.35
       },
       "season": "September - October",
       "difficulty": "Intermediate",
@@ -805,8 +805,8 @@
       "slug": "kapuskasing-hunting",
       "province": "Ontario",
       "coordinates": {
-        "lat": 49.4,
-        "lng": -82
+        "lat": 49.4168,
+        "lng": -82.4333
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -840,8 +840,8 @@
       "slug": "parry-sound-hunting",
       "province": "Ontario",
       "coordinates": {
-        "lat": 45.3,
-        "lng": -80.8
+        "lat": 45.3436,
+        "lng": -80.0356
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -875,8 +875,8 @@
       "slug": "renfrew-county-hunting",
       "province": "Ontario",
       "coordinates": {
-        "lat": 45.5,
-        "lng": -76.8
+        "lat": 45.8167,
+        "lng": -77.1167
       },
       "season": "October - November",
       "difficulty": "Beginner",
@@ -910,8 +910,8 @@
       "slug": "nipissing-hunting",
       "province": "Ontario",
       "coordinates": {
-        "lat": 46.3,
-        "lng": -80.2
+        "lat": 46.3091,
+        "lng": -79.4608
       },
       "season": "September - October",
       "difficulty": "Intermediate",
@@ -946,8 +946,8 @@
       "slug": "timiskaming-hunting",
       "province": "Ontario",
       "coordinates": {
-        "lat": 48.5,
-        "lng": -81.3
+        "lat": 47.5102,
+        "lng": -79.6665
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -981,8 +981,8 @@
       "slug": "sudbury-hunting",
       "province": "Ontario",
       "coordinates": {
-        "lat": 46.5,
-        "lng": -80.9
+        "lat": 46.4917,
+        "lng": -80.9928
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -1017,8 +1017,8 @@
       "slug": "cochrane-hunting",
       "province": "Ontario",
       "coordinates": {
-        "lat": 49,
-        "lng": -81
+        "lat": 49.0678,
+        "lng": -81.0183
       },
       "season": "September - October",
       "difficulty": "Intermediate",
@@ -1052,8 +1052,8 @@
       "slug": "kenora-hunting",
       "province": "Ontario",
       "coordinates": {
-        "lat": 49.7,
-        "lng": -94.5
+        "lat": 49.7666,
+        "lng": -94.488
       },
       "season": "September - October",
       "difficulty": "Intermediate",
@@ -1087,8 +1087,8 @@
       "slug": "rainy-river-hunting",
       "province": "Ontario",
       "coordinates": {
-        "lat": 49,
-        "lng": -91.5
+        "lat": 48.723,
+        "lng": -94.555
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -1123,8 +1123,8 @@
       "slug": "dryden-hunting",
       "province": "Ontario",
       "coordinates": {
-        "lat": 49.8,
-        "lng": -92.8
+        "lat": 49.7797,
+        "lng": -92.8351
       },
       "season": "September - October",
       "difficulty": "Intermediate",
@@ -1159,7 +1159,7 @@
       "province": "Ontario",
       "coordinates": {
         "lat": 50.1,
-        "lng": -91.9
+        "lng": -91.917
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -1193,8 +1193,8 @@
       "slug": "timmins-hunting",
       "province": "Ontario",
       "coordinates": {
-        "lat": 48.4,
-        "lng": -81.3
+        "lat": 48.477,
+        "lng": -81.33
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -1228,8 +1228,8 @@
       "slug": "muskoka-hunting",
       "province": "Ontario",
       "coordinates": {
-        "lat": 45.1,
-        "lng": -79.5
+        "lat": 45.0378,
+        "lng": -79.3108
       },
       "season": "October - November",
       "difficulty": "Beginner",
@@ -1263,8 +1263,8 @@
       "slug": "haliburton-hunting",
       "province": "Ontario",
       "coordinates": {
-        "lat": 45.2,
-        "lng": -78.6
+        "lat": 45.047,
+        "lng": -78.528
       },
       "season": "October - December",
       "difficulty": "Beginner",
@@ -1298,7 +1298,7 @@
       "slug": "bruce-peninsula-hunting",
       "province": "Ontario",
       "coordinates": {
-        "lat": 45.1,
+        "lat": 44.9,
         "lng": -81.2
       },
       "season": "October - November",
@@ -1332,8 +1332,8 @@
       "slug": "manitoulin-island-hunting",
       "province": "Ontario",
       "coordinates": {
-        "lat": 45.8,
-        "lng": -82
+        "lat": 45.977,
+        "lng": -81.93
       },
       "season": "October - December",
       "difficulty": "Intermediate",
@@ -1366,8 +1366,8 @@
       "slug": "wawa-hunting",
       "province": "Ontario",
       "coordinates": {
-        "lat": 48,
-        "lng": -84.8
+        "lat": 47.9931,
+        "lng": -84.7889
       },
       "season": "September - October",
       "difficulty": "Intermediate",
@@ -1401,8 +1401,8 @@
       "slug": "reserve-la-verendrye",
       "province": "Quebec",
       "coordinates": {
-        "lat": 46.5,
-        "lng": -76.5
+        "lat": 47.0,
+        "lng": -76.7
       },
       "season": "September - October",
       "difficulty": "Intermediate",
@@ -1436,8 +1436,8 @@
       "slug": "reserve-laurentides",
       "province": "Quebec",
       "coordinates": {
-        "lat": 47.5,
-        "lng": -71.5
+        "lat": 47.55,
+        "lng": -71.3
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -1472,8 +1472,8 @@
       "slug": "reserve-mastigouche",
       "province": "Quebec",
       "coordinates": {
-        "lat": 47.2,
-        "lng": -72.2
+        "lat": 46.8,
+        "lng": -73.33
       },
       "season": "September - October",
       "difficulty": "Intermediate",
@@ -1507,8 +1507,8 @@
       "slug": "zec-chapais",
       "province": "Quebec",
       "coordinates": {
-        "lat": 49.8,
-        "lng": -74.2
+        "lat": 49.7833,
+        "lng": -74.8833
       },
       "season": "September - October",
       "difficulty": "Intermediate",
@@ -1542,8 +1542,8 @@
       "slug": "saguenay-hunting",
       "province": "Quebec",
       "coordinates": {
-        "lat": 48.2,
-        "lng": -71
+        "lat": 48.428,
+        "lng": -71.0693
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -1577,8 +1577,8 @@
       "slug": "abitibi-temiscamingue-hunting",
       "province": "Quebec",
       "coordinates": {
-        "lat": 48.8,
-        "lng": -77.5
+        "lat": 48.097,
+        "lng": -77.797
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -1612,8 +1612,8 @@
       "slug": "chaudiere-appalaches-hunting",
       "province": "Quebec",
       "coordinates": {
-        "lat": 46.3,
-        "lng": -71.2
+        "lat": 46.5,
+        "lng": -70.9
       },
       "season": "October - November",
       "difficulty": "Beginner",
@@ -1647,8 +1647,8 @@
       "slug": "bas-saint-laurent-hunting",
       "province": "Quebec",
       "coordinates": {
-        "lat": 48,
-        "lng": -69.3
+        "lat": 48.449,
+        "lng": -68.524
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -1683,8 +1683,8 @@
       "slug": "gaspesie-hunting",
       "province": "Quebec",
       "coordinates": {
-        "lat": 48.8,
-        "lng": -65.5
+        "lat": 48.8308,
+        "lng": -64.477
       },
       "season": "September - October",
       "difficulty": "Intermediate",
@@ -1718,8 +1718,8 @@
       "slug": "lanaudiere-hunting",
       "province": "Quebec",
       "coordinates": {
-        "lat": 46.2,
-        "lng": -73
+        "lat": 46.022,
+        "lng": -73.446
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -1754,8 +1754,8 @@
       "slug": "mauricie-hunting",
       "province": "Quebec",
       "coordinates": {
-        "lat": 46.8,
-        "lng": -72.8
+        "lat": 46.567,
+        "lng": -72.75
       },
       "season": "September - October",
       "difficulty": "Intermediate",
@@ -1789,8 +1789,8 @@
       "slug": "cariboo-hunting",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 52.5,
-        "lng": -120.5
+        "lat": 52.1298,
+        "lng": -122.1367
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -1825,8 +1825,8 @@
       "slug": "peace-river-hunting",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 56.2,
-        "lng": -120.8
+        "lat": 56.2493,
+        "lng": -120.8411
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -1861,8 +1861,8 @@
       "slug": "kootenays-hunting",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 49.8,
-        "lng": -115.5
+        "lat": 49.5099,
+        "lng": -115.7686
       },
       "season": "September - October",
       "difficulty": "Advanced",
@@ -1897,8 +1897,8 @@
       "slug": "omineca-hunting",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 55,
-        "lng": -124.5
+        "lat": 54.442,
+        "lng": -124.2503
       },
       "season": "August - October",
       "difficulty": "Intermediate",
@@ -1932,8 +1932,8 @@
       "slug": "skeena-hunting",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 55.5,
-        "lng": -127
+        "lat": 54.7804,
+        "lng": -127.176
       },
       "season": "August - October",
       "difficulty": "Intermediate",
@@ -1967,8 +1967,8 @@
       "slug": "cassiar-hunting",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 58,
-        "lng": -130
+        "lat": 58.4412,
+        "lng": -130.015
       },
       "season": "August - September",
       "difficulty": "Advanced",
@@ -2002,8 +2002,8 @@
       "slug": "okanagan-hunting",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 50,
-        "lng": -119
+        "lat": 49.888,
+        "lng": -119.496
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -2037,8 +2037,8 @@
       "slug": "thompson-nicola-hunting",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 50.8,
-        "lng": -120
+        "lat": 50.6745,
+        "lng": -120.3273
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -2072,8 +2072,8 @@
       "slug": "vancouver-island-north-hunting",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 50.5,
-        "lng": -127
+        "lat": 50.728,
+        "lng": -127.4966
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -2107,8 +2107,8 @@
       "slug": "peace-country-ab",
       "province": "Alberta",
       "coordinates": {
-        "lat": 55.8,
-        "lng": -119
+        "lat": 56.234,
+        "lng": -117.289
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -2143,8 +2143,8 @@
       "slug": "athabasca-hunting",
       "province": "Alberta",
       "coordinates": {
-        "lat": 56.7,
-        "lng": -111.6
+        "lat": 56.7264,
+        "lng": -111.3812
       },
       "season": "September - October",
       "difficulty": "Intermediate",
@@ -2178,8 +2178,8 @@
       "slug": "clearwater-county-hunting",
       "province": "Alberta",
       "coordinates": {
-        "lat": 53,
-        "lng": -116.5
+        "lat": 52.374,
+        "lng": -114.911
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -2213,8 +2213,8 @@
       "slug": "crowsnest-pass-hunting",
       "province": "Alberta",
       "coordinates": {
-        "lat": 49.7,
-        "lng": -114.5
+        "lat": 49.625,
+        "lng": -114.466
       },
       "season": "September - November",
       "difficulty": "Advanced",
@@ -2249,8 +2249,8 @@
       "slug": "cypress-hills-hunting",
       "province": "Alberta",
       "coordinates": {
-        "lat": 49.7,
-        "lng": -110.3
+        "lat": 49.65,
+        "lng": -110.17
       },
       "season": "October - November",
       "difficulty": "Intermediate",
@@ -2284,8 +2284,8 @@
       "slug": "lac-la-biche-hunting",
       "province": "Alberta",
       "coordinates": {
-        "lat": 54.8,
-        "lng": -111
+        "lat": 54.77,
+        "lng": -111.965
       },
       "season": "September - October",
       "difficulty": "Intermediate",
@@ -2319,8 +2319,8 @@
       "slug": "lesser-slave-lake-hunting",
       "province": "Alberta",
       "coordinates": {
-        "lat": 55.3,
-        "lng": -114
+        "lat": 55.283,
+        "lng": -114.77
       },
       "season": "September - October",
       "difficulty": "Intermediate",
@@ -2354,8 +2354,8 @@
       "slug": "whitecourt-hunting",
       "province": "Alberta",
       "coordinates": {
-        "lat": 54.3,
-        "lng": -115.7
+        "lat": 54.145,
+        "lng": -115.682
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -2389,8 +2389,8 @@
       "slug": "grande-prairie-hunting",
       "province": "Alberta",
       "coordinates": {
-        "lat": 55.2,
-        "lng": -120.8
+        "lat": 55.17,
+        "lng": -118.794
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -2424,8 +2424,8 @@
       "slug": "edson-hunting",
       "province": "Alberta",
       "coordinates": {
-        "lat": 53.6,
-        "lng": -116.5
+        "lat": 53.582,
+        "lng": -116.434
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -2459,8 +2459,8 @@
       "slug": "meadow-lake-hunting",
       "province": "Saskatchewan",
       "coordinates": {
-        "lat": 54.4,
-        "lng": -109.5
+        "lat": 54.134,
+        "lng": -108.434
       },
       "season": "September - October",
       "difficulty": "Intermediate",
@@ -2493,8 +2493,8 @@
       "slug": "prince-albert-hunting",
       "province": "Saskatchewan",
       "coordinates": {
-        "lat": 53.8,
-        "lng": -106.3
+        "lat": 53.2,
+        "lng": -105.753
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -2528,8 +2528,8 @@
       "slug": "nipawin-hunting",
       "province": "Saskatchewan",
       "coordinates": {
-        "lat": 53.3,
-        "lng": -104.8
+        "lat": 53.367,
+        "lng": -104.006
       },
       "season": "September - November",
       "difficulty": "Beginner",
@@ -2563,8 +2563,8 @@
       "slug": "la-ronge-hunting",
       "province": "Saskatchewan",
       "coordinates": {
-        "lat": 55.1,
-        "lng": -105.2
+        "lat": 55.104,
+        "lng": -105.3
       },
       "season": "September - October",
       "difficulty": "Intermediate",
@@ -2598,8 +2598,8 @@
       "slug": "hudson-bay-hunting",
       "province": "Saskatchewan",
       "coordinates": {
-        "lat": 54.3,
-        "lng": -102.4
+        "lat": 52.85,
+        "lng": -102.383
       },
       "season": "September - October",
       "difficulty": "Intermediate",
@@ -2633,8 +2633,8 @@
       "slug": "moose-mountain-hunting",
       "province": "Saskatchewan",
       "coordinates": {
-        "lat": 49.2,
-        "lng": -102.5
+        "lat": 49.823,
+        "lng": -102.327
       },
       "season": "October - November",
       "difficulty": "Beginner",
@@ -2668,8 +2668,8 @@
       "slug": "duck-mountain-hunting",
       "province": "Manitoba",
       "coordinates": {
-        "lat": 51.2,
-        "lng": -101.3
+        "lat": 51.67,
+        "lng": -100.92
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -2704,8 +2704,8 @@
       "slug": "riding-mountain-hunting",
       "province": "Manitoba",
       "coordinates": {
-        "lat": 50.8,
-        "lng": -99.5
+        "lat": 50.655,
+        "lng": -99.9678
       },
       "season": "September - October",
       "difficulty": "Intermediate",
@@ -2739,8 +2739,8 @@
       "slug": "whiteshell-hunting",
       "province": "Manitoba",
       "coordinates": {
-        "lat": 49.4,
-        "lng": -95.2
+        "lat": 49.8,
+        "lng": -95.25
       },
       "season": "September - October",
       "difficulty": "Intermediate",
@@ -2774,8 +2774,8 @@
       "slug": "nopiming-hunting",
       "province": "Manitoba",
       "coordinates": {
-        "lat": 49.8,
-        "lng": -94.6
+        "lat": 50.8,
+        "lng": -95.2
       },
       "season": "September - October",
       "difficulty": "Intermediate",
@@ -2809,8 +2809,8 @@
       "slug": "interlake-hunting",
       "province": "Manitoba",
       "coordinates": {
-        "lat": 50.5,
-        "lng": -97.8
+        "lat": 50.6,
+        "lng": -97.6
       },
       "season": "September - November",
       "difficulty": "Beginner",
@@ -2844,8 +2844,8 @@
       "slug": "the-pas-hunting",
       "province": "Manitoba",
       "coordinates": {
-        "lat": 54.3,
-        "lng": -101.2
+        "lat": 53.821,
+        "lng": -101.254
       },
       "season": "September - October",
       "difficulty": "Intermediate",
@@ -2879,8 +2879,8 @@
       "slug": "miramichi-hunting",
       "province": "New Brunswick",
       "coordinates": {
-        "lat": 47,
-        "lng": -65.7
+        "lat": 47.027,
+        "lng": -65.501
       },
       "season": "September - October",
       "difficulty": "Intermediate",
@@ -2913,8 +2913,8 @@
       "slug": "cape-breton-hunting",
       "province": "Nova Scotia",
       "coordinates": {
-        "lat": 46.7,
-        "lng": -60.8
+        "lat": 46.7377,
+        "lng": -60.8804
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -2947,8 +2947,8 @@
       "slug": "western-newfoundland-hunting",
       "province": "Newfoundland and Labrador",
       "coordinates": {
-        "lat": 48.8,
-        "lng": -57.5
+        "lat": 48.946,
+        "lng": -57.952
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -2979,8 +2979,8 @@
       "slug": "central-nb-hunting",
       "province": "New Brunswick",
       "coordinates": {
-        "lat": 46.8,
-        "lng": -66
+        "lat": 47.0,
+        "lng": -66.9
       },
       "season": "September - November",
       "difficulty": "Intermediate",
@@ -3014,8 +3014,8 @@
       "slug": "yukon-southern-lakes-hunting",
       "province": "Yukon",
       "coordinates": {
-        "lat": 60.7,
-        "lng": -135
+        "lat": 60.7212,
+        "lng": -135.0568
       },
       "season": "August - September",
       "difficulty": "Advanced",
@@ -3050,7 +3050,7 @@
       "province": "Northwest Territories",
       "coordinates": {
         "lat": 61.4,
-        "lng": -123.5
+        "lng": -124.0
       },
       "season": "August - September",
       "difficulty": "Advanced",
@@ -3083,8 +3083,8 @@
       "slug": "baffin-island-hunting",
       "province": "Nunavut",
       "coordinates": {
-        "lat": 67,
-        "lng": -63
+        "lat": 68.5,
+        "lng": -71.5
       },
       "season": "July - September",
       "difficulty": "Advanced",
