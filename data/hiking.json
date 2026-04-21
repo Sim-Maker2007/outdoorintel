@@ -6,8 +6,8 @@
       "province": "British Columbia",
       "type": "Multi-Day",
       "coordinates": {
-        "lat": 48.6,
-        "lng": -124.8
+        "lat": 48.7866,
+        "lng": -125.1027
       },
       "features": [
         "Coastal Views",
@@ -43,8 +43,8 @@
       "province": "British Columbia",
       "type": "Day Hike",
       "coordinates": {
-        "lat": 49.8,
-        "lng": -122.3
+        "lat": 49.9573,
+        "lng": -123.1205
       },
       "features": [
         "Turquoise Lake",
@@ -80,8 +80,8 @@
       "province": "British Columbia",
       "type": "Multi-Day",
       "coordinates": {
-        "lat": 48.3,
-        "lng": -124.3
+        "lat": 48.4379,
+        "lng": -124.0928
       },
       "features": [
         "Remote Beaches",
@@ -117,8 +117,8 @@
       "province": "British Columbia",
       "type": "Multi-Day",
       "coordinates": {
-        "lat": 50.5,
-        "lng": -127.6
+        "lat": 50.83,
+        "lng": -127.88
       },
       "features": [
         "Pristine Beaches",
@@ -154,8 +154,8 @@
       "province": "Alberta",
       "type": "Day Hike",
       "coordinates": {
-        "lat": 51.4,
-        "lng": -116.2
+        "lat": 51.4162,
+        "lng": -116.212
       },
       "features": [
         "Glacier Views",
@@ -191,8 +191,8 @@
       "province": "Alberta",
       "type": "Alpine",
       "coordinates": {
-        "lat": 51.3,
-        "lng": -116.2
+        "lat": 51.3269,
+        "lng": -116.183
       },
       "features": [
         "Alpine Meadows",
@@ -228,8 +228,8 @@
       "province": "Alberta",
       "type": "Day Hike",
       "coordinates": {
-        "lat": 51.3,
-        "lng": -115.8
+        "lat": 51.2787,
+        "lng": -115.8237
       },
       "features": [
         "Canyon Views",
@@ -302,8 +302,8 @@
       "province": "Ontario",
       "type": "Day Hike",
       "coordinates": {
-        "lat": 43.6,
-        "lng": -79.2
+        "lat": 43.702,
+        "lng": -79.242
       },
       "features": [
         "Lake Ontario Views",
@@ -339,8 +339,8 @@
       "province": "Quebec",
       "type": "Day Hike",
       "coordinates": {
-        "lat": 45.5,
-        "lng": -73.6
+        "lat": 45.5064,
+        "lng": -73.5877
       },
       "features": [
         "Montreal Views",
@@ -376,8 +376,8 @@
       "province": "Quebec",
       "type": "Alpine",
       "coordinates": {
-        "lat": 46.3,
-        "lng": -74.9
+        "lat": 46.55,
+        "lng": -74.6
       },
       "features": [
         "Alpine Meadows",
@@ -413,8 +413,8 @@
       "province": "New Brunswick",
       "type": "Day Hike",
       "coordinates": {
-        "lat": 45.8,
-        "lng": -65
+        "lat": 45.6108,
+        "lng": -64.7778
       },
       "features": [
         "Bay of Fundy Views",
@@ -450,8 +450,8 @@
       "province": "Ontario",
       "type": "Day Hike",
       "coordinates": {
-        "lat": 45.5,
-        "lng": -78.6
+        "lat": 45.8,
+        "lng": -78.39
       },
       "features": [
         "Forest Lakes",
@@ -487,8 +487,8 @@
       "province": "Nova Scotia",
       "type": "Multi-Day",
       "coordinates": {
-        "lat": 46.6,
-        "lng": -60.3
+        "lat": 46.7377,
+        "lng": -60.8804
       },
       "features": [
         "Cabot Trail Connection",
@@ -524,8 +524,8 @@
       "province": "Nova Scotia",
       "type": "Day Hike",
       "coordinates": {
-        "lat": 46.9,
-        "lng": -60.4
+        "lat": 46.814,
+        "lng": -60.6253
       },
       "features": [
         "Waterfall",
@@ -561,8 +561,8 @@
       "province": "Newfoundland and Labrador",
       "type": "Alpine",
       "coordinates": {
-        "lat": 49,
-        "lng": -57.7
+        "lat": 49.652,
+        "lng": -57.7558
       },
       "features": [
         "Alpine Tundra",
@@ -598,8 +598,8 @@
       "province": "Newfoundland and Labrador",
       "type": "Day Hike",
       "coordinates": {
-        "lat": 49,
-        "lng": -57.8
+        "lat": 49.4816,
+        "lng": -57.9553
       },
       "features": [
         "Unique Geology",
@@ -635,8 +635,8 @@
       "province": "Yukon Territory",
       "type": "Multi-Day",
       "coordinates": {
-        "lat": 60,
-        "lng": -135.3
+        "lat": 59.6915,
+        "lng": -135.2365
       },
       "features": [
         "Historic Gold Rush Route",
@@ -709,8 +709,8 @@
       "province": "Nunavut",
       "type": "Multi-Day",
       "coordinates": {
-        "lat": 69.4,
-        "lng": -134.5
+        "lat": 64.4767,
+        "lng": -138.3069
       },
       "features": [
         "Arctic Circle Crossing",
@@ -745,8 +745,8 @@
       "slug": "grouse-grind",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 49.3,
-        "lng": -123.1
+        "lat": 49.3712,
+        "lng": -123.0984
       },
       "season": "May - October",
       "difficulty": "Intermediate",
@@ -782,8 +782,8 @@
       "slug": "stawamus-chief",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 49.5,
-        "lng": -123.3
+        "lat": 49.6786,
+        "lng": -123.1545
       },
       "season": "Year-Round",
       "difficulty": "Intermediate",
@@ -819,8 +819,8 @@
       "slug": "joffre-lakes-hike",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 50.3,
-        "lng": -121.8
+        "lat": 50.3695,
+        "lng": -122.4987
       },
       "season": "June - October",
       "difficulty": "Beginner",
@@ -856,8 +856,8 @@
       "slug": "garibaldi-lake-hike",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 49.8,
-        "lng": -122.3
+        "lat": 49.9573,
+        "lng": -123.1205
       },
       "season": "June - October",
       "difficulty": "Intermediate",
@@ -893,8 +893,8 @@
       "slug": "panorama-ridge",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 49.8,
-        "lng": -122.3
+        "lat": 49.9461,
+        "lng": -123.0568
       },
       "season": "June - September",
       "difficulty": "Advanced",
@@ -930,8 +930,8 @@
       "slug": "berg-lake",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 53.1,
-        "lng": -119.2
+        "lat": 53.037,
+        "lng": -119.2594
       },
       "season": "June - September",
       "difficulty": "Intermediate",
@@ -967,8 +967,8 @@
       "slug": "juan-de-fuca-hike",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 48.4,
-        "lng": -124.6
+        "lat": 48.4379,
+        "lng": -124.0928
       },
       "season": "May - September",
       "difficulty": "Intermediate",
@@ -1004,8 +1004,8 @@
       "slug": "sunshine-coast-trail",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 49.4,
-        "lng": -123.9
+        "lat": 49.8446,
+        "lng": -124.3273
       },
       "season": "May - September",
       "difficulty": "Intermediate",
@@ -1041,8 +1041,8 @@
       "slug": "black-tusk",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 49.8,
-        "lng": -123
+        "lat": 49.9753,
+        "lng": -123.0428
       },
       "season": "July - September",
       "difficulty": "Intermediate",
@@ -1078,8 +1078,8 @@
       "slug": "plain-six-glaciers",
       "province": "Alberta",
       "coordinates": {
-        "lat": 53.3,
-        "lng": -116.2
+        "lat": 51.4162,
+        "lng": -116.212
       },
       "season": "June - October",
       "difficulty": "Intermediate",
@@ -1115,8 +1115,8 @@
       "slug": "crypt-lake",
       "province": "Alberta",
       "coordinates": {
-        "lat": 49,
-        "lng": -114
+        "lat": 49.0311,
+        "lng": -113.8943
       },
       "season": "June - October",
       "difficulty": "Intermediate",
@@ -1152,8 +1152,8 @@
       "slug": "carthew-alderson",
       "province": "Alberta",
       "coordinates": {
-        "lat": 49.1,
-        "lng": -114
+        "lat": 49.0169,
+        "lng": -114.0427
       },
       "season": "July - September",
       "difficulty": "Intermediate",
@@ -1189,8 +1189,8 @@
       "slug": "parker-ridge",
       "province": "Alberta",
       "coordinates": {
-        "lat": 52.1,
-        "lng": -116.8
+        "lat": 52.1917,
+        "lng": -117.1158
       },
       "season": "June - October",
       "difficulty": "Beginner",
@@ -1226,8 +1226,8 @@
       "slug": "ha-ling-peak",
       "province": "Alberta",
       "coordinates": {
-        "lat": 51.2,
-        "lng": -115.1
+        "lat": 51.0614,
+        "lng": -115.4179
       },
       "season": "May - October",
       "difficulty": "Intermediate",
@@ -1263,8 +1263,8 @@
       "slug": "tent-ridge",
       "province": "Alberta",
       "coordinates": {
-        "lat": 51.3,
-        "lng": -115.3
+        "lat": 50.8204,
+        "lng": -115.3746
       },
       "season": "July - September",
       "difficulty": "Advanced",
@@ -1300,8 +1300,8 @@
       "slug": "cup-and-saucer",
       "province": "Ontario",
       "coordinates": {
-        "lat": 45.9,
-        "lng": -82
+        "lat": 45.85,
+        "lng": -82.1062
       },
       "season": "May - October",
       "difficulty": "Beginner",
@@ -1337,8 +1337,8 @@
       "slug": "crack-trail-killarney",
       "province": "Ontario",
       "coordinates": {
-        "lat": 46,
-        "lng": -81.1
+        "lat": 46.013,
+        "lng": -81.4018
       },
       "season": "May - October",
       "difficulty": "Beginner",
@@ -1374,8 +1374,8 @@
       "slug": "sleeping-giant",
       "province": "Ontario",
       "coordinates": {
-        "lat": 48.5,
-        "lng": -89.2
+        "lat": 48.3693,
+        "lng": -88.8046
       },
       "season": "May - October",
       "difficulty": "Intermediate",
@@ -1411,8 +1411,8 @@
       "slug": "pukaskwa-coastal",
       "province": "Ontario",
       "coordinates": {
-        "lat": 47.9,
-        "lng": -86.7
+        "lat": 48.5881,
+        "lng": -86.2856
       },
       "season": "May - September",
       "difficulty": "Advanced",
@@ -1448,8 +1448,8 @@
       "slug": "mont-albert",
       "province": "Quebec",
       "coordinates": {
-        "lat": 49.1,
-        "lng": -65
+        "lat": 48.921,
+        "lng": -66.1959
       },
       "season": "June - October",
       "difficulty": "Intermediate",
@@ -1485,8 +1485,8 @@
       "slug": "mont-jacques-cartier",
       "province": "Quebec",
       "coordinates": {
-        "lat": 49.2,
-        "lng": -65
+        "lat": 48.9872,
+        "lng": -65.9485
       },
       "season": "July - October",
       "difficulty": "Intermediate",
@@ -1522,8 +1522,8 @@
       "slug": "sentier-des-caps",
       "province": "Quebec",
       "coordinates": {
-        "lat": 47.6,
-        "lng": -70.4
+        "lat": 47.1333,
+        "lng": -70.7833
       },
       "season": "June - September",
       "difficulty": "Intermediate",
@@ -1559,8 +1559,8 @@
       "slug": "east-coast-trail",
       "province": "Newfoundland and Labrador",
       "coordinates": {
-        "lat": 47.6,
-        "lng": -52.7
+        "lat": 47.5241,
+        "lng": -52.6194
       },
       "season": "June - October",
       "difficulty": "Intermediate",
@@ -1596,8 +1596,8 @@
       "slug": "fundy-footpath",
       "province": "New Brunswick",
       "coordinates": {
-        "lat": 45.3,
-        "lng": -65
+        "lat": 45.3737,
+        "lng": -65.3996
       },
       "season": "June - September",
       "difficulty": "Advanced",
@@ -1632,8 +1632,8 @@
       "slug": "skyline-trail-cape-breton",
       "province": "Nova Scotia",
       "coordinates": {
-        "lat": 46.7,
-        "lng": -60.4
+        "lat": 46.7377,
+        "lng": -60.8804
       },
       "season": "May - October",
       "difficulty": "Intermediate",
@@ -1669,8 +1669,8 @@
       "slug": "chilkoot-trail",
       "province": "Yukon",
       "coordinates": {
-        "lat": 59.5,
-        "lng": -135.2
+        "lat": 59.6915,
+        "lng": -135.2365
       },
       "season": "June - September",
       "difficulty": "Intermediate",
