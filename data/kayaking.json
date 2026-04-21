@@ -6,8 +6,8 @@
       "province": "Northwest Territories",
       "type": "Whitewater",
       "coordinates": {
-        "lat": 61.5,
-        "lng": -125
+        "lat": 61.6044,
+        "lng": -125.7353
       },
       "features": [
         "Class III-IV Rapids",
@@ -42,8 +42,8 @@
       "province": "British Columbia",
       "type": "Whitewater",
       "coordinates": {
-        "lat": 59.4,
-        "lng": -126.7
+        "lat": 59.418,
+        "lng": -126.099
       },
       "features": [
         "Class II-III Rapids",
@@ -78,8 +78,8 @@
       "province": "British Columbia",
       "type": "Flatwater",
       "coordinates": {
-        "lat": 55.3,
-        "lng": -127.6
+        "lat": 55.256,
+        "lng": -127.676
       },
       "features": [
         "Scenic Valleys",
@@ -114,8 +114,8 @@
       "province": "British Columbia",
       "type": "Whitewater",
       "coordinates": {
-        "lat": 52.9,
-        "lng": -116.6
+        "lat": 51.2988,
+        "lng": -116.9644
       },
       "features": [
         "Class IV Rapids",
@@ -150,8 +150,8 @@
       "province": "Manitoba",
       "type": "Multi-Day Expedition",
       "coordinates": {
-        "lat": 55.2,
-        "lng": -94.6
+        "lat": 58.7858,
+        "lng": -95.6628
       },
       "features": [
         "Northern Wilderness",
@@ -186,8 +186,8 @@
       "province": "Nunavut",
       "type": "Whitewater",
       "coordinates": {
-        "lat": 67.8,
-        "lng": -115.1
+        "lat": 67.8258,
+        "lng": -115.0971
       },
       "features": [
         "Arctic Wilderness",
@@ -222,8 +222,8 @@
       "province": "Alberta",
       "type": "Flatwater",
       "coordinates": {
-        "lat": 53.9,
-        "lng": -115.4
+        "lat": 53.5842,
+        "lng": -115.083
       },
       "features": [
         "Canyons",
@@ -258,8 +258,8 @@
       "province": "Ontario",
       "type": "Whitewater",
       "coordinates": {
-        "lat": 45.4,
-        "lng": -75.7
+        "lat": 45.4215,
+        "lng": -75.6972
       },
       "features": [
         "Urban Access",
@@ -294,8 +294,8 @@
       "province": "Ontario",
       "type": "Multi-Day Expedition",
       "coordinates": {
-        "lat": 46.4,
-        "lng": -80.2
+        "lat": 46.0411,
+        "lng": -80.5628
       },
       "features": [
         "Chain of Lakes",
@@ -330,8 +330,8 @@
       "province": "Quebec",
       "type": "Whitewater",
       "coordinates": {
-        "lat": 45.3,
-        "lng": -74.8
+        "lat": 45.223,
+        "lng": -74.373
       },
       "features": [
         "Class II-III Rapids",
@@ -366,8 +366,8 @@
       "province": "Quebec",
       "type": "Whitewater",
       "coordinates": {
-        "lat": 46.8,
-        "lng": -71.2
+        "lat": 47.1106,
+        "lng": -71.3552
       },
       "features": [
         "Class III-IV Rapids",
@@ -402,8 +402,8 @@
       "province": "New Brunswick",
       "type": "Flatwater",
       "coordinates": {
-        "lat": 46.2,
-        "lng": -67.8
+        "lat": 45.9636,
+        "lng": -66.6431
       },
       "features": [
         "Tidal Bore Potential",
@@ -438,8 +438,8 @@
       "province": "Nova Scotia",
       "type": "Flatwater",
       "coordinates": {
-        "lat": 45.9,
-        "lng": -60.5
+        "lat": 45.9163,
+        "lng": -60.5167
       },
       "features": [
         "Coastal Views",
@@ -474,7 +474,7 @@
       "province": "Newfoundland and Labrador",
       "type": "Flatwater",
       "coordinates": {
-        "lat": 48.8,
+        "lat": 49.0,
         "lng": -54.6
       },
       "features": [
@@ -510,8 +510,8 @@
       "province": "Yukon Territory",
       "type": "Multi-Day Expedition",
       "coordinates": {
-        "lat": 62.2,
-        "lng": -135
+        "lat": 60.7212,
+        "lng": -135.0568
       },
       "features": [
         "1,000+ km Route",
@@ -545,8 +545,8 @@
       "slug": "algonquin-canoe-routes",
       "province": "Ontario",
       "coordinates": {
-        "lat": 45.5,
-        "lng": -78.3
+        "lat": 45.8395,
+        "lng": -78.3344
       },
       "season": "May - October",
       "difficulty": "Beginner to Advanced",
@@ -581,8 +581,8 @@
       "slug": "killarney-georgian-bay",
       "province": "Ontario",
       "coordinates": {
-        "lat": 46,
-        "lng": -81.1
+        "lat": 45.9783,
+        "lng": -81.515
       },
       "season": "June - September",
       "difficulty": "Intermediate",
@@ -617,8 +617,8 @@
       "slug": "madawaska-river",
       "province": "Ontario",
       "coordinates": {
-        "lat": 45.5,
-        "lng": -76.8
+        "lat": 45.48,
+        "lng": -77.16
       },
       "season": "May - September",
       "difficulty": "Intermediate",
@@ -653,8 +653,8 @@
       "slug": "temagami-routes",
       "province": "Ontario",
       "coordinates": {
-        "lat": 46.9,
-        "lng": -79.8
+        "lat": 47.061,
+        "lng": -79.791
       },
       "season": "May - October",
       "difficulty": "Intermediate",
@@ -689,8 +689,8 @@
       "slug": "kawartha-lakes",
       "province": "Ontario",
       "coordinates": {
-        "lat": 44.2,
-        "lng": -79.3
+        "lat": 44.353,
+        "lng": -78.742
       },
       "season": "May - October",
       "difficulty": "Beginner",
@@ -725,8 +725,8 @@
       "slug": "rideau-canal",
       "province": "Ontario",
       "coordinates": {
-        "lat": 45.4,
-        "lng": -75.7
+        "lat": 45.4215,
+        "lng": -75.6972
       },
       "season": "May - October",
       "difficulty": "Beginner",
@@ -761,8 +761,8 @@
       "slug": "rouge-river",
       "province": "Quebec",
       "coordinates": {
-        "lat": 45.8,
-        "lng": -75.8
+        "lat": 45.6917,
+        "lng": -74.6069
       },
       "season": "May - October",
       "difficulty": "Intermediate",
@@ -797,8 +797,8 @@
       "slug": "saguenay-fjord",
       "province": "Quebec",
       "coordinates": {
-        "lat": 48.3,
-        "lng": -70.8
+        "lat": 48.3007,
+        "lng": -70.3353
       },
       "season": "June - September",
       "difficulty": "Intermediate",
@@ -833,8 +833,8 @@
       "slug": "riviere-bonaventure",
       "province": "Quebec",
       "coordinates": {
-        "lat": 48,
-        "lng": -65.3
+        "lat": 48.048,
+        "lng": -65.4951
       },
       "season": "May - September",
       "difficulty": "Beginner to Intermediate",
@@ -869,8 +869,8 @@
       "slug": "jacques-cartier-rivers",
       "province": "Quebec",
       "coordinates": {
-        "lat": 47.4,
-        "lng": -71.3
+        "lat": 47.1106,
+        "lng": -71.3552
       },
       "season": "June - September",
       "difficulty": "Intermediate",
@@ -905,8 +905,8 @@
       "slug": "johnstone-strait-orcas",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 50.5,
-        "lng": -126.5
+        "lat": 50.5492,
+        "lng": -126.8323
       },
       "season": "June - September",
       "difficulty": "Intermediate to Advanced",
@@ -942,7 +942,7 @@
       "province": "British Columbia",
       "coordinates": {
         "lat": 48.9,
-        "lng": -125.1
+        "lng": -125.3333
       },
       "season": "June - September",
       "difficulty": "Intermediate",
@@ -977,8 +977,8 @@
       "slug": "desolation-sound",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 49.8,
-        "lng": -124.1
+        "lat": 50.1167,
+        "lng": -124.7
       },
       "season": "June - September",
       "difficulty": "Beginner to Intermediate",
@@ -1013,8 +1013,8 @@
       "slug": "bowron-lake-circuit",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 53.1,
-        "lng": -121.3
+        "lat": 53.0878,
+        "lng": -121.3639
       },
       "season": "June - September",
       "difficulty": "Intermediate",
@@ -1049,8 +1049,8 @@
       "slug": "clayoquot-sound",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 49.1,
-        "lng": -125.4
+        "lat": 49.154,
+        "lng": -125.9084
       },
       "season": "June - September",
       "difficulty": "Intermediate",
@@ -1085,8 +1085,8 @@
       "slug": "powell-forest-route",
       "province": "British Columbia",
       "coordinates": {
-        "lat": 49.5,
-        "lng": -123.8
+        "lat": 49.8354,
+        "lng": -124.524
       },
       "season": "May - September",
       "difficulty": "Intermediate",
@@ -1121,8 +1121,8 @@
       "slug": "bow-river",
       "province": "Alberta",
       "coordinates": {
-        "lat": 51.2,
-        "lng": -114.8
+        "lat": 51.0486,
+        "lng": -114.0708
       },
       "season": "June - September",
       "difficulty": "Intermediate",
@@ -1156,8 +1156,8 @@
       "slug": "north-saskatchewan-river",
       "province": "Alberta",
       "coordinates": {
-        "lat": 52.8,
-        "lng": -116.3
+        "lat": 52.0186,
+        "lng": -116.7322
       },
       "season": "June - September",
       "difficulty": "Intermediate",
@@ -1192,8 +1192,8 @@
       "slug": "maligne-lake",
       "province": "Alberta",
       "coordinates": {
-        "lat": 53.1,
-        "lng": -117.5
+        "lat": 52.6587,
+        "lng": -117.5335
       },
       "season": "June - September",
       "difficulty": "Beginner",
@@ -1228,8 +1228,8 @@
       "slug": "bloodvein-river",
       "province": "Manitoba",
       "coordinates": {
-        "lat": 52.1,
-        "lng": -94.5
+        "lat": 51.781,
+        "lng": -96.702
       },
       "season": "June - August",
       "difficulty": "Intermediate",
@@ -1263,8 +1263,8 @@
       "slug": "bay-of-fundy",
       "province": "New Brunswick",
       "coordinates": {
-        "lat": 45.4,
-        "lng": -65
+        "lat": 45.6036,
+        "lng": -64.9462
       },
       "season": "June - September",
       "difficulty": "Advanced",
@@ -1298,8 +1298,8 @@
       "slug": "kejimkujik-kayaking",
       "province": "Nova Scotia",
       "coordinates": {
-        "lat": 44.4,
-        "lng": -65.2
+        "lat": 44.3993,
+        "lng": -65.2183
       },
       "season": "May - October",
       "difficulty": "Beginner to Intermediate",
