@@ -830,6 +830,14 @@ function renderWeather() {
 }
 
 // ==================== PROFILE MODAL ====================
+function verificationLabel(spot) {
+    if (spot.verification_status === 'verified') {
+        return spot.last_verified_at ? `Verified ${spot.last_verified_at}` : 'Verified';
+    }
+    if (spot.verification_status === 'stale') return 'Needs seasonal refresh';
+    return 'Needs editorial review';
+}
+
 window.viewProfile = function(slug, cat) {
     const spot = state.allSpots.find(s => s.slug === slug && s.cat === cat);
     if (!spot) return;
@@ -847,6 +855,10 @@ window.viewProfile = function(slug, cat) {
 
     let body = '';
     if (tags.length) body += `<div class="pm-section"><div class="pm-section-title">${spot.primary_species?'Species':'Features'}</div><div>${tags.map(t=>`<span class="pm-tag" style="color:${color};border-color:${color}25">${t}</span>`).join('')}</div></div>`;
+    body += `<div class="pm-section"><div class="pm-section-title">Verification</div><div class="pm-section-content">
+        <span class="pm-tag" style="color:${spot.verification_status==='verified'?'#166534':'#92400e'};border-color:${spot.verification_status==='verified'?'#bbf7d0':'#fed7aa'};background:${spot.verification_status==='verified'?'#f0fdf4':'#fff7ed'}">${verificationLabel(spot)}</span>
+        <span class="pm-tag">Confidence: ${spot.confidence||'unverified'}</span>
+    </div></div>`;
     if (spot.description) body += `<div class="pm-section"><div class="pm-section-title">Overview</div><div class="pm-section-content">${spot.description.split('\n')[0]}</div></div>`;
     if (spot.seasonal_tips) body += `<div class="pm-section"><div class="pm-section-title">Seasonal Tips</div><div class="pm-section-content">${spot.seasonal_tips}</div></div>`;
     if (spot.best_time) body += `<div class="pm-section"><div class="pm-section-title">Best Time</div><div class="pm-section-content">${spot.best_time.split('\n').slice(0,3).join('<br>')}</div></div>`;
@@ -856,6 +868,12 @@ window.viewProfile = function(slug, cat) {
         <button onclick="window.addSpotToTrip('${slug}','${cat}');window.closeProfile()" ${inTrip?'disabled ':''} ${addStyle}>${inTrip?'Added &#10003;':'Add to Trip'}</button>
         <a href="${cat}/${slug}.html" style="flex:1;padding:9px 0;background:#2d5a3d12;border:1px solid #2d5a3d30;border-radius:8px;color:#2d5a3d;font-size:13px;font-weight:700;text-decoration:none;text-align:center">Full Page</a>
     </div>`;
+    if (spot.source_url || spot.official_regulation_url) {
+        body += `<div style="display:flex;gap:8px;margin-top:8px">
+            ${spot.source_url?`<a href="${spot.source_url}" target="_blank" rel="noopener noreferrer" style="flex:1;padding:8px 0;background:#f8f7f5;border:1px solid #e8e4df;border-radius:8px;color:#6b6359;font-size:12px;font-weight:700;text-decoration:none;text-align:center">Source</a>`:''}
+            ${spot.official_regulation_url?`<a href="${spot.official_regulation_url}" target="_blank" rel="noopener noreferrer" style="flex:1;padding:8px 0;background:#f8f7f5;border:1px solid #e8e4df;border-radius:8px;color:#6b6359;font-size:12px;font-weight:700;text-decoration:none;text-align:center">Rules</a>`:''}
+        </div>`;
+    }
 
     document.getElementById('pm-header').innerHTML = hdr;
     document.getElementById('pm-body').innerHTML = body;

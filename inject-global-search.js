@@ -73,7 +73,9 @@ const SEARCH_MODAL = `
                             province: s.province,
                             category: CATS[i],
                             species: s.primary_species || s.primary_game || s.features || [],
-                            scout_level: s.scout_level || ''
+                            scout_level: s.scout_level || '',
+                            verification_status: s.verification_status || 'needs_review',
+                            confidence: s.confidence || 'unverified'
                         });
                     });
                 } catch(e) {}
@@ -93,11 +95,12 @@ const SEARCH_MODAL = `
                 var icon = CAT_ICONS[s.category] || '';
                 var sub = s.province + ' • ' + s.category.charAt(0).toUpperCase() + s.category.slice(1);
                 if (s.species.length) sub += ' • ' + s.species.slice(0,2).join(', ');
+                var verify = s.verification_status === 'verified' ? 'Verified' : 'Needs review';
                 return '<a href="' + href + '" class="flex items-center gap-4 px-6 py-3 hover:bg-[#fef9f3] transition-colors">' +
                     '<span class="text-xl flex-shrink-0">' + icon + '</span>' +
                     '<div class="flex-1 min-w-0">' +
                     '<div class="font-semibold text-[#2d5a3d] truncate">' + s.name + '</div>' +
-                    '<div class="text-xs text-[#6b6359] truncate">' + sub + '</div>' +
+                    '<div class="text-xs text-[#6b6359] truncate">' + sub + ' • ' + verify + '</div>' +
                     '</div>' +
                     '<span class="text-xs font-bold text-[#c97c5e] flex-shrink-0">' + s.scout_level + '</span>' +
                     '</a>';
