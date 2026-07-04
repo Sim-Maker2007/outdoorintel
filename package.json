@@ -10,9 +10,15 @@
     "data:audit": "node scripts/build-reference-audit.js",
     "build:province-indexes": "node scripts/build-province-indexes.js",
     "inject:community": "node scripts/inject-community-intel.js",
+    "build:css": "tailwindcss -c tailwind.config.js -i assets/css/tailwind.input.css -o assets/css/site.css --minify",
+    "design:apply": "node scripts/apply-design-system.js",
+    "links:clean": "node scripts/fix-internal-links.js",
     "quality": "npm run data:normalize && npm run build:province-indexes && npm run data:validate && npm run data:audit"
   },
   "engines": {
     "node": ">=20"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
   }
 }

@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#2d5a3d">
+    <meta name="theme-color" content="#14251a">
     <link rel="alternate" type="application/rss+xml" title="Outdoor Intel Blog" href="https://outdoorintel.ca/rss.xml">
-    <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
-    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
     <title>Aigle, Lac de l' | Fishing | Outdoor Intel</title>
     <meta name="description" content="Detailed scouting intelligence for Aigle, Lac de l', Quebec. Fishing data, seasonal tips, terrain info, and expert guidance for Canadian outdoor adventures.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -36,7 +34,7 @@
     <meta name="ICBM" content="46.113154, -75.462279">
     
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://outdoorintel.ca/"},{"@type":"ListItem","position":2,"name":"Fishing","item":"https://outdoorintel.ca/en/fishing/directory"},{"@type":"ListItem","position":3,"name":"Aigle, Lac de l'","item":"https://outdoorintel.ca/en/fishing/aigle-lac-de-l"}]}</script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/site.css?v=1">
     <style>
         .spot-hero {
             background: linear-gradient(135deg, rgba(45,90,61,0.3), rgba(62,49,39,0.2)), url('../../assets/heros/scout-hero-74.jpg');
@@ -55,60 +53,75 @@
     </script>
 
     <meta property="og:image:alt" content="Aigle, Lac de l' - fishing destination in Quebec, Canada">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="/assets/vendor/leaflet/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <script src="/assets/vendor/leaflet/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style id="oi-ds">.explore-dropdown{visibility:hidden;opacity:0;transform:translateY(6px);transition:opacity .15s ease,transform .15s ease,visibility .15s}.explore-group:hover .explore-dropdown,.explore-group:focus-within .explore-dropdown{visibility:visible;opacity:1;transform:translateY(0)}</style>
 </head>
-<body class="bg-[#f5f3f0] text-[#3e3127] font-sans leading-relaxed">
+<body class="bg-[#fbfaf7] text-[#1c2b21] font-sans leading-relaxed">
 
-    <header class="fixed top-0 w-full z-50 border-b border-[#2d5a3d]/10 bg-white/95 backdrop-blur-md">
-    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <a href="../../index.html" class="flex-shrink-0">
-            <img src="../../assets/logo/logo.jpg" alt="Outdoor Intel" width="180" height="101" class="h-10 md:h-14 w-auto object-contain">
+    <header data-oi-ds class="fixed top-0 w-full z-[1000] bg-[#14251a] border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between gap-6">
+        <a href="/" class="flex items-center gap-3 flex-shrink-0" aria-label="Outdoor Intel">
+            <span class="w-9 h-9 rounded-lg bg-white flex items-center justify-center text-[#14251a] font-extrabold text-sm tracking-tight">OI</span>
+            <span class="text-white font-bold text-lg tracking-tight">Outdoor Intel</span>
         </a>
-        <nav class="hidden lg:flex gap-6 text-sm font-semibold text-[#3e3127]">
-            <a href="../../en/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Fishing</a>
-            <a href="../../en/hunting/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Hunting</a>
-            <a href="../../en/camping/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Camping</a>
-            <a href="../../en/kayaking/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Kayaking</a>
-            <a href="../../en/skiing/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Skiing</a>
-            <a href="../../en/hiking/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Hiking</a>
-            <a href="../map.html" class="hover:text-[#c97c5e] transition-colors py-2">Map</a>
-            <a href="../../en/blog.html" class="hover:text-[#c97c5e] transition-colors py-2">Blog</a>
-            <a href="../../fr/fishing/directory.html" class="text-[#c97c5e] font-bold hover:text-[#2d5a3d] transition-colors py-2">Français</a>
-            <button id="global-search-toggle" class="hover:text-[#c97c5e] transition-colors py-2" aria-label="Search spots">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-white/90">
+            <div class="explore-group relative">
+                <button class="flex items-center gap-1.5 py-2 hover:text-white transition-colors" aria-haspopup="true">
+                    Explore
+                    <svg class="w-3.5 h-3.5 text-[#a2c99a]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+                </button>
+                <div class="explore-dropdown absolute left-0 top-full pt-2 w-52">
+                    <div class="bg-white rounded-xl py-2 shadow-xl border border-[#14251a]/10">
+                        <a href="/en/fishing/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">🎣 Fishing</a>
+                        <a href="/en/hunting/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">🦌 Hunting</a>
+                        <a href="/en/camping/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">⛺ Camping</a>
+                        <a href="/en/kayaking/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">🛶 Kayaking</a>
+                        <a href="/en/skiing/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">⛷️ Skiing</a>
+                        <a href="/en/hiking/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">🥾 Hiking</a>
+                    </div>
+                </div>
+            </div>
+            <a href="/en/map" class="py-2 hover:text-white transition-colors">Map</a>
+            <a href="/en/trip-planner" class="py-2 hover:text-white transition-colors">Trip Planner</a>
+            <a href="/en/blog" class="py-2 hover:text-white transition-colors">Blog</a>
+            <span class="inline-flex items-center gap-1.5 border border-white/25 rounded-full px-4 py-1.5 text-xs font-bold"><span class="text-white">EN</span><span class="text-white/30">|</span><a href="/fr/fishing/aigle-lac-de-l" class="text-[#a2c99a] hover:text-white transition-colors" lang="fr">FR</a></span>
+            <button id="global-search-toggle" class="w-9 h-9 rounded-full border border-white/25 flex items-center justify-center hover:bg-white/10 transition-colors" aria-label="Search">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
             </button>
         </nav>
-        <button id="menu-toggle" class="lg:hidden p-2 text-[#3e3127]" aria-label="Toggle menu">
+        <button id="menu-toggle" class="lg:hidden p-2 text-white" aria-label="Menu" aria-expanded="false">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
             </svg>
         </button>
     </div>
-    <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-[#2d5a3d]/10">
-        <div class="max-w-7xl mx-auto px-6 py-4 space-y-1">
-            <a href="../../en/fishing/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">🎣 Fishing</a>
-            <a href="../../en/hunting/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">🦌 Hunting</a>
-            <a href="../../en/camping/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">⛺ Camping</a>
-            <a href="../../en/kayaking/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">🛶 Kayaking</a>
-            <a href="../../en/skiing/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">⛷️ Skiing</a>
-            <a href="../../en/hiking/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">🥾 Hiking</a>
-            <a href="../map.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">Map</a>
-            <a href="../../en/blog.html" class="block py-2 text-[#2d5a3d] font-semibold hover:text-[#c97c5e]">Blog</a>
-            <a href="../../fr/fishing/directory.html" class="block py-2 text-[#c97c5e] font-bold mt-2">Français</a>
+    <nav id="mobile-menu" class="hidden lg:hidden bg-[#14251a] border-t border-white/10">
+        <div class="max-w-6xl mx-auto px-6 py-4 space-y-1 text-white/90">
+            <a href="/en/fishing/directory" class="block py-2 hover:text-[#a2c99a]">🎣 Fishing</a>
+            <a href="/en/hunting/directory" class="block py-2 hover:text-[#a2c99a]">🦌 Hunting</a>
+            <a href="/en/camping/directory" class="block py-2 hover:text-[#a2c99a]">⛺ Camping</a>
+            <a href="/en/kayaking/directory" class="block py-2 hover:text-[#a2c99a]">🛶 Kayaking</a>
+            <a href="/en/skiing/directory" class="block py-2 hover:text-[#a2c99a]">⛷️ Skiing</a>
+            <a href="/en/hiking/directory" class="block py-2 hover:text-[#a2c99a]">🥾 Hiking</a>
+            <a href="/en/map" class="block py-2 hover:text-[#a2c99a]">Map</a>
+            <a href="/en/trip-planner" class="block py-2 hover:text-[#a2c99a]">Trip Planner</a>
+            <a href="/en/trust" class="block py-2 hover:text-[#a2c99a]">Trust & sources</a>
+            <a href="/en/blog" class="block py-2 font-semibold hover:text-[#a2c99a]">Blog</a>
+            <a href="/fr/fishing/aigle-lac-de-l" class="block py-2 text-[#a2c99a] font-bold mt-2" lang="fr">Français</a>
         </div>
     </nav>
 </header>
     <nav class="max-w-7xl mx-auto px-6 py-3 flex items-center text-sm flex-wrap" aria-label="Breadcrumb">
-            <a href="../../index.html" class="text-[#6b6359] hover:text-[#c97c5e] transition-colors">Home</a><svg class="w-3 h-3 text-[#6b6359]/40 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg><a href="directory.html" class="text-[#6b6359] hover:text-[#c97c5e] transition-colors">Fishing</a><svg class="w-3 h-3 text-[#6b6359]/40 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg><span class="text-[#2d5a3d] font-semibold">Aigle, Lac de l'</span>
+            <a href="/" class="text-[#5c6b5f] hover:text-[#3d7a4d] transition-colors">Home</a><svg class="w-3 h-3 text-[#5c6b5f]/40 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg><a href="/en/fishing/directory" class="text-[#5c6b5f] hover:text-[#3d7a4d] transition-colors">Fishing</a><svg class="w-3 h-3 text-[#5c6b5f]/40 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg><span class="text-[#305e3c] font-semibold">Aigle, Lac de l'</span>
         </nav>
 
     <main>
-        <section class="spot-hero min-h-screen flex flex-col justify-center pt-24 pb-12 relative">
+        <section class="spot-hero min-h-[55vh] flex flex-col justify-center pt-32 pb-12 relative">
             <div class="max-w-7xl mx-auto px-6 w-full relative z-10 flex flex-col flex-1 justify-center">
                 <div class="max-w-3xl mb-16 lg:mb-20">
                     <div class="mb-6">
-                        <span class="inline-block bg-white/90 text-[#c97c5e] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full">Fishing Scout Report</span>
+                        <span class="inline-block bg-white/90 text-[#3d7a4d] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full">Fishing Scout Report</span>
                     </div>
                     <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-4 leading-tight text-white drop-shadow-lg">
                         Aigle, Lac de l'
@@ -116,8 +129,8 @@
                     <p class="text-xl text-white/80 mb-4 drop-shadow">Quebec</p>
                     <p class="text-lg text-white/90 mb-10 max-w-xl leading-relaxed drop-shadow">Detailed scouting intelligence for Aigle, Lac de l', Quebec. Fishing data, seasonal tips, terrain info, and expert guidance for Canadian outdoor adventures.</p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="directory.html" class="bg-[#2d5a3d] text-white px-8 py-4 font-semibold rounded-lg hover:bg-[#c97c5e] transition-colors shadow-lg">All Fishing</a>
-                        <a href="https://www.quebec.ca/tourisme-et-loisirs/activites-sportives-et-de-plein-air/peche-et-chasse/peche" target="_blank" rel="noopener noreferrer" class="bg-white/90 text-[#2d5a3d] px-8 py-4 font-semibold rounded-lg hover:bg-white transition-colors shadow-lg inline-flex items-center gap-2">Official Website <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></a>
+                        <a href="/en/fishing/directory" class="bg-[#305e3c] text-white px-8 py-4 font-semibold rounded-lg hover:bg-[#3d7a4d] transition-colors shadow-lg">All Fishing</a>
+                        <a href="https://www.quebec.ca/tourisme-et-loisirs/activites-sportives-et-de-plein-air/peche-et-chasse/peche" target="_blank" rel="noopener noreferrer" class="bg-white/90 text-[#305e3c] px-8 py-4 font-semibold rounded-lg hover:bg-white transition-colors shadow-lg inline-flex items-center gap-2">Official Website <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></a>
                     </div>
                 </div>
 
@@ -125,11 +138,11 @@
                     <div class="bg-white/95 backdrop-blur rounded-xl p-8 inline-block" style="box-shadow: 0 4px 12px rgba(62,49,39,0.1)">
                         <div class="flex flex-wrap gap-10">
                         <div>
-                            <div class="text-2xl font-bold text-[#2d5a3d]">Varies</div>
+                            <div class="text-2xl font-bold text-[#305e3c]">Varies</div>
                             <div class="text-xs uppercase tracking-widest text-[#7a9b8e] font-semibold mt-1">Max Depth</div>
                         </div>
                         <div>
-                            <div class="text-2xl font-bold text-[#c97c5e]">Explorer</div>
+                            <div class="text-2xl font-bold text-[#3d7a4d]">Explorer</div>
                             <div class="text-xs uppercase tracking-widest text-[#7a9b8e] font-semibold mt-1">Scout Level</div>
                         </div>
                         </div>
@@ -140,20 +153,20 @@
 
         <section class="bg-white py-16 px-6 -mt-8 relative z-20">
             <div class="max-w-7xl mx-auto">
-                <div class="bg-[#fef9f3] rounded-xl p-8 mb-10" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                    <h2 class="text-2xl font-bold text-[#2d5a3d] mb-6">Primary Species</h2>
+                <div class="bg-[#f4f3ec] rounded-xl p-8 mb-10" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <h2 class="text-2xl font-bold text-[#305e3c] mb-6">Primary Species</h2>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <div class="bg-white border border-[#2d5a3d]/10 rounded-lg p-4 flex items-center gap-3">
-                        <div class="w-3 h-3 rounded-full bg-[#c97c5e]"></div>
-                        <span class="font-semibold text-[#2d5a3d]">Touladi</span>
+                    <div class="bg-white border border-[#305e3c]/10 rounded-lg p-4 flex items-center gap-3">
+                        <div class="w-3 h-3 rounded-full bg-[#3d7a4d]"></div>
+                        <span class="font-semibold text-[#305e3c]">Touladi</span>
                     </div>
                     </div>
                 </div>
 
-                <div class="bg-[#2d5a3d] text-white rounded-xl p-8 mb-10">
+                <div class="bg-[#305e3c] text-white rounded-xl p-8 mb-10">
                     <h2 class="text-2xl font-bold mb-4">Seasonal Tips</h2>
                     <p class="text-lg leading-relaxed text-white/90">⚠️ Mercury advisory in effect — check consumption guidelines before eating your catch. Best fishing from May through October. Touladi is most active in early morning and late evening during summer months.</p>
-                    <div class="mt-6 text-sm text-[#c97c5e] font-semibold">&mdash; Expert Field Intelligence</div>
+                    <div class="mt-6 text-sm text-[#3d7a4d] font-semibold">&mdash; Expert Field Intelligence</div>
                 </div>
             </div>
         </section>
@@ -162,8 +175,8 @@
         <section class="bg-white py-16 px-6">
             <div class="max-w-7xl mx-auto">
                 <div class="max-w-4xl">
-                    <h2 class="text-3xl font-bold text-[#2d5a3d] mb-6">About This Place</h2>
-                    <p class="text-lg text-[#3e3127] leading-relaxed">Aigle, Lac de l' is one of Quebec's premier fishing destinations, nestled within the Laurentian Mountains, St. Lawrence Valley, boreal shield. Known for its exceptional Touladi populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.<br/><br/><br/><br/>With a maximum depth of Varies, the lake offers diverse structure and habitat that supports a healthy ecosystem of Touladi. The surrounding Laurentian Mountains provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Aigle, Lac de l' delivers an unforgettable Canadian fishing experience.</p>
+                    <h2 class="text-3xl font-bold text-[#305e3c] mb-6">About This Place</h2>
+                    <p class="text-lg text-[#1c2b21] leading-relaxed">Aigle, Lac de l' is one of Quebec's premier fishing destinations, nestled within the Laurentian Mountains, St. Lawrence Valley, boreal shield. Known for its exceptional Touladi populations, this waterbody has earned a loyal following among anglers who return season after season for its consistent catches and breathtaking natural setting.<br/><br/><br/><br/>With a maximum depth of Varies, the lake offers diverse structure and habitat that supports a healthy ecosystem of Touladi. The surrounding Laurentian Mountains provides a stunning backdrop that makes every outing here feel like a true wilderness escape. Whether you're casting from shore at dawn or trolling the deep water on a quiet afternoon, Aigle, Lac de l' delivers an unforgettable Canadian fishing experience.</p>
                 </div>
             </div>
         </section>
@@ -172,17 +185,17 @@
             <div class="max-w-7xl mx-auto">
                 <div class="flex items-center justify-between mb-6 flex-wrap gap-4">
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-[#2d5a3d] rounded-lg flex items-center justify-center">
+                        <div class="w-10 h-10 bg-[#305e3c] rounded-lg flex items-center justify-center">
                             <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
                         </div>
-                        <h2 class="text-3xl font-bold text-[#2d5a3d]">Location Map</h2>
+                        <h2 class="text-3xl font-bold text-[#305e3c]">Location Map</h2>
                     </div>
-                    <a href="../map.html" class="text-sm font-semibold text-[#c97c5e] hover:text-[#2d5a3d] transition-colors">View on full map &rarr;</a>
+                    <a href="/en/map" class="text-sm font-semibold text-[#3d7a4d] hover:text-[#305e3c] transition-colors">View on full map &rarr;</a>
                 </div>
-                <div class="rounded-xl overflow-hidden border border-[#2d5a3d]/10" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                <div class="rounded-xl overflow-hidden border border-[#305e3c]/10" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
                     <div id="spot-mini-map" style="height:400px;width:100%;"></div>
                 </div>
-                <p class="text-sm text-[#6b6359] mt-3">GPS: 46.113154&deg;N, 75.462279&deg;W</p>
+                <p class="text-sm text-[#5c6b5f] mt-3">GPS: 46.113154&deg;N, 75.462279&deg;W</p>
             </div>
         </section>
         <script>
@@ -197,44 +210,44 @@
             setTimeout(function(){ map.invalidateSize(); }, 200);
         })();
         </script>
-        <section class="bg-[#f5f3f0] py-16 px-6">
+        <section class="bg-[#fbfaf7] py-16 px-6">
             <div class="max-w-7xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-[#fef9f3] rounded-xl p-8" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="bg-[#f4f3ec] rounded-xl p-8" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
                         <div class="flex items-center gap-3 mb-4">
-                            <div class="w-10 h-10 bg-[#2d5a3d] rounded-lg flex items-center justify-center">
+                            <div class="w-10 h-10 bg-[#305e3c] rounded-lg flex items-center justify-center">
                                 <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                             </div>
-                            <h3 class="text-xl font-bold text-[#2d5a3d]">How to Get There</h3>
+                            <h3 class="text-xl font-bold text-[#305e3c]">How to Get There</h3>
                         </div>
-                        <p class="text-[#3e3127] leading-relaxed">From Montreal, head east — the drive takes approximately 2-3 hours. GPS coordinates: 46.113154°N, 75.462279°W. The final stretch is on gravel road — high-clearance vehicle recommended during spring thaw. Cell service becomes spotty about 30 minutes before arrival.</p>
+                        <p class="text-[#1c2b21] leading-relaxed">From Montreal, head east — the drive takes approximately 2-3 hours. GPS coordinates: 46.113154°N, 75.462279°W. The final stretch is on gravel road — high-clearance vehicle recommended during spring thaw. Cell service becomes spotty about 30 minutes before arrival.</p>
                     </div>
-                    <div class="bg-[#fef9f3] rounded-xl p-8" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="bg-[#f4f3ec] rounded-xl p-8" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
                         <div class="flex items-center gap-3 mb-4">
-                            <div class="w-10 h-10 bg-[#2d5a3d] rounded-lg flex items-center justify-center">
+                            <div class="w-10 h-10 bg-[#305e3c] rounded-lg flex items-center justify-center">
                                 <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/></svg>
                             </div>
-                            <h3 class="text-xl font-bold text-[#2d5a3d]">Parking & Access</h3>
+                            <h3 class="text-xl font-bold text-[#305e3c]">Parking & Access</h3>
                         </div>
-                        <p class="text-[#3e3127] leading-relaxed">Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Multiple shore fishing spots are accessible from the parking area. Arrive early on weekends during peak season — the lot fills up by 7 AM.</p>
+                        <p class="text-[#1c2b21] leading-relaxed">Public boat launch with paved ramp and trailer parking for 20+ vehicles. Parking is free year-round. Multiple shore fishing spots are accessible from the parking area. Arrive early on weekends during peak season — the lot fills up by 7 AM.</p>
                     </div>
                 </div>
             </div>
         </section>
         
-        <section class="bg-[#f5f3f0] py-12 px-6" id="weather-widget">
+        <section class="bg-[#fbfaf7] py-12 px-6" id="weather-widget">
             <div class="max-w-7xl mx-auto">
                 <div class="flex items-center gap-3 mb-6">
-                    <div class="w-10 h-10 bg-[#c97c5e] rounded-lg flex items-center justify-center">
+                    <div class="w-10 h-10 bg-[#3d7a4d] rounded-lg flex items-center justify-center">
                         <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
                     </div>
                     <div>
-                        <h2 class="text-2xl font-bold text-[#2d5a3d]">Current Weather</h2>
-                        <p class="text-xs text-[#6b6359]">Live conditions via Open-Meteo</p>
+                        <h2 class="text-2xl font-bold text-[#305e3c]">Current Weather</h2>
+                        <p class="text-xs text-[#5c6b5f]">Live conditions via Open-Meteo</p>
                     </div>
                 </div>
                 <div id="weather-data" class="bg-white rounded-xl p-6" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                    <p class="text-[#6b6359] text-sm">Loading weather data...</p>
+                    <p class="text-[#5c6b5f] text-sm">Loading weather data...</p>
                 </div>
             </div>
         </section>
@@ -247,7 +260,7 @@
             fetch('https://api.open-meteo.com/v1/forecast?latitude='+lat+'&longitude='+lng+'&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,weather_code,wind_speed_10m&timezone=auto')
             .then(function(r){return r.json()})
             .then(function(d){
-                if(!d.current){el.innerHTML='<p class="text-[#6b6359]">Weather data unavailable.</p>';return;}
+                if(!d.current){el.innerHTML='<p class="text-[#5c6b5f]">Weather data unavailable.</p>';return;}
                 var c=d.current;
                 var code=c.weather_code||0;
                 var icon=ICONS[code]||'🌡️';
@@ -256,40 +269,40 @@
                     '<div class="flex items-center gap-6 flex-wrap">'+
                     '<div class="flex items-center gap-3">'+
                     '<span class="text-5xl">'+icon+'</span>'+
-                    '<div><div class="text-4xl font-bold text-[#2d5a3d]">'+Math.round(c.temperature_2m)+'°C</div>'+
-                    '<div class="text-sm text-[#6b6359]">'+desc+'</div></div></div>'+
+                    '<div><div class="text-4xl font-bold text-[#305e3c]">'+Math.round(c.temperature_2m)+'°C</div>'+
+                    '<div class="text-sm text-[#5c6b5f]">'+desc+'</div></div></div>'+
                     '<div class="flex gap-6 flex-wrap text-sm">'+
-                    '<div><div class="text-[#6b6359] text-xs uppercase font-semibold">Feels like</div><div class="font-bold text-[#2d5a3d]">'+Math.round(c.apparent_temperature)+'°C</div></div>'+
-                    '<div><div class="text-[#6b6359] text-xs uppercase font-semibold">Wind</div><div class="font-bold text-[#2d5a3d]">'+Math.round(c.wind_speed_10m)+' km/h</div></div>'+
-                    '<div><div class="text-[#6b6359] text-xs uppercase font-semibold">Humidity</div><div class="font-bold text-[#2d5a3d]">'+c.relative_humidity_2m+'%</div></div>'+
-                    '<div><div class="text-[#6b6359] text-xs uppercase font-semibold">Precip.</div><div class="font-bold text-[#2d5a3d]">'+c.precipitation+' mm</div></div>'+
+                    '<div><div class="text-[#5c6b5f] text-xs uppercase font-semibold">Feels like</div><div class="font-bold text-[#305e3c]">'+Math.round(c.apparent_temperature)+'°C</div></div>'+
+                    '<div><div class="text-[#5c6b5f] text-xs uppercase font-semibold">Wind</div><div class="font-bold text-[#305e3c]">'+Math.round(c.wind_speed_10m)+' km/h</div></div>'+
+                    '<div><div class="text-[#5c6b5f] text-xs uppercase font-semibold">Humidity</div><div class="font-bold text-[#305e3c]">'+c.relative_humidity_2m+'%</div></div>'+
+                    '<div><div class="text-[#5c6b5f] text-xs uppercase font-semibold">Precip.</div><div class="font-bold text-[#305e3c]">'+c.precipitation+' mm</div></div>'+
                     '</div></div>';
             })
-            .catch(function(){el.innerHTML='<p class="text-[#6b6359]">Weather data unavailable. Check back later.</p>';});
+            .catch(function(){el.innerHTML='<p class="text-[#5c6b5f]">Weather data unavailable. Check back later.</p>';});
         })();
         </script>
         <section class="bg-white py-16 px-6">
             <div class="max-w-7xl mx-auto">
                 <div class="max-w-4xl">
-                    <h2 class="text-3xl font-bold text-[#2d5a3d] mb-6">Best Time to Visit</h2>
-                    <p class="text-lg text-[#3e3127] leading-relaxed">Spring (May-June): Post-ice-out is prime time for Touladi. Water temperatures are ideal and fish are actively feeding after the long winter.<br/>Summer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.<br/>Fall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fall colours make this an especially scenic time to visit.<br/>Winter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.</p>
+                    <h2 class="text-3xl font-bold text-[#305e3c] mb-6">Best Time to Visit</h2>
+                    <p class="text-lg text-[#1c2b21] leading-relaxed">Spring (May-June): Post-ice-out is prime time for Touladi. Water temperatures are ideal and fish are actively feeding after the long winter.<br/>Summer (July-August): Switch to early morning and late evening bites. Deep water trolling produces best results.<br/>Fall (September-October): Arguably the best season — cooler water triggers aggressive feeding. Fall colours make this an especially scenic time to visit.<br/>Winter: Ice fishing is productive from January through March. Check ice conditions with local outfitters.</p>
                 </div>
             </div>
         </section>
-        <section class="bg-[#f5f3f0] py-16 px-6">
+        <section class="bg-[#fbfaf7] py-16 px-6">
             <div class="max-w-7xl mx-auto">
                 <div class="max-w-4xl">
                     <div class="flex items-center gap-3 mb-6">
-                        <div class="w-10 h-10 bg-[#c97c5e] rounded-lg flex items-center justify-center">
+                        <div class="w-10 h-10 bg-[#3d7a4d] rounded-lg flex items-center justify-center">
                             <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg>
                         </div>
-                        <h2 class="text-3xl font-bold text-[#2d5a3d]">Terrain & Topography</h2>
+                        <h2 class="text-3xl font-bold text-[#305e3c]">Terrain & Topography</h2>
                     </div>
-                    <p class="text-lg text-[#3e3127] leading-relaxed">Maximum depth: Varies. The lake bottom features a mix of gravel beds, submerged timber, and weed beds that provide excellent habitat structure. The surrounding landscape is Laurentian Mountains with dense tree cover right to the shoreline. Water clarity is moderate — 1-3 metres visibility depending on season. The eastern bay is shallow — use caution with motor boats.</p>
+                    <p class="text-lg text-[#1c2b21] leading-relaxed">Maximum depth: Varies. The lake bottom features a mix of gravel beds, submerged timber, and weed beds that provide excellent habitat structure. The surrounding landscape is Laurentian Mountains with dense tree cover right to the shoreline. Water clarity is moderate — 1-3 metres visibility depending on season. The eastern bay is shallow — use caution with motor boats.</p>
                 </div>
             </div>
         </section>
-        <section class="bg-[#2d5a3d] text-white py-16 px-6">
+        <section class="bg-[#305e3c] text-white py-16 px-6">
             <div class="max-w-7xl mx-auto">
                 <div class="max-w-4xl">
                     <h2 class="text-3xl font-bold mb-6">Regulations & Permits</h2>
@@ -297,43 +310,43 @@
                 </div>
             </div>
         </section>
-        <section class="bg-[#f5f3f0] py-16 px-6">
+        <section class="bg-[#fbfaf7] py-16 px-6">
             <div class="max-w-7xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="bg-white rounded-xl p-8" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                        <h3 class="text-xl font-bold text-[#2d5a3d] mb-4">Nearby Services</h3>
-                        <p class="text-[#3e3127] leading-relaxed">Nearest gas station: 25 minutes drive. Groceries and supplies available in Montreal — stock up before heading out. Local bait shop within 10 minutes of the lake. Several fishing guides operate in the area — book in advance for peak season.</p>
+                        <h3 class="text-xl font-bold text-[#305e3c] mb-4">Nearby Services</h3>
+                        <p class="text-[#1c2b21] leading-relaxed">Nearest gas station: 25 minutes drive. Groceries and supplies available in Montreal — stock up before heading out. Local bait shop within 10 minutes of the lake. Several fishing guides operate in the area — book in advance for peak season.</p>
                     </div>
                     <div class="bg-white rounded-xl p-8" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                        <h3 class="text-xl font-bold text-[#2d5a3d] mb-4">Where to Stay</h3>
-                        <p class="text-[#3e3127] leading-relaxed">Multiple lakeside cabins and cottages available for rent within 5 km. Backcountry camping is permitted on Crown land — practice Leave No Trace. Motels and B&Bs available in Montreal for those preferring indoor comfort.</p>
+                        <h3 class="text-xl font-bold text-[#305e3c] mb-4">Where to Stay</h3>
+                        <p class="text-[#1c2b21] leading-relaxed">Multiple lakeside cabins and cottages available for rent within 5 km. Backcountry camping is permitted on Crown land — practice Leave No Trace. Motels and B&Bs available in Montreal for those preferring indoor comfort.</p>
                     </div>
                     <div class="bg-white rounded-xl p-8" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                        <h3 class="text-xl font-bold text-[#2d5a3d] mb-4">Cell Coverage & Safety</h3>
-                        <p class="text-[#3e3127] leading-relaxed">Cell coverage: Spotty — download offline maps before your trip. Nearest hospital: Montreal (2-3 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Wildlife encounters are rare but carry bear spray as a precaution. Water temperature can be dangerously cold even in summer — dress for immersion.</p>
+                        <h3 class="text-xl font-bold text-[#305e3c] mb-4">Cell Coverage & Safety</h3>
+                        <p class="text-[#1c2b21] leading-relaxed">Cell coverage: Spotty — download offline maps before your trip. Nearest hospital: Montreal (2-3 hours drive). Always wear a PFD when on the water and file a trip plan with someone at home. Wildlife encounters are rare but carry bear spray as a precaution. Water temperature can be dangerously cold even in summer — dress for immersion.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="bg-[#fef9f3] py-16 px-6">
+        <section class="bg-[#f4f3ec] py-16 px-6">
             <div class="max-w-7xl mx-auto">
-                <h2 class="text-3xl font-bold text-[#2d5a3d] mb-10">Nearby Spots</h2>
+                <h2 class="text-3xl font-bold text-[#305e3c] mb-10">Nearby Spots</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <a href="argile-lac-de-l.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                    <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                        <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Explorer</div>
-                        <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Argile, Lac de l'</h3>
-                        <p class="text-[#6b6359] text-sm mb-3">Touladi</p>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                <a href="/en/fishing/argile-lac-de-l" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                        <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Quebec &bull; Explorer</div>
+                        <h3 class="text-xl font-bold text-[#305e3c] mb-2">Argile, Lac de l'</h3>
+                        <p class="text-[#5c6b5f] text-sm mb-3">Touladi</p>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </a>
-                <a href="cain-lac.html" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                    <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                        <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Explorer</div>
-                        <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Cain, Lac</h3>
-                        <p class="text-[#6b6359] text-sm mb-3">Touladi</p>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                <a href="/en/fishing/cain-lac" class="group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                        <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Quebec &bull; Explorer</div>
+                        <h3 class="text-xl font-bold text-[#305e3c] mb-2">Cain, Lac</h3>
+                        <p class="text-[#5c6b5f] text-sm mb-3">Touladi</p>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </a>
                 </div>
@@ -341,197 +354,197 @@
         </section>
 
         
-        <section class="bg-[#fef9f3] py-16 px-6" id="gear">
+        <section class="bg-[#f4f3ec] py-16 px-6" id="gear">
             <div class="max-w-3xl mx-auto">
                 <div class="flex items-start justify-between mb-2 flex-wrap gap-4">
                     <div>
-                        <h2 class="text-3xl font-bold text-[#2d5a3d]">Pack This: Aigle, Lac de l'</h2>
-                        <p class="text-[#6b6359] mt-1">Your personalized packing checklist. Tap any item to find it on Amazon.</p>
+                        <h2 class="text-3xl font-bold text-[#305e3c]">Pack This: Aigle, Lac de l'</h2>
+                        <p class="text-[#5c6b5f] mt-1">Your personalized packing checklist. Tap any item to find it on Amazon.</p>
                     </div>
                     <div class="flex gap-2 flex-shrink-0">
-                        <button id="pack-check-all" class="px-4 py-2 text-sm font-semibold rounded-lg border-2 border-[#2d5a3d]/20 text-[#2d5a3d] hover:bg-[#2d5a3d] hover:text-white transition-colors">Check All</button>
-                        <button id="pack-print" class="px-4 py-2 text-sm font-semibold rounded-lg border-2 border-[#2d5a3d]/20 text-[#2d5a3d] hover:bg-[#2d5a3d] hover:text-white transition-colors">Print Checklist</button>
+                        <button id="pack-check-all" class="px-4 py-2 text-sm font-semibold rounded-lg border-2 border-[#305e3c]/20 text-[#305e3c] hover:bg-[#305e3c] hover:text-white transition-colors">Check All</button>
+                        <button id="pack-print" class="px-4 py-2 text-sm font-semibold rounded-lg border-2 border-[#305e3c]/20 text-[#305e3c] hover:bg-[#305e3c] hover:text-white transition-colors">Print Checklist</button>
                     </div>
                 </div>
                 <div class="mb-8">
                     <div class="flex items-center gap-3">
-                        <div class="flex-1 h-3 bg-[#2d5a3d]/10 rounded-full overflow-hidden">
-                            <div id="pack-bar" class="h-full bg-[#2d5a3d] rounded-full transition-all duration-500" style="width:0%"></div>
+                        <div class="flex-1 h-3 bg-[#305e3c]/10 rounded-full overflow-hidden">
+                            <div id="pack-bar" class="h-full bg-[#305e3c] rounded-full transition-all duration-500" style="width:0%"></div>
                         </div>
-                        <span id="pack-progress" class="text-sm font-bold text-[#2d5a3d]">0 / 18</span>
+                        <span id="pack-progress" class="text-sm font-bold text-[#305e3c]">0 / 18</span>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl overflow-hidden" style="box-shadow: 0 4px 24px rgba(62,49,39,0.08)">
                     <div class="p-6 md:p-8">
                 <div class="mb-6">
                     <div class="flex items-center gap-2 mb-3 px-4">
-                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="#2d5a3d"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                        <h3 class="text-sm font-bold uppercase tracking-wider text-[#2d5a3d]">Essential Gear</h3>
+                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="#305e3c"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-[#305e3c]">Essential Gear</h3>
                     </div>
                     <div class="space-y-1">
-                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#fef9f3] cursor-pointer group transition-colors">
-                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#2d5a3d]/30 text-[#2d5a3d] focus:ring-[#2d5a3d] flex-shrink-0 cursor-pointer" style="accent-color:#2d5a3d">
+                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#f4f3ec] cursor-pointer group transition-colors">
+                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#305e3c]/30 text-[#305e3c] focus:ring-[#305e3c] flex-shrink-0 cursor-pointer" style="accent-color:#305e3c">
                             <div class="flex-1 min-w-0">
-                                <span class="text-[#3e3127] font-medium group-hover:text-[#2d5a3d] transition-colors">Fishing Rod &amp; Reel Combo</span>
+                                <span class="text-[#1c2b21] font-medium group-hover:text-[#305e3c] transition-colors">Fishing Rod &amp; Reel Combo</span>
                             </div>
-                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=fishing+rod+reel+combo" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#c97c5e] hover:text-[#2d5a3d] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#c97c5e]/10 hover:bg-[#2d5a3d]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
+                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=fishing+rod+reel+combo" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#3d7a4d] hover:text-[#305e3c] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#3d7a4d]/10 hover:bg-[#305e3c]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
                         </label>
-                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#fef9f3] cursor-pointer group transition-colors">
-                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#2d5a3d]/30 text-[#2d5a3d] focus:ring-[#2d5a3d] flex-shrink-0 cursor-pointer" style="accent-color:#2d5a3d">
+                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#f4f3ec] cursor-pointer group transition-colors">
+                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#305e3c]/30 text-[#305e3c] focus:ring-[#305e3c] flex-shrink-0 cursor-pointer" style="accent-color:#305e3c">
                             <div class="flex-1 min-w-0">
-                                <span class="text-[#3e3127] font-medium group-hover:text-[#2d5a3d] transition-colors">Tackle Box with Lures</span>
+                                <span class="text-[#1c2b21] font-medium group-hover:text-[#305e3c] transition-colors">Tackle Box with Lures</span>
                             </div>
-                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=fishing+tackle+box+lures" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#c97c5e] hover:text-[#2d5a3d] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#c97c5e]/10 hover:bg-[#2d5a3d]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
+                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=fishing+tackle+box+lures" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#3d7a4d] hover:text-[#305e3c] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#3d7a4d]/10 hover:bg-[#305e3c]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
                         </label>
-                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#fef9f3] cursor-pointer group transition-colors">
-                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#2d5a3d]/30 text-[#2d5a3d] focus:ring-[#2d5a3d] flex-shrink-0 cursor-pointer" style="accent-color:#2d5a3d">
+                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#f4f3ec] cursor-pointer group transition-colors">
+                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#305e3c]/30 text-[#305e3c] focus:ring-[#305e3c] flex-shrink-0 cursor-pointer" style="accent-color:#305e3c">
                             <div class="flex-1 min-w-0">
-                                <span class="text-[#3e3127] font-medium group-hover:text-[#2d5a3d] transition-colors">Fishing Line (match your species)</span>
+                                <span class="text-[#1c2b21] font-medium group-hover:text-[#305e3c] transition-colors">Fishing Line (match your species)</span>
                             </div>
-                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=braided+fishing+line" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#c97c5e] hover:text-[#2d5a3d] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#c97c5e]/10 hover:bg-[#2d5a3d]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
+                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=braided+fishing+line" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#3d7a4d] hover:text-[#305e3c] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#3d7a4d]/10 hover:bg-[#305e3c]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
                         </label>
-                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#fef9f3] cursor-pointer group transition-colors">
-                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#2d5a3d]/30 text-[#2d5a3d] focus:ring-[#2d5a3d] flex-shrink-0 cursor-pointer" style="accent-color:#2d5a3d">
+                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#f4f3ec] cursor-pointer group transition-colors">
+                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#305e3c]/30 text-[#305e3c] focus:ring-[#305e3c] flex-shrink-0 cursor-pointer" style="accent-color:#305e3c">
                             <div class="flex-1 min-w-0">
-                                <span class="text-[#3e3127] font-medium group-hover:text-[#2d5a3d] transition-colors">Landing Net</span>
+                                <span class="text-[#1c2b21] font-medium group-hover:text-[#305e3c] transition-colors">Landing Net</span>
                             </div>
-                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=fishing+landing+net+rubber" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#c97c5e] hover:text-[#2d5a3d] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#c97c5e]/10 hover:bg-[#2d5a3d]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
+                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=fishing+landing+net+rubber" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#3d7a4d] hover:text-[#305e3c] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#3d7a4d]/10 hover:bg-[#305e3c]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
                         </label>
-                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#fef9f3] cursor-pointer group transition-colors">
-                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#2d5a3d]/30 text-[#2d5a3d] focus:ring-[#2d5a3d] flex-shrink-0 cursor-pointer" style="accent-color:#2d5a3d">
+                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#f4f3ec] cursor-pointer group transition-colors">
+                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#305e3c]/30 text-[#305e3c] focus:ring-[#305e3c] flex-shrink-0 cursor-pointer" style="accent-color:#305e3c">
                             <div class="flex-1 min-w-0">
-                                <span class="text-[#3e3127] font-medium group-hover:text-[#2d5a3d] transition-colors">Bait Bucket or Live Well</span>
+                                <span class="text-[#1c2b21] font-medium group-hover:text-[#305e3c] transition-colors">Bait Bucket or Live Well</span>
                             </div>
-                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=bait+bucket+fishing" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#c97c5e] hover:text-[#2d5a3d] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#c97c5e]/10 hover:bg-[#2d5a3d]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
+                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=bait+bucket+fishing" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#3d7a4d] hover:text-[#305e3c] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#3d7a4d]/10 hover:bg-[#305e3c]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
                         </label>
-                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#fef9f3] cursor-pointer group transition-colors">
-                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#2d5a3d]/30 text-[#2d5a3d] focus:ring-[#2d5a3d] flex-shrink-0 cursor-pointer" style="accent-color:#2d5a3d">
+                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#f4f3ec] cursor-pointer group transition-colors">
+                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#305e3c]/30 text-[#305e3c] focus:ring-[#305e3c] flex-shrink-0 cursor-pointer" style="accent-color:#305e3c">
                             <div class="flex-1 min-w-0">
-                                <span class="text-[#3e3127] font-medium group-hover:text-[#2d5a3d] transition-colors">Fishing Licence Holder</span>
+                                <span class="text-[#1c2b21] font-medium group-hover:text-[#305e3c] transition-colors">Fishing Licence Holder</span>
                             </div>
-                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=waterproof+licence+holder" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#c97c5e] hover:text-[#2d5a3d] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#c97c5e]/10 hover:bg-[#2d5a3d]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
+                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=waterproof+licence+holder" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#3d7a4d] hover:text-[#305e3c] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#3d7a4d]/10 hover:bg-[#305e3c]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
                         </label>
                     </div>
                 </div>
                 <div class="mb-6">
                     <div class="flex items-center gap-2 mb-3 px-4">
-                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="#2d5a3d"><path d="M7 2l-4 4v3h3v9h8V9h3V6l-4-4h-2l-2 2-2-2H7z"/></svg>
-                        <h3 class="text-sm font-bold uppercase tracking-wider text-[#2d5a3d]">Clothing &amp; Footwear</h3>
+                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="#305e3c"><path d="M7 2l-4 4v3h3v9h8V9h3V6l-4-4h-2l-2 2-2-2H7z"/></svg>
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-[#305e3c]">Clothing &amp; Footwear</h3>
                     </div>
                     <div class="space-y-1">
-                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#fef9f3] cursor-pointer group transition-colors">
-                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#2d5a3d]/30 text-[#2d5a3d] focus:ring-[#2d5a3d] flex-shrink-0 cursor-pointer" style="accent-color:#2d5a3d">
+                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#f4f3ec] cursor-pointer group transition-colors">
+                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#305e3c]/30 text-[#305e3c] focus:ring-[#305e3c] flex-shrink-0 cursor-pointer" style="accent-color:#305e3c">
                             <div class="flex-1 min-w-0">
-                                <span class="text-[#3e3127] font-medium group-hover:text-[#2d5a3d] transition-colors">Polarized Sunglasses</span>
+                                <span class="text-[#1c2b21] font-medium group-hover:text-[#305e3c] transition-colors">Polarized Sunglasses</span>
                             </div>
-                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=polarized+fishing+sunglasses" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#c97c5e] hover:text-[#2d5a3d] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#c97c5e]/10 hover:bg-[#2d5a3d]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
+                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=polarized+fishing+sunglasses" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#3d7a4d] hover:text-[#305e3c] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#3d7a4d]/10 hover:bg-[#305e3c]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
                         </label>
-                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#fef9f3] cursor-pointer group transition-colors">
-                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#2d5a3d]/30 text-[#2d5a3d] focus:ring-[#2d5a3d] flex-shrink-0 cursor-pointer" style="accent-color:#2d5a3d">
+                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#f4f3ec] cursor-pointer group transition-colors">
+                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#305e3c]/30 text-[#305e3c] focus:ring-[#305e3c] flex-shrink-0 cursor-pointer" style="accent-color:#305e3c">
                             <div class="flex-1 min-w-0">
-                                <span class="text-[#3e3127] font-medium group-hover:text-[#2d5a3d] transition-colors">Sun Hat with Neck Cover</span>
+                                <span class="text-[#1c2b21] font-medium group-hover:text-[#305e3c] transition-colors">Sun Hat with Neck Cover</span>
                             </div>
-                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=sun+hat+neck+cover+fishing" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#c97c5e] hover:text-[#2d5a3d] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#c97c5e]/10 hover:bg-[#2d5a3d]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
+                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=sun+hat+neck+cover+fishing" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#3d7a4d] hover:text-[#305e3c] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#3d7a4d]/10 hover:bg-[#305e3c]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
                         </label>
-                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#fef9f3] cursor-pointer group transition-colors">
-                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#2d5a3d]/30 text-[#2d5a3d] focus:ring-[#2d5a3d] flex-shrink-0 cursor-pointer" style="accent-color:#2d5a3d">
+                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#f4f3ec] cursor-pointer group transition-colors">
+                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#305e3c]/30 text-[#305e3c] focus:ring-[#305e3c] flex-shrink-0 cursor-pointer" style="accent-color:#305e3c">
                             <div class="flex-1 min-w-0">
-                                <span class="text-[#3e3127] font-medium group-hover:text-[#2d5a3d] transition-colors">Rain Jacket (packable)</span>
+                                <span class="text-[#1c2b21] font-medium group-hover:text-[#305e3c] transition-colors">Rain Jacket (packable)</span>
                             </div>
-                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=packable+rain+jacket" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#c97c5e] hover:text-[#2d5a3d] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#c97c5e]/10 hover:bg-[#2d5a3d]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
+                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=packable+rain+jacket" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#3d7a4d] hover:text-[#305e3c] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#3d7a4d]/10 hover:bg-[#305e3c]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
                         </label>
                     </div>
                 </div>
                 <div class="mb-6">
                     <div class="flex items-center gap-2 mb-3 px-4">
-                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="#c97c5e"><path fill-rule="evenodd" d="M10 1l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V4l7-3zm1 6a1 1 0 10-2 0v3a1 1 0 102 0V7zm-1 7a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
-                        <h3 class="text-sm font-bold uppercase tracking-wider text-[#2d5a3d]">Safety &amp; First Aid</h3>
+                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="#3d7a4d"><path fill-rule="evenodd" d="M10 1l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V4l7-3zm1 6a1 1 0 10-2 0v3a1 1 0 102 0V7zm-1 7a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-[#305e3c]">Safety &amp; First Aid</h3>
                     </div>
                     <div class="space-y-1">
-                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#fef9f3] cursor-pointer group transition-colors">
-                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#2d5a3d]/30 text-[#2d5a3d] focus:ring-[#2d5a3d] flex-shrink-0 cursor-pointer" style="accent-color:#2d5a3d">
+                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#f4f3ec] cursor-pointer group transition-colors">
+                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#305e3c]/30 text-[#305e3c] focus:ring-[#305e3c] flex-shrink-0 cursor-pointer" style="accent-color:#305e3c">
                             <div class="flex-1 min-w-0">
-                                <span class="text-[#3e3127] font-medium group-hover:text-[#2d5a3d] transition-colors">PFD / Life Jacket</span>
+                                <span class="text-[#1c2b21] font-medium group-hover:text-[#305e3c] transition-colors">PFD / Life Jacket</span>
                             </div>
-                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=fishing+life+jacket+pfd" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#c97c5e] hover:text-[#2d5a3d] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#c97c5e]/10 hover:bg-[#2d5a3d]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
+                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=fishing+life+jacket+pfd" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#3d7a4d] hover:text-[#305e3c] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#3d7a4d]/10 hover:bg-[#305e3c]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
                         </label>
-                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#fef9f3] cursor-pointer group transition-colors">
-                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#2d5a3d]/30 text-[#2d5a3d] focus:ring-[#2d5a3d] flex-shrink-0 cursor-pointer" style="accent-color:#2d5a3d">
+                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#f4f3ec] cursor-pointer group transition-colors">
+                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#305e3c]/30 text-[#305e3c] focus:ring-[#305e3c] flex-shrink-0 cursor-pointer" style="accent-color:#305e3c">
                             <div class="flex-1 min-w-0">
-                                <span class="text-[#3e3127] font-medium group-hover:text-[#2d5a3d] transition-colors">First Aid Kit</span>
+                                <span class="text-[#1c2b21] font-medium group-hover:text-[#305e3c] transition-colors">First Aid Kit</span>
                             </div>
-                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=first+aid+kit+waterproof+compact" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#c97c5e] hover:text-[#2d5a3d] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#c97c5e]/10 hover:bg-[#2d5a3d]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
+                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=first+aid+kit+waterproof+compact" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#3d7a4d] hover:text-[#305e3c] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#3d7a4d]/10 hover:bg-[#305e3c]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
                         </label>
-                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#fef9f3] cursor-pointer group transition-colors">
-                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#2d5a3d]/30 text-[#2d5a3d] focus:ring-[#2d5a3d] flex-shrink-0 cursor-pointer" style="accent-color:#2d5a3d">
+                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#f4f3ec] cursor-pointer group transition-colors">
+                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#305e3c]/30 text-[#305e3c] focus:ring-[#305e3c] flex-shrink-0 cursor-pointer" style="accent-color:#305e3c">
                             <div class="flex-1 min-w-0">
-                                <span class="text-[#3e3127] font-medium group-hover:text-[#2d5a3d] transition-colors">Sunscreen SPF 50+</span>
+                                <span class="text-[#1c2b21] font-medium group-hover:text-[#305e3c] transition-colors">Sunscreen SPF 50+</span>
                             </div>
-                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=sunscreen+spf50+sport" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#c97c5e] hover:text-[#2d5a3d] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#c97c5e]/10 hover:bg-[#2d5a3d]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
+                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=sunscreen+spf50+sport" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#3d7a4d] hover:text-[#305e3c] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#3d7a4d]/10 hover:bg-[#305e3c]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
                         </label>
-                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#fef9f3] cursor-pointer group transition-colors">
-                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#2d5a3d]/30 text-[#2d5a3d] focus:ring-[#2d5a3d] flex-shrink-0 cursor-pointer" style="accent-color:#2d5a3d">
+                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#f4f3ec] cursor-pointer group transition-colors">
+                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#305e3c]/30 text-[#305e3c] focus:ring-[#305e3c] flex-shrink-0 cursor-pointer" style="accent-color:#305e3c">
                             <div class="flex-1 min-w-0">
-                                <span class="text-[#3e3127] font-medium group-hover:text-[#2d5a3d] transition-colors">Bug Spray (DEET)</span>
+                                <span class="text-[#1c2b21] font-medium group-hover:text-[#305e3c] transition-colors">Bug Spray (DEET)</span>
                             </div>
-                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=bug+spray+deet+mosquito" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#c97c5e] hover:text-[#2d5a3d] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#c97c5e]/10 hover:bg-[#2d5a3d]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
+                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=bug+spray+deet+mosquito" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#3d7a4d] hover:text-[#305e3c] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#3d7a4d]/10 hover:bg-[#305e3c]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
                         </label>
                     </div>
                 </div>
                 <div class="mb-6">
                     <div class="flex items-center gap-2 mb-3 px-4">
-                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="#2d5a3d"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zm0 16a3 3 0 01-3-3h6a3 3 0 01-3 3z"/></svg>
-                        <h3 class="text-sm font-bold uppercase tracking-wider text-[#2d5a3d]">Comfort &amp; Convenience</h3>
+                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="#305e3c"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zm0 16a3 3 0 01-3-3h6a3 3 0 01-3 3z"/></svg>
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-[#305e3c]">Comfort &amp; Convenience</h3>
                     </div>
                     <div class="space-y-1">
-                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#fef9f3] cursor-pointer group transition-colors">
-                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#2d5a3d]/30 text-[#2d5a3d] focus:ring-[#2d5a3d] flex-shrink-0 cursor-pointer" style="accent-color:#2d5a3d">
+                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#f4f3ec] cursor-pointer group transition-colors">
+                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#305e3c]/30 text-[#305e3c] focus:ring-[#305e3c] flex-shrink-0 cursor-pointer" style="accent-color:#305e3c">
                             <div class="flex-1 min-w-0">
-                                <span class="text-[#3e3127] font-medium group-hover:text-[#2d5a3d] transition-colors">Portable Fish Finder</span>
+                                <span class="text-[#1c2b21] font-medium group-hover:text-[#305e3c] transition-colors">Portable Fish Finder</span>
                             </div>
-                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=portable+fish+finder" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#c97c5e] hover:text-[#2d5a3d] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#c97c5e]/10 hover:bg-[#2d5a3d]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
+                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=portable+fish+finder" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#3d7a4d] hover:text-[#305e3c] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#3d7a4d]/10 hover:bg-[#305e3c]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
                         </label>
-                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#fef9f3] cursor-pointer group transition-colors">
-                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#2d5a3d]/30 text-[#2d5a3d] focus:ring-[#2d5a3d] flex-shrink-0 cursor-pointer" style="accent-color:#2d5a3d">
+                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#f4f3ec] cursor-pointer group transition-colors">
+                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#305e3c]/30 text-[#305e3c] focus:ring-[#305e3c] flex-shrink-0 cursor-pointer" style="accent-color:#305e3c">
                             <div class="flex-1 min-w-0">
-                                <span class="text-[#3e3127] font-medium group-hover:text-[#2d5a3d] transition-colors">Folding Camp Chair</span>
+                                <span class="text-[#1c2b21] font-medium group-hover:text-[#305e3c] transition-colors">Folding Camp Chair</span>
                             </div>
-                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=folding+fishing+chair+portable" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#c97c5e] hover:text-[#2d5a3d] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#c97c5e]/10 hover:bg-[#2d5a3d]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
+                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=folding+fishing+chair+portable" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#3d7a4d] hover:text-[#305e3c] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#3d7a4d]/10 hover:bg-[#305e3c]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
                         </label>
-                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#fef9f3] cursor-pointer group transition-colors">
-                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#2d5a3d]/30 text-[#2d5a3d] focus:ring-[#2d5a3d] flex-shrink-0 cursor-pointer" style="accent-color:#2d5a3d">
+                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#f4f3ec] cursor-pointer group transition-colors">
+                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#305e3c]/30 text-[#305e3c] focus:ring-[#305e3c] flex-shrink-0 cursor-pointer" style="accent-color:#305e3c">
                             <div class="flex-1 min-w-0">
-                                <span class="text-[#3e3127] font-medium group-hover:text-[#2d5a3d] transition-colors">Cooler for Catch</span>
+                                <span class="text-[#1c2b21] font-medium group-hover:text-[#305e3c] transition-colors">Cooler for Catch</span>
                             </div>
-                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=fishing+cooler+ice+chest" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#c97c5e] hover:text-[#2d5a3d] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#c97c5e]/10 hover:bg-[#2d5a3d]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
+                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=fishing+cooler+ice+chest" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#3d7a4d] hover:text-[#305e3c] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#3d7a4d]/10 hover:bg-[#305e3c]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
                         </label>
                     </div>
                 </div>
                 <div class="mb-6">
                     <div class="flex items-center gap-2 mb-3 px-4">
-                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="#2d5a3d"><path fill-rule="evenodd" d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
-                        <h3 class="text-sm font-bold uppercase tracking-wider text-[#2d5a3d]">Tech &amp; Gadgets</h3>
+                        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="#305e3c"><path fill-rule="evenodd" d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-[#305e3c]">Tech &amp; Gadgets</h3>
                     </div>
                     <div class="space-y-1">
-                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#fef9f3] cursor-pointer group transition-colors">
-                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#2d5a3d]/30 text-[#2d5a3d] focus:ring-[#2d5a3d] flex-shrink-0 cursor-pointer" style="accent-color:#2d5a3d">
+                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#f4f3ec] cursor-pointer group transition-colors">
+                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#305e3c]/30 text-[#305e3c] focus:ring-[#305e3c] flex-shrink-0 cursor-pointer" style="accent-color:#305e3c">
                             <div class="flex-1 min-w-0">
-                                <span class="text-[#3e3127] font-medium group-hover:text-[#2d5a3d] transition-colors">Waterproof Phone Case</span>
+                                <span class="text-[#1c2b21] font-medium group-hover:text-[#305e3c] transition-colors">Waterproof Phone Case</span>
                             </div>
-                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=waterproof+phone+case+floating" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#c97c5e] hover:text-[#2d5a3d] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#c97c5e]/10 hover:bg-[#2d5a3d]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
+                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=waterproof+phone+case+floating" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#3d7a4d] hover:text-[#305e3c] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#3d7a4d]/10 hover:bg-[#305e3c]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
                         </label>
-                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#fef9f3] cursor-pointer group transition-colors">
-                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#2d5a3d]/30 text-[#2d5a3d] focus:ring-[#2d5a3d] flex-shrink-0 cursor-pointer" style="accent-color:#2d5a3d">
+                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#f4f3ec] cursor-pointer group transition-colors">
+                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#305e3c]/30 text-[#305e3c] focus:ring-[#305e3c] flex-shrink-0 cursor-pointer" style="accent-color:#305e3c">
                             <div class="flex-1 min-w-0">
-                                <span class="text-[#3e3127] font-medium group-hover:text-[#2d5a3d] transition-colors">Headlamp (early mornings)</span>
+                                <span class="text-[#1c2b21] font-medium group-hover:text-[#305e3c] transition-colors">Headlamp (early mornings)</span>
                             </div>
-                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=headlamp+rechargeable+fishing" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#c97c5e] hover:text-[#2d5a3d] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#c97c5e]/10 hover:bg-[#2d5a3d]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
+                            <a href="https://www.amazon.ca/s?tag=outdoorintel2-20&k=headlamp+rechargeable+fishing" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#3d7a4d] hover:text-[#305e3c] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#3d7a4d]/10 hover:bg-[#305e3c]/10" onclick="event.stopPropagation()">Amazon &rarr;</a>
                         </label>
                     </div>
                 </div>
                     </div>
                 </div>
-                <p class="text-xs text-[#6b6359]/60 mt-6">As an Amazon Associate, Outdoor Intel earns from qualifying purchases.</p>
+                <p class="text-xs text-[#5c6b5f]/60 mt-6">As an Amazon Associate, Outdoor Intel earns from qualifying purchases.</p>
             </div>
         </section>
         <script>
@@ -597,46 +610,60 @@
         
                 <section class="bg-white py-16 px-6" id="community">
             <div id="ci-root" data-activity="fishing" data-spot="aigle-lac-de-l" data-lang="en" data-name="Aigle, Lac de l'">
-                <div class="max-w-4xl mx-auto text-center py-8 text-[#6b6359]">Loading community intel…</div>
+                <div class="max-w-4xl mx-auto text-center py-8 text-[#5c6b5f]">Loading community intel…</div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-[#2d5a3d] text-white py-16 px-6">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-        <div>
-            <img src="../../assets/logo/logo.jpg" alt="Outdoor Intel" class="h-10 w-auto mb-4 brightness-200">
-            <p class="text-white/70 text-sm">Canada's ultimate outdoor destination. Fishing, hunting, camping, kayaking, skiing, and hiking intelligence.</p>
+    <footer data-oi-ds class="bg-[#14251a] text-white">
+    <div class="max-w-6xl mx-auto px-6 pt-16 pb-8">
+        <div class="grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr] gap-10 pb-12">
+            <div class="col-span-2 md:col-span-1">
+                <a href="/" class="flex items-center gap-3 mb-5" aria-label="Outdoor Intel">
+                    <span class="w-9 h-9 rounded-lg bg-white flex items-center justify-center text-[#14251a] font-extrabold text-sm tracking-tight">OI</span>
+                    <span class="text-white font-bold text-lg tracking-tight">Outdoor Intel</span>
+                </a>
+                <p class="text-white/60 text-sm leading-relaxed max-w-xs mb-6">Sourced outdoor data for better trips across Canada. Every spot is verified and cited.</p>
+                <p class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-2">Weekly intel, free</p>
+                <form class="js-newsletter-form flex gap-2 max-w-xs" data-lang="en">
+                    <input type="email" name="email" required placeholder="Your email" autocomplete="email" class="flex-1 min-w-0 px-3 py-2 rounded-lg text-sm text-[#1c2b21] bg-white placeholder-[#5c6b5f] outline-none focus:ring-2 focus:ring-[#a2c99a]">
+                    <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-5000px">
+                    <button type="submit" class="bg-[#305e3c] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#3d7a4d] transition-colors whitespace-nowrap">Subscribe</button>
+                </form>
+                <p class="js-newsletter-msg text-white/50 text-xs mt-2">One email a week. No spam.</p>
+            </div>
+            <div>
+                <h4 class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-4">Explore</h4>
+                <ul class="space-y-2.5 text-sm text-white/70">
+                    <li><a href="/en/fishing/directory" class="hover:text-white transition-colors">Fishing</a></li>
+                    <li><a href="/en/hunting/directory" class="hover:text-white transition-colors">Hunting</a></li>
+                    <li><a href="/en/camping/directory" class="hover:text-white transition-colors">Camping</a></li>
+                    <li><a href="/en/kayaking/directory" class="hover:text-white transition-colors">Kayaking</a></li>
+                    <li><a href="/en/skiing/directory" class="hover:text-white transition-colors">Skiing</a></li>
+                    <li><a href="/en/hiking/directory" class="hover:text-white transition-colors">Hiking</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-4">Product</h4>
+                <ul class="space-y-2.5 text-sm text-white/70">
+                    <li><a href="/en/map" class="hover:text-white transition-colors">Map</a></li>
+                    <li><a href="/en/trip-planner" class="hover:text-white transition-colors">Trip Planner</a></li>
+                    <li><a href="/en/blog" class="hover:text-white transition-colors">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-4">About</h4>
+                <ul class="space-y-2.5 text-sm text-white/70">
+                    <li><a href="/en/trust" class="hover:text-white transition-colors">Trust & sources</a></li>
+                    <li><a href="/en/about" class="hover:text-white transition-colors">About</a></li>
+                    <li><a href="/en/licenses" class="hover:text-white transition-colors">Licenses & regs</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <h4 class="font-bold mb-4 text-[#c97c5e]">Activities</h4>
-            <ul class="space-y-2 text-white/70 text-sm"><li><a href="../../en/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">Fishing</a></li>
-<li><a href="../../en/hunting/directory.html" class="hover:text-[#c97c5e] transition-colors">Hunting</a></li>
-<li><a href="../../en/camping/directory.html" class="hover:text-[#c97c5e] transition-colors">Camping</a></li>
-<li><a href="../../en/kayaking/directory.html" class="hover:text-[#c97c5e] transition-colors">Kayaking</a></li>
-<li><a href="../../en/skiing/directory.html" class="hover:text-[#c97c5e] transition-colors">Skiing</a></li>
-<li><a href="../../en/hiking/directory.html" class="hover:text-[#c97c5e] transition-colors">Hiking</a></li>
-</ul>
+        <div class="border-t border-white/15 pt-6 flex items-center justify-between text-sm">
+            <p class="text-white/50">&copy; 2026 Outdoor Intel</p>
+            <p class="font-bold text-xs"><span class="text-white/50">EN</span><span class="text-white/30">&nbsp;|&nbsp;</span><a href="/fr/fishing/aigle-lac-de-l" class="text-[#a2c99a] hover:text-white transition-colors" lang="fr">FR</a></p>
         </div>
-        <div>
-            <h4 class="font-bold mb-4 text-[#c97c5e]">Resources</h4>
-            <ul class="space-y-2 text-white/70 text-sm">
-                <li><a href="../about.html" class="hover:text-[#c97c5e] transition-colors">About</a></li>
-                <li><a href="../licenses.html" class="hover:text-[#c97c5e] transition-colors">Licenses &amp; Regs</a></li>
-                <li><a href="https://www.ontario.ca/document/ontario-fishing-regulations-summary" target="_blank" rel="noopener noreferrer" class="hover:text-[#c97c5e] transition-colors">Ontario Regulations</a></li>
-                <li><a href="https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/peche-sportive" target="_blank" rel="noopener noreferrer" class="hover:text-[#c97c5e] transition-colors">Quebec Regulations</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4 class="font-bold mb-4 text-[#c97c5e]">Language</h4>
-            <ul class="space-y-2 text-white/70 text-sm">
-                <li><a href="../../en/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">English</a></li>
-                <li><a href="../../fr/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">Français</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/20 text-center text-white/50 text-sm">
-        <p>OutdoorIntel.ca &mdash; 2026. All rights reserved.</p>
     </div>
 </footer>
     <script>
@@ -658,13 +685,13 @@ if (toggle && menu) {
     <div id="global-search-overlay" class="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm hidden" style="transition:opacity 0.2s">
         <div class="flex items-start justify-center pt-[15vh] px-4">
             <div class="bg-white rounded-2xl w-full max-w-2xl overflow-hidden" style="box-shadow:0 25px 50px rgba(0,0,0,0.25)">
-                <div class="flex items-center gap-3 px-6 py-4 border-b border-[#2d5a3d]/10">
-                    <svg class="w-5 h-5 text-[#6b6359] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-                    <input id="global-search-input" type="text" placeholder="Search 499+ spots across Canada..." class="flex-1 text-lg text-[#3e3127] placeholder-[#6b6359]/50 outline-none bg-transparent" autocomplete="off">
-                    <kbd class="hidden sm:inline-block text-xs text-[#6b6359] bg-[#f5f3f0] px-2 py-1 rounded font-mono">ESC</kbd>
+                <div class="flex items-center gap-3 px-6 py-4 border-b border-[#305e3c]/10">
+                    <svg class="w-5 h-5 text-[#5c6b5f] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                    <input id="global-search-input" type="text" placeholder="Search 499+ spots across Canada..." class="flex-1 text-lg text-[#1c2b21] placeholder-[#5c6b5f]/50 outline-none bg-transparent" autocomplete="off">
+                    <kbd class="hidden sm:inline-block text-xs text-[#5c6b5f] bg-[#fbfaf7] px-2 py-1 rounded font-mono">ESC</kbd>
                 </div>
                 <div id="global-search-results" class="max-h-[50vh] overflow-y-auto">
-                    <div class="px-6 py-8 text-center text-[#6b6359] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>
+                    <div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>
                 </div>
             </div>
         </div>
@@ -715,27 +742,27 @@ if (toggle && menu) {
 
         function renderResults(matches) {
             if (!matches.length) {
-                results.innerHTML = '<div class="px-6 py-8 text-center text-[#6b6359] text-sm">No spots found. Try a different search term.</div>';
+                results.innerHTML = '<div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">No spots found. Try a different search term.</div>';
                 return;
             }
             var lang = isEn() ? 'en' : 'fr';
             var base = basePath();
             var html = matches.slice(0, 12).map(function(s) {
-                var href = (base ? base + '/' : '/') + lang + '/' + s.category + '/' + s.slug + '.html';
+                var href = (base ? base + '/' : '/') + lang + '/' + s.category + '/' + s.slug;
                 var icon = CAT_ICONS[s.category] || '';
                 var sub = s.province + ' • ' + s.category.charAt(0).toUpperCase() + s.category.slice(1);
                 if (s.species.length) sub += ' • ' + s.species.slice(0,2).join(', ');
-                return '<a href="' + href + '" class="flex items-center gap-4 px-6 py-3 hover:bg-[#fef9f3] transition-colors">' +
+                return '<a href="' + href + '" class="flex items-center gap-4 px-6 py-3 hover:bg-[#f4f3ec] transition-colors">' +
                     '<span class="text-xl flex-shrink-0">' + icon + '</span>' +
                     '<div class="flex-1 min-w-0">' +
-                    '<div class="font-semibold text-[#2d5a3d] truncate">' + s.name + '</div>' +
-                    '<div class="text-xs text-[#6b6359] truncate">' + sub + '</div>' +
+                    '<div class="font-semibold text-[#305e3c] truncate">' + s.name + '</div>' +
+                    '<div class="text-xs text-[#5c6b5f] truncate">' + sub + '</div>' +
                     '</div>' +
-                    '<span class="text-xs font-bold text-[#c97c5e] flex-shrink-0">' + s.scout_level + '</span>' +
+                    '<span class="text-xs font-bold text-[#3d7a4d] flex-shrink-0">' + s.scout_level + '</span>' +
                     '</a>';
             }).join('');
             if (matches.length > 12) {
-                html += '<div class="px-6 py-3 text-center text-xs text-[#6b6359]">' + (matches.length - 12) + ' more results...</div>';
+                html += '<div class="px-6 py-3 text-center text-xs text-[#5c6b5f]">' + (matches.length - 12) + ' more results...</div>';
             }
             results.innerHTML = html;
         }
@@ -744,7 +771,7 @@ if (toggle && menu) {
             if (!spotsData) return;
             q = q.toLowerCase().trim();
             if (!q) {
-                results.innerHTML = '<div class="px-6 py-8 text-center text-[#6b6359] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>';
+                results.innerHTML = '<div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>';
                 return;
             }
             var matches = spotsData.filter(function(s) {
@@ -761,8 +788,8 @@ if (toggle && menu) {
             document.body.style.overflow = 'hidden';
             input.value = '';
             input.focus();
-            loadSpots();
-            results.innerHTML = '<div class="px-6 py-8 text-center text-[#6b6359] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>';
+            loadSpots().then(function () { if (input.value) search(input.value); });
+            results.innerHTML = '<div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>';
         }
 
         function close() {
@@ -781,5 +808,6 @@ if (toggle && menu) {
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
     <script defer src="/assets/js/community-intel.js?v=1"></script>
+<script defer src="/assets/js/newsletter.js?v=1"></script>
 </body>
 </html>

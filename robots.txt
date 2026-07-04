@@ -1,7 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /data/
 Disallow: /content/
-Disallow: /*.js$
 
 Sitemap: https://outdoorintel.ca/sitemap.xml
