@@ -9,6 +9,7 @@
     "data:validate": "node scripts/validate-data.js",
     "data:audit": "node scripts/build-reference-audit.js",
     "build:province-indexes": "node scripts/build-province-indexes.js",
+    "inject:community": "node scripts/inject-community-intel.js",
     "quality": "npm run data:normalize && npm run build:province-indexes && npm run data:validate && npm run data:audit"
   },
   "engines": {
