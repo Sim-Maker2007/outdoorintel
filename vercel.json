@@ -51,6 +51,12 @@
     }
   ],
   "redirects": [
+    { "source": "/en/provinces/pei", "destination": "/en/provinces/prince-edward-island", "permanent": true },
+    { "source": "/en/provinces/yukon-territory", "destination": "/en/provinces/yukon", "permanent": true },
+    { "source": "/en/provinces/newfoundland--labrador", "destination": "/en/provinces/newfoundland-and-labrador", "permanent": true },
+    { "source": "/fr/provinces/pei", "destination": "/fr/provinces/prince-edward-island", "permanent": true },
+    { "source": "/fr/provinces/yukon-territory", "destination": "/fr/provinces/yukon", "permanent": true },
+    { "source": "/fr/provinces/newfoundland--labrador", "destination": "/fr/provinces/newfoundland-and-labrador", "permanent": true },
     { "source": "/en/directory", "destination": "/en/fishing/directory", "permanent": true },
     { "source": "/fr/directory", "destination": "/fr/fishing/directory", "permanent": true },
     { "source": "/en/lake-superior", "destination": "/en/fishing/lake-superior", "permanent": true },

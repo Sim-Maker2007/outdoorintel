@@ -40,6 +40,9 @@
         .spot-popup .spot-type { font-size: 12px; color: #c97c5e; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
         .spot-popup .spot-province { font-size: 13px; color: #6b6359; margin: 4px 0; }
         .spot-popup .spot-features { font-size: 12px; color: #7a9b8e; margin: 6px 0; }
+        .spot-popup .spot-verify { font-size: 11px; color: #6b6359; background: #f5f3f0; border: 1px solid #e8e4df; border-radius: 999px; padding: 4px 8px; display: inline-block; margin: 6px 0; }
+        .spot-popup .spot-verify.needs_review { color: #92400e; background: #fff7ed; border-color: #fed7aa; }
+        .spot-popup .spot-verify.verified { color: #166534; background: #f0fdf4; border-color: #bbf7d0; }
         .spot-popup .spot-link { display: inline-block; margin-top: 8px; padding: 6px 16px; background: #2d5a3d; color: white; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 600; }
         .spot-popup .spot-link:hover { background: #c97c5e; }
         .spot-popup .spot-website { display: inline-block; margin-top: 4px; margin-left: 4px; padding: 6px 16px; background: #f5f3f0; color: #2d5a3d; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 600; border: 1px solid #2d5a3d20; }
@@ -177,6 +180,14 @@ function createIcon(color) {
     });
 }
 
+function verificationLabel(spot) {
+    if (spot.verification_status === 'verified') {
+        return spot.last_verified_at ? `Verified ${spot.last_verified_at}` : 'Verified';
+    }
+    if (spot.verification_status === 'stale') return 'Needs seasonal refresh';
+    return 'Needs editorial review';
+}
+
 // Initialize map centered on Canada
 const map = L.map('map', {
     center: [56, -96],
@@ -221,16 +232,26 @@ Promise.all(dataFiles.map(cat =>
             const websiteBtn = spot.website
                 ? `<a href="${spot.website}" target="_blank" rel="noopener noreferrer" class="spot-website">Official Site</a>`
                 : '';
+            const sourceBtn = spot.source_url
+                ? `<a href="${spot.source_url}" target="_blank" rel="noopener noreferrer" class="spot-website">Source</a>`
+                : '';
+            const rulesBtn = spot.official_regulation_url
+                ? `<a href="${spot.official_regulation_url}" target="_blank" rel="noopener noreferrer" class="spot-website">Rules</a>`
+                : '';
+            const verifyClass = spot.verification_status || 'needs_review';
 
             const popupContent = `
                 <div class="spot-popup">
                     <div class="spot-type">${catConfig[cat].label}${spot.type ? ' &mdash; ' + spot.type : ''}</div>
                     <h3>${spot.name}</h3>
                     <div class="spot-province">${spot.province || ''}</div>
+                    <div class="spot-verify ${verifyClass}">${verificationLabel(spot)}</div>
                     ${features ? '<div class="spot-features">' + features + '</div>' : ''}
                     <div>
                         <a href="${cat}/${spot.slug}.html" class="spot-link">View Profile</a>
                         ${websiteBtn}
+                        ${sourceBtn}
+                        ${rulesBtn}
                     </div>
                 </div>
             `;

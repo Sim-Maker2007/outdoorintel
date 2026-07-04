@@ -35,7 +35,17 @@
       "nearby_services": "Visitor centre at the park entrance with maps, conditions updates, and bear spray sales. Nearest town with full services: Vancouver (1-1.5 hours).  Local guides available for hire — recommended for technical routes.",
       "accommodation": "Backcountry campsites along the trail with tent pads, food storage, and pit toilets. Front-country campgrounds at the trailhead for pre/post-hike camping.  Hotels, B&Bs, and hostels available in Vancouver.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Vancouver. Bear and cougar country — travel in groups, make noise, carry bear spray. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://parks.canada.ca/pn-np/bc/pacificrim/activ/activ6"
+      "website": "https://parks.canada.ca/pn-np/bc/pacificrim/activ/activ6",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://parks.canada.ca/pn-np/bc/pacificrim/activ/activ6",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://bcparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Garibaldi Lake Trail",
@@ -72,7 +82,17 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: Vancouver (1.5-2 hours). Gear shops in Vancouver for last-minute supplies. Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail.   Hotels, B&Bs, and hostels available in Vancouver.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Vancouver. Bear and cougar country — travel in groups, make noise, carry bear spray. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://bcparks.ca/garibaldi-park/"
+      "website": "https://bcparks.ca/garibaldi-park/",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://bcparks.ca/garibaldi-park/",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://bcparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Juan de Fuca Trail",
@@ -109,7 +129,17 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: Vancouver (1.5-2 hours).  Local guides available for hire — recommended for technical routes.",
       "accommodation": "Backcountry campsites along the trail with tent pads, food storage, and pit toilets.  Mountain huts available on some routes — book through the alpine club. Hotels, B&Bs, and hostels available in Vancouver.",
       "safety": "No cell service on the trail — carry a satellite communicator for emergencies. Nearest hospital: Vancouver. Bear and cougar country — travel in groups, make noise, carry bear spray. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://bcparks.ca/juan-de-fuca-park/"
+      "website": "https://bcparks.ca/juan-de-fuca-park/",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://bcparks.ca/juan-de-fuca-park/",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://bcparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "North Coast Trail",
@@ -146,7 +176,17 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: Kelowna (1.5-2.5 hours).  Trail guides and maps available at the visitor centre.",
       "accommodation": "Backcountry campsites along the trail with tent pads, food storage, and pit toilets. Front-country campgrounds at the trailhead for pre/post-hike camping. Mountain huts available on some routes — book through the alpine club. Hotels, B&Bs, and hostels available in Kelowna.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Kelowna. Bear and cougar country — travel in groups, make noise, carry bear spray. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://bcparks.ca/cape-scott-park/"
+      "website": "https://bcparks.ca/cape-scott-park/",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://bcparks.ca/cape-scott-park/",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://bcparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Plain of Six Glaciers Trail",
@@ -183,7 +223,17 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: Red Deer (3-4 hours).  Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail.   Hotels, B&Bs, and hostels available in Red Deer.",
       "safety": "No cell service on the trail — carry a satellite communicator for emergencies. Nearest hospital: Red Deer. Bear and cougar country — travel in groups, make noise, carry bear spray. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://parks.canada.ca/pn-np/ab/banff"
+      "website": "https://parks.canada.ca/pn-np/ab/banff",
+      "province_code": "AB",
+      "country": "Canada",
+      "source_url": "https://parks.canada.ca/pn-np/ab/banff",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.albertaparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Sentinel Pass Trail",
@@ -220,7 +270,17 @@
       "nearby_services": "Visitor centre at the park entrance with maps, conditions updates, and bear spray sales. Nearest town with full services: Red Deer (3-4 hours).  Local guides available for hire — recommended for technical routes.",
       "accommodation": "Day hike — no overnight facilities on the trail.  Mountain huts available on some routes — book through the alpine club. Hotels, B&Bs, and hostels available in Red Deer.",
       "safety": "No cell service on the trail — carry a satellite communicator for emergencies. Nearest hospital: Red Deer. Bear and cougar country — travel in groups, make noise, carry bear spray. Alpine weather changes rapidly — carry rain gear, warm layers, and extra food even on day hikes. Start early to avoid afternoon thunderstorms above treeline. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://parks.canada.ca/pn-np/ab/banff"
+      "website": "https://parks.canada.ca/pn-np/ab/banff",
+      "province_code": "AB",
+      "country": "Canada",
+      "source_url": "https://parks.canada.ca/pn-np/ab/banff",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.albertaparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Johnston Canyon Trail",
@@ -257,7 +317,17 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: Red Deer (2-3 hours).  Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail. Front-country campgrounds at the trailhead for pre/post-hike camping.  Hotels, B&Bs, and hostels available in Red Deer.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Red Deer. Bear and cougar country — travel in groups, make noise, carry bear spray. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://parks.canada.ca/pn-np/ab/banff"
+      "website": "https://parks.canada.ca/pn-np/ab/banff",
+      "province_code": "AB",
+      "country": "Canada",
+      "source_url": "https://parks.canada.ca/pn-np/ab/banff",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.albertaparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Fitz Roy Trail",
@@ -294,7 +364,17 @@
       "nearby_services": "Visitor centre at the park entrance with maps, conditions updates, and bear spray sales. Nearest town with full services: Ottawa (1-1.5 hours). Gear shops in Ottawa for last-minute supplies. Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail. Front-country campgrounds at the trailhead for pre/post-hike camping.  Hotels, B&Bs, and hostels available in Ottawa.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Ottawa. Wildlife is present — maintain distance and store food properly. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://www.ontariotrails.on.ca"
+      "website": "https://www.ontariotrails.on.ca",
+      "province_code": "ON",
+      "country": "Canada",
+      "source_url": "https://www.ontariotrails.on.ca",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.ontarioparks.com",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Scarborough Bluffs Circuit",
@@ -331,7 +411,17 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: Ottawa (2-3 hours). Gear shops in Ottawa for last-minute supplies. Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail. Front-country campgrounds at the trailhead for pre/post-hike camping.  Hotels, B&Bs, and hostels available in Ottawa.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Ottawa. Wildlife is present — maintain distance and store food properly. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://www.toronto.ca/explore-enjoy/parks-gardens-beaches/scarborough-bluffs/"
+      "website": "https://www.toronto.ca/explore-enjoy/parks-gardens-beaches/scarborough-bluffs/",
+      "province_code": "ON",
+      "country": "Canada",
+      "source_url": "https://www.toronto.ca/explore-enjoy/parks-gardens-beaches/scarborough-bluffs/",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.ontarioparks.com",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Mont-Royal Loop",
@@ -368,7 +458,17 @@
       "nearby_services": "Visitor centre at the park entrance with maps, conditions updates, and bear spray sales. Nearest town with full services: Montreal (2-3 hours).  Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail. Front-country campgrounds at the trailhead for pre/post-hike camping.  Hotels, B&Bs, and hostels available in Montreal.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Montreal. Wildlife is present — maintain distance and store food properly. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://www.lemontroyal.qc.ca"
+      "website": "https://www.lemontroyal.qc.ca",
+      "province_code": "QC",
+      "country": "Canada",
+      "source_url": "https://www.lemontroyal.qc.ca",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.sepaq.com",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Laurentian Ridge Trail",
@@ -405,7 +505,17 @@
       "nearby_services": "Visitor centre at the park entrance with maps, conditions updates, and bear spray sales. Nearest town with full services: Montreal (45 minutes).  Local guides available for hire — recommended for technical routes.",
       "accommodation": "Day hike — no overnight facilities on the trail. Front-country campgrounds at the trailhead for pre/post-hike camping.  Hotels, B&Bs, and hostels available in Montreal.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Montreal. Wildlife is present — maintain distance and store food properly. Alpine weather changes rapidly — carry rain gear, warm layers, and extra food even on day hikes. Start early to avoid afternoon thunderstorms above treeline. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://www.laurentides.com"
+      "website": "https://www.laurentides.com",
+      "province_code": "QC",
+      "country": "Canada",
+      "source_url": "https://www.laurentides.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.sepaq.com",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Cape Enrage Hiking Trail",
@@ -442,7 +552,17 @@
       "nearby_services": "Visitor centre at the park entrance with maps, conditions updates, and bear spray sales. Nearest town with full services: Saint John (1.5-2 hours).  Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail. Front-country campgrounds at the trailhead for pre/post-hike camping.  Hotels, B&Bs, and hostels available in Saint John.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Saint John. Wildlife is present — maintain distance and store food properly. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://www.capeenrage.ca"
+      "website": "https://www.capeenrage.ca",
+      "province_code": "NB",
+      "country": "Canada",
+      "source_url": "https://www.capeenrage.ca",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://parcsnbparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Algonquin Park Trails",
@@ -479,7 +599,17 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: Ottawa (2-3 hours).  Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail. Front-country campgrounds at the trailhead for pre/post-hike camping.  Hotels, B&Bs, and hostels available in Ottawa.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Ottawa. Wildlife is present — maintain distance and store food properly. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://www.ontarioparks.com/park/algonquin"
+      "website": "https://www.ontarioparks.com/park/algonquin",
+      "province_code": "ON",
+      "country": "Canada",
+      "source_url": "https://www.ontarioparks.com/park/algonquin",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.ontarioparks.com",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Skyline Trail (Highlands)",
@@ -516,7 +646,17 @@
       "nearby_services": "Visitor centre at the park entrance with maps, conditions updates, and bear spray sales. Nearest town with full services: Halifax (1-1.5 hours). Gear shops in Halifax for last-minute supplies. Local guides available for hire — recommended for technical routes.",
       "accommodation": "Backcountry campsites along the trail with tent pads, food storage, and pit toilets. Front-country campgrounds at the trailhead for pre/post-hike camping. Mountain huts available on some routes — book through the alpine club. Hotels, B&Bs, and hostels available in Halifax.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Halifax. Wildlife is present — maintain distance and store food properly. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://parks.canada.ca/pn-np/ns/cbreton"
+      "website": "https://parks.canada.ca/pn-np/ns/cbreton",
+      "province_code": "NS",
+      "country": "Canada",
+      "source_url": "https://parks.canada.ca/pn-np/ns/cbreton",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://parks.novascotia.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Beulach Ban Falls Trail",
@@ -553,7 +693,17 @@
       "nearby_services": "Visitor centre at the park entrance with maps, conditions updates, and bear spray sales. Nearest town with full services: Halifax (1.5-2 hours). Gear shops in Halifax for last-minute supplies. Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail.   Hotels, B&Bs, and hostels available in Halifax.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Halifax. Wildlife is present — maintain distance and store food properly. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://parks.canada.ca/pn-np/ns/cbreton"
+      "website": "https://parks.canada.ca/pn-np/ns/cbreton",
+      "province_code": "NS",
+      "country": "Canada",
+      "source_url": "https://parks.canada.ca/pn-np/ns/cbreton",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://parks.novascotia.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Gros Morne Mountain Trail",
@@ -590,7 +740,17 @@
       "nearby_services": "Visitor centre at the park entrance with maps, conditions updates, and bear spray sales. Nearest town with full services: St. John's (2-3 hours).  Local guides available for hire — recommended for technical routes.",
       "accommodation": "Day hike — no overnight facilities on the trail.   Hotels, B&Bs, and hostels available in St. John's.",
       "safety": "No cell service on the trail — carry a satellite communicator for emergencies. Nearest hospital: St. John's. Wildlife is present — maintain distance and store food properly. Alpine weather changes rapidly — carry rain gear, warm layers, and extra food even on day hikes. Start early to avoid afternoon thunderstorms above treeline. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://parks.canada.ca/pn-np/nl/grosmorne"
+      "website": "https://parks.canada.ca/pn-np/nl/grosmorne",
+      "province_code": "NL",
+      "country": "Canada",
+      "source_url": "https://parks.canada.ca/pn-np/nl/grosmorne",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.parksnl.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Tablelands Trail",
@@ -627,12 +787,22 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: St. John's (1.5-2 hours).  Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail. Front-country campgrounds at the trailhead for pre/post-hike camping.  Hotels, B&Bs, and hostels available in St. John's.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: St. John's. Wildlife is present — maintain distance and store food properly. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://parks.canada.ca/pn-np/nl/grosmorne"
+      "website": "https://parks.canada.ca/pn-np/nl/grosmorne",
+      "province_code": "NL",
+      "country": "Canada",
+      "source_url": "https://parks.canada.ca/pn-np/nl/grosmorne",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.parksnl.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Skagway to Chilkoot Pass",
       "slug": "chilkoot-pass",
-      "province": "Yukon Territory",
+      "province": "Yukon",
       "type": "Multi-Day",
       "coordinates": {
         "lat": 60,
@@ -664,7 +834,18 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: the nearest town (3-4 hours). Gear shops in the nearest town for last-minute supplies. Local guides available for hire — recommended for technical routes.",
       "accommodation": "Backcountry campsites along the trail with tent pads, food storage, and pit toilets. Front-country campgrounds at the trailhead for pre/post-hike camping. Mountain huts available on some routes — book through the alpine club. Hotels, B&Bs, and hostels available in the nearest town.",
       "safety": "No cell service on the trail — carry a satellite communicator for emergencies. Nearest hospital: the nearest town. Wildlife is present — maintain distance and store food properly. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://parks.canada.ca/lhn-nhs/yt/chilkoot"
+      "website": "https://parks.canada.ca/lhn-nhs/yt/chilkoot",
+      "original_province": "Yukon Territory",
+      "province_code": "YT",
+      "country": "Canada",
+      "source_url": "https://parks.canada.ca/lhn-nhs/yt/chilkoot",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://yukon.ca/en/outdoor-recreation-and-wildlife",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Mount Massive Trail",
@@ -701,7 +882,17 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: Inuvik (3-5 hours).  Local guides available for hire — recommended for technical routes.",
       "accommodation": "Day hike — no overnight facilities on the trail.  Mountain huts available on some routes — book through the alpine club. Hotels, B&Bs, and hostels available in Inuvik.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Inuvik. Wildlife is present — maintain distance and store food properly. Alpine weather changes rapidly — carry rain gear, warm layers, and extra food even on day hikes. Start early to avoid afternoon thunderstorms above treeline. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://www.nwtparks.ca"
+      "website": "https://www.nwtparks.ca",
+      "province_code": "NT",
+      "country": "Canada",
+      "source_url": "https://www.nwtparks.ca",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.nwtparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Dempster Highway Trek Section",
@@ -738,7 +929,17 @@
       "nearby_services": "Visitor centre at the park entrance with maps, conditions updates, and bear spray sales. Nearest town with full services: Cambridge Bay (3-5 hours).  Trail guides and maps available at the visitor centre.",
       "accommodation": "Backcountry campsites along the trail with tent pads, food storage, and pit toilets.   Hotels, B&Bs, and hostels available in Cambridge Bay.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Cambridge Bay. Wildlife is present — maintain distance and store food properly. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://yukon.ca/en/outdoor-recreation-and-events"
+      "website": "https://yukon.ca/en/outdoor-recreation-and-events",
+      "province_code": "NU",
+      "country": "Canada",
+      "source_url": "https://yukon.ca/en/outdoor-recreation-and-events",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.gov.nu.ca/environment",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Grouse Grind",
@@ -775,7 +976,17 @@
       "nearby_services": "Visitor centre at the park entrance with maps, conditions updates, and bear spray sales. Nearest town with full services: Vancouver (1.5-2 hours). Gear shops in Vancouver for last-minute supplies. Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail. Front-country campgrounds at the trailhead for pre/post-hike camping.  Hotels, B&Bs, and hostels available in Vancouver.",
       "safety": "No cell service on the trail — carry a satellite communicator for emergencies. Nearest hospital: Vancouver. Bear and cougar country — travel in groups, make noise, carry bear spray. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://www.grousemountain.com/grousegrind"
+      "website": "https://www.grousemountain.com/grousegrind",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://www.grousemountain.com/grousegrind",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://bcparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Stawamus Chief",
@@ -812,7 +1023,17 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: Vancouver (1-1.5 hours). Gear shops in Vancouver for last-minute supplies. Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail. Front-country campgrounds at the trailhead for pre/post-hike camping.  Hotels, B&Bs, and hostels available in Vancouver.",
       "safety": "No cell service on the trail — carry a satellite communicator for emergencies. Nearest hospital: Vancouver. Bear and cougar country — travel in groups, make noise, carry bear spray. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://bcparks.ca/stawamus-chief-park/"
+      "website": "https://bcparks.ca/stawamus-chief-park/",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://bcparks.ca/stawamus-chief-park/",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://bcparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Joffre Lakes",
@@ -849,7 +1070,17 @@
       "nearby_services": "Visitor centre at the park entrance with maps, conditions updates, and bear spray sales. Nearest town with full services: Kelowna (3-4 hours). Gear shops in Kelowna for last-minute supplies. Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail. Front-country campgrounds at the trailhead for pre/post-hike camping.  Hotels, B&Bs, and hostels available in Kelowna.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Kelowna. Bear and cougar country — travel in groups, make noise, carry bear spray. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://bcparks.ca/joffre-lakes-park/"
+      "website": "https://bcparks.ca/joffre-lakes-park/",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://bcparks.ca/joffre-lakes-park/",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://bcparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Garibaldi Lake",
@@ -886,7 +1117,17 @@
       "nearby_services": "Visitor centre at the park entrance with maps, conditions updates, and bear spray sales. Nearest town with full services: Vancouver (1.5-2 hours).  Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail. Front-country campgrounds at the trailhead for pre/post-hike camping.  Hotels, B&Bs, and hostels available in Vancouver.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Vancouver. Bear and cougar country — travel in groups, make noise, carry bear spray. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://bcparks.ca/garibaldi-park/"
+      "website": "https://bcparks.ca/garibaldi-park/",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://bcparks.ca/garibaldi-park/",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://bcparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Panorama Ridge Trail",
@@ -923,7 +1164,17 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: Vancouver (45 minutes). Gear shops in Vancouver for last-minute supplies. Local guides available for hire — recommended for technical routes.",
       "accommodation": "Day hike — no overnight facilities on the trail. Front-country campgrounds at the trailhead for pre/post-hike camping.  Hotels, B&Bs, and hostels available in Vancouver.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Vancouver. Bear and cougar country — travel in groups, make noise, carry bear spray. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://bcparks.ca/garibaldi-park/"
+      "website": "https://bcparks.ca/garibaldi-park/",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://bcparks.ca/garibaldi-park/",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://bcparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Berg Lake Trail",
@@ -960,7 +1211,17 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: Kelowna (1.5-2.5 hours). Gear shops in Kelowna for last-minute supplies. Trail guides and maps available at the visitor centre.",
       "accommodation": "Backcountry campsites along the trail with tent pads, food storage, and pit toilets. Front-country campgrounds at the trailhead for pre/post-hike camping. Mountain huts available on some routes — book through the alpine club. Hotels, B&Bs, and hostels available in Kelowna.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Kelowna. Bear and cougar country — travel in groups, make noise, carry bear spray. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://bcparks.ca/mount-robson-park/"
+      "website": "https://bcparks.ca/mount-robson-park/",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://bcparks.ca/mount-robson-park/",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://bcparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Juan de Fuca Trail",
@@ -997,7 +1258,17 @@
       "nearby_services": "Visitor centre at the park entrance with maps, conditions updates, and bear spray sales. Nearest town with full services: Vancouver (1.5-2 hours).  Trail guides and maps available at the visitor centre.",
       "accommodation": "Backcountry campsites along the trail with tent pads, food storage, and pit toilets. Front-country campgrounds at the trailhead for pre/post-hike camping. Mountain huts available on some routes — book through the alpine club. Hotels, B&Bs, and hostels available in Vancouver.",
       "safety": "No cell service on the trail — carry a satellite communicator for emergencies. Nearest hospital: Vancouver. Bear and cougar country — travel in groups, make noise, carry bear spray. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://bcparks.ca/juan-de-fuca-park/"
+      "website": "https://bcparks.ca/juan-de-fuca-park/",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://bcparks.ca/juan-de-fuca-park/",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://bcparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Sunshine Coast Trail",
@@ -1034,7 +1305,17 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: Vancouver (1.5-2 hours). Gear shops in Vancouver for last-minute supplies. Trail guides and maps available at the visitor centre.",
       "accommodation": "Backcountry campsites along the trail with tent pads, food storage, and pit toilets. Front-country campgrounds at the trailhead for pre/post-hike camping. Mountain huts available on some routes — book through the alpine club. Hotels, B&Bs, and hostels available in Vancouver.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Vancouver. Bear and cougar country — travel in groups, make noise, carry bear spray. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://sunshinecoast-trail.com"
+      "website": "https://sunshinecoast-trail.com",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://sunshinecoast-trail.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://bcparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Black Tusk",
@@ -1071,7 +1352,17 @@
       "nearby_services": "Visitor centre at the park entrance with maps, conditions updates, and bear spray sales. Nearest town with full services: Vancouver (1.5-2 hours). Gear shops in Vancouver for last-minute supplies. Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail.   Hotels, B&Bs, and hostels available in Vancouver.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Vancouver. Bear and cougar country — travel in groups, make noise, carry bear spray. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://bcparks.ca/garibaldi-park/"
+      "website": "https://bcparks.ca/garibaldi-park/",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://bcparks.ca/garibaldi-park/",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://bcparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Plain of Six Glaciers",
@@ -1108,7 +1399,17 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: Red Deer (2-3 hours).  Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail. Front-country campgrounds at the trailhead for pre/post-hike camping.  Hotels, B&Bs, and hostels available in Red Deer.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Red Deer. Bear and cougar country — travel in groups, make noise, carry bear spray. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://parks.canada.ca/pn-np/ab/banff"
+      "website": "https://parks.canada.ca/pn-np/ab/banff",
+      "province_code": "AB",
+      "country": "Canada",
+      "source_url": "https://parks.canada.ca/pn-np/ab/banff",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.albertaparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Crypt Lake",
@@ -1145,7 +1446,17 @@
       "nearby_services": "Visitor centre at the park entrance with maps, conditions updates, and bear spray sales. Nearest town with full services: Calgary (2-3 hours).  Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail. Front-country campgrounds at the trailhead for pre/post-hike camping.  Hotels, B&Bs, and hostels available in Calgary.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Calgary. Bear and cougar country — travel in groups, make noise, carry bear spray. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://parks.canada.ca/pn-np/ab/waterton"
+      "website": "https://parks.canada.ca/pn-np/ab/waterton",
+      "province_code": "AB",
+      "country": "Canada",
+      "source_url": "https://parks.canada.ca/pn-np/ab/waterton",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.albertaparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Carthew-Alderson Trail",
@@ -1182,7 +1493,17 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: Calgary (45 minutes).  Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail.   Hotels, B&Bs, and hostels available in Calgary.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Calgary. Bear and cougar country — travel in groups, make noise, carry bear spray. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://parks.canada.ca/pn-np/ab/waterton"
+      "website": "https://parks.canada.ca/pn-np/ab/waterton",
+      "province_code": "AB",
+      "country": "Canada",
+      "source_url": "https://parks.canada.ca/pn-np/ab/waterton",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.albertaparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Parker Ridge",
@@ -1219,7 +1540,17 @@
       "nearby_services": "Visitor centre at the park entrance with maps, conditions updates, and bear spray sales. Nearest town with full services: Red Deer (2-3 hours).  Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail.   Hotels, B&Bs, and hostels available in Red Deer.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Red Deer. Bear and cougar country — travel in groups, make noise, carry bear spray. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://parks.canada.ca/pn-np/ab/banff"
+      "website": "https://parks.canada.ca/pn-np/ab/banff",
+      "province_code": "AB",
+      "country": "Canada",
+      "source_url": "https://parks.canada.ca/pn-np/ab/banff",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.albertaparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Ha Ling Peak",
@@ -1256,7 +1587,17 @@
       "nearby_services": "Visitor centre at the park entrance with maps, conditions updates, and bear spray sales. Nearest town with full services: Red Deer (2-3 hours). Gear shops in Red Deer for last-minute supplies. Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail.   Hotels, B&Bs, and hostels available in Red Deer.",
       "safety": "No cell service on the trail — carry a satellite communicator for emergencies. Nearest hospital: Red Deer. Bear and cougar country — travel in groups, make noise, carry bear spray. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://www.albertaparks.ca/parks/kananaskis/"
+      "website": "https://www.albertaparks.ca/parks/kananaskis/",
+      "province_code": "AB",
+      "country": "Canada",
+      "source_url": "https://www.albertaparks.ca/parks/kananaskis/",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.albertaparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Tent Ridge",
@@ -1293,7 +1634,17 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: Red Deer (1.5-2.5 hours). Gear shops in Red Deer for last-minute supplies. Local guides available for hire — recommended for technical routes.",
       "accommodation": "Day hike — no overnight facilities on the trail. Front-country campgrounds at the trailhead for pre/post-hike camping.  Hotels, B&Bs, and hostels available in Red Deer.",
       "safety": "No cell service on the trail — carry a satellite communicator for emergencies. Nearest hospital: Red Deer. Bear and cougar country — travel in groups, make noise, carry bear spray. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://www.albertaparks.ca/parks/kananaskis/"
+      "website": "https://www.albertaparks.ca/parks/kananaskis/",
+      "province_code": "AB",
+      "country": "Canada",
+      "source_url": "https://www.albertaparks.ca/parks/kananaskis/",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.albertaparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Cup and Saucer Trail",
@@ -1330,7 +1681,17 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: Ottawa (45 minutes).  Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail. Front-country campgrounds at the trailhead for pre/post-hike camping.  Hotels, B&Bs, and hostels available in Ottawa.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Ottawa. Wildlife is present — maintain distance and store food properly. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://www.ontariotrails.on.ca"
+      "website": "https://www.ontariotrails.on.ca",
+      "province_code": "ON",
+      "country": "Canada",
+      "source_url": "https://www.ontariotrails.on.ca",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.ontarioparks.com",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Crack Trail (Killarney)",
@@ -1367,7 +1728,17 @@
       "nearby_services": "Visitor centre at the park entrance with maps, conditions updates, and bear spray sales. Nearest town with full services: Ottawa (1.5-2 hours). Gear shops in Ottawa for last-minute supplies. Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail.   Hotels, B&Bs, and hostels available in Ottawa.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Ottawa. Wildlife is present — maintain distance and store food properly. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://www.ontarioparks.com/park/killarney"
+      "website": "https://www.ontarioparks.com/park/killarney",
+      "province_code": "ON",
+      "country": "Canada",
+      "source_url": "https://www.ontarioparks.com/park/killarney",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.ontarioparks.com",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Sleeping Giant Provincial Park",
@@ -1404,7 +1775,17 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: Ottawa (1-1.5 hours).  Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail.   Hotels, B&Bs, and hostels available in Ottawa.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Ottawa. Wildlife is present — maintain distance and store food properly. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://www.ontarioparks.com/park/sleepinggiant"
+      "website": "https://www.ontarioparks.com/park/sleepinggiant",
+      "province_code": "ON",
+      "country": "Canada",
+      "source_url": "https://www.ontarioparks.com/park/sleepinggiant",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.ontarioparks.com",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Pukaskwa Coastal Trail",
@@ -1441,7 +1822,17 @@
       "nearby_services": "Visitor centre at the park entrance with maps, conditions updates, and bear spray sales. Nearest town with full services: Ottawa (45 minutes). Gear shops in Ottawa for last-minute supplies. Local guides available for hire — recommended for technical routes.",
       "accommodation": "Backcountry campsites along the trail with tent pads, food storage, and pit toilets. Front-country campgrounds at the trailhead for pre/post-hike camping.  Hotels, B&Bs, and hostels available in Ottawa.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Ottawa. Wildlife is present — maintain distance and store food properly. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://parks.canada.ca/pn-np/on/pukaskwa"
+      "website": "https://parks.canada.ca/pn-np/on/pukaskwa",
+      "province_code": "ON",
+      "country": "Canada",
+      "source_url": "https://parks.canada.ca/pn-np/on/pukaskwa",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.ontarioparks.com",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Mont Albert (Gaspésie)",
@@ -1478,7 +1869,17 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: Montreal (1.5-2 hours).  Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail.   Hotels, B&Bs, and hostels available in Montreal.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Montreal. Wildlife is present — maintain distance and store food properly. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://www.sepaq.com/pq/gas/"
+      "website": "https://www.sepaq.com/pq/gas/",
+      "province_code": "QC",
+      "country": "Canada",
+      "source_url": "https://www.sepaq.com/pq/gas/",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.sepaq.com",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Mont Jacques-Cartier",
@@ -1515,7 +1916,17 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: Montreal (2-3 hours).  Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail. Front-country campgrounds at the trailhead for pre/post-hike camping.  Hotels, B&Bs, and hostels available in Montreal.",
       "safety": "No cell service on the trail — carry a satellite communicator for emergencies. Nearest hospital: Montreal. Wildlife is present — maintain distance and store food properly. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://www.sepaq.com/pq/gas/"
+      "website": "https://www.sepaq.com/pq/gas/",
+      "province_code": "QC",
+      "country": "Canada",
+      "source_url": "https://www.sepaq.com/pq/gas/",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.sepaq.com",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Sentier des Caps",
@@ -1552,7 +1963,17 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: Montreal (45 minutes).  Trail guides and maps available at the visitor centre.",
       "accommodation": "Backcountry campsites along the trail with tent pads, food storage, and pit toilets. Front-country campgrounds at the trailhead for pre/post-hike camping. Mountain huts available on some routes — book through the alpine club. Hotels, B&Bs, and hostels available in Montreal.",
       "safety": "No cell service on the trail — carry a satellite communicator for emergencies. Nearest hospital: Montreal. Wildlife is present — maintain distance and store food properly. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://www.sentierdescaps.com"
+      "website": "https://www.sentierdescaps.com",
+      "province_code": "QC",
+      "country": "Canada",
+      "source_url": "https://www.sentierdescaps.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.sepaq.com",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "East Coast Trail Sections",
@@ -1589,7 +2010,17 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: St. John's (2-3 hours).  Trail guides and maps available at the visitor centre.",
       "accommodation": "Backcountry campsites along the trail with tent pads, food storage, and pit toilets. Front-country campgrounds at the trailhead for pre/post-hike camping. Mountain huts available on some routes — book through the alpine club. Hotels, B&Bs, and hostels available in St. John's.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: St. John's. Wildlife is present — maintain distance and store food properly. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://www.eastcoasttrail.com"
+      "website": "https://www.eastcoasttrail.com",
+      "province_code": "NL",
+      "country": "Canada",
+      "source_url": "https://www.eastcoasttrail.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.parksnl.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Fundy Footpath",
@@ -1625,7 +2056,17 @@
       "nearby_services": "Information kiosk at the trailhead (seasonal). Nearest town with full services: Saint John (1.5-2 hours).  Local guides available for hire — recommended for technical routes.",
       "accommodation": "Backcountry campsites along the trail with tent pads, food storage, and pit toilets.  Mountain huts available on some routes — book through the alpine club. Hotels, B&Bs, and hostels available in Saint John.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Saint John. Wildlife is present — maintain distance and store food properly. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://www.fundyfootpath.info"
+      "website": "https://www.fundyfootpath.info",
+      "province_code": "NB",
+      "country": "Canada",
+      "source_url": "https://www.fundyfootpath.info",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://parcsnbparks.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Skyline Trail (Cape Breton)",
@@ -1662,7 +2103,17 @@
       "nearby_services": "Visitor centre at the park entrance with maps, conditions updates, and bear spray sales. Nearest town with full services: Halifax (45 minutes).  Trail guides and maps available at the visitor centre.",
       "accommodation": "Day hike — no overnight facilities on the trail.   Hotels, B&Bs, and hostels available in Halifax.",
       "safety": "No cell service on the trail — carry a satellite communicator for emergencies. Nearest hospital: Halifax. Wildlife is present — maintain distance and store food properly. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://parks.canada.ca/pn-np/ns/cbreton"
+      "website": "https://parks.canada.ca/pn-np/ns/cbreton",
+      "province_code": "NS",
+      "country": "Canada",
+      "source_url": "https://parks.canada.ca/pn-np/ns/cbreton",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://parks.novascotia.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Chilkoot Trail",
@@ -1696,7 +2147,17 @@
       "nearby_services": "Visitor centre at the park entrance with maps, conditions updates, and bear spray sales. Nearest town with full services: Dawson City (fly-in access required). Gear shops in Dawson City for last-minute supplies. Trail guides and maps available at the visitor centre.",
       "accommodation": "Backcountry campsites along the trail with tent pads, food storage, and pit toilets.  Mountain huts available on some routes — book through the alpine club. Hotels, B&Bs, and hostels available in Dawson City.",
       "safety": "Cell service unreliable — do not rely on your phone for navigation. Nearest hospital: Dawson City. Bear and cougar country — travel in groups, make noise, carry bear spray. Carry the ten essentials: navigation, sun protection, insulation, illumination, first aid, fire, tools, nutrition, hydration, and emergency shelter. Let someone know your route and expected return time. Turn back if conditions deteriorate — the mountain will be there next time.",
-      "website": "https://parks.canada.ca/lhn-nhs/yt/chilkoot"
+      "website": "https://parks.canada.ca/lhn-nhs/yt/chilkoot",
+      "province_code": "YT",
+      "country": "Canada",
+      "source_url": "https://parks.canada.ca/lhn-nhs/yt/chilkoot",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://yukon.ca/en/outdoor-recreation-and-wildlife",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     }
   ]
 }
