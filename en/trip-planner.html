@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#2d5a3d">
+    <meta name="theme-color" content="#14251a">
     <link rel="alternate" type="application/rss+xml" title="Outdoor Intel Blog" href="https://outdoorintel.ca/rss.xml">
     <title>Trip Planner | Outdoor Intel</title>
     <meta name="description" content="Plan your outdoor adventure across Canada with our interactive trip planner. Explore 499+ spots, build your route, and discover the best fishing, hunting, camping, kayaking, skiing, and hiking destinations.">
@@ -23,23 +23,23 @@
     <meta name="twitter:image" content="https://outdoorintel.ca/assets/heros/scout-hero-2.jpg">
     <link rel="alternate" hreflang="en" href="https://outdoorintel.ca/en/trip-planner">
     <link rel="alternate" hreflang="x-default" href="https://outdoorintel.ca/en/trip-planner">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="/assets/css/site.css?v=1">
+    <link rel="stylesheet" href="/assets/vendor/leaflet/leaflet.css"/>
+    <script src="/assets/vendor/leaflet/leaflet.js"></script>
     <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{overflow:hidden;background:#f5f3f0;color:#3e3127;font-family:system-ui,-apple-system,sans-serif}
+body{overflow:hidden;background:#fbfaf7;color:#1c2b21;font-family:system-ui,-apple-system,sans-serif}
 #map{position:fixed;inset:0;z-index:0}
 .leaflet-tile-pane{filter:saturate(1.5) contrast(1.05) brightness(1.02)}
 .leaflet-control-attribution{display:none}
 .leaflet-control-zoom{border:none!important}
-.leaflet-control-zoom a{background:#fff!important;color:#6b6359!important;border:1px solid #e0dbd5!important;width:34px!important;height:34px!important;line-height:34px!important;font-size:16px!important;box-shadow:0 2px 8px rgba(0,0,0,.08)!important}
-.leaflet-control-zoom a:hover{color:#2d5a3d!important;background:#f5f3f0!important}
-.leaflet-popup-content-wrapper{background:#fff!important;color:#3e3127!important;border-radius:14px!important;border:1px solid #e8e4df;box-shadow:0 8px 30px rgba(0,0,0,.12)!important}
+.leaflet-control-zoom a{background:#fff!important;color:#5c6b5f!important;border:1px solid #e0dbd5!important;width:34px!important;height:34px!important;line-height:34px!important;font-size:16px!important;box-shadow:0 2px 8px rgba(0,0,0,.08)!important}
+.leaflet-control-zoom a:hover{color:#305e3c!important;background:#fbfaf7!important}
+.leaflet-popup-content-wrapper{background:#fff!important;color:#1c2b21!important;border-radius:14px!important;border:1px solid #e8e4df;box-shadow:0 8px 30px rgba(0,0,0,.12)!important}
 .leaflet-popup-tip{background:#fff!important}
 .leaflet-popup-content{margin:14px 16px!important}
 .leaflet-popup-close-button{color:#999!important;font-size:18px!important}
-.leaflet-popup-close-button:hover{color:#c97c5e!important}
+.leaflet-popup-close-button:hover{color:#3d7a4d!important}
 
 /* Header */
 #header{position:fixed;top:0;left:0;right:0;z-index:1000;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(45,90,61,.08);box-shadow:0 1px 8px rgba(0,0,0,.05)}
@@ -65,19 +65,19 @@ body{overflow:hidden;background:#f5f3f0;color:#3e3127;font-family:system-ui,-app
 .act-card{padding:28px 20px;border-radius:16px;background:#fff;border:2px solid #e8e4df;cursor:pointer;transition:all .25s;text-align:center}
 .act-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.1)}
 .act-card .act-icon{font-size:36px;margin-bottom:10px}
-.act-card .act-name{font-size:15px;font-weight:700;color:#3e3127}
+.act-card .act-name{font-size:15px;font-weight:700;color:#1c2b21}
 .act-card .act-count{font-size:11px;color:#999;margin-top:4px}
 
 /* Plan Wizard Bar */
 #plan-bar{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:999;display:none;padding:14px 24px;background:#fff;border-radius:16px;border:1px solid #e0dbd5;box-shadow:0 8px 32px rgba(0,0,0,.1);max-width:600px;width:calc(100% - 40px);text-align:center}
-#plan-bar .step-label{font-size:14px;font-weight:600;color:#3e3127}
+#plan-bar .step-label{font-size:14px;font-weight:600;color:#1c2b21}
 #plan-bar .step-sub{font-size:12px;color:#999;margin-top:4px}
-#generate-btn{display:none;margin-top:12px;padding:12px 32px;background:#2d5a3d;color:#fff;border:none;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;transition:all .25s;width:100%}
-#generate-btn:hover{background:#c97c5e;transform:scale(1.02)}
+#generate-btn{display:none;margin-top:12px;padding:12px 32px;background:#305e3c;color:#fff;border:none;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;transition:all .25s;width:100%}
+#generate-btn:hover{background:#3d7a4d;transform:scale(1.02)}
 
 /* Activity Chip */
 #activity-chip{position:fixed;top:70px;left:20px;z-index:999;display:none;align-items:center;gap:8px;padding:8px 14px;background:#fff;border:1px solid #e0dbd5;border-radius:24px;font-size:13px;font-weight:600;box-shadow:0 2px 12px rgba(0,0,0,.08);cursor:pointer;transition:all .2s}
-#activity-chip:hover{border-color:#c97c5e;box-shadow:0 4px 16px rgba(0,0,0,.12)}
+#activity-chip:hover{border-color:#3d7a4d;box-shadow:0 4px 16px rgba(0,0,0,.12)}
 
 /* Trip Generation Animation */
 #gen-overlay{position:fixed;inset:0;z-index:4000;background:#0a1a12;display:none;align-items:center;justify-content:center;flex-direction:column}
@@ -103,10 +103,10 @@ body{overflow:hidden;background:#f5f3f0;color:#3e3127;font-family:system-ui,-app
 #profile-modal .pm-header{padding:20px 24px 16px;border-bottom:1px solid #f0ede8;position:sticky;top:0;background:#fff;z-index:1}
 #profile-modal .pm-body{padding:16px 24px 24px}
 #profile-modal .pm-close{position:absolute;top:16px;right:16px;background:none;border:none;color:#999;font-size:20px;cursor:pointer;padding:4px 8px;border-radius:6px;transition:all .2s}
-#profile-modal .pm-close:hover{color:#c97c5e;background:#f5f3f0}
+#profile-modal .pm-close:hover{color:#3d7a4d;background:#fbfaf7}
 .pm-section{margin-bottom:16px}
 .pm-section-title{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;color:#999;margin-bottom:6px}
-.pm-section-content{font-size:13px;color:#6b6359;line-height:1.6}
+.pm-section-content{font-size:13px;color:#5c6b5f;line-height:1.6}
 .pm-tag{display:inline-block;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;margin:2px 4px 2px 0;background:#f8f7f5;border:1px solid #e8e4df}
 
 /* Service markers */
@@ -133,6 +133,7 @@ body{overflow:hidden;background:#f5f3f0;color:#3e3127;font-family:system-ui,-app
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8Q00962P"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-QY8Q00962P');</script>
+<style id="oi-ds">.explore-dropdown{visibility:hidden;opacity:0;transform:translateY(6px);transition:opacity .15s ease,transform .15s ease,visibility .15s}.explore-group:hover .explore-dropdown,.explore-group:focus-within .explore-dropdown{visibility:visible;opacity:1;transform:translateY(0)}</style>
 </head>
 <body>
 <div id="map"></div>
@@ -141,8 +142,8 @@ body{overflow:hidden;background:#f5f3f0;color:#3e3127;font-family:system-ui,-app
 <div id="activity-picker">
     <div style="text-align:center;max-width:600px;width:100%;padding:0 20px">
         <div style="margin-bottom:8px"><img src="../assets/logo/logo.jpg" alt="Outdoor Intel" style="height:40px;display:inline-block"></div>
-        <h1 style="font-size:28px;font-weight:800;color:#2d5a3d;margin-bottom:6px">Plan Your Adventure</h1>
-        <p style="font-size:14px;color:#6b6359;margin-bottom:32px">What activity are you planning?</p>
+        <h1 style="font-size:28px;font-weight:800;color:#305e3c;margin-bottom:6px">Plan Your Adventure</h1>
+        <p style="font-size:14px;color:#5c6b5f;margin-bottom:32px">What activity are you planning?</p>
         <div class="act-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px" id="act-grid"></div>
     </div>
 </div>
@@ -157,13 +158,13 @@ body{overflow:hidden;background:#f5f3f0;color:#3e3127;font-family:system-ui,-app
 <!-- Header -->
 <div id="header">
     <div style="display:flex;align-items:center;gap:12px">
-        <a href="../index.html" style="display:flex;align-items:center"><img src="../assets/logo/logo.jpg" alt="Outdoor Intel" style="height:30px"></a>
+        <a href="/" style="display:flex;align-items:center"><img src="../assets/logo/logo.jpg" alt="Outdoor Intel" style="height:30px"></a>
         <div style="height:16px;width:1px;background:#e8e4df"></div>
-        <span style="font-size:12px;font-weight:700;color:#2d5a3d;letter-spacing:1px;text-transform:uppercase">Trip Planner</span>
+        <span style="font-size:12px;font-weight:700;color:#305e3c;letter-spacing:1px;text-transform:uppercase">Trip Planner</span>
     </div>
     <div style="display:flex;align-items:center;gap:12px">
-        <a href="map.html" style="font-size:13px;color:#6b6359;transition:color .2s;text-decoration:none" onmouseenter="this.style.color='#c97c5e'" onmouseleave="this.style.color='#6b6359'">Full Map</a>
-        <button id="sidebar-toggle" style="padding:7px 16px;background:#2d5a3d;border:none;border-radius:8px;color:#fff;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:8px;transition:all .2s" onmouseenter="this.style.background='#c97c5e'" onmouseleave="this.style.background='#2d5a3d'">
+        <a href="/en/map" style="font-size:13px;color:#5c6b5f;transition:color .2s;text-decoration:none" onmouseenter="this.style.color='#3d7a4d'" onmouseleave="this.style.color='#5c6b5f'">Full Map</a>
+        <button id="sidebar-toggle" style="padding:7px 16px;background:#305e3c;border:none;border-radius:8px;color:#fff;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:8px;transition:all .2s" onmouseenter="this.style.background='#3d7a4d'" onmouseleave="this.style.background='#305e3c'">
             My Trip <span id="trip-count" style="min-width:20px;height:20px;display:flex;align-items:center;justify-content:center;border-radius:10px;background:rgba(255,255,255,.2);font-size:11px;font-weight:700">0</span>
         </button>
     </div>
@@ -174,7 +175,7 @@ body{overflow:hidden;background:#f5f3f0;color:#3e3127;font-family:system-ui,-app
     <div class="step-label" id="step-label">Click the map to set your starting point</div>
     <div class="step-sub" id="step-sub">This is where your adventure begins</div>
     <div id="address-search-wrap" style="position:relative;margin-top:10px;display:none">
-        <input id="address-search-input" type="text" placeholder="Or search by address, city or place..." autocomplete="off" style="width:100%;padding:9px 12px;border:1px solid #e8e4df;border-radius:8px;font-size:13px;outline:none;background:#fafafa;transition:all .2s;box-sizing:border-box" onfocus="this.style.borderColor='#2d5a3d';this.style.background='#fff'" onblur="this.style.borderColor='#e8e4df';this.style.background='#fafafa'">
+        <input id="address-search-input" type="text" placeholder="Or search by address, city or place..." autocomplete="off" style="width:100%;padding:9px 12px;border:1px solid #e8e4df;border-radius:8px;font-size:13px;outline:none;background:#fafafa;transition:all .2s;box-sizing:border-box" onfocus="this.style.borderColor='#305e3c';this.style.background='#fff'" onblur="this.style.borderColor='#e8e4df';this.style.background='#fafafa'">
         <div id="address-search-results" style="position:absolute;bottom:calc(100% + 4px);left:0;right:0;background:#fff;border:1px solid #e0dbd5;border-radius:8px;box-shadow:0 -8px 24px rgba(0,0,0,.12);max-height:260px;overflow-y:auto;z-index:1000;display:none;text-align:left"></div>
     </div>
     <button id="generate-btn" onclick="window.generateTrip()">Generate My Trip</button>
@@ -184,10 +185,10 @@ body{overflow:hidden;background:#f5f3f0;color:#3e3127;font-family:system-ui,-app
 <div id="sidebar">
     <div style="padding:0 20px 20px">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
-            <h2 style="font-size:18px;font-weight:700;color:#3e3127">My Trip</h2>
+            <h2 style="font-size:18px;font-weight:700;color:#1c2b21">My Trip</h2>
             <button id="clear-trip" style="font-size:12px;color:#999;background:none;border:none;cursor:pointer;padding:4px 8px" onmouseenter="this.style.color='#e05252'" onmouseleave="this.style.color='#999'">Clear All</button>
         </div>
-        <div id="trip-stats" style="display:none;margin-bottom:14px;padding:12px 14px;background:#f8f7f5;border-radius:10px;border:1px solid #e8e4df;font-size:12px;color:#6b6359"></div>
+        <div id="trip-stats" style="display:none;margin-bottom:14px;padding:12px 14px;background:#f8f7f5;border-radius:10px;border:1px solid #e8e4df;font-size:12px;color:#5c6b5f"></div>
         <div id="services-panel" style="display:none;margin-bottom:14px">
             <div style="display:flex;gap:6px;flex-wrap:wrap">
                 <button class="svc-filter active" data-svc="fuel" onclick="toggleSvcFilter(this)" style="padding:5px 12px;border-radius:16px;font-size:11px;font-weight:600;cursor:pointer;border:1px solid #3b82f6;background:#eff6ff;color:#3b82f6;transition:all .2s">&#9981; Gas</button>
@@ -267,10 +268,10 @@ function setStartPoint(lat, lng, name) {
     state.startMarker = L.marker([lat, lng], {
         icon: L.divIcon({
             className: '',
-            html: '<div style="width:20px;height:20px;border-radius:50%;background:#2d5a3d;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;font-size:9px;color:#fff;font-weight:800">S</div>',
+            html: '<div style="width:20px;height:20px;border-radius:50%;background:#305e3c;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;font-size:9px;color:#fff;font-weight:800">S</div>',
             iconSize:[20,20], iconAnchor:[10,10]
         })
-    }).addTo(map).bindPopup(`<div style="font-size:13px;font-weight:700;color:#2d5a3d">Start: ${name}</div><div style="font-size:11px;color:#999">${lat.toFixed(2)}, ${lng.toFixed(2)}</div>`);
+    }).addTo(map).bindPopup(`<div style="font-size:13px;font-weight:700;color:#305e3c">Start: ${name}</div><div style="font-size:11px;color:#999">${lat.toFixed(2)}, ${lng.toFixed(2)}</div>`);
 
     advanceToDestinations();
 }
@@ -316,7 +317,7 @@ function renderGeocodeResults(results) {
         const primary = parts[0].trim();
         const secondary = parts.slice(1).join(',').trim();
         return `<div data-idx="${i}" class="geo-result" style="padding:10px 14px;border-bottom:1px solid #f0ede8;cursor:pointer;transition:background .15s" onmouseenter="this.style.background='#f8f7f5'" onmouseleave="this.style.background='#fff'">
-            <div style="font-size:13px;font-weight:600;color:#3e3127;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${primary}</div>
+            <div style="font-size:13px;font-weight:600;color:#1c2b21;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${primary}</div>
             <div style="font-size:11px;color:#999;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${secondary}</div>
         </div>`;
     }).join('');
@@ -355,14 +356,14 @@ function popupContent(spot) {
     const color = CAT_COLORS[spot.cat];
     return `<div style="min-width:190px">
         <div style="font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;color:${color}">${spot.cat}</div>
-        <div style="font-size:15px;font-weight:700;margin-top:3px;color:#3e3127">${spot.name}</div>
-        <div style="font-size:12px;color:#6b6359;margin-top:3px">${spot.province||''}</div>
+        <div style="font-size:15px;font-weight:700;margin-top:3px;color:#1c2b21">${spot.name}</div>
+        <div style="font-size:12px;color:#5c6b5f;margin-top:3px">${spot.province||''}</div>
         ${feats?`<div style="font-size:11px;color:#999;margin-top:6px">${feats}</div>`:''}
         <div style="display:flex;gap:8px;margin-top:14px">
             <button onclick="window.addSpotToTrip('${spot.slug}','${spot.cat}')" style="flex:1;padding:7px 0;background:${color}15;border:1px solid ${color}30;border-radius:8px;color:${color};font-size:12px;font-weight:700;cursor:pointer;opacity:${inTrip?'.5':'1'}" ${inTrip?'disabled':''}>
                 ${inTrip?'Added &#10003;':'Add to Trip'}
             </button>
-            <button onclick="window.viewProfile('${spot.slug}','${spot.cat}')" style="flex:1;padding:7px 0;background:#2d5a3d15;border:1px solid #2d5a3d30;border-radius:8px;color:#2d5a3d;font-size:12px;font-weight:700;cursor:pointer">View Profile</button>
+            <button onclick="window.viewProfile('${spot.slug}','${spot.cat}')" style="flex:1;padding:7px 0;background:#305e3c15;border:1px solid #305e3c30;border-radius:8px;color:#305e3c;font-size:12px;font-weight:700;cursor:pointer">View Profile</button>
         </div>
     </div>`;
 }
@@ -436,7 +437,7 @@ function updateTripMarkers() {
     svcTripMarkers = [];
     state.trip.forEach((s, i) => {
         if (!s._isService || !s.coordinates) return;
-        const color = SVC_COLORS[s.cat] || '#6b6359';
+        const color = SVC_COLORS[s.cat] || '#5c6b5f';
         const emoji = SVC_EMOJIS[s.cat] || '\u{1F4CD}';
         const m = L.marker([s.coordinates.lat, s.coordinates.lng], {
             icon: L.divIcon({className:'',html:`<div style="width:28px;height:28px;border-radius:50%;background:${color};border:2.5px solid #fff;display:flex;align-items:center;justify-content:center;font-size:13px;box-shadow:0 2px 10px ${color}50,0 2px 6px rgba(0,0,0,.15)">${emoji}</div>`,iconSize:[28,28],iconAnchor:[14,14]})
@@ -521,7 +522,7 @@ window.generateTrip = async function() {
             const el = document.getElementById('gen-dist-num');
             if (el) el.textContent = totalKm;
 
-            L.geoJSON(route.geometry,{style:{color:'#2d5a3d',weight:5,opacity:.75}}).addTo(routeLayer);
+            L.geoJSON(route.geometry,{style:{color:'#305e3c',weight:5,opacity:.75}}).addTo(routeLayer);
         } else {
             drawFallbackRoute(allPoints);
         }
@@ -550,7 +551,7 @@ window.generateTrip = async function() {
 
 function drawFallbackRoute(pts) {
     const coords = pts.map(p => [p.lat,p.lng]);
-    if (coords.length >= 2) L.polyline(coords,{color:'#2d5a3d',weight:3,opacity:.6,dashArray:'8,6'}).addTo(routeLayer);
+    if (coords.length >= 2) L.polyline(coords,{color:'#305e3c',weight:3,opacity:.6,dashArray:'8,6'}).addTo(routeLayer);
 }
 
 // ==================== GLOBE ANIMATION ====================
@@ -697,13 +698,13 @@ function renderServiceMarkers() {
         L.marker([el.lat,el.lon],{
             icon: L.divIcon({className:'',html:`<div class="svc-icon" style="background:${color}">${emoji}</div>`,iconSize:[24,24],iconAnchor:[12,12]})
         }).bindPopup(`<div style="min-width:170px">
-            <div style="font-size:13px;font-weight:600;color:#3e3127">${name}</div>
+            <div style="font-size:13px;font-weight:600;color:#1c2b21">${name}</div>
             <div style="font-size:11px;color:#999;margin-top:2px">${typeLabel}</div>
             <div style="display:flex;gap:6px;margin-top:10px">
                 <button onclick="window.addServiceToTrip(${svcIdx})" style="flex:1;padding:6px 0;background:${color}15;border:1px solid ${color}30;border-radius:8px;color:${color};font-size:11px;font-weight:700;cursor:pointer;opacity:${alreadyAdded?'.5':'1'}" ${alreadyAdded?'disabled':''}>
                     ${alreadyAdded?'Added &#10003;':'Add as Stop'}
                 </button>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=${el.lat},${el.lon}" target="_blank" rel="noopener" style="flex:1;padding:6px 0;background:#f5f3f0;border:1px solid #e0dbd5;border-radius:8px;color:#6b6359;font-size:11px;font-weight:600;text-decoration:none;text-align:center">Directions</a>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=${el.lat},${el.lon}" target="_blank" rel="noopener" style="flex:1;padding:6px 0;background:#fbfaf7;border:1px solid #e0dbd5;border-radius:8px;color:#5c6b5f;font-size:11px;font-weight:600;text-decoration:none;text-align:center">Directions</a>
             </div>
         </div>`,{maxWidth:220}).addTo(servicesLayer);
     });
@@ -790,7 +791,7 @@ function renderWeather() {
     if (Object.keys(state.weather).length === 0) { panel.style.display = 'none'; return; }
     panel.style.display = 'block';
 
-    let html = '<div style="font-size:12px;font-weight:700;color:#3e3127;margin-bottom:8px;display:flex;align-items:center;gap:6px">\u{1F326}\uFE0F Weather Forecast</div>';
+    let html = '<div style="font-size:12px;font-weight:700;color:#1c2b21;margin-bottom:8px;display:flex;align-items:center;gap:6px">\u{1F326}\uFE0F Weather Forecast</div>';
 
     state.trip.forEach(spot => {
         const w = state.weather[spot.slug];
@@ -800,7 +801,7 @@ function renderWeather() {
         const hasWarning = w.weathercode.some(c => c >= 61) || w.precipitation_sum.some(p => p > 10);
 
         html += `<div class="weather-card ${hasWarning?'weather-warn':''}" style="margin-bottom:6px">
-            <div style="font-size:12px;font-weight:600;color:#3e3127;margin-bottom:6px">${spot.name}</div>
+            <div style="font-size:12px;font-weight:600;color:#1c2b21;margin-bottom:6px">${spot.name}</div>
             <div style="display:flex;gap:4px;overflow-x:auto">`;
 
         for (let i = 0; i < Math.min(5, w.time.length); i++) {
@@ -814,7 +815,7 @@ function renderWeather() {
             html += `<div style="flex:1;min-width:52px;text-align:center;padding:4px;border-radius:6px;${precip>10?'background:rgba(234,179,8,.1)':''}">
                 <div style="font-size:9px;color:#999;font-weight:600">${day}</div>
                 <div style="font-size:16px;margin:2px 0">${icon}</div>
-                <div style="font-size:10px;font-weight:600;color:#3e3127">${hi}°</div>
+                <div style="font-size:10px;font-weight:600;color:#1c2b21">${hi}°</div>
                 <div style="font-size:9px;color:#999">${lo}°</div>
                 ${precip > 0 ? `<div style="font-size:8px;color:#3b82f6;margin-top:1px">${precip}mm</div>` : ''}
             </div>`;
@@ -842,14 +843,14 @@ window.viewProfile = function(slug, cat) {
     const spot = state.allSpots.find(s => s.slug === slug && s.cat === cat);
     if (!spot) return;
     map.closePopup();
-    const color = CAT_COLORS[cat]||'#2d5a3d';
+    const color = CAT_COLORS[cat]||'#305e3c';
     const tags = spot.features||spot.primary_species||spot.primary_game||[];
     const inTrip = state.trip.find(s => s.slug === slug && s.cat === cat);
 
     let hdr = `<div style="font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;color:${color}">${cat}</div>
-        <h2 style="font-size:20px;font-weight:800;margin-top:4px;color:#3e3127">${spot.name}</h2>
+        <h2 style="font-size:20px;font-weight:800;margin-top:4px;color:#1c2b21">${spot.name}</h2>
         <div style="display:flex;align-items:center;gap:10px;margin-top:6px">
-            <span style="font-size:12px;color:#6b6359">${spot.province||''}</span>
+            <span style="font-size:12px;color:#5c6b5f">${spot.province||''}</span>
             ${spot.scout_level?`<span style="font-size:10px;font-weight:700;color:${color};background:${color}15;padding:2px 8px;border-radius:8px">${spot.scout_level}</span>`:''}
         </div>`;
 
@@ -866,12 +867,12 @@ window.viewProfile = function(slug, cat) {
     const addStyle = inTrip ? `style="flex:1;padding:9px 0;background:#f0ede8;border:1px solid #e8e4df;border-radius:8px;color:#999;font-size:13px;font-weight:700;cursor:default"` : `style="flex:1;padding:9px 0;background:${color}12;border:1px solid ${color}30;border-radius:8px;color:${color};font-size:13px;font-weight:700;cursor:pointer"`;
     body += `<div style="display:flex;gap:8px;margin-top:20px;padding-top:16px;border-top:1px solid #f0ede8">
         <button onclick="window.addSpotToTrip('${slug}','${cat}');window.closeProfile()" ${inTrip?'disabled ':''} ${addStyle}>${inTrip?'Added &#10003;':'Add to Trip'}</button>
-        <a href="${cat}/${slug}.html" style="flex:1;padding:9px 0;background:#2d5a3d12;border:1px solid #2d5a3d30;border-radius:8px;color:#2d5a3d;font-size:13px;font-weight:700;text-decoration:none;text-align:center">Full Page</a>
+        <a href="/en/${cat}/${slug}" style="flex:1;padding:9px 0;background:#305e3c12;border:1px solid #305e3c30;border-radius:8px;color:#305e3c;font-size:13px;font-weight:700;text-decoration:none;text-align:center">Full Page</a>
     </div>`;
     if (spot.source_url || spot.official_regulation_url) {
         body += `<div style="display:flex;gap:8px;margin-top:8px">
-            ${spot.source_url?`<a href="${spot.source_url}" target="_blank" rel="noopener noreferrer" style="flex:1;padding:8px 0;background:#f8f7f5;border:1px solid #e8e4df;border-radius:8px;color:#6b6359;font-size:12px;font-weight:700;text-decoration:none;text-align:center">Source</a>`:''}
-            ${spot.official_regulation_url?`<a href="${spot.official_regulation_url}" target="_blank" rel="noopener noreferrer" style="flex:1;padding:8px 0;background:#f8f7f5;border:1px solid #e8e4df;border-radius:8px;color:#6b6359;font-size:12px;font-weight:700;text-decoration:none;text-align:center">Rules</a>`:''}
+            ${spot.source_url?`<a href="${spot.source_url}" target="_blank" rel="noopener noreferrer" style="flex:1;padding:8px 0;background:#f8f7f5;border:1px solid #e8e4df;border-radius:8px;color:#5c6b5f;font-size:12px;font-weight:700;text-decoration:none;text-align:center">Source</a>`:''}
+            ${spot.official_regulation_url?`<a href="${spot.official_regulation_url}" target="_blank" rel="noopener noreferrer" style="flex:1;padding:8px 0;background:#f8f7f5;border:1px solid #e8e4df;border-radius:8px;color:#5c6b5f;font-size:12px;font-weight:700;text-decoration:none;text-align:center">Rules</a>`:''}
         </div>`;
     }
 
@@ -896,7 +897,7 @@ async function updateRouteOnly() {
         if (data.code==='Ok'&&data.routes&&data.routes[0]) {
             state.routeGeometry = data.routes[0].geometry;
             state.routeLegs = data.routes[0].legs.map(l=>({distance:l.distance,duration:l.duration}));
-            L.geoJSON(data.routes[0].geometry,{style:{color:'#2d5a3d',weight:5,opacity:.75}}).addTo(routeLayer);
+            L.geoJSON(data.routes[0].geometry,{style:{color:'#305e3c',weight:5,opacity:.75}}).addTo(routeLayer);
             if (state.services.length > 0) renderServiceMarkers();
         }
     } catch(e) {}
@@ -921,7 +922,7 @@ function updateTripUI() {
 
     // Stats
     const provs = new Set(state.trip.map(s=>s.province).filter(Boolean));
-    let sh = `<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap"><span style="font-weight:700;color:#3e3127">${state.trip.length} destination${state.trip.length!==1?'s':''}</span><span style="color:#ccc">\u00B7</span><span>${provs.size} province${provs.size!==1?'s':''}</span>`;
+    let sh = `<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap"><span style="font-weight:700;color:#1c2b21">${state.trip.length} destination${state.trip.length!==1?'s':''}</span><span style="color:#ccc">\u00B7</span><span>${provs.size} province${provs.size!==1?'s':''}</span>`;
     if (state.routeLegs.length > 0) {
         const td = state.routeLegs.reduce((a,l)=>a+l.distance,0);
         const tt = state.routeLegs.reduce((a,l)=>a+l.duration,0);
@@ -939,8 +940,8 @@ function updateTripUI() {
     // Start point
     if (state.startPoint) {
         html += `<div class="trip-stop" style="background:#e8f5e9;border-color:#a5d6a7" onclick="map.flyTo([${state.startPoint.lat},${state.startPoint.lng}],8,{duration:.8})">
-            <div class="snum" style="background:#2d5a3d;color:#fff;font-size:10px">S</div>
-            <div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:600;color:#2d5a3d">Starting Point</div><div style="font-size:10px;color:#6b6359">${state.startPoint.name}</div></div>
+            <div class="snum" style="background:#305e3c;color:#fff;font-size:10px">S</div>
+            <div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:600;color:#305e3c">Starting Point</div><div style="font-size:10px;color:#5c6b5f">${state.startPoint.name}</div></div>
         </div>`;
         if (state.routeLegs[0]) {
             html += `<div class="leg-info"><svg width="10" height="16" viewBox="0 0 10 16"><line x1="5" y1="0" x2="5" y2="16" stroke="#ccc" stroke-width="1.5" stroke-dasharray="2,2"/></svg>${fmt(state.routeLegs[0].distance)} \u00B7 ${fmtT(state.routeLegs[0].duration)}</div>`;
@@ -949,13 +950,13 @@ function updateTripUI() {
 
     state.trip.forEach((s,i) => {
         const isSvc = s._isService;
-        const color = isSvc ? (SVC_COLORS[s.cat]||'#6b6359') : (CAT_COLORS[s.cat]||'#2d5a3d');
+        const color = isSvc ? (SVC_COLORS[s.cat]||'#5c6b5f') : (CAT_COLORS[s.cat]||'#305e3c');
         const svcEmoji = isSvc ? (SVC_EMOJIS[s.cat]||'\u{1F4CD}') : '';
         const svcLabel = isSvc ? (s.cat==='fuel'?'Gas Station':s.cat==='restaurant'?'Restaurant':'Hotel') : '';
         html += `<div class="trip-stop" draggable="true" data-idx="${i}" onclick="window.tripFlyTo(${i})" style="${isSvc?'background:'+color+'08;border-color:'+color+'25':''}">
             <div class="snum" style="background:${color}15;color:${color};border:1px solid ${color}30;font-size:${isSvc?'13px':'11px'}">${isSvc ? svcEmoji : (i+1)}</div>
             <div style="flex:1;min-width:0">
-                <div style="font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#3e3127">${s.name}</div>
+                <div style="font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#1c2b21">${s.name}</div>
                 <div style="font-size:10px;color:#999;text-transform:uppercase;letter-spacing:.5px;margin-top:1px">${isSvc ? svcLabel : (s.province||'')}</div>
             </div>
             <button class="srem" onclick="event.stopPropagation();window.tripRemove(${i})" title="Remove">&times;</button>
@@ -1043,13 +1044,13 @@ init();
 <div id="global-search-overlay" class="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm hidden" style="transition:opacity .2s">
     <div class="flex items-start justify-center pt-[15vh] px-4">
         <div class="bg-white rounded-2xl w-full max-w-2xl overflow-hidden" style="box-shadow:0 25px 50px rgba(0,0,0,.25)">
-            <div class="flex items-center gap-3 px-6 py-4 border-b border-[#2d5a3d]/10">
-                <svg class="w-5 h-5 text-[#6b6359] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-                <input id="global-search-input" type="text" placeholder="Search 499+ spots across Canada..." class="flex-1 text-lg text-[#3e3127] placeholder-[#6b6359]/50 outline-none bg-transparent" autocomplete="off">
-                <kbd class="hidden sm:inline-block text-xs text-[#6b6359] bg-[#f5f3f0] px-2 py-1 rounded font-mono">ESC</kbd>
+            <div class="flex items-center gap-3 px-6 py-4 border-b border-[#305e3c]/10">
+                <svg class="w-5 h-5 text-[#5c6b5f] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                <input id="global-search-input" type="text" placeholder="Search 499+ spots across Canada..." class="flex-1 text-lg text-[#1c2b21] placeholder-[#5c6b5f]/50 outline-none bg-transparent" autocomplete="off">
+                <kbd class="hidden sm:inline-block text-xs text-[#5c6b5f] bg-[#fbfaf7] px-2 py-1 rounded font-mono">ESC</kbd>
             </div>
             <div id="global-search-results" class="max-h-[50vh] overflow-y-auto">
-                <div class="px-6 py-8 text-center text-[#6b6359] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>
+                <div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>
             </div>
         </div>
     </div>
@@ -1062,9 +1063,9 @@ init();
     function isEn(){return!window.location.pathname.startsWith('/fr')}
     function bp(){var p=window.location.pathname,d=(p.match(/\//g)||[]).length-1;if(p==='/'||p==='/index.html')return'';var s=[];for(var i=0;i<d;i++)s.push('..');return s.join('/')||'.'}
     async function load(){if(spotsData)return spotsData;spotsData=[];var b=bp();for(var i=0;i<CATS.length;i++){try{var r=await fetch((b?b+'/':'/')+'/data/'+CATS[i]+'.json'),d=await r.json();d.spots.forEach(function(s){spotsData.push({name:s.name,slug:s.slug,province:s.province,category:CATS[i],species:s.primary_species||s.primary_game||s.features||[],scout_level:s.scout_level||''})});}catch(e){}}return spotsData}
-    function render(m){if(!m.length){results.innerHTML='<div class="px-6 py-8 text-center text-[#6b6359] text-sm">No spots found.</div>';return}var l=isEn()?'en':'fr',b=bp(),h=m.slice(0,12).map(function(s){var hr=(b?b+'/':'/')+l+'/'+s.category+'/'+s.slug+'.html',ic=CI[s.category]||'',sub=s.province+' \u2022 '+s.category.charAt(0).toUpperCase()+s.category.slice(1);if(s.species.length)sub+=' \u2022 '+s.species.slice(0,2).join(', ');return'<a href="'+hr+'" class="flex items-center gap-4 px-6 py-3 hover:bg-[#fef9f3] transition-colors"><span class="text-xl flex-shrink-0">'+ic+'</span><div class="flex-1 min-w-0"><div class="font-semibold text-[#2d5a3d] truncate">'+s.name+'</div><div class="text-xs text-[#6b6359] truncate">'+sub+'</div></div><span class="text-xs font-bold text-[#c97c5e] flex-shrink-0">'+s.scout_level+'</span></a>'}).join('');if(m.length>12)h+='<div class="px-6 py-3 text-center text-xs text-[#6b6359]">'+(m.length-12)+' more...</div>';results.innerHTML=h}
-    function search(q){if(!spotsData)return;q=q.toLowerCase().trim();if(!q){results.innerHTML='<div class="px-6 py-8 text-center text-[#6b6359] text-sm">Type to search...</div>';return}render(spotsData.filter(function(s){return s.name.toLowerCase().includes(q)||s.province.toLowerCase().includes(q)||s.category.toLowerCase().includes(q)||s.species.some(function(sp){return sp.toLowerCase().includes(q)})}))}
-    function open(){overlay.classList.remove('hidden');document.body.style.overflow='hidden';input.value='';input.focus();load();results.innerHTML='<div class="px-6 py-8 text-center text-[#6b6359] text-sm">Type to search...</div>'}
+    function render(m){if(!m.length){results.innerHTML='<div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">No spots found.</div>';return}var l=isEn()?'en':'fr',b=bp(),h=m.slice(0,12).map(function(s){var hr=(b?b+'/':'/')+l+'/'+s.category+'/'+s.slug+'.html',ic=CI[s.category]||'',sub=s.province+' \u2022 '+s.category.charAt(0).toUpperCase()+s.category.slice(1);if(s.species.length)sub+=' \u2022 '+s.species.slice(0,2).join(', ');return'<a href="'+hr+'" class="flex items-center gap-4 px-6 py-3 hover:bg-[#f4f3ec] transition-colors"><span class="text-xl flex-shrink-0">'+ic+'</span><div class="flex-1 min-w-0"><div class="font-semibold text-[#305e3c] truncate">'+s.name+'</div><div class="text-xs text-[#5c6b5f] truncate">'+sub+'</div></div><span class="text-xs font-bold text-[#3d7a4d] flex-shrink-0">'+s.scout_level+'</span></a>'}).join('');if(m.length>12)h+='<div class="px-6 py-3 text-center text-xs text-[#5c6b5f]">'+(m.length-12)+' more...</div>';results.innerHTML=h}
+    function search(q){if(!spotsData)return;q=q.toLowerCase().trim();if(!q){results.innerHTML='<div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">Type to search...</div>';return}render(spotsData.filter(function(s){return s.name.toLowerCase().includes(q)||s.province.toLowerCase().includes(q)||s.category.toLowerCase().includes(q)||s.species.some(function(sp){return sp.toLowerCase().includes(q)})}))}
+    function open(){overlay.classList.remove('hidden');document.body.style.overflow='hidden';input.value='';input.focus();load();results.innerHTML='<div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">Type to search...</div>'}
     function close(){overlay.classList.add('hidden');document.body.style.overflow=''}
     if(toggle)toggle.addEventListener('click',open);
     overlay.addEventListener('click',function(e){if(e.target===overlay)close()});

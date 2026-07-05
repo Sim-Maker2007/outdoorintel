@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#2d5a3d">
+    <meta name="theme-color" content="#14251a">
     <link rel="alternate" type="application/rss+xml" title="Outdoor Intel Blog" href="https://outdoorintel.ca/rss.xml">
-    <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
-    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
     <title>Hiking Directory | Outdoor Intel</title>
     <meta name="description" content="Explore 46 Canadian hiking trails and routes.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -32,7 +30,7 @@
     
     
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://outdoorintel.ca/"},{"@type":"ListItem","position":2,"name":"Hiking","item":"https://outdoorintel.ca/en/hiking/directory"}]}</script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/site.css?v=1">
 
     <!-- Google Analytics (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8Q00962P"></script>
@@ -42,69 +40,84 @@
       gtag('js', new Date());
       gtag('config', 'G-QY8Q00962P');
     </script>
+<style id="oi-ds">.explore-dropdown{visibility:hidden;opacity:0;transform:translateY(6px);transition:opacity .15s ease,transform .15s ease,visibility .15s}.explore-group:hover .explore-dropdown,.explore-group:focus-within .explore-dropdown{visibility:visible;opacity:1;transform:translateY(0)}</style>
 </head>
-<body class="bg-[#f5f3f0] text-[#3e3127] font-sans leading-relaxed">
+<body class="bg-[#fbfaf7] text-[#1c2b21] font-sans leading-relaxed">
 
-    <header class="fixed top-0 w-full z-50 border-b border-[#2d5a3d]/10 bg-white/95 backdrop-blur-md">
-    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <a href="../../index.html" class="flex-shrink-0">
-            <img src="../../assets/logo/logo.jpg" alt="Outdoor Intel" width="180" height="101" class="h-10 md:h-14 w-auto object-contain">
+    <header data-oi-ds class="fixed top-0 w-full z-[1000] bg-[#14251a] border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between gap-6">
+        <a href="/" class="flex items-center gap-3 flex-shrink-0" aria-label="Outdoor Intel">
+            <span class="w-9 h-9 rounded-lg bg-white flex items-center justify-center text-[#14251a] font-extrabold text-sm tracking-tight">OI</span>
+            <span class="text-white font-bold text-lg tracking-tight">Outdoor Intel</span>
         </a>
-        <nav class="hidden lg:flex gap-6 text-sm font-semibold text-[#3e3127]">
-            <a href="../../en/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Fishing</a>
-            <a href="../../en/hunting/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Hunting</a>
-            <a href="../../en/camping/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Camping</a>
-            <a href="../../en/kayaking/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Kayaking</a>
-            <a href="../../en/skiing/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Skiing</a>
-            <a href="../../en/hiking/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Hiking</a>
-            <a href="../map.html" class="hover:text-[#c97c5e] transition-colors py-2">Map</a>
-            <a href="../../en/blog.html" class="hover:text-[#c97c5e] transition-colors py-2">Blog</a>
-            <a href="../../fr/fishing/directory.html" class="text-[#c97c5e] font-bold hover:text-[#2d5a3d] transition-colors py-2">Français</a>
-            <button id="global-search-toggle" class="hover:text-[#c97c5e] transition-colors py-2" aria-label="Search spots">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-white/90">
+            <div class="explore-group relative">
+                <button class="flex items-center gap-1.5 py-2 hover:text-white transition-colors" aria-haspopup="true">
+                    Explore
+                    <svg class="w-3.5 h-3.5 text-[#a2c99a]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+                </button>
+                <div class="explore-dropdown absolute left-0 top-full pt-2 w-52">
+                    <div class="bg-white rounded-xl py-2 shadow-xl border border-[#14251a]/10">
+                        <a href="/en/fishing/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">🎣 Fishing</a>
+                        <a href="/en/hunting/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">🦌 Hunting</a>
+                        <a href="/en/camping/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">⛺ Camping</a>
+                        <a href="/en/kayaking/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">🛶 Kayaking</a>
+                        <a href="/en/skiing/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">⛷️ Skiing</a>
+                        <a href="/en/hiking/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">🥾 Hiking</a>
+                    </div>
+                </div>
+            </div>
+            <a href="/en/map" class="py-2 hover:text-white transition-colors">Map</a>
+            <a href="/en/trip-planner" class="py-2 hover:text-white transition-colors">Trip Planner</a>
+            <a href="/en/blog" class="py-2 hover:text-white transition-colors">Blog</a>
+            <span class="inline-flex items-center gap-1.5 border border-white/25 rounded-full px-4 py-1.5 text-xs font-bold"><span class="text-white">EN</span><span class="text-white/30">|</span><a href="/fr/hiking/directory" class="text-[#a2c99a] hover:text-white transition-colors" lang="fr">FR</a></span>
+            <button id="global-search-toggle" class="w-9 h-9 rounded-full border border-white/25 flex items-center justify-center hover:bg-white/10 transition-colors" aria-label="Search">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
             </button>
         </nav>
-        <button id="menu-toggle" class="lg:hidden p-2 text-[#3e3127]" aria-label="Toggle menu">
+        <button id="menu-toggle" class="lg:hidden p-2 text-white" aria-label="Menu" aria-expanded="false">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
             </svg>
         </button>
     </div>
-    <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-[#2d5a3d]/10">
-        <div class="max-w-7xl mx-auto px-6 py-4 space-y-1">
-            <a href="../../en/fishing/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">🎣 Fishing</a>
-            <a href="../../en/hunting/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">🦌 Hunting</a>
-            <a href="../../en/camping/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">⛺ Camping</a>
-            <a href="../../en/kayaking/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">🛶 Kayaking</a>
-            <a href="../../en/skiing/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">⛷️ Skiing</a>
-            <a href="../../en/hiking/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">🥾 Hiking</a>
-            <a href="../map.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">Map</a>
-            <a href="../../en/blog.html" class="block py-2 text-[#2d5a3d] font-semibold hover:text-[#c97c5e]">Blog</a>
-            <a href="../../fr/fishing/directory.html" class="block py-2 text-[#c97c5e] font-bold mt-2">Français</a>
+    <nav id="mobile-menu" class="hidden lg:hidden bg-[#14251a] border-t border-white/10">
+        <div class="max-w-6xl mx-auto px-6 py-4 space-y-1 text-white/90">
+            <a href="/en/fishing/directory" class="block py-2 hover:text-[#a2c99a]">🎣 Fishing</a>
+            <a href="/en/hunting/directory" class="block py-2 hover:text-[#a2c99a]">🦌 Hunting</a>
+            <a href="/en/camping/directory" class="block py-2 hover:text-[#a2c99a]">⛺ Camping</a>
+            <a href="/en/kayaking/directory" class="block py-2 hover:text-[#a2c99a]">🛶 Kayaking</a>
+            <a href="/en/skiing/directory" class="block py-2 hover:text-[#a2c99a]">⛷️ Skiing</a>
+            <a href="/en/hiking/directory" class="block py-2 hover:text-[#a2c99a]">🥾 Hiking</a>
+            <a href="/en/map" class="block py-2 hover:text-[#a2c99a]">Map</a>
+            <a href="/en/trip-planner" class="block py-2 hover:text-[#a2c99a]">Trip Planner</a>
+            <a href="/en/trust" class="block py-2 hover:text-[#a2c99a]">Trust & sources</a>
+            <a href="/en/blog" class="block py-2 font-semibold hover:text-[#a2c99a]">Blog</a>
+            <a href="/fr/hiking/directory" class="block py-2 text-[#a2c99a] font-bold mt-2" lang="fr">Français</a>
         </div>
     </nav>
 </header>
     <nav class="max-w-7xl mx-auto px-6 py-3 flex items-center text-sm flex-wrap" aria-label="Breadcrumb">
-            <a href="../../index.html" class="text-[#6b6359] hover:text-[#c97c5e] transition-colors">Home</a><svg class="w-3 h-3 text-[#6b6359]/40 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg><span class="text-[#2d5a3d] font-semibold">Hiking</span>
+            <a href="/" class="text-[#5c6b5f] hover:text-[#3d7a4d] transition-colors">Home</a><svg class="w-3 h-3 text-[#5c6b5f]/40 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg><span class="text-[#305e3c] font-semibold">Hiking</span>
         </nav>
 
     <main class="pt-32 pb-20 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="mb-8">
-                <div class="text-[#c97c5e] text-sm font-bold uppercase tracking-wider mb-2">🥾 Hiking</div>
-                <h1 class="text-4xl md:text-5xl font-bold text-[#2d5a3d] mb-4">Hiking Directory</h1>
-                <p class="text-lg text-[#6b6359]">Explore 46 Canadian hiking trails and routes.</p>
+                <div class="text-[#3d7a4d] text-sm font-bold uppercase tracking-wider mb-2">🥾 Hiking</div>
+                <h1 class="text-4xl md:text-5xl font-bold text-[#305e3c] mb-4">Hiking Directory</h1>
+                <p class="text-lg text-[#5c6b5f]">Explore 46 Canadian hiking trails and routes.</p>
             </div>
 
             <div class="bg-white rounded-xl p-6 md:p-8 mb-10" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div>
-                        <label class="block text-sm font-semibold text-[#2d5a3d] mb-2">Search</label>
-                        <input type="text" id="search-input" placeholder="Search Hiking..." class="w-full px-4 py-3 border border-[#2d5a3d]/20 rounded-lg focus:outline-none focus:border-[#c97c5e] focus:ring-2 focus:ring-[#c97c5e]/20 bg-[#fef9f3]">
+                        <label class="block text-sm font-semibold text-[#305e3c] mb-2">Search</label>
+                        <input type="text" id="search-input" placeholder="Search Hiking..." class="w-full px-4 py-3 border border-[#305e3c]/20 rounded-lg focus:outline-none focus:border-[#3d7a4d] focus:ring-2 focus:ring-[#3d7a4d]/20 bg-[#f4f3ec]">
                     </div>
                     <div>
-                        <label class="block text-sm font-semibold text-[#2d5a3d] mb-2">Province</label>
-                        <select id="province-filter" class="w-full px-4 py-3 border border-[#2d5a3d]/20 rounded-lg focus:outline-none focus:border-[#c97c5e] bg-[#fef9f3]">
+                        <label class="block text-sm font-semibold text-[#305e3c] mb-2">Province</label>
+                        <select id="province-filter" class="w-full px-4 py-3 border border-[#305e3c]/20 rounded-lg focus:outline-none focus:border-[#3d7a4d] bg-[#f4f3ec]">
                             <option value="">All Provinces</option>
                             <option value="Alberta">Alberta</option>
 <option value="British Columbia">British Columbia</option>
@@ -120,8 +133,8 @@
                         </select>
                     </div>
                     <div>
-                        <label class="block text-sm font-semibold text-[#2d5a3d] mb-2">Type</label>
-                        <select id="type-filter" class="w-full px-4 py-3 border border-[#2d5a3d]/20 rounded-lg focus:outline-none focus:border-[#c97c5e] bg-[#fef9f3]">
+                        <label class="block text-sm font-semibold text-[#305e3c] mb-2">Type</label>
+                        <select id="type-filter" class="w-full px-4 py-3 border border-[#305e3c]/20 rounded-lg focus:outline-none focus:border-[#3d7a4d] bg-[#f4f3ec]">
                             <option value="">All Type</option>
                             <option value="Alpine">Alpine</option>
 <option value="Day Hike">Day Hike</option>
@@ -131,561 +144,575 @@
                 </div>
             </div>
 
-            <div class="mb-6 text-[#6b6359]">
+            <div class="mb-6 text-[#5c6b5f]">
                 <span id="result-count">46</span> spots found
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="spots-grid">
-            <a href="west-coast-trail.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="west coast trail" data-province="British Columbia" data-filter="Coastal Views,Suspension Bridges,Rainforest" data-type="Multi-Day">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Legendary</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">West Coast Trail</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Coastal Views, Suspension Bridges</p>
+            <a href="/en/hiking/west-coast-trail" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="west coast trail" data-province="British Columbia" data-filter="Coastal Views,Suspension Bridges,Rainforest" data-type="Multi-Day">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">West Coast Trail</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Coastal Views, Suspension Bridges</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 75 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="garibaldi-lake.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="garibaldi lake trail" data-province="British Columbia" data-filter="Turquoise Lake,Alpine Wildflowers,Scenic Peak" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Garibaldi Lake Trail</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Turquoise Lake, Alpine Wildflowers</p>
+            <a href="/en/hiking/garibaldi-lake" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="garibaldi lake trail" data-province="British Columbia" data-filter="Turquoise Lake,Alpine Wildflowers,Scenic Peak" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Garibaldi Lake Trail</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Turquoise Lake, Alpine Wildflowers</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 19 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="juan-de-fuca-trail.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="juan de fuca trail" data-province="British Columbia" data-filter="Remote Beaches,Coastal Wilderness,Sea Stacks" data-type="Multi-Day">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Juan de Fuca Trail</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Remote Beaches, Coastal Wilderness</p>
+            <a href="/en/hiking/juan-de-fuca-trail" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="juan de fuca trail" data-province="British Columbia" data-filter="Remote Beaches,Coastal Wilderness,Sea Stacks" data-type="Multi-Day">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Juan de Fuca Trail</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Remote Beaches, Coastal Wilderness</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 47 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="north-coast-trail.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="north coast trail" data-province="British Columbia" data-filter="Pristine Beaches,Wilderness Cabins,Wildlife Viewing" data-type="Multi-Day">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">North Coast Trail</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Pristine Beaches, Wilderness Cabins</p>
+            <a href="/en/hiking/north-coast-trail" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="north coast trail" data-province="British Columbia" data-filter="Pristine Beaches,Wilderness Cabins,Wildlife Viewing" data-type="Multi-Day">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">North Coast Trail</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Pristine Beaches, Wilderness Cabins</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 43 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="plain-of-six-glaciers.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="plain of six glaciers trail" data-province="Alberta" data-filter="Glacier Views,Mountain Backdrop,Historic Tea House" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Alberta &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Plain of Six Glaciers Trail</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Glacier Views, Mountain Backdrop</p>
+            <a href="/en/hiking/plain-of-six-glaciers" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="plain of six glaciers trail" data-province="Alberta" data-filter="Glacier Views,Mountain Backdrop,Historic Tea House" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Alberta &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Plain of Six Glaciers Trail</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Glacier Views, Mountain Backdrop</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 14 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="sentinel-pass.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="sentinel pass trail" data-province="Alberta" data-filter="Alpine Meadows,Ten Peaks,Larch Trees" data-type="Alpine">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Alberta &bull; Legendary</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Sentinel Pass Trail</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Alpine Meadows, Ten Peaks</p>
+            <a href="/en/hiking/sentinel-pass" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="sentinel pass trail" data-province="Alberta" data-filter="Alpine Meadows,Ten Peaks,Larch Trees" data-type="Alpine">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Alberta &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Sentinel Pass Trail</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Alpine Meadows, Ten Peaks</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 11 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="johnston-canyon.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="johnston canyon trail" data-province="Alberta" data-filter="Canyon Views,Waterfall,Accessible" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Alberta &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Johnston Canyon Trail</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Canyon Views, Waterfall</p>
+            <a href="/en/hiking/johnston-canyon" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="johnston canyon trail" data-province="Alberta" data-filter="Canyon Views,Waterfall,Accessible" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Alberta &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Johnston Canyon Trail</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Canyon Views, Waterfall</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 12 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="fitz-roy.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="fitz roy trail" data-province="Ontario" data-filter="Bruce Peninsula,Escarpment Views,Limestone Cliffs" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Fitz Roy Trail</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Bruce Peninsula, Escarpment Views</p>
+            <a href="/en/hiking/fitz-roy" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="fitz roy trail" data-province="Ontario" data-filter="Bruce Peninsula,Escarpment Views,Limestone Cliffs" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Ontario &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Fitz Roy Trail</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Bruce Peninsula, Escarpment Views</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 10 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="scarborough-bluffs.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="scarborough bluffs circuit" data-province="Ontario" data-filter="Lake Ontario Views,Red Clay Cliffs,Urban Accessible" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Scarborough Bluffs Circuit</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Lake Ontario Views, Red Clay Cliffs</p>
+            <a href="/en/hiking/scarborough-bluffs" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="scarborough bluffs circuit" data-province="Ontario" data-filter="Lake Ontario Views,Red Clay Cliffs,Urban Accessible" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Ontario &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Scarborough Bluffs Circuit</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Lake Ontario Views, Red Clay Cliffs</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 8 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="mont-royal-loop.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="mont-royal loop" data-province="Quebec" data-filter="Montreal Views,Urban Park,Multiple Summits" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Mont-Royal Loop</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Montreal Views, Urban Park</p>
+            <a href="/en/hiking/mont-royal-loop" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="mont-royal loop" data-province="Quebec" data-filter="Montreal Views,Urban Park,Multiple Summits" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Mont-Royal Loop</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Montreal Views, Urban Park</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 10 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="laurentian-ridge.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="laurentian ridge trail" data-province="Quebec" data-filter="Alpine Meadows,Panoramic Views,Pristine Wilderness" data-type="Alpine">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Laurentian Ridge Trail</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Alpine Meadows, Panoramic Views</p>
+            <a href="/en/hiking/laurentian-ridge" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="laurentian ridge trail" data-province="Quebec" data-filter="Alpine Meadows,Panoramic Views,Pristine Wilderness" data-type="Alpine">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Laurentian Ridge Trail</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Alpine Meadows, Panoramic Views</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 22 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="cape-enrage.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="cape enrage hiking trail" data-province="New Brunswick" data-filter="Bay of Fundy Views,Tidal Bore Window,Adventure Park" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">New Brunswick &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Cape Enrage Hiking Trail</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Bay of Fundy Views, Tidal Bore Window</p>
+            <a href="/en/hiking/cape-enrage" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="cape enrage hiking trail" data-province="New Brunswick" data-filter="Bay of Fundy Views,Tidal Bore Window,Adventure Park" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">New Brunswick &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Cape Enrage Hiking Trail</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Bay of Fundy Views, Tidal Bore Window</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 5 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="algonquin-park.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="algonquin park trails" data-province="Ontario" data-filter="Forest Lakes,Wildlife Corridors,Backcountry Access" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Algonquin Park Trails</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Forest Lakes, Wildlife Corridors</p>
+            <a href="/en/hiking/algonquin-park" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="algonquin park trails" data-province="Ontario" data-filter="Forest Lakes,Wildlife Corridors,Backcountry Access" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Ontario &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Algonquin Park Trails</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Forest Lakes, Wildlife Corridors</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 16 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="skyline-trail-highlands.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="skyline trail (highlands)" data-province="Nova Scotia" data-filter="Cabot Trail Connection,Ocean Vistas,Highland Plateau" data-type="Multi-Day">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Nova Scotia &bull; Legendary</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Skyline Trail (Highlands)</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Cabot Trail Connection, Ocean Vistas</p>
+            <a href="/en/hiking/skyline-trail-highlands" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="skyline trail (highlands)" data-province="Nova Scotia" data-filter="Cabot Trail Connection,Ocean Vistas,Highland Plateau" data-type="Multi-Day">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Nova Scotia &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Skyline Trail (Highlands)</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Cabot Trail Connection, Ocean Vistas</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 41 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="beulach-ban-falls.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="beulach ban falls trail" data-province="Nova Scotia" data-filter="Waterfall,Cabot Trail Views,Coastal Setting" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Nova Scotia &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Beulach Ban Falls Trail</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Waterfall, Cabot Trail Views</p>
+            <a href="/en/hiking/beulach-ban-falls" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="beulach ban falls trail" data-province="Nova Scotia" data-filter="Waterfall,Cabot Trail Views,Coastal Setting" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Nova Scotia &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Beulach Ban Falls Trail</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Waterfall, Cabot Trail Views</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 8 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="gros-morne-mountain.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="gros morne mountain trail" data-province="Newfoundland and Labrador" data-filter="Alpine Tundra,Mountain Vistas,National Park" data-type="Alpine">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Newfoundland and Labrador &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Gros Morne Mountain Trail</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Alpine Tundra, Mountain Vistas</p>
+            <a href="/en/hiking/gros-morne-mountain" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="gros morne mountain trail" data-province="Newfoundland and Labrador" data-filter="Alpine Tundra,Mountain Vistas,National Park" data-type="Alpine">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Newfoundland and Labrador &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Gros Morne Mountain Trail</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Alpine Tundra, Mountain Vistas</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 8 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="tablelands.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="tablelands trail" data-province="Newfoundland and Labrador" data-filter="Unique Geology,Barren Landscape,Lunar Terrain" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Newfoundland and Labrador &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Tablelands Trail</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Unique Geology, Barren Landscape</p>
+            <a href="/en/hiking/tablelands" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="tablelands trail" data-province="Newfoundland and Labrador" data-filter="Unique Geology,Barren Landscape,Lunar Terrain" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Newfoundland and Labrador &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Tablelands Trail</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Unique Geology, Barren Landscape</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 16 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="chilkoot-pass.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="skagway to chilkoot pass" data-province="Yukon Territory" data-filter="Historic Gold Rush Route,Alpine Crossing,US-Canada Border" data-type="Multi-Day">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Yukon Territory &bull; Legendary</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Skagway to Chilkoot Pass</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Historic Gold Rush Route, Alpine Crossing</p>
+            <a href="/en/hiking/chilkoot-pass" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="skagway to chilkoot pass" data-province="Yukon Territory" data-filter="Historic Gold Rush Route,Alpine Crossing,US-Canada Border" data-type="Multi-Day">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Yukon Territory &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Skagway to Chilkoot Pass</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Historic Gold Rush Route, Alpine Crossing</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 53 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="mount-massive.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="mount massive trail" data-province="Northwest Territories" data-filter="Midnight Sun Views,Tundra Landscape,Remote Access" data-type="Alpine">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Northwest Territories &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Mount Massive Trail</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Midnight Sun Views, Tundra Landscape</p>
+            <a href="/en/hiking/mount-massive" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="mount massive trail" data-province="Northwest Territories" data-filter="Midnight Sun Views,Tundra Landscape,Remote Access" data-type="Alpine">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Northwest Territories &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Mount Massive Trail</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Midnight Sun Views, Tundra Landscape</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 12 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="dempster-highway.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="dempster highway trek section" data-province="Nunavut" data-filter="Arctic Circle Crossing,Permafrost Tundra,Indigenous Territory" data-type="Multi-Day">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Nunavut &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Dempster Highway Trek Section</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Arctic Circle Crossing, Permafrost Tundra</p>
+            <a href="/en/hiking/dempster-highway" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="dempster highway trek section" data-province="Nunavut" data-filter="Arctic Circle Crossing,Permafrost Tundra,Indigenous Territory" data-type="Multi-Day">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Nunavut &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Dempster Highway Trek Section</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Arctic Circle Crossing, Permafrost Tundra</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 40 km customizable</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="grouse-grind.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="grouse grind" data-province="British Columbia" data-filter="Steep Ascent,Excellent Cardio,North Shore" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Pro</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Grouse Grind</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Steep Ascent, Excellent Cardio</p>
+            <a href="/en/hiking/grouse-grind" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="grouse grind" data-province="British Columbia" data-filter="Steep Ascent,Excellent Cardio,North Shore" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Pro</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Grouse Grind</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Steep Ascent, Excellent Cardio</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 2.9 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="stawamus-chief.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="stawamus chief" data-province="British Columbia" data-filter="Rock Face,Valley Views,Squamish Access" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Pro</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Stawamus Chief</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Rock Face, Valley Views</p>
+            <a href="/en/hiking/stawamus-chief" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="stawamus chief" data-province="British Columbia" data-filter="Rock Face,Valley Views,Squamish Access" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Pro</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Stawamus Chief</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Rock Face, Valley Views</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 2.1 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="joffre-lakes-hike.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="joffre lakes" data-province="British Columbia" data-filter="Turquoise Water,Three Lakes,Photography" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Joffre Lakes</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Turquoise Water, Three Lakes</p>
+            <a href="/en/hiking/joffre-lakes-hike" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="joffre lakes" data-province="British Columbia" data-filter="Turquoise Water,Three Lakes,Photography" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Joffre Lakes</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Turquoise Water, Three Lakes</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 5.4 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="garibaldi-lake-hike.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="garibaldi lake" data-province="British Columbia" data-filter="Turquoise Lake,Wildflower Meadows,Peak Views" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Garibaldi Lake</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Turquoise Lake, Wildflower Meadows</p>
+            <a href="/en/hiking/garibaldi-lake-hike" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="garibaldi lake" data-province="British Columbia" data-filter="Turquoise Lake,Wildflower Meadows,Peak Views" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Garibaldi Lake</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Turquoise Lake, Wildflower Meadows</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 9 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="panorama-ridge.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="panorama ridge trail" data-province="British Columbia" data-filter="360 Degree Views,Alpine Meadows,Wildflowers" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Panorama Ridge Trail</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">360 Degree Views, Alpine Meadows</p>
+            <a href="/en/hiking/panorama-ridge" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="panorama ridge trail" data-province="British Columbia" data-filter="360 Degree Views,Alpine Meadows,Wildflowers" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Panorama Ridge Trail</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">360 Degree Views, Alpine Meadows</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 18 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="berg-lake.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="berg lake trail" data-province="British Columbia" data-filter="Glacier Views,Turquoise Lake,Mountain Scenery" data-type="Multi-Day">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Berg Lake Trail</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Glacier Views, Turquoise Lake</p>
+            <a href="/en/hiking/berg-lake" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="berg lake trail" data-province="British Columbia" data-filter="Glacier Views,Turquoise Lake,Mountain Scenery" data-type="Multi-Day">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Berg Lake Trail</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Glacier Views, Turquoise Lake</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 19 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="juan-de-fuca-hike.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="juan de fuca trail" data-province="British Columbia" data-filter="Coastal Trail,Beach Access,Sea Stacks" data-type="Multi-Day">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Juan de Fuca Trail</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Coastal Trail, Beach Access</p>
+            <a href="/en/hiking/juan-de-fuca-hike" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="juan de fuca trail" data-province="British Columbia" data-filter="Coastal Trail,Beach Access,Sea Stacks" data-type="Multi-Day">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Juan de Fuca Trail</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Coastal Trail, Beach Access</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 47 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="sunshine-coast-trail.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="sunshine coast trail" data-province="British Columbia" data-filter="Coastal Scenery,Old Growth Forest,Marine Views" data-type="Multi-Day">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Sunshine Coast Trail</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Coastal Scenery, Old Growth Forest</p>
+            <a href="/en/hiking/sunshine-coast-trail" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="sunshine coast trail" data-province="British Columbia" data-filter="Coastal Scenery,Old Growth Forest,Marine Views" data-type="Multi-Day">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Sunshine Coast Trail</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Coastal Scenery, Old Growth Forest</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 80 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="black-tusk.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="black tusk" data-province="British Columbia" data-filter="Distinctive Peak,Garibaldi Access,Alpine" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Pro</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Black Tusk</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Distinctive Peak, Garibaldi Access</p>
+            <a href="/en/hiking/black-tusk" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="black tusk" data-province="British Columbia" data-filter="Distinctive Peak,Garibaldi Access,Alpine" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Pro</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Black Tusk</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Distinctive Peak, Garibaldi Access</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 7.5 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="plain-six-glaciers.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="plain of six glaciers" data-province="Alberta" data-filter="Glacier Views,Lake Louise Base,Mountain Scenery" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Alberta &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Plain of Six Glaciers</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Glacier Views, Lake Louise Base</p>
+            <a href="/en/hiking/plain-six-glaciers" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="plain of six glaciers" data-province="Alberta" data-filter="Glacier Views,Lake Louise Base,Mountain Scenery" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Alberta &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Plain of Six Glaciers</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Glacier Views, Lake Louise Base</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 12.8 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="crypt-lake.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="crypt lake" data-province="Alberta" data-filter="Alpine Lake,Scramble Section,Waterton Access" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Alberta &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Crypt Lake</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Alpine Lake, Scramble Section</p>
+            <a href="/en/hiking/crypt-lake" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="crypt lake" data-province="Alberta" data-filter="Alpine Lake,Scramble Section,Waterton Access" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Alberta &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Crypt Lake</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Alpine Lake, Scramble Section</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 19 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="carthew-alderson.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="carthew-alderson trail" data-province="Alberta" data-filter="High Alpine,Cameron Lake Views,Point-to-Point" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Alberta &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Carthew-Alderson Trail</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">High Alpine, Cameron Lake Views</p>
+            <a href="/en/hiking/carthew-alderson" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="carthew-alderson trail" data-province="Alberta" data-filter="High Alpine,Cameron Lake Views,Point-to-Point" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Alberta &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Carthew-Alderson Trail</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">High Alpine, Cameron Lake Views</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 19.2 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="parker-ridge.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="parker ridge" data-province="Alberta" data-filter="360 Views,Wildflower Meadows,Icefield Parkway" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Alberta &bull; Pro</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Parker Ridge</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">360 Views, Wildflower Meadows</p>
+            <a href="/en/hiking/parker-ridge" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="parker ridge" data-province="Alberta" data-filter="360 Views,Wildflower Meadows,Icefield Parkway" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Alberta &bull; Pro</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Parker Ridge</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">360 Views, Wildflower Meadows</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 5.7 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="ha-ling-peak.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="ha ling peak" data-province="Alberta" data-filter="Canmore Access,Rocky Mountain Views,Popular" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Alberta &bull; Pro</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Ha Ling Peak</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Canmore Access, Rocky Mountain Views</p>
+            <a href="/en/hiking/ha-ling-peak" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="ha ling peak" data-province="Alberta" data-filter="Canmore Access,Rocky Mountain Views,Popular" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Alberta &bull; Pro</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Ha Ling Peak</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Canmore Access, Rocky Mountain Views</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 12 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="tent-ridge.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="tent ridge" data-province="Alberta" data-filter="Scenic Ridge Walk,Peaks Views,Alpine Meadows" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Alberta &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Tent Ridge</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Scenic Ridge Walk, Peaks Views</p>
+            <a href="/en/hiking/tent-ridge" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="tent ridge" data-province="Alberta" data-filter="Scenic Ridge Walk,Peaks Views,Alpine Meadows" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Alberta &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Tent Ridge</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Scenic Ridge Walk, Peaks Views</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 15 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="cup-and-saucer.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="cup and saucer trail" data-province="Ontario" data-filter="Manitoulin Island,Quartzite Cliffs,Lake Views" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Pro</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Cup and Saucer Trail</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Manitoulin Island, Quartzite Cliffs</p>
+            <a href="/en/hiking/cup-and-saucer" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="cup and saucer trail" data-province="Ontario" data-filter="Manitoulin Island,Quartzite Cliffs,Lake Views" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Ontario &bull; Pro</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Cup and Saucer Trail</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Manitoulin Island, Quartzite Cliffs</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 9 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="crack-trail-killarney.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="crack trail (killarney)" data-province="Ontario" data-filter="White Quartzite,Rock Formation,Georgian Bay" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Crack Trail (Killarney)</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">White Quartzite, Rock Formation</p>
+            <a href="/en/hiking/crack-trail-killarney" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="crack trail (killarney)" data-province="Ontario" data-filter="White Quartzite,Rock Formation,Georgian Bay" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Ontario &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Crack Trail (Killarney)</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">White Quartzite, Rock Formation</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 4 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="sleeping-giant.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="sleeping giant provincial park" data-province="Ontario" data-filter="Superior Views,Multi-Trail System,Thunder Bay Access" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Pro</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Sleeping Giant Provincial Park</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Superior Views, Multi-Trail System</p>
+            <a href="/en/hiking/sleeping-giant" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="sleeping giant provincial park" data-province="Ontario" data-filter="Superior Views,Multi-Trail System,Thunder Bay Access" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Ontario &bull; Pro</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Sleeping Giant Provincial Park</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Superior Views, Multi-Trail System</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 12 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="pukaskwa-coastal.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="pukaskwa coastal trail" data-province="Ontario" data-filter="Superior Shoreline,Beach Camping,Backcountry" data-type="Multi-Day">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Pukaskwa Coastal Trail</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Superior Shoreline, Beach Camping</p>
+            <a href="/en/hiking/pukaskwa-coastal" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="pukaskwa coastal trail" data-province="Ontario" data-filter="Superior Shoreline,Beach Camping,Backcountry" data-type="Multi-Day">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Ontario &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Pukaskwa Coastal Trail</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Superior Shoreline, Beach Camping</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 58 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="mont-albert.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="mont albert (gaspésie)" data-province="Quebec" data-filter="Alpine Tundra,Wildflower Slopes,Views" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Mont Albert (Gaspésie)</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Alpine Tundra, Wildflower Slopes</p>
+            <a href="/en/hiking/mont-albert" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="mont albert (gaspésie)" data-province="Quebec" data-filter="Alpine Tundra,Wildflower Slopes,Views" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Mont Albert (Gaspésie)</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Alpine Tundra, Wildflower Slopes</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 12 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="mont-jacques-cartier.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="mont jacques-cartier" data-province="Quebec" data-filter="Quebec's Tallest,Tundra Plateau,360 Views" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Mont Jacques-Cartier</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Quebec's Tallest, Tundra Plateau</p>
+            <a href="/en/hiking/mont-jacques-cartier" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="mont jacques-cartier" data-province="Quebec" data-filter="Quebec's Tallest,Tundra Plateau,360 Views" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Mont Jacques-Cartier</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Quebec's Tallest, Tundra Plateau</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 12 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="sentier-des-caps.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="sentier des caps" data-province="Quebec" data-filter="Coastal Trail,Forest-to-Shoreline,Charlevoix" data-type="Multi-Day">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Sentier des Caps</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Coastal Trail, Forest-to-Shoreline</p>
+            <a href="/en/hiking/sentier-des-caps" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="sentier des caps" data-province="Quebec" data-filter="Coastal Trail,Forest-to-Shoreline,Charlevoix" data-type="Multi-Day">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Sentier des Caps</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Coastal Trail, Forest-to-Shoreline</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 50 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="east-coast-trail.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="east coast trail sections" data-province="Newfoundland and Labrador" data-filter="Dramatic Cliffs,Sea Cave Access,Coastal Wilderness" data-type="Multi-Day">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Newfoundland and Labrador &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">East Coast Trail Sections</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Dramatic Cliffs, Sea Cave Access</p>
+            <a href="/en/hiking/east-coast-trail" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="east coast trail sections" data-province="Newfoundland and Labrador" data-filter="Dramatic Cliffs,Sea Cave Access,Coastal Wilderness" data-type="Multi-Day">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Newfoundland and Labrador &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">East Coast Trail Sections</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Dramatic Cliffs, Sea Cave Access</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 25-50 km sections</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="fundy-footpath.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="fundy footpath" data-province="New Brunswick" data-filter="Bay of Fundy,Coastal Cliffs,Tidal Wonder" data-type="Multi-Day">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">New Brunswick &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Fundy Footpath</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Bay of Fundy, Coastal Cliffs</p>
+            <a href="/en/hiking/fundy-footpath" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="fundy footpath" data-province="New Brunswick" data-filter="Bay of Fundy,Coastal Cliffs,Tidal Wonder" data-type="Multi-Day">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">New Brunswick &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Fundy Footpath</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Bay of Fundy, Coastal Cliffs</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 50 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="skyline-trail-cape-breton.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="skyline trail (cape breton)" data-province="Nova Scotia" data-filter="Coastal Views,Highland Terrain,Mountain to Sea" data-type="Day Hike">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Nova Scotia &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Skyline Trail (Cape Breton)</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Coastal Views, Highland Terrain</p>
+            <a href="/en/hiking/skyline-trail-cape-breton" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="skyline trail (cape breton)" data-province="Nova Scotia" data-filter="Coastal Views,Highland Terrain,Mountain to Sea" data-type="Day Hike">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Nova Scotia &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Skyline Trail (Cape Breton)</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Coastal Views, Highland Terrain</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 7.4 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="chilkoot-trail.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="chilkoot trail" data-province="Yukon" data-filter="Historic Gold Rush,Mountain Pass,Beach-to-Summit" data-type="Multi-Day">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Yukon &bull; Legendary</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Chilkoot Trail</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Historic Gold Rush, Mountain Pass</p>
+            <a href="/en/hiking/chilkoot-trail" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="chilkoot trail" data-province="Yukon" data-filter="Historic Gold Rush,Mountain Pass,Beach-to-Summit" data-type="Multi-Day">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Yukon &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Chilkoot Trail</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Historic Gold Rush, Mountain Pass</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Distance: 53 km</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">View Profile &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">View Profile &rarr;</div>
                     </div>
                 </div>
             </a>
             </div>
 
             <div id="no-results" class="hidden text-center py-20">
-                <h3 class="text-2xl font-bold text-[#2d5a3d] mb-4">No spots found</h3>
-                <p class="text-[#6b6359]">Try adjusting your search or filter criteria.</p>
+                <h3 class="text-2xl font-bold text-[#305e3c] mb-4">No spots found</h3>
+                <p class="text-[#5c6b5f]">Try adjusting your search or filter criteria.</p>
             </div>
         </div>
     </main>
 
-    <footer class="bg-[#2d5a3d] text-white py-16 px-6">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-        <div>
-            <img src="../../assets/logo/logo.jpg" alt="Outdoor Intel" class="h-10 w-auto mb-4 brightness-200">
-            <p class="text-white/70 text-sm">Canada's ultimate outdoor destination. Fishing, hunting, camping, kayaking, skiing, and hiking intelligence.</p>
+    <footer data-oi-ds class="bg-[#14251a] text-white">
+    <div class="max-w-6xl mx-auto px-6 pt-16 pb-8">
+        <div class="grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr] gap-10 pb-12">
+            <div class="col-span-2 md:col-span-1">
+                <a href="/" class="flex items-center gap-3 mb-5" aria-label="Outdoor Intel">
+                    <span class="w-9 h-9 rounded-lg bg-white flex items-center justify-center text-[#14251a] font-extrabold text-sm tracking-tight">OI</span>
+                    <span class="text-white font-bold text-lg tracking-tight">Outdoor Intel</span>
+                </a>
+                <p class="text-white/60 text-sm leading-relaxed max-w-xs mb-6">Sourced outdoor data for better trips across Canada. Every spot is verified and cited.</p>
+                <p class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-2">Weekly intel, free</p>
+                <form class="js-newsletter-form flex gap-2 max-w-xs" data-lang="en">
+                    <input type="email" name="email" required placeholder="Your email" autocomplete="email" class="flex-1 min-w-0 px-3 py-2 rounded-lg text-sm text-[#1c2b21] bg-white placeholder-[#5c6b5f] outline-none focus:ring-2 focus:ring-[#a2c99a]">
+                    <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-5000px">
+                    <button type="submit" class="bg-[#305e3c] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#3d7a4d] transition-colors whitespace-nowrap">Subscribe</button>
+                </form>
+                <p class="js-newsletter-msg text-white/50 text-xs mt-2">One email a week. No spam.</p>
+            </div>
+            <div>
+                <h4 class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-4">Explore</h4>
+                <ul class="space-y-2.5 text-sm text-white/70">
+                    <li><a href="/en/fishing/directory" class="hover:text-white transition-colors">Fishing</a></li>
+                    <li><a href="/en/hunting/directory" class="hover:text-white transition-colors">Hunting</a></li>
+                    <li><a href="/en/camping/directory" class="hover:text-white transition-colors">Camping</a></li>
+                    <li><a href="/en/kayaking/directory" class="hover:text-white transition-colors">Kayaking</a></li>
+                    <li><a href="/en/skiing/directory" class="hover:text-white transition-colors">Skiing</a></li>
+                    <li><a href="/en/hiking/directory" class="hover:text-white transition-colors">Hiking</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-4">Product</h4>
+                <ul class="space-y-2.5 text-sm text-white/70">
+                    <li><a href="/en/map" class="hover:text-white transition-colors">Map</a></li>
+                    <li><a href="/en/trip-planner" class="hover:text-white transition-colors">Trip Planner</a></li>
+                    <li><a href="/en/blog" class="hover:text-white transition-colors">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-4">About</h4>
+                <ul class="space-y-2.5 text-sm text-white/70">
+                    <li><a href="/en/trust" class="hover:text-white transition-colors">Trust & sources</a></li>
+                    <li><a href="/en/about" class="hover:text-white transition-colors">About</a></li>
+                    <li><a href="/en/licenses" class="hover:text-white transition-colors">Licenses & regs</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <h4 class="font-bold mb-4 text-[#c97c5e]">Activities</h4>
-            <ul class="space-y-2 text-white/70 text-sm"><li><a href="../../en/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">Fishing</a></li>
-<li><a href="../../en/hunting/directory.html" class="hover:text-[#c97c5e] transition-colors">Hunting</a></li>
-<li><a href="../../en/camping/directory.html" class="hover:text-[#c97c5e] transition-colors">Camping</a></li>
-<li><a href="../../en/kayaking/directory.html" class="hover:text-[#c97c5e] transition-colors">Kayaking</a></li>
-<li><a href="../../en/skiing/directory.html" class="hover:text-[#c97c5e] transition-colors">Skiing</a></li>
-<li><a href="../../en/hiking/directory.html" class="hover:text-[#c97c5e] transition-colors">Hiking</a></li>
-</ul>
+        <div class="border-t border-white/15 pt-6 flex items-center justify-between text-sm">
+            <p class="text-white/50">&copy; 2026 Outdoor Intel</p>
+            <p class="font-bold text-xs"><span class="text-white/50">EN</span><span class="text-white/30">&nbsp;|&nbsp;</span><a href="/fr/hiking/directory" class="text-[#a2c99a] hover:text-white transition-colors" lang="fr">FR</a></p>
         </div>
-        <div>
-            <h4 class="font-bold mb-4 text-[#c97c5e]">Resources</h4>
-            <ul class="space-y-2 text-white/70 text-sm">
-                <li><a href="../about.html" class="hover:text-[#c97c5e] transition-colors">About</a></li>
-                <li><a href="../licenses.html" class="hover:text-[#c97c5e] transition-colors">Licenses &amp; Regs</a></li>
-                <li><a href="https://www.ontario.ca/document/ontario-fishing-regulations-summary" target="_blank" rel="noopener noreferrer" class="hover:text-[#c97c5e] transition-colors">Ontario Regulations</a></li>
-                <li><a href="https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/peche-sportive" target="_blank" rel="noopener noreferrer" class="hover:text-[#c97c5e] transition-colors">Quebec Regulations</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4 class="font-bold mb-4 text-[#c97c5e]">Language</h4>
-            <ul class="space-y-2 text-white/70 text-sm">
-                <li><a href="../../en/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">English</a></li>
-                <li><a href="../../fr/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">Français</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/20 text-center text-white/50 text-sm">
-        <p>OutdoorIntel.ca &mdash; 2026. All rights reserved.</p>
     </div>
 </footer>
     <script>
@@ -738,13 +765,13 @@ if (toggle && menu) {
     <div id="global-search-overlay" class="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm hidden" style="transition:opacity 0.2s">
         <div class="flex items-start justify-center pt-[15vh] px-4">
             <div class="bg-white rounded-2xl w-full max-w-2xl overflow-hidden" style="box-shadow:0 25px 50px rgba(0,0,0,0.25)">
-                <div class="flex items-center gap-3 px-6 py-4 border-b border-[#2d5a3d]/10">
-                    <svg class="w-5 h-5 text-[#6b6359] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-                    <input id="global-search-input" type="text" placeholder="Search 499+ spots across Canada..." class="flex-1 text-lg text-[#3e3127] placeholder-[#6b6359]/50 outline-none bg-transparent" autocomplete="off">
-                    <kbd class="hidden sm:inline-block text-xs text-[#6b6359] bg-[#f5f3f0] px-2 py-1 rounded font-mono">ESC</kbd>
+                <div class="flex items-center gap-3 px-6 py-4 border-b border-[#305e3c]/10">
+                    <svg class="w-5 h-5 text-[#5c6b5f] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                    <input id="global-search-input" type="text" placeholder="Search 499+ spots across Canada..." class="flex-1 text-lg text-[#1c2b21] placeholder-[#5c6b5f]/50 outline-none bg-transparent" autocomplete="off">
+                    <kbd class="hidden sm:inline-block text-xs text-[#5c6b5f] bg-[#fbfaf7] px-2 py-1 rounded font-mono">ESC</kbd>
                 </div>
                 <div id="global-search-results" class="max-h-[50vh] overflow-y-auto">
-                    <div class="px-6 py-8 text-center text-[#6b6359] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>
+                    <div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>
                 </div>
             </div>
         </div>
@@ -795,27 +822,27 @@ if (toggle && menu) {
 
         function renderResults(matches) {
             if (!matches.length) {
-                results.innerHTML = '<div class="px-6 py-8 text-center text-[#6b6359] text-sm">No spots found. Try a different search term.</div>';
+                results.innerHTML = '<div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">No spots found. Try a different search term.</div>';
                 return;
             }
             var lang = isEn() ? 'en' : 'fr';
             var base = basePath();
             var html = matches.slice(0, 12).map(function(s) {
-                var href = (base ? base + '/' : '/') + lang + '/' + s.category + '/' + s.slug + '.html';
+                var href = (base ? base + '/' : '/') + lang + '/' + s.category + '/' + s.slug;
                 var icon = CAT_ICONS[s.category] || '';
                 var sub = s.province + ' • ' + s.category.charAt(0).toUpperCase() + s.category.slice(1);
                 if (s.species.length) sub += ' • ' + s.species.slice(0,2).join(', ');
-                return '<a href="' + href + '" class="flex items-center gap-4 px-6 py-3 hover:bg-[#fef9f3] transition-colors">' +
+                return '<a href="' + href + '" class="flex items-center gap-4 px-6 py-3 hover:bg-[#f4f3ec] transition-colors">' +
                     '<span class="text-xl flex-shrink-0">' + icon + '</span>' +
                     '<div class="flex-1 min-w-0">' +
-                    '<div class="font-semibold text-[#2d5a3d] truncate">' + s.name + '</div>' +
-                    '<div class="text-xs text-[#6b6359] truncate">' + sub + '</div>' +
+                    '<div class="font-semibold text-[#305e3c] truncate">' + s.name + '</div>' +
+                    '<div class="text-xs text-[#5c6b5f] truncate">' + sub + '</div>' +
                     '</div>' +
-                    '<span class="text-xs font-bold text-[#c97c5e] flex-shrink-0">' + s.scout_level + '</span>' +
+                    '<span class="text-xs font-bold text-[#3d7a4d] flex-shrink-0">' + s.scout_level + '</span>' +
                     '</a>';
             }).join('');
             if (matches.length > 12) {
-                html += '<div class="px-6 py-3 text-center text-xs text-[#6b6359]">' + (matches.length - 12) + ' more results...</div>';
+                html += '<div class="px-6 py-3 text-center text-xs text-[#5c6b5f]">' + (matches.length - 12) + ' more results...</div>';
             }
             results.innerHTML = html;
         }
@@ -824,7 +851,7 @@ if (toggle && menu) {
             if (!spotsData) return;
             q = q.toLowerCase().trim();
             if (!q) {
-                results.innerHTML = '<div class="px-6 py-8 text-center text-[#6b6359] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>';
+                results.innerHTML = '<div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>';
                 return;
             }
             var matches = spotsData.filter(function(s) {
@@ -841,8 +868,8 @@ if (toggle && menu) {
             document.body.style.overflow = 'hidden';
             input.value = '';
             input.focus();
-            loadSpots();
-            results.innerHTML = '<div class="px-6 py-8 text-center text-[#6b6359] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>';
+            loadSpots().then(function () { if (input.value) search(input.value); });
+            results.innerHTML = '<div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>';
         }
 
         function close() {
@@ -860,5 +887,6 @@ if (toggle && menu) {
     })();
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/assets/js/newsletter.js?v=1"></script>
 </body>
 </html>

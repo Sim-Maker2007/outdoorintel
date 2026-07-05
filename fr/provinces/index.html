@@ -4,32 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-    <meta name="theme-color" content="#2d5a3d">
+    <meta name="theme-color" content="#14251a">
     <title>Provinces et territoires | Outdoor Intel</title>
     <meta name="description" content="Explorez les destinations plein air canadiennes par province et territoire.">
     <link rel="canonical" href="https://outdoorintel.ca/fr/provinces/">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/site.css?v=1">
+<style id="oi-ds">.explore-dropdown{visibility:hidden;opacity:0;transform:translateY(6px);transition:opacity .15s ease,transform .15s ease,visibility .15s}.explore-group:hover .explore-dropdown,.explore-group:focus-within .explore-dropdown{visibility:visible;opacity:1;transform:translateY(0)}</style>
 </head>
-<body class="bg-[#f5f3f0] text-[#3e3127] font-sans leading-relaxed">
-    <header class="fixed top-0 w-full z-50 border-b border-[#2d5a3d]/10 bg-white/95 backdrop-blur-md">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="../../index.html" class="flex-shrink-0"><img src="../../assets/logo/logo.jpg" alt="Outdoor Intel" width="180" height="101" class="h-10 md:h-14 w-auto object-contain"></a>
-            <nav class="hidden lg:flex gap-6 text-sm font-semibold text-[#3e3127]">
-                <a href="../fishing/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Peche</a>
-                <a href="../hunting/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Chasse</a>
-                <a href="../camping/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Camping</a>
-                <a href="../kayaking/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Kayak</a>
-                <a href="../skiing/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Ski</a>
-                <a href="../hiking/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Randonnee</a>
-                <a href="../map.html" class="hover:text-[#c97c5e] transition-colors py-2">Carte</a>
-                <a href="../trust.html" class="hover:text-[#c97c5e] transition-colors py-2">Confiance et sources</a>
-            </nav>
+<body class="bg-[#fbfaf7] text-[#1c2b21] font-sans leading-relaxed">
+    <header data-oi-ds class="fixed top-0 w-full z-[1000] bg-[#14251a] border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between gap-6">
+        <a href="/fr/" class="flex items-center gap-3 flex-shrink-0" aria-label="Outdoor Intel">
+            <span class="w-9 h-9 rounded-lg bg-white flex items-center justify-center text-[#14251a] font-extrabold text-sm tracking-tight">OI</span>
+            <span class="text-white font-bold text-lg tracking-tight">Outdoor Intel</span>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-white/90">
+            <div class="explore-group relative">
+                <button class="flex items-center gap-1.5 py-2 hover:text-white transition-colors" aria-haspopup="true">
+                    Explorer
+                    <svg class="w-3.5 h-3.5 text-[#a2c99a]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+                </button>
+                <div class="explore-dropdown absolute left-0 top-full pt-2 w-52">
+                    <div class="bg-white rounded-xl py-2 shadow-xl border border-[#14251a]/10">
+                        <a href="/fr/fishing/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">🎣 Pêche</a>
+                        <a href="/fr/hunting/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">🦌 Chasse</a>
+                        <a href="/fr/camping/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">⛺ Camping</a>
+                        <a href="/fr/kayaking/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">🛶 Kayak</a>
+                        <a href="/fr/skiing/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">⛷️ Ski</a>
+                        <a href="/fr/hiking/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">🥾 Randonnée</a>
+                    </div>
+                </div>
+            </div>
+            <a href="/en/map" class="py-2 hover:text-white transition-colors">Carte</a>
+            <a href="/en/trip-planner" class="py-2 hover:text-white transition-colors">Planificateur</a>
+            <a href="/fr/blog" class="py-2 hover:text-white transition-colors">Blogue</a>
+            <span class="inline-flex items-center gap-1.5 border border-white/25 rounded-full px-4 py-1.5 text-xs font-bold"><a href="/en/provinces/" class="text-[#a2c99a] hover:text-white transition-colors" lang="en">EN</a><span class="text-white/30">|</span><span class="text-white">FR</span></span>
+            <button id="global-search-toggle" class="w-9 h-9 rounded-full border border-white/25 flex items-center justify-center hover:bg-white/10 transition-colors" aria-label="Search">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            </button>
+        </nav>
+        <button id="menu-toggle" class="lg:hidden p-2 text-white" aria-label="Menu" aria-expanded="false">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    </div>
+    <nav id="mobile-menu" class="hidden lg:hidden bg-[#14251a] border-t border-white/10">
+        <div class="max-w-6xl mx-auto px-6 py-4 space-y-1 text-white/90">
+            <a href="/fr/fishing/directory" class="block py-2 hover:text-[#a2c99a]">🎣 Pêche</a>
+            <a href="/fr/hunting/directory" class="block py-2 hover:text-[#a2c99a]">🦌 Chasse</a>
+            <a href="/fr/camping/directory" class="block py-2 hover:text-[#a2c99a]">⛺ Camping</a>
+            <a href="/fr/kayaking/directory" class="block py-2 hover:text-[#a2c99a]">🛶 Kayak</a>
+            <a href="/fr/skiing/directory" class="block py-2 hover:text-[#a2c99a]">⛷️ Ski</a>
+            <a href="/fr/hiking/directory" class="block py-2 hover:text-[#a2c99a]">🥾 Randonnée</a>
+            <a href="/en/map" class="block py-2 hover:text-[#a2c99a]">Carte</a>
+            <a href="/en/trip-planner" class="block py-2 hover:text-[#a2c99a]">Planificateur</a>
+            <a href="/fr/trust" class="block py-2 hover:text-[#a2c99a]">Confiance et sources</a>
+            <a href="/fr/blog" class="block py-2 font-semibold hover:text-[#a2c99a]">Blogue</a>
+            <a href="/en/provinces/" class="block py-2 text-[#a2c99a] font-bold mt-2" lang="en">English</a>
         </div>
-    </header>
+    </nav>
+</header>
     <main>
-        <section class="bg-[#2d5a3d] pt-32 pb-16 px-6">
+        <section class="bg-[#305e3c] pt-32 pb-16 px-6">
             <div class="max-w-7xl mx-auto">
-                <p class="text-sm font-bold uppercase tracking-widest text-[#c97c5e] mb-3">Outdoor Intel Canada</p>
+                <p class="text-sm font-bold uppercase tracking-widest text-[#3d7a4d] mb-3">Outdoor Intel Canada</p>
                 <h1 class="text-4xl md:text-6xl font-bold text-white tracking-tight mb-4">Explorer par province et territoire</h1>
                 <p class="text-xl text-white/80 max-w-2xl">13 provinces et territoires, 499 spots avec sources et liens officiels</p>
             </div>
@@ -37,77 +76,126 @@
         <section class="py-12 px-6">
             <div class="max-w-7xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <a href="alberta.html" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#c97c5e]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors">Alberta</h3>
-                    <p class="text-2xl font-bold text-[#c97c5e] mb-2">43 <span class="text-sm text-[#6b6359] font-normal">spots</span></p>
-                    <p class="text-sm text-[#6b6359]">Peche (3) / Chasse (13) / Camping (8) / Kayak (4) / Ski (6) / Randonnee (9)</p>
+                <a href="/fr/provinces/alberta" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#3d7a4d]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2 group-hover:text-[#3d7a4d] transition-colors">Alberta</h3>
+                    <p class="text-2xl font-bold text-[#3d7a4d] mb-2">43 <span class="text-sm text-[#5c6b5f] font-normal">spots</span></p>
+                    <p class="text-sm text-[#5c6b5f]">Peche (3) / Chasse (13) / Camping (8) / Kayak (4) / Ski (6) / Randonnee (9)</p>
                 </a>
-                <a href="british-columbia.html" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#c97c5e]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors">Colombie-Britannique</h3>
-                    <p class="text-2xl font-bold text-[#c97c5e] mb-2">59 <span class="text-sm text-[#6b6359] font-normal">spots</span></p>
-                    <p class="text-sm text-[#6b6359]">Peche (4) / Chasse (11) / Camping (9) / Kayak (9) / Ski (13) / Randonnee (13)</p>
+                <a href="/fr/provinces/british-columbia" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#3d7a4d]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2 group-hover:text-[#3d7a4d] transition-colors">Colombie-Britannique</h3>
+                    <p class="text-2xl font-bold text-[#3d7a4d] mb-2">59 <span class="text-sm text-[#5c6b5f] font-normal">spots</span></p>
+                    <p class="text-sm text-[#5c6b5f]">Peche (4) / Chasse (11) / Camping (9) / Kayak (9) / Ski (13) / Randonnee (13)</p>
                 </a>
-                <a href="manitoba.html" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#c97c5e]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors">Manitoba</h3>
-                    <p class="text-2xl font-bold text-[#c97c5e] mb-2">14 <span class="text-sm text-[#6b6359] font-normal">spots</span></p>
-                    <p class="text-sm text-[#6b6359]">Peche (2) / Chasse (8) / Camping (1) / Kayak (2) / Ski (1)</p>
+                <a href="/fr/provinces/manitoba" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#3d7a4d]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2 group-hover:text-[#3d7a4d] transition-colors">Manitoba</h3>
+                    <p class="text-2xl font-bold text-[#3d7a4d] mb-2">14 <span class="text-sm text-[#5c6b5f] font-normal">spots</span></p>
+                    <p class="text-sm text-[#5c6b5f]">Peche (2) / Chasse (8) / Camping (1) / Kayak (2) / Ski (1)</p>
                 </a>
-                <a href="new-brunswick.html" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#c97c5e]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors">Nouveau-Brunswick</h3>
-                    <p class="text-2xl font-bold text-[#c97c5e] mb-2">12 <span class="text-sm text-[#6b6359] font-normal">spots</span></p>
-                    <p class="text-sm text-[#6b6359]">Peche (2) / Chasse (3) / Camping (2) / Kayak (2) / Ski (1) / Randonnee (2)</p>
+                <a href="/fr/provinces/new-brunswick" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#3d7a4d]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2 group-hover:text-[#3d7a4d] transition-colors">Nouveau-Brunswick</h3>
+                    <p class="text-2xl font-bold text-[#3d7a4d] mb-2">12 <span class="text-sm text-[#5c6b5f] font-normal">spots</span></p>
+                    <p class="text-sm text-[#5c6b5f]">Peche (2) / Chasse (3) / Camping (2) / Kayak (2) / Ski (1) / Randonnee (2)</p>
                 </a>
-                <a href="newfoundland-and-labrador.html" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#c97c5e]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors">Terre-Neuve-et-Labrador</h3>
-                    <p class="text-2xl font-bold text-[#c97c5e] mb-2">13 <span class="text-sm text-[#6b6359] font-normal">spots</span></p>
-                    <p class="text-sm text-[#6b6359]">Peche (3) / Chasse (3) / Camping (2) / Kayak (1) / Ski (1) / Randonnee (3)</p>
+                <a href="/fr/provinces/newfoundland-and-labrador" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#3d7a4d]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2 group-hover:text-[#3d7a4d] transition-colors">Terre-Neuve-et-Labrador</h3>
+                    <p class="text-2xl font-bold text-[#3d7a4d] mb-2">13 <span class="text-sm text-[#5c6b5f] font-normal">spots</span></p>
+                    <p class="text-sm text-[#5c6b5f]">Peche (3) / Chasse (3) / Camping (2) / Kayak (1) / Ski (1) / Randonnee (3)</p>
                 </a>
-                <a href="northwest-territories.html" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#c97c5e]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors">Territoires du Nord-Ouest</h3>
-                    <p class="text-2xl font-bold text-[#c97c5e] mb-2">7 <span class="text-sm text-[#6b6359] font-normal">spots</span></p>
-                    <p class="text-sm text-[#6b6359]">Peche (2) / Chasse (2) / Camping (1) / Kayak (1) / Randonnee (1)</p>
+                <a href="/fr/provinces/northwest-territories" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#3d7a4d]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2 group-hover:text-[#3d7a4d] transition-colors">Territoires du Nord-Ouest</h3>
+                    <p class="text-2xl font-bold text-[#3d7a4d] mb-2">7 <span class="text-sm text-[#5c6b5f] font-normal">spots</span></p>
+                    <p class="text-sm text-[#5c6b5f]">Peche (2) / Chasse (2) / Camping (1) / Kayak (1) / Randonnee (1)</p>
                 </a>
-                <a href="nova-scotia.html" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#c97c5e]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors">Nouvelle-Ecosse</h3>
-                    <p class="text-2xl font-bold text-[#c97c5e] mb-2">12 <span class="text-sm text-[#6b6359] font-normal">spots</span></p>
-                    <p class="text-sm text-[#6b6359]">Peche (2) / Chasse (2) / Camping (2) / Kayak (2) / Ski (1) / Randonnee (3)</p>
+                <a href="/fr/provinces/nova-scotia" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#3d7a4d]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2 group-hover:text-[#3d7a4d] transition-colors">Nouvelle-Ecosse</h3>
+                    <p class="text-2xl font-bold text-[#3d7a4d] mb-2">12 <span class="text-sm text-[#5c6b5f] font-normal">spots</span></p>
+                    <p class="text-sm text-[#5c6b5f]">Peche (2) / Chasse (2) / Camping (2) / Kayak (2) / Ski (1) / Randonnee (3)</p>
                 </a>
-                <a href="nunavut.html" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#c97c5e]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors">Nunavut</h3>
-                    <p class="text-2xl font-bold text-[#c97c5e] mb-2">6 <span class="text-sm text-[#6b6359] font-normal">spots</span></p>
-                    <p class="text-sm text-[#6b6359]">Peche (1) / Chasse (2) / Camping (1) / Kayak (1) / Randonnee (1)</p>
+                <a href="/fr/provinces/nunavut" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#3d7a4d]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2 group-hover:text-[#3d7a4d] transition-colors">Nunavut</h3>
+                    <p class="text-2xl font-bold text-[#3d7a4d] mb-2">6 <span class="text-sm text-[#5c6b5f] font-normal">spots</span></p>
+                    <p class="text-sm text-[#5c6b5f]">Peche (1) / Chasse (2) / Camping (1) / Kayak (1) / Randonnee (1)</p>
                 </a>
-                <a href="ontario.html" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#c97c5e]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors">Ontario</h3>
-                    <p class="text-2xl font-bold text-[#c97c5e] mb-2">63 <span class="text-sm text-[#6b6359] font-normal">spots</span></p>
-                    <p class="text-sm text-[#6b6359]">Peche (8) / Chasse (21) / Camping (14) / Kayak (8) / Ski (5) / Randonnee (7)</p>
+                <a href="/fr/provinces/ontario" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#3d7a4d]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2 group-hover:text-[#3d7a4d] transition-colors">Ontario</h3>
+                    <p class="text-2xl font-bold text-[#3d7a4d] mb-2">63 <span class="text-sm text-[#5c6b5f] font-normal">spots</span></p>
+                    <p class="text-sm text-[#5c6b5f]">Peche (8) / Chasse (21) / Camping (14) / Kayak (8) / Ski (5) / Randonnee (7)</p>
                 </a>
-                <a href="prince-edward-island.html" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#c97c5e]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors">Ile-du-Prince-Edouard</h3>
-                    <p class="text-2xl font-bold text-[#c97c5e] mb-2">3 <span class="text-sm text-[#6b6359] font-normal">spots</span></p>
-                    <p class="text-sm text-[#6b6359]">Peche (1) / Chasse (1) / Camping (1)</p>
+                <a href="/fr/provinces/prince-edward-island" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#3d7a4d]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2 group-hover:text-[#3d7a4d] transition-colors">Ile-du-Prince-Edouard</h3>
+                    <p class="text-2xl font-bold text-[#3d7a4d] mb-2">3 <span class="text-sm text-[#5c6b5f] font-normal">spots</span></p>
+                    <p class="text-sm text-[#5c6b5f]">Peche (1) / Chasse (1) / Camping (1)</p>
                 </a>
-                <a href="quebec.html" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#c97c5e]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors">Quebec</h3>
-                    <p class="text-2xl font-bold text-[#c97c5e] mb-2">249 <span class="text-sm text-[#6b6359] font-normal">spots</span></p>
-                    <p class="text-sm text-[#6b6359]">Peche (208) / Chasse (14) / Camping (8) / Kayak (6) / Ski (8) / Randonnee (5)</p>
+                <a href="/fr/provinces/quebec" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#3d7a4d]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2 group-hover:text-[#3d7a4d] transition-colors">Quebec</h3>
+                    <p class="text-2xl font-bold text-[#3d7a4d] mb-2">249 <span class="text-sm text-[#5c6b5f] font-normal">spots</span></p>
+                    <p class="text-sm text-[#5c6b5f]">Peche (208) / Chasse (14) / Camping (8) / Kayak (6) / Ski (8) / Randonnee (5)</p>
                 </a>
-                <a href="saskatchewan.html" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#c97c5e]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors">Saskatchewan</h3>
-                    <p class="text-2xl font-bold text-[#c97c5e] mb-2">10 <span class="text-sm text-[#6b6359] font-normal">spots</span></p>
-                    <p class="text-sm text-[#6b6359]">Peche (2) / Chasse (7) / Camping (1)</p>
+                <a href="/fr/provinces/saskatchewan" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#3d7a4d]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2 group-hover:text-[#3d7a4d] transition-colors">Saskatchewan</h3>
+                    <p class="text-2xl font-bold text-[#3d7a4d] mb-2">10 <span class="text-sm text-[#5c6b5f] font-normal">spots</span></p>
+                    <p class="text-sm text-[#5c6b5f]">Peche (2) / Chasse (7) / Camping (1)</p>
                 </a>
-                <a href="yukon.html" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#c97c5e]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2 group-hover:text-[#c97c5e] transition-colors">Yukon</h3>
-                    <p class="text-2xl font-bold text-[#c97c5e] mb-2">8 <span class="text-sm text-[#6b6359] font-normal">spots</span></p>
-                    <p class="text-sm text-[#6b6359]">Peche (2) / Chasse (2) / Camping (1) / Kayak (1) / Randonnee (2)</p>
+                <a href="/fr/provinces/yukon" class="group bg-white rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all border-b-4 border-[#3d7a4d]" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2 group-hover:text-[#3d7a4d] transition-colors">Yukon</h3>
+                    <p class="text-2xl font-bold text-[#3d7a4d] mb-2">8 <span class="text-sm text-[#5c6b5f] font-normal">spots</span></p>
+                    <p class="text-sm text-[#5c6b5f]">Peche (2) / Chasse (2) / Camping (1) / Kayak (1) / Randonnee (2)</p>
                 </a>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="bg-[#2d5a3d] text-white py-12 px-6 text-center">
-        <p class="text-white/50 text-sm">OutdoorIntel.ca - 2026. Tous droits reserves.</p>
-    </footer>
+    <footer data-oi-ds class="bg-[#14251a] text-white">
+    <div class="max-w-6xl mx-auto px-6 pt-16 pb-8">
+        <div class="grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr] gap-10 pb-12">
+            <div class="col-span-2 md:col-span-1">
+                <a href="/fr/" class="flex items-center gap-3 mb-5" aria-label="Outdoor Intel">
+                    <span class="w-9 h-9 rounded-lg bg-white flex items-center justify-center text-[#14251a] font-extrabold text-sm tracking-tight">OI</span>
+                    <span class="text-white font-bold text-lg tracking-tight">Outdoor Intel</span>
+                </a>
+                <p class="text-white/60 text-sm leading-relaxed max-w-xs mb-6">Des données de plein air sourcées pour de meilleures sorties partout au Canada. Chaque site est vérifié et cité.</p>
+                <p class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-2">Intel hebdo, gratuit</p>
+                <form class="js-newsletter-form flex gap-2 max-w-xs" data-lang="fr">
+                    <input type="email" name="email" required placeholder="Votre courriel" autocomplete="email" class="flex-1 min-w-0 px-3 py-2 rounded-lg text-sm text-[#1c2b21] bg-white placeholder-[#5c6b5f] outline-none focus:ring-2 focus:ring-[#a2c99a]">
+                    <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-5000px">
+                    <button type="submit" class="bg-[#305e3c] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#3d7a4d] transition-colors whitespace-nowrap">S’abonner</button>
+                </form>
+                <p class="js-newsletter-msg text-white/50 text-xs mt-2">Un courriel par semaine. Pas de spam.</p>
+            </div>
+            <div>
+                <h4 class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-4">Explorer</h4>
+                <ul class="space-y-2.5 text-sm text-white/70">
+                    <li><a href="/fr/fishing/directory" class="hover:text-white transition-colors">Pêche</a></li>
+                    <li><a href="/fr/hunting/directory" class="hover:text-white transition-colors">Chasse</a></li>
+                    <li><a href="/fr/camping/directory" class="hover:text-white transition-colors">Camping</a></li>
+                    <li><a href="/fr/kayaking/directory" class="hover:text-white transition-colors">Kayak</a></li>
+                    <li><a href="/fr/skiing/directory" class="hover:text-white transition-colors">Ski</a></li>
+                    <li><a href="/fr/hiking/directory" class="hover:text-white transition-colors">Randonnée</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-4">Produit</h4>
+                <ul class="space-y-2.5 text-sm text-white/70">
+                    <li><a href="/en/map" class="hover:text-white transition-colors">Carte</a></li>
+                    <li><a href="/en/trip-planner" class="hover:text-white transition-colors">Planificateur</a></li>
+                    <li><a href="/fr/blog" class="hover:text-white transition-colors">Blogue</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-4">À propos</h4>
+                <ul class="space-y-2.5 text-sm text-white/70">
+                    <li><a href="/fr/trust" class="hover:text-white transition-colors">Confiance et sources</a></li>
+                    <li><a href="/en/about" class="hover:text-white transition-colors">À propos</a></li>
+                    <li><a href="/en/licenses" class="hover:text-white transition-colors">Permis et règlements</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-white/15 pt-6 flex items-center justify-between text-sm">
+            <p class="text-white/50">&copy; 2026 Outdoor Intel</p>
+            <p class="font-bold text-xs"><a href="/en/provinces/" class="text-[#a2c99a] hover:text-white transition-colors" lang="en">EN</a><span class="text-white/30">&nbsp;|&nbsp;</span><span class="text-white/50">FR</span></p>
+        </div>
+    </div>
+</footer>
+<script defer src="/assets/js/newsletter.js?v=1"></script>
 </body>
 </html>
