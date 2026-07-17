@@ -336,10 +336,16 @@
                     </div>
                 </div>
                 <div id="community-recent" data-lang="en" class="hidden mb-10">
-                    <p class="text-[#305e3c] text-xs font-bold uppercase tracking-widest mb-4">Latest reports</p>
+                    <div class="flex items-end justify-between mb-4">
+                        <p class="text-[#305e3c] text-xs font-bold uppercase tracking-widest">Latest reports</p>
+                        <a href="/en/field-notes" class="text-[#305e3c] font-semibold text-sm hover:underline whitespace-nowrap">All field notes &rarr;</a>
+                    </div>
                     <div id="community-recent-grid" class="grid md:grid-cols-3 gap-5"></div>
                 </div>
-                <a href="/en/map" class="inline-block bg-[#305e3c] text-white font-semibold px-7 py-3.5 rounded-lg hover:bg-[#3d7a4d] transition-colors">Find a spot to report on</a>
+                <div class="flex flex-wrap gap-3">
+                    <a href="/en/map" class="inline-block bg-[#305e3c] text-white font-semibold px-7 py-3.5 rounded-lg hover:bg-[#3d7a4d] transition-colors">Find a spot to report on</a>
+                    <a href="/en/field-notes" class="inline-block bg-white border border-[#305e3c]/25 text-[#305e3c] font-semibold px-7 py-3.5 rounded-lg hover:border-[#3d7a4d] transition-colors">See field notes</a>
+                </div>
             </div>
         </section>
 
