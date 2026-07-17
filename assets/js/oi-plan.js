@@ -135,9 +135,72 @@
       });
     }
 
+    // ---------- Directory: URL-synced filters + reset ----------
+    function enhanceDirectory() {
+      var search = document.getElementById('search-input');
+      var prov = document.getElementById('province-filter');
+      var typ = document.getElementById('type-filter');
+      var count = document.getElementById('result-count');
+      if (!search || !count) return; // not a directory page
+
+      var params = new URLSearchParams(location.search);
+      var applied = false;
+      var q = params.get('q');
+      if (q) { search.value = q; applied = true; }
+      var pv = params.get('province');
+      if (pv && prov) { prov.value = pv; applied = true; }
+      var sp = params.get('species');
+      if (sp && typ) { typ.value = sp; applied = true; }
+
+      function syncUrl() {
+        var u = new URL(location.href);
+        search.value ? u.searchParams.set('q', search.value) : u.searchParams.delete('q');
+        (prov && prov.value) ? u.searchParams.set('province', prov.value) : u.searchParams.delete('province');
+        (typ && typ.value) ? u.searchParams.set('species', typ.value) : u.searchParams.delete('species');
+        history.replaceState(null, '', u.pathname + (u.search || '') + location.hash);
+        updateReset();
+      }
+
+      // Reset control
+      var reset = document.createElement('button');
+      reset.type = 'button';
+      reset.textContent = FR ? 'Réinitialiser les filtres' : 'Clear filters';
+      reset.style.cssText = 'margin-left:12px;padding:4px 12px;border:1px solid rgba(48,94,60,.25);background:#fff;color:#305e3c;border-radius:14px;font:600 12px/1 system-ui,-apple-system,sans-serif;cursor:pointer;display:none;vertical-align:middle;transition:all .15s';
+      reset.addEventListener('mouseenter', function () { reset.style.borderColor = '#3d7a4d'; reset.style.background = '#f4f3ec'; });
+      reset.addEventListener('mouseleave', function () { reset.style.borderColor = 'rgba(48,94,60,.25)'; reset.style.background = '#fff'; });
+      reset.addEventListener('click', function () {
+        search.value = '';
+        if (prov) prov.value = '';
+        if (typ) typ.value = '';
+        search.dispatchEvent(new Event('input', { bubbles: true }));
+        if (prov) prov.dispatchEvent(new Event('change', { bubbles: true }));
+        if (typ) typ.dispatchEvent(new Event('change', { bubbles: true }));
+        syncUrl();
+        search.focus();
+      });
+      if (count.parentNode) count.parentNode.appendChild(reset);
+      function updateReset() {
+        var active = !!(search.value || (prov && prov.value) || (typ && typ.value));
+        reset.style.display = active ? 'inline-block' : 'none';
+      }
+
+      search.addEventListener('input', syncUrl);
+      if (prov) prov.addEventListener('change', syncUrl);
+      if (typ) typ.addEventListener('change', syncUrl);
+
+      // If URL carried filters, apply them now (existing inline handler re-filters)
+      if (applied) {
+        search.dispatchEvent(new Event('input', { bubbles: true }));
+        if (prov) prov.dispatchEvent(new Event('change', { bubbles: true }));
+        if (typ) typ.dispatchEvent(new Event('change', { bubbles: true }));
+      }
+      updateReset();
+    }
+
     function run() {
       enhanceCards();
       enhanceHero();
+      enhanceDirectory();
       decorateNav();
       // keep the counter fresh if the user returns via back/forward cache
       window.addEventListener('pageshow', decorateNav);
