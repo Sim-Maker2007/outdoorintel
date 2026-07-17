@@ -117,9 +117,31 @@
       row.insertBefore(a, row.firstChild);
     }
 
+    // ---------- Header trip counter (continuity cue on every page) ----------
+    function tripCount() { var o = readTrip(); return o && o.t ? o.t.filter(function (x) { return !x.svc; }).length : 0; }
+    function decorateNav() {
+      var n = tripCount();
+      var links = document.querySelectorAll('header a[href$="/trip-planner"], header a[href$="/trip-planner/"]');
+      links.forEach(function (link) {
+        var badge = link.querySelector('.oi-trip-badge');
+        if (n <= 0) { if (badge) badge.remove(); return; }
+        if (!badge) {
+          badge = document.createElement('span');
+          badge.className = 'oi-trip-badge';
+          badge.style.cssText = 'display:inline-flex;align-items:center;justify-content:center;min-width:18px;height:18px;padding:0 5px;margin-left:6px;border-radius:9px;background:#f4a825;color:#1c2b21;font:700 11px/1 system-ui,-apple-system,sans-serif;vertical-align:middle';
+          link.appendChild(badge);
+        }
+        badge.textContent = n;
+      });
+    }
+
     function run() {
       enhanceCards();
       enhanceHero();
+      decorateNav();
+      // keep the counter fresh if the user returns via back/forward cache
+      window.addEventListener('pageshow', decorateNav);
+      window.addEventListener('focus', decorateNav);
     }
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run);
     else run();
