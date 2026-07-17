@@ -1263,10 +1263,16 @@ function applyRestored(obj) {
         advanceToDestinations();
         fitTripBounds();
     } else {
+        // Spots added (e.g. from the directory) but no start point chosen yet
         state.phase = 'set-start';
         document.getElementById('step-label').textContent = 'Click the map or search for your starting point';
         document.getElementById('step-sub').textContent = 'This is where your adventure begins';
         updateTripUI();
+        if (d.trip.length) {
+            state.sidebarOpen = true;
+            document.getElementById('sidebar').classList.add('open');
+            fitTripBounds();
+        }
     }
     return true;
 }
