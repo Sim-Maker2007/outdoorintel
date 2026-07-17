@@ -152,6 +152,95 @@
       });
     }
 
+    // ---------- Spot detail: content depth + trust ----------
+    var _catCache = {};
+    function loadCategory(cat) {
+      if (_catCache[cat]) return Promise.resolve(_catCache[cat]);
+      return fetch('/data/' + cat + '.json').then(function (r) { return r.json(); }).then(function (d) { _catCache[cat] = d.spots || []; return _catCache[cat]; }).catch(function () { return []; });
+    }
+    function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+    function para(s) { return esc(s).replace(/\n+/g, '<br><br>'); }
+    function topBlockOf(h) { var el = h; while (el && el.parentElement && el.parentElement.tagName !== 'MAIN') el = el.parentElement; return el && el.parentElement && el.parentElement.tagName === 'MAIN' ? el : null; }
+    function sectionByHeading(texts) {
+      var hs = document.querySelectorAll('main h2');
+      for (var i = 0; i < hs.length; i++) { var t = hs[i].textContent.trim(); for (var j = 0; j < texts.length; j++) { if (t.indexOf(texts[j]) >= 0) return topBlockOf(hs[i]); } }
+      return null;
+    }
+    function enhanceSpotContent() {
+      var hero = document.querySelector('.spot-hero');
+      if (!hero) return;
+      var canonical = document.querySelector('link[rel="canonical"]');
+      var sp = canonical ? parseSpot(canonical.href) : null;
+      if (!sp || document.getElementById('oi-spot-extra')) return;
+      var main = document.querySelector('main');
+      if (!main) return;
+
+      loadCategory(sp.cat).then(function (list) {
+        var s = list.find(function (x) { return x.slug === sp.slug; });
+        if (!s) return;
+        var L = FR ? {
+          access: 'Comment s’y rendre', getting: 'Le trajet', parking: 'Stationnement et mise à l’eau',
+          logistics: 'Services et hébergement', services: 'Services à proximité', stay: 'Hébergement',
+          safety: 'Sécurité et conditions', sources: 'Sources et vérification',
+          note: 'Ce profil est compilé à partir de sources officielles et d’exploitants. Il n’a pas encore été vérifié sur le terrain de façon indépendante — confirmez toujours les conditions, l’accès et la réglementation avant de partir.',
+          src: 'Site source officiel', regs: 'Réglementation officielle', updated: 'Intel communautaire · sources citées'
+        } : {
+          access: 'Getting there', getting: 'The drive', parking: 'Parking & launch',
+          logistics: 'Services & stay', services: 'Nearby services', stay: 'Where to stay',
+          safety: 'Safety & conditions', sources: 'Sources & verification',
+          note: 'This profile is compiled from official and operator sources. It has not yet been independently field-verified — always confirm current conditions, access, and regulations before you head out.',
+          src: 'Official source', regs: 'Official regulations', updated: 'Community-sourced · cited below'
+        };
+
+        function card(title, body, accent) {
+          if (!body) return '';
+          var bg = accent === 'warn' ? '#fff7ed' : '#f4f3ec';
+          var head = accent === 'warn' ? '#92400e' : '#305e3c';
+          return '<div class="rounded-xl p-6 md:p-8 mb-6" style="background:' + bg + ';box-shadow:0 4px 12px rgba(62,49,39,0.08)">' +
+            '<h3 class="text-xl font-bold mb-3" style="color:' + head + '">' + (accent === 'warn' ? '⚠️ ' : '') + esc(title) + '</h3>' +
+            '<p class="text-[#1c2b21] leading-relaxed">' + para(body) + '</p></div>';
+        }
+
+        var html = '';
+        // Getting there + parking
+        if (s.getting_there || s.parking) {
+          html += '<h2 class="text-3xl font-bold text-[#305e3c] mb-6">' + L.access + '</h2>';
+          html += card(L.getting, s.getting_there);
+          html += card(L.parking, s.parking);
+        }
+        // Services & stay
+        if (s.nearby_services || s.accommodation) {
+          html += '<h2 class="text-3xl font-bold text-[#305e3c] mb-6 mt-4">' + L.logistics + '</h2>';
+          html += card(L.services, s.nearby_services);
+          html += card(L.stay, s.accommodation);
+        }
+        // Safety
+        if (s.safety) {
+          html += '<h2 class="text-3xl font-bold text-[#305e3c] mb-6 mt-4">' + L.safety + '</h2>';
+          html += card(L.safety, s.safety, 'warn');
+        }
+        if (!html) return;
+
+        // Sources & verification (trust)
+        var srcBtn = s.source_url ? '<a href="' + esc(s.source_url) + '" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#305e3c;padding:12px 20px;border-radius:9px;font-weight:700;text-decoration:none">' + esc(s.source_label || L.src) + ' ↗</a>' : '';
+        var regBtn = s.official_regulation_url ? '<a href="' + esc(s.official_regulation_url) + '" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);color:#fff;padding:12px 20px;border-radius:9px;font-weight:700;text-decoration:none;border:1px solid rgba(255,255,255,.3)">' + L.regs + ' ↗</a>' : '';
+        html += '<div class="rounded-xl p-6 md:p-8 mt-2" style="background:#14251a;color:#fff">' +
+          '<div style="display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#a2c99a;margin-bottom:12px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>' + L.sources + '</div>' +
+          '<p style="color:rgba(255,255,255,.85);line-height:1.6;max-width:60ch;margin-bottom:18px">' + esc(L.note) + '</p>' +
+          (srcBtn || regBtn ? '<div style="display:flex;flex-wrap:wrap;gap:12px">' + srcBtn + regBtn + '</div>' : '') +
+          '</div>';
+
+        var section = document.createElement('section');
+        section.id = 'oi-spot-extra';
+        section.className = 'bg-white px-6 pb-12';
+        section.innerHTML = '<div class="max-w-7xl mx-auto"><div class="max-w-4xl">' + html + '</div></div>';
+
+        var anchor = sectionByHeading(['Nearby Spots', 'Spots à proximité', 'Pack This', 'à emporter', 'emporter']);
+        if (anchor && anchor.parentNode) anchor.parentNode.insertBefore(section, anchor);
+        else main.appendChild(section);
+      }).catch(function () {});
+    }
+
     // ---------- Spot detail hero ----------
     function enhanceHero() {
       var hero = document.querySelector('.spot-hero');
@@ -469,6 +558,7 @@
     function run() {
       enhanceCards();
       enhanceHero();
+      enhanceSpotContent();
       enhanceDirectory();
       initNearby();
       decorateNav();
