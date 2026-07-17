@@ -156,6 +156,25 @@
             </div>
         </section>
 
+        <!-- Spots près de chez vous -->
+        <section id="near-you" class="py-14 lg:py-16 bg-white border-b border-[#1c2b21]/10">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
+                    <div>
+                        <p class="text-[#305e3c] text-xs font-bold uppercase tracking-widest mb-2">Commencez près de chez vous</p>
+                        <h2 class="text-3xl lg:text-4xl font-extrabold tracking-tight text-[#1c2b21]">Spots près de vous</h2>
+                        <p id="near-you-sub" class="text-[#5c6b5f] mt-2 max-w-xl">Les meilleurs endroits de pêche, camping, randonnée et plus &mdash; classés par distance, avec la météo de la fin de semaine.</p>
+                    </div>
+                    <button id="near-you-btn" class="flex-shrink-0 inline-flex items-center gap-2 bg-[#305e3c] hover:bg-[#3d7a4d] text-white font-semibold px-6 py-3 rounded-lg transition-colors shadow-lg">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        Trouver des spots près de moi
+                    </button>
+                </div>
+                <div id="near-you-status" class="hidden text-[#5c6b5f] text-sm mb-6"></div>
+                <div id="near-you-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"></div>
+            </div>
+        </section>
+
         <!-- Explorer par activité -->
         <section id="activities" class="py-16 lg:py-20">
             <div class="max-w-6xl mx-auto px-6">
