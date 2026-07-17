@@ -25,7 +25,8 @@
             return {
               name: s.name, slug: s.slug, province: s.province, cat: cat,
               lat: s.coordinates && s.coordinates.lat, lng: s.coordinates && s.coordinates.lng,
-              species: s.primary_species || s.primary_game || s.features || [], scout: s.scout_level || ''
+              species: s.primary_species || s.primary_game || s.features || [], scout: s.scout_level || '',
+              raw_hero: s.hero_image || ''
             };
           });
         }).catch(function () { return []; });
@@ -210,22 +211,26 @@
       });
     }
 
-    // ---------- Directory: URL-synced filters + reset ----------
+    // ---------- Directory 2.0: thumbnails + sort + lazy reveal + URL sync ----------
+    var REVEAL_STEP = 36;
     function enhanceDirectory() {
       var search = document.getElementById('search-input');
       var prov = document.getElementById('province-filter');
       var typ = document.getElementById('type-filter');
       var count = document.getElementById('result-count');
-      if (!search || !count) return; // not a directory page
+      var grid = document.getElementById('spots-grid');
+      var noResults = document.getElementById('no-results');
+      if (!search || !count || !grid) return; // not a directory page
 
+      var cards = [].slice.call(grid.querySelectorAll('a.spot-card'));
+      var limit = REVEAL_STEP;
+      var distReady = false; // set once geolocation distances are computed
+
+      // Read filters from URL
       var params = new URLSearchParams(location.search);
-      var applied = false;
-      var q = params.get('q');
-      if (q) { search.value = q; applied = true; }
-      var pv = params.get('province');
-      if (pv && prov) { prov.value = pv; applied = true; }
-      var sp = params.get('species');
-      if (sp && typ) { typ.value = sp; applied = true; }
+      var q = params.get('q'); if (q) search.value = q;
+      var pv = params.get('province'); if (pv && prov) prov.value = pv;
+      var sp = params.get('species'); if (sp && typ) typ.value = sp;
 
       function syncUrl() {
         var u = new URL(location.href);
@@ -233,87 +238,149 @@
         (prov && prov.value) ? u.searchParams.set('province', prov.value) : u.searchParams.delete('province');
         (typ && typ.value) ? u.searchParams.set('species', typ.value) : u.searchParams.delete('species');
         history.replaceState(null, '', u.pathname + (u.search || '') + location.hash);
-        updateReset();
       }
 
-      // Reset control
-      var reset = document.createElement('button');
-      reset.type = 'button';
-      reset.textContent = FR ? 'Réinitialiser les filtres' : 'Clear filters';
-      reset.style.cssText = 'margin-left:12px;padding:4px 12px;border:1px solid rgba(48,94,60,.25);background:#fff;color:#305e3c;border-radius:14px;font:600 12px/1 system-ui,-apple-system,sans-serif;cursor:pointer;display:none;vertical-align:middle;transition:all .15s';
-      reset.addEventListener('mouseenter', function () { reset.style.borderColor = '#3d7a4d'; reset.style.background = '#f4f3ec'; });
-      reset.addEventListener('mouseleave', function () { reset.style.borderColor = 'rgba(48,94,60,.25)'; reset.style.background = '#fff'; });
-      reset.addEventListener('click', function () {
-        search.value = '';
-        if (prov) prov.value = '';
-        if (typ) typ.value = '';
-        search.dispatchEvent(new Event('input', { bubbles: true }));
-        if (prov) prov.dispatchEvent(new Event('change', { bubbles: true }));
-        if (typ) typ.dispatchEvent(new Event('change', { bubbles: true }));
-        syncUrl();
-        search.focus();
-      });
-      if (count.parentNode) count.parentNode.appendChild(reset);
-      function updateReset() {
-        var active = !!(search.value || (prov && prov.value) || (typ && typ.value));
-        reset.style.display = active ? 'inline-block' : 'none';
+      function isMatch(card) {
+        var term = (search.value || '').toLowerCase();
+        var pvv = prov ? prov.value : '', tpv = typ ? typ.value : '';
+        var name = card.getAttribute('data-name') || '';
+        var cardProv = card.getAttribute('data-province') || '';
+        var cardFilter = card.getAttribute('data-filter') || '';
+        var cardType = card.getAttribute('data-type') || '';
+        return name.indexOf(term) >= 0 && (!pvv || cardProv === pvv) && (!tpv || cardFilter.indexOf(tpv) >= 0 || cardType === tpv);
       }
 
-      search.addEventListener('input', syncUrl);
-      if (prov) prov.addEventListener('change', syncUrl);
-      if (typ) typ.addEventListener('change', syncUrl);
+      // Central view controller — owns filter + sort-order + reveal-limit
+      function applyView() {
+        var matched = cards.filter(isMatch);
+        var shown = 0;
+        cards.forEach(function (c) { c.style.display = 'none'; });
+        matched.forEach(function (c) { if (shown < limit) { c.style.display = ''; shown++; } });
+        count.textContent = matched.length;
+        if (noResults) noResults.classList.toggle('hidden', matched.length > 0);
+        var remaining = matched.length - shown;
+        moreBtn.style.display = remaining > 0 ? 'inline-flex' : 'none';
+        moreBtn.textContent = (FR ? 'Afficher plus' : 'Show more') + ' (' + remaining + ')';
+        reset.style.display = (search.value || (prov && prov.value) || (typ && typ.value)) ? 'inline-block' : 'none';
+      }
 
-      // "Sort by distance" (near me)
-      var grid = document.getElementById('spots-grid');
-      if (grid) {
-        var near = document.createElement('button');
-        near.type = 'button';
-        near.innerHTML = '&#128205; ' + (FR ? 'Trier par distance' : 'Sort by distance');
-        near.style.cssText = 'margin-left:12px;padding:4px 12px;border:1px solid rgba(48,94,60,.25);background:#fff;color:#305e3c;border-radius:14px;font:600 12px/1 system-ui,-apple-system,sans-serif;cursor:pointer;vertical-align:middle;transition:all .15s';
-        near.addEventListener('mouseenter', function () { near.style.borderColor = '#3d7a4d'; near.style.background = '#f4f3ec'; });
-        near.addEventListener('mouseleave', function () { near.style.borderColor = 'rgba(48,94,60,.25)'; near.style.background = '#fff'; });
-        near.addEventListener('click', function () {
-          near.disabled = true; near.style.opacity = '.7';
-          near.innerHTML = '&#128205; ' + (FR ? 'Localisation…' : 'Locating…');
-          getPosition().then(function (coords) {
-            return loadAllSpots().then(function (spots) {
-              var coordMap = {};
-              spots.forEach(function (s) { if (s.lat && s.lng) coordMap[s.cat + '/' + s.slug] = s; });
-              var cards = [].slice.call(grid.querySelectorAll('a.spot-card'));
-              cards.forEach(function (card) {
-                var sp = parseSpot(card.getAttribute('href'));
-                var rec = sp && coordMap[sp.cat + '/' + sp.slug];
-                var d = rec ? haversine(coords.latitude, coords.longitude, rec.lat, rec.lng) : Infinity;
-                card.dataset.dist = d;
-                if (rec && !card.querySelector('.oi-dist')) {
-                  var badge = document.createElement('span');
+      function reorder(getKey, numeric) {
+        var arr = cards.slice();
+        arr.sort(function (a, b) {
+          var ka = getKey(a), kb = getKey(b);
+          if (numeric) return ka - kb;
+          return ka < kb ? -1 : ka > kb ? 1 : 0;
+        });
+        arr.forEach(function (c) { grid.appendChild(c); });
+        cards = arr;
+      }
+
+      // --- Sort dropdown ---
+      var sortWrap = document.createElement('span');
+      sortWrap.style.cssText = 'margin-left:14px;font:600 12px/1 system-ui,-apple-system,sans-serif;color:#5c6b5f;vertical-align:middle';
+      var sortSel = document.createElement('select');
+      sortSel.id = 'oi-sort';
+      sortSel.style.cssText = 'margin-left:6px;padding:5px 26px 5px 10px;border:1px solid rgba(48,94,60,.25);border-radius:14px;background:#fff;color:#305e3c;font:600 12px/1 system-ui,-apple-system,sans-serif;cursor:pointer;vertical-align:middle';
+      sortSel.innerHTML =
+        '<option value="default">' + (FR ? 'En vedette' : 'Featured') + '</option>' +
+        '<option value="nearest">' + (FR ? 'Plus proche' : 'Nearest') + '</option>' +
+        '<option value="name">' + (FR ? 'Nom (A→Z)' : 'Name (A→Z)') + '</option>' +
+        '<option value="province">' + (FR ? 'Province' : 'Province') + '</option>';
+      sortWrap.textContent = FR ? 'Trier :' : 'Sort:';
+      sortWrap.appendChild(sortSel);
+
+      var original = cards.slice();
+      function computeDistances() {
+        return getPosition().then(function (coords) {
+          return loadAllSpots().then(function (spots) {
+            var m = {}; spots.forEach(function (s) { if (s.lat && s.lng) m[s.cat + '/' + s.slug] = s; });
+            cards.forEach(function (card) {
+              var s2 = parseSpot(card.getAttribute('href'));
+              var rec = s2 && m[s2.cat + '/' + s2.slug];
+              var d = rec ? haversine(coords.latitude, coords.longitude, rec.lat, rec.lng) : Infinity;
+              card.dataset.dist = d;
+              if (rec) {
+                var badge = card.querySelector('.oi-dist');
+                if (!badge) {
+                  badge = document.createElement('span');
                   badge.className = 'oi-dist';
-                  badge.textContent = fmtDist(d);
-                  badge.style.cssText = 'position:absolute;top:12px;left:12px;z-index:5;background:#305e3c;color:#fff;font:700 11px/1 system-ui,-apple-system,sans-serif;padding:5px 9px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.12)';
+                  badge.style.cssText = 'position:absolute;top:12px;left:12px;z-index:6;background:#305e3c;color:#fff;font:700 11px/1 system-ui,-apple-system,sans-serif;padding:5px 9px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.12)';
                   if (getComputedStyle(card).position === 'static') card.style.position = 'relative';
                   card.appendChild(badge);
-                } else if (rec) { card.querySelector('.oi-dist').textContent = fmtDist(d); }
-              });
-              cards.sort(function (a, b) { return parseFloat(a.dataset.dist) - parseFloat(b.dataset.dist); });
-              cards.forEach(function (c) { grid.appendChild(c); });
-              near.disabled = false; near.style.opacity = '1';
-              near.innerHTML = '&#128205; ' + (FR ? 'Trié par distance' : 'Sorted by distance');
+                }
+                badge.textContent = fmtDist(d);
+              }
             });
-          }).catch(function () {
-            near.disabled = false; near.style.opacity = '1';
-            near.innerHTML = '&#128205; ' + (FR ? 'Localisation indisponible' : 'Location unavailable');
+            distReady = true;
           });
         });
-        if (count.parentNode) count.parentNode.appendChild(near);
       }
+      sortSel.addEventListener('change', function () {
+        var v = sortSel.value;
+        limit = REVEAL_STEP;
+        if (v === 'name') { reorder(function (c) { return (c.getAttribute('data-name') || ''); }, false); applyView(); }
+        else if (v === 'province') { reorder(function (c) { return (c.getAttribute('data-province') || '') + (c.getAttribute('data-name') || ''); }, false); applyView(); }
+        else if (v === 'nearest') {
+          var done = function () { reorder(function (c) { return parseFloat(c.dataset.dist || Infinity); }, true); applyView(); };
+          if (distReady) done();
+          else { sortSel.disabled = true; computeDistances().then(done).catch(function () { sortSel.value = 'default'; }).then(function () { sortSel.disabled = false; }); }
+        } else { // default / featured — restore original order
+          cards = original.slice(); original.forEach(function (c) { grid.appendChild(c); }); applyView();
+        }
+      });
 
-      // If URL carried filters, apply them now (existing inline handler re-filters)
-      if (applied) {
-        search.dispatchEvent(new Event('input', { bubbles: true }));
-        if (prov) prov.dispatchEvent(new Event('change', { bubbles: true }));
-        if (typ) typ.dispatchEvent(new Event('change', { bubbles: true }));
-      }
-      updateReset();
+      // --- Reset control ---
+      var reset = document.createElement('button');
+      reset.type = 'button';
+      reset.textContent = FR ? 'Réinitialiser' : 'Clear filters';
+      reset.style.cssText = 'margin-left:12px;padding:5px 12px;border:1px solid rgba(48,94,60,.25);background:#fff;color:#305e3c;border-radius:14px;font:600 12px/1 system-ui,-apple-system,sans-serif;cursor:pointer;display:none;vertical-align:middle';
+      reset.addEventListener('click', function () {
+        search.value = ''; if (prov) prov.value = ''; if (typ) typ.value = '';
+        limit = REVEAL_STEP; syncUrl(); applyView(); search.focus();
+      });
+
+      if (count.parentNode) { count.parentNode.appendChild(sortWrap); count.parentNode.appendChild(reset); }
+
+      // --- "Show more" button ---
+      var moreBtn = document.createElement('button');
+      moreBtn.type = 'button';
+      moreBtn.style.cssText = 'display:none;align-items:center;gap:6px;margin:32px auto 0;padding:12px 28px;border:1px solid #305e3c;background:#fff;color:#305e3c;border-radius:10px;font:700 14px/1 system-ui,-apple-system,sans-serif;cursor:pointer;transition:all .15s';
+      moreBtn.addEventListener('mouseenter', function () { moreBtn.style.background = '#305e3c'; moreBtn.style.color = '#fff'; });
+      moreBtn.addEventListener('mouseleave', function () { moreBtn.style.background = '#fff'; moreBtn.style.color = '#305e3c'; });
+      moreBtn.addEventListener('click', function () { limit += REVEAL_STEP; applyView(); });
+      if (grid.parentNode) grid.parentNode.insertBefore(moreBtn, grid.nextSibling);
+
+      // --- Filter events: reset reveal, sync URL, re-render ---
+      function onFilter() { limit = REVEAL_STEP; syncUrl(); applyView(); }
+      search.addEventListener('input', onFilter);
+      if (prov) prov.addEventListener('change', onFilter);
+      if (typ) typ.addEventListener('change', onFilter);
+
+      // --- Thumbnails (lazy) from hero_image ---
+      loadAllSpots().then(function (spots) {
+        var m = {}; spots.forEach(function (s) { m[s.cat + '/' + s.slug] = s; });
+        cards.forEach(function (card) {
+          if (card.querySelector('.oi-thumb')) return;
+          var s2 = parseSpot(card.getAttribute('href'));
+          var rec = s2 && m[s2.cat + '/' + s2.slug];
+          var hero = rec && rec.raw_hero;
+          if (!hero) return;
+          var wrap = document.createElement('div');
+          wrap.className = 'oi-thumb';
+          wrap.style.cssText = 'height:150px;overflow:hidden;border-radius:12px 12px 0 0;background:#e8eae2';
+          var img = document.createElement('img');
+          img.loading = 'lazy'; img.alt = '';
+          img.src = '/assets/heros/' + hero;
+          img.style.cssText = 'width:100%;height:100%;object-fit:cover;transition:transform .5s';
+          img.addEventListener('error', function () { wrap.style.display = 'none'; });
+          card.addEventListener('mouseenter', function () { img.style.transform = 'scale(1.05)'; });
+          card.addEventListener('mouseleave', function () { img.style.transform = 'none'; });
+          wrap.appendChild(img);
+          card.insertBefore(wrap, card.firstChild);
+        });
+      }).catch(function () {});
+
+      applyView();
     }
 
     // ---------- Homepage: "Spots near you" ----------
