@@ -5,487 +5,1385 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#0a0a12">
+    <meta name="theme-color" content="#14251a">
     <link rel="alternate" type="application/rss+xml" title="Outdoor Intel Blog" href="https://outdoorintel.ca/rss.xml">
     <title>Trip Planner | Outdoor Intel</title>
     <meta name="description" content="Plan your outdoor adventure across Canada with our interactive trip planner. Explore 499+ spots, build your route, and discover the best fishing, hunting, camping, kayaking, skiing, and hiking destinations.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://outdoorintel.ca/en/trip-planner.html">
+    <link rel="canonical" href="https://outdoorintel.ca/en/trip-planner">
     <meta property="og:title" content="Trip Planner | Outdoor Intel">
     <meta property="og:description" content="Plan your outdoor adventure across Canada with our interactive trip planner. Explore 499+ spots and build your route.">
     <meta property="og:image" content="https://outdoorintel.ca/assets/heros/scout-hero-2.jpg">
-    <meta property="og:url" content="https://outdoorintel.ca/en/trip-planner.html">
+    <meta property="og:url" content="https://outdoorintel.ca/en/trip-planner">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Outdoor Intel">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Trip Planner | Outdoor Intel">
     <meta name="twitter:description" content="Plan your outdoor adventure across Canada with our interactive trip planner.">
     <meta name="twitter:image" content="https://outdoorintel.ca/assets/heros/scout-hero-2.jpg">
-    <link rel="alternate" hreflang="en" href="https://outdoorintel.ca/en/trip-planner.html">
-    <link rel="alternate" hreflang="x-default" href="https://outdoorintel.ca/en/trip-planner.html">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
+    <link rel="alternate" hreflang="en" href="https://outdoorintel.ca/en/trip-planner">
+    <link rel="alternate" hreflang="x-default" href="https://outdoorintel.ca/en/trip-planner">
+    <link rel="stylesheet" href="/assets/css/site.css?v=1">
+    <link rel="stylesheet" href="/assets/vendor/leaflet/leaflet.css"/>
+    <script src="/assets/vendor/leaflet/leaflet.js"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { overflow: hidden; background: #0a0a12; color: #e8e4df; font-family: system-ui, -apple-system, sans-serif; }
+*{margin:0;padding:0;box-sizing:border-box}
+body{overflow:hidden;background:#fbfaf7;color:#1c2b21;font-family:system-ui,-apple-system,sans-serif}
+#map{position:fixed;inset:0;z-index:0}
+.leaflet-tile-pane{filter:saturate(1.5) contrast(1.05) brightness(1.02)}
+.leaflet-control-attribution{display:none}
+.leaflet-control-zoom{border:none!important}
+.leaflet-control-zoom a{background:#fff!important;color:#5c6b5f!important;border:1px solid #e0dbd5!important;width:34px!important;height:34px!important;line-height:34px!important;font-size:16px!important;box-shadow:0 2px 8px rgba(0,0,0,.08)!important}
+.leaflet-control-zoom a:hover{color:#305e3c!important;background:#fbfaf7!important}
+.leaflet-popup-content-wrapper{background:#fff!important;color:#1c2b21!important;border-radius:14px!important;border:1px solid #e8e4df;box-shadow:0 8px 30px rgba(0,0,0,.12)!important}
+.leaflet-popup-tip{background:#fff!important}
+.leaflet-popup-content{margin:14px 16px!important}
+.leaflet-popup-close-button{color:#999!important;font-size:18px!important}
+.leaflet-popup-close-button:hover{color:#3d7a4d!important}
 
-        #map { position: fixed; inset: 0; z-index: 0; }
+/* Header */
+#header{position:fixed;top:0;left:0;right:0;z-index:1000;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(45,90,61,.08);box-shadow:0 1px 8px rgba(0,0,0,.05)}
+#header a{text-decoration:none}
 
-        /* Dark map tiles */
-        .leaflet-tile-pane { filter: saturate(0.3) brightness(0.45) contrast(1.1); }
-        .leaflet-control-attribution { display: none; }
-        .leaflet-control-zoom { border: none !important; }
-        .leaflet-control-zoom a {
-            background: rgba(5,5,8,0.9) !important;
-            color: #888 !important;
-            border: 1px solid rgba(255,255,255,0.08) !important;
-            width: 32px !important; height: 32px !important;
-            line-height: 32px !important; font-size: 16px !important;
-        }
-        .leaflet-control-zoom a:hover { background: rgba(5,5,8,1) !important; color: #c97c5e !important; }
+/* Sidebar */
+#sidebar{position:fixed;top:0;right:0;bottom:0;width:400px;z-index:1001;background:rgba(255,255,255,.97);backdrop-filter:blur(24px);border-left:1px solid #e0dbd5;transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);overflow-y:auto;padding-top:65px;box-shadow:-4px 0 24px rgba(0,0,0,.06)}
+#sidebar.open{transform:translateX(0)}
 
-        /* Custom popups */
-        .leaflet-popup-content-wrapper {
-            background: rgba(5,5,8,0.95) !important;
-            color: #e8e4df !important;
-            border-radius: 12px !important;
-            border: 1px solid rgba(201,124,94,0.15);
-            backdrop-filter: blur(16px);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.5) !important;
-        }
-        .leaflet-popup-tip { background: rgba(5,5,8,0.95) !important; }
-        .leaflet-popup-content { margin: 14px 16px !important; }
-        .leaflet-popup-close-button { color: #666 !important; font-size: 18px !important; }
-        .leaflet-popup-close-button:hover { color: #c97c5e !important; }
+/* Trip stops */
+.trip-stop{display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:10px;background:#f8f7f5;border:1px solid #e8e4df;margin-bottom:6px;transition:all .2s;cursor:pointer}
+.trip-stop:hover{background:#f0ede8;border-color:#d4cfc8}
+.trip-stop[draggable="true"]{cursor:grab}
+.trip-stop.dragging{opacity:.4}
+.snum{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0}
+.srem{opacity:0;transition:opacity .15s;cursor:pointer;color:#e05252;background:none;border:none;font-size:16px;padding:4px}
+.trip-stop:hover .srem{opacity:1}
+.leg-info{display:flex;align-items:center;gap:6px;padding:2px 0 2px 34px;font-size:10px;color:#999}
 
-        /* Header */
-        #header {
-            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-            padding: 16px 24px;
-            display: flex; align-items: center; justify-content: space-between;
-            background: linear-gradient(to bottom, rgba(5,5,8,0.95) 0%, rgba(5,5,8,0.6) 70%, transparent 100%);
-            pointer-events: none;
-        }
-        #header > * { pointer-events: auto; }
-        #header a { text-decoration: none; }
+/* Activity Picker */
+#activity-picker{position:fixed;inset:0;z-index:3000;background:rgba(245,243,240,.97);backdrop-filter:blur(20px);display:flex;align-items:center;justify-content:center;transition:opacity .4s,visibility .4s}
+#activity-picker.hidden{opacity:0;visibility:hidden;pointer-events:none}
+.act-card{padding:28px 20px;border-radius:16px;background:#fff;border:2px solid #e8e4df;cursor:pointer;transition:all .25s;text-align:center}
+.act-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.1)}
+.act-card .act-icon{font-size:36px;margin-bottom:10px}
+.act-card .act-name{font-size:15px;font-weight:700;color:#1c2b21}
+.act-card .act-count{font-size:11px;color:#999;margin-top:4px}
 
-        /* Sidebar */
-        #sidebar {
-            position: fixed; top: 0; right: 0; bottom: 0;
-            width: 360px; z-index: 1001;
-            background: rgba(5,5,8,0.96);
-            backdrop-filter: blur(24px);
-            border-left: 1px solid rgba(201,124,94,0.12);
-            transform: translateX(100%);
-            transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-            overflow-y: auto;
-            padding-top: 80px;
-        }
-        #sidebar.open { transform: translateX(0); }
+/* Plan Wizard Bar */
+#plan-bar{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:999;display:none;padding:14px 24px;background:#fff;border-radius:16px;border:1px solid #e0dbd5;box-shadow:0 8px 32px rgba(0,0,0,.1);max-width:600px;width:calc(100% - 40px);text-align:center}
+#plan-bar .step-label{font-size:14px;font-weight:600;color:#1c2b21}
+#plan-bar .step-sub{font-size:12px;color:#999;margin-top:4px}
+#generate-btn{display:none;margin-top:12px;padding:12px 32px;background:#305e3c;color:#fff;border:none;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;transition:all .25s;width:100%}
+#generate-btn:hover{background:#3d7a4d;transform:scale(1.02)}
 
-        /* Filters */
-        #filters {
-            position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
-            z-index: 999;
-            display: flex; gap: 6px;
-            padding: 10px 16px;
-            background: rgba(5,5,8,0.88);
-            backdrop-filter: blur(16px);
-            border-radius: 16px;
-            border: 1px solid rgba(255,255,255,0.07);
-        }
-        .fchip {
-            padding: 6px 14px; border-radius: 20px;
-            font-size: 12px; font-weight: 600;
-            border: 1px solid rgba(255,255,255,0.1);
-            background: transparent; color: #666;
-            cursor: pointer; transition: all 0.2s; white-space: nowrap;
-        }
-        .fchip.active { color: #fff; border-color: currentColor; background: rgba(255,255,255,0.05); }
-        .fchip:hover { background: rgba(255,255,255,0.08); }
+/* Activity Chip */
+#activity-chip{position:fixed;top:70px;left:20px;z-index:999;display:none;align-items:center;gap:8px;padding:8px 14px;background:#fff;border:1px solid #e0dbd5;border-radius:24px;font-size:13px;font-weight:600;box-shadow:0 2px 12px rgba(0,0,0,.08);cursor:pointer;transition:all .2s}
+#activity-chip:hover{border-color:#3d7a4d;box-shadow:0 4px 16px rgba(0,0,0,.12)}
 
-        /* Trip Stops */
-        .trip-stop {
-            display: flex; align-items: center; gap: 12px;
-            padding: 10px 14px; border-radius: 10px;
-            background: rgba(255,255,255,0.025);
-            border: 1px solid rgba(255,255,255,0.05);
-            margin-bottom: 6px; transition: background 0.2s;
-            cursor: pointer;
-        }
-        .trip-stop:hover { background: rgba(255,255,255,0.06); }
-        .snum {
-            width: 26px; height: 26px; border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 11px; font-weight: 700; flex-shrink: 0;
-        }
-        .srem { opacity: 0; transition: opacity 0.15s; cursor: pointer; color: #ff6b6b; background: none; border: none; font-size: 16px; padding: 4px; }
-        .trip-stop:hover .srem { opacity: 1; }
+/* Trip Generation Animation */
+#gen-overlay{position:fixed;inset:0;z-index:4000;background:#0a1a12;display:none;align-items:center;justify-content:center;flex-direction:column}
+#gen-overlay.active{display:flex}
+#gen-overlay canvas{position:absolute;inset:0}
+#gen-overlay .gen-content{position:relative;z-index:1;text-align:center;color:#fff}
+#gen-overlay .gen-title{font-size:28px;font-weight:800;opacity:0;animation:genFadeIn .8s .5s forwards}
+#gen-overlay .gen-sub{font-size:14px;color:rgba(255,255,255,.6);margin-top:8px;opacity:0;animation:genFadeIn .8s .8s forwards}
+#gen-overlay .gen-stats{display:flex;gap:32px;justify-content:center;margin-top:32px;opacity:0;animation:genFadeIn .8s 1.5s forwards}
+#gen-overlay .gen-stat{text-align:center}
+#gen-overlay .gen-stat-num{font-size:36px;font-weight:800;color:#4ade80}
+#gen-overlay .gen-stat-label{font-size:11px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+#gen-overlay .gen-loading{margin-top:32px;opacity:0;animation:genFadeIn .6s 2.2s forwards}
+#gen-overlay .gen-loading .bar{width:200px;height:3px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden;margin:0 auto}
+#gen-overlay .gen-loading .bar-fill{height:100%;background:linear-gradient(90deg,#4ade80,#22d3ee);border-radius:3px;width:0;animation:genBar 2s 2.4s forwards}
+@keyframes genFadeIn{to{opacity:1}}
+@keyframes genBar{to{width:100%}}
 
-        /* Help Hint */
-        #help-hint {
-            position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%);
-            z-index: 998; padding: 10px 24px;
-            background: rgba(5,5,8,0.7); border-radius: 10px;
-            font-size: 13px; color: #555; transition: opacity 1.5s; pointer-events: none;
-        }
+/* Profile Modal */
+#profile-modal-overlay{position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.3);backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;padding:24px}
+#profile-modal-overlay.open{display:flex}
+#profile-modal{background:#fff;border:1px solid #e8e4df;border-radius:16px;width:100%;max-width:520px;max-height:80vh;overflow-y:auto;position:relative;box-shadow:0 24px 64px rgba(0,0,0,.15)}
+#profile-modal .pm-header{padding:20px 24px 16px;border-bottom:1px solid #f0ede8;position:sticky;top:0;background:#fff;z-index:1}
+#profile-modal .pm-body{padding:16px 24px 24px}
+#profile-modal .pm-close{position:absolute;top:16px;right:16px;background:none;border:none;color:#999;font-size:20px;cursor:pointer;padding:4px 8px;border-radius:6px;transition:all .2s}
+#profile-modal .pm-close:hover{color:#3d7a4d;background:#fbfaf7}
+.pm-section{margin-bottom:16px}
+.pm-section-title{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;color:#999;margin-bottom:6px}
+.pm-section-content{font-size:13px;color:#5c6b5f;line-height:1.6}
+.pm-tag{display:inline-block;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;margin:2px 4px 2px 0;background:#f8f7f5;border:1px solid #e8e4df}
 
-        /* Scrollbar */
-        ::-webkit-scrollbar { width: 5px; }
-        ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: rgba(201,124,94,0.25); border-radius: 3px; }
+/* Service markers */
+.svc-icon{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.2)}
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            #sidebar { width: 100%; }
-            #filters { left: 12px; right: 12px; transform: none; overflow-x: auto; justify-content: flex-start; }
-            #help-hint { left: 12px; right: 12px; transform: none; text-align: center; }
-        }
+/* Weather cards */
+.weather-card{padding:10px 14px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;margin-top:8px}
+.weather-warn{background:#fef3c7;border-color:#fde68a}
+
+/* Scrollbar */
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(45,90,61,.25);border-radius:3px}
+
+/* Category filter pills */
+#cat-chips{position:fixed;top:70px;left:20px;z-index:999;display:none;flex-wrap:wrap;gap:6px;max-width:calc(100% - 260px)}
+.cat-pill{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;background:#fff;border:1.5px solid #e0dbd5;border-radius:20px;font-size:12px;font-weight:600;color:#5c6b5f;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.06);transition:all .18s;user-select:none}
+.cat-pill:hover{border-color:#cbd3c5}
+.cat-pill.active{color:#fff;border-color:transparent;box-shadow:0 3px 10px rgba(0,0,0,.14)}
+.cat-pill .cp-count{font-size:10px;opacity:.75;font-weight:700}
+
+/* Trip action buttons (share / maps) */
+#trip-actions{display:none;gap:8px;margin-bottom:14px}
+.trip-act{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:9px 0;border-radius:10px;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;transition:all .18s;border:1px solid}
+.trip-act.share{background:#305e3c;border-color:#305e3c;color:#fff}
+.trip-act.share:hover{background:#3d7a4d}
+.trip-act.maps{background:#fff;border-color:#e0dbd5;color:#305e3c}
+.trip-act.maps:hover{border-color:#3d7a4d;background:#fbfaf7}
+
+/* Toast */
+#toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);z-index:5000;background:#1c2b21;color:#fff;padding:12px 20px;border-radius:12px;font-size:13px;font-weight:600;box-shadow:0 8px 32px rgba(0,0,0,.25);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;display:flex;align-items:center;gap:8px}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* Reset button on empty state */
+.tp-ghost-btn{margin-top:14px;padding:9px 18px;background:#305e3c;color:#fff;border:none;border-radius:9px;font-size:12px;font-weight:700;cursor:pointer;transition:background .2s}
+.tp-ghost-btn:hover{background:#3d7a4d}
+
+/* Responsive */
+@media(max-width:768px){
+    #sidebar{width:100%}
+    #activity-picker .act-grid{grid-template-columns:repeat(2,1fr)!important;gap:12px!important}
+    #profile-modal{max-width:100%;max-height:90vh}
+    #activity-chip{top:62px;left:12px}
+    #cat-chips{top:60px;left:10px;right:10px;max-width:none;gap:5px;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px;-webkit-overflow-scrolling:touch}
+    .cat-pill{flex-shrink:0;padding:6px 10px}
+    #plan-bar{bottom:12px}
+    #gen-overlay .gen-stats{gap:20px}
+}
     </style>
-
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8Q00962P"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-QY8Q00962P');
-    </script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-QY8Q00962P');</script>
+<style id="oi-ds">.explore-dropdown{visibility:hidden;opacity:0;transform:translateY(6px);transition:opacity .15s ease,transform .15s ease,visibility .15s}.explore-group:hover .explore-dropdown,.explore-group:focus-within .explore-dropdown{visibility:visible;opacity:1;transform:translateY(0)}</style>
 </head>
 <body>
+<div id="map"></div>
 
-    <!-- Map -->
-    <div id="map"></div>
+<!-- Activity Picker -->
+<div id="activity-picker">
+    <div style="text-align:center;max-width:600px;width:100%;padding:0 20px">
+        <div style="margin-bottom:8px"><img src="../assets/logo/logo.jpg" alt="Outdoor Intel" style="height:40px;display:inline-block"></div>
+        <h1 style="font-size:28px;font-weight:800;color:#305e3c;margin-bottom:6px">Plan Your Adventure</h1>
+        <p style="font-size:14px;color:#5c6b5f;margin-bottom:32px">What activity are you planning? You can add more later.</p>
+        <div class="act-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px" id="act-grid"></div>
+        <button onclick="window.exploreAll()" style="margin-top:24px;background:none;border:none;color:#305e3c;font-size:13px;font-weight:600;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Or explore every activity at once &rarr;</button>
+    </div>
+</div>
 
-    <!-- Header -->
-    <div id="header">
-        <div style="display:flex; align-items:center; gap:14px;">
-            <a href="../index.html" style="display:flex; align-items:center;">
-                <img src="../assets/logo/logo.jpg" alt="Outdoor Intel" style="height:32px; filter:brightness(1.6) saturate(0.6);">
-            </a>
-            <div style="height:18px; width:1px; background:rgba(255,255,255,0.15);"></div>
-            <span style="font-size:13px; font-weight:700; color:#c97c5e; letter-spacing:1px; text-transform:uppercase;">Trip Planner</span>
+<!-- Activity Chip -->
+<div id="activity-chip" onclick="window.showActivityPicker()">
+    <span id="chip-icon"></span>
+    <span id="chip-label"></span>
+    <span style="color:#999;font-size:12px;margin-left:4px">&#x2715;</span>
+</div>
+
+<!-- Category filter pills (multi-activity) -->
+<div id="cat-chips" role="group" aria-label="Filter spots by activity"></div>
+
+<!-- Toast -->
+<div id="toast" role="status" aria-live="polite"></div>
+
+<!-- Header -->
+<div id="header">
+    <div style="display:flex;align-items:center;gap:12px">
+        <a href="/" style="display:flex;align-items:center"><img src="../assets/logo/logo.jpg" alt="Outdoor Intel" style="height:30px"></a>
+        <div style="height:16px;width:1px;background:#e8e4df"></div>
+        <span style="font-size:12px;font-weight:700;color:#305e3c;letter-spacing:1px;text-transform:uppercase">Trip Planner</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px">
+        <a href="/en/map" style="font-size:13px;color:#5c6b5f;transition:color .2s;text-decoration:none" onmouseenter="this.style.color='#3d7a4d'" onmouseleave="this.style.color='#5c6b5f'">Full Map</a>
+        <button id="sidebar-toggle" style="padding:7px 16px;background:#305e3c;border:none;border-radius:8px;color:#fff;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:8px;transition:all .2s" onmouseenter="this.style.background='#3d7a4d'" onmouseleave="this.style.background='#305e3c'">
+            My Trip <span id="trip-count" style="min-width:20px;height:20px;display:flex;align-items:center;justify-content:center;border-radius:10px;background:rgba(255,255,255,.2);font-size:11px;font-weight:700">0</span>
+        </button>
+    </div>
+</div>
+
+<!-- Plan Wizard Bar -->
+<div id="plan-bar">
+    <div class="step-label" id="step-label">Click the map to set your starting point</div>
+    <div class="step-sub" id="step-sub">This is where your adventure begins</div>
+    <div id="address-search-wrap" style="position:relative;margin-top:10px;display:none">
+        <input id="address-search-input" type="text" placeholder="Or search by address, city or place..." autocomplete="off" style="width:100%;padding:9px 12px;border:1px solid #e8e4df;border-radius:8px;font-size:13px;outline:none;background:#fafafa;transition:all .2s;box-sizing:border-box" onfocus="this.style.borderColor='#305e3c';this.style.background='#fff'" onblur="this.style.borderColor='#e8e4df';this.style.background='#fafafa'">
+        <div id="address-search-results" style="position:absolute;bottom:calc(100% + 4px);left:0;right:0;background:#fff;border:1px solid #e0dbd5;border-radius:8px;box-shadow:0 -8px 24px rgba(0,0,0,.12);max-height:260px;overflow-y:auto;z-index:1000;display:none;text-align:left"></div>
+    </div>
+    <button id="generate-btn" onclick="window.generateTrip()">Generate My Trip</button>
+</div>
+
+<!-- Sidebar -->
+<div id="sidebar">
+    <div style="padding:0 20px 20px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+            <h2 style="font-size:18px;font-weight:700;color:#1c2b21">My Trip</h2>
+            <button id="clear-trip" style="font-size:12px;color:#999;background:none;border:none;cursor:pointer;padding:4px 8px" onmouseenter="this.style.color='#e05252'" onmouseleave="this.style.color='#999'">Clear All</button>
         </div>
-        <div style="display:flex; align-items:center; gap:14px;">
-            <a href="map.html" style="font-size:13px; color:#666; transition:color 0.2s;" onmouseenter="this.style.color='#c97c5e'" onmouseleave="this.style.color='#666'">Full Map</a>
-            <button id="sidebar-toggle" style="padding:7px 16px; background:rgba(201,124,94,0.1); border:1px solid rgba(201,124,94,0.25); border-radius:8px; color:#c97c5e; font-size:13px; font-weight:600; cursor:pointer; display:flex; align-items:center; gap:8px; transition:all 0.2s;" onmouseenter="this.style.background='rgba(201,124,94,0.2)'" onmouseleave="this.style.background='rgba(201,124,94,0.1)'">
-                My Trip
-                <span id="trip-count" style="min-width:20px; height:20px; display:flex; align-items:center; justify-content:center; border-radius:10px; background:rgba(201,124,94,0.3); font-size:11px; font-weight:700;">0</span>
+        <div id="trip-actions">
+            <button class="trip-act share" onclick="window.shareTrip()" title="Copy a shareable link to this trip">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                Share
             </button>
+            <a class="trip-act maps" id="gmaps-link" href="#" target="_blank" rel="noopener" title="Open turn-by-turn directions in Google Maps">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Directions
+            </a>
         </div>
-    </div>
-
-    <!-- Sidebar -->
-    <div id="sidebar">
-        <div style="padding:0 20px 20px;">
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
-                <h2 style="font-size:18px; font-weight:700; color:#e8e4df;">My Trip</h2>
-                <button id="clear-trip" style="font-size:12px; color:#666; background:none; border:none; cursor:pointer; padding:4px 8px; transition:color 0.2s;" onmouseenter="this.style.color='#ff6b6b'" onmouseleave="this.style.color='#666'">Clear All</button>
-            </div>
-            <div id="trip-stats" style="display:none; margin-bottom:16px; padding:10px 14px; background:rgba(201,124,94,0.06); border-radius:8px; font-size:12px; color:#999;"></div>
-            <div id="trip-list">
-                <div style="text-align:center; padding:48px 16px; color:#444;">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5" style="margin:0 auto 16px;">
-                        <path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
-                    </svg>
-                    <p style="font-size:13px; line-height:1.5;">Click spots on the map to explore and build your route</p>
-                </div>
+        <div id="trip-stats" style="display:none;margin-bottom:14px;padding:12px 14px;background:#f8f7f5;border-radius:10px;border:1px solid #e8e4df;font-size:12px;color:#5c6b5f"></div>
+        <div id="services-panel" style="display:none;margin-bottom:14px">
+            <div style="display:flex;gap:6px;flex-wrap:wrap">
+                <button class="svc-filter active" data-svc="fuel" onclick="toggleSvcFilter(this)" style="padding:5px 12px;border-radius:16px;font-size:11px;font-weight:600;cursor:pointer;border:1px solid #3b82f6;background:#eff6ff;color:#3b82f6;transition:all .2s">&#9981; Gas</button>
+                <button class="svc-filter active" data-svc="restaurant" onclick="toggleSvcFilter(this)" style="padding:5px 12px;border-radius:16px;font-size:11px;font-weight:600;cursor:pointer;border:1px solid #f59e0b;background:#fffbeb;color:#f59e0b;transition:all .2s">&#127869; Food</button>
+                <button class="svc-filter active" data-svc="hotel" onclick="toggleSvcFilter(this)" style="padding:5px 12px;border-radius:16px;font-size:11px;font-weight:600;cursor:pointer;border:1px solid #8b5cf6;background:#f5f3ff;color:#8b5cf6;transition:all .2s">&#127976; Hotels</button>
             </div>
         </div>
+        <div id="weather-panel" style="display:none;margin-bottom:14px"></div>
+        <div id="trip-list">
+            <div style="text-align:center;padding:48px 16px;color:#999">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5" style="margin:0 auto 16px"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+                <p style="font-size:13px;line-height:1.5">Select your activity to get started</p>
+            </div>
+        </div>
     </div>
+</div>
 
-    <!-- Filters -->
-    <div id="filters">
-        <button class="fchip active" data-cat="fishing" style="color:#4a9eff;">Fishing</button>
-        <button class="fchip active" data-cat="hunting" style="color:#ff8c42;">Hunting</button>
-        <button class="fchip active" data-cat="camping" style="color:#4ade80;">Camping</button>
-        <button class="fchip active" data-cat="kayaking" style="color:#22d3ee;">Kayaking</button>
-        <button class="fchip active" data-cat="skiing" style="color:#a78bfa;">Skiing</button>
-        <button class="fchip active" data-cat="hiking" style="color:#fbbf24;">Hiking</button>
+<!-- Trip Generation Animation -->
+<div id="gen-overlay">
+    <canvas id="gen-canvas"></canvas>
+    <div class="gen-content">
+        <div class="gen-title" id="gen-title">Charting Your Adventure</div>
+        <div class="gen-sub" id="gen-sub">Mapping the best route across Canada</div>
+        <div class="gen-stats" id="gen-stats"></div>
+        <div class="gen-loading"><div class="bar"><div class="bar-fill"></div></div></div>
     </div>
+</div>
 
-    <!-- Help Hint -->
-    <div id="help-hint">Click spots to explore &middot; Build your route with the trip planner</div>
+<!-- Profile Modal -->
+<div id="profile-modal-overlay">
+    <div id="profile-modal">
+        <button class="pm-close" onclick="window.closeProfile()">&times;</button>
+        <div class="pm-header" id="pm-header"></div>
+        <div class="pm-body" id="pm-body"></div>
+    </div>
+</div>
 
 <script>
 // ==================== CONFIG ====================
-const CATEGORIES = ['fishing', 'hunting', 'camping', 'kayaking', 'skiing', 'hiking'];
-const CAT_COLORS = {
-    fishing: '#4a9eff', hunting: '#ff8c42', camping: '#4ade80',
-    kayaking: '#22d3ee', skiing: '#a78bfa', hiking: '#fbbf24'
-};
+const CATEGORIES = ['fishing','hunting','camping','kayaking','skiing','hiking'];
+const CAT_COLORS = {fishing:'#2563eb',hunting:'#ea580c',camping:'#16a34a',kayaking:'#0891b2',skiing:'#7c3aed',hiking:'#d97706'};
+const CAT_ICONS = {fishing:'\u{1F3A3}',hunting:'\u{1F98C}',camping:'\u26FA',kayaking:'\u{1F6F6}',skiing:'\u26F7\uFE0F',hiking:'\u{1F97E}'};
+const SVC_COLORS = {fuel:'#3b82f6',restaurant:'#f59e0b',hotel:'#8b5cf6'};
+const SVC_EMOJIS = {fuel:'\u26FD',restaurant:'\u{1F37D}\uFE0F',hotel:'\u{1F3E8}'};
+const WMO_CODES = {0:'Clear',1:'Mostly Clear',2:'Partly Cloudy',3:'Overcast',45:'Fog',48:'Fog',51:'Light Drizzle',53:'Drizzle',55:'Heavy Drizzle',61:'Light Rain',63:'Rain',65:'Heavy Rain',66:'Freezing Rain',67:'Heavy Freezing Rain',71:'Light Snow',73:'Snow',75:'Heavy Snow',77:'Snow Grains',80:'Light Showers',81:'Showers',82:'Heavy Showers',85:'Snow Showers',86:'Heavy Snow Showers',95:'Thunderstorm',96:'Thunderstorm + Hail',99:'Thunderstorm + Heavy Hail'};
+const WMO_ICONS = {0:'\u2600\uFE0F',1:'\u{1F324}\uFE0F',2:'\u26C5',3:'\u2601\uFE0F',45:'\u{1F32B}\uFE0F',48:'\u{1F32B}\uFE0F',51:'\u{1F326}\uFE0F',53:'\u{1F327}\uFE0F',55:'\u{1F327}\uFE0F',61:'\u{1F326}\uFE0F',63:'\u{1F327}\uFE0F',65:'\u{1F327}\uFE0F',66:'\u{1F9CA}',67:'\u{1F9CA}',71:'\u{1F328}\uFE0F',73:'\u{1F328}\uFE0F',75:'\u{1F328}\uFE0F',77:'\u{1F328}\uFE0F',80:'\u{1F326}\uFE0F',81:'\u{1F327}\uFE0F',82:'\u{1F327}\uFE0F',85:'\u{1F328}\uFE0F',86:'\u{1F328}\uFE0F',95:'\u26C8\uFE0F',96:'\u26C8\uFE0F',99:'\u26C8\uFE0F'};
 
 // ==================== STATE ====================
 const state = {
-    allSpots: [], trip: [],
-    activeFilters: new Set(CATEGORIES),
-    sidebarOpen: false
+    allSpots: [], trip: [], selectedActivity: null,
+    visibleCats: new Set(), // categories whose spots are shown on the map (multi-activity)
+    sidebarOpen: false, phase: 'pick-activity', // pick-activity, set-start, add-destinations, trip-ready
+    startPoint: null, startMarker: null,
+    routeLegs: [], routeGeometry: null,
+    services: [], svcFilters: {fuel:true, restaurant:true, hotel:true},
+    weather: {}
 };
+let routeDebounce = null;
+const LS_KEY = 'oi_trip_v1';
 
 // ==================== MAP ====================
-const map = L.map('map', {
-    center: [56, -96],
-    zoom: 4,
-    minZoom: 3,
-    maxZoom: 13,
-    zoomControl: false
-});
+const map = L.map('map',{center:[56,-96],zoom:4,minZoom:3,maxZoom:13,zoomControl:false});
+L.control.zoom({position:'bottomright'}).addTo(map);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OSM'}).addTo(map);
 
-L.control.zoom({ position: 'bottomright' }).addTo(map);
-
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; OpenStreetMap'
-}).addTo(map);
-
-// ==================== MARKERS ====================
-const markerLayers = {};
 const routeLayer = L.layerGroup().addTo(map);
+const servicesLayer = L.layerGroup().addTo(map);
 let allMarkers = [];
 
+// ==================== MAP CLICK (Set Start) ====================
+map.on('click', function(e) {
+    if (state.phase !== 'set-start') return;
+    setStartPoint(e.latlng.lat, e.latlng.lng, 'My Starting Point');
+});
+
+function setStartPoint(lat, lng, name, noAdvance) {
+    if (state.startMarker) map.removeLayer(state.startMarker);
+    state.startPoint = {lat, lng, name};
+    state.startMarker = L.marker([lat, lng], {
+        icon: L.divIcon({
+            className: '',
+            html: '<div style="width:20px;height:20px;border-radius:50%;background:#305e3c;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;font-size:9px;color:#fff;font-weight:800">S</div>',
+            iconSize:[20,20], iconAnchor:[10,10]
+        })
+    }).addTo(map).bindPopup(`<div style="font-size:13px;font-weight:700;color:#305e3c">Start: ${name}</div><div style="font-size:11px;color:#999">${lat.toFixed(2)}, ${lng.toFixed(2)}</div>`);
+
+    persistTrip();
+    if (!noAdvance) advanceToDestinations();
+}
+
+function advanceToDestinations() {
+    state.phase = 'add-destinations';
+    document.getElementById('step-label').textContent = 'Now click spots to add destinations';
+    document.getElementById('step-sub').textContent = 'Add at least one destination, then generate your trip';
+    const wrap = document.getElementById('address-search-wrap');
+    if (wrap) wrap.style.display = 'none';
+    const results = document.getElementById('address-search-results');
+    if (results) results.style.display = 'none';
+    const input = document.getElementById('address-search-input');
+    if (input) input.value = '';
+    renderSpots();
+    updateGenerateBtn();
+}
+
+// ==================== GEOCODING (Nominatim/OpenStreetMap) ====================
+let geocodeDebounce = null;
+let geocodeResults = [];
+async function geocodeAddress(query) {
+    try {
+        const resp = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&countrycodes=ca&limit=6&addressdetails=1`, {
+            headers: {'Accept-Language': 'en'}
+        });
+        return await resp.json();
+    } catch(e) {
+        console.warn('Geocoding failed:', e);
+        return [];
+    }
+}
+
+function renderGeocodeResults(results) {
+    const box = document.getElementById('address-search-results');
+    if (!results || results.length === 0) {
+        box.innerHTML = '<div style="padding:12px 14px;font-size:12px;color:#999">No matches found</div>';
+        box.style.display = 'block';
+        return;
+    }
+    box.innerHTML = results.map((r, i) => {
+        const parts = r.display_name.split(',');
+        const primary = parts[0].trim();
+        const secondary = parts.slice(1).join(',').trim();
+        return `<div data-idx="${i}" class="geo-result" style="padding:10px 14px;border-bottom:1px solid #f0ede8;cursor:pointer;transition:background .15s" onmouseenter="this.style.background='#f8f7f5'" onmouseleave="this.style.background='#fff'">
+            <div style="font-size:13px;font-weight:600;color:#1c2b21;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${primary}</div>
+            <div style="font-size:11px;color:#999;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${secondary}</div>
+        </div>`;
+    }).join('');
+    box.style.display = 'block';
+    box.querySelectorAll('.geo-result').forEach(el => {
+        el.addEventListener('click', () => {
+            const r = geocodeResults[parseInt(el.dataset.idx, 10)];
+            if (!r) return;
+            const lat = parseFloat(r.lat), lng = parseFloat(r.lon);
+            const name = r.display_name.split(',')[0].trim();
+            setStartPoint(lat, lng, name);
+            map.setView([lat, lng], 10);
+            document.getElementById('address-search-input').value = '';
+            box.style.display = 'none';
+        });
+    });
+}
+
+function updateGenerateBtn() {
+    const btn = document.getElementById('generate-btn');
+    btn.style.display = (state.trip.length >= 1 && state.startPoint) ? 'block' : 'none';
+}
+
+// ==================== MARKER ICONS ====================
 function createCircleIcon(color) {
-    return L.divIcon({
-        className: '',
-        html: `<div style="width:12px;height:12px;border-radius:50%;background:${color};border:2px solid rgba(255,255,255,0.9);box-shadow:0 0 8px ${color}80, 0 2px 6px rgba(0,0,0,0.4);"></div>`,
-        iconSize: [12, 12],
-        iconAnchor: [6, 6],
-        popupAnchor: [0, -10]
-    });
+    return L.divIcon({className:'',html:`<div style="width:14px;height:14px;border-radius:50%;background:${color};border:2.5px solid #fff;box-shadow:0 1px 6px ${color}50,0 1px 4px rgba(0,0,0,.15)"></div>`,iconSize:[14,14],iconAnchor:[7,7],popupAnchor:[0,-10]});
 }
-
 function createTripIcon(color, num) {
-    return L.divIcon({
-        className: '',
-        html: `<div style="width:24px;height:24px;border-radius:50%;background:${color};border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;box-shadow:0 0 12px ${color}80, 0 2px 8px rgba(0,0,0,0.5);font-family:system-ui,sans-serif;">${num}</div>`,
-        iconSize: [24, 24],
-        iconAnchor: [12, 12],
-        popupAnchor: [0, -16]
-    });
+    return L.divIcon({className:'',html:`<div style="width:28px;height:28px;border-radius:50%;background:${color};border:2.5px solid #fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#fff;box-shadow:0 2px 10px ${color}50,0 2px 6px rgba(0,0,0,.15);font-family:system-ui">${num}</div>`,iconSize:[28,28],iconAnchor:[14,14],popupAnchor:[0,-18]});
 }
 
+// ==================== POPUP ====================
 function popupContent(spot) {
-    const feats = spot.features
-        ? spot.features.slice(0, 3).join(' &middot; ')
-        : spot.primary_species
-            ? spot.primary_species.slice(0, 3).join(' &middot; ')
-            : '';
+    const feats = (spot.features || spot.primary_species || []).slice(0,3).join(' \u00B7 ');
     const inTrip = state.trip.find(s => s.slug === spot.slug && s.cat === spot.cat);
-    const addBtnText = inTrip ? 'Added &#10003;' : 'Add to Trip';
-    const addBtnOpacity = inTrip ? '0.5' : '1';
-
-    return `
-        <div style="min-width:180px;">
-            <div style="font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;color:${CAT_COLORS[spot.cat]};">${spot.cat}</div>
-            <div style="font-size:15px;font-weight:700;margin-top:3px;color:#e8e4df;">${spot.name}</div>
-            <div style="font-size:12px;color:#888;margin-top:3px;">${spot.province || ''}</div>
-            ${feats ? `<div style="font-size:11px;color:#666;margin-top:6px;">${feats}</div>` : ''}
-            <div style="display:flex;gap:8px;margin-top:14px;">
-                <button onclick="window.addSpotToTrip('${spot.slug}','${spot.cat}')" style="flex:1;padding:7px 0;background:rgba(201,124,94,0.15);border:1px solid rgba(201,124,94,0.3);border-radius:8px;color:#c97c5e;font-size:12px;font-weight:700;cursor:pointer;opacity:${addBtnOpacity};" ${inTrip ? 'disabled' : ''}>${addBtnText}</button>
-                <a href="${spot.cat}/${spot.slug}.html" style="flex:1;padding:7px 0;background:rgba(45,90,61,0.15);border:1px solid rgba(45,90,61,0.3);border-radius:8px;color:#7a9b8e;font-size:12px;font-weight:700;text-decoration:none;text-align:center;">View Profile</a>
-            </div>
+    const color = CAT_COLORS[spot.cat];
+    return `<div style="min-width:190px">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;color:${color}">${spot.cat}</div>
+        <div style="font-size:15px;font-weight:700;margin-top:3px;color:#1c2b21">${spot.name}</div>
+        <div style="font-size:12px;color:#5c6b5f;margin-top:3px">${spot.province||''}</div>
+        ${feats?`<div style="font-size:11px;color:#999;margin-top:6px">${feats}</div>`:''}
+        <div style="display:flex;gap:8px;margin-top:14px">
+            <button onclick="window.addSpotToTrip('${spot.slug}','${spot.cat}')" style="flex:1;padding:7px 0;background:${color}15;border:1px solid ${color}30;border-radius:8px;color:${color};font-size:12px;font-weight:700;cursor:pointer;opacity:${inTrip?'.5':'1'}" ${inTrip?'disabled':''}>
+                ${inTrip?'Added &#10003;':'Add to Trip'}
+            </button>
+            <button onclick="window.viewProfile('${spot.slug}','${spot.cat}')" style="flex:1;padding:7px 0;background:#305e3c15;border:1px solid #305e3c30;border-radius:8px;color:#305e3c;font-size:12px;font-weight:700;cursor:pointer">View Profile</button>
         </div>
-    `;
+    </div>`;
 }
 
 // ==================== DATA ====================
 async function loadAllData() {
-    const results = await Promise.all(
-        CATEGORIES.map(cat =>
-            fetch(`../data/${cat}.json`)
-                .then(r => r.json())
-                .then(data => data.spots.map(s => ({ ...s, cat })))
-        )
-    );
+    const results = await Promise.all(CATEGORIES.map(cat =>
+        fetch(`../data/${cat}.json`).then(r=>r.json()).then(data=>data.spots.map(s=>({...s,cat})))
+    ));
     return results.flat();
 }
 
+// ==================== ACTIVITY PICKER ====================
+function buildActivityPicker() {
+    const grid = document.getElementById('act-grid');
+    grid.innerHTML = CATEGORIES.map(cat => {
+        const count = state.allSpots.filter(s => s.cat === cat).length;
+        const color = CAT_COLORS[cat];
+        return `<div class="act-card" onclick="window.selectActivity('${cat}')" style="border-color:${color}20" onmouseenter="this.style.borderColor='${color}'" onmouseleave="this.style.borderColor='${color}20'">
+            <div class="act-icon">${CAT_ICONS[cat]}</div>
+            <div class="act-name" style="color:${color}">${cat.charAt(0).toUpperCase()+cat.slice(1)}</div>
+            <div class="act-count">${count} spots</div>
+        </div>`;
+    }).join('');
+}
+
+window.selectActivity = function(cat) {
+    state.selectedActivity = cat;
+    state.visibleCats = new Set([cat]);
+    state.phase = 'set-start';
+    document.getElementById('activity-picker').classList.add('hidden');
+
+    buildCategoryChips();
+    document.getElementById('cat-chips').style.display = 'flex';
+    renderSpots();
+
+    document.getElementById('plan-bar').style.display = 'block';
+    document.getElementById('step-label').textContent = 'Click the map or search for your starting point';
+    document.getElementById('step-sub').textContent = 'This is where your adventure begins';
+    document.getElementById('address-search-wrap').style.display = 'block';
+    persistTrip();
+};
+
+window.showActivityPicker = function() {
+    document.getElementById('activity-picker').classList.remove('hidden');
+};
+
+window.exploreAll = function() {
+    state.selectedActivity = 'fishing';
+    state.visibleCats = new Set(CATEGORIES);
+    state.phase = 'set-start';
+    document.getElementById('activity-picker').classList.add('hidden');
+    buildCategoryChips();
+    document.getElementById('cat-chips').style.display = 'flex';
+    renderSpots();
+    document.getElementById('plan-bar').style.display = 'block';
+    document.getElementById('step-label').textContent = 'Click the map or search for your starting point';
+    document.getElementById('step-sub').textContent = 'This is where your adventure begins';
+    document.getElementById('address-search-wrap').style.display = 'block';
+    persistTrip();
+};
+
+// ==================== CATEGORY PILLS (multi-activity) ====================
+function buildCategoryChips() {
+    const wrap = document.getElementById('cat-chips');
+    wrap.innerHTML = CATEGORIES.map(cat => {
+        const count = state.allSpots.filter(s => s.cat === cat && s.coordinates && s.coordinates.lat).length;
+        const on = state.visibleCats.has(cat);
+        const color = CAT_COLORS[cat];
+        return `<button class="cat-pill${on?' active':''}" data-cat="${cat}" onclick="window.toggleCat('${cat}')" aria-pressed="${on}"
+            style="${on?`background:${color};`:''}">
+            <span>${CAT_ICONS[cat]}</span>
+            <span>${cat.charAt(0).toUpperCase()+cat.slice(1)}</span>
+            <span class="cp-count">${count}</span>
+        </button>`;
+    }).join('');
+}
+
+window.toggleCat = function(cat) {
+    if (state.visibleCats.has(cat)) {
+        // Don't allow turning off the last visible category
+        if (state.visibleCats.size === 1) return;
+        state.visibleCats.delete(cat);
+    } else {
+        state.visibleCats.add(cat);
+    }
+    state.selectedActivity = [...state.visibleCats][0];
+    buildCategoryChips();
+    renderSpots();
+    persistTrip();
+};
+
 // ==================== SPOT RENDERING ====================
 function renderSpots() {
-    // Remove all existing markers
     allMarkers.forEach(m => map.removeLayer(m.marker));
     allMarkers = [];
-
-    const validSpots = state.allSpots.filter(s =>
-        s.coordinates && s.coordinates.lat && s.coordinates.lng &&
-        state.activeFilters.has(s.cat)
-    );
-
-    validSpots.forEach(spot => {
-        const marker = L.marker(
-            [spot.coordinates.lat, spot.coordinates.lng],
-            { icon: createCircleIcon(CAT_COLORS[spot.cat]) }
-        );
-        marker.bindPopup(popupContent(spot), { maxWidth: 280 });
+    if (state.visibleCats.size === 0) return;
+    state.allSpots.filter(s => s.coordinates && s.coordinates.lat && s.coordinates.lng && state.visibleCats.has(s.cat)).forEach(spot => {
+        const marker = L.marker([spot.coordinates.lat,spot.coordinates.lng],{icon:createCircleIcon(CAT_COLORS[spot.cat])});
+        marker.bindPopup(popupContent(spot),{maxWidth:280});
         marker.addTo(map);
-        allMarkers.push({ marker, spot });
+        allMarkers.push({marker,spot});
     });
-
-    // Re-apply trip number icons
     updateTripMarkers();
 }
 
+let svcTripMarkers = [];
 function updateTripMarkers() {
-    // Update markers that are in the trip to show numbered icons
-    allMarkers.forEach(({ marker, spot }) => {
-        const tripIdx = state.trip.findIndex(s => s.slug === spot.slug && s.cat === spot.cat);
-        if (tripIdx >= 0) {
-            marker.setIcon(createTripIcon(CAT_COLORS[spot.cat], tripIdx + 1));
-        } else {
-            marker.setIcon(createCircleIcon(CAT_COLORS[spot.cat]));
-        }
+    // Update activity spot markers
+    allMarkers.forEach(({marker,spot}) => {
+        const idx = state.trip.findIndex(s => s.slug === spot.slug && s.cat === spot.cat && !s._isService);
+        marker.setIcon(idx >= 0 ? createTripIcon(CAT_COLORS[spot.cat], idx+1) : createCircleIcon(CAT_COLORS[spot.cat]));
+    });
+    // Update/create markers for service stops in trip
+    svcTripMarkers.forEach(m => map.removeLayer(m));
+    svcTripMarkers = [];
+    state.trip.forEach((s, i) => {
+        if (!s._isService || !s.coordinates) return;
+        const color = SVC_COLORS[s.cat] || '#5c6b5f';
+        const emoji = SVC_EMOJIS[s.cat] || '\u{1F4CD}';
+        const m = L.marker([s.coordinates.lat, s.coordinates.lng], {
+            icon: L.divIcon({className:'',html:`<div style="width:28px;height:28px;border-radius:50%;background:${color};border:2.5px solid #fff;display:flex;align-items:center;justify-content:center;font-size:13px;box-shadow:0 2px 10px ${color}50,0 2px 6px rgba(0,0,0,.15)">${emoji}</div>`,iconSize:[28,28],iconAnchor:[14,14]})
+        }).addTo(map);
+        svcTripMarkers.push(m);
     });
 }
 
 // ==================== TRIP MANAGEMENT ====================
 window.addSpotToTrip = function(slug, cat) {
     const spot = state.allSpots.find(s => s.slug === slug && s.cat === cat);
-    if (!spot) return;
-    if (state.trip.find(s => s.slug === slug && s.cat === cat)) return;
+    if (!spot || state.trip.find(s => s.slug === slug && s.cat === cat)) return;
     state.trip.push(spot);
+    if (!state.visibleCats.has(cat)) { state.visibleCats.add(cat); buildCategoryChips(); renderSpots(); }
     updateTripUI();
-    updateRoute();
     updateTripMarkers();
+    updateGenerateBtn();
     map.closePopup();
-    if (!state.sidebarOpen) {
-        state.sidebarOpen = true;
-        document.getElementById('sidebar').classList.add('open');
-    }
+    if (!state.sidebarOpen) { state.sidebarOpen = true; document.getElementById('sidebar').classList.add('open'); }
 };
 
 window.tripRemove = function(idx) {
     state.trip.splice(idx, 1);
     updateTripUI();
-    updateRoute();
     updateTripMarkers();
+    updateGenerateBtn();
+    if (state.phase === 'trip-ready') scheduleRouteUpdate();
 };
 
 window.tripFlyTo = function(idx) {
     const spot = state.trip[idx];
-    if (spot && spot.coordinates) {
-        map.flyTo([spot.coordinates.lat, spot.coordinates.lng], 8, { duration: 0.8 });
-    }
+    if (spot && spot.coordinates) map.flyTo([spot.coordinates.lat,spot.coordinates.lng],8,{duration:.8});
 };
 
 function clearTrip() {
-    state.trip = [];
-    updateTripUI();
-    updateRoute();
-    updateTripMarkers();
+    state.trip = []; state.routeLegs = []; state.services = []; state.weather = {};
+    if (state.startMarker) { map.removeLayer(state.startMarker); state.startMarker = null; }
+    state.startPoint = null;
+    servicesLayer.clearLayers(); routeLayer.clearLayers();
+    updateTripUI(); updateTripMarkers(); updateGenerateBtn();
+    state.phase = 'set-start';
+    document.getElementById('plan-bar').style.display = 'block';
+    document.getElementById('step-label').textContent = 'Click the map or search for your starting point';
+    document.getElementById('step-sub').textContent = 'This is where your adventure begins';
+    document.getElementById('address-search-wrap').style.display = 'block';
+    document.getElementById('generate-btn').style.display = 'none';
+    document.getElementById('services-panel').style.display = 'none';
+    document.getElementById('weather-panel').style.display = 'none';
+    try { localStorage.removeItem(LS_KEY); } catch(e){}
+    if (location.hash) history.replaceState(null, '', location.pathname + location.search);
 }
 
-function updateRoute() {
-    routeLayer.clearLayers();
-    if (state.trip.length < 2) return;
+// ==================== TRIP GENERATION ====================
+window.generateTrip = async function() {
+    if (!state.startPoint || state.trip.length < 1) return;
+    state.phase = 'trip-ready';
+    document.getElementById('plan-bar').style.display = 'none';
 
-    const coords = state.trip
-        .filter(s => s.coordinates)
-        .map(s => [s.coordinates.lat, s.coordinates.lng]);
+    // Show animation
+    const overlay = document.getElementById('gen-overlay');
+    overlay.classList.add('active');
+    startGlobeAnimation();
 
-    if (coords.length < 2) return;
+    // Build coordinates: start + destinations
+    const allPoints = [{lat:state.startPoint.lat,lng:state.startPoint.lng}];
+    state.trip.forEach(s => { if (s.coordinates) allPoints.push({lat:s.coordinates.lat,lng:s.coordinates.lng}); });
 
-    const routeLine = L.polyline(coords, {
-        color: '#c97c5e',
-        weight: 3,
-        opacity: 0.8,
-        dashArray: '8, 6',
-        smoothFactor: 1
+    // Update stats in animation
+    const provs = new Set(state.trip.map(s => s.province).filter(Boolean));
+    document.getElementById('gen-stats').innerHTML = `
+        <div class="gen-stat"><div class="gen-stat-num">${state.trip.length}</div><div class="gen-stat-label">Destinations</div></div>
+        <div class="gen-stat"><div class="gen-stat-num">${provs.size}</div><div class="gen-stat-label">Provinces</div></div>
+        <div class="gen-stat"><div class="gen-stat-num" id="gen-dist-num">--</div><div class="gen-stat-label">Kilometers</div></div>
+    `;
+
+    // Fetch route
+    try {
+        const coords = allPoints.map(p => `${p.lng},${p.lat}`).join(';');
+        const resp = await fetch(`https://router.project-osrm.org/route/v1/driving/${coords}?overview=full&geometries=geojson&steps=false`);
+        const data = await resp.json();
+        if (data.code === 'Ok' && data.routes && data.routes[0]) {
+            const route = data.routes[0];
+            state.routeGeometry = route.geometry;
+            state.routeLegs = route.legs.map(l => ({distance:l.distance,duration:l.duration}));
+            const totalKm = Math.round(route.legs.reduce((a,l)=>a+l.distance,0)/1000);
+            const el = document.getElementById('gen-dist-num');
+            if (el) el.textContent = totalKm;
+
+            L.geoJSON(route.geometry,{style:{color:'#305e3c',weight:5,opacity:.75}}).addTo(routeLayer);
+        } else {
+            drawFallbackRoute(allPoints);
+        }
+    } catch(e) {
+        console.warn('Routing failed:', e);
+        drawFallbackRoute(allPoints);
+    }
+
+    // Fetch services along route
+    if (state.routeGeometry) {
+        fetchNearbyServices(state.routeGeometry);
+    }
+
+    // Fetch weather for each destination
+    fetchAllWeather();
+
+    // Wait for animation then dismiss
+    setTimeout(() => {
+        overlay.classList.remove('active');
+        stopGlobeAnimation();
+        if (!state.sidebarOpen) { state.sidebarOpen = true; document.getElementById('sidebar').classList.add('open'); }
+        document.getElementById('services-panel').style.display = 'block';
+        updateTripUI();
+    }, 4800);
+};
+
+function drawFallbackRoute(pts) {
+    const coords = pts.map(p => [p.lat,p.lng]);
+    if (coords.length >= 2) L.polyline(coords,{color:'#305e3c',weight:3,opacity:.6,dashArray:'8,6'}).addTo(routeLayer);
+}
+
+// ==================== GLOBE ANIMATION ====================
+let globeAnimFrame;
+function startGlobeAnimation() {
+    const canvas = document.getElementById('gen-canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    const cx = canvas.width/2, cy = canvas.height/2;
+    const particles = [];
+    for (let i = 0; i < 200; i++) {
+        particles.push({
+            x: Math.random()*canvas.width, y: Math.random()*canvas.height,
+            r: Math.random()*2+.5, speed: Math.random()*.3+.1,
+            opacity: Math.random()*.5+.1
+        });
+    }
+    let angle = 0;
+    function draw() {
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+        // Stars
+        particles.forEach(p => {
+            ctx.beginPath();
+            ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+            ctx.fillStyle = `rgba(255,255,255,${p.opacity})`;
+            ctx.fill();
+            p.y -= p.speed;
+            if (p.y < 0) { p.y = canvas.height; p.x = Math.random()*canvas.width; }
+        });
+        // Globe
+        const R = Math.min(canvas.width,canvas.height)*0.22;
+        ctx.beginPath();
+        ctx.arc(cx,cy,R,0,Math.PI*2);
+        ctx.strokeStyle = 'rgba(74,222,128,.15)';
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+        ctx.fillStyle = 'rgba(74,222,128,.03)';
+        ctx.fill();
+        // Latitude lines
+        for (let i = -2; i <= 2; i++) {
+            const y = cy + i*(R/3);
+            const rx = Math.sqrt(R*R - (i*R/3)**2);
+            if (rx > 0) {
+                ctx.beginPath();
+                ctx.ellipse(cx,y,rx,rx*.15,0,0,Math.PI*2);
+                ctx.strokeStyle = 'rgba(74,222,128,.08)';
+                ctx.lineWidth = 1;
+                ctx.stroke();
+            }
+        }
+        // Longitude lines rotating
+        for (let i = 0; i < 6; i++) {
+            const a = angle + i*(Math.PI/3);
+            ctx.beginPath();
+            ctx.ellipse(cx,cy,Math.abs(Math.cos(a))*R,R,0,0,Math.PI*2);
+            ctx.strokeStyle = 'rgba(74,222,128,.08)';
+            ctx.lineWidth = 1;
+            ctx.stroke();
+        }
+        // Glowing dots for destinations
+        const trip = state.trip;
+        trip.forEach((s,i) => {
+            if (!s.coordinates) return;
+            const da = angle*2 + i*.5;
+            const dotX = cx + Math.cos(da)*(R*.5+i*15);
+            const dotY = cy + Math.sin(da)*(R*.3+i*10);
+            const pulse = Math.sin(Date.now()/300+i)*3+6;
+            ctx.beginPath();
+            ctx.arc(dotX,dotY,pulse,0,Math.PI*2);
+            ctx.fillStyle = 'rgba(74,222,128,.2)';
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(dotX,dotY,3,0,Math.PI*2);
+            ctx.fillStyle = '#4ade80';
+            ctx.fill();
+        });
+        angle += .003;
+        globeAnimFrame = requestAnimationFrame(draw);
+    }
+    draw();
+}
+function stopGlobeAnimation() { cancelAnimationFrame(globeAnimFrame); }
+
+// ==================== NEARBY SERVICES (OVERPASS) ====================
+function haversine(lat1,lng1,lat2,lng2) {
+    const R=6371,dLat=(lat2-lat1)*Math.PI/180,dLng=(lng2-lng1)*Math.PI/180;
+    const a=Math.sin(dLat/2)**2+Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLng/2)**2;
+    return R*2*Math.atan2(Math.sqrt(a),Math.sqrt(1-a));
+}
+
+function sampleRoutePoints(geometry, intervalKm) {
+    const coords = geometry.coordinates, points = [];
+    let acc = 0;
+    points.push(coords[0]);
+    for (let i=1;i<coords.length;i++) {
+        acc += haversine(coords[i-1][1],coords[i-1][0],coords[i][1],coords[i][0]);
+        if (acc >= intervalKm) { points.push(coords[i]); acc=0; }
+    }
+    if (points.length < 2) points.push(coords[coords.length-1]);
+    return points.slice(0, 15); // Limit sample points
+}
+
+async function fetchNearbyServices(geometry) {
+    servicesLayer.clearLayers();
+    state.services = [];
+    const points = sampleRoutePoints(geometry, 50);
+    if (points.length === 0) return;
+
+    // Build individual around clauses for each point
+    const aroundClauses = points.map(p => `(around:6000,${p[1]},${p[0]})`);
+
+    // Build queries for each type with each point separately
+    let fuelParts = aroundClauses.map(a => `node["amenity"="fuel"]${a};`).join('\n');
+    let restParts = aroundClauses.map(a => `node["amenity"="restaurant"]${a};`).join('\n');
+    let hotelParts = aroundClauses.map(a => `node["tourism"~"hotel|motel"]${a};`).join('\n');
+
+    const query = `[out:json][timeout:20];(\n${fuelParts}\n${restParts}\n${hotelParts}\n);out body 120;`;
+
+    try {
+        const resp = await fetch('https://overpass-api.de/api/interpreter',{
+            method:'POST',body:'data='+encodeURIComponent(query),
+            headers:{'Content-Type':'application/x-www-form-urlencoded'}
+        });
+        const data = await resp.json();
+        state.services = (data.elements||[]).filter(el => el.lat && el.lon);
+        renderServiceMarkers();
+    } catch(e) { console.warn('Overpass failed:', e); }
+}
+
+function renderServiceMarkers() {
+    servicesLayer.clearLayers();
+    state.services.forEach((el, svcIdx) => {
+        let type, color, emoji;
+        if (el.tags.amenity === 'fuel') { type='fuel'; color=SVC_COLORS.fuel; emoji=SVC_EMOJIS.fuel; }
+        else if (el.tags.amenity === 'restaurant') { type='restaurant'; color=SVC_COLORS.restaurant; emoji=SVC_EMOJIS.restaurant; }
+        else { type='hotel'; color=SVC_COLORS.hotel; emoji=SVC_EMOJIS.hotel; }
+
+        if (!state.svcFilters[type]) return;
+
+        const name = el.tags.name || (type==='fuel'?'Gas Station':type==='restaurant'?'Restaurant':'Hotel');
+        const typeLabel = type==='fuel'?'Gas Station':type==='restaurant'?'Restaurant':'Hotel';
+        const alreadyAdded = state.trip.some(s => s._svcId === el.id);
+        L.marker([el.lat,el.lon],{
+            icon: L.divIcon({className:'',html:`<div class="svc-icon" style="background:${color}">${emoji}</div>`,iconSize:[24,24],iconAnchor:[12,12]})
+        }).bindPopup(`<div style="min-width:170px">
+            <div style="font-size:13px;font-weight:600;color:#1c2b21">${name}</div>
+            <div style="font-size:11px;color:#999;margin-top:2px">${typeLabel}</div>
+            <div style="display:flex;gap:6px;margin-top:10px">
+                <button onclick="window.addServiceToTrip(${svcIdx})" style="flex:1;padding:6px 0;background:${color}15;border:1px solid ${color}30;border-radius:8px;color:${color};font-size:11px;font-weight:700;cursor:pointer;opacity:${alreadyAdded?'.5':'1'}" ${alreadyAdded?'disabled':''}>
+                    ${alreadyAdded?'Added &#10003;':'Add as Stop'}
+                </button>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=${el.lat},${el.lon}" target="_blank" rel="noopener" style="flex:1;padding:6px 0;background:#fbfaf7;border:1px solid #e0dbd5;border-radius:8px;color:#5c6b5f;font-size:11px;font-weight:600;text-decoration:none;text-align:center">Directions</a>
+            </div>
+        </div>`,{maxWidth:220}).addTo(servicesLayer);
     });
-    routeLayer.addLayer(routeLine);
+}
+
+// Insert a service stop between the two closest consecutive trip points
+window.addServiceToTrip = function(svcIdx) {
+    const el = state.services[svcIdx];
+    if (!el || state.trip.some(s => s._svcId === el.id)) return;
+
+    const name = el.tags.name || (el.tags.amenity==='fuel'?'Gas Station':el.tags.amenity==='restaurant'?'Restaurant':'Hotel');
+    const type = el.tags.amenity==='fuel'?'fuel':el.tags.amenity==='restaurant'?'restaurant':'hotel';
+
+    // Build the full list of waypoints: start + trip stops
+    const waypoints = [];
+    if (state.startPoint) waypoints.push({lat:state.startPoint.lat, lng:state.startPoint.lng});
+    state.trip.forEach(s => { if (s.coordinates) waypoints.push({lat:s.coordinates.lat, lng:s.coordinates.lng}); });
+
+    // Find which leg (consecutive pair) the service is closest to
+    let bestInsert = state.trip.length; // default: append at end
+    let bestDist = Infinity;
+    for (let i = 0; i < waypoints.length - 1; i++) {
+        const d = distToSegment(el.lat, el.lon, waypoints[i].lat, waypoints[i].lng, waypoints[i+1].lat, waypoints[i+1].lng);
+        if (d < bestDist) { bestDist = d; bestInsert = i; }
+    }
+    // bestInsert is the index in waypoints[] of the leg start
+    // In state.trip[], index 0 = waypoints[1], so tripInsertIdx = bestInsert (after start) or bestInsert for mid-trip
+    // If start is waypoints[0], then trip item i = waypoints[i+1]
+    // Insert after trip index (bestInsert - 1), clamped
+    const tripInsertIdx = Math.max(0, Math.min(bestInsert, state.trip.length));
+
+    const svcStop = {
+        name, slug: '_svc_' + el.id, cat: type, _svcId: el.id, _isService: true,
+        province: '', coordinates: {lat: el.lat, lng: el.lon}
+    };
+    state.trip.splice(tripInsertIdx, 0, svcStop);
+    map.closePopup();
+    updateTripUI();
+    updateTripMarkers();
+    scheduleRouteUpdate();
+    renderServiceMarkers(); // refresh popup states
+    if (!state.sidebarOpen) { state.sidebarOpen = true; document.getElementById('sidebar').classList.add('open'); }
+};
+
+// Distance from point to line segment (in km, using haversine approximation)
+function distToSegment(pLat, pLng, aLat, aLng, bLat, bLng) {
+    const dAP = haversine(aLat, aLng, pLat, pLng);
+    const dBP = haversine(bLat, bLng, pLat, pLng);
+    const dAB = haversine(aLat, aLng, bLat, bLng);
+    if (dAB < 0.01) return dAP; // segment is a point
+    // Project P onto AB using cosine rule
+    const t = Math.max(0, Math.min(1, ((dAP*dAP - dBP*dBP + dAB*dAB) / (2*dAB*dAB))));
+    // Interpolate point on segment
+    const cLat = aLat + t * (bLat - aLat);
+    const cLng = aLng + t * (bLng - aLng);
+    return haversine(cLat, cLng, pLat, pLng);
+}
+
+window.toggleSvcFilter = function(btn) {
+    const svc = btn.dataset.svc;
+    state.svcFilters[svc] = !state.svcFilters[svc];
+    btn.style.opacity = state.svcFilters[svc] ? '1' : '.35';
+    renderServiceMarkers();
+};
+
+// ==================== WEATHER (Open-Meteo) ====================
+async function fetchAllWeather() {
+    state.weather = {};
+    const weatherPanel = document.getElementById('weather-panel');
+    const fetches = state.trip.filter(s => s.coordinates).map(async (spot) => {
+        try {
+            const url = `https://api.open-meteo.com/v1/forecast?latitude=${spot.coordinates.lat}&longitude=${spot.coordinates.lng}&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,weathercode&timezone=America%2FToronto&forecast_days=5`;
+            const resp = await fetch(url);
+            const data = await resp.json();
+            state.weather[spot.slug] = data.daily;
+        } catch(e) {}
+    });
+    await Promise.all(fetches);
+    renderWeather();
+}
+
+function renderWeather() {
+    const panel = document.getElementById('weather-panel');
+    if (Object.keys(state.weather).length === 0) { panel.style.display = 'none'; return; }
+    panel.style.display = 'block';
+
+    let html = '<div style="font-size:12px;font-weight:700;color:#1c2b21;margin-bottom:8px;display:flex;align-items:center;gap:6px">\u{1F326}\uFE0F Weather Forecast</div>';
+
+    state.trip.forEach(spot => {
+        const w = state.weather[spot.slug];
+        if (!w) return;
+
+        // Check for bad weather
+        const hasWarning = w.weathercode.some(c => c >= 61) || w.precipitation_sum.some(p => p > 10);
+
+        html += `<div class="weather-card ${hasWarning?'weather-warn':''}" style="margin-bottom:6px">
+            <div style="font-size:12px;font-weight:600;color:#1c2b21;margin-bottom:6px">${spot.name}</div>
+            <div style="display:flex;gap:4px;overflow-x:auto">`;
+
+        for (let i = 0; i < Math.min(5, w.time.length); i++) {
+            const day = new Date(w.time[i]).toLocaleDateString('en',{weekday:'short'});
+            const code = w.weathercode[i];
+            const icon = WMO_ICONS[code] || '\u2601\uFE0F';
+            const hi = Math.round(w.temperature_2m_max[i]);
+            const lo = Math.round(w.temperature_2m_min[i]);
+            const precip = w.precipitation_sum[i];
+
+            html += `<div style="flex:1;min-width:52px;text-align:center;padding:4px;border-radius:6px;${precip>10?'background:rgba(234,179,8,.1)':''}">
+                <div style="font-size:9px;color:#999;font-weight:600">${day}</div>
+                <div style="font-size:16px;margin:2px 0">${icon}</div>
+                <div style="font-size:10px;font-weight:600;color:#1c2b21">${hi}°</div>
+                <div style="font-size:9px;color:#999">${lo}°</div>
+                ${precip > 0 ? `<div style="font-size:8px;color:#3b82f6;margin-top:1px">${precip}mm</div>` : ''}
+            </div>`;
+        }
+        html += '</div>';
+        if (hasWarning) {
+            html += '<div style="font-size:10px;color:#92400e;margin-top:6px;font-weight:600">\u26A0\uFE0F Weather alert: rain/snow expected. Pack accordingly!</div>';
+        }
+        html += '</div>';
+    });
+
+    panel.innerHTML = html;
+}
+
+// ==================== PROFILE MODAL ====================
+function verificationLabel(spot) {
+    if (spot.verification_status === 'verified') {
+        return spot.last_verified_at ? `Verified ${spot.last_verified_at}` : 'Verified';
+    }
+    if (spot.verification_status === 'stale') return 'Needs seasonal refresh';
+    return 'Needs editorial review';
+}
+
+window.viewProfile = function(slug, cat) {
+    const spot = state.allSpots.find(s => s.slug === slug && s.cat === cat);
+    if (!spot) return;
+    map.closePopup();
+    const color = CAT_COLORS[cat]||'#305e3c';
+    const tags = spot.features||spot.primary_species||spot.primary_game||[];
+    const inTrip = state.trip.find(s => s.slug === slug && s.cat === cat);
+
+    let hdr = `<div style="font-size:10px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;color:${color}">${cat}</div>
+        <h2 style="font-size:20px;font-weight:800;margin-top:4px;color:#1c2b21">${spot.name}</h2>
+        <div style="display:flex;align-items:center;gap:10px;margin-top:6px">
+            <span style="font-size:12px;color:#5c6b5f">${spot.province||''}</span>
+            ${spot.scout_level?`<span style="font-size:10px;font-weight:700;color:${color};background:${color}15;padding:2px 8px;border-radius:8px">${spot.scout_level}</span>`:''}
+        </div>`;
+
+    let body = '';
+    if (tags.length) body += `<div class="pm-section"><div class="pm-section-title">${spot.primary_species?'Species':'Features'}</div><div>${tags.map(t=>`<span class="pm-tag" style="color:${color};border-color:${color}25">${t}</span>`).join('')}</div></div>`;
+    body += `<div class="pm-section"><div class="pm-section-title">Verification</div><div class="pm-section-content">
+        <span class="pm-tag" style="color:${spot.verification_status==='verified'?'#166534':'#92400e'};border-color:${spot.verification_status==='verified'?'#bbf7d0':'#fed7aa'};background:${spot.verification_status==='verified'?'#f0fdf4':'#fff7ed'}">${verificationLabel(spot)}</span>
+        <span class="pm-tag">Confidence: ${spot.confidence||'unverified'}</span>
+    </div></div>`;
+    if (spot.description) body += `<div class="pm-section"><div class="pm-section-title">Overview</div><div class="pm-section-content">${spot.description.split('\n')[0]}</div></div>`;
+    if (spot.seasonal_tips) body += `<div class="pm-section"><div class="pm-section-title">Seasonal Tips</div><div class="pm-section-content">${spot.seasonal_tips}</div></div>`;
+    if (spot.best_time) body += `<div class="pm-section"><div class="pm-section-title">Best Time</div><div class="pm-section-content">${spot.best_time.split('\n').slice(0,3).join('<br>')}</div></div>`;
+
+    const addStyle = inTrip ? `style="flex:1;padding:9px 0;background:#f0ede8;border:1px solid #e8e4df;border-radius:8px;color:#999;font-size:13px;font-weight:700;cursor:default"` : `style="flex:1;padding:9px 0;background:${color}12;border:1px solid ${color}30;border-radius:8px;color:${color};font-size:13px;font-weight:700;cursor:pointer"`;
+    body += `<div style="display:flex;gap:8px;margin-top:20px;padding-top:16px;border-top:1px solid #f0ede8">
+        <button onclick="window.addSpotToTrip('${slug}','${cat}');window.closeProfile()" ${inTrip?'disabled ':''} ${addStyle}>${inTrip?'Added &#10003;':'Add to Trip'}</button>
+        <a href="/en/${cat}/${slug}" style="flex:1;padding:9px 0;background:#305e3c12;border:1px solid #305e3c30;border-radius:8px;color:#305e3c;font-size:13px;font-weight:700;text-decoration:none;text-align:center">Full Page</a>
+    </div>`;
+    if (spot.source_url || spot.official_regulation_url) {
+        body += `<div style="display:flex;gap:8px;margin-top:8px">
+            ${spot.source_url?`<a href="${spot.source_url}" target="_blank" rel="noopener noreferrer" style="flex:1;padding:8px 0;background:#f8f7f5;border:1px solid #e8e4df;border-radius:8px;color:#5c6b5f;font-size:12px;font-weight:700;text-decoration:none;text-align:center">Source</a>`:''}
+            ${spot.official_regulation_url?`<a href="${spot.official_regulation_url}" target="_blank" rel="noopener noreferrer" style="flex:1;padding:8px 0;background:#f8f7f5;border:1px solid #e8e4df;border-radius:8px;color:#5c6b5f;font-size:12px;font-weight:700;text-decoration:none;text-align:center">Rules</a>`:''}
+        </div>`;
+    }
+
+    document.getElementById('pm-header').innerHTML = hdr;
+    document.getElementById('pm-body').innerHTML = body;
+    document.getElementById('profile-modal-overlay').classList.add('open');
+};
+window.closeProfile = function() { document.getElementById('profile-modal-overlay').classList.remove('open'); };
+
+// ==================== ROUTING HELPER ====================
+function scheduleRouteUpdate() { clearTimeout(routeDebounce); routeDebounce = setTimeout(updateRouteOnly, 400); }
+async function updateRouteOnly() {
+    routeLayer.clearLayers();
+    if (state.trip.length < 1 || !state.startPoint) return;
+    const allPts = [{lat:state.startPoint.lat,lng:state.startPoint.lng}];
+    state.trip.forEach(s => { if (s.coordinates) allPts.push({lat:s.coordinates.lat,lng:s.coordinates.lng}); });
+    if (allPts.length < 2) return;
+    try {
+        const coords = allPts.map(p=>`${p.lng},${p.lat}`).join(';');
+        const resp = await fetch(`https://router.project-osrm.org/route/v1/driving/${coords}?overview=full&geometries=geojson&steps=false`);
+        const data = await resp.json();
+        if (data.code==='Ok'&&data.routes&&data.routes[0]) {
+            state.routeGeometry = data.routes[0].geometry;
+            state.routeLegs = data.routes[0].legs.map(l=>({distance:l.distance,duration:l.duration}));
+            L.geoJSON(data.routes[0].geometry,{style:{color:'#305e3c',weight:5,opacity:.75}}).addTo(routeLayer);
+            if (state.services.length > 0) renderServiceMarkers();
+        }
+    } catch(e) {}
+    updateTripUI();
 }
 
 // ==================== UI ====================
+function fmt(m) { return m>=1000?(m/1000).toFixed(0)+' km':m.toFixed(0)+' m'; }
+function fmtT(s) { const h=Math.floor(s/3600),m=Math.floor((s%3600)/60); return h>0?`${h}h ${m}m`:`${m}m`; }
+
 function updateTripUI() {
     const list = document.getElementById('trip-list');
     const countEl = document.getElementById('trip-count');
     const stats = document.getElementById('trip-stats');
-
     countEl.textContent = state.trip.length;
 
+    document.getElementById('trip-actions').style.display = 'none';
+
     if (state.trip.length === 0) {
-        list.innerHTML = `<div style="text-align:center; padding:48px 16px; color:#444;">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5" style="margin:0 auto 16px;">
-                <path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
-            </svg>
-            <p style="font-size:13px; line-height:1.5;">Click spots on the map to explore and build your route</p>
-        </div>`;
+        const hint = state.startPoint ? 'Click coloured spots on the map to add destinations' : 'Pick a starting point, then add spots along the way';
+        list.innerHTML = `<div style="text-align:center;padding:48px 16px;color:#999"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5" style="margin:0 auto 16px"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg><p style="font-size:13px;line-height:1.5">${hint}</p></div>`;
         stats.style.display = 'none';
+        persistTrip();
         return;
     }
 
-    const provs = new Set(state.trip.map(s => s.province).filter(Boolean));
-    stats.style.display = 'block';
-    stats.innerHTML = `${state.trip.length} stop${state.trip.length !== 1 ? 's' : ''} &middot; ${provs.size} province${provs.size !== 1 ? 's' : ''}`;
+    // Show share / directions actions once there is something to share
+    if (state.startPoint || state.trip.length) {
+        const actions = document.getElementById('trip-actions');
+        actions.style.display = 'flex';
+        const gmaps = document.getElementById('gmaps-link');
+        const url = buildGoogleMapsUrl();
+        if (url) { gmaps.href = url; gmaps.style.display = 'flex'; } else { gmaps.style.display = 'none'; }
+    }
 
-    list.innerHTML = state.trip.map((s, i) => `
-        <div class="trip-stop" onclick="window.tripFlyTo(${i})">
-            <div class="snum" style="background:${CAT_COLORS[s.cat]}18; color:${CAT_COLORS[s.cat]}; border:1px solid ${CAT_COLORS[s.cat]}35;">${i + 1}</div>
-            <div style="flex:1; min-width:0;">
-                <div style="font-size:12px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:#ddd;">${s.name}</div>
-                <div style="font-size:10px; color:#666; text-transform:uppercase; letter-spacing:0.5px; margin-top:1px;">${s.cat}${s.province ? ' &middot; ' + s.province : ''}</div>
+    // Stats
+    const provs = new Set(state.trip.map(s=>s.province).filter(Boolean));
+    let sh = `<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap"><span style="font-weight:700;color:#1c2b21">${state.trip.length} destination${state.trip.length!==1?'s':''}</span><span style="color:#ccc">\u00B7</span><span>${provs.size} province${provs.size!==1?'s':''}</span>`;
+    if (state.routeLegs.length > 0) {
+        const td = state.routeLegs.reduce((a,l)=>a+l.distance,0);
+        const tt = state.routeLegs.reduce((a,l)=>a+l.duration,0);
+        sh += `<span style="color:#ccc">\u00B7</span><span>${fmt(td)}</span><span style="color:#ccc">\u00B7</span><span>${fmtT(tt)} drive</span>`;
+    }
+    sh += '</div>';
+    if (state.startPoint) {
+        sh += `<div style="margin-top:6px;font-size:11px;color:#999">\u{1F4CD} From: ${state.startPoint.name}</div>`;
+    }
+    stats.style.display = 'block';
+    stats.innerHTML = sh;
+
+    // Trip list
+    let html = '';
+    // Start point
+    if (state.startPoint) {
+        html += `<div class="trip-stop" style="background:#e8f5e9;border-color:#a5d6a7" onclick="map.flyTo([${state.startPoint.lat},${state.startPoint.lng}],8,{duration:.8})">
+            <div class="snum" style="background:#305e3c;color:#fff;font-size:10px">S</div>
+            <div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:600;color:#305e3c">Starting Point</div><div style="font-size:10px;color:#5c6b5f">${state.startPoint.name}</div></div>
+        </div>`;
+        if (state.routeLegs[0]) {
+            html += `<div class="leg-info"><svg width="10" height="16" viewBox="0 0 10 16"><line x1="5" y1="0" x2="5" y2="16" stroke="#ccc" stroke-width="1.5" stroke-dasharray="2,2"/></svg>${fmt(state.routeLegs[0].distance)} \u00B7 ${fmtT(state.routeLegs[0].duration)}</div>`;
+        }
+    }
+
+    state.trip.forEach((s,i) => {
+        const isSvc = s._isService;
+        const color = isSvc ? (SVC_COLORS[s.cat]||'#5c6b5f') : (CAT_COLORS[s.cat]||'#305e3c');
+        const svcEmoji = isSvc ? (SVC_EMOJIS[s.cat]||'\u{1F4CD}') : '';
+        const svcLabel = isSvc ? (s.cat==='fuel'?'Gas Station':s.cat==='restaurant'?'Restaurant':'Hotel') : '';
+        html += `<div class="trip-stop" draggable="true" data-idx="${i}" onclick="window.tripFlyTo(${i})" style="${isSvc?'background:'+color+'08;border-color:'+color+'25':''}">
+            <div class="snum" style="background:${color}15;color:${color};border:1px solid ${color}30;font-size:${isSvc?'13px':'11px'}">${isSvc ? svcEmoji : (i+1)}</div>
+            <div style="flex:1;min-width:0">
+                <div style="font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#1c2b21">${s.name}</div>
+                <div style="font-size:10px;color:#999;text-transform:uppercase;letter-spacing:.5px;margin-top:1px">${isSvc ? svcLabel : (s.province||'')}</div>
             </div>
-            <button class="srem" onclick="event.stopPropagation(); window.tripRemove(${i})" title="Remove">&times;</button>
-        </div>
-    `).join('');
+            <button class="srem" onclick="event.stopPropagation();window.tripRemove(${i})" title="Remove">&times;</button>
+        </div>`;
+        // Leg info (offset by 1 since first leg is start->first destination)
+        const legIdx = i + 1;
+        if (legIdx < state.routeLegs.length) {
+            html += `<div class="leg-info"><svg width="10" height="16" viewBox="0 0 10 16"><line x1="5" y1="0" x2="5" y2="16" stroke="#ccc" stroke-width="1.5" stroke-dasharray="2,2"/></svg>${fmt(state.routeLegs[legIdx].distance)} \u00B7 ${fmtT(state.routeLegs[legIdx].duration)}</div>`;
+        }
+    });
+
+    list.innerHTML = html;
+    setupDragAndDrop();
+    persistTrip();
 }
 
-// ==================== FILTERS ====================
-document.querySelectorAll('.fchip').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const cat = btn.dataset.cat;
-        if (state.activeFilters.has(cat)) {
-            if (state.activeFilters.size === 1) return;
-            state.activeFilters.delete(cat);
-            btn.classList.remove('active');
-        } else {
-            state.activeFilters.add(cat);
-            btn.classList.add('active');
-        }
-        renderSpots();
+// ==================== DRAG & DROP ====================
+function setupDragAndDrop() {
+    let dragIdx = null;
+    document.querySelectorAll('.trip-stop[draggable]').forEach(item => {
+        item.addEventListener('dragstart', e => { dragIdx = parseInt(item.dataset.idx); item.classList.add('dragging'); e.dataTransfer.effectAllowed='move'; });
+        item.addEventListener('dragend', () => { item.classList.remove('dragging'); dragIdx=null; });
+        item.addEventListener('dragover', e => { e.preventDefault(); e.dataTransfer.dropEffect='move'; });
+        item.addEventListener('drop', e => {
+            e.preventDefault();
+            const dropIdx = parseInt(item.dataset.idx);
+            if (dragIdx !== null && dragIdx !== dropIdx) {
+                const moved = state.trip.splice(dragIdx,1)[0];
+                state.trip.splice(dropIdx,0,moved);
+                updateTripUI(); updateTripMarkers();
+                if (state.phase === 'trip-ready') scheduleRouteUpdate();
+            }
+        });
     });
-});
+}
 
 // ==================== EVENTS ====================
 document.getElementById('sidebar-toggle').addEventListener('click', () => {
     state.sidebarOpen = !state.sidebarOpen;
     document.getElementById('sidebar').classList.toggle('open', state.sidebarOpen);
 });
-
 document.getElementById('clear-trip').addEventListener('click', clearTrip);
 
-document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') {
-        if (state.sidebarOpen) {
-            state.sidebarOpen = false;
-            document.getElementById('sidebar').classList.remove('open');
-        }
+// Address search
+document.getElementById('address-search-input').addEventListener('input', function() {
+    const q = this.value.trim();
+    clearTimeout(geocodeDebounce);
+    const box = document.getElementById('address-search-results');
+    if (q.length < 3) { box.style.display = 'none'; return; }
+    geocodeDebounce = setTimeout(async () => {
+        box.innerHTML = '<div style="padding:12px 14px;font-size:12px;color:#999">Searching...</div>';
+        box.style.display = 'block';
+        geocodeResults = await geocodeAddress(q);
+        renderGeocodeResults(geocodeResults);
+    }, 350);
+});
+document.getElementById('address-search-input').addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') { document.getElementById('address-search-results').style.display = 'none'; }
+});
+document.addEventListener('click', function(e) {
+    const wrap = document.getElementById('address-search-wrap');
+    if (wrap && !wrap.contains(e.target)) {
+        document.getElementById('address-search-results').style.display = 'none';
     }
 });
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+        if (document.getElementById('profile-modal-overlay').classList.contains('open')) window.closeProfile();
+        else if (state.sidebarOpen) { state.sidebarOpen=false; document.getElementById('sidebar').classList.remove('open'); }
+    }
+});
+document.getElementById('profile-modal-overlay').addEventListener('click', function(e) { if (e.target===this) window.closeProfile(); });
+
+// ==================== PERSISTENCE ====================
+function serializeTrip() {
+    return {
+        a: state.selectedActivity,
+        v: [...state.visibleCats],
+        s: state.startPoint ? {lat:state.startPoint.lat, lng:state.startPoint.lng, name:state.startPoint.name} : null,
+        t: state.trip.map(s => s._isService
+            ? {svc:1, id:s._svcId, name:s.name, cat:s.cat, lat:s.coordinates.lat, lng:s.coordinates.lng}
+            : {slug:s.slug, cat:s.cat})
+    };
+}
+function persistTrip() {
+    try {
+        const data = serializeTrip();
+        if (!data.a && !data.s && data.t.length === 0) { localStorage.removeItem(LS_KEY); return; }
+        localStorage.setItem(LS_KEY, JSON.stringify(data));
+    } catch(e) {}
+}
+function deserializeTrip(obj) {
+    const trip = [];
+    (obj.t||[]).forEach(item => {
+        if (item.svc) {
+            trip.push({name:item.name, slug:'_svc_'+item.id, cat:item.cat, _svcId:item.id, _isService:true, province:'', coordinates:{lat:item.lat, lng:item.lng}});
+        } else {
+            const spot = state.allSpots.find(s => s.slug === item.slug && s.cat === item.cat);
+            if (spot) trip.push(spot);
+        }
+    });
+    let vis = (obj.v && obj.v.length) ? obj.v.slice() : (obj.a ? [obj.a] : []);
+    trip.forEach(s => { if (!s._isService && !vis.includes(s.cat)) vis.push(s.cat); });
+    return { activity: obj.a || (trip[0] && trip[0].cat) || 'fishing', visibleCats: vis, startPoint: obj.s, trip };
+}
+
+// ==================== SHARE LINK ====================
+function encodeTripToHash() {
+    try { return btoa(unescape(encodeURIComponent(JSON.stringify(serializeTrip())))); } catch(e) { return ''; }
+}
+function decodeTripFromHash(h) {
+    try { return JSON.parse(decodeURIComponent(escape(atob(h)))); } catch(e) { return null; }
+}
+
+window.shareTrip = function() {
+    const hash = encodeTripToHash();
+    const url = location.origin + location.pathname + '#trip=' + hash;
+    history.replaceState(null, '', '#trip=' + hash);
+    const title = 'My Outdoor Intel trip';
+    if (navigator.share) {
+        navigator.share({title, text:'Check out this trip I planned on Outdoor Intel', url}).catch(()=>{});
+        return;
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(() => showToast('&#128279; Trip link copied to clipboard'))
+            .catch(() => promptCopy(url));
+    } else { promptCopy(url); }
+};
+function promptCopy(url) {
+    window.prompt('Copy your shareable trip link:', url);
+}
+
+// ==================== GOOGLE MAPS EXPORT ====================
+function buildGoogleMapsUrl() {
+    const pts = [];
+    if (state.startPoint) pts.push([state.startPoint.lat, state.startPoint.lng]);
+    state.trip.forEach(s => { if (s.coordinates) pts.push([s.coordinates.lat, s.coordinates.lng]); });
+    if (pts.length < 2) return null;
+    const origin = pts[0].join(',');
+    const destination = pts[pts.length-1].join(',');
+    const waypoints = pts.slice(1, -1).slice(0, 9).map(p => p.join(',')).join('|'); // Google limits free waypoints
+    let url = 'https://www.google.com/maps/dir/?api=1&travelmode=driving&origin=' + origin + '&destination=' + destination;
+    if (waypoints) url += '&waypoints=' + encodeURIComponent(waypoints);
+    return url;
+}
+
+// ==================== TOAST ====================
+let toastTimer = null;
+function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.innerHTML = msg;
+    t.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => t.classList.remove('show'), 2600);
+}
+
+// ==================== MAP BOUNDS ====================
+function fitTripBounds() {
+    const pts = [];
+    if (state.startPoint) pts.push([state.startPoint.lat, state.startPoint.lng]);
+    state.trip.forEach(s => { if (s.coordinates) pts.push([s.coordinates.lat, s.coordinates.lng]); });
+    if (pts.length === 1) { map.setView(pts[0], 8); }
+    else if (pts.length > 1) { map.fitBounds(pts, {padding:[80,80], maxZoom:9}); }
+}
+
+// ==================== RESTORE A SAVED / SHARED TRIP ====================
+function applyRestored(obj) {
+    const d = deserializeTrip(obj);
+    if (!d.startPoint && d.trip.length === 0 && !d.activity) return false;
+
+    state.selectedActivity = d.activity;
+    state.visibleCats = new Set(d.visibleCats.length ? d.visibleCats : [d.activity]);
+
+    document.getElementById('activity-picker').classList.add('hidden');
+    buildCategoryChips();
+    document.getElementById('cat-chips').style.display = 'flex';
+    document.getElementById('plan-bar').style.display = 'block';
+    document.getElementById('address-search-wrap').style.display = 'block';
+
+    if (d.startPoint) setStartPoint(d.startPoint.lat, d.startPoint.lng, d.startPoint.name || 'My Starting Point', true);
+    state.trip = d.trip;
+    renderSpots();
+    updateTripMarkers();
+    updateGenerateBtn();
+
+    if (d.startPoint && d.trip.length) {
+        state.phase = 'trip-ready';
+        document.getElementById('plan-bar').style.display = 'none';
+        document.getElementById('services-panel').style.display = 'block';
+        state.sidebarOpen = true;
+        document.getElementById('sidebar').classList.add('open');
+        updateTripUI();
+        updateRouteOnly().then(() => { if (state.routeGeometry) fetchNearbyServices(state.routeGeometry); });
+        fetchAllWeather();
+        fitTripBounds();
+    } else if (d.startPoint) {
+        advanceToDestinations();
+        fitTripBounds();
+    } else {
+        // Spots added (e.g. from the directory) but no start point chosen yet
+        state.phase = 'set-start';
+        document.getElementById('step-label').textContent = 'Click the map or search for your starting point';
+        document.getElementById('step-sub').textContent = 'This is where your adventure begins';
+        updateTripUI();
+        if (d.trip.length) {
+            state.sidebarOpen = true;
+            document.getElementById('sidebar').classList.add('open');
+            fitTripBounds();
+        }
+    }
+    return true;
+}
+
+// ==================== DEEP-LINK: ?add=cat:slug ====================
+function handleAddParam(param) {
+    // param like "fishing:lake-superior" or "fishing:lake-superior,camping:algonquin"
+    const items = param.split(',').map(s => s.trim()).filter(Boolean);
+    let added = 0, firstSpot = null;
+    items.forEach(it => {
+        const [cat, ...rest] = it.split(':');
+        const slug = rest.join(':');
+        if (!cat || !slug) return;
+        const spot = state.allSpots.find(s => s.slug === slug && s.cat === cat);
+        if (!spot) return;
+        if (!state.selectedActivity) { // first-time entry via deep link — behave like picking that activity
+            state.selectedActivity = cat;
+            state.visibleCats = new Set([cat]);
+            document.getElementById('activity-picker').classList.add('hidden');
+            buildCategoryChips();
+            document.getElementById('cat-chips').style.display = 'flex';
+            document.getElementById('plan-bar').style.display = 'block';
+            document.getElementById('address-search-wrap').style.display = 'block';
+            document.getElementById('step-label').textContent = 'Click the map or search for your starting point';
+            document.getElementById('step-sub').textContent = 'This is where your adventure begins';
+            state.phase = state.phase === 'pick-activity' ? 'set-start' : state.phase;
+        }
+        if (!state.trip.find(s => s.slug === slug && s.cat === cat)) {
+            state.visibleCats.add(cat);
+            state.trip.push(spot);
+            firstSpot = firstSpot || spot;
+            added++;
+        }
+    });
+    if (added) {
+        buildCategoryChips();
+        renderSpots();
+        updateTripUI();
+        updateTripMarkers();
+        updateGenerateBtn();
+        state.sidebarOpen = true;
+        document.getElementById('sidebar').classList.add('open');
+        if (firstSpot && firstSpot.coordinates) map.setView([firstSpot.coordinates.lat, firstSpot.coordinates.lng], 7);
+        showToast('&#10003; Added ' + added + ' spot' + (added>1?'s':'') + ' to your trip');
+    }
+    // strip the param so a refresh doesn't re-add
+    const url = new URL(location.href);
+    url.searchParams.delete('add');
+    history.replaceState(null, '', url.pathname + (url.search || '') + location.hash);
+}
 
 // ==================== INIT ====================
 async function init() {
     try {
-        const allSpots = await loadAllData();
-        state.allSpots = allSpots;
-        renderSpots();
+        state.allSpots = await loadAllData();
+        buildActivityPicker();
 
-        // Fade help hint
-        setTimeout(() => {
-            const hint = document.getElementById('help-hint');
-            if (hint) {
-                hint.style.opacity = '0';
-                setTimeout(() => hint.remove(), 1500);
-            }
-        }, 6000);
-
-    } catch (err) {
-        console.error('Failed to initialize:', err);
-    }
+        // 1) A shared trip in the URL hash wins (someone opened a shared link)
+        let restoredFromHash = false;
+        if (location.hash.indexOf('#trip=') === 0) {
+            const obj = decodeTripFromHash(location.hash.slice(6));
+            if (obj) restoredFromHash = applyRestored(obj);
+        }
+        // 2) Otherwise restore the user's own saved trip from localStorage
+        if (!restoredFromHash) {
+            let saved = null;
+            try { const raw = localStorage.getItem(LS_KEY); if (raw) saved = JSON.parse(raw); } catch(e) {}
+            if (saved) applyRestored(saved);
+        }
+        // 3) Deep-link add (?add=cat:slug) — layers on top of whatever is loaded
+        const addParam = new URLSearchParams(location.search).get('add');
+        if (addParam) handleAddParam(addParam);
+    } catch(e) { console.error('Init failed:', e); }
 }
-
 init();
 </script>
 <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js');}</script>
+
+<!-- Global Search Overlay -->
+<div id="global-search-overlay" class="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm hidden" style="transition:opacity .2s">
+    <div class="flex items-start justify-center pt-[15vh] px-4">
+        <div class="bg-white rounded-2xl w-full max-w-2xl overflow-hidden" style="box-shadow:0 25px 50px rgba(0,0,0,.25)">
+            <div class="flex items-center gap-3 px-6 py-4 border-b border-[#305e3c]/10">
+                <svg class="w-5 h-5 text-[#5c6b5f] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                <input id="global-search-input" type="text" placeholder="Search 499+ spots across Canada..." class="flex-1 text-lg text-[#1c2b21] placeholder-[#5c6b5f]/50 outline-none bg-transparent" autocomplete="off">
+                <kbd class="hidden sm:inline-block text-xs text-[#5c6b5f] bg-[#fbfaf7] px-2 py-1 rounded font-mono">ESC</kbd>
+            </div>
+            <div id="global-search-results" class="max-h-[50vh] overflow-y-auto">
+                <div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+(function(){
+    var overlay=document.getElementById('global-search-overlay'),input=document.getElementById('global-search-input'),results=document.getElementById('global-search-results'),toggle=document.getElementById('global-search-toggle'),spotsData=null;
+    var CATS=['fishing','hunting','camping','kayaking','skiing','hiking'];
+    var CI={fishing:'\u{1F3A3}',hunting:'\u{1F98C}',camping:'\u26FA',kayaking:'\u{1F6F6}',skiing:'\u26F7\uFE0F',hiking:'\u{1F97E}'};
+    function isEn(){return!window.location.pathname.startsWith('/fr')}
+    function bp(){var p=window.location.pathname,d=(p.match(/\//g)||[]).length-1;if(p==='/'||p==='/index.html')return'';var s=[];for(var i=0;i<d;i++)s.push('..');return s.join('/')||'.'}
+    async function load(){if(spotsData)return spotsData;spotsData=[];var b=bp();for(var i=0;i<CATS.length;i++){try{var r=await fetch((b?b+'/':'/')+'/data/'+CATS[i]+'.json'),d=await r.json();d.spots.forEach(function(s){spotsData.push({name:s.name,slug:s.slug,province:s.province,category:CATS[i],species:s.primary_species||s.primary_game||s.features||[],scout_level:s.scout_level||''})});}catch(e){}}return spotsData}
+    function render(m){if(!m.length){results.innerHTML='<div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">No spots found.</div>';return}var l=isEn()?'en':'fr',b=bp(),h=m.slice(0,12).map(function(s){var hr=(b?b+'/':'/')+l+'/'+s.category+'/'+s.slug+'.html',ic=CI[s.category]||'',sub=s.province+' \u2022 '+s.category.charAt(0).toUpperCase()+s.category.slice(1);if(s.species.length)sub+=' \u2022 '+s.species.slice(0,2).join(', ');return'<a href="'+hr+'" class="flex items-center gap-4 px-6 py-3 hover:bg-[#f4f3ec] transition-colors"><span class="text-xl flex-shrink-0">'+ic+'</span><div class="flex-1 min-w-0"><div class="font-semibold text-[#305e3c] truncate">'+s.name+'</div><div class="text-xs text-[#5c6b5f] truncate">'+sub+'</div></div><span class="text-xs font-bold text-[#3d7a4d] flex-shrink-0">'+s.scout_level+'</span></a>'}).join('');if(m.length>12)h+='<div class="px-6 py-3 text-center text-xs text-[#5c6b5f]">'+(m.length-12)+' more...</div>';results.innerHTML=h}
+    function search(q){if(!spotsData)return;q=q.toLowerCase().trim();if(!q){results.innerHTML='<div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">Type to search...</div>';return}render(spotsData.filter(function(s){return s.name.toLowerCase().includes(q)||s.province.toLowerCase().includes(q)||s.category.toLowerCase().includes(q)||s.species.some(function(sp){return sp.toLowerCase().includes(q)})}))}
+    function open(){overlay.classList.remove('hidden');document.body.style.overflow='hidden';input.value='';input.focus();load();results.innerHTML='<div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">Type to search...</div>'}
+    function close(){overlay.classList.add('hidden');document.body.style.overflow=''}
+    if(toggle)toggle.addEventListener('click',open);
+    overlay.addEventListener('click',function(e){if(e.target===overlay)close()});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')close();if((e.metaKey||e.ctrlKey)&&e.key==='k'){e.preventDefault();open()}});
+    input.addEventListener('input',function(){search(this.value)});
+})();
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

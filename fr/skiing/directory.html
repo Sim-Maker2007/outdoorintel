@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#2d5a3d">
+    <meta name="theme-color" content="#14251a">
     <link rel="alternate" type="application/rss+xml" title="Outdoor Intel Blog" href="https://outdoorintel.ca/rss.xml">
-    <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
-    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
     <title>Répertoire de ski | Outdoor Intel</title>
     <meta name="description" content="Explorez 36 stations de ski et sentiers canadiens.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <link rel="canonical" href="https://outdoorintel.ca/fr/skiing/directory.html">
+    <link rel="canonical" href="https://outdoorintel.ca/fr/skiing/directory">
     <meta property="og:title" content="Répertoire de ski | Outdoor Intel">
     <meta property="og:description" content="Explorez 36 stations de ski et sentiers canadiens.">
     <meta property="og:image" content="https://outdoorintel.ca/assets/heros/scout-hero-2.jpg">
-    <meta property="og:url" content="https://outdoorintel.ca/fr/skiing/directory.html">
+    <meta property="og:url" content="https://outdoorintel.ca/fr/skiing/directory">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Outdoor Intel">
     <meta property="og:locale" content="fr_CA">
@@ -25,14 +23,14 @@
     <meta name="twitter:title" content="Répertoire de ski | Outdoor Intel">
     <meta name="twitter:description" content="Explorez 36 stations de ski et sentiers canadiens.">
     <meta name="twitter:image" content="https://outdoorintel.ca/assets/heros/scout-hero-2.jpg">
-    <link rel="alternate" hreflang="en" href="https://outdoorintel.ca/en/skiing/directory.html">
-    <link rel="alternate" hreflang="fr" href="https://outdoorintel.ca/fr/skiing/directory.html">
-    <link rel="alternate" hreflang="x-default" href="https://outdoorintel.ca/en/skiing/directory.html">
+    <link rel="alternate" hreflang="en" href="https://outdoorintel.ca/en/skiing/directory">
+    <link rel="alternate" hreflang="fr" href="https://outdoorintel.ca/fr/skiing/directory">
+    <link rel="alternate" hreflang="x-default" href="https://outdoorintel.ca/en/skiing/directory">
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Ski Répertoire - Outdoor Intel","description":"Explorez 36 stations de ski et sentiers canadiens.","url":"https://outdoorintel.ca/fr/skiing/directory","numberOfItems":36,"provider":{"@type":"Organization","name":"Outdoor Intel","url":"https://outdoorintel.ca"}}</script>
     
     
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://outdoorintel.ca/"},{"@type":"ListItem","position":2,"name":"Ski","item":"https://outdoorintel.ca/fr/skiing/directory"}]}</script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/site.css?v=1">
 
     <!-- Google Analytics (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8Q00962P"></script>
@@ -42,66 +40,84 @@
       gtag('js', new Date());
       gtag('config', 'G-QY8Q00962P');
     </script>
+<style id="oi-ds">.explore-dropdown{visibility:hidden;opacity:0;transform:translateY(6px);transition:opacity .15s ease,transform .15s ease,visibility .15s}.explore-group:hover .explore-dropdown,.explore-group:focus-within .explore-dropdown{visibility:visible;opacity:1;transform:translateY(0)}</style>
 </head>
-<body class="bg-[#f5f3f0] text-[#3e3127] font-sans leading-relaxed">
+<body class="bg-[#fbfaf7] text-[#1c2b21] font-sans leading-relaxed">
 
-    <header class="fixed top-0 w-full z-50 border-b border-[#2d5a3d]/10 bg-white/95 backdrop-blur-md">
-    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <a href="../../index.html" class="flex-shrink-0">
-            <img src="../../assets/logo/logo.jpg" alt="Outdoor Intel" width="180" height="101" class="h-10 md:h-14 w-auto object-contain">
+    <header data-oi-ds class="fixed top-0 w-full z-[1000] bg-[#14251a] border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between gap-6">
+        <a href="/fr/" class="flex items-center gap-3 flex-shrink-0" aria-label="Outdoor Intel">
+            <span class="w-9 h-9 rounded-lg bg-white flex items-center justify-center text-[#14251a] font-extrabold text-sm tracking-tight">OI</span>
+            <span class="text-white font-bold text-lg tracking-tight">Outdoor Intel</span>
         </a>
-        <nav class="hidden lg:flex gap-6 text-sm font-semibold text-[#3e3127]">
-            <a href="../../fr/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Pêche</a>
-            <a href="../../fr/hunting/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Chasse</a>
-            <a href="../../fr/camping/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Camping</a>
-            <a href="../../fr/kayaking/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Kayak</a>
-            <a href="../../fr/skiing/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Ski</a>
-            <a href="../../fr/hiking/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Randonnée</a>
-            <a href="../../en/map.html" class="hover:text-[#c97c5e] transition-colors py-2">Carte</a>
-            <a href="../../fr/blog.html" class="hover:text-[#c97c5e] transition-colors py-2">Blogue</a>
-            <a href="../../en/fishing/directory.html" class="text-[#c97c5e] font-bold hover:text-[#2d5a3d] transition-colors py-2">English</a>
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-white/90">
+            <div class="explore-group relative">
+                <button class="flex items-center gap-1.5 py-2 hover:text-white transition-colors" aria-haspopup="true">
+                    Explorer
+                    <svg class="w-3.5 h-3.5 text-[#a2c99a]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+                </button>
+                <div class="explore-dropdown absolute left-0 top-full pt-2 w-52">
+                    <div class="bg-white rounded-xl py-2 shadow-xl border border-[#14251a]/10">
+                        <a href="/fr/fishing/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">🎣 Pêche</a>
+                        <a href="/fr/hunting/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">🦌 Chasse</a>
+                        <a href="/fr/camping/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">⛺ Camping</a>
+                        <a href="/fr/kayaking/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">🛶 Kayak</a>
+                        <a href="/fr/skiing/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">⛷️ Ski</a>
+                        <a href="/fr/hiking/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">🥾 Randonnée</a>
+                    </div>
+                </div>
+            </div>
+            <a href="/en/map" class="py-2 hover:text-white transition-colors">Carte</a>
+            <a href="/en/trip-planner" class="py-2 hover:text-white transition-colors">Planificateur</a>
+            <a href="/fr/blog" class="py-2 hover:text-white transition-colors">Blogue</a>
+            <span class="inline-flex items-center gap-1.5 border border-white/25 rounded-full px-4 py-1.5 text-xs font-bold"><a href="/en/skiing/directory" class="text-[#a2c99a] hover:text-white transition-colors" lang="en">EN</a><span class="text-white/30">|</span><span class="text-white">FR</span></span>
+            <button id="global-search-toggle" class="w-9 h-9 rounded-full border border-white/25 flex items-center justify-center hover:bg-white/10 transition-colors" aria-label="Search">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            </button>
         </nav>
-        <button id="menu-toggle" class="lg:hidden p-2 text-[#3e3127]" aria-label="Toggle menu">
+        <button id="menu-toggle" class="lg:hidden p-2 text-white" aria-label="Menu" aria-expanded="false">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
             </svg>
         </button>
     </div>
-    <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-[#2d5a3d]/10">
-        <div class="max-w-7xl mx-auto px-6 py-4 space-y-1">
-            <a href="../../fr/fishing/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">🎣 Pêche</a>
-            <a href="../../fr/hunting/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">🦌 Chasse</a>
-            <a href="../../fr/camping/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">⛺ Camping</a>
-            <a href="../../fr/kayaking/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">🛶 Kayak</a>
-            <a href="../../fr/skiing/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">⛷️ Ski</a>
-            <a href="../../fr/hiking/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">🥾 Randonnée</a>
-            <a href="../../en/map.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">Carte</a>
-            <a href="../../fr/blog.html" class="block py-2 text-[#2d5a3d] font-semibold hover:text-[#c97c5e]">Blogue</a>
-            <a href="../../en/fishing/directory.html" class="block py-2 text-[#c97c5e] font-bold mt-2">English</a>
+    <nav id="mobile-menu" class="hidden lg:hidden bg-[#14251a] border-t border-white/10">
+        <div class="max-w-6xl mx-auto px-6 py-4 space-y-1 text-white/90">
+            <a href="/fr/fishing/directory" class="block py-2 hover:text-[#a2c99a]">🎣 Pêche</a>
+            <a href="/fr/hunting/directory" class="block py-2 hover:text-[#a2c99a]">🦌 Chasse</a>
+            <a href="/fr/camping/directory" class="block py-2 hover:text-[#a2c99a]">⛺ Camping</a>
+            <a href="/fr/kayaking/directory" class="block py-2 hover:text-[#a2c99a]">🛶 Kayak</a>
+            <a href="/fr/skiing/directory" class="block py-2 hover:text-[#a2c99a]">⛷️ Ski</a>
+            <a href="/fr/hiking/directory" class="block py-2 hover:text-[#a2c99a]">🥾 Randonnée</a>
+            <a href="/en/map" class="block py-2 hover:text-[#a2c99a]">Carte</a>
+            <a href="/en/trip-planner" class="block py-2 hover:text-[#a2c99a]">Planificateur</a>
+            <a href="/fr/trust" class="block py-2 hover:text-[#a2c99a]">Confiance et sources</a>
+            <a href="/fr/blog" class="block py-2 font-semibold hover:text-[#a2c99a]">Blogue</a>
+            <a href="/en/skiing/directory" class="block py-2 text-[#a2c99a] font-bold mt-2" lang="en">English</a>
         </div>
     </nav>
 </header>
     <nav class="max-w-7xl mx-auto px-6 py-3 flex items-center text-sm flex-wrap" aria-label="Breadcrumb">
-            <a href="../../index.html" class="text-[#6b6359] hover:text-[#c97c5e] transition-colors">Accueil</a><svg class="w-3 h-3 text-[#6b6359]/40 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg><span class="text-[#2d5a3d] font-semibold">Ski</span>
+            <a href="/" class="text-[#5c6b5f] hover:text-[#3d7a4d] transition-colors">Accueil</a><svg class="w-3 h-3 text-[#5c6b5f]/40 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg><span class="text-[#305e3c] font-semibold">Ski</span>
         </nav>
 
     <main class="pt-32 pb-20 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="mb-8">
-                <div class="text-[#c97c5e] text-sm font-bold uppercase tracking-wider mb-2">⛷️ Ski</div>
-                <h1 class="text-4xl md:text-5xl font-bold text-[#2d5a3d] mb-4">Répertoire de ski</h1>
-                <p class="text-lg text-[#6b6359]">Explorez 36 stations de ski et sentiers canadiens.</p>
+                <div class="text-[#3d7a4d] text-sm font-bold uppercase tracking-wider mb-2">⛷️ Ski</div>
+                <h1 class="text-4xl md:text-5xl font-bold text-[#305e3c] mb-4">Répertoire de ski</h1>
+                <p class="text-lg text-[#5c6b5f]">Explorez 36 stations de ski et sentiers canadiens.</p>
             </div>
 
             <div class="bg-white rounded-xl p-6 md:p-8 mb-10" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div>
-                        <label class="block text-sm font-semibold text-[#2d5a3d] mb-2">Rechercher</label>
-                        <input type="text" id="search-input" placeholder="Rechercher Ski..." class="w-full px-4 py-3 border border-[#2d5a3d]/20 rounded-lg focus:outline-none focus:border-[#c97c5e] focus:ring-2 focus:ring-[#c97c5e]/20 bg-[#fef9f3]">
+                        <label class="block text-sm font-semibold text-[#305e3c] mb-2">Rechercher</label>
+                        <input type="text" id="search-input" placeholder="Rechercher Ski..." class="w-full px-4 py-3 border border-[#305e3c]/20 rounded-lg focus:outline-none focus:border-[#3d7a4d] focus:ring-2 focus:ring-[#3d7a4d]/20 bg-[#f4f3ec]">
                     </div>
                     <div>
-                        <label class="block text-sm font-semibold text-[#2d5a3d] mb-2">Province</label>
-                        <select id="province-filter" class="w-full px-4 py-3 border border-[#2d5a3d]/20 rounded-lg focus:outline-none focus:border-[#c97c5e] bg-[#fef9f3]">
+                        <label class="block text-sm font-semibold text-[#305e3c] mb-2">Province</label>
+                        <select id="province-filter" class="w-full px-4 py-3 border border-[#305e3c]/20 rounded-lg focus:outline-none focus:border-[#3d7a4d] bg-[#f4f3ec]">
                             <option value="">Toutes les provinces</option>
                             <option value="Alberta">Alberta</option>
 <option value="British Columbia">British Columbia</option>
@@ -114,8 +130,8 @@
                         </select>
                     </div>
                     <div>
-                        <label class="block text-sm font-semibold text-[#2d5a3d] mb-2">Type</label>
-                        <select id="type-filter" class="w-full px-4 py-3 border border-[#2d5a3d]/20 rounded-lg focus:outline-none focus:border-[#c97c5e] bg-[#fef9f3]">
+                        <label class="block text-sm font-semibold text-[#305e3c] mb-2">Type</label>
+                        <select id="type-filter" class="w-full px-4 py-3 border border-[#305e3c]/20 rounded-lg focus:outline-none focus:border-[#3d7a4d] bg-[#f4f3ec]">
                             <option value="">Tous</option>
                             <option value="Backcountry">Backcountry</option>
 <option value="Cross-Country">Cross-Country</option>
@@ -126,449 +142,465 @@
                 </div>
             </div>
 
-            <div class="mb-6 text-[#6b6359]">
+            <div class="mb-6 text-[#5c6b5f]">
                 <span id="result-count">36</span> spots trouvés
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="spots-grid">
-            <a href="whistler-blackcomb.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="whistler blackcomb" data-province="British Columbia" data-filter="200+ Runs,Alpine Village,Backcountry Access" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Legendary</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Whistler Blackcomb</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">200+ Runs, Alpine Village</p>
+            <a href="/fr/skiing/whistler-blackcomb" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="whistler blackcomb" data-province="British Columbia" data-filter="200+ Runs,Alpine Village,Backcountry Access" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Whistler Blackcomb</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">200+ Runs, Alpine Village</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 1,609m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="big-white.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="big white ski resort" data-province="British Columbia" data-filter="104 Runs,Village-at-Altitude,Sunny Climate" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Big White Ski Resort</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">104 Runs, Village-at-Altitude</p>
+            <a href="/fr/skiing/big-white" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="big white ski resort" data-province="British Columbia" data-filter="104 Runs,Village-at-Altitude,Sunny Climate" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Big White Ski Resort</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">104 Runs, Village-at-Altitude</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 777m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="sun-peaks.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="sun peaks resort" data-province="British Columbia" data-filter="137 Runs,Family-Friendly,Three Peaks" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Sun Peaks Resort</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">137 Runs, Family-Friendly</p>
+            <a href="/fr/skiing/sun-peaks" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="sun peaks resort" data-province="British Columbia" data-filter="137 Runs,Family-Friendly,Three Peaks" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Sun Peaks Resort</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">137 Runs, Family-Friendly</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 915m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="fernie-alpine.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="fernie alpine resort" data-province="British Columbia" data-filter="142 Runs,Skier's Mountain,Powder Magnet" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Legendary</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Fernie Alpine Resort</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">142 Runs, Skier's Mountain</p>
+            <a href="/fr/skiing/fernie-alpine" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="fernie alpine resort" data-province="British Columbia" data-filter="142 Runs,Skier's Mountain,Powder Magnet" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Fernie Alpine Resort</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">142 Runs, Skier's Mountain</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 860m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="kicking-horse.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="kicking horse mountain resort" data-province="British Columbia" data-filter="84 Runs,Golden Powder Corridor,Heli-Access Available" data-type="Backcountry">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Kicking Horse Mountain Resort</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">84 Runs, Golden Powder Corridor</p>
+            <a href="/fr/skiing/kicking-horse" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="kicking horse mountain resort" data-province="British Columbia" data-filter="84 Runs,Golden Powder Corridor,Heli-Access Available" data-type="Backcountry">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Kicking Horse Mountain Resort</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">84 Runs, Golden Powder Corridor</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 1,260m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="lake-louise.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="lake louise ski resort" data-province="Alberta" data-filter="139 Runs,Glacial Backdrop,Terrain Parks" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Alberta &bull; Legendary</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Lake Louise Ski Resort</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">139 Runs, Glacial Backdrop</p>
+            <a href="/fr/skiing/lake-louise" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="lake louise ski resort" data-province="Alberta" data-filter="139 Runs,Glacial Backdrop,Terrain Parks" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Alberta &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Lake Louise Ski Resort</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">139 Runs, Glacial Backdrop</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 991m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="banff-norquay.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="banff norquay" data-province="Alberta" data-filter="90 Runs,Night Skiing,Beginner-Friendly" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Alberta &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Banff Norquay</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">90 Runs, Night Skiing</p>
+            <a href="/fr/skiing/banff-norquay" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="banff norquay" data-province="Alberta" data-filter="90 Runs,Night Skiing,Beginner-Friendly" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Alberta &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Banff Norquay</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">90 Runs, Night Skiing</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 513m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="sunshine-village.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="sunshine village" data-province="Alberta" data-filter="107 Runs,High Elevation,Spring Skiing" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Alberta &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Sunshine Village</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">107 Runs, High Elevation</p>
+            <a href="/fr/skiing/sunshine-village" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="sunshine village" data-province="Alberta" data-filter="107 Runs,High Elevation,Spring Skiing" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Alberta &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Sunshine Village</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">107 Runs, High Elevation</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 1,160m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="marmot-basin.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="marmot basin" data-province="Alberta" data-filter="91 Runs,Alpine Terrain,Jasper Gateway" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Alberta &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Marmot Basin</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">91 Runs, Alpine Terrain</p>
+            <a href="/fr/skiing/marmot-basin" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="marmot basin" data-province="Alberta" data-filter="91 Runs,Alpine Terrain,Jasper Gateway" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Alberta &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Marmot Basin</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">91 Runs, Alpine Terrain</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 914m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="laurentian-mountains.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="laurentian mountains resorts" data-province="Quebec" data-filter="Multiple Peaks,Night Skiing,Urban Access" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Legendary</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Laurentian Mountains Resorts</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Multiple Peaks, Night Skiing</p>
+            <a href="/fr/skiing/laurentian-mountains" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="laurentian mountains resorts" data-province="Quebec" data-filter="Multiple Peaks,Night Skiing,Urban Access" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Quebec &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Laurentian Mountains Resorts</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Multiple Peaks, Night Skiing</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 645m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="mont-tremblant.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="mont-tremblant" data-province="Quebec" data-filter="102 Runs,Pedestrian Village,Quad Lifts" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Mont-Tremblant</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">102 Runs, Pedestrian Village</p>
+            <a href="/fr/skiing/mont-tremblant" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="mont-tremblant" data-province="Quebec" data-filter="102 Runs,Pedestrian Village,Quad Lifts" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Mont-Tremblant</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">102 Runs, Pedestrian Village</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 645m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="chantecler.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="chantecler resort" data-province="Quebec" data-filter="22 Runs,Cross-Country Trails,Beginner-Focused" data-type="Mixed">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Chantecler Resort</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">22 Runs, Cross-Country Trails</p>
+            <a href="/fr/skiing/chantecler" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="chantecler resort" data-province="Quebec" data-filter="22 Runs,Cross-Country Trails,Beginner-Focused" data-type="Mixed">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Chantecler Resort</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">22 Runs, Cross-Country Trails</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 211m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="camp-fortune.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="camp fortune" data-province="Quebec" data-filter="23 Runs,Urban Convenience,Night Skiing" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Camp Fortune</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">23 Runs, Urban Convenience</p>
+            <a href="/fr/skiing/camp-fortune" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="camp fortune" data-province="Quebec" data-filter="23 Runs,Urban Convenience,Night Skiing" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Camp Fortune</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">23 Runs, Urban Convenience</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 197m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="blue-mountain.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="blue mountain resort" data-province="Ontario" data-filter="42 Runs,Great Lakes Region,Snow-Making" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Blue Mountain Resort</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">42 Runs, Great Lakes Region</p>
+            <a href="/fr/skiing/blue-mountain" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="blue mountain resort" data-province="Ontario" data-filter="42 Runs,Great Lakes Region,Snow-Making" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Ontario &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Blue Mountain Resort</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">42 Runs, Great Lakes Region</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 220m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="horseshoe-resort.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="horseshoe resort" data-province="Ontario" data-filter="15 Runs,Cross-Country Trails,Nordic Center" data-type="Mixed">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Horseshoe Resort</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">15 Runs, Cross-Country Trails</p>
+            <a href="/fr/skiing/horseshoe-resort" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="horseshoe resort" data-province="Ontario" data-filter="15 Runs,Cross-Country Trails,Nordic Center" data-type="Mixed">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Ontario &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Horseshoe Resort</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">15 Runs, Cross-Country Trails</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 200m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="talisman-mountain.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="talisman mountain resort" data-province="Ontario" data-filter="18 Runs,Family Friendly,Beginner-Heavy" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Talisman Mountain Resort</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">18 Runs, Family Friendly</p>
+            <a href="/fr/skiing/talisman-mountain" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="talisman mountain resort" data-province="Ontario" data-filter="18 Runs,Family Friendly,Beginner-Heavy" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Ontario &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Talisman Mountain Resort</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">18 Runs, Family Friendly</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 92m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="poley-mountain.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="poley mountain" data-province="New Brunswick" data-filter="12 Runs,Cross-Country Options,Budget-Friendly" data-type="Mixed">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">New Brunswick &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Poley Mountain</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">12 Runs, Cross-Country Options</p>
+            <a href="/fr/skiing/poley-mountain" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="poley mountain" data-province="New Brunswick" data-filter="12 Runs,Cross-Country Options,Budget-Friendly" data-type="Mixed">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">New Brunswick &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Poley Mountain</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">12 Runs, Cross-Country Options</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 76m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="ben-eoin.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="ben eoin ski slope" data-province="Nova Scotia" data-filter="Nordic Trails,Scenic Views,Community-Run" data-type="Backcountry">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Nova Scotia &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Ben Eoin Ski Slope</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Nordic Trails, Scenic Views</p>
+            <a href="/fr/skiing/ben-eoin" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="ben eoin ski slope" data-province="Nova Scotia" data-filter="Nordic Trails,Scenic Views,Community-Run" data-type="Backcountry">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Nova Scotia &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Ben Eoin Ski Slope</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Nordic Trails, Scenic Views</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 200m available</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="marble-mountain.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="marble mountain" data-province="Newfoundland and Labrador" data-filter="30 Runs,Coastal Views,Maritime Powder" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Newfoundland and Labrador &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Marble Mountain</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">30 Runs, Coastal Views</p>
+            <a href="/fr/skiing/marble-mountain" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="marble mountain" data-province="Newfoundland and Labrador" data-filter="30 Runs,Coastal Views,Maritime Powder" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Newfoundland and Labrador &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Marble Mountain</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">30 Runs, Coastal Views</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 520m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="boreal-mountain.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="boreal mountain resort" data-province="Manitoba" data-filter="Nordic Trails,Boreal Forest,Winterlong Season" data-type="Cross-Country">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Manitoba &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Boreal Mountain Resort</h3>
-                    <p class="text-[#6b6359] text-sm mb-4">Nordic Trails, Boreal Forest</p>
+            <a href="/fr/skiing/boreal-mountain" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="boreal mountain resort" data-province="Manitoba" data-filter="Nordic Trails,Boreal Forest,Winterlong Season" data-type="Cross-Country">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Manitoba &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Boreal Mountain Resort</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4">Nordic Trails, Boreal Forest</p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 60m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="big-white-bc.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="big white ski resort" data-province="British Columbia" data-filter="" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Big White Ski Resort</h3>
-                    <p class="text-[#6b6359] text-sm mb-4"></p>
+            <a href="/fr/skiing/big-white-bc" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="big white ski resort" data-province="British Columbia" data-filter="" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Big White Ski Resort</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4"></p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 777m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="sun-peaks-bc.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="sun peaks resort" data-province="British Columbia" data-filter="" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Sun Peaks Resort</h3>
-                    <p class="text-[#6b6359] text-sm mb-4"></p>
+            <a href="/fr/skiing/sun-peaks-bc" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="sun peaks resort" data-province="British Columbia" data-filter="" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Sun Peaks Resort</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4"></p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 881m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="revelstoke-resort.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="revelstoke mountain resort" data-province="British Columbia" data-filter="" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Legendary</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Revelstoke Mountain Resort</h3>
-                    <p class="text-[#6b6359] text-sm mb-4"></p>
+            <a href="/fr/skiing/revelstoke-resort" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="revelstoke mountain resort" data-province="British Columbia" data-filter="" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Legendary</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Revelstoke Mountain Resort</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4"></p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 1,713m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="red-mountain-bc.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="red mountain resort" data-province="British Columbia" data-filter="" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Red Mountain Resort</h3>
-                    <p class="text-[#6b6359] text-sm mb-4"></p>
+            <a href="/fr/skiing/red-mountain-bc" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="red mountain resort" data-province="British Columbia" data-filter="" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Red Mountain Resort</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4"></p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 900m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="panorama-resort.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="panorama mountain resort" data-province="British Columbia" data-filter="" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Pro</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Panorama Mountain Resort</h3>
-                    <p class="text-[#6b6359] text-sm mb-4"></p>
+            <a href="/fr/skiing/panorama-resort" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="panorama mountain resort" data-province="British Columbia" data-filter="" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Pro</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Panorama Mountain Resort</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4"></p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 1,200m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="silver-star.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="silver star mountain resort" data-province="British Columbia" data-filter="" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Pro</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Silver Star Mountain Resort</h3>
-                    <p class="text-[#6b6359] text-sm mb-4"></p>
+            <a href="/fr/skiing/silver-star" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="silver star mountain resort" data-province="British Columbia" data-filter="" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Pro</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Silver Star Mountain Resort</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4"></p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 760m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="apex-mountain.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="apex mountain resort" data-province="British Columbia" data-filter="" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Pro</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Apex Mountain Resort</h3>
-                    <p class="text-[#6b6359] text-sm mb-4"></p>
+            <a href="/fr/skiing/apex-mountain" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="apex mountain resort" data-province="British Columbia" data-filter="" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Pro</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Apex Mountain Resort</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4"></p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 610m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="mount-washington.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="mount washington alpine resort" data-province="British Columbia" data-filter="" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">British Columbia &bull; Pro</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Mount Washington Alpine Resort</h3>
-                    <p class="text-[#6b6359] text-sm mb-4"></p>
+            <a href="/fr/skiing/mount-washington" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="mount washington alpine resort" data-province="British Columbia" data-filter="" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">British Columbia &bull; Pro</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Mount Washington Alpine Resort</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4"></p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 470m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="nakiska.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="nakiska ski area" data-province="Alberta" data-filter="" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Alberta &bull; Pro</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Nakiska Ski Area</h3>
-                    <p class="text-[#6b6359] text-sm mb-4"></p>
+            <a href="/fr/skiing/nakiska" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="nakiska ski area" data-province="Alberta" data-filter="" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Alberta &bull; Pro</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Nakiska Ski Area</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4"></p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 645m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="castle-mountain.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="castle mountain resort" data-province="Alberta" data-filter="" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Alberta &bull; Pro</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Castle Mountain Resort</h3>
-                    <p class="text-[#6b6359] text-sm mb-4"></p>
+            <a href="/fr/skiing/castle-mountain" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="castle mountain resort" data-province="Alberta" data-filter="" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Alberta &bull; Pro</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Castle Mountain Resort</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4"></p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 730m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="le-massif.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="le massif de charlevoix" data-province="Quebec" data-filter="" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Le Massif de Charlevoix</h3>
-                    <p class="text-[#6b6359] text-sm mb-4"></p>
+            <a href="/fr/skiing/le-massif" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="le massif de charlevoix" data-province="Quebec" data-filter="" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Le Massif de Charlevoix</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4"></p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 770m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="mont-sainte-anne.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="mont-sainte-anne" data-province="Quebec" data-filter="" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Mont-Sainte-Anne</h3>
-                    <p class="text-[#6b6359] text-sm mb-4"></p>
+            <a href="/fr/skiing/mont-sainte-anne" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="mont-sainte-anne" data-province="Quebec" data-filter="" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Quebec &bull; Elite</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Mont-Sainte-Anne</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4"></p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 625m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="stoneham.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="stoneham mountain resort" data-province="Quebec" data-filter="" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Pro</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Stoneham Mountain Resort</h3>
-                    <p class="text-[#6b6359] text-sm mb-4"></p>
+            <a href="/fr/skiing/stoneham" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="stoneham mountain resort" data-province="Quebec" data-filter="" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Quebec &bull; Pro</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Stoneham Mountain Resort</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4"></p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 457m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="mont-sutton.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="mont sutton" data-province="Quebec" data-filter="" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Quebec &bull; Pro</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Mont Sutton</h3>
-                    <p class="text-[#6b6359] text-sm mb-4"></p>
+            <a href="/fr/skiing/mont-sutton" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="mont sutton" data-province="Quebec" data-filter="" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Quebec &bull; Pro</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Mont Sutton</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4"></p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 512m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="mount-st-louis.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="mount st. louis moonstone" data-province="Ontario" data-filter="" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Pro</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Mount St. Louis Moonstone</h3>
-                    <p class="text-[#6b6359] text-sm mb-4"></p>
+            <a href="/fr/skiing/mount-st-louis" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="mount st. louis moonstone" data-province="Ontario" data-filter="" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Ontario &bull; Pro</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Mount St. Louis Moonstone</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4"></p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 220m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
-            <a href="searchmont.html" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="searchmont resort" data-province="Ontario" data-filter="" data-type="Downhill">
-                <div class="bg-white p-8 h-full border-b-4 border-[#c97c5e]">
-                    <div class="text-[#c97c5e] text-xs font-bold uppercase mb-2">Ontario &bull; Pro</div>
-                    <h3 class="text-xl font-bold text-[#2d5a3d] mb-2">Searchmont Resort</h3>
-                    <p class="text-[#6b6359] text-sm mb-4"></p>
+            <a href="/fr/skiing/searchmont" class="spot-card group hover:shadow-lg transition-all rounded-xl overflow-hidden hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)" data-name="searchmont resort" data-province="Ontario" data-filter="" data-type="Downhill">
+                <div class="bg-white p-8 h-full border-b-4 border-[#3d7a4d]">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase mb-2">Ontario &bull; Pro</div>
+                    <h3 class="text-xl font-bold text-[#305e3c] mb-2">Searchmont Resort</h3>
+                    <p class="text-[#5c6b5f] text-sm mb-4"></p>
                     <div class="flex justify-between items-center">
                         <div class="text-xs text-[#7a9b8e] font-semibold">Dénivelé: 280m</div>
-                        <div class="text-[#c97c5e] text-sm font-semibold">Voir le profil &rarr;</div>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">Voir le profil &rarr;</div>
                     </div>
                 </div>
             </a>
             </div>
 
             <div id="no-results" class="hidden text-center py-20">
-                <h3 class="text-2xl font-bold text-[#2d5a3d] mb-4">Aucun spot trouvé</h3>
-                <p class="text-[#6b6359]">Essayez de modifier vos critères de recherche.</p>
+                <h3 class="text-2xl font-bold text-[#305e3c] mb-4">Aucun spot trouvé</h3>
+                <p class="text-[#5c6b5f]">Essayez de modifier vos critères de recherche.</p>
             </div>
         </div>
     </main>
 
-    <footer class="bg-[#2d5a3d] text-white py-16 px-6">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-        <div>
-            <img src="../../assets/logo/logo.jpg" alt="Outdoor Intel" class="h-10 w-auto mb-4 brightness-200">
-            <p class="text-white/70 text-sm">La destination ultime du plein air canadien. Pêche, chasse, camping, kayak, ski et randonnée.</p>
+    <footer data-oi-ds class="bg-[#14251a] text-white">
+    <div class="max-w-6xl mx-auto px-6 pt-16 pb-8">
+        <div class="grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr] gap-10 pb-12">
+            <div class="col-span-2 md:col-span-1">
+                <a href="/fr/" class="flex items-center gap-3 mb-5" aria-label="Outdoor Intel">
+                    <span class="w-9 h-9 rounded-lg bg-white flex items-center justify-center text-[#14251a] font-extrabold text-sm tracking-tight">OI</span>
+                    <span class="text-white font-bold text-lg tracking-tight">Outdoor Intel</span>
+                </a>
+                <p class="text-white/60 text-sm leading-relaxed max-w-xs mb-6">Des données de plein air sourcées pour de meilleures sorties partout au Canada. Chaque site est vérifié et cité.</p>
+                <p class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-2">Intel hebdo, gratuit</p>
+                <form class="js-newsletter-form flex gap-2 max-w-xs" data-lang="fr">
+                    <input type="email" name="email" required placeholder="Votre courriel" autocomplete="email" class="flex-1 min-w-0 px-3 py-2 rounded-lg text-sm text-[#1c2b21] bg-white placeholder-[#5c6b5f] outline-none focus:ring-2 focus:ring-[#a2c99a]">
+                    <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-5000px">
+                    <button type="submit" class="bg-[#305e3c] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#3d7a4d] transition-colors whitespace-nowrap">S’abonner</button>
+                </form>
+                <p class="js-newsletter-msg text-white/50 text-xs mt-2">Un courriel par semaine. Pas de spam.</p>
+            </div>
+            <div>
+                <h4 class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-4">Explorer</h4>
+                <ul class="space-y-2.5 text-sm text-white/70">
+                    <li><a href="/fr/fishing/directory" class="hover:text-white transition-colors">Pêche</a></li>
+                    <li><a href="/fr/hunting/directory" class="hover:text-white transition-colors">Chasse</a></li>
+                    <li><a href="/fr/camping/directory" class="hover:text-white transition-colors">Camping</a></li>
+                    <li><a href="/fr/kayaking/directory" class="hover:text-white transition-colors">Kayak</a></li>
+                    <li><a href="/fr/skiing/directory" class="hover:text-white transition-colors">Ski</a></li>
+                    <li><a href="/fr/hiking/directory" class="hover:text-white transition-colors">Randonnée</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-4">Produit</h4>
+                <ul class="space-y-2.5 text-sm text-white/70">
+                    <li><a href="/en/map" class="hover:text-white transition-colors">Carte</a></li>
+                    <li><a href="/en/trip-planner" class="hover:text-white transition-colors">Planificateur</a></li>
+                    <li><a href="/fr/blog" class="hover:text-white transition-colors">Blogue</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-4">À propos</h4>
+                <ul class="space-y-2.5 text-sm text-white/70">
+                    <li><a href="/fr/trust" class="hover:text-white transition-colors">Confiance et sources</a></li>
+                    <li><a href="/en/about" class="hover:text-white transition-colors">À propos</a></li>
+                    <li><a href="/en/licenses" class="hover:text-white transition-colors">Permis et règlements</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <h4 class="font-bold mb-4 text-[#c97c5e]">Activités</h4>
-            <ul class="space-y-2 text-white/70 text-sm"><li><a href="../../fr/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">Pêche</a></li>
-<li><a href="../../fr/hunting/directory.html" class="hover:text-[#c97c5e] transition-colors">Chasse</a></li>
-<li><a href="../../fr/camping/directory.html" class="hover:text-[#c97c5e] transition-colors">Camping</a></li>
-<li><a href="../../fr/kayaking/directory.html" class="hover:text-[#c97c5e] transition-colors">Kayak</a></li>
-<li><a href="../../fr/skiing/directory.html" class="hover:text-[#c97c5e] transition-colors">Ski</a></li>
-<li><a href="../../fr/hiking/directory.html" class="hover:text-[#c97c5e] transition-colors">Randonnée</a></li>
-</ul>
+        <div class="border-t border-white/15 pt-6 flex items-center justify-between text-sm">
+            <p class="text-white/50">&copy; 2026 Outdoor Intel</p>
+            <p class="font-bold text-xs"><a href="/en/skiing/directory" class="text-[#a2c99a] hover:text-white transition-colors" lang="en">EN</a><span class="text-white/30">&nbsp;|&nbsp;</span><span class="text-white/50">FR</span></p>
         </div>
-        <div>
-            <h4 class="font-bold mb-4 text-[#c97c5e]">Ressources</h4>
-            <ul class="space-y-2 text-white/70 text-sm">
-                <li><a href="https://www.ontario.ca/document/ontario-fishing-regulations-summary" target="_blank" rel="noopener noreferrer" class="hover:text-[#c97c5e] transition-colors">Règlements Ontario</a></li>
-                <li><a href="https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/peche-sportive" target="_blank" rel="noopener noreferrer" class="hover:text-[#c97c5e] transition-colors">Règlements Québec</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4 class="font-bold mb-4 text-[#c97c5e]">Langue</h4>
-            <ul class="space-y-2 text-white/70 text-sm">
-                <li><a href="../../en/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">English</a></li>
-                <li><a href="../../fr/fishing/directory.html" class="hover:text-[#c97c5e] transition-colors">Français</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/20 text-center text-white/50 text-sm">
-        <p>OutdoorIntel.ca &mdash; 2026. Tous droits réservés.</p>
     </div>
 </footer>
     <script>
@@ -616,5 +648,134 @@ if (toggle && menu) {
     typeFilter.addEventListener('change', filterSpots);
     </script>
 <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js');}</script>
+
+    <!-- Global Search Overlay -->
+    <div id="global-search-overlay" class="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm hidden" style="transition:opacity 0.2s">
+        <div class="flex items-start justify-center pt-[15vh] px-4">
+            <div class="bg-white rounded-2xl w-full max-w-2xl overflow-hidden" style="box-shadow:0 25px 50px rgba(0,0,0,0.25)">
+                <div class="flex items-center gap-3 px-6 py-4 border-b border-[#305e3c]/10">
+                    <svg class="w-5 h-5 text-[#5c6b5f] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                    <input id="global-search-input" type="text" placeholder="Search 499+ spots across Canada..." class="flex-1 text-lg text-[#1c2b21] placeholder-[#5c6b5f]/50 outline-none bg-transparent" autocomplete="off">
+                    <kbd class="hidden sm:inline-block text-xs text-[#5c6b5f] bg-[#fbfaf7] px-2 py-1 rounded font-mono">ESC</kbd>
+                </div>
+                <div id="global-search-results" class="max-h-[50vh] overflow-y-auto">
+                    <div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    (function(){
+        var overlay = document.getElementById('global-search-overlay');
+        var input = document.getElementById('global-search-input');
+        var results = document.getElementById('global-search-results');
+        var toggle = document.getElementById('global-search-toggle');
+        var spotsData = null;
+        var CATS = ['fishing','hunting','camping','kayaking','skiing','hiking'];
+        var CAT_ICONS = {fishing:'🎣',hunting:'🦌',camping:'⛺',kayaking:'🛶',skiing:'⛷️',hiking:'🥾'};
+
+        function isEn() { return !window.location.pathname.startsWith('/fr'); }
+        function basePath() {
+            var p = window.location.pathname;
+            var depth = (p.match(/\//g)||[]).length - 1;
+            if (p === '/' || p === '/index.html') return '';
+            var segs = [];
+            for (var i = 0; i < depth; i++) segs.push('..');
+            return segs.join('/') || '.';
+        }
+
+        async function loadSpots() {
+            if (spotsData) return spotsData;
+            spotsData = [];
+            var lang = isEn() ? 'en' : 'fr';
+            var base = basePath();
+            for (var i = 0; i < CATS.length; i++) {
+                try {
+                    var r = await fetch((base ? base + '/' : '/') + 'data/' + CATS[i] + '.json');
+                    var d = await r.json();
+                    d.spots.forEach(function(s) {
+                        spotsData.push({
+                            name: s.name,
+                            slug: s.slug,
+                            province: s.province,
+                            category: CATS[i],
+                            species: s.primary_species || s.primary_game || s.features || [],
+                            scout_level: s.scout_level || ''
+                        });
+                    });
+                } catch(e) {}
+            }
+            return spotsData;
+        }
+
+        function renderResults(matches) {
+            if (!matches.length) {
+                results.innerHTML = '<div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">No spots found. Try a different search term.</div>';
+                return;
+            }
+            var lang = isEn() ? 'en' : 'fr';
+            var base = basePath();
+            var html = matches.slice(0, 12).map(function(s) {
+                var href = (base ? base + '/' : '/') + lang + '/' + s.category + '/' + s.slug;
+                var icon = CAT_ICONS[s.category] || '';
+                var sub = s.province + ' • ' + s.category.charAt(0).toUpperCase() + s.category.slice(1);
+                if (s.species.length) sub += ' • ' + s.species.slice(0,2).join(', ');
+                return '<a href="' + href + '" class="flex items-center gap-4 px-6 py-3 hover:bg-[#f4f3ec] transition-colors">' +
+                    '<span class="text-xl flex-shrink-0">' + icon + '</span>' +
+                    '<div class="flex-1 min-w-0">' +
+                    '<div class="font-semibold text-[#305e3c] truncate">' + s.name + '</div>' +
+                    '<div class="text-xs text-[#5c6b5f] truncate">' + sub + '</div>' +
+                    '</div>' +
+                    '<span class="text-xs font-bold text-[#3d7a4d] flex-shrink-0">' + s.scout_level + '</span>' +
+                    '</a>';
+            }).join('');
+            if (matches.length > 12) {
+                html += '<div class="px-6 py-3 text-center text-xs text-[#5c6b5f]">' + (matches.length - 12) + ' more results...</div>';
+            }
+            results.innerHTML = html;
+        }
+
+        function search(q) {
+            if (!spotsData) return;
+            q = q.toLowerCase().trim();
+            if (!q) {
+                results.innerHTML = '<div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>';
+                return;
+            }
+            var matches = spotsData.filter(function(s) {
+                return s.name.toLowerCase().includes(q) ||
+                    s.province.toLowerCase().includes(q) ||
+                    s.category.toLowerCase().includes(q) ||
+                    s.species.some(function(sp) { return sp.toLowerCase().includes(q); });
+            });
+            renderResults(matches);
+        }
+
+        function open() {
+            overlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            input.value = '';
+            input.focus();
+            loadSpots().then(function () { if (input.value) search(input.value); });
+            results.innerHTML = '<div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>';
+        }
+
+        function close() {
+            overlay.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        if (toggle) toggle.addEventListener('click', open);
+        overlay.addEventListener('click', function(e) { if (e.target === overlay) close(); });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') close();
+            if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); open(); }
+        });
+        input.addEventListener('input', function() { search(this.value); });
+    })();
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/assets/js/newsletter.js?v=1"></script>
+<script defer src="/assets/js/oi-plan.js?v=1"></script>
 </body>
 </html>

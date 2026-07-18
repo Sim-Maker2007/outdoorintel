@@ -1,0 +1,18 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/", "destination": "/en/index.html" },
+    { "source": "/fr", "destination": "/fr/index.html" },
+    { "source": "/parcels/:id", "destination": "/en/parcels/detail.html" },
+    { "source": "/fr/parcels/:id", "destination": "/fr/parcels/detail.html" },
+    { "source": "/legal", "destination": "/en/legal/index.html" },
+    { "source": "/legal/:path*", "destination": "/en/legal/:path*" }
+  ],
+  "headers": [
+    {
+      "source": "/public/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    }
+  ]
+}

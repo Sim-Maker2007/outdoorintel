@@ -34,7 +34,17 @@
       "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Ski school with group and private lessons for all levels. Nearest town with full services: Kelowna (3-4 hours). Cafeteria-style food service at the day lodge.",
       "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Vacation rentals and chalets in the surrounding area. Multi-day packages with lift tickets included offer the best value. ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Kelowna. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Frostbite is a real risk on cold, windy days — cover exposed skin.  Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.whistlerblackcomb.com"
+      "website": "https://www.whistlerblackcomb.com",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://www.whistlerblackcomb.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.avalanche.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Big White Ski Resort",
@@ -70,7 +80,17 @@
       "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Ski school with group and private lessons for all levels. Nearest town with full services: Vancouver (1.5-2 hours). Après-ski pub and restaurant on site.",
       "accommodation": "Base area hotels and condos within walking distance of the lifts. Vacation rentals and chalets in the surrounding area. Multi-day packages with lift tickets included offer the best value. ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Vancouver. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Dress in layers — temperatures can swing 20°C between the base and summit. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.bigwhite.com"
+      "website": "https://www.bigwhite.com",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://www.bigwhite.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.avalanche.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Sun Peaks Resort",
@@ -106,7 +126,17 @@
       "nearby_services": "Ski rental and repair shop at the base lodge. Ski school with group and private lessons for all levels. Nearest town with full services: Vancouver (1.5-2 hours). Après-ski pub and restaurant on site.",
       "accommodation": "Base area hotels and condos within walking distance of the lifts. Vacation rentals and chalets in the surrounding area. Multi-day packages with lift tickets included offer the best value. ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Vancouver. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Frostbite is a real risk on cold, windy days — cover exposed skin. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.sunpeaksresort.com"
+      "website": "https://www.sunpeaksresort.com",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://www.sunpeaksresort.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.avalanche.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Fernie Alpine Resort",
@@ -142,7 +172,17 @@
       "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Lessons available — book in advance during peak periods. Nearest town with full services: Vancouver (45 minutes). Cafeteria-style food service at the day lodge.",
       "accommodation": "Base area hotels and condos within walking distance of the lifts. Vacation rentals and chalets in the surrounding area. Multi-day packages with lift tickets included offer the best value. ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Vancouver. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Frostbite is a real risk on cold, windy days — cover exposed skin.  Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://skifernie.com"
+      "website": "https://skifernie.com",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://skifernie.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.avalanche.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Kicking Horse Mountain Resort",
@@ -178,7 +218,17 @@
       "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Lessons available — book in advance during peak periods. Nearest town with full services: Kelowna (1.5-2.5 hours). Cafeteria-style food service at the day lodge.",
       "accommodation": "Base area hotels and condos within walking distance of the lifts. Vacation rentals and chalets in the surrounding area.  Backcountry huts available for multi-day ski touring — reserve through the local alpine club.",
       "safety": "No patrol — you are responsible for your own safety. Nearest hospital: Kelowna. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Dress in layers — temperatures can swing 20°C between the base and summit. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://kickinghorseresort.com"
+      "website": "https://kickinghorseresort.com",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://kickinghorseresort.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.avalanche.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Lake Louise Ski Resort",
@@ -214,7 +264,17 @@
       "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Ski school with group and private lessons for all levels. Nearest town with full services: Red Deer (1.5-2.5 hours). Cafeteria-style food service at the day lodge.",
       "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Vacation rentals and chalets in the surrounding area. Multi-day packages with lift tickets included offer the best value. ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Red Deer. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Dress in layers — temperatures can swing 20°C between the base and summit. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.skilouise.com"
+      "website": "https://www.skilouise.com",
+      "province_code": "AB",
+      "country": "Canada",
+      "source_url": "https://www.skilouise.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.avalanche.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Banff Norquay",
@@ -250,7 +310,17 @@
       "nearby_services": "Ski rental and repair shop at the base lodge. Ski school with group and private lessons for all levels. Nearest town with full services: Red Deer (2-3 hours). Cafeteria-style food service at the day lodge.",
       "accommodation": "Base area hotels and condos within walking distance of the lifts. Budget-friendly hostels and motels in the nearby town. Multi-day packages with lift tickets included offer the best value. ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Red Deer. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Frostbite is a real risk on cold, windy days — cover exposed skin.  Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://banffnorquay.com"
+      "website": "https://banffnorquay.com",
+      "province_code": "AB",
+      "country": "Canada",
+      "source_url": "https://banffnorquay.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.avalanche.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Sunshine Village",
@@ -286,7 +356,17 @@
       "nearby_services": "Ski rental and repair shop at the base lodge. Lessons available — book in advance during peak periods. Nearest town with full services: Red Deer (3-4 hours). Après-ski pub and restaurant on site.",
       "accommodation": "Base area hotels and condos within walking distance of the lifts. Budget-friendly hostels and motels in the nearby town. Multi-day packages with lift tickets included offer the best value. ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Red Deer. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Dress in layers — temperatures can swing 20°C between the base and summit.  Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.skibanff.com"
+      "website": "https://www.skibanff.com",
+      "province_code": "AB",
+      "country": "Canada",
+      "source_url": "https://www.skibanff.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.avalanche.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Marmot Basin",
@@ -322,7 +402,17 @@
       "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Lessons available — book in advance during peak periods. Nearest town with full services: Red Deer (1.5-2.5 hours). Cafeteria-style food service at the day lodge.",
       "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Vacation rentals and chalets in the surrounding area.  ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Red Deer. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Dress in layers — temperatures can swing 20°C between the base and summit. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.skimarmot.com"
+      "website": "https://www.skimarmot.com",
+      "province_code": "AB",
+      "country": "Canada",
+      "source_url": "https://www.skimarmot.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.avalanche.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Laurentian Mountains Resorts",
@@ -358,7 +448,17 @@
       "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Lessons available — book in advance during peak periods. Nearest town with full services: Montreal (2-3 hours). Cafeteria-style food service at the day lodge.",
       "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Vacation rentals and chalets in the surrounding area.  ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Montreal.  Dress in layers — temperatures can swing 20°C between the base and summit. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.laurentides.com"
+      "website": "https://www.laurentides.com",
+      "province_code": "QC",
+      "country": "Canada",
+      "source_url": "https://www.laurentides.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/ski",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Mont-Tremblant",
@@ -394,7 +494,17 @@
       "nearby_services": "Ski rental and repair shop at the base lodge. Lessons available — book in advance during peak periods. Nearest town with full services: Montreal (45 minutes). Cafeteria-style food service at the day lodge.",
       "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Vacation rentals and chalets in the surrounding area. Multi-day packages with lift tickets included offer the best value. ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Montreal.  Frostbite is a real risk on cold, windy days — cover exposed skin.  Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.tremblant.ca"
+      "website": "https://www.tremblant.ca",
+      "province_code": "QC",
+      "country": "Canada",
+      "source_url": "https://www.tremblant.ca",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/ski",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Chantecler Resort",
@@ -430,7 +540,17 @@
       "nearby_services": "Ski rental and repair shop at the base lodge. Lessons available — book in advance during peak periods. Nearest town with full services: Montreal (1.5-2 hours). Cafeteria-style food service at the day lodge.",
       "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Vacation rentals and chalets in the surrounding area.  ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Montreal.  Dress in layers — temperatures can swing 20°C between the base and summit.  Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.lechantecler.com"
+      "website": "https://www.lechantecler.com",
+      "province_code": "QC",
+      "country": "Canada",
+      "source_url": "https://www.lechantecler.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/ski",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Camp Fortune",
@@ -466,7 +586,17 @@
       "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Ski school with group and private lessons for all levels. Nearest town with full services: Montreal (2-3 hours). Après-ski pub and restaurant on site.",
       "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Budget-friendly hostels and motels in the nearby town. Multi-day packages with lift tickets included offer the best value. ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Montreal.  Dress in layers — temperatures can swing 20°C between the base and summit. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://campfortune.com"
+      "website": "https://campfortune.com",
+      "province_code": "QC",
+      "country": "Canada",
+      "source_url": "https://campfortune.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/ski",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Blue Mountain Resort",
@@ -502,7 +632,17 @@
       "nearby_services": "Ski rental and repair shop at the base lodge. Lessons available — book in advance during peak periods. Nearest town with full services: Ottawa (1.5-2 hours). Cafeteria-style food service at the day lodge.",
       "accommodation": "Base area hotels and condos within walking distance of the lifts. Vacation rentals and chalets in the surrounding area.  ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Ottawa.  Dress in layers — temperatures can swing 20°C between the base and summit.  Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.bluemountain.ca"
+      "website": "https://www.bluemountain.ca",
+      "province_code": "ON",
+      "country": "Canada",
+      "source_url": "https://www.bluemountain.ca",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.ontario.ca/page/snow-safety",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Horseshoe Resort",
@@ -538,7 +678,17 @@
       "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Lessons available — book in advance during peak periods. Nearest town with full services: Ottawa (1.5-2 hours). Après-ski pub and restaurant on site.",
       "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Budget-friendly hostels and motels in the nearby town.  ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Ottawa.  Frostbite is a real risk on cold, windy days — cover exposed skin. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://horseshoeresort.com"
+      "website": "https://horseshoeresort.com",
+      "province_code": "ON",
+      "country": "Canada",
+      "source_url": "https://horseshoeresort.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.ontario.ca/page/snow-safety",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Talisman Mountain Resort",
@@ -574,7 +724,17 @@
       "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Ski school with group and private lessons for all levels. Nearest town with full services: Ottawa (45 minutes). Cafeteria-style food service at the day lodge.",
       "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Vacation rentals and chalets in the surrounding area. Multi-day packages with lift tickets included offer the best value. ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Ottawa.  Frostbite is a real risk on cold, windy days — cover exposed skin. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.talismanresort.com"
+      "website": "https://www.talismanresort.com",
+      "province_code": "ON",
+      "country": "Canada",
+      "source_url": "https://www.talismanresort.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.ontario.ca/page/snow-safety",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Poley Mountain",
@@ -610,7 +770,17 @@
       "nearby_services": "Ski rental and repair shop at the base lodge. Lessons available — book in advance during peak periods. Nearest town with full services: Saint John (45 minutes). Après-ski pub and restaurant on site.",
       "accommodation": "Base area hotels and condos within walking distance of the lifts. Vacation rentals and chalets in the surrounding area. Multi-day packages with lift tickets included offer the best value. ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Saint John.  Dress in layers — temperatures can swing 20°C between the base and summit.  Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.poleymountain.com"
+      "website": "https://www.poleymountain.com",
+      "province_code": "NB",
+      "country": "Canada",
+      "source_url": "https://www.poleymountain.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://tourismnewbrunswick.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Ben Eoin Ski Slope",
@@ -646,7 +816,17 @@
       "nearby_services": "Ski rental and repair shop at the base lodge. Lessons available — book in advance during peak periods. Nearest town with full services: Halifax (1.5-2 hours). Après-ski pub and restaurant on site.",
       "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Budget-friendly hostels and motels in the nearby town. Multi-day packages with lift tickets included offer the best value. Backcountry huts available for multi-day ski touring — reserve through the local alpine club.",
       "safety": "No patrol — you are responsible for your own safety. Nearest hospital: Halifax. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Frostbite is a real risk on cold, windy days — cover exposed skin. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.skibeneoin.com"
+      "website": "https://www.skibeneoin.com",
+      "province_code": "NS",
+      "country": "Canada",
+      "source_url": "https://www.skibeneoin.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://parks.novascotia.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Marble Mountain",
@@ -682,7 +862,17 @@
       "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Lessons available — book in advance during peak periods. Nearest town with full services: St. John's (2-3 hours). Cafeteria-style food service at the day lodge.",
       "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Vacation rentals and chalets in the surrounding area. Multi-day packages with lift tickets included offer the best value. ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: St. John's.  Dress in layers — temperatures can swing 20°C between the base and summit. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.skimarble.com"
+      "website": "https://www.skimarble.com",
+      "province_code": "NL",
+      "country": "Canada",
+      "source_url": "https://www.skimarble.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.newfoundlandlabrador.com",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Boreal Mountain Resort",
@@ -718,7 +908,17 @@
       "nearby_services": "Ski rental and repair shop at the base lodge. Lessons available — book in advance during peak periods. Nearest town with full services: Thompson (1.5-2.5 hours). Après-ski pub and restaurant on site.",
       "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Budget-friendly hostels and motels in the nearby town. Multi-day packages with lift tickets included offer the best value. ",
       "safety": "No patrol — you are responsible for your own safety. Nearest hospital: Thompson.  Dress in layers — temperatures can swing 20°C between the base and summit. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.skiboreale.com"
+      "website": "https://www.skiboreale.com",
+      "province_code": "MB",
+      "country": "Canada",
+      "source_url": "https://www.skiboreale.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.gov.mb.ca/nrnd/parks/",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Big White Ski Resort",
@@ -750,7 +950,17 @@
       "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Ski school with group and private lessons for all levels. Nearest town with full services: Vancouver (45 minutes). Cafeteria-style food service at the day lodge.",
       "accommodation": "Base area hotels and condos within walking distance of the lifts. Vacation rentals and chalets in the surrounding area.  ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Vancouver. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Dress in layers — temperatures can swing 20°C between the base and summit. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.bigwhite.com"
+      "website": "https://www.bigwhite.com",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://www.bigwhite.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.avalanche.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Sun Peaks Resort",
@@ -782,7 +992,17 @@
       "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Ski school with group and private lessons for all levels. Nearest town with full services: Vancouver (45 minutes). Après-ski pub and restaurant on site.",
       "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Budget-friendly hostels and motels in the nearby town.  ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Vancouver. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Dress in layers — temperatures can swing 20°C between the base and summit.  Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.sunpeaksresort.com"
+      "website": "https://www.sunpeaksresort.com",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://www.sunpeaksresort.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.avalanche.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Revelstoke Mountain Resort",
@@ -814,7 +1034,17 @@
       "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Lessons available — book in advance during peak periods. Nearest town with full services: Kelowna (1.5-2.5 hours). Cafeteria-style food service at the day lodge.",
       "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Vacation rentals and chalets in the surrounding area. Multi-day packages with lift tickets included offer the best value. ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Kelowna. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Dress in layers — temperatures can swing 20°C between the base and summit.  Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.revelstokemountainresort.com"
+      "website": "https://www.revelstokemountainresort.com",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://www.revelstokemountainresort.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.avalanche.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Red Mountain Resort",
@@ -846,7 +1076,17 @@
       "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Ski school with group and private lessons for all levels. Nearest town with full services: Vancouver (2-3 hours). Cafeteria-style food service at the day lodge.",
       "accommodation": "Base area hotels and condos within walking distance of the lifts. Vacation rentals and chalets in the surrounding area. Multi-day packages with lift tickets included offer the best value. ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Vancouver. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Frostbite is a real risk on cold, windy days — cover exposed skin. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.redresort.com"
+      "website": "https://www.redresort.com",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://www.redresort.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.avalanche.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Panorama Mountain Resort",
@@ -878,7 +1118,17 @@
       "nearby_services": "Ski rental and repair shop at the base lodge. Lessons available — book in advance during peak periods. Nearest town with full services: Kelowna (3-4 hours). Après-ski pub and restaurant on site.",
       "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Vacation rentals and chalets in the surrounding area.  ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Kelowna. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Dress in layers — temperatures can swing 20°C between the base and summit. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.panoramaresort.com"
+      "website": "https://www.panoramaresort.com",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://www.panoramaresort.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.avalanche.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Silver Star Mountain Resort",
@@ -910,7 +1160,17 @@
       "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Ski school with group and private lessons for all levels. Nearest town with full services: Kelowna (1.5-2.5 hours). Cafeteria-style food service at the day lodge.",
       "accommodation": "Base area hotels and condos within walking distance of the lifts. Vacation rentals and chalets in the surrounding area.  ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Kelowna. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Frostbite is a real risk on cold, windy days — cover exposed skin.  Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.skisilverstar.com"
+      "website": "https://www.skisilverstar.com",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://www.skisilverstar.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.avalanche.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Apex Mountain Resort",
@@ -942,7 +1202,17 @@
       "nearby_services": "Ski rental and repair shop at the base lodge. Lessons available — book in advance during peak periods. Nearest town with full services: Vancouver (45 minutes). Après-ski pub and restaurant on site.",
       "accommodation": "Base area hotels and condos within walking distance of the lifts. Budget-friendly hostels and motels in the nearby town.  ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Vancouver. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Frostbite is a real risk on cold, windy days — cover exposed skin. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.apexresort.com"
+      "website": "https://www.apexresort.com",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://www.apexresort.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.avalanche.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Mount Washington Alpine Resort",
@@ -974,7 +1244,17 @@
       "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Ski school with group and private lessons for all levels. Nearest town with full services: Vancouver (2-3 hours). Cafeteria-style food service at the day lodge.",
       "accommodation": "Base area hotels and condos within walking distance of the lifts. Vacation rentals and chalets in the surrounding area.  ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Vancouver. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Dress in layers — temperatures can swing 20°C between the base and summit.  Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.mountwashington.ca"
+      "website": "https://www.mountwashington.ca",
+      "province_code": "BC",
+      "country": "Canada",
+      "source_url": "https://www.mountwashington.ca",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.avalanche.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Nakiska Ski Area",
@@ -1006,7 +1286,17 @@
       "nearby_services": "Ski rental and repair shop at the base lodge. Ski school with group and private lessons for all levels. Nearest town with full services: Red Deer (3-4 hours). Cafeteria-style food service at the day lodge.",
       "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Vacation rentals and chalets in the surrounding area.  ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Red Deer. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Frostbite is a real risk on cold, windy days — cover exposed skin. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://skinakiska.com"
+      "website": "https://skinakiska.com",
+      "province_code": "AB",
+      "country": "Canada",
+      "source_url": "https://skinakiska.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.avalanche.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Castle Mountain Resort",
@@ -1038,7 +1328,17 @@
       "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Lessons available — book in advance during peak periods. Nearest town with full services: Calgary (2-3 hours). Cafeteria-style food service at the day lodge.",
       "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Budget-friendly hostels and motels in the nearby town.  ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Calgary. Avalanche danger is real in backcountry terrain. Check the avalanche forecast daily at avalanche.ca. Frostbite is a real risk on cold, windy days — cover exposed skin.  Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.skicastle.ca"
+      "website": "https://www.skicastle.ca",
+      "province_code": "AB",
+      "country": "Canada",
+      "source_url": "https://www.skicastle.ca",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.avalanche.ca",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Le Massif de Charlevoix",
@@ -1070,7 +1370,17 @@
       "nearby_services": "Ski rental and repair shop at the base lodge. Lessons available — book in advance during peak periods. Nearest town with full services: Montreal (45 minutes). Après-ski pub and restaurant on site.",
       "accommodation": "Base area hotels and condos within walking distance of the lifts. Vacation rentals and chalets in the surrounding area.  ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Montreal.  Dress in layers — temperatures can swing 20°C between the base and summit. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.lemassif.com"
+      "website": "https://www.lemassif.com",
+      "province_code": "QC",
+      "country": "Canada",
+      "source_url": "https://www.lemassif.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/ski",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Mont-Sainte-Anne",
@@ -1102,7 +1412,17 @@
       "nearby_services": "Ski rental and repair shop at the base lodge. Lessons available — book in advance during peak periods. Nearest town with full services: Montreal (2-3 hours). Cafeteria-style food service at the day lodge.",
       "accommodation": "Base area hotels and condos within walking distance of the lifts. Vacation rentals and chalets in the surrounding area.  ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Montreal.  Frostbite is a real risk on cold, windy days — cover exposed skin.  Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://mont-sainte-anne.com"
+      "website": "https://mont-sainte-anne.com",
+      "province_code": "QC",
+      "country": "Canada",
+      "source_url": "https://mont-sainte-anne.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/ski",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Stoneham Mountain Resort",
@@ -1134,7 +1454,17 @@
       "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Ski school with group and private lessons for all levels. Nearest town with full services: Montreal (2-3 hours). Cafeteria-style food service at the day lodge.",
       "accommodation": "Base area hotels and condos within walking distance of the lifts. Budget-friendly hostels and motels in the nearby town.  ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Montreal.  Frostbite is a real risk on cold, windy days — cover exposed skin.  Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://ski-stoneham.com"
+      "website": "https://ski-stoneham.com",
+      "province_code": "QC",
+      "country": "Canada",
+      "source_url": "https://ski-stoneham.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/ski",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Mont Sutton",
@@ -1166,7 +1496,17 @@
       "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Ski school with group and private lessons for all levels. Nearest town with full services: Montreal (45 minutes). Cafeteria-style food service at the day lodge.",
       "accommodation": "Base area hotels and condos within walking distance of the lifts. Budget-friendly hostels and motels in the nearby town. Multi-day packages with lift tickets included offer the best value. ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Montreal.  Frostbite is a real risk on cold, windy days — cover exposed skin.  Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.montsutton.com"
+      "website": "https://www.montsutton.com",
+      "province_code": "QC",
+      "country": "Canada",
+      "source_url": "https://www.montsutton.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.quebec.ca/tourisme-et-loisirs/activites-de-plein-air/ski",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Mount St. Louis Moonstone",
@@ -1198,7 +1538,17 @@
       "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Ski school with group and private lessons for all levels. Nearest town with full services: Ottawa (45 minutes). Cafeteria-style food service at the day lodge.",
       "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Budget-friendly hostels and motels in the nearby town. Multi-day packages with lift tickets included offer the best value. ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Ottawa.  Frostbite is a real risk on cold, windy days — cover exposed skin.  Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.mountstlouis.com"
+      "website": "https://www.mountstlouis.com",
+      "province_code": "ON",
+      "country": "Canada",
+      "source_url": "https://www.mountstlouis.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.ontario.ca/page/snow-safety",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     },
     {
       "name": "Searchmont Resort",
@@ -1230,7 +1580,17 @@
       "nearby_services": "Full-service resort village with restaurants, ski shops, and rental facilities. Ski school with group and private lessons for all levels. Nearest town with full services: Ottawa (1-1.5 hours). Cafeteria-style food service at the day lodge.",
       "accommodation": "Ski-in/ski-out lodging available — book months in advance for holidays. Budget-friendly hostels and motels in the nearby town.  ",
       "safety": "Ski patrol on duty during operating hours. First aid station at the base. Nearest hospital: Ottawa.  Frostbite is a real risk on cold, windy days — cover exposed skin. Visibility can drop to zero in whiteout conditions — ski with a buddy and know where you are. Hydrate and take breaks — altitude and cold mask exertion.",
-      "website": "https://www.searchmont.com"
+      "website": "https://www.searchmont.com",
+      "province_code": "ON",
+      "country": "Canada",
+      "source_url": "https://www.searchmont.com",
+      "source_label": "Official destination/operator website",
+      "official_regulation_url": "https://www.ontario.ca/page/snow-safety",
+      "last_verified_at": null,
+      "verification_status": "needs_review",
+      "confidence": "unverified",
+      "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
     }
   ]
 }

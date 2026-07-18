@@ -1,0 +1,19 @@
+{
+  "name": "landlink",
+  "version": "0.1.0",
+  "private": true,
+  "description": "LandLink - Airbnb-style marketplace connecting Canadian landowners with hunters. Part of the OutdoorIntel ecosystem.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "resend": "^4.0.0",
+    "pdf-lib": "^1.17.1"
+  },
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel deploy --prod"
+  }
+}

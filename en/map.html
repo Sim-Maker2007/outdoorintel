@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#2d5a3d">
+    <meta name="theme-color" content="#14251a">
     <link rel="alternate" type="application/rss+xml" title="Outdoor Intel Blog" href="https://outdoorintel.ca/rss.xml">
-    <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
-    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
     <title>Interactive Map | Outdoor Intel</title>
     <meta name="description" content="Explore 499+ outdoor spots across Canada on our interactive map. Filter by fishing, hunting, camping, kayaking, skiing, and hiking.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <link rel="canonical" href="https://outdoorintel.ca/en/map.html">
+    <link rel="canonical" href="https://outdoorintel.ca/en/map">
     <meta property="og:title" content="Interactive Map | Outdoor Intel">
     <meta property="og:description" content="Explore 499+ outdoor spots across Canada on our interactive map. Filter by fishing, hunting, camping, kayaking, skiing, and hiking.">
     <meta property="og:image" content="https://outdoorintel.ca/assets/heros/scout-hero-2.jpg">
-    <meta property="og:url" content="https://outdoorintel.ca/en/map.html">
+    <meta property="og:url" content="https://outdoorintel.ca/en/map">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Outdoor Intel">
     <meta property="og:locale" content="en_CA">
@@ -24,11 +22,11 @@
     <meta name="twitter:title" content="Interactive Map | Outdoor Intel">
     <meta name="twitter:description" content="Explore 499+ outdoor spots across Canada on our interactive map.">
     <meta name="twitter:image" content="https://outdoorintel.ca/assets/heros/scout-hero-2.jpg">
-    <link rel="alternate" hreflang="en" href="https://outdoorintel.ca/en/map.html">
-    <link rel="alternate" hreflang="x-default" href="https://outdoorintel.ca/en/map.html">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="alternate" hreflang="en" href="https://outdoorintel.ca/en/map">
+    <link rel="alternate" hreflang="x-default" href="https://outdoorintel.ca/en/map">
+    <link rel="stylesheet" href="/assets/css/site.css?v=1">
+    <link rel="stylesheet" href="/assets/vendor/leaflet/leaflet.css" />
+    <script src="/assets/vendor/leaflet/leaflet.js"></script>
     <style>
         #map { height: calc(100vh - 180px); min-height: 500px; }
         .filter-btn { transition: all 0.2s; }
@@ -36,13 +34,16 @@
         .filter-btn.inactive { opacity: 0.45; }
         .leaflet-popup-content-wrapper { border-radius: 12px; }
         .leaflet-popup-content { margin: 12px 16px; }
-        .spot-popup h3 { font-size: 16px; font-weight: 700; color: #2d5a3d; margin: 0 0 4px 0; }
-        .spot-popup .spot-type { font-size: 12px; color: #c97c5e; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
-        .spot-popup .spot-province { font-size: 13px; color: #6b6359; margin: 4px 0; }
+        .spot-popup h3 { font-size: 16px; font-weight: 700; color: #305e3c; margin: 0 0 4px 0; }
+        .spot-popup .spot-type { font-size: 12px; color: #3d7a4d; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+        .spot-popup .spot-province { font-size: 13px; color: #5c6b5f; margin: 4px 0; }
         .spot-popup .spot-features { font-size: 12px; color: #7a9b8e; margin: 6px 0; }
-        .spot-popup .spot-link { display: inline-block; margin-top: 8px; padding: 6px 16px; background: #2d5a3d; color: white; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 600; }
-        .spot-popup .spot-link:hover { background: #c97c5e; }
-        .spot-popup .spot-website { display: inline-block; margin-top: 4px; margin-left: 4px; padding: 6px 16px; background: #f5f3f0; color: #2d5a3d; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 600; border: 1px solid #2d5a3d20; }
+        .spot-popup .spot-verify { font-size: 11px; color: #5c6b5f; background: #fbfaf7; border: 1px solid #e8e4df; border-radius: 999px; padding: 4px 8px; display: inline-block; margin: 6px 0; }
+        .spot-popup .spot-verify.needs_review { color: #92400e; background: #fff7ed; border-color: #fed7aa; }
+        .spot-popup .spot-verify.verified { color: #166534; background: #f0fdf4; border-color: #bbf7d0; }
+        .spot-popup .spot-link { display: inline-block; margin-top: 8px; padding: 6px 16px; background: #305e3c; color: white; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 600; }
+        .spot-popup .spot-link:hover { background: #3d7a4d; }
+        .spot-popup .spot-website { display: inline-block; margin-top: 4px; margin-left: 4px; padding: 6px 16px; background: #fbfaf7; color: #305e3c; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 600; border: 1px solid #305e3c20; }
         .spot-popup .spot-website:hover { background: #e8e4df; }
         .legend-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; margin-right: 6px; }
         @media (max-width: 768px) {
@@ -58,70 +59,86 @@
       gtag('js', new Date());
       gtag('config', 'G-QY8Q00962P');
     </script>
+<style id="oi-ds">.explore-dropdown{visibility:hidden;opacity:0;transform:translateY(6px);transition:opacity .15s ease,transform .15s ease,visibility .15s}.explore-group:hover .explore-dropdown,.explore-group:focus-within .explore-dropdown{visibility:visible;opacity:1;transform:translateY(0)}</style>
 </head>
-<body class="bg-[#f5f3f0] text-[#3e3127] font-sans leading-relaxed">
+<body class="bg-[#fbfaf7] text-[#1c2b21] font-sans leading-relaxed">
 
-    <header class="fixed top-0 w-full z-[1000] border-b border-[#2d5a3d]/10 bg-white/95 backdrop-blur-md">
-    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <a href="../index.html" class="flex-shrink-0">
-            <img src="../assets/logo/logo.jpg" alt="Outdoor Intel" width="180" height="101" class="h-10 md:h-14 w-auto object-contain">
+    <header data-oi-ds class="fixed top-0 w-full z-[1000] bg-[#14251a] border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between gap-6">
+        <a href="/" class="flex items-center gap-3 flex-shrink-0" aria-label="Outdoor Intel">
+            <span class="w-9 h-9 rounded-lg bg-white flex items-center justify-center text-[#14251a] font-extrabold text-sm tracking-tight">OI</span>
+            <span class="text-white font-bold text-lg tracking-tight">Outdoor Intel</span>
         </a>
-        <nav class="hidden lg:flex gap-6 text-sm font-semibold text-[#3e3127]">
-            <a href="fishing/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Fishing</a>
-            <a href="hunting/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Hunting</a>
-            <a href="camping/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Camping</a>
-            <a href="kayaking/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Kayaking</a>
-            <a href="skiing/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Skiing</a>
-            <a href="hiking/directory.html" class="hover:text-[#c97c5e] transition-colors py-2">Hiking</a>
-            <a href="map.html" class="text-[#2d5a3d] border-b-2 border-[#2d5a3d] transition-colors py-2">Map</a>
-            <a href="trip-planner.html" class="hover:text-[#c97c5e] transition-colors py-2">Trip Planner</a>
-            <a href="blog.html" class="hover:text-[#c97c5e] transition-colors py-2">Blog</a>
-            <a href="../fr/fishing/directory.html" class="text-[#c97c5e] font-bold hover:text-[#2d5a3d] transition-colors py-2">Fran&ccedil;ais</a>
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-white/90">
+            <div class="explore-group relative">
+                <button class="flex items-center gap-1.5 py-2 hover:text-white transition-colors" aria-haspopup="true">
+                    Explore
+                    <svg class="w-3.5 h-3.5 text-[#a2c99a]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+                </button>
+                <div class="explore-dropdown absolute left-0 top-full pt-2 w-52">
+                    <div class="bg-white rounded-xl py-2 shadow-xl border border-[#14251a]/10">
+                        <a href="/en/fishing/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">🎣 Fishing</a>
+                        <a href="/en/hunting/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">🦌 Hunting</a>
+                        <a href="/en/camping/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">⛺ Camping</a>
+                        <a href="/en/kayaking/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">🛶 Kayaking</a>
+                        <a href="/en/skiing/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">⛷️ Skiing</a>
+                        <a href="/en/hiking/directory" class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">🥾 Hiking</a>
+                    </div>
+                </div>
+            </div>
+            <a href="/en/map" class="py-2 hover:text-white transition-colors">Map</a>
+            <a href="/en/trip-planner" class="py-2 hover:text-white transition-colors">Trip Planner</a>
+            <a href="/en/blog" class="py-2 hover:text-white transition-colors">Blog</a>
+            <span class="inline-flex items-center gap-1.5 border border-white/25 rounded-full px-4 py-1.5 text-xs font-bold"><span class="text-white">EN</span><span class="text-white/30">|</span><a href="/fr/" class="text-[#a2c99a] hover:text-white transition-colors" lang="fr">FR</a></span>
+            <button id="global-search-toggle" class="w-9 h-9 rounded-full border border-white/25 flex items-center justify-center hover:bg-white/10 transition-colors" aria-label="Search">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            </button>
         </nav>
-        <button id="menu-toggle" class="lg:hidden p-2 text-[#3e3127]" aria-label="Toggle menu">
+        <button id="menu-toggle" class="lg:hidden p-2 text-white" aria-label="Menu" aria-expanded="false">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
             </svg>
         </button>
     </div>
-    <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-[#2d5a3d]/10">
-        <div class="max-w-7xl mx-auto px-6 py-4 space-y-1">
-            <a href="fishing/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">Fishing</a>
-            <a href="hunting/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">Hunting</a>
-            <a href="camping/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">Camping</a>
-            <a href="kayaking/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">Kayaking</a>
-            <a href="skiing/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">Skiing</a>
-            <a href="hiking/directory.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">Hiking</a>
-            <a href="map.html" class="block py-2 text-[#2d5a3d] font-bold hover:text-[#c97c5e]">Map</a>
-            <a href="trip-planner.html" class="block py-2 text-[#6b6359] hover:text-[#c97c5e]">Trip Planner</a>
-            <a href="blog.html" class="block py-2 text-[#2d5a3d] font-semibold hover:text-[#c97c5e]">Blog</a>
-            <a href="../fr/fishing/directory.html" class="block py-2 text-[#c97c5e] font-bold mt-2">Fran&ccedil;ais</a>
+    <nav id="mobile-menu" class="hidden lg:hidden bg-[#14251a] border-t border-white/10">
+        <div class="max-w-6xl mx-auto px-6 py-4 space-y-1 text-white/90">
+            <a href="/en/fishing/directory" class="block py-2 hover:text-[#a2c99a]">🎣 Fishing</a>
+            <a href="/en/hunting/directory" class="block py-2 hover:text-[#a2c99a]">🦌 Hunting</a>
+            <a href="/en/camping/directory" class="block py-2 hover:text-[#a2c99a]">⛺ Camping</a>
+            <a href="/en/kayaking/directory" class="block py-2 hover:text-[#a2c99a]">🛶 Kayaking</a>
+            <a href="/en/skiing/directory" class="block py-2 hover:text-[#a2c99a]">⛷️ Skiing</a>
+            <a href="/en/hiking/directory" class="block py-2 hover:text-[#a2c99a]">🥾 Hiking</a>
+            <a href="/en/map" class="block py-2 hover:text-[#a2c99a]">Map</a>
+            <a href="/en/trip-planner" class="block py-2 hover:text-[#a2c99a]">Trip Planner</a>
+            <a href="/en/trust" class="block py-2 hover:text-[#a2c99a]">Trust & sources</a>
+            <a href="/en/blog" class="block py-2 font-semibold hover:text-[#a2c99a]">Blog</a>
+            <a href="/fr/" class="block py-2 text-[#a2c99a] font-bold mt-2" lang="fr">Français</a>
         </div>
     </nav>
 </header>
 
     <main class="pt-20">
         <!-- Title & Filters -->
-        <section class="bg-white border-b border-[#2d5a3d]/10 py-6 px-6">
+        <section class="bg-white border-b border-[#305e3c]/10 py-6 px-6">
             <div class="max-w-7xl mx-auto">
                 <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
                     <div>
-                        <h1 class="text-3xl font-bold text-[#2d5a3d]">Explore Canada's Outdoor Spots</h1>
-                        <p class="text-[#6b6359] mt-1"><span id="visible-count">499</span> spots across 6 activities</p>
+                        <h1 class="text-3xl font-bold text-[#305e3c]">Explore Canada's Outdoor Spots</h1>
+                        <p class="text-[#5c6b5f] mt-1"><span id="visible-count">499</span> spots across 6 activities</p>
                     </div>
                     <div class="flex items-center gap-3">
-                        <a href="trip-planner.html" class="inline-flex items-center gap-2 px-5 py-3 bg-[#2d5a3d] text-white rounded-lg text-sm font-semibold hover:bg-[#c97c5e] transition-colors shadow-sm">
+                        <a href="/en/trip-planner" class="inline-flex items-center gap-2 px-5 py-3 bg-[#305e3c] text-white rounded-lg text-sm font-semibold hover:bg-[#3d7a4d] transition-colors shadow-sm">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"/></svg>
                             Trip Planner
                         </a>
                     </div>
                     <div class="relative w-full md:w-72">
-                        <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-[#6b6359]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-                        <input id="search-input" type="text" placeholder="Search spots..." class="w-full pl-10 pr-4 py-3 rounded-lg border border-[#2d5a3d]/20 focus:border-[#2d5a3d] focus:ring-1 focus:ring-[#2d5a3d] outline-none text-sm">
+                        <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-[#5c6b5f]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                        <input id="search-input" type="text" placeholder="Search spots..." class="w-full pl-10 pr-4 py-3 rounded-lg border border-[#305e3c]/20 focus:border-[#305e3c] focus:ring-1 focus:ring-[#305e3c] outline-none text-sm">
                     </div>
                 </div>
                 <div class="flex flex-wrap gap-2" id="filter-buttons">
-                    <button data-cat="all" class="filter-btn active px-4 py-2 rounded-full text-sm font-semibold bg-[#2d5a3d] text-white">All Activities</button>
+                    <button data-cat="all" class="filter-btn active px-4 py-2 rounded-full text-sm font-semibold bg-[#305e3c] text-white">All Activities</button>
                     <button data-cat="fishing" class="filter-btn active px-4 py-2 rounded-full text-sm font-semibold" style="background:#1a73e8; color:white;">Fishing</button>
                     <button data-cat="hunting" class="filter-btn active px-4 py-2 rounded-full text-sm font-semibold" style="background:#e07b39; color:white;">Hunting</button>
                     <button data-cat="camping" class="filter-btn active px-4 py-2 rounded-full text-sm font-semibold" style="background:#2d8a4e; color:white;">Camping</button>
@@ -136,19 +153,57 @@
         <div id="map"></div>
     </main>
 
-    <footer class="bg-[#2d5a3d] text-white py-6 px-6">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-            <p class="text-white/70 text-sm">OutdoorIntel.ca &mdash; 2026</p>
-            <div class="flex gap-6 text-sm">
-                <a href="fishing/directory.html" class="text-white/70 hover:text-white">Fishing</a>
-                <a href="hunting/directory.html" class="text-white/70 hover:text-white">Hunting</a>
-                <a href="camping/directory.html" class="text-white/70 hover:text-white">Camping</a>
-                <a href="kayaking/directory.html" class="text-white/70 hover:text-white">Kayaking</a>
-                <a href="skiing/directory.html" class="text-white/70 hover:text-white">Skiing</a>
-                <a href="hiking/directory.html" class="text-white/70 hover:text-white">Hiking</a>
+    <footer data-oi-ds class="bg-[#14251a] text-white">
+    <div class="max-w-6xl mx-auto px-6 pt-16 pb-8">
+        <div class="grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr] gap-10 pb-12">
+            <div class="col-span-2 md:col-span-1">
+                <a href="/" class="flex items-center gap-3 mb-5" aria-label="Outdoor Intel">
+                    <span class="w-9 h-9 rounded-lg bg-white flex items-center justify-center text-[#14251a] font-extrabold text-sm tracking-tight">OI</span>
+                    <span class="text-white font-bold text-lg tracking-tight">Outdoor Intel</span>
+                </a>
+                <p class="text-white/60 text-sm leading-relaxed max-w-xs mb-6">Sourced outdoor data for better trips across Canada. Every spot is verified and cited.</p>
+                <p class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-2">Weekly intel, free</p>
+                <form class="js-newsletter-form flex gap-2 max-w-xs" data-lang="en">
+                    <input type="email" name="email" required placeholder="Your email" autocomplete="email" class="flex-1 min-w-0 px-3 py-2 rounded-lg text-sm text-[#1c2b21] bg-white placeholder-[#5c6b5f] outline-none focus:ring-2 focus:ring-[#a2c99a]">
+                    <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-5000px">
+                    <button type="submit" class="bg-[#305e3c] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#3d7a4d] transition-colors whitespace-nowrap">Subscribe</button>
+                </form>
+                <p class="js-newsletter-msg text-white/50 text-xs mt-2">One email a week. No spam.</p>
+            </div>
+            <div>
+                <h4 class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-4">Explore</h4>
+                <ul class="space-y-2.5 text-sm text-white/70">
+                    <li><a href="/en/fishing/directory" class="hover:text-white transition-colors">Fishing</a></li>
+                    <li><a href="/en/hunting/directory" class="hover:text-white transition-colors">Hunting</a></li>
+                    <li><a href="/en/camping/directory" class="hover:text-white transition-colors">Camping</a></li>
+                    <li><a href="/en/kayaking/directory" class="hover:text-white transition-colors">Kayaking</a></li>
+                    <li><a href="/en/skiing/directory" class="hover:text-white transition-colors">Skiing</a></li>
+                    <li><a href="/en/hiking/directory" class="hover:text-white transition-colors">Hiking</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-4">Product</h4>
+                <ul class="space-y-2.5 text-sm text-white/70">
+                    <li><a href="/en/map" class="hover:text-white transition-colors">Map</a></li>
+                    <li><a href="/en/trip-planner" class="hover:text-white transition-colors">Trip Planner</a></li>
+                    <li><a href="/en/blog" class="hover:text-white transition-colors">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-4">About</h4>
+                <ul class="space-y-2.5 text-sm text-white/70">
+                    <li><a href="/en/trust" class="hover:text-white transition-colors">Trust & sources</a></li>
+                    <li><a href="/en/about" class="hover:text-white transition-colors">About</a></li>
+                    <li><a href="/en/licenses" class="hover:text-white transition-colors">Licenses & regs</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+        <div class="border-t border-white/15 pt-6 flex items-center justify-between text-sm">
+            <p class="text-white/50">&copy; 2026 Outdoor Intel</p>
+            <p class="font-bold text-xs"><span class="text-white/50">EN</span><span class="text-white/30">&nbsp;|&nbsp;</span><a href="/fr/" class="text-[#a2c99a] hover:text-white transition-colors" lang="fr">FR</a></p>
+        </div>
+    </div>
+</footer>
 
 <script>
 // Mobile menu toggle
@@ -175,6 +230,14 @@ function createIcon(color) {
         iconAnchor: [7, 7],
         popupAnchor: [0, -10]
     });
+}
+
+function verificationLabel(spot) {
+    if (spot.verification_status === 'verified') {
+        return spot.last_verified_at ? `Verified ${spot.last_verified_at}` : 'Verified';
+    }
+    if (spot.verification_status === 'stale') return 'Needs seasonal refresh';
+    return 'Needs editorial review';
 }
 
 // Initialize map centered on Canada
@@ -221,16 +284,26 @@ Promise.all(dataFiles.map(cat =>
             const websiteBtn = spot.website
                 ? `<a href="${spot.website}" target="_blank" rel="noopener noreferrer" class="spot-website">Official Site</a>`
                 : '';
+            const sourceBtn = spot.source_url
+                ? `<a href="${spot.source_url}" target="_blank" rel="noopener noreferrer" class="spot-website">Source</a>`
+                : '';
+            const rulesBtn = spot.official_regulation_url
+                ? `<a href="${spot.official_regulation_url}" target="_blank" rel="noopener noreferrer" class="spot-website">Rules</a>`
+                : '';
+            const verifyClass = spot.verification_status || 'needs_review';
 
             const popupContent = `
                 <div class="spot-popup">
                     <div class="spot-type">${catConfig[cat].label}${spot.type ? ' &mdash; ' + spot.type : ''}</div>
                     <h3>${spot.name}</h3>
                     <div class="spot-province">${spot.province || ''}</div>
+                    <div class="spot-verify ${verifyClass}">${verificationLabel(spot)}</div>
                     ${features ? '<div class="spot-features">' + features + '</div>' : ''}
                     <div>
-                        <a href="${cat}/${spot.slug}.html" class="spot-link">View Profile</a>
+                        <a href="/en/${cat}/${spot.slug}" class="spot-link">View Profile</a>
                         ${websiteBtn}
+                        ${sourceBtn}
+                        ${rulesBtn}
                     </div>
                 </div>
             `;
@@ -323,5 +396,134 @@ document.getElementById('search-input').addEventListener('input', () => {
 });
 </script>
 <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js');}</script>
+
+    <!-- Global Search Overlay -->
+    <div id="global-search-overlay" class="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm hidden" style="transition:opacity 0.2s">
+        <div class="flex items-start justify-center pt-[15vh] px-4">
+            <div class="bg-white rounded-2xl w-full max-w-2xl overflow-hidden" style="box-shadow:0 25px 50px rgba(0,0,0,0.25)">
+                <div class="flex items-center gap-3 px-6 py-4 border-b border-[#305e3c]/10">
+                    <svg class="w-5 h-5 text-[#5c6b5f] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                    <input id="global-search-input" type="text" placeholder="Search 499+ spots across Canada..." class="flex-1 text-lg text-[#1c2b21] placeholder-[#5c6b5f]/50 outline-none bg-transparent" autocomplete="off">
+                    <kbd class="hidden sm:inline-block text-xs text-[#5c6b5f] bg-[#fbfaf7] px-2 py-1 rounded font-mono">ESC</kbd>
+                </div>
+                <div id="global-search-results" class="max-h-[50vh] overflow-y-auto">
+                    <div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    (function(){
+        var overlay = document.getElementById('global-search-overlay');
+        var input = document.getElementById('global-search-input');
+        var results = document.getElementById('global-search-results');
+        var toggle = document.getElementById('global-search-toggle');
+        var spotsData = null;
+        var CATS = ['fishing','hunting','camping','kayaking','skiing','hiking'];
+        var CAT_ICONS = {fishing:'🎣',hunting:'🦌',camping:'⛺',kayaking:'🛶',skiing:'⛷️',hiking:'🥾'};
+
+        function isEn() { return !window.location.pathname.startsWith('/fr'); }
+        function basePath() {
+            var p = window.location.pathname;
+            var depth = (p.match(/\//g)||[]).length - 1;
+            if (p === '/' || p === '/index.html') return '';
+            var segs = [];
+            for (var i = 0; i < depth; i++) segs.push('..');
+            return segs.join('/') || '.';
+        }
+
+        async function loadSpots() {
+            if (spotsData) return spotsData;
+            spotsData = [];
+            var lang = isEn() ? 'en' : 'fr';
+            var base = basePath();
+            for (var i = 0; i < CATS.length; i++) {
+                try {
+                    var r = await fetch((base ? base + '/' : '/') + 'data/' + CATS[i] + '.json');
+                    var d = await r.json();
+                    d.spots.forEach(function(s) {
+                        spotsData.push({
+                            name: s.name,
+                            slug: s.slug,
+                            province: s.province,
+                            category: CATS[i],
+                            species: s.primary_species || s.primary_game || s.features || [],
+                            scout_level: s.scout_level || ''
+                        });
+                    });
+                } catch(e) {}
+            }
+            return spotsData;
+        }
+
+        function renderResults(matches) {
+            if (!matches.length) {
+                results.innerHTML = '<div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">No spots found. Try a different search term.</div>';
+                return;
+            }
+            var lang = isEn() ? 'en' : 'fr';
+            var base = basePath();
+            var html = matches.slice(0, 12).map(function(s) {
+                var href = (base ? base + '/' : '/') + lang + '/' + s.category + '/' + s.slug;
+                var icon = CAT_ICONS[s.category] || '';
+                var sub = s.province + ' • ' + s.category.charAt(0).toUpperCase() + s.category.slice(1);
+                if (s.species.length) sub += ' • ' + s.species.slice(0,2).join(', ');
+                return '<a href="' + href + '" class="flex items-center gap-4 px-6 py-3 hover:bg-[#f4f3ec] transition-colors">' +
+                    '<span class="text-xl flex-shrink-0">' + icon + '</span>' +
+                    '<div class="flex-1 min-w-0">' +
+                    '<div class="font-semibold text-[#305e3c] truncate">' + s.name + '</div>' +
+                    '<div class="text-xs text-[#5c6b5f] truncate">' + sub + '</div>' +
+                    '</div>' +
+                    '<span class="text-xs font-bold text-[#3d7a4d] flex-shrink-0">' + s.scout_level + '</span>' +
+                    '</a>';
+            }).join('');
+            if (matches.length > 12) {
+                html += '<div class="px-6 py-3 text-center text-xs text-[#5c6b5f]">' + (matches.length - 12) + ' more results...</div>';
+            }
+            results.innerHTML = html;
+        }
+
+        function search(q) {
+            if (!spotsData) return;
+            q = q.toLowerCase().trim();
+            if (!q) {
+                results.innerHTML = '<div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>';
+                return;
+            }
+            var matches = spotsData.filter(function(s) {
+                return s.name.toLowerCase().includes(q) ||
+                    s.province.toLowerCase().includes(q) ||
+                    s.category.toLowerCase().includes(q) ||
+                    s.species.some(function(sp) { return sp.toLowerCase().includes(q); });
+            });
+            renderResults(matches);
+        }
+
+        function open() {
+            overlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            input.value = '';
+            input.focus();
+            loadSpots().then(function () { if (input.value) search(input.value); });
+            results.innerHTML = '<div class="px-6 py-8 text-center text-[#5c6b5f] text-sm">Type to search fishing spots, hunting areas, campgrounds, trails...</div>';
+        }
+
+        function close() {
+            overlay.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        if (toggle) toggle.addEventListener('click', open);
+        overlay.addEventListener('click', function(e) { if (e.target === overlay) close(); });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') close();
+            if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); open(); }
+        });
+        input.addEventListener('input', function() { search(this.value); });
+    })();
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/assets/js/newsletter.js?v=1"></script>
+<script defer src="/assets/js/oi-plan.js?v=1"></script>
 </body>
 </html>

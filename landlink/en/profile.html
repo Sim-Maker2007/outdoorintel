@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Profile — LandLink</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/public/css/landlink.css">
+</head>
+<body>
+
+<main class="ll-dash">
+  <div class="ll-dash-head"><h1>Your profile</h1></div>
+
+  <form id="profile-form" style="max-width:640px">
+    <div class="ll-field"><label>Full name</label><input type="text" name="full_name"></div>
+    <div class="ll-field"><label>Phone</label><input type="tel" name="phone"></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div class="ll-field"><label>Postal code</label><input type="text" name="postal_code" maxlength="7"></div>
+      <div class="ll-field"><label>Province</label>
+        <select name="province">
+          <option value="">Select</option>
+          <option>AB</option><option>BC</option><option>MB</option><option>NB</option><option>NL</option><option>NS</option>
+          <option>ON</option><option>PE</option><option>QC</option><option>SK</option><option>NT</option><option>YT</option><option>NU</option>
+        </select>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div class="ll-field"><label>Years of hunting experience</label><input type="number" name="experience_years" min="0"></div>
+      <div class="ll-field"><label>Preferred language</label>
+        <select name="language"><option value="en">English</option><option value="fr">Français</option></select>
+      </div>
+    </div>
+    <div class="ll-field"><label>Bio</label><textarea name="bio" rows="3" placeholder="A few sentences about yourself \u2014 hunting style, ethics, what landowners should know."></textarea></div>
+
+    <h3 style="font-size:18px;margin:32px 0 12px">Verification</h3>
+    <div style="padding:20px;background:var(--bg-soft);border-radius:12px;margin-bottom:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center;font-size:14px">
+        <div>
+          <div style="font-weight:600">PAL (Possession and Acquisition Licence)</div>
+          <div style="font-size:12px;color:var(--ink-soft)" id="pal-status">Not uploaded</div>
+        </div>
+        <input type="file" name="pal_file" accept="image/*,.pdf" style="font-size:12px">
+      </div>
+    </div>
+    <div style="padding:20px;background:var(--bg-soft);border-radius:12px;margin-bottom:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center;font-size:14px">
+        <div>
+          <div style="font-weight:600">Hunter liability insurance</div>
+          <div style="font-size:12px;color:var(--ink-soft)" id="ins-status">Not uploaded</div>
+        </div>
+        <input type="file" name="insurance_file" accept="image/*,.pdf" style="font-size:12px">
+      </div>
+      <div class="ll-field" style="margin-top:12px;margin-bottom:0"><label>Policy expiry</label><input type="date" name="insurance_expires"></div>
+    </div>
+
+    <button type="submit" class="ll-booking-submit" style="max-width:240px">Save profile</button>
+  </form>
+</main>
+
+<script type="module">
+import { renderNav } from '/public/js/nav.js';
+import { supabase, getCurrentProfile } from '/public/js/supabase-client.js';
+renderNav();
+
+async function boot() {
+  const profile = await getCurrentProfile();
+  if (!profile) { window.location.href = '/en/login?next=/en/profile'; return; }
+
+  for (const [k,v] of Object.entries(profile)) {
+    const el = document.querySelector(`[name="${k}"]`);
+    if (el && v != null) el.value = v;
+  }
+
+  document.getElementById('pal-status').textContent = profile.pal_verified_at
+    ? '\u2713 Verified ' + new Date(profile.pal_verified_at).toLocaleDateString()
+    : (profile.pal_image_url ? 'Uploaded \u2014 awaiting admin review' : 'Not uploaded');
+  document.getElementById('ins-status').textContent = profile.insurance_url
+    ? (profile.insurance_expires ? `Uploaded \u2014 expires ${profile.insurance_expires}` : 'Uploaded')
+    : 'Not uploaded';
+
+  document.getElementById('profile-form').addEventListener('submit', async e => {
+    e.preventDefault();
+    const fd = new FormData(e.target);
+    const patch = {
+      full_name: fd.get('full_name'), phone: fd.get('phone'),
+      postal_code: fd.get('postal_code'), province: fd.get('province'),
+      experience_years: parseInt(fd.get('experience_years'),10) || null,
+      language: fd.get('language'), bio: fd.get('bio'),
+      insurance_expires: fd.get('insurance_expires') || null
+    };
+
+    // Upload files to Supabase Storage (bucket: landlink-docs, private)
+    const palFile = fd.get('pal_file');
+    if (palFile && palFile.size) {
+      const path = `${profile.user_id}/pal-${Date.now()}-${palFile.name}`;
+      const { error } = await supabase.storage.from('landlink-docs').upload(path, palFile, { upsert: true });
+      if (!error) patch.pal_image_url = path;
+    }
+    const insFile = fd.get('insurance_file');
+    if (insFile && insFile.size) {
+      const path = `${profile.user_id}/insurance-${Date.now()}-${insFile.name}`;
+      const { error } = await supabase.storage.from('landlink-docs').upload(path, insFile, { upsert: true });
+      if (!error) patch.insurance_url = path;
+    }
+
+    const { error } = await supabase.from('landlink_profiles').update(patch).eq('user_id', profile.user_id);
+    if (error) { alert('Save failed: ' + error.message); return; }
+    alert('Saved.');
+    location.reload();
+  });
+}
+boot();
+</script>
+
+</body>
+</html>

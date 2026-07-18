@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sign Up — LandLink</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/landlink/landlink.css">
+</head>
+<body>
+
+<main class="ll-auth">
+  <h1>Create your account</h1>
+  <p class="sub">Magic link sign-in. We\u2019ll email you a single-use login link.</p>
+  <form id="signup-form">
+    <div class="ll-field">
+      <label>I\u2019m joining as a...</label>
+      <div class="ll-checkgroup">
+        <label><input type="radio" name="role" value="hunter" checked><span>Hunter</span></label>
+        <label><input type="radio" name="role" value="landowner"><span>Landowner</span></label>
+        <label><input type="radio" name="role" value="both"><span>Both</span></label>
+      </div>
+    </div>
+    <div class="ll-field">
+      <label>Full name</label>
+      <input type="text" name="full_name" required>
+    </div>
+    <div class="ll-field">
+      <label>Email</label>
+      <input type="email" name="email" required>
+    </div>
+    <div class="ll-field">
+      <label>Postal code</label>
+      <input type="text" name="postal_code" maxlength="7" placeholder="A1A 1A1">
+    </div>
+    <button type="submit" class="ll-booking-submit">Send magic link</button>
+  </form>
+  <div class="alt">Already have an account? <a href="/en/login">Log in</a></div>
+</main>
+
+<script type="module">
+import { renderNav } from '/assets/landlink/js/nav.js';
+import { supabase } from '/assets/landlink/js/supabase-client.js';
+renderNav();
+
+const url = new URL(location.href);
+const roleParam = url.searchParams.get('role');
+if (roleParam) {
+  const r = document.querySelector(`[name="role"][value="${roleParam}"]`);
+  if (r) r.checked = true;
+}
+
+document.getElementById('signup-form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const fd = new FormData(e.target);
+  const email = fd.get('email');
+  const role = fd.get('role');
+  const full_name = fd.get('full_name');
+  const postal_code = fd.get('postal_code');
+  const next = url.searchParams.get('next') || '/en/landlink/dashboard';
+
+  // Store signup intent in localStorage so we can create the profile after the user returns
+  localStorage.setItem('landlink_pending_profile', JSON.stringify({ role, full_name, postal_code }));
+
+  const { error } = await supabase.auth.signInWithOtp({
+    email,
+    options: { emailRedirectTo: `${location.origin}/en/auth-callback.html?next=${encodeURIComponent(next)}` }
+  });
+  if (error) { alert('Could not send link: ' + error.message); return; }
+  e.target.innerHTML = `<div class="ll-empty" style="padding:20px 0">
+    <div style="font-size:32px">\u2709\uFE0F</div>
+    <p style="margin-top:12px">Check your inbox \u2014 we sent a magic link to <b>${email}</b>.</p>
+  </div>`;
+});
+</script>
+
+</body>
+</html>
