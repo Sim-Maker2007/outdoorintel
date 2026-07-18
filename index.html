@@ -160,6 +160,25 @@
             </div>
         </section>
 
+        <!-- Spots near you -->
+        <section id="near-you" class="py-14 lg:py-16 bg-white border-b border-[#1c2b21]/10">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
+                    <div>
+                        <p class="text-[#305e3c] text-xs font-bold uppercase tracking-widest mb-2">Start close to home</p>
+                        <h2 class="text-3xl lg:text-4xl font-extrabold tracking-tight text-[#1c2b21]">Spots near you</h2>
+                        <p id="near-you-sub" class="text-[#5c6b5f] mt-2 max-w-xl">See the closest fishing, camping, hiking and more &mdash; sorted by how far you'd drive, with this weekend's weather.</p>
+                    </div>
+                    <button id="near-you-btn" class="flex-shrink-0 inline-flex items-center gap-2 bg-[#305e3c] hover:bg-[#3d7a4d] text-white font-semibold px-6 py-3 rounded-lg transition-colors shadow-lg">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        Find spots near me
+                    </button>
+                </div>
+                <div id="near-you-status" class="hidden text-[#5c6b5f] text-sm mb-6"></div>
+                <div id="near-you-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"></div>
+            </div>
+        </section>
+
         <!-- Explore by activity -->
         <section id="activities" class="py-16 lg:py-20">
             <div class="max-w-6xl mx-auto px-6">
@@ -317,10 +336,16 @@
                     </div>
                 </div>
                 <div id="community-recent" data-lang="en" class="hidden mb-10">
-                    <p class="text-[#305e3c] text-xs font-bold uppercase tracking-widest mb-4">Latest reports</p>
+                    <div class="flex items-end justify-between mb-4">
+                        <p class="text-[#305e3c] text-xs font-bold uppercase tracking-widest">Latest reports</p>
+                        <a href="/en/field-notes" class="text-[#305e3c] font-semibold text-sm hover:underline whitespace-nowrap">All field notes &rarr;</a>
+                    </div>
                     <div id="community-recent-grid" class="grid md:grid-cols-3 gap-5"></div>
                 </div>
-                <a href="/en/map" class="inline-block bg-[#305e3c] text-white font-semibold px-7 py-3.5 rounded-lg hover:bg-[#3d7a4d] transition-colors">Find a spot to report on</a>
+                <div class="flex flex-wrap gap-3">
+                    <a href="/en/map" class="inline-block bg-[#305e3c] text-white font-semibold px-7 py-3.5 rounded-lg hover:bg-[#3d7a4d] transition-colors">Find a spot to report on</a>
+                    <a href="/en/field-notes" class="inline-block bg-white border border-[#305e3c]/25 text-[#305e3c] font-semibold px-7 py-3.5 rounded-lg hover:border-[#3d7a4d] transition-colors">See field notes</a>
+                </div>
             </div>
         </section>
 
@@ -565,5 +590,6 @@ if (toggle && menu) {
     })();
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/assets/js/oi-plan.js?v=1"></script>
 </body>
 </html>

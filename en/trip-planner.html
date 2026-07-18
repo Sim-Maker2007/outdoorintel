@@ -121,12 +121,37 @@ body{overflow:hidden;background:#fbfaf7;color:#1c2b21;font-family:system-ui,-app
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:rgba(45,90,61,.25);border-radius:3px}
 
+/* Category filter pills */
+#cat-chips{position:fixed;top:70px;left:20px;z-index:999;display:none;flex-wrap:wrap;gap:6px;max-width:calc(100% - 260px)}
+.cat-pill{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;background:#fff;border:1.5px solid #e0dbd5;border-radius:20px;font-size:12px;font-weight:600;color:#5c6b5f;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.06);transition:all .18s;user-select:none}
+.cat-pill:hover{border-color:#cbd3c5}
+.cat-pill.active{color:#fff;border-color:transparent;box-shadow:0 3px 10px rgba(0,0,0,.14)}
+.cat-pill .cp-count{font-size:10px;opacity:.75;font-weight:700}
+
+/* Trip action buttons (share / maps) */
+#trip-actions{display:none;gap:8px;margin-bottom:14px}
+.trip-act{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:9px 0;border-radius:10px;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;transition:all .18s;border:1px solid}
+.trip-act.share{background:#305e3c;border-color:#305e3c;color:#fff}
+.trip-act.share:hover{background:#3d7a4d}
+.trip-act.maps{background:#fff;border-color:#e0dbd5;color:#305e3c}
+.trip-act.maps:hover{border-color:#3d7a4d;background:#fbfaf7}
+
+/* Toast */
+#toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);z-index:5000;background:#1c2b21;color:#fff;padding:12px 20px;border-radius:12px;font-size:13px;font-weight:600;box-shadow:0 8px 32px rgba(0,0,0,.25);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;display:flex;align-items:center;gap:8px}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* Reset button on empty state */
+.tp-ghost-btn{margin-top:14px;padding:9px 18px;background:#305e3c;color:#fff;border:none;border-radius:9px;font-size:12px;font-weight:700;cursor:pointer;transition:background .2s}
+.tp-ghost-btn:hover{background:#3d7a4d}
+
 /* Responsive */
 @media(max-width:768px){
     #sidebar{width:100%}
     #activity-picker .act-grid{grid-template-columns:repeat(2,1fr)!important;gap:12px!important}
     #profile-modal{max-width:100%;max-height:90vh}
     #activity-chip{top:62px;left:12px}
+    #cat-chips{top:60px;left:10px;right:10px;max-width:none;gap:5px;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px;-webkit-overflow-scrolling:touch}
+    .cat-pill{flex-shrink:0;padding:6px 10px}
     #plan-bar{bottom:12px}
     #gen-overlay .gen-stats{gap:20px}
 }
@@ -143,8 +168,9 @@ body{overflow:hidden;background:#fbfaf7;color:#1c2b21;font-family:system-ui,-app
     <div style="text-align:center;max-width:600px;width:100%;padding:0 20px">
         <div style="margin-bottom:8px"><img src="../assets/logo/logo.jpg" alt="Outdoor Intel" style="height:40px;display:inline-block"></div>
         <h1 style="font-size:28px;font-weight:800;color:#305e3c;margin-bottom:6px">Plan Your Adventure</h1>
-        <p style="font-size:14px;color:#5c6b5f;margin-bottom:32px">What activity are you planning?</p>
+        <p style="font-size:14px;color:#5c6b5f;margin-bottom:32px">What activity are you planning? You can add more later.</p>
         <div class="act-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px" id="act-grid"></div>
+        <button onclick="window.exploreAll()" style="margin-top:24px;background:none;border:none;color:#305e3c;font-size:13px;font-weight:600;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Or explore every activity at once &rarr;</button>
     </div>
 </div>
 
@@ -154,6 +180,12 @@ body{overflow:hidden;background:#fbfaf7;color:#1c2b21;font-family:system-ui,-app
     <span id="chip-label"></span>
     <span style="color:#999;font-size:12px;margin-left:4px">&#x2715;</span>
 </div>
+
+<!-- Category filter pills (multi-activity) -->
+<div id="cat-chips" role="group" aria-label="Filter spots by activity"></div>
+
+<!-- Toast -->
+<div id="toast" role="status" aria-live="polite"></div>
 
 <!-- Header -->
 <div id="header">
@@ -187,6 +219,16 @@ body{overflow:hidden;background:#fbfaf7;color:#1c2b21;font-family:system-ui,-app
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
             <h2 style="font-size:18px;font-weight:700;color:#1c2b21">My Trip</h2>
             <button id="clear-trip" style="font-size:12px;color:#999;background:none;border:none;cursor:pointer;padding:4px 8px" onmouseenter="this.style.color='#e05252'" onmouseleave="this.style.color='#999'">Clear All</button>
+        </div>
+        <div id="trip-actions">
+            <button class="trip-act share" onclick="window.shareTrip()" title="Copy a shareable link to this trip">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                Share
+            </button>
+            <a class="trip-act maps" id="gmaps-link" href="#" target="_blank" rel="noopener" title="Open turn-by-turn directions in Google Maps">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Directions
+            </a>
         </div>
         <div id="trip-stats" style="display:none;margin-bottom:14px;padding:12px 14px;background:#f8f7f5;border-radius:10px;border:1px solid #e8e4df;font-size:12px;color:#5c6b5f"></div>
         <div id="services-panel" style="display:none;margin-bottom:14px">
@@ -239,6 +281,7 @@ const WMO_ICONS = {0:'\u2600\uFE0F',1:'\u{1F324}\uFE0F',2:'\u26C5',3:'\u2601\uFE
 // ==================== STATE ====================
 const state = {
     allSpots: [], trip: [], selectedActivity: null,
+    visibleCats: new Set(), // categories whose spots are shown on the map (multi-activity)
     sidebarOpen: false, phase: 'pick-activity', // pick-activity, set-start, add-destinations, trip-ready
     startPoint: null, startMarker: null,
     routeLegs: [], routeGeometry: null,
@@ -246,6 +289,7 @@ const state = {
     weather: {}
 };
 let routeDebounce = null;
+const LS_KEY = 'oi_trip_v1';
 
 // ==================== MAP ====================
 const map = L.map('map',{center:[56,-96],zoom:4,minZoom:3,maxZoom:13,zoomControl:false});
@@ -262,7 +306,7 @@ map.on('click', function(e) {
     setStartPoint(e.latlng.lat, e.latlng.lng, 'My Starting Point');
 });
 
-function setStartPoint(lat, lng, name) {
+function setStartPoint(lat, lng, name, noAdvance) {
     if (state.startMarker) map.removeLayer(state.startMarker);
     state.startPoint = {lat, lng, name};
     state.startMarker = L.marker([lat, lng], {
@@ -273,7 +317,8 @@ function setStartPoint(lat, lng, name) {
         })
     }).addTo(map).bindPopup(`<div style="font-size:13px;font-weight:700;color:#305e3c">Start: ${name}</div><div style="font-size:11px;color:#999">${lat.toFixed(2)}, ${lng.toFixed(2)}</div>`);
 
-    advanceToDestinations();
+    persistTrip();
+    if (!noAdvance) advanceToDestinations();
 }
 
 function advanceToDestinations() {
@@ -392,31 +437,76 @@ function buildActivityPicker() {
 
 window.selectActivity = function(cat) {
     state.selectedActivity = cat;
+    state.visibleCats = new Set([cat]);
     state.phase = 'set-start';
     document.getElementById('activity-picker').classList.add('hidden');
 
-    const chip = document.getElementById('activity-chip');
-    chip.style.display = 'flex';
-    document.getElementById('chip-icon').textContent = CAT_ICONS[cat];
-    document.getElementById('chip-label').textContent = cat.charAt(0).toUpperCase()+cat.slice(1);
-    chip.style.borderColor = CAT_COLORS[cat]+'50';
+    buildCategoryChips();
+    document.getElementById('cat-chips').style.display = 'flex';
+    renderSpots();
 
     document.getElementById('plan-bar').style.display = 'block';
     document.getElementById('step-label').textContent = 'Click the map or search for your starting point';
     document.getElementById('step-sub').textContent = 'This is where your adventure begins';
     document.getElementById('address-search-wrap').style.display = 'block';
+    persistTrip();
 };
 
 window.showActivityPicker = function() {
     document.getElementById('activity-picker').classList.remove('hidden');
 };
 
+window.exploreAll = function() {
+    state.selectedActivity = 'fishing';
+    state.visibleCats = new Set(CATEGORIES);
+    state.phase = 'set-start';
+    document.getElementById('activity-picker').classList.add('hidden');
+    buildCategoryChips();
+    document.getElementById('cat-chips').style.display = 'flex';
+    renderSpots();
+    document.getElementById('plan-bar').style.display = 'block';
+    document.getElementById('step-label').textContent = 'Click the map or search for your starting point';
+    document.getElementById('step-sub').textContent = 'This is where your adventure begins';
+    document.getElementById('address-search-wrap').style.display = 'block';
+    persistTrip();
+};
+
+// ==================== CATEGORY PILLS (multi-activity) ====================
+function buildCategoryChips() {
+    const wrap = document.getElementById('cat-chips');
+    wrap.innerHTML = CATEGORIES.map(cat => {
+        const count = state.allSpots.filter(s => s.cat === cat && s.coordinates && s.coordinates.lat).length;
+        const on = state.visibleCats.has(cat);
+        const color = CAT_COLORS[cat];
+        return `<button class="cat-pill${on?' active':''}" data-cat="${cat}" onclick="window.toggleCat('${cat}')" aria-pressed="${on}"
+            style="${on?`background:${color};`:''}">
+            <span>${CAT_ICONS[cat]}</span>
+            <span>${cat.charAt(0).toUpperCase()+cat.slice(1)}</span>
+            <span class="cp-count">${count}</span>
+        </button>`;
+    }).join('');
+}
+
+window.toggleCat = function(cat) {
+    if (state.visibleCats.has(cat)) {
+        // Don't allow turning off the last visible category
+        if (state.visibleCats.size === 1) return;
+        state.visibleCats.delete(cat);
+    } else {
+        state.visibleCats.add(cat);
+    }
+    state.selectedActivity = [...state.visibleCats][0];
+    buildCategoryChips();
+    renderSpots();
+    persistTrip();
+};
+
 // ==================== SPOT RENDERING ====================
 function renderSpots() {
     allMarkers.forEach(m => map.removeLayer(m.marker));
     allMarkers = [];
-    if (!state.selectedActivity) return;
-    state.allSpots.filter(s => s.coordinates && s.coordinates.lat && s.coordinates.lng && s.cat === state.selectedActivity).forEach(spot => {
+    if (state.visibleCats.size === 0) return;
+    state.allSpots.filter(s => s.coordinates && s.coordinates.lat && s.coordinates.lng && state.visibleCats.has(s.cat)).forEach(spot => {
         const marker = L.marker([spot.coordinates.lat,spot.coordinates.lng],{icon:createCircleIcon(CAT_COLORS[spot.cat])});
         marker.bindPopup(popupContent(spot),{maxWidth:280});
         marker.addTo(map);
@@ -451,6 +541,7 @@ window.addSpotToTrip = function(slug, cat) {
     const spot = state.allSpots.find(s => s.slug === slug && s.cat === cat);
     if (!spot || state.trip.find(s => s.slug === slug && s.cat === cat)) return;
     state.trip.push(spot);
+    if (!state.visibleCats.has(cat)) { state.visibleCats.add(cat); buildCategoryChips(); renderSpots(); }
     updateTripUI();
     updateTripMarkers();
     updateGenerateBtn();
@@ -479,11 +570,14 @@ function clearTrip() {
     updateTripUI(); updateTripMarkers(); updateGenerateBtn();
     state.phase = 'set-start';
     document.getElementById('plan-bar').style.display = 'block';
-    document.getElementById('step-label').textContent = 'Click the map to set your starting point';
+    document.getElementById('step-label').textContent = 'Click the map or search for your starting point';
     document.getElementById('step-sub').textContent = 'This is where your adventure begins';
+    document.getElementById('address-search-wrap').style.display = 'block';
     document.getElementById('generate-btn').style.display = 'none';
     document.getElementById('services-panel').style.display = 'none';
     document.getElementById('weather-panel').style.display = 'none';
+    try { localStorage.removeItem(LS_KEY); } catch(e){}
+    if (location.hash) history.replaceState(null, '', location.pathname + location.search);
 }
 
 // ==================== TRIP GENERATION ====================
@@ -914,10 +1008,23 @@ function updateTripUI() {
     const stats = document.getElementById('trip-stats');
     countEl.textContent = state.trip.length;
 
+    document.getElementById('trip-actions').style.display = 'none';
+
     if (state.trip.length === 0) {
-        list.innerHTML = `<div style="text-align:center;padding:48px 16px;color:#999"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5" style="margin:0 auto 16px"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg><p style="font-size:13px;line-height:1.5">Click spots on the map to add destinations</p></div>`;
+        const hint = state.startPoint ? 'Click coloured spots on the map to add destinations' : 'Pick a starting point, then add spots along the way';
+        list.innerHTML = `<div style="text-align:center;padding:48px 16px;color:#999"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5" style="margin:0 auto 16px"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg><p style="font-size:13px;line-height:1.5">${hint}</p></div>`;
         stats.style.display = 'none';
+        persistTrip();
         return;
+    }
+
+    // Show share / directions actions once there is something to share
+    if (state.startPoint || state.trip.length) {
+        const actions = document.getElementById('trip-actions');
+        actions.style.display = 'flex';
+        const gmaps = document.getElementById('gmaps-link');
+        const url = buildGoogleMapsUrl();
+        if (url) { gmaps.href = url; gmaps.style.display = 'flex'; } else { gmaps.style.display = 'none'; }
     }
 
     // Stats
@@ -970,6 +1077,7 @@ function updateTripUI() {
 
     list.innerHTML = html;
     setupDragAndDrop();
+    persistTrip();
 }
 
 // ==================== DRAG & DROP ====================
@@ -1029,11 +1137,214 @@ document.addEventListener('keydown', e => {
 });
 document.getElementById('profile-modal-overlay').addEventListener('click', function(e) { if (e.target===this) window.closeProfile(); });
 
+// ==================== PERSISTENCE ====================
+function serializeTrip() {
+    return {
+        a: state.selectedActivity,
+        v: [...state.visibleCats],
+        s: state.startPoint ? {lat:state.startPoint.lat, lng:state.startPoint.lng, name:state.startPoint.name} : null,
+        t: state.trip.map(s => s._isService
+            ? {svc:1, id:s._svcId, name:s.name, cat:s.cat, lat:s.coordinates.lat, lng:s.coordinates.lng}
+            : {slug:s.slug, cat:s.cat})
+    };
+}
+function persistTrip() {
+    try {
+        const data = serializeTrip();
+        if (!data.a && !data.s && data.t.length === 0) { localStorage.removeItem(LS_KEY); return; }
+        localStorage.setItem(LS_KEY, JSON.stringify(data));
+    } catch(e) {}
+}
+function deserializeTrip(obj) {
+    const trip = [];
+    (obj.t||[]).forEach(item => {
+        if (item.svc) {
+            trip.push({name:item.name, slug:'_svc_'+item.id, cat:item.cat, _svcId:item.id, _isService:true, province:'', coordinates:{lat:item.lat, lng:item.lng}});
+        } else {
+            const spot = state.allSpots.find(s => s.slug === item.slug && s.cat === item.cat);
+            if (spot) trip.push(spot);
+        }
+    });
+    let vis = (obj.v && obj.v.length) ? obj.v.slice() : (obj.a ? [obj.a] : []);
+    trip.forEach(s => { if (!s._isService && !vis.includes(s.cat)) vis.push(s.cat); });
+    return { activity: obj.a || (trip[0] && trip[0].cat) || 'fishing', visibleCats: vis, startPoint: obj.s, trip };
+}
+
+// ==================== SHARE LINK ====================
+function encodeTripToHash() {
+    try { return btoa(unescape(encodeURIComponent(JSON.stringify(serializeTrip())))); } catch(e) { return ''; }
+}
+function decodeTripFromHash(h) {
+    try { return JSON.parse(decodeURIComponent(escape(atob(h)))); } catch(e) { return null; }
+}
+
+window.shareTrip = function() {
+    const hash = encodeTripToHash();
+    const url = location.origin + location.pathname + '#trip=' + hash;
+    history.replaceState(null, '', '#trip=' + hash);
+    const title = 'My Outdoor Intel trip';
+    if (navigator.share) {
+        navigator.share({title, text:'Check out this trip I planned on Outdoor Intel', url}).catch(()=>{});
+        return;
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(() => showToast('&#128279; Trip link copied to clipboard'))
+            .catch(() => promptCopy(url));
+    } else { promptCopy(url); }
+};
+function promptCopy(url) {
+    window.prompt('Copy your shareable trip link:', url);
+}
+
+// ==================== GOOGLE MAPS EXPORT ====================
+function buildGoogleMapsUrl() {
+    const pts = [];
+    if (state.startPoint) pts.push([state.startPoint.lat, state.startPoint.lng]);
+    state.trip.forEach(s => { if (s.coordinates) pts.push([s.coordinates.lat, s.coordinates.lng]); });
+    if (pts.length < 2) return null;
+    const origin = pts[0].join(',');
+    const destination = pts[pts.length-1].join(',');
+    const waypoints = pts.slice(1, -1).slice(0, 9).map(p => p.join(',')).join('|'); // Google limits free waypoints
+    let url = 'https://www.google.com/maps/dir/?api=1&travelmode=driving&origin=' + origin + '&destination=' + destination;
+    if (waypoints) url += '&waypoints=' + encodeURIComponent(waypoints);
+    return url;
+}
+
+// ==================== TOAST ====================
+let toastTimer = null;
+function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.innerHTML = msg;
+    t.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => t.classList.remove('show'), 2600);
+}
+
+// ==================== MAP BOUNDS ====================
+function fitTripBounds() {
+    const pts = [];
+    if (state.startPoint) pts.push([state.startPoint.lat, state.startPoint.lng]);
+    state.trip.forEach(s => { if (s.coordinates) pts.push([s.coordinates.lat, s.coordinates.lng]); });
+    if (pts.length === 1) { map.setView(pts[0], 8); }
+    else if (pts.length > 1) { map.fitBounds(pts, {padding:[80,80], maxZoom:9}); }
+}
+
+// ==================== RESTORE A SAVED / SHARED TRIP ====================
+function applyRestored(obj) {
+    const d = deserializeTrip(obj);
+    if (!d.startPoint && d.trip.length === 0 && !d.activity) return false;
+
+    state.selectedActivity = d.activity;
+    state.visibleCats = new Set(d.visibleCats.length ? d.visibleCats : [d.activity]);
+
+    document.getElementById('activity-picker').classList.add('hidden');
+    buildCategoryChips();
+    document.getElementById('cat-chips').style.display = 'flex';
+    document.getElementById('plan-bar').style.display = 'block';
+    document.getElementById('address-search-wrap').style.display = 'block';
+
+    if (d.startPoint) setStartPoint(d.startPoint.lat, d.startPoint.lng, d.startPoint.name || 'My Starting Point', true);
+    state.trip = d.trip;
+    renderSpots();
+    updateTripMarkers();
+    updateGenerateBtn();
+
+    if (d.startPoint && d.trip.length) {
+        state.phase = 'trip-ready';
+        document.getElementById('plan-bar').style.display = 'none';
+        document.getElementById('services-panel').style.display = 'block';
+        state.sidebarOpen = true;
+        document.getElementById('sidebar').classList.add('open');
+        updateTripUI();
+        updateRouteOnly().then(() => { if (state.routeGeometry) fetchNearbyServices(state.routeGeometry); });
+        fetchAllWeather();
+        fitTripBounds();
+    } else if (d.startPoint) {
+        advanceToDestinations();
+        fitTripBounds();
+    } else {
+        // Spots added (e.g. from the directory) but no start point chosen yet
+        state.phase = 'set-start';
+        document.getElementById('step-label').textContent = 'Click the map or search for your starting point';
+        document.getElementById('step-sub').textContent = 'This is where your adventure begins';
+        updateTripUI();
+        if (d.trip.length) {
+            state.sidebarOpen = true;
+            document.getElementById('sidebar').classList.add('open');
+            fitTripBounds();
+        }
+    }
+    return true;
+}
+
+// ==================== DEEP-LINK: ?add=cat:slug ====================
+function handleAddParam(param) {
+    // param like "fishing:lake-superior" or "fishing:lake-superior,camping:algonquin"
+    const items = param.split(',').map(s => s.trim()).filter(Boolean);
+    let added = 0, firstSpot = null;
+    items.forEach(it => {
+        const [cat, ...rest] = it.split(':');
+        const slug = rest.join(':');
+        if (!cat || !slug) return;
+        const spot = state.allSpots.find(s => s.slug === slug && s.cat === cat);
+        if (!spot) return;
+        if (!state.selectedActivity) { // first-time entry via deep link — behave like picking that activity
+            state.selectedActivity = cat;
+            state.visibleCats = new Set([cat]);
+            document.getElementById('activity-picker').classList.add('hidden');
+            buildCategoryChips();
+            document.getElementById('cat-chips').style.display = 'flex';
+            document.getElementById('plan-bar').style.display = 'block';
+            document.getElementById('address-search-wrap').style.display = 'block';
+            document.getElementById('step-label').textContent = 'Click the map or search for your starting point';
+            document.getElementById('step-sub').textContent = 'This is where your adventure begins';
+            state.phase = state.phase === 'pick-activity' ? 'set-start' : state.phase;
+        }
+        if (!state.trip.find(s => s.slug === slug && s.cat === cat)) {
+            state.visibleCats.add(cat);
+            state.trip.push(spot);
+            firstSpot = firstSpot || spot;
+            added++;
+        }
+    });
+    if (added) {
+        buildCategoryChips();
+        renderSpots();
+        updateTripUI();
+        updateTripMarkers();
+        updateGenerateBtn();
+        state.sidebarOpen = true;
+        document.getElementById('sidebar').classList.add('open');
+        if (firstSpot && firstSpot.coordinates) map.setView([firstSpot.coordinates.lat, firstSpot.coordinates.lng], 7);
+        showToast('&#10003; Added ' + added + ' spot' + (added>1?'s':'') + ' to your trip');
+    }
+    // strip the param so a refresh doesn't re-add
+    const url = new URL(location.href);
+    url.searchParams.delete('add');
+    history.replaceState(null, '', url.pathname + (url.search || '') + location.hash);
+}
+
 // ==================== INIT ====================
 async function init() {
     try {
         state.allSpots = await loadAllData();
         buildActivityPicker();
+
+        // 1) A shared trip in the URL hash wins (someone opened a shared link)
+        let restoredFromHash = false;
+        if (location.hash.indexOf('#trip=') === 0) {
+            const obj = decodeTripFromHash(location.hash.slice(6));
+            if (obj) restoredFromHash = applyRestored(obj);
+        }
+        // 2) Otherwise restore the user's own saved trip from localStorage
+        if (!restoredFromHash) {
+            let saved = null;
+            try { const raw = localStorage.getItem(LS_KEY); if (raw) saved = JSON.parse(raw); } catch(e) {}
+            if (saved) applyRestored(saved);
+        }
+        // 3) Deep-link add (?add=cat:slug) — layers on top of whatever is loaded
+        const addParam = new URLSearchParams(location.search).get('add');
+        if (addParam) handleAddParam(addParam);
     } catch(e) { console.error('Init failed:', e); }
 }
 init();
