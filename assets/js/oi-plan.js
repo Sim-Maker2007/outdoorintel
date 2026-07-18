@@ -241,6 +241,87 @@
       }).catch(function () {});
     }
 
+    // ---------- Spot detail: Scout AI (conditions read + ask) ----------
+    function enhanceSpotAI() {
+      var hero = document.querySelector('.spot-hero');
+      if (!hero || document.getElementById('oi-spot-ai')) return;
+      var canonical = document.querySelector('link[rel="canonical"]');
+      var sp = canonical ? parseSpot(canonical.href) : null;
+      if (!sp) return;
+      var main = document.querySelector('main');
+      if (!main) return;
+
+      var L = FR ? {
+        read: 'Le point de Scout', ask: 'Demandez à Scout', askSub: 'Une question sur ce spot ? Scout répond à partir des données et des rapports.',
+        placeholder: 'Ex. : quel est le meilleur moment ?', send: 'Demander', warmup: 'Scout se prépare — revenez bientôt.', err: 'Réessayez dans un instant.',
+        q: ['Meilleur moment ?', 'Comment s’y rendre ?', 'Quel permis ?', 'Quoi apporter ?'],
+        go: 'Foncez', caution: 'Prudence', wait: 'Attendez', poweredBy: 'Réponses basées sur les données du spot + rapports. Vérifiez toujours la réglementation.'
+      } : {
+        read: 'Scout’s read', ask: 'Ask Scout about this spot', askSub: 'Got a question? Scout answers from this spot’s data and recent field reports.',
+        placeholder: 'e.g. when’s the best time to go?', send: 'Ask', warmup: 'Scout is warming up — check back soon.', err: 'Try again in a moment.',
+        q: ['Best time to go?', 'How’s the access?', 'What permit do I need?', 'What should I bring?'],
+        go: 'Go for it', caution: 'Caution', wait: 'Hold off', poweredBy: 'Answers come from this spot’s data + reports. Always confirm current regulations.'
+      };
+      var VC = { go: '#16a34a', caution: '#d97706', wait: '#dc2626' };
+
+      var section = document.createElement('section');
+      section.id = 'oi-spot-ai';
+      section.className = 'bg-white px-6 pt-4 pb-8';
+      section.innerHTML =
+        '<div class="max-w-7xl mx-auto"><div class="max-w-4xl">' +
+          '<div id="oi-read" style="display:none;margin-bottom:16px"></div>' +
+          '<div style="background:#f4f3ec;border:1px solid #e8e4df;border-radius:14px;padding:20px 22px">' +
+            '<div style="display:flex;align-items:center;gap:8px;margin-bottom:4px"><span style="font-size:18px">✨</span><h3 style="font-size:18px;font-weight:800;color:#305e3c">' + L.ask + '</h3></div>' +
+            '<p style="font-size:13px;color:#5c6b5f;margin-bottom:12px">' + L.askSub + '</p>' +
+            '<div id="oi-ask-chips" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px">' + L.q.map(function (q) { return '<button type="button" class="oi-askq" style="background:#fff;border:1px solid rgba(48,94,60,.2);color:#305e3c;font-size:12px;font-weight:600;padding:6px 12px;border-radius:16px;cursor:pointer">' + q + '</button>'; }).join('') + '</div>' +
+            '<div style="display:flex;gap:8px"><input id="oi-ask-input" type="text" placeholder="' + L.placeholder + '" style="flex:1;padding:11px 14px;border:1.5px solid #e0dbd5;border-radius:10px;font-size:14px;outline:none;font-family:inherit"><button id="oi-ask-send" type="button" style="background:#305e3c;color:#fff;border:none;border-radius:10px;padding:0 18px;font-weight:700;cursor:pointer">' + L.send + '</button></div>' +
+            '<div id="oi-ask-answer" style="margin-top:14px"></div>' +
+            '<p style="font-size:11px;color:#7a9b8e;margin-top:12px">' + L.poweredBy + '</p>' +
+          '</div>' +
+        '</div></div>';
+      var anchor = sectionByHeading(['Nearby Spots', 'Spots à proximité', 'Pack This', 'emporter']) || document.getElementById('oi-spot-extra');
+      if (anchor && anchor.parentNode) anchor.parentNode.insertBefore(section, anchor); else main.appendChild(section);
+
+      // D — conditions read (auto)
+      fetch('/api/scout/conditions', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ activity: sp.cat, slug: sp.slug, lang: FR ? 'fr' : 'en' }) })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (d) {
+          if (!d || !d.ok) return;
+          var c = VC[d.verdict] || '#d97706';
+          var label = d.verdict === 'go' ? L.go : d.verdict === 'wait' ? L.wait : L.caution;
+          var box = document.getElementById('oi-read');
+          box.style.display = 'block';
+          box.innerHTML = '<div style="border:1px solid ' + c + '40;background:' + c + '0d;border-radius:14px;padding:16px 20px">' +
+            '<div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">' +
+              '<span style="display:inline-flex;align-items:center;gap:6px;background:' + c + ';color:#fff;font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.5px;padding:5px 12px;border-radius:20px">' + label + '</span>' +
+              '<span style="font-weight:800;color:#1c2b21;font-size:15px">' + esc(d.headline || L.read) + '</span>' +
+              '<span style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:' + c + ';margin-left:auto">✨ ' + esc(L.read) + '</span>' +
+            '</div>' +
+            (d.detail ? '<p style="color:#3e4a40;line-height:1.55;margin-top:8px;font-size:14px">' + esc(d.detail) + '</p>' : '') +
+          '</div>';
+        }).catch(function () {});
+
+      // B — ask
+      var input = section.querySelector('#oi-ask-input');
+      var answer = section.querySelector('#oi-ask-answer');
+      var sending = false;
+      function ask(q) {
+        if (sending || !q.trim()) return;
+        sending = true;
+        answer.innerHTML = '<div style="background:#fff;border:1px solid #e8e4df;border-radius:10px;padding:12px 14px;font-size:13px;color:#5c6b5f">…</div>';
+        fetch('/api/scout/ask', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ activity: sp.cat, slug: sp.slug, question: q, lang: FR ? 'fr' : 'en' }) })
+          .then(function (r) { return r.json().then(function (d) { return { s: r.status, d: d }; }); })
+          .then(function (res) {
+            sending = false;
+            var msg = res.s === 503 ? L.warmup : (res.d && res.d.ok ? res.d.answer : (res.d && res.d.error) || L.err);
+            answer.innerHTML = '<div style="background:#fff;border:1px solid #e8e4df;border-radius:10px;padding:14px 16px;font-size:14px;color:#1c2b21;line-height:1.6">' + esc(msg).replace(/\n/g, '<br>') + '</div>';
+          }).catch(function () { sending = false; answer.innerHTML = '<div style="color:#5c6b5f;font-size:13px">' + esc(L.err) + '</div>'; });
+      }
+      section.querySelectorAll('.oi-askq').forEach(function (b) { b.addEventListener('click', function () { input.value = b.textContent; ask(b.textContent); }); });
+      section.querySelector('#oi-ask-send').addEventListener('click', function () { ask(input.value); });
+      input.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); ask(input.value); } });
+    }
+
     // ---------- Spot detail hero ----------
     function enhanceHero() {
       var hero = document.querySelector('.spot-hero');
@@ -339,9 +420,18 @@
         return name.indexOf(term) >= 0 && (!pvv || cardProv === pvv) && (!tpv || cardFilter.indexOf(tpv) >= 0 || cardType === tpv);
       }
 
+      var smart = null; // { keys:Set('cat/slug'), order:[keys], note:string }
+
       // Central view controller — owns filter + sort-order + reveal-limit
       function applyView() {
-        var matched = cards.filter(isMatch);
+        var matched;
+        if (smart) {
+          var by = {};
+          cards.forEach(function (c) { var sp = parseSpot(c.getAttribute('href')); if (sp) by[sp.cat + '/' + sp.slug] = c; });
+          matched = smart.order.map(function (k) { return by[k]; }).filter(Boolean);
+        } else {
+          matched = cards.filter(isMatch);
+        }
         var shown = 0;
         cards.forEach(function (c) { c.style.display = 'none'; });
         matched.forEach(function (c) { if (shown < limit) { c.style.display = ''; shown++; } });
@@ -350,8 +440,10 @@
         var remaining = matched.length - shown;
         moreBtn.style.display = remaining > 0 ? 'inline-flex' : 'none';
         moreBtn.textContent = (FR ? 'Afficher plus' : 'Show more') + ' (' + remaining + ')';
-        reset.style.display = (search.value || (prov && prov.value) || (typ && typ.value)) ? 'inline-block' : 'none';
+        reset.style.display = (smart || search.value || (prov && prov.value) || (typ && typ.value)) ? 'inline-block' : 'none';
+        if (smartBanner) smartBanner.style.display = smart ? 'flex' : 'none';
       }
+      function clearSmart() { if (!smart) return; smart = null; original.forEach(function (c) { grid.appendChild(c); }); cards = original.slice(); }
 
       function reorder(getKey, numeric) {
         var arr = cards.slice();
@@ -405,6 +497,7 @@
         });
       }
       sortSel.addEventListener('change', function () {
+        clearSmart();
         var v = sortSel.value;
         limit = REVEAL_STEP;
         if (v === 'name') { reorder(function (c) { return (c.getAttribute('data-name') || ''); }, false); applyView(); }
@@ -425,10 +518,51 @@
       reset.style.cssText = 'margin-left:12px;padding:5px 12px;border:1px solid rgba(48,94,60,.25);background:#fff;color:#305e3c;border-radius:14px;font:600 12px/1 system-ui,-apple-system,sans-serif;cursor:pointer;display:none;vertical-align:middle';
       reset.addEventListener('click', function () {
         search.value = ''; if (prov) prov.value = ''; if (typ) typ.value = '';
-        limit = REVEAL_STEP; syncUrl(); applyView(); search.focus();
+        clearSmart(); limit = REVEAL_STEP; syncUrl(); applyView(); search.focus();
       });
 
-      if (count.parentNode) { count.parentNode.appendChild(sortWrap); count.parentNode.appendChild(reset); }
+      // --- Smart search (AI) ---
+      var smartBtn = document.createElement('button');
+      smartBtn.type = 'button';
+      smartBtn.innerHTML = '✨ ' + (FR ? 'Recherche intelligente' : 'Smart search');
+      smartBtn.title = FR ? 'Décrivez ce que vous cherchez en langage naturel' : 'Describe what you want in plain English';
+      smartBtn.style.cssText = 'margin-left:12px;padding:5px 12px;border:1px solid #f4a825;background:#fffdf7;color:#8a5a00;border-radius:14px;font:700 12px/1 system-ui,-apple-system,sans-serif;cursor:pointer;vertical-align:middle';
+      smartBtn.addEventListener('click', function () {
+        var q = (search.value || '').trim();
+        if (!q) { search.focus(); search.placeholder = FR ? 'Ex. : lacs calmes à truite, sans moteur…' : 'e.g. quiet brook-trout lakes, no motors…'; return; }
+        smartBtn.disabled = true; smartBtn.innerHTML = '✨ ' + (FR ? 'Recherche…' : 'Thinking…');
+        fetch('/api/scout/search', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ query: q }) })
+          .then(function (r) { return r.json().then(function (d) { return { s: r.status, d: d }; }); })
+          .then(function (res) {
+            smartBtn.disabled = false; smartBtn.innerHTML = '✨ ' + (FR ? 'Recherche intelligente' : 'Smart search');
+            if (res.s === 503) { smartNote(FR ? 'La recherche intelligente arrive bientôt.' : 'Smart search is warming up — try again soon.', q, true); return; }
+            if (!res.d || !res.d.ok || !res.d.spots.length) { smartNote(FR ? 'Aucun résultat intelligent — essayez les filtres.' : 'No smart matches — try the filters.', q, true); return; }
+            var order = res.d.spots.map(function (x) { return x.activity + '/' + x.slug; });
+            var here = {}; cards.forEach(function (c) { var sp = parseSpot(c.getAttribute('href')); if (sp) here[sp.cat + '/' + sp.slug] = true; });
+            order = order.filter(function (k) { return here[k]; }); // this directory only
+            if (!order.length) { smartNote(FR ? 'Ces résultats sont dans d’autres catégories.' : 'Those matches live in other activities — try the map or another directory.', q, true); return; }
+            smart = { order: order, note: res.d.interpretation || q };
+            // reorder DOM: matched first (in order), rest after
+            var by = {}; cards.forEach(function (c) { var sp = parseSpot(c.getAttribute('href')); if (sp) by[sp.cat + '/' + sp.slug] = c; });
+            order.forEach(function (k) { if (by[k]) grid.appendChild(by[k]); });
+            cards.forEach(function (c) { var sp = parseSpot(c.getAttribute('href')); var k = sp && (sp.cat + '/' + sp.slug); if (!k || order.indexOf(k) < 0) grid.appendChild(c); });
+            limit = Math.max(REVEAL_STEP, order.length);
+            smartNote((FR ? 'Résultats intelligents : ' : 'Smart results: ') + (res.d.interpretation || q), q, false);
+            applyView();
+          }).catch(function () { smartBtn.disabled = false; smartBtn.innerHTML = '✨ ' + (FR ? 'Recherche intelligente' : 'Smart search'); });
+      });
+
+      // Smart banner (interpretation + clear)
+      var smartBanner = document.createElement('div');
+      smartBanner.style.cssText = 'display:none;align-items:center;gap:10px;flex-wrap:wrap;margin:6px 0 14px;padding:10px 14px;background:#fffdf7;border:1px solid #f4d58a;border-radius:12px;font:600 13px/1.4 system-ui,-apple-system,sans-serif;color:#8a5a00';
+      function smartNote(text, q, transient) {
+        smartBanner.innerHTML = '<span>' + esc(text) + '</span>';
+        if (!transient) { var b = document.createElement('button'); b.textContent = FR ? 'Effacer' : 'Clear'; b.style.cssText = 'margin-left:auto;background:#fff;border:1px solid #e0dbd5;color:#305e3c;font-weight:700;font-size:12px;padding:4px 12px;border-radius:12px;cursor:pointer'; b.addEventListener('click', function () { clearSmart(); limit = REVEAL_STEP; applyView(); }); smartBanner.appendChild(b); }
+        smartBanner.style.display = 'flex';
+        if (transient) setTimeout(function () { if (!smart) smartBanner.style.display = 'none'; }, 4000);
+      }
+
+      if (count.parentNode) { count.parentNode.appendChild(sortWrap); count.parentNode.appendChild(smartBtn); count.parentNode.appendChild(reset); count.parentNode.parentNode.insertBefore(smartBanner, count.parentNode.nextSibling); }
 
       // --- "Show more" button ---
       var moreBtn = document.createElement('button');
@@ -440,7 +574,7 @@
       if (grid.parentNode) grid.parentNode.insertBefore(moreBtn, grid.nextSibling);
 
       // --- Filter events: reset reveal, sync URL, re-render ---
-      function onFilter() { limit = REVEAL_STEP; syncUrl(); applyView(); }
+      function onFilter() { clearSmart(); limit = REVEAL_STEP; syncUrl(); applyView(); }
       search.addEventListener('input', onFilter);
       if (prov) prov.addEventListener('change', onFilter);
       if (typ) typ.addEventListener('change', onFilter);
@@ -580,6 +714,7 @@
       enhanceCards();
       enhanceHero();
       enhanceSpotContent();
+      enhanceSpotAI();
       enhanceDirectory();
       initNearby();
       decorateNavLinks();
