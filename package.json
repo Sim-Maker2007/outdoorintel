@@ -11,6 +11,9 @@
     "build:province-indexes": "node scripts/build-province-indexes.js",
     "inject:community": "node scripts/inject-community-intel.js",
     "build:css": "tailwindcss -c tailwind.config.js -i assets/css/tailwind.input.css -o assets/css/site.css --minify",
+    "build:scout-index": "node scripts/build-spots-index.js",
+    "build:scout-page": "node scripts/build-scout-page.js",
+    "build:field-notes": "node scripts/build-field-notes.js",
     "design:apply": "node scripts/apply-design-system.js",
     "links:clean": "node scripts/fix-internal-links.js",
     "quality": "npm run data:normalize && npm run build:province-indexes && npm run data:validate && npm run data:audit"

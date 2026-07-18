@@ -555,22 +555,25 @@
       });
     }
 
-    // ---------- Sitewide: add "Field Notes" to the header nav ----------
-    function decorateFieldNotesNav() {
-      var href = FR ? '/fr/field-notes' : '/en/field-notes';
-      var label = FR ? 'Carnet' : 'Field Notes';
-      if (location.pathname.indexOf('/field-notes') >= 0) return;
-      var blogLinks = document.querySelectorAll('header a[href$="/blog"]');
-      blogLinks.forEach(function (blog) {
-        if (blog.parentNode.querySelector('.oi-fieldnotes-link')) return;
-        var a = blog.cloneNode(true);
-        a.className = blog.className;
-        a.classList.add('oi-fieldnotes-link');
+    // ---------- Sitewide: add "Scout" + "Field Notes" to the header nav ----------
+    function insertNavAfter(anchorSel, marker, href, label) {
+      document.querySelectorAll(anchorSel).forEach(function (anchor) {
+        if (!anchor.parentNode || anchor.parentNode.querySelector('.' + marker)) return;
+        var a = anchor.cloneNode(true);
+        a.className = anchor.className;
+        a.classList.add(marker);
         a.setAttribute('href', href);
         a.textContent = label;
-        // strip any inherited badge nodes from the clone
-        blog.parentNode.insertBefore(a, blog.nextSibling);
+        anchor.parentNode.insertBefore(a, anchor.nextSibling);
       });
+    }
+    function decorateNavLinks() {
+      if (location.pathname.indexOf('/scout') < 0) {
+        insertNavAfter('header a[href$="/trip-planner"]', 'oi-scout-link', FR ? '/fr/scout' : '/en/scout', FR ? 'Scout' : 'Scout');
+      }
+      if (location.pathname.indexOf('/field-notes') < 0) {
+        insertNavAfter('header a[href$="/blog"]', 'oi-fieldnotes-link', FR ? '/fr/field-notes' : '/en/field-notes', FR ? 'Carnet' : 'Field Notes');
+      }
     }
 
     function run() {
@@ -579,7 +582,7 @@
       enhanceSpotContent();
       enhanceDirectory();
       initNearby();
-      decorateFieldNotesNav();
+      decorateNavLinks();
       decorateNav();
       // keep the counter fresh if the user returns via back/forward cache
       window.addEventListener('pageshow', decorateNav);
