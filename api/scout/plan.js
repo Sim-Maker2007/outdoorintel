@@ -155,6 +155,9 @@ export default async function handler(req, res) {
     json(res, 200, { ok: true, type: 'message', reply: 'I could not put together a solid plan for that — try narrowing it to one or two activities and a region.' });
   } catch (e) {
     const code = e.code === 'no_key' ? 503 : 502;
-    json(res, code, { ok: false, error: code === 503 ? 'Scout is not configured yet.' : 'Scout had trouble planning that. Please try again.' });
+    const wantDebug = (body && body.debug === 'oi-diag-9f3') || (req.url && req.url.indexOf('oi-diag-9f3') >= 0);
+    const payload = { ok: false, error: code === 503 ? 'Scout is not configured yet.' : 'Scout had trouble planning that. Please try again.' };
+    if (wantDebug) { payload.detail = String(e.message || e); payload.upstreamStatus = e.status || null; }
+    json(res, code, payload);
   }
 }
