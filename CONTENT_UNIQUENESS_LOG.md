@@ -216,3 +216,35 @@ roger-lac, saint-jean-lac
 
 Fishing progress: 215/240 spots done (72 hand-rewritten, 150 noindexed stubs,
 + batch-1 25). Remaining: 25 Pro spots + batch-1 terrain/depth retrofit.
+
+## Fishing batch 5 — 2026-07-18 — 25 Pro spots + batch-1 retrofit — FISHING COMPLETE
+
+21 full rewrites: temiscouata-lac (identity confirmed despite placeholder
+coords — coordinates FIXED to 47.68,-68.80, depth set to verified 99m),
+brome-lac, boivin-lac (no-fishing zones documented: CINLB/NE marsh/Lemieux),
+davignon-lac, cerf-grand-lac-du, sourd-lac-du, nominingue-grand-lac,
+est-lac-de-l, joseph-lac, saint-francois-petit-lac, trois-lacs-les,
+breeches-lac, chaud-lac, marsan-lac, pimodan-lac, drolet-lac,
+rat-musque-lac-du, boissonneault-lac, bolduc-lac, grelots-lac-aux, thor-lac
+4 noindexed (ambiguous identity, placeholder coords): long-lac, masson-lac,
+pelletier-lac, tremblant-lac (the latter two are NOT the famous namesakes —
+species records differ sharply)
+
+Batch-1 retrofit (25 spots): terrain + terrain_fr rewritten; data fixes:
+- lake-ontario 802m → 244m; lake-erie 210m → 64m; lake-st-jean 102m → 63m;
+  okanagan-lake 258m → 232m; reindeer-lake 250m → 220m
+- okanagan species → Rainbow Trout/Kokanee/Lake Whitefish;
+  kootenay species → Gerrard Rainbow Trout/Bull Trout/Kokanee
+- Set to Varies (fabricated, unverified): nipissing, temagami, muskoka,
+  algonquin, baskatong, fleuve, lac-tremblant, lac-megantic,
+  deux-montagnes, lac-masson, kamloops, kootenay, miramichi, bras-dor
+
+**FISHING FINAL: 240/240 spots. Dup check (description+seasonal_tips+terrain,
+all 240 spots, EN+FR): 0 violations.**
+86 hand-rewritten indexed pages · 154 honest noindexed stubs.
+
+Sources this batch: sepaq.com + wikipedia (Témiscouata: 39 km, 99 m, park
+2009), ville.lac-brome.qc.ca + tourismelacbrome (Brome access rules, species),
+cinlb.org + granby.ca (Boivin no-fishing zones, permitted species).
+Remaining activities: hunting (89), camping (51), hiking (46), kayaking (37),
+skiing (36) — all still templated.

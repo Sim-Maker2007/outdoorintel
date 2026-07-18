@@ -1,0 +1,121 @@
+{
+  "lake-superior": {
+    "terrain": "The largest freshwater surface on Earth: 406 m deep, ringed by basalt headlands and boulder shorelines on the Ontario side, with cold, exceptionally clear water and river-mouth structure as the angler's anchor points.",
+    "terrain_fr": "La plus grande surface d'eau douce de la planète : 406 m de profondeur, ceinturée côté ontarien de caps de basalte et de rives de blocs, avec une eau froide d'une clarté exceptionnelle et les embouchures comme points d'ancrage du pêcheur."
+  },
+  "lake-huron": {
+    "terrain": "Two lakes in one: Georgian Bay's granite shoals and thirty thousand islands on the east, and a main basin plunging past 200 m to the west, joined by the island-studded North Channel.",
+    "terrain_fr": "Deux lacs en un : les hauts-fonds granitiques et les Trente Mille Îles de la baie Georgienne à l'est, un bassin principal plongeant au-delà de 200 m à l'ouest, reliés par le chenal du Nord parsemé d'îles."
+  },
+  "lake-ontario": {
+    "terrain": "Long sand and clay shorelines broken by river mouths, shelving to a basin 244 m at its deepest; the Niagara Bar's shoal complex is the most storied structure on the Ontario side.",
+    "terrain_fr": "De longues rives de sable et d'argile coupées d'embouchures, descendant vers un bassin de 244 m au plus profond; le complexe de hauts-fonds de la barre du Niagara demeure la structure la plus réputée du côté ontarien.",
+    "fixes": { "depth_max": "244m" }
+  },
+  "lake-erie": {
+    "terrain": "The shallowest Great Lake — 64 m at its extreme — with rocky reefs and islands in the western basin, a soft-bottomed central basin, and the great sand spit of Long Point sheltering its famous bay.",
+    "terrain_fr": "Le moins profond des Grands Lacs — 64 m à l'extrême — avec récifs rocheux et îles dans le bassin ouest, un bassin central à fond mou et la grande flèche de sable de Long Point qui abrite sa baie célèbre.",
+    "fixes": { "depth_max": "64m" }
+  },
+  "lake-nipissing": {
+    "terrain": "A broad, famously shallow sheet of water: sand flats and scattered shoals across the main body, with the West Arm and French River outlet country breaking into Georgian Bay-style rock maze.",
+    "terrain_fr": "Une vaste nappe d'eau réputée peu profonde : battures de sable et hauts-fonds épars sur le corps principal, avec le bras Ouest et le secteur de la rivière des Français qui éclatent en labyrinthe rocheux à la Georgienne.",
+    "fixes": { "depth_max": "Varies" }
+  },
+  "lake-temagami": {
+    "terrain": "Deep, cold, exceptionally clear water threading between hundreds of islands, with old-growth red and white pine crowning the ridges — canoe-country structure on a lake-trout scale.",
+    "terrain_fr": "Une eau profonde, froide et exceptionnellement claire faufilée entre des centaines d'îles, avec des pins rouges et blancs anciens couronnant les crêtes — une structure de pays de canot à l'échelle du touladi.",
+    "fixes": { "depth_max": "Varies" }
+  },
+  "muskoka-lakes": {
+    "terrain": "Three connected Canadian Shield lakes — Muskoka, Rosseau, Joseph — of granite points, shoal complexes, and deep cold basins, linked by locks and channels through cottage country.",
+    "terrain_fr": "Trois lacs du Bouclier canadien reliés — Muskoka, Rosseau, Joseph — faits de pointes de granit, de complexes de hauts-fonds et de fosses froides, joints par écluses et chenaux à travers le pays de chalets.",
+    "fixes": { "depth_max": "Varies" }
+  },
+  "algonquin-park-lakes": {
+    "terrain": "Hundreds of cold, clean lakes strung across the Algonquin dome by portages rather than roads — rocky basins, spruce-and-maple shorelines, and depths that vary lake to lake across the park.",
+    "terrain_fr": "Des centaines de lacs froids et propres égrenés sur le dôme d'Algonquin par des portages plutôt que des routes — bassins rocheux, rives d'épinettes et d'érables, et des profondeurs qui varient d'un lac à l'autre du parc.",
+    "fixes": { "depth_max": "Varies" }
+  },
+  "lake-st-jean": {
+    "terrain": "A near-circular inland sea reaching 63 m at its deepest, rimmed by sand beaches and blueberry country, with major tributary deltas — Péribonka foremost — building the structure that matters.",
+    "terrain_fr": "Une mer intérieure presque circulaire atteignant 63 m au plus profond, bordée de plages de sable et de bleuetières, avec les deltas de grands tributaires — la Péribonka en tête — qui bâtissent la structure qui compte.",
+    "fixes": { "depth_max": "63m" }
+  },
+  "baskatong-reservoir": {
+    "terrain": "413 km² of drowned valleys: islands, deep inlets, and old river channels under managed water whose seasonal drawdown exposes new shoals and retires old waypoints.",
+    "terrain_fr": "413 km² de vallées noyées : îles, baies profondes et anciens chenaux de rivière sous une eau gérée dont le marnage saisonnier découvre de nouveaux hauts-fonds et met vos anciens repères à la retraite.",
+    "fixes": { "depth_max": "Varies" }
+  },
+  "fleuve-saint-laurent": {
+    "terrain": "Tidal big water at Québec City: current seams that move hourly, rocky island margins around Île d'Orléans, shipping channels, and shorelines that flood and drain twice a day.",
+    "terrain_fr": "De la grande eau à marée à la hauteur de Québec : veines de courant qui se déplacent d'heure en heure, pourtours rocheux autour de l'île d'Orléans, voies de navigation et rives qui se couvrent et se découvrent deux fois par jour.",
+    "fixes": { "depth_max": "Varies" }
+  },
+  "lac-tremblant": {
+    "terrain": "A long, narrow, fjord-like trough at the foot of Mont Tremblant: steep forested slopes, cold clear water, and a deep central basin flanked by tributary mouths at the quieter north end.",
+    "terrain_fr": "Une auge longue, étroite et fjordique au pied du mont Tremblant : pentes boisées abruptes, eau froide et claire, et une fosse centrale flanquée d'embouchures de tributaires au bout nord, plus tranquille.",
+    "fixes": { "depth_max": "Varies" }
+  },
+  "lac-megantic": {
+    "terrain": "A cool, deep basin in Québec's Appalachian southeast near the Maine line: rocky shorelines and river mouths on a lake that warms slowly, under some of eastern North America's darkest night skies.",
+    "terrain_fr": "Un bassin frais et profond du sud-est appalachien du Québec, près de la ligne du Maine : rives rocheuses et embouchures sur un lac qui se réchauffe lentement, sous l'un des ciels nocturnes les plus noirs de l'est de l'Amérique du Nord.",
+    "fixes": { "depth_max": "Varies" }
+  },
+  "lac-des-deux-montagnes": {
+    "terrain": "A broad widening of the Ottawa River: huge weed flats, marshy bays, and deeper old-channel runs, all shaped by river flow rather than lake bathymetry.",
+    "terrain_fr": "Un vaste élargissement de la rivière des Outaouais : immenses battures d'herbiers, baies marécageuses et chenaux anciens plus profonds, le tout façonné par le débit de la rivière plutôt que par une bathymétrie de lac.",
+    "fixes": { "depth_max": "Varies" }
+  },
+  "lac-masson": {
+    "terrain": "Granite points and boulder fields typical of the mid-Laurentians, weedy back bays, and navigable channels linking the Estérel chain — three lakes' structure reachable by one boat.",
+    "terrain_fr": "Pointes de granit et champs de blocs typiques des moyennes Laurentides, fonds de baies herbeux et chenaux navigables reliant la chaîne d'Estérel — la structure de trois lacs à portée d'un seul bateau.",
+    "fixes": { "depth_max": "Varies" }
+  },
+  "kamloops-lake": {
+    "terrain": "A trench widening of the Thompson River through the dry Interior: sage benches and hoodoo bluffs above, current-touched deltas at both ends, and afternoon winds funnelled down the valley.",
+    "terrain_fr": "Un élargissement en tranchée de la rivière Thompson dans l'intérieur aride : terrasses d'armoise et falaises à cheminées de fées au-dessus, deltas touchés par le courant aux deux extrémités, et vents d'après-midi canalisés par la vallée.",
+    "fixes": { "depth_max": "Varies" }
+  },
+  "shuswap-lake": {
+    "terrain": "Four long arms spreading through folded country between the Monashees and the plateau: creek-mouth fans, steep drop-offs, and the salmon-nursery shorelines that drive the whole food web.",
+    "terrain_fr": "Quatre longs bras déployés dans un pays plissé entre les Monashees et le plateau : cônes d'embouchures, cassures abruptes et ces rives-pouponnières à saumon qui animent toute la chaîne alimentaire."
+  },
+  "okanagan-lake": {
+    "terrain": "A 135 km fjord-like trench reaching about 232 m deep: steep walls where orchard benches plunge to dark water, a handful of creek fans, and long mid-lake flats built for trolling.",
+    "terrain_fr": "Une tranchée fjordique de 135 km atteignant environ 232 m de profondeur : parois abruptes où les terrasses de vergers plongent vers l'eau sombre, quelques cônes de ruisseaux et de longues plaines centrales taillées pour la traîne.",
+    "fixes": { "depth_max": "232m", "primary_species": ["Rainbow Trout", "Kokanee", "Lake Whitefish"] }
+  },
+  "kootenay-lake": {
+    "terrain": "A 100-plus-kilometre trench between the Selkirk and Purcell ranges, deep and steep-walled, with the shallower West Arm at Nelson and tributary deltas — Lardeau country north — that rule the fishery's fortunes.",
+    "terrain_fr": "Une tranchée de plus de 100 kilomètres entre les chaînes Selkirk et Purcell, profonde et aux parois raides, avec le bras Ouest moins profond à Nelson et des deltas de tributaires — le pays de la Lardeau au nord — qui gouvernent les fortunes de la pêcherie.",
+    "fixes": { "depth_max": "Varies", "primary_species": ["Gerrard Rainbow Trout", "Bull Trout", "Kokanee"] }
+  },
+  "great-slave-lake": {
+    "terrain": "North America's deepest lake at 614 m: a subarctic inland sea whose East Arm shatters into red cliffs, islands, and channels inside Thaidene Nëné, with a short ice-free season and endless June light.",
+    "terrain_fr": "Le lac le plus profond d'Amérique du Nord à 614 m : une mer intérieure subarctique dont le bras Est éclate en falaises rouges, îles et chenaux au sein de Thaidene Nëné, avec une courte saison sans glace et la lumière sans fin de juin."
+  },
+  "winnipeg-lake": {
+    "terrain": "One of the world's great lakes by area yet only 36 m at its deepest: two vast, wind-raked basins of subtle contours, marshy bays, and shallow water that builds steep dangerous seas within minutes.",
+    "terrain_fr": "L'un des grands lacs du monde en superficie mais seulement 36 m au plus profond : deux vastes bassins balayés par le vent, aux contours subtils, avec des baies marécageuses et une eau peu profonde qui lève en quelques minutes des mers courtes et dangereuses."
+  },
+  "reindeer-lake": {
+    "terrain": "A labyrinth of islands and channels on the Shield's edge, mostly shallow and irregular — except Deep Bay, the 13 km meteorite crater plunging 220 m, the deepest water in Saskatchewan.",
+    "terrain_fr": "Un labyrinthe d'îles et de chenaux en bordure du Bouclier, majoritairement peu profond et irrégulier — sauf Deep Bay, le cratère météoritique de 13 km plongeant à 220 m, l'eau la plus profonde de la Saskatchewan.",
+    "fixes": { "depth_max": "220m" }
+  },
+  "miramichi-river": {
+    "terrain": "Classic pool-and-riffle Atlantic salmon water: gravel bars rebuilt by spring ice runs, named pools on the Southwest and Northwest branches, and cold-water refuges that concentrate fish in warm summers.",
+    "terrain_fr": "L'eau à saumon atlantique classique, en fosses et rapides : bancs de gravier refaits par les débâcles printanières, fosses nommées sur les branches Sud-Ouest et Nord-Ouest, et refuges d'eau froide qui concentrent le poisson dans les étés chauds.",
+    "fixes": { "depth_max": "Varies" }
+  },
+  "bras-dor-lake": {
+    "terrain": "A brackish inland sea filling the heart of Cape Breton: tidal channels to the Atlantic, arms of varying salinity, and the barachois ponds and river mouths where the sportfishing concentrates.",
+    "terrain_fr": "Une mer intérieure saumâtre remplissant le cœur du Cap-Breton : chenaux à marée vers l'Atlantique, bras de salinité variable, et les étangs de barachois et embouchures où se concentre la pêche sportive.",
+    "fixes": { "depth_max": "Varies" }
+  },
+  "lake-minnewanka": {
+    "terrain": "A wind-raked mountain reservoir 143 m deep in Banff's front ranges: drowned valley structure — including the submerged village of Minnewanka Landing — rocky drop-offs near the dam, and cold water year-round.",
+    "terrain_fr": "Un réservoir de montagne balayé par le vent, profond de 143 m, dans les chaînons frontaux de Banff : structure de vallée noyée — y compris le village englouti de Minnewanka Landing —, cassures rocheuses près du barrage et eau froide à l'année."
+  }
+}

@@ -11,7 +11,7 @@ in `scripts/rewrites/triage-report.json` (`node scripts/triage-data-richness.js`
 Every 8+ word stub sentence interpolates the spot's own name/species, so the
 duplication check passes; stubs are never indexed regardless.
 
-Total noindexed: 150
+Total noindexed: 154
 
 | Activity | Slug | Reason | Date noindexed |
 |----------|------|--------|----------------|
@@ -165,3 +165,7 @@ Total noindexed: 150
 | fishing | iles-lac-des | Ambiguous identity: placeholder coords; many namesakes. | 2026-07-18 |
 | fishing | roger-lac | Ambiguous identity: placeholder coords; sauger record hints river-connected water. | 2026-07-18 |
 | fishing | saint-jean-lac | Ambiguous identity: NOT the Saguenay giant; placeholder coords; several small namesakes. | 2026-07-18 |
+| fishing | long-lac | Ambiguous identity: placeholder coords; Québec's most-duplicated lake name. Trout inventory preserved. | 2026-07-18 |
+| fishing | masson-lac | Ambiguous identity: NOT the Sainte-Marguerite lake (different species: muskie+touladi); placeholder coords. | 2026-07-18 |
+| fishing | pelletier-lac | Ambiguous identity: placeholder coords; common family-name lake. | 2026-07-18 |
+| fishing | tremblant-lac | Ambiguous identity: NOT the Mont-Tremblant lake (distinctive muskie/ouananiche record); placeholder coords. | 2026-07-18 |

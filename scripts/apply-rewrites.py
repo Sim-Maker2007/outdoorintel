@@ -65,10 +65,15 @@ def main():
         spot = by_slug.get(slug)
         if spot is None:
             raise SystemExit(f'UNKNOWN SLUG: {slug}')
-        spot['description'] = rw['description']
-        spot['seasonal_tips'] = rw['seasonal_tips']
-        spot['description_fr'] = rw['description_fr']
-        spot['seasonal_tips_fr'] = rw['seasonal_tips_fr']
+        # all content fields optional: retrofit entries may carry only terrain/fixes
+        if 'description' in rw:
+            spot['description'] = rw['description']
+        if 'seasonal_tips' in rw:
+            spot['seasonal_tips'] = rw['seasonal_tips']
+        if 'description_fr' in rw:
+            spot['description_fr'] = rw['description_fr']
+        if 'seasonal_tips_fr' in rw:
+            spot['seasonal_tips_fr'] = rw['seasonal_tips_fr']
         if 'terrain' in rw:
             spot['terrain'] = rw['terrain']
         if 'terrain_fr' in rw:
@@ -77,8 +82,10 @@ def main():
 
         en = ROOT / 'en' / activity / f'{slug}.html'
         html = en.read_text(encoding='utf-8')
-        html = replace_section(html, 'About This Place', rw['description'], en)
-        html = replace_section(html, 'Seasonal Tips', rw['seasonal_tips'], en)
+        if 'description' in rw:
+            html = replace_section(html, 'About This Place', rw['description'], en)
+        if 'seasonal_tips' in rw:
+            html = replace_section(html, 'Seasonal Tips', rw['seasonal_tips'], en)
         if 'terrain' in rw:
             html = replace_section(html, 'Terrain & Topography', rw['terrain'], en, required=False)
         if fixes:
@@ -89,8 +96,10 @@ def main():
 
         fr = ROOT / 'fr' / activity / f'{slug}.html'
         html = fr.read_text(encoding='utf-8')
-        html = replace_section(html, 'À propos de ce lieu', rw['description_fr'], fr)
-        html = replace_section(html, 'Conseils de saison', rw['seasonal_tips_fr'], fr)
+        if 'description_fr' in rw:
+            html = replace_section(html, 'À propos de ce lieu', rw['description_fr'], fr)
+        if 'seasonal_tips_fr' in rw:
+            html = replace_section(html, 'Conseils de saison', rw['seasonal_tips_fr'], fr)
         if 'terrain_fr' in rw:
             html = replace_section(html, 'Terrain et topographie', rw['terrain_fr'], fr, required=False)
         if fixes:
