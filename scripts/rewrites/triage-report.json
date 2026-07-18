@@ -1,0 +1,4006 @@
+{
+  "fishing": [
+    {
+      "slug": "lake-superior",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "lake-huron",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "lake-ontario",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "lake-erie",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "muskoka-lakes",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "algonquin-park-lakes",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "lake-nipissing",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "lake-temagami",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "lake-st-jean",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "lac-megantic",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "lac-tremblant",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "lac-masson",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "fleuve-saint-laurent",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "lac-des-deux-montagnes",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "baskatong-reservoir",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "kamloops-lake",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "shuswap-lake",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "okanagan-lake",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "kootenay-lake",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "lake-louise",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "lake-minnewanka",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "athabasca-lake",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "cedar-lake",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "winnipeg-lake",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "athabasca-lake-sk",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "reindeer-lake",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "miramichi-river",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "grand-lake-nb",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "bras-dor-lake",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "shubenacadie-river",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "dalvay-lake",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "grand-lake-nl",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "gander-river",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "red-indian-lake",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "teslin-lake",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "kluane-lake",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "great-slave-lake",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "hay-river",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "bathurst-lake",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "abenaquis-lac-des",
+      "cls": "SHORT",
+      "why": "precise coords + 3 species/features",
+      "tier": "Explorer",
+      "listLen": 3,
+      "precise": true
+    },
+    {
+      "slug": "admac-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "aigle-lac-de-l",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "amelie-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "ango-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "argent-lac-d",
+      "cls": "SHORT",
+      "why": "precise coords + 2 species/features",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": true
+    },
+    {
+      "slug": "argile-lac-de-l",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "armstrong-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "aylmer-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 12,
+      "precise": true
+    },
+    {
+      "slug": "barbue-lac-a-la",
+      "cls": "SHORT",
+      "why": "precise coords + 2 species/features",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": true
+    },
+    {
+      "slug": "barriere-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 6,
+      "precise": true
+    },
+    {
+      "slug": "beau-lac-le",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "becasse-lac-de-la",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "belair-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "blair-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 2 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "blanchet-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "boissonneault-lac",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 5,
+      "precise": true
+    },
+    {
+      "slug": "boivin-lac",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 4,
+      "precise": true
+    },
+    {
+      "slug": "bolduc-lac",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 4,
+      "precise": true
+    },
+    {
+      "slug": "bouleau-blanc-lac-du",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "bowker-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 6,
+      "precise": true
+    },
+    {
+      "slug": "breeches-lac",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 5,
+      "precise": true
+    },
+    {
+      "slug": "brochet-lac-du",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "brome-lac",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 5,
+      "precise": true
+    },
+    {
+      "slug": "brompton-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 10,
+      "precise": true
+    },
+    {
+      "slug": "brompton-petit-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 2 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "brule-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 10,
+      "precise": true
+    },
+    {
+      "slug": "bruneau-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 2 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "burbank-etang",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "cache-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "cain-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "cameron-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "carriere-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 2 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "caryer-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "castors-lac-aux",
+      "cls": "SHORT",
+      "why": "precise coords + 2 species/features",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": true
+    },
+    {
+      "slug": "cerf-grand-lac-du",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 4,
+      "precise": true
+    },
+    {
+      "slug": "cerf-petit-lac-du",
+      "cls": "SHORT",
+      "why": "precise coords + 2 species/features",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": true
+    },
+    {
+      "slug": "champlain-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 6,
+      "precise": true
+    },
+    {
+      "slug": "chapleau-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 3 species/features",
+      "tier": "Explorer",
+      "listLen": 3,
+      "precise": true
+    },
+    {
+      "slug": "charest-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "chasseurs-lac-des",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "chats-lac-aux",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 2 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "chaud-lac",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 4,
+      "precise": true
+    },
+    {
+      "slug": "chaudiere-riviere",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 47,
+      "precise": true
+    },
+    {
+      "slug": "choiniere-reservoir",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 10,
+      "precise": true
+    },
+    {
+      "slug": "cinq-doigts-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "clair-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 7,
+      "precise": false
+    },
+    {
+      "slug": "corbeau-lac-du",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 2 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "cornes-lac-des",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 3 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "cote-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "croche-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 7,
+      "precise": false
+    },
+    {
+      "slug": "d-aragon-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "david-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 10,
+      "precise": true
+    },
+    {
+      "slug": "davignon-lac",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 5,
+      "precise": true
+    },
+    {
+      "slug": "desert-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 3 species/features",
+      "tier": "Explorer",
+      "listLen": 3,
+      "precise": true
+    },
+    {
+      "slug": "diablotin-lac-du",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "down-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "drolet-lac",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 4,
+      "precise": true
+    },
+    {
+      "slug": "dube-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "dudley-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "echo-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "ecluse-lac-de-l",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 2 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "ecorces-lac-des",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 7,
+      "precise": true
+    },
+    {
+      "slug": "edouard-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 2 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "elgin-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 2 species/features",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": true
+    },
+    {
+      "slug": "escalier-reservoir-l",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 6,
+      "precise": true
+    },
+    {
+      "slug": "est-lac-de-l",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 5,
+      "precise": true
+    },
+    {
+      "slug": "etchemin-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 2 species/features",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": true
+    },
+    {
+      "slug": "eva-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "ferry-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "franchere-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 2 species/features",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": true
+    },
+    {
+      "slug": "freres-lac-des",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "gagnon-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "gelinotte-lac-de-la",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "general-white-lac-du",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "grandes-baies-lac-des",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "grassy-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "grelots-lac-aux",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 5,
+      "precise": true
+    },
+    {
+      "slug": "grosse-truite-lac-de-la",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "grosses-truites-lacs-des",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "hatchery-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "huit-lac-du",
+      "cls": "SHORT",
+      "why": "precise coords + 2 species/features",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": true
+    },
+    {
+      "slug": "huit-mille-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "humqui-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "hydroplane-lac-de-l",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "iles-lac-des",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 8,
+      "precise": false
+    },
+    {
+      "slug": "in-between-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "inconnu-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "jerry-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "joinville-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 3 species/features",
+      "tier": "Explorer",
+      "listLen": 3,
+      "precise": true
+    },
+    {
+      "slug": "joli-c-ur-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "joseph-lac",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 4,
+      "precise": true
+    },
+    {
+      "slug": "jumeaux-lacs",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "kealy-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "kennedy-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 2 species/features",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": true
+    },
+    {
+      "slug": "kiamika-reservoir",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 6,
+      "precise": true
+    },
+    {
+      "slug": "la-minerve-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "labelle-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "lesage-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 3 species/features",
+      "tier": "Explorer",
+      "listLen": 3,
+      "precise": true
+    },
+    {
+      "slug": "libby-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 2 species/features",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": true
+    },
+    {
+      "slug": "lippe-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "long-lac",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 5,
+      "precise": false
+    },
+    {
+      "slug": "long-petit-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 2 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "louisa-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "louise-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 9,
+      "precise": true
+    },
+    {
+      "slug": "loutre-lac-a-la",
+      "cls": "SHORT",
+      "why": "precise coords + 2 species/features",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": true
+    },
+    {
+      "slug": "lovering-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 6,
+      "precise": true
+    },
+    {
+      "slug": "lyster-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "magog-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 9,
+      "precise": true
+    },
+    {
+      "slug": "maison-de-pierre-lac-de-la",
+      "cls": "SHORT",
+      "why": "precise coords + 2 species/features",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": true
+    },
+    {
+      "slug": "malobes-grand-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 2 species/features",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": true
+    },
+    {
+      "slug": "manitou-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 2 species/features",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": true
+    },
+    {
+      "slug": "marie-le-franc-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "marie-louise-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "marsan-lac",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 4,
+      "precise": true
+    },
+    {
+      "slug": "massawippi-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 11,
+      "precise": true
+    },
+    {
+      "slug": "masson-lac",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 4,
+      "precise": false
+    },
+    {
+      "slug": "matapedia-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 2 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "mazana-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "mcfee-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "mckenzie-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 2 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "megantic-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 12,
+      "precise": true
+    },
+    {
+      "slug": "memphremagog-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 18,
+      "precise": true
+    },
+    {
+      "slug": "mistigougeche-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "mitchinamecus-reservoir",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 6,
+      "precise": true
+    },
+    {
+      "slug": "mitis-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "montjoie-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "morigeau-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "mousseau-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "nadeau-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 2 species/features",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": true
+    },
+    {
+      "slug": "nations-lac-des",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "neigette-grand-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "neigette-petit-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "nominingue-grand-lac",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 4,
+      "precise": true
+    },
+    {
+      "slug": "nominingue-petit-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "norraye-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "nymphes-lac-des",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "oberon-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "orford-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 2 species/features",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": true
+    },
+    {
+      "slug": "papineau-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "paradis-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 2 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "paul-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 2 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "pelletier-lac",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 4,
+      "precise": false
+    },
+    {
+      "slug": "perodeau-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "pimodan-lac",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 4,
+      "precise": true
+    },
+    {
+      "slug": "pinson-dore-lac-du",
+      "cls": "SHORT",
+      "why": "precise coords + 3 species/features",
+      "tier": "Explorer",
+      "listLen": 3,
+      "precise": true
+    },
+    {
+      "slug": "plaines-lac-des",
+      "cls": "SHORT",
+      "why": "precise coords + 2 species/features",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": true
+    },
+    {
+      "slug": "plat-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "poisson-blanc-lac-du",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 7,
+      "precise": true
+    },
+    {
+      "slug": "pouliac-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "quenon-lac-a",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "rat-musque-lac-du",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 5,
+      "precise": true
+    },
+    {
+      "slug": "raymond-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 3 species/features",
+      "tier": "Explorer",
+      "listLen": 3,
+      "precise": true
+    },
+    {
+      "slug": "renversi-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "richelieu-riviere",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 58,
+      "precise": true
+    },
+    {
+      "slug": "riopel-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "rochon-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "roger-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 6,
+      "precise": false
+    },
+    {
+      "slug": "rognon-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "roxton-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 3 species/features",
+      "tier": "Explorer",
+      "listLen": 3,
+      "precise": true
+    },
+    {
+      "slug": "sables-reservoir-aux",
+      "cls": "SHORT",
+      "why": "precise coords + 3 species/features",
+      "tier": "Explorer",
+      "listLen": 3,
+      "precise": true
+    },
+    {
+      "slug": "saint-cyr-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 3 species/features",
+      "tier": "Explorer",
+      "listLen": 3,
+      "precise": true
+    },
+    {
+      "slug": "saint-denis-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 3 species/features",
+      "tier": "Explorer",
+      "listLen": 3,
+      "precise": true
+    },
+    {
+      "slug": "saint-francois-grand-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 9,
+      "precise": true
+    },
+    {
+      "slug": "saint-francois-petit-lac",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 5,
+      "precise": true
+    },
+    {
+      "slug": "saint-germain-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "saint-jean-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 7,
+      "precise": false
+    },
+    {
+      "slug": "saint-mathieu-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 2 species/features",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": true
+    },
+    {
+      "slug": "saint-paul-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 3 species/features",
+      "tier": "Explorer",
+      "listLen": 3,
+      "precise": true
+    },
+    {
+      "slug": "sam-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "sansfacon-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "seize-iles-lac-des",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "sept-freres-lac-des",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "sept-iles-lac-des",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "sept-lacs-grand-lac-des",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "serpent-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 3 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "simon-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 11,
+      "precise": true
+    },
+    {
+      "slug": "simoneau-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 3 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "sourd-lac-du",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 4,
+      "precise": true
+    },
+    {
+      "slug": "spot-directory",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "squatec-grand-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": true
+    },
+    {
+      "slug": "stibre-lac-a",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "stukely-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 6,
+      "precise": true
+    },
+    {
+      "slug": "sucreries-lac-des",
+      "cls": "SHORT",
+      "why": "precise coords + 2 species/features",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": true
+    },
+    {
+      "slug": "tache-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "tapani-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 2 species/features",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": true
+    },
+    {
+      "slug": "temiscouata-lac",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 5,
+      "precise": false
+    },
+    {
+      "slug": "thibault-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 3 species/features",
+      "tier": "Explorer",
+      "listLen": 3,
+      "precise": true
+    },
+    {
+      "slug": "thor-lac",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 4,
+      "precise": true
+    },
+    {
+      "slug": "tiberiade-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 2 species/features",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": true
+    },
+    {
+      "slug": "tremblant-lac",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 4,
+      "precise": false
+    },
+    {
+      "slug": "trois-lacs-les",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 5,
+      "precise": true
+    },
+    {
+      "slug": "trois-saumons-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 3 species/features",
+      "tier": "Explorer",
+      "listLen": 3,
+      "precise": true
+    },
+    {
+      "slug": "truite-lac-a-la",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 17,
+      "precise": true
+    },
+    {
+      "slug": "violon-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 3 species/features",
+      "tier": "Explorer",
+      "listLen": 3,
+      "precise": true
+    },
+    {
+      "slug": "wallace-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 6,
+      "precise": true
+    },
+    {
+      "slug": "waterloo-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 7,
+      "precise": true
+    },
+    {
+      "slug": "welch-petit-lac",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "william-lac",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 7,
+      "precise": true
+    },
+    {
+      "slug": "york-lac",
+      "cls": "SHORT",
+      "why": "precise coords + 2 species/features",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": true
+    },
+    {
+      "slug": "zouaves-lac-des",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    }
+  ],
+  "hunting": [
+    {
+      "slug": "anticosti-island",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "laurentian-mountains",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "zec-batiscan",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "kawartha-lakes",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "algonquin-park",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "muskoka-region",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "peace-river",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "charlie-lake",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "bow-river-valley",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "foothills-red-deer",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "willmore-wilderness",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "whitewater-lake",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "delta-marsh",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "northern-saskatchewan-muskeg",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "acadian-uplands",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "pictou-county-highlands",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "pei-central",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "gros-morne",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "central-plateau-caribou",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "yukon-gma-1",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "yellowknife-region",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "nunavut-tundra",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "algoma-district-on",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "kapuskasing-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "parry-sound-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "renfrew-county-hunting",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 2 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "nipissing-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "timiskaming-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "sudbury-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "cochrane-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "kenora-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "rainy-river-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "dryden-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "sioux-lookout-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "timmins-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "muskoka-hunting",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 2 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "haliburton-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "bruce-peninsula-hunting",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 1 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "manitoulin-island-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 1,
+      "precise": false
+    },
+    {
+      "slug": "wawa-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "reserve-la-verendrye",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "reserve-laurentides",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "reserve-mastigouche",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "zec-chapais",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "saguenay-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "abitibi-temiscamingue-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "chaudiere-appalaches-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "bas-saint-laurent-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "gaspesie-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "lanaudiere-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "mauricie-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "cariboo-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "peace-river-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "kootenays-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "omineca-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "skeena-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "cassiar-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "okanagan-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "thompson-nicola-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "vancouver-island-north-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "peace-country-ab",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "athabasca-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "clearwater-county-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "crowsnest-pass-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "cypress-hills-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "lac-la-biche-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "lesser-slave-lake-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "whitecourt-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "grande-prairie-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "edson-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "meadow-lake-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "prince-albert-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "nipawin-hunting",
+      "cls": "NOINDEX",
+      "why": "rounded coords, 2 item(s), generic links",
+      "tier": "Explorer",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "la-ronge-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "hudson-bay-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "moose-mountain-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "duck-mountain-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "riding-mountain-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "whiteshell-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "nopiming-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "interlake-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "the-pas-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "miramichi-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "cape-breton-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "western-newfoundland-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "central-nb-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "yukon-southern-lakes-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "nahanni-region-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 2,
+      "precise": false
+    },
+    {
+      "slug": "baffin-island-hunting",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 2,
+      "precise": false
+    }
+  ],
+  "camping": [
+    {
+      "slug": "algonquin-provincial-park",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "killarney-provincial-park",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "bon-echo-provincial-park",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "charleston-lake-provincial-park",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "mont-tremblant-national-park",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "saint-anne-parc-national",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "lake-megantic-provincial-park",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "pacific-rim-national-park",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "strathcona-provincial-park",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "cape-scott-provincial-park",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "lake-louise-backcountry",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "moraine-lake-area",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "icefields-parkway",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "riding-mountain-national-park",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "athabasca-sand-dunes",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "fundy-national-park",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "hopewell-rocks",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "cape-breton-highlands-national-park",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "kejimkujik-national-park",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "pei-national-park",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "gros-morne-national-park",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "western-brook-pond",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "tombstone-territorial-park",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "hay-river-territorial-park",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "quttinirpaak-national-park",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "sandbanks-pp",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "presquile-pp",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "pinery-pp",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "grundy-lake-pp",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "quetico-pp",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "lake-superior-pp",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "frontenac-pp",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "silent-lake-pp",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "arrowhead-pp",
+      "cls": "SHORT",
+      "why": "specific website + 3 items",
+      "tier": "Explorer",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "awenda-pp",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "parc-mont-orford",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "parc-jacques-cartier",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "parc-mauricie",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "parc-fjord-saguenay",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "parc-grands-jardins",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "bowron-lake-pp",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "golden-ears-pp",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "joffre-lakes-pp",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "juan-de-fuca-pp",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "garibaldi-pp",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "manning-pp",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "writing-stone-pp",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "dinosaur-pp",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "peter-lougheed-pp",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "elk-island-np",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "waterton-lakes-np",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    }
+  ],
+  "kayaking": [
+    {
+      "slug": "nahanni-river",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "liard-river",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "skeena-river",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "kicking-horse-river",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "churchill-river",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "coppermine-river",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "pembina-river",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "ottawa-river",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "french-river",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "riviere-beaudette",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "jacques-cartier-river",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "saint-john-river",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "margaret-river",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "gander-river",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "yukon-river",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "algonquin-canoe-routes",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "killarney-georgian-bay",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "madawaska-river",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "temagami-routes",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "kawartha-lakes",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "rideau-canal",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "rouge-river",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "saguenay-fjord",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "riviere-bonaventure",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "jacques-cartier-rivers",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "johnstone-strait-orcas",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "broken-group-islands",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "desolation-sound",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "bowron-lake-circuit",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "clayoquot-sound",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "powell-forest-route",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "bow-river",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "north-saskatchewan-river",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "maligne-lake",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "bloodvein-river",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "bay-of-fundy",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "kejimkujik-kayaking",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    }
+  ],
+  "skiing": [
+    {
+      "slug": "whistler-blackcomb",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "big-white",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "sun-peaks",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "fernie-alpine",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "kicking-horse",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "lake-louise",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "banff-norquay",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "sunshine-village",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "marmot-basin",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "laurentian-mountains",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "mont-tremblant",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "chantecler",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "camp-fortune",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "blue-mountain",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "horseshoe-resort",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "talisman-mountain",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "poley-mountain",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "ben-eoin",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "marble-mountain",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "boreal-mountain",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "big-white-bc",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 0,
+      "precise": false
+    },
+    {
+      "slug": "sun-peaks-bc",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 0,
+      "precise": false
+    },
+    {
+      "slug": "revelstoke-resort",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 0,
+      "precise": false
+    },
+    {
+      "slug": "red-mountain-bc",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 0,
+      "precise": false
+    },
+    {
+      "slug": "panorama-resort",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 0,
+      "precise": false
+    },
+    {
+      "slug": "silver-star",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 0,
+      "precise": false
+    },
+    {
+      "slug": "apex-mountain",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 0,
+      "precise": false
+    },
+    {
+      "slug": "mount-washington",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 0,
+      "precise": false
+    },
+    {
+      "slug": "nakiska",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 0,
+      "precise": false
+    },
+    {
+      "slug": "castle-mountain",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 0,
+      "precise": false
+    },
+    {
+      "slug": "le-massif",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 0,
+      "precise": false
+    },
+    {
+      "slug": "mont-sainte-anne",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 0,
+      "precise": false
+    },
+    {
+      "slug": "stoneham",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 0,
+      "precise": false
+    },
+    {
+      "slug": "mont-sutton",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 0,
+      "precise": false
+    },
+    {
+      "slug": "mount-st-louis",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 0,
+      "precise": false
+    },
+    {
+      "slug": "searchmont",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 0,
+      "precise": false
+    }
+  ],
+  "hiking": [
+    {
+      "slug": "west-coast-trail",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "garibaldi-lake",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "juan-de-fuca-trail",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "north-coast-trail",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "plain-of-six-glaciers",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "sentinel-pass",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "johnston-canyon",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "fitz-roy",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "scarborough-bluffs",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "mont-royal-loop",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "laurentian-ridge",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "cape-enrage",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "algonquin-park",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "skyline-trail-highlands",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "beulach-ban-falls",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "gros-morne-mountain",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "tablelands",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "chilkoot-pass",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "mount-massive",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "dempster-highway",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "grouse-grind",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "stawamus-chief",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "joffre-lakes-hike",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "garibaldi-lake-hike",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "panorama-ridge",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "berg-lake",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "juan-de-fuca-hike",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "sunshine-coast-trail",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "black-tusk",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "plain-six-glaciers",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "crypt-lake",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "carthew-alderson",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "parker-ridge",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "ha-ling-peak",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "tent-ridge",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "cup-and-saucer",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "crack-trail-killarney",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "sleeping-giant",
+      "cls": "REWRITE",
+      "why": "tier=Pro",
+      "tier": "Pro",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "pukaskwa-coastal",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "mont-albert",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "mont-jacques-cartier",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "sentier-des-caps",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "east-coast-trail",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "fundy-footpath",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "skyline-trail-cape-breton",
+      "cls": "REWRITE",
+      "why": "tier=Elite",
+      "tier": "Elite",
+      "listLen": 3,
+      "precise": false
+    },
+    {
+      "slug": "chilkoot-trail",
+      "cls": "REWRITE",
+      "why": "tier=Legendary",
+      "tier": "Legendary",
+      "listLen": 3,
+      "precise": false
+    }
+  ]
+}
