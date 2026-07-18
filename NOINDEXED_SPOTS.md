@@ -7,4 +7,5 @@ and re-request indexing.
 
 | Activity | Slug | Reason | Date noindexed |
 |----------|------|--------|----------------|
-| — | — | none yet (fishing batch 1 required no noindexing) | — |
+| fishing | bathurst-lake | No verifiable data exists for this Nunavut waterbody (depth was fabricated; no official fishery info found). Honest stub in place. Re-index if/when real data is sourced. | 2026-07-18 |
+| fishing | megantic-lac | Duplicate record of `lac-megantic` (same waterbody; this one carries the MFFP species inventory). Stub points to main page. Merge records, then delete or re-purpose. | 2026-07-18 |
