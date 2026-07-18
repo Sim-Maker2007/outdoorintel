@@ -108,6 +108,21 @@ export function methodGuard(req, res, allowed) {
   return true;
 }
 
+// Per-IP guard for AI endpoints. Records the call and returns whether the
+// caller is under the limit. Fails OPEN on any error (e.g. Supabase not set or
+// the ai_usage table not yet created) so the feature still works — run
+// db/ai-usage.sql to make the limit enforceable.
+export async function aiGuard(req, { max = 12, windowMs = 60 * 60 * 1000 } = {}) {
+  try {
+    const ip = hashIp(req);
+    if (await overRateLimit('ai_usage', ip, max, windowMs)) return { allowed: false };
+    try { await rest('ai_usage', { method: 'POST', body: { ip_hash: ip } }); } catch { /* record best-effort */ }
+    return { allowed: true };
+  } catch {
+    return { allowed: true };
+  }
+}
+
 const ACTIVITIES = ['fishing', 'hunting', 'camping', 'kayaking', 'skiing', 'hiking'];
 export const isActivity = a => ACTIVITIES.includes(a);
 export const cleanSlug = s => (typeof s === 'string' ? s.trim().toLowerCase().replace(/[^a-z0-9-]/g, '').slice(0, 120) : '');

@@ -231,6 +231,8 @@ body{overflow:hidden;background:#fbfaf7;color:#1c2b21;font-family:system-ui,-app
             </a>
         </div>
         <div id="trip-stats" style="display:none;margin-bottom:14px;padding:12px 14px;background:#f8f7f5;border-radius:10px;border:1px solid #e8e4df;font-size:12px;color:#5c6b5f"></div>
+        <button id="brief-btn" onclick="window.generateBrief()" style="display:none;width:100%;margin-bottom:14px;padding:11px 0;background:#fffdf7;border:1px solid #f4a825;border-radius:10px;color:#8a5a00;font-size:13px;font-weight:700;cursor:pointer;transition:all .2s">&#10024; Get an AI trip brief</button>
+        <div id="brief-panel" style="display:none;margin-bottom:14px"></div>
         <div id="services-panel" style="display:none;margin-bottom:14px">
             <div style="display:flex;gap:6px;flex-wrap:wrap">
                 <button class="svc-filter active" data-svc="fuel" onclick="toggleSvcFilter(this)" style="padding:5px 12px;border-radius:16px;font-size:11px;font-weight:600;cursor:pointer;border:1px solid #3b82f6;background:#eff6ff;color:#3b82f6;transition:all .2s">&#9981; Gas</button>
@@ -1009,6 +1011,7 @@ function updateTripUI() {
     countEl.textContent = state.trip.length;
 
     document.getElementById('trip-actions').style.display = 'none';
+    { const bb = document.getElementById('brief-btn'), bp = document.getElementById('brief-panel'); if (bb) bb.style.display = 'none'; if (bp && !state.trip.length) { bp.style.display = 'none'; bp.innerHTML = ''; } }
 
     if (state.trip.length === 0) {
         const hint = state.startPoint ? 'Click coloured spots on the map to add destinations' : 'Pick a starting point, then add spots along the way';
@@ -1026,6 +1029,9 @@ function updateTripUI() {
         const url = buildGoogleMapsUrl();
         if (url) { gmaps.href = url; gmaps.style.display = 'flex'; } else { gmaps.style.display = 'none'; }
     }
+    // Show the AI trip brief button once there's at least one destination
+    const briefBtn = document.getElementById('brief-btn');
+    if (briefBtn) briefBtn.style.display = state.trip.some(s => !s._isService) ? 'block' : 'none';
 
     // Stats
     const provs = new Set(state.trip.map(s=>s.province).filter(Boolean));
@@ -1218,6 +1224,46 @@ function showToast(msg) {
     t.classList.add('show');
     clearTimeout(toastTimer);
     toastTimer = setTimeout(() => t.classList.remove('show'), 2600);
+}
+
+// ==================== AI TRIP BRIEF ====================
+window.generateBrief = async function() {
+    const stops = state.trip.filter(s => !s._isService).map(s => ({activity: s.cat, slug: s.slug}));
+    if (!stops.length) return;
+    const btn = document.getElementById('brief-btn');
+    const panel = document.getElementById('brief-panel');
+    btn.disabled = true; btn.style.opacity = '.7';
+    btn.innerHTML = '✨ Building your brief…';
+    panel.style.display = 'block';
+    panel.innerHTML = '<div style="text-align:center;padding:18px;color:#999;font-size:12px">Scout is putting together gear, permits and a safety rundown…</div>';
+    try {
+        const resp = await fetch('/api/scout/trip-brief', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({stops})});
+        const d = await resp.json();
+        if (resp.status === 503) { panel.innerHTML = briefMsg('Scout is warming up — check back soon.'); }
+        else if (!d.ok) { panel.innerHTML = briefMsg('Could not build the brief right now. Please try again.'); }
+        else { renderBrief(d.brief); }
+    } catch(e) { panel.innerHTML = briefMsg('Could not build the brief right now. Please try again.'); }
+    btn.disabled = false; btn.style.opacity = '1';
+    btn.innerHTML = '✨ Refresh trip brief';
+};
+function briefMsg(t) { return '<div style="padding:12px 14px;background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;font-size:12px;color:#92400e">' + t + '</div>'; }
+function renderBrief(brief) {
+    const panel = document.getElementById('brief-panel');
+    function section(icon, title, items) {
+        if (!items || !items.length) return '';
+        return '<div style="margin-bottom:12px"><div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:#305e3c;margin-bottom:6px">' + icon + ' ' + title + '</div>' +
+            '<ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:5px">' +
+            items.map(function(i){return '<li style="font-size:12px;color:#3e4a40;line-height:1.5;display:flex;gap:7px"><span style="color:#a2c99a;flex-shrink:0">•</span><span>' + String(i).replace(/</g,'&lt;') + '</span></li>';}).join('') +
+            '</ul></div>';
+    }
+    panel.innerHTML = '<div style="background:#f8f7f5;border:1px solid #e8e4df;border-radius:12px;padding:14px 16px">' +
+        '<div style="display:flex;align-items:center;gap:6px;margin-bottom:12px"><span>✨</span><span style="font-weight:800;font-size:13px;color:#1c2b21">Your AI trip brief</span></div>' +
+        section('🎒', 'Gear', brief.gear) +
+        section('📋', 'Permits & licences', brief.permits) +
+        section('⚠️', 'Safety', brief.safety) +
+        section('💡', 'Tips', brief.tips) +
+        '<p style="font-size:10px;color:#7a9b8e;margin-top:8px;border-top:1px solid #eee;padding-top:8px">AI-generated from your stops — confirm licences and current regulations on each spot page before you go.</p>' +
+    '</div>';
 }
 
 // ==================== MAP BOUNDS ====================

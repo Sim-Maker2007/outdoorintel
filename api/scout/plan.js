@@ -5,7 +5,7 @@
 
 import SPOTS from '../_data/spots-index.js';
 import { chat, aiConfigured } from '../_lib/ai.js';
-import { readBody, json, methodGuard, clip } from '../_lib/community.js';
+import { readBody, json, methodGuard, clip, aiGuard } from '../_lib/community.js';
 
 export const config = { runtime: 'nodejs' };
 
@@ -110,6 +110,8 @@ function sanitizeMessages(raw) {
 export default async function handler(req, res) {
   if (!methodGuard(req, res, 'POST')) return;
   if (!aiConfigured()) { json(res, 503, { ok: false, error: 'Scout is not configured yet.' }); return; }
+  const guard = await aiGuard(req, { max: 15, windowMs: 60 * 60 * 1000 });
+  if (!guard.allowed) { json(res, 429, { ok: false, error: 'You’ve hit the Scout limit for now — give it a little while and try again.' }); return; }
 
   const body = readBody(req);
   const history = sanitizeMessages(body.messages);
