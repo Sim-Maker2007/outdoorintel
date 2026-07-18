@@ -11,7 +11,7 @@ in `scripts/rewrites/triage-report.json` (`node scripts/triage-data-richness.js`
 Every 8+ word stub sentence interpolates the spot's own name/species, so the
 duplication check passes; stubs are never indexed regardless.
 
-Total noindexed: 145
+Total noindexed: 150
 
 | Activity | Slug | Reason | Date noindexed |
 |----------|------|--------|----------------|
@@ -160,3 +160,8 @@ Total noindexed: 145
 | fishing | welch-petit-lac | Minimal verifiable data (thin species record, rounded coords, generic links). Honest generated stub in place. | 2026-07-18 |
 | fishing | york-lac | 2-3 recorded species + precise coords — best enrichment candidates, re-index first. Honest generated stub in place. | 2026-07-18 |
 | fishing | zouaves-lac-des | Minimal verifiable data (thin species record, rounded coords, generic links). Honest generated stub in place. | 2026-07-18 |
+| fishing | clair-lac | Ambiguous identity: placeholder coords 46.5,-72.0; dozens of QC lakes share the name. Real species inventory preserved. | 2026-07-18 |
+| fishing | croche-lac | Ambiguous identity: placeholder coords; name shared across QC regions. | 2026-07-18 |
+| fishing | iles-lac-des | Ambiguous identity: placeholder coords; many namesakes. | 2026-07-18 |
+| fishing | roger-lac | Ambiguous identity: placeholder coords; sauger record hints river-connected water. | 2026-07-18 |
+| fishing | saint-jean-lac | Ambiguous identity: NOT the Saguenay giant; placeholder coords; several small namesakes. | 2026-07-18 |

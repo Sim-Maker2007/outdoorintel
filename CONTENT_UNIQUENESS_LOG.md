@@ -183,3 +183,36 @@ violations from batches 1-3 content.
 - Sitewide later: schema regeneration, name normalization ("X, Lac" titles),
   related_spots pointing at nonexistent slugs, getting_there/parking/
   accommodation fields (templated + fabricated on most pages)
+
+## Fishing batch 4 — 2026-07-18 — 21 spots (remaining Elite tier)
+
+16 full rewrites: aylmer-lac, barriere-lac, bowker-lac, brule-lac,
+choiniere-reservoir, david-lac, ecorces-lac-des, escalier-reservoir-l,
+louise-lac, lovering-lac, mitchinamecus-reservoir, stukely-lac,
+truite-lac-a-la, wallace-lac, waterloo-lac, william-lac
+5 noindexed (ambiguous identity — placeholder coords 46.5,-72.0, heavily
+duplicated Québec lake names): clair-lac, croche-lac, iles-lac-des,
+roger-lac, saint-jean-lac
+
+- Fishing dup check (description+seasonal_tips+terrain): 0 violations
+- Data fix: truite-lac-a-la depth_max Varies → 2m (verified: municipality/APLTI)
+- Species lists in this tier contain merge-duplicates (e.g. "Doré jaune" twice
+  on aylmer-lac) — deduped in prose, raw lists left for a data-cleanup pass
+
+### Sources (verified 2026-07-18)
+
+- Zec Mitchinamecus: ~6,475 ha reservoir, 60 km NE of Mont-Laurier, access
+  fees/registration, walleye+brook trout enhancement, wading pools below
+  McLean Falls — zecmitchinamecus.reseauzec.com, grandquebec.com, wikipedia
+- Lac à la Truite d'Irlande: 124 ha, max 2 m, Bécancour river-lake, historic
+  trout gone (walleye/pike/perch now), mining-sediment threat, 12.5 km paddle
+  route — mundirlande.qc.ca, aplti.org, regiondethetford.chaudiereappalaches.com
+- Réservoir de l'Escalier: 11 km² Lièvre widening at Val-des-Bois/Bowman,
+  Grande-Chute dam 1916, managed levels — cehq.gouv.qc.ca, wikipedia/wikimapia,
+  cobali.org
+- Remainder grounded in stable regional geography + the MFFP-origin species
+  inventories already in data/fishing.json (incl. splake "moulac" record on
+  ecorces, muskellunge on the Bécancour chain, brown trout at Wallace)
+
+Fishing progress: 215/240 spots done (72 hand-rewritten, 150 noindexed stubs,
++ batch-1 25). Remaining: 25 Pro spots + batch-1 terrain/depth retrofit.
