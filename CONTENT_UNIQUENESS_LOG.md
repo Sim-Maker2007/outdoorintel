@@ -299,3 +299,27 @@ pei-central, pictou-county-highlands, riding-mountain-hunting
   waterfowl heritage, zec/pourvoirie/réserve system)
 
 Remaining hunting: 31 Elite + 32 Pro rewrites, 4 Explorer noindex stubs.
+
+## Hunting batch 2 — 2026-07-18 — 17 spots (Elite: QC réserves/regions, Atlantic, prairie waterfowl)
+
+reserve-la-verendrye, reserve-laurentides, reserve-mastigouche,
+saguenay-hunting, gaspesie-hunting, mauricie-hunting, kawartha-lakes,
+muskoka-region, peace-river, whitewater-lake, yukon-gma-1,
+central-plateau-caribou, acadian-uplands, miramichi-hunting,
+cape-breton-hunting, western-newfoundland-hunting,
+peace-river-hunting* (* = noindexed duplicate of peace-river, identical coords)
+
+- Batch dup check vs all 89 hunting spots: **0 violations — PASS**
+- Honest handling: Gaspésie endangered caribou (fully protected, never
+  hunted — ID warning on-page), La Mauricie NP and Cape Breton Highlands NP
+  closed boundaries, NL island caribou framed via real quota system
+- Data flags: yukon-gma-1 name/coords conflict (zone name vs central-Yukon
+  coords 62,-130) — noted on-page, record needs reconciliation
+- Anchors: Kawartha turkey reintroduction (1980s releases), Cape Breton moose
+  introduced from Alberta 1940s, NL moose introduced ~1904, NB moose lottery,
+  Whitewater Lake boom-bust hydrology, Sépaq draw system across réserves
+
+Remaining hunting: 14 Elite/Pro Ontario-boreal+BC+AB rewrites queued next
+(nipissing, sudbury, cochrane, dryden, timmins, wawa, kapuskasing,
+foothills-red-deer, cariboo, thompson-nicola, peace-country-ab,
+clearwater-county, whitecourt, edson) + 32 Pro tier + 4 Explorer stubs.

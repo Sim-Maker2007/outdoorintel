@@ -11,7 +11,7 @@ in `scripts/rewrites/triage-report.json` (`node scripts/triage-data-richness.js`
 Every 8+ word stub sentence interpolates the spot's own name/species, so the
 duplication check passes; stubs are never indexed regardless.
 
-Total noindexed: 154
+Total noindexed: 155
 
 | Activity | Slug | Reason | Date noindexed |
 |----------|------|--------|----------------|
@@ -169,3 +169,4 @@ Total noindexed: 154
 | fishing | masson-lac | Ambiguous identity: NOT the Sainte-Marguerite lake (different species: muskie+touladi); placeholder coords. | 2026-07-18 |
 | fishing | pelletier-lac | Ambiguous identity: placeholder coords; common family-name lake. | 2026-07-18 |
 | fishing | tremblant-lac | Ambiguous identity: NOT the Mont-Tremblant lake (distinctive muskie/ouananiche record); placeholder coords. | 2026-07-18 |
+| hunting | peace-river-hunting | Duplicate record of `peace-river` (identical coords 56.2,-120.8, same Fort St. John country). Stub points to main pages. Merge records. | 2026-07-18 |
