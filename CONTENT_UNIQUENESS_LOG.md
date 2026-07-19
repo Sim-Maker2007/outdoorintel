@@ -344,3 +344,25 @@ renfrew-county-hunting, bruce-peninsula-hunting, nipawin-hunting (thin data)
   orders; Edson reclaimed-mine access texture
 
 Remaining hunting: 32 Pro spots (final hunting batch).
+
+## Hunting batch 4 — 2026-07-18 — 32 Pro spots — HUNTING COMPLETE
+
+All 32 Pro spots rewritten (ON 7, QC 5, BC 4, AB 5+athabasca note, SK 5,
+MB 5, NB 1). Differentiated by verified regional anchors: Manitoulin =
+largest freshwater island; Hudson Bay SK "Moose Capital"; Cypress Hills
+highest point between Rockies and Labrador; Sudbury-adjacent districts by
+geology/preserves/clay belt; Whiteshell/Nopiming under Manitoba's
+parks-permit-hunting model with EASTERN MB MOOSE CONSERVATION CLOSURES
+stated plainly; Duck Mountain moose closure caution; protected woodland
+caribou flagged at La Ronge/Nopiming; PANP/Grey Owl boundary absolute.
+
+Data flags: athabasca-hunting coords point to Fort McMurray (not Athabasca
+town) — written to mapped location, flagged; grande-prairie-hunting coords
+drift into BC — written to the named region, flagged.
+
+**HUNTING FINAL: 89/89 spots. Dup check (desc+tips+terrain, all 89, EN+FR):
+0 violations.** 83 hand-written indexed pages · 6 noindexed
+(1 duplicate peace-river-hunting, 1 duplicate muskoka-hunting, 4 thin).
+
+Site-wide status: fishing 0 violations, hunting 0 violations. Remaining
+templated: camping (51), hiking (46), kayaking (37), skiing (36).
