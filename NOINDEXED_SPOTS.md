@@ -11,7 +11,7 @@ in `scripts/rewrites/triage-report.json` (`node scripts/triage-data-richness.js`
 Every 8+ word stub sentence interpolates the spot's own name/species, so the
 duplication check passes; stubs are never indexed regardless.
 
-Total noindexed: 155
+Total noindexed: 159
 
 | Activity | Slug | Reason | Date noindexed |
 |----------|------|--------|----------------|
@@ -170,3 +170,7 @@ Total noindexed: 155
 | fishing | pelletier-lac | Ambiguous identity: placeholder coords; common family-name lake. | 2026-07-18 |
 | fishing | tremblant-lac | Ambiguous identity: NOT the Mont-Tremblant lake (distinctive muskie/ouananiche record); placeholder coords. | 2026-07-18 |
 | hunting | peace-river-hunting | Duplicate record of `peace-river` (identical coords 56.2,-120.8, same Fort St. John country). Stub points to main pages. Merge records. | 2026-07-18 |
+| hunting | muskoka-hunting | Duplicate record of `muskoka-region` (2 km apart, same species). Stub points to main page. Merge records. | 2026-07-18 |
+| hunting | renfrew-county-hunting | Thin data (county name + 2 species only). Real area — enrich with WMU/access detail and re-index. | 2026-07-18 |
+| hunting | bruce-peninsula-hunting | Thin data (1 species) on a complex peninsula (closed parks, SON territories, municipal rules). Accuracy before indexing. | 2026-07-18 |
+| hunting | nipawin-hunting | Thin data (2 species, town-level coords). Enrich with SK zone/access detail and re-index. | 2026-07-18 |

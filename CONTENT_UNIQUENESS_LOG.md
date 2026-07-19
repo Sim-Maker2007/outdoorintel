@@ -323,3 +323,24 @@ Remaining hunting: 14 Elite/Pro Ontario-boreal+BC+AB rewrites queued next
 (nipissing, sudbury, cochrane, dryden, timmins, wawa, kapuskasing,
 foothills-red-deer, cariboo, thompson-nicola, peace-country-ab,
 clearwater-county, whitecourt, edson) + 32 Pro tier + 4 Explorer stubs.
+
+## Hunting batch 3 — 2026-07-18 — 18 spots (final Elite: ON boreal + AB/BC) — Elite tier complete
+
+nipissing-hunting, sudbury-hunting, timmins-hunting, cochrane-hunting,
+kapuskasing-hunting, dryden-hunting, wawa-hunting, foothills-red-deer,
+clearwater-county-hunting, whitecourt-hunting, edson-hunting,
+peace-country-ab, cariboo-hunting, thompson-nicola-hunting
++ 4 noindexed: muskoka-hunting* (duplicate of muskoka-region),
+renfrew-county-hunting, bruce-peninsula-hunting, nipawin-hunting (thin data)
+
+- Batch dup check vs all 89: 0 violations (remaining 24 dup sentences sit
+  entirely on the 32 untouched Pro pages)
+- The seven ON boreal districts differentiated by true local anchors:
+  Sudbury regreening + impact-basin geology, Wawa's Chapleau Crown Game
+  Preserve edge effect (closed since 1925), Cochrane/Kapuskasing Clay Belt,
+  Timmins mining-trail access, Dryden boat-country outfitter culture,
+  Nipissing highway-crossroads three-species mix
+- Cariboo moose decline → LEH tightening stated honestly; Clearwater access
+  orders; Edson reclaimed-mine access texture
+
+Remaining hunting: 32 Pro spots (final hunting batch).
