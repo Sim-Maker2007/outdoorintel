@@ -248,3 +248,54 @@ Sources this batch: sepaq.com + wikipedia (Témiscouata: 39 km, 99 m, park
 cinlb.org + granby.ca (Boivin no-fishing zones, permitted species).
 Remaining activities: hunting (89), camping (51), hiking (46), kayaking (37),
 skiing (36) — all still templated.
+
+## Hunting batch 1 — 2026-07-18 — 22 spots (all 15 Legendary + 7 flagged Elite)
+
+anticosti-island, zec-batiscan, algonquin-park, charlie-lake,
+bow-river-valley, delta-marsh, gros-morne, nunavut-tundra,
+algoma-district-on, kootenays-hunting, cassiar-hunting,
+crowsnest-pass-hunting, yukon-southern-lakes-hunting,
+nahanni-region-hunting, baffin-island-hunting, laurentian-mountains,
+willmore-wilderness, northern-saskatchewan-muskeg, yellowknife-region,
+pei-central, pictou-county-highlands, riding-mountain-hunting
+
+- Hunting dup check (desc+tips+terrain vs all 89): **0 violations — PASS**
+- FR pages previously untranslated English — now real Québec French
+- CLOSED/RESTRICTED HUNTS handled honestly (never promoted): Bathurst
+  caribou (complete closure, weekly mobile zone), Southern Lakes caribou
+  (moratorium since 1993; recovery 1,000→4,850), SK woodland caribou (no
+  season, threatened), Algonquin interior (prohibited except
+  Clyde/Bruton/Eyre + Algonquins of Ontario harvest), park boundaries
+  (Riding Mountain, Nahanni)
+- Species fixes: anticosti Black Bear (EXTIRPATED - documented cascade) →
+  Snowshoe Hare; pei-central White-tailed Deer (no wild deer on PEI) →
+  Ruffed Grouse/Snowshoe Hare; yellowknife Barrenland Caribou (closed) →
+  Muskox/Moose; yukon-southern-lakes Caribou (closed) → Grouse;
+  northern-sask Woodland Caribou (closed) → Waterfowl
+- Data flag: bow-river-valley coords (53.1,-115.5) point to Drayton Valley
+  foothills, not the Bow valley — noted on-page, record needs rename/re-coord
+
+### Sources (verified 2026-07-18)
+
+- Anticosti: 220 deer introduced 1896-97 (Menier), ~166,000 today at
+  21/km², black bear extirpation via deer-berry cascade, low-density moose,
+  Sépaq Anticosti packages — sepaq.com, wikipedia, researchgate
+- Bathurst caribou: hunting fully closed, mobile zone updated weekly (Tue),
+  98% decline 486k→8.2k — gov.nt.ca ECC
+- NL: island caribou 612 licences 2025-26 (draw), Gros Morne in-park
+  resident moose management hunt ~500 either-sex licences — gov.nl.ca
+  hunting-trapping guide
+- Southern Lakes caribou: licensed hunting closed since 1993,
+  1,000→4,850 by 2019, relationship plan signed 2024 — CBC, yukon.ca
+- Algonquin: hunting prohibited except Clyde/Bruton/Eyre townships +
+  Algonquins of Ontario treaty harvest — algonquinpark.on.ca, tanakiwin.com
+- SK woodland caribou: threatened (SARA 2003), no open season —
+  saskatchewan.ca woodland caribou program
+- PEI: no wild deer/moose; grouse Sep1-Dec31, hare Sep1-Mar31, waterfowl —
+  princeedwardisland.ca hunting summary (an AI-aggregator source claiming
+  PEI deer seasons was rejected as unreliable)
+- Remainder: stable regional knowledge (Willmore no-motorized rule, BC
+  non-resident guide requirement, NWT/NU outfitter+HTO systems, Delta Marsh
+  waterfowl heritage, zec/pourvoirie/réserve system)
+
+Remaining hunting: 31 Elite + 32 Pro rewrites, 4 Explorer noindex stubs.

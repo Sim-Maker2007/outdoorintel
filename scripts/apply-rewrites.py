@@ -46,7 +46,8 @@ def apply_fixes(html, spot, fixes):
         oabs, nabs = g(abs(spot['coordinates']['lng'])), g(abs(fixes['coordinates']['lng']))
         html = html.replace(f'GPS: {ol}&deg;N, {oabs}&deg;W', f'GPS: {nl}&deg;N, {nabs}&deg;W')
     if 'primary_species' in fixes:
-        for old_sp, new_sp in zip(spot['primary_species'], fixes['primary_species']):
+        field = 'primary_species' if 'primary_species' in spot else 'primary_game'
+        for old_sp, new_sp in zip(spot[field], fixes['primary_species']):
             if old_sp != new_sp:
                 html = html.replace(f'>{old_sp}</span>', f'>{new_sp}</span>', 1)
     return html
@@ -114,7 +115,8 @@ def main():
         if 'coordinates' in fixes:
             spot['coordinates'] = fixes['coordinates']
         if 'primary_species' in fixes:
-            spot['primary_species'] = fixes['primary_species']
+            field = 'primary_species' if 'primary_species' in spot else 'primary_game'
+            spot[field] = fixes['primary_species']
         print(f'applied: {slug}' + (' [noindex]' if rw.get('noindex') else ''))
 
     with open(data_path, 'w', encoding='utf-8') as f:
