@@ -366,3 +366,34 @@ drift into BC — written to the named region, flagged.
 
 Site-wide status: fishing 0 violations, hunting 0 violations. Remaining
 templated: camping (51), hiking (46), kayaking (37), skiing (36).
+
+## Camping batch 1 — 2026-07-18 — 26 spots (all 11 Legendary + 15 Elite)
+
+algonquin, killarney, bon-echo, mont-tremblant-np, pacific-rim, strathcona,
+lake-louise-backcountry, moraine-lake-area, fundy, cape-breton-highlands,
+gros-morne-np, quetico, lake-superior-pp, bowron, joffre, garibaldi,
+juan-de-fuca, cape-scott, icefields-parkway, kejimkujik, pei-np,
+western-brook-pond, tombstone (coords FIXED: were 64.2,-128.5 pointing into
+NWT; now 64.45,-138.3 on the Dempster), sandbanks, elk-island, waterton
+
+- Batch dup check vs all 51: 0 violations (remaining 14 dup sentences all on
+  the 25 untouched spots)
+- Reservation-system accuracy: Parks Canada vs Ontario Parks vs BC Parks vs
+  Sépaq named correctly per park; Moraine Lake truth stated (road closed to
+  personal vehicles year-round, NO campground at the lake, shuttle
+  reservations, village campground base); Joffre Upper-Lake-only camping +
+  day-pass system + First Nations closure windows; Bowron quota/orientation;
+  Quetico no-motors/no-cans interior; Western Brook Pond = day-visit
+  shoreline + Long Range Traverse gateway (no pond-side campground invented)
+- Cultural/conservation handling: Agawa and Mazinaw pictographs respectful
+  framing; Keji Mi'kmaq guided-visit-only petroglyphs; dune protection at
+  Sandbanks/PEI; Kenow fire succession at Waterton
+
+Sources: parks.canada.ca (Moraine/Louise shuttle FAQ), bcparks.ca (Joffre
+day-use + Upper Lake camping, Bowron circuit/orientation) — verified
+2026-07-18. Remainder: stable park knowledge, hedged where systems change.
+
+Remaining camping: 25 spots (batch 2) incl. naming fixes queued:
+lake-megantic-provincial-park (is actually Baie-des-Sables lakeside
+campground — no such provincial park), saint-anne-parc naming, pinery "Lake
+Michigan" feature (it's Lake Huron), grundy-lake coords.
