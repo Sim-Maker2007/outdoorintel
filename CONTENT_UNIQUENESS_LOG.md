@@ -397,3 +397,28 @@ Remaining camping: 25 spots (batch 2) incl. naming fixes queued:
 lake-megantic-provincial-park (is actually Baie-des-Sables lakeside
 campground — no such provincial park), saint-anne-parc naming, pinery "Lake
 Michigan" feature (it's Lake Huron), grundy-lake coords.
+
+## Camping batch 2 — 2026-07-18 — 25 spots — CAMPING COMPLETE
+
+All remaining spots rewritten. Honest reframes for misnamed/miscast records:
+- lake-megantic-provincial-park: NO such park exists — page now truthfully
+  describes the Baie-des-Sables lakeside camping base on Lac Mégantic and
+  flags the record name for correction
+- saint-anne-parc-national: no Sépaq park by this name — page describes the
+  real Canyon Sainte-Anne / Mont-Sainte-Anne geography, flags naming
+- hopewell-rocks: day-use tidal attraction, NOT a campground — page frames
+  it as itinerary anchor with camping based nearby
+- quttinirpaak: spelling flagged (Quttinirpaaq); expedition-grade honesty
+- Data fixes: pinery features "Lake Michigan Access" → "Lake Huron
+  Shoreline" (chips EN+FR); grundy-lake coords 45.6,-79.4 → 45.93,-80.52
+- Management-system accuracy: Kananaskis Conservation Pass (2021+), Alberta
+  Parks guided-only preserves (Dinosaur, Writing-on-Stone/Áísínai'pi UNESCO
+  2019), Frontenac all-backcountry structure, Silent Lake no-motors,
+  La Mauricie = Parks Canada not Sépaq, beluga distance law on the fjord
+
+**CAMPING FINAL: 51/51 spots. Dup check (desc+tips+terrain, all 51, EN+FR):
+0 violations.** All 51 indexed (no spot required noindexing — every one had
+verifiable material).
+
+Site-wide: fishing 0, hunting 0, camping 0. Remaining templated: hiking
+(46), kayaking (37), skiing (36) — 119 spots.
