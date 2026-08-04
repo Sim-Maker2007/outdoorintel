@@ -63,14 +63,31 @@ function attrs(tag) {
   const out = {};
   const re = /([a-zA-Z:._-]+)\s*=\s*"([^"]*)"/g;
   let m;
-  while ((m = re.exec(tag))) out[m[1].toLowerCase()] = m[2];
+  while ((m = re.exec(tag))) out[m[1].toLowerCase()] = decodeEntities(m[2]);
   return out;
+}
+
+// Decode entities to their characters so the same visible text hashes
+// identically whether a page encodes accents as &#233; or literal UTF-8.
+const NAMED = {
+  amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ',
+  rarr: '→', larr: '←', mdash: '—', ndash: '–', deg: '°', copy: '©',
+  bull: '•', hellip: '…', laquo: '«', raquo: '»', rsquo: '’', lsquo: '‘',
+  eacute: 'é', egrave: 'è', agrave: 'à', ccedil: 'ç', ecirc: 'ê', ocirc: 'ô',
+  icirc: 'î', ucirc: 'û', acirc: 'â', euml: 'ë', iuml: 'ï', uuml: 'ü',
+  Eacute: 'É', Egrave: 'È', Agrave: 'À', Ccedil: 'Ç',
+};
+function decodeEntities(s) {
+  return s
+    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+    .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
+    .replace(/&([a-zA-Z]+);/g, (m, name) => NAMED[name] ?? m);
 }
 
 function snapshotPage(html) {
   const rec = {};
   const title = html.match(/<title>([\s\S]*?)<\/title>/i);
-  rec.title = title ? title[1].trim() : null;
+  rec.title = title ? decodeEntities(title[1].trim()) : null;
 
   rec.meta = {};
   rec.og = {};
@@ -111,11 +128,12 @@ function snapshotPage(html) {
   rec.lang = (html.match(/<html\s+lang="([^"]+)"/i) || [])[1] || null;
   rec.amazonLinks = (html.match(/https:\/\/www\.amazon\.ca\/s\?/g) || []).length;
 
-  const body = (html.match(/<body[^>]*>([\s\S]*)<\/body>/i) || [, ''])[1]
-    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
-    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/&[a-z#0-9]+;/gi, ' ')
+  const body = decodeEntities(
+    (html.match(/<body[^>]*>([\s\S]*)<\/body>/i) || [, ''])[1]
+      .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+      .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+      .replace(/<[^>]+>/g, ' ')
+  )
     .replace(/\s+/g, ' ')
     .trim();
   rec.bodyHash = createHash('sha256').update(body).digest('hex').slice(0, 16);

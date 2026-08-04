@@ -46,7 +46,55 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Algonquin Provincial Park is a backcountry gem in Ontario, offering canoe-in sites, portage routes, wildlife viewing amid the Canadian Shield, boreal forest, Great Lakes shoreline. With 1,200+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the Canadian S",
-      "schema_keywords": "Canoe-in Sites, Portage Routes, Wildlife Viewing, camping, Ontario, Canada, outdoor"
+      "schema_keywords": "Canoe-in Sites, Portage Routes, Wildlife Viewing, camping, Ontario, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Killarney Provincial Park",
@@ -94,7 +142,55 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Killarney Provincial Park is a backcountry gem in Ontario, offering lake camping, quartzite hills, scenic vistas amid the Canadian Shield, boreal forest, Great Lakes shoreline. With 500+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the Canadian Shield ",
-      "schema_keywords": "Lake Camping, Quartzite Hills, Scenic Vistas, camping, Ontario, Canada, outdoor"
+      "schema_keywords": "Lake Camping, Quartzite Hills, Scenic Vistas, camping, Ontario, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Bon Echo Provincial Park",
@@ -142,7 +238,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Bon Echo Provincial Park is a beloved campground in Ontario, offering cliff hiking, water activities, scenic lake views amid the Canadian Shield, boreal forest, Great Lakes shoreline. With 370 sites, it balances comfort and nature beautifully.\n\nCampers come here for the Canadian Shield scenery and t",
-      "schema_keywords": "Cliff Hiking, Water Activities, Scenic Lake Views, camping, Ontario, Canada, outdoor"
+      "schema_keywords": "Cliff Hiking, Water Activities, Scenic Lake Views, camping, Ontario, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Charleston Lake Provincial Park",
@@ -190,7 +333,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Charleston Lake Provincial Park is a beloved campground in Ontario, offering backcountry campsites, lake swimming, trail network amid the Canadian Shield, boreal forest, Great Lakes shoreline. With 234 sites, it balances comfort and nature beautifully.\n\nCampers come here for the Canadian Shield scen",
-      "schema_keywords": "Backcountry Campsites, Lake Swimming, Trail Network, camping, Ontario, Canada, outdoor"
+      "schema_keywords": "Backcountry Campsites, Lake Swimming, Trail Network, camping, Ontario, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Mont-Tremblant National Park",
@@ -214,8 +404,7 @@
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-62.jpg",
       "related_spots": [
-        "saint-anne-parc-national",
-        "les-laurentides"
+        "saint-anne-parc-national"
       ],
       "description": "Mont-Tremblant National Park is a beloved campground in Quebec, offering mountain biking, alpine views, lake camping amid the Laurentian Mountains, St. Lawrence Valley, boreal shield. With 600+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Laurentian Mountains scenery and the chance to disconnect from daily life. The sounds of nature replace the noise of civilization, making this a true retreat. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Mont-Tremblant National Park is a quintessential Canadian camping experience.",
       "getting_there": "From Montreal, it's approximately 1-1.5 hours by car. GPS: 46.5°N, 74.6°W. Paved road all the way to the campground entrance.  Check-in at the gatehouse upon arrival.",
@@ -238,7 +427,53 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Mont-Tremblant National Park is a beloved campground in Quebec, offering mountain biking, alpine views, lake camping amid the Laurentian Mountains, St. Lawrence Valley, boreal shield. With 600+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Laurentian Mountains scenery",
-      "schema_keywords": "Mountain Biking, Alpine Views, Lake Camping, camping, Quebec, Canada, outdoor"
+      "schema_keywords": "Mountain Biking, Alpine Views, Lake Camping, camping, Quebec, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Saint-Anne Provincial Park",
@@ -285,7 +520,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Saint-Anne Provincial Park is a backcountry gem in Quebec, offering river gorge, waterfall hikes, rock climbing amid the Laurentian Mountains, St. Lawrence Valley, boreal shield. With 45 sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the Laurentian Mount",
-      "schema_keywords": "River Gorge, Waterfall Hikes, Rock Climbing, camping, Quebec, Canada, outdoor"
+      "schema_keywords": "River Gorge, Waterfall Hikes, Rock Climbing, camping, Quebec, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Lake Megantic Provincial Park",
@@ -332,7 +614,53 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Lake Megantic Provincial Park is a beloved campground in Quebec, offering waterfront camping, marina access, beach areas amid the Laurentian Mountains, St. Lawrence Valley, boreal shield. With 320 sites, it balances comfort and nature beautifully.\n\nCampers come here for the Laurentian Mountains scen",
-      "schema_keywords": "Waterfront Camping, Marina Access, Beach Areas, camping, Quebec, Canada, outdoor"
+      "schema_keywords": "Waterfront Camping, Marina Access, Beach Areas, camping, Quebec, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Pacific Rim National Park Reserve",
@@ -380,7 +708,55 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Pacific Rim National Park Reserve is a beloved campground in British Columbia, offering west coast beaches, ancient rainforest, backpacking trails amid the coastal rainforest, Rocky Mountains, interior plateau. With 150+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers ",
-      "schema_keywords": "West Coast Beaches, Ancient Rainforest, Backpacking Trails, camping, British Columbia, Canada, outdoor"
+      "schema_keywords": "West Coast Beaches, Ancient Rainforest, Backpacking Trails, camping, British Columbia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Strathcona Provincial Park",
@@ -428,7 +804,55 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Strathcona Provincial Park is a backcountry gem in British Columbia, offering alpine lakes, mountain peaks, glacier views amid the coastal rainforest, Rocky Mountains, interior plateau. With 200+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the coastal",
-      "schema_keywords": "Alpine Lakes, Mountain Peaks, Glacier Views, camping, British Columbia, Canada, outdoor"
+      "schema_keywords": "Alpine Lakes, Mountain Peaks, Glacier Views, camping, British Columbia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Cape Scott Provincial Park",
@@ -475,7 +899,55 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Cape Scott Provincial Park is a beloved campground in British Columbia, offering remote coastline, tide pools, sand dunes amid the coastal rainforest, Rocky Mountains, interior plateau. With 80 sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the coastal r",
-      "schema_keywords": "Remote Coastline, Tide Pools, Sand Dunes, camping, British Columbia, Canada, outdoor"
+      "schema_keywords": "Remote Coastline, Tide Pools, Sand Dunes, camping, British Columbia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Lake Louise Backcountry",
@@ -523,7 +995,55 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Lake Louise Backcountry is a backcountry gem in Alberta, offering turquoise alpine lakes, glacial views, steep mountain terrain amid the Rocky Mountain foothills, prairies, badlands. With 300+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the Rocky Moun",
-      "schema_keywords": "Turquoise Alpine Lakes, Glacial Views, Steep Mountain Terrain, camping, Alberta, Canada, outdoor"
+      "schema_keywords": "Turquoise Alpine Lakes, Glacial Views, Steep Mountain Terrain, camping, Alberta, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Moraine Lake Backcountry",
@@ -571,7 +1091,55 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Moraine Lake Backcountry is a backcountry gem in Alberta, offering ten peaks hiking, valley of ten peaks, crystal clear lakes amid the Rocky Mountain foothills, prairies, badlands. With 250+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the Rocky Mounta",
-      "schema_keywords": "Ten Peaks Hiking, Valley of Ten Peaks, Crystal Clear Lakes, camping, Alberta, Canada, outdoor"
+      "schema_keywords": "Ten Peaks Hiking, Valley of Ten Peaks, Crystal Clear Lakes, camping, Alberta, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Icefields Parkway Campgrounds",
@@ -619,7 +1187,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Icefields Parkway Campgrounds is a beloved campground in Alberta, offering glacier access, mountain pass views, wildlife spotting amid the Rocky Mountain foothills, prairies, badlands. With 500+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Rocky Mountain foothills sc",
-      "schema_keywords": "Glacier Access, Mountain Pass Views, Wildlife Spotting, camping, Alberta, Canada, outdoor"
+      "schema_keywords": "Glacier Access, Mountain Pass Views, Wildlife Spotting, camping, Alberta, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Riding Mountain National Park",
@@ -642,9 +1257,7 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-71.jpg",
-      "related_spots": [
-        "grand-beach-provincial-park"
-      ],
+      "related_spots": [],
       "description": "Riding Mountain National Park is a beloved campground in Manitoba, offering prairie views, wildlife observing, lake camping amid the boreal shield, prairie grasslands, Hudson Bay lowlands. With 400+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the boreal shield scenery and the chance to disconnect from daily life. The stargazing alone is worth the trip — minimal light pollution means you can see the Milky Way on clear nights. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Riding Mountain National Park is a quintessential Canadian camping experience.",
       "getting_there": "From Thompson, it's approximately 1.5-2.5 hours by car. GPS: 50.7°N, 99.6°W. Paved road all the way to the campground entrance.  Check-in at the gatehouse upon arrival.",
       "parking": "Each site includes one vehicle parking space. Overflow lot available near the entrance.   Parking included with campsite reservation.",
@@ -666,7 +1279,53 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Riding Mountain National Park is a beloved campground in Manitoba, offering prairie views, wildlife observing, lake camping amid the boreal shield, prairie grasslands, Hudson Bay lowlands. With 400+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the boreal shield scenery a",
-      "schema_keywords": "Prairie Views, Wildlife Observing, Lake Camping, camping, Manitoba, Canada, outdoor"
+      "schema_keywords": "Prairie Views, Wildlife Observing, Lake Camping, camping, Manitoba, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Athabasca Sand Dunes",
@@ -713,7 +1372,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Athabasca Sand Dunes is a beloved campground in Saskatchewan, offering sand dunes, remote boreal forest, lake camping amid the northern boreal forest, central parkland, southern prairies. With 50 sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the norther",
-      "schema_keywords": "Sand Dunes, Remote Boreal Forest, Lake Camping, camping, Saskatchewan, Canada, outdoor"
+      "schema_keywords": "Sand Dunes, Remote Boreal Forest, Lake Camping, camping, Saskatchewan, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Fundy National Park",
@@ -737,8 +1443,7 @@
       "intel_grade": "v2.2",
       "hero_image": "hero-1.jpg",
       "related_spots": [
-        "hopewell-rocks",
-        "cape-enrage"
+        "hopewell-rocks"
       ],
       "description": "Fundy National Park is a beloved campground in New Brunswick, offering highest tides, waterfall hikes, coastal valleys amid the Appalachian uplands, Bay of Fundy coast, river valleys. With 600+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Appalachian uplands scenery and the chance to disconnect from daily life. The sounds of nature replace the noise of civilization, making this a true retreat. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Fundy National Park is a quintessential Canadian camping experience.",
       "getting_there": "From Saint John, it's approximately 2-3 hours by car. GPS: 45.3°N, 64.8°W. Paved road all the way to the campground entrance.  Check-in at the gatehouse upon arrival.",
@@ -761,7 +1466,53 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Fundy National Park is a beloved campground in New Brunswick, offering highest tides, waterfall hikes, coastal valleys amid the Appalachian uplands, Bay of Fundy coast, river valleys. With 600+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Appalachian uplands scenery ",
-      "schema_keywords": "Highest Tides, Waterfall Hikes, Coastal Valleys, camping, New Brunswick, Canada, outdoor"
+      "schema_keywords": "Highest Tides, Waterfall Hikes, Coastal Valleys, camping, New Brunswick, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Hopewell Rocks Area",
@@ -808,7 +1559,53 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Hopewell Rocks Area is a beloved campground in New Brunswick, offering tidal flats, rock formations, kayaking amid the Appalachian uplands, Bay of Fundy coast, river valleys. With 350 sites, it balances comfort and nature beautifully.\n\nCampers come here for the Appalachian uplands scenery and the ch",
-      "schema_keywords": "Tidal Flats, Rock Formations, Kayaking, camping, New Brunswick, Canada, outdoor"
+      "schema_keywords": "Tidal Flats, Rock Formations, Kayaking, camping, New Brunswick, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Cape Breton Highlands National Park",
@@ -855,7 +1652,53 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Cape Breton Highlands National Park is a beloved campground in Nova Scotia, offering cabot trail hiking, steep cliffs, coastal scenery amid the Atlantic coastline, Annapolis Valley, Cape Breton Highlands. With 350+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Atlanti",
-      "schema_keywords": "Cabot Trail Hiking, Steep Cliffs, Coastal Scenery, camping, Nova Scotia, Canada, outdoor"
+      "schema_keywords": "Cabot Trail Hiking, Steep Cliffs, Coastal Scenery, camping, Nova Scotia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Kejimkujik National Park",
@@ -902,7 +1745,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Kejimkujik National Park is a backcountry gem in Nova Scotia, offering lake paddling, inland wilderness, historic petroglyphs amid the Atlantic coastline, Annapolis Valley, Cape Breton Highlands. With 450+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for t",
-      "schema_keywords": "Lake Paddling, Inland Wilderness, Historic Petroglyphs, camping, Nova Scotia, Canada, outdoor"
+      "schema_keywords": "Lake Paddling, Inland Wilderness, Historic Petroglyphs, camping, Nova Scotia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Prince Edward Island National Park",
@@ -949,7 +1839,53 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Prince Edward Island National Park is a beloved campground in Prince Edward Island, offering red sand beaches, coastal trails, dune systems amid the red sand beaches, rolling farmland, gentle coastline. With 240 sites, it balances comfort and nature beautifully.\n\nCampers come here for the red sand b",
-      "schema_keywords": "Red Sand Beaches, Coastal Trails, Dune Systems, camping, Prince Edward Island, Canada, outdoor"
+      "schema_keywords": "Red Sand Beaches, Coastal Trails, Dune Systems, camping, Prince Edward Island, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Gros Morne National Park",
@@ -997,7 +1933,53 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Gros Morne National Park is a beloved campground in Newfoundland & Labrador, offering fjord hiking, glacial valleys, mountain vistas amid the Canadian wilderness. With 270+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Canadian wilderness scenery and the chance to dis",
-      "schema_keywords": "Fjord Hiking, Glacial Valleys, Mountain Vistas, camping, Newfoundland & Labrador, Canada, outdoor"
+      "schema_keywords": "Fjord Hiking, Glacial Valleys, Mountain Vistas, camping, Newfoundland & Labrador, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Western Brook Pond",
@@ -1045,7 +2027,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Western Brook Pond is a backcountry gem in Newfoundland & Labrador, offering steep fjord walls, boat tours, backcountry camping amid the Canadian wilderness. With 60 sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the Canadian wilderness scenery and the c",
-      "schema_keywords": "Steep Fjord Walls, Boat Tours, Backcountry Camping, camping, Newfoundland & Labrador, Canada, outdoor"
+      "schema_keywords": "Steep Fjord Walls, Boat Tours, Backcountry Camping, camping, Newfoundland & Labrador, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Tombstone Territorial Park",
@@ -1068,9 +2097,7 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-5.jpg",
-      "related_spots": [
-        "dawson-city-campgrounds"
-      ],
+      "related_spots": [],
       "description": "Tombstone Territorial Park is a beloved campground in Yukon, offering alpine tundra, midnight sun, remote hiking amid the subarctic wilderness, Kluane ranges, boreal forest. With 100 sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the subarctic wilderness scenery and the chance to disconnect from daily life. The sounds of nature replace the noise of civilization, making this a true retreat. Whether you're pitching a tent for the first time or you're a seasoned backcountry traveller, Tombstone Territorial Park is a quintessential Canadian camping experience.",
       "getting_there": "From Dawson City, it's approximately 5-8 hours by car. GPS: 64.2°N, 128.5°W. The last portion requires a high-clearance vehicle or a hike in.  Check-in at the gatehouse upon arrival.",
       "parking": "Parking lot at the trailhead — spaces fill up on summer weekends. Arrive early.   Parking included with campsite reservation.",
@@ -1092,7 +2119,55 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Tombstone Territorial Park is a beloved campground in Yukon, offering alpine tundra, midnight sun, remote hiking amid the subarctic wilderness, Kluane ranges, boreal forest. With 100 sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the subarctic wilderness",
-      "schema_keywords": "Alpine Tundra, Midnight Sun, Remote Hiking, camping, Yukon, Canada, outdoor"
+      "schema_keywords": "Alpine Tundra, Midnight Sun, Remote Hiking, camping, Yukon, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Hay River Territorial Park",
@@ -1139,7 +2214,53 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Hay River Territorial Park is a beloved campground in Northwest Territories, offering river camping, boreal forest, aurora viewing amid the tundra, boreal forest, Great Slave Lake, Mackenzie River. With 200 sites, it balances comfort and nature beautifully.\n\nCampers come here for the tundra scenery ",
-      "schema_keywords": "River Camping, Boreal Forest, Aurora Viewing, camping, Northwest Territories, Canada, outdoor"
+      "schema_keywords": "River Camping, Boreal Forest, Aurora Viewing, camping, Northwest Territories, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Quttinirpaak National Park",
@@ -1184,7 +2305,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Quttinirpaak National Park is a beloved campground in Nunavut, offering arctic tundra, polar wildlife, extreme remote camping amid the arctic tundra, sea ice, barren grounds, polar coastline. With 30 sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the arc",
-      "schema_keywords": "Arctic Tundra, Polar Wildlife, Extreme Remote Camping, camping, Nunavut, Canada, outdoor"
+      "schema_keywords": "Arctic Tundra, Polar Wildlife, Extreme Remote Camping, camping, Nunavut, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Sandbanks Provincial Park",
@@ -1232,7 +2400,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Sandbanks Provincial Park is a beloved campground in Ontario, offering beach access, lake swimming, sand dunes amid the Canadian Shield, boreal forest, Great Lakes shoreline. With 600+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Canadian Shield scenery and the chanc",
-      "schema_keywords": "Beach Access, Lake Swimming, Sand Dunes, camping, Ontario, Canada, outdoor"
+      "schema_keywords": "Beach Access, Lake Swimming, Sand Dunes, camping, Ontario, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Presqu'ile Provincial Park",
@@ -1280,7 +2495,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Presqu'ile Provincial Park is a beloved campground in Ontario, offering lighthouse, beach camping, marsh views amid the Canadian Shield, boreal forest, Great Lakes shoreline. With 400+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Canadian Shield scenery and the chanc",
-      "schema_keywords": "Lighthouse, Beach Camping, Marsh Views, camping, Ontario, Canada, outdoor"
+      "schema_keywords": "Lighthouse, Beach Camping, Marsh Views, camping, Ontario, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Pinery Provincial Park",
@@ -1328,7 +2590,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Pinery Provincial Park is a beloved campground in Ontario, offering sand dunes, lake michigan access, old growth forest amid the Canadian Shield, boreal forest, Great Lakes shoreline. With 300+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Canadian Shield scenery and ",
-      "schema_keywords": "Sand Dunes, Lake Michigan Access, Old Growth Forest, camping, Ontario, Canada, outdoor"
+      "schema_keywords": "Sand Dunes, Lake Michigan Access, Old Growth Forest, camping, Ontario, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Grundy Lake Provincial Park",
@@ -1376,7 +2685,55 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Grundy Lake Provincial Park is a backcountry gem in Ontario, offering lake paddling, island camping, rock formations amid the Canadian Shield, boreal forest, Great Lakes shoreline. With 150+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the Canadian Shi",
-      "schema_keywords": "Lake Paddling, Island Camping, Rock Formations, camping, Ontario, Canada, outdoor"
+      "schema_keywords": "Lake Paddling, Island Camping, Rock Formations, camping, Ontario, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Quetico Provincial Park",
@@ -1424,7 +2781,55 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Quetico Provincial Park is a backcountry gem in Ontario, offering canoe routes, remote lakes, portage trails amid the Canadian Shield, boreal forest, Great Lakes shoreline. With 1,000+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the Canadian Shield sc",
-      "schema_keywords": "Canoe Routes, Remote Lakes, Portage Trails, camping, Ontario, Canada, outdoor"
+      "schema_keywords": "Canoe Routes, Remote Lakes, Portage Trails, camping, Ontario, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Lake Superior Provincial Park",
@@ -1472,7 +2877,55 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Lake Superior Provincial Park is a backcountry gem in Ontario, offering coastal camping, waterfall access, superior views amid the Canadian Shield, boreal forest, Great Lakes shoreline. With 250+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the Canadia",
-      "schema_keywords": "Coastal Camping, Waterfall Access, Superior Views, camping, Ontario, Canada, outdoor"
+      "schema_keywords": "Coastal Camping, Waterfall Access, Superior Views, camping, Ontario, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Frontenac Provincial Park",
@@ -1520,7 +2973,55 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Frontenac Provincial Park is a backcountry gem in Ontario, offering ridgetop camping, shield landscape, privacy amid the Canadian Shield, boreal forest, Great Lakes shoreline. With 80+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the Canadian Shield sc",
-      "schema_keywords": "Ridgetop Camping, Shield Landscape, Privacy, camping, Ontario, Canada, outdoor"
+      "schema_keywords": "Ridgetop Camping, Shield Landscape, Privacy, camping, Ontario, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Silent Lake Provincial Park",
@@ -1568,7 +3069,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Silent Lake Provincial Park is a beloved campground in Ontario, offering quiet lake, canoe access, shield scenery amid the Canadian Shield, boreal forest, Great Lakes shoreline. With 170+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Canadian Shield scenery and the ch",
-      "schema_keywords": "Quiet Lake, Canoe Access, Shield Scenery, camping, Ontario, Canada, outdoor"
+      "schema_keywords": "Quiet Lake, Canoe Access, Shield Scenery, camping, Ontario, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Arrowhead Provincial Park",
@@ -1616,7 +3164,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Arrowhead Provincial Park is a beloved campground in Ontario, offering beaver pond, walking trails, forest setting amid the Canadian Shield, boreal forest, Great Lakes shoreline. With 60+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Canadian Shield scenery and the ch",
-      "schema_keywords": "Beaver Pond, Walking Trails, Forest Setting, camping, Ontario, Canada, outdoor"
+      "schema_keywords": "Beaver Pond, Walking Trails, Forest Setting, camping, Ontario, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Awenda Provincial Park",
@@ -1664,7 +3259,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Awenda Provincial Park is a beloved campground in Ontario, offering beach access, dune system, georgian bay amid the Canadian Shield, boreal forest, Great Lakes shoreline. With 220+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Canadian Shield scenery and the chance t",
-      "schema_keywords": "Beach Access, Dune System, Georgian Bay, camping, Ontario, Canada, outdoor"
+      "schema_keywords": "Beach Access, Dune System, Georgian Bay, camping, Ontario, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Parc national du Mont-Orford",
@@ -1712,7 +3354,53 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Parc national du Mont-Orford is a beloved campground in Quebec, offering mountain scenery, lake access, hiking trails amid the Laurentian Mountains, St. Lawrence Valley, boreal shield. With 400+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Laurentian Mountains scener",
-      "schema_keywords": "Mountain Scenery, Lake Access, Hiking Trails, camping, Quebec, Canada, outdoor"
+      "schema_keywords": "Mountain Scenery, Lake Access, Hiking Trails, camping, Quebec, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Parc de la Jacques-Cartier",
@@ -1760,7 +3448,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Parc de la Jacques-Cartier is a backcountry gem in Quebec, offering canyon hiking, river access, wildlife amid the Laurentian Mountains, St. Lawrence Valley, boreal shield. With 300+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the Laurentian Mountains",
-      "schema_keywords": "Canyon Hiking, River Access, Wildlife, camping, Quebec, Canada, outdoor"
+      "schema_keywords": "Canyon Hiking, River Access, Wildlife, camping, Quebec, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Parc national de la Mauricie",
@@ -1808,7 +3543,53 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Parc national de la Mauricie is a beloved campground in Quebec, offering lake swimming, canoe portages, forest trails amid the Laurentian Mountains, St. Lawrence Valley, boreal shield. With 400+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Laurentian Mountains scener",
-      "schema_keywords": "Lake Swimming, Canoe Portages, Forest Trails, camping, Quebec, Canada, outdoor"
+      "schema_keywords": "Lake Swimming, Canoe Portages, Forest Trails, camping, Quebec, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Parc national du Fjord-du-Saguenay",
@@ -1856,7 +3637,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Parc national du Fjord-du-Saguenay is a backcountry gem in Quebec, offering fjord views, coastal camping, kayaking amid the Laurentian Mountains, St. Lawrence Valley, boreal shield. With 200+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the Laurentian ",
-      "schema_keywords": "Fjord Views, Coastal Camping, Kayaking, camping, Quebec, Canada, outdoor"
+      "schema_keywords": "Fjord Views, Coastal Camping, Kayaking, camping, Quebec, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Parc national des Grands-Jardins",
@@ -1904,7 +3732,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Parc national des Grands-Jardins is a backcountry gem in Quebec, offering alpine tundra, mountain views, stargazing amid the Laurentian Mountains, St. Lawrence Valley, boreal shield. With 150+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the Laurentian",
-      "schema_keywords": "Alpine Tundra, Mountain Views, Stargazing, camping, Quebec, Canada, outdoor"
+      "schema_keywords": "Alpine Tundra, Mountain Views, Stargazing, camping, Quebec, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Bowron Lake Provincial Park",
@@ -1952,7 +3827,55 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Bowron Lake Provincial Park is a backcountry gem in British Columbia, offering canoe circuit, mountain lakes, wilderness amid the coastal rainforest, Rocky Mountains, interior plateau. With 400+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the coastal ",
-      "schema_keywords": "Canoe Circuit, Mountain Lakes, Wilderness, camping, British Columbia, Canada, outdoor"
+      "schema_keywords": "Canoe Circuit, Mountain Lakes, Wilderness, camping, British Columbia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Golden Ears Provincial Park",
@@ -2000,7 +3923,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Golden Ears Provincial Park is a beloved campground in British Columbia, offering mountain access, eagle viewing, river camping amid the coastal rainforest, Rocky Mountains, interior plateau. With 300+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the coastal rainforest s",
-      "schema_keywords": "Mountain Access, Eagle Viewing, River Camping, camping, British Columbia, Canada, outdoor"
+      "schema_keywords": "Mountain Access, Eagle Viewing, River Camping, camping, British Columbia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Joffre Lakes Provincial Park",
@@ -2048,7 +4018,55 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Joffre Lakes Provincial Park is a backcountry gem in British Columbia, offering turquoise lakes, alpine setting, glacial water amid the coastal rainforest, Rocky Mountains, interior plateau. With 100+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the co",
-      "schema_keywords": "Turquoise Lakes, Alpine Setting, Glacial Water, camping, British Columbia, Canada, outdoor"
+      "schema_keywords": "Turquoise Lakes, Alpine Setting, Glacial Water, camping, British Columbia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Juan de Fuca Provincial Park",
@@ -2096,7 +4114,55 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Juan de Fuca Provincial Park is a backcountry gem in British Columbia, offering coastal trail, beach camping, sea stacks amid the coastal rainforest, Rocky Mountains, interior plateau. With 200+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the coastal ",
-      "schema_keywords": "Coastal Trail, Beach Camping, Sea Stacks, camping, British Columbia, Canada, outdoor"
+      "schema_keywords": "Coastal Trail, Beach Camping, Sea Stacks, camping, British Columbia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Garibaldi Provincial Park",
@@ -2144,7 +4210,55 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Garibaldi Provincial Park is a backcountry gem in British Columbia, offering alpine lakes, wildflower meadows, peak views amid the coastal rainforest, Rocky Mountains, interior plateau. With 400+ sites, it provides a true wilderness experience away from the crowds.\n\nCampers come here for the coastal",
-      "schema_keywords": "Alpine Lakes, Wildflower Meadows, Peak Views, camping, British Columbia, Canada, outdoor"
+      "schema_keywords": "Alpine Lakes, Wildflower Meadows, Peak Views, camping, British Columbia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals",
+            "warm-toque-gloves"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net",
+            "water-filter-purifier"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Manning Provincial Park",
@@ -2192,7 +4306,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Manning Provincial Park is a beloved campground in British Columbia, offering highway accessible, trail system, mountain views amid the coastal rainforest, Rocky Mountains, interior plateau. With 300+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the coastal rainforest sc",
-      "schema_keywords": "Highway Accessible, Trail System, Mountain Views, camping, British Columbia, Canada, outdoor"
+      "schema_keywords": "Highway Accessible, Trail System, Mountain Views, camping, British Columbia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Writing-on-Stone Provincial Park",
@@ -2240,7 +4401,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Writing-on-Stone Provincial Park is a beloved campground in Alberta, offering rock art, coulees, grassland amid the Rocky Mountain foothills, prairies, badlands. With 100+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Rocky Mountain foothills scenery and the chance to",
-      "schema_keywords": "Rock Art, Coulees, Grassland, camping, Alberta, Canada, outdoor"
+      "schema_keywords": "Rock Art, Coulees, Grassland, camping, Alberta, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Dinosaur Provincial Park",
@@ -2288,7 +4496,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Dinosaur Provincial Park is a beloved campground in Alberta, offering badlands, fossil sites, hiking amid the Rocky Mountain foothills, prairies, badlands. With 200+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Rocky Mountain foothills scenery and the chance to disco",
-      "schema_keywords": "Badlands, Fossil Sites, Hiking, camping, Alberta, Canada, outdoor"
+      "schema_keywords": "Badlands, Fossil Sites, Hiking, camping, Alberta, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Peter Lougheed Provincial Park",
@@ -2336,7 +4591,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Peter Lougheed Provincial Park is a beloved campground in Alberta, offering mountain lakes, rockies access, wildflower trails amid the Rocky Mountain foothills, prairies, badlands. With 500+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Rocky Mountain foothills scener",
-      "schema_keywords": "Mountain Lakes, Rockies Access, Wildflower Trails, camping, Alberta, Canada, outdoor"
+      "schema_keywords": "Mountain Lakes, Rockies Access, Wildflower Trails, camping, Alberta, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Elk Island National Park",
@@ -2384,7 +4686,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Elk Island National Park is a beloved campground in Alberta, offering bison viewing, lake paddling, wildlife amid the Rocky Mountain foothills, prairies, badlands. With 300+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Rocky Mountain foothills scenery and the chance ",
-      "schema_keywords": "Bison Viewing, Lake Paddling, Wildlife, camping, Alberta, Canada, outdoor"
+      "schema_keywords": "Bison Viewing, Lake Paddling, Wildlife, camping, Alberta, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     },
     {
       "name": "Waterton Lakes National Park",
@@ -2432,7 +4781,54 @@
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
       "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
       "schema_description": "Waterton Lakes National Park is a beloved campground in Alberta, offering mountain lake, hiking network, bears amid the Rocky Mountain foothills, prairies, badlands. With 250+ sites, it balances comfort and nature beautifully.\n\nCampers come here for the Rocky Mountain foothills scenery and the chanc",
-      "schema_keywords": "Mountain Lake, Hiking Network, Bears, camping, Alberta, Canada, outdoor"
+      "schema_keywords": "Mountain Lake, Hiking Network, Bears, camping, Alberta, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "tent-3-season",
+            "sleeping-bag-rated-for-season",
+            "sleeping-pad",
+            "camp-stove-fuel",
+            "cookware-set",
+            "water-bottles-2l"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "rain-gear-jacket-pants",
+            "warm-layers-fleece-down",
+            "hiking-boots",
+            "camp-shoes-sandals"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "first-aid-kit-camping",
+            "bear-canister-rope",
+            "headlamp-extra-batteries-rechargeable-camping",
+            "bug-spray-bug-net"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "camp-chair-folding",
+            "cooler-hard-sided",
+            "lantern-led",
+            "hammock"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "portable-power-bank",
+            "bluetooth-speaker-waterproof"
+          ]
+        }
+      ]
     }
   ]
 }

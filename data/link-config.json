@@ -1,0 +1,14 @@
+{
+  "link_source": "affiliate",
+  "announcement": {
+    "enabled": false,
+    "url_en": "/en/announcement",
+    "url_fr": "/fr/annonce"
+  },
+  "disclosure": "affiliate",
+  "ecotone_base": "https://ecotonegatineau.ca",
+  "utm": {
+    "utm_source": "outdoorintel",
+    "utm_medium": "gear-bridge"
+  }
+}

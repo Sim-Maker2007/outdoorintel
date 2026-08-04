@@ -10,6 +10,10 @@
     "data:audit": "node scripts/build-reference-audit.js",
     "build:province-indexes": "node scripts/build-province-indexes.js",
     "inject:community": "node scripts/inject-community-intel.js",
+    "build": "npm run build:scout-index && astro build && node scripts/build/merge-legacy.mjs && node scripts/parity/compare.mjs --warn",
+    "build:astro": "astro build",
+    "parity:snapshot": "node scripts/parity/snapshot.mjs",
+    "parity:compare": "node scripts/parity/compare.mjs",
     "build:css": "tailwindcss -c tailwind.config.js -i assets/css/tailwind.input.css -o assets/css/site.css --minify",
     "build:scout-index": "node scripts/build-spots-index.js",
     "build:scout-page": "node scripts/build-scout-page.js",
@@ -22,6 +26,7 @@
     "node": ">=20"
   },
   "devDependencies": {
+    "astro": "^7.1.6",
     "tailwindcss": "^3.4.17"
   }
 }

@@ -1,0 +1,1918 @@
+{
+  "version": 1,
+  "note": "Item catalog for spot gear checklists. spot.gear in data/*.json references these ids. Which target a page links to is decided by data/link-config.json (see src/lib/gearResolver.mjs).",
+  "groups": [
+    {
+      "key": "essential",
+      "label_en": "Essential Gear",
+      "label_fr": "Équipement essentiel",
+      "fill": "#305e3c",
+      "icon": "M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+    },
+    {
+      "key": "clothing",
+      "label_en": "Clothing & Footwear",
+      "label_fr": "Vêtements & Chaussures",
+      "fill": "#305e3c",
+      "icon": "M7 2l-4 4v3h3v9h8V9h3V6l-4-4h-2l-2 2-2-2H7z"
+    },
+    {
+      "key": "safety",
+      "label_en": "Safety & First Aid",
+      "label_fr": "Sécurité & Premiers soins",
+      "fill": "#3d7a4d",
+      "icon": "M10 1l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V4l7-3zm1 6a1 1 0 10-2 0v3a1 1 0 102 0V7zm-1 7a1 1 0 100-2 1 1 0 000 2z"
+    },
+    {
+      "key": "comfort",
+      "label_en": "Comfort & Convenience",
+      "label_fr": "Confort & Commodité",
+      "fill": "#305e3c",
+      "icon": "M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zm0 16a3 3 0 01-3-3h6a3 3 0 01-3 3z"
+    },
+    {
+      "key": "tech",
+      "label_en": "Tech & Gadgets",
+      "label_fr": "Tech & Gadgets",
+      "fill": "#305e3c",
+      "icon": "M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z"
+    }
+  ],
+  "items": {
+    "action-camera-helmet-mount": {
+      "label": "Action Camera + Helmet Mount",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "action+camera+helmet+mount+ski",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Action Camera + Helmet Mount"
+        }
+      }
+    },
+    "action-camera-waterproof": {
+      "label": "Action Camera (waterproof)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "action+camera+waterproof",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Action Camera"
+        }
+      }
+    },
+    "alltrails-offline-maps": {
+      "label": "AllTrails / Offline Maps",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "phone+armband+hiking+waterproof",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "AllTrails / Offline Maps"
+        }
+      }
+    },
+    "ammunition-arrows": {
+      "label": "Ammunition / Arrows",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "ammunition+storage+case",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "hunting",
+          "q": "Ammunition / Arrows"
+        }
+      }
+    },
+    "avalanche-beacon-probe-shovel": {
+      "label": "Avalanche Beacon + Probe + Shovel",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "avalanche+beacon+probe+shovel+kit",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Avalanche Beacon + Probe + Shovel"
+        }
+      }
+    },
+    "backpack-30-50l": {
+      "label": "Backpack (30-50L)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "hiking+backpack+daypack+30L",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Backpack"
+        }
+      }
+    },
+    "bait-bucket-or-live-well": {
+      "label": "Bait Bucket or Live Well",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "bait+bucket+fishing",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "fishing",
+          "q": "seau à appâts"
+        }
+      }
+    },
+    "balaclava-face-mask": {
+      "label": "Balaclava / Face Mask",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "hunting+balaclava+face+mask",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "hunting",
+          "q": "Balaclava / Face Mask"
+        }
+      }
+    },
+    "balaclava-neck-gaiter": {
+      "label": "Balaclava / Neck Gaiter",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "balaclava+skiing+merino",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Balaclava / Neck Gaiter"
+        }
+      }
+    },
+    "bear-canister-rope": {
+      "label": "Bear Canister / Rope",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "bear+canister+food+storage",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Bear Canister / Rope"
+        }
+      }
+    },
+    "bear-spray": {
+      "label": "Bear Spray",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "bear+spray+canada",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Bear Spray"
+        }
+      }
+    },
+    "bilge-pump": {
+      "label": "Bilge Pump",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "kayak+bilge+pump+hand",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Bilge Pump"
+        }
+      }
+    },
+    "binoculars-10x42": {
+      "label": "Binoculars (10x42)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "hunting+binoculars+10x42",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "hunting",
+          "q": "Binoculars"
+        }
+      }
+    },
+    "blaze-orange-vest-hat": {
+      "label": "Blaze Orange Vest & Hat",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "blaze+orange+hunting+vest+hat",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "hunting",
+          "q": "Blaze Orange Vest & Hat"
+        }
+      }
+    },
+    "bluetooth-speaker-waterproof": {
+      "label": "Bluetooth Speaker (waterproof)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "bluetooth+speaker+waterproof+portable",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Bluetooth Speaker"
+        }
+      }
+    },
+    "boot-bag": {
+      "label": "Boot Bag",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "ski+boot+bag+heated",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Boot Bag"
+        }
+      }
+    },
+    "boot-dryer": {
+      "label": "Boot Dryer",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "ski+boot+dryer+electric",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Boot Dryer"
+        }
+      }
+    },
+    "bug-spray-bug-net": {
+      "label": "Bug Spray & Bug Net",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "bug+spray+head+net+camping",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Bug Spray & Bug Net"
+        }
+      }
+    },
+    "bug-spray-deet": {
+      "label": "Bug Spray (DEET)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "bug+spray+deet+mosquito",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "fishing",
+          "q": "chasse-moustiques"
+        }
+      }
+    },
+    "camera-binoculars": {
+      "label": "Camera / Binoculars",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "hiking+camera+binoculars",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Camera / Binoculars"
+        }
+      }
+    },
+    "camo-base-layers": {
+      "label": "Camo Base Layers",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "camo+base+layer+hunting",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "hunting",
+          "q": "Camo Base Layers"
+        }
+      }
+    },
+    "camp-chair-folding": {
+      "label": "Camp Chair (folding)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "camping+chair+portable+folding",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Camp Chair"
+        }
+      }
+    },
+    "camp-kitchen-kit": {
+      "label": "Camp Kitchen Kit",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "camping+kitchen+kit+lightweight",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Camp Kitchen Kit"
+        }
+      }
+    },
+    "camp-shoes-sandals": {
+      "label": "Camp Shoes / Sandals",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "camp+shoes+sandals+comfortable",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Camp Shoes / Sandals"
+        }
+      }
+    },
+    "camp-stove-fuel": {
+      "label": "Camp Stove & Fuel",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "camping+stove+propane+portable",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Camp Stove & Fuel"
+        }
+      }
+    },
+    "cookware-set": {
+      "label": "Cookware Set",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "camping+cookware+set+lightweight",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Cookware Set"
+        }
+      }
+    },
+    "cooler-for-catch": {
+      "label": "Cooler for Catch",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "fishing+cooler+ice+chest",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "fishing",
+          "q": "Cooler for Catch"
+        }
+      }
+    },
+    "cooler-hard-sided": {
+      "label": "Cooler (hard-sided)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "camping+cooler+hard+sided",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Cooler"
+        }
+      }
+    },
+    "deck-bag": {
+      "label": "Deck Bag",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "kayak+deck+bag+waterproof",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Deck Bag"
+        }
+      }
+    },
+    "dry-bags-assorted": {
+      "label": "Dry Bags (assorted)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "dry+bag+set+waterproof+kayak",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Dry Bags"
+        }
+      }
+    },
+    "emergency-shelter-bivy": {
+      "label": "Emergency Shelter / Bivy",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "emergency+bivy+shelter+lightweight",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Emergency Shelter / Bivy"
+        }
+      }
+    },
+    "emergency-whistle-fire-starter": {
+      "label": "Emergency Whistle & Fire Starter",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "emergency+whistle+fire+starter",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "hunting",
+          "q": "Emergency Whistle & Fire Starter"
+        }
+      }
+    },
+    "first-aid-kit-camping": {
+      "label": "First Aid Kit",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "first+aid+kit+camping",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "First Aid Kit"
+        }
+      }
+    },
+    "first-aid-kit-compact": {
+      "label": "First Aid Kit",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "first+aid+kit+compact",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "First Aid Kit"
+        }
+      }
+    },
+    "first-aid-kit-hiking": {
+      "label": "First Aid Kit",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "first+aid+kit+hiking",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "First Aid Kit"
+        }
+      }
+    },
+    "first-aid-kit-hunting": {
+      "label": "First Aid Kit",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "first+aid+kit+hunting",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "hunting",
+          "q": "First Aid Kit"
+        }
+      }
+    },
+    "first-aid-kit-waterproof": {
+      "label": "First Aid Kit (waterproof)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "waterproof+first+aid+kit",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "First Aid Kit"
+        }
+      }
+    },
+    "first-aid-kit-waterproof-compact": {
+      "label": "First Aid Kit",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "first+aid+kit+waterproof+compact",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "fishing",
+          "q": "First Aid Kit"
+        }
+      }
+    },
+    "fishing-licence-holder": {
+      "label": "Fishing Licence Holder",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "waterproof+licence+holder",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "fishing",
+          "q": "porte-permis"
+        }
+      }
+    },
+    "fishing-line-match-your-species": {
+      "label": "Fishing Line (match your species)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "braided+fishing+line",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "fishing",
+          "q": "ligne de pêche"
+        }
+      }
+    },
+    "fishing-rod-reel-combo": {
+      "label": "Fishing Rod & Reel Combo",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "fishing+rod+reel+combo",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "fishing",
+          "q": "canne moulinet"
+        }
+      }
+    },
+    "folding-camp-chair": {
+      "label": "Folding Camp Chair",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "folding+fishing+chair+portable",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "fishing",
+          "q": "Folding Camp Chair"
+        }
+      }
+    },
+    "gaiters": {
+      "label": "Gaiters",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "hiking+gaiters+waterproof",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Gaiters"
+        }
+      }
+    },
+    "game-bags": {
+      "label": "Game Bags",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "game+bags+hunting+reusable",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "hunting",
+          "q": "Game Bags"
+        }
+      }
+    },
+    "game-calls": {
+      "label": "Game Calls",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "deer+moose+game+call",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "hunting",
+          "q": "Game Calls"
+        }
+      }
+    },
+    "gps-unit": {
+      "label": "GPS Unit",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "handheld+gps+hunting",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "hunting",
+          "q": "GPS Unit"
+        }
+      }
+    },
+    "hammock": {
+      "label": "Hammock",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "camping+hammock+portable",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Hammock"
+        }
+      }
+    },
+    "hand-toe-warmers-hunting-pack": {
+      "label": "Hand & Toe Warmers",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "hand+warmers+hunting+pack",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "hunting",
+          "q": "Hand & Toe Warmers"
+        }
+      }
+    },
+    "hand-toe-warmers-skiing": {
+      "label": "Hand & Toe Warmers",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "hand+toe+warmers+skiing",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Hand & Toe Warmers"
+        }
+      }
+    },
+    "headlamp-early-mornings": {
+      "label": "Headlamp (early mornings)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "headlamp+rechargeable+fishing",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "fishing",
+          "q": "lampe frontale"
+        }
+      }
+    },
+    "headlamp-extra-batteries-rechargeable-camping": {
+      "label": "Headlamp + Extra Batteries",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "headlamp+rechargeable+camping",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Headlamp + Extra Batteries"
+        }
+      }
+    },
+    "headlamp-extra-batteries-rechargeable-hiking": {
+      "label": "Headlamp + Extra Batteries",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "headlamp+rechargeable+hiking",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Headlamp + Extra Batteries"
+        }
+      }
+    },
+    "helmet-mips": {
+      "label": "Helmet (MIPS)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "ski+helmet+mips",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Helmet"
+        }
+      }
+    },
+    "helmet-whitewater": {
+      "label": "Helmet (whitewater)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "whitewater+helmet+kayak",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Helmet"
+        }
+      }
+    },
+    "hiking-boots": {
+      "label": "Hiking Boots",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "hiking+boots+waterproof+camping",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "bottes de randonnée"
+        }
+      }
+    },
+    "hiking-boots-waterproof": {
+      "label": "Hiking Boots (waterproof)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "hiking+boots+waterproof",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Hiking Boots"
+        }
+      }
+    },
+    "hiking-socks-merino": {
+      "label": "Hiking Socks (merino)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "merino+hiking+socks",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Hiking Socks"
+        }
+      }
+    },
+    "hunting-backpack-frame": {
+      "label": "Hunting Backpack (frame)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "hunting+backpack+frame+pack",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "hunting",
+          "q": "Hunting Backpack"
+        }
+      }
+    },
+    "hunting-knife": {
+      "label": "Hunting Knife",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "hunting+knife+fixed+blade",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "hunting",
+          "q": "couteau de chasse"
+        }
+      }
+    },
+    "hunting-rifle-or-bow": {
+      "label": "Hunting Rifle or Bow",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "hunting+rifle+case+padded",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "hunting",
+          "q": "Hunting Rifle or Bow"
+        }
+      }
+    },
+    "insulated-hunting-boots": {
+      "label": "Insulated Hunting Boots",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "insulated+hunting+boots+waterproof",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "hunting",
+          "q": "Insulated Hunting Boots"
+        }
+      }
+    },
+    "insulated-hunting-gloves": {
+      "label": "Insulated Hunting Gloves",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "insulated+hunting+gloves",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "hunting",
+          "q": "Insulated Hunting Gloves"
+        }
+      }
+    },
+    "kayak-paddle": {
+      "label": "Kayak Paddle",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "kayak+paddle+lightweight",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "pagaie"
+        }
+      }
+    },
+    "landing-net": {
+      "label": "Landing Net",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "fishing+landing+net+rubber",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "fishing",
+          "q": "épuisette"
+        }
+      }
+    },
+    "lantern-led": {
+      "label": "Lantern (LED)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "camping+lantern+led+rechargeable",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Lantern"
+        }
+      }
+    },
+    "lip-balm-spf-30": {
+      "label": "Lip Balm SPF 30+",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "lip+balm+spf+ski",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Lip Balm SPF 30+"
+        }
+      }
+    },
+    "map-compass-gps": {
+      "label": "Map & Compass / GPS",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "hiking+compass+map+gps",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Map & Compass / GPS"
+        }
+      }
+    },
+    "merino-base-layer-top-bottom": {
+      "label": "Merino Base Layer (top + bottom)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "merino+base+layer+set+skiing",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Merino Base Layer"
+        }
+      }
+    },
+    "merino-ski-socks": {
+      "label": "Merino Ski Socks",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "merino+ski+socks+cushioned",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Merino Ski Socks"
+        }
+      }
+    },
+    "mid-layer-fleece-or-down": {
+      "label": "Mid Layer (fleece or down)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "ski+mid+layer+fleece",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Mid Layer"
+        }
+      }
+    },
+    "moisture-wicking-base-layer": {
+      "label": "Moisture-Wicking Base Layer",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "moisture+wicking+base+layer+hiking",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Moisture-Wicking Base Layer"
+        }
+      }
+    },
+    "neoprene-wetsuit-drysuit": {
+      "label": "Neoprene Wetsuit / Drysuit",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "wetsuit+kayaking+neoprene",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Neoprene Wetsuit / Drysuit"
+        }
+      }
+    },
+    "paddling-gloves": {
+      "label": "Paddling Gloves",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "paddling+gloves+kayak+neoprene",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Paddling Gloves"
+        }
+      }
+    },
+    "paddling-seat-cushion": {
+      "label": "Paddling Seat Cushion",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "kayak+seat+cushion+gel",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Paddling Seat Cushion"
+        }
+      }
+    },
+    "pfd-life-jacket": {
+      "label": "PFD / Life Jacket",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "fishing+life+jacket+pfd",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "fishing",
+          "q": "veste de flottaison"
+        }
+      }
+    },
+    "pfd-life-jacket-paddling-fit": {
+      "label": "PFD / Life Jacket (paddling-fit)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "kayaking+pfd+life+jacket",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "PFD / Life Jacket"
+        }
+      }
+    },
+    "polarized-sunglasses": {
+      "label": "Polarized Sunglasses",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "polarized+fishing+sunglasses",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "fishing",
+          "q": "lunettes polarisées"
+        }
+      }
+    },
+    "portable-charger": {
+      "label": "Portable Charger",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "portable+charger+hiking+solar",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Portable Charger"
+        }
+      }
+    },
+    "portable-fish-finder": {
+      "label": "Portable Fish Finder",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "portable+fish+finder",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "fishing",
+          "q": "Portable Fish Finder"
+        }
+      }
+    },
+    "portable-power-bank": {
+      "label": "Portable Power Bank",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "power+bank+camping+solar",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Portable Power Bank"
+        }
+      }
+    },
+    "portable-tree-stand": {
+      "label": "Portable Tree Stand",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "portable+tree+stand+climbing",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "hunting",
+          "q": "Portable Tree Stand"
+        }
+      }
+    },
+    "quick-dry-layers": {
+      "label": "Quick-Dry Layers",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "quick+dry+shirt+paddling",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Quick-Dry Layers"
+        }
+      }
+    },
+    "rain-gear-jacket-pants": {
+      "label": "Rain Gear (jacket + pants)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "rain+gear+jacket+pants",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Rain Gear"
+        }
+      }
+    },
+    "rain-jacket-packable": {
+      "label": "Rain Jacket (packable)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "packable+rain+jacket",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "fishing",
+          "q": "manteau imperméable"
+        }
+      }
+    },
+    "rain-shell-packable": {
+      "label": "Rain Shell (packable)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "rain+jacket+hiking+packable",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Rain Shell"
+        }
+      }
+    },
+    "rangefinder": {
+      "label": "Rangefinder",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "hunting+rangefinder+laser",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "hunting",
+          "q": "télémètre"
+        }
+      }
+    },
+    "rubber-boots-or-waders": {
+      "label": "Rubber Boots or Waders",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "fishing+waders+waterproof",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "fishing",
+          "q": "Rubber Boots or Waders"
+        }
+      }
+    },
+    "satellite-communicator": {
+      "label": "Satellite Communicator",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "garmin+inreach+satellite",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Satellite Communicator"
+        }
+      }
+    },
+    "scent-control-clothing": {
+      "label": "Scent-Control Clothing",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "scent+control+hunting+clothing",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "hunting",
+          "q": "Scent-Control Clothing"
+        }
+      }
+    },
+    "sit-pad-ultralight": {
+      "label": "Sit Pad (ultralight)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "sit+pad+ultralight+hiking",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Sit Pad"
+        }
+      }
+    },
+    "ski-backpack": {
+      "label": "Ski Backpack",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "ski+backpack+hydration",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Ski Backpack"
+        }
+      }
+    },
+    "ski-gloves-waterproof": {
+      "label": "Ski Gloves (waterproof)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "ski+gloves+waterproof+warm",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Ski Gloves"
+        }
+      }
+    },
+    "ski-goggles-anti-fog": {
+      "label": "Ski Goggles (anti-fog)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "ski+goggles+anti+fog",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Ski Goggles"
+        }
+      }
+    },
+    "ski-jacket-waterproof": {
+      "label": "Ski Jacket (waterproof)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "ski+jacket+waterproof+insulated",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Ski Jacket"
+        }
+      }
+    },
+    "ski-lock": {
+      "label": "Ski Lock",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "ski+lock+cable",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Ski Lock"
+        }
+      }
+    },
+    "ski-pants": {
+      "label": "Ski Pants",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "ski+pants+waterproof+insulated",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Ski Pants"
+        }
+      }
+    },
+    "ski-poles": {
+      "label": "Ski Poles",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "ski+poles+adjustable",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Ski Poles"
+        }
+      }
+    },
+    "ski-tracker-app-armband": {
+      "label": "Ski Tracker App Armband",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "phone+armband+skiing+waterproof",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Ski Tracker App Armband"
+        }
+      }
+    },
+    "sleeping-bag-rated-for-season": {
+      "label": "Sleeping Bag (rated for season)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "sleeping+bag+camping",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Sleeping Bag"
+        }
+      }
+    },
+    "sleeping-pad": {
+      "label": "Sleeping Pad",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "sleeping+pad+camping+insulated",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "matelas de sol"
+        }
+      }
+    },
+    "spray-skirt": {
+      "label": "Spray Skirt",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "kayak+spray+skirt+neoprene",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "jupette"
+        }
+      }
+    },
+    "sun-hat": {
+      "label": "Sun Hat",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "hiking+sun+hat+wide+brim",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Sun Hat"
+        }
+      }
+    },
+    "sun-hat-with-chin-strap": {
+      "label": "Sun Hat with Chin Strap",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "sun+hat+chin+strap+water",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Sun Hat with Chin Strap"
+        }
+      }
+    },
+    "sun-hat-with-neck-cover": {
+      "label": "Sun Hat with Neck Cover",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "sun+hat+neck+cover+fishing",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "fishing",
+          "q": "chapeau soleil"
+        }
+      }
+    },
+    "sunscreen-bug-spray": {
+      "label": "Sunscreen + Bug Spray",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "sunscreen+bug+spray+hiking",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Sunscreen + Bug Spray"
+        }
+      }
+    },
+    "sunscreen-high-altitude": {
+      "label": "Sunscreen (high altitude)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "sunscreen+high+altitude+ski",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Sunscreen"
+        }
+      }
+    },
+    "sunscreen-spf-50": {
+      "label": "Sunscreen SPF 50+",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "sunscreen+spf50+sport",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "fishing",
+          "q": "écran solaire"
+        }
+      }
+    },
+    "sunscreen-spf-50-reef-safe": {
+      "label": "Sunscreen SPF 50+ (reef safe)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "sunscreen+spf50+reef+safe",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Sunscreen SPF 50+"
+        }
+      }
+    },
+    "tackle-box-with-lures": {
+      "label": "Tackle Box with Lures",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "fishing+tackle+box+lures",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "fishing",
+          "q": "coffre à pêche leurres"
+        }
+      }
+    },
+    "tent-3-season": {
+      "label": "Tent (3-season)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "camping+tent+3+season+waterproof",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Tent"
+        }
+      }
+    },
+    "thermos": {
+      "label": "Thermos",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "thermos+hot+chocolate+ski",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Thermos"
+        }
+      }
+    },
+    "throw-rope-15m": {
+      "label": "Throw Rope (15m)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "throw+rope+rescue+kayak",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Throw Rope"
+        }
+      }
+    },
+    "trail-camera": {
+      "label": "Trail Camera",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "trail+camera+cellular+hunting",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "hunting",
+          "q": "Trail Camera"
+        }
+      }
+    },
+    "trail-snacks-lunch": {
+      "label": "Trail Snacks & Lunch",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "hiking+snacks+energy+bars",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Trail Snacks & Lunch"
+        }
+      }
+    },
+    "trekking-poles": {
+      "label": "Trekking Poles",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "trekking+poles+carbon+collapsible",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "bâtons de marche"
+        }
+      }
+    },
+    "warm-layer-fleece-puffy": {
+      "label": "Warm Layer (fleece/puffy)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "fleece+jacket+hiking+lightweight",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Warm Layer"
+        }
+      }
+    },
+    "warm-layers-fleece-down": {
+      "label": "Warm Layers (fleece/down)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "fleece+jacket+camping",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Warm Layers"
+        }
+      }
+    },
+    "warm-toque-gloves": {
+      "label": "Warm Toque & Gloves",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "toque+gloves+camping+warm",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Warm Toque & Gloves"
+        }
+      }
+    },
+    "water-bottles-2l": {
+      "label": "Water Bottles (2L+)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "water+bottle+camping+nalgene",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Water Bottles"
+        }
+      }
+    },
+    "water-filter-bottles": {
+      "label": "Water Filter / Bottles",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "water+filter+hiking+portable",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Water Filter / Bottles"
+        }
+      }
+    },
+    "water-filter-purifier": {
+      "label": "Water Filter / Purifier",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "water+filter+camping+portable",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Water Filter / Purifier"
+        }
+      }
+    },
+    "water-shoes-neoprene-boots": {
+      "label": "Water Shoes / Neoprene Boots",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "water+shoes+neoprene+kayak",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Water Shoes / Neoprene Boots"
+        }
+      }
+    },
+    "waterproof-gps-chart": {
+      "label": "Waterproof GPS / Chart",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "waterproof+gps+marine+kayak",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Waterproof GPS / Chart"
+        }
+      }
+    },
+    "waterproof-phone-case": {
+      "label": "Waterproof Phone Case",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "waterproof+phone+case+floating",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Waterproof Phone Case"
+        }
+      }
+    },
+    "whistle-attached-to-pfd": {
+      "label": "Whistle (attached to PFD)",
+      "targets": {
+        "affiliate": {
+          "type": "amazon-search",
+          "q": "safety+whistle+kayak",
+          "tag": "outdoorintel2-20"
+        },
+        "ecotone": {
+          "type": "search",
+          "bucket": "outdoor",
+          "q": "Whistle"
+        }
+      }
+    }
+  }
+}
