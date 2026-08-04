@@ -45,7 +45,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "West Coast Trail is an epic multi-day traverse in British Columbia, offering coastal views, suspension bridges, rainforest across 75 km of trail. With 1,500m of elevation gain, this demands solid fitness and preparation.\n\nThe trail winds through coastal rainforest, Rocky Mountains, interior plateau,",
+      "schema_keywords": "Coastal Views, Suspension Bridges, Rainforest, hiking, British Columbia, Canada, outdoor"
     },
     {
       "name": "Garibaldi Lake Trail",
@@ -92,7 +94,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Garibaldi Lake Trail is a rewarding day hike in British Columbia, offering turquoise lake, alpine wildflowers, scenic peak across 19 km of trail. With 850m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through coastal rainforest, Rocky Mountains, interior plateau, pa",
+      "schema_keywords": "Turquoise Lake, Alpine Wildflowers, Scenic Peak, hiking, British Columbia, Canada, outdoor"
     },
     {
       "name": "Juan de Fuca Trail",
@@ -139,7 +143,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Juan de Fuca Trail is an epic multi-day traverse in British Columbia, offering remote beaches, coastal wilderness, sea stacks across 47 km of trail. With 2,000m of elevation gain, this demands solid fitness and preparation.\n\nThe trail winds through coastal rainforest, Rocky Mountains, interior plate",
+      "schema_keywords": "Remote Beaches, Coastal Wilderness, Sea Stacks, hiking, British Columbia, Canada, outdoor"
     },
     {
       "name": "North Coast Trail",
@@ -186,7 +192,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "North Coast Trail is an epic multi-day traverse in British Columbia, offering pristine beaches, wilderness cabins, wildlife viewing across 43 km of trail. With 1,200m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through coastal rainforest, Rocky Mountains, interior ",
+      "schema_keywords": "Pristine Beaches, Wilderness Cabins, Wildlife Viewing, hiking, British Columbia, Canada, outdoor"
     },
     {
       "name": "Plain of Six Glaciers Trail",
@@ -233,7 +241,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Plain of Six Glaciers Trail is a rewarding day hike in Alberta, offering glacier views, mountain backdrop, historic tea house across 14 km of trail. With 370m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through Rocky Mountain foothills, prairies, badlands, passing ",
+      "schema_keywords": "Glacier Views, Mountain Backdrop, Historic Tea House, hiking, Alberta, Canada, outdoor"
     },
     {
       "name": "Sentinel Pass Trail",
@@ -280,7 +290,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Sentinel Pass Trail is a stunning alpine adventure in Alberta, offering alpine meadows, ten peaks, larch trees across 11 km of trail. With 370m of elevation gain, this demands solid fitness and preparation.\n\nThe trail winds through Rocky Mountain foothills, prairies, badlands, climbing above treelin",
+      "schema_keywords": "Alpine Meadows, Ten Peaks, Larch Trees, hiking, Alberta, Canada, outdoor"
     },
     {
       "name": "Johnston Canyon Trail",
@@ -327,7 +339,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Johnston Canyon Trail is a rewarding day hike in Alberta, offering canyon views, waterfall, accessible across 12 km of trail. With 250m of elevation gain, this is perfect for families and casual hikers.\n\nThe trail winds through Rocky Mountain foothills, prairies, badlands, passing through diverse fo",
+      "schema_keywords": "Canyon Views, Waterfall, Accessible, hiking, Alberta, Canada, outdoor"
     },
     {
       "name": "Fitz Roy Trail",
@@ -374,7 +388,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Fitz Roy Trail is a rewarding day hike in Ontario, offering bruce peninsula, escarpment views, limestone cliffs across 10 km of trail. With 200m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through Canadian Shield, boreal forest, Great Lakes shoreline, passing throu",
+      "schema_keywords": "Bruce Peninsula, Escarpment Views, Limestone Cliffs, hiking, Ontario, Canada, outdoor"
     },
     {
       "name": "Scarborough Bluffs Circuit",
@@ -421,7 +437,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Scarborough Bluffs Circuit is a rewarding day hike in Ontario, offering lake ontario views, red clay cliffs, urban accessible across 8 km of trail. With 150m of elevation gain, this is perfect for families and casual hikers.\n\nThe trail winds through Canadian Shield, boreal forest, Great Lakes shorel",
+      "schema_keywords": "Lake Ontario Views, Red Clay Cliffs, Urban Accessible, hiking, Ontario, Canada, outdoor"
     },
     {
       "name": "Mont-Royal Loop",
@@ -468,7 +486,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Mont-Royal Loop is a rewarding day hike in Quebec, offering montreal views, urban park, multiple summits across 10 km of trail. With 200m of elevation gain, this is perfect for families and casual hikers.\n\nThe trail winds through Laurentian Mountains, St. Lawrence Valley, boreal shield, passing thro",
+      "schema_keywords": "Montreal Views, Urban Park, Multiple Summits, hiking, Quebec, Canada, outdoor"
     },
     {
       "name": "Laurentian Ridge Trail",
@@ -515,7 +535,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Laurentian Ridge Trail is a stunning alpine adventure in Quebec, offering alpine meadows, panoramic views, pristine wilderness across 22 km of trail. With 800m of elevation gain, this demands solid fitness and preparation.\n\nThe trail winds through Laurentian Mountains, St. Lawrence Valley, boreal sh",
+      "schema_keywords": "Alpine Meadows, Panoramic Views, Pristine Wilderness, hiking, Quebec, Canada, outdoor"
     },
     {
       "name": "Cape Enrage Hiking Trail",
@@ -562,7 +584,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Cape Enrage Hiking Trail is a rewarding day hike in New Brunswick, offering bay of fundy views, tidal bore window, adventure park across 5 km of trail. With 100m of elevation gain, this is perfect for families and casual hikers.\n\nThe trail winds through Appalachian uplands, Bay of Fundy coast, river",
+      "schema_keywords": "Bay of Fundy Views, Tidal Bore Window, Adventure Park, hiking, New Brunswick, Canada, outdoor"
     },
     {
       "name": "Algonquin Park Trails",
@@ -609,7 +633,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Algonquin Park Trails is a rewarding day hike in Ontario, offering forest lakes, wildlife corridors, backcountry access across 16 km of trail. With 180m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through Canadian Shield, boreal forest, Great Lakes shoreline, passi",
+      "schema_keywords": "Forest Lakes, Wildlife Corridors, Backcountry Access, hiking, Ontario, Canada, outdoor"
     },
     {
       "name": "Skyline Trail (Highlands)",
@@ -656,7 +682,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Skyline Trail (Highlands) is an epic multi-day traverse in Nova Scotia, offering cabot trail connection, ocean vistas, highland plateau across 41 km of trail. With 1,800m of elevation gain, this demands solid fitness and preparation.\n\nThe trail winds through Atlantic coastline, Annapolis Valley, Cap",
+      "schema_keywords": "Cabot Trail Connection, Ocean Vistas, Highland Plateau, hiking, Nova Scotia, Canada, outdoor"
     },
     {
       "name": "Beulach Ban Falls Trail",
@@ -703,7 +731,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Beulach Ban Falls Trail is a rewarding day hike in Nova Scotia, offering waterfall, cabot trail views, coastal setting across 8 km of trail. With 250m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through Atlantic coastline, Annapolis Valley, Cape Breton Highlands, p",
+      "schema_keywords": "Waterfall, Cabot Trail Views, Coastal Setting, hiking, Nova Scotia, Canada, outdoor"
     },
     {
       "name": "Gros Morne Mountain Trail",
@@ -750,7 +780,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Gros Morne Mountain Trail is a stunning alpine adventure in Newfoundland and Labrador, offering alpine tundra, mountain vistas, national park across 8 km of trail. With 680m of elevation gain, this demands solid fitness and preparation.\n\nThe trail winds through rugged coastline, fjords, boreal fores",
+      "schema_keywords": "Alpine Tundra, Mountain Vistas, National Park, hiking, Newfoundland and Labrador, Canada, outdoor"
     },
     {
       "name": "Tablelands Trail",
@@ -797,7 +829,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Tablelands Trail is a rewarding day hike in Newfoundland and Labrador, offering unique geology, barren landscape, lunar terrain across 16 km of trail. With 300m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through rugged coastline, fjords, boreal forest, tundra, pas",
+      "schema_keywords": "Unique Geology, Barren Landscape, Lunar Terrain, hiking, Newfoundland and Labrador, Canada, outdoor"
     },
     {
       "name": "Skagway to Chilkoot Pass",
@@ -845,7 +879,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Skagway to Chilkoot Pass is an epic multi-day traverse in Yukon Territory, offering historic gold rush route, alpine crossing, us-canada border across 53 km of trail. With 1,200m of elevation gain, this demands solid fitness and preparation.\n\nThe trail winds through Canadian wilderness, passing thro",
+      "schema_keywords": "Historic Gold Rush Route, Alpine Crossing, US-Canada Border, hiking, Yukon Territory, Canada, outdoor"
     },
     {
       "name": "Mount Massive Trail",
@@ -892,7 +928,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Mount Massive Trail is a stunning alpine adventure in Northwest Territories, offering midnight sun views, tundra landscape, remote access across 12 km of trail. With 900m of elevation gain, this demands solid fitness and preparation.\n\nThe trail winds through tundra, boreal forest, Great Slave Lake, ",
+      "schema_keywords": "Midnight Sun Views, Tundra Landscape, Remote Access, hiking, Northwest Territories, Canada, outdoor"
     },
     {
       "name": "Dempster Highway Trek Section",
@@ -939,7 +977,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Dempster Highway Trek Section is an epic multi-day traverse in Nunavut, offering arctic circle crossing, permafrost tundra, indigenous territory across 40 km customizable of trail. With 200m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through arctic tundra, sea ice",
+      "schema_keywords": "Arctic Circle Crossing, Permafrost Tundra, Indigenous Territory, hiking, Nunavut, Canada, outdoor"
     },
     {
       "name": "Grouse Grind",
@@ -986,7 +1026,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Grouse Grind is a rewarding day hike in British Columbia, offering steep ascent, excellent cardio, north shore across 2.9 km of trail. With 853m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through coastal rainforest, Rocky Mountains, interior plateau, passing throu",
+      "schema_keywords": "Steep Ascent, Excellent Cardio, North Shore, hiking, British Columbia, Canada, outdoor"
     },
     {
       "name": "Stawamus Chief",
@@ -1033,7 +1075,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Stawamus Chief is a rewarding day hike in British Columbia, offering rock face, valley views, squamish access across 2.1 km of trail. With 570m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through coastal rainforest, Rocky Mountains, interior plateau, passing throug",
+      "schema_keywords": "Rock Face, Valley Views, Squamish Access, hiking, British Columbia, Canada, outdoor"
     },
     {
       "name": "Joffre Lakes",
@@ -1080,7 +1124,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Joffre Lakes is a rewarding day hike in British Columbia, offering turquoise water, three lakes, photography across 5.4 km of trail. With 370m of elevation gain, this is perfect for families and casual hikers.\n\nThe trail winds through coastal rainforest, Rocky Mountains, interior plateau, passing th",
+      "schema_keywords": "Turquoise Water, Three Lakes, Photography, hiking, British Columbia, Canada, outdoor"
     },
     {
       "name": "Garibaldi Lake",
@@ -1127,7 +1173,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Garibaldi Lake is a rewarding day hike in British Columbia, offering turquoise lake, wildflower meadows, peak views across 9 km of trail. With 800m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through coastal rainforest, Rocky Mountains, interior plateau, passing th",
+      "schema_keywords": "Turquoise Lake, Wildflower Meadows, Peak Views, hiking, British Columbia, Canada, outdoor"
     },
     {
       "name": "Panorama Ridge Trail",
@@ -1174,7 +1222,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Panorama Ridge Trail is a rewarding day hike in British Columbia, offering 360 degree views, alpine meadows, wildflowers across 18 km of trail. With 1,200m of elevation gain, this demands solid fitness and preparation.\n\nThe trail winds through coastal rainforest, Rocky Mountains, interior plateau, p",
+      "schema_keywords": "360 Degree Views, Alpine Meadows, Wildflowers, hiking, British Columbia, Canada, outdoor"
     },
     {
       "name": "Berg Lake Trail",
@@ -1221,7 +1271,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Berg Lake Trail is an epic multi-day traverse in British Columbia, offering glacier views, turquoise lake, mountain scenery across 19 km of trail. With 750m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through coastal rainforest, Rocky Mountains, interior plateau, p",
+      "schema_keywords": "Glacier Views, Turquoise Lake, Mountain Scenery, hiking, British Columbia, Canada, outdoor"
     },
     {
       "name": "Juan de Fuca Trail",
@@ -1268,7 +1320,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Juan de Fuca Trail is an epic multi-day traverse in British Columbia, offering coastal trail, beach access, sea stacks across 47 km of trail. With 1,200m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through coastal rainforest, Rocky Mountains, interior plateau, pass",
+      "schema_keywords": "Coastal Trail, Beach Access, Sea Stacks, hiking, British Columbia, Canada, outdoor"
     },
     {
       "name": "Sunshine Coast Trail",
@@ -1315,7 +1369,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Sunshine Coast Trail is an epic multi-day traverse in British Columbia, offering coastal scenery, old growth forest, marine views across 80 km of trail. With 2,000m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through coastal rainforest, Rocky Mountains, interior pl",
+      "schema_keywords": "Coastal Scenery, Old Growth Forest, Marine Views, hiking, British Columbia, Canada, outdoor"
     },
     {
       "name": "Black Tusk",
@@ -1362,7 +1418,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Black Tusk is a rewarding day hike in British Columbia, offering distinctive peak, garibaldi access, alpine across 7.5 km of trail. With 650m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through coastal rainforest, Rocky Mountains, interior plateau, passing through ",
+      "schema_keywords": "Distinctive Peak, Garibaldi Access, Alpine, hiking, British Columbia, Canada, outdoor"
     },
     {
       "name": "Plain of Six Glaciers",
@@ -1409,7 +1467,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Plain of Six Glaciers is a rewarding day hike in Alberta, offering glacier views, lake louise base, mountain scenery across 12.8 km of trail. With 400m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through Rocky Mountain foothills, prairies, badlands, passing through",
+      "schema_keywords": "Glacier Views, Lake Louise Base, Mountain Scenery, hiking, Alberta, Canada, outdoor"
     },
     {
       "name": "Crypt Lake",
@@ -1456,7 +1516,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Crypt Lake is a rewarding day hike in Alberta, offering alpine lake, scramble section, waterton access across 19 km of trail. With 680m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through Rocky Mountain foothills, prairies, badlands, passing through diverse forest ",
+      "schema_keywords": "Alpine Lake, Scramble Section, Waterton Access, hiking, Alberta, Canada, outdoor"
     },
     {
       "name": "Carthew-Alderson Trail",
@@ -1503,7 +1565,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Carthew-Alderson Trail is a rewarding day hike in Alberta, offering high alpine, cameron lake views, point-to-point across 19.2 km of trail. With 700m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through Rocky Mountain foothills, prairies, badlands, passing through ",
+      "schema_keywords": "High Alpine, Cameron Lake Views, Point-to-Point, hiking, Alberta, Canada, outdoor"
     },
     {
       "name": "Parker Ridge",
@@ -1550,7 +1614,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Parker Ridge is a rewarding day hike in Alberta, offering 360 views, wildflower meadows, icefield parkway across 5.7 km of trail. With 280m of elevation gain, this is perfect for families and casual hikers.\n\nThe trail winds through Rocky Mountain foothills, prairies, badlands, passing through divers",
+      "schema_keywords": "360 Views, Wildflower Meadows, Icefield Parkway, hiking, Alberta, Canada, outdoor"
     },
     {
       "name": "Ha Ling Peak",
@@ -1597,7 +1663,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Ha Ling Peak is a rewarding day hike in Alberta, offering canmore access, rocky mountain views, popular across 12 km of trail. With 728m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through Rocky Mountain foothills, prairies, badlands, passing through diverse forest",
+      "schema_keywords": "Canmore Access, Rocky Mountain Views, Popular, hiking, Alberta, Canada, outdoor"
     },
     {
       "name": "Tent Ridge",
@@ -1644,7 +1712,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Tent Ridge is a rewarding day hike in Alberta, offering scenic ridge walk, peaks views, alpine meadows across 15 km of trail. With 900m of elevation gain, this demands solid fitness and preparation.\n\nThe trail winds through Rocky Mountain foothills, prairies, badlands, passing through diverse forest",
+      "schema_keywords": "Scenic Ridge Walk, Peaks Views, Alpine Meadows, hiking, Alberta, Canada, outdoor"
     },
     {
       "name": "Cup and Saucer Trail",
@@ -1691,7 +1761,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Cup and Saucer Trail is a rewarding day hike in Ontario, offering manitoulin island, quartzite cliffs, lake views across 9 km of trail. With 200m of elevation gain, this is perfect for families and casual hikers.\n\nThe trail winds through Canadian Shield, boreal forest, Great Lakes shoreline, passing",
+      "schema_keywords": "Manitoulin Island, Quartzite Cliffs, Lake Views, hiking, Ontario, Canada, outdoor"
     },
     {
       "name": "Crack Trail (Killarney)",
@@ -1738,7 +1810,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Crack Trail (Killarney) is a rewarding day hike in Ontario, offering white quartzite, rock formation, georgian bay across 4 km of trail. With 150m of elevation gain, this is perfect for families and casual hikers.\n\nThe trail winds through Canadian Shield, boreal forest, Great Lakes shoreline, passin",
+      "schema_keywords": "White Quartzite, Rock Formation, Georgian Bay, hiking, Ontario, Canada, outdoor"
     },
     {
       "name": "Sleeping Giant Provincial Park",
@@ -1785,7 +1859,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Sleeping Giant Provincial Park is a rewarding day hike in Ontario, offering superior views, multi-trail system, thunder bay access across 12 km of trail. With 350m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through Canadian Shield, boreal forest, Great Lakes shore",
+      "schema_keywords": "Superior Views, Multi-Trail System, Thunder Bay Access, hiking, Ontario, Canada, outdoor"
     },
     {
       "name": "Pukaskwa Coastal Trail",
@@ -1832,7 +1908,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Pukaskwa Coastal Trail is an epic multi-day traverse in Ontario, offering superior shoreline, beach camping, backcountry across 58 km of trail. With 1,000m of elevation gain, this demands solid fitness and preparation.\n\nThe trail winds through Canadian Shield, boreal forest, Great Lakes shoreline, p",
+      "schema_keywords": "Superior Shoreline, Beach Camping, Backcountry, hiking, Ontario, Canada, outdoor"
     },
     {
       "name": "Mont Albert (Gaspésie)",
@@ -1879,7 +1957,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Mont Albert (Gaspésie) is a rewarding day hike in Quebec, offering alpine tundra, wildflower slopes, views across 12 km of trail. With 530m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through Laurentian Mountains, St. Lawrence Valley, boreal shield, passing through",
+      "schema_keywords": "Alpine Tundra, Wildflower Slopes, Views, hiking, Quebec, Canada, outdoor"
     },
     {
       "name": "Mont Jacques-Cartier",
@@ -1926,7 +2006,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Mont Jacques-Cartier is a rewarding day hike in Quebec, offering quebec's tallest, tundra plateau, 360 views across 12 km of trail. With 385m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through Laurentian Mountains, St. Lawrence Valley, boreal shield, passing throu",
+      "schema_keywords": "Quebec's Tallest, Tundra Plateau, 360 Views, hiking, Quebec, Canada, outdoor"
     },
     {
       "name": "Sentier des Caps",
@@ -1973,7 +2055,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Sentier des Caps is an epic multi-day traverse in Quebec, offering coastal trail, forest-to-shoreline, charlevoix across 50 km of trail. With 1,500m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through Laurentian Mountains, St. Lawrence Valley, boreal shield, passin",
+      "schema_keywords": "Coastal Trail, Forest-to-Shoreline, Charlevoix, hiking, Quebec, Canada, outdoor"
     },
     {
       "name": "East Coast Trail Sections",
@@ -2020,7 +2104,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "East Coast Trail Sections is an epic multi-day traverse in Newfoundland and Labrador, offering dramatic cliffs, sea cave access, coastal wilderness across 25-50 km sections of trail. With 800m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through rugged coastline, fj",
+      "schema_keywords": "Dramatic Cliffs, Sea Cave Access, Coastal Wilderness, hiking, Newfoundland and Labrador, Canada, outdoor"
     },
     {
       "name": "Fundy Footpath",
@@ -2066,7 +2152,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Fundy Footpath is an epic multi-day traverse in New Brunswick, offering bay of fundy, coastal cliffs, tidal wonder across 50 km of trail. With 1,500m of elevation gain, this demands solid fitness and preparation.\n\nThe trail winds through Appalachian uplands, Bay of Fundy coast, river valleys, passin",
+      "schema_keywords": "Bay of Fundy, Coastal Cliffs, Tidal Wonder, hiking, New Brunswick, Canada, outdoor"
     },
     {
       "name": "Skyline Trail (Cape Breton)",
@@ -2113,7 +2201,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Skyline Trail (Cape Breton) is a rewarding day hike in Nova Scotia, offering coastal views, highland terrain, mountain to sea across 7.4 km of trail. With 200m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through Atlantic coastline, Annapolis Valley, Cape Breton Hig",
+      "schema_keywords": "Coastal Views, Highland Terrain, Mountain to Sea, hiking, Nova Scotia, Canada, outdoor"
     },
     {
       "name": "Chilkoot Trail",
@@ -2157,7 +2247,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Chilkoot Trail is an epic multi-day traverse in Yukon, offering historic gold rush, mountain pass, beach-to-summit across 53 km of trail. With 1,067m of elevation gain, this is manageable for most active hikers.\n\nThe trail winds through subarctic wilderness, Kluane ranges, boreal forest, passing thr",
+      "schema_keywords": "Historic Gold Rush, Mountain Pass, Beach-to-Summit, hiking, Yukon, Canada, outdoor"
     }
   ]
 }

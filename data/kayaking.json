@@ -44,7 +44,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Nahanni River offers some of the finest whitewater paddling in Northwest Territories. Spanning 200 km, this route takes you through tundra, boreal forest, Great Slave Lake, Mackenzie River with class iii-iv rapids, virginia falls, hot springs along the way.\n\nRated advanced difficulty, this is a seri",
+      "schema_keywords": "Class III-IV Rapids, Virginia Falls, Hot Springs, kayaking, Northwest Territories, Canada, outdoor"
     },
     {
       "name": "Liard River",
@@ -90,7 +92,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Liard River offers some of the finest whitewater paddling in British Columbia. Spanning 250 km, this route takes you through coastal rainforest, Rocky Mountains, interior plateau with class ii-iii rapids, portages, wildlife viewing along the way.\n\nRated intermediate difficulty, this route offers a s",
+      "schema_keywords": "Class II-III Rapids, Portages, Wildlife Viewing, kayaking, British Columbia, Canada, outdoor"
     },
     {
       "name": "Skeena River",
@@ -136,7 +140,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Skeena River offers some of the finest flatwater paddling in British Columbia. Spanning 560 km, this route takes you through coastal rainforest, Rocky Mountains, interior plateau with scenic valleys, salmon runs, first nations culture along the way.\n\nRated intermediate difficulty, this route offers ",
+      "schema_keywords": "Scenic Valleys, Salmon Runs, First Nations Culture, kayaking, British Columbia, Canada, outdoor"
     },
     {
       "name": "Kicking Horse River",
@@ -182,7 +188,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Kicking Horse River offers some of the finest whitewater paddling in British Columbia. Spanning 140 km, this route takes you through coastal rainforest, Rocky Mountains, interior plateau with class iv rapids, mountain scenery, helicopter access along the way.\n\nRated advanced difficulty, this is a se",
+      "schema_keywords": "Class IV Rapids, Mountain Scenery, Helicopter Access, kayaking, British Columbia, Canada, outdoor"
     },
     {
       "name": "Churchill River",
@@ -228,7 +236,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Churchill River offers some of the finest multi-day expedition paddling in Manitoba. Spanning 240 km, this route takes you through boreal shield, prairie grasslands, Hudson Bay lowlands with northern wilderness, arctic wildlife, polar bear habitat along the way.\n\nRated intermediate difficulty, this ",
+      "schema_keywords": "Northern Wilderness, Arctic Wildlife, Polar Bear Habitat, kayaking, Manitoba, Canada, outdoor"
     },
     {
       "name": "Coppermine River",
@@ -274,7 +284,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Coppermine River offers some of the finest whitewater paddling in Nunavut. Spanning 340 km, this route takes you through arctic tundra, sea ice, barren grounds, polar coastline with arctic wilderness, caribou migration, remote access along the way.\n\nRated advanced difficulty, this is a serious under",
+      "schema_keywords": "Arctic Wilderness, Caribou Migration, Remote Access, kayaking, Nunavut, Canada, outdoor"
     },
     {
       "name": "Pembina River",
@@ -320,7 +332,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Pembina River offers some of the finest flatwater paddling in Alberta. Spanning 120 km, this route takes you through Rocky Mountain foothills, prairies, badlands with canyons, scenic valleys, accessible along the way.\n\nRated beginner difficulty, this route is accessible to paddlers with basic skills",
+      "schema_keywords": "Canyons, Scenic Valleys, Accessible, kayaking, Alberta, Canada, outdoor"
     },
     {
       "name": "Ottawa River",
@@ -366,7 +380,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Ottawa River offers some of the finest whitewater paddling in Ontario. Spanning 200 km available, this route takes you through Canadian Shield, boreal forest, Great Lakes shoreline with urban access, progressive rapids, training ground along the way.\n\nRated intermediate difficulty, this route offers",
+      "schema_keywords": "Urban Access, Progressive Rapids, Training Ground, kayaking, Ontario, Canada, outdoor"
     },
     {
       "name": "French River",
@@ -412,7 +428,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "French River offers some of the finest multi-day expedition paddling in Ontario. Spanning 120 km, this route takes you through Canadian Shield, boreal forest, Great Lakes shoreline with chain of lakes, historic route, portages along the way.\n\nRated intermediate difficulty, this route offers a satisf",
+      "schema_keywords": "Chain of Lakes, Historic Route, Portages, kayaking, Ontario, Canada, outdoor"
     },
     {
       "name": "Rivière-Beaudette",
@@ -458,7 +476,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Rivière-Beaudette offers some of the finest whitewater paddling in Quebec. Spanning 90 km, this route takes you through Laurentian Mountains, St. Lawrence Valley, boreal shield with class ii-iii rapids, quebec gateway, scenic canyons along the way.\n\nRated intermediate difficulty, this route offers a",
+      "schema_keywords": "Class II-III Rapids, Quebec Gateway, Scenic Canyons, kayaking, Quebec, Canada, outdoor"
     },
     {
       "name": "Jacques-Cartier River",
@@ -504,7 +524,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Jacques-Cartier River offers some of the finest whitewater paddling in Quebec. Spanning 105 km, this route takes you through Laurentian Mountains, St. Lawrence Valley, boreal shield with class iii-iv rapids, cathedral canyons, provincial park along the way.\n\nRated advanced difficulty, this is a seri",
+      "schema_keywords": "Class III-IV Rapids, Cathedral Canyons, Provincial Park, kayaking, Quebec, Canada, outdoor"
     },
     {
       "name": "Saint John River",
@@ -550,7 +572,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Saint John River offers some of the finest flatwater paddling in New Brunswick. Spanning 420 km total, this route takes you through Appalachian uplands, Bay of Fundy coast, river valleys with tidal bore potential, coastal access, salmon rivers along the way.\n\nRated intermediate difficulty, this rout",
+      "schema_keywords": "Tidal Bore Potential, Coastal Access, Salmon Rivers, kayaking, New Brunswick, Canada, outdoor"
     },
     {
       "name": "Margaret River",
@@ -596,7 +620,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Margaret River offers some of the finest flatwater paddling in Nova Scotia. Spanning 60 km, this route takes you through Atlantic coastline, Annapolis Valley, Cape Breton Highlands with coastal views, estuary paddling, bald eagles along the way.\n\nRated beginner difficulty, this route is accessible t",
+      "schema_keywords": "Coastal Views, Estuary Paddling, Bald Eagles, kayaking, Nova Scotia, Canada, outdoor"
     },
     {
       "name": "Gander River",
@@ -642,7 +668,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Gander River offers some of the finest flatwater paddling in Newfoundland and Labrador. Spanning 180 km, this route takes you through rugged coastline, fjords, boreal forest, tundra with atlantic salmon, remote wilderness, boreal landscape along the way.\n\nRated intermediate difficulty, this route of",
+      "schema_keywords": "Atlantic Salmon, Remote Wilderness, Boreal Landscape, kayaking, Newfoundland and Labrador, Canada, outdoor"
     },
     {
       "name": "Yukon River",
@@ -689,7 +717,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Yukon River offers some of the finest multi-day expedition paddling in Yukon Territory. Spanning 750 km available sections, this route takes you through Canadian wilderness with 1,000+ km route, historic gold rush path, pristine wilderness along the way.\n\nRated intermediate difficulty, this route of",
+      "schema_keywords": "1,000+ km Route, Historic Gold Rush Path, Pristine Wilderness, kayaking, Yukon Territory, Canada, outdoor"
     },
     {
       "name": "Algonquin Canoe Routes",
@@ -735,7 +765,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Algonquin Canoe Routes offers some of the finest flatwater paddling in Ontario. Spanning 50-100 km, this route takes you through Canadian Shield, boreal forest, Great Lakes shoreline with 200+ lakes, portage system, wildlife along the way.\n\nRated beginner to advanced difficulty, this route offers a ",
+      "schema_keywords": "200+ Lakes, Portage System, Wildlife, kayaking, Ontario, Canada, outdoor"
     },
     {
       "name": "Killarney Georgian Bay",
@@ -781,7 +813,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Killarney Georgian Bay offers some of the finest sea kayaking paddling in Ontario. Spanning 30-50 km, this route takes you through Canadian Shield, boreal forest, Great Lakes shoreline with rocky shores, island camping, clear water along the way.\n\nRated intermediate difficulty, this route offers a s",
+      "schema_keywords": "Rocky Shores, Island Camping, Clear Water, kayaking, Ontario, Canada, outdoor"
     },
     {
       "name": "Madawaska River",
@@ -827,7 +861,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Madawaska River offers some of the finest whitewater paddling in Ontario. Spanning 50 km, this route takes you through Canadian Shield, boreal forest, Great Lakes shoreline with class ii rapids, bush camps, portages along the way.\n\nRated intermediate difficulty, this route offers a satisfying challe",
+      "schema_keywords": "Class II Rapids, Bush Camps, Portages, kayaking, Ontario, Canada, outdoor"
     },
     {
       "name": "Temagami Canoe Routes",
@@ -873,7 +909,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Temagami Canoe Routes offers some of the finest flatwater paddling in Ontario. Spanning 40-80 km, this route takes you through Canadian Shield, boreal forest, Great Lakes shoreline with island networks, remote lakes, solitude along the way.\n\nRated intermediate difficulty, this route offers a satisfy",
+      "schema_keywords": "Island Networks, Remote Lakes, Solitude, kayaking, Ontario, Canada, outdoor"
     },
     {
       "name": "Kawartha Lakes",
@@ -919,7 +957,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Kawartha Lakes offers some of the finest flatwater paddling in Ontario. Spanning 60-100 km, this route takes you through Canadian Shield, boreal forest, Great Lakes shoreline with lock system, cottage country, multi-day paddling along the way.\n\nRated beginner difficulty, this route is accessible to ",
+      "schema_keywords": "Lock System, Cottage Country, Multi-Day Paddling, kayaking, Ontario, Canada, outdoor"
     },
     {
       "name": "Rideau Canal",
@@ -965,7 +1005,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Rideau Canal offers some of the finest flatwater paddling in Ontario. Spanning 202 km, this route takes you through Canadian Shield, boreal forest, Great Lakes shoreline with unesco world heritage, historic locks, urban-to-wilderness along the way.\n\nRated beginner difficulty, this route is accessibl",
+      "schema_keywords": "UNESCO World Heritage, Historic Locks, Urban-to-Wilderness, kayaking, Ontario, Canada, outdoor"
     },
     {
       "name": "Rouge River",
@@ -1011,7 +1053,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Rouge River offers some of the finest whitewater paddling in Quebec. Spanning 27 km, this route takes you through Laurentian Mountains, St. Lawrence Valley, boreal shield with class ii-iii rapids, wilderness close to city, day paddling along the way.\n\nRated intermediate difficulty, this route offers",
+      "schema_keywords": "Class II-III Rapids, Wilderness Close to City, Day Paddling, kayaking, Quebec, Canada, outdoor"
     },
     {
       "name": "Saguenay Fjord",
@@ -1057,7 +1101,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Saguenay Fjord offers some of the finest sea kayaking paddling in Quebec. Spanning 50-100 km, this route takes you through Laurentian Mountains, St. Lawrence Valley, boreal shield with deep fjord, marine wildlife, steep cliffs along the way.\n\nRated intermediate difficulty, this route offers a satisf",
+      "schema_keywords": "Deep Fjord, Marine Wildlife, Steep Cliffs, kayaking, Quebec, Canada, outdoor"
     },
     {
       "name": "Rivière Bonaventure",
@@ -1103,7 +1149,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Rivière Bonaventure offers some of the finest flatwater paddling in Quebec. Spanning 45 km, this route takes you through Laurentian Mountains, St. Lawrence Valley, boreal shield with gaspésie access, salmon river, scenic along the way.\n\nRated beginner to intermediate difficulty, this route offers a ",
+      "schema_keywords": "Gaspésie Access, Salmon River, Scenic, kayaking, Quebec, Canada, outdoor"
     },
     {
       "name": "Parc Jacques-Cartier Rivers",
@@ -1149,7 +1197,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Parc Jacques-Cartier Rivers offers some of the finest whitewater paddling in Quebec. Spanning 30-50 km, this route takes you through Laurentian Mountains, St. Lawrence Valley, boreal shield with canyon paddling, class ii-iii, wildlife along the way.\n\nRated intermediate difficulty, this route offers ",
+      "schema_keywords": "Canyon Paddling, Class II-III, Wildlife, kayaking, Quebec, Canada, outdoor"
     },
     {
       "name": "Johnstone Strait Orcas",
@@ -1195,7 +1245,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Johnstone Strait Orcas offers some of the finest sea kayaking paddling in British Columbia. Spanning 40-60 km, this route takes you through coastal rainforest, Rocky Mountains, interior plateau with orca encounters, island hopping, strong current along the way.\n\nRated intermediate to advanced diffic",
+      "schema_keywords": "Orca Encounters, Island Hopping, Strong Current, kayaking, British Columbia, Canada, outdoor"
     },
     {
       "name": "Broken Group Islands",
@@ -1241,7 +1293,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Broken Group Islands offers some of the finest sea kayaking paddling in British Columbia. Spanning 30-50 km, this route takes you through coastal rainforest, Rocky Mountains, interior plateau with island archipelago, marine park, tofino proximity along the way.\n\nRated intermediate difficulty, this r",
+      "schema_keywords": "Island Archipelago, Marine Park, Tofino Proximity, kayaking, British Columbia, Canada, outdoor"
     },
     {
       "name": "Desolation Sound",
@@ -1287,7 +1341,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Desolation Sound offers some of the finest sea kayaking paddling in British Columbia. Spanning 50-80 km, this route takes you through coastal rainforest, Rocky Mountains, interior plateau with warm water, island camping, scenic peaks along the way.\n\nRated beginner to intermediate difficulty, this ro",
+      "schema_keywords": "Warm Water, Island Camping, Scenic Peaks, kayaking, British Columbia, Canada, outdoor"
     },
     {
       "name": "Bowron Lake Canoe Circuit",
@@ -1333,7 +1389,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Bowron Lake Canoe Circuit offers some of the finest flatwater paddling in British Columbia. Spanning 116 km, this route takes you through coastal rainforest, Rocky Mountains, interior plateau with protected circuit, mountain lake paddling, portages along the way.\n\nRated intermediate difficulty, this",
+      "schema_keywords": "Protected Circuit, Mountain Lake Paddling, Portages, kayaking, British Columbia, Canada, outdoor"
     },
     {
       "name": "Clayoquot Sound",
@@ -1379,7 +1437,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Clayoquot Sound offers some of the finest sea kayaking paddling in British Columbia. Spanning 40-60 km, this route takes you through coastal rainforest, Rocky Mountains, interior plateau with temperate rainforest, beach camping, wildlife along the way.\n\nRated intermediate difficulty, this route offe",
+      "schema_keywords": "Temperate Rainforest, Beach Camping, Wildlife, kayaking, British Columbia, Canada, outdoor"
     },
     {
       "name": "Powell Forest Canoe Route",
@@ -1425,7 +1485,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Powell Forest Canoe Route offers some of the finest flatwater paddling in British Columbia. Spanning 65 km, this route takes you through coastal rainforest, Rocky Mountains, interior plateau with lake chain, wilderness camping, portage network along the way.\n\nRated intermediate difficulty, this rout",
+      "schema_keywords": "Lake Chain, Wilderness Camping, Portage Network, kayaking, British Columbia, Canada, outdoor"
     },
     {
       "name": "Bow River",
@@ -1470,7 +1532,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Bow River offers some of the finest whitewater paddling in Alberta. Spanning 50-100 km, this route takes you through Rocky Mountain foothills, prairies, badlands with class ii rapids, rocky mountain views, accessible along the way.\n\nRated intermediate difficulty, this route offers a satisfying chall",
+      "schema_keywords": "Class II Rapids, Rocky Mountain Views, Accessible, kayaking, Alberta, Canada, outdoor"
     },
     {
       "name": "North Saskatchewan River",
@@ -1516,7 +1580,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "North Saskatchewan River offers some of the finest whitewater paddling in Alberta. Spanning 80-120 km, this route takes you through Rocky Mountain foothills, prairies, badlands with mountain scenery, wildlife corridor, portage options along the way.\n\nRated intermediate difficulty, this route offers ",
+      "schema_keywords": "Mountain Scenery, Wildlife Corridor, Portage Options, kayaking, Alberta, Canada, outdoor"
     },
     {
       "name": "Maligne Lake",
@@ -1562,7 +1628,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Maligne Lake offers some of the finest flatwater paddling in Alberta. Spanning 30-50 km, this route takes you through Rocky Mountain foothills, prairies, badlands with alpine lake, mountain cirque, spirit island access along the way.\n\nRated beginner difficulty, this route is accessible to paddlers w",
+      "schema_keywords": "Alpine Lake, Mountain Cirque, Spirit Island Access, kayaking, Alberta, Canada, outdoor"
     },
     {
       "name": "Bloodvein River",
@@ -1607,7 +1675,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Bloodvein River offers some of the finest whitewater paddling in Manitoba. Spanning 120 km, this route takes you through boreal shield, prairie grasslands, Hudson Bay lowlands with class ii-iii rapids, wilderness, remote along the way.\n\nRated intermediate difficulty, this route offers a satisfying c",
+      "schema_keywords": "Class II-III Rapids, Wilderness, Remote, kayaking, Manitoba, Canada, outdoor"
     },
     {
       "name": "Bay of Fundy",
@@ -1652,7 +1722,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Bay of Fundy offers some of the finest sea kayaking paddling in New Brunswick. Spanning 30-60 km, this route takes you through Appalachian uplands, Bay of Fundy coast, river valleys with tidal bore, highest tides, island camping along the way.\n\nRated advanced difficulty, this is a serious undertakin",
+      "schema_keywords": "Tidal Bore, Highest Tides, Island Camping, kayaking, New Brunswick, Canada, outdoor"
     },
     {
       "name": "Kejimkujik Kayaking",
@@ -1697,7 +1769,9 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Kejimkujik Kayaking offers some of the finest flatwater paddling in Nova Scotia. Spanning 40-100 km, this route takes you through Atlantic coastline, Annapolis Valley, Cape Breton Highlands with backcountry lakes, historic campsites, loon calls along the way.\n\nRated beginner to intermediate difficul",
+      "schema_keywords": "Backcountry Lakes, Historic Campsites, Loon Calls, kayaking, Nova Scotia, Canada, outdoor"
     }
   ]
 }
