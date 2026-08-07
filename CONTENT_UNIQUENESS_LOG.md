@@ -299,3 +299,126 @@ pei-central, pictou-county-highlands, riding-mountain-hunting
   waterfowl heritage, zec/pourvoirie/réserve system)
 
 Remaining hunting: 31 Elite + 32 Pro rewrites, 4 Explorer noindex stubs.
+
+## Hunting batch 2 — 2026-07-18 — 17 spots (Elite: QC réserves/regions, Atlantic, prairie waterfowl)
+
+reserve-la-verendrye, reserve-laurentides, reserve-mastigouche,
+saguenay-hunting, gaspesie-hunting, mauricie-hunting, kawartha-lakes,
+muskoka-region, peace-river, whitewater-lake, yukon-gma-1,
+central-plateau-caribou, acadian-uplands, miramichi-hunting,
+cape-breton-hunting, western-newfoundland-hunting,
+peace-river-hunting* (* = noindexed duplicate of peace-river, identical coords)
+
+- Batch dup check vs all 89 hunting spots: **0 violations — PASS**
+- Honest handling: Gaspésie endangered caribou (fully protected, never
+  hunted — ID warning on-page), La Mauricie NP and Cape Breton Highlands NP
+  closed boundaries, NL island caribou framed via real quota system
+- Data flags: yukon-gma-1 name/coords conflict (zone name vs central-Yukon
+  coords 62,-130) — noted on-page, record needs reconciliation
+- Anchors: Kawartha turkey reintroduction (1980s releases), Cape Breton moose
+  introduced from Alberta 1940s, NL moose introduced ~1904, NB moose lottery,
+  Whitewater Lake boom-bust hydrology, Sépaq draw system across réserves
+
+Remaining hunting: 14 Elite/Pro Ontario-boreal+BC+AB rewrites queued next
+(nipissing, sudbury, cochrane, dryden, timmins, wawa, kapuskasing,
+foothills-red-deer, cariboo, thompson-nicola, peace-country-ab,
+clearwater-county, whitecourt, edson) + 32 Pro tier + 4 Explorer stubs.
+
+## Hunting batch 3 — 2026-07-18 — 18 spots (final Elite: ON boreal + AB/BC) — Elite tier complete
+
+nipissing-hunting, sudbury-hunting, timmins-hunting, cochrane-hunting,
+kapuskasing-hunting, dryden-hunting, wawa-hunting, foothills-red-deer,
+clearwater-county-hunting, whitecourt-hunting, edson-hunting,
+peace-country-ab, cariboo-hunting, thompson-nicola-hunting
++ 4 noindexed: muskoka-hunting* (duplicate of muskoka-region),
+renfrew-county-hunting, bruce-peninsula-hunting, nipawin-hunting (thin data)
+
+- Batch dup check vs all 89: 0 violations (remaining 24 dup sentences sit
+  entirely on the 32 untouched Pro pages)
+- The seven ON boreal districts differentiated by true local anchors:
+  Sudbury regreening + impact-basin geology, Wawa's Chapleau Crown Game
+  Preserve edge effect (closed since 1925), Cochrane/Kapuskasing Clay Belt,
+  Timmins mining-trail access, Dryden boat-country outfitter culture,
+  Nipissing highway-crossroads three-species mix
+- Cariboo moose decline → LEH tightening stated honestly; Clearwater access
+  orders; Edson reclaimed-mine access texture
+
+Remaining hunting: 32 Pro spots (final hunting batch).
+
+## Hunting batch 4 — 2026-07-18 — 32 Pro spots — HUNTING COMPLETE
+
+All 32 Pro spots rewritten (ON 7, QC 5, BC 4, AB 5+athabasca note, SK 5,
+MB 5, NB 1). Differentiated by verified regional anchors: Manitoulin =
+largest freshwater island; Hudson Bay SK "Moose Capital"; Cypress Hills
+highest point between Rockies and Labrador; Sudbury-adjacent districts by
+geology/preserves/clay belt; Whiteshell/Nopiming under Manitoba's
+parks-permit-hunting model with EASTERN MB MOOSE CONSERVATION CLOSURES
+stated plainly; Duck Mountain moose closure caution; protected woodland
+caribou flagged at La Ronge/Nopiming; PANP/Grey Owl boundary absolute.
+
+Data flags: athabasca-hunting coords point to Fort McMurray (not Athabasca
+town) — written to mapped location, flagged; grande-prairie-hunting coords
+drift into BC — written to the named region, flagged.
+
+**HUNTING FINAL: 89/89 spots. Dup check (desc+tips+terrain, all 89, EN+FR):
+0 violations.** 83 hand-written indexed pages · 6 noindexed
+(1 duplicate peace-river-hunting, 1 duplicate muskoka-hunting, 4 thin).
+
+Site-wide status: fishing 0 violations, hunting 0 violations. Remaining
+templated: camping (51), hiking (46), kayaking (37), skiing (36).
+
+## Camping batch 1 — 2026-07-18 — 26 spots (all 11 Legendary + 15 Elite)
+
+algonquin, killarney, bon-echo, mont-tremblant-np, pacific-rim, strathcona,
+lake-louise-backcountry, moraine-lake-area, fundy, cape-breton-highlands,
+gros-morne-np, quetico, lake-superior-pp, bowron, joffre, garibaldi,
+juan-de-fuca, cape-scott, icefields-parkway, kejimkujik, pei-np,
+western-brook-pond, tombstone (coords FIXED: were 64.2,-128.5 pointing into
+NWT; now 64.45,-138.3 on the Dempster), sandbanks, elk-island, waterton
+
+- Batch dup check vs all 51: 0 violations (remaining 14 dup sentences all on
+  the 25 untouched spots)
+- Reservation-system accuracy: Parks Canada vs Ontario Parks vs BC Parks vs
+  Sépaq named correctly per park; Moraine Lake truth stated (road closed to
+  personal vehicles year-round, NO campground at the lake, shuttle
+  reservations, village campground base); Joffre Upper-Lake-only camping +
+  day-pass system + First Nations closure windows; Bowron quota/orientation;
+  Quetico no-motors/no-cans interior; Western Brook Pond = day-visit
+  shoreline + Long Range Traverse gateway (no pond-side campground invented)
+- Cultural/conservation handling: Agawa and Mazinaw pictographs respectful
+  framing; Keji Mi'kmaq guided-visit-only petroglyphs; dune protection at
+  Sandbanks/PEI; Kenow fire succession at Waterton
+
+Sources: parks.canada.ca (Moraine/Louise shuttle FAQ), bcparks.ca (Joffre
+day-use + Upper Lake camping, Bowron circuit/orientation) — verified
+2026-07-18. Remainder: stable park knowledge, hedged where systems change.
+
+Remaining camping: 25 spots (batch 2) incl. naming fixes queued:
+lake-megantic-provincial-park (is actually Baie-des-Sables lakeside
+campground — no such provincial park), saint-anne-parc naming, pinery "Lake
+Michigan" feature (it's Lake Huron), grundy-lake coords.
+
+## Camping batch 2 — 2026-07-18 — 25 spots — CAMPING COMPLETE
+
+All remaining spots rewritten. Honest reframes for misnamed/miscast records:
+- lake-megantic-provincial-park: NO such park exists — page now truthfully
+  describes the Baie-des-Sables lakeside camping base on Lac Mégantic and
+  flags the record name for correction
+- saint-anne-parc-national: no Sépaq park by this name — page describes the
+  real Canyon Sainte-Anne / Mont-Sainte-Anne geography, flags naming
+- hopewell-rocks: day-use tidal attraction, NOT a campground — page frames
+  it as itinerary anchor with camping based nearby
+- quttinirpaak: spelling flagged (Quttinirpaaq); expedition-grade honesty
+- Data fixes: pinery features "Lake Michigan Access" → "Lake Huron
+  Shoreline" (chips EN+FR); grundy-lake coords 45.6,-79.4 → 45.93,-80.52
+- Management-system accuracy: Kananaskis Conservation Pass (2021+), Alberta
+  Parks guided-only preserves (Dinosaur, Writing-on-Stone/Áísínai'pi UNESCO
+  2019), Frontenac all-backcountry structure, Silent Lake no-motors,
+  La Mauricie = Parks Canada not Sépaq, beluga distance law on the fjord
+
+**CAMPING FINAL: 51/51 spots. Dup check (desc+tips+terrain, all 51, EN+FR):
+0 violations.** All 51 indexed (no spot required noindexing — every one had
+verifiable material).
+
+Site-wide: fishing 0, hunting 0, camping 0. Remaining templated: hiking
+(46), kayaking (37), skiing (36) — 119 spots.
