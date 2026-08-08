@@ -10,7 +10,7 @@
     "data:audit": "node scripts/build-reference-audit.js",
     "build:province-indexes": "node scripts/build-province-indexes.js",
     "inject:community": "node scripts/inject-community-intel.js",
-    "build": "npm run build:scout-index && astro build && node scripts/build/merge-legacy.mjs && node scripts/parity/compare.mjs --warn",
+    "build": "npm run build:scout-index && node scripts/regs/build-regs-index.mjs && astro build && node scripts/build/merge-legacy.mjs && node scripts/parity/compare.mjs --warn",
     "build:astro": "astro build",
     "parity:snapshot": "node scripts/parity/snapshot.mjs",
     "parity:compare": "node scripts/parity/compare.mjs",

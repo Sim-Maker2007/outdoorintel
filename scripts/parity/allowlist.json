@@ -1,6 +1,13 @@
 {
   "note": "Intentional diffs vs the frozen legacy baseline. explained: pages whose head signals regenerate from CURRENT data where the legacy HTML was stale — province-name normalization (Newfoundland & Labrador -> Newfoundland and Labrador, Yukon Territory -> Yukon, PEI -> Prince Edward Island) applied to data after the pages were last generated, plus fishing/spot-directory (junk record, noindexed, slated for merge) gaining standard geo/schema markup.",
-  "added_urls": [],
+  "added_urls": [
+    "/en/fishing/regulations/zone-10",
+    "/fr/fishing/regulations/zone-10",
+    "/en/fishing/regulations/zone-12",
+    "/fr/fishing/regulations/zone-12",
+    "/en/fishing/regulations/zone-13",
+    "/fr/fishing/regulations/zone-13"
+  ],
   "explained": {
     "/en/camping/gros-morne-national-park": [
       "meta",
