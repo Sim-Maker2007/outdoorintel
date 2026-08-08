@@ -145,7 +145,9 @@ function parseEndroPage(html) {
   const i = html.indexOf('id="GrilleReglementsPlansEau"');
   if (i < 0) return [];
   return parseGrid(html.slice(i), { withWaterbodies: false })
-    .filter(r => r.species && !/^(Esp[èe]ce|Species)/.test(r.species));
+    .filter(r => r.species && !/^(Esp[èe]ce|Species)/.test(r.species))
+    // drop grid-header/detail-label rows that carry no rule content
+    .filter(r => r.limit || r.length || r.gear || r.notes);
 }
 
 mkdirSync(join(REPO, 'data', 'regulations'), { recursive: true });
