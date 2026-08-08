@@ -44,7 +44,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Whistler Blackcomb is a world-renowned downhill skiing destination in British Columbia. With a vertical drop of 1,609m, it offers 200+ runs, alpine village, backcountry access against the stunning backdrop of the coastal rainforest, Rocky Mountains, interior plateau.\n\nThe resort caters to all abilit",
+      "schema_keywords": "200+ Runs, Alpine Village, Backcountry Access, skiing, British Columbia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Big White Ski Resort",
@@ -90,7 +140,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Big White Ski Resort is a premier downhill skiing destination in British Columbia. With a vertical drop of 777m, it offers 104 runs, village-at-altitude, sunny climate against the stunning backdrop of the coastal rainforest, Rocky Mountains, interior plateau.\n\nThe resort caters to all ability levels",
+      "schema_keywords": "104 Runs, Village-at-Altitude, Sunny Climate, skiing, British Columbia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Sun Peaks Resort",
@@ -136,7 +236,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Sun Peaks Resort is a world-renowned downhill skiing destination in British Columbia. With a vertical drop of 915m, it offers 137 runs, family-friendly, three peaks against the stunning backdrop of the coastal rainforest, Rocky Mountains, interior plateau.\n\nThe resort caters to all ability levels wi",
+      "schema_keywords": "137 Runs, Family-Friendly, Three Peaks, skiing, British Columbia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Fernie Alpine Resort",
@@ -160,8 +310,8 @@
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-106.jpg",
       "related_spots": [
-        "kootenay-backcountry",
-        "radium-hot-springs"
+        "whistler-blackcomb",
+        "big-white"
       ],
       "description": "Fernie Alpine Resort is a world-renowned downhill skiing destination in British Columbia. With a vertical drop of 860m, it offers 142 runs, skier's mountain, powder magnet against the stunning backdrop of the coastal rainforest, Rocky Mountains, interior plateau.\n\nThe resort caters to all ability levels with a good mix of beginner, intermediate, and expert terrain. Annual snowfall regularly exceeds 10 metres, ensuring a long and reliable season. Fernie Alpine Resort is the kind of place that turns a ski trip into a lifelong obsession.",
       "getting_there": "From Vancouver, the drive is approximately 45 minutes. GPS: 49.5°N, 115.3°W. Mountain roads — winter tires mandatory from October to April. Carry chains.  Road conditions can change rapidly — check DriveBC/511 before departure.",
@@ -182,7 +332,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Fernie Alpine Resort is a world-renowned downhill skiing destination in British Columbia. With a vertical drop of 860m, it offers 142 runs, skier's mountain, powder magnet against the stunning backdrop of the coastal rainforest, Rocky Mountains, interior plateau.\n\nThe resort caters to all ability le",
+      "schema_keywords": "142 Runs, Skier's Mountain, Powder Magnet, skiing, British Columbia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Kicking Horse Mountain Resort",
@@ -206,8 +406,8 @@
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-107.jpg",
       "related_spots": [
-        "purcell-heli-skiing",
-        "revelstoke"
+        "whistler-blackcomb",
+        "big-white"
       ],
       "description": "Kicking Horse Mountain Resort is a world-renowned backcountry skiing destination in British Columbia. With a vertical drop of 1,260m, it offers 84 runs, golden powder corridor, heli-access available against the stunning backdrop of the coastal rainforest, Rocky Mountains, interior plateau.\n\nThis area is best suited for advanced skiers who appreciate steep lines and deep powder. Annual snowfall regularly exceeds 10 metres, ensuring a long and reliable season. Kicking Horse Mountain Resort is the kind of place that turns a ski trip into a lifelong obsession.",
       "getting_there": "From Kelowna, the drive is approximately 1.5-2.5 hours. GPS: 52.9°N, 116.6°W. Mountain roads — winter tires mandatory from October to April. Carry chains. Airport shuttle available from the nearest regional airport. Road conditions can change rapidly — check DriveBC/511 before departure.",
@@ -228,7 +428,58 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Kicking Horse Mountain Resort is a world-renowned backcountry skiing destination in British Columbia. With a vertical drop of 1,260m, it offers 84 runs, golden powder corridor, heli-access available against the stunning backdrop of the coastal rainforest, Rocky Mountains, interior plateau.\n\nThis are",
+      "schema_keywords": "84 Runs, Golden Powder Corridor, Heli-Access Available, skiing, British Columbia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "avalanche-beacon-probe-shovel",
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Lake Louise Ski Resort",
@@ -274,7 +525,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Lake Louise Ski Resort is a world-renowned downhill skiing destination in Alberta. With a vertical drop of 991m, it offers 139 runs, glacial backdrop, terrain parks against the stunning backdrop of the Rocky Mountain foothills, prairies, badlands.\n\nThe resort caters to all ability levels with a good",
+      "schema_keywords": "139 Runs, Glacial Backdrop, Terrain Parks, skiing, Alberta, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Banff Norquay",
@@ -320,7 +621,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Banff Norquay is a premier downhill skiing destination in Alberta. With a vertical drop of 513m, it offers 90 runs, night skiing, beginner-friendly against the stunning backdrop of the Rocky Mountain foothills, prairies, badlands.\n\nThe resort caters to all ability levels with a good mix of beginner,",
+      "schema_keywords": "90 Runs, Night Skiing, Beginner-Friendly, skiing, Alberta, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Sunshine Village",
@@ -366,7 +717,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Sunshine Village is a world-renowned downhill skiing destination in Alberta. With a vertical drop of 1,160m, it offers 107 runs, high elevation, spring skiing against the stunning backdrop of the Rocky Mountain foothills, prairies, badlands.\n\nThe resort caters to all ability levels with a good mix o",
+      "schema_keywords": "107 Runs, High Elevation, Spring Skiing, skiing, Alberta, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Marmot Basin",
@@ -390,8 +791,8 @@
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-111.jpg",
       "related_spots": [
-        "jasper-national-park",
-        "edith-cavell"
+        "lake-louise",
+        "banff-norquay"
       ],
       "description": "Marmot Basin is a world-renowned downhill skiing destination in Alberta. With a vertical drop of 914m, it offers 91 runs, alpine terrain, jasper gateway against the stunning backdrop of the Rocky Mountain foothills, prairies, badlands.\n\nThe resort caters to all ability levels with a good mix of beginner, intermediate, and expert terrain. Annual snowfall regularly exceeds 10 metres, ensuring a long and reliable season. Marmot Basin is the kind of place that turns a ski trip into a lifelong obsession.",
       "getting_there": "From Red Deer, the drive is approximately 1.5-2.5 hours. GPS: 53.1°N, 117.2°W. Mountain roads — winter tires mandatory from October to April. Carry chains.  Check road conditions before heading out in winter weather.",
@@ -412,7 +813,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Marmot Basin is a world-renowned downhill skiing destination in Alberta. With a vertical drop of 914m, it offers 91 runs, alpine terrain, jasper gateway against the stunning backdrop of the Rocky Mountain foothills, prairies, badlands.\n\nThe resort caters to all ability levels with a good mix of begi",
+      "schema_keywords": "91 Runs, Alpine Terrain, Jasper Gateway, skiing, Alberta, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Laurentian Mountains Resorts",
@@ -436,8 +887,7 @@
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-112.jpg",
       "related_spots": [
-        "mont-tremblant",
-        "saint-sauveur"
+        "mont-tremblant"
       ],
       "description": "Laurentian Mountains Resorts is a premier downhill skiing destination in Quebec. With a vertical drop of 645m, it offers multiple peaks, night skiing, urban access against the stunning backdrop of the Laurentian Mountains, St. Lawrence Valley, boreal shield.\n\nThe resort caters to all ability levels with a good mix of beginner, intermediate, and expert terrain. Annual snowfall regularly exceeds 10 metres, ensuring a long and reliable season. Laurentian Mountains Resorts is the kind of place that turns a ski trip into a lifelong obsession.",
       "getting_there": "From Montreal, the drive is approximately 2-3 hours. GPS: 46.1°N, 74.8°W. Winter tires strongly recommended.  Check road conditions before heading out in winter weather.",
@@ -458,7 +908,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Laurentian Mountains Resorts is a premier downhill skiing destination in Quebec. With a vertical drop of 645m, it offers multiple peaks, night skiing, urban access against the stunning backdrop of the Laurentian Mountains, St. Lawrence Valley, boreal shield.\n\nThe resort caters to all ability levels ",
+      "schema_keywords": "Multiple Peaks, Night Skiing, Urban Access, skiing, Quebec, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Mont-Tremblant",
@@ -482,8 +982,7 @@
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-113.jpg",
       "related_spots": [
-        "laurentian-mountains",
-        "saint-sauveur"
+        "laurentian-mountains"
       ],
       "description": "Mont-Tremblant is a premier downhill skiing destination in Quebec. With a vertical drop of 645m, it offers 102 runs, pedestrian village, quad lifts against the stunning backdrop of the Laurentian Mountains, St. Lawrence Valley, boreal shield.\n\nThe resort caters to all ability levels with a good mix of beginner, intermediate, and expert terrain. Annual snowfall regularly exceeds 10 metres, ensuring a long and reliable season. Mont-Tremblant is the kind of place that turns a ski trip into a lifelong obsession.",
       "getting_there": "From Montreal, the drive is approximately 45 minutes. GPS: 46.2°N, 74.6°W. Winter tires strongly recommended. Airport shuttle available from the nearest regional airport. Check road conditions before heading out in winter weather.",
@@ -504,7 +1003,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Mont-Tremblant is a premier downhill skiing destination in Quebec. With a vertical drop of 645m, it offers 102 runs, pedestrian village, quad lifts against the stunning backdrop of the Laurentian Mountains, St. Lawrence Valley, boreal shield.\n\nThe resort caters to all ability levels with a good mix ",
+      "schema_keywords": "102 Runs, Pedestrian Village, Quad Lifts, skiing, Quebec, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Chantecler Resort",
@@ -528,8 +1077,7 @@
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-114.jpg",
       "related_spots": [
-        "mont-tremblant",
-        "tremblant-cross-country"
+        "mont-tremblant"
       ],
       "description": "Chantecler Resort is a premier mixed skiing destination in Quebec. With a vertical drop of 211m, it offers 22 runs, cross-country trails, beginner-focused against the stunning backdrop of the Laurentian Mountains, St. Lawrence Valley, boreal shield.\n\nThis area is best suited for beginner skiers who appreciate well-groomed runs and scenic cruising. Annual snowfall regularly exceeds 10 metres, ensuring a long and reliable season. Chantecler Resort is the kind of place that turns a ski trip into a lifelong obsession.",
       "getting_there": "From Montreal, the drive is approximately 1.5-2 hours. GPS: 46.0°N, 74.7°W. Winter tires strongly recommended. Airport shuttle available from the nearest regional airport. Check road conditions before heading out in winter weather.",
@@ -550,7 +1098,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Chantecler Resort is a premier mixed skiing destination in Quebec. With a vertical drop of 211m, it offers 22 runs, cross-country trails, beginner-focused against the stunning backdrop of the Laurentian Mountains, St. Lawrence Valley, boreal shield.\n\nThis area is best suited for beginner skiers who ",
+      "schema_keywords": "22 Runs, Cross-Country Trails, Beginner-Focused, skiing, Quebec, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Camp Fortune",
@@ -574,8 +1172,8 @@
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-115.jpg",
       "related_spots": [
-        "hull-quebec",
-        "greenbelt-trails"
+        "laurentian-mountains",
+        "mont-tremblant"
       ],
       "description": "Camp Fortune is a premier downhill skiing destination in Quebec. With a vertical drop of 197m, it offers 23 runs, urban convenience, night skiing against the stunning backdrop of the Laurentian Mountains, St. Lawrence Valley, boreal shield.\n\nThis area is best suited for beginner skiers who appreciate well-groomed runs and scenic cruising. Annual snowfall regularly exceeds 10 metres, ensuring a long and reliable season. Camp Fortune is the kind of place that turns a ski trip into a lifelong obsession.",
       "getting_there": "From Montreal, the drive is approximately 2-3 hours. GPS: 45.3°N, 75.8°W. Winter tires strongly recommended.  Check road conditions before heading out in winter weather.",
@@ -596,7 +1194,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Camp Fortune is a premier downhill skiing destination in Quebec. With a vertical drop of 197m, it offers 23 runs, urban convenience, night skiing against the stunning backdrop of the Laurentian Mountains, St. Lawrence Valley, boreal shield.\n\nThis area is best suited for beginner skiers who appreciat",
+      "schema_keywords": "23 Runs, Urban Convenience, Night Skiing, skiing, Quebec, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Blue Mountain Resort",
@@ -620,8 +1268,7 @@
       "intel_grade": "v2.2",
       "hero_image": "hero-1.jpg",
       "related_spots": [
-        "horseshoe-resort",
-        "collingwood"
+        "horseshoe-resort"
       ],
       "description": "Blue Mountain Resort is a premier downhill skiing destination in Ontario. With a vertical drop of 220m, it offers 42 runs, great lakes region, snow-making against the stunning backdrop of the Canadian Shield, boreal forest, Great Lakes shoreline.\n\nThe resort caters to all ability levels with a good mix of beginner, intermediate, and expert terrain. Snow conditions are generally reliable throughout the core season. Blue Mountain Resort is the kind of place that turns a ski trip into a lifelong obsession.",
       "getting_there": "From Ottawa, the drive is approximately 1.5-2 hours. GPS: 44.4°N, 80.3°W. Winter tires strongly recommended. Airport shuttle available from the nearest regional airport. Check road conditions before heading out in winter weather.",
@@ -642,7 +1289,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Blue Mountain Resort is a premier downhill skiing destination in Ontario. With a vertical drop of 220m, it offers 42 runs, great lakes region, snow-making against the stunning backdrop of the Canadian Shield, boreal forest, Great Lakes shoreline.\n\nThe resort caters to all ability levels with a good ",
+      "schema_keywords": "42 Runs, Great Lakes Region, Snow-Making, skiing, Ontario, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Horseshoe Resort",
@@ -666,8 +1363,7 @@
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-1.jpg",
       "related_spots": [
-        "blue-mountain",
-        "mono-cliffs"
+        "blue-mountain"
       ],
       "description": "Horseshoe Resort is a premier mixed skiing destination in Ontario. With a vertical drop of 200m, it offers 15 runs, cross-country trails, nordic center against the stunning backdrop of the Canadian Shield, boreal forest, Great Lakes shoreline.\n\nThis area is best suited for beginner skiers who appreciate well-groomed runs and scenic cruising. Snow conditions are generally reliable throughout the core season. Horseshoe Resort is the kind of place that turns a ski trip into a lifelong obsession.",
       "getting_there": "From Ottawa, the drive is approximately 1.5-2 hours. GPS: 44.7°N, 79.7°W. Winter tires strongly recommended. Airport shuttle available from the nearest regional airport. Check road conditions before heading out in winter weather.",
@@ -688,7 +1384,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Horseshoe Resort is a premier mixed skiing destination in Ontario. With a vertical drop of 200m, it offers 15 runs, cross-country trails, nordic center against the stunning backdrop of the Canadian Shield, boreal forest, Great Lakes shoreline.\n\nThis area is best suited for beginner skiers who apprec",
+      "schema_keywords": "15 Runs, Cross-Country Trails, Nordic Center, skiing, Ontario, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Talisman Mountain Resort",
@@ -734,7 +1480,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Talisman Mountain Resort is a premier downhill skiing destination in Ontario. With a vertical drop of 92m, it offers 18 runs, family friendly, beginner-heavy against the stunning backdrop of the Canadian Shield, boreal forest, Great Lakes shoreline.\n\nThis area is best suited for beginner skiers who ",
+      "schema_keywords": "18 Runs, Family Friendly, Beginner-Heavy, skiing, Ontario, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Poley Mountain",
@@ -757,10 +1553,7 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "scout-hero-2.jpg",
-      "related_spots": [
-        "cape-enrage",
-        "maritime-trails"
-      ],
+      "related_spots": [],
       "description": "Poley Mountain is a premier mixed skiing destination in New Brunswick. With a vertical drop of 76m, it offers 12 runs, cross-country options, budget-friendly against the stunning backdrop of the Appalachian uplands, Bay of Fundy coast, river valleys.\n\nThis area is best suited for beginner skiers who appreciate well-groomed runs and scenic cruising. Snow conditions are generally reliable throughout the core season. Poley Mountain is the kind of place that turns a ski trip into a lifelong obsession.",
       "getting_there": "From Saint John, the drive is approximately 45 minutes. GPS: 46.9°N, 64.8°W. Winter tires strongly recommended.  Check road conditions before heading out in winter weather.",
       "parking": "Large paved parking lots at the base area — free on weekdays, $10-20 on peak weekends. Arrive before 9 AM on weekends to guarantee a spot close to the lifts. Heated day lodge at the base with lockers, boot room, and washrooms. RV overnight parking available with advance booking.",
@@ -780,7 +1573,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Poley Mountain is a premier mixed skiing destination in New Brunswick. With a vertical drop of 76m, it offers 12 runs, cross-country options, budget-friendly against the stunning backdrop of the Appalachian uplands, Bay of Fundy coast, river valleys.\n\nThis area is best suited for beginner skiers who",
+      "schema_keywords": "12 Runs, Cross-Country Options, Budget-Friendly, skiing, New Brunswick, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Ben Eoin Ski Slope",
@@ -803,10 +1646,7 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "hero-3.jpg",
-      "related_spots": [
-        "cabot-trail",
-        "bras-d-or-lakes"
-      ],
+      "related_spots": [],
       "description": "Ben Eoin Ski Slope is a premier backcountry skiing destination in Nova Scotia. With a vertical drop of 200m available, it offers nordic trails, scenic views, community-run against the stunning backdrop of the Atlantic coastline, Annapolis Valley, Cape Breton Highlands.\n\nThis area is best suited for intermediate skiers who appreciate well-groomed runs and scenic cruising. Snow conditions are generally reliable throughout the core season. Ben Eoin Ski Slope is the kind of place that turns a ski trip into a lifelong obsession.",
       "getting_there": "From Halifax, the drive is approximately 1.5-2 hours. GPS: 45.8°N, 60.4°W. Winter tires strongly recommended.  Check road conditions before heading out in winter weather.",
       "parking": "Plowed parking area at the trailhead. Arrive before 9 AM on weekends to guarantee a spot close to the lifts.  RV overnight parking available with advance booking.",
@@ -826,7 +1666,58 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Ben Eoin Ski Slope is a premier backcountry skiing destination in Nova Scotia. With a vertical drop of 200m available, it offers nordic trails, scenic views, community-run against the stunning backdrop of the Atlantic coastline, Annapolis Valley, Cape Breton Highlands.\n\nThis area is best suited for ",
+      "schema_keywords": "Nordic Trails, Scenic Views, Community-Run, skiing, Nova Scotia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "avalanche-beacon-probe-shovel",
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Marble Mountain",
@@ -849,10 +1740,7 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "hero-4.jpg",
-      "related_spots": [
-        "gros-morne",
-        "marble-lake"
-      ],
+      "related_spots": [],
       "description": "Marble Mountain is a premier downhill skiing destination in Newfoundland and Labrador. With a vertical drop of 520m, it offers 30 runs, coastal views, maritime powder against the stunning backdrop of the rugged coastline, fjords, boreal forest, tundra.\n\nThe resort caters to all ability levels with a good mix of beginner, intermediate, and expert terrain. Snow conditions are generally reliable throughout the core season. Marble Mountain is the kind of place that turns a ski trip into a lifelong obsession.",
       "getting_there": "From St. John's, the drive is approximately 2-3 hours. GPS: 48.8°N, 57.7°W. Winter tires strongly recommended. Airport shuttle available from the nearest regional airport. Check road conditions before heading out in winter weather.",
       "parking": "Large paved parking lots at the base area — free on weekdays, $10-20 on peak weekends. Arrive before 9 AM on weekends to guarantee a spot close to the lifts.  RV overnight parking available with advance booking.",
@@ -872,7 +1760,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Marble Mountain is a premier downhill skiing destination in Newfoundland and Labrador. With a vertical drop of 520m, it offers 30 runs, coastal views, maritime powder against the stunning backdrop of the rugged coastline, fjords, boreal forest, tundra.\n\nThe resort caters to all ability levels with a",
+      "schema_keywords": "30 Runs, Coastal Views, Maritime Powder, skiing, Newfoundland and Labrador, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Boreal Mountain Resort",
@@ -895,10 +1833,7 @@
       "scout_level": "Elite",
       "intel_grade": "v2.2",
       "hero_image": "hero-5.jpg",
-      "related_spots": [
-        "pine-dock-lodge",
-        "whiteshell-provincial-park"
-      ],
+      "related_spots": [],
       "description": "Boreal Mountain Resort is a premier cross-country skiing destination in Manitoba. With a vertical drop of 60m, it offers nordic trails, boreal forest, winterlong season against the stunning backdrop of the boreal shield, prairie grasslands, Hudson Bay lowlands.\n\nThis area is best suited for beginner skiers who appreciate well-groomed runs and scenic cruising. Snow conditions are generally reliable throughout the core season. Boreal Mountain Resort is the kind of place that turns a ski trip into a lifelong obsession.",
       "getting_there": "From Thompson, the drive is approximately 1.5-2.5 hours. GPS: 50.8°N, 95.5°W. Winter tires strongly recommended.  Check road conditions before heading out in winter weather.",
       "parking": "Plowed parking area at the trailhead. Overflow parking with shuttle service on busy days.  RV overnight parking available with advance booking.",
@@ -918,7 +1853,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Boreal Mountain Resort is a premier cross-country skiing destination in Manitoba. With a vertical drop of 60m, it offers nordic trails, boreal forest, winterlong season against the stunning backdrop of the boreal shield, prairie grasslands, Hudson Bay lowlands.\n\nThis area is best suited for beginner",
+      "schema_keywords": "Nordic Trails, Boreal Forest, Winterlong Season, skiing, Manitoba, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Big White Ski Resort",
@@ -960,7 +1945,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Big White Ski Resort is a premier downhill skiing destination in British Columbia. With a vertical drop of 777m, it offers excellent snow conditions against the stunning backdrop of the coastal rainforest, Rocky Mountains, interior plateau.\n\nThe resort caters to all ability levels with a good mix of",
+      "schema_keywords": "skiing, British Columbia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Sun Peaks Resort",
@@ -1002,7 +2037,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Sun Peaks Resort is a world-renowned downhill skiing destination in British Columbia. With a vertical drop of 881m, it offers excellent snow conditions against the stunning backdrop of the coastal rainforest, Rocky Mountains, interior plateau.\n\nThe resort caters to all ability levels with a good mix",
+      "schema_keywords": "skiing, British Columbia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Revelstoke Mountain Resort",
@@ -1044,7 +2129,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Revelstoke Mountain Resort is a world-renowned downhill skiing destination in British Columbia. With a vertical drop of 1,713m, it offers excellent snow conditions against the stunning backdrop of the coastal rainforest, Rocky Mountains, interior plateau.\n\nThe resort caters to all ability levels wit",
+      "schema_keywords": "skiing, British Columbia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Red Mountain Resort",
@@ -1086,7 +2221,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Red Mountain Resort is a world-renowned downhill skiing destination in British Columbia. With a vertical drop of 900m, it offers excellent snow conditions against the stunning backdrop of the coastal rainforest, Rocky Mountains, interior plateau.\n\nThe resort caters to all ability levels with a good ",
+      "schema_keywords": "skiing, British Columbia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Panorama Mountain Resort",
@@ -1128,7 +2313,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Panorama Mountain Resort is a world-renowned downhill skiing destination in British Columbia. With a vertical drop of 1,200m, it offers excellent snow conditions against the stunning backdrop of the coastal rainforest, Rocky Mountains, interior plateau.\n\nThe resort caters to all ability levels with ",
+      "schema_keywords": "skiing, British Columbia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Silver Star Mountain Resort",
@@ -1170,7 +2405,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Silver Star Mountain Resort is a premier downhill skiing destination in British Columbia. With a vertical drop of 760m, it offers excellent snow conditions against the stunning backdrop of the coastal rainforest, Rocky Mountains, interior plateau.\n\nThe resort caters to all ability levels with a good",
+      "schema_keywords": "skiing, British Columbia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Apex Mountain Resort",
@@ -1212,7 +2497,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Apex Mountain Resort is a premier downhill skiing destination in British Columbia. With a vertical drop of 610m, it offers excellent snow conditions against the stunning backdrop of the coastal rainforest, Rocky Mountains, interior plateau.\n\nThe resort caters to all ability levels with a good mix of",
+      "schema_keywords": "skiing, British Columbia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Mount Washington Alpine Resort",
@@ -1254,7 +2589,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Mount Washington Alpine Resort is a premier downhill skiing destination in British Columbia. With a vertical drop of 470m, it offers excellent snow conditions against the stunning backdrop of the coastal rainforest, Rocky Mountains, interior plateau.\n\nThe resort caters to all ability levels with a g",
+      "schema_keywords": "skiing, British Columbia, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Nakiska Ski Area",
@@ -1296,7 +2681,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Nakiska Ski Area is a premier downhill skiing destination in Alberta. With a vertical drop of 645m, it offers excellent snow conditions against the stunning backdrop of the Rocky Mountain foothills, prairies, badlands.\n\nThe resort caters to all ability levels with a good mix of beginner, intermediat",
+      "schema_keywords": "skiing, Alberta, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Castle Mountain Resort",
@@ -1338,7 +2773,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Castle Mountain Resort is a premier downhill skiing destination in Alberta. With a vertical drop of 730m, it offers excellent snow conditions against the stunning backdrop of the Rocky Mountain foothills, prairies, badlands.\n\nThis area is best suited for intermediate to advanced skiers who appreciat",
+      "schema_keywords": "skiing, Alberta, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Le Massif de Charlevoix",
@@ -1380,7 +2865,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Le Massif de Charlevoix is a premier downhill skiing destination in Quebec. With a vertical drop of 770m, it offers excellent snow conditions against the stunning backdrop of the Laurentian Mountains, St. Lawrence Valley, boreal shield.\n\nThe resort caters to all ability levels with a good mix of beg",
+      "schema_keywords": "skiing, Quebec, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Mont-Sainte-Anne",
@@ -1422,7 +2957,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Mont-Sainte-Anne is a premier downhill skiing destination in Quebec. With a vertical drop of 625m, it offers excellent snow conditions against the stunning backdrop of the Laurentian Mountains, St. Lawrence Valley, boreal shield.\n\nThe resort caters to all ability levels with a good mix of beginner, ",
+      "schema_keywords": "skiing, Quebec, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Stoneham Mountain Resort",
@@ -1464,7 +3049,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Stoneham Mountain Resort is a premier downhill skiing destination in Quebec. With a vertical drop of 457m, it offers excellent snow conditions against the stunning backdrop of the Laurentian Mountains, St. Lawrence Valley, boreal shield.\n\nThe resort caters to all ability levels with a good mix of be",
+      "schema_keywords": "skiing, Quebec, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Mont Sutton",
@@ -1506,7 +3141,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Mont Sutton is a premier downhill skiing destination in Quebec. With a vertical drop of 512m, it offers excellent snow conditions against the stunning backdrop of the Laurentian Mountains, St. Lawrence Valley, boreal shield.\n\nThe resort caters to all ability levels with a good mix of beginner, inter",
+      "schema_keywords": "skiing, Quebec, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Mount St. Louis Moonstone",
@@ -1548,7 +3233,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Mount St. Louis Moonstone is a premier downhill skiing destination in Ontario. With a vertical drop of 220m, it offers excellent snow conditions against the stunning backdrop of the Canadian Shield, boreal forest, Great Lakes shoreline.\n\nThe resort caters to all ability levels with a good mix of beg",
+      "schema_keywords": "skiing, Ontario, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     },
     {
       "name": "Searchmont Resort",
@@ -1590,7 +3325,57 @@
       "verification_status": "needs_review",
       "confidence": "unverified",
       "data_origin": "OutdoorIntel v2.2 dataset; provenance scaffold added 2026-07-04",
-      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims."
+      "review_notes": "Generated profile copy requires editorial verification for directions, parking, local services, regulations, and safety claims.",
+      "schema_description": "Searchmont Resort is a premier downhill skiing destination in Ontario. With a vertical drop of 280m, it offers excellent snow conditions against the stunning backdrop of the Canadian Shield, boreal forest, Great Lakes shoreline.\n\nThis area is best suited for intermediate to advanced skiers who appre",
+      "schema_keywords": "skiing, Ontario, Canada, outdoor",
+      "gear": [
+        {
+          "group": "essential",
+          "items": [
+            "ski-goggles-anti-fog",
+            "helmet-mips",
+            "ski-poles",
+            "boot-bag",
+            "ski-lock"
+          ]
+        },
+        {
+          "group": "clothing",
+          "items": [
+            "merino-base-layer-top-bottom",
+            "mid-layer-fleece-or-down",
+            "ski-jacket-waterproof",
+            "ski-pants",
+            "ski-gloves-waterproof",
+            "merino-ski-socks",
+            "balaclava-neck-gaiter"
+          ]
+        },
+        {
+          "group": "safety",
+          "items": [
+            "sunscreen-high-altitude",
+            "hand-toe-warmers-skiing",
+            "first-aid-kit-compact"
+          ]
+        },
+        {
+          "group": "comfort",
+          "items": [
+            "ski-backpack",
+            "thermos",
+            "boot-dryer",
+            "lip-balm-spf-30"
+          ]
+        },
+        {
+          "group": "tech",
+          "items": [
+            "ski-tracker-app-armband",
+            "action-camera-helmet-mount"
+          ]
+        }
+      ]
     }
   ]
 }

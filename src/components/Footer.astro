@@ -1,0 +1,57 @@
+---
+import { NAV_ACTIVITIES, ACTIVITY, T, chromeLinks } from '../lib/labels.mjs';
+
+const { lang, altHref } = Astro.props;
+const L = chromeLinks(lang);
+const year = 2026;
+---
+<footer data-oi-ds class="bg-[#14251a] text-white">
+    <div class="max-w-6xl mx-auto px-6 pt-16 pb-8">
+        <div class="grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr] gap-10 pb-12">
+            <div class="col-span-2 md:col-span-1">
+                <a href={L.home} class="flex items-center gap-3 mb-5" aria-label="Outdoor Intel">
+                    <span class="w-9 h-9 rounded-lg bg-white flex items-center justify-center text-[#14251a] font-extrabold text-sm tracking-tight">OI</span>
+                    <span class="text-white font-bold text-lg tracking-tight">Outdoor Intel</span>
+                </a>
+                <p class="text-white/60 text-sm leading-relaxed max-w-xs mb-6">{T.footer.blurb[lang]}</p>
+                <p class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-2">{T.footer.newsTitle[lang]}</p>
+                <form class="js-newsletter-form flex gap-2 max-w-xs" data-lang={lang}>
+                    <input type="email" name="email" required placeholder={T.footer.newsPlaceholder[lang]} autocomplete="email" class="flex-1 min-w-0 px-3 py-2 rounded-lg text-sm text-[#1c2b21] bg-white placeholder-[#5c6b5f] outline-none focus:ring-2 focus:ring-[#a2c99a]">
+                    <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-5000px">
+                    <button type="submit" class="bg-[#305e3c] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#3d7a4d] transition-colors whitespace-nowrap">{T.footer.newsBtn[lang]}</button>
+                </form>
+                <p class="js-newsletter-msg text-white/50 text-xs mt-2">{T.footer.newsMsg[lang]}</p>
+            </div>
+            <div>
+                <h4 class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-4">{T.footer.explore[lang]}</h4>
+                <ul class="space-y-2.5 text-sm text-white/70">
+                    {NAV_ACTIVITIES.map(act => (
+                        <li><a href={L.directory(act)} class="hover:text-white transition-colors">{ACTIVITY[act].title[lang]}</a></li>
+                    ))}
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-4">{T.footer.product[lang]}</h4>
+                <ul class="space-y-2.5 text-sm text-white/70">
+                    <li><a href={L.map} class="hover:text-white transition-colors">{T.nav.map[lang]}</a></li>
+                    <li><a href={L.planner} class="hover:text-white transition-colors">{T.nav.planner[lang]}</a></li>
+                    <li><a href={L.blog} class="hover:text-white transition-colors">{T.nav.blog[lang]}</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[#a2c99a] text-xs font-bold uppercase tracking-widest mb-4">{T.footer.aboutCol[lang]}</h4>
+                <ul class="space-y-2.5 text-sm text-white/70">
+                    <li><a href={L.trust} class="hover:text-white transition-colors">{T.footer.trust[lang]}</a></li>
+                    <li><a href={L.about} class="hover:text-white transition-colors">{T.footer.about[lang]}</a></li>
+                    <li><a href={L.licenses} class="hover:text-white transition-colors">{T.footer.licenses[lang]}</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-white/15 pt-6 flex items-center justify-between text-sm">
+            <p class="text-white/50">&copy; {year} Outdoor Intel</p>
+            {lang === 'en'
+              ? <p class="font-bold text-xs"><span class="text-white/50">EN</span><span class="text-white/30">&nbsp;|&nbsp;</span><a href={altHref} class="text-[#a2c99a] hover:text-white transition-colors" lang="fr">FR</a></p>
+              : <p class="font-bold text-xs"><a href={altHref} class="text-[#a2c99a] hover:text-white transition-colors" lang="en">EN</a><span class="text-white/30">&nbsp;|&nbsp;</span><span class="text-white/50">FR</span></p>}
+        </div>
+    </div>
+</footer>

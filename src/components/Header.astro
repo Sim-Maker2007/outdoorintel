@@ -1,0 +1,59 @@
+---
+// Site chrome header — markup lifted verbatim from the legacy generated
+// pages (design-system v2, scripts/apply-design-system.js).
+import { NAV_ACTIVITIES, ACTIVITY, T } from '../lib/labels.mjs';
+import { chromeLinks } from '../lib/labels.mjs';
+
+const { lang, altHref } = Astro.props; // altHref: same page in the other language
+const L = chromeLinks(lang);
+const other = lang === 'en' ? 'fr' : 'en';
+---
+<header data-oi-ds class="fixed top-0 w-full z-[1000] bg-[#14251a] border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between gap-6">
+        <a href={L.home} class="flex items-center gap-3 flex-shrink-0" aria-label="Outdoor Intel">
+            <span class="w-9 h-9 rounded-lg bg-white flex items-center justify-center text-[#14251a] font-extrabold text-sm tracking-tight">OI</span>
+            <span class="text-white font-bold text-lg tracking-tight">Outdoor Intel</span>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-white/90">
+            <div class="explore-group relative">
+                <button class="flex items-center gap-1.5 py-2 hover:text-white transition-colors" aria-haspopup="true">
+                    {T.nav.explore[lang]}
+                    <svg class="w-3.5 h-3.5 text-[#a2c99a]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+                </button>
+                <div class="explore-dropdown absolute left-0 top-full pt-2 w-52">
+                    <div class="bg-white rounded-xl py-2 shadow-xl border border-[#14251a]/10">
+                        {NAV_ACTIVITIES.map(act => (
+                            <a href={L.directory(act)} class="block px-4 py-2 text-[#1c2b21] hover:bg-[#f0f4ee] hover:text-[#305e3c]">{ACTIVITY[act].icon} {ACTIVITY[act].title[lang]}</a>
+                        ))}
+                    </div>
+                </div>
+            </div>
+            <a href={L.map} class="py-2 hover:text-white transition-colors">{T.nav.map[lang]}</a>
+            <a href={L.planner} class="py-2 hover:text-white transition-colors">{T.nav.planner[lang]}</a>
+            <a href={L.blog} class="py-2 hover:text-white transition-colors">{T.nav.blog[lang]}</a>
+            {lang === 'en'
+              ? <span class="inline-flex items-center gap-1.5 border border-white/25 rounded-full px-4 py-1.5 text-xs font-bold"><span class="text-white">EN</span><span class="text-white/30">|</span><a href={altHref} class="text-[#a2c99a] hover:text-white transition-colors" lang="fr">FR</a></span>
+              : <span class="inline-flex items-center gap-1.5 border border-white/25 rounded-full px-4 py-1.5 text-xs font-bold"><a href={altHref} class="text-[#a2c99a] hover:text-white transition-colors" lang="en">EN</a><span class="text-white/30">|</span><span class="text-white">FR</span></span>}
+            <button id="global-search-toggle" class="w-9 h-9 rounded-full border border-white/25 flex items-center justify-center hover:bg-white/10 transition-colors" aria-label="Search">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            </button>
+        </nav>
+        <button id="menu-toggle" class="lg:hidden p-2 text-white" aria-label="Menu" aria-expanded="false">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    </div>
+    <nav id="mobile-menu" class="hidden lg:hidden bg-[#14251a] border-t border-white/10">
+        <div class="max-w-6xl mx-auto px-6 py-4 space-y-1 text-white/90">
+            {NAV_ACTIVITIES.map(act => (
+                <a href={L.directory(act)} class="block py-2 hover:text-[#a2c99a]">{ACTIVITY[act].icon} {ACTIVITY[act].title[lang]}</a>
+            ))}
+            <a href={L.map} class="block py-2 hover:text-[#a2c99a]">{T.nav.map[lang]}</a>
+            <a href={L.planner} class="block py-2 hover:text-[#a2c99a]">{T.nav.planner[lang]}</a>
+            <a href={L.trust} class="block py-2 hover:text-[#a2c99a]">{T.nav.trust[lang]}</a>
+            <a href={L.blog} class="block py-2 font-semibold hover:text-[#a2c99a]">{T.nav.blog[lang]}</a>
+            <a href={altHref} class="block py-2 text-[#a2c99a] font-bold mt-2" lang={other}>{T.nav.otherLang[lang]}</a>
+        </div>
+    </nav>
+</header>

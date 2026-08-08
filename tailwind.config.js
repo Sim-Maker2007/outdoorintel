@@ -8,6 +8,8 @@ module.exports = {
     './en/**/*.html',
     './fr/**/*.html',
     './assets/js/*.js',
+    './src/**/*.astro',
+    './src/**/*.mjs',
   ],
   theme: { extend: {} },
   plugins: [],

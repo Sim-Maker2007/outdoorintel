@@ -1,0 +1,123 @@
+---
+// "Pack This" checklist — the gear bridge's rendered surface. Markup is a
+// faithful port of the legacy injected checklist; the link targets come from
+// resolveGear(), so flipping data/link-config.json rebuilds every page with
+// Ecotone hrefs instead of Amazon ones (zero template edits).
+import { resolveGear, disclosureKey } from '../lib/gearResolver.mjs';
+import { T } from '../lib/labels.mjs';
+
+const { spot, activity, lang, gearMap, linkCfg } = Astro.props;
+const groups = resolveGear(spot.gear, gearMap, linkCfg, lang);
+const total = groups.reduce((n, g) => n + g.items.length, 0);
+const EVENODD = new Set(['essential', 'safety', 'tech']);
+const disclosure = T[disclosureKey(linkCfg)][lang];
+
+const packScript = `
+    (function() {
+        var KEY = 'pack-${activity}-${spot.slug}';
+        var total = ${total};
+        var boxes = document.querySelectorAll('.pack-check');
+        var prog = document.getElementById('pack-progress');
+        var progBar = document.getElementById('pack-bar');
+        var checkAllBtn = document.getElementById('pack-check-all');
+        function load() {
+            try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch(e) { return {}; }
+        }
+        function save(state) {
+            try { localStorage.setItem(KEY, JSON.stringify(state)); } catch(e) {}
+        }
+        function update() {
+            var state = load();
+            var done = 0;
+            boxes.forEach(function(cb, i) {
+                cb.checked = !!state[i];
+                if(cb.checked) {
+                    done++;
+                    cb.closest('label').style.opacity = '0.55';
+                    cb.closest('label').querySelector('span').style.textDecoration = 'line-through';
+                } else {
+                    cb.closest('label').style.opacity = '1';
+                    cb.closest('label').querySelector('span').style.textDecoration = 'none';
+                }
+            });
+            var pct = total > 0 ? Math.round((done / total) * 100) : 0;
+            if(prog) prog.textContent = done + ' / ' + total;
+            if(progBar) progBar.style.width = pct + '%';
+            if(checkAllBtn) checkAllBtn.textContent = done === total ? ${JSON.stringify(T.uncheckAll[lang])} : ${JSON.stringify(T.checkAll[lang])};
+        }
+        boxes.forEach(function(cb, i) {
+            cb.addEventListener('change', function() {
+                var state = load();
+                state[i] = cb.checked;
+                save(state);
+                update();
+            });
+        });
+        if(checkAllBtn) {
+            checkAllBtn.addEventListener('click', function() {
+                var state = load();
+                var allChecked = Object.keys(state).length === total && Object.values(state).every(function(v){ return v; });
+                boxes.forEach(function(cb, i) { state[i] = !allChecked; });
+                save(state);
+                update();
+            });
+        }
+        var printBtn = document.getElementById('pack-print');
+        if(printBtn) {
+            printBtn.addEventListener('click', function() {
+                window.print();
+            });
+        }
+        update();
+    })();
+    `;
+---
+<section class="bg-[#f4f3ec] py-16 px-6" id="gear">
+    <div class="max-w-3xl mx-auto">
+        <div class="flex items-start justify-between mb-2 flex-wrap gap-4">
+            <div>
+                <h2 class="text-3xl font-bold text-[#305e3c]">{T.packTitle[lang]} {spot.name}</h2>
+                <p class="text-[#5c6b5f] mt-1">{T.packSub[lang]}</p>
+            </div>
+            <div class="flex gap-2 flex-shrink-0">
+                <button id="pack-check-all" class="px-4 py-2 text-sm font-semibold rounded-lg border-2 border-[#305e3c]/20 text-[#305e3c] hover:bg-[#305e3c] hover:text-white transition-colors">{T.checkAll[lang]}</button>
+                <button id="pack-print" class="px-4 py-2 text-sm font-semibold rounded-lg border-2 border-[#305e3c]/20 text-[#305e3c] hover:bg-[#305e3c] hover:text-white transition-colors">{T.print[lang]}</button>
+            </div>
+        </div>
+        <div class="mb-8">
+            <div class="flex items-center gap-3">
+                <div class="flex-1 h-3 bg-[#305e3c]/10 rounded-full overflow-hidden">
+                    <div id="pack-bar" class="h-full bg-[#305e3c] rounded-full transition-all duration-500" style="width:0%"></div>
+                </div>
+                <span id="pack-progress" class="text-sm font-bold text-[#305e3c]">0 / {total}</span>
+            </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden" style="box-shadow: 0 4px 24px rgba(62,49,39,0.08)">
+            <div class="p-6 md:p-8">
+        {groups.map(group => (
+            <div class="mb-6">
+                <div class="flex items-center gap-2 mb-3 px-4">
+                    <svg class="w-5 h-5" viewBox="0 0 20 20" fill={group.fill}>{EVENODD.has(group.key)
+                        ? <path fill-rule="evenodd" d={group.icon} clip-rule="evenodd" />
+                        : <path d={group.icon} />}</svg>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-[#305e3c]">{group.label}</h3>
+                </div>
+                <div class="space-y-1">
+                    {group.items.map(item => (
+                        <label class="flex items-start gap-3 py-3 px-4 rounded-lg hover:bg-[#f4f3ec] cursor-pointer group transition-colors">
+                            <input type="checkbox" class="pack-check mt-1 w-5 h-5 rounded border-2 border-[#305e3c]/30 text-[#305e3c] focus:ring-[#305e3c] flex-shrink-0 cursor-pointer" style="accent-color:#305e3c">
+                            <div class="flex-1 min-w-0">
+                                <span class="text-[#1c2b21] font-medium group-hover:text-[#305e3c] transition-colors">{item.label}</span>
+                            </div>
+                            <a href={item.href} target="_blank" rel="noopener noreferrer" class="flex-shrink-0 text-xs font-semibold text-[#3d7a4d] hover:text-[#305e3c] opacity-0 group-hover:opacity-100 transition-opacity px-3 py-1 rounded-full bg-[#3d7a4d]/10 hover:bg-[#305e3c]/10" onclick="event.stopPropagation()">{item.linkLabel} &rarr;</a>
+                        </label>
+                    ))}
+                </div>
+            </div>
+        ))}
+            </div>
+        </div>
+        <p class="text-xs text-[#5c6b5f]/60 mt-6">{disclosure}</p>
+    </div>
+</section>
+<script is:inline set:html={packScript}></script>

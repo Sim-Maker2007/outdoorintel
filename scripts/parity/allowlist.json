@@ -1,0 +1,156 @@
+{
+  "note": "Intentional diffs vs the frozen legacy baseline. explained: pages whose head signals regenerate from CURRENT data where the legacy HTML was stale — province-name normalization (Newfoundland & Labrador -> Newfoundland and Labrador, Yukon Territory -> Yukon, PEI -> Prince Edward Island) applied to data after the pages were last generated, plus fishing/spot-directory (junk record, noindexed, slated for merge) gaining standard geo/schema markup.",
+  "added_urls": [],
+  "explained": {
+    "/en/camping/gros-morne-national-park": [
+      "meta",
+      "og",
+      "twitter",
+      "geo",
+      "jsonld"
+    ],
+    "/en/camping/western-brook-pond": [
+      "meta",
+      "og",
+      "twitter",
+      "geo",
+      "jsonld"
+    ],
+    "/en/fishing/gander-river": [
+      "meta",
+      "og",
+      "twitter",
+      "geo",
+      "jsonld"
+    ],
+    "/en/fishing/grand-lake-nl": [
+      "meta",
+      "og",
+      "twitter",
+      "geo",
+      "jsonld"
+    ],
+    "/en/fishing/red-indian-lake": [
+      "meta",
+      "og",
+      "twitter",
+      "geo",
+      "jsonld"
+    ],
+    "/en/fishing/spot-directory": [
+      "og",
+      "geo",
+      "jsonld"
+    ],
+    "/en/hiking/chilkoot-pass": [
+      "meta",
+      "og",
+      "twitter",
+      "geo",
+      "jsonld"
+    ],
+    "/en/hunting/central-plateau-caribou": [
+      "meta",
+      "og",
+      "twitter",
+      "geo",
+      "jsonld"
+    ],
+    "/en/hunting/gros-morne": [
+      "meta",
+      "og",
+      "twitter",
+      "geo",
+      "jsonld"
+    ],
+    "/en/hunting/pei-central": [
+      "meta",
+      "og",
+      "twitter",
+      "geo",
+      "jsonld"
+    ],
+    "/en/kayaking/yukon-river": [
+      "meta",
+      "og",
+      "twitter",
+      "geo",
+      "jsonld"
+    ],
+    "/fr/camping/gros-morne-national-park": [
+      "meta",
+      "og",
+      "twitter",
+      "geo",
+      "jsonld"
+    ],
+    "/fr/camping/western-brook-pond": [
+      "meta",
+      "og",
+      "twitter",
+      "geo",
+      "jsonld"
+    ],
+    "/fr/fishing/gander-river": [
+      "meta",
+      "og",
+      "twitter",
+      "geo",
+      "jsonld"
+    ],
+    "/fr/fishing/grand-lake-nl": [
+      "meta",
+      "og",
+      "twitter",
+      "geo",
+      "jsonld"
+    ],
+    "/fr/fishing/red-indian-lake": [
+      "meta",
+      "og",
+      "twitter",
+      "geo",
+      "jsonld"
+    ],
+    "/fr/fishing/spot-directory": [
+      "og",
+      "geo",
+      "jsonld"
+    ],
+    "/fr/hiking/chilkoot-pass": [
+      "meta",
+      "og",
+      "twitter",
+      "geo",
+      "jsonld"
+    ],
+    "/fr/hunting/central-plateau-caribou": [
+      "meta",
+      "og",
+      "twitter",
+      "geo",
+      "jsonld"
+    ],
+    "/fr/hunting/gros-morne": [
+      "meta",
+      "og",
+      "twitter",
+      "geo",
+      "jsonld"
+    ],
+    "/fr/hunting/pei-central": [
+      "meta",
+      "og",
+      "twitter",
+      "geo",
+      "jsonld"
+    ],
+    "/fr/kayaking/yukon-river": [
+      "meta",
+      "og",
+      "twitter",
+      "geo",
+      "jsonld"
+    ]
+  }
+}
