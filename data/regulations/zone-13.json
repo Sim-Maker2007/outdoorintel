@@ -11,7 +11,7 @@
   },
   "coverage": {
     "waterbodies_listed_by_zone_page": 24,
-    "waterbodies_harvested": 26,
+    "waterbodies_harvested": 35,
     "complete": true,
     "note": "All waterbody exceptions listed by the zone page are included."
   },
@@ -349,7 +349,7 @@
     {
       "id_endro": 2668,
       "name": {
-        "fr": "Lac Amyot - (47°57'57\" N., 76°51'28\" O.)",
+        "fr": "Lac Amyot - (47°57'57&quot; N., 76°51'28&quot; O.)",
         "en": "Lac Amyot - (47°57'57\" N., 76°51'28\" O.)"
       },
       "coordinates": {
@@ -514,7 +514,7 @@
     {
       "id_endro": 2669,
       "name": {
-        "fr": "Lac Augier - (48°39'05\" N., 76°45'51\" O.)",
+        "fr": "Lac Augier - (48°39'05&quot; N., 76°45'51&quot; O.)",
         "en": "Lac Augier - (48°39'05\" N., 76°45'51\" O.)"
       },
       "coordinates": {
@@ -679,7 +679,7 @@
     {
       "id_endro": 2670,
       "name": {
-        "fr": "Lac Barthou - (47°52'29\" N., 76°56'49\" O.)\\r\\n",
+        "fr": "Lac Barthou - (47°52'29&quot; N., 76°56'49&quot; O.) ",
         "en": "Lac Barthou - (47°52'29\" N., 76°56'49\" O.)\\r\\n"
       },
       "coordinates": {
@@ -844,7 +844,7 @@
     {
       "id_endro": 2671,
       "name": {
-        "fr": "Lac Cavendish - (47°59'36\" N., 76°17'57\" O.)",
+        "fr": "Lac Cavendish - (47°59'36&quot; N., 76°17'57&quot; O.)",
         "en": "Lac Cavendish - (47°59'36\" N., 76°17'57\" O.)"
       },
       "coordinates": {
@@ -1009,7 +1009,7 @@
     {
       "id_endro": 741,
       "name": {
-        "fr": "Lac Clair - (48°18'05\" N., 77°10'18\" O.)(Canton Senneterre)",
+        "fr": "Lac Clair - (48°18'05&quot; N., 77°10'18&quot; O.)(Canton Senneterre)",
         "en": "Lac Clair - (48°18'05\" N., 77°10'18\" O.)(Canton Senneterre)"
       },
       "coordinates": {
@@ -1062,7 +1062,7 @@
     {
       "id_endro": 2673,
       "name": {
-        "fr": "Lac Clais - (48°06'12\" N., 76°42'28\" O.)\\r\\n",
+        "fr": "Lac Clais - (48°06'12&quot; N., 76°42'28&quot; O.) ",
         "en": "Lac Clais - (48°06'12\" N., 76°42'28\" O.)\\r\\n"
       },
       "coordinates": {
@@ -1227,7 +1227,7 @@
     {
       "id_endro": 2693,
       "name": {
-        "fr": "Lac Cuillère - (48°40'19\" N., 76°42'54\" O.)",
+        "fr": "Lac Cuillère - (48°40'19&quot; N., 76°42'54&quot; O.)",
         "en": "Lac Cuillère - (48°40'19\" N., 76°42'54\" O.)"
       },
       "coordinates": {
@@ -1392,7 +1392,7 @@
     {
       "id_endro": 2694,
       "name": {
-        "fr": "Lac Denain - (47°53'38\" N., 76°59'21\" O.)",
+        "fr": "Lac Denain - (47°53'38&quot; N., 76°59'21&quot; O.)",
         "en": "Lac Denain - (47°53'38\" N., 76°59'21\" O.)"
       },
       "coordinates": {
@@ -1557,7 +1557,7 @@
     {
       "id_endro": 2685,
       "name": {
-        "fr": "Lac des Terrasses - (48°38'25\" N., 75°55'31\" O.)",
+        "fr": "Lac des Terrasses - (48°38'25&quot; N., 75°55'31&quot; O.)",
         "en": "Lac des Terrasses - (48°38'25\" N., 75°55'31\" O.)"
       },
       "coordinates": {
@@ -1722,7 +1722,7 @@
     {
       "id_endro": 2695,
       "name": {
-        "fr": "Lac Desforges - (48°44'32\" N., 76°44'27\" O.)",
+        "fr": "Lac Desforges - (48°44'32&quot; N., 76°44'27&quot; O.)",
         "en": "Lac Desforges - (48°44'32\" N., 76°44'27\" O.)"
       },
       "coordinates": {
@@ -1887,7 +1887,7 @@
     {
       "id_endro": 2674,
       "name": {
-        "fr": "Lac Draper - (47°59'26\" N., 76°52'31\" O.)\\r\\n",
+        "fr": "Lac Draper - (47°59'26&quot; N., 76°52'31&quot; O.) ",
         "en": "Lac Draper - (47°59'26\" N., 76°52'31\" O.)\\r\\n"
       },
       "coordinates": {
@@ -2217,7 +2217,7 @@
     {
       "id_endro": 2696,
       "name": {
-        "fr": "Lac Matchi-Manitou - (48°00'58\" N., 77°02'58\" O.)",
+        "fr": "Lac Matchi-Manitou - (48°00'58&quot; N., 77°02'58&quot; O.)",
         "en": "Lac Matchi-Manitou - (48°00'58\" N., 77°02'58\" O.)"
       },
       "coordinates": {
@@ -2382,7 +2382,7 @@
     {
       "id_endro": 2682,
       "name": {
-        "fr": "Lac Rioux - (48°00'05\" N., 76°19'11\" O.)",
+        "fr": "Lac Rioux - (48°00'05&quot; N., 76°19'11&quot; O.)",
         "en": "Lac Rioux - (48°00'05\" N., 76°19'11\" O.)"
       },
       "coordinates": {
@@ -2547,7 +2547,7 @@
     {
       "id_endro": 2688,
       "name": {
-        "fr": "Lac Sans nom (48°32'49\" N., 76°36'21\" O.) ",
+        "fr": "Lac Sans nom (48°32'49&quot; N., 76°36'21&quot; O.) ",
         "en": "Lac Sans nom (48°32'49\" N., 76°36'21\" O.) "
       },
       "coordinates": {
@@ -2712,7 +2712,7 @@
     {
       "id_endro": 2692,
       "name": {
-        "fr": "Lac Sans nom (48°33'32\" N., 76°39'24\" O.)",
+        "fr": "Lac Sans nom (48°33'32&quot; N., 76°39'24&quot; O.)",
         "en": "Lac Sans nom (48°33'32\" N., 76°39'24\" O.)"
       },
       "coordinates": {
@@ -2877,7 +2877,7 @@
     {
       "id_endro": 2687,
       "name": {
-        "fr": "Lac Sans nom (48°38'16\" N., 75°58'23\" O.)",
+        "fr": "Lac Sans nom (48°38'16&quot; N., 75°58'23&quot; O.)",
         "en": "Lac Sans nom (48°38'16\" N., 75°58'23\" O.)"
       },
       "coordinates": {
@@ -3042,7 +3042,7 @@
     {
       "id_endro": 2691,
       "name": {
-        "fr": "Lac Sans nom (48°39'11\" N., 76°47'18\" O.)",
+        "fr": "Lac Sans nom (48°39'11&quot; N., 76°47'18&quot; O.)",
         "en": "Lac Sans nom (48°39'11\" N., 76°47'18\" O.)"
       },
       "coordinates": {
@@ -3207,7 +3207,7 @@
     {
       "id_endro": 2690,
       "name": {
-        "fr": "Lac Sans nom (48°40'47\" N., 76°02'22\" O.)",
+        "fr": "Lac Sans nom (48°40'47&quot; N., 76°02'22&quot; O.)",
         "en": "Lac Sans nom (48°40'47\" N., 76°02'22\" O.)"
       },
       "coordinates": {
@@ -3372,7 +3372,7 @@
     {
       "id_endro": 2689,
       "name": {
-        "fr": "Lac Sans nom (48°53'21\" N., 76°26'24\" O.) ",
+        "fr": "Lac Sans nom (48°53'21&quot; N., 76°26'24&quot; O.) ",
         "en": "Lac Sans nom (48°53'21\" N., 76°26'24\" O.) "
       },
       "coordinates": {
@@ -3537,7 +3537,7 @@
     {
       "id_endro": 742,
       "name": {
-        "fr": "Lac Wyeth - (48°05'48\" N., 77°23'36\" O.)(Canton Louvicourt)",
+        "fr": "Lac Wyeth - (48°05'48&quot; N., 77°23'36&quot; O.)(Canton Louvicourt)",
         "en": "Lac Wyeth - (48°05'48\" N., 77°23'36\" O.)(Canton Louvicourt)"
       },
       "coordinates": {
@@ -3590,7 +3590,7 @@
     {
       "id_endro": 10260,
       "name": {
-        "fr": "Lac Ypres - (47°56'52\" N., 76°55'17\" O.)",
+        "fr": "Lac Ypres - (47°56'52&quot; N., 76°55'17&quot; O.)",
         "en": "Lac Ypres - (47°56'52\" N., 76°55'17\" O.)"
       },
       "coordinates": {
@@ -3755,7 +3755,7 @@
     {
       "id_endro": 2698,
       "name": {
-        "fr": "Lac Yser - (47°54'35\" N., 76°52'09\" O.)",
+        "fr": "Lac Yser - (47°54'35&quot; N., 76°52'09&quot; O.)",
         "en": "Lac Yser - (47°54'35\" N., 76°52'09\" O.)"
       },
       "coordinates": {
@@ -3923,7 +3923,10 @@
         "fr": "Rivière Delestres",
         "en": "Rivière Delestres"
       },
-      "coordinates": null,
+      "coordinates": {
+        "lat": 48.68111,
+        "lng": -76.90694
+      },
       "rules": {
         "fr": [
           {
@@ -4225,6 +4228,397 @@
       "source": {
         "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=13&id_endro=2365",
         "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=13&id_endro=2365"
+      }
+    },
+    {
+      "id_endro": 2677,
+      "name": {
+        "fr": "2677",
+        "en": "2677"
+      },
+      "coordinates": {
+        "lat": 48.65,
+        "lng": -76.70222
+      },
+      "rules": {
+        "fr": [],
+        "en": []
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=13&id_endro=2677",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=13&id_endro=2677"
+      }
+    },
+    {
+      "id_endro": 2667,
+      "name": {
+        "fr": "2667",
+        "en": "2667"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=13&id_endro=2667",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=13&id_endro=2667"
+      }
+    },
+    {
+      "id_endro": 740,
+      "name": {
+        "fr": "740",
+        "en": "740"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 16 avril 2026 au 30 novembre 2026",
+            "species": "Éperlan arc-en-ciel",
+            "limit": "120",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 16 avril 2026 au 30 novembre 2026",
+            "species": "Marigane noire",
+            "limit": "30",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 16 avril 2026 au 30 novembre 2026",
+            "species": "Perchaude",
+            "limit": "50",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "10 en tout dont au plus 2 ombles chevaliers",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Ouananiche",
+            "limit": "3",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "55 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Truite arc-en-ciel",
+            "limit": "aucune limite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Truite fardée et truite brune",
+            "limit": "5 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 30 novembre 2026",
+            "species": "Brochets",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 30 novembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 31 octobre 2026",
+            "species": "Esturgeons",
+            "limit": "1 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 30 novembre 2026",
+            "species": "Achigans",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 30 novembre 2026",
+            "species": "Maskinongé et maskinongé tigré",
+            "limit": "1 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 16 avril 2026 au 30 novembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 16th, 2026 to November 30th, 2026",
+            "species": "Black crappie",
+            "limit": "30",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 16th, 2026 to November 30th, 2026",
+            "species": "Rainbow smelt",
+            "limit": "120",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 16th, 2026 to November 30th, 2026",
+            "species": "Yellow perch",
+            "limit": "50",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "10 in all with at most 2 arctic char",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Cutthroat trout and brown trout",
+            "limit": "5 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "55 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Landlocked salmon",
+            "limit": "3",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Rainbow trout",
+            "limit": "no limit",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to November 30th, 2026",
+            "species": "Pike",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to November 30th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to October 31st, 2026",
+            "species": "Sturgeon",
+            "limit": "1 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to November 30th, 2026",
+            "species": "Bass",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to November 30th, 2026",
+            "species": "Muskellunge and tiger muskellunge",
+            "limit": "1 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From April 16th, 2026 to November 30th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=13&id_endro=740",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=13&id_endro=740"
+      }
+    },
+    {
+      "id_endro": 2672,
+      "name": {
+        "fr": "2672",
+        "en": "2672"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [],
+        "en": []
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=13&id_endro=2672",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=13&id_endro=2672"
+      }
+    },
+    {
+      "id_endro": 2684,
+      "name": {
+        "fr": "2684",
+        "en": "2684"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [],
+        "en": []
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=13&id_endro=2684",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=13&id_endro=2684"
+      }
+    },
+    {
+      "id_endro": 2681,
+      "name": {
+        "fr": "2681",
+        "en": "2681"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [],
+        "en": []
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=13&id_endro=2681",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=13&id_endro=2681"
+      }
+    },
+    {
+      "id_endro": 2686,
+      "name": {
+        "fr": "2686",
+        "en": "2686"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [],
+        "en": []
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=13&id_endro=2686",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=13&id_endro=2686"
+      }
+    },
+    {
+      "id_endro": 10259,
+      "name": {
+        "fr": "10259",
+        "en": "10259"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [],
+        "en": []
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=13&id_endro=10259",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=13&id_endro=10259"
+      }
+    },
+    {
+      "id_endro": 2697,
+      "name": {
+        "fr": "2697",
+        "en": "2697"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [],
+        "en": []
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=13&id_endro=2697",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=13&id_endro=2697"
       }
     }
   ]
