@@ -4,14 +4,39 @@
 // validated against the index so a hallucinated spot can never reach the user.
 
 import SPOTS from '../_data/spots-index.js';
+import { REGS } from '../_data/regs-index.js';
+import { resolveRegs } from '../../src/lib/regResolver.mjs';
 import { chat, aiConfigured } from '../_lib/ai.js';
 import { readBody, json, methodGuard, clip, aiGuard } from '../_lib/community.js';
 
 export const config = { runtime: 'nodejs' };
 
 const CATS = ['fishing', 'hunting', 'camping', 'kayaking', 'skiing', 'hiking'];
-const MAX_STEPS = 6;
+const MAX_STEPS = 8;
 const IDX = new Map(SPOTS.map(s => [s.c + '/' + s.s, s]));
+const REG_ZONES = Object.keys(REGS);
+
+// Grounded regulation lookup (Regulation Resolver v1). Returns verbatim
+// MELCCFP rule text with citation — trimmed for token economy.
+function lookupRegulations(args) {
+  const doc = REGS[String(args.zone)];
+  if (!doc) return { error: `zone ${args.zone} not in dataset`, zones_available: REG_ZONES };
+  const r = resolveRegs(doc, {
+    lang: args.lang === 'en' ? 'en' : 'fr',
+    date: /^\d{4}-\d{2}-\d{2}$/.test(args.date || '') ? args.date : undefined,
+    species: args.species ? String(args.species).slice(0, 80) : undefined,
+    waterbody: args.waterbody ? String(args.waterbody).slice(0, 80) : undefined,
+  });
+  return {
+    zone: r.zone,
+    citation: { authority: r.citation.authority, source: r.citation.source, fetched_at: r.citation.fetched_at },
+    coverage_note: r.citation.coverage.note,
+    general_rules: r.general.slice(0, 20),
+    waterbody: r.waterbody ? { name: r.waterbody.name, source: r.waterbody.source, rules: r.waterbody.rules.slice(0, 12) } : undefined,
+    waterbody_not_found: r.waterbody_not_found,
+    disclaimer: r.disclaimer,
+  };
+}
 
 function haversine(aLat, aLng, bLat, bLng) {
   const R = 6371, p = Math.PI / 180;
@@ -78,6 +103,17 @@ const TOOLS = [
     }, required: [] }
   } },
   { type: 'function', function: {
+    name: 'lookup_regulations',
+    description: 'Look up official Québec sport-fishing regulations (MELCCFP, verbatim with citation) for a covered zone. Covered zones: ' + REG_ZONES.join(', ') + ' (Outaouais/Laurentides region). Use for any question about catch limits, length limits, seasons, gear rules, or waterbody exceptions. NEVER answer regulation questions from memory.',
+    parameters: { type: 'object', properties: {
+      zone: { type: 'string', enum: REG_ZONES, description: 'Québec fishing zone number.' },
+      lang: { type: 'string', enum: ['fr', 'en'], description: 'Language of the user’s conversation.' },
+      date: { type: 'string', description: 'Trip date YYYY-MM-DD, to filter rules to those in force that day.' },
+      species: { type: 'string', description: 'Species filter, e.g. "doré" / "walleye".' },
+      waterbody: { type: 'string', description: 'Lake/river name to check for waterbody-specific exceptions, e.g. "Lac Barbue".' }
+    }, required: ['zone'] }
+  } },
+  { type: 'function', function: {
     name: 'present_plan',
     description: 'Deliver the final itinerary to the user. Every stop MUST be a spot returned by search_spots (exact slug + activity). Do not invent spots.',
     parameters: { type: 'object', properties: {
@@ -98,6 +134,7 @@ Rules:
 - Use search_spots to find real spots — call it multiple times for different activities or areas as needed. Ground every recommendation in the returned data (species, province, distance, level, blurb).
 - When you have a good set of spots, call present_plan to deliver the itinerary. Each stop must use the exact slug and activity from search_spots results.
 - Respect seasons and safety. In your notes, remind the user to confirm current regulations via the official source on each spot page, and note that spot intel is community-sourced and not yet independently field-verified.
+- Regulations: for Québec fishing zones ${REG_ZONES.join(', ')} you have the lookup_regulations tool with official MELCCFP data. When a user asks about limits, sizes, seasons, gear rules, or a specific lake's exceptions, CALL THE TOOL and quote the returned rule text verbatim, naming the zone and including the official source link and its retrieval date. NEVER state a regulation from memory. For zones or provinces not covered, say the regulation dataset does not cover them yet and direct the user to the official provincial source.
 - Be concise, warm, and practical. Ask ONE brief clarifying question only if the request lacks both an activity and any location to work from.
 - Canada only. Distances are straight-line estimates; real drive times are longer.`;
 
@@ -139,6 +176,8 @@ export default async function handler(req, res) {
         let result;
         if (call.function.name === 'search_spots') {
           result = await searchSpots(args);
+        } else if (call.function.name === 'lookup_regulations') {
+          result = lookupRegulations(args);
         } else if (call.function.name === 'present_plan') {
           const plan = validatePlan(args);
           result = { ok: plan.stops.length > 0, stops_accepted: plan.stops.length };

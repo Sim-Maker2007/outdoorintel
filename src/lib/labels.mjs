@@ -179,6 +179,7 @@ export const T = {
     newsMsg: { en: 'One email a week. No spam.', fr: 'Un courriel par semaine. Pas de spam.' },
     explore: { en: 'Explore', fr: 'Explorer' },
     product: { en: 'Product', fr: 'Produit' },
+    regs: { en: 'Fishing regulations', fr: 'Règlements de pêche' },
     aboutCol: { en: 'About', fr: 'À propos' },
     trust: { en: 'Trust & sources', fr: 'Confiance et sources' },
     about: { en: 'About', fr: 'À propos' },
