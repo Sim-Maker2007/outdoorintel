@@ -1,0 +1,4558 @@
+{
+  "zone_id": 15,
+  "activity": "fishing",
+  "jurisdiction": "QC",
+  "authority": "Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs (MELCCFP)",
+  "source": {
+    "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15",
+    "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15",
+    "fetched_at": "2026-08-08",
+    "note": "Rule text reproduced verbatim from the authority. Always verify against the source before fishing."
+  },
+  "coverage": {
+    "waterbodies_listed_by_zone_page": 44,
+    "waterbodies_harvested": 48,
+    "complete": true,
+    "note": "All waterbody exceptions listed by the zone page are included."
+  },
+  "title": {
+    "fr": "Zone 14 | Pêche sportive au Québec - Périodes, limites et exceptions",
+    "en": "Zone 14 | Sport fishing in Québec – fishing periods, limits and exceptions"
+  },
+  "general": {
+    "fr": [
+      {
+        "period": null,
+        "species": "Limite de prise",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Limite de longueur",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Engin de pêche",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Note",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Espèce:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Limite de prise:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Limite de longueur:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Note:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Engin de pêche:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 1er avril 2026 au 15 avril 2026",
+        "species": "Achigans",
+        "limit": "6 en tout",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 1er avril 2026 au 15 avril 2026",
+        "species": "Brochets",
+        "limit": "10 en tout",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 1er avril 2026 au 15 avril 2026",
+        "species": "Doré jaune et doré noir",
+        "limit": "8 en tout",
+        "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+        "gear": "Pêche à la ligne seulement",
+        "notes": null
+      },
+      {
+        "period": "Du 1er avril 2026 au 31 mars 2027",
+        "species": "Bar rayé",
+        "limit": "Pêche interdite",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 1er avril 2026 au 31 mars 2027",
+        "species": "Chevalier cuivré",
+        "limit": "Pêche interdite",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 1er avril 2026 au 31 mars 2027",
+        "species": "Éperlan arc-en-ciel",
+        "limit": "120",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 1er avril 2026 au 31 mars 2027",
+        "species": "Perchaude",
+        "limit": "50",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 23 avril 2026 au 15 septembre 2026",
+        "species": "Ombles (omble de fontaine, omble chevalier)",
+        "limit": "10 en tout",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 23 avril 2026 au 15 septembre 2026",
+        "species": "Ouananiche",
+        "limit": "3",
+        "length": null,
+        "gear": "Pêche à la ligne seulement",
+        "notes": null
+      },
+      {
+        "period": "Du 23 avril 2026 au 15 septembre 2026",
+        "species": "Touladi, moulac et lacmou",
+        "limit": "1 en tout",
+        "length": "45 cm et plus",
+        "gear": "Pêche à la ligne seulement",
+        "notes": "Dans les eaux comprises à l'intérieur des territoires particuliers: 2 en tout"
+      },
+      {
+        "period": "Du 23 avril 2026 au 15 septembre 2026",
+        "species": "Truite arc-en-ciel",
+        "limit": "aucune limite",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 23 avril 2026 au 15 septembre 2026",
+        "species": "Truite fardée et truite brune",
+        "limit": "5 en tout",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 15 mai 2026 au 31 mars 2027",
+        "species": "Brochets",
+        "limit": "10 en tout",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 15 mai 2026 au 31 mars 2027",
+        "species": "Doré jaune et doré noir",
+        "limit": "8 en tout",
+        "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+        "gear": "Pêche à la ligne seulement",
+        "notes": null
+      },
+      {
+        "period": "Du 15 juin 2026 au 31 octobre 2026",
+        "species": "Esturgeons",
+        "limit": "1 en tout",
+        "length": null,
+        "gear": "Pêche à la ligne seulement",
+        "notes": null
+      },
+      {
+        "period": "Du 15 juin 2026 au 31 mars 2027",
+        "species": "Achigans",
+        "limit": "6 en tout",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 1er avril 2026 au 31 mars 2027 - Autres espèces",
+        "species": "Autres espèces",
+        "limit": "aucune limite",
+        "length": null,
+        "gear": null,
+        "notes": null
+      }
+    ],
+    "en": [
+      {
+        "period": null,
+        "species": "Catch limit",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Length limit",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Fishing device",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Note",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Species:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Catch limit:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Length limit:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Note:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Fishing device:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 1st, 2026 to April 15th, 2026",
+        "species": "Bass",
+        "limit": "6 in all",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 1st, 2026 to April 15th, 2026",
+        "species": "Pike",
+        "limit": "10 in all",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 1st, 2026 to April 15th, 2026",
+        "species": "Walleye and sauger",
+        "limit": "8 in all",
+        "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+        "gear": "Angling only",
+        "notes": null
+      },
+      {
+        "period": "From April 1st, 2026 to March 31st, 2027",
+        "species": "Copper redhorse",
+        "limit": "Fishing prohibited",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 1st, 2026 to March 31st, 2027",
+        "species": "Rainbow smelt",
+        "limit": "120",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 1st, 2026 to March 31st, 2027",
+        "species": "Striped bass",
+        "limit": "Fishing prohibited",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 1st, 2026 to March 31st, 2027",
+        "species": "Yellow perch",
+        "limit": "50",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 23rd, 2026 to September 15th, 2026",
+        "species": "Char (arctic char, brook trout)",
+        "limit": "10 in all",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 23rd, 2026 to September 15th, 2026",
+        "species": "Cutthroat trout and brown trout",
+        "limit": "5 in all",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 23rd, 2026 to September 15th, 2026",
+        "species": "Lake trout and splake trout",
+        "limit": "1 in all",
+        "length": "45 cm or more",
+        "gear": "Angling only",
+        "notes": "In the waters within managed territories: 2 in all"
+      },
+      {
+        "period": "From April 23rd, 2026 to September 15th, 2026",
+        "species": "Landlocked salmon",
+        "limit": "3",
+        "length": null,
+        "gear": "Angling only",
+        "notes": null
+      },
+      {
+        "period": "From April 23rd, 2026 to September 15th, 2026",
+        "species": "Rainbow trout",
+        "limit": "no limit",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From May 15th, 2026 to March 31st, 2027",
+        "species": "Pike",
+        "limit": "10 in all",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From May 15th, 2026 to March 31st, 2027",
+        "species": "Walleye and sauger",
+        "limit": "8 in all",
+        "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+        "gear": "Angling only",
+        "notes": null
+      },
+      {
+        "period": "From June 15th, 2026 to October 31st, 2026",
+        "species": "Sturgeon",
+        "limit": "1 in all",
+        "length": null,
+        "gear": "Angling only",
+        "notes": null
+      },
+      {
+        "period": "From June 15th, 2026 to March 31st, 2027",
+        "species": "Bass",
+        "limit": "6 in all",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 1st, 2026 to March 31st, 2027- Other species",
+        "species": "Other species",
+        "limit": "no limit",
+        "length": null,
+        "gear": null,
+        "notes": null
+      }
+    ]
+  },
+  "waterbodies": [
+    {
+      "id_endro": 807,
+      "name": {
+        "fr": "Aire Faunique Communautaire réservoir Gouin - ",
+        "en": "Aire Faunique Communautaire réservoir Gouin - "
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er février 2027 au 31 mars 2027",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 1er février 2027 au 31 mars 2027 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From February 1st, 2027 to March 31st, 2027",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From February 1st, 2027 to March 31st, 2027- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=807",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=807"
+      }
+    },
+    {
+      "id_endro": 1090,
+      "name": {
+        "fr": "Baie Adolphe-Poisson (aire faunique communautaire du réservoir Gouin)",
+        "en": "Baie Adolphe-Poisson (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.39278,
+        "lng": -75.42528
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1090",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1090"
+      }
+    },
+    {
+      "id_endro": 1092,
+      "name": {
+        "fr": "Baie de l'Est (Sulte) - (aire faunique communautaire du réservoir Gouin)",
+        "en": "Baie de l'Est (Sulte) - (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.33972,
+        "lng": -74.93639
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1092",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1092"
+      }
+    },
+    {
+      "id_endro": 11540,
+      "name": {
+        "fr": "Baie du Cinq Milles - (aire faunique communautaire du réservoir Gouin)",
+        "en": "Baie du Cinq Milles - (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.35694,
+        "lng": -74.50944
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=11540",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=11540"
+      }
+    },
+    {
+      "id_endro": 1094,
+      "name": {
+        "fr": "Baie du Guide (Aventurier) - (aire faunique communautaire du réservoir Gouin)",
+        "en": "Baie du Guide (Aventurier) - (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.57417,
+        "lng": -74.55056
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1094",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1094"
+      }
+    },
+    {
+      "id_endro": 1096,
+      "name": {
+        "fr": "Baie du Lion d'Or (aire faunique communautaire du réservoir Gouin)",
+        "en": "Baie du Lion d'Or (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.38,
+        "lng": -74.33167
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1096",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1096"
+      }
+    },
+    {
+      "id_endro": 809,
+      "name": {
+        "fr": "Baie du Rocket (aire faunique communautaire du réservoir Gouin)",
+        "en": "Baie du Rocket (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=809",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=809"
+      }
+    },
+    {
+      "id_endro": 1108,
+      "name": {
+        "fr": "Baie du Sud (Apokwatcimew) - (aire faunique communautaire du réservoir Gouin)",
+        "en": "Baie du Sud (Apokwatcimew) - (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.305,
+        "lng": -75.09111
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1108",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1108"
+      }
+    },
+    {
+      "id_endro": 1100,
+      "name": {
+        "fr": "Baie Eskwaskwakamak (du Mathieu) (aire faunique communautaire du réservoir Gouin)",
+        "en": "Baie Eskwaskwakamak (du Mathieu) (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.74306,
+        "lng": -74.83111
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1100",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1100"
+      }
+    },
+    {
+      "id_endro": 1102,
+      "name": {
+        "fr": "Baie Mattawa (aire faunique communautaire du réservoir Gouin)",
+        "en": "Baie Mattawa (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.35806,
+        "lng": -75.37222
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1102",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1102"
+      }
+    },
+    {
+      "id_endro": 1106,
+      "name": {
+        "fr": "Baie Piciw Minikanan (aire faunique communautaire du réservoir Gouin)",
+        "en": "Baie Piciw Minikanan (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.42,
+        "lng": -75.44694
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1106",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1106"
+      }
+    },
+    {
+      "id_endro": 1110,
+      "name": {
+        "fr": "Baie Saraana (aire faunique communautaire du réservoir Gouin)",
+        "en": "Baie Saraana (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.36583,
+        "lng": -75.29556
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1110",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1110"
+      }
+    },
+    {
+      "id_endro": 1112,
+      "name": {
+        "fr": "Lac Chapman (aire faunique communautaire du réservoir Gouin)",
+        "en": "Lac Chapman (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.33806,
+        "lng": -74.67306
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1112",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1112"
+      }
+    },
+    {
+      "id_endro": 3170,
+      "name": {
+        "fr": "Lac de la Galette (Delâge) (aire faunique communautaire du réservoir Gouin)",
+        "en": "Lac de la Galette (Delâge) (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.27167,
+        "lng": -74.47833
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=3170",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=3170"
+      }
+    },
+    {
+      "id_endro": 1135,
+      "name": {
+        "fr": "Lac de la Galette (Motard) (aire faunique communautaire du réservoir Gouin)",
+        "en": "Lac de la Galette (Motard) (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.30222,
+        "lng": -74.44722
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1135",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1135"
+      }
+    },
+    {
+      "id_endro": 827,
+      "name": {
+        "fr": "Lac des Dix Milles",
+        "en": "Lac des Dix Milles"
+      },
+      "coordinates": {
+        "lat": 47.89917,
+        "lng": -74.80639
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "10 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Ouananiche",
+            "limit": "3",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Truites (truite brune, truite fardée et truite arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 30 novembre 2026",
+            "species": "Brochets",
+            "limit": "10 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 30 novembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juillet 2026 au 15 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "55 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 30 novembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "10 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Landlocked salmon",
+            "limit": "3",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Trout (brown trout, cutthroat trout and rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to November 30th, 2026",
+            "species": "Pike",
+            "limit": "10 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to November 30th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From July 1st, 2026 to September 15th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "55 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to November 30th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=827",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=827"
+      }
+    },
+    {
+      "id_endro": 1115,
+      "name": {
+        "fr": "Lac Déziel (de l'Antenne ou Déziel Nord) - (aire faunique communautaire du réservoir Gouin)",
+        "en": "Lac Déziel (de l'Antenne ou Déziel Nord) - (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.58889,
+        "lng": -74.41194
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1115",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1115"
+      }
+    },
+    {
+      "id_endro": 1119,
+      "name": {
+        "fr": "Lac Déziel (Déziel Sud) - (aire faunique communautaire du réservoir Gouin)",
+        "en": "Lac Déziel (Déziel Sud) - (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.55222,
+        "lng": -74.40333
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1119",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1119"
+      }
+    },
+    {
+      "id_endro": 1117,
+      "name": {
+        "fr": "Lac du Déserteur (aire faunique communautaire du réservoir Gouin)",
+        "en": "Lac du Déserteur (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.57028,
+        "lng": -74.33361
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1117",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1117"
+      }
+    },
+    {
+      "id_endro": 819,
+      "name": {
+        "fr": "Lac du Marteau",
+        "en": "Lac du Marteau"
+      },
+      "coordinates": {
+        "lat": 48.24083,
+        "lng": -73.96667
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er juillet 2026 au 15 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "45 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juillet 2026 au 15 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From July 1st, 2026 to September 15th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "45 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From July 1st, 2026 to September 15th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=819",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=819"
+      }
+    },
+    {
+      "id_endro": 3258,
+      "name": {
+        "fr": "Lac du Poète (aire faunique communautaire du réservoir Gouin)",
+        "en": "Lac du Poète (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.40972,
+        "lng": -75.51389
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=3258",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=3258"
+      }
+    },
+    {
+      "id_endro": 825,
+      "name": {
+        "fr": "Lac du Tabac",
+        "en": "Lac du Tabac"
+      },
+      "coordinates": {
+        "lat": 47.6825,
+        "lng": -74.42361
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 15 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juillet 2026 au 15 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "45 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 15 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 15th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From July 1st, 2026 to September 15th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "45 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 15th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=825",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=825"
+      }
+    },
+    {
+      "id_endro": 1123,
+      "name": {
+        "fr": "Lac Duchet (aire faunique communautaire du réservoir Gouin)",
+        "en": "Lac Duchet (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.65917,
+        "lng": -74.70528
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1123",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1123"
+      }
+    },
+    {
+      "id_endro": 815,
+      "name": {
+        "fr": "Lac Foie",
+        "en": "Lac Foie"
+      },
+      "coordinates": {
+        "lat": 48.31667,
+        "lng": -74.28528
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er juillet 2026 au 15 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "55 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juillet 2026 au 15 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From July 1st, 2026 to September 15th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "55 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From July 1st, 2026 to September 15th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=815",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=815"
+      }
+    },
+    {
+      "id_endro": 817,
+      "name": {
+        "fr": "Lac Guénette",
+        "en": "Lac Guénette"
+      },
+      "coordinates": {
+        "lat": 47.90611,
+        "lng": -74.335
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er juillet 2026 au 15 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "45 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juillet 2026 au 15 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From July 1st, 2026 to September 15th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "45 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From July 1st, 2026 to September 15th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=817",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=817"
+      }
+    },
+    {
+      "id_endro": 829,
+      "name": {
+        "fr": "Lac Head",
+        "en": "Lac Head"
+      },
+      "coordinates": {
+        "lat": 47.77583,
+        "lng": -74.61028
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "10 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Ouananiche",
+            "limit": "3",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Truites (truite brune, truite fardée et truite arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 30 novembre 2026",
+            "species": "Brochets",
+            "limit": "10 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 30 novembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juillet 2026 au 15 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "45 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 30 novembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "10 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Landlocked salmon",
+            "limit": "3",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Trout (brown trout, cutthroat trout and rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to November 30th, 2026",
+            "species": "Pike",
+            "limit": "10 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to November 30th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From July 1st, 2026 to September 15th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "45 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to November 30th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=829",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=829"
+      }
+    },
+    {
+      "id_endro": 1104,
+      "name": {
+        "fr": "Lac Jean (du Petit Vison ou Vison Est) - (aire faunique communautaire du réservoir Gouin)",
+        "en": "Lac Jean (du Petit Vison ou Vison Est) - (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.45444,
+        "lng": -74.18472
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1104",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1104"
+      }
+    },
+    {
+      "id_endro": 811,
+      "name": {
+        "fr": "Lac Magnan (aire faunique communautaire du réservoir Gouin)",
+        "en": "Lac Magnan (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=811",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=811"
+      }
+    },
+    {
+      "id_endro": 1098,
+      "name": {
+        "fr": "Lac Marmette (Garancières) - (aire faunique communautaire du réservoir Gouin)",
+        "en": "Lac Marmette (Garancières) - (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.37556,
+        "lng": -74.72028
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1098",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1098"
+      }
+    },
+    {
+      "id_endro": 1129,
+      "name": {
+        "fr": "Lac Mikisiw Amirakanan (Barouette) - (aire faunique communautaire du réservoir Gouin)",
+        "en": "Lac Mikisiw Amirakanan (Barouette) - (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.51194,
+        "lng": -74.83111
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1129",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1129"
+      }
+    },
+    {
+      "id_endro": 1131,
+      "name": {
+        "fr": "Lac Miller (Simard) - (aire faunique communautaire du réservoir Gouin)",
+        "en": "Lac Miller (Simard) - (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.64917,
+        "lng": -75.16667
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1131",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1131"
+      }
+    },
+    {
+      "id_endro": 2743,
+      "name": {
+        "fr": "Lac Mix - (47°27'35&quot; N., 76°05'17&quot; O., TNO de Lac-Lenôtre) ",
+        "en": "Lac Mix - (47°27'35\" N., 76°05'17\" O., TNO de Lac-Lenôtre) "
+      },
+      "coordinates": {
+        "lat": 47.45972,
+        "lng": -76.08806
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 16 avril 2026 au 30 novembre 2026",
+            "species": "Éperlan arc-en-ciel",
+            "limit": "120",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 16 avril 2026 au 30 novembre 2026",
+            "species": "Grand corégone",
+            "limit": "5",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 16 avril 2026 au 30 novembre 2026",
+            "species": "Marigane noire",
+            "limit": "30",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 16 avril 2026 au 30 novembre 2026",
+            "species": "Perchaude",
+            "limit": "50",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "10 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Ouananiche",
+            "limit": "3",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "45 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Truite arc-en-ciel",
+            "limit": "aucune limite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Truite fardée et truite brune",
+            "limit": "5 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 30 novembre 2026",
+            "species": "Brochets",
+            "limit": "10 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 30 novembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 31 octobre 2026",
+            "species": "Esturgeons",
+            "limit": "1 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 30 novembre 2026",
+            "species": "Achigans",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 16 avril 2026 au 30 novembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 16th, 2026 to November 30th, 2026",
+            "species": "Black crappie",
+            "limit": "30",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 16th, 2026 to November 30th, 2026",
+            "species": "Lake whitefish",
+            "limit": "5",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 16th, 2026 to November 30th, 2026",
+            "species": "Rainbow smelt",
+            "limit": "120",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 16th, 2026 to November 30th, 2026",
+            "species": "Yellow perch",
+            "limit": "50",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "10 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Cutthroat trout and brown trout",
+            "limit": "5 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "45 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Landlocked salmon",
+            "limit": "3",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Rainbow trout",
+            "limit": "no limit",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to November 30th, 2026",
+            "species": "Pike",
+            "limit": "10 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to November 30th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to October 31st, 2026",
+            "species": "Sturgeon",
+            "limit": "1 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to November 30th, 2026",
+            "species": "Bass",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 16th, 2026 to November 30th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=2743",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=2743"
+      }
+    },
+    {
+      "id_endro": 821,
+      "name": {
+        "fr": "Lac Peter",
+        "en": "Lac Peter"
+      },
+      "coordinates": {
+        "lat": 48.23917,
+        "lng": -74.20528
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er juillet 2026 au 15 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "55 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juillet 2026 au 15 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From July 1st, 2026 to September 15th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "55 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From July 1st, 2026 to September 15th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=821",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=821"
+      }
+    },
+    {
+      "id_endro": 1125,
+      "name": {
+        "fr": "Lac Petit Brochu (de la Grosse Pluie) (aire faunique communautaire du réservoir Gouin)",
+        "en": "Lac Petit Brochu (de la Grosse Pluie) (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.59528,
+        "lng": -74.47722
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1125",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1125"
+      }
+    },
+    {
+      "id_endro": 823,
+      "name": {
+        "fr": "Lac Vaillant",
+        "en": "Lac Vaillant"
+      },
+      "coordinates": {
+        "lat": 48.16056,
+        "lng": -74.22556
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er juillet 2026 au 15 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "55 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juillet 2026 au 15 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From July 1st, 2026 to September 15th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "55 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From July 1st, 2026 to September 15th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=823",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=823"
+      }
+    },
+    {
+      "id_endro": 1133,
+      "name": {
+        "fr": "Lac Witiko (ruisseau à l'Eau Claire ou pont de la Sylva) - (aire faunique communautaire du réservoir Gouin)",
+        "en": "Lac Witiko (ruisseau à l'Eau Claire ou pont de la Sylva) - (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.7975,
+        "lng": -74.61611
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1133",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1133"
+      }
+    },
+    {
+      "id_endro": 813,
+      "name": {
+        "fr": "Rivière Jean-Pierre (aire faunique communautaire du réservoir Gouin)",
+        "en": "Rivière Jean-Pierre (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.30944,
+        "lng": -74.23944
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=813",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=813"
+      }
+    },
+    {
+      "id_endro": 1144,
+      "name": {
+        "fr": "Rivière Kakospictikweak (lac Omina) (aire faunique communautaire du réservoir Gouin)",
+        "en": "Rivière Kakospictikweak (lac Omina) (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.77778,
+        "lng": -74.75194
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1144",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1144"
+      }
+    },
+    {
+      "id_endro": 1139,
+      "name": {
+        "fr": "Rivière Némio (aire faunique communautaire du réservoir Gouin)",
+        "en": "Rivière Némio (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.43333,
+        "lng": -74.93111
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1139",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1139"
+      }
+    },
+    {
+      "id_endro": 1146,
+      "name": {
+        "fr": "Rivière Oskélanéo (aire faunique communautaire du réservoir Gouin)",
+        "en": "Rivière Oskélanéo (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.25972,
+        "lng": -75.12389
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1146",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1146"
+      }
+    },
+    {
+      "id_endro": 1141,
+      "name": {
+        "fr": "Rivière Toussaint (Obedjiwan ouest) (aire faunique communautaire du réservoir Gouin)",
+        "en": "Rivière Toussaint (Obedjiwan ouest) (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.70417,
+        "lng": -74.95028
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1141",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1141"
+      }
+    },
+    {
+      "id_endro": 1121,
+      "name": {
+        "fr": "Rivière Wapous (lac Déziel) - (aire faunique communautaire du réservoir Gouin)",
+        "en": "Rivière Wapous (lac Déziel) - (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.58278,
+        "lng": -74.37028
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1121",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1121"
+      }
+    },
+    {
+      "id_endro": 1148,
+      "name": {
+        "fr": "Ruisseau de la Rencontre (aire faunique communautaire du réservoir Gouin)",
+        "en": "Ruisseau de la Rencontre (aire faunique communautaire du réservoir Gouin)"
+      },
+      "coordinates": {
+        "lat": 48.67833,
+        "lng": -75.05028
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1148",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1148"
+      }
+    },
+    {
+      "id_endro": 2268,
+      "name": {
+        "fr": "2268",
+        "en": "2268"
+      },
+      "coordinates": {
+        "lat": 48.54833,
+        "lng": -74.60972
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=2268",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=2268"
+      }
+    },
+    {
+      "id_endro": 1113,
+      "name": {
+        "fr": "1113",
+        "en": "1113"
+      },
+      "coordinates": {
+        "lat": 48.365,
+        "lng": -74.66917
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=1113",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=1113"
+      }
+    },
+    {
+      "id_endro": 2266,
+      "name": {
+        "fr": "2266",
+        "en": "2266"
+      },
+      "coordinates": {
+        "lat": 48.65806,
+        "lng": -74.58889
+      },
+      "rules": {
+        "fr": [],
+        "en": []
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=2266",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=2266"
+      }
+    },
+    {
+      "id_endro": 2267,
+      "name": {
+        "fr": "2267",
+        "en": "2267"
+      },
+      "coordinates": {
+        "lat": 48.72556,
+        "lng": -74.50722
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=2267",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=2267"
+      }
+    },
+    {
+      "id_endro": 2742,
+      "name": {
+        "fr": "2742",
+        "en": "2742"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [],
+        "en": []
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15&id_endro=2742",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15&id_endro=2742"
+      }
+    }
+  ]
+}

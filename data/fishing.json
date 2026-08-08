@@ -1013,7 +1013,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 11,
+        "id_endro": 2802,
+        "matched_name": "Lac Tremblant -",
+        "matched_by": "name",
+        "distance_km": 7.2
+      }
     },
     {
       "name": "Lac-Masson",
@@ -1198,7 +1205,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 8,
+        "id_endro": 174,
+        "matched_name": "Fleuve Saint-Laurent",
+        "matched_by": "name",
+        "distance_km": null
+      }
     },
     {
       "name": "Lac-des-Deux-Montagnes",
@@ -3705,7 +3719,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 3,
+        "id_endro": 432,
+        "matched_name": "Lac des Abénaquis",
+        "matched_by": "name",
+        "distance_km": 0.7
+      }
     },
     {
       "name": "Admac, Lac",
@@ -3907,7 +3928,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 10,
+        "id_endro": 2959,
+        "matched_name": "Lac de l'Aigle -",
+        "matched_by": "name",
+        "distance_km": 0.1
+      }
     },
     {
       "name": "Amélie, Lac",
@@ -4312,7 +4340,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 10,
+        "id_endro": 401,
+        "matched_name": "Lac de l'Argile",
+        "matched_by": "name",
+        "distance_km": 0.9
+      }
     },
     {
       "name": "Armstrong, Lac",
@@ -4522,7 +4557,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 4,
+        "id_endro": 523,
+        "matched_name": "Lac Aylmer",
+        "matched_by": "name",
+        "distance_km": 1.8
+      }
     },
     {
       "name": "Barbue, Lac à la",
@@ -4828,7 +4870,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 2,
+        "id_endro": 317,
+        "matched_name": "Lac Le Beau Lac",
+        "matched_by": "name+coords",
+        "distance_km": 1.7
+      }
     },
     {
       "name": "Bécasse, Lac de la",
@@ -5335,7 +5384,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 6,
+        "id_endro": 665,
+        "matched_name": "Lac Boissonneault",
+        "matched_by": "name",
+        "distance_km": 0.2
+      }
     },
     {
       "name": "Boivin, Lac",
@@ -5436,7 +5492,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 6,
+        "id_endro": 754,
+        "matched_name": "Lac Boivin",
+        "matched_by": "name",
+        "distance_km": 1.2
+      }
     },
     {
       "name": "Bolduc, Lac",
@@ -6046,7 +6109,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 5,
+        "id_endro": 598,
+        "matched_name": "Lac Brome",
+        "matched_by": "name",
+        "distance_km": 2.4
+      }
     },
     {
       "name": "Brompton, Lac",
@@ -6153,7 +6223,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 6,
+        "id_endro": 666,
+        "matched_name": "Lac Brompton",
+        "matched_by": "name",
+        "distance_km": 1.7
+      }
     },
     {
       "name": "Brompton, Petit lac",
@@ -6865,7 +6942,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 10,
+        "id_endro": 2962,
+        "matched_name": "Lac Cameron -",
+        "matched_by": "name",
+        "distance_km": 0.6
+      }
     },
     {
       "name": "Carrière, Lac",
@@ -7170,7 +7254,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 10,
+        "id_endro": 3014,
+        "matched_name": "Lac aux Castors -",
+        "matched_by": "name",
+        "distance_km": 0.3
+      }
     },
     {
       "name": "Cerf, Grand lac du",
@@ -7579,7 +7670,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 10,
+        "id_endro": 482,
+        "matched_name": "Lac Chapleau",
+        "matched_by": "name",
+        "distance_km": 0.7
+      }
     },
     {
       "name": "Charest, Lac",
@@ -7983,7 +8081,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 11,
+        "id_endro": 3196,
+        "matched_name": "Lac Chaud -",
+        "matched_by": "name",
+        "distance_km": null
+      }
     },
     {
       "name": "Chaudière, Rivière",
@@ -8127,7 +8232,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 4,
+        "id_endro": 584,
+        "matched_name": "Rivière Chaudière",
+        "matched_by": "name",
+        "distance_km": null
+      }
     },
     {
       "name": "Choinière, Réservoir",
@@ -8234,7 +8346,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 6,
+        "id_endro": 755,
+        "matched_name": "Réservoir Choinière",
+        "matched_by": "name",
+        "distance_km": 0.6
+      }
     },
     {
       "name": "Cinq Doigts, Lac",
@@ -9164,7 +9283,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 5,
+        "id_endro": 3160,
+        "matched_name": "Lac Davignon",
+        "matched_by": "name",
+        "distance_km": 1.2
+      }
     },
     {
       "name": "Désert, Lac",
@@ -9267,7 +9393,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 10,
+        "id_endro": 2951,
+        "matched_name": "Lac Désert -",
+        "matched_by": "name",
+        "distance_km": 0.2
+      }
     },
     {
       "name": "Diablotin, Lac du",
@@ -9570,7 +9703,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 4,
+        "id_endro": 536,
+        "matched_name": "Lac Drolet -",
+        "matched_by": "name",
+        "distance_km": 0.7
+      }
     },
     {
       "name": "Dubé, Lac",
@@ -9772,7 +9912,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 10,
+        "id_endro": 10225,
+        "matched_name": "Lac Dudley",
+        "matched_by": "name",
+        "distance_km": 0.1
+      }
     },
     {
       "name": "Écho, Lac",
@@ -10078,7 +10225,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 10,
+        "id_endro": 11060,
+        "matched_name": "Lac des Écorces",
+        "matched_by": "name",
+        "distance_km": 0.6
+      }
     },
     {
       "name": "Édouard, Lac",
@@ -10282,7 +10436,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 4,
+        "id_endro": 526,
+        "matched_name": "Lac Elgin",
+        "matched_by": "name",
+        "distance_km": null
+      }
     },
     {
       "name": "Escalier, Réservoir l'",
@@ -10487,7 +10648,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 2,
+        "id_endro": 318,
+        "matched_name": "Lac de l'Est",
+        "matched_by": "name",
+        "distance_km": 1.5
+      }
     },
     {
       "name": "Etchemin, Lac",
@@ -11094,7 +11262,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 10,
+        "id_endro": 2859,
+        "matched_name": "Lac Gagnon",
+        "matched_by": "name",
+        "distance_km": 0.1
+      }
     },
     {
       "name": "Gélinotte, Lac de la",
@@ -11397,7 +11572,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 10,
+        "id_endro": 502,
+        "matched_name": "Lac des Grandes Baies",
+        "matched_by": "name",
+        "distance_km": 0.4
+      }
     },
     {
       "name": "Grassy, Lac",
@@ -12205,7 +12387,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 2,
+        "id_endro": 320,
+        "matched_name": "Lac Humqui -",
+        "matched_by": "name",
+        "distance_km": 0.8
+      }
     },
     {
       "name": "Hydroplane, Lac de l'",
@@ -12717,7 +12906,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 2,
+        "id_endro": 322,
+        "matched_name": "Lac Jerry -",
+        "matched_by": "name",
+        "distance_km": 1
+      }
     },
     {
       "name": "Joinville, Lac",
@@ -13022,7 +13218,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 7,
+        "id_endro": 115,
+        "matched_name": "Lac Joseph",
+        "matched_by": "name",
+        "distance_km": 1.3
+      }
     },
     {
       "name": "Jumeaux, Lacs",
@@ -13429,7 +13632,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 11,
+        "id_endro": 646,
+        "matched_name": "Réservoir Kiamika",
+        "matched_by": "name",
+        "distance_km": 0.5
+      }
     },
     {
       "name": "La Minerve, Lac",
@@ -13530,7 +13740,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 10,
+        "id_endro": 2902,
+        "matched_name": "Lac La Minerve -",
+        "matched_by": "name",
+        "distance_km": 0.3
+      }
     },
     {
       "name": "Labelle, Lac",
@@ -13631,7 +13848,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 10,
+        "id_endro": 2882,
+        "matched_name": "Lac Labelle -",
+        "matched_by": "name",
+        "distance_km": 1.8
+      }
     },
     {
       "name": "Lesage, Lac",
@@ -13734,7 +13958,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 10,
+        "id_endro": 505,
+        "matched_name": "Lac Lesage -",
+        "matched_by": "name",
+        "distance_km": 0.7
+      }
     },
     {
       "name": "Libby, Lac",
@@ -13836,7 +14067,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 5,
+        "id_endro": 614,
+        "matched_name": "Lac Libby",
+        "matched_by": "name",
+        "distance_km": 0
+      }
     },
     {
       "name": "Lippé, Lac",
@@ -14243,7 +14481,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 9,
+        "id_endro": 10080,
+        "matched_name": "Lac Louisa",
+        "matched_by": "name",
+        "distance_km": 0.7
+      }
     },
     {
       "name": "Louise, Lac",
@@ -14349,7 +14594,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 4,
+        "id_endro": 529,
+        "matched_name": "Lac Louise",
+        "matched_by": "name",
+        "distance_km": 0.3
+      }
     },
     {
       "name": "Loutre, Lac à la",
@@ -14451,7 +14703,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 10,
+        "id_endro": 10124,
+        "matched_name": "Lac à la Loutre",
+        "matched_by": "name",
+        "distance_km": 0.2
+      }
     },
     {
       "name": "Lovering, Lac",
@@ -14554,7 +14813,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 6,
+        "id_endro": 672,
+        "matched_name": "Lac Lovering",
+        "matched_by": "name",
+        "distance_km": 0.2
+      }
     },
     {
       "name": "Lyster, Lac",
@@ -14761,7 +15027,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 6,
+        "id_endro": 673,
+        "matched_name": "Lac Magog",
+        "matched_by": "name",
+        "distance_km": 2.4
+      }
     },
     {
       "name": "Maison de Pierre, Lac de la",
@@ -15067,7 +15340,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 9,
+        "id_endro": 2977,
+        "matched_name": "Lac Manitou",
+        "matched_by": "name",
+        "distance_km": 1
+      }
     },
     {
       "name": "Marie-Le Franc, Lac",
@@ -15269,7 +15549,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 10,
+        "id_endro": 2893,
+        "matched_name": "Lac Marie-Louise -",
+        "matched_by": "name",
+        "distance_km": 0.2
+      }
     },
     {
       "name": "Marsan, Lac",
@@ -15478,7 +15765,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 6,
+        "id_endro": 675,
+        "matched_name": "Lac Massawippi",
+        "matched_by": "name",
+        "distance_km": 6.6
+      }
     },
     {
       "name": "Masson, Lac",
@@ -15886,7 +16180,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 10,
+        "id_endro": 2898,
+        "matched_name": "Lac McFee",
+        "matched_by": "name",
+        "distance_km": 0.2
+      }
     },
     {
       "name": "McKenzie, Lac",
@@ -16215,7 +16516,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 6,
+        "id_endro": 676,
+        "matched_name": "Lac Memphrémagog",
+        "matched_by": "name",
+        "distance_km": 7.6
+      }
     },
     {
       "name": "Mistigougèche, Lac",
@@ -17934,7 +18242,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 10,
+        "id_endro": 2907,
+        "matched_name": "Lac Papineau",
+        "matched_by": "name",
+        "distance_km": 0.3
+      }
     },
     {
       "name": "Paradis, Lac",
@@ -18341,7 +18656,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 11,
+        "id_endro": 10702,
+        "matched_name": "Lac Pérodeau",
+        "matched_by": "name",
+        "distance_km": 0.4
+      }
     },
     {
       "name": "Pimodan, Lac",
@@ -18442,7 +18764,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 10,
+        "id_endro": 486,
+        "matched_name": "Lac Pimodan",
+        "matched_by": "name",
+        "distance_km": 0.6
+      }
     },
     {
       "name": "Pinson Doré, Lac du",
@@ -19258,7 +19587,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 9,
+        "id_endro": 360,
+        "matched_name": "Lac Raymond",
+        "matched_by": "name",
+        "distance_km": 0.5
+      }
     },
     {
       "name": "Renversi, Lac",
@@ -19514,7 +19850,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 8,
+        "id_endro": 176,
+        "matched_name": "Rivière Richelieu",
+        "matched_by": "name",
+        "distance_km": null
+      }
     },
     {
       "name": "Riopel, Lac",
@@ -20025,7 +20368,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 6,
+        "id_endro": 682,
+        "matched_name": "Lac Roxton",
+        "matched_by": "name",
+        "distance_km": 0.3
+      }
     },
     {
       "name": "Sables, Réservoir aux",
@@ -20642,7 +20992,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 10,
+        "id_endro": 488,
+        "matched_name": "Lac Saint-Germain",
+        "matched_by": "name",
+        "distance_km": 0.1
+      }
     },
     {
       "name": "Saint-Jean, Lac",
@@ -20749,7 +21106,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 32,
+        "id_endro": 929,
+        "matched_name": "Lac Saint-Jean,",
+        "matched_by": "name",
+        "distance_km": null
+      }
     },
     {
       "name": "Saint-Mathieu, Lac",
@@ -20851,7 +21215,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 2,
+        "id_endro": 304,
+        "matched_name": "Lac Saint-Mathieu -",
+        "matched_by": "name",
+        "distance_km": 0.9
+      }
     },
     {
       "name": "Saint-Paul, Lac",
@@ -21768,7 +22139,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 10,
+        "id_endro": 2926,
+        "matched_name": "Lac Simon",
+        "matched_by": "name",
+        "distance_km": 3.3
+      }
     },
     {
       "name": "Simoneau, Lac",
@@ -22375,7 +22753,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 6,
+        "id_endro": 704,
+        "matched_name": "Lac Stukely",
+        "matched_by": "name",
+        "distance_km": 0.3
+      }
     },
     {
       "name": "Sucreries, Lac des",
@@ -22680,7 +23065,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 11,
+        "id_endro": 645,
+        "matched_name": "Lac Tapani -",
+        "matched_by": "name",
+        "distance_km": 0
+      }
     },
     {
       "name": "Témiscouata, Lac",
@@ -22782,7 +23174,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 2,
+        "id_endro": 324,
+        "matched_name": "Lac Témiscouata",
+        "matched_by": "name",
+        "distance_km": 4.2
+      }
     },
     {
       "name": "Thibault, Lac",
@@ -23088,7 +23487,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 11,
+        "id_endro": 652,
+        "matched_name": "Lac Tibériade -",
+        "matched_by": "name",
+        "distance_km": 0.1
+      }
     },
     {
       "name": "Tremblant, Lac",
@@ -23293,7 +23699,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 7,
+        "id_endro": 117,
+        "matched_name": "Lac Les Trois Lacs",
+        "matched_by": "name+coords",
+        "distance_km": 0.9
+      }
     },
     {
       "name": "Trois Saumons, Lac",
@@ -23396,7 +23809,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 3,
+        "id_endro": 3261,
+        "matched_name": "Lac Trois-Saumons",
+        "matched_by": "name",
+        "distance_km": 1.3
+      }
     },
     {
       "name": "Truite, Lac à la",
@@ -23716,7 +24136,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 6,
+        "id_endro": 691,
+        "matched_name": "Lac Wallace",
+        "matched_by": "name",
+        "distance_km": 0.2
+      }
     },
     {
       "name": "Waterloo, Lac",
@@ -23820,7 +24247,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 5,
+        "id_endro": 606,
+        "matched_name": "Lac Waterloo",
+        "matched_by": "name",
+        "distance_km": 0.3
+      }
     },
     {
       "name": "Welch, Petit lac",
@@ -24025,7 +24459,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 7,
+        "id_endro": 118,
+        "matched_name": "Lac William",
+        "matched_by": "name",
+        "distance_km": 0.2
+      }
     },
     {
       "name": "York, Lac",
@@ -24127,7 +24568,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 1,
+        "id_endro": 46,
+        "matched_name": "Lac York",
+        "matched_by": "name",
+        "distance_km": 1
+      }
     },
     {
       "name": "Zouaves, Lac des",
