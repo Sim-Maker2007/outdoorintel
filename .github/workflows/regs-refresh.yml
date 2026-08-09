@@ -1,0 +1,74 @@
+# Scheduled regulation refresh (vision: "best data, always dated").
+#
+# Monthly: re-harvest every Québec fishing zone from the MELCCFP source,
+# rebuild the bundled index, run the data-tier evals as a gate, and — only
+# when the authority's content actually changed — open a PR with the diff
+# for human review. No change → no noise. A failed harvest fails the run,
+# which GitHub surfaces as a notification.
+name: Regulations refresh
+
+on:
+  schedule:
+    - cron: '0 9 1 * *'   # 1st of each month, 09:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Harvest all zones from MELCCFP
+        run: node scripts/regs/harvest-regpec.mjs --zones=all
+
+      - name: Rebuild bundled regulation index
+        run: node scripts/regs/build-regs-index.mjs
+
+      - name: Data-tier evals (golden questions vs harvested data)
+        run: node scripts/evals/run-evals.mjs
+
+      - name: Summarize changes
+        id: diff
+        run: |
+          git add -A data/regulations api/_data/regs-index.js
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No regulation changes this run."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            {
+              echo 'DIFFSTAT<<EOF'
+              git diff --cached --stat=100 | tail -20
+              echo 'EOF'
+            } >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open review PR
+        if: steps.diff.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: regs-refresh/auto
+          title: 'Regulations refresh: MELCCFP source changed'
+          commit-message: 'Regulations refresh: re-harvest from MELCCFP (scheduled)'
+          body: |
+            The scheduled harvest found changes in the official MELCCFP regulation
+            pages. Review the diff before merging — every changed rule below is
+            verbatim source text, so a diff means the authority actually changed
+            something (or restructured a page; if the diff looks structural rather
+            than substantive, check the harvester's parsing before merging).
+
+            ```
+            ${{ steps.diff.outputs.DIFFSTAT }}
+            ```
+
+            Data-tier evals passed on the new data. After merging, the site
+            rebuild picks up the new rules automatically; `/api/regulations`
+            and Scout serve them on the next deploy.

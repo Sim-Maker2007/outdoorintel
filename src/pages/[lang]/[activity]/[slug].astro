@@ -374,6 +374,9 @@ if (toggle && menu) {
                 <div class="max-w-4xl">
                     <h2 class="text-3xl font-bold mb-6">{T.regulations[lang]}</h2>
                     <p class="text-lg leading-relaxed text-white/90" set:html={par(t('regulations'))}></p>
+                    {spot.reg_zone && <p class="mt-8"><a href={`/${lang}/fishing/regulations/zone-${spot.reg_zone.zone_id}`} class="inline-block bg-white/90 text-[#305e3c] px-6 py-3 font-semibold rounded-lg hover:bg-white transition-colors">{lang === 'fr'
+                      ? `Limites et exceptions officielles — Zone ${spot.reg_zone.zone_id} (MELCCFP) →`
+                      : `Official limits & exceptions — Zone ${spot.reg_zone.zone_id} (MELCCFP) →`}</a></p>}
                 </div>
             </div>
         </section>

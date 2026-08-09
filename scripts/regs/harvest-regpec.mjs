@@ -20,8 +20,11 @@ import { writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 
 const REPO = process.cwd();
-const ZONES = (process.argv.find(a => a.startsWith('--zones=')) || '--zones=10,12,13')
-  .replace('--zones=', '').split(',').map(s => s.trim());
+const zonesArg = (process.argv.find(a => a.startsWith('--zones=')) || '--zones=10,12,13').replace('--zones=', '');
+// --zones=all probes every plausible zone id; pages without regulation grids are skipped.
+const ZONES = zonesArg === 'all'
+  ? Array.from({ length: 33 }, (_, i) => String(i + 1))
+  : zonesArg.split(',').map(s => s.trim());
 const BASE = 'https://peche.faune.gouv.qc.ca/regpec';
 
 const decode = s => s
@@ -117,11 +120,15 @@ function parsePage(html) {
   };
 }
 
-// Waterbody selector ids embedded in the page JS. The DevExpress listbox
-// serializes at most its callback page size (100) — zones with more listed
-// waterbodies (zone 10 lists ~159) cannot be fully enumerated from static
-// HTML. v1 harvests every enumerable id and records coverage honestly;
-// full enumeration via the DevExpress callback protocol is a known follow-up.
+// Waterbody id enumeration, two complementary sources:
+//  (a) the selector listbox items serialized in the page JS — capped at the
+//      DevExpress callback page size (100);
+//  (b) the collapsed master rows of the exceptions grid, whose coordinate
+//      popup ids observe coordId = id_endro + 1 (verified against every
+//      dropdown-known pair; homonym lakes are distinct entries).
+// Every candidate id is VALIDATED on fetch: the returned page must show the
+// candidate as the selected id_endro, or it is discarded. This closes the
+// windowing gap (zone 10 lists 159 waterbodies, dropdown exposes 100).
 function endroIds(html) {
   const out = new Map();
   for (const m of html.matchAll(/\{'value':(\d+),'text':'((?:[^'\\]|\\.)*)'/g)) {
@@ -130,6 +137,49 @@ function endroIds(html) {
     if (!out.has(m[1])) out.set(m[1], decode(t));
   }
   return out;
+}
+
+function masterRowIds(html) {
+  const out = new Map(); // candidate id_endro -> {name, coords}
+  // Per master row: the bold text is the group name; each coordinate link's
+  // immediately preceding text is the specific (child) lake's name.
+  const rowRe = /<span class="gras">([^<]+)<\/span>([\s\S]*?)(?=<span class="gras">|<\/table>)/g;
+  for (const row of html.matchAll(rowRe)) {
+    const groupName = decode(row[1]).trim().replace(/[.,;]$/, '');
+    for (const link of row[2].matchAll(/(?:^|>)([^<>]*?)\(?\s*<a class="lien-coord" onclick="OuvrirPopUpCoords\((\d+)\);"[^>]*>([^<]*)/g)) {
+      const cand = String(Number(link[2]) - 1);
+      const child = decode(link[1]).replace(/[(.,;:]+\s*$/, '').trim();
+      const gps = decode(link[3]).match(GPS_RE);
+      if (!out.has(cand)) {
+        out.set(cand, {
+          name: child.length >= 4 ? child : groupName,
+          coords: gps ? { lat: dmsToDec(gps[1], gps[2], gps[3], false), lng: dmsToDec(gps[4], gps[5], gps[6], true) } : null,
+        });
+      }
+    }
+  }
+  // any remaining coord links (markup variants) as unnamed candidates
+  for (const m of html.matchAll(/OuvrirPopUpCoords\((\d+)\)/g)) {
+    const cand = String(Number(m[1]) - 1);
+    if (!out.has(cand)) out.set(cand, { name: null, coords: null });
+  }
+  return out;
+}
+
+function selectedEndro(html) {
+  const m = html.match(/id_endro[^>]*value="(\d+)"/);
+  return m ? m[1] : null;
+}
+
+function selectedEndroName(html) {
+  const m = html.match(/id="id_endro_I"[^>]*value="([^"]*)"/);
+  if (!m) return null;
+  const name = decode(m[1]);
+  // A purely numeric echo means the combobox has no display name for this id
+  // (master-row-enumerated entries) — treat as unresolved so the master-row
+  // name map supplies it (see scripts/regs/repair-wb-names.mjs for the
+  // per-coord-link naming rules this mirrors).
+  return /^\d+$/.test(name) ? null : name;
 }
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -156,10 +206,16 @@ const fetched_at = new Date().toISOString().slice(0, 10);
 for (const zone of ZONES) {
   const frUrl = `${BASE}/fr/info/reglements?id_zone=${zone}`;
   const enUrl = `${BASE}/en/info/reglements?id_zone=${zone}`;
-  const frHtml = await fetchUrl(frUrl);
-  const enHtml = await fetchUrl(enUrl);
-  const pFr = parsePage(frHtml);
-  const pEn = parsePage(enHtml);
+  let frHtml, enHtml, pFr, pEn;
+  try {
+    frHtml = await fetchUrl(frUrl);
+    enHtml = await fetchUrl(enUrl);
+    pFr = parsePage(frHtml);
+    pEn = parsePage(enHtml);
+  } catch (e) {
+    console.warn(`zone ${zone}: skipped (${e.message})`);
+    continue;
+  }
 
   // listed waterbodies (names + coords rendered in the page) for coverage + coords lookup
   const listedFr = pFr.waterbodies;
@@ -167,25 +223,31 @@ for (const zone of ZONES) {
 
   const ids = endroIds(frHtml);
   const enIds = endroIds(enHtml);
-  console.log(`zone ${zone}: general FR ${pFr.general.length}/EN ${pEn.general.length}; listed waterbodies ${listedFr.length}; enumerable ids ${ids.size}`);
+  const master = masterRowIds(frHtml);
+  const candidates = new Map(ids);
+  for (const [cand, info] of master) if (!candidates.has(cand)) candidates.set(cand, info.name);
+  console.log(`zone ${zone}: general FR ${pFr.general.length}/EN ${pEn.general.length}; listed ${listedFr.length}; dropdown ${ids.size}; candidates ${candidates.size}`);
 
   const waterbodies = [];
-  for (const [id, nameFr] of ids) {
+  for (const [id, nameHint] of candidates) {
     const wbFrUrl = `${BASE}/fr/info/reglements?id_zone=${zone}&id_endro=${id}`;
     const wbEnUrl = `${BASE}/en/info/reglements?id_zone=${zone}&id_endro=${id}`;
     try {
-      const rulesFr = parseEndroPage(await fetchUrl(wbFrUrl));
+      const wbFrHtml = await fetchUrl(wbFrUrl);
+      if (selectedEndro(wbFrHtml) !== String(id)) continue; // candidate not a valid endro for this zone
+      const rulesFr = parseEndroPage(wbFrHtml);
       const rulesEn = parseEndroPage(await fetchUrl(wbEnUrl));
+      const nameFr = selectedEndroName(wbFrHtml) || nameHint || `Plan d’eau réglementé #${id} (voir la source)`;
       waterbodies.push({
         id_endro: Number(id),
         name: { fr: nameFr, en: enIds.get(id) || nameFr },
-        coordinates: coordsByName.get(nameFr.split('(')[0].trim()) || null,
+        coordinates: coordsByName.get(nameFr.split('(')[0].trim()) || master.get(id)?.coords || null,
         rules: { fr: rulesFr, en: rulesEn },
         source: { fr: wbFrUrl, en: wbEnUrl },
       });
-      if (waterbodies.length % 25 === 0) console.log(`  zone ${zone}: ${waterbodies.length}/${ids.size} waterbodies harvested`);
+      if (waterbodies.length % 25 === 0) console.log(`  zone ${zone}: ${waterbodies.length}/${candidates.size} waterbodies harvested`);
     } catch (e) {
-      console.warn(`  zone ${zone} endro ${id} (${nameFr}): ${e.message}`);
+      console.warn(`  zone ${zone} endro ${id} (${nameHint || '?'}): ${e.message}`);
     }
   }
 

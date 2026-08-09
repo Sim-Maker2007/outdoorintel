@@ -1,0 +1,130 @@
+---
+// Regulations hub — lists the harvested Québec fishing zones with coverage
+// and links each zone page. The chrome footer links here site-wide.
+import { readFileSync, readdirSync } from 'node:fs';
+import { join } from 'node:path';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import GlobalSearch from '../../../components/GlobalSearch.astro';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'en' } }, { params: { lang: 'fr' } }];
+}
+
+const { lang } = Astro.params;
+const L = lang === 'en' ? 'en' : 'fr';
+const dir = join(process.cwd(), 'data', 'regulations');
+const zones = readdirSync(dir).filter(f => f.endsWith('.json'))
+  .map(f => JSON.parse(readFileSync(join(dir, f), 'utf-8')))
+  .sort((a, b) => a.zone_id - b.zone_id);
+
+const SITE = 'https://outdoorintel.ca';
+const url = `${SITE}/${lang}/fishing/regulations`;
+const altHref = `/${lang === 'en' ? 'fr' : 'en'}/fishing/regulations`;
+
+const T = {
+  title: { en: 'Québec Fishing Regulations — Zones, Limits & Exceptions', fr: 'Règlements de pêche du Québec — zones, limites et exceptions' },
+  metaDesc: {
+    en: 'Québec sport-fishing regulations as structured, cited data: zone-wide limits, seasons and per-waterbody exceptions, reproduced verbatim from the MELCCFP with source links and retrieval dates.',
+    fr: 'Les règlements de pêche sportive du Québec en données structurées et citées : limites par zone, périodes et exceptions par plan d’eau, reproduits intégralement du MELCCFP avec sources et dates.',
+  },
+  h1: { en: 'Québec Fishing Regulations', fr: 'Règlements de pêche du Québec' },
+  intro: {
+    en: 'The official rules, made readable. Every rule below is reproduced verbatim from the MELCCFP with its source link and retrieval date — regulations can change, so always verify with the official source before your trip. Coverage starts with the zones around Gatineau and the Outaouais; more zones are coming.',
+    fr: 'Les règles officielles, enfin lisibles. Chaque règle est reproduite intégralement du MELCCFP avec son lien source et sa date de récupération — les règlements peuvent changer : vérifiez toujours la source officielle avant votre sortie. La couverture commence par les zones autour de Gatineau et de l’Outaouais; d’autres zones s’ajouteront.',
+  },
+  zone: { en: 'Zone', fr: 'Zone' },
+  generalCount: { en: 'zone-wide rules', fr: 'règles de zone' },
+  wbCount: { en: 'waterbody exceptions', fr: 'exceptions de plans d’eau' },
+  view: { en: 'View regulations →', fr: 'Voir les règlements →' },
+  updated: { en: 'Data retrieved', fr: 'Données récupérées le' },
+  breadcrumbHome: { en: 'Home', fr: 'Accueil' },
+  fishing: { en: 'Fishing', fr: 'Pêche' },
+};
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: T.breadcrumbHome[L], item: `${SITE}/` },
+    { '@type': 'ListItem', position: 2, name: T.fishing[L], item: `${SITE}/${lang}/fishing/directory` },
+    { '@type': 'ListItem', position: 3, name: T.h1[L], item: url },
+  ],
+};
+---
+<html lang={lang}>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#14251a">
+    <title>{T.title[L]} | Outdoor Intel</title>
+    <meta name="description" content={T.metaDesc[L]}>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href={url}>
+    <meta property="og:title" content={`${T.title[L]} | Outdoor Intel`}>
+    <meta property="og:description" content={T.metaDesc[L]}>
+    <meta property="og:url" content={url}>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Outdoor Intel">
+    <meta property="og:locale" content={lang === 'en' ? 'en_CA' : 'fr_CA'}>
+    <meta property="og:locale:alternate" content={lang === 'en' ? 'fr_CA' : 'en_CA'}>
+    <link rel="alternate" hreflang="en" href={`${SITE}/en/fishing/regulations`}>
+    <link rel="alternate" hreflang="fr" href={`${SITE}/fr/fishing/regulations`}>
+    <link rel="alternate" hreflang="x-default" href={`${SITE}/en/fishing/regulations`}>
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbLd)}></script>
+    <link rel="stylesheet" href="/assets/css/site.css?v=1">
+    <Fragment set:html={`<!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8Q00962P"><\/script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QY8Q00962P');
+    <\/script>`} />
+    <Fragment set:html={`<style id="oi-ds">.explore-dropdown{visibility:hidden;opacity:0;transform:translateY(6px);transition:opacity .15s ease,transform .15s ease,visibility .15s}.explore-group:hover .explore-dropdown,.explore-group:focus-within .explore-dropdown{visibility:visible;opacity:1;transform:translateY(0)}<\/style>`} />
+</head>
+<body class="bg-[#fbfaf7] text-[#1c2b21] font-sans leading-relaxed">
+    <Header lang={lang} altHref={altHref} />
+
+    <main class="pt-[88px]">
+        <section class="bg-[#14251a] text-white py-16 px-6">
+            <div class="max-w-5xl mx-auto">
+                <span class="inline-block bg-white/90 text-[#3d7a4d] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5">{T.fishing[L]} · Québec</span>
+                <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">{T.h1[L]}</h1>
+                <p class="text-white/85 max-w-2xl text-lg">{T.intro[L]}</p>
+            </div>
+        </section>
+
+        <section class="py-14 px-6">
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+                {zones.map(z => (
+                <a href={`/${lang}/fishing/regulations/zone-${z.zone_id}`} class="group bg-white rounded-xl border border-[#305e3c]/10 p-6 hover:shadow-lg transition-all hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase tracking-widest mb-2">Québec · MELCCFP</div>
+                    <h2 class="text-2xl font-bold text-[#305e3c] mb-3">{T.zone[L]} {z.zone_id}</h2>
+                    <p class="text-sm text-[#5c6b5f] mb-1">{z.general[L].length} {T.generalCount[L]}</p>
+                    <p class="text-sm text-[#5c6b5f] mb-1">{z.waterbodies.length} {T.wbCount[L]}</p>
+                    <p class="text-xs text-[#5c6b5f]/80 mb-4">{T.updated[L]} {z.source.fetched_at}</p>
+                    <div class="text-[#3d7a4d] text-sm font-semibold">{T.view[L]}</div>
+                </a>
+                ))}
+            </div>
+        </section>
+    </main>
+
+    <Footer lang={lang} altHref={altHref} />
+    <Fragment set:html={`<script>
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('mobile-menu');
+if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        toggle.setAttribute('aria-expanded', !menu.classList.contains('hidden'));
+    });
+}
+<\/script>`} />
+    <GlobalSearch />
+    <script is:inline defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

@@ -9,7 +9,9 @@ export function aiConfigured() {
 }
 
 export function aiModel() {
-  return process.env.OPENROUTER_MODEL || 'anthropic/claude-3.5-sonnet';
+  // Pinned deliberately (2026-08): newest sonnet-class model OpenRouter serves.
+  // Override with OPENROUTER_MODEL; re-evaluate against scripts/evals before changing.
+  return process.env.OPENROUTER_MODEL || 'anthropic/claude-sonnet-5';
 }
 
 // Low-level chat completion. Returns the assistant message object

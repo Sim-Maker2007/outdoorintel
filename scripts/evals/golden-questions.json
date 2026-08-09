@@ -1,0 +1,23 @@
+{
+  "note": "Golden questions for Scout's factuality gate. `check` drives the data tier: expectations are resolved LIVE from data/regulations at run time (never hardcoded numbers), so a legitimate regulation change updates expectations automatically while a data or resolver regression fails loudly. `type: refusal` questions must produce no fabricated rules in e2e mode.",
+  "questions": [
+    { "id": "z10-dore-fr", "lang": "fr", "question": "Quelle est la limite de prise pour le doré en zone 10 le 15 juin 2026?", "type": "regulation", "check": { "zone": "10", "species": "doré", "date": "2026-06-15", "expect_rules": true, "expect_field": "limit" } },
+    { "id": "z10-walleye-en", "lang": "en", "question": "What is the walleye limit in zone 10 on June 15, 2026?", "type": "regulation", "check": { "zone": "10", "lang": "en", "species": "walleye", "date": "2026-06-15", "expect_rules": true, "expect_field": "limit" } },
+    { "id": "z10-walleye-preseason", "lang": "en", "question": "Can I keep walleye in zone 10 on April 1, 2026?", "type": "regulation", "check": { "zone": "10", "lang": "en", "species": "walleye", "date": "2026-04-01", "expect_rules": false } },
+    { "id": "z10-bar-raye-closed", "lang": "fr", "question": "Est-ce que je peux pêcher le bar rayé en zone 10?", "type": "regulation", "check": { "zone": "10", "species": "bar rayé", "expect_rules": true, "expect_text": "interdite" } },
+    { "id": "z10-barbue-wb", "lang": "fr", "question": "Quelles sont les exceptions au lac à la Barbue en zone 10?", "type": "waterbody", "check": { "zone": "10", "waterbody": "barbue", "expect_waterbody": true } },
+    { "id": "z10-31milles-wb", "lang": "fr", "question": "Règles de pêche pour le lac des Trente et Un Milles?", "type": "waterbody", "check": { "zone": "10", "waterbody": "trente et un milles", "expect_waterbody": true } },
+    { "id": "z10-poisson-blanc-wb", "lang": "fr", "question": "Exceptions au réservoir Poisson Blanc?", "type": "waterbody", "check": { "zone": "10", "waterbody": "poisson blanc", "expect_waterbody": true } },
+    { "id": "z12-truite-fr", "lang": "fr", "question": "Limite d'ombles de fontaine en zone 12?", "type": "regulation", "check": { "zone": "12", "species": "omble", "expect_rules": true, "expect_field": "limit" } },
+    { "id": "z13-general-en", "lang": "en", "question": "What are the trout rules for zone 13?", "type": "regulation", "check": { "zone": "13", "lang": "en", "species": "trout", "expect_rules": true } },
+    { "id": "z1-saumon-fr", "lang": "fr", "question": "Règles pour le saumon en zone 1?", "type": "regulation", "check": { "zone": "1", "species": "saumon", "expect_rules": true } },
+    { "id": "z27-touladi-fr", "lang": "fr", "question": "Limite de touladi en zone 27?", "type": "regulation", "check": { "zone": "27", "species": "touladi", "expect_rules": true } },
+    { "id": "z32-general-fr", "lang": "fr", "question": "Quelles sont les règles générales de pêche en zone 32?", "type": "regulation", "check": { "zone": "32", "expect_rules": true } },
+    { "id": "coverage-all-zones", "lang": "fr", "question": "(data-tier only) every harvested zone has general rules and citation", "type": "coverage", "check": { "all_zones": true } },
+    { "id": "refuse-fake-lake", "lang": "fr", "question": "Quelle est la limite de doré au lac Zorglub en zone 10?", "type": "refusal-waterbody", "check": { "zone": "10", "waterbody": "zorglub", "expect_waterbody": false } },
+    { "id": "refuse-ontario", "lang": "en", "question": "What is the walleye limit in Ontario's zone 5?", "type": "refusal", "check": { "uncovered": "ontario" } },
+    { "id": "refuse-hunting", "lang": "fr", "question": "Quelle est la limite de récolte pour l'orignal en zone 10?", "type": "refusal", "check": { "uncovered": "hunting" } },
+    { "id": "refuse-zone20", "lang": "fr", "question": "Règles de pêche de la zone 20?", "type": "refusal", "check": { "zone_absent": "20" } },
+    { "id": "refuse-zone21", "lang": "en", "question": "Fishing rules for zone 21?", "type": "refusal", "check": { "zone_absent": "21" } }
+  ]
+}

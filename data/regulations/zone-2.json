@@ -1,0 +1,5217 @@
+{
+  "zone_id": 2,
+  "activity": "fishing",
+  "jurisdiction": "QC",
+  "authority": "Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs (MELCCFP)",
+  "source": {
+    "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2",
+    "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2",
+    "fetched_at": "2026-08-08",
+    "note": "Rule text reproduced verbatim from the authority. Always verify against the source before fishing."
+  },
+  "coverage": {
+    "waterbodies_listed_by_zone_page": 55,
+    "waterbodies_harvested": 75,
+    "complete": true,
+    "note": "All waterbody exceptions listed by the zone page are included."
+  },
+  "title": {
+    "fr": "Zone 2 | Pêche sportive au Québec - Périodes, limites et exceptions",
+    "en": "Zone 2 | Sport fishing in Québec – fishing periods, limits and exceptions"
+  },
+  "general": {
+    "fr": [
+      {
+        "period": null,
+        "species": "Limite de prise",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Limite de longueur",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Engin de pêche",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Note",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Espèce:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Limite de prise:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Limite de longueur:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Note:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Engin de pêche:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 1er avril 2026 au 31 mars 2027",
+        "species": "Bar rayé",
+        "limit": "Pêche interdite",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 1er avril 2026 au 31 mars 2027",
+        "species": "Chevalier cuivré",
+        "limit": "Pêche interdite",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 1er avril 2026 au 31 mars 2027",
+        "species": "Saumon atlantique",
+        "limit": "Pêche interdite",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 15 mai 2026 au 10 septembre 2026",
+        "species": "Brochets",
+        "limit": "6 en tout",
+        "length": null,
+        "gear": "Pêche à la ligne seulement",
+        "notes": null
+      },
+      {
+        "period": "Du 15 mai 2026 au 10 septembre 2026",
+        "species": "Éperlan arc-en-ciel",
+        "limit": "120",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 15 mai 2026 au 10 septembre 2026",
+        "species": "Grand corégone",
+        "limit": "150 en tout",
+        "length": null,
+        "gear": "Pêche à la ligne seulement",
+        "notes": null
+      },
+      {
+        "period": "Du 15 mai 2026 au 10 septembre 2026",
+        "species": "Ombles (omble de fontaine, omble chevalier)",
+        "limit": "10 en tout dont au plus 2 ombles chevaliers",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 15 mai 2026 au 10 septembre 2026",
+        "species": "Ouananiche",
+        "limit": "3",
+        "length": null,
+        "gear": "Pêche à la ligne seulement",
+        "notes": null
+      },
+      {
+        "period": "Du 15 mai 2026 au 10 septembre 2026",
+        "species": "Perchaude",
+        "limit": "50",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 15 mai 2026 au 10 septembre 2026",
+        "species": "Touladi, moulac et lacmou",
+        "limit": "1 en tout",
+        "length": "60 cm et plus",
+        "gear": "Pêche à la ligne seulement",
+        "notes": "Dans les eaux comprises à l'intérieur des territoires particuliers: 2 en tout"
+      },
+      {
+        "period": "Du 15 mai 2026 au 10 septembre 2026 - Autres espèces",
+        "species": "Autres espèces",
+        "limit": "aucune limite",
+        "length": null,
+        "gear": null,
+        "notes": null
+      }
+    ],
+    "en": [
+      {
+        "period": null,
+        "species": "Catch limit",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Length limit",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Fishing device",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Note",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Species:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Catch limit:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Length limit:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Note:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Fishing device:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 1st, 2026 to March 31st, 2027",
+        "species": "Atlantic salmon",
+        "limit": "Fishing prohibited",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 1st, 2026 to March 31st, 2027",
+        "species": "Copper redhorse",
+        "limit": "Fishing prohibited",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 1st, 2026 to March 31st, 2027",
+        "species": "Striped bass",
+        "limit": "Fishing prohibited",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From May 15th, 2026 to September 10th, 2026",
+        "species": "Char (arctic char, brook trout)",
+        "limit": "10 in all with at most 2 arctic char",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From May 15th, 2026 to September 10th, 2026",
+        "species": "Lake trout and splake trout",
+        "limit": "1 in all",
+        "length": "60 cm or more",
+        "gear": "Angling only",
+        "notes": "In the waters within managed territories: 2 in all"
+      },
+      {
+        "period": "From May 15th, 2026 to September 10th, 2026",
+        "species": "Lake whitefish",
+        "limit": "150 in all",
+        "length": null,
+        "gear": "Angling only",
+        "notes": null
+      },
+      {
+        "period": "From May 15th, 2026 to September 10th, 2026",
+        "species": "Landlocked salmon",
+        "limit": "3",
+        "length": null,
+        "gear": "Angling only",
+        "notes": null
+      },
+      {
+        "period": "From May 15th, 2026 to September 10th, 2026",
+        "species": "Pike",
+        "limit": "6 in all",
+        "length": null,
+        "gear": "Angling only",
+        "notes": null
+      },
+      {
+        "period": "From May 15th, 2026 to September 10th, 2026",
+        "species": "Rainbow smelt",
+        "limit": "120",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From May 15th, 2026 to September 10th, 2026",
+        "species": "Yellow perch",
+        "limit": "50",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From May 15th, 2026 to September 10th, 2026- Other species",
+        "species": "Other species",
+        "limit": "no limit",
+        "length": null,
+        "gear": null,
+        "notes": null
+      }
+    ]
+  },
+  "waterbodies": [
+    {
+      "id_endro": 309,
+      "name": {
+        "fr": "Lac à la Truite - (48°12'49&quot; N., 68°27'03&quot; O.) (Saint-Narcisse-de-Rimouski) ",
+        "en": "Lac à la Truite - (48°12'49\" N., 68°27'03\" O.) (Saint-Narcisse-de-Rimouski) "
+      },
+      "coordinates": {
+        "lat": 48.21361,
+        "lng": -68.45083
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=309",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=309"
+      }
+    },
+    {
+      "id_endro": 316,
+      "name": {
+        "fr": "Lac Baker - (47°22'51&quot; N., 68°42'54&quot; O.)",
+        "en": "Lac Baker - (47°22'51\" N., 68°42'54\" O.)"
+      },
+      "coordinates": {
+        "lat": 47.38083,
+        "lng": -68.715
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 15 septembre 2026",
+            "species": "Ouananiche",
+            "limit": "3",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 15 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "60 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er janvier 2027 au 31 mars 2027",
+            "species": "Ouananiche",
+            "limit": "3",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": "La pêche n'est permise que les samedis et dimanches."
+          },
+          {
+            "period": "Du 15 mai 2026 au 15 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 1er janvier 2027 au 31 mars 2027 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": "La pêche n'est permise que les samedis et dimanches."
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 15th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "60 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 15th, 2026",
+            "species": "Landlocked salmon",
+            "limit": "3",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From January 1st, 2027 to March 31st, 2027",
+            "species": "Landlocked salmon",
+            "limit": "3",
+            "length": null,
+            "gear": "Angling only",
+            "notes": "Fishing is only allowed on Saturday and Sunday."
+          },
+          {
+            "period": "From May 15th, 2026 to September 15th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From January 1st, 2027 to March 31st, 2027- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": "Fishing is only allowed on Saturday and Sunday."
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=316",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=316"
+      }
+    },
+    {
+      "id_endro": 288,
+      "name": {
+        "fr": "Lac Biencourt (47°58'15&quot; N., 68°31'47&quot; O.)",
+        "en": "Lac Biencourt (47°58'15\" N., 68°31'47\" O.)"
+      },
+      "coordinates": {
+        "lat": 47.97083,
+        "lng": -68.52972
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=288",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=288"
+      }
+    },
+    {
+      "id_endro": 292,
+      "name": {
+        "fr": "Lac de la Grande Fourche (47°46'23&quot;  N., 69°11'43&quot; O.)",
+        "en": "Lac de la Grande Fourche (47°46'23\"  N., 69°11'43\" O.)"
+      },
+      "coordinates": {
+        "lat": 47.77306,
+        "lng": -69.19528
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=292",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=292"
+      }
+    },
+    {
+      "id_endro": 306,
+      "name": {
+        "fr": "Lac de la Passe (Lac Premier lac Squatec) - (47°50'06&quot; N., 68°41'40&quot; O.)",
+        "en": "Lac de la Passe (Lac Premier lac Squatec) - (47°50'06\" N., 68°41'40\" O.)"
+      },
+      "coordinates": {
+        "lat": 47.835,
+        "lng": -68.69444
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=306",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=306"
+      }
+    },
+    {
+      "id_endro": 307,
+      "name": {
+        "fr": "Lac de la Station - (48°16'46&quot; N., 68°52'38&quot; O.) (Saint-Fabien)\n\n \n",
+        "en": "Lac de la Station - (48°16'46\" N., 68°52'38\" O.) (Saint-Fabien)\\n\\n \\n"
+      },
+      "coordinates": {
+        "lat": 48.27944,
+        "lng": -68.87722
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=307",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=307"
+      }
+    },
+    {
+      "id_endro": 318,
+      "name": {
+        "fr": "Lac de l'Est (47°12'20&quot; N., 69°34'09&quot; O.)",
+        "en": "Lac de l'Est (47°12'20\" N., 69°34'09\" O.)"
+      },
+      "coordinates": {
+        "lat": 47.20556,
+        "lng": -69.56917
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "60 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": "La pêche est permise durant la période du 20 décembre au 31 mars pour les autres espèces que le touladi, moulac et lacmou dans la partie de ce plan d'eau ayant une profondeur maximale de 3 mètres."
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "60 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": "Fishing for species other than lake trout and splake trout, is permitted from December 20 to March 31, in the part of this lake no deeper than 3 meters of water."
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=318",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=318"
+      }
+    },
+    {
+      "id_endro": 287,
+      "name": {
+        "fr": "Lac des Aigles - (47°57'00&quot;  N., 68°42'31&quot;  O.) (Lac-des-Aigles) ",
+        "en": "Lac des Aigles - (47°57'00\"  N., 68°42'31\"  O.) (Lac-des-Aigles) "
+      },
+      "coordinates": {
+        "lat": 47.95,
+        "lng": -68.70861
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=287",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=287"
+      }
+    },
+    {
+      "id_endro": 289,
+      "name": {
+        "fr": "Lac des Bouleaux - (48°03'06&quot; N., 68°35'39&quot; O.) (Esprit-Saint)",
+        "en": "Lac des Bouleaux - (48°03'06\" N., 68°35'39\" O.) (Esprit-Saint)"
+      },
+      "coordinates": {
+        "lat": 48.05167,
+        "lng": -68.59417
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=289",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=289"
+      }
+    },
+    {
+      "id_endro": 301,
+      "name": {
+        "fr": "Lac du Pain de Sucre (47°48'55&quot; N., 68°40'05&quot; O.)",
+        "en": "Lac du Pain de Sucre (47°48'55\" N., 68°40'05\" O.)"
+      },
+      "coordinates": {
+        "lat": 47.81528,
+        "lng": -68.66806
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=301",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=301"
+      }
+    },
+    {
+      "id_endro": 290,
+      "name": {
+        "fr": "Lac Ferré - (48°13'15&quot; N., 68°26'33&quot; O.) (Saint-Narcisse)",
+        "en": "Lac Ferré - (48°13'15\" N., 68°26'33\" O.) (Saint-Narcisse)"
+      },
+      "coordinates": {
+        "lat": 48.22083,
+        "lng": -68.4425
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=290",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=290"
+      }
+    },
+    {
+      "id_endro": 294,
+      "name": {
+        "fr": "Lac Grand lac Malobès - (48°16'10&quot; N., 68°51'36&quot; O.) (Saint-Fabien)",
+        "en": "Lac Grand lac Malobès - (48°16'10\" N., 68°51'36\" O.) (Saint-Fabien)"
+      },
+      "coordinates": {
+        "lat": 48.26944,
+        "lng": -68.86
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=294",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=294"
+      }
+    },
+    {
+      "id_endro": 319,
+      "name": {
+        "fr": "Lac Grand Lac Squatec (47°40'23&quot; N., 68°34'24&quot; O.)",
+        "en": "Lac Grand Lac Squatec (47°40'23\" N., 68°34'24\" O.)"
+      },
+      "coordinates": {
+        "lat": 47.67306,
+        "lng": -68.57333
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "60 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": "La pêche est permise durant la période du 20 décembre au 31 mars pour les autres espèces que le touladi, moulac et lacmou dans la partie de ce plan d'eau ayant une profondeur maximale de 3 mètres."
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "60 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": "Fishing for species other than lake trout and splake trout, is permitted from December 20 to March 31, in the part of this lake no deeper than 3 meters of water."
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=319",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=319"
+      }
+    },
+    {
+      "id_endro": 320,
+      "name": {
+        "fr": "Lac Humqui - (48°18'05&quot; N., 67°34'16&quot; O.)",
+        "en": "Lac Humqui - (48°18'05\" N., 67°34'16\" O.)"
+      },
+      "coordinates": {
+        "lat": 48.30139,
+        "lng": -67.57111
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Saumon atlantique",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "60 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": "La pêche est permise durant la période du 20 décembre au 31 mars pour les autres espèces que le touladi, moulac et lacmou dans la partie de ce plan d'eau ayant une profondeur maximale de 3 mètres."
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Atlantic salmon",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "60 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": "Fishing for species other than lake trout and splake trout, is permitted from December 20 to March 31, in the part of this lake no deeper than 3 meters of water."
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=320",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=320"
+      }
+    },
+    {
+      "id_endro": 322,
+      "name": {
+        "fr": "Lac Jerry - (47°25'44&quot; N., 68°47'17&quot; O.)",
+        "en": "Lac Jerry - (47°25'44\" N., 68°47'17\" O.)"
+      },
+      "coordinates": {
+        "lat": 47.42889,
+        "lng": -68.78806
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "60 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": "La pêche est permise durant la période du 20 décembre au 31 mars pour les autres espèces que le touladi, moulac et lacmou dans la partie de ce plan d'eau ayant une profondeur maximale de 3 mètres."
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "60 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": "Fishing for species other than lake trout and splake trout, is permitted from December 20 to March 31, in the part of this lake no deeper than 3 meters of water."
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=322",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=322"
+      }
+    },
+    {
+      "id_endro": 293,
+      "name": {
+        "fr": "Lac Lavoie - (47°32'56&quot; N., 68°46'22&quot; O.) (Témiscouata-sur-le-Lac)",
+        "en": "Lac Lavoie - (47°32'56\" N., 68°46'22\" O.) (Témiscouata-sur-le-Lac)"
+      },
+      "coordinates": {
+        "lat": 47.54889,
+        "lng": -68.77278
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=293",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=293"
+      }
+    },
+    {
+      "id_endro": 317,
+      "name": {
+        "fr": "Lac Le Beau Lac (47°21'42&quot; N., 69°03'05&quot; O.)",
+        "en": "Lac Le Beau Lac (47°21'42\" N., 69°03'05\" O.)"
+      },
+      "coordinates": {
+        "lat": 47.36167,
+        "lng": -69.05139
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "60 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": "La pêche est permise durant la période du 20 décembre au 31 mars pour les autres espèces que le touladi, moulac et lacmou dans la partie de ce plan d'eau ayant une profondeur maximale de 3 mètres."
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "60 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": "Fishing for species other than lake trout and splake trout, is permitted from December 20 to March 31, in the part of this lake no deeper than 3 meters of water."
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=317",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=317"
+      }
+    },
+    {
+      "id_endro": 298,
+      "name": {
+        "fr": "Lac Martin - (47°34'13&quot; N., 68°42'58&quot; O.)",
+        "en": "Lac Martin - (47°34'13\" N., 68°42'58\" O.)"
+      },
+      "coordinates": {
+        "lat": 47.57028,
+        "lng": -68.71611
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=298",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=298"
+      }
+    },
+    {
+      "id_endro": 300,
+      "name": {
+        "fr": "Lac Morin - (47°37'46&quot; N., 69°31'52&quot; O.)",
+        "en": "Lac Morin - (47°37'46\" N., 69°31'52\" O.)"
+      },
+      "coordinates": {
+        "lat": 47.62944,
+        "lng": -69.53111
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=300",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=300"
+      }
+    },
+    {
+      "id_endro": 291,
+      "name": {
+        "fr": "Lac Petit lac Ferré - (48°14'22&quot; N., 68°24'56&quot; O.) (Saint-Narcisse)",
+        "en": "Lac Petit lac Ferré - (48°14'22\" N., 68°24'56\" O.) (Saint-Narcisse)"
+      },
+      "coordinates": {
+        "lat": 48.23944,
+        "lng": -68.41556
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=291",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=291"
+      }
+    },
+    {
+      "id_endro": 12241,
+      "name": {
+        "fr": "Lac Petit lac Saint-Mathieu - (48°10'51&quot; N., 68°58'53&quot; O.) (Saint-Mathieu-de-Rioux)",
+        "en": "Lac Petit lac Saint-Mathieu - (48°10'51\" N., 68°58'53\" O.) (Saint-Mathieu-de-Rioux)"
+      },
+      "coordinates": {
+        "lat": 48.18083,
+        "lng": -68.98139
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=12241",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=12241"
+      }
+    },
+    {
+      "id_endro": 305,
+      "name": {
+        "fr": "Lac Petit lac Squatec (47°51'53&quot;  N., 68°41'59&quot;  O.)",
+        "en": "Lac Petit lac Squatec (47°51'53\"  N., 68°41'59\"  O.)"
+      },
+      "coordinates": {
+        "lat": 47.86472,
+        "lng": -68.69972
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=305",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=305"
+      }
+    },
+    {
+      "id_endro": 323,
+      "name": {
+        "fr": "Lac Pohénégamook (47°29'26&quot; N., 69°16'19&quot; O.)",
+        "en": "Lac Pohénégamook (47°29'26\" N., 69°16'19\" O.)"
+      },
+      "coordinates": {
+        "lat": 47.49056,
+        "lng": -69.27194
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Ouananiche",
+            "limit": "3",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "60 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Ouananiche",
+            "limit": "3",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": "La pêche est permise durant la période du 20 décembre au 31 mars pour les autres espèces que le touladi, moulac et lacmou dans la partie de ce plan d'eau ayant une profondeur maximale de 3 mètres."
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": "La pêche est permise durant la période du 20 décembre au 31 mars pour les autres espèces que le touladi, moulac et lacmou dans la partie de ce plan d'eau ayant une profondeur maximale de 3 mètres."
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "60 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Landlocked salmon",
+            "limit": "3",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Landlocked salmon",
+            "limit": "3",
+            "length": null,
+            "gear": "Angling only",
+            "notes": "Fishing for species other than lake trout and splake trout, is permitted from December 20 to March 31, in the part of this lake no deeper than 3 meters of water."
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": "Fishing for species other than lake trout and splake trout, is permitted from December 20 to March 31, in the part of this lake no deeper than 3 meters of water."
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=323",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=323"
+      }
+    },
+    {
+      "id_endro": 302,
+      "name": {
+        "fr": "Lac Saint-François - (47°45'00&quot; N., 69°18'30&quot; O.)",
+        "en": "Lac Saint-François - (47°45'00\" N., 69°18'30\" O.)"
+      },
+      "coordinates": {
+        "lat": 47.75,
+        "lng": -69.30833
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=302",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=302"
+      }
+    },
+    {
+      "id_endro": 303,
+      "name": {
+        "fr": "Lac Saint-Jean - (47°59'10&quot; N., 68°50'21&quot; O.)",
+        "en": "Lac Saint-Jean - (47°59'10\" N., 68°50'21\" O.)"
+      },
+      "coordinates": {
+        "lat": 47.98611,
+        "lng": -68.83917
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=303",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=303"
+      }
+    },
+    {
+      "id_endro": 304,
+      "name": {
+        "fr": "Lac Saint-Mathieu - (48°09'15&quot; N., 69°01'30&quot; O.) (Saint-Mathieu-de-Rioux)",
+        "en": "Lac Saint-Mathieu - (48°09'15\" N., 69°01'30\" O.) (Saint-Mathieu-de-Rioux)"
+      },
+      "coordinates": {
+        "lat": 48.15417,
+        "lng": -69.025
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=304",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=304"
+      }
+    },
+    {
+      "id_endro": 324,
+      "name": {
+        "fr": "Lac Témiscouata (47°40'56&quot; N., 68°51'21&quot; O.)",
+        "en": "Lac Témiscouata (47°40'56\" N., 68°51'21\" O.)"
+      },
+      "coordinates": {
+        "lat": 47.68222,
+        "lng": -68.85583
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "60 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": "La pêche est permise durant la période du 20 décembre au 31 mars pour les autres espèces que le touladi, moulac et lacmou dans la partie de ce plan d'eau ayant une profondeur maximale de 3 mètres."
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "60 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": "Fishing for species other than lake trout and splake trout, is permitted from December 20 to March 31, in the part of this lake no deeper than 3 meters of water."
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=324",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=324"
+      }
+    },
+    {
+      "id_endro": 2502,
+      "name": {
+        "fr": "Parc National du Lac-Témiscouata -",
+        "en": "Parc National du Lac-Témiscouata -"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=2502",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=2502"
+      }
+    },
+    {
+      "id_endro": 2326,
+      "name": {
+        "fr": "Réserve Faunique de Duchénier",
+        "en": "Réserve Faunique de Duchénier"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "même que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=2326",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=2326"
+      }
+    },
+    {
+      "id_endro": 2340,
+      "name": {
+        "fr": "Réserve Faunique de Rimouski",
+        "en": "Réserve Faunique de Rimouski"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "7 en tout dont au plus 2 ombles chevaliers",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "7 in all with at most 2 arctic char",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=2340",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=2340"
+      }
+    },
+    {
+      "id_endro": 338,
+      "name": {
+        "fr": "Rivière Branche Nord (Humqui Nord)",
+        "en": "Rivière Branche Nord (Humqui Nord)"
+      },
+      "coordinates": {
+        "lat": 48.32056,
+        "lng": -67.55944
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Saumon atlantique",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Bar rayé",
+            "limit": "3",
+            "length": "50 cm à 65 cm inclusivement",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "5 en tout dont au plus 2 ombles chevaliers",
+            "length": "moins de 30 cm",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Atlantic salmon",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "5 in all with at most 2 arctic char",
+            "length": "less than 30 cm",
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Striped bass",
+            "limit": "3",
+            "length": "50 cm to 65 cm inclusively",
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=338",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=338"
+      }
+    },
+    {
+      "id_endro": 386,
+      "name": {
+        "fr": "Rivière Chaude",
+        "en": "Rivière Chaude"
+      },
+      "coordinates": {
+        "lat": 47.30139,
+        "lng": -69.90278
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=386",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=386"
+      }
+    },
+    {
+      "id_endro": 372,
+      "name": {
+        "fr": "Rivière du Moulin",
+        "en": "Rivière du Moulin"
+      },
+      "coordinates": {
+        "lat": 48.06417,
+        "lng": -67.10528
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "5 en tout dont au plus 2 ombles chevaliers",
+            "length": "moins de 30 cm",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Saumon atlantique",
+            "limit": "0 gardé et au plus 2 pris et remis à l'eau",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Atlantic salmon",
+            "limit": "0 retained and at most 2 caught and released",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "5 in all with at most 2 arctic char",
+            "length": "less than 30 cm",
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=372",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=372"
+      }
+    },
+    {
+      "id_endro": 332,
+      "name": {
+        "fr": "Rivière du Sud-Ouest",
+        "en": "Rivière du Sud-Ouest"
+      },
+      "coordinates": {
+        "lat": 48.35389,
+        "lng": -68.75917
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=332",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=332"
+      }
+    },
+    {
+      "id_endro": 335,
+      "name": {
+        "fr": "Rivière Humqui",
+        "en": "Rivière Humqui"
+      },
+      "coordinates": {
+        "lat": 48.4625,
+        "lng": -67.42944
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Bar rayé",
+            "limit": "3",
+            "length": "50 cm à 65 cm inclusivement",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "5 en tout dont au plus 2 ombles chevaliers",
+            "length": "moins de 30 cm",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Saumon atlantique",
+            "limit": "0 gardé et au plus 2 pris et remis à l'eau",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Atlantic salmon",
+            "limit": "0 retained and at most 2 caught and released",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "5 in all with at most 2 arctic char",
+            "length": "less than 30 cm",
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Striped bass",
+            "limit": "3",
+            "length": "50 cm to 65 cm inclusively",
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=335",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=335"
+      }
+    },
+    {
+      "id_endro": 342,
+      "name": {
+        "fr": "Rivière Kedgwick",
+        "en": "Rivière Kedgwick"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 30 septembre 2026",
+            "species": "Bar rayé",
+            "limit": "3",
+            "length": "50 cm à 65 cm inclusivement",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 30 septembre 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "0 gardé",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 30 septembre 2026",
+            "species": "Saumon atlantique",
+            "limit": "0 gardé et au plus 2 pris et remis à l'eau",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 30 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 30th, 2026",
+            "species": "Atlantic salmon",
+            "limit": "0 retained and at most 2 caught and released",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 30th, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "0 retained",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 30th, 2026",
+            "species": "Striped bass",
+            "limit": "3",
+            "length": "50 cm to 65 cm inclusively",
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 30th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=342",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=342"
+      }
+    },
+    {
+      "id_endro": 381,
+      "name": {
+        "fr": "Rivière La Grande Rivière",
+        "en": "Rivière La Grande Rivière"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Bar rayé",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Saumon atlantique",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Atlantic salmon",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Striped bass",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=381",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=381"
+      }
+    },
+    {
+      "id_endro": 353,
+      "name": {
+        "fr": "Rivière Milnikek",
+        "en": "Rivière Milnikek"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "5 en tout dont au plus 2 ombles chevaliers",
+            "length": "moins de 30 cm",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Saumon atlantique",
+            "limit": "0 gardé et au plus 2 pris et remis à l'eau",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Atlantic salmon",
+            "limit": "0 retained and at most 2 caught and released",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "5 in all with at most 2 arctic char",
+            "length": "less than 30 cm",
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=353",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=353"
+      }
+    },
+    {
+      "id_endro": 330,
+      "name": {
+        "fr": "Rivière Mistigougèche",
+        "en": "Rivière Mistigougèche"
+      },
+      "coordinates": {
+        "lat": 48.38444,
+        "lng": -68.04472
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 juin 2026 au 15 septembre 2026",
+            "species": "Bar rayé",
+            "limit": "3",
+            "length": "50 cm à 65 cm inclusivement",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 15 septembre 2026",
+            "species": "Saumon atlantique",
+            "limit": "0 gardé et au plus 2 pris et remis à l'eau",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 15 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to September 15th, 2026",
+            "species": "Atlantic salmon",
+            "limit": "0 retained and at most 2 caught and released",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to September 15th, 2026",
+            "species": "Striped bass",
+            "limit": "3",
+            "length": "50 cm to 65 cm inclusively",
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to September 15th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=330",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=330"
+      }
+    },
+    {
+      "id_endro": 364,
+      "name": {
+        "fr": "Rivière Mitis",
+        "en": "Rivière Mitis"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 juin 2026 au 30 septembre 2026",
+            "species": "Bar rayé",
+            "limit": "3",
+            "length": "50 cm à 65 cm inclusivement",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 30 septembre 2026",
+            "species": "Saumon atlantique",
+            "limit": "0 gardé et au plus 2 pris et remis à l'eau",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 30 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From June 15th, 2026 to September 30th, 2026",
+            "species": "Atlantic salmon",
+            "limit": "0 retained and at most 2 caught and released",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to September 30th, 2026",
+            "species": "Striped bass",
+            "limit": "3",
+            "length": "50 cm to 65 cm inclusively",
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to September 30th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=364",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=364"
+      }
+    },
+    {
+      "id_endro": 377,
+      "name": {
+        "fr": "Rivière Ouelle",
+        "en": "Rivière Ouelle"
+      },
+      "coordinates": {
+        "lat": 47.4325,
+        "lng": -70.01639
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Bar rayé",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Saumon atlantique",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": "Voir également la zone 3"
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Atlantic salmon",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Striped bass",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": "See also zone 3"
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=377",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=377"
+      }
+    },
+    {
+      "id_endro": 390,
+      "name": {
+        "fr": "Rivière Patapédia",
+        "en": "Rivière Patapédia"
+      },
+      "coordinates": {
+        "lat": 47.845,
+        "lng": -67.37278
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er juin 2026 au 31 août 2026",
+            "species": "Bar rayé",
+            "limit": "3",
+            "length": "50 cm à 65 cm inclusivement",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 31 août 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "0 gardé",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 31 août 2026",
+            "species": "Saumon atlantique",
+            "limit": "0 gardé et au plus 2 pris et remis à l'eau",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 31 août 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 31 août 2026",
+            "species": "Bar rayé",
+            "limit": "3",
+            "length": "50 cm à 65 cm inclusivement",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 31 août 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "0 gardé",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 31 août 2026",
+            "species": "Saumon atlantique",
+            "limit": "0 gardé et au plus 2 pris et remis à l'eau",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 31 août 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From June 1st, 2026 to August 31st, 2026",
+            "species": "Atlantic salmon",
+            "limit": "0 retained and at most 2 caught and released",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 31st, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "0 retained",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 31st, 2026",
+            "species": "Striped bass",
+            "limit": "3",
+            "length": "50 cm to 65 cm inclusively",
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 31st, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 31st, 2026",
+            "species": "Atlantic salmon",
+            "limit": "0 retained and at most 2 caught and released",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 31st, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "0 retained",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 31st, 2026",
+            "species": "Striped bass",
+            "limit": "3",
+            "length": "50 cm to 65 cm inclusively",
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 31st, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=390",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=390"
+      }
+    },
+    {
+      "id_endro": 394,
+      "name": {
+        "fr": "Rivière Rimouski",
+        "en": "Rivière Rimouski"
+      },
+      "coordinates": {
+        "lat": 48.415,
+        "lng": -68.55583
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 juin 2026 au 30 septembre 2026",
+            "species": "Bar rayé",
+            "limit": "3",
+            "length": "50 cm à 65 cm inclusivement",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 30 septembre 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "0 gardé",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 30 septembre 2026",
+            "species": "Saumon atlantique",
+            "limit": "0 gardé et au plus 2 pris et remis à l'eau",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 30 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 30 septembre 2026",
+            "species": "Bar rayé",
+            "limit": "3",
+            "length": "50 cm à 65 cm inclusivement",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 30 septembre 2026",
+            "species": "Saumon atlantique",
+            "limit": "0 gardé et au plus 2 pris et remis à l'eau",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 30 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 30 septembre 2026",
+            "species": "Bar rayé",
+            "limit": "3",
+            "length": "50 cm à 65 cm inclusivement",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 30 septembre 2026",
+            "species": "Saumon atlantique",
+            "limit": "0 gardé et au plus 2 pris et remis à l'eau",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 30 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From June 15th, 2026 to September 30th, 2026",
+            "species": "Atlantic salmon",
+            "limit": "0 retained and at most 2 caught and released",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to September 30th, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "0 retained",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to September 30th, 2026",
+            "species": "Striped bass",
+            "limit": "3",
+            "length": "50 cm to 65 cm inclusively",
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to September 30th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to September 30th, 2026",
+            "species": "Atlantic salmon",
+            "limit": "0 retained and at most 2 caught and released",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to September 30th, 2026",
+            "species": "Striped bass",
+            "limit": "3",
+            "length": "50 cm to 65 cm inclusively",
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 30th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to September 30th, 2026",
+            "species": "Atlantic salmon",
+            "limit": "0 retained and at most 2 caught and released",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to September 30th, 2026",
+            "species": "Striped bass",
+            "limit": "3",
+            "length": "50 cm to 65 cm inclusively",
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to September 30th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=394",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=394"
+      }
+    },
+    {
+      "id_endro": 399,
+      "name": {
+        "fr": "Rivière Ristigouche",
+        "en": "Rivière Ristigouche"
+      },
+      "coordinates": {
+        "lat": 47.97194,
+        "lng": -66.94056
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 avril 2026 au 30 septembre 2026",
+            "species": "Saumon atlantique",
+            "limit": "0 gardé et au plus 2 pris et remis à l'eau",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": "Voir également la zone 1."
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "0 gardé",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": "Voir également la zone 1."
+          },
+          {
+            "period": "Du 15 mai 2026 au 30 septembre 2026",
+            "species": "Bar rayé",
+            "limit": "3",
+            "length": "50 cm à 65 cm inclusivement",
+            "gear": "Pêche à la mouche seulement",
+            "notes": "Voir également la zone 1."
+          },
+          {
+            "period": "Du 15 avril 2026 au 30 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": "Voir également la zone 1."
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 15th, 2026 to September 30th, 2026",
+            "species": "Atlantic salmon",
+            "limit": "0 retained and at most 2 caught and released",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": "See also zone 1."
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "0 retained",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": "See also zone 1."
+          },
+          {
+            "period": "From May 15th, 2026 to September 30th, 2026",
+            "species": "Striped bass",
+            "limit": "3",
+            "length": "50 cm to 65 cm inclusively",
+            "gear": "Fly fishing only",
+            "notes": "See also zone 1."
+          },
+          {
+            "period": "From April 15th, 2026 to September 30th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": "See also zone 1."
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=399",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=399"
+      }
+    },
+    {
+      "id_endro": 388,
+      "name": {
+        "fr": "Rivière Sainte-Anne",
+        "en": "Rivière Sainte-Anne"
+      },
+      "coordinates": {
+        "lat": 47.25833,
+        "lng": -69.88889
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=388",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=388"
+      }
+    },
+    {
+      "id_endro": 10420,
+      "name": {
+        "fr": "Rivière Touladi - entre le ruisseau à Mac (47°40'46&quot; N., 68°47'18&quot; O.) et le lac Témiscouata (47°40'18&quot; N., 68°48'01&quot; O.)",
+        "en": "Rivière Touladi - entre le ruisseau à Mac (47°40'46\" N., 68°47'18\" O.) et le lac Témiscouata (47°40'18\" N., 68°48'01\" O.)"
+      },
+      "coordinates": {
+        "lat": 47.67944,
+        "lng": -68.78833
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Grand corégone",
+            "limit": "150 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 octobre 2026 au 28 octobre 2026",
+            "species": "Grand corégone",
+            "limit": "50",
+            "length": null,
+            "gear": "Pêche à l'épuisette et / ou au carrelet seulement.",
+            "notes": "La limite de possession est de 150"
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Lake whitefish",
+            "limit": "150 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From October 15th, 2026 to October 28th, 2026",
+            "species": "Lake whitefish",
+            "limit": "50",
+            "length": null,
+            "gear": "Fishing with dip nets and / or plaice fishing only.",
+            "notes": "The possession limit is 150."
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=10420",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=10420"
+      }
+    },
+    {
+      "id_endro": 347,
+      "name": {
+        "fr": "Ruisseau Quigley",
+        "en": "Ruisseau Quigley"
+      },
+      "coordinates": {
+        "lat": 48.02694,
+        "lng": -67.98611
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=347",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=347"
+      }
+    },
+    {
+      "id_endro": 2357,
+      "name": {
+        "fr": "Zec Chapais",
+        "en": "Zec Chapais"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 10 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 10th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=2357",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=2357"
+      }
+    },
+    {
+      "id_endro": 2346,
+      "name": {
+        "fr": "Zec du Bas-Saint-Laurent",
+        "en": "Zec du Bas-Saint-Laurent"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "7 en tout dont au plus 2 ombles chevaliers",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "2 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "7 in all with at most 2 arctic char",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "2 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=2346",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=2346"
+      }
+    },
+    {
+      "id_endro": 2397,
+      "name": {
+        "fr": "Zec Owen",
+        "en": "Zec Owen"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Ouananiche",
+            "limit": "même que la zone",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "2 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "2 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Landlocked salmon",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=2397",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=2397"
+      }
+    },
+    {
+      "id_endro": 3045,
+      "name": {
+        "fr": "Grand lac Touladi",
+        "en": "Grand lac Touladi"
+      },
+      "coordinates": {
+        "lat": 47.73056,
+        "lng": -68.76028
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Anguille d'Amérique",
+            "limit": "aucune limite",
+            "length": null,
+            "gear": "Pêche à la ligne, à l'arc, à l'arbalète et au harpon",
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Saumon atlantique",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "5 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 15 septembre 2026",
+            "species": "Bar rayé",
+            "limit": "3",
+            "length": "50 cm à 65 cm inclusivement",
+            "gear": "Pêche à la ligne avec hameçon ou combinaison d'hameçons, sans appât naturel, dont chaque tige ne comporte qu'un seul crochet, pour un maximum de 3 crochets sur une ligne",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juillet 2026 au 31 mars 2027",
+            "species": "Éperlan arc-en-ciel",
+            "limit": "120",
+            "length": null,
+            "gear": "La pêche à l'épuisette et au carrelet est interdite dans ces eaux",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "American eel",
+            "limit": "no limit",
+            "length": null,
+            "gear": "Angling, bow fishing, crossbow fishing and spear fishing",
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Atlantic salmon",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "5 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 15th, 2026",
+            "species": "Striped bass",
+            "limit": "3",
+            "length": "50 cm to 65 cm inclusively",
+            "gear": "Angling only with a single hook, without natural bait, for a maximum of 3 hooks on the line",
+            "notes": null
+          },
+          {
+            "period": "From July 1st, 2026 to March 31st, 2027",
+            "species": "Rainbow smelt",
+            "limit": "120",
+            "length": null,
+            "gear": "Fishing with dip nets and plaice is prohibited in these waters",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=3045",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=3045"
+      }
+    },
+    {
+      "id_endro": 3046,
+      "name": {
+        "fr": "Petit lac Touladi",
+        "en": "Petit lac Touladi"
+      },
+      "coordinates": {
+        "lat": 47.785,
+        "lng": -68.75472
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=3046",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=3046"
+      }
+    },
+    {
+      "id_endro": 339,
+      "name": {
+        "fr": "entre sa confluence avec la rivière Humqui",
+        "en": "between its confluence with the rivière Humqui"
+      },
+      "coordinates": {
+        "lat": 48.32056,
+        "lng": -67.55944
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Lake trout and splake trout",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=339",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=339"
+      }
+    },
+    {
+      "id_endro": 374,
+      "name": {
+        "fr": "(Millstream) entre sa confluence avec la rivière Matapédia",
+        "en": "(Millstream) between its confluence with the rivière Matapédia"
+      },
+      "coordinates": {
+        "lat": 48.06417,
+        "lng": -67.10528
+      },
+      "rules": {
+        "fr": [],
+        "en": []
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=374",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=374"
+      }
+    },
+    {
+      "id_endro": 336,
+      "name": {
+        "fr": "b) entre l'embouchure de la rivière Branche Nord (Humqui Nord)",
+        "en": "b) between and the mouth of rivière Branche Nord (Humqui Nord)"
+      },
+      "coordinates": {
+        "lat": 48.32056,
+        "lng": -67.55694
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Bar rayé",
+            "limit": "3",
+            "length": "50 cm à 65 cm inclusivement",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "5 en tout dont au plus 2 ombles chevaliers",
+            "length": "moins de 30 cm",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026",
+            "species": "Saumon atlantique",
+            "limit": "0 gardé et au plus 2 pris et remis à l'eau",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Atlantic salmon",
+            "limit": "0 retained and at most 2 caught and released",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "5 in all with at most 2 arctic char",
+            "length": "less than 30 cm",
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026",
+            "species": "Striped bass",
+            "limit": "3",
+            "length": "50 cm to 65 cm inclusively",
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=336",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=336"
+      }
+    },
+    {
+      "id_endro": 344,
+      "name": {
+        "fr": "entre la frontière Québec - Nouveau-Brunswick",
+        "en": "between the Québec-New Brunswick border (48 ° 00'01 \"N., 67 ° 56'45\" W.) and Grand lac Kedgwick"
+      },
+      "coordinates": {
+        "lat": 48.00028,
+        "lng": -67.94583
+      },
+      "rules": {
+        "fr": [],
+        "en": []
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=344",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=344"
+      }
+    },
+    {
+      "id_endro": 383,
+      "name": {
+        "fr": "a) entre sa confluence avec la rivière Ouelle",
+        "en": "a) between its confluence with the rivière Ouelle"
+      },
+      "coordinates": {
+        "lat": 47.35056,
+        "lng": -69.92694
+      },
+      "rules": {
+        "fr": [],
+        "en": []
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=383",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=383"
+      }
+    },
+    {
+      "id_endro": 384,
+      "name": {
+        "fr": "b) entre sa confluence avec la rivière Chaude",
+        "en": "b) between its confluence with the rivière Chaude river"
+      },
+      "coordinates": {
+        "lat": 47.30139,
+        "lng": -69.90278
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Bar rayé",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Saumon atlantique",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 10 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Atlantic salmon",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Striped bass",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 10th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=384",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=384"
+      }
+    },
+    {
+      "id_endro": 360,
+      "name": {
+        "fr": "a) entre sa confluence avec la rivière Matapédia",
+        "en": "a) between its confluence with the Rivière Matapédia"
+      },
+      "coordinates": {
+        "lat": 48.13722,
+        "lng": -67.15306
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 juin 2026 au 30 novembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 30 novembre 2026",
+            "species": "Maskinongé et maskinongé tigré",
+            "limit": "2 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 13 février 2027 au 14 février 2027",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 13 février 2027 au 14 février 2027",
+            "species": "Maskinongé et maskinongé tigré",
+            "limit": "2 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 30 novembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 13 février 2027 au 14 février 2027 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From June 15th, 2026 to November 30th, 2026",
+            "species": "Muskellunge and tiger muskellunge",
+            "limit": "2 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to November 30th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From February 13th, 2027 to February 14th, 2027",
+            "species": "Muskellunge and tiger muskellunge",
+            "limit": "2 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From February 13th, 2027 to February 14th, 2027",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to November 30th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From February 13th, 2027 to February 14th, 2027- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=360",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=360"
+      }
+    },
+    {
+      "id_endro": 362,
+      "name": {
+        "fr": "b) entre le côté en aval du pont du CN",
+        "en": "b) between the downstream side of the CN railway bridge"
+      },
+      "coordinates": {
+        "lat": 48.1375,
+        "lng": -67.15333
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 juin 2026 au 30 novembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 30 novembre 2026",
+            "species": "Maskinongé et maskinongé tigré",
+            "limit": "2 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 13 février 2027 au 14 février 2027",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 13 février 2027 au 14 février 2027",
+            "species": "Maskinongé et maskinongé tigré",
+            "limit": "2 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 30 novembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 13 février 2027 au 14 février 2027 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From June 15th, 2026 to November 30th, 2026",
+            "species": "Muskellunge and tiger muskellunge",
+            "limit": "2 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to November 30th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From February 13th, 2027 to February 14th, 2027",
+            "species": "Muskellunge and tiger muskellunge",
+            "limit": "2 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From February 13th, 2027 to February 14th, 2027",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to November 30th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From February 13th, 2027 to February 14th, 2027- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=362",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=362"
+      }
+    },
+    {
+      "id_endro": 3259,
+      "name": {
+        "fr": "entre sa confluence avec la rivière Mitis",
+        "en": "between its confluence with the Mitis river"
+      },
+      "coordinates": {
+        "lat": 48.44889,
+        "lng": -68.00278
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "8 en tout",
+            "length": "Doré jaune: 32 cm à 47 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 25 mai 2026 au 20 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "8 in all",
+            "length": "Walleye: 32 cm to 47 cm inclusively Sauger: No length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 25th, 2026 to September 20th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=3259",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=3259"
+      }
+    },
+    {
+      "id_endro": 366,
+      "name": {
+        "fr": "entre le côté en aval du pont de la route 132 à Sainte-Angèle-de-Mérici",
+        "en": "between the downstream side of the Highway 132 bridge at Sainte-Angèle-de-Mérici"
+      },
+      "coordinates": {
+        "lat": 48.54639,
+        "lng": -68.13139
+      },
+      "rules": {
+        "fr": [],
+        "en": []
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=366",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=366"
+      }
+    },
+    {
+      "id_endro": 391,
+      "name": {
+        "fr": "entre la frontière Québec - Nouveau-Brunswick",
+        "en": "between the Québec-New Brunswick border"
+      },
+      "coordinates": {
+        "lat": 48,
+        "lng": -67.59778
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er juin 2026 au 31 août 2026",
+            "species": "Bar rayé",
+            "limit": "3",
+            "length": "50 cm à 65 cm inclusivement",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 31 août 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "0 gardé",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 31 août 2026",
+            "species": "Saumon atlantique",
+            "limit": "0 gardé et au plus 2 pris et remis à l'eau",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 31 août 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From June 1st, 2026 to August 31st, 2026",
+            "species": "Atlantic salmon",
+            "limit": "0 retained and at most 2 caught and released",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 31st, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "0 retained",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 31st, 2026",
+            "species": "Striped bass",
+            "limit": "3",
+            "length": "50 cm to 65 cm inclusively",
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 31st, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=391",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=391"
+      }
+    },
+    {
+      "id_endro": 392,
+      "name": {
+        "fr": "entre sa confluence avec la rivière Patapédia-Est",
+        "en": "between the mouth of the rivière Patapédia-Est"
+      },
+      "coordinates": {
+        "lat": 48.07806,
+        "lng": -67.63472
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er juin 2026 au 31 août 2026",
+            "species": "Bar rayé",
+            "limit": "3",
+            "length": "50 cm à 65 cm inclusivement",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 31 août 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "0 gardé",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 31 août 2026",
+            "species": "Saumon atlantique",
+            "limit": "0 gardé et au plus 2 pris et remis à l'eau",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 31 août 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From June 1st, 2026 to August 31st, 2026",
+            "species": "Atlantic salmon",
+            "limit": "0 retained and at most 2 caught and released",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 31st, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "0 retained",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 31st, 2026",
+            "species": "Striped bass",
+            "limit": "3",
+            "length": "50 cm to 65 cm inclusively",
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 31st, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=392",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=392"
+      }
+    },
+    {
+      "id_endro": 395,
+      "name": {
+        "fr": "b) entre une droite perpendiculaire au courant située à 250 m en aval du barrage de la Pulpe",
+        "en": "b) between a straight line running perpendicular to the current 250 m downstream from the Pulpe dam"
+      },
+      "coordinates": {
+        "lat": 48.41194,
+        "lng": -68.55472
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 juin 2026 au 30 septembre 2026",
+            "species": "Bar rayé",
+            "limit": "3",
+            "length": "50 cm à 65 cm inclusivement",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 30 septembre 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "0 gardé",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 30 septembre 2026",
+            "species": "Saumon atlantique",
+            "limit": "0 gardé et au plus 2 pris et remis à l'eau",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 30 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From June 15th, 2026 to September 30th, 2026",
+            "species": "Atlantic salmon",
+            "limit": "0 retained and at most 2 caught and released",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to September 30th, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "0 retained",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to September 30th, 2026",
+            "species": "Striped bass",
+            "limit": "3",
+            "length": "50 cm to 65 cm inclusively",
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to September 30th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=395",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=395"
+      }
+    },
+    {
+      "id_endro": 396,
+      "name": {
+        "fr": "c) entre le barrage de la Pulpe",
+        "en": "c) between the Pulpe dam"
+      },
+      "coordinates": {
+        "lat": 48.41028,
+        "lng": -68.5525
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Toutes les espèces",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "All species",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=396",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=396"
+      }
+    },
+    {
+      "id_endro": 397,
+      "name": {
+        "fr": "d) entre la ligne de division nord du canton Macpès",
+        "en": "d) between the northern boundary line of Macpès township"
+      },
+      "coordinates": {
+        "lat": 48.34694,
+        "lng": -68.53806
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 juin 2026 au 30 septembre 2026",
+            "species": "Bar rayé",
+            "limit": "3",
+            "length": "50 cm à 65 cm inclusivement",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 30 septembre 2026",
+            "species": "Saumon atlantique",
+            "limit": "0 gardé et au plus 2 pris et remis à l'eau",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 30 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From June 15th, 2026 to September 30th, 2026",
+            "species": "Atlantic salmon",
+            "limit": "0 retained and at most 2 caught and released",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to September 30th, 2026",
+            "species": "Striped bass",
+            "limit": "3",
+            "length": "50 cm to 65 cm inclusively",
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 30th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=397",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=397"
+      }
+    },
+    {
+      "id_endro": 308,
+      "name": {
+        "fr": "Plan d’eau réglementé #308 (voir la source)",
+        "en": "Regulated waterbody #308 (see source)"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Lake trout and splake trout",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=308",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=308"
+      }
+    },
+    {
+      "id_endro": 315,
+      "name": {
+        "fr": "Plan d’eau réglementé #315 (voir la source)",
+        "en": "Regulated waterbody #315 (see source)"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [],
+        "en": []
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=315",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=315"
+      }
+    },
+    {
+      "id_endro": 286,
+      "name": {
+        "fr": "Plan d’eau réglementé #286 (voir la source)",
+        "en": "Regulated waterbody #286 (see source)"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Éperlan arc-en-ciel",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 1er août 2026 au 31 août 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "55 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "même que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Rainbow smelt",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From August 1st, 2026 to August 31st, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "55 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=286",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=286"
+      }
+    },
+    {
+      "id_endro": 321,
+      "name": {
+        "fr": "Plan d’eau réglementé #321 (voir la source)",
+        "en": "Regulated waterbody #321 (see source)"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [],
+        "en": []
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=321",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=321"
+      }
+    },
+    {
+      "id_endro": 297,
+      "name": {
+        "fr": "Plan d’eau réglementé #297 (voir la source)",
+        "en": "Regulated waterbody #297 (see source)"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 22 avril 2026",
+            "species": "Éperlan arc-en-ciel",
+            "limit": "120",
+            "length": null,
+            "gear": "Pêche à l'épuisette et / ou au carrelet seulement.",
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 14 mai 2026",
+            "species": "Éperlan arc-en-ciel",
+            "limit": "120",
+            "length": null,
+            "gear": "Pêche à la ligne, à l'arc, à l'arbalète, au harpon en nageant, à l'épuisette et au carrelet",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 30 novembre 2026",
+            "species": "Éperlan arc-en-ciel",
+            "limit": "120",
+            "length": null,
+            "gear": "Pêche à la ligne, à l'arc, à l'arbalète et au harpon en nageant",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to April 22nd, 2026",
+            "species": "Rainbow smelt",
+            "limit": "120",
+            "length": null,
+            "gear": "Fishing with dip nets and / or plaice fishing only.",
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Lake trout and splake trout",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to May 14th, 2026",
+            "species": "Rainbow smelt",
+            "limit": "120",
+            "length": null,
+            "gear": "Angling, bow fishing, crossbow fishing, spear fishing while swimming, landing net fishing and plaice fishing",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to November 30th, 2026",
+            "species": "Rainbow smelt",
+            "limit": "120",
+            "length": null,
+            "gear": "Angling, bow fishing, crossbow fishing and spear fishing while swimming",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=297",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=297"
+      }
+    },
+    {
+      "id_endro": 299,
+      "name": {
+        "fr": "Plan d’eau réglementé #299 (voir la source)",
+        "en": "Regulated waterbody #299 (see source)"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Lake trout and splake trout",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Lake trout and splake trout",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=299",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=299"
+      }
+    },
+    {
+      "id_endro": 12240,
+      "name": {
+        "fr": "Plan d’eau réglementé #12240 (voir la source)",
+        "en": "Regulated waterbody #12240 (see source)"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 25 mai 2026 au 30 septembre 2026",
+            "species": "Bar rayé",
+            "limit": "même que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": "Il est interdit de pêcher à partir d'un bateau à moteur dans la réserve faunique."
+          },
+          {
+            "period": "Du 25 mai 2026 au 30 septembre 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "0 gardé",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": "Il est interdit de pêcher à partir d'un bateau à moteur dans la réserve faunique."
+          },
+          {
+            "period": "Du 25 mai 2026 au 30 septembre 2026",
+            "species": "Saumon atlantique",
+            "limit": "0 gardé et au plus 2 pris et remis à l'eau",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": "Il est interdit de pêcher à partir d'un bateau à moteur dans la réserve faunique."
+          },
+          {
+            "period": "Du 25 mai 2026 au 30 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": "Il est interdit de pêcher à partir d'un bateau à moteur dans la réserve faunique."
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 25th, 2026 to September 30th, 2026",
+            "species": "Atlantic salmon",
+            "limit": "0 retained and at most 2 caught and released",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": "Fishing from a motor boat on the waters of the wildlife sanctuary is prohibited."
+          },
+          {
+            "period": "From May 25th, 2026 to September 30th, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "0 retained",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": "Fishing from a motor boat on the waters of the wildlife sanctuary is prohibited."
+          },
+          {
+            "period": "From May 25th, 2026 to September 30th, 2026",
+            "species": "Striped bass",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": "Fishing from a motor boat on the waters of the wildlife sanctuary is prohibited."
+          },
+          {
+            "period": "From May 25th, 2026 to September 30th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": "Fishing from a motor boat on the waters of the wildlife sanctuary is prohibited."
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=12240",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=12240"
+      }
+    },
+    {
+      "id_endro": 10419,
+      "name": {
+        "fr": "Plan d’eau réglementé #10419 (voir la source)",
+        "en": "Regulated waterbody #10419 (see source)"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [],
+        "en": []
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2&id_endro=10419",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2&id_endro=10419"
+      }
+    }
+  ]
+}

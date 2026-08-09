@@ -1,0 +1,3831 @@
+{
+  "zone_id": 3,
+  "activity": "fishing",
+  "jurisdiction": "QC",
+  "authority": "Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs (MELCCFP)",
+  "source": {
+    "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=3",
+    "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=3",
+    "fetched_at": "2026-08-08",
+    "note": "Rule text reproduced verbatim from the authority. Always verify against the source before fishing."
+  },
+  "coverage": {
+    "waterbodies_listed_by_zone_page": 8,
+    "waterbodies_harvested": 19,
+    "complete": true,
+    "note": "All waterbody exceptions listed by the zone page are included."
+  },
+  "title": {
+    "fr": "Zone 3 | Pêche sportive au Québec - Périodes, limites et exceptions",
+    "en": "Zone 3 | Sport fishing in Québec – fishing periods, limits and exceptions"
+  },
+  "general": {
+    "fr": [
+      {
+        "period": null,
+        "species": "Limite de prise",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Limite de longueur",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Engin de pêche",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Note",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Espèce:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Limite de prise:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Limite de longueur:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Note:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Engin de pêche:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 1er avril 2026 au 31 mars 2027",
+        "species": "Bar rayé",
+        "limit": "Pêche interdite",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 1er avril 2026 au 31 mars 2027",
+        "species": "Chevalier cuivré",
+        "limit": "Pêche interdite",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 1er avril 2026 au 31 mars 2027",
+        "species": "Éperlan arc-en-ciel",
+        "limit": "Pêche interdite",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 1er avril 2026 au 31 mars 2027",
+        "species": "Saumon atlantique",
+        "limit": "Pêche interdite",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 23 avril 2026 au 15 septembre 2026",
+        "species": "Ombles (omble de fontaine, omble chevalier)",
+        "limit": "10 en tout",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 23 avril 2026 au 15 septembre 2026",
+        "species": "Ouananiche",
+        "limit": "3",
+        "length": null,
+        "gear": "Pêche à la ligne seulement",
+        "notes": null
+      },
+      {
+        "period": "Du 23 avril 2026 au 15 septembre 2026",
+        "species": "Touladi, moulac et lacmou",
+        "limit": "1 en tout",
+        "length": "60 cm et plus",
+        "gear": "Pêche à la ligne seulement",
+        "notes": "Dans les eaux comprises à l'intérieur des territoires particuliers: 2 en tout"
+      },
+      {
+        "period": "Du 23 avril 2026 au 15 septembre 2026",
+        "species": "Truite arc-en-ciel",
+        "limit": "aucune limite",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 23 avril 2026 au 15 septembre 2026",
+        "species": "Truite fardée et truite brune",
+        "limit": "5 en tout",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 23 avril 2026 au 30 novembre 2026",
+        "species": "Perchaude",
+        "limit": "50",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 15 mai 2026 au 30 novembre 2026",
+        "species": "Brochets",
+        "limit": "6 en tout",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 15 mai 2026 au 30 novembre 2026",
+        "species": "Doré jaune et doré noir",
+        "limit": "6 en tout",
+        "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+        "gear": "Pêche à la ligne seulement",
+        "notes": null
+      },
+      {
+        "period": "Du 15 juin 2026 au 31 octobre 2026",
+        "species": "Esturgeons",
+        "limit": "1 en tout",
+        "length": null,
+        "gear": "Pêche à la ligne seulement",
+        "notes": null
+      },
+      {
+        "period": "Du 15 juin 2026 au 30 novembre 2026",
+        "species": "Achigans",
+        "limit": "6 en tout",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 15 juin 2026 au 30 novembre 2026",
+        "species": "Maskinongé et maskinongé tigré",
+        "limit": "2 en tout",
+        "length": null,
+        "gear": "Pêche à la ligne seulement",
+        "notes": null
+      },
+      {
+        "period": "Du 23 avril 2026 au 30 novembre 2026 - Autres espèces",
+        "species": "Autres espèces",
+        "limit": "aucune limite",
+        "length": null,
+        "gear": null,
+        "notes": null
+      }
+    ],
+    "en": [
+      {
+        "period": null,
+        "species": "Catch limit",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Length limit",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Fishing device",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Note",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Species:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Catch limit:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Length limit:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Note:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Fishing device:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 1st, 2026 to March 31st, 2027",
+        "species": "Atlantic salmon",
+        "limit": "Fishing prohibited",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 1st, 2026 to March 31st, 2027",
+        "species": "Copper redhorse",
+        "limit": "Fishing prohibited",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 1st, 2026 to March 31st, 2027",
+        "species": "Rainbow smelt",
+        "limit": "Fishing prohibited",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 1st, 2026 to March 31st, 2027",
+        "species": "Striped bass",
+        "limit": "Fishing prohibited",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 23rd, 2026 to September 15th, 2026",
+        "species": "Char (arctic char, brook trout)",
+        "limit": "10 in all",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 23rd, 2026 to September 15th, 2026",
+        "species": "Cutthroat trout and brown trout",
+        "limit": "5 in all",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 23rd, 2026 to September 15th, 2026",
+        "species": "Lake trout and splake trout",
+        "limit": "1 in all",
+        "length": "60 cm or more",
+        "gear": "Angling only",
+        "notes": "In the waters within managed territories: 2 in all"
+      },
+      {
+        "period": "From April 23rd, 2026 to September 15th, 2026",
+        "species": "Landlocked salmon",
+        "limit": "3",
+        "length": null,
+        "gear": "Angling only",
+        "notes": null
+      },
+      {
+        "period": "From April 23rd, 2026 to September 15th, 2026",
+        "species": "Rainbow trout",
+        "limit": "no limit",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 23rd, 2026 to November 30th, 2026",
+        "species": "Yellow perch",
+        "limit": "50",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From May 15th, 2026 to November 30th, 2026",
+        "species": "Pike",
+        "limit": "6 in all",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From May 15th, 2026 to November 30th, 2026",
+        "species": "Walleye and sauger",
+        "limit": "6 in all",
+        "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+        "gear": "Angling only",
+        "notes": null
+      },
+      {
+        "period": "From June 15th, 2026 to October 31st, 2026",
+        "species": "Sturgeon",
+        "limit": "1 in all",
+        "length": null,
+        "gear": "Angling only",
+        "notes": null
+      },
+      {
+        "period": "From June 15th, 2026 to November 30th, 2026",
+        "species": "Bass",
+        "limit": "6 in all",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From June 15th, 2026 to November 30th, 2026",
+        "species": "Muskellunge and tiger muskellunge",
+        "limit": "2 in all",
+        "length": null,
+        "gear": "Angling only",
+        "notes": null
+      },
+      {
+        "period": "From April 23rd, 2026 to November 30th, 2026- Other species",
+        "species": "Other species",
+        "limit": "no limit",
+        "length": null,
+        "gear": null,
+        "notes": null
+      }
+    ]
+  },
+  "waterbodies": [
+    {
+      "id_endro": 447,
+      "name": {
+        "fr": "Lac aux Canards ",
+        "en": "Lac aux Canards "
+      },
+      "coordinates": {
+        "lat": 46.83361,
+        "lng": -70.81472
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Mêmes que la zone",
+            "species": "Achigans",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Brochets",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Esturgeons",
+            "limit": "1 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Maskinongé et maskinongé tigré",
+            "limit": "2 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Ombles (omble de fontaine, omble chevalier) et Truites (brune, fardée et arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Ouananiche",
+            "limit": "3",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "60 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Bar rayé",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Éperlan arc-en-ciel",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Saumon atlantique",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Achigans",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Brochets",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Esturgeons",
+            "limit": "1 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Maskinongé et maskinongé tigré",
+            "limit": "2 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Ombles (omble de fontaine, omble chevalier) et Truites (brune, fardée et arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Ouananiche",
+            "limit": "3",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "même que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "même que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "Same as the zone",
+            "species": "Bass",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Char (arctic char, brook trout) and Trout (Brown trout, Cutthroat trout and Rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "60 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Landlocked salmon",
+            "limit": "3",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Muskellunge and tiger muskellunge",
+            "limit": "2 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Pike",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Sturgeon",
+            "limit": "1 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Atlantic salmon",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Rainbow smelt",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Striped bass",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Bass",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Char (arctic char, brook trout) and Trout (Brown trout, Cutthroat trout and Rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Landlocked salmon",
+            "limit": "3",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Muskellunge and tiger muskellunge",
+            "limit": "2 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Pike",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Sturgeon",
+            "limit": "1 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=3&id_endro=447",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=3&id_endro=447"
+      }
+    },
+    {
+      "id_endro": 441,
+      "name": {
+        "fr": "Lac Beaumont",
+        "en": "Lac Beaumont"
+      },
+      "coordinates": {
+        "lat": 46.77833,
+        "lng": -70.9875
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Mêmes que la zone",
+            "species": "Achigans",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Brochets",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Esturgeons",
+            "limit": "1 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Maskinongé et maskinongé tigré",
+            "limit": "2 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Ombles (omble de fontaine, omble chevalier) et Truites (brune, fardée et arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Ouananiche",
+            "limit": "3",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "60 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Bar rayé",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Éperlan arc-en-ciel",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Achigans",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Brochets",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Esturgeons",
+            "limit": "1 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Maskinongé et maskinongé tigré",
+            "limit": "2 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Ombles (omble de fontaine, omble chevalier) et Truites (brune, fardée et arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Ouananiche",
+            "limit": "3",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "même que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "même que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "Same as the zone",
+            "species": "Bass",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Char (arctic char, brook trout) and Trout (Brown trout, Cutthroat trout and Rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "60 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Landlocked salmon",
+            "limit": "3",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Muskellunge and tiger muskellunge",
+            "limit": "2 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Pike",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Sturgeon",
+            "limit": "1 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Rainbow smelt",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Striped bass",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Bass",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Char (arctic char, brook trout) and Trout (Brown trout, Cutthroat trout and Rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Landlocked salmon",
+            "limit": "3",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Muskellunge and tiger muskellunge",
+            "limit": "2 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Pike",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Sturgeon",
+            "limit": "1 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=3&id_endro=441",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=3&id_endro=441"
+      }
+    },
+    {
+      "id_endro": 444,
+      "name": {
+        "fr": "Lac Bringé",
+        "en": "Lac Bringé"
+      },
+      "coordinates": {
+        "lat": 47.10972,
+        "lng": -70.16944
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Mêmes que la zone",
+            "species": "Achigans",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Brochets",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Esturgeons",
+            "limit": "1 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Maskinongé et maskinongé tigré",
+            "limit": "2 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Ombles (omble de fontaine, omble chevalier) et Truites (brune, fardée et arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Ouananiche",
+            "limit": "3",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "60 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Bar rayé",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Éperlan arc-en-ciel",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Achigans",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Brochets",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Esturgeons",
+            "limit": "1 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Maskinongé et maskinongé tigré",
+            "limit": "2 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Ombles (omble de fontaine, omble chevalier) et Truites (brune, fardée et arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Ouananiche",
+            "limit": "3",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "même que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "même que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "Same as the zone",
+            "species": "Bass",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Char (arctic char, brook trout) and Trout (Brown trout, Cutthroat trout and Rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "60 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Landlocked salmon",
+            "limit": "3",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Muskellunge and tiger muskellunge",
+            "limit": "2 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Pike",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Sturgeon",
+            "limit": "1 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Rainbow smelt",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Striped bass",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Bass",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Char (arctic char, brook trout) and Trout (Brown trout, Cutthroat trout and Rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Landlocked salmon",
+            "limit": "3",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Muskellunge and tiger muskellunge",
+            "limit": "2 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Pike",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Sturgeon",
+            "limit": "1 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=3&id_endro=444",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=3&id_endro=444"
+      }
+    },
+    {
+      "id_endro": 3064,
+      "name": {
+        "fr": "Lac Collin",
+        "en": "Lac Collin"
+      },
+      "coordinates": {
+        "lat": 46.71667,
+        "lng": -70.29222
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Mêmes que la zone",
+            "species": "Achigans",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Brochets",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Esturgeons",
+            "limit": "1 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Maskinongé et maskinongé tigré",
+            "limit": "2 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Ombles (omble de fontaine, omble chevalier) et Truites (brune, fardée et arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Ouananiche",
+            "limit": "3",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "60 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Bar rayé",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Éperlan arc-en-ciel",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Achigans",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Brochets",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Esturgeons",
+            "limit": "1 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Maskinongé et maskinongé tigré",
+            "limit": "2 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Ombles (omble de fontaine, omble chevalier) et Truites (brune, fardée et arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Ouananiche",
+            "limit": "3",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "même que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "même que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "Same as the zone",
+            "species": "Bass",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Char (arctic char, brook trout) and Trout (Brown trout, Cutthroat trout and Rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "60 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Landlocked salmon",
+            "limit": "3",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Muskellunge and tiger muskellunge",
+            "limit": "2 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Pike",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Sturgeon",
+            "limit": "1 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Rainbow smelt",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Striped bass",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Bass",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Char (arctic char, brook trout) and Trout (Brown trout, Cutthroat trout and Rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Landlocked salmon",
+            "limit": "3",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Muskellunge and tiger muskellunge",
+            "limit": "2 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Pike",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Sturgeon",
+            "limit": "1 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=3&id_endro=3064",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=3&id_endro=3064"
+      }
+    },
+    {
+      "id_endro": 432,
+      "name": {
+        "fr": "Lac des Abénaquis ",
+        "en": "Lac des Abénaquis "
+      },
+      "coordinates": {
+        "lat": 46.16361,
+        "lng": -70.36139
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Mêmes que la zone",
+            "species": "Achigans",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Brochets",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Esturgeons",
+            "limit": "1 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Maskinongé et maskinongé tigré",
+            "limit": "2 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Ombles (omble de fontaine, omble chevalier) et Truites (brune, fardée et arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Ouananiche",
+            "limit": "3",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "60 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Bar rayé",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Éperlan arc-en-ciel",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Achigans",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Brochets",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Esturgeons",
+            "limit": "1 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Maskinongé et maskinongé tigré",
+            "limit": "2 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Ombles (omble de fontaine, omble chevalier) et Truites (brune, fardée et arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Ouananiche",
+            "limit": "3",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "même que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "même que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "Same as the zone",
+            "species": "Bass",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Char (arctic char, brook trout) and Trout (Brown trout, Cutthroat trout and Rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "60 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Landlocked salmon",
+            "limit": "3",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Muskellunge and tiger muskellunge",
+            "limit": "2 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Pike",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Sturgeon",
+            "limit": "1 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Rainbow smelt",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Striped bass",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Bass",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Char (arctic char, brook trout) and Trout (Brown trout, Cutthroat trout and Rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Landlocked salmon",
+            "limit": "3",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Muskellunge and tiger muskellunge",
+            "limit": "2 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Pike",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Sturgeon",
+            "limit": "1 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=3&id_endro=432",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=3&id_endro=432"
+      }
+    },
+    {
+      "id_endro": 449,
+      "name": {
+        "fr": "Lac Frontière ",
+        "en": "Lac Frontière "
+      },
+      "coordinates": {
+        "lat": 46.70667,
+        "lng": -70.00111
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Mêmes que la zone",
+            "species": "Achigans",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Brochets",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Esturgeons",
+            "limit": "1 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Maskinongé et maskinongé tigré",
+            "limit": "2 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Ombles (omble de fontaine, omble chevalier) et Truites (brune, fardée et arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Ouananiche",
+            "limit": "3",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "60 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Bar rayé",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Éperlan arc-en-ciel",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Achigans",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Brochets",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Esturgeons",
+            "limit": "1 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Maskinongé et maskinongé tigré",
+            "limit": "2 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Ombles (omble de fontaine, omble chevalier) et Truites (brune, fardée et arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Ouananiche",
+            "limit": "3",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "même que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "même que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "Same as the zone",
+            "species": "Bass",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Char (arctic char, brook trout) and Trout (Brown trout, Cutthroat trout and Rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "60 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Landlocked salmon",
+            "limit": "3",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Muskellunge and tiger muskellunge",
+            "limit": "2 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Pike",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Sturgeon",
+            "limit": "1 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Rainbow smelt",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Striped bass",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Bass",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Char (arctic char, brook trout) and Trout (Brown trout, Cutthroat trout and Rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Landlocked salmon",
+            "limit": "3",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Muskellunge and tiger muskellunge",
+            "limit": "2 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Pike",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Sturgeon",
+            "limit": "1 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=3&id_endro=449",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=3&id_endro=449"
+      }
+    },
+    {
+      "id_endro": 454,
+      "name": {
+        "fr": "Lac Saint-Charles",
+        "en": "Lac Saint-Charles"
+      },
+      "coordinates": {
+        "lat": 46.77972,
+        "lng": -70.96361
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Mêmes que la zone",
+            "species": "Achigans",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Brochets",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Esturgeons",
+            "limit": "1 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Maskinongé et maskinongé tigré",
+            "limit": "2 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Ombles (omble de fontaine, omble chevalier) et Truites (brune, fardée et arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Ouananiche",
+            "limit": "3",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "60 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Bar rayé",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Éperlan arc-en-ciel",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Achigans",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Brochets",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Esturgeons",
+            "limit": "1 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Maskinongé et maskinongé tigré",
+            "limit": "2 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Ombles (omble de fontaine, omble chevalier) et Truites (brune, fardée et arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Ouananiche",
+            "limit": "3",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "même que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "même que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "Same as the zone",
+            "species": "Bass",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Char (arctic char, brook trout) and Trout (Brown trout, Cutthroat trout and Rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "60 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Landlocked salmon",
+            "limit": "3",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Muskellunge and tiger muskellunge",
+            "limit": "2 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Pike",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Sturgeon",
+            "limit": "1 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Rainbow smelt",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Striped bass",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Bass",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Char (arctic char, brook trout) and Trout (Brown trout, Cutthroat trout and Rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Landlocked salmon",
+            "limit": "3",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Muskellunge and tiger muskellunge",
+            "limit": "2 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Pike",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Sturgeon",
+            "limit": "1 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "Same as the zone- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=3&id_endro=454",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=3&id_endro=454"
+      }
+    },
+    {
+      "id_endro": 3261,
+      "name": {
+        "fr": "Lac Trois-Saumons",
+        "en": "Lac Trois-Saumons"
+      },
+      "coordinates": {
+        "lat": 47.12667,
+        "lng": -70.18694
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 15 mai 2026 au 15 septembre 2026",
+            "species": "Toutes les espèces",
+            "limit": "même que la zone",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From May 15th, 2026 to September 15th, 2026",
+            "species": "All species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=3&id_endro=3261",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=3&id_endro=3261"
+      }
+    },
+    {
+      "id_endro": 460,
+      "name": {
+        "fr": "Rivière Etchemin ",
+        "en": "Rivière Etchemin "
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Chevalier cuivré",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Éperlan arc-en-ciel",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Esturgeons",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Saumon atlantique",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "60 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 15 septembre 2026",
+            "species": "Brochets",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 15 septembre 2026",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 15 septembre 2026",
+            "species": "Achigans",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 juin 2026 au 15 septembre 2026",
+            "species": "Maskinongé et maskinongé tigré",
+            "limit": "2 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Atlantic salmon",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Copper redhorse",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Rainbow smelt",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Sturgeon",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "60 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 15th, 2026",
+            "species": "Pike",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to September 15th, 2026",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to September 15th, 2026",
+            "species": "Bass",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From June 15th, 2026 to September 15th, 2026",
+            "species": "Muskellunge and tiger muskellunge",
+            "limit": "2 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=3&id_endro=460",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=3&id_endro=460"
+      }
+    },
+    {
+      "id_endro": 470,
+      "name": {
+        "fr": "Rivière Grande Rivière",
+        "en": "Rivière Grande Rivière"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Saumon atlantique",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Atlantic salmon",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=3&id_endro=470",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=3&id_endro=470"
+      }
+    },
+    {
+      "id_endro": 468,
+      "name": {
+        "fr": "Rivière Ouelle",
+        "en": "Rivière Ouelle"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Saumon atlantique",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Atlantic salmon",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=3&id_endro=468",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=3&id_endro=468"
+      }
+    },
+    {
+      "id_endro": 472,
+      "name": {
+        "fr": "Rivière Rat Musqué",
+        "en": "Rivière Rat Musqué"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Saumon atlantique",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Atlantic salmon",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=3&id_endro=472",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=3&id_endro=472"
+      }
+    },
+    {
+      "id_endro": 2413,
+      "name": {
+        "fr": "Zec Jaro",
+        "en": "Zec Jaro"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "10 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Truites (truite brune, truite fardée et truite arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": "S'informer auprès du poste d'accueil pour connaitre les modalités de pêche dans ce territoire."
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "10 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Trout (brown trout, cutthroat trout and rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027- Other species",
+            "species": "Other species",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": "Check at the reception desk to know more about fishing rules in this territory."
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=3&id_endro=2413",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=3&id_endro=2413"
+      }
+    },
+    {
+      "id_endro": 442,
+      "name": {
+        "fr": "Lac Beaumont",
+        "en": "Lake Beaumont"
+      },
+      "coordinates": {
+        "lat": 46.77833,
+        "lng": -70.9875
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "10 en tout dont au plus 2 ombles chevaliers",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "45 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Truites (truite brune, truite fardée et truite arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 31 mars 2027",
+            "species": "Brochets",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 31 mars 2027",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "10 en tout dont au plus 2 ombles chevaliers",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Truites (truite brune, truite fardée et truite arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "10 in all with at most 2 arctic char",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "45 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Trout (brown trout, cutthroat trout and rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to March 31st, 2027",
+            "species": "Pike",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to March 31st, 2027",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "10 in all with at most 2 arctic char",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Trout (brown trout, cutthroat trout and rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=3&id_endro=442",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=3&id_endro=442"
+      }
+    },
+    {
+      "id_endro": 445,
+      "name": {
+        "fr": "Lac Bringé",
+        "en": "Lake Bringé"
+      },
+      "coordinates": {
+        "lat": 47.10972,
+        "lng": -70.16944
+      },
+      "rules": {
+        "fr": [],
+        "en": []
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=3&id_endro=445",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=3&id_endro=445"
+      }
+    },
+    {
+      "id_endro": 437,
+      "name": {
+        "fr": "Lac des Abénaquis",
+        "en": "Lake des Abénaquis"
+      },
+      "coordinates": {
+        "lat": 46.16361,
+        "lng": -70.36139
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "10 en tout dont au plus 2 ombles chevaliers",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "45 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Truites (truite brune, truite fardée et truite arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 31 mars 2027",
+            "species": "Brochets",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 31 mars 2027",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "10 en tout dont au plus 2 ombles chevaliers",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Truites (truite brune, truite fardée et truite arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "10 in all with at most 2 arctic char",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "45 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Trout (brown trout, cutthroat trout and rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to March 31st, 2027",
+            "species": "Pike",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to March 31st, 2027",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "10 in all with at most 2 arctic char",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Trout (brown trout, cutthroat trout and rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=3&id_endro=437",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=3&id_endro=437"
+      }
+    },
+    {
+      "id_endro": 451,
+      "name": {
+        "fr": "Lac Frontière",
+        "en": "Lake Frontière"
+      },
+      "coordinates": {
+        "lat": 46.70667,
+        "lng": -70.00111
+      },
+      "rules": {
+        "fr": [],
+        "en": []
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=3&id_endro=451",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=3&id_endro=451"
+      }
+    },
+    {
+      "id_endro": 456,
+      "name": {
+        "fr": "Lac Saint-Charles",
+        "en": "Lake Saint-Charles"
+      },
+      "coordinates": {
+        "lat": 46.77972,
+        "lng": -70.96361
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "10 en tout dont au plus 2 ombles chevaliers",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "1 en tout",
+            "length": "45 cm et plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 23 avril 2026 au 15 septembre 2026",
+            "species": "Truites (truite brune, truite fardée et truite arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 31 mars 2027",
+            "species": "Brochets",
+            "limit": "6 en tout",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 15 mai 2026 au 31 mars 2027",
+            "species": "Doré jaune et doré noir",
+            "limit": "6 en tout",
+            "length": "Doré jaune: 37 cm à 53 cm inclusivement Doré noir: Aucune limite de longueur",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Ombles (omble de fontaine, omble chevalier)",
+            "limit": "10 en tout dont au plus 2 ombles chevaliers",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 20 décembre 2026 au 31 mars 2027",
+            "species": "Truites (truite brune, truite fardée et truite arc-en-ciel)",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Mêmes que la zone - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "10 in all with at most 2 arctic char",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "1 in all",
+            "length": "45 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From April 23rd, 2026 to September 15th, 2026",
+            "species": "Trout (brown trout, cutthroat trout and rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to March 31st, 2027",
+            "species": "Pike",
+            "limit": "6 in all",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From May 15th, 2026 to March 31st, 2027",
+            "species": "Walleye and sauger",
+            "limit": "6 in all",
+            "length": "Walleye: 37 cm to 53 cm inclusively Sauger: no length limit",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Char (arctic char, brook trout)",
+            "limit": "10 in all with at most 2 arctic char",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From December 20th, 2026 to March 31st, 2027",
+            "species": "Trout (brown trout, cutthroat trout and rainbow trout)",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Same as the zone- Other species",
+            "species": "Other species",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=3&id_endro=456",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=3&id_endro=456"
+      }
+    },
+    {
+      "id_endro": 1607,
+      "name": {
+        "fr": "en amont du pont à Sainte-Claire",
+        "en": "upstream of the bridge at St. Clair"
+      },
+      "coordinates": null,
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 30 avril 2026",
+            "species": "Brochets",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 30 avril 2026",
+            "species": "Omble de fontaine",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 30 avril 2026",
+            "species": "Ouananiche",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 7 septembre 2026",
+            "species": "Brochets",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 7 septembre 2026",
+            "species": "Omble de fontaine",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 7 septembre 2026",
+            "species": "Ouananiche",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 7 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er décembre 2026 au 31 mars 2027",
+            "species": "Brochets",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er décembre 2026 au 31 mars 2027",
+            "species": "Omble de fontaine",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er décembre 2026 au 31 mars 2027",
+            "species": "Ouananiche",
+            "limit": "mêmes que la zone",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to April 30th, 2026",
+            "species": "Brook trout",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to April 30th, 2026",
+            "species": "Landlocked salmon",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to April 30th, 2026",
+            "species": "Pike",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to September 7th, 2026",
+            "species": "Brook trout",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to September 7th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to September 7th, 2026",
+            "species": "Landlocked salmon",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to September 7th, 2026",
+            "species": "Pike",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 1st, 2026 to March 31st, 2027",
+            "species": "Brook trout",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 1st, 2026 to March 31st, 2027",
+            "species": "Landlocked salmon",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From December 1st, 2026 to March 31st, 2027",
+            "species": "Pike",
+            "limit": "same as the zone",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027- Other species",
+            "species": "Other species",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=3&id_endro=1607",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=3&id_endro=1607"
+      }
+    }
+  ]
+}

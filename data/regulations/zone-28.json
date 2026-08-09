@@ -1,0 +1,776 @@
+{
+  "zone_id": 28,
+  "activity": "fishing",
+  "jurisdiction": "QC",
+  "authority": "Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs (MELCCFP)",
+  "source": {
+    "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=28",
+    "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=28",
+    "fetched_at": "2026-08-08",
+    "note": "Rule text reproduced verbatim from the authority. Always verify against the source before fishing."
+  },
+  "coverage": {
+    "waterbodies_listed_by_zone_page": 2,
+    "waterbodies_harvested": 2,
+    "complete": true,
+    "note": "All waterbody exceptions listed by the zone page are included."
+  },
+  "title": {
+    "fr": "Zone 24 | Pêche sportive au Québec - Périodes, limites et exceptions",
+    "en": "Zone 24 | Sport fishing in Québec – fishing periods, limits and exceptions"
+  },
+  "general": {
+    "fr": [
+      {
+        "period": null,
+        "species": "Limite de prise",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Limite de longueur",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Engin de pêche",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Note",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Espèce:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Limite de prise:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Limite de longueur:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Note:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Engin de pêche:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 1er avril 2026 au 31 mars 2027",
+        "species": "Chevalier cuivré",
+        "limit": "Pêche interdite",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 1er avril 2026 au 31 mars 2027",
+        "species": "Corégones, esturgeon jaune, meuniers, lotte, laquaiche argentée et laquaiche aux yeux d'or",
+        "limit": "Pêche interdite",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "Du 1er juin 2026 au 7 septembre 2026",
+        "species": "Brochets",
+        "limit": "10 en tout",
+        "length": null,
+        "gear": "Pêche à la ligne seulement",
+        "notes": null
+      },
+      {
+        "period": "Du 1er juin 2026 au 7 septembre 2026",
+        "species": "Omble chevalier",
+        "limit": "5",
+        "length": null,
+        "gear": "Pêche à la ligne seulement",
+        "notes": null
+      },
+      {
+        "period": "Du 1er juin 2026 au 7 septembre 2026",
+        "species": "Omble de fontaine",
+        "limit": "15 ou 8 kg + 1 omble, selon la première limite atteinte",
+        "length": null,
+        "gear": "Pêche à la ligne seulement",
+        "notes": null
+      },
+      {
+        "period": "Du 1er juin 2026 au 7 septembre 2026",
+        "species": "Ouananiche",
+        "limit": "4",
+        "length": null,
+        "gear": "Pêche à la ligne seulement",
+        "notes": null
+      },
+      {
+        "period": "Du 1er juin 2026 au 7 septembre 2026",
+        "species": "Saumon atlantique",
+        "limit": "1 petit pris et gardé",
+        "length": "petit (au moins 30 cm et moins de 63 cm) et grand (63 cm et plus)",
+        "gear": "Pêche à la ligne seulement",
+        "notes": "Ailleurs que dans les rivières à saumon. Permis de pêche au saumon obligatoire."
+      },
+      {
+        "period": "Du 1er juin 2026 au 7 septembre 2026",
+        "species": "Touladi, moulac et lacmou",
+        "limit": "3 en tout",
+        "length": "moins de 60 cm et au plus 1 mesurant 60 cm ou plus",
+        "gear": "Pêche à la ligne seulement",
+        "notes": null
+      },
+      {
+        "period": "Du 1er juin 2026 au 7 septembre 2026 - Autres espèces",
+        "species": "Autres espèces",
+        "limit": "aucune limite",
+        "length": "moins de 90 cm",
+        "gear": "Pêche à la ligne seulement",
+        "notes": null
+      }
+    ],
+    "en": [
+      {
+        "period": null,
+        "species": "Catch limit",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Length limit",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Fishing device",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Note",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Species:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Catch limit:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Length limit:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Note:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": null,
+        "species": "Fishing device:",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 1st, 2026 to March 31st, 2027",
+        "species": "Copper redhorse",
+        "limit": "Fishing prohibited",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From April 1st, 2026 to March 31st, 2027",
+        "species": "Corégones, esturgeon jaune, meuniers, lotte, laquaiche argentée et laquaiche aux yeux d'or",
+        "limit": "Fishing prohibited",
+        "length": null,
+        "gear": null,
+        "notes": null
+      },
+      {
+        "period": "From June 1st, 2026 to September 7th, 2026",
+        "species": "Arctic char",
+        "limit": "5",
+        "length": null,
+        "gear": "Angling only",
+        "notes": null
+      },
+      {
+        "period": "From June 1st, 2026 to September 7th, 2026",
+        "species": "Atlantic salmon",
+        "limit": "1 small fish caught and retained",
+        "length": "small (at least 30 cm and less than 63 cm) and large (63 cm or more)",
+        "gear": "Angling only",
+        "notes": "Elsewhere than in salmon rivers. Salmon fishing licence mandatory."
+      },
+      {
+        "period": "From June 1st, 2026 to September 7th, 2026",
+        "species": "Brook trout",
+        "limit": "15 or 8 kg + 1 brook trout, whichever is reached first",
+        "length": null,
+        "gear": "Angling only",
+        "notes": null
+      },
+      {
+        "period": "From June 1st, 2026 to September 7th, 2026",
+        "species": "Lake trout and splake trout",
+        "limit": "3 in all",
+        "length": "less than 60 cm with at most 1 measuring 60 cm or more",
+        "gear": "Angling only",
+        "notes": null
+      },
+      {
+        "period": "From June 1st, 2026 to September 7th, 2026",
+        "species": "Landlocked salmon",
+        "limit": "4",
+        "length": null,
+        "gear": "Angling only",
+        "notes": null
+      },
+      {
+        "period": "From June 1st, 2026 to September 7th, 2026",
+        "species": "Pike",
+        "limit": "10 in all",
+        "length": null,
+        "gear": "Angling only",
+        "notes": null
+      },
+      {
+        "period": "From June 1st, 2026 to September 7th, 2026- Other species",
+        "species": "Other species",
+        "limit": "no limit",
+        "length": "less than 90 cm",
+        "gear": "Angling only",
+        "notes": null
+      }
+    ]
+  },
+  "waterbodies": [
+    {
+      "id_endro": 1152,
+      "name": {
+        "fr": "Rivière de Pas",
+        "en": "Rivière de Pas"
+      },
+      "coordinates": {
+        "lat": 55.82028,
+        "lng": -65.05361
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Corégones, esturgeon jaune, meuniers, lotte, laquaiche argentée et laquaiche aux yeux d'or",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 15 août 2026",
+            "species": "Brochets",
+            "limit": "10 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 15 août 2026",
+            "species": "Omble chevalier",
+            "limit": "5",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 15 août 2026",
+            "species": "Omble de fontaine",
+            "limit": "15 ou 8 kg + 1 omble, selon la première limite atteinte",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 15 août 2026",
+            "species": "Saumon atlantique",
+            "limit": "2 dont au plus 1 grand",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 15 août 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "3 en tout",
+            "length": "moins de 60 cm et au plus 1 mesurant 60 cm ou plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 16 août 2026 au 7 septembre 2026",
+            "species": "Brochets",
+            "limit": "10 en tout",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 16 août 2026 au 7 septembre 2026",
+            "species": "Omble de fontaine",
+            "limit": "15 ou 8 kg + 1 omble, selon la première limite atteinte",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 16 août 2026 au 7 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "3 en tout",
+            "length": "moins de 60 cm et au plus 1 mesurant 60 cm ou plus",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 16 août 2026 au 30 septembre 2026",
+            "species": "Omble chevalier",
+            "limit": "5",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 16 août 2026 au 30 septembre 2026",
+            "species": "Saumon atlantique",
+            "limit": "2 dont au plus 1 grand",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 15 août 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "aucune limite",
+            "length": "moins de 90 cm",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 16 août 2026 au 30 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "aucune limite",
+            "length": "moins de 90 cm",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Corégones, esturgeon jaune, meuniers, lotte, laquaiche argentée et laquaiche aux yeux d'or",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 15th, 2026",
+            "species": "Arctic char",
+            "limit": "5",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 15th, 2026",
+            "species": "Atlantic salmon",
+            "limit": "2 with at most 1 large",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 15th, 2026",
+            "species": "Brook trout",
+            "limit": "15 or 8 kg + 1 brook trout, whichever is reached first",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 15th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "3 in all",
+            "length": "less than 60 cm with at most 1 measuring 60 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 15th, 2026",
+            "species": "Pike",
+            "limit": "10 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From August 16th, 2026 to September 7th, 2026",
+            "species": "Brook trout",
+            "limit": "15 or 8 kg + 1 brook trout, whichever is reached first",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From August 16th, 2026 to September 7th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "3 in all",
+            "length": "less than 60 cm with at most 1 measuring 60 cm or more",
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From August 16th, 2026 to September 7th, 2026",
+            "species": "Pike",
+            "limit": "10 in all",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From August 16th, 2026 to September 30th, 2026",
+            "species": "Arctic char",
+            "limit": "5",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From August 16th, 2026 to September 30th, 2026",
+            "species": "Atlantic salmon",
+            "limit": "2 with at most 1 large",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 15th, 2026- Other species",
+            "species": "Other species",
+            "limit": "no limit",
+            "length": "less than 90 cm",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From August 16th, 2026 to September 30th, 2026- Other species",
+            "species": "Other species",
+            "limit": "no limit",
+            "length": "less than 90 cm",
+            "gear": "Fly fishing only",
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=28&id_endro=1152",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=28&id_endro=1152"
+      }
+    },
+    {
+      "id_endro": 1150,
+      "name": {
+        "fr": "Rivière George",
+        "en": "Rivière George"
+      },
+      "coordinates": {
+        "lat": 56.53528,
+        "lng": -64.73278
+      },
+      "rules": {
+        "fr": [
+          {
+            "period": "Du 1er avril 2026 au 31 mars 2027",
+            "species": "Corégones, esturgeon jaune, meuniers, lotte, laquaiche argentée et laquaiche aux yeux d'or",
+            "limit": "Pêche interdite",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 15 août 2026",
+            "species": "Brochets",
+            "limit": "10 en tout",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 15 août 2026",
+            "species": "Omble chevalier",
+            "limit": "5",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 15 août 2026",
+            "species": "Omble de fontaine",
+            "limit": "15 ou 8 kg + 1 omble, selon la première limite atteinte",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 15 août 2026",
+            "species": "Saumon atlantique",
+            "limit": "2 dont au plus 1 grand",
+            "length": null,
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 15 août 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "3 en tout",
+            "length": "moins de 60 cm et au plus 1 mesurant 60 cm ou plus",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 16 août 2026 au 7 septembre 2026",
+            "species": "Brochets",
+            "limit": "10 en tout",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 16 août 2026 au 7 septembre 2026",
+            "species": "Omble de fontaine",
+            "limit": "15 ou 8 kg + 1 omble, selon la première limite atteinte",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 16 août 2026 au 7 septembre 2026",
+            "species": "Touladi, moulac et lacmou",
+            "limit": "3 en tout",
+            "length": "moins de 60 cm et au plus 1 mesurant 60 cm ou plus",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 16 août 2026 au 30 septembre 2026",
+            "species": "Omble chevalier",
+            "limit": "5",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 16 août 2026 au 30 septembre 2026",
+            "species": "Saumon atlantique",
+            "limit": "2 dont au plus 1 grand",
+            "length": null,
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 1er juin 2026 au 15 août 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "aucune limite",
+            "length": "moins de 90 cm",
+            "gear": "Pêche à la ligne seulement",
+            "notes": null
+          },
+          {
+            "period": "Du 16 août 2026 au 30 septembre 2026 - Autres espèces",
+            "species": "Autres espèces",
+            "limit": "aucune limite",
+            "length": "moins de 90 cm",
+            "gear": "Pêche à la mouche seulement",
+            "notes": null
+          }
+        ],
+        "en": [
+          {
+            "period": "From April 1st, 2026 to March 31st, 2027",
+            "species": "Corégones, esturgeon jaune, meuniers, lotte, laquaiche argentée et laquaiche aux yeux d'or",
+            "limit": "Fishing prohibited",
+            "length": null,
+            "gear": null,
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 15th, 2026",
+            "species": "Arctic char",
+            "limit": "5",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 15th, 2026",
+            "species": "Atlantic salmon",
+            "limit": "2 with at most 1 large",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 15th, 2026",
+            "species": "Brook trout",
+            "limit": "15 or 8 kg + 1 brook trout, whichever is reached first",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 15th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "3 in all",
+            "length": "less than 60 cm with at most 1 measuring 60 cm or more",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 15th, 2026",
+            "species": "Pike",
+            "limit": "10 in all",
+            "length": null,
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From August 16th, 2026 to September 7th, 2026",
+            "species": "Brook trout",
+            "limit": "15 or 8 kg + 1 brook trout, whichever is reached first",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From August 16th, 2026 to September 7th, 2026",
+            "species": "Lake trout and splake trout",
+            "limit": "3 in all",
+            "length": "less than 60 cm with at most 1 measuring 60 cm or more",
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From August 16th, 2026 to September 7th, 2026",
+            "species": "Pike",
+            "limit": "10 in all",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From August 16th, 2026 to September 30th, 2026",
+            "species": "Arctic char",
+            "limit": "5",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From August 16th, 2026 to September 30th, 2026",
+            "species": "Atlantic salmon",
+            "limit": "2 with at most 1 large",
+            "length": null,
+            "gear": "Fly fishing only",
+            "notes": null
+          },
+          {
+            "period": "From June 1st, 2026 to August 15th, 2026- Other species",
+            "species": "Other species",
+            "limit": "no limit",
+            "length": "less than 90 cm",
+            "gear": "Angling only",
+            "notes": null
+          },
+          {
+            "period": "From August 16th, 2026 to September 30th, 2026- Other species",
+            "species": "Other species",
+            "limit": "no limit",
+            "length": "less than 90 cm",
+            "gear": "Fly fishing only",
+            "notes": null
+          }
+        ]
+      },
+      "source": {
+        "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=28&id_endro=1150",
+        "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=28&id_endro=1150"
+      }
+    }
+  ]
+}
