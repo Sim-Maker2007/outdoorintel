@@ -9,9 +9,11 @@ export function aiConfigured() {
 }
 
 export function aiModel() {
-  // Pinned deliberately (2026-08): newest sonnet-class model OpenRouter serves.
-  // Override with OPENROUTER_MODEL; re-evaluate against scripts/evals before changing.
-  return process.env.OPENROUTER_MODEL || 'anthropic/claude-sonnet-5';
+  // Pinned per owner decision (2026-08): deepseek-v4-flash — tool-calling
+  // capable, 1M context, ~$0.09/$0.18 per M tokens. Override with
+  // OPENROUTER_MODEL; run scripts/evals (--e2e) against a deployed endpoint
+  // before and after any model change.
+  return process.env.OPENROUTER_MODEL || 'deepseek/deepseek-v4-flash-0731';
 }
 
 // Low-level chat completion. Returns the assistant message object
