@@ -141,18 +141,24 @@ function endroIds(html) {
 
 function masterRowIds(html) {
   const out = new Map(); // candidate id_endro -> {name, coords}
-  const re = /<span class="gras">([^<]+)<\/span>[\s\S]{0,400}?OuvrirPopUpCoords\((\d+)\);"[^>]*>([^<]*)/g;
-  for (const m of re.exec ? html.matchAll(re) : []) {
-    const cand = String(Number(m[2]) - 1);
-    const gps = decode(m[3]).match(GPS_RE);
-    if (!out.has(cand)) {
-      out.set(cand, {
-        name: decode(m[1]).trim(),
-        coords: gps ? { lat: dmsToDec(gps[1], gps[2], gps[3], false), lng: dmsToDec(gps[4], gps[5], gps[6], true) } : null,
-      });
+  // Per master row: the bold text is the group name; each coordinate link's
+  // immediately preceding text is the specific (child) lake's name.
+  const rowRe = /<span class="gras">([^<]+)<\/span>([\s\S]*?)(?=<span class="gras">|<\/table>)/g;
+  for (const row of html.matchAll(rowRe)) {
+    const groupName = decode(row[1]).trim().replace(/[.,;]$/, '');
+    for (const link of row[2].matchAll(/(?:^|>)([^<>]*?)\(?\s*<a class="lien-coord" onclick="OuvrirPopUpCoords\((\d+)\);"[^>]*>([^<]*)/g)) {
+      const cand = String(Number(link[2]) - 1);
+      const child = decode(link[1]).replace(/[(.,;:]+\s*$/, '').trim();
+      const gps = decode(link[3]).match(GPS_RE);
+      if (!out.has(cand)) {
+        out.set(cand, {
+          name: child.length >= 4 ? child : groupName,
+          coords: gps ? { lat: dmsToDec(gps[1], gps[2], gps[3], false), lng: dmsToDec(gps[4], gps[5], gps[6], true) } : null,
+        });
+      }
     }
   }
-  // additional coord links (grouped lakes inside one master row)
+  // any remaining coord links (markup variants) as unnamed candidates
   for (const m of html.matchAll(/OuvrirPopUpCoords\((\d+)\)/g)) {
     const cand = String(Number(m[1]) - 1);
     if (!out.has(cand)) out.set(cand, { name: null, coords: null });
@@ -167,7 +173,13 @@ function selectedEndro(html) {
 
 function selectedEndroName(html) {
   const m = html.match(/id="id_endro_I"[^>]*value="([^"]*)"/);
-  return m ? decode(m[1]) : null;
+  if (!m) return null;
+  const name = decode(m[1]);
+  // A purely numeric echo means the combobox has no display name for this id
+  // (master-row-enumerated entries) — treat as unresolved so the master-row
+  // name map supplies it (see scripts/regs/repair-wb-names.mjs for the
+  // per-coord-link naming rules this mirrors).
+  return /^\d+$/.test(name) ? null : name;
 }
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -225,7 +237,7 @@ for (const zone of ZONES) {
       if (selectedEndro(wbFrHtml) !== String(id)) continue; // candidate not a valid endro for this zone
       const rulesFr = parseEndroPage(wbFrHtml);
       const rulesEn = parseEndroPage(await fetchUrl(wbEnUrl));
-      const nameFr = selectedEndroName(wbFrHtml) || nameHint || `endro-${id}`;
+      const nameFr = selectedEndroName(wbFrHtml) || nameHint || `Plan d’eau réglementé #${id} (voir la source)`;
       waterbodies.push({
         id_endro: Number(id),
         name: { fr: nameFr, en: enIds.get(id) || nameFr },

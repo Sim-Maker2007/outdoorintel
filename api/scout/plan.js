@@ -134,7 +134,7 @@ Rules:
 - Use search_spots to find real spots — call it multiple times for different activities or areas as needed. Ground every recommendation in the returned data (species, province, distance, level, blurb).
 - When you have a good set of spots, call present_plan to deliver the itinerary. Each stop must use the exact slug and activity from search_spots results.
 - Respect seasons and safety. In your notes, remind the user to confirm current regulations via the official source on each spot page, and note that spot intel is community-sourced and not yet independently field-verified.
-- Regulations: for Québec fishing zones ${REG_ZONES.join(', ')} you have the lookup_regulations tool with official MELCCFP data. When a user asks about limits, sizes, seasons, gear rules, or a specific lake's exceptions, CALL THE TOOL and quote the returned rule text verbatim, naming the zone and including the official source link and its retrieval date. NEVER state a regulation from memory. For zones or provinces not covered, say the regulation dataset does not cover them yet and direct the user to the official provincial source.
+- Regulations: for Québec fishing zones ${REG_ZONES.join(', ')} you have the lookup_regulations tool with official MELCCFP data. When a user asks about limits, sizes, seasons, gear rules, or a specific lake's exceptions, CALL THE TOOL. NEVER state a regulation from memory. After you call the tool, an OFFICIAL RULE CARD with the verbatim regulation text, source link and retrieval date is displayed to the user automatically below your reply — so do NOT restate specific numbers, dates or limits in your own words; instead refer the user to the card (e.g. "the official rule card below has the exact limits for Zone 10") and add only context the card lacks. For zones or provinces not covered, say the regulation dataset does not cover them yet and direct the user to the official provincial source.
 - Be concise, warm, and practical. Ask ONE brief clarifying question only if the request lacks both an activity and any location to work from.
 - Canada only. Distances are straight-line estimates; real drive times are longer.`;
 
@@ -161,13 +161,20 @@ export default async function handler(req, res) {
   }
 
   const messages = [{ role: 'system', content: SYSTEM }, ...history];
+  // Rule cards: every lookup_regulations result is collected and returned to
+  // the UI, which renders the verbatim official text itself — the model never
+  // authors the regulation content the user reads.
+  const regCards = [];
 
   try {
     for (let step = 0; step < MAX_STEPS; step++) {
-      const msg = await chat({ messages, tools: TOOLS, temperature: 0.4, max_tokens: 1400 });
+      const msg = await chat({ messages, tools: TOOLS, temperature: 0.2, max_tokens: 1400 });
       messages.push(msg);
       const calls = msg.tool_calls || [];
-      if (!calls.length) { json(res, 200, { ok: true, type: 'message', reply: msg.content || '' }); return; }
+      if (!calls.length) {
+        json(res, 200, { ok: true, type: 'message', reply: msg.content || '', ...(regCards.length ? { regulations: regCards.map(({ _key, ...c }) => c) } : {}) });
+        return;
+      }
 
       let finalized = null;
       for (const call of calls) {
@@ -178,6 +185,12 @@ export default async function handler(req, res) {
           result = await searchSpots(args);
         } else if (call.function.name === 'lookup_regulations') {
           result = lookupRegulations(args);
+          if (!result.error) {
+            const key = `${result.zone.id}|${result.waterbody ? result.waterbody.name : ''}`;
+            if (!regCards.some(c => c._key === key) && regCards.length < 3) {
+              regCards.push({ _key: key, ...result });
+            }
+          }
         } else if (call.function.name === 'present_plan') {
           const plan = validatePlan(args);
           result = { ok: plan.stops.length > 0, stops_accepted: plan.stops.length };
@@ -189,7 +202,7 @@ export default async function handler(req, res) {
       }
       if (finalized) {
         const addParam = finalized.stops.map(s => s.activity + ':' + s.slug).join(',');
-        json(res, 200, { ok: true, type: 'plan', plan: finalized, addParam });
+        json(res, 200, { ok: true, type: 'plan', plan: finalized, addParam, ...(regCards.length ? { regulations: regCards.map(({ _key, ...c }) => c) } : {}) });
         return;
       }
     }

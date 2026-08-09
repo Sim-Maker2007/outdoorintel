@@ -66,7 +66,7 @@ function build(shellPath, outPath, fields, mainHtml) {
   html = html.replace(/<meta property="og:description" content="[^"]*">/, '<meta property="og:description" content="' + fields.desc + '">');
   html = html.replace(/<meta property="og:url" content="[^"]*">/, '<meta property="og:url" content="' + fields.canonical + '">');
   if (!html.includes('scout.js')) {
-    const tag = '<script defer src="/assets/js/scout.js?v=1"></script>';
+    const tag = '<script defer src="/assets/js/scout.js?v=2"></script>';
     const i = html.lastIndexOf('</body>');
     html = html.slice(0, i) + tag + '\n' + html.slice(i);
   }

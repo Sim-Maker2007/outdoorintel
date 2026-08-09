@@ -1207,8 +1207,8 @@
         }
       ],
       "reg_zone": {
-        "zone_id": 8,
-        "id_endro": 174,
+        "zone_id": 7,
+        "id_endro": 11499,
         "matched_name": "Fleuve Saint-Laurent",
         "matched_by": "name",
         "distance_km": null
@@ -4666,7 +4666,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 4,
+        "id_endro": 2591,
+        "matched_name": "Lac à la Barbue",
+        "matched_by": "name",
+        "distance_km": 0.2
+      }
     },
     {
       "name": "Barrière, Lac",
@@ -19181,7 +19188,14 @@
             "headlamp-early-mornings"
           ]
         }
-      ]
+      ],
+      "reg_zone": {
+        "zone_id": 10,
+        "id_endro": 10222,
+        "matched_name": "Lac du Poisson Blanc",
+        "matched_by": "name",
+        "distance_km": 4.5
+      }
     },
     {
       "name": "Pouliac, Lac",
