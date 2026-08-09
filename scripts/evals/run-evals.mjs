@@ -97,9 +97,13 @@ if (E2E) {
 
   for (const q of questions.filter(x => x.type !== 'coverage')) {
     try {
+      // Scout's public guard allows 15 req/h/IP — fewer than one full run.
+      // Set SCOUT_EVAL_KEY (same value as the Vercel env var) to bypass it.
+      const headers = { 'Content-Type': 'application/json' };
+      if (process.env.SCOUT_EVAL_KEY) headers['x-eval-key'] = process.env.SCOUT_EVAL_KEY;
       const res = await fetch(URL, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers,
         body: JSON.stringify({ messages: [{ role: 'user', content: q.question }] }),
       });
       const d = await res.json();
