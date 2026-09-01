@@ -10,6 +10,7 @@
  */
 import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { pathToFileURL } from 'node:url';
 
 const REPO = process.cwd();
 const UA = 'OutdoorIntel-RegHarvester/1.0 (outdoorintel.ca; regulation transparency tool)';
@@ -44,6 +45,34 @@ function text(html) {
   s = decode(s).replace(/\s+/g, ' ').trim();
   // ontario.ca wraps S/C in <abbr>; never collapse licence classes, but keep S-n / C-n glued.
   return s.replace(/\b([SC])\s*-\s*(\d+)\b/g, '$1-$2');
+}
+
+// Drupal pager/TOC crumbs ontario.ca appends after the last FMZ section.
+// EN: "Table of contents access the table of contents" / Previous / Next
+// FR: "Table des matières accéder à la table des matières" / Précédent / Suivant
+const DRUPAL_NAV_TOKEN = String.raw`(?:table of contents(?:\s+access the table of contents)?|table des mati[eè]res(?:\s+acc[eé]der [àa] la table des mati[eè]res)?|previous|next|pr[eé]c[eé]dent|suivant)`;
+const DRUPAL_NAV_CRUMB_RE = new RegExp(`^${DRUPAL_NAV_TOKEN}$`, 'i');
+const DRUPAL_NAV_TAIL_RE = new RegExp(`(?:\\s*\\|\\s*${DRUPAL_NAV_TOKEN})+\\s*$`, 'i');
+
+export function isDrupalNavCrumb(s) {
+  return DRUPAL_NAV_CRUMB_RE.test(String(s).trim());
+}
+
+export function dropDrupalNavFragments(items) {
+  const out = [];
+  for (const item of items) {
+    for (const part of String(item).split(/\s*\|\s*/)) {
+      const t = part.trim();
+      if (t && !isDrupalNavCrumb(t)) out.push(t);
+    }
+  }
+  return out;
+}
+
+export function stripDrupalNavTail(s) {
+  if (s == null || s === '') return s;
+  const stripped = String(s).replace(DRUPAL_NAV_TAIL_RE, '').trim();
+  return dropDrupalNavFragments([stripped]).join(' | ');
 }
 
 function classifyH2(title) {
@@ -100,7 +129,7 @@ function parseSeasonLimits(blockHtml) {
   const limitsM = t.match(/(?:Limits|Limites)\s*:\s*(.*)$/i);
   const period = seasonM ? seasonM[1].trim() : null;
   const limit = limitsM ? limitsM[1].trim() : null;
-  return { period: period || null, limit: limit || null, length: extractLength(limit), raw: t || null };
+  return { period: period || null, limit: limit || null, length: extractLength(limit), raw: stripDrupalNavTail(t) || null };
 }
 
 function topLevelLis(html) {
@@ -113,9 +142,11 @@ function topLevelLis(html) {
   while ((m = re.exec(body))) {
     const inner = m[1].replace(/<ul[\s\S]*$/i, '');
     const t = text(inner);
-    if (t && !seen.has(t)) {
-      seen.add(t);
-      lis.push(t);
+    for (const part of dropDrupalNavFragments(t ? [t] : [])) {
+      if (!seen.has(part)) {
+        seen.add(part);
+        lis.push(part);
+      }
     }
   }
   return lis;
@@ -129,7 +160,7 @@ function allLiTexts(html) {
     const t = text(m[1].replace(/<ul[\s\S]*$/i, ''));
     if (t) out.push(t);
   }
-  return out;
+  return dropDrupalNavFragments(out);
 }
 
 function ruleFromSpeciesBlock(species, blockHtml) {
@@ -200,7 +231,7 @@ function parseWaterbodyExceptions(section) {
       name,
       location: location || null,
       rules,
-      raw: text(`${name} ${location} ${lis.join(' | ')}`),
+      raw: stripDrupalNavTail(text(`${name} ${location} ${lis.join(' | ')}`)),
     });
   }
   const strongCount = [...section.html.matchAll(/<p>\s*<strong>/gi)].length;
@@ -218,7 +249,7 @@ function parseExceptionLi(li) {
       length: sl.length,
       gear: /hook|lure|artificial|hameçon|leurre/i.test(li) ? li : null,
       notes: null,
-      raw: li,
+      raw: stripDrupalNavTail(li),
     };
   }
   const split = li.match(/^(.*?)\s+[-–—]\s+(.*)$/);
@@ -234,7 +265,7 @@ function parseExceptionLi(li) {
       length: extractLength(rest),
       gear,
       notes: rest,
-      raw: li,
+      raw: stripDrupalNavTail(li),
     };
   }
   return {
@@ -244,7 +275,7 @@ function parseExceptionLi(li) {
     length: extractLength(li),
     gear: /hook|lure|artificial|hameçon|leurre/i.test(li) ? li : null,
     notes: li,
-    raw: li,
+    raw: stripDrupalNavTail(li),
   };
 }
 
@@ -260,7 +291,7 @@ function parseSanctuaries(section) {
       length: null,
       gear: null,
       notes: null,
-      raw: text(`${b.title} ${waters.join(' | ')}`),
+      raw: stripDrupalNavTail(text(`${b.title} ${waters.join(' | ')}`)),
       waters,
     };
   });
@@ -287,7 +318,7 @@ function parseNoticesAndBait(section, leadHtml) {
           length: null,
           gear: null,
           notes: t,
-          raw: t,
+          raw: stripDrupalNavTail(t),
         });
       }
     }
@@ -412,6 +443,24 @@ function ensureBoundaryWarning(notices, lang) {
   return ok;
 }
 
+function findDrupalNavHits(value, path = '') {
+  const hits = [];
+  if (typeof value === 'string') {
+    if (isDrupalNavCrumb(value) || DRUPAL_NAV_TAIL_RE.test(value)) hits.push(path || '(root)');
+    return hits;
+  }
+  if (Array.isArray(value)) {
+    value.forEach((item, i) => hits.push(...findDrupalNavHits(item, `${path}[${i}]`)));
+    return hits;
+  }
+  if (value && typeof value === 'object') {
+    for (const [k, v] of Object.entries(value)) {
+      hits.push(...findDrupalNavHits(v, path ? `${path}.${k}` : k));
+    }
+  }
+  return hits;
+}
+
 export function parseOntarioPair(enHtml, frHtml, fmz) {
   const en = parseLangPage(enHtml, { lang: 'en', fmz });
   const fr = parseLangPage(frHtml, { lang: 'fr', fmz });
@@ -430,6 +479,7 @@ function loadLocal(fmz, lang) {
   return readFileSync(f, 'utf-8');
 }
 
+async function harvestOntario() {
 mkdirSync(join(REPO, 'data', 'regulations'), { recursive: true });
 const fetched_at = new Date().toISOString().slice(0, 10);
 
@@ -513,6 +563,13 @@ for (const zone of ZONES) {
     fish_sanctuaries: { en: en.sanct.entries, fr: fr.sanct.entries },
   };
 
+  const navHits = findDrupalNavHits(doc);
+  if (navHits.length) {
+    console.error(`FMZ ${fmz}: Drupal nav crumbs still present at ${navHits.join(', ')}`);
+    fatal++;
+    continue;
+  }
+
   const outPath = join(REPO, 'data', 'regulations', `on-fmz-${fmz}.json`);
   writeFileSync(outPath, JSON.stringify(doc, null, 2) + '\n');
   console.log(`FMZ ${fmz}: zone-wide EN ${en.zoneWide.harvested}/${en.zoneWide.listed} FR ${fr.zoneWide.harvested}/${fr.zoneWide.listed}; waterbodies EN ${en.waterEx.harvested}/${en.waterEx.listed}; sanctuaries EN ${en.sanct.harvested}/${en.sanct.listed}; complete=${coverage.complete} -> ${outPath}`);
@@ -521,4 +578,10 @@ for (const zone of ZONES) {
 if (fatal) {
   console.error(`harvest-ontario: ${fatal} zone(s) failed`);
   process.exit(1);
+}
+}
+
+const isCli = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
+if (isCli) {
+  await harvestOntario();
 }
