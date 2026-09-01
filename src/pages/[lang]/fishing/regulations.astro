@@ -6,6 +6,7 @@ import { join } from 'node:path';
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import GlobalSearch from '../../../components/GlobalSearch.astro';
+import { isGridJunkRule } from '../../../lib/regResolver.mjs';
 
 export function getStaticPaths() {
   return [{ params: { lang: 'en' } }, { params: { lang: 'fr' } }];
@@ -40,7 +41,40 @@ const T = {
   updated: { en: 'Data retrieved', fr: 'Données récupérées le' },
   breadcrumbHome: { en: 'Home', fr: 'Accueil' },
   fishing: { en: 'Fishing', fr: 'Pêche' },
+  searchTitle: { en: 'Look up a rule', fr: 'Chercher une règle' },
+  searchIntro: {
+    en: 'Search the cited MELCCFP data for a zone, species, and optional waterbody. Results are verbatim source text — always verify with the official page before you fish.',
+    fr: 'Cherchez dans les données citées du MELCCFP par zone, espèce et plan d’eau (facultatif). Les résultats sont le texte intégral de la source — vérifiez toujours la page officielle avant de pêcher.',
+  },
+  zoneLabel: { en: 'Zone', fr: 'Zone' },
+  speciesLabel: { en: 'Species', fr: 'Espèce' },
+  waterbodyLabel: { en: 'Waterbody (optional)', fr: 'Plan d’eau (facultatif)' },
+  dateLabel: { en: 'Date (optional)', fr: 'Date (facultatif)' },
+  searchBtn: { en: 'Search', fr: 'Rechercher' },
+  speciesPh: { en: 'e.g. walleye', fr: 'ex. doré' },
+  waterbodyPh: { en: 'e.g. barbue', fr: 'ex. barbue' },
+  generalHeading: { en: 'Zone-wide rules', fr: 'Règles générales de la zone' },
+  wbHeading: { en: 'Waterbody exceptions', fr: 'Exceptions par plan d’eau' },
+  official: { en: 'Official source (MELCCFP)', fr: 'Source officielle (MELCCFP)' },
+  fetched: { en: 'Data retrieved', fr: 'Données récupérées le' },
+  wbNotFound: {
+    en: 'No matching waterbody in this zone. Zone-wide rules are shown below — check the official source for that name.',
+    fr: 'Aucun plan d’eau correspondant dans cette zone. Les règles générales s’affichent ci-dessous — vérifiez la source officielle pour ce nom.',
+  },
+  noRules: { en: 'No matching rules for this search.', fr: 'Aucune règle ne correspond à cette recherche.' },
+  searching: { en: 'Loading…', fr: 'Chargement…' },
+  searchError: { en: 'Could not load regulations. Try again.', fr: 'Impossible de charger les règlements. Réessayez.' },
+  cols: {
+    species: { en: 'Species', fr: 'Espèce' },
+    limit: { en: 'Catch limit', fr: 'Limite de prise' },
+    length: { en: 'Length limit', fr: 'Limite de longueur' },
+    gear: { en: 'Gear', fr: 'Engin' },
+    notes: { en: 'Notes', fr: 'Note' },
+  },
 };
+
+const zoneLabel = (z) => (z.title[L] || z.title.en || `Zone ${z.zone_id}`).split('|')[0].trim();
+const generalCount = (z) => z.general[L].filter(r => !isGridJunkRule(r)).length;
 
 const breadcrumbLd = {
   '@context': 'https://schema.org',
@@ -97,13 +131,44 @@ const breadcrumbLd = {
             </div>
         </section>
 
+        <section class="py-10 px-6 bg-[#f4f3ec] border-b border-[#305e3c]/10">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-2xl font-bold text-[#305e3c] mb-2">{T.searchTitle[L]}</h2>
+                <p class="text-sm text-[#5c6b5f] mb-6 max-w-2xl">{T.searchIntro[L]}</p>
+                <form id="regs-search" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 items-end">
+                    <label class="block text-sm">
+                        <span class="font-semibold text-[#1c2b21]">{T.zoneLabel[L]}</span>
+                        <select name="zone" required class="mt-1 w-full px-3 py-2 rounded-lg border border-[#305e3c]/20 bg-white text-[#1c2b21]">
+                            {zones.map(z => (
+                            <option value={z.zone_id}>{zoneLabel(z)}</option>
+                            ))}
+                        </select>
+                    </label>
+                    <label class="block text-sm">
+                        <span class="font-semibold text-[#1c2b21]">{T.speciesLabel[L]}</span>
+                        <input type="text" name="species" placeholder={T.speciesPh[L]} class="mt-1 w-full px-3 py-2 rounded-lg border border-[#305e3c]/20 bg-white text-[#1c2b21]" autocomplete="off">
+                    </label>
+                    <label class="block text-sm">
+                        <span class="font-semibold text-[#1c2b21]">{T.waterbodyLabel[L]}</span>
+                        <input type="text" name="waterbody" placeholder={T.waterbodyPh[L]} class="mt-1 w-full px-3 py-2 rounded-lg border border-[#305e3c]/20 bg-white text-[#1c2b21]" autocomplete="off">
+                    </label>
+                    <label class="block text-sm">
+                        <span class="font-semibold text-[#1c2b21]">{T.dateLabel[L]}</span>
+                        <input type="date" name="date" class="mt-1 w-full px-3 py-2 rounded-lg border border-[#305e3c]/20 bg-white text-[#1c2b21]">
+                    </label>
+                    <button type="submit" class="bg-[#305e3c] text-white font-semibold px-4 py-2 rounded-lg hover:bg-[#3d7a4d] transition-colors">{T.searchBtn[L]}</button>
+                </form>
+                <div id="regs-results" class="mt-8 hidden"></div>
+            </div>
+        </section>
+
         <section class="py-14 px-6">
             <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
                 {zones.map(z => (
                 <a href={`/${lang}/fishing/regulations/zone-${z.zone_id}`} class="group bg-white rounded-xl border border-[#305e3c]/10 p-6 hover:shadow-lg transition-all hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
                     <div class="text-[#3d7a4d] text-xs font-bold uppercase tracking-widest mb-2">Québec · MELCCFP</div>
-                    <h2 class="text-2xl font-bold text-[#305e3c] mb-3">{T.zone[L]} {z.zone_id}</h2>
-                    <p class="text-sm text-[#5c6b5f] mb-1">{z.general[L].length} {T.generalCount[L]}</p>
+                    <h2 class="text-2xl font-bold text-[#305e3c] mb-3">{zoneLabel(z)}</h2>
+                    <p class="text-sm text-[#5c6b5f] mb-1">{generalCount(z)} {T.generalCount[L]}</p>
                     <p class="text-sm text-[#5c6b5f] mb-1">{z.waterbodies.length} {T.wbCount[L]}</p>
                     <p class="text-xs text-[#5c6b5f]/80 mb-4">{T.updated[L]} {z.source.fetched_at}</p>
                     <div class="text-[#3d7a4d] text-sm font-semibold">{T.view[L]}</div>
@@ -126,5 +191,90 @@ if (toggle && menu) {
 <\/script>`} />
     <GlobalSearch />
     <script is:inline defer src="/_vercel/insights/script.js"></script>
+    <script is:inline define:vars={{ lang, ui: {
+      official: T.official[L],
+      fetched: T.fetched[L],
+      generalHeading: T.generalHeading[L],
+      wbHeading: T.wbHeading[L],
+      wbNotFound: T.wbNotFound[L],
+      noRules: T.noRules[L],
+      searching: T.searching[L],
+      searchError: T.searchError[L],
+      cols: {
+        species: T.cols.species[L],
+        limit: T.cols.limit[L],
+        length: T.cols.length[L],
+        gear: T.cols.gear[L],
+        notes: T.cols.notes[L],
+      },
+    } }}>
+    (function () {
+      var form = document.getElementById('regs-search');
+      var out = document.getElementById('regs-results');
+      if (!form || !out) return;
+      function esc(s) {
+        return String(s == null ? '' : s)
+          .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      }
+      function cell(v) { return esc(v == null ? '' : v); }
+      function ruleTable(rules) {
+        var rows = (rules || []).map(function (r) {
+          return '<tr class="border-t border-[#305e3c]/10 align-top">'
+            + '<td class="p-3 font-semibold">' + cell(r.species)
+            + (r.period ? '<div class="text-xs font-normal text-[#5c6b5f]">' + cell(r.period) + '</div>' : '')
+            + '</td>'
+            + '<td class="p-3">' + cell(r.limit) + '</td>'
+            + '<td class="p-3">' + cell(r.length) + '</td>'
+            + '<td class="p-3">' + cell(r.gear) + '</td>'
+            + '<td class="p-3">' + cell(r.notes) + '</td></tr>';
+        }).join('');
+        return '<div class="overflow-x-auto rounded-xl border border-[#305e3c]/10 bg-white" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">'
+          + '<table class="w-full text-sm" style="border-collapse:collapse"><thead><tr class="bg-[#f4f3ec] text-left">'
+          + '<th class="p-3 font-bold text-[#305e3c]">' + esc(ui.cols.species) + '</th>'
+          + '<th class="p-3 font-bold text-[#305e3c]">' + esc(ui.cols.limit) + '</th>'
+          + '<th class="p-3 font-bold text-[#305e3c]">' + esc(ui.cols.length) + '</th>'
+          + '<th class="p-3 font-bold text-[#305e3c]">' + esc(ui.cols.gear) + '</th>'
+          + '<th class="p-3 font-bold text-[#305e3c]">' + esc(ui.cols.notes) + '</th>'
+          + '</tr></thead><tbody>' + rows + '</tbody></table></div>';
+      }
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var fd = new FormData(form);
+        var zone = (fd.get('zone') || '').toString().trim();
+        var species = (fd.get('species') || '').toString().trim();
+        var waterbody = (fd.get('waterbody') || '').toString().trim();
+        var date = (fd.get('date') || '').toString().trim();
+        var params = new URLSearchParams({ zone: zone, lang: lang });
+        if (species) params.set('species', species);
+        if (waterbody) params.set('waterbody', waterbody);
+        if (date) params.set('date', date);
+        out.classList.remove('hidden');
+        out.textContent = ui.searching;
+        fetch('/api/regulations?' + params.toString())
+          .then(function (r) { if (!r.ok) throw new Error('http ' + r.status); return r.json(); })
+          .then(function (data) {
+            var cite = data.citation || {};
+            var html = '<div class="bg-white rounded-xl border border-[#305e3c]/10 p-5 mb-6">'
+              + '<p class="text-sm mb-1"><strong>' + esc(ui.official) + ':</strong> '
+              + (cite.source ? '<a class="text-[#305e3c] underline" href="' + esc(cite.source) + '" target="_blank" rel="noopener noreferrer">' + esc(cite.source) + '</a>' : '')
+              + '</p>'
+              + '<p class="text-sm mb-1"><strong>' + esc(ui.fetched) + ':</strong> ' + esc(cite.fetched_at || '') + '</p>'
+              + '<p class="text-sm text-[#5c6b5f]">' + esc(data.disclaimer || '') + '</p></div>';
+            if (data.waterbody_not_found) {
+              html += '<p class="text-sm text-[#b3452e] mb-4">' + esc(ui.wbNotFound) + '</p>';
+            }
+            html += '<h3 class="text-xl font-bold text-[#305e3c] mb-3">' + esc(ui.generalHeading) + '</h3>';
+            if (data.general && data.general.length) html += ruleTable(data.general);
+            else html += '<p class="text-sm text-[#5c6b5f] mb-6">' + esc(ui.noRules) + '</p>';
+            if (data.waterbody) {
+              html += '<h3 class="text-xl font-bold text-[#305e3c] mt-8 mb-2">' + esc(ui.wbHeading) + ' — ' + esc(data.waterbody.name) + '</h3>';
+              html += ruleTable(data.waterbody.rules);
+            }
+            out.innerHTML = html;
+          })
+          .catch(function () { out.textContent = ui.searchError; });
+      });
+    })();
+    </script>
 </body>
 </html>

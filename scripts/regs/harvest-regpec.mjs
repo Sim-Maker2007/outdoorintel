@@ -18,6 +18,7 @@
  */
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
+import { isGridJunkRule } from '../../src/lib/regResolver.mjs';
 
 const REPO = process.cwd();
 const zonesArg = (process.argv.find(a => a.startsWith('--zones=')) || '--zones=10,12,13').replace('--zones=', '');
@@ -84,7 +85,6 @@ function parseGrid(regionHtml, { withWaterbodies }) {
 
     const cs = cells(row);
     if (cs.length < 2) continue;
-    if (/^(Esp[èe]ce|Species)$/.test(cs[0] || '')) continue; // header row
     const nonEmpty = cs.filter(Boolean);
     if (!nonEmpty.length) continue;
 
@@ -97,6 +97,7 @@ function parseGrid(regionHtml, { withWaterbodies }) {
       notes: cs[4] || null,
     };
     if (!rule.species) continue;
+    if (isGridJunkRule(rule)) continue; // DevExpress column headers stored as species
     if (withWaterbodies) {
       if (wb) wb.rules.push(rule);
     } else {
@@ -195,7 +196,7 @@ function parseEndroPage(html) {
   const i = html.indexOf('id="GrilleReglementsPlansEau"');
   if (i < 0) return [];
   return parseGrid(html.slice(i), { withWaterbodies: false })
-    .filter(r => r.species && !/^(Esp[èe]ce|Species)/.test(r.species))
+    .filter(r => r.species && !isGridJunkRule(r))
     // drop grid-header/detail-label rows that carry no rule content
     .filter(r => r.limit || r.length || r.gear || r.notes);
 }

@@ -7,6 +7,7 @@ import { join } from 'node:path';
 import Header from '../../../../components/Header.astro';
 import Footer from '../../../../components/Footer.astro';
 import GlobalSearch from '../../../../components/GlobalSearch.astro';
+import { isGridJunkRule } from '../../../../lib/regResolver.mjs';
 
 export function getStaticPaths() {
   const dir = join(process.cwd(), 'data', 'regulations');
@@ -42,10 +43,26 @@ const T = {
   },
   general: { en: 'Zone-wide rules', fr: 'Règles générales de la zone' },
   exceptions: { en: 'Waterbody exceptions', fr: 'Exceptions par plan d’eau' },
-  coverageNote: {
-    en: `This page covers ${doc.coverage.waterbodies_harvested} of the ${doc.coverage.waterbodies_listed_by_zone_page} waterbody exceptions listed by the authority for this zone.`,
-    fr: `Cette page couvre ${doc.coverage.waterbodies_harvested} des ${doc.coverage.waterbodies_listed_by_zone_page} exceptions de plans d'eau publiées par l'autorité pour cette zone.`,
-  },
+  coverageNote: (() => {
+    const listed = doc.coverage.waterbodies_listed_by_zone_page;
+    const harvested = doc.coverage.waterbodies_harvested;
+    if (doc.coverage.complete) {
+      if (harvested > listed) {
+        return {
+          en: `All ${listed} waterbody exceptions listed by the authority for this zone are included (${listed} listed, ${harvested} harvested).`,
+          fr: `Les ${listed} exceptions de plans d'eau publiées par l'autorité pour cette zone sont toutes incluses (${listed} listées, ${harvested} récupérées).`,
+        };
+      }
+      return {
+        en: `All ${listed} waterbody exceptions listed by the authority for this zone are included.`,
+        fr: `Les ${listed} exceptions de plans d'eau publiées par l'autorité pour cette zone sont toutes incluses.`,
+      };
+    }
+    return {
+      en: `This page covers ${harvested} of the ${listed} waterbody exceptions listed by the authority for this zone.`,
+      fr: `Cette page couvre ${harvested} des ${listed} exceptions de plans d'eau publiées par l'autorité pour cette zone.`,
+    };
+  })(),
   cols: {
     species: { en: 'Species', fr: 'Espèce' },
     limit: { en: 'Catch limit', fr: 'Limite de prise' },
@@ -57,9 +74,9 @@ const T = {
   fishing: { en: 'Fishing', fr: 'Pêche' },
 };
 
-// group general rules by period, in first-seen order
+// group general rules by period, in first-seen order — skip DevExpress header junk
 const periods = [];
-for (const r of doc.general[L]) {
+for (const r of doc.general[L].filter(rule => !isGridJunkRule(rule))) {
   let g = periods.find(p => p.period === r.period);
   if (!g) { g = { period: r.period, rules: [] }; periods.push(g); }
   g.rules.push(r);
