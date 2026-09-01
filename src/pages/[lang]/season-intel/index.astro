@@ -1,10 +1,10 @@
 ---
-// Season Intel waitlist — conversion page before Stripe exists.
-// Public zone pages stay public; this page does not paywall regs.
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import GlobalSearch from '../../components/GlobalSearch.astro';
-import { chromeLinks } from '../../lib/labels.mjs';
+// Season Intel — waitlist by default; Stripe Checkout CTA when env keys exist.
+// Public QC zone pages and Ontario FMZ 12/16/17/18 stay free. No paywall.
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import GlobalSearch from '../../../components/GlobalSearch.astro';
+import { chromeLinks } from '../../../lib/labels.mjs';
 
 export function getStaticPaths() {
   return [{ params: { lang: 'en' } }, { params: { lang: 'fr' } }];
@@ -21,14 +21,15 @@ const privacyHref = links.privacy;
 
 const T = {
   title: {
-    en: 'Season Intel — Québec & Ontario seasons waitlist',
-    fr: 'Season Intel — liste d’attente saisons Québec et Ontario',
+    en: 'Season Intel — Québec & Ontario seasons membership',
+    fr: 'Season Intel — abonnement saisons Québec et Ontario',
   },
   metaDesc: {
-    en: 'Join the Season Intel waitlist. Cited Québec fishing zones 1–33 and Ontario FMZ 12, 16, 17 and 18 are live and public. Hunting seasons and remaining Ontario FMZs are coming. Planned price $29/year CAD — no checkout yet.',
-    fr: 'Rejoignez la liste d’attente Season Intel. Les zones de pêche du Québec 1 à 33 et les ZGP 12, 16, 17 et 18 de l’Ontario sont en ligne et publiques. Saisons de chasse et autres ZGP ontariennes à venir. Prix prévu 29 $/an CAD — pas de paiement pour le moment.',
+    en: 'Season Intel is a $29 CAD/year membership for Québec and Ontario seasons and change alerts. Cited Québec fishing zones 1–33 and Ontario FMZ 12, 16, 17 and 18 stay public and free. Hunting seasons and remaining Ontario FMZs are coming.',
+    fr: 'Season Intel est un abonnement 29 $ CAD/an pour les saisons Québec et Ontario et les alertes de changement. Les zones de pêche du Québec 1 à 33 et les ZGP 12, 16, 17 et 18 de l’Ontario restent publiques et gratuites. Saisons de chasse et autres ZGP à venir.',
   },
   badge: { en: 'Paid membership · Waitlist', fr: 'Abonnement payant · Liste d’attente' },
+  badgeLive: { en: 'Paid membership · $29 CAD/year', fr: 'Abonnement payant · 29 $ CAD/an' },
   h1: { en: 'Season Intel', fr: 'Season Intel' },
   lead: {
     en: 'A membership for Québec and Ontario fishing and hunting regulations, waterbody exceptions, seasons, and change alerts. Not ads. Not an iHunter map clone.',
@@ -37,6 +38,10 @@ const T = {
   price: {
     en: 'Planned price: $29 CAD per year. This is not a live charge — there is no payment form yet.',
     fr: 'Prix prévu : 29 $ CAD par année. Ce n’est pas un paiement en direct — il n’y a pas de formulaire de paiement pour le moment.',
+  },
+  priceLive: {
+    en: '$29 CAD per year. Payment is handled on Stripe’s hosted Checkout — no card fields on this page.',
+    fr: '29 $ CAD par année. Le paiement se fait sur la page Checkout de Stripe — aucun champ de carte sur cette page.',
   },
   waitTitle: { en: 'Get Season Intel news', fr: 'Recevoir les nouvelles de Season Intel' },
   waitIntro: {
@@ -58,6 +63,28 @@ const T = {
     fr: 'Nous utilisons ce courriel uniquement pour envoyer les nouvelles demandées, conformément à la LPRPDE (PIPEDA) et à la Loi 25 du Québec. Questions : hello@outdoorintel.ca.',
   },
   privacyLink: { en: 'Privacy policy', fr: 'Politique de confidentialité' },
+  checkoutTitle: { en: 'Subscribe to Season Intel', fr: 'S’abonner à Season Intel' },
+  checkoutIntro: {
+    en: 'Annual membership. You will pay on Stripe’s Checkout page. Public zone and FMZ pages stay free.',
+    fr: 'Abonnement annuel. Vous paierez sur la page Checkout de Stripe. Les pages publiques de zone et de ZGP restent gratuites.',
+  },
+  checkoutBtn: { en: 'Subscribe — $29 CAD/year', fr: 'Subscribe — $29 CAD/year' },
+  checkoutHint: {
+    en: 'Stripe processes the payment. Card data never touches Outdoor Intel pages.',
+    fr: 'Stripe traite le paiement. Les données de carte ne passent pas par les pages Outdoor Intel.',
+  },
+  checkoutPrivacy: {
+    en: 'PIPEDA and Québec Law 25: we store the email and Stripe customer/subscription ids needed to keep the membership. Unsubscribe from Season Intel emails any time by writing to hello@outdoorintel.ca. There is no public unsubscribe URL yet.',
+    fr: 'LPRPDE et Loi 25 du Québec : nous conservons le courriel et les identifiants client/abonnement Stripe nécessaires à l’abonnement. Pour vous désabonner des courriels Season Intel, écrivez à hello@outdoorintel.ca. Il n’y a pas encore d’URL de désabonnement public.',
+  },
+  checkoutErr: {
+    en: 'Checkout could not start. Try again, or write to hello@outdoorintel.ca.',
+    fr: 'Le paiement n’a pas pu démarrer. Réessayez, ou écrivez à hello@outdoorintel.ca.',
+  },
+  cancelled: {
+    en: 'Checkout was cancelled. No charge was made.',
+    fr: 'Le paiement a été annulé. Aucun montant n’a été facturé.',
+  },
   nowTitle: { en: 'What you get now (free and public)', fr: 'Ce que vous avez déjà (gratuit et public)' },
   nowItems: {
     en: [
@@ -94,11 +121,11 @@ const T = {
   freeTitle: { en: 'What stays free', fr: 'Ce qui reste gratuit' },
   freeItems: {
     en: [
-      'Public fishing zone pages and the regulations hub, including search.',
+      'Public fishing zone pages, Ontario FMZ 12/16/17/18 pages, and the regulations hub, including search.',
       'Amazon affiliate packing lists on free spot pages.',
     ],
     fr: [
-      'Les pages publiques de zones de pêche et le carrefour des règlements, y compris la recherche.',
+      'Les pages publiques de zones de pêche, les pages ZGP 12/16/17/18 de l’Ontario, et le carrefour des règlements, y compris la recherche.',
       'Les listes d’équipement d’affiliation Amazon sur les pages de spots gratuites.',
     ],
   },
@@ -162,24 +189,47 @@ const breadcrumbLd = {
         <section class="bg-[#14251a] text-white py-16 px-6">
             <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
                 <div>
-                    <span class="inline-block bg-white/90 text-[#3d7a4d] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5">{T.badge[L]}</span>
+                    <div class="js-si-badge-wait mb-5">
+                        <span class="inline-block bg-white/90 text-[#3d7a4d] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full">{T.badge[L]}</span>
+                    </div>
+                    <div class="js-si-badge-live hidden mb-5">
+                        <span class="inline-block bg-white/90 text-[#3d7a4d] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full">{T.badgeLive[L]}</span>
+                    </div>
                     <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">{T.h1[L]}</h1>
                     <p class="text-white/85 text-lg mb-4">{T.lead[L]}</p>
-                    <p class="text-[#a2c99a] font-semibold">{T.price[L]}</p>
+                    <p class="js-si-price-wait text-[#a2c99a] font-semibold">{T.price[L]}</p>
+                    <p class="js-si-price-live hidden text-[#a2c99a] font-semibold">{T.priceLive[L]}</p>
                 </div>
-                <div id="waitlist" class="bg-white text-[#1c2b21] rounded-xl p-6 border border-[#305e3c]/10">
-                    <h2 class="text-2xl font-bold text-[#305e3c] mb-2">{T.waitTitle[L]}</h2>
-                    <p class="text-sm text-[#5c6b5f] mb-5">{T.waitIntro[L]}</p>
-                    <form class="js-newsletter-form flex flex-col gap-3" data-lang={lang} data-source="season-intel" data-ok-msg={T.waitOk[L]}>
-                        <input type="email" name="email" required placeholder={T.emailPh[L]} autocomplete="email" class="w-full px-3 py-2 rounded-lg text-sm text-[#1c2b21] bg-[#fbfaf7] border border-[#305e3c]/20 placeholder-[#5c6b5f] outline-none focus:ring-2 focus:ring-[#a2c99a]">
-                        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-5000px">
-                        <button type="submit" class="bg-[#305e3c] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#3d7a4d] transition-colors">{T.waitBtn[L]}</button>
-                    </form>
-                    <p class="js-newsletter-msg text-[#5c6b5f] text-xs mt-2">{T.waitHint[L]}</p>
-                    <p class="text-xs text-[#5c6b5f] mt-4 leading-relaxed">
-                        {T.privacy[L]}
-                        <a href={privacyHref} class="text-[#305e3c] font-semibold hover:underline">{T.privacyLink[L]}</a>
-                    </p>
+                <div>
+                    <p id="checkout-cancelled" class="hidden text-sm text-[#f2e6c9] bg-white/10 rounded-lg px-4 py-2 mb-4">{T.cancelled[L]}</p>
+                    <div id="waitlist" class="bg-white text-[#1c2b21] rounded-xl p-6 border border-[#305e3c]/10">
+                        <h2 class="text-2xl font-bold text-[#305e3c] mb-2">{T.waitTitle[L]}</h2>
+                        <p class="text-sm text-[#5c6b5f] mb-5">{T.waitIntro[L]}</p>
+                        <form class="js-newsletter-form flex flex-col gap-3" data-lang={lang} data-source="season-intel" data-ok-msg={T.waitOk[L]}>
+                            <input type="email" name="email" required placeholder={T.emailPh[L]} autocomplete="email" class="w-full px-3 py-2 rounded-lg text-sm text-[#1c2b21] bg-[#fbfaf7] border border-[#305e3c]/20 placeholder-[#5c6b5f] outline-none focus:ring-2 focus:ring-[#a2c99a]">
+                            <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-5000px">
+                            <button type="submit" class="bg-[#305e3c] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#3d7a4d] transition-colors">{T.waitBtn[L]}</button>
+                        </form>
+                        <p class="js-newsletter-msg text-[#5c6b5f] text-xs mt-2">{T.waitHint[L]}</p>
+                        <p class="text-xs text-[#5c6b5f] mt-4 leading-relaxed">
+                            {T.privacy[L]}
+                            <a href={privacyHref} class="text-[#305e3c] font-semibold hover:underline">{T.privacyLink[L]}</a>
+                        </p>
+                    </div>
+                    <div id="checkout" class="hidden bg-white text-[#1c2b21] rounded-xl p-6 border border-[#305e3c]/10">
+                        <h2 class="text-2xl font-bold text-[#305e3c] mb-2">{T.checkoutTitle[L]}</h2>
+                        <p class="text-sm text-[#5c6b5f] mb-5">{T.checkoutIntro[L]}</p>
+                        <form class="js-season-checkout-form flex flex-col gap-3" data-lang={lang} data-err-msg={T.checkoutErr[L]}>
+                            <input type="email" name="email" placeholder={T.emailPh[L]} autocomplete="email" class="w-full px-3 py-2 rounded-lg text-sm text-[#1c2b21] bg-[#fbfaf7] border border-[#305e3c]/20 placeholder-[#5c6b5f] outline-none focus:ring-2 focus:ring-[#a2c99a]">
+                            <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-5000px">
+                            <button type="submit" class="bg-[#305e3c] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#3d7a4d] transition-colors">{T.checkoutBtn[L]}</button>
+                        </form>
+                        <p class="js-checkout-msg text-[#5c6b5f] text-xs mt-2">{T.checkoutHint[L]}</p>
+                        <p class="text-xs text-[#5c6b5f] mt-4 leading-relaxed">
+                            {T.checkoutPrivacy[L]}
+                            <a href={privacyHref} class="text-[#305e3c] font-semibold hover:underline">{T.privacyLink[L]}</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -230,6 +280,7 @@ if (toggle && menu) {
 }
 <\/script>`} />
     <GlobalSearch />
+    <script is:inline defer src="/assets/js/season-intel-checkout.js?v=1"></script>
     <script is:inline defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
