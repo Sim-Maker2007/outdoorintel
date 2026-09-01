@@ -58,18 +58,30 @@ function onCoverageNote() {
   const harvested = doc.coverage.waterbody_exceptions_harvested ?? 0;
   const zwL = doc.coverage.zone_wide_listed ?? 0;
   const zwH = doc.coverage.zone_wide_harvested ?? 0;
+  const zw = {
+    en: `Licence year 2026 (calendar). ${zwH} of ${zwL} zone-wide species included.`,
+    fr: `Année de permis 2026 (calendrier). ${zwH} des ${zwL} espèces de toute la zone incluses.`,
+  };
+  const notComplete = {
+    en: 'This is not complete Ontario.',
+    fr: 'Ce n’est pas l’Ontario au complet.',
+  };
   if (doc.coverage.complete) {
-    const extra = harvested > listed
-      ? ` (${listed} listed, ${harvested} harvested)`
-      : '';
+    if (listed === 0) {
+      return {
+        en: `${zw.en} The Ontario HTML for this FMZ lists no waterbody exceptions. ${notComplete.en}`,
+        fr: `${zw.fr} Le HTML ontarien pour cette ZGP ne liste aucune exception de plan d’eau. ${notComplete.fr}`,
+      };
+    }
+    const extra = harvested > listed ? ` (${listed} listed, ${harvested} harvested)` : '';
     return {
-      en: `Licence year 2026 (calendar). ${zwH} of ${zwL} zone-wide species included. All ${listed} waterbody exceptions listed on the Ontario HTML for this FMZ are included${extra}. This is not complete Ontario.`,
-      fr: `Année de permis 2026 (calendrier). ${zwH} des ${zwL} espèces de toute la zone incluses. Les ${listed} exceptions de plans d’eau listées dans le HTML ontarien pour cette ZGP sont toutes incluses${extra}. Ce n’est pas l’Ontario au complet.`,
+      en: `${zw.en} All ${listed} waterbody exceptions listed on the Ontario HTML for this FMZ are included${extra}. ${notComplete.en}`,
+      fr: `${zw.fr} Les ${listed} exceptions de plans d’eau listées dans le HTML ontarien pour cette ZGP sont toutes incluses${extra}. ${notComplete.fr}`,
     };
   }
   return {
-    en: `Licence year 2026 (calendar). Zone-wide: ${zwH} of ${zwL} species. Waterbody exceptions: ${harvested} of ${listed} listed on the Ontario HTML. Coverage is incomplete for this FMZ. This is not complete Ontario.`,
-    fr: `Année de permis 2026 (calendrier). Toute la zone : ${zwH} des ${zwL} espèces. Exceptions de plans d’eau : ${harvested} des ${listed} listées dans le HTML ontarien. Couverture incomplète pour cette ZGP. Ce n’est pas l’Ontario au complet.`,
+    en: `${zw.en} Waterbody exceptions: ${harvested} of ${listed} listed on the Ontario HTML. Coverage is incomplete for this FMZ. ${notComplete.en}`,
+    fr: `${zw.fr} Exceptions de plans d’eau : ${harvested} des ${listed} listées dans le HTML ontarien. Couverture incomplète pour cette ZGP. ${notComplete.fr}`,
   };
 }
 
