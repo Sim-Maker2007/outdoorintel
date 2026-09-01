@@ -1,0 +1,163 @@
+---
+// Season Intel success page. Member perk v1: private "alerts coming" note.
+// Public QC zone pages and Ontario FMZ 12/16/17/18 stay free — no paywall.
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import GlobalSearch from '../../../components/GlobalSearch.astro';
+import { chromeLinks } from '../../../lib/labels.mjs';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'en' } }, { params: { lang: 'fr' } }];
+}
+
+const { lang } = Astro.params;
+const L = lang === 'en' ? 'en' : 'fr';
+const SITE = 'https://outdoorintel.ca';
+const url = `${SITE}/${lang}/season-intel/thanks`;
+const altHref = `/${lang === 'en' ? 'fr' : 'en'}/season-intel/thanks`;
+const links = chromeLinks(lang);
+const regsHref = `/${lang}/fishing/regulations`;
+const privacyHref = links.privacy;
+const fmz = [12, 16, 17, 18].map((n) => ({
+  n,
+  href: `/${lang}/fishing/regulations/on-fmz-${n}`,
+}));
+
+const T = {
+  title: { en: 'Thanks — Season Intel', fr: 'Merci — Season Intel' },
+  metaDesc: {
+    en: 'Season Intel membership confirmation. Public fishing regulations stay free. Change alerts are coming.',
+    fr: 'Confirmation d’abonnement Season Intel. Les règlements de pêche publics restent gratuits. Les alertes de changement s’en viennent.',
+  },
+  badge: { en: 'Season Intel member', fr: 'Membre Season Intel' },
+  h1: { en: 'You’re in', fr: 'C’est fait' },
+  lead: {
+    en: 'If you just subscribed, Stripe will send a receipt from their checkout. Outdoor Intel never sees your card number.',
+    fr: 'Si vous venez de vous abonner, Stripe enverra un reçu depuis sa page de paiement. Outdoor Intel ne voit jamais votre numéro de carte.',
+  },
+  perkTitle: { en: 'Member perk (v1)', fr: 'Avantage membre (v1)' },
+  perkBody: {
+    en: 'Change-alert emails are coming. This membership does not hide public regulations — Québec zone pages and Ontario FMZ 12, 16, 17 and 18 stay free for everyone.',
+    fr: 'Les courriels d’alerte de changement s’en viennent. Cet abonnement ne masque pas les règlements publics — les pages de zone du Québec et les ZGP 12, 16, 17 et 18 de l’Ontario restent gratuites pour tout le monde.',
+  },
+  perkPending: {
+    en: 'Confirming your Stripe checkout…',
+    fr: 'Confirmation du paiement Stripe…',
+  },
+  perkGuest: {
+    en: 'If you did not just pay, the public regulations below are still yours to use. Subscribe from the Season Intel page when checkout is live.',
+    fr: 'Si vous ne venez pas de payer, les règlements publics ci-dessous restent accessibles. Abonnez-vous depuis la page Season Intel lorsque le paiement est en ligne.',
+  },
+  regsTitle: { en: 'Public regulations (always free)', fr: 'Règlements publics (toujours gratuits)' },
+  regsIntro: {
+    en: 'The same public pages anyone can open. Season Intel does not paywall them.',
+    fr: 'Les mêmes pages publiques que tout le monde peut ouvrir. Season Intel ne les met pas derrière un paywall.',
+  },
+  regsHub: { en: 'Fishing regulations hub', fr: 'Carrefour des règlements de pêche' },
+  qcZones: { en: 'Québec zones 1–33', fr: 'Zones du Québec 1 à 33' },
+  onFmz: { en: 'Ontario FMZ', fr: 'ZGP Ontario' },
+  casl: {
+    en: 'Season Intel emails will include an unsubscribe note. Write to hello@outdoorintel.ca — there is no public unsubscribe URL yet. PIPEDA and Québec Law 25: questions to the same address. Stripe is the payment processor.',
+    fr: 'Les courriels Season Intel indiqueront comment se désabonner. Écrivez à hello@outdoorintel.ca — il n’y a pas encore d’URL de désabonnement public. LPRPDE et Loi 25 du Québec : mêmes coordonnées. Stripe est le processeur de paiement.',
+  },
+  privacyLink: { en: 'Privacy policy', fr: 'Politique de confidentialité' },
+  back: { en: 'Back to Season Intel', fr: 'Retour à Season Intel' },
+  contact: { en: 'Questions: hello@outdoorintel.ca.', fr: 'Questions : hello@outdoorintel.ca.' },
+  notAuthority: {
+    en: 'Outdoor Intel is not a legal authority. Always verify with the MELCCFP or Ontario MNR before you fish or hunt.',
+    fr: 'Outdoor Intel n’est pas une autorité juridique. Vérifiez toujours auprès du MELCCFP ou du MRN de l’Ontario avant de pêcher ou de chasser.',
+  },
+  breadcrumbHome: { en: 'Home', fr: 'Accueil' },
+  seasonIntel: { en: 'Season Intel', fr: 'Season Intel' },
+};
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: T.breadcrumbHome[L], item: `${SITE}/` },
+    { '@type': 'ListItem', position: 2, name: T.seasonIntel[L], item: `${SITE}/${lang}/season-intel` },
+    { '@type': 'ListItem', position: 3, name: T.h1[L], item: url },
+  ],
+};
+---
+<html lang={lang}>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#14251a">
+    <title>{T.title[L]} | Outdoor Intel</title>
+    <meta name="description" content={T.metaDesc[L]}>
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href={url}>
+    <link rel="alternate" hreflang="en" href={`${SITE}/en/season-intel/thanks`}>
+    <link rel="alternate" hreflang="fr" href={`${SITE}/fr/season-intel/thanks`}>
+    <link rel="alternate" hreflang="x-default" href={`${SITE}/en/season-intel/thanks`}>
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbLd)}></script>
+    <link rel="stylesheet" href="/assets/css/site.css?v=1">
+    <Fragment set:html={`<!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8Q00962P"><\/script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QY8Q00962P');
+    <\/script>`} />
+    <Fragment set:html={`<style id="oi-ds">.explore-dropdown{visibility:hidden;opacity:0;transform:translateY(6px);transition:opacity .15s ease,transform .15s ease,visibility .15s}.explore-group:hover .explore-dropdown,.explore-group:focus-within .explore-dropdown{visibility:visible;opacity:1;transform:translateY(0)}<\/style>`} />
+</head>
+<body class="bg-[#fbfaf7] text-[#1c2b21] font-sans leading-relaxed">
+    <Header lang={lang} altHref={altHref} />
+    <main class="pt-[88px]">
+        <section class="bg-[#14251a] text-white py-16 px-6">
+            <div class="max-w-3xl mx-auto">
+                <span class="inline-block bg-white/90 text-[#3d7a4d] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5">{T.badge[L]}</span>
+                <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">{T.h1[L]}</h1>
+                <p class="text-white/85 text-lg">{T.lead[L]}</p>
+            </div>
+        </section>
+        <section class="max-w-3xl mx-auto px-6 py-12 space-y-6">
+            <div class="bg-white rounded-xl p-6 border border-[#305e3c]/10">
+                <h2 class="text-2xl font-bold text-[#305e3c] mb-3">{T.perkTitle[L]}</h2>
+                <p id="si-thanks-status" class="text-[#5c6b5f] text-sm mb-3">{T.perkPending[L]}</p>
+                <p class="text-[#1c2b21] leading-relaxed" data-perk-member={T.perkBody[L]} data-perk-guest={T.perkGuest[L]}>{T.perkBody[L]}</p>
+            </div>
+            <div class="bg-white rounded-xl p-6 border border-[#305e3c]/10">
+                <h2 class="text-2xl font-bold text-[#305e3c] mb-3">{T.regsTitle[L]}</h2>
+                <p class="text-[#5c6b5f] text-sm mb-4">{T.regsIntro[L]}</p>
+                <ul class="space-y-2 text-[#1c2b21]">
+                    <li><a href={regsHref} class="text-[#3d7a4d] font-semibold hover:underline">{T.regsHub[L]} →</a></li>
+                    <li><a href={`${regsHref}/zone-10`} class="hover:underline">{T.qcZones[L]}</a></li>
+                    {fmz.map(({ n, href }) => (
+                    <li><a href={href} class="hover:underline">{T.onFmz[L]} {n}</a></li>
+                    ))}
+                </ul>
+            </div>
+            <div class="bg-white rounded-xl p-6 border border-[#305e3c]/10">
+                <p class="text-[#1c2b21] leading-relaxed mb-4">{T.casl[L]}</p>
+                <p class="text-sm text-[#5c6b5f] mb-4">{T.notAuthority[L]} {T.contact[L]}</p>
+                <p class="text-sm">
+                    <a href={privacyHref} class="text-[#305e3c] font-semibold hover:underline">{T.privacyLink[L]}</a>
+                    <span class="text-[#5c6b5f]"> · </span>
+                    <a href={`/${lang}/season-intel`} class="text-[#305e3c] font-semibold hover:underline">{T.back[L]}</a>
+                </p>
+            </div>
+        </section>
+    </main>
+    <Footer lang={lang} altHref={altHref} />
+    <Fragment set:html={`<script>
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('mobile-menu');
+if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        toggle.setAttribute('aria-expanded', !menu.classList.contains('hidden'));
+    });
+}
+<\/script>`} />
+    <GlobalSearch />
+    <script is:inline defer src="/assets/js/season-intel-thanks.js?v=1"></script>
+    <script is:inline defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

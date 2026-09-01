@@ -22,7 +22,11 @@
     "build:field-notes": "node scripts/build-field-notes.js",
     "design:apply": "node scripts/apply-design-system.js",
     "links:clean": "node scripts/fix-internal-links.js",
-    "quality": "npm run data:normalize && npm run build:province-indexes && npm run data:validate && npm run data:audit"
+    "quality": "npm run data:normalize && npm run build:province-indexes && npm run data:validate && npm run data:audit",
+    "test:stripe": "node scripts/test-stripe-checkout.mjs"
+  },
+  "dependencies": {
+    "stripe": "^22.6.0"
   },
   "engines": {
     "node": ">=20"
