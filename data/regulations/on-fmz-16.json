@@ -1,0 +1,2690 @@
+{
+  "zone_id": 16,
+  "zone_key": "ON-16",
+  "activity": "fishing",
+  "jurisdiction": "ON",
+  "fmz": 16,
+  "licence_year": 2026,
+  "authority": "Ontario Ministry of Natural Resources (MNR); Ontario Fishing Regulations Summary 2026 (not the official law)",
+  "source": {
+    "en": "https://www.ontario.ca/document/ontario-fishing-regulations-summary/fisheries-management-zone-16",
+    "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-peche/zone-de-gestion-des-peches-16",
+    "pdf_en": "https://ontario.ca/files/2025-12/mnr-2026-fishing-regulations-summary-en-2025-12-08.pdf",
+    "fish_on_line": "https://www.gisapplication.lrc.gov.on.ca/FishONLine/Index.html?site=FishONLine&viewer=FishONLine&locale=en-US&FMZ=16",
+    "fetched_at": "2026-09-01",
+    "html_updated": "2026-08-04",
+    "note": "Rule text reproduced verbatim from the Ontario Fishing Regulations Summary HTML (not the PDF). The Summary is not the official law. Always verify with the MNR and Fish ON-Line before fishing. Crown copyright."
+  },
+  "coverage": {
+    "licence_year": 2026,
+    "skipped_fish_on_line_only": false,
+    "zone_wide_listed": 18,
+    "zone_wide_harvested": 18,
+    "species_exceptions_listed": 4,
+    "species_exceptions_harvested": 4,
+    "waterbody_exceptions_listed": 38,
+    "waterbody_exceptions_harvested": 38,
+    "fish_sanctuaries_listed": 16,
+    "fish_sanctuaries_harvested": 16,
+    "bait_restrictions_listed": 1,
+    "bait_restrictions_harvested": 1,
+    "complete": true,
+    "note": "Zone-wide seasons/limits and listed HTML exceptions/sanctuaries for this FMZ are included. The Ontario Fishing Regulations Summary is not the law; verify with Fish ON-Line. This is not complete Ontario."
+  },
+  "title": {
+    "en": "Fisheries Management Zone 16 — Ontario FMZ 16",
+    "fr": "Zone de gestion des pêches 16 — Ontario ZGP 16"
+  },
+  "notices": {
+    "en": [
+      "Hamilton Harbour is in Zone 20",
+      "Detroit River and St. Clair River are in Zone 19",
+      "The mouth of many tributaries to Lake Huron and Georgian Bay are in Zones 13 and 14. Refer to regulations maps for Great Lake tributaries at Fishing",
+      "Refer to general fishing regulations for more information on how to use this summary.",
+      "There are several Great Lakes tributaries that have aligned regulations for Atlantic salmon, brown trout, Pacific salmon and rainbow trout - refer to species exceptions .",
+      "Warmouth is listed as endangered in Ontario and may not be caught or possessed under a recreational fishing licence.",
+      "The following waterbodies, or portions of them, have different regulations that are listed in the waterbody exceptions :",
+      "Big Creek",
+      "Credit River",
+      "Grand River",
+      "Green River",
+      "Humber River",
+      "Lake Couchiching",
+      "Lake Simcoe",
+      "Maitland River",
+      "Nine Mile Creek (Lucknow River)",
+      "Nottawasaga River",
+      "Pretty River",
+      "Saugeen River",
+      "Sydenham River",
+      "Thames River",
+      "Waterbodies in Grey and Bruce Counties",
+      "Whitemans Creek (Horner Creek)",
+      "FMZ 16 is part of the Southern Bait Management Zone ( BMZ ). Live or dead baitfish or leeches may not be transported into or out of a BMZ . These rules do not apply to baitfish and leeches which are both dead and preserved. Refer to bait for more details."
+    ],
+    "fr": [
+      "Le havre Hamilton se trouve dans la zone 20.",
+      "Les rivières Détroit et Sainte-Claire sont dans la zone 19.",
+      "Les embouchures de nombreux tributaires du lac Huron et de la baie Georgienne se trouvent dans les zones 13 et 14. Consulter les cartes des règlements s'appliquant aux tributaires des Grands Lacs à ontario.ca/peche",
+      "Voir les Règlements généraux concernant la pêche pour plus de renseignements sur l’utilisation de ce Résumé.",
+      "Il y a plusieurs tributaires des Grands Lacs qui ont aligné leurs règlements de pêche au saumon Atlantique, truite brune, saumon du Pacifique et truite arc-en-ciel - voir les exceptions visant des espèces particulières .",
+      "Le crapet sac-à-lait est classé comme une espèce en voie de disparition en Ontario et il est interdit de le capturer ou de le posséder avec un permis de pêche récréative.",
+      "Les plans d’eau suivants, ou des parties de ceux-ci, ont des règlements différents qui sont mentionnés dans les exceptions visant des plans d’eau particuliers :",
+      "ruisseau Big",
+      "rivière Credit",
+      "rivière Grand",
+      "rivière Green",
+      "rivière Humber",
+      "lac Couchiching",
+      "lac Simcoe",
+      "rivière Maitland",
+      "ruisseau Nine Mile (rivière Lucknow)",
+      "rivière Nottawasaga",
+      "rivière Pretty",
+      "rivière Saugeen",
+      "rivière Sydenham",
+      "rivière Thames",
+      "plans d’eau dans les comtés de Grey et Bruce",
+      "ruisseau Whitemans (ruisseau Horner)",
+      "La ZGP 16 fait partie de la zone de gestion des appâts ( ZGA ) du Sud. On ne peut pas apporter ou sortir des poissons d’appât et des sangsues, morts ou vivants, d’une ZGA . Ces règles ne s’appliquent pas aux poissons d’appât et sangsues qui sont morts et conservés. Voir la section sur les appâts pour plus de renseignements."
+    ]
+  },
+  "general": {
+    "en": [
+      {
+        "period": null,
+        "species": "Aggregate limits for trout and salmon (including splake)",
+        "limit": "S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limits : S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined"
+      },
+      {
+        "period": "fourth Saturday in April to September 30",
+        "species": "Atlantic salmon",
+        "limit": "S-0 and C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : fourth Saturday in April to September 30 Limits : S-0 and C-0"
+      },
+      {
+        "period": "fourth Saturday in April to September 30",
+        "species": "Brook trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : fourth Saturday in April to September 30 Limits : S-5 and C-2"
+      },
+      {
+        "period": "fourth Saturday in April to September 30",
+        "species": "Brown trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : fourth Saturday in April to September 30 Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Channel catfish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "open all year",
+        "species": "Crappie",
+        "limit": "S-30 and C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-30 and C-10"
+      },
+      {
+        "period": "closed all year",
+        "species": "Lake sturgeon",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : closed all year"
+      },
+      {
+        "period": "January 1 to September 30",
+        "species": "Lake trout",
+        "limit": "S-2 and C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to September 30 Limits : S-2 and C-1"
+      },
+      {
+        "period": "open all year",
+        "species": "Lake whitefish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "fourth Saturday in June to November 30",
+        "species": "Largemouth and smallmouth bass combined",
+        "limit": "S-6 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : fourth Saturday in June to November 30 Limits : S-6 and C-2"
+      },
+      {
+        "period": "first Saturday in June to December 15",
+        "species": "Muskellunge",
+        "limit": "S-1; must be greater than 91 centimetres, and C-0",
+        "length": "must be greater than 91 centimetres",
+        "gear": null,
+        "notes": null,
+        "raw": "Season : first Saturday in June to December 15 Limits : S-1; must be greater than 91 centimetres, and C-0"
+      },
+      {
+        "period": "January 1 to March 31 and second Saturday in May to December 31",
+        "species": "Northern pike",
+        "limit": "S-6 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to March 31 and second Saturday in May to December 31 Limits : S-6 and C-2"
+      },
+      {
+        "period": "fourth Saturday in April to September 30",
+        "species": "Pacific salmon",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : fourth Saturday in April to September 30 Limits : S-5 and C-2"
+      },
+      {
+        "period": "fourth Saturday in April to September 30",
+        "species": "Rainbow trout",
+        "limit": "S-2 and C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : fourth Saturday in April to September 30 Limits : S-2 and C-1"
+      },
+      {
+        "period": "open all year",
+        "species": "Splake",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Sunfish",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50 and C-25"
+      },
+      {
+        "period": "January 1 to March 15 and second Saturday in May to December 31",
+        "species": "Walleye and sauger combined",
+        "limit": "S-4 and C-2; not more than 1 greater than 46 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to March 15 and second Saturday in May to December 31 Limits : S-4 and C-2; not more than 1 greater than 46 centimetres"
+      },
+      {
+        "period": "open all year",
+        "species": "Yellow perch",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50 and C-25"
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Limites combinées pour la truite et le saumon (y compris le touladi et l’omble de fontaine)",
+        "limit": "S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées.",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limites : S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées."
+      },
+      {
+        "period": "Du 4e samedi d’avril au 30 septembre",
+        "species": "Saumon Atlantique",
+        "limit": "S-0 et C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 4e samedi d’avril au 30 septembre Limites : S-0 et C-0"
+      },
+      {
+        "period": "Du 4e samedi d’avril au 30 septembre",
+        "species": "Omble de fontaine",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 4e samedi d’avril au 30 septembre Limites : S-5 et C-2"
+      },
+      {
+        "period": "Du 4e samedi d’avril au 30 septembre",
+        "species": "Truite brune",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 4e samedi d’avril au 30 septembre Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Barbue de rivière",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Marigane",
+        "limit": "S-30 et C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-30 et C-10"
+      },
+      {
+        "period": "Fermée toute l’année",
+        "species": "Esturgeon de lac (esturgeon jaune)",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Fermée toute l’année"
+      },
+      {
+        "period": "Du 1er janvier au 30 septembre",
+        "species": "Touladi",
+        "limit": "S-2 et C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 30 septembre Limites : S-2 et C-1"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Grand corégone",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Du 4e samedi de juin au 30 novembre",
+        "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+        "limit": "S-6 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 4e samedi de juin au 30 novembre Limites : S-6 et C-2"
+      },
+      {
+        "period": "Du 1er samedi de juin au 15 décembre",
+        "species": "Maskinongé",
+        "limit": "S-1; doit mesurer plus de 91 centimètres, et C-0",
+        "length": "doit mesurer plus de 91 centimètres",
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er samedi de juin au 15 décembre Limites : S-1; doit mesurer plus de 91 centimètres, et C-0"
+      },
+      {
+        "period": "Du 1er janvier au 31 mars et du 2e samedi de mai au 31 décembre",
+        "species": "Grand brochet",
+        "limit": "S-6 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 31 mars et du 2e samedi de mai au 31 décembre Limites : S-6 et C-2"
+      },
+      {
+        "period": "Du 4e samedi d’avril au 30 septembre",
+        "species": "Saumon du Pacifique",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 4e samedi d’avril au 30 septembre Limites : S-5 et C-2"
+      },
+      {
+        "period": "Du 4e samedi d’avril au 30 septembre",
+        "species": "Truite arc-en-ciel",
+        "limit": "S-2 et C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 4e samedi d’avril au 30 septembre Limites : S-2 et C-1"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Truite moulac",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Crapet",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-50 et C-25"
+      },
+      {
+        "period": "Du 1er janvier au 15 mars et du 2e samedi de mai au 31 décembre",
+        "species": "Doré jaune et doré noir (toute combinaison)",
+        "limit": "S-4 et C-2; 1 seul dépassant 46 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 15 mars et du 2e samedi de mai au 31 décembre Limites : S-4 et C-2; 1 seul dépassant 46 centimètres"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Perchaude",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-50 et C-25"
+      }
+    ]
+  },
+  "species_exceptions": {
+    "en": [
+      {
+        "period": "open all year Bells Lake (44°19′15″ N , 80°44′09″ W )",
+        "species": "Brook trout",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Additional fishing opportunities · Bells Lake (44°19′15″ N , 80°44′09″ W )",
+        "raw": "Additional fishing opportunities Season : open all year Bells Lake (44°19′15″ N , 80°44′09″ W )",
+        "waters": [
+          "Bells Lake (44°19′15″ N , 80°44′09″ W )"
+        ]
+      },
+      {
+        "period": "open all year",
+        "species": "Brown trout and rainbow trout",
+        "limit": "S-5 and C-2 Big Creek - Walsingham Township, downstream from Regional Road 21 to Long Point Bay of Lake Erie North Thames River (main branch only) - Middlesex County",
+        "length": null,
+        "gear": null,
+        "notes": "Additional fishing opportunities · Big Creek - Walsingham Township, downstream from Regional Road 21 to Long Point Bay of Lake Erie · North Thames River (main branch only) - Middlesex County",
+        "raw": "Additional fishing opportunities Season : open all year Limits : S-5 and C-2 Big Creek - Walsingham Township, downstream from Regional Road 21 to Long Point Bay of Lake Erie North Thames River (main branch only) - Middlesex County",
+        "waters": [
+          "Big Creek - Walsingham Township, downstream from Regional Road 21 to Long Point Bay of Lake Erie",
+          "North Thames River (main branch only) - Middlesex County"
+        ]
+      },
+      {
+        "period": "open all year",
+        "species": "Atlantic salmon, brown trout, Pacific salmon and rainbow trout",
+        "limit": "Zone-wide limits apply Black Creek - City of Nanticoke, from Highway 3 to the junction with the Lynn River Bronte Creek - Town of Oakville, from Highway 2 (Lakeshore Road West) to Lake Ontario Credit River and tributaries - City of Mississauga, from the south side of Highway 403 bridge downstream to Lake Ontario Don River and tributaries - City of Toronto, from Lake Ontario upstream to Eglinton Avenue Fifteen Mile Creek - City of St. Catharines and Town of Lincoln, between the Queen Elizabeth Way and Lake Ontario Forty Mile Creek - Town of Grimsby, between the Queen Elizabeth Way and Lake Ontario Grindstone Creek - City of Burlington, from Highway 2 (Plains Road) to Hamilton Harbour of Lake Ontario (City of Hamilton in the Region of Halton) Highland Creek - City of Toronto from the downstream edge of the Highway 2 (Kingston Road) bridge to Lake Ontario Humber River - City of Toronto, between Eglinton Avenue and Lake Ontario Nottawasaga River - from the Boyne River downstream (north) to Georgian Bay Rouge River - City of Toronto, between Highway 2 (Kingston Road) and Lake Ontario Sixteen Mile Creek (Oakville Creek) - Town of Oakville, from Highway 2 (Lakeshore Road) to Lake Ontario Sixteen Mile Creek - Town of Lincoln, between the Queen Elizabeth Way and Lake Ontario Spencer Creek - City of Hamilton, from Highway 102 (Cootes Drive) to Lake Ontario Thames River - Elgin County and Middlesex County and the Municipality of Chatham-Kent, main branch only Trout Pond of Waterford Ponds - City of Nanticoke Twelve Mile Creek (Zone 20) - City of St. Catharines, between Lakeport Road and Lake Ontario Twenty Mile Creek - Town of Lincoln, between the Queen Elizabeth Way and Lake Ontario Young’s Creek (Ryerse Creek) - Woodhouse Township, from the downstream side of the Front Road bridge to Lake Erie at Port Ryerse Additional fishing opportunities Season : open from fourth Saturday in April to December 31 (extended fall season) Limits : Zone-wide limits apply Bayfield River - Goderich and Stanley Townships, from Highway 4 to the downstream side of the Highway 21 bridge (Huron County) Beaver River - Collingwood Township, from the Thornbury Dam to Georgian Bay (Grey County) Big Creek - Walsingham Township, south of the Quance Dam to Regional Road 21 at Lynedoch Big Otter Creek - Bayham Township (Elgin County) Bighead River - St. Vincent Township (Grey County) Bronte Creek - Town of Oakville from Highway 2 (Lakeshore Road West) upstream to the south side of Highway 407 Credit River and tributaries - from the south side of Britannia Road in the City of Mississauga upstream to the south side of the Highway 407 Bridge in the City of Brampton Don River and tributaries - upstream from Eglinton Avenue in the City of Toronto to the south side of Highway 407 in the Regional Municipality of York Grand River - from a line across the Grand River in Paris at 100 metres downstream of the Highway 2 (Dundas Street West) bridge to the edge of Lake Erie (refer to waterbody exceptions for catch and possession limits) Hog Creek - Tay Township from the C.P.R. bridge (Lot 10, Concession 6) downstream (north) to Georgian Bay (Simcoe County) Humber River and tributaries - upstream from Eglinton Avenue in the City of Toronto to the south side of the Highway 407 bridge in the Regional Municipality of York Little Otter Creek - Bayham Township, East branch of Big Otter Creek Little Sauble River - Bruce Township, from Highway 21 to Lake Huron (Bruce County) Maitland River - Colborne, Goderich, Hullett, East and West Wawanosh and Turnberry Townships, between County Road 4 and the downstream side of the Highway 21 bridge (Huron County) Nine Mile River (Lucknow River) - Ashfield and West Wawanosh Townships, between County Road 86 and Lake Huron North Creek - Middleton Township, downstream of Highway 3 Rouge River - from Highway 2 (Kingston Road) in the City of Toronto upstream to the south side of Highway 407 in the Town of Markham Sauble River - Amabel Township, from the lowest ledge of Sauble Falls 440 metres downstream to a line drawn perpendicular to the river’s current Saugeen River - Arran, Amabel, Brant, Elderslie and Saugeen Townships and in the Town of Walkerton and the Village of Paisley, between the southerly edge of the Municipality of Brockton Concession 2 SDR . bridge and the westerly edge of the concrete abutments downstream of Denny’s Dam Sixteen Mile Creek (Oakville Creek) and tributaries - Town of Oakville from Highway 2 (Lakeshore Road) upstream to the south side of Highway 407 Sturgeon River and tributaries - Tay and Oro-Medonte Townships (Simcoe County), including the mouth of the Sturgeon River at Georgian Bay Young’s Creek - from the dam on Lot 23, Concession 3 to the downstream side of the Front Road bridge",
+        "length": null,
+        "gear": null,
+        "notes": "Additional fishing opportunities · Black Creek - City of Nanticoke, from Highway 3 to the junction with the Lynn River · Bronte Creek - Town of Oakville, from Highway 2 (Lakeshore Road West) to Lake Ontario · Credit River and tributaries - City of Mississauga, from the south side of Highway 403 bridge downstream to Lake Ontario · Don River and tributaries - City of Toronto, from Lake Ontario upstream to Eglinton Avenue · Fifteen Mile Creek - City of St. Catharines and Town of Lincoln, between the Queen Elizabeth Way and Lake Ontario · Forty Mile Creek - Town of Grimsby, between the Queen Elizabeth Way and Lake Ontario · Grindstone Creek - City of Burlington, from Highway 2 (Plains Road) to Hamilton Harbour of Lake Ontario (City of Hamilton in the Region of Halton) · Highland Creek - City of Toronto from the downstream edge of the Highway 2 (Kingston Road) bridge to Lake Ontario · Humber River - City of Toronto, between Eglinton Avenue and Lake Ontario · Nottawasaga River - from the Boyne River downstream (north) to Georgian Bay · Rouge River - City of Toronto, between Highway 2 (Kingston Road) and Lake Ontario · Sixteen Mile Creek (Oakville Creek) - Town of Oakville, from Highway 2 (Lakeshore Road) to Lake Ontario · Sixteen Mile Creek - Town of Lincoln, between the Queen Elizabeth Way and Lake Ontario · Spencer Creek - City of Hamilton, from Highway 102 (Cootes Drive) to Lake Ontario · Thames River - Elgin County and Middlesex County and the Municipality of Chatham-Kent, main branch only · Trout Pond of Waterford Ponds - City of Nanticoke · Twelve Mile Creek (Zone 20) - City of St. Catharines, between Lakeport Road and Lake Ontario · Twenty Mile Creek - Town of Lincoln, between the Queen Elizabeth Way and Lake Ontario · Young’s Creek (Ryerse Creek) - Woodhouse Township, from the downstream side of the Front Road bridge to Lake Erie at Port Ryerse · Bayfield River - Goderich and Stanley Townships, from Highway 4 to the downstream side of the Highway 21 bridge (Huron County) · Beaver River - Collingwood Township, from the Thornbury Dam to Georgian Bay (Grey County) · Big Creek - Walsingham Township, south of the Quance Dam to Regional Road 21 at Lynedoch · Big Otter Creek - Bayham Township (Elgin County) · Bighead River - St. Vincent Township (Grey County) · Bronte Creek - Town of Oakville from Highway 2 (Lakeshore Road West) upstream to the south side of Highway 407 · Credit River and tributaries - from the south side of Britannia Road in the City of Mississauga upstream to the south side of the Highway 407 Bridge in the City of Brampton · Don River and tributaries - upstream from Eglinton Avenue in the City of Toronto to the south side of Highway 407 in the Regional Municipality of York · Grand River - from a line across the Grand River in Paris at 100 metres downstream of the Highway 2 (Dundas Street West) bridge to the edge of Lake Erie (refer to waterbody exceptions for catch and possession limits) · Hog Creek - Tay Township from the C.P.R. bridge (Lot 10, Concession 6) downstream (north) to Georgian Bay (Simcoe County) · Humber River and tributaries - upstream from Eglinton Avenue in the City of Toronto to the south side of the Highway 407 bridge in the Regional Municipality of York · Little Otter Creek - Bayham Township, East branch of Big Otter Creek · Little Sauble River - Bruce Township, from Highway 21 to Lake Huron (Bruce County) · Maitland River - Colborne, Goderich, Hullett, East and West Wawanosh and Turnberry Townships, between County Road 4 and the downstream side of the Highway 21 bridge (Huron County) · Nine Mile River (Lucknow River) - Ashfield and West Wawanosh Townships, between County Road 86 and Lake Huron · North Creek - Middleton Township, downstream of Highway 3 · Rouge River - from Highway 2 (Kingston Road) in the City of Toronto upstream to the south side of Highway 407 in the Town of Markham · Sauble River - Amabel Township, from the lowest ledge of Sauble Falls 440 metres downstream to a line drawn perpendicular to the river’s current · Saugeen River - Arran, Amabel, Brant, Elderslie and Saugeen Townships and in the Town of Walkerton and the Village of Paisley, between the southerly edge of the Municipality of Brockton Concession 2 SDR . bridge and the westerly edge of the concrete abutments downstream of Denny’s Dam · Sixteen Mile Creek (Oakville Creek) and tributaries - Town of Oakville from Highway 2 (Lakeshore Road) upstream to the south side of Highway 407 · Sturgeon River and tributaries - Tay and Oro-Medonte Townships (Simcoe County), including the mouth of the Sturgeon River at Georgian Bay · Young’s Creek - from the dam on Lot 23, Concession 3 to the downstream side of the Front Road bridge",
+        "raw": "Additional fishing opportunities Season : open all year Limits : Zone-wide limits apply Black Creek - City of Nanticoke, from Highway 3 to the junction with the Lynn River Bronte Creek - Town of Oakville, from Highway 2 (Lakeshore Road West) to Lake Ontario Credit River and tributaries - City of Mississauga, from the south side of Highway 403 bridge downstream to Lake Ontario Don River and tributaries - City of Toronto, from Lake Ontario upstream to Eglinton Avenue Fifteen Mile Creek - City of St. Catharines and Town of Lincoln, between the Queen Elizabeth Way and Lake Ontario Forty Mile Creek - Town of Grimsby, between the Queen Elizabeth Way and Lake Ontario Grindstone Creek - City of Burlington, from Highway 2 (Plains Road) to Hamilton Harbour of Lake Ontario (City of Hamilton in the Region of Halton) Highland Creek - City of Toronto from the downstream edge of the Highway 2 (Kingston Road) bridge to Lake Ontario Humber River - City of Toronto, between Eglinton Avenue and Lake Ontario Nottawasaga River - from the Boyne River downstream (north) to Georgian Bay Rouge River - City of Toronto, between Highway 2 (Kingston Road) and Lake Ontario Sixteen Mile Creek (Oakville Creek) - Town of Oakville, from Highway 2 (Lakeshore Road) to Lake Ontario Sixteen Mile Creek - Town of Lincoln, between the Queen Elizabeth Way and Lake Ontario Spencer Creek - City of Hamilton, from Highway 102 (Cootes Drive) to Lake Ontario Thames River - Elgin County and Middlesex County and the Municipality of Chatham-Kent, main branch only Trout Pond of Waterford Ponds - City of Nanticoke Twelve Mile Creek (Zone 20) - City of St. Catharines, between Lakeport Road and Lake Ontario Twenty Mile Creek - Town of Lincoln, between the Queen Elizabeth Way and Lake Ontario Young’s Creek (Ryerse Creek) - Woodhouse Township, from the downstream side of the Front Road bridge to Lake Erie at Port Ryerse Additional fishing opportunities Season : open from fourth Saturday in April to December 31 (extended fall season) Limits : Zone-wide limits apply Bayfield River - Goderich and Stanley Townships, from Highway 4 to the downstream side of the Highway 21 bridge (Huron County) Beaver River - Collingwood Township, from the Thornbury Dam to Georgian Bay (Grey County) Big Creek - Walsingham Township, south of the Quance Dam to Regional Road 21 at Lynedoch Big Otter Creek - Bayham Township (Elgin County) Bighead River - St. Vincent Township (Grey County) Bronte Creek - Town of Oakville from Highway 2 (Lakeshore Road West) upstream to the south side of Highway 407 Credit River and tributaries - from the south side of Britannia Road in the City of Mississauga upstream to the south side of the Highway 407 Bridge in the City of Brampton Don River and tributaries - upstream from Eglinton Avenue in the City of Toronto to the south side of Highway 407 in the Regional Municipality of York Grand River - from a line across the Grand River in Paris at 100 metres downstream of the Highway 2 (Dundas Street West) bridge to the edge of Lake Erie (refer to waterbody exceptions for catch and possession limits) Hog Creek - Tay Township from the C.P.R. bridge (Lot 10, Concession 6) downstream (north) to Georgian Bay (Simcoe County) Humber River and tributaries - upstream from Eglinton Avenue in the City of Toronto to the south side of the Highway 407 bridge in the Regional Municipality of York Little Otter Creek - Bayham Township, East branch of Big Otter Creek Little Sauble River - Bruce Township, from Highway 21 to Lake Huron (Bruce County) Maitland River - Colborne, Goderich, Hullett, East and West Wawanosh and Turnberry Townships, between County Road 4 and the downstream side of the Highway 21 bridge (Huron County) Nine Mile River (Lucknow River) - Ashfield and West Wawanosh Townships, between County Road 86 and Lake Huron North Creek - Middleton Township, downstream of Highway 3 Rouge River - from Highway 2 (Kingston Road) in the City of Toronto upstream to the south side of Highway 407 in the Town of Markham Sauble River - Amabel Township, from the lowest ledge of Sauble Falls 440 metres downstream to a line drawn perpendicular to the river’s current Saugeen River - Arran, Amabel, Brant, Elderslie and Saugeen Townships and in the Town of Walkerton and the Village of Paisley, between the southerly edge of the Municipality of Brockton Concession 2 SDR . bridge and the westerly edge of the concrete abutments downstream of Denny’s Dam Sixteen Mile Creek (Oakville Creek) and tributaries - Town of Oakville from Highway 2 (Lakeshore Road) upstream to the south side of Highway 407 Sturgeon River and tributaries - Tay and Oro-Medonte Townships (Simcoe County), including the mouth of the Sturgeon River at Georgian Bay Young’s Creek - from the dam on Lot 23, Concession 3 to the downstream side of the Front Road bridge",
+        "waters": [
+          "Black Creek - City of Nanticoke, from Highway 3 to the junction with the Lynn River",
+          "Bronte Creek - Town of Oakville, from Highway 2 (Lakeshore Road West) to Lake Ontario",
+          "Credit River and tributaries - City of Mississauga, from the south side of Highway 403 bridge downstream to Lake Ontario",
+          "Don River and tributaries - City of Toronto, from Lake Ontario upstream to Eglinton Avenue",
+          "Fifteen Mile Creek - City of St. Catharines and Town of Lincoln, between the Queen Elizabeth Way and Lake Ontario",
+          "Forty Mile Creek - Town of Grimsby, between the Queen Elizabeth Way and Lake Ontario",
+          "Grindstone Creek - City of Burlington, from Highway 2 (Plains Road) to Hamilton Harbour of Lake Ontario (City of Hamilton in the Region of Halton)",
+          "Highland Creek - City of Toronto from the downstream edge of the Highway 2 (Kingston Road) bridge to Lake Ontario",
+          "Humber River - City of Toronto, between Eglinton Avenue and Lake Ontario",
+          "Nottawasaga River - from the Boyne River downstream (north) to Georgian Bay",
+          "Rouge River - City of Toronto, between Highway 2 (Kingston Road) and Lake Ontario",
+          "Sixteen Mile Creek (Oakville Creek) - Town of Oakville, from Highway 2 (Lakeshore Road) to Lake Ontario",
+          "Sixteen Mile Creek - Town of Lincoln, between the Queen Elizabeth Way and Lake Ontario",
+          "Spencer Creek - City of Hamilton, from Highway 102 (Cootes Drive) to Lake Ontario",
+          "Thames River - Elgin County and Middlesex County and the Municipality of Chatham-Kent, main branch only",
+          "Trout Pond of Waterford Ponds - City of Nanticoke",
+          "Twelve Mile Creek (Zone 20) - City of St. Catharines, between Lakeport Road and Lake Ontario",
+          "Twenty Mile Creek - Town of Lincoln, between the Queen Elizabeth Way and Lake Ontario",
+          "Young’s Creek (Ryerse Creek) - Woodhouse Township, from the downstream side of the Front Road bridge to Lake Erie at Port Ryerse",
+          "Bayfield River - Goderich and Stanley Townships, from Highway 4 to the downstream side of the Highway 21 bridge (Huron County)",
+          "Beaver River - Collingwood Township, from the Thornbury Dam to Georgian Bay (Grey County)",
+          "Big Creek - Walsingham Township, south of the Quance Dam to Regional Road 21 at Lynedoch",
+          "Big Otter Creek - Bayham Township (Elgin County)",
+          "Bighead River - St. Vincent Township (Grey County)",
+          "Bronte Creek - Town of Oakville from Highway 2 (Lakeshore Road West) upstream to the south side of Highway 407",
+          "Credit River and tributaries - from the south side of Britannia Road in the City of Mississauga upstream to the south side of the Highway 407 Bridge in the City of Brampton",
+          "Don River and tributaries - upstream from Eglinton Avenue in the City of Toronto to the south side of Highway 407 in the Regional Municipality of York",
+          "Grand River - from a line across the Grand River in Paris at 100 metres downstream of the Highway 2 (Dundas Street West) bridge to the edge of Lake Erie (refer to waterbody exceptions for catch and possession limits)",
+          "Hog Creek - Tay Township from the C.P.R. bridge (Lot 10, Concession 6) downstream (north) to Georgian Bay (Simcoe County)",
+          "Humber River and tributaries - upstream from Eglinton Avenue in the City of Toronto to the south side of the Highway 407 bridge in the Regional Municipality of York",
+          "Little Otter Creek - Bayham Township, East branch of Big Otter Creek",
+          "Little Sauble River - Bruce Township, from Highway 21 to Lake Huron (Bruce County)",
+          "Maitland River - Colborne, Goderich, Hullett, East and West Wawanosh and Turnberry Townships, between County Road 4 and the downstream side of the Highway 21 bridge (Huron County)",
+          "Nine Mile River (Lucknow River) - Ashfield and West Wawanosh Townships, between County Road 86 and Lake Huron",
+          "North Creek - Middleton Township, downstream of Highway 3",
+          "Rouge River - from Highway 2 (Kingston Road) in the City of Toronto upstream to the south side of Highway 407 in the Town of Markham",
+          "Sauble River - Amabel Township, from the lowest ledge of Sauble Falls 440 metres downstream to a line drawn perpendicular to the river’s current",
+          "Saugeen River - Arran, Amabel, Brant, Elderslie and Saugeen Townships and in the Town of Walkerton and the Village of Paisley, between the southerly edge of the Municipality of Brockton Concession 2 SDR . bridge and the westerly edge of the concrete abutments downstream of Denny’s Dam",
+          "Sixteen Mile Creek (Oakville Creek) and tributaries - Town of Oakville from Highway 2 (Lakeshore Road) upstream to the south side of Highway 407",
+          "Sturgeon River and tributaries - Tay and Oro-Medonte Townships (Simcoe County), including the mouth of the Sturgeon River at Georgian Bay",
+          "Young’s Creek - from the dam on Lot 23, Concession 3 to the downstream side of the Front Road bridge"
+        ]
+      },
+      {
+        "period": "open all year",
+        "species": "Walleye",
+        "limit": "S-6 and C-2; no size limits Chenail Ecarte - from the mouth of the Chenail Ecarte at Lake St. Clair to the mouth of the Sydenham River Sydenham River - from the mouth of the Sydenham River at the Chenail Ecarte to the downstream side of the St. George Street Bridge in the Town of Dresden Thames River - from the mouth of the Thames River at Lake St. Clair to the downstream side of the Keil Street Bridge in the Municipality of Chatham",
+        "length": null,
+        "gear": null,
+        "notes": "Additional fishing opportunities · Chenail Ecarte - from the mouth of the Chenail Ecarte at Lake St. Clair to the mouth of the Sydenham River · Sydenham River - from the mouth of the Sydenham River at the Chenail Ecarte to the downstream side of the St. George Street Bridge in the Town of Dresden · Thames River - from the mouth of the Thames River at Lake St. Clair to the downstream side of the Keil Street Bridge in the Municipality of Chatham",
+        "raw": "Additional fishing opportunities Season : open all year Limits : S-6 and C-2; no size limits Chenail Ecarte - from the mouth of the Chenail Ecarte at Lake St. Clair to the mouth of the Sydenham River Sydenham River - from the mouth of the Sydenham River at the Chenail Ecarte to the downstream side of the St. George Street Bridge in the Town of Dresden Thames River - from the mouth of the Thames River at Lake St. Clair to the downstream side of the Keil Street Bridge in the Municipality of Chatham",
+        "waters": [
+          "Chenail Ecarte - from the mouth of the Chenail Ecarte at Lake St. Clair to the mouth of the Sydenham River",
+          "Sydenham River - from the mouth of the Sydenham River at the Chenail Ecarte to the downstream side of the St. George Street Bridge in the Town of Dresden",
+          "Thames River - from the mouth of the Thames River at Lake St. Clair to the downstream side of the Keil Street Bridge in the Municipality of Chatham"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "ouverte toute l’année Lac Bells (44°19′15″ N , 80°44′09″ O )",
+        "species": "Omble de fontaine",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Possibilités supplémentaires de pêche · Lac Bells (44°19′15″ N , 80°44′09″ O )",
+        "raw": "Possibilités supplémentaires de pêche Saison : ouverte toute l’année Lac Bells (44°19′15″ N , 80°44′09″ O )",
+        "waters": [
+          "Lac Bells (44°19′15″ N , 80°44′09″ O )"
+        ]
+      },
+      {
+        "period": "ouverte toute l’année",
+        "species": "Truite brune et truite arc-en-ciel",
+        "limit": "S-5 et C-2 Ruisseau Big - canton de Walsingham, en aval de la route régionale 21 jusqu’à la baie Long Point du lac Érié Rivière North Thames (bras principal seulement) - canton de Middlesex",
+        "length": null,
+        "gear": null,
+        "notes": "Possibilités supplémentaires de pêche · Ruisseau Big - canton de Walsingham, en aval de la route régionale 21 jusqu’à la baie Long Point du lac Érié · Rivière North Thames (bras principal seulement) - canton de Middlesex",
+        "raw": "Possibilités supplémentaires de pêche Saison : ouverte toute l’année Limites : S-5 et C-2 Ruisseau Big - canton de Walsingham, en aval de la route régionale 21 jusqu’à la baie Long Point du lac Érié Rivière North Thames (bras principal seulement) - canton de Middlesex",
+        "waters": [
+          "Ruisseau Big - canton de Walsingham, en aval de la route régionale 21 jusqu’à la baie Long Point du lac Érié",
+          "Rivière North Thames (bras principal seulement) - canton de Middlesex"
+        ]
+      },
+      {
+        "period": "ouverte toute l’année",
+        "species": "Saumon Atlantique, truite brune, saumon du Pacifique et truite arc-en-ciel",
+        "limit": "des exceptions visant toute la zone et des limites combinées s’appliquent Ruisseau Black - ville de Nanticoke, depuis la route 3 jusqu’à la jonction avec la rivière Lynn Ruisseau Bronte - ville d’Oakville, de la route 2 (chemin Lakeshore Ouest) jusqu’au lac Ontario Rivière Credit et ses tributaires - ville de Mississauga, depuis le côté sud du pont de l’autoroute 403, en aval jusqu’au lac Ontario Rivière Don et ses tributaires - ville de Toronto, depuis le lac Ontario en amont jusqu’à l’avenue Eglinton Ruisseau Fifteen Mile - villes de St. Catharines et de Lincoln, entre le Queen Elizabeth Way et le lac Ontario Ruisseau Forty Mile - ville de Grimsby, entre le Queen Elizabeth Way et le lac Ontario Ruisseau Grindstone - ville de Burlington, depuis la route 2 (chemin Plains) jusqu’au havre de Hamilton du lac Ontario (ville de Hamilton dans la région de Halton) Ruisseau Highland - ville de Toronto depuis le côté en aval du pont sur la route 2 (chemin Kingston) jusqu’au lac Ontario Rivière Humber - ville de Toronto, entre l’avenue Eglinton et le lac Ontario Rivière Nottawasaga - depuis la rivière Boyne, en aval (nord) jusqu’à la baie Georgienne Rivière Rouge - ville de Toronto, entre la route 2 (chemin Kingston) et le lac Ontario Ruisseau Sixteen Mile (ruisseau Oakville) - ville d’Oakville, de la route 2 jusqu’au lac Ontario Ruisseau Sixteen Mile - ville de Lincoln, entre le Queen Elizabeth Way et le lac Ontario Ruisseau Spencer - ville de Hamilton, de la route 102 (Cootes Drive) jusqu’au lac Ontario Rivière Thames - comtés d’Elgin et de Middlesex et municipalité de Chatham-Kent, bras principal seulement Étang Trout des étangs Waterford - ville de Nanticoke Ruisseau Twelve Mile (zone 20) - ville de St. Catharines, entre le chemin Lakeport et le lac Ontario Ruisseau Twenty Mile - ville de Lincoln, entre le Queen Elizabeth Way et le lac Ontario Ruisseau Young’s (ruisseau Ryerse) - canton de Woodhouse, depuis le bord en aval du pont du chemin Front jusqu’à la ligne des eaux du lac Érié à Port Ryerse Possibilités supplémentaires de pêche Saison : ouverte du 4e samedi d’avril au 31 décembre (saison prolongée à l’automne) Limites : des exceptions visant toute la zone et des limites combinées s’appliquent Rivière Bayfield - cantons de Goderich et Stanley, depuis la route 4 jusqu’au côté en aval du pont de la route 21 (comté de Huron) Rivière Beaver - canton de Collingwood, depuis le barrage Thornbury jusqu’à la baie Georgienne (comté de Grey) Ruisseau Big - canton de Walsingham, au sud du barrage Quance jusqu’à la route régionale 21 à Lynedoch Rivière Bighead - canton de St. Vincent (comté de Grey) Ruisseau Big Otter - canton de Bayham (comté d’Elgin) Ruisseau Bronte - ville d’Oakville, depuis la route 2 en amont jusqu’au côté sud de la route 407 Rivière Credit et ses tributaires - depuis le côté sud du chemin Britannia dans la ville de Mississauga en amont jusqu’au côté sud du pont de l’autoroute 407 dans la ville de Brampton Rivière Don et ses tributaires - en amont depuis l’avenue Eglinton, dans la ville de Toronto, jusqu’au côté sud de l’autoroute 407, dans la municipalité régionale de York Rivière Grand - depuis une ligne qui traverse la rivière Grand à Paris, à 100 mètres en aval du pont de la route 2 (rue Dundas Ouest), jusqu’au bord du lac Érié (voir les exceptions pour connaître les limites de prise et de possession) Ruisseau Hog - canton de Tay, depuis le pont du CP (lot 10, concession 6) en aval (nord) jusqu’à la baie Georgienne (comté de Simcoe) Rivière Humber et ses tributaires - en amont depuis l’avenue Eglinton, dans la ville de Toronto, jusqu’au côté sud du pont de l’autoroute 407, dans la municipalité régionale de York Ruisseau Little Otter - canton de Bayham, bras est du ruisseau Big Otter Rivière Little Sauble - canton de Bruce, de la route 21 jusqu’au lac Huron (comté de Bruce) Rivière Maitland - cantons de Colborne, Goderich, Hullett, East et West Wawanosh, et Turnberry, entre le chemin de comté 4 et le côté en aval du pont de la route 21 (comté de Huron) Rivière Nine Mile (rivière Lucknow) - cantons d’Ashfield et West Wawanosh, entre le chemin de comté 86 et le lac Huron Ruisseau North - canton de Middleton, en aval de la route 3 Rivière Rouge - depuis la route 2 (chemin Kingston) dans la ville de Toronto en amont jusqu’au côté sud de l’autoroute 407 dans la ville de Markham Rivière Sauble - canton d’Amabel, depuis le seuil le plus en bas des chutes Sauble, 440 mètres en aval, jusqu’à une ligne tracée de façon perpendiculaire au courant de la rivière Rivière Saugeen - cantons d’Arran, Amabel, Brant, Elderslie et Saugeen, ainsi que dans la ville de Walkerton et le village de Paisley, entre le côté sud du pont de la route secondaire de la concession 2 de la municipalité de Brockton et le côté ouest des culées de béton en aval du barrage Denny’s Ruisseau Sixteen Mile (ruisseau d’Oakville) et ses tributaires - ville d’Oakville depuis la route 2 (chemin Lakeshore) en amont jusqu’au côté sud de l’autoroute 407 Rivière Sturgeon et ses tributaires - cantons de Tay et Oro-Medonte (comté de Simcoe) - incluant l’embouchure de la rivière Sturgeon à la baie Georgienne Ruisseau Young’s - depuis le barrage sur le lot 23, concession 3, jusqu’au côté en aval du pont du chemin Front",
+        "length": null,
+        "gear": null,
+        "notes": "Possibilités supplémentaires de pêche · Ruisseau Black - ville de Nanticoke, depuis la route 3 jusqu’à la jonction avec la rivière Lynn · Ruisseau Bronte - ville d’Oakville, de la route 2 (chemin Lakeshore Ouest) jusqu’au lac Ontario · Rivière Credit et ses tributaires - ville de Mississauga, depuis le côté sud du pont de l’autoroute 403, en aval jusqu’au lac Ontario · Rivière Don et ses tributaires - ville de Toronto, depuis le lac Ontario en amont jusqu’à l’avenue Eglinton · Ruisseau Fifteen Mile - villes de St. Catharines et de Lincoln, entre le Queen Elizabeth Way et le lac Ontario · Ruisseau Forty Mile - ville de Grimsby, entre le Queen Elizabeth Way et le lac Ontario · Ruisseau Grindstone - ville de Burlington, depuis la route 2 (chemin Plains) jusqu’au havre de Hamilton du lac Ontario (ville de Hamilton dans la région de Halton) · Ruisseau Highland - ville de Toronto depuis le côté en aval du pont sur la route 2 (chemin Kingston) jusqu’au lac Ontario · Rivière Humber - ville de Toronto, entre l’avenue Eglinton et le lac Ontario · Rivière Nottawasaga - depuis la rivière Boyne, en aval (nord) jusqu’à la baie Georgienne · Rivière Rouge - ville de Toronto, entre la route 2 (chemin Kingston) et le lac Ontario · Ruisseau Sixteen Mile (ruisseau Oakville) - ville d’Oakville, de la route 2 jusqu’au lac Ontario · Ruisseau Sixteen Mile - ville de Lincoln, entre le Queen Elizabeth Way et le lac Ontario · Ruisseau Spencer - ville de Hamilton, de la route 102 (Cootes Drive) jusqu’au lac Ontario · Rivière Thames - comtés d’Elgin et de Middlesex et municipalité de Chatham-Kent, bras principal seulement · Étang Trout des étangs Waterford - ville de Nanticoke · Ruisseau Twelve Mile (zone 20) - ville de St. Catharines, entre le chemin Lakeport et le lac Ontario · Ruisseau Twenty Mile - ville de Lincoln, entre le Queen Elizabeth Way et le lac Ontario · Ruisseau Young’s (ruisseau Ryerse) - canton de Woodhouse, depuis le bord en aval du pont du chemin Front jusqu’à la ligne des eaux du lac Érié à Port Ryerse · Rivière Bayfield - cantons de Goderich et Stanley, depuis la route 4 jusqu’au côté en aval du pont de la route 21 (comté de Huron) · Rivière Beaver - canton de Collingwood, depuis le barrage Thornbury jusqu’à la baie Georgienne (comté de Grey) · Ruisseau Big - canton de Walsingham, au sud du barrage Quance jusqu’à la route régionale 21 à Lynedoch · Rivière Bighead - canton de St. Vincent (comté de Grey) · Ruisseau Big Otter - canton de Bayham (comté d’Elgin) · Ruisseau Bronte - ville d’Oakville, depuis la route 2 en amont jusqu’au côté sud de la route 407 · Rivière Credit et ses tributaires - depuis le côté sud du chemin Britannia dans la ville de Mississauga en amont jusqu’au côté sud du pont de l’autoroute 407 dans la ville de Brampton · Rivière Don et ses tributaires - en amont depuis l’avenue Eglinton, dans la ville de Toronto, jusqu’au côté sud de l’autoroute 407, dans la municipalité régionale de York · Rivière Grand - depuis une ligne qui traverse la rivière Grand à Paris, à 100 mètres en aval du pont de la route 2 (rue Dundas Ouest), jusqu’au bord du lac Érié (voir les exceptions pour connaître les limites de prise et de possession) · Ruisseau Hog - canton de Tay, depuis le pont du CP (lot 10, concession 6) en aval (nord) jusqu’à la baie Georgienne (comté de Simcoe) · Rivière Humber et ses tributaires - en amont depuis l’avenue Eglinton, dans la ville de Toronto, jusqu’au côté sud du pont de l’autoroute 407, dans la municipalité régionale de York · Ruisseau Little Otter - canton de Bayham, bras est du ruisseau Big Otter · Rivière Little Sauble - canton de Bruce, de la route 21 jusqu’au lac Huron (comté de Bruce) · Rivière Maitland - cantons de Colborne, Goderich, Hullett, East et West Wawanosh, et Turnberry, entre le chemin de comté 4 et le côté en aval du pont de la route 21 (comté de Huron) · Rivière Nine Mile (rivière Lucknow) - cantons d’Ashfield et West Wawanosh, entre le chemin de comté 86 et le lac Huron · Ruisseau North - canton de Middleton, en aval de la route 3 · Rivière Rouge - depuis la route 2 (chemin Kingston) dans la ville de Toronto en amont jusqu’au côté sud de l’autoroute 407 dans la ville de Markham · Rivière Sauble - canton d’Amabel, depuis le seuil le plus en bas des chutes Sauble, 440 mètres en aval, jusqu’à une ligne tracée de façon perpendiculaire au courant de la rivière · Rivière Saugeen - cantons d’Arran, Amabel, Brant, Elderslie et Saugeen, ainsi que dans la ville de Walkerton et le village de Paisley, entre le côté sud du pont de la route secondaire de la concession 2 de la municipalité de Brockton et le côté ouest des culées de béton en aval du barrage Denny’s · Ruisseau Sixteen Mile (ruisseau d’Oakville) et ses tributaires - ville d’Oakville depuis la route 2 (chemin Lakeshore) en amont jusqu’au côté sud de l’autoroute 407 · Rivière Sturgeon et ses tributaires - cantons de Tay et Oro-Medonte (comté de Simcoe) - incluant l’embouchure de la rivière Sturgeon à la baie Georgienne · Ruisseau Young’s - depuis le barrage sur le lot 23, concession 3, jusqu’au côté en aval du pont du chemin Front",
+        "raw": "Possibilités supplémentaires de pêche Saison : ouverte toute l’année Limites : des exceptions visant toute la zone et des limites combinées s’appliquent Ruisseau Black - ville de Nanticoke, depuis la route 3 jusqu’à la jonction avec la rivière Lynn Ruisseau Bronte - ville d’Oakville, de la route 2 (chemin Lakeshore Ouest) jusqu’au lac Ontario Rivière Credit et ses tributaires - ville de Mississauga, depuis le côté sud du pont de l’autoroute 403, en aval jusqu’au lac Ontario Rivière Don et ses tributaires - ville de Toronto, depuis le lac Ontario en amont jusqu’à l’avenue Eglinton Ruisseau Fifteen Mile - villes de St. Catharines et de Lincoln, entre le Queen Elizabeth Way et le lac Ontario Ruisseau Forty Mile - ville de Grimsby, entre le Queen Elizabeth Way et le lac Ontario Ruisseau Grindstone - ville de Burlington, depuis la route 2 (chemin Plains) jusqu’au havre de Hamilton du lac Ontario (ville de Hamilton dans la région de Halton) Ruisseau Highland - ville de Toronto depuis le côté en aval du pont sur la route 2 (chemin Kingston) jusqu’au lac Ontario Rivière Humber - ville de Toronto, entre l’avenue Eglinton et le lac Ontario Rivière Nottawasaga - depuis la rivière Boyne, en aval (nord) jusqu’à la baie Georgienne Rivière Rouge - ville de Toronto, entre la route 2 (chemin Kingston) et le lac Ontario Ruisseau Sixteen Mile (ruisseau Oakville) - ville d’Oakville, de la route 2 jusqu’au lac Ontario Ruisseau Sixteen Mile - ville de Lincoln, entre le Queen Elizabeth Way et le lac Ontario Ruisseau Spencer - ville de Hamilton, de la route 102 (Cootes Drive) jusqu’au lac Ontario Rivière Thames - comtés d’Elgin et de Middlesex et municipalité de Chatham-Kent, bras principal seulement Étang Trout des étangs Waterford - ville de Nanticoke Ruisseau Twelve Mile (zone 20) - ville de St. Catharines, entre le chemin Lakeport et le lac Ontario Ruisseau Twenty Mile - ville de Lincoln, entre le Queen Elizabeth Way et le lac Ontario Ruisseau Young’s (ruisseau Ryerse) - canton de Woodhouse, depuis le bord en aval du pont du chemin Front jusqu’à la ligne des eaux du lac Érié à Port Ryerse Possibilités supplémentaires de pêche Saison : ouverte du 4e samedi d’avril au 31 décembre (saison prolongée à l’automne) Limites : des exceptions visant toute la zone et des limites combinées s’appliquent Rivière Bayfield - cantons de Goderich et Stanley, depuis la route 4 jusqu’au côté en aval du pont de la route 21 (comté de Huron) Rivière Beaver - canton de Collingwood, depuis le barrage Thornbury jusqu’à la baie Georgienne (comté de Grey) Ruisseau Big - canton de Walsingham, au sud du barrage Quance jusqu’à la route régionale 21 à Lynedoch Rivière Bighead - canton de St. Vincent (comté de Grey) Ruisseau Big Otter - canton de Bayham (comté d’Elgin) Ruisseau Bronte - ville d’Oakville, depuis la route 2 en amont jusqu’au côté sud de la route 407 Rivière Credit et ses tributaires - depuis le côté sud du chemin Britannia dans la ville de Mississauga en amont jusqu’au côté sud du pont de l’autoroute 407 dans la ville de Brampton Rivière Don et ses tributaires - en amont depuis l’avenue Eglinton, dans la ville de Toronto, jusqu’au côté sud de l’autoroute 407, dans la municipalité régionale de York Rivière Grand - depuis une ligne qui traverse la rivière Grand à Paris, à 100 mètres en aval du pont de la route 2 (rue Dundas Ouest), jusqu’au bord du lac Érié (voir les exceptions pour connaître les limites de prise et de possession) Ruisseau Hog - canton de Tay, depuis le pont du CP (lot 10, concession 6) en aval (nord) jusqu’à la baie Georgienne (comté de Simcoe) Rivière Humber et ses tributaires - en amont depuis l’avenue Eglinton, dans la ville de Toronto, jusqu’au côté sud du pont de l’autoroute 407, dans la municipalité régionale de York Ruisseau Little Otter - canton de Bayham, bras est du ruisseau Big Otter Rivière Little Sauble - canton de Bruce, de la route 21 jusqu’au lac Huron (comté de Bruce) Rivière Maitland - cantons de Colborne, Goderich, Hullett, East et West Wawanosh, et Turnberry, entre le chemin de comté 4 et le côté en aval du pont de la route 21 (comté de Huron) Rivière Nine Mile (rivière Lucknow) - cantons d’Ashfield et West Wawanosh, entre le chemin de comté 86 et le lac Huron Ruisseau North - canton de Middleton, en aval de la route 3 Rivière Rouge - depuis la route 2 (chemin Kingston) dans la ville de Toronto en amont jusqu’au côté sud de l’autoroute 407 dans la ville de Markham Rivière Sauble - canton d’Amabel, depuis le seuil le plus en bas des chutes Sauble, 440 mètres en aval, jusqu’à une ligne tracée de façon perpendiculaire au courant de la rivière Rivière Saugeen - cantons d’Arran, Amabel, Brant, Elderslie et Saugeen, ainsi que dans la ville de Walkerton et le village de Paisley, entre le côté sud du pont de la route secondaire de la concession 2 de la municipalité de Brockton et le côté ouest des culées de béton en aval du barrage Denny’s Ruisseau Sixteen Mile (ruisseau d’Oakville) et ses tributaires - ville d’Oakville depuis la route 2 (chemin Lakeshore) en amont jusqu’au côté sud de l’autoroute 407 Rivière Sturgeon et ses tributaires - cantons de Tay et Oro-Medonte (comté de Simcoe) - incluant l’embouchure de la rivière Sturgeon à la baie Georgienne Ruisseau Young’s - depuis le barrage sur le lot 23, concession 3, jusqu’au côté en aval du pont du chemin Front",
+        "waters": [
+          "Ruisseau Black - ville de Nanticoke, depuis la route 3 jusqu’à la jonction avec la rivière Lynn",
+          "Ruisseau Bronte - ville d’Oakville, de la route 2 (chemin Lakeshore Ouest) jusqu’au lac Ontario",
+          "Rivière Credit et ses tributaires - ville de Mississauga, depuis le côté sud du pont de l’autoroute 403, en aval jusqu’au lac Ontario",
+          "Rivière Don et ses tributaires - ville de Toronto, depuis le lac Ontario en amont jusqu’à l’avenue Eglinton",
+          "Ruisseau Fifteen Mile - villes de St. Catharines et de Lincoln, entre le Queen Elizabeth Way et le lac Ontario",
+          "Ruisseau Forty Mile - ville de Grimsby, entre le Queen Elizabeth Way et le lac Ontario",
+          "Ruisseau Grindstone - ville de Burlington, depuis la route 2 (chemin Plains) jusqu’au havre de Hamilton du lac Ontario (ville de Hamilton dans la région de Halton)",
+          "Ruisseau Highland - ville de Toronto depuis le côté en aval du pont sur la route 2 (chemin Kingston) jusqu’au lac Ontario",
+          "Rivière Humber - ville de Toronto, entre l’avenue Eglinton et le lac Ontario",
+          "Rivière Nottawasaga - depuis la rivière Boyne, en aval (nord) jusqu’à la baie Georgienne",
+          "Rivière Rouge - ville de Toronto, entre la route 2 (chemin Kingston) et le lac Ontario",
+          "Ruisseau Sixteen Mile (ruisseau Oakville) - ville d’Oakville, de la route 2 jusqu’au lac Ontario",
+          "Ruisseau Sixteen Mile - ville de Lincoln, entre le Queen Elizabeth Way et le lac Ontario",
+          "Ruisseau Spencer - ville de Hamilton, de la route 102 (Cootes Drive) jusqu’au lac Ontario",
+          "Rivière Thames - comtés d’Elgin et de Middlesex et municipalité de Chatham-Kent, bras principal seulement",
+          "Étang Trout des étangs Waterford - ville de Nanticoke",
+          "Ruisseau Twelve Mile (zone 20) - ville de St. Catharines, entre le chemin Lakeport et le lac Ontario",
+          "Ruisseau Twenty Mile - ville de Lincoln, entre le Queen Elizabeth Way et le lac Ontario",
+          "Ruisseau Young’s (ruisseau Ryerse) - canton de Woodhouse, depuis le bord en aval du pont du chemin Front jusqu’à la ligne des eaux du lac Érié à Port Ryerse",
+          "Rivière Bayfield - cantons de Goderich et Stanley, depuis la route 4 jusqu’au côté en aval du pont de la route 21 (comté de Huron)",
+          "Rivière Beaver - canton de Collingwood, depuis le barrage Thornbury jusqu’à la baie Georgienne (comté de Grey)",
+          "Ruisseau Big - canton de Walsingham, au sud du barrage Quance jusqu’à la route régionale 21 à Lynedoch",
+          "Rivière Bighead - canton de St. Vincent (comté de Grey)",
+          "Ruisseau Big Otter - canton de Bayham (comté d’Elgin)",
+          "Ruisseau Bronte - ville d’Oakville, depuis la route 2 en amont jusqu’au côté sud de la route 407",
+          "Rivière Credit et ses tributaires - depuis le côté sud du chemin Britannia dans la ville de Mississauga en amont jusqu’au côté sud du pont de l’autoroute 407 dans la ville de Brampton",
+          "Rivière Don et ses tributaires - en amont depuis l’avenue Eglinton, dans la ville de Toronto, jusqu’au côté sud de l’autoroute 407, dans la municipalité régionale de York",
+          "Rivière Grand - depuis une ligne qui traverse la rivière Grand à Paris, à 100 mètres en aval du pont de la route 2 (rue Dundas Ouest), jusqu’au bord du lac Érié (voir les exceptions pour connaître les limites de prise et de possession)",
+          "Ruisseau Hog - canton de Tay, depuis le pont du CP (lot 10, concession 6) en aval (nord) jusqu’à la baie Georgienne (comté de Simcoe)",
+          "Rivière Humber et ses tributaires - en amont depuis l’avenue Eglinton, dans la ville de Toronto, jusqu’au côté sud du pont de l’autoroute 407, dans la municipalité régionale de York",
+          "Ruisseau Little Otter - canton de Bayham, bras est du ruisseau Big Otter",
+          "Rivière Little Sauble - canton de Bruce, de la route 21 jusqu’au lac Huron (comté de Bruce)",
+          "Rivière Maitland - cantons de Colborne, Goderich, Hullett, East et West Wawanosh, et Turnberry, entre le chemin de comté 4 et le côté en aval du pont de la route 21 (comté de Huron)",
+          "Rivière Nine Mile (rivière Lucknow) - cantons d’Ashfield et West Wawanosh, entre le chemin de comté 86 et le lac Huron",
+          "Ruisseau North - canton de Middleton, en aval de la route 3",
+          "Rivière Rouge - depuis la route 2 (chemin Kingston) dans la ville de Toronto en amont jusqu’au côté sud de l’autoroute 407 dans la ville de Markham",
+          "Rivière Sauble - canton d’Amabel, depuis le seuil le plus en bas des chutes Sauble, 440 mètres en aval, jusqu’à une ligne tracée de façon perpendiculaire au courant de la rivière",
+          "Rivière Saugeen - cantons d’Arran, Amabel, Brant, Elderslie et Saugeen, ainsi que dans la ville de Walkerton et le village de Paisley, entre le côté sud du pont de la route secondaire de la concession 2 de la municipalité de Brockton et le côté ouest des culées de béton en aval du barrage Denny’s",
+          "Ruisseau Sixteen Mile (ruisseau d’Oakville) et ses tributaires - ville d’Oakville depuis la route 2 (chemin Lakeshore) en amont jusqu’au côté sud de l’autoroute 407",
+          "Rivière Sturgeon et ses tributaires - cantons de Tay et Oro-Medonte (comté de Simcoe) - incluant l’embouchure de la rivière Sturgeon à la baie Georgienne",
+          "Ruisseau Young’s - depuis le barrage sur le lot 23, concession 3, jusqu’au côté en aval du pont du chemin Front"
+        ]
+      },
+      {
+        "period": "ouverte toute l’année",
+        "species": "Doré jaune",
+        "limit": "S-6 et C-2; aucune limite de taille Chenail Écarté - depuis l’embouchure du chenail Écarté au lac Sainte-Claire jusqu’à l’embouchure de la rivière Sydenham Rivière Sydenham - depuis l’embouchure de la rivière Sydenham au chenail Écarté jusqu’au côté en aval du pont de la rue St. George, dans la ville de Dresden Rivière Thames depuis l’embouchure de la rivière Thames au lac Sainte-Claire jusqu’au côté en aval du pont de la rue Keil, dans la municipalité de Chatham",
+        "length": null,
+        "gear": null,
+        "notes": "Possibilités supplémentaires de pêche · Chenail Écarté - depuis l’embouchure du chenail Écarté au lac Sainte-Claire jusqu’à l’embouchure de la rivière Sydenham · Rivière Sydenham - depuis l’embouchure de la rivière Sydenham au chenail Écarté jusqu’au côté en aval du pont de la rue St. George, dans la ville de Dresden · Rivière Thames depuis l’embouchure de la rivière Thames au lac Sainte-Claire jusqu’au côté en aval du pont de la rue Keil, dans la municipalité de Chatham",
+        "raw": "Possibilités supplémentaires de pêche Saison : ouverte toute l’année Limites : S-6 et C-2; aucune limite de taille Chenail Écarté - depuis l’embouchure du chenail Écarté au lac Sainte-Claire jusqu’à l’embouchure de la rivière Sydenham Rivière Sydenham - depuis l’embouchure de la rivière Sydenham au chenail Écarté jusqu’au côté en aval du pont de la rue St. George, dans la ville de Dresden Rivière Thames depuis l’embouchure de la rivière Thames au lac Sainte-Claire jusqu’au côté en aval du pont de la rue Keil, dans la municipalité de Chatham",
+        "waters": [
+          "Chenail Écarté - depuis l’embouchure du chenail Écarté au lac Sainte-Claire jusqu’à l’embouchure de la rivière Sydenham",
+          "Rivière Sydenham - depuis l’embouchure de la rivière Sydenham au chenail Écarté jusqu’au côté en aval du pont de la rue St. George, dans la ville de Dresden",
+          "Rivière Thames depuis l’embouchure de la rivière Thames au lac Sainte-Claire jusqu’au côté en aval du pont de la rue Keil, dans la municipalité de Chatham"
+        ]
+      }
+    ]
+  },
+  "waterbody_exceptions": {
+    "en": [
+      {
+        "name": "Bayfield River",
+        "location": "on upstream side of Highway 21 bridge in Huron County",
+        "rules": [
+          {
+            "period": "no fishing from January 1 to Friday before fourth Saturday in April",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Friday before fourth Saturday in April",
+            "raw": "Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April"
+          }
+        ],
+        "raw": "Bayfield River on upstream side of Highway 21 bridge in Huron County Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April"
+      },
+      {
+        "name": "Bayfield River Tributaries",
+        "location": "Huron County",
+        "rules": [
+          {
+            "period": "no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31",
+            "raw": "Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31"
+          }
+        ],
+        "raw": "Bayfield River Tributaries Huron County Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31"
+      },
+      {
+        "name": "Big Creek",
+        "location": "Walsingham Township, south of the Quance Dam to Regional Road 21 at Lynedoch",
+        "rules": [
+          {
+            "period": "no fishing from January 1 to Friday before fourth Saturday in April",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Friday before fourth Saturday in April",
+            "raw": "Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April"
+          }
+        ],
+        "raw": "Big Creek Walsingham Township, south of the Quance Dam to Regional Road 21 at Lynedoch Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April"
+      },
+      {
+        "name": "Big Creek",
+        "location": "Walsingham Township, lying southerly of the dam in the Hamlet of Teeterville to the Quance Dam in the Town of Delhi",
+        "rules": [
+          {
+            "period": "no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31",
+            "raw": "Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31"
+          }
+        ],
+        "raw": "Big Creek Walsingham Township, lying southerly of the dam in the Hamlet of Teeterville to the Quance Dam in the Town of Delhi Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31"
+      },
+      {
+        "name": "Bruce and Grey Counties",
+        "location": "inland rivers and streams only, excluding those waters identified for this area in Zone 16 Additional fishing opportunities",
+        "rules": [
+          {
+            "period": "open from fourth Saturday in April to September 30",
+            "species": "All species (except Largemouth and Smallmouth Bass, Muskellunge and Lake Sturgeon, Northern Pike, Walleye and Sauger)",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from fourth Saturday in April to September 30",
+            "raw": "All species (except Largemouth and Smallmouth Bass, Muskellunge and Lake Sturgeon, Northern Pike, Walleye and Sauger) - open from fourth Saturday in April to September 30"
+          },
+          {
+            "period": "open from fourth Saturday in June to September 30",
+            "species": "Largemouth and smallmouth bass",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from fourth Saturday in June to September 30",
+            "raw": "Largemouth and smallmouth bass - open from fourth Saturday in June to September 30"
+          },
+          {
+            "period": "open from first Saturday in June to September 30",
+            "species": "Muskellunge",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from first Saturday in June to September 30",
+            "raw": "Muskellunge - open from first Saturday in June to September 30"
+          },
+          {
+            "period": "open from second Saturday in May to September 30",
+            "species": "Northern pike",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from second Saturday in May to September 30",
+            "raw": "Northern pike - open from second Saturday in May to September 30"
+          },
+          {
+            "period": "open from second Saturday in May to September 30",
+            "species": "Walleye and sauger",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from second Saturday in May to September 30",
+            "raw": "Walleye and sauger - open from second Saturday in May to September 30"
+          }
+        ],
+        "raw": "Bruce and Grey Counties inland rivers and streams only, excluding those waters identified for this area in Zone 16 Additional fishing opportunities All species (except Largemouth and Smallmouth Bass, Muskellunge and Lake Sturgeon, Northern Pike, Walleye and Sauger) - open from fourth Saturday in April to September 30 | Largemouth and smallmouth bass - open from fourth Saturday in June to September 30 | Muskellunge - open from first Saturday in June to September 30 | Northern pike - open from second Saturday in May to September 30 | Walleye and sauger - open from second Saturday in May to September 30"
+      },
+      {
+        "name": "Credit River",
+        "location": "and its tributaries - Town of Caledon in Regional Municipality of Peel, Upstream of Old Baseline Road",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Only artificial lures may be used",
+            "notes": "Only artificial lures may be used",
+            "raw": "Only artificial lures may be used"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Only 1 single-pointed barbless hook may be used",
+            "notes": "Only 1 single-pointed barbless hook may be used",
+            "raw": "Only 1 single-pointed barbless hook may be used"
+          },
+          {
+            "period": null,
+            "species": "Brook trout, brown trout and rainbow trout",
+            "limit": "S-0 and C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 and C-0",
+            "raw": "Brook trout, brown trout and rainbow trout - S-0 and C-0"
+          }
+        ],
+        "raw": "Credit River and its tributaries - Town of Caledon in Regional Municipality of Peel, Upstream of Old Baseline Road Only artificial lures may be used | Only 1 single-pointed barbless hook may be used | Brook trout, brown trout and rainbow trout - S-0 and C-0"
+      },
+      {
+        "name": "Credit River",
+        "location": "and tributaries - from the south side of the Britannia Road bridge in the Village of Streetsville, upstream to the south side of the Old Baseline Road bridge in the Town of Caledon, Regional Municipalities of Peel and Halton, excluding Levi’s Creek (43°37′ N , 79°44′ W ) and Fletchers Creek (43°37′ N , 79°43′ W )",
+        "rules": [
+          {
+            "period": "no fishing from January 1 to Friday before fourth Saturday in April",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Friday before fourth Saturday in April",
+            "raw": "Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April"
+          }
+        ],
+        "raw": "Credit River and tributaries - from the south side of the Britannia Road bridge in the Village of Streetsville, upstream to the south side of the Old Baseline Road bridge in the Town of Caledon, Regional Municipalities of Peel and Halton, excluding Levi’s Creek (43°37′ N , 79°44′ W ) and Fletchers Creek (43°37′ N , 79°43′ W ) Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April"
+      },
+      {
+        "name": "Credit River",
+        "location": "and tributaries - from the south side of the Highway 403 bridge in the City of Mississauga, upstream to the south side of the Britannia Road bridge in the Village of Streetsville",
+        "rules": [
+          {
+            "period": "no fishing from January 1 to Friday before fourth Saturday in April and August 15 to December 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Friday before fourth Saturday in April and August 15 to December 31",
+            "raw": "Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April and August 15 to December 31"
+          }
+        ],
+        "raw": "Credit River and tributaries - from the south side of the Highway 403 bridge in the City of Mississauga, upstream to the south side of the Britannia Road bridge in the Village of Streetsville Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April and August 15 to December 31"
+      },
+      {
+        "name": "Credit River",
+        "location": "and tributaries - from the south side of the Old Baseline Road bridge in the Town of Caledon, Regional Municipality of Peel, upstream to Highway 9",
+        "rules": [
+          {
+            "period": "no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31",
+            "raw": "Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31"
+          }
+        ],
+        "raw": "Credit River and tributaries - from the south side of the Old Baseline Road bridge in the Town of Caledon, Regional Municipality of Peel, upstream to Highway 9 Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31"
+      },
+      {
+        "name": "Grand River",
+        "location": "between the West Garafraxa second Line and Scotland Street in the Town of Fergus; between Tower Street in the Town of Fergus and the Bissell Dam in Nichol Township; between 100 metres downstream of a bridge located at the southern boundary of the Elora Gorge Conservation Area and a point 100 metres upstream of Pilkington 8th Line in Pilkington Township; between 100 metres downstream of Pilkington 8th Line bridge and 100 metres upstream of Pilkington Township and Woolwich Township boundary line; and between 100 metres downstream of Pilkington Township and Woolwich Township boundary line and 100 metres upstream of Highway 86 bridge",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Only artificial lures may be used",
+            "notes": "Only artificial lures may be used",
+            "raw": "Only artificial lures may be used"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Only 1 barbless hook may be used",
+            "notes": "Only 1 barbless hook may be used",
+            "raw": "Only 1 barbless hook may be used"
+          },
+          {
+            "period": null,
+            "species": "Brook trout, brown trout and rainbow trout",
+            "limit": "S-0 and C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 and C-0",
+            "raw": "Brook trout, brown trout and rainbow trout - S-0 and C-0"
+          }
+        ],
+        "raw": "Grand River between the West Garafraxa second Line and Scotland Street in the Town of Fergus; between Tower Street in the Town of Fergus and the Bissell Dam in Nichol Township; between 100 metres downstream of a bridge located at the southern boundary of the Elora Gorge Conservation Area and a point 100 metres upstream of Pilkington 8th Line in Pilkington Township; between 100 metres downstream of Pilkington 8th Line bridge and 100 metres upstream of Pilkington Township and Woolwich Township boundary line; and between 100 metres downstream of Pilkington Township and Woolwich Township boundary line and 100 metres upstream of Highway 86 bridge Only artificial lures may be used | Only 1 barbless hook may be used | Brook trout, brown trout and rainbow trout - S-0 and C-0"
+      },
+      {
+        "name": "Grand River",
+        "location": "between the former Town of Paris (City of Brant) and Brantford from a line across the Grand River in Paris at 100 metres downstream of the Highway 2 (Dundas Street West) bridge downstream to the pedestrian and service bridge that crosses the Grand River on an angle upstream (west) of the Brant Conservation Area in the City of Brantford",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Only artificial lures may be used",
+            "notes": "Only artificial lures may be used",
+            "raw": "Only artificial lures may be used"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Only 1 barbless hook may be used",
+            "notes": "Only 1 barbless hook may be used",
+            "raw": "Only 1 barbless hook may be used"
+          },
+          {
+            "period": "no fishing from March 1 to Friday before fourth Saturday in April",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from March 1 to Friday before fourth Saturday in April",
+            "raw": "Fish sanctuary - no fishing from March 1 to Friday before fourth Saturday in April"
+          },
+          {
+            "period": null,
+            "species": "Brown trout, northern pike, rainbow trout, smallmouth bass and walleye",
+            "limit": "S-0 and C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 and C-0",
+            "raw": "Brown trout, northern pike, rainbow trout, smallmouth bass and walleye - S-0 and C-0"
+          }
+        ],
+        "raw": "Grand River between the former Town of Paris (City of Brant) and Brantford from a line across the Grand River in Paris at 100 metres downstream of the Highway 2 (Dundas Street West) bridge downstream to the pedestrian and service bridge that crosses the Grand River on an angle upstream (west) of the Brant Conservation Area in the City of Brantford Only artificial lures may be used | Only 1 barbless hook may be used | Fish sanctuary - no fishing from March 1 to Friday before fourth Saturday in April | Brown trout, northern pike, rainbow trout, smallmouth bass and walleye - S-0 and C-0"
+      },
+      {
+        "name": "Grand River",
+        "location": "from the pedestrian and service bridge that crosses the Grand River on an angle upstream (west) of the Brant Conservation Area in the City of Brantford to the edge of Lake Erie",
+        "rules": [
+          {
+            "period": null,
+            "species": "Brown trout and rainbow trout (combined)",
+            "limit": "S-1 and C-0; from October 1 to December 31",
+            "length": null,
+            "gear": null,
+            "notes": "S-1 and C-0; from October 1 to December 31",
+            "raw": "Brown trout and rainbow trout (combined) - S-1 and C-0; from October 1 to December 31"
+          }
+        ],
+        "raw": "Grand River from the pedestrian and service bridge that crosses the Grand River on an angle upstream (west) of the Brant Conservation Area in the City of Brantford to the edge of Lake Erie Brown trout and rainbow trout (combined) - S-1 and C-0; from October 1 to December 31"
+      },
+      {
+        "name": "Grand River",
+        "location": "from the Penman Dam downstream to the William Street Bridge in the former town of Paris (City of Brant)",
+        "rules": [
+          {
+            "period": "no fishing from October 1 to November 30",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from October 1 to November 30",
+            "raw": "Fish sanctuary - no fishing from October 1 to November 30"
+          }
+        ],
+        "raw": "Grand River from the Penman Dam downstream to the William Street Bridge in the former town of Paris (City of Brant) Fish sanctuary - no fishing from October 1 to November 30"
+      },
+      {
+        "name": "Grand River",
+        "location": "Haldimand County, from the water’s edge of Lake Erie upstream to the dam in the Town of Caledonia",
+        "rules": [
+          {
+            "period": null,
+            "species": "Walleye",
+            "limit": "S-4 and C-2; any size",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 and C-2; any size",
+            "raw": "Walleye - S-4 and C-2; any size"
+          }
+        ],
+        "raw": "Grand River Haldimand County, from the water’s edge of Lake Erie upstream to the dam in the Town of Caledonia Walleye - S-4 and C-2; any size"
+      },
+      {
+        "name": "Grand River",
+        "location": "and its tributaries - downstream of the Onondaga and Tuscarora Townships line to Lake Erie",
+        "rules": [
+          {
+            "period": "open from January 1 to last day in February and second Saturday in May to December 31",
+            "species": "Walleye and northern pike",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from January 1 to last day in February and second Saturday in May to December 31",
+            "raw": "Walleye and northern pike - open from January 1 to last day in February and second Saturday in May to December 31"
+          }
+        ],
+        "raw": "Grand River and its tributaries - downstream of the Onondaga and Tuscarora Townships line to Lake Erie Walleye and northern pike - open from January 1 to last day in February and second Saturday in May to December 31"
+      },
+      {
+        "name": "Humber River",
+        "location": "and its tributaries - upstream from Eglinton Avenue",
+        "rules": [
+          {
+            "period": null,
+            "species": "Brook trout, brown trout and rainbow trout, combined",
+            "limit": "S-2 and C-1",
+            "length": null,
+            "gear": null,
+            "notes": "S-2 and C-1",
+            "raw": "Brook trout, brown trout and rainbow trout, combined - S-2 and C-1"
+          }
+        ],
+        "raw": "Humber River and its tributaries - upstream from Eglinton Avenue Brook trout, brown trout and rainbow trout, combined - S-2 and C-1"
+      },
+      {
+        "name": "Humber River",
+        "location": "and tributaries - Regional Municipalities of York and Peel and Counties of Dufferin and Simcoe, upstream of Highway 407",
+        "rules": [
+          {
+            "period": "no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31",
+            "raw": "Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31"
+          }
+        ],
+        "raw": "Humber River and tributaries - Regional Municipalities of York and Peel and Counties of Dufferin and Simcoe, upstream of Highway 407 Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31"
+      },
+      {
+        "name": "Lake Simcoe, Lake Couchiching (44°39'51\"",
+        "location": "N , 79°22'34\" W ), Green River, Trent Canal System and their tributaries - downstream from Lake Couchiching to Lock 42, the Trent Canal System in Brock and Ramara Townships, and the Severn River and its tributaries (excluding the Black River) downstream from Lake Couchiching to Wasdell Falls, all within the Regional Municipalities of York, Durham and Simcoe County and the District of Muskoka",
+        "rules": [
+          {
+            "period": "open from January 1 to March 15 and second Saturday in May to September 30",
+            "species": "Lake herring (cisco)",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from January 1 to March 15 and second Saturday in May to September 30",
+            "raw": "Lake herring (cisco) - open from January 1 to March 15 and second Saturday in May to September 30"
+          },
+          {
+            "period": null,
+            "species": "Lake herring (cisco)",
+            "limit": "S-2 and C-1",
+            "length": null,
+            "gear": null,
+            "notes": "S-2 and C-1",
+            "raw": "Lake herring (cisco) - S-2 and C-1"
+          },
+          {
+            "period": "open from January 1 to March 15 and second Saturday in May to September 30",
+            "species": "Lake trout",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from January 1 to March 15 and second Saturday in May to September 30",
+            "raw": "Lake trout - open from January 1 to March 15 and second Saturday in May to September 30"
+          },
+          {
+            "period": "open from January 1 to March 15 and second Saturday in May to September 30",
+            "species": "Lake whitefish",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from January 1 to March 15 and second Saturday in May to September 30",
+            "raw": "Lake whitefish - open from January 1 to March 15 and second Saturday in May to September 30"
+          },
+          {
+            "period": null,
+            "species": "Lake whitefish",
+            "limit": "S-2 and C-1",
+            "length": null,
+            "gear": null,
+            "notes": "S-2 and C-1",
+            "raw": "Lake whitefish - S-2 and C-1"
+          },
+          {
+            "period": "closed all year",
+            "species": "Muskellunge",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "closed all year",
+            "raw": "Muskellunge - closed all year"
+          },
+          {
+            "period": null,
+            "species": "Yellow perch",
+            "limit": "S-50; in 1 day, possession limit of 100, and C-25; in 1 day, possession limit of 50",
+            "length": null,
+            "gear": null,
+            "notes": "S-50; in 1 day, possession limit of 100, and C-25; in 1 day, possession limit of 50",
+            "raw": "Yellow perch - S-50; in 1 day, possession limit of 100, and C-25; in 1 day, possession limit of 50"
+          }
+        ],
+        "raw": "Lake Simcoe, Lake Couchiching (44°39'51\" N , 79°22'34\" W ), Green River, Trent Canal System and their tributaries - downstream from Lake Couchiching to Lock 42, the Trent Canal System in Brock and Ramara Townships, and the Severn River and its tributaries (excluding the Black River) downstream from Lake Couchiching to Wasdell Falls, all within the Regional Municipalities of York, Durham and Simcoe County and the District of Muskoka Lake herring (cisco) - open from January 1 to March 15 and second Saturday in May to September 30 | Lake herring (cisco) - S-2 and C-1 | Lake trout - open from January 1 to March 15 and second Saturday in May to September 30 | Lake whitefish - open from January 1 to March 15 and second Saturday in May to September 30 | Lake whitefish - S-2 and C-1 | Muskellunge - closed all year | Yellow perch - S-50; in 1 day, possession limit of 100, and C-25; in 1 day, possession limit of 50"
+      },
+      {
+        "name": "Maitland River",
+        "location": "Colborne and Goderich Townships, extending 550 metres downstream from Falls Reserve Waterfall to the first natural waterfall",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "closed to night fishing from September 15 to October 31 (1 half hour after sunset to 1 half hour before sunrise)",
+            "raw": "Fish sanctuary - closed to night fishing from September 15 to October 31 (1 half hour after sunset to 1 half hour before sunrise)"
+          }
+        ],
+        "raw": "Maitland River Colborne and Goderich Townships, extending 550 metres downstream from Falls Reserve Waterfall to the first natural waterfall Fish sanctuary - closed to night fishing from September 15 to October 31 (1 half hour after sunset to 1 half hour before sunrise)"
+      },
+      {
+        "name": "Maitland River",
+        "location": "Huron County, from the downstream side of the bridge on Highway 21 to the upstream side of the bridge on County Road 4",
+        "rules": [
+          {
+            "period": "no fishing from January 1 to Friday before fourth Saturday in April",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Friday before fourth Saturday in April",
+            "raw": "Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April"
+          }
+        ],
+        "raw": "Maitland River Huron County, from the downstream side of the bridge on Highway 21 to the upstream side of the bridge on County Road 4 Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April"
+      },
+      {
+        "name": "Maitland River tributaries",
+        "location": "Huron County, from the downstream side of the bridge on Highway 21 to the upstream side of the bridge on County Road 4",
+        "rules": [
+          {
+            "period": "no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31",
+            "raw": "Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31"
+          }
+        ],
+        "raw": "Maitland River tributaries Huron County, from the downstream side of the bridge on Highway 21 to the upstream side of the bridge on County Road 4 Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31"
+      },
+      {
+        "name": "Nine Mile River",
+        "location": "Ashfield Township, from the Port Albert Fishway to 100 metres upstream",
+        "rules": [
+          {
+            "period": "no fishing from fourth Saturday in April to May 15 and September 1 to November 30",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from fourth Saturday in April to May 15 and September 1 to November 30",
+            "raw": "Fish sanctuary - no fishing from fourth Saturday in April to May 15 and September 1 to November 30"
+          }
+        ],
+        "raw": "Nine Mile River Ashfield Township, from the Port Albert Fishway to 100 metres upstream Fish sanctuary - no fishing from fourth Saturday in April to May 15 and September 1 to November 30"
+      },
+      {
+        "name": "Nine Mile River",
+        "location": "(Lucknow River) - Ashfield and West Wawanosh Townships, between County Road 86 and Lake Huron",
+        "rules": [
+          {
+            "period": "no fishing from January 1 to Friday before fourth Saturday in April",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Friday before fourth Saturday in April",
+            "raw": "Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April"
+          }
+        ],
+        "raw": "Nine Mile River (Lucknow River) - Ashfield and West Wawanosh Townships, between County Road 86 and Lake Huron Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April"
+      },
+      {
+        "name": "Nine Mile River tributaries",
+        "location": "Huron County, Highway 86 downstream to Lake Huron",
+        "rules": [
+          {
+            "period": "no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31",
+            "raw": "Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31"
+          }
+        ],
+        "raw": "Nine Mile River tributaries Huron County, Highway 86 downstream to Lake Huron Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31"
+      },
+      {
+        "name": "Nottawasaga River",
+        "location": "Essa Township, waters lying within Lot 1, Concession 5, from Highway 89 above Nicholson Dam downstream to near the confluence of the Boyne River",
+        "rules": [
+          {
+            "period": "no fishing from January 1 to Friday before second Saturday in May and October 1 to December 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Friday before second Saturday in May and October 1 to December 31",
+            "raw": "Fish sanctuary - no fishing from January 1 to Friday before second Saturday in May and October 1 to December 31"
+          }
+        ],
+        "raw": "Nottawasaga River Essa Township, waters lying within Lot 1, Concession 5, from Highway 89 above Nicholson Dam downstream to near the confluence of the Boyne River Fish sanctuary - no fishing from January 1 to Friday before second Saturday in May and October 1 to December 31"
+      },
+      {
+        "name": "Nottawasaga River",
+        "location": "from the Boyne River downstream (north) to the Pine River",
+        "rules": [
+          {
+            "period": null,
+            "species": "Rainbow trout",
+            "limit": "S-0 and C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 and C-0",
+            "raw": "Rainbow trout - S-0 and C-0"
+          }
+        ],
+        "raw": "Nottawasaga River from the Boyne River downstream (north) to the Pine River Rainbow trout - S-0 and C-0"
+      },
+      {
+        "name": "Pretty River and tributaries",
+        "location": "Collingwood and Osprey Townships",
+        "rules": [
+          {
+            "period": "no fishing from fourth Saturday in April to May 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from fourth Saturday in April to May 31",
+            "raw": "Fish sanctuary - no fishing from fourth Saturday in April to May 31"
+          }
+        ],
+        "raw": "Pretty River and tributaries Collingwood and Osprey Townships Fish sanctuary - no fishing from fourth Saturday in April to May 31"
+      },
+      {
+        "name": "Pretty River and tributaries",
+        "location": "Town of Collingwood and Nottawasaga Township",
+        "rules": [
+          {
+            "period": "no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31",
+            "raw": "Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31"
+          }
+        ],
+        "raw": "Pretty River and tributaries Town of Collingwood and Nottawasaga Township Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31"
+      },
+      {
+        "name": "Saugeen River",
+        "location": "Amabel and Saugeen Townships, Denny’s Dam to the concrete abutments downstream",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "closed to night fishing from October 1 to October 31 (1 half hour after sunset to 1 half hour before sunrise)",
+            "raw": "Fish sanctuary - closed to night fishing from October 1 to October 31 (1 half hour after sunset to 1 half hour before sunrise)"
+          }
+        ],
+        "raw": "Saugeen River Amabel and Saugeen Townships, Denny’s Dam to the concrete abutments downstream Fish sanctuary - closed to night fishing from October 1 to October 31 (1 half hour after sunset to 1 half hour before sunrise)"
+      },
+      {
+        "name": "Saugeen River",
+        "location": "Township of Brant in the County of Bruce, from the dam face of the Maple Hill Dam to a point 300 metres downstream and including the hydro-electric power channel",
+        "rules": [
+          {
+            "period": "closed all year",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "closed all year",
+            "raw": "Fish sanctuary - closed all year"
+          }
+        ],
+        "raw": "Saugeen River Township of Brant in the County of Bruce, from the dam face of the Maple Hill Dam to a point 300 metres downstream and including the hydro-electric power channel Fish sanctuary - closed all year"
+      },
+      {
+        "name": "Sydenham River",
+        "location": "Derby Township, Artificial Spawning Channels Numbers 1 and 2",
+        "rules": [
+          {
+            "period": "closed all year",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "closed all year",
+            "raw": "Fish sanctuary - closed all year"
+          }
+        ],
+        "raw": "Sydenham River Derby Township, Artificial Spawning Channels Numbers 1 and 2 Fish sanctuary - closed all year"
+      },
+      {
+        "name": "Sydenham River",
+        "location": "City of Owen Sound, from the Mill Dam to a point 177 metres downstream",
+        "rules": [
+          {
+            "period": "closed all year",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "closed all year",
+            "raw": "Fish sanctuary - closed all year"
+          }
+        ],
+        "raw": "Sydenham River City of Owen Sound, from the Mill Dam to a point 177 metres downstream Fish sanctuary - closed all year"
+      },
+      {
+        "name": "Sydenham River",
+        "location": "City of Owen Sound and Derby Township, from Inglis Falls to Mill Dam, excluding Artificial Spawning Channels Numbers 1 and 2",
+        "rules": [
+          {
+            "period": "no fishing from fourth Saturday in April to May 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from fourth Saturday in April to May 31",
+            "raw": "Fish sanctuary - no fishing from fourth Saturday in April to May 31"
+          }
+        ],
+        "raw": "Sydenham River City of Owen Sound and Derby Township, from Inglis Falls to Mill Dam, excluding Artificial Spawning Channels Numbers 1 and 2 Fish sanctuary - no fishing from fourth Saturday in April to May 31"
+      },
+      {
+        "name": "Sydenham River",
+        "location": "and tributaries - City of Owen Sound and Derby Township, from the base of Inglis Falls downstream to a line drawn due east from the north end of the bridge known locally as either Chinese or Rainbow Bridge to the permanent steel post marker affixed to the shore of the Sydenham River in Harrison Park",
+        "rules": [
+          {
+            "period": "no fishing from September 1 to September 30",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from September 1 to September 30",
+            "raw": "Fish sanctuary - no fishing from September 1 to September 30"
+          }
+        ],
+        "raw": "Sydenham River and tributaries - City of Owen Sound and Derby Township, from the base of Inglis Falls downstream to a line drawn due east from the north end of the bridge known locally as either Chinese or Rainbow Bridge to the permanent steel post marker affixed to the shore of the Sydenham River in Harrison Park Fish sanctuary - no fishing from September 1 to September 30"
+      },
+      {
+        "name": "Thames River",
+        "location": "between the dam at Gordon Pittock Reservoir and the bridge at Highway 59",
+        "rules": [
+          {
+            "period": "no fishing from March 15 to Friday before second Saturday in May",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from March 15 to Friday before second Saturday in May",
+            "raw": "Fish sanctuary - no fishing from March 15 to Friday before second Saturday in May"
+          }
+        ],
+        "raw": "Thames River between the dam at Gordon Pittock Reservoir and the bridge at Highway 59 Fish sanctuary - no fishing from March 15 to Friday before second Saturday in May"
+      },
+      {
+        "name": "Thames River",
+        "location": "from the mouth of the Thames River at Lake St. Clair to the downstream side of the Keil Street Bridge (Municipality of Chatham)",
+        "rules": [
+          {
+            "period": null,
+            "species": "Muskellunge",
+            "limit": "S-1; must be greater than 112 centimetres, and C-0",
+            "length": "must be greater than 112 centimetres",
+            "gear": null,
+            "notes": "S-1; must be greater than 112 centimetres, and C-0",
+            "raw": "Muskellunge - S-1; must be greater than 112 centimetres, and C-0"
+          }
+        ],
+        "raw": "Thames River from the mouth of the Thames River at Lake St. Clair to the downstream side of the Keil Street Bridge (Municipality of Chatham) Muskellunge - S-1; must be greater than 112 centimetres, and C-0"
+      },
+      {
+        "name": "Whitemans Creek",
+        "location": "(Horner Creek) - Brantford Township, between Robinson Road and Cleaver Sideroad",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Only artificial lures may be used",
+            "notes": "Only artificial lures may be used",
+            "raw": "Only artificial lures may be used"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Only 1 barbless hook may be used",
+            "notes": "Only 1 barbless hook may be used",
+            "raw": "Only 1 barbless hook may be used"
+          },
+          {
+            "period": null,
+            "species": "Brown trout or rainbow trout",
+            "limit": "S-1 and C-1; must be greater than 50 centimetres",
+            "length": "must be greater than 50 centimetres",
+            "gear": null,
+            "notes": "S-1 and C-1; must be greater than 50 centimetres",
+            "raw": "Brown trout or rainbow trout - S-1 and C-1; must be greater than 50 centimetres"
+          }
+        ],
+        "raw": "Whitemans Creek (Horner Creek) - Brantford Township, between Robinson Road and Cleaver Sideroad Only artificial lures may be used | Only 1 barbless hook may be used | Brown trout or rainbow trout - S-1 and C-1; must be greater than 50 centimetres"
+      },
+      {
+        "name": "Whitemans Creek",
+        "location": "(Horner Creek) and tributaries - from the East Quarter Town Line Road downstream to the edge of the Grand River",
+        "rules": [
+          {
+            "period": "no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31",
+            "raw": "Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31"
+          }
+        ],
+        "raw": "Whitemans Creek (Horner Creek) and tributaries - from the East Quarter Town Line Road downstream to the edge of the Grand River Fish sanctuary - no fishing from January 1 to Friday before fourth Saturday in April and October 1 to December 31"
+      }
+    ],
+    "fr": [
+      {
+        "name": "Rivière Bayfield",
+        "location": "sur le côté en amont du pont de la route 21 dans le comté de Huron",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril",
+            "raw": "Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril"
+          }
+        ],
+        "raw": "Rivière Bayfield sur le côté en amont du pont de la route 21 dans le comté de Huron Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril"
+      },
+      {
+        "name": "Tributaires de la rivière Bayfield",
+        "location": "comté de Huron",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre",
+            "raw": "Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre"
+          }
+        ],
+        "raw": "Tributaires de la rivière Bayfield comté de Huron Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre"
+      },
+      {
+        "name": "Ruisseau Big",
+        "location": "canton de Walsingham, au sud du barrage Quance jusqu’à la route régionale 21 à Lynedoch",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril",
+            "raw": "Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril"
+          }
+        ],
+        "raw": "Ruisseau Big canton de Walsingham, au sud du barrage Quance jusqu’à la route régionale 21 à Lynedoch Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril"
+      },
+      {
+        "name": "Ruisseau Big",
+        "location": "canton de Walsingham, au sud du barrage dans le hameau de Teeterville jusqu’au barrage Quance dans la ville de Delhi",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre",
+            "raw": "Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre"
+          }
+        ],
+        "raw": "Ruisseau Big canton de Walsingham, au sud du barrage dans le hameau de Teeterville jusqu’au barrage Quance dans la ville de Delhi Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre"
+      },
+      {
+        "name": "Comtés de Bruce et Grey",
+        "location": "(rivières et cours d’eau à l’intérieur des terres seulement) à l’exception des eaux de cette zone répertoriées dans les possibilités supplémentaires de pêche de la zone 16",
+        "rules": [
+          {
+            "period": "pêche ouverte du 4e samedi d’avril au 30 septembre",
+            "species": "Toutes les espèces (sauf l’achigan à grande bouche et l’achigan à petite bouche, le maskinongé, l’esturgeon de lac (esturgeon jaune), le grand brochet, le doré jaune et le doré noir)",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche ouverte du 4e samedi d’avril au 30 septembre",
+            "raw": "Toutes les espèces (sauf l’achigan à grande bouche et l’achigan à petite bouche, le maskinongé, l’esturgeon de lac (esturgeon jaune), le grand brochet, le doré jaune et le doré noir) - pêche ouverte du 4e samedi d’avril au 30 septembre"
+          },
+          {
+            "period": "ouverte du 4e samedi de juin au 30 septembre",
+            "species": "Achigan à grande bouche et achigan à petite bouche",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "ouverte du 4e samedi de juin au 30 septembre",
+            "raw": "Achigan à grande bouche et achigan à petite bouche - ouverte du 4e samedi de juin au 30 septembre"
+          },
+          {
+            "period": "ouverte du 1er samedi de juin au 30 septembre",
+            "species": "Maskinongé",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "ouverte du 1er samedi de juin au 30 septembre",
+            "raw": "Maskinongé - ouverte du 1er samedi de juin au 30 septembre"
+          },
+          {
+            "period": "ouverte du 2e samedi de mai au 30 septembre",
+            "species": "Grand brochet",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "ouverte du 2e samedi de mai au 30 septembre",
+            "raw": "Grand brochet - ouverte du 2e samedi de mai au 30 septembre"
+          },
+          {
+            "period": "ouverte du 2e samedi de mai au 30 septembre",
+            "species": "Doré jaune et doré noir",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "ouverte du 2e samedi de mai au 30 septembre",
+            "raw": "Doré jaune et doré noir - ouverte du 2e samedi de mai au 30 septembre"
+          }
+        ],
+        "raw": "Comtés de Bruce et Grey (rivières et cours d’eau à l’intérieur des terres seulement) à l’exception des eaux de cette zone répertoriées dans les possibilités supplémentaires de pêche de la zone 16 Toutes les espèces (sauf l’achigan à grande bouche et l’achigan à petite bouche, le maskinongé, l’esturgeon de lac (esturgeon jaune), le grand brochet, le doré jaune et le doré noir) - pêche ouverte du 4e samedi d’avril au 30 septembre | Achigan à grande bouche et achigan à petite bouche - ouverte du 4e samedi de juin au 30 septembre | Maskinongé - ouverte du 1er samedi de juin au 30 septembre | Grand brochet - ouverte du 2e samedi de mai au 30 septembre | Doré jaune et doré noir - ouverte du 2e samedi de mai au 30 septembre"
+      },
+      {
+        "name": "Rivière Credit",
+        "location": "et ses tributaires - ville de Caledon dans la municipalité régionale de Peel, en amont du chemin Old Baseline",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Seuls les leurres artificiels sont permis.",
+            "notes": "Seuls les leurres artificiels sont permis.",
+            "raw": "Seuls les leurres artificiels sont permis."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Un seul hameçon sans barbes et à pointe unique est permis.",
+            "notes": "Un seul hameçon sans barbes et à pointe unique est permis.",
+            "raw": "Un seul hameçon sans barbes et à pointe unique est permis."
+          },
+          {
+            "period": null,
+            "species": "Omble de fontaine, truite brune et truite arc-en-ciel",
+            "limit": "S-0 et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 et C-0",
+            "raw": "Omble de fontaine, truite brune et truite arc-en-ciel - S-0 et C-0"
+          }
+        ],
+        "raw": "Rivière Credit et ses tributaires - ville de Caledon dans la municipalité régionale de Peel, en amont du chemin Old Baseline Seuls les leurres artificiels sont permis. | Un seul hameçon sans barbes et à pointe unique est permis. | Omble de fontaine, truite brune et truite arc-en-ciel - S-0 et C-0"
+      },
+      {
+        "name": "Rivière Credit",
+        "location": "et ses tributaires - depuis le côté sud du pont du chemin Britannia dans le village de Streetsville, en amont jusqu’au côté sud du pont du chemin Old Baseline, ville de Caledon, municipalités régionales de Peel et Halton, sauf le ruisseau de Levi's (43°37′ N , 79°44′ O ) et le ruisseau Fletchers (43°37′ N , 79°43′ O )",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril",
+            "raw": "Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril"
+          }
+        ],
+        "raw": "Rivière Credit et ses tributaires - depuis le côté sud du pont du chemin Britannia dans le village de Streetsville, en amont jusqu’au côté sud du pont du chemin Old Baseline, ville de Caledon, municipalités régionales de Peel et Halton, sauf le ruisseau de Levi's (43°37′ N , 79°44′ O ) et le ruisseau Fletchers (43°37′ N , 79°43′ O ) Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril"
+      },
+      {
+        "name": "Rivière Credit",
+        "location": "et ses tributaires - depuis le côté sud du pont de l’autoroute 403, ville de Mississauga, en amont jusqu’au côté sud du pont du chemin Britannia dans le village de Streetsville",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 15 août au 31 décembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 15 août au 31 décembre",
+            "raw": "Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 15 août au 31 décembre"
+          }
+        ],
+        "raw": "Rivière Credit et ses tributaires - depuis le côté sud du pont de l’autoroute 403, ville de Mississauga, en amont jusqu’au côté sud du pont du chemin Britannia dans le village de Streetsville Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 15 août au 31 décembre"
+      },
+      {
+        "name": "Rivière Credit",
+        "location": "et ses tributaires - depuis le côté sud du pont du chemin Old Baseline, ville de Caledon, municipalité régionale de Peel, en amont jusqu’à la route 9",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre",
+            "raw": "Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre"
+          }
+        ],
+        "raw": "Rivière Credit et ses tributaires - depuis le côté sud du pont du chemin Old Baseline, ville de Caledon, municipalité régionale de Peel, en amont jusqu’à la route 9 Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre"
+      },
+      {
+        "name": "Rivière Grand",
+        "location": "entre la 2e ligne de Garafraxa Ouest et la rue Scotland dans la ville de Fergus; entre la rue Tower, ville de Fergus, et le barrage Bissell, canton de Nichol; entre 100 mètres en aval d’un pont situé à la limite sud de la zone de protection de la nature de la Gorge d’Elora et un point 100 mètres en amont de la 8e ligne de Pilkington, dans le canton de Pilkington; entre 100 mètres en aval du pont de la 8e ligne de Pilkington et 100 mètres en amont de la limite des cantons de Pilkington et Woolwich; entre 100 mètres en aval de la limite des cantons de Pilkington et Woolwich et 100 mètres en amont du pont de la route 86",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Seuls les leurres artificiels sont permis.",
+            "notes": "Seuls les leurres artificiels sont permis.",
+            "raw": "Seuls les leurres artificiels sont permis."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Un seul hameçon sans barbes est permis.",
+            "notes": "Un seul hameçon sans barbes est permis.",
+            "raw": "Un seul hameçon sans barbes est permis."
+          },
+          {
+            "period": null,
+            "species": "Omble de fontaine, truite brune et truite arc-en-ciel",
+            "limit": "S-0 et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 et C-0",
+            "raw": "Omble de fontaine, truite brune et truite arc-en-ciel - S-0 et C-0"
+          }
+        ],
+        "raw": "Rivière Grand entre la 2e ligne de Garafraxa Ouest et la rue Scotland dans la ville de Fergus; entre la rue Tower, ville de Fergus, et le barrage Bissell, canton de Nichol; entre 100 mètres en aval d’un pont situé à la limite sud de la zone de protection de la nature de la Gorge d’Elora et un point 100 mètres en amont de la 8e ligne de Pilkington, dans le canton de Pilkington; entre 100 mètres en aval du pont de la 8e ligne de Pilkington et 100 mètres en amont de la limite des cantons de Pilkington et Woolwich; entre 100 mètres en aval de la limite des cantons de Pilkington et Woolwich et 100 mètres en amont du pont de la route 86 Seuls les leurres artificiels sont permis. | Un seul hameçon sans barbes est permis. | Omble de fontaine, truite brune et truite arc-en-ciel - S-0 et C-0"
+      },
+      {
+        "name": "Rivière Grand",
+        "location": "entre l’ancienne ville de Paris (ville de Brant) et Brantford, depuis une ligne qui traverse la rivière Grand à Paris à 100 mètres en aval du pont de la route 2 (rue Dundas Ouest), en aval jusqu’au pont piétonnier et de service qui traverse la rivière Grand selon un angle en amont (ouest) de la zone de protection de la nature de Brant, dans la ville de Brantford",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Seuls les leurres artificiels sont permis.",
+            "notes": "Seuls les leurres artificiels sont permis.",
+            "raw": "Seuls les leurres artificiels sont permis."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Un seul hameçon sans barbes est permis.",
+            "notes": "Un seul hameçon sans barbes est permis.",
+            "raw": "Un seul hameçon sans barbes est permis."
+          },
+          {
+            "period": "pêche interdite du 1er mars au vendredi précédant le 4e samedi d’avril",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er mars au vendredi précédant le 4e samedi d’avril",
+            "raw": "Réserve de poissons - pêche interdite du 1er mars au vendredi précédant le 4e samedi d’avril"
+          },
+          {
+            "period": null,
+            "species": "Truite brune, grand brochet, truite arc-en-ciel, achigan à petite bouche et doré jaune",
+            "limit": "S-0 et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 et C-0",
+            "raw": "Truite brune, grand brochet, truite arc-en-ciel, achigan à petite bouche et doré jaune - S-0 et C-0"
+          }
+        ],
+        "raw": "Rivière Grand entre l’ancienne ville de Paris (ville de Brant) et Brantford, depuis une ligne qui traverse la rivière Grand à Paris à 100 mètres en aval du pont de la route 2 (rue Dundas Ouest), en aval jusqu’au pont piétonnier et de service qui traverse la rivière Grand selon un angle en amont (ouest) de la zone de protection de la nature de Brant, dans la ville de Brantford Seuls les leurres artificiels sont permis. | Un seul hameçon sans barbes est permis. | Réserve de poissons - pêche interdite du 1er mars au vendredi précédant le 4e samedi d’avril | Truite brune, grand brochet, truite arc-en-ciel, achigan à petite bouche et doré jaune - S-0 et C-0"
+      },
+      {
+        "name": "Rivière Grand",
+        "location": "depuis le pont piétonnier et de service qui traverse la rivière Grand selon un angle en amont (ouest) de la zone de protection de la nature de Brant, dans la ville de Brantford, jusqu’à la ligne des eaux du lac Érié",
+        "rules": [
+          {
+            "period": null,
+            "species": "Truite brune et truite arc-en-ciel (toute combinaison)",
+            "limit": "S-1 et C-0; du 1er octobre au 31 décembre",
+            "length": null,
+            "gear": null,
+            "notes": "S-1 et C-0; du 1er octobre au 31 décembre",
+            "raw": "Truite brune et truite arc-en-ciel (toute combinaison) - S-1 et C-0; du 1er octobre au 31 décembre"
+          }
+        ],
+        "raw": "Rivière Grand depuis le pont piétonnier et de service qui traverse la rivière Grand selon un angle en amont (ouest) de la zone de protection de la nature de Brant, dans la ville de Brantford, jusqu’à la ligne des eaux du lac Érié Truite brune et truite arc-en-ciel (toute combinaison) - S-1 et C-0; du 1er octobre au 31 décembre"
+      },
+      {
+        "name": "Rivière Grand",
+        "location": "depuis le barrage Penman en aval jusqu’au pont de la rue William, dans l’ancienne ville de Paris (ville de Brant)",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er octobre au 30 novembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er octobre au 30 novembre",
+            "raw": "Réserve de poissons - pêche interdite du 1er octobre au 30 novembre"
+          }
+        ],
+        "raw": "Rivière Grand depuis le barrage Penman en aval jusqu’au pont de la rue William, dans l’ancienne ville de Paris (ville de Brant) Réserve de poissons - pêche interdite du 1er octobre au 30 novembre"
+      },
+      {
+        "name": "Rivière Grand",
+        "location": "comté de Haldimand, depuis la ligne des eaux du lac Érié en amont jusqu’au barrage dans la ville de Caledonia",
+        "rules": [
+          {
+            "period": null,
+            "species": "Doré jaune",
+            "limit": "S-4 et C-2; aucune limite de taille",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 et C-2; aucune limite de taille",
+            "raw": "Doré jaune - S-4 et C-2; aucune limite de taille"
+          }
+        ],
+        "raw": "Rivière Grand comté de Haldimand, depuis la ligne des eaux du lac Érié en amont jusqu’au barrage dans la ville de Caledonia Doré jaune - S-4 et C-2; aucune limite de taille"
+      },
+      {
+        "name": "Rivière Grand",
+        "location": "et ses tributaires - en aval de la limite des cantons d’Onondaga et Tuscarora jusqu’au lac Érié",
+        "rules": [
+          {
+            "period": "ouverte du 1er janvier au dernier jour de février et du 2e samedi de mai au 31 décembre",
+            "species": "Doré jaune et grand brochet",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "ouverte du 1er janvier au dernier jour de février et du 2e samedi de mai au 31 décembre",
+            "raw": "Doré jaune et grand brochet - ouverte du 1er janvier au dernier jour de février et du 2e samedi de mai au 31 décembre"
+          }
+        ],
+        "raw": "Rivière Grand et ses tributaires - en aval de la limite des cantons d’Onondaga et Tuscarora jusqu’au lac Érié Doré jaune et grand brochet - ouverte du 1er janvier au dernier jour de février et du 2e samedi de mai au 31 décembre"
+      },
+      {
+        "name": "Rivière Humber",
+        "location": "et ses tributaires - en amont depuis l’avenue Eglinton",
+        "rules": [
+          {
+            "period": null,
+            "species": "Omble de fontaine, truite brune et truite arc-en-ciel (toute combinaison)",
+            "limit": "S-2 et C-1",
+            "length": null,
+            "gear": null,
+            "notes": "S-2 et C-1",
+            "raw": "Omble de fontaine, truite brune et truite arc-en-ciel (toute combinaison) - S-2 et C-1"
+          }
+        ],
+        "raw": "Rivière Humber et ses tributaires - en amont depuis l’avenue Eglinton Omble de fontaine, truite brune et truite arc-en-ciel (toute combinaison) - S-2 et C-1"
+      },
+      {
+        "name": "Rivière Humber",
+        "location": "et ses tributaires - en amont de l’autoroute 407, municipalités régionales de York et Peel et comtés de Dufferin et Simcoe",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre",
+            "raw": "Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre"
+          }
+        ],
+        "raw": "Rivière Humber et ses tributaires - en amont de l’autoroute 407, municipalités régionales de York et Peel et comtés de Dufferin et Simcoe Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre"
+      },
+      {
+        "name": "Rivière Maitland",
+        "location": "cantons de Colborne et Goderich, sur 550 mètres en aval depuis les chutes de la réserve Falls jusqu’à la première chute naturelle",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "aucune pêche la nuit du 15 septembre au 31 octobre (d’une demi-heure après le coucher du soleil à une demi-heure avant le lever du soleil)",
+            "raw": "Réserve de poissons - aucune pêche la nuit du 15 septembre au 31 octobre (d’une demi-heure après le coucher du soleil à une demi-heure avant le lever du soleil)"
+          }
+        ],
+        "raw": "Rivière Maitland cantons de Colborne et Goderich, sur 550 mètres en aval depuis les chutes de la réserve Falls jusqu’à la première chute naturelle Réserve de poissons - aucune pêche la nuit du 15 septembre au 31 octobre (d’une demi-heure après le coucher du soleil à une demi-heure avant le lever du soleil)"
+      },
+      {
+        "name": "Rivière Maitland",
+        "location": "comté de Huron, du côté en aval du pont de la route 21 au coté en amont du pont du chemin de comté 4",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril",
+            "raw": "Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril"
+          }
+        ],
+        "raw": "Rivière Maitland comté de Huron, du côté en aval du pont de la route 21 au coté en amont du pont du chemin de comté 4 Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril"
+      },
+      {
+        "name": "Tributaires de la rivière Maitland",
+        "location": "comté de Huron, du côté en aval du pont de la route 21 au coté en amont du pont du chemin de comté 4",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre",
+            "raw": "Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre"
+          }
+        ],
+        "raw": "Tributaires de la rivière Maitland comté de Huron, du côté en aval du pont de la route 21 au coté en amont du pont du chemin de comté 4 Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre"
+      },
+      {
+        "name": "Rivière Nine Mile",
+        "location": "canton d’Ashfield, de la passe à poissons de Port Albert jusqu’à 100 mètres en amont",
+        "rules": [
+          {
+            "period": "pêche interdite du 4e samedi d’avril au 15 mai et du 1er septembre au 30 novembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 4e samedi d’avril au 15 mai et du 1er septembre au 30 novembre",
+            "raw": "Réserve de poissons - pêche interdite du 4e samedi d’avril au 15 mai et du 1er septembre au 30 novembre"
+          }
+        ],
+        "raw": "Rivière Nine Mile canton d’Ashfield, de la passe à poissons de Port Albert jusqu’à 100 mètres en amont Réserve de poissons - pêche interdite du 4e samedi d’avril au 15 mai et du 1er septembre au 30 novembre"
+      },
+      {
+        "name": "Rivière Nine Mile",
+        "location": "(rivière Lucknow) - cantons d’Ashfield et West Wawanosh, entre le chemin de comté 86 et le lac Huron",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril",
+            "raw": "Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril"
+          }
+        ],
+        "raw": "Rivière Nine Mile (rivière Lucknow) - cantons d’Ashfield et West Wawanosh, entre le chemin de comté 86 et le lac Huron Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril"
+      },
+      {
+        "name": "Tributaires de la rivière Nine Mile",
+        "location": "comté de Huron, depuis la route 86 en aval jusqu’au lac Huron",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre",
+            "raw": "Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre"
+          }
+        ],
+        "raw": "Tributaires de la rivière Nine Mile comté de Huron, depuis la route 86 en aval jusqu’au lac Huron Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre"
+      },
+      {
+        "name": "Rivière Nottawasaga",
+        "location": "canton d’Essa, les eaux à l’intérieur du lot 1, concession 5, depuis la route 89 au-dessus du barrage Nicholson en aval jusque près de la confluence de la rivière Boyne",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er janvier au vendredi précédant le 2e samedi de mai et du 1er octobre au 31 décembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er janvier au vendredi précédant le 2e samedi de mai et du 1er octobre au 31 décembre",
+            "raw": "Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 2e samedi de mai et du 1er octobre au 31 décembre"
+          }
+        ],
+        "raw": "Rivière Nottawasaga canton d’Essa, les eaux à l’intérieur du lot 1, concession 5, depuis la route 89 au-dessus du barrage Nicholson en aval jusque près de la confluence de la rivière Boyne Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 2e samedi de mai et du 1er octobre au 31 décembre"
+      },
+      {
+        "name": "Rivière Nottawasaga",
+        "location": "depuis la rivière Boyne en aval (nord) jusqu’à la rivière Pine",
+        "rules": [
+          {
+            "period": null,
+            "species": "Truite arc-en-ciel",
+            "limit": "S-0 et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 et C-0",
+            "raw": "Truite arc-en-ciel - S-0 et C-0"
+          }
+        ],
+        "raw": "Rivière Nottawasaga depuis la rivière Boyne en aval (nord) jusqu’à la rivière Pine Truite arc-en-ciel - S-0 et C-0"
+      },
+      {
+        "name": "Rivière Pretty",
+        "location": "et ses tributaires - cantons de Collingwood et Osprey",
+        "rules": [
+          {
+            "period": "pêche interdite du 4e samedi d’avril au 31 mai",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 4e samedi d’avril au 31 mai",
+            "raw": "Réserve de poissons - pêche interdite du 4e samedi d’avril au 31 mai"
+          }
+        ],
+        "raw": "Rivière Pretty et ses tributaires - cantons de Collingwood et Osprey Réserve de poissons - pêche interdite du 4e samedi d’avril au 31 mai"
+      },
+      {
+        "name": "Rivière Pretty",
+        "location": "et ses tributaires - ville de Collingwood et canton de Nottawasaga",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre",
+            "raw": "Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre"
+          }
+        ],
+        "raw": "Rivière Pretty et ses tributaires - ville de Collingwood et canton de Nottawasaga Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre"
+      },
+      {
+        "name": "Rivière Saugeen",
+        "location": "cantons d’Amabel et Saugeen, du barrage Denny’s jusqu’aux culées de béton en aval",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "aucune pêche la nuit du 1er octobre au 31 octobre (d’une demi-heure après le coucher du soleil à une demi-heure avant le lever du soleil)",
+            "raw": "Réserve de poissons - aucune pêche la nuit du 1er octobre au 31 octobre (d’une demi-heure après le coucher du soleil à une demi-heure avant le lever du soleil)"
+          }
+        ],
+        "raw": "Rivière Saugeen cantons d’Amabel et Saugeen, du barrage Denny’s jusqu’aux culées de béton en aval Réserve de poissons - aucune pêche la nuit du 1er octobre au 31 octobre (d’une demi-heure après le coucher du soleil à une demi-heure avant le lever du soleil)"
+      },
+      {
+        "name": "Rivière Saugeen",
+        "location": "canton de Brant dans le comté de Bruce, du devant du barrage de Maple Hill jusqu’à un point situé à 300 mètres en aval, y compris le chenal du barrage hydroélectrique",
+        "rules": [
+          {
+            "period": "fermée toute l’année",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "fermée toute l’année",
+            "raw": "Réserve de poissons - fermée toute l’année"
+          }
+        ],
+        "raw": "Rivière Saugeen canton de Brant dans le comté de Bruce, du devant du barrage de Maple Hill jusqu’à un point situé à 300 mètres en aval, y compris le chenal du barrage hydroélectrique Réserve de poissons - fermée toute l’année"
+      },
+      {
+        "name": "Lac Simcoe, lac Couchiching (44°39' 51″",
+        "location": "N , 79°22' 34″ O ), rivière Green, réseau du canal Trent et leurs tributaires - en aval depuis le lac Couchiching jusqu’à l’écluse 42, le réseau du canal Trent dans les cantons de Brock et Ramara, et la rivière Severn et ses tributaires (sauf la rivière Black) en aval depuis le lac Couchiching jusqu’aux chutes Wasdell, tous à l’intérieur des municipalités régionales de York et de Durham, du comté de Simcoe et du district de Muskoka",
+        "rules": [
+          {
+            "period": "ouverte du 1er janvier au 15 mars et du 2e samedi de mai au 30 septembre",
+            "species": "Cisco",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "ouverte du 1er janvier au 15 mars et du 2e samedi de mai au 30 septembre",
+            "raw": "Cisco - ouverte du 1er janvier au 15 mars et du 2e samedi de mai au 30 septembre"
+          },
+          {
+            "period": null,
+            "species": "Cisco",
+            "limit": "S-2 et C-1",
+            "length": null,
+            "gear": null,
+            "notes": "S-2 et C-1",
+            "raw": "Cisco - S-2 et C-1"
+          },
+          {
+            "period": "ouverte du 1er janvier au 15 mars et du 2e samedi de mai au 30 septembre",
+            "species": "Touladi",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "ouverte du 1er janvier au 15 mars et du 2e samedi de mai au 30 septembre",
+            "raw": "Touladi - ouverte du 1er janvier au 15 mars et du 2e samedi de mai au 30 septembre"
+          },
+          {
+            "period": "ouverte du 1er janvier au 15 mars et du 2e samedi de mai au 30 septembre",
+            "species": "Grand corégone",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "ouverte du 1er janvier au 15 mars et du 2e samedi de mai au 30 septembre",
+            "raw": "Grand corégone - ouverte du 1er janvier au 15 mars et du 2e samedi de mai au 30 septembre"
+          },
+          {
+            "period": null,
+            "species": "Grand corégone",
+            "limit": "S-2 et C-1",
+            "length": null,
+            "gear": null,
+            "notes": "S-2 et C-1",
+            "raw": "Grand corégone - S-2 et C-1"
+          },
+          {
+            "period": "fermée toute l’année",
+            "species": "Maskinongé",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "fermée toute l’année",
+            "raw": "Maskinongé - fermée toute l’année"
+          },
+          {
+            "period": null,
+            "species": "Perchaude",
+            "limit": "S-50; par jour, limite de possession de 100, et C-25; par jour, limite de possession de 50",
+            "length": null,
+            "gear": null,
+            "notes": "S-50; par jour, limite de possession de 100, et C-25; par jour, limite de possession de 50",
+            "raw": "Perchaude - S-50; par jour, limite de possession de 100, et C-25; par jour, limite de possession de 50"
+          }
+        ],
+        "raw": "Lac Simcoe, lac Couchiching (44°39' 51″ N , 79°22' 34″ O ), rivière Green, réseau du canal Trent et leurs tributaires - en aval depuis le lac Couchiching jusqu’à l’écluse 42, le réseau du canal Trent dans les cantons de Brock et Ramara, et la rivière Severn et ses tributaires (sauf la rivière Black) en aval depuis le lac Couchiching jusqu’aux chutes Wasdell, tous à l’intérieur des municipalités régionales de York et de Durham, du comté de Simcoe et du district de Muskoka Cisco - ouverte du 1er janvier au 15 mars et du 2e samedi de mai au 30 septembre | Cisco - S-2 et C-1 | Touladi - ouverte du 1er janvier au 15 mars et du 2e samedi de mai au 30 septembre | Grand corégone - ouverte du 1er janvier au 15 mars et du 2e samedi de mai au 30 septembre | Grand corégone - S-2 et C-1 | Maskinongé - fermée toute l’année | Perchaude - S-50; par jour, limite de possession de 100, et C-25; par jour, limite de possession de 50"
+      },
+      {
+        "name": "Rivière Sydenham",
+        "location": "canton de Derby, les chenaux de frai artificiels 1 et 2",
+        "rules": [
+          {
+            "period": "fermée toute l’année",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "fermée toute l’année",
+            "raw": "Réserve de poissons - fermée toute l’année"
+          }
+        ],
+        "raw": "Rivière Sydenham canton de Derby, les chenaux de frai artificiels 1 et 2 Réserve de poissons - fermée toute l’année"
+      },
+      {
+        "name": "Rivière Sydenham",
+        "location": "ville d’Owen Sound, depuis le barrage Mill jusqu’à un point 177 mètres en aval",
+        "rules": [
+          {
+            "period": "fermée toute l’année",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "fermée toute l’année",
+            "raw": "Réserve de poissons - fermée toute l’année"
+          }
+        ],
+        "raw": "Rivière Sydenham ville d’Owen Sound, depuis le barrage Mill jusqu’à un point 177 mètres en aval Réserve de poissons - fermée toute l’année"
+      },
+      {
+        "name": "Rivière Sydenham",
+        "location": "ville d’Owen Sound et canton de Derby, depuis les chutes Inglis jusqu’au barrage Mill, sauf les chenaux de frai artificiels 1 et 2",
+        "rules": [
+          {
+            "period": "pêche interdite du 4e samedi d’avril au 31 mai",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 4e samedi d’avril au 31 mai",
+            "raw": "Réserve de poissons - pêche interdite du 4e samedi d’avril au 31 mai"
+          }
+        ],
+        "raw": "Rivière Sydenham ville d’Owen Sound et canton de Derby, depuis les chutes Inglis jusqu’au barrage Mill, sauf les chenaux de frai artificiels 1 et 2 Réserve de poissons - pêche interdite du 4e samedi d’avril au 31 mai"
+      },
+      {
+        "name": "Rivière Sydenham",
+        "location": "et ses tributaires - ville d’Owen Sound et canton de Derby, depuis le pied des chutes Inglis en aval jusqu’à une ligne tracée plein est depuis l’extrémité nord du pont connu localement comme le pont Chinese ou Rainbow, jusqu’au repère permanent en acier posé sur la rive de la rivière Sydenham, dans le parc Harrison",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er septembre au 30 septembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er septembre au 30 septembre",
+            "raw": "Réserve de poissons - pêche interdite du 1er septembre au 30 septembre"
+          }
+        ],
+        "raw": "Rivière Sydenham et ses tributaires - ville d’Owen Sound et canton de Derby, depuis le pied des chutes Inglis en aval jusqu’à une ligne tracée plein est depuis l’extrémité nord du pont connu localement comme le pont Chinese ou Rainbow, jusqu’au repère permanent en acier posé sur la rive de la rivière Sydenham, dans le parc Harrison Réserve de poissons - pêche interdite du 1er septembre au 30 septembre"
+      },
+      {
+        "name": "Rivière Thames",
+        "location": "entre le barrage au réservoir Gordon Pittock et le pont de la route 59",
+        "rules": [
+          {
+            "period": "pêche interdite du 15 mars au vendredi précédant le 2e samedi de mai",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 15 mars au vendredi précédant le 2e samedi de mai",
+            "raw": "Réserve de poissons - pêche interdite du 15 mars au vendredi précédant le 2e samedi de mai"
+          }
+        ],
+        "raw": "Rivière Thames entre le barrage au réservoir Gordon Pittock et le pont de la route 59 Réserve de poissons - pêche interdite du 15 mars au vendredi précédant le 2e samedi de mai"
+      },
+      {
+        "name": "Rivière Thames",
+        "location": "de l’embouchure de la rivière Thames au niveau du lac Sainte-Claire jusqu’au côté en aval du pont de la rue Keil dans la municipalité de Chatham",
+        "rules": [
+          {
+            "period": null,
+            "species": "Maskinongé",
+            "limit": "S-1; doit mesurer plus de 112 centimètres, et C-0",
+            "length": "doit mesurer plus de 112 centimètres",
+            "gear": null,
+            "notes": "S-1; doit mesurer plus de 112 centimètres, et C-0",
+            "raw": "Maskinongé - S-1; doit mesurer plus de 112 centimètres, et C-0"
+          }
+        ],
+        "raw": "Rivière Thames de l’embouchure de la rivière Thames au niveau du lac Sainte-Claire jusqu’au côté en aval du pont de la rue Keil dans la municipalité de Chatham Maskinongé - S-1; doit mesurer plus de 112 centimètres, et C-0"
+      },
+      {
+        "name": "Ruisseau Whitemans",
+        "location": "(ruisseau Horner) - canton de Brantford, entre le chemin Robinson et la route secondaire Cleaver",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Seuls les leurres artificiels sont permis.",
+            "notes": "Seuls les leurres artificiels sont permis.",
+            "raw": "Seuls les leurres artificiels sont permis."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Un seul hameçon sans barbes est permis.",
+            "notes": "Un seul hameçon sans barbes est permis.",
+            "raw": "Un seul hameçon sans barbes est permis."
+          },
+          {
+            "period": null,
+            "species": "Truite brune ou truite arc-en-ciel",
+            "limit": "S-1 et C-1; doit mesurer plus de 50 centimètres",
+            "length": "doit mesurer plus de 50 centimètres",
+            "gear": null,
+            "notes": "S-1 et C-1; doit mesurer plus de 50 centimètres",
+            "raw": "Truite brune ou truite arc-en-ciel - S-1 et C-1; doit mesurer plus de 50 centimètres"
+          }
+        ],
+        "raw": "Ruisseau Whitemans (ruisseau Horner) - canton de Brantford, entre le chemin Robinson et la route secondaire Cleaver Seuls les leurres artificiels sont permis. | Un seul hameçon sans barbes est permis. | Truite brune ou truite arc-en-ciel - S-1 et C-1; doit mesurer plus de 50 centimètres"
+      },
+      {
+        "name": "Ruisseau Whitemans",
+        "location": "(ruisseau Horner) et ses tributaires - depuis le chemin East Quarter Town Line en aval jusqu’à la ligne des eaux de la rivière Grand",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre",
+            "raw": "Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre"
+          }
+        ],
+        "raw": "Ruisseau Whitemans (ruisseau Horner) et ses tributaires - depuis le chemin East Quarter Town Line en aval jusqu’à la ligne des eaux de la rivière Grand Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre"
+      }
+    ]
+  },
+  "bait_restrictions": {
+    "en": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "FMZ 16 is part of the Southern Bait Management Zone ( BMZ ). Live or dead baitfish or leeches may not be transported into or out of a BMZ . These rules do not apply to baitfish and leeches which are both dead and preserved. Refer to bait for more details.",
+        "raw": "FMZ 16 is part of the Southern Bait Management Zone ( BMZ ). Live or dead baitfish or leeches may not be transported into or out of a BMZ . These rules do not apply to baitfish and leeches which are both dead and preserved. Refer to bait for more details."
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "La ZGP 16 fait partie de la zone de gestion des appâts ( ZGA ) du Sud. On ne peut pas apporter ou sortir des poissons d’appât et des sangsues, morts ou vivants, d’une ZGA . Ces règles ne s’appliquent pas aux poissons d’appât et sangsues qui sont morts et conservés. Voir la section sur les appâts pour plus de renseignements.",
+        "raw": "La ZGP 16 fait partie de la zone de gestion des appâts ( ZGA ) du Sud. On ne peut pas apporter ou sortir des poissons d’appât et des sangsues, morts ou vivants, d’une ZGA . Ces règles ne s’appliquent pas aux poissons d’appât et sangsues qui sont morts et conservés. Voir la section sur les appâts pour plus de renseignements."
+      }
+    ]
+  },
+  "fish_sanctuaries": {
+    "en": [
+      {
+        "period": "No fishing - closed all year",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - closed all year Colpoy’s Creek - Albemarle Township, from the upper bridge on County Road 9 downstream to the mouth | Gleason Brook - Keppel Township, from the bridge on County Road 26 to the mouth | Saugeen River - refer to waterbody exceptions | Sydenham River - refer to waterbody exceptions",
+        "waters": [
+          "Colpoy’s Creek - Albemarle Township, from the upper bridge on County Road 9 downstream to the mouth",
+          "Gleason Brook - Keppel Township, from the bridge on County Road 26 to the mouth",
+          "Saugeen River - refer to waterbody exceptions",
+          "Sydenham River - refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": "No fishing - January 1 to Friday before the fourth Saturday in April",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - January 1 to Friday before the fourth Saturday in April Bayfield River - refer to waterbody exceptions | Big Creek - refer to waterbody exceptions | Big Otter Creek - Town of Tillsonburg, from Black’s Dam to the north side of the bridge at Oxford Street | Bradleys Creek - Yarmouth Township, from the Elgin County Road 35 dam to Catfish Creek | Credit River - refer to waterbody exceptions | Lafontaine Creek and its tributaries - Township of Tiny in the County of Simcoe, at 44º43′15.167″ N , 80º01′48.461″ W | Maitland River - refer to waterbody exceptions | Nine Mile River - refer to waterbody exceptions | North Creek - Walsingham Township, south of Highway 3 | Stoney Creek - Walsingham Township, south of Highway 3 to Big Creek | Sturgeon River and tributaries - Tay and Oro-Medonte Townships, upstream (south) from the lamprey barrier | Young’s Creek (Ryerse Creek) - Woodhouse Township and the City of Nanticoke, between the dam on Lot 23, Concession 3 (former Township of Charlotteville) and the downstream side of the bridge on the Lakeshore Road at Port Ryerse",
+        "waters": [
+          "Bayfield River - refer to waterbody exceptions",
+          "Big Creek - refer to waterbody exceptions",
+          "Big Otter Creek - Town of Tillsonburg, from Black’s Dam to the north side of the bridge at Oxford Street",
+          "Bradleys Creek - Yarmouth Township, from the Elgin County Road 35 dam to Catfish Creek",
+          "Credit River - refer to waterbody exceptions",
+          "Lafontaine Creek and its tributaries - Township of Tiny in the County of Simcoe, at 44º43′15.167″ N , 80º01′48.461″ W",
+          "Maitland River - refer to waterbody exceptions",
+          "Nine Mile River - refer to waterbody exceptions",
+          "North Creek - Walsingham Township, south of Highway 3",
+          "Stoney Creek - Walsingham Township, south of Highway 3 to Big Creek",
+          "Sturgeon River and tributaries - Tay and Oro-Medonte Townships, upstream (south) from the lamprey barrier",
+          "Young’s Creek (Ryerse Creek) - Woodhouse Township and the City of Nanticoke, between the dam on Lot 23, Concession 3 (former Township of Charlotteville) and the downstream side of the bridge on the Lakeshore Road at Port Ryerse"
+        ]
+      },
+      {
+        "period": "No fishing - January 1 to Friday before the fourth Saturday in April and August 15 to December 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - January 1 to Friday before the fourth Saturday in April and August 15 to December 31 Credit River - refer to waterbody exceptions",
+        "waters": [
+          "Credit River - refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": "No fishing - January 1 to Friday before the fourth Saturday in April and October 1 to December 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - January 1 to Friday before the fourth Saturday in April and October 1 to December 31 Bayfield River tributaries - refer to waterbody exceptions | Big Creek - refer to waterbody exceptions | Bronte Creek - City of Burlington and Flamborough Township, from the C.P.R. track in the Village of Progreston downstream to the south side of Highway 407, including part of Limestone Creek upstream to Steeles Avenue in the Town of Milton | Credit River - refer to waterbody exceptions | Fisher’s Creek - Walsingham Township | Galt Creek (Mill Creek) - upstream from the boundary of North Dumfries and Puslinch Townships, including Aberfoyle Creek | Grindstone Creek - Flamborough Township and City of Burlington, from Waterdown Road to Highway 2 (Plains Road) | Gully Creek and tributaries – Goderich Township | Humber River - refer to waterbody exceptions | Maitland River - refer to waterbody exceptions | Naftel’s Creek and tributaries – Huron County | Nine Mile River - refer to waterbody exceptions | Normandale Creek (Potters Creek) - Walsingham Township | Pretty River and tributaries – refer to waterbody exceptions | Whitemans Creek - refer to waterbody exceptions for details",
+        "waters": [
+          "Bayfield River tributaries - refer to waterbody exceptions",
+          "Big Creek - refer to waterbody exceptions",
+          "Bronte Creek - City of Burlington and Flamborough Township, from the C.P.R. track in the Village of Progreston downstream to the south side of Highway 407, including part of Limestone Creek upstream to Steeles Avenue in the Town of Milton",
+          "Credit River - refer to waterbody exceptions",
+          "Fisher’s Creek - Walsingham Township",
+          "Galt Creek (Mill Creek) - upstream from the boundary of North Dumfries and Puslinch Townships, including Aberfoyle Creek",
+          "Grindstone Creek - Flamborough Township and City of Burlington, from Waterdown Road to Highway 2 (Plains Road)",
+          "Gully Creek and tributaries – Goderich Township",
+          "Humber River - refer to waterbody exceptions",
+          "Maitland River - refer to waterbody exceptions",
+          "Naftel’s Creek and tributaries – Huron County",
+          "Nine Mile River - refer to waterbody exceptions",
+          "Normandale Creek (Potters Creek) - Walsingham Township",
+          "Pretty River and tributaries – refer to waterbody exceptions",
+          "Whitemans Creek - refer to waterbody exceptions for details"
+        ]
+      },
+      {
+        "period": "No fishing - January 1 to Friday before the second Saturday in May and October 1 to December 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - January 1 to Friday before the second Saturday in May and October 1 to December 31 Boyne River - Tosorontio Township, from the dam in Earl Rowe Provincial Park downstream (east) to the park boundary | Nottawasaga River - refer to waterbody exceptions",
+        "waters": [
+          "Boyne River - Tosorontio Township, from the dam in Earl Rowe Provincial Park downstream (east) to the park boundary",
+          "Nottawasaga River - refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": "No fishing - January 1 to May 31 and October 1 to December 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - January 1 to May 31 and October 1 to December 31 Silver Creek and tributaries - Town of Collingwood, Collingwood and Nottawasaga Townships",
+        "waters": [
+          "Silver Creek and tributaries - Town of Collingwood, Collingwood and Nottawasaga Townships"
+        ]
+      },
+      {
+        "period": "No fishing - March 1 to Friday before the fourth Saturday in April",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - March 1 to Friday before the fourth Saturday in April Grand River - refer to waterbody exceptions",
+        "waters": [
+          "Grand River - refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": "No fishing - March 1 to Friday before second Saturday in May",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - March 1 to Friday before second Saturday in May Beaver River - Thorah Township, from the CNR railway bridge in the town of Beaverton upstream to Highway 12/48 | Pefferlaw River- Town of Georgina, from Highway 48 upstream to the dam in the village of Pefferlaw | Severn River - Morrison Township, between Coopers Falls Road bridge, downstream to a line extending southerly across the river from the westerly limit of Lot 17, Concession A | Talbot River and tributaries excluding the Trent Canal system - Thorah and Mara Townships, the area between the eastern side of Highway 12 upstream to the dam in Lot 6, Concession 11",
+        "waters": [
+          "Beaver River - Thorah Township, from the CNR railway bridge in the town of Beaverton upstream to Highway 12/48",
+          "Pefferlaw River- Town of Georgina, from Highway 48 upstream to the dam in the village of Pefferlaw",
+          "Severn River - Morrison Township, between Coopers Falls Road bridge, downstream to a line extending southerly across the river from the westerly limit of Lot 17, Concession A",
+          "Talbot River and tributaries excluding the Trent Canal system - Thorah and Mara Townships, the area between the eastern side of Highway 12 upstream to the dam in Lot 6, Concession 11"
+        ]
+      },
+      {
+        "period": "No fishing - March 15 to Friday before second Saturday in May",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - March 15 to Friday before second Saturday in May Thames River - refer to waterbody exceptions",
+        "waters": [
+          "Thames River - refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": "No fishing - fourth Saturday in April to May 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - fourth Saturday in April to May 31 Beatty Saugeen River and tributaries - Normanby and Bentinck Townships and that part of Egremont Township from Highway 6 upstream to the dams at Orchard Park | Bighead River tributaries - Sydenham, St. Vincent and Holland Townships | Indian Brook and tributaries - Collingwood Township | Indian River - Sarawak Township, from Georgian Bay to Indian Falls | Judges Creek - Eastnor Township, from the first falls above County Road 9 to Georgian Bay | Keefer’s Creek - Sydenham Township, between the water’s edge of Owen Sound and Slattery Mills Falls | Little Sauble River and tributaries - Bruce Township, all waters upstream of a line drawn across the river at a point 180 metres upstream from the foot bridge in Inverhuron Provincial Park | Meux Creek - Neustadt Village in Normanby Township, from dam face to South Saugeen River | Mill Creek and tributaries – Euphrasia and Collingwood Townships, downstream of Mitchell’s Falls to the Euphrasia and Collingwood Townline | Orchard Creek (Centreville Creek) and tributaries - St. Vincent Township | Park Head Creek - Amabel Township, from the confluence of Park Head Creek with the Sauble River upstream to Bruce County Road 10 | Pretty River and tributaries – refer to waterbody exceptions | Sangs Creek and tributaries – Arran Township | Sydenham River - refer to waterbody exceptions | Telfer Creek (Bothwell’s Creek) - Sydenham Township, Grey County | Willow Creek - St. Edmunds Township",
+        "waters": [
+          "Beatty Saugeen River and tributaries - Normanby and Bentinck Townships and that part of Egremont Township from Highway 6 upstream to the dams at Orchard Park",
+          "Bighead River tributaries - Sydenham, St. Vincent and Holland Townships",
+          "Indian Brook and tributaries - Collingwood Township",
+          "Indian River - Sarawak Township, from Georgian Bay to Indian Falls",
+          "Judges Creek - Eastnor Township, from the first falls above County Road 9 to Georgian Bay",
+          "Keefer’s Creek - Sydenham Township, between the water’s edge of Owen Sound and Slattery Mills Falls",
+          "Little Sauble River and tributaries - Bruce Township, all waters upstream of a line drawn across the river at a point 180 metres upstream from the foot bridge in Inverhuron Provincial Park",
+          "Meux Creek - Neustadt Village in Normanby Township, from dam face to South Saugeen River",
+          "Mill Creek and tributaries – Euphrasia and Collingwood Townships, downstream of Mitchell’s Falls to the Euphrasia and Collingwood Townline",
+          "Orchard Creek (Centreville Creek) and tributaries - St. Vincent Township",
+          "Park Head Creek - Amabel Township, from the confluence of Park Head Creek with the Sauble River upstream to Bruce County Road 10",
+          "Pretty River and tributaries – refer to waterbody exceptions",
+          "Sangs Creek and tributaries – Arran Township",
+          "Sydenham River - refer to waterbody exceptions",
+          "Telfer Creek (Bothwell’s Creek) - Sydenham Township, Grey County",
+          "Willow Creek - St. Edmunds Township"
+        ]
+      },
+      {
+        "period": "No fishing - fourth Saturday in April to May 15 and September 1 to November 30",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - fourth Saturday in April to May 15 and September 1 to November 30 Nine Mile River - refer to waterbody exceptions",
+        "waters": [
+          "Nine Mile River - refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": "No fishing - fourth Saturday in April to May 31 and September 1 to September 30",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - fourth Saturday in April to May 31 and September 1 to September 30 Pottawatomi River and Maxwell Creek - City of Owen Sound and Derby Township, from the fourth Avenue West Bridge upstream to the base of the escarpment",
+        "waters": [
+          "Pottawatomi River and Maxwell Creek - City of Owen Sound and Derby Township, from the fourth Avenue West Bridge upstream to the base of the escarpment"
+        ]
+      },
+      {
+        "period": "No fishing - September 1 to September 30",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - September 1 to September 30 Sydenham River - refer to waterbody exceptions",
+        "waters": [
+          "Sydenham River - refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": "No fishing - September 15 to October 31 (No night fishing)",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - September 15 to October 31 (No night fishing) Maitland River - refer to waterbody exceptions",
+        "waters": [
+          "Maitland River - refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": "No fishing - October 1 to October 31 (No night fishing)",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - October 1 to October 31 (No night fishing) Saugeen River - refer to waterbody exceptions",
+        "waters": [
+          "Saugeen River - refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": "No fishing - October 1 to November 30",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - October 1 to November 30 Grand River - refer to waterbody exceptions | Table of contents access the table of contents | Previous | Table of contents access the table of contents | Next",
+        "waters": [
+          "Grand River - refer to waterbody exceptions",
+          "Table of contents access the table of contents",
+          "Previous",
+          "Table of contents access the table of contents",
+          "Next"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "Pêche interdite - fermée toute l’année",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - fermée toute l’année Ruisseau Colpoy’s - canton d’Albemarle, depuis le pont supérieur du chemin de comté 9, en aval jusqu’à l’embouchure | Ruisseau Gleason - canton de Keppel, depuis le pont du chemin de comté 26 jusqu’à l’embouchure | Rivière Saugeen - voir les exceptions visant des plans d’eau particuliers | Rivière Sydenham - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Ruisseau Colpoy’s - canton d’Albemarle, depuis le pont supérieur du chemin de comté 9, en aval jusqu’à l’embouchure",
+          "Ruisseau Gleason - canton de Keppel, depuis le pont du chemin de comté 26 jusqu’à l’embouchure",
+          "Rivière Saugeen - voir les exceptions visant des plans d’eau particuliers",
+          "Rivière Sydenham - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": "Pêche interdite - du 1er janvier au vendredi précédant le 4e samedi d’avril",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - du 1er janvier au vendredi précédant le 4e samedi d’avril Rivière Bayfield - voir les exceptions visant des plans d’eau particuliers | Ruisseau Big - voir les exceptions visant des plans d’eau particuliers | Ruisseau Big Otter - ville de Tillsonburg, du barrage Black’s jusqu’au côté nord du pont de la rue Oxford | Ruisseau Bradleys - canton de Yarmouth, depuis le barrage du chemin 35 du comté d’Elgin jusqu’au ruisseau Catfish | Rivière Credit - voir les exceptions visant des plans d’eau particuliers | Ruisseau Lafontaine et ses tributaires - canton de Tiny dans le comté de Simcoe à 44°43′15,167″ N , 80°01′48,461″ O | Rivière Maitland - voir les exceptions visant des plans d’eau particuliers | Rivière Nine Mile - voir les exceptions visant des plans d’eau particuliers | Ruisseau North - canton de Walsingham, au sud de la route 3 | Ruisseau Stoney - canton de Walsingham, au sud de la route 3 jusqu’au ruisseau Big | Rivière Sturgeon et ses tributaires - cantons de Tay et Oro-Medonte, en amont (sud) depuis la barrière à lamproies | Ruisseau Young’s (ruisseau Ryerse) - canton de Woodhouse et ville de Nanticoke, entre le barrage sur le lot 23, concession 3 dans l’ancien canton de Charlotteville et le côté en aval du pont du chemin Lakeshore à Port Ryerse",
+        "waters": [
+          "Rivière Bayfield - voir les exceptions visant des plans d’eau particuliers",
+          "Ruisseau Big - voir les exceptions visant des plans d’eau particuliers",
+          "Ruisseau Big Otter - ville de Tillsonburg, du barrage Black’s jusqu’au côté nord du pont de la rue Oxford",
+          "Ruisseau Bradleys - canton de Yarmouth, depuis le barrage du chemin 35 du comté d’Elgin jusqu’au ruisseau Catfish",
+          "Rivière Credit - voir les exceptions visant des plans d’eau particuliers",
+          "Ruisseau Lafontaine et ses tributaires - canton de Tiny dans le comté de Simcoe à 44°43′15,167″ N , 80°01′48,461″ O",
+          "Rivière Maitland - voir les exceptions visant des plans d’eau particuliers",
+          "Rivière Nine Mile - voir les exceptions visant des plans d’eau particuliers",
+          "Ruisseau North - canton de Walsingham, au sud de la route 3",
+          "Ruisseau Stoney - canton de Walsingham, au sud de la route 3 jusqu’au ruisseau Big",
+          "Rivière Sturgeon et ses tributaires - cantons de Tay et Oro-Medonte, en amont (sud) depuis la barrière à lamproies",
+          "Ruisseau Young’s (ruisseau Ryerse) - canton de Woodhouse et ville de Nanticoke, entre le barrage sur le lot 23, concession 3 dans l’ancien canton de Charlotteville et le côté en aval du pont du chemin Lakeshore à Port Ryerse"
+        ]
+      },
+      {
+        "period": "Pêche interdite - du 1er janvier au vendredi précédant le 4e samedi d’avril et du 15 août au 31 décembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - du 1er janvier au vendredi précédant le 4e samedi d’avril et du 15 août au 31 décembre Rivière Credit - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Rivière Credit - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": "Pêche interdite - du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - du 1er janvier au vendredi précédant le 4e samedi d’avril et du 1er octobre au 31 décembre Tributaires de la rivière Bayfield - voir les exceptions visant des plans d’eau particuliers | Ruisseau Big - voir les exceptions visant des plans d’eau particuliers | Ruisseau Bronte - ville de Burlington et canton de Flamborough, depuis la voie ferrée du CP dans le village de Progreston en aval jusqu’au côté sud de l’autoroute 407, y compris une partie du ruisseau Limestone en amont jusqu’à l’avenue Steeles dans la ville de Milton | Rivière Credit - voir les exceptions visant des plans d’eau particuliers | Ruisseau Fisher’s - canton de Walsingham | Ruisseau Galt (ruisseau Mill) - en amont depuis la limite des cantons de North Dumfries et Puslinch, incluant le ruisseau Aberfoyle | Ruisseau Grindstone - canton de Flamborough et ville de Burlington, depuis le chemin Waterdown jusqu’à la route 2 (chemin Plains) | Ruisseau Gully et ses tributaires - canton de Goderich | Rivière Humber - voir les exceptions visant des plans d’eau particuliers | Rivière Maitland - voir les exceptions visant des plans d’eau particuliers | Ruisseau Naftel’s et ses tributaires - comté de Huron | Rivière Nine Mile - voir les exceptions visant des plans d’eau particuliers | Ruisseau Normandale (ruisseau Potters) - canton de Walsingham | Rivière Pretty et ses tributaires - voir les exceptions visant des plans d’eau particuliers | Ruisseau Whitemans - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Tributaires de la rivière Bayfield - voir les exceptions visant des plans d’eau particuliers",
+          "Ruisseau Big - voir les exceptions visant des plans d’eau particuliers",
+          "Ruisseau Bronte - ville de Burlington et canton de Flamborough, depuis la voie ferrée du CP dans le village de Progreston en aval jusqu’au côté sud de l’autoroute 407, y compris une partie du ruisseau Limestone en amont jusqu’à l’avenue Steeles dans la ville de Milton",
+          "Rivière Credit - voir les exceptions visant des plans d’eau particuliers",
+          "Ruisseau Fisher’s - canton de Walsingham",
+          "Ruisseau Galt (ruisseau Mill) - en amont depuis la limite des cantons de North Dumfries et Puslinch, incluant le ruisseau Aberfoyle",
+          "Ruisseau Grindstone - canton de Flamborough et ville de Burlington, depuis le chemin Waterdown jusqu’à la route 2 (chemin Plains)",
+          "Ruisseau Gully et ses tributaires - canton de Goderich",
+          "Rivière Humber - voir les exceptions visant des plans d’eau particuliers",
+          "Rivière Maitland - voir les exceptions visant des plans d’eau particuliers",
+          "Ruisseau Naftel’s et ses tributaires - comté de Huron",
+          "Rivière Nine Mile - voir les exceptions visant des plans d’eau particuliers",
+          "Ruisseau Normandale (ruisseau Potters) - canton de Walsingham",
+          "Rivière Pretty et ses tributaires - voir les exceptions visant des plans d’eau particuliers",
+          "Ruisseau Whitemans - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": "Pêche interdite - du 1er janvier au vendredi précédant le 2e samedi de mai et du 1er octobre au 31 décembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - du 1er janvier au vendredi précédant le 2e samedi de mai et du 1er octobre au 31 décembre Rivière Boyne - canton de Tosorontio, depuis le barrage dans le parc provincial Earl Rowe en aval (est) jusqu’à la limite du parc | Rivière Nottawasaga - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Rivière Boyne - canton de Tosorontio, depuis le barrage dans le parc provincial Earl Rowe en aval (est) jusqu’à la limite du parc",
+          "Rivière Nottawasaga - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": "Pêche interdite - du 1er janvier au 31 mai et du 1er octobre au 31 décembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - du 1er janvier au 31 mai et du 1er octobre au 31 décembre Ruisseau Silver et ses tributaires - ville de Collingwood, cantons de Collingwood et Nottawasaga",
+        "waters": [
+          "Ruisseau Silver et ses tributaires - ville de Collingwood, cantons de Collingwood et Nottawasaga"
+        ]
+      },
+      {
+        "period": "Pêche interdite - du 1er mars au vendredi précédant le 4e samedi d’avril",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - du 1er mars au vendredi précédant le 4e samedi d’avril Rivière Grand - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Rivière Grand - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": "Pêche interdite - du 1er mars au vendredi précédant le 2e samedi de mai",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - du 1er mars au vendredi précédant le 2e samedi de mai Rivière Beaver - canton de Thorah, depuis le pont du CN dans la ville de Beaverton en amont jusqu’à la route 12/48 | Rivière Pefferlaw - ville de Georgina, depuis la route 48 en amont jusqu’au barrage dans le village de Pefferlaw | Rivière Severn - canton de Morrison, entre le chemin du pont des chutes Coopers, en aval jusqu’à une ligne tracée vers le sud qui traverse la rivière depuis la limite ouest du lot 17, concession A | Rivière Talbot et ses tributaires, sauf le réseau du canal Trent - cantons de Thorah et Mara, la zone située entre le côté est de la route 12, en amont jusqu’au barrage du lot 6, concession 11",
+        "waters": [
+          "Rivière Beaver - canton de Thorah, depuis le pont du CN dans la ville de Beaverton en amont jusqu’à la route 12/48",
+          "Rivière Pefferlaw - ville de Georgina, depuis la route 48 en amont jusqu’au barrage dans le village de Pefferlaw",
+          "Rivière Severn - canton de Morrison, entre le chemin du pont des chutes Coopers, en aval jusqu’à une ligne tracée vers le sud qui traverse la rivière depuis la limite ouest du lot 17, concession A",
+          "Rivière Talbot et ses tributaires, sauf le réseau du canal Trent - cantons de Thorah et Mara, la zone située entre le côté est de la route 12, en amont jusqu’au barrage du lot 6, concession 11"
+        ]
+      },
+      {
+        "period": "Pêche interdite - du 15 mars au vendredi précédant le 2e samedi de mai",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - du 15 mars au vendredi précédant le 2e samedi de mai Rivière Thames - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Rivière Thames - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": "Pêche interdite - du 4e samedi d’avril au 31 mai",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - du 4e samedi d’avril au 31 mai Rivière Beatty Saugeen et ses tributaires- cantons de Normanby et Bentinck, et la partie du canton d’Egremont depuis la route 6 en amont jusqu’aux barrages situés au parc Orchard | Tributaires de la Rivière Bighead - cantons de Sydenham, St. Vincent et Holland | Ruisseau Indian et ses tributaires - canton de Collingwood | Rivière Indian - canton de Sarawak, de la baie Georgienne aux chutes Indian | Ruisseau Judges - canton d’Eastnor, depuis les premières chutes en amont du chemin de comté 9 jusqu’à la baie Georgienne | Ruisseau Keefer’s - canton de Sydenham, entre la ligne des eaux d’Owen Sound et les chutes Slattery Mills | Rivière Little Sauble et ses tributaires - canton de Bruce, toutes les eaux en amont d’une ligne traversant la rivière à un point 180 mètres en amont depuis le pont piétonnier dans le parc provincial Inverhuron | Ruisseau Meux - village de Neustadt dans le canton de Normanby, depuis le devant du barrage jusqu’à la rivière South Saugeen | Ruisseau Mill et ses tributaires - cantons d’Euphrasia et de Collingwood, en aval des chutes Mitchell jusqu’à la ligne de canton Euphrasia/Collingwood | Ruisseau Orchard (ruisseau Centreville) et ses tributaires - canton de St. Vincent | Ruisseau Park Head - canton d’Amabel, depuis la confluence du ruisseau Park Head et de la rivière Sauble en amont jusqu’au chemin de comté 10, comté de Bruce | Rivière Pretty et ses tributaires - voir les exceptions visant des plans d’eau particuliers | Ruisseau Sangs et ses tributaires - canton d’Arran | Rivière Sydenham - voir les exceptions visant des plans d’eau particuliers | Ruisseau Telfer (ruisseau Bothwell’s) - canton de Sydenham, comté de Grey | Ruisseau Willow - canton de St. Edmunds",
+        "waters": [
+          "Rivière Beatty Saugeen et ses tributaires- cantons de Normanby et Bentinck, et la partie du canton d’Egremont depuis la route 6 en amont jusqu’aux barrages situés au parc Orchard",
+          "Tributaires de la Rivière Bighead - cantons de Sydenham, St. Vincent et Holland",
+          "Ruisseau Indian et ses tributaires - canton de Collingwood",
+          "Rivière Indian - canton de Sarawak, de la baie Georgienne aux chutes Indian",
+          "Ruisseau Judges - canton d’Eastnor, depuis les premières chutes en amont du chemin de comté 9 jusqu’à la baie Georgienne",
+          "Ruisseau Keefer’s - canton de Sydenham, entre la ligne des eaux d’Owen Sound et les chutes Slattery Mills",
+          "Rivière Little Sauble et ses tributaires - canton de Bruce, toutes les eaux en amont d’une ligne traversant la rivière à un point 180 mètres en amont depuis le pont piétonnier dans le parc provincial Inverhuron",
+          "Ruisseau Meux - village de Neustadt dans le canton de Normanby, depuis le devant du barrage jusqu’à la rivière South Saugeen",
+          "Ruisseau Mill et ses tributaires - cantons d’Euphrasia et de Collingwood, en aval des chutes Mitchell jusqu’à la ligne de canton Euphrasia/Collingwood",
+          "Ruisseau Orchard (ruisseau Centreville) et ses tributaires - canton de St. Vincent",
+          "Ruisseau Park Head - canton d’Amabel, depuis la confluence du ruisseau Park Head et de la rivière Sauble en amont jusqu’au chemin de comté 10, comté de Bruce",
+          "Rivière Pretty et ses tributaires - voir les exceptions visant des plans d’eau particuliers",
+          "Ruisseau Sangs et ses tributaires - canton d’Arran",
+          "Rivière Sydenham - voir les exceptions visant des plans d’eau particuliers",
+          "Ruisseau Telfer (ruisseau Bothwell’s) - canton de Sydenham, comté de Grey",
+          "Ruisseau Willow - canton de St. Edmunds"
+        ]
+      },
+      {
+        "period": "Pêche interdite - du 4e samedi d’avril au 15 mai et du 1er septembre au 30 novembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - du 4e samedi d’avril au 15 mai et du 1er septembre au 30 novembre Rivière Nine Mile - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Rivière Nine Mile - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": "Pêche interdite - du 4e samedi d’avril au 31 mai et du 1er septembre au 30 septembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - du 4e samedi d’avril au 31 mai et du 1er septembre au 30 septembre Rivière Pottawatomi et ruisseau Maxwell - ville d’Owen Sound et canton de Derby, depuis le pont de la 4e Avenue ouest en amont jusqu’au pied de l’escarpement",
+        "waters": [
+          "Rivière Pottawatomi et ruisseau Maxwell - ville d’Owen Sound et canton de Derby, depuis le pont de la 4e Avenue ouest en amont jusqu’au pied de l’escarpement"
+        ]
+      },
+      {
+        "period": "Pêche interdite - du 1er septembre au 30 septembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - du 1er septembre au 30 septembre Rivière Sydenham - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Rivière Sydenham - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": "Pêche interdite - du 15 septembre au 31 octobre (aucune pêche la nuit)",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - du 15 septembre au 31 octobre (aucune pêche la nuit) Rivière Maitland - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Rivière Maitland - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": "Pêche interdite - du 1er octobre au 31 octobre (aucune pêche la nuit)",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - du 1er octobre au 31 octobre (aucune pêche la nuit) Rivière Saugeen - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Rivière Saugeen - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": "Pêche interdite - du 1er octobre au 30 novembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - du 1er octobre au 30 novembre Rivière Grand - voir les exceptions visant des plans d’eau particuliers | Table des matières accéder à la table des matières | Précédent | Table des matières accéder à la table des matières | Suivant",
+        "waters": [
+          "Rivière Grand - voir les exceptions visant des plans d’eau particuliers",
+          "Table des matières accéder à la table des matières",
+          "Précédent",
+          "Table des matières accéder à la table des matières",
+          "Suivant"
+        ]
+      }
+    ]
+  }
+}

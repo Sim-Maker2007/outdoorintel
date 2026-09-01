@@ -1,0 +1,790 @@
+{
+  "zone_id": 17,
+  "zone_key": "ON-17",
+  "activity": "fishing",
+  "jurisdiction": "ON",
+  "fmz": 17,
+  "licence_year": 2026,
+  "authority": "Ontario Ministry of Natural Resources (MNR); Ontario Fishing Regulations Summary 2026 (not the official law)",
+  "source": {
+    "en": "https://www.ontario.ca/document/ontario-fishing-regulations-summary/fisheries-management-zone-17",
+    "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-peche/zone-de-gestion-des-peches-17",
+    "pdf_en": "https://ontario.ca/files/2025-12/mnr-2026-fishing-regulations-summary-en-2025-12-08.pdf",
+    "fish_on_line": "https://www.gisapplication.lrc.gov.on.ca/FishONLine/Index.html?site=FishONLine&viewer=FishONLine&locale=en-US&FMZ=17",
+    "fetched_at": "2026-09-01",
+    "html_updated": "2026-08-04",
+    "note": "Rule text reproduced verbatim from the Ontario Fishing Regulations Summary HTML (not the PDF). The Summary is not the official law. Always verify with the MNR and Fish ON-Line before fishing. Crown copyright."
+  },
+  "coverage": {
+    "licence_year": 2026,
+    "skipped_fish_on_line_only": false,
+    "zone_wide_listed": 17,
+    "zone_wide_harvested": 17,
+    "species_exceptions_listed": 2,
+    "species_exceptions_harvested": 2,
+    "waterbody_exceptions_listed": 5,
+    "waterbody_exceptions_harvested": 5,
+    "fish_sanctuaries_listed": 4,
+    "fish_sanctuaries_harvested": 4,
+    "bait_restrictions_listed": 1,
+    "bait_restrictions_harvested": 1,
+    "complete": true,
+    "note": "Zone-wide seasons/limits and listed HTML exceptions/sanctuaries for this FMZ are included. The Ontario Fishing Regulations Summary is not the law; verify with Fish ON-Line. This is not complete Ontario."
+  },
+  "title": {
+    "en": "Fisheries Management Zone 17 — Ontario FMZ 17",
+    "fr": "Zone de gestion des pêches 17 — Ontario ZGP 17"
+  },
+  "notices": {
+    "en": [
+      "Refer to general fishing regulations for more information on how to use this summary.",
+      "There are several Great Lakes tributaries that have aligned regulations for rainbow trout, brown trout, Pacific salmon and Atlantic salmon - refer to species exceptions .",
+      "The following waterbodies, or portions of them, have different regulations that are listed in the waterbody exceptions :",
+      "Trent River",
+      "The following species are not present in this Zone and are closed to fishing all year:",
+      "FMZ 17 is part of the Southern Bait Management Zone ( BMZ ). Live or dead baitfish or leeches may not be transported into or out of a BMZ . These rules do not apply to baitfish and leeches which are both dead and preserved. Refer to bait for more details."
+    ],
+    "fr": [
+      "Voir les Règlements généraux concernant la pêche pour plus de renseignements sur l’utilisation de ce Résumé.",
+      "Il y a plusieurs tributaires des Grands Lacs qui ont aligné leurs règlements de pêche à la truite arc-en-ciel, truite brune, saumon du Pacifique et saumon atlantique - Voir les exceptions visant des espèces particulières .",
+      "Les plans d’eau suivants, ou des parties de ceux-ci, ont des règlements différents qui sont mentionnés dans les exceptions visant des plans d’eau particuliers :",
+      "rivière Trent",
+      "On ne trouve pas l’espèce suivante dans cette zone et sa pêche est donc interdite toute l’année :",
+      "La ZGP 17 fait partie de la zone de gestion des appâts ( ZGA ) du Sud. On ne peut pas apporter ou sortir des poissons d’appât et des sangsues, morts ou vivants, d’une ZGA . Ces règles ne s’appliquent pas aux poissons d’appât et sangsues qui sont morts et conservés. Voir la section sur les appâts pour plus de renseignements."
+    ]
+  },
+  "general": {
+    "en": [
+      {
+        "period": null,
+        "species": "Aggregate limits for trout and salmon (including splake)",
+        "limit": "S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limits : S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined"
+      },
+      {
+        "period": "fourth Saturday in April to September 30",
+        "species": "Atlantic salmon",
+        "limit": "S-0 and C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : fourth Saturday in April to September 30 Limits : S-0 and C-0"
+      },
+      {
+        "period": "fourth Saturday in April to September 30",
+        "species": "Brook trout",
+        "limit": "S-2 and C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : fourth Saturday in April to September 30 Limits : S-2 and C-1"
+      },
+      {
+        "period": "fourth Saturday in April to September 30",
+        "species": "Brown trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : fourth Saturday in April to September 30 Limits : S-5 and C-2"
+      },
+      {
+        "period": "fourth Saturday in April to November 15",
+        "species": "Channel catfish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : fourth Saturday in April to November 15 Limits : S-12 and C-6"
+      },
+      {
+        "period": "open all year",
+        "species": "Crappie",
+        "limit": "S-30 and C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-30 and C-10"
+      },
+      {
+        "period": "closed all year",
+        "species": "Lake sturgeon",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : closed all year"
+      },
+      {
+        "period": "fourth Saturday in April to September 30",
+        "species": "Lake trout",
+        "limit": "S-3 and C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : fourth Saturday in April to September 30 Limits : S-3 and C-1"
+      },
+      {
+        "period": "fourth Saturday in April to November 15",
+        "species": "Lake whitefish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : fourth Saturday in April to November 15 Limits : S-12 and C-6"
+      },
+      {
+        "period": "third Saturday in June to December 15",
+        "species": "Largemouth and smallmouth bass combined",
+        "limit": "S-6 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : third Saturday in June to December 15 Limits : S-6 and C-2"
+      },
+      {
+        "period": "1st Saturday in June to December 15",
+        "species": "Muskellunge",
+        "limit": "S-1; must be greater than 112 centimetres, and C-0",
+        "length": "must be greater than 112 centimetres",
+        "gear": null,
+        "notes": null,
+        "raw": "Season : 1st Saturday in June to December 15 Limits : S-1; must be greater than 112 centimetres, and C-0"
+      },
+      {
+        "period": "open all year",
+        "species": "Northern pike",
+        "limit": "S-6 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-6 and C-2"
+      },
+      {
+        "period": "fourth Saturday in April to September 30",
+        "species": "Pacific salmon",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : fourth Saturday in April to September 30 Limits : S-5 and C-2"
+      },
+      {
+        "period": "fourth Saturday in April to September 30",
+        "species": "Rainbow trout",
+        "limit": "S-2 and C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : fourth Saturday in April to September 30 Limits : S-2 and C-1"
+      },
+      {
+        "period": "open all year",
+        "species": "Sunfish",
+        "limit": "S-300; only 30 may be greater than 18 centimetres, and C-15",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-300; only 30 may be greater than 18 centimetres, and C-15"
+      },
+      {
+        "period": "second Saturday in May to November 15",
+        "species": "Walleye and sauger combined",
+        "limit": "S-4 and C-1; must be between 35-50 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : second Saturday in May to November 15 Limits : S-4 and C-1; must be between 35-50 centimetres"
+      },
+      {
+        "period": "open all year",
+        "species": "Yellow perch",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50 and C-25"
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Limites combinées pour la truite et le saumon (y compris le touladi et l’omble de fontaine)",
+        "limit": "S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées.",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limites : S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées."
+      },
+      {
+        "period": "Du 4e samedi d’avril au 30 septembre",
+        "species": "Saumon atlantique",
+        "limit": "S-0 et C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 4e samedi d’avril au 30 septembre Limites : S-0 et C-0"
+      },
+      {
+        "period": "Du 4e samedi d’avril au 30 septembre",
+        "species": "Omble de fontaine",
+        "limit": "S-2 et C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 4e samedi d’avril au 30 septembre Limites : S-2 et C-1"
+      },
+      {
+        "period": "Du 4e samedi d’avril au 30 septembre",
+        "species": "Truite brune",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 4e samedi d’avril au 30 septembre Limites : S-5 et C-2"
+      },
+      {
+        "period": "Du 4e samedi d’avril au 15 novembre",
+        "species": "Barbue de rivière",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 4e samedi d’avril au 15 novembre Limites : S-12 et C-6"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Marigane",
+        "limit": "S-30 et C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-30 et C-10"
+      },
+      {
+        "period": "Fermée toute l’année",
+        "species": "Esturgeon de lac (esturgeon jaune)",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Fermée toute l’année"
+      },
+      {
+        "period": "Du 4e samedi d’avril au 30 septembre",
+        "species": "Touladi",
+        "limit": "S-3 et C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 4e samedi d’avril au 30 septembre Limites : S-3 et C-1"
+      },
+      {
+        "period": "Du 4e samedi d’avril au 15 novembre",
+        "species": "Grand corégone",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 4e samedi d’avril au 15 novembre Limites : S-12 et C-6"
+      },
+      {
+        "period": "Du 3e samedi de juin au 15 décembre",
+        "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+        "limit": "S-6 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 3e samedi de juin au 15 décembre Limites : S-6 et C-2"
+      },
+      {
+        "period": "Du 1er samedi de juin au 15 décembre",
+        "species": "Maskinongé",
+        "limit": "S-1; doit mesurer plus de 112 centimètres, et C-0",
+        "length": "doit mesurer plus de 112 centimètres",
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er samedi de juin au 15 décembre Limites : S-1; doit mesurer plus de 112 centimètres, et C-0"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Grand brochet",
+        "limit": "S-6 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-6 et C-2"
+      },
+      {
+        "period": "Du 4e samedi d’avril au 30 septembre",
+        "species": "Saumon du Pacifique",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 4e samedi d’avril au 30 septembre Limites : S-5 et C-2"
+      },
+      {
+        "period": "Du 4e samedi d’avril au 30 septembre",
+        "species": "Truite arc-en-ciel",
+        "limit": "S-2 et C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 4e samedi d’avril au 30 septembre Limites : S-2 et C-1"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Crapet",
+        "limit": "S-300; seulement 30 peuvent mesurer plus de 18 centimètres, et C-15",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-300; seulement 30 peuvent mesurer plus de 18 centimètres, et C-15"
+      },
+      {
+        "period": "Du 2e samedi de mai au 15 novembre",
+        "species": "Doré jaune et doré noir (toute combinaison)",
+        "limit": "S-4 et C-1; doit mesurer entre 35 et 50 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 2e samedi de mai au 15 novembre Limites : S-4 et C-1; doit mesurer entre 35 et 50 centimètres"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Perchaude",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-50 et C-25"
+      }
+    ]
+  },
+  "species_exceptions": {
+    "en": [
+      {
+        "period": "open all year",
+        "species": "Atlantic salmon, brown trout, Pacific salmon and rainbow trout",
+        "limit": "Zone-wide limits apply Cobourg Brook (Cobourg Creek or Factory Creek) - between the southerly limit of the CNR right-of-way and Lake Ontario Gages Creek - between the southerly limit of the CNR right-of-way and Lake Ontario Ganaraska River - between the southerly limit of the CNR right-of-way and Lake Ontario Regional Municipality of Durham - all waters lying between the southerly limit of the CNR right-of-way and Lake Ontario Season : open from fourth Saturday in April to December 31 (extended fall season) Limits : Zone-wide limits apply Northumberland County - all waters downstream of Highway 2, except the Ganaraska River. Details of additional fishing opportunities for the Ganaraska River can be found below. Regional Municipality of Durham - all waters between Highway 2 and the southerly limit of the CNR right-of-way Season : open from fourth Saturday in April to August 31 and from October 15 to December 31 (extended fall season) Limits : Zone-wide limits apply Ganaraska River – from the south side of the Jocelyn Street Bridge (43°58′1.77″ N , 78°17′43.77″ W ) to the southerly limit of the CNR right-of-way (43°56′48.51″ N , 78°17′31.93″ W )",
+        "length": null,
+        "gear": null,
+        "notes": "Additional fishing opportunities · Cobourg Brook (Cobourg Creek or Factory Creek) - between the southerly limit of the CNR right-of-way and Lake Ontario · Gages Creek - between the southerly limit of the CNR right-of-way and Lake Ontario · Ganaraska River - between the southerly limit of the CNR right-of-way and Lake Ontario · Regional Municipality of Durham - all waters lying between the southerly limit of the CNR right-of-way and Lake Ontario · Northumberland County - all waters downstream of Highway 2, except the Ganaraska River. Details of additional fishing opportunities for the Ganaraska River can be found below. · Regional Municipality of Durham - all waters between Highway 2 and the southerly limit of the CNR right-of-way · Ganaraska River – from the south side of the Jocelyn Street Bridge (43°58′1.77″ N , 78°17′43.77″ W ) to the southerly limit of the CNR right-of-way (43°56′48.51″ N , 78°17′31.93″ W )",
+        "raw": "Additional fishing opportunities Season : open all year Limits : Zone-wide limits apply Cobourg Brook (Cobourg Creek or Factory Creek) - between the southerly limit of the CNR right-of-way and Lake Ontario Gages Creek - between the southerly limit of the CNR right-of-way and Lake Ontario Ganaraska River - between the southerly limit of the CNR right-of-way and Lake Ontario Regional Municipality of Durham - all waters lying between the southerly limit of the CNR right-of-way and Lake Ontario Season : open from fourth Saturday in April to December 31 (extended fall season) Limits : Zone-wide limits apply Northumberland County - all waters downstream of Highway 2, except the Ganaraska River. Details of additional fishing opportunities for the Ganaraska River can be found below. Regional Municipality of Durham - all waters between Highway 2 and the southerly limit of the CNR right-of-way Season : open from fourth Saturday in April to August 31 and from October 15 to December 31 (extended fall season) Limits : Zone-wide limits apply Ganaraska River – from the south side of the Jocelyn Street Bridge (43°58′1.77″ N , 78°17′43.77″ W ) to the southerly limit of the CNR right-of-way (43°56′48.51″ N , 78°17′31.93″ W )",
+        "waters": [
+          "Cobourg Brook (Cobourg Creek or Factory Creek) - between the southerly limit of the CNR right-of-way and Lake Ontario",
+          "Gages Creek - between the southerly limit of the CNR right-of-way and Lake Ontario",
+          "Ganaraska River - between the southerly limit of the CNR right-of-way and Lake Ontario",
+          "Regional Municipality of Durham - all waters lying between the southerly limit of the CNR right-of-way and Lake Ontario",
+          "Northumberland County - all waters downstream of Highway 2, except the Ganaraska River. Details of additional fishing opportunities for the Ganaraska River can be found below.",
+          "Regional Municipality of Durham - all waters between Highway 2 and the southerly limit of the CNR right-of-way",
+          "Ganaraska River – from the south side of the Jocelyn Street Bridge (43°58′1.77″ N , 78°17′43.77″ W ) to the southerly limit of the CNR right-of-way (43°56′48.51″ N , 78°17′31.93″ W )"
+        ]
+      },
+      {
+        "period": "January 1 to March 1 and second Saturday in May to December 31",
+        "species": "Walleye",
+        "limit": "Zone-wide limits apply Crowe Lake (44°29′00″ N , 77°44′00″ W ) - Marmora Township, and the waters of the Crowe River (Marmora and Rawdon Townships) Season : Zone-wide seasons apply Limits : S-3 and C-1; none between 37-55 centimetres Balsam Lake (44°34′54″ N , 78°51′10″ W ) - Bexley Township, including the waters of the Gull River upstream to the dam at Coboconk, the waters of the Rosedale River between the Trent dam at Rosedale upstream to Balsam Lake, the waters of the Trent Canal between the upstream lock at Rosedale upstream to its junction with the Rosedale River and the waters of the Trent Canal between Balsam Lake and Mitchell Lake Mitchell Lake (44°34′46″ N , 78°56′54″ W ) - Eldon Township, including the waters of the Trent Canal between Mitchell Lake and Balsam Lake, and the waters of the Trent Canal between Mitchell Lake and lock number 36 at Kirkfield",
+        "length": null,
+        "gear": null,
+        "notes": "Crowe Lake (44°29′00″ N , 77°44′00″ W ) - Marmora Township, and the waters of the Crowe River (Marmora and Rawdon Townships) · Balsam Lake (44°34′54″ N , 78°51′10″ W ) - Bexley Township, including the waters of the Gull River upstream to the dam at Coboconk, the waters of the Rosedale River between the Trent dam at Rosedale upstream to Balsam Lake, the waters of the Trent Canal between the upstream lock at Rosedale upstream to its junction with the Rosedale River and the waters of the Trent Canal between Balsam Lake and Mitchell Lake · Mitchell Lake (44°34′46″ N , 78°56′54″ W ) - Eldon Township, including the waters of the Trent Canal between Mitchell Lake and Balsam Lake, and the waters of the Trent Canal between Mitchell Lake and lock number 36 at Kirkfield",
+        "raw": "Season : January 1 to March 1 and second Saturday in May to December 31 Limits : Zone-wide limits apply Crowe Lake (44°29′00″ N , 77°44′00″ W ) - Marmora Township, and the waters of the Crowe River (Marmora and Rawdon Townships) Season : Zone-wide seasons apply Limits : S-3 and C-1; none between 37-55 centimetres Balsam Lake (44°34′54″ N , 78°51′10″ W ) - Bexley Township, including the waters of the Gull River upstream to the dam at Coboconk, the waters of the Rosedale River between the Trent dam at Rosedale upstream to Balsam Lake, the waters of the Trent Canal between the upstream lock at Rosedale upstream to its junction with the Rosedale River and the waters of the Trent Canal between Balsam Lake and Mitchell Lake Mitchell Lake (44°34′46″ N , 78°56′54″ W ) - Eldon Township, including the waters of the Trent Canal between Mitchell Lake and Balsam Lake, and the waters of the Trent Canal between Mitchell Lake and lock number 36 at Kirkfield",
+        "waters": [
+          "Crowe Lake (44°29′00″ N , 77°44′00″ W ) - Marmora Township, and the waters of the Crowe River (Marmora and Rawdon Townships)",
+          "Balsam Lake (44°34′54″ N , 78°51′10″ W ) - Bexley Township, including the waters of the Gull River upstream to the dam at Coboconk, the waters of the Rosedale River between the Trent dam at Rosedale upstream to Balsam Lake, the waters of the Trent Canal between the upstream lock at Rosedale upstream to its junction with the Rosedale River and the waters of the Trent Canal between Balsam Lake and Mitchell Lake",
+          "Mitchell Lake (44°34′46″ N , 78°56′54″ W ) - Eldon Township, including the waters of the Trent Canal between Mitchell Lake and Balsam Lake, and the waters of the Trent Canal between Mitchell Lake and lock number 36 at Kirkfield"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "ouverte toute l’année",
+        "species": "Saumon atlantique, truite brune, saumon du Pacifique et truite arc-en-ciel",
+        "limit": "des limites visant toute la zone s’appliquent Ruisseau Cobourg (ruisseau Factory) - entre la limite sud de l’emprise de la voie ferrée du CN et le lac Ontario Municipalité régionale de Durham - toutes les eaux entre la route 2 et la limite sud de l’emprise de la voie ferrée du CN Ruisseau Gages - entre la limite sud de l’emprise de la voie ferrée du CN et le lac Ontario Rivière Ganaraska - entre la limite sud de l’emprise de la voie ferrée du CN et le lac Ontario Possibilités supplémentaires de pêche Saison : ouverte du 4e samedi d’avril au 31 décembre (saison prolongée à l’automne) Limites : des limites visant toute la zone s’appliquent Municipalité régionale de Durham - toutes les eaux entre la route 2 et la limite sud de l’emprise de la voie ferrée du CN Comté de Northumberland - toutes les eaux en aval de la route 2, sauf la rivière Ganaraska; des détails sur les possibilités supplémentaires de pêche dans la rivière Ganaraska sont indiqués ci-dessous Saison : Ouverte du 4e samedi d’avril jusqu’au 31 août et du 15 octobre jusqu’au 31 décembre (saison de pêche prolongée à l’automne) Limites : Des limites visant toute la zone s’appliquent Rivière Ganaraska - du côté sud du pont de la rue Jocelyn (43°58′1,77″ N , 78°17′43,77″ O ) jusqu’à la limite sud de l’emprise du CN (43°56′48,51″ N , 78°17′31,93″ O )",
+        "length": null,
+        "gear": null,
+        "notes": "Possibilités supplémentaires de pêche · Ruisseau Cobourg (ruisseau Factory) - entre la limite sud de l’emprise de la voie ferrée du CN et le lac Ontario · Municipalité régionale de Durham - toutes les eaux entre la route 2 et la limite sud de l’emprise de la voie ferrée du CN · Ruisseau Gages - entre la limite sud de l’emprise de la voie ferrée du CN et le lac Ontario · Rivière Ganaraska - entre la limite sud de l’emprise de la voie ferrée du CN et le lac Ontario · Municipalité régionale de Durham - toutes les eaux entre la route 2 et la limite sud de l’emprise de la voie ferrée du CN · Comté de Northumberland - toutes les eaux en aval de la route 2, sauf la rivière Ganaraska; des détails sur les possibilités supplémentaires de pêche dans la rivière Ganaraska sont indiqués ci-dessous · Rivière Ganaraska - du côté sud du pont de la rue Jocelyn (43°58′1,77″ N , 78°17′43,77″ O ) jusqu’à la limite sud de l’emprise du CN (43°56′48,51″ N , 78°17′31,93″ O )",
+        "raw": "Possibilités supplémentaires de pêche Saison : ouverte toute l’année Limites : des limites visant toute la zone s’appliquent Ruisseau Cobourg (ruisseau Factory) - entre la limite sud de l’emprise de la voie ferrée du CN et le lac Ontario Municipalité régionale de Durham - toutes les eaux entre la route 2 et la limite sud de l’emprise de la voie ferrée du CN Ruisseau Gages - entre la limite sud de l’emprise de la voie ferrée du CN et le lac Ontario Rivière Ganaraska - entre la limite sud de l’emprise de la voie ferrée du CN et le lac Ontario Possibilités supplémentaires de pêche Saison : ouverte du 4e samedi d’avril au 31 décembre (saison prolongée à l’automne) Limites : des limites visant toute la zone s’appliquent Municipalité régionale de Durham - toutes les eaux entre la route 2 et la limite sud de l’emprise de la voie ferrée du CN Comté de Northumberland - toutes les eaux en aval de la route 2, sauf la rivière Ganaraska; des détails sur les possibilités supplémentaires de pêche dans la rivière Ganaraska sont indiqués ci-dessous Saison : Ouverte du 4e samedi d’avril jusqu’au 31 août et du 15 octobre jusqu’au 31 décembre (saison de pêche prolongée à l’automne) Limites : Des limites visant toute la zone s’appliquent Rivière Ganaraska - du côté sud du pont de la rue Jocelyn (43°58′1,77″ N , 78°17′43,77″ O ) jusqu’à la limite sud de l’emprise du CN (43°56′48,51″ N , 78°17′31,93″ O )",
+        "waters": [
+          "Ruisseau Cobourg (ruisseau Factory) - entre la limite sud de l’emprise de la voie ferrée du CN et le lac Ontario",
+          "Municipalité régionale de Durham - toutes les eaux entre la route 2 et la limite sud de l’emprise de la voie ferrée du CN",
+          "Ruisseau Gages - entre la limite sud de l’emprise de la voie ferrée du CN et le lac Ontario",
+          "Rivière Ganaraska - entre la limite sud de l’emprise de la voie ferrée du CN et le lac Ontario",
+          "Municipalité régionale de Durham - toutes les eaux entre la route 2 et la limite sud de l’emprise de la voie ferrée du CN",
+          "Comté de Northumberland - toutes les eaux en aval de la route 2, sauf la rivière Ganaraska; des détails sur les possibilités supplémentaires de pêche dans la rivière Ganaraska sont indiqués ci-dessous",
+          "Rivière Ganaraska - du côté sud du pont de la rue Jocelyn (43°58′1,77″ N , 78°17′43,77″ O ) jusqu’à la limite sud de l’emprise du CN (43°56′48,51″ N , 78°17′31,93″ O )"
+        ]
+      },
+      {
+        "period": "du 1er janvier au 1er mars et du 2e samedi de mai au 31 décembre",
+        "species": "Doré jaune",
+        "limit": "Des limites visant toute la zone s’appliquent Lac Crowe (44°29′00″ N , 77°44′00″ O ) - canton de Marmora, et les eaux de la rivière Crowe (cantons de Marmora et Rawdon) Saisons : Des saisons visant toute la zone s’appliquent Limites : S-3 et C-1; aucun entre 37 et 55 centimètres Lac Balsam (44°34′54″ N , 78°51′10″ O ) - canton de Bexley, y compris les eaux de la rivière Gull en amont jusqu’au barrage à Coboconk, les eaux de la rivière Rosedale entre le barrage Trent à Rosedale en amont jusqu’au lac Balsam, les eaux du canal Trent entre l’écluse en amont à Rosedale en amont jusqu’à sa jonction avec la rivière Rosedale, et les eaux du canal Trent entre les lacs Balsam et Mitchell Lac Mitchell (44°34′46″ N , 78°56′54″ O ) - canton d’Eldon, comprend les eaux du canal Trent entre les lacs Mitchell et Balsam et les eaux du canal Trent entre le lac Mitchell et l’écluse 36 à Kirkfield",
+        "length": null,
+        "gear": null,
+        "notes": "Lac Crowe (44°29′00″ N , 77°44′00″ O ) - canton de Marmora, et les eaux de la rivière Crowe (cantons de Marmora et Rawdon) · Lac Balsam (44°34′54″ N , 78°51′10″ O ) - canton de Bexley, y compris les eaux de la rivière Gull en amont jusqu’au barrage à Coboconk, les eaux de la rivière Rosedale entre le barrage Trent à Rosedale en amont jusqu’au lac Balsam, les eaux du canal Trent entre l’écluse en amont à Rosedale en amont jusqu’à sa jonction avec la rivière Rosedale, et les eaux du canal Trent entre les lacs Balsam et Mitchell · Lac Mitchell (44°34′46″ N , 78°56′54″ O ) - canton d’Eldon, comprend les eaux du canal Trent entre les lacs Mitchell et Balsam et les eaux du canal Trent entre le lac Mitchell et l’écluse 36 à Kirkfield",
+        "raw": "Saison : du 1er janvier au 1er mars et du 2e samedi de mai au 31 décembre Limites : Des limites visant toute la zone s’appliquent Lac Crowe (44°29′00″ N , 77°44′00″ O ) - canton de Marmora, et les eaux de la rivière Crowe (cantons de Marmora et Rawdon) Saisons : Des saisons visant toute la zone s’appliquent Limites : S-3 et C-1; aucun entre 37 et 55 centimètres Lac Balsam (44°34′54″ N , 78°51′10″ O ) - canton de Bexley, y compris les eaux de la rivière Gull en amont jusqu’au barrage à Coboconk, les eaux de la rivière Rosedale entre le barrage Trent à Rosedale en amont jusqu’au lac Balsam, les eaux du canal Trent entre l’écluse en amont à Rosedale en amont jusqu’à sa jonction avec la rivière Rosedale, et les eaux du canal Trent entre les lacs Balsam et Mitchell Lac Mitchell (44°34′46″ N , 78°56′54″ O ) - canton d’Eldon, comprend les eaux du canal Trent entre les lacs Mitchell et Balsam et les eaux du canal Trent entre le lac Mitchell et l’écluse 36 à Kirkfield",
+        "waters": [
+          "Lac Crowe (44°29′00″ N , 77°44′00″ O ) - canton de Marmora, et les eaux de la rivière Crowe (cantons de Marmora et Rawdon)",
+          "Lac Balsam (44°34′54″ N , 78°51′10″ O ) - canton de Bexley, y compris les eaux de la rivière Gull en amont jusqu’au barrage à Coboconk, les eaux de la rivière Rosedale entre le barrage Trent à Rosedale en amont jusqu’au lac Balsam, les eaux du canal Trent entre l’écluse en amont à Rosedale en amont jusqu’à sa jonction avec la rivière Rosedale, et les eaux du canal Trent entre les lacs Balsam et Mitchell",
+          "Lac Mitchell (44°34′46″ N , 78°56′54″ O ) - canton d’Eldon, comprend les eaux du canal Trent entre les lacs Mitchell et Balsam et les eaux du canal Trent entre le lac Mitchell et l’écluse 36 à Kirkfield"
+        ]
+      }
+    ]
+  },
+  "waterbody_exceptions": {
+    "en": [
+      {
+        "name": "Lake Scugog and Scugog River",
+        "location": "All waters of Lake Scugog and Scugog River - including waters south of Highway 7A, Blackstock Creek, Nonquon River, as well as the Scugog River to the Trent Severn Dam in Lindsay, Mariposa Brook and East Cross Creek",
+        "rules": [
+          {
+            "period": "closed all year",
+            "species": "Walleye",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "closed all year",
+            "raw": "Walleye - closed all year"
+          }
+        ],
+        "raw": "Lake Scugog and Scugog River All waters of Lake Scugog and Scugog River - including waters south of Highway 7A, Blackstock Creek, Nonquon River, as well as the Scugog River to the Trent Severn Dam in Lindsay, Mariposa Brook and East Cross Creek Walleye - closed all year"
+      },
+      {
+        "name": "Lake Scugog",
+        "location": "Scugog Township, 100 metres on both sides of Highway 7A (causeways)",
+        "rules": [
+          {
+            "period": "no fishing from January 1 to Friday before second Saturday in May and November 16 to December 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Friday before second Saturday in May and November 16 to December 31",
+            "raw": "Fish sanctuary - no fishing from January 1 to Friday before second Saturday in May and November 16 to December 31"
+          }
+        ],
+        "raw": "Lake Scugog Scugog Township, 100 metres on both sides of Highway 7A (causeways) Fish sanctuary - no fishing from January 1 to Friday before second Saturday in May and November 16 to December 31"
+      },
+      {
+        "name": "Scugog River",
+        "location": "Lindsay in Ops Township, from Trent-Severn Dam to Ops-Fenelon Boundary",
+        "rules": [
+          {
+            "period": "no fishing from January 1 to Friday after second Saturday in May and November 16 to December 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Friday after second Saturday in May and November 16 to December 31",
+            "raw": "Fish sanctuary - no fishing from January 1 to Friday after second Saturday in May and November 16 to December 31"
+          }
+        ],
+        "raw": "Scugog River Lindsay in Ops Township, from Trent-Severn Dam to Ops-Fenelon Boundary Fish sanctuary - no fishing from January 1 to Friday after second Saturday in May and November 16 to December 31"
+      },
+      {
+        "name": "Trent River",
+        "location": null,
+        "rules": [
+          {
+            "period": "No fishing from January 1 to Friday after second Saturday in May and November 16 to December 31 in the following areas:",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "No fishing from January 1 to Friday after second Saturday in May and November 16 to December 31 in the following areas:",
+            "raw": "Fish sanctuary - No fishing from January 1 to Friday after second Saturday in May and November 16 to December 31 in the following areas:"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Village of Hastings, 500 metres upstream of the dam and 1 kilometres downstream of the dam",
+            "raw": "Village of Hastings, 500 metres upstream of the dam and 1 kilometres downstream of the dam"
+          }
+        ],
+        "raw": "Trent River Fish sanctuary - No fishing from January 1 to Friday after second Saturday in May and November 16 to December 31 in the following areas: | Village of Hastings, 500 metres upstream of the dam and 1 kilometres downstream of the dam"
+      },
+      {
+        "name": "Trent River",
+        "location": "waters from the first dam (Number One) above Lake Ontario upstream to Lock Number 9 (Myers Lock) at the head of Percy Reach",
+        "rules": [
+          {
+            "period": "open from January 1 to March 1 and second Saturday in May to December 31",
+            "species": "Walleye",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from January 1 to March 1 and second Saturday in May to December 31",
+            "raw": "Walleye - open from January 1 to March 1 and second Saturday in May to December 31"
+          }
+        ],
+        "raw": "Trent River waters from the first dam (Number One) above Lake Ontario upstream to Lock Number 9 (Myers Lock) at the head of Percy Reach Walleye - open from January 1 to March 1 and second Saturday in May to December 31"
+      }
+    ],
+    "fr": [
+      {
+        "name": "Lac Scugog et rivière Scugog",
+        "location": "toutes les eaux du lac Scugog et de la rivière Scugog, y compris les eaux au sud de la route 7A, le ruisseau Blackstock, la rivière Nonquon ainsi que la rivière Scugog jusqu’au barrage Trent-Severn à Lindsay, le ruisseau Mariposa et le ruisseau East Cross",
+        "rules": [
+          {
+            "period": "fermée toute l’année",
+            "species": "Doré jaune",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "fermée toute l’année",
+            "raw": "Doré jaune - fermée toute l’année"
+          }
+        ],
+        "raw": "Lac Scugog et rivière Scugog toutes les eaux du lac Scugog et de la rivière Scugog, y compris les eaux au sud de la route 7A, le ruisseau Blackstock, la rivière Nonquon ainsi que la rivière Scugog jusqu’au barrage Trent-Severn à Lindsay, le ruisseau Mariposa et le ruisseau East Cross Doré jaune - fermée toute l’année"
+      },
+      {
+        "name": "Lac Scugog",
+        "location": "canton de Scugog, 100 mètres des deux côtés de la route 7A (ponts-jetées)",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er janvier au vendredi précédant le 2e samedi de mai et du 16 novembre au 31 décembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er janvier au vendredi précédant le 2e samedi de mai et du 16 novembre au 31 décembre",
+            "raw": "Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 2e samedi de mai et du 16 novembre au 31 décembre"
+          }
+        ],
+        "raw": "Lac Scugog canton de Scugog, 100 mètres des deux côtés de la route 7A (ponts-jetées) Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 2e samedi de mai et du 16 novembre au 31 décembre"
+      },
+      {
+        "name": "Rivière Scugog",
+        "location": "(Lindsay) - canton d’Ops, depuis le barrage Trent-Severn jusqu’à la limite des cantons Ops-Fenelon",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er janvier au vendredi suivant le 2e samedi de mai et du 16 novembre au 31 décembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er janvier au vendredi suivant le 2e samedi de mai et du 16 novembre au 31 décembre",
+            "raw": "Réserve de poissons - pêche interdite du 1er janvier au vendredi suivant le 2e samedi de mai et du 16 novembre au 31 décembre"
+          }
+        ],
+        "raw": "Rivière Scugog (Lindsay) - canton d’Ops, depuis le barrage Trent-Severn jusqu’à la limite des cantons Ops-Fenelon Réserve de poissons - pêche interdite du 1er janvier au vendredi suivant le 2e samedi de mai et du 16 novembre au 31 décembre"
+      },
+      {
+        "name": "Rivière Trent",
+        "location": null,
+        "rules": [
+          {
+            "period": "pêche interdite du 1er janvier au vendredi suivant le 2e samedi de mai et du 16 novembre au 31 décembre dans les zones suivantes :",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er janvier au vendredi suivant le 2e samedi de mai et du 16 novembre au 31 décembre dans les zones suivantes :",
+            "raw": "Réserve de poissons - pêche interdite du 1er janvier au vendredi suivant le 2e samedi de mai et du 16 novembre au 31 décembre dans les zones suivantes :"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Village de Hastings, 500 mètres en amont du barrage et 1 kilomètres en aval du barrage",
+            "raw": "Village de Hastings, 500 mètres en amont du barrage et 1 kilomètres en aval du barrage"
+          }
+        ],
+        "raw": "Rivière Trent Réserve de poissons - pêche interdite du 1er janvier au vendredi suivant le 2e samedi de mai et du 16 novembre au 31 décembre dans les zones suivantes : | Village de Hastings, 500 mètres en amont du barrage et 1 kilomètres en aval du barrage"
+      },
+      {
+        "name": "Rivière Trent",
+        "location": "les eaux depuis le premier barrage (numéro un) en amont du lac Ontario, en amont jusqu’à l’écluse 9 (écluse Myers) au début du passage Percy",
+        "rules": [
+          {
+            "period": null,
+            "species": "Doré jaune",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "du 1er janvier au 1er mars et du 2e samedi de mai au 31 décembre",
+            "raw": "Doré jaune - du 1er janvier au 1er mars et du 2e samedi de mai au 31 décembre"
+          }
+        ],
+        "raw": "Rivière Trent les eaux depuis le premier barrage (numéro un) en amont du lac Ontario, en amont jusqu’à l’écluse 9 (écluse Myers) au début du passage Percy Doré jaune - du 1er janvier au 1er mars et du 2e samedi de mai au 31 décembre"
+      }
+    ]
+  },
+  "bait_restrictions": {
+    "en": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "FMZ 17 is part of the Southern Bait Management Zone ( BMZ ). Live or dead baitfish or leeches may not be transported into or out of a BMZ . These rules do not apply to baitfish and leeches which are both dead and preserved. Refer to bait for more details.",
+        "raw": "FMZ 17 is part of the Southern Bait Management Zone ( BMZ ). Live or dead baitfish or leeches may not be transported into or out of a BMZ . These rules do not apply to baitfish and leeches which are both dead and preserved. Refer to bait for more details."
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "La ZGP 17 fait partie de la zone de gestion des appâts ( ZGA ) du Sud. On ne peut pas apporter ou sortir des poissons d’appât et des sangsues, morts ou vivants, d’une ZGA . Ces règles ne s’appliquent pas aux poissons d’appât et sangsues qui sont morts et conservés. Voir la section sur les appâts pour plus de renseignements.",
+        "raw": "La ZGP 17 fait partie de la zone de gestion des appâts ( ZGA ) du Sud. On ne peut pas apporter ou sortir des poissons d’appât et des sangsues, morts ou vivants, d’une ZGA . Ces règles ne s’appliquent pas aux poissons d’appât et sangsues qui sont morts et conservés. Voir la section sur les appâts pour plus de renseignements."
+      }
+    ]
+  },
+  "fish_sanctuaries": {
+    "en": [
+      {
+        "period": "No fishing - closed all year",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - closed all year Cobourg Brook - Town of Cobourg, from the downstream side of the lamprey barrier downstream to the south side of the King Street Bridge | Ganaraska River - Town of Port Hope, from Highway 401 downstream to the south side of the Jocelyn Street Bridge",
+        "waters": [
+          "Cobourg Brook - Town of Cobourg, from the downstream side of the lamprey barrier downstream to the south side of the King Street Bridge",
+          "Ganaraska River - Town of Port Hope, from Highway 401 downstream to the south side of the Jocelyn Street Bridge"
+        ]
+      },
+      {
+        "period": "No fishing - January 1 to Friday before the second Saturday in May and November 16 to December 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - January 1 to Friday before the second Saturday in May and November 16 to December 31 Chemong Lake - Smith and Ennismore Townships, 100 metres on both sides of causeway (Bridgenorth Causeway) on County Road 16 | Crowe River - from the Marmora Dam downstream to the north side of the Highway 7 bridge | Gannon’s Narrows - Harvey and Ennismore Townships, within 100 metres of both sides of the causeway on County Road 16 | Lake Scugog - refer to waterbody exceptions",
+        "waters": [
+          "Chemong Lake - Smith and Ennismore Townships, 100 metres on both sides of causeway (Bridgenorth Causeway) on County Road 16",
+          "Crowe River - from the Marmora Dam downstream to the north side of the Highway 7 bridge",
+          "Gannon’s Narrows - Harvey and Ennismore Townships, within 100 metres of both sides of the causeway on County Road 16",
+          "Lake Scugog - refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": "No fishing - January 1 to Friday after the second Saturday in May and November 16 to December 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - January 1 to Friday after the second Saturday in May and November 16 to December 31 Bobcaygeon River - Bobcaygeon, from Trent-Severn Dam to Pigeon Lake and Little Bob Dam to Pigeon Lake (100 metres from Little Bob Dam) | Burleigh Falls, Perry’s Creek, Stony Lake - Smith and Harvey Townships, Trent-Severn Dam to Stony Lake | Fenelon River - Fenelon Falls in Fenelon Township, from Trent-Severn Dam to second power line 1 kilometres downstream | Fishog River - from the mouth of the river at Head Lake (44°45′ N , 78°54′ W ) to the base of the waterfalls approximately 1.5 kilometres upstream | Gull River - Coboconk in Bexley and Somerville Townships, from Trent-Severn Dam downstream to narrows approaching Balsam Lake | Katchewanooka Lake - Young’s Point in Smith and Douro Townships, from Trent-Severn Dam to the downstream (west) side of the Highway 28 bridge | Lovesick Dams - Smith and Harvey Townships, 100 metres downstream from each dam | Lower Buckhorn Lake (Buckhorn Lake) - Smith and Harvey Townships, from Trent- Severn Dam to a point 400 metres below the dam | Otonabee River - Peterborough, from Trent-Severn Dam at Lock 19 to Bensfort Bridge at County Road 2 (20 kilometres downstream) | Pigeon River - Omemee in Emily Township, from Omemee Dam to C.N.R. bridge | Rosedale River - Rosedale in Fenelon Township, from the Trent-Severn Dam to Cameron Lake | Scugog River - refer to waterbody exceptions | Talbot River - Kirkfield in Carden Township, fronting Concessions 7, 8 and 9 | Trent River - refer to waterbody exceptions",
+        "waters": [
+          "Bobcaygeon River - Bobcaygeon, from Trent-Severn Dam to Pigeon Lake and Little Bob Dam to Pigeon Lake (100 metres from Little Bob Dam)",
+          "Burleigh Falls, Perry’s Creek, Stony Lake - Smith and Harvey Townships, Trent-Severn Dam to Stony Lake",
+          "Fenelon River - Fenelon Falls in Fenelon Township, from Trent-Severn Dam to second power line 1 kilometres downstream",
+          "Fishog River - from the mouth of the river at Head Lake (44°45′ N , 78°54′ W ) to the base of the waterfalls approximately 1.5 kilometres upstream",
+          "Gull River - Coboconk in Bexley and Somerville Townships, from Trent-Severn Dam downstream to narrows approaching Balsam Lake",
+          "Katchewanooka Lake - Young’s Point in Smith and Douro Townships, from Trent-Severn Dam to the downstream (west) side of the Highway 28 bridge",
+          "Lovesick Dams - Smith and Harvey Townships, 100 metres downstream from each dam",
+          "Lower Buckhorn Lake (Buckhorn Lake) - Smith and Harvey Townships, from Trent- Severn Dam to a point 400 metres below the dam",
+          "Otonabee River - Peterborough, from Trent-Severn Dam at Lock 19 to Bensfort Bridge at County Road 2 (20 kilometres downstream)",
+          "Pigeon River - Omemee in Emily Township, from Omemee Dam to C.N.R. bridge",
+          "Rosedale River - Rosedale in Fenelon Township, from the Trent-Severn Dam to Cameron Lake",
+          "Scugog River - refer to waterbody exceptions",
+          "Talbot River - Kirkfield in Carden Township, fronting Concessions 7, 8 and 9",
+          "Trent River - refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": "No Fishing – September 1 to October 14",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No Fishing – September 1 to October 14 Ganaraska River – from the south side of the Jocelyn Street Bridge (43°58′1.77″ N , 78°17′43.77″ W ) to the southerly limit of the C.N.R. right-of-way (43°56′48.51″ N , 78°17′31.93″ W ) | Table of contents access the table of contents | Previous | Table of contents access the table of contents | Next",
+        "waters": [
+          "Ganaraska River – from the south side of the Jocelyn Street Bridge (43°58′1.77″ N , 78°17′43.77″ W ) to the southerly limit of the C.N.R. right-of-way (43°56′48.51″ N , 78°17′31.93″ W )",
+          "Table of contents access the table of contents",
+          "Previous",
+          "Table of contents access the table of contents",
+          "Next"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "Pêche interdite - fermée toute l’année",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - fermée toute l’année Ruisseau Cobourg - ville de Cobourg, depuis le côté en aval de la barrière à lamproies, en aval jusqu’au côté sud du pont de la rue King | Rivière Ganaraska - ville de Port Hope, depuis l’autoroute 401 en aval jusqu’au côté sud du pont de la rue Jocelyn",
+        "waters": [
+          "Ruisseau Cobourg - ville de Cobourg, depuis le côté en aval de la barrière à lamproies, en aval jusqu’au côté sud du pont de la rue King",
+          "Rivière Ganaraska - ville de Port Hope, depuis l’autoroute 401 en aval jusqu’au côté sud du pont de la rue Jocelyn"
+        ]
+      },
+      {
+        "period": "Pêche interdite - du 1er janvier au vendredi précédant le 2e samedi de mai et du 16 novembre au 31 décembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - du 1er janvier au vendredi précédant le 2e samedi de mai et du 16 novembre au 31 décembre Lac Chemong - cantons de Smith et Ennismore, 100 mètres des deux côtés du pont-jetée (Bridgenorth) sur la route de comté 16 | Rivière Crowe - du barrage Marmora en aval jusqu’au côté nord du pont traversant la route 7 | Passage Gannon’s - cantons de Harvey et Ennismore, dans les 100 mètres des deux côtés du pont-jetée sur la route de comté 16 | Lac Scugog - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Lac Chemong - cantons de Smith et Ennismore, 100 mètres des deux côtés du pont-jetée (Bridgenorth) sur la route de comté 16",
+          "Rivière Crowe - du barrage Marmora en aval jusqu’au côté nord du pont traversant la route 7",
+          "Passage Gannon’s - cantons de Harvey et Ennismore, dans les 100 mètres des deux côtés du pont-jetée sur la route de comté 16",
+          "Lac Scugog - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": "Pêche interdite - du 1er janvier au vendredi suivant le 2e samedi de mai et du 16 novembre au 31 décembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - du 1er janvier au vendredi suivant le 2e samedi de mai et du 16 novembre au 31 décembre Rivière Bobcaygeon (Bobcaygeon) - du barrage Trent-Severn jusqu’au lac Pigeon et du barrage Little Bob jusqu’au lac Pigeon (à 100 mètres du barrage Little Bob)Chutes Burleigh, ruisseau Perry’s, lac Stony-cantons de Smith et Harvey, depuis le barrage Trent-Severn jusqu’au lac Stony | Chutes Burleigh, ruisseau Perry’s, lac Stony - cantons de Smith et Harvey, depuis le barrage Trent-Severn jusqu’au lac Stony | Rivière Fenelon (Fenelon Falls) - canton de Fenelon, du barrage Trent-Severn jusqu’à la deuxième ligne de transmission d’électricité à 1 kilomètres en aval | Rivière Fishog - depuis l’embouchure de la rivière au lac Head (44°45′ N , 78°54′ O ) jusqu’à la base des chutes approx. 1,5 kilomètres en amont | Rivière Gull (Coboconk) - cantons de Bexley et Somerville, depuis le barrage Trent-Severn, en aval jusqu’au passage près du lac Balsam | Lac Katchewanooka (pointe Young’s) - cantons de Smith et Douro, depuis le barrage Trent-Severn jusqu’au côté ouest (en aval) du pont de la route 28 | Barrages Lovesick - cantons de Smith et Harvey, 100 mètres en aval de chacun des barrages | Lac Lower Buckhorn (lac Buckhorn) - cantons de Smith et Harvey, depuis le barrage Trent-Severn jusqu’à un point 400 ètres après le barrage | Rivière Otonabee (Peterborough) du barrage Trent-Severn à l’écluse 19 jusqu’au pont Bensfort traversant le chemin de comté 2 (20 kilomètres en aval) | Rivière Pigeon (Omemee) - canton d’Emily, depuis le barrage Omemee jusqu’au pont du CN | Rivière Rosedale (Rosedale) - canton de Fenelon, du barrage Trent-Severn jusqu’au lac Cameron | Rivière Scugog - voir les exceptions visant des plans d’eau particuliers | Rivière Talbot (Kirkfield) - canton de Carden, longeant les concession 7, 8 et 9 | Rivière Trent - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Rivière Bobcaygeon (Bobcaygeon) - du barrage Trent-Severn jusqu’au lac Pigeon et du barrage Little Bob jusqu’au lac Pigeon (à 100 mètres du barrage Little Bob)Chutes Burleigh, ruisseau Perry’s, lac Stony-cantons de Smith et Harvey, depuis le barrage Trent-Severn jusqu’au lac Stony",
+          "Chutes Burleigh, ruisseau Perry’s, lac Stony - cantons de Smith et Harvey, depuis le barrage Trent-Severn jusqu’au lac Stony",
+          "Rivière Fenelon (Fenelon Falls) - canton de Fenelon, du barrage Trent-Severn jusqu’à la deuxième ligne de transmission d’électricité à 1 kilomètres en aval",
+          "Rivière Fishog - depuis l’embouchure de la rivière au lac Head (44°45′ N , 78°54′ O ) jusqu’à la base des chutes approx. 1,5 kilomètres en amont",
+          "Rivière Gull (Coboconk) - cantons de Bexley et Somerville, depuis le barrage Trent-Severn, en aval jusqu’au passage près du lac Balsam",
+          "Lac Katchewanooka (pointe Young’s) - cantons de Smith et Douro, depuis le barrage Trent-Severn jusqu’au côté ouest (en aval) du pont de la route 28",
+          "Barrages Lovesick - cantons de Smith et Harvey, 100 mètres en aval de chacun des barrages",
+          "Lac Lower Buckhorn (lac Buckhorn) - cantons de Smith et Harvey, depuis le barrage Trent-Severn jusqu’à un point 400 ètres après le barrage",
+          "Rivière Otonabee (Peterborough) du barrage Trent-Severn à l’écluse 19 jusqu’au pont Bensfort traversant le chemin de comté 2 (20 kilomètres en aval)",
+          "Rivière Pigeon (Omemee) - canton d’Emily, depuis le barrage Omemee jusqu’au pont du CN",
+          "Rivière Rosedale (Rosedale) - canton de Fenelon, du barrage Trent-Severn jusqu’au lac Cameron",
+          "Rivière Scugog - voir les exceptions visant des plans d’eau particuliers",
+          "Rivière Talbot (Kirkfield) - canton de Carden, longeant les concession 7, 8 et 9",
+          "Rivière Trent - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": "Pêche interdite – Du 1er septembre au 14 octobre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite – Du 1er septembre au 14 octobre Rivière Ganaraska - du côté sud du pont de la rue Jocelyn (43°58′1,77″ N , 78°17′43,77″ O ) jusqu’à la limite sud de l’emprise du CN (43°56′48,51″ N , 78°17′31,93″ O ) | Table des matières accéder à la table des matières | Précédent | Table des matières accéder à la table des matières | Suivant",
+        "waters": [
+          "Rivière Ganaraska - du côté sud du pont de la rue Jocelyn (43°58′1,77″ N , 78°17′43,77″ O ) jusqu’à la limite sud de l’emprise du CN (43°56′48,51″ N , 78°17′31,93″ O )",
+          "Table des matières accéder à la table des matières",
+          "Précédent",
+          "Table des matières accéder à la table des matières",
+          "Suivant"
+        ]
+      }
+    ]
+  }
+}

@@ -1,10 +1,11 @@
 // Regulation Resolver v1 (vision pillar 1) — isomorphic query layer over
-// data/regulations/zone-*.json.
+// data/regulations/zone-*.json and data/regulations/on-fmz-*.json.
 //
 // Accuracy contract (docs/VISION.md): rule text is served VERBATIM from the
 // harvested authority data, always alongside its citation (source URL,
 // authority, fetched date) and a verify-with-the-authority disclaimer.
 // This module structures and filters; it never generates or paraphrases.
+import { disclaimerFor, regulationKey } from './regsLookup.mjs';
 
 /** Parse "Du 15 mai 2026 au 31 mars 2027" / "From May 15, 2026 to March 31, 2027" into dates. */
 const FR_MONTHS = { janvier: 1, février: 2, fevrier: 2, mars: 3, avril: 4, mai: 5, juin: 6, juillet: 7, août: 8, aout: 8, septembre: 9, octobre: 10, novembre: 11, décembre: 12, decembre: 12 };
@@ -29,8 +30,17 @@ export function parsePeriod(str) {
   return { from: dates[0], to: dates[1] };
 }
 
+const CLOSED_ALL_YEAR = /closed all year|ferm[ée]e?\s+toute\s+l['’]ann[ée]e|p[êe]che interdite toute l['’]ann[ée]e/i;
+
+export function isClosedAllYear(str) {
+  return !!str && CLOSED_ALL_YEAR.test(String(str));
+}
+
 function ruleActiveOn(rule, isoDate) {
-  if (!isoDate || !rule.period) return true; // no date filter or undated rule: include
+  if (!isoDate) return true;
+  // Closed-all-year is always in force (ON + QC). Never drop it for a date filter.
+  if (isClosedAllYear(rule.period) || isClosedAllYear(rule.notes) || isClosedAllYear(rule.raw)) return true;
+  if (!rule.period) return true; // no date filter or undated rule: include
   const p = parsePeriod(rule.period);
   if (!p) return true; // unparseable period: include (never hide a rule we can't interpret)
   return isoDate >= p.from && isoDate <= p.to;
@@ -63,43 +73,135 @@ export function isGridJunkRule(rule) {
  * @param {object} q  { lang: 'fr'|'en', date?: 'YYYY-MM-DD', species?: string, waterbody?: string }
  * @returns {{ zone, citation, disclaimer, general, waterbody }|null}
  */
-export function resolveRegs(zoneDoc, { lang = 'fr', date, species, waterbody } = {}) {
-  const L = lang === 'en' ? 'en' : 'fr';
-
-  const general = zoneDoc.general[L]
+function filterRules(rules, { date, species }) {
+  return (rules || [])
     .filter(r => !isGridJunkRule(r))
     .filter(r => ruleActiveOn(r, date))
     .filter(r => matchesSpecies(r, species));
+}
+
+function findOnWaterbody(zoneDoc, L, waterbody) {
+  const nq = norm(waterbody);
+  if (!nq) return null;
+  const source = zoneDoc.source?.[L];
+
+  const exceptions = zoneDoc.waterbody_exceptions?.[L] || [];
+  const foundEx = exceptions.find(w => norm(w.name).includes(nq) || norm(w.location || '').includes(nq));
+  if (foundEx) {
+    return {
+      name: foundEx.name,
+      source,
+      rules: foundEx.rules || [],
+    };
+  }
+
+  const speciesEx = zoneDoc.species_exceptions?.[L] || [];
+  const speciesHits = [];
+  for (const block of speciesEx) {
+    const waters = block.waters || [];
+    if (waters.some(w => norm(w).includes(nq))) {
+      speciesHits.push({
+        period: block.period,
+        species: block.species,
+        limit: block.limit,
+        length: block.length,
+        gear: block.gear,
+        notes: block.notes,
+        raw: block.raw,
+      });
+    }
+  }
+  if (speciesHits.length) {
+    return { name: waterbody, source, rules: speciesHits };
+  }
+
+  const sanctuaries = zoneDoc.fish_sanctuaries?.[L] || [];
+  const sanctHits = [];
+  for (const s of sanctuaries) {
+    const waters = s.waters || [];
+    if (waters.some(w => norm(w).includes(nq))) {
+      sanctHits.push({
+        period: s.period,
+        species: s.species || null,
+        limit: s.limit || null,
+        length: s.length || null,
+        gear: s.gear || null,
+        notes: s.notes,
+        raw: s.raw,
+      });
+    }
+  }
+  if (sanctHits.length) {
+    return { name: waterbody, source, rules: sanctHits };
+  }
+  return null;
+}
+
+/**
+ * Resolve applicable rules.
+ * @param {object} zoneDoc  parsed data/regulations/zone-N.json or on-fmz-N.json
+ * @param {object} q  { lang: 'fr'|'en', date?: 'YYYY-MM-DD', species?: string, waterbody?: string }
+ * @returns {{ zone, citation, disclaimer, general, waterbody }|null}
+ */
+export function resolveRegs(zoneDoc, { lang = 'fr', date, species, waterbody } = {}) {
+  const L = lang === 'en' ? 'en' : 'fr';
+
+  const general = filterRules(zoneDoc.general?.[L] || [], { date, species });
 
   let wb = null;
   if (waterbody) {
-    const nq = norm(waterbody);
-    const found = zoneDoc.waterbodies.find(w => norm(w.name[L]).includes(nq) || norm(w.name.fr).includes(nq));
-    if (found) {
-      wb = {
-        id_endro: found.id_endro,
-        name: found.name[L],
-        coordinates: found.coordinates,
-        source: found.source[L],
-        rules: found.rules[L]
-          .filter(r => !isGridJunkRule(r))
-          .filter(r => ruleActiveOn(r, date))
-          .filter(r => matchesSpecies(r, species)),
-      };
+    if (Array.isArray(zoneDoc.waterbodies) && zoneDoc.waterbodies.length) {
+      const nq = norm(waterbody);
+      const found = zoneDoc.waterbodies.find(w => {
+        const name = w.name;
+        if (name && typeof name === 'object') {
+          return norm(name[L]).includes(nq) || norm(name.fr).includes(nq);
+        }
+        return norm(name).includes(nq);
+      });
+      if (found) {
+        const rulesSrc = found.rules?.[L] || found.rules || [];
+        wb = {
+          id_endro: found.id_endro,
+          name: found.name?.[L] || found.name,
+          coordinates: found.coordinates,
+          source: found.source?.[L] || found.source,
+          rules: filterRules(rulesSrc, { date, species }),
+        };
+      }
+    }
+    if (!wb && zoneDoc.jurisdiction === 'ON') {
+      const found = findOnWaterbody(zoneDoc, L, waterbody);
+      if (found) {
+        wb = {
+          name: found.name,
+          source: found.source,
+          rules: filterRules(found.rules, { date, species }),
+        };
+      }
     }
   }
 
   return {
-    zone: { id: zoneDoc.zone_id, jurisdiction: zoneDoc.jurisdiction, activity: zoneDoc.activity, title: zoneDoc.title[L] },
+    zone: {
+      id: zoneDoc.jurisdiction === 'ON' ? regulationKey(zoneDoc) : zoneDoc.zone_id,
+      zone_key: regulationKey(zoneDoc),
+      fmz: zoneDoc.fmz,
+      jurisdiction: zoneDoc.jurisdiction,
+      activity: zoneDoc.activity,
+      title: zoneDoc.title?.[L],
+      licence_year: zoneDoc.licence_year,
+    },
     citation: {
       authority: zoneDoc.authority,
       source: zoneDoc.source[L],
       fetched_at: zoneDoc.source.fetched_at,
+      html_updated: zoneDoc.source.html_updated,
+      fish_on_line: zoneDoc.source.fish_on_line,
       coverage: zoneDoc.coverage,
     },
-    disclaimer: L === 'fr'
-      ? 'Texte reproduit intégralement de la source officielle. Les règlements peuvent changer : vérifiez toujours auprès du MELCCFP avant votre sortie.'
-      : 'Text reproduced verbatim from the official source. Regulations can change: always verify with the MELCCFP before your trip.',
+    disclaimer: disclaimerFor(zoneDoc, L),
+    notices: zoneDoc.notices?.[L],
     general,
     waterbody: wb,
     waterbody_not_found: waterbody && !wb ? true : undefined,
