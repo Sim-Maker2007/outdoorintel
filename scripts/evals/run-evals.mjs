@@ -29,7 +29,10 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { resolveRegs } from '../../src/lib/regResolver.mjs';
 import { lookupRegulation } from '../../src/lib/regsLookup.mjs';
+import { lookupHunting } from '../../src/lib/huntLookup.mjs';
+import { resolveHunting } from '../../src/lib/huntResolver.mjs';
 import { REGS } from '../../api/_data/regs-index.js';
+import { HUNTING } from '../../api/_data/hunting-index.js';
 
 const REPO = process.cwd();
 const { questions } = JSON.parse(readFileSync(join(REPO, 'scripts', 'evals', 'golden-questions.json'), 'utf-8'));
@@ -57,6 +60,74 @@ for (const q of questions) {
         ok(`${q.id}/z${zid}-not-numeric-key`, !/^\d+$/.test(zid), `ON doc indexed as numeric "${zid}"`);
       } else {
         ok(`${q.id}/z${zid}-coverage`, doc.coverage.complete === true, `zone ${zid} coverage incomplete (${doc.coverage.waterbodies_harvested}/${doc.coverage.waterbodies_listed_by_zone_page})`);
+      }
+    }
+    continue;
+  }
+
+  if (c.all_hunting) {
+    for (const [zid, doc] of Object.entries(HUNTING)) {
+      ok(`${q.id}/${zid}-activity`, doc.activity === 'hunting' && doc.jurisdiction === 'QC', `${zid} must be hunting QC`);
+      ok(`${q.id}/${zid}-key`, /^QC-H-/.test(zid) && zid !== '12' && zid !== 'ON-12', `${zid} is not a hunting namespace key`);
+      ok(`${q.id}/${zid}-citation`, !!doc.source.fr && !!doc.source.fetched_at, `${zid} missing citation`);
+      const listed = doc.coverage.season_rows_listed;
+      const harvested = doc.coverage.season_rows_harvested;
+      ok(`${q.id}/${zid}-counters`, harvested >= listed && listed >= 0, `${zid} inverted coverage (${harvested}/${listed})`);
+      ok(`${q.id}/${zid}-complete-slice`, doc.coverage.complete === true, `${zid} coverage incomplete for stated slice`);
+      const en = resolveHunting(doc, { lang: 'en' });
+      const fr = resolveHunting(doc, { lang: 'fr' });
+      ok(`${q.id}/${zid}-deer-en`, en.seasons.some(r => r.species_key === 'white-tailed-deer' && /2026/.test(r.period_2026 || r.period || '')), `${zid} missing EN deer 2026`);
+      ok(`${q.id}/${zid}-moose-en`, en.seasons.some(r => r.species_key === 'moose' && /2026/.test(r.period_2026 || r.period || '')), `${zid} missing EN moose 2026`);
+      ok(`${q.id}/${zid}-deer-fr`, fr.seasons.some(r => r.species_key === 'white-tailed-deer'), `${zid} missing FR deer`);
+      ok(`${q.id}/${zid}-moose-fr`, fr.seasons.some(r => r.species_key === 'moose'), `${zid} missing FR moose`);
+      ok(`${q.id}/${zid}-weapons`, en.weapon_classes.length >= 2, `${zid} weapon classes collapsed or missing`);
+      const draw = (doc.notices?.en || []).some(n => n.draw_required && /through the draw/i.test(n.text || ''));
+      const bag = (doc.notices?.en || []).some(n => n.kind === 'deer_bag' && /2 deer|two different zones/i.test(n.text || ''));
+      ok(`${q.id}/${zid}-draw`, draw, `${zid} missing draw_required notice`);
+      ok(`${q.id}/${zid}-bag`, bag, `${zid} missing statewide deer bag notice`);
+    }
+    continue;
+  }
+
+  if (c.hunt_collide) {
+    const fish = REGS[c.hunt_collide.fish];
+    const hunt = lookupHunting(HUNTING, { zone: c.hunt_collide.hunt });
+    const huntBy12 = lookupHunting(HUNTING, { zone: c.hunt_collide.fish });
+    ok(`${q.id}/fish`, fish && fish.activity === 'fishing' && fish.jurisdiction !== 'ON', `fishing key ${c.hunt_collide.fish} missing or not QC fishing`);
+    ok(`${q.id}/hunt`, hunt.status === 'ok' && hunt.doc.activity === 'hunting', `hunting key ${c.hunt_collide.hunt} missing`);
+    ok(`${q.id}/distinct`, fish && hunt.doc && fish !== hunt.doc && fish.activity !== hunt.doc.activity, 'hunting overwrote fishing zone 12');
+    ok(`${q.id}/zone12-hunting-api`, huntBy12.status === 'ok' && huntBy12.doc.activity === 'hunting' && huntBy12.doc.zone_key === 'QC-H-12', 'hunting zone=12 must resolve QC-H-12, not fishing');
+    continue;
+  }
+
+  if (c.hunt_zone && q.type === 'hunting-refusal') {
+    const found = lookupHunting(HUNTING, { zone: c.hunt_zone });
+    ok(`${q.id}/refuse`, found.status === 'refuse-on-12', `hunting key ${c.hunt_zone} must be refused, got ${found.status}`);
+    ok(`${q.id}/not-in-index`, !HUNTING['ON-12'] && !HUNTING['ON-H-12'] && !HUNTING['12'], 'ON-12 or numeric 12 leaked into hunting index');
+    const fishOn = lookupRegulation(REGS, { zone: 'ON-12' });
+    ok(`${q.id}/fishing-on12-untouched`, fishOn.status === 'ok' && fishOn.doc?.jurisdiction === 'ON' && fishOn.doc?.activity === 'fishing', 'fishing ON-12 must remain Ontario fishing');
+    continue;
+  }
+
+  if (c.hunt_zone) {
+    const found = lookupHunting(HUNTING, { zone: c.hunt_zone });
+    ok(`${q.id}/zone-exists`, found.status === 'ok', `hunting zone ${c.hunt_zone} missing (${found.status})`);
+    if (found.status === 'ok') {
+      ok(`${q.id}/activity`, found.doc.activity === 'hunting', 'hunting lookup returned non-hunting');
+      const r = resolveHunting(found.doc, { lang: c.lang || 'fr', date: c.date, species: c.species });
+      ok(`${q.id}/citation`, !!r.citation.source && !!r.citation.fetched_at && !!r.disclaimer, 'missing hunting citation/disclaimer');
+      if (c.must_not_fishing_zone) {
+        const fish = lookupRegulation(REGS, { zone: c.must_not_fishing_zone });
+        ok(`${q.id}/not-fishing`, fish.status === 'ok' && fish.doc.activity === 'fishing' && r.zone.activity === 'hunting' && String(fish.doc.authority) !== String(found.doc.authority), `hunt-qc12-moose returned fishing zone ${c.must_not_fishing_zone}`);
+      }
+      if (c.expect_rules === true) {
+        ok(q.id, r.seasons.length > 0, `no hunting seasons for species="${c.species || 'any'}"`);
+        if (c.expect_year) {
+          ok(`${q.id}/year`, r.seasons.some(x => String(x.year) === String(c.expect_year) || /2026/.test(x.period_2026 || x.period || '')), `no ${c.expect_year} season column`);
+        }
+        if (c.expect_weapon_class) {
+          ok(`${q.id}/weapons`, r.weapon_classes.length >= 2, 'weapon classes missing or collapsed');
+        }
       }
     }
     continue;
@@ -126,7 +197,7 @@ if (E2E) {
   const eFailures = [];
   const numberLimit = /\b\d+\s*(en tout|in all|par jour|per day)\b/i;
 
-  for (const q of questions.filter(x => x.type !== 'coverage')) {
+  for (const q of questions.filter(x => x.type !== 'coverage' && x.type !== 'hunting' && x.type !== 'hunting-refusal')) {
     try {
       // Scout's public guard allows 15 req/h/IP — fewer than one full run.
       // Set SCOUT_EVAL_KEY (same value as the Vercel env var) to bypass it.

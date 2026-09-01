@@ -1,0 +1,259 @@
+---
+// Hunting seasons hub — harvested Québec hunting zones (deer + moose, 2026).
+// CTA is Season Intel waitlist only; this page does not rewrite season-intel.
+import { readFileSync, readdirSync } from 'node:fs';
+import { join } from 'node:path';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import GlobalSearch from '../../../components/GlobalSearch.astro';
+import { huntingPageSlug, huntingKey } from '../../../lib/huntLookup.mjs';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'en' } }, { params: { lang: 'fr' } }];
+}
+
+const { lang } = Astro.params;
+const L = lang === 'en' ? 'en' : 'fr';
+const dir = join(process.cwd(), 'data', 'hunting');
+const zones = readdirSync(dir).filter(f => f.endsWith('.json'))
+  .map(f => JSON.parse(readFileSync(join(dir, f), 'utf-8')))
+  .filter(z => z.activity === 'hunting')
+  .sort((a, b) => String(a.zone_key).localeCompare(String(b.zone_key), 'en', { numeric: true }));
+
+const SITE = 'https://outdoorintel.ca';
+const url = `${SITE}/${lang}/hunting/regulations`;
+const altHref = `/${lang === 'en' ? 'fr' : 'en'}/hunting/regulations`;
+
+const T = {
+  title: { en: 'Québec Hunting Seasons — Deer & Moose (2026)', fr: 'Périodes de chasse du Québec — cerf et orignal (2026)' },
+  metaDesc: {
+    en: 'Cited Québec hunting seasons for white-tailed deer and moose in zones 10 East/West and 11 East/West (plus 9 and 12). 2026 column from Québec.ca HTML tables. Free, bilingual. Always verify with the MELCCFP.',
+    fr: 'Périodes de chasse citées du Québec pour le cerf de Virginie et l’orignal dans les zones 10 est/ouest et 11 est/ouest (plus 9 et 12). Colonne 2026 des tableaux HTML de Québec.ca. Gratuit, bilingue. Vérifiez toujours auprès du MELCCFP.',
+  },
+  h1: { en: 'Québec Hunting Seasons', fr: 'Périodes de chasse du Québec' },
+  intro: {
+    en: 'The 2026 white-tailed deer and moose seasons, reproduced verbatim from Québec.ca. Weapon class is the published heading (bow is not collapsed into firearms). This is not all 28 hunting zones and not small game. Always verify before you hunt.',
+    fr: 'Les périodes 2026 du cerf de Virginie et de l’orignal, reproduites intégralement de Québec.ca. La classe d’arme est le titre publié (l’arc n’est pas fusionné aux armes à feu). Ce n’est pas les 28 zones ni le petit gibier. Vérifiez toujours avant de chasser.',
+  },
+  view: { en: 'View seasons →', fr: 'Voir les périodes →' },
+  updated: { en: 'Data retrieved', fr: 'Données récupérées le' },
+  rows: { en: 'season rows (2026)', fr: 'lignes de période (2026)' },
+  weapons: { en: 'weapon classes', fr: 'classes d’arme' },
+  breadcrumbHome: { en: 'Home', fr: 'Accueil' },
+  hunting: { en: 'Hunting', fr: 'Chasse' },
+  searchTitle: { en: 'Look up a season', fr: 'Chercher une période' },
+  searchIntro: {
+    en: 'Search cited Québec.ca hunting tables by zone, species, and optional date. Results are verbatim source text.',
+    fr: 'Cherchez dans les tableaux cités de Québec.ca par zone, espèce et date (facultatif). Les résultats sont le texte intégral de la source.',
+  },
+  zoneLabel: { en: 'Hunting zone', fr: 'Zone de chasse' },
+  speciesLabel: { en: 'Species', fr: 'Espèce' },
+  dateLabel: { en: 'Date (optional)', fr: 'Date (facultatif)' },
+  searchBtn: { en: 'Search', fr: 'Rechercher' },
+  speciesPh: { en: 'e.g. deer or moose', fr: 'ex. cerf ou orignal' },
+  official: { en: 'Official source', fr: 'Source officielle' },
+  fetched: { en: 'Data retrieved', fr: 'Données récupérées le' },
+  noRules: { en: 'No matching seasons for this search.', fr: 'Aucune période ne correspond à cette recherche.' },
+  searching: { en: 'Loading…', fr: 'Chargement…' },
+  searchError: { en: 'Could not load hunting seasons. Try again.', fr: 'Impossible de charger les périodes de chasse. Réessayez.' },
+  seasonCta: { en: 'Get Season Intel', fr: 'Obtenir Season Intel' },
+  seasonCtaSub: {
+    en: 'Waitlist for seasons, exceptions, and change alerts. Planned price $29/year CAD — no checkout yet. Zone pages stay free.',
+    fr: 'Liste d’attente pour les saisons, exceptions et alertes. Prix prévu 29 $/an CAD — pas de paiement pour le moment. Les pages de zone restent gratuites.',
+  },
+  maps: { en: 'Official maps (link only — not OCR’d)', fr: 'Cartes officielles (liens seulement — pas d’OCR)' },
+  cols: {
+    species: { en: 'Species', fr: 'Espèce' },
+    weapon: { en: 'Weapon class', fr: 'Classe d’arme' },
+    segment: { en: 'Segment / age and sex', fr: 'Segment / âge et sexe' },
+    period: { en: '2026 season', fr: 'Période 2026' },
+  },
+};
+
+const zoneHref = (z) => `/${lang}/hunting/regulations/${huntingPageSlug(z)}`;
+const zoneValue = (z) => huntingKey(z);
+const zoneLabel = (z) => (z.title[L] || z.title.en).split('—')[0].trim();
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: T.breadcrumbHome[L], item: `${SITE}/` },
+    { '@type': 'ListItem', position: 2, name: T.hunting[L], item: `${SITE}/${lang}/hunting/directory` },
+    { '@type': 'ListItem', position: 3, name: T.h1[L], item: url },
+  ],
+};
+---
+<html lang={lang}>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#14251a">
+    <title>{T.title[L]} | Outdoor Intel</title>
+    <meta name="description" content={T.metaDesc[L]}>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href={url}>
+    <meta property="og:title" content={`${T.title[L]} | Outdoor Intel`}>
+    <meta property="og:description" content={T.metaDesc[L]}>
+    <meta property="og:url" content={url}>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Outdoor Intel">
+    <meta property="og:locale" content={lang === 'en' ? 'en_CA' : 'fr_CA'}>
+    <meta property="og:locale:alternate" content={lang === 'en' ? 'fr_CA' : 'en_CA'}>
+    <link rel="alternate" hreflang="en" href={`${SITE}/en/hunting/regulations`}>
+    <link rel="alternate" hreflang="fr" href={`${SITE}/fr/hunting/regulations`}>
+    <link rel="alternate" hreflang="x-default" href={`${SITE}/en/hunting/regulations`}>
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbLd)}></script>
+    <link rel="stylesheet" href="/assets/css/site.css?v=1">
+    <Fragment set:html={`<!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8Q00962P"><\/script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QY8Q00962P');
+    <\/script>`} />
+    <Fragment set:html={`<style id="oi-ds">.explore-dropdown{visibility:hidden;opacity:0;transform:translateY(6px);transition:opacity .15s ease,transform .15s ease,visibility .15s}.explore-group:hover .explore-dropdown,.explore-group:focus-within .explore-dropdown{visibility:visible;opacity:1;transform:translateY(0)}<\/style>`} />
+</head>
+<body class="bg-[#fbfaf7] text-[#1c2b21] font-sans leading-relaxed">
+    <Header lang={lang} altHref={altHref} />
+
+    <main class="pt-[88px]">
+        <section class="bg-[#14251a] text-white py-16 px-6">
+            <div class="max-w-5xl mx-auto">
+                <span class="inline-block bg-white/90 text-[#3d7a4d] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5">{T.hunting[L]} · Québec</span>
+                <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">{T.h1[L]}</h1>
+                <p class="text-white/85 max-w-2xl text-lg">{T.intro[L]}</p>
+                <a href={`/${lang}/season-intel`} class="inline-block mt-6 bg-[#a2c99a] text-[#14251a] font-bold px-6 py-3 rounded-lg hover:bg-white transition-colors">{T.seasonCta[L]}</a>
+                <p class="text-white/70 text-sm mt-3 max-w-2xl">{T.seasonCtaSub[L]}</p>
+            </div>
+        </section>
+
+        <section class="py-10 px-6 bg-[#f4f3ec] border-b border-[#305e3c]/10">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-2xl font-bold text-[#305e3c] mb-2">{T.searchTitle[L]}</h2>
+                <p class="text-sm text-[#5c6b5f] mb-6 max-w-2xl">{T.searchIntro[L]}</p>
+                <form id="hunt-search" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 items-end">
+                    <label class="block text-sm">
+                        <span class="font-semibold text-[#1c2b21]">{T.zoneLabel[L]}</span>
+                        <select name="zone" required class="mt-1 w-full px-3 py-2 rounded-lg border border-[#305e3c]/20 bg-white text-[#1c2b21]">
+                            {zones.map(z => (
+                            <option value={zoneValue(z)}>{zoneLabel(z)}</option>
+                            ))}
+                        </select>
+                    </label>
+                    <label class="block text-sm">
+                        <span class="font-semibold text-[#1c2b21]">{T.speciesLabel[L]}</span>
+                        <input type="text" name="species" placeholder={T.speciesPh[L]} class="mt-1 w-full px-3 py-2 rounded-lg border border-[#305e3c]/20 bg-white text-[#1c2b21]" autocomplete="off">
+                    </label>
+                    <label class="block text-sm">
+                        <span class="font-semibold text-[#1c2b21]">{T.dateLabel[L]}</span>
+                        <input type="date" name="date" class="mt-1 w-full px-3 py-2 rounded-lg border border-[#305e3c]/20 bg-white text-[#1c2b21]">
+                    </label>
+                    <button type="submit" class="bg-[#305e3c] text-white font-semibold px-4 py-2 rounded-lg hover:bg-[#3d7a4d] transition-colors">{T.searchBtn[L]}</button>
+                </form>
+                <div id="hunt-results" class="mt-8 hidden"></div>
+            </div>
+        </section>
+
+        <section class="py-14 px-6">
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+                {zones.map(z => (
+                <a href={zoneHref(z)} class="group bg-white rounded-xl border border-[#305e3c]/10 p-6 hover:shadow-lg transition-all hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div class="text-[#3d7a4d] text-xs font-bold uppercase tracking-widest mb-2">Québec · MELCCFP · {z.zone_key}</div>
+                    <h2 class="text-2xl font-bold text-[#305e3c] mb-3">{zoneLabel(z)}</h2>
+                    <p class="text-sm text-[#5c6b5f] mb-1">{(z.seasons[L] || []).length} {T.rows[L]}</p>
+                    <p class="text-sm text-[#5c6b5f] mb-1">{z.coverage.weapon_classes_harvested} {T.weapons[L]}</p>
+                    <p class="text-xs text-[#5c6b5f]/80 mb-4">{T.updated[L]} {z.source.fetched_at} · listed {z.coverage.season_rows_listed} / harvested {z.coverage.season_rows_harvested}</p>
+                    <div class="text-[#3d7a4d] text-sm font-semibold">{T.view[L]}</div>
+                </a>
+                ))}
+            </div>
+        </section>
+    </main>
+
+    <Footer lang={lang} altHref={altHref} />
+    <Fragment set:html={`<script>
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('mobile-menu');
+if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        toggle.setAttribute('aria-expanded', !menu.classList.contains('hidden'));
+    });
+}
+<\/script>`} />
+    <GlobalSearch />
+    <script is:inline defer src="/_vercel/insights/script.js"></script>
+    <script is:inline define:vars={{ lang, ui: {
+      official: T.official[L],
+      fetched: T.fetched[L],
+      noRules: T.noRules[L],
+      searching: T.searching[L],
+      searchError: T.searchError[L],
+      cols: {
+        species: T.cols.species[L],
+        weapon: T.cols.weapon[L],
+        segment: T.cols.segment[L],
+        period: T.cols.period[L],
+      },
+    } }}>
+    (function () {
+      var form = document.getElementById('hunt-search');
+      var out = document.getElementById('hunt-results');
+      if (!form || !out) return;
+      function esc(s) {
+        return String(s == null ? '' : s)
+          .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      }
+      function cell(v) { return esc(v == null ? '' : v); }
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var fd = new FormData(form);
+        var zone = (fd.get('zone') || '').toString().trim();
+        var species = (fd.get('species') || '').toString().trim();
+        var date = (fd.get('date') || '').toString().trim();
+        var params = new URLSearchParams({ zone: zone, lang: lang });
+        if (species) params.set('species', species);
+        if (date) params.set('date', date);
+        out.classList.remove('hidden');
+        out.textContent = ui.searching;
+        fetch('/api/hunting/regulations?' + params.toString())
+          .then(function (r) { if (!r.ok) throw new Error('http ' + r.status); return r.json(); })
+          .then(function (data) {
+            var cite = data.citation || {};
+            var html = '<div class="bg-white rounded-xl border border-[#305e3c]/10 p-5 mb-6">'
+              + '<p class="text-sm mb-1"><strong>' + esc(ui.official) + ':</strong> '
+              + (cite.source ? '<a class="text-[#305e3c] underline" href="' + esc(cite.source) + '" target="_blank" rel="noopener noreferrer">' + esc(cite.source) + '</a>' : '')
+              + '</p>'
+              + '<p class="text-sm mb-1"><strong>' + esc(ui.fetched) + ':</strong> ' + esc(cite.fetched_at || '') + '</p>'
+              + '<p class="text-sm text-[#5c6b5f]">' + esc(data.disclaimer || '') + '</p></div>';
+            var rows = data.seasons || [];
+            if (!rows.length) {
+              html += '<p class="text-sm text-[#5c6b5f]">' + esc(ui.noRules) + '</p>';
+            } else {
+              html += '<div class="overflow-x-auto rounded-xl border border-[#305e3c]/10 bg-white"><table class="w-full text-sm" style="border-collapse:collapse"><thead><tr class="bg-[#f4f3ec] text-left">'
+                + '<th class="p-3 font-bold text-[#305e3c]">' + esc(ui.cols.species) + '</th>'
+                + '<th class="p-3 font-bold text-[#305e3c]">' + esc(ui.cols.weapon) + '</th>'
+                + '<th class="p-3 font-bold text-[#305e3c]">' + esc(ui.cols.segment) + '</th>'
+                + '<th class="p-3 font-bold text-[#305e3c]">' + esc(ui.cols.period) + '</th>'
+                + '</tr></thead><tbody>'
+                + rows.map(function (r) {
+                  return '<tr class="border-t border-[#305e3c]/10 align-top">'
+                    + '<td class="p-3 font-semibold">' + cell(r.species) + '</td>'
+                    + '<td class="p-3">' + cell(r.weapon_class) + '</td>'
+                    + '<td class="p-3">' + cell(r.segment) + '</td>'
+                    + '<td class="p-3">' + cell(r.period_2026 || r.period) + '</td></tr>';
+                }).join('')
+                + '</tbody></table></div>';
+            }
+            out.innerHTML = html;
+          })
+          .catch(function () { out.textContent = ui.searchError; });
+      });
+    })();
+    </script>
+</body>
+</html>

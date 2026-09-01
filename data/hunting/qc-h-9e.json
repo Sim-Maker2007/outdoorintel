@@ -1,0 +1,264 @@
+{
+  "zone_id": "9E",
+  "zone_key": "QC-H-9E",
+  "slug": "qc-h-9e",
+  "activity": "hunting",
+  "jurisdiction": "QC",
+  "licence_year": "2026-2027",
+  "season_column": 2026,
+  "hunting_zone": "9",
+  "hunting_part": "E",
+  "authority": "Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs (MELCCFP); Québec.ca sport hunting",
+  "source": {
+    "en": "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/sport-hunting/seasons-bag-limits/moose",
+    "fr": "https://www.quebec.ca/tourisme-loisirs-sport/activites-sportives-et-de-plein-air/chasse-sportive/periodes-limites/orignal",
+    "moose": {
+      "en": "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/sport-hunting/seasons-bag-limits/moose",
+      "fr": "https://www.quebec.ca/tourisme-loisirs-sport/activites-sportives-et-de-plein-air/chasse-sportive/periodes-limites/orignal"
+    },
+    "deer": {
+      "en": "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/sport-hunting/seasons-bag-limits/white-tailed-deer",
+      "fr": "https://www.quebec.ca/tourisme-loisirs-sport/activites-sportives-et-de-plein-air/chasse-sportive/periodes-limites/cerf-virginie"
+    },
+    "deer_bag": {
+      "en": "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/sport-hunting/game/white-tailed-deer",
+      "fr": "https://www.quebec.ca/tourisme-loisirs-sport/activites-sportives-et-de-plein-air/chasse-sportive/gibier/cerf-virginie"
+    },
+    "maps": {
+      "en": "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/sport-hunting/hunting-zone-maps",
+      "fr": "https://www.quebec.ca/tourisme-loisirs-sport/activites-sportives-et-de-plein-air/chasse-sportive/cartes-zones"
+    },
+    "fetched_at": "2026-09-01",
+    "note": "Season text reproduced verbatim from Québec.ca HTML tables (2026 column). Weapon class is the published section heading. Maps are cited as links only — not OCR’d, not scraped from Forêt ouverte."
+  },
+  "maps": {
+    "foret_ouverte": "https://www.foretouverte.gouv.qc.ca/?context=_chasse&zoom=6&center=-73,50.5&invisiblelayers=*&visiblelayers=hoverFeatureId,5d7a10cd6ffbbf709a33e93bd511e6ab,3017d862d5defbc724b8e4ad5d928e61,c9b990a0ef307210d15c272c14094dfd,f35facadb5c232cc432b90bb6bef7c91",
+    "pdf_en": {
+      "href": "https://cdn-contenu.quebec.ca/cdn-contenu/chasse/Documents/Anglais/CA_hunting-map-zone-09_MFFP.pdf",
+      "label": "Zone 9 (PDF 1.35 Mb)"
+    },
+    "pdf_fr": {
+      "href": "https://cdn-contenu.quebec.ca/cdn-contenu/chasse/Documents/CA_zone-chasse-09_MFFP.pdf",
+      "label": "Zone 9 (PDF 1,25 Mo)"
+    },
+    "index_en": "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/sport-hunting/hunting-zone-maps",
+    "index_fr": "https://www.quebec.ca/tourisme-loisirs-sport/activites-sportives-et-de-plein-air/chasse-sportive/cartes-zones"
+  },
+  "coverage": {
+    "slice": "QC hunting zone 9E; white-tailed deer + moose; 2026 season column",
+    "species_listed": 2,
+    "species_harvested": 2,
+    "weapon_classes_listed": 3,
+    "weapon_classes_harvested": 3,
+    "weapon_classes_listed_fr": 3,
+    "weapon_classes_harvested_fr": 3,
+    "season_rows_listed": 4,
+    "season_rows_harvested": 4,
+    "season_rows_listed_fr": 4,
+    "season_rows_harvested_fr": 4,
+    "complete": true,
+    "note": "Québec hunting zone 9E: white-tailed deer and moose, 2026 season column, weapon classes kept as published headings. Not all 28 hunting zones. Not small game. Not GIS.",
+    "weapon_classes": {
+      "en": [
+        "Crossbow and bow hunting seasons",
+        "Firearms (rifle, shotgun, muzzle loading firearm), crossbow and bow hunting seasons",
+        "Hunting periods for novice hunters only"
+      ],
+      "fr": [
+        "Périodes de chasse à l’arbalète et à l’arc",
+        "Périodes de chasse aux armes à feu (carabine, fusil, arme à chargement par la bouche), à l’arbalète et à l’arc",
+        "Périodes de chasse réservée à la relève"
+      ]
+    },
+    "species": {
+      "en": [
+        "moose",
+        "white-tailed-deer"
+      ],
+      "fr": [
+        "moose",
+        "white-tailed-deer"
+      ]
+    },
+    "weapons_not_collapsed": true
+  },
+  "title": {
+    "en": "Hunting zone 9 East — white-tailed deer and moose (2026 season)",
+    "fr": "Zone de chasse 9 est — cerf de Virginie et orignal (période 2026)"
+  },
+  "notices": {
+    "en": [
+      {
+        "kind": "draw_required",
+        "draw_required": true,
+        "flag": true,
+        "applies_to": "moose_without_antlers",
+        "year": 2026,
+        "text": "In zones 1 to 12, 14 to 16, 22, 26 and 27, as well as in wildlife reserves and certain ZECs, the hunter must now have obtained, through the draw, a moose without antlers hunting licence (any moose with antlers less than 10 cm) in order to harvest a moose without antlers.",
+        "related": [
+          "Starting in 2026, in several zones, moose hunting will no longer operate under a system of alternating permissive and restrictive years.",
+          "In zones 13, 18 and 28, the alternating-year system will remain in effect. Moose without antlers hunting will therefore be closed in 2026 (restrictive year) and open in 2027 (permissive year). However, in zone 13, it will also be open during the bow and crossbow hunting season in 2026."
+        ]
+      },
+      {
+        "kind": "deer_bag",
+        "draw_required": false,
+        "text": "The white-tailed deer bag limit is now 2 deer per hunter per year , except in zone 20 (Anticosti Island), coming from two different zones, except in zones 4, 5 East, 5 West, 6 North, 6 South, 7 South, 8 East, 8 North and 8 South, where you may harvest your 2 deer, of which only one may be an antlered deer, within the same zone. The regular licence and additional licence each allow you to harvest one deer in any zone other than zone 20. Your first deer must come from a zone or part of a zone other than zone 20 (Anticosti Island). Once you have killed the first deer, you must then kill the second in a different zone from the zone in which you hunted (excluding zone 20). This requirement does not apply in zones 4, 5 East, 5 West, 6 North, 6 South, 7 South, 8 East, 8 North and 8 South, where you may harvest your 2 deer, of which no more than one may be an antlered deer, within the same zone. The bag limit in zone 20 (Anticosti Island) is 4 deer per stay with a maximum of 2 deer with antlers. Specific provisions apply in the wildlife reserves and outfitters with exclusive rights on the island regarding the sharing of antlerless deer hunting licences and group hunting of white-tailed deer .",
+        "paras": [
+          "The white-tailed deer bag limit is now 2 deer per hunter per year , except in zone 20 (Anticosti Island), coming from two different zones, except in zones 4, 5 East, 5 West, 6 North, 6 South, 7 South, 8 East, 8 North and 8 South, where you may harvest your 2 deer, of which only one may be an antlered deer, within the same zone.",
+          "The regular licence and additional licence each allow you to harvest one deer in any zone other than zone 20.",
+          "Your first deer must come from a zone or part of a zone other than zone 20 (Anticosti Island).",
+          "Once you have killed the first deer, you must then kill the second in a different zone from the zone in which you hunted (excluding zone 20). This requirement does not apply in zones 4, 5 East, 5 West, 6 North, 6 South, 7 South, 8 East, 8 North and 8 South, where you may harvest your 2 deer, of which no more than one may be an antlered deer, within the same zone.",
+          "The bag limit in zone 20 (Anticosti Island) is 4 deer per stay with a maximum of 2 deer with antlers. Specific provisions apply in the wildlife reserves and outfitters with exclusive rights on the island regarding the sharing of antlerless deer hunting licences and group hunting of white-tailed deer ."
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "kind": "draw_required",
+        "draw_required": true,
+        "flag": true,
+        "applies_to": "moose_without_antlers",
+        "year": 2026,
+        "text": "Dans les zones 1 à 12, 14 à 16, 22, 26 et 27, ainsi que dans les réserves fauniques et certaines zecs, le chasseur devra désormais avoir obtenu, au tirage au sort, un permis de chasse à l’orignal sans bois (tout orignal dont les bois mesurent moins de 10 cm) pour pouvoir récolter un orignal sans bois.",
+        "related": [
+          "Le résident titulaire d’un permis de chasse à l’orignal sans bois (tirage au sort) peut chasser l’orignal sans bois à l’endroit indiqué sur son permis.",
+          "À compter de 2026, dans plusieurs zones, la chasse à l’orignal ne se fera plus selon un système d’alternance entre les années permissives et les années restrictives.",
+          "Dans les zones 13, 18 et 28, le système d’alternance demeurera en vigueur. La chasse à l’orignal sans bois y sera donc fermée en 2026 (année restrictive) et ouverte en 2027 (année permissive). Toutefois, dans la zone 13, elle sera également ouverte durant la période de chasse à l’arc et à l’arbalète en 2026.",
+          "Enfin, dans les zones 19 sud et 29, la chasse sera ouverte chaque année pour tous les segments, sans obligation de détenir un permis spécial pour la chasse à l’orignal sans bois."
+        ]
+      },
+      {
+        "kind": "deer_bag",
+        "draw_required": false,
+        "text": "La limite de prise du cerf de Virginie, ailleurs que dans la zone 20 (île d’Anticosti), est de 2 par chasseur par année en provenance de deux zones différentes, sauf dans les zones 4, 5 est, 5 ouest, 6 nord, 6 sud, 7 sud, 8 est, 8 nord et 8 sud, où vous pourriez récolter vos 2 cerfs, dont un seul cerf avec bois, à l’intérieur de la même zone. Certaines règles s’appliquent : Le permis régulier et le permis supplémentaire vous permettent chacun de récolter un cerf ailleurs que dans la zone 20. Votre premier cerf doit provenir d’une zone ou partie de zone autre que la zone 20 (île d’Anticosti). Une fois votre premier cerf abattu, votre second doit provenir d’une zone différente de celle où vous avez chassé, excluant la zone 20. Cette exigence ne s’applique pas dans les zones 4, 5 est, 5 ouest, 6 nord, 6 sud, 7 sud, 8 est, 8 nord et 8 sud, où vous pourriez récolter vos 2 cerfs, dont au maximum un cerf avec bois, à l’intérieur de la même zone. Dans la zone 20 (île d'Anticosti), la limite de prise est de 4 cerfs par séjour dont un maximum de 2 cerfs avec bois. Des dispositions particulières sont en vigueur dans les réserves fauniques et les pourvoiries à droits exclusifs de l’île quant au partage du permis de chasse au cerf sans bois et la chasse au cerf de Virginie en groupe .",
+        "paras": [
+          "La limite de prise du cerf de Virginie, ailleurs que dans la zone 20 (île d’Anticosti), est de 2 par chasseur par année en provenance de deux zones différentes, sauf dans les zones 4, 5 est, 5 ouest, 6 nord, 6 sud, 7 sud, 8 est, 8 nord et 8 sud, où vous pourriez récolter vos 2 cerfs, dont un seul cerf avec bois, à l’intérieur de la même zone.",
+          "Certaines règles s’appliquent :",
+          "Le permis régulier et le permis supplémentaire vous permettent chacun de récolter un cerf ailleurs que dans la zone 20.",
+          "Votre premier cerf doit provenir d’une zone ou partie de zone autre que la zone 20 (île d’Anticosti).",
+          "Une fois votre premier cerf abattu, votre second doit provenir d’une zone différente de celle où vous avez chassé, excluant la zone 20. Cette exigence ne s’applique pas dans les zones 4, 5 est, 5 ouest, 6 nord, 6 sud, 7 sud, 8 est, 8 nord et 8 sud, où vous pourriez récolter vos 2 cerfs, dont au maximum un cerf avec bois, à l’intérieur de la même zone.",
+          "Dans la zone 20 (île d'Anticosti), la limite de prise est de 4 cerfs par séjour dont un maximum de 2 cerfs avec bois. Des dispositions particulières sont en vigueur dans les réserves fauniques et les pourvoiries à droits exclusifs de l’île quant au partage du permis de chasse au cerf sans bois et la chasse au cerf de Virginie en groupe ."
+        ]
+      }
+    ]
+  },
+  "seasons": {
+    "en": [
+      {
+        "species": "Moose",
+        "species_key": "moose",
+        "weapon_class": "Crossbow and bow hunting seasons",
+        "segment": "Moose with antlers",
+        "period": "From October 3 to October 9, 2026",
+        "period_2026": "From October 3 to October 9, 2026",
+        "period_2027": "From October 2 to October 8, 2027",
+        "period_from": "2026-10-03",
+        "period_to": "2026-10-09",
+        "year": 2026,
+        "notes": null,
+        "raw": "Crossbow and bow hunting seasons · 3, 4, 5, 6, 8, 9 · Moose with antlers · From October 3 to October 9, 2026"
+      },
+      {
+        "species": "White-tailed deer",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Crossbow and bow hunting seasons",
+        "segment": "White-tailed deer with antlers (7 cm or more)",
+        "period": "October 3 to October 16, 2026",
+        "period_2026": "October 3 to October 16, 2026",
+        "period_2027": "October 2 to October 15, 2027",
+        "period_from": "2026-10-03",
+        "period_to": "2026-10-16",
+        "year": 2026,
+        "notes": null,
+        "raw": "Crossbow and bow hunting seasons · 1 North, 1 South, 2 East, 2 West, 3 East, 9 East, 9 West, 10 East, 11 East, 11 West, 15 West · White-tailed deer with antlers (7 cm or more) · October 3 to October 16, 2026"
+      },
+      {
+        "species": "White-tailed deer",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Firearms (rifle, shotgun, muzzle loading firearm), crossbow and bow hunting seasons",
+        "segment": "White-tailed deer with antlers (7 cm or more)",
+        "period": "November 7 to November 22, 2026",
+        "period_2026": "November 7 to November 22, 2026",
+        "period_2027": "November 6 to November 21, 2027",
+        "period_from": "2026-11-07",
+        "period_to": "2026-11-22",
+        "year": 2026,
+        "notes": null,
+        "raw": "Firearms (rifle, shotgun, muzzle loading firearm), crossbow and bow hunting seasons · 2 West, 3 East, 3 West (except all islands and islets of the St. Lawrence River downstream of pont Pierre-Laporte included in this zone), 4, 5 East, 5 West, 7 North, 7 South, 8 East, 8 North excluding the territory of the montagne de Rigaud, 8 South, 9 East, 9 West, 10 East, 10 West, 11 East, 11 West, 12, 13 Southwest, 15 West · White-tailed deer with antlers (7 cm or more) · November 7 to November 22, 2026"
+      },
+      {
+        "species": "White-tailed deer",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Hunting periods for novice hunters only",
+        "segment": "White-tailed deer with antlers (7 cm or more)",
+        "period": "From October 31 to November 1, 2026",
+        "period_2026": "From October 31 to November 1, 2026",
+        "period_2027": "From October 30 to October 31, 2027",
+        "period_from": "2026-10-31",
+        "period_to": "2026-11-01",
+        "year": 2026,
+        "notes": null,
+        "raw": "Hunting periods for novice hunters only · 1 North, 1 South, 2 East (except the Macpès and Duquesne townships), 2 West, 3 East, 3 West (except all islands and islets of the Fleuve Saint-Laurent downstream from the Pont Pierre-Laporte included in these zones), 4, 5 East, 5 West, 7 North, 7 South, 8 East, 8 North (excluding the territory of Montagne de Rigaud), 8 South, 9 East, 9 West, 10 East, 10 West, 11 East, 11 West, 12, 13 Southwest, 15 West · White-tailed deer with antlers (7 cm or more) · From October 31 to November 1, 2026"
+      }
+    ],
+    "fr": [
+      {
+        "species": "Orignal",
+        "species_key": "moose",
+        "weapon_class": "Périodes de chasse à l’arbalète et à l’arc",
+        "segment": "Orignal avec bois",
+        "period": "Du 3 octobre au 9 octobre 2026",
+        "period_2026": "Du 3 octobre au 9 octobre 2026",
+        "period_2027": "Du 2 octobre au 8 octobre 2027",
+        "period_from": "2026-10-03",
+        "period_to": "2026-10-09",
+        "year": 2026,
+        "notes": null,
+        "raw": "Périodes de chasse à l’arbalète et à l’arc · 3, 4, 5, 6, 8, 9 · Orignal avec bois · Du 3 octobre au 9 octobre 2026"
+      },
+      {
+        "species": "Cerf de Virginie",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Périodes de chasse à l’arbalète et à l’arc",
+        "segment": "Cerf de Virginie avec bois (7 cm ou plus)",
+        "period": "Du 3 octobre au 16 octobre 2026",
+        "period_2026": "Du 3 octobre au 16 octobre 2026",
+        "period_2027": "Du 2 octobre au 15 octobre 2027",
+        "period_from": "2026-10-03",
+        "period_to": "2026-10-16",
+        "year": 2026,
+        "notes": null,
+        "raw": "Périodes de chasse à l’arbalète et à l’arc · 1 nord, 1 sud, 2 est, 2 ouest, 3 est, 9 est, 9 ouest, 10 est, 11 est, 11 ouest, 15 ouest · Cerf de Virginie avec bois (7 cm ou plus) · Du 3 octobre au 16 octobre 2026"
+      },
+      {
+        "species": "Cerf de Virginie",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Périodes de chasse aux armes à feu (carabine, fusil, arme à chargement par la bouche), à l’arbalète et à l’arc",
+        "segment": "Cerf de Virginie avec bois (7 cm ou plus)",
+        "period": "Du 7 novembre au 22 novembre 2026",
+        "period_2026": "Du 7 novembre au 22 novembre 2026",
+        "period_2027": "Du 6 novembre au 21 novembre 2027",
+        "period_from": "2026-11-07",
+        "period_to": "2026-11-22",
+        "year": 2026,
+        "notes": null,
+        "raw": "Périodes de chasse aux armes à feu (carabine, fusil, arme à chargement par la bouche), à l’arbalète et à l’arc · 2 ouest, 3 est, 3 ouest (sauf l'ensemble des îles et îlots du fleuve Saint-Laurent en aval du pont Pierre-Laporte compris dans ces zones), 4, 5 est, 5 ouest, 7 nord, 7 sud, 8 est, 8 nord (excluant le territoire de la montagne de Rigaud), 8 sud, 9 est, 9 ouest, 10 est, 10 ouest, 11 est, 11 ouest, 12, 13 sud-ouest, 15 ouest · Cerf de Virginie avec bois (7 cm ou plus) · Du 7 novembre au 22 novembre 2026"
+      },
+      {
+        "species": "Cerf de Virginie",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Périodes de chasse réservée à la relève",
+        "segment": "Cerf de Virginie avec bois (7 cm ou plus)",
+        "period": "Du 31 octobre au 1er novembre 2026",
+        "period_2026": "Du 31 octobre au 1er novembre 2026",
+        "period_2027": "Du 30 octobre au 31 octobre 2027",
+        "period_from": "2026-10-31",
+        "period_to": "2026-11-01",
+        "year": 2026,
+        "notes": null,
+        "raw": "Périodes de chasse réservée à la relève · 1 nord, 1 sud, 2 est (sauf les cantons de Macpès, de Duquesne), 2 ouest, 3 est, 3 ouest (sauf l'ensemble des îles et îlots du fleuve Saint-Laurent en aval du pont Pierre-Laporte compris dans ces zones), 4, 5 est, 5 ouest, 7 nord, 7 sud, 8 est, 8 nord (excluant le territoire de la montagne de Rigaud), 8 sud, 9 est, 9 ouest, 10 est, 10 ouest, 11 est, 11 ouest, 12, 13 sud-ouest et 15 ouest · Cerf de Virginie avec bois (7 cm ou plus) · Du 31 octobre au 1er novembre 2026"
+      }
+    ]
+  }
+}
