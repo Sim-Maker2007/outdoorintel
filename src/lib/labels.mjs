@@ -180,6 +180,7 @@ export const T = {
     explore: { en: 'Explore', fr: 'Explorer' },
     product: { en: 'Product', fr: 'Produit' },
     regs: { en: 'Fishing regulations', fr: 'Règlements de pêche' },
+    seasonIntel: { en: 'Season Intel', fr: 'Season Intel' },
     aboutCol: { en: 'About', fr: 'À propos' },
     trust: { en: 'Trust & sources', fr: 'Confiance et sources' },
     about: { en: 'About', fr: 'À propos' },
@@ -211,6 +212,7 @@ export function chromeLinks(lang) {
     privacy: `/${lang}/privacy`,
     terms: `/${lang}/terms`,
     affiliate: `/${lang}/affiliate`,
+    seasonIntel: `/${lang}/season-intel`,
     directory: act => `/${lang}/${act}/directory`,
   };
 }

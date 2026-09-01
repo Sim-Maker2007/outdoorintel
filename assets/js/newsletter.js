@@ -22,7 +22,9 @@
       var btn = form.querySelector('button[type=submit]');
       var email = (form.querySelector('input[name=email]') || {}).value || '';
       var honeypot = (form.querySelector('input[name=website]') || {}).value || '';
+      var source = form.getAttribute('data-source') || window.location.pathname || 'site';
       var onDark = form.hasAttribute('data-on-dark') || !!form.closest('footer');
+      var okMsg = form.getAttribute('data-ok-msg') || MSG[lang].ok;
       var say = function (text, good) {
         if (!msgEl) return;
         msgEl.textContent = text;
@@ -35,11 +37,11 @@
         body: JSON.stringify({
           email: email,
           lang: lang,
-          source: window.location.pathname || 'site',
+          source: source,
           website: honeypot
         })
       }).then(function (r) {
-        if (r.ok) { say(MSG[lang].ok, true); form.reset(); }
+        if (r.ok) { say(okMsg, true); form.reset(); }
         else if (r.status === 400) { say(MSG[lang].invalid, false); }
         else { say(MSG[lang].err, false); }
       }).catch(function () {

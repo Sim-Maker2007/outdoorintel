@@ -1,0 +1,233 @@
+---
+// Season Intel waitlist — conversion page before Stripe exists.
+// Public zone pages stay public; this page does not paywall regs.
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import GlobalSearch from '../../components/GlobalSearch.astro';
+import { chromeLinks } from '../../lib/labels.mjs';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'en' } }, { params: { lang: 'fr' } }];
+}
+
+const { lang } = Astro.params;
+const L = lang === 'en' ? 'en' : 'fr';
+const SITE = 'https://outdoorintel.ca';
+const url = `${SITE}/${lang}/season-intel`;
+const altHref = `/${lang === 'en' ? 'fr' : 'en'}/season-intel`;
+const links = chromeLinks(lang);
+const regsHref = `/${lang}/fishing/regulations`;
+const privacyHref = links.privacy;
+
+const T = {
+  title: {
+    en: 'Season Intel — Québec & Ontario seasons waitlist',
+    fr: 'Season Intel — liste d’attente saisons Québec et Ontario',
+  },
+  metaDesc: {
+    en: 'Join the Season Intel waitlist. Cited Québec fishing zones 1–33 and waterbody search are live and public. Ontario fishing, hunting seasons, and MELCCFP change emails are coming. Planned price $29/year CAD — no checkout yet.',
+    fr: 'Rejoignez la liste d’attente Season Intel. Les zones de pêche du Québec 1 à 33 et la recherche par plan d’eau sont en ligne et publiques. Pêche ontarienne, saisons de chasse et courriels de changement MELCCFP à venir. Prix prévu 29 $/an CAD — pas de paiement pour le moment.',
+  },
+  badge: { en: 'Paid membership · Waitlist', fr: 'Abonnement payant · Liste d’attente' },
+  h1: { en: 'Season Intel', fr: 'Season Intel' },
+  lead: {
+    en: 'A membership for Québec and Ontario fishing and hunting regulations, waterbody exceptions, seasons, and change alerts. Not ads. Not an iHunter map clone.',
+    fr: 'Un abonnement pour les règlements de pêche et de chasse du Québec et de l’Ontario, les exceptions par plan d’eau, les saisons et les alertes de changement. Pas de publicité. Pas un clone de carte iHunter.',
+  },
+  price: {
+    en: 'Planned price: $29 CAD per year. This is not a live charge — there is no payment form yet.',
+    fr: 'Prix prévu : 29 $ CAD par année. Ce n’est pas un paiement en direct — il n’y a pas de formulaire de paiement pour le moment.',
+  },
+  waitTitle: { en: 'Get Season Intel news', fr: 'Recevoir les nouvelles de Season Intel' },
+  waitIntro: {
+    en: 'Join the waitlist with the same Outdoor Intel newsletter. We will email you Season Intel news — including when checkout opens. No payment today.',
+    fr: 'Inscrivez-vous à la liste d’attente via la même infolettre Outdoor Intel. Nous vous enverrons les nouvelles de Season Intel — y compris l’ouverture du paiement. Aucun paiement aujourd’hui.',
+  },
+  emailPh: { en: 'Your email', fr: 'Votre courriel' },
+  waitBtn: { en: 'Join the waitlist', fr: 'Rejoindre la liste d’attente' },
+  waitHint: {
+    en: 'Same subscribe form as the rest of the site. We will send Season Intel news to this address.',
+    fr: 'Le même formulaire d’abonnement que le reste du site. Les nouvelles de Season Intel partiront à cette adresse.',
+  },
+  waitOk: {
+    en: 'You’re on the Season Intel list. We’ll email you the news.',
+    fr: 'Vous êtes sur la liste Season Intel. Nous vous enverrons les nouvelles.',
+  },
+  privacy: {
+    en: 'We use this email only to send the news you asked for, under PIPEDA and Québec Law 25. Questions: hello@outdoorintel.ca.',
+    fr: 'Nous utilisons ce courriel uniquement pour envoyer les nouvelles demandées, conformément à la LPRPDE (PIPEDA) et à la Loi 25 du Québec. Questions : hello@outdoorintel.ca.',
+  },
+  privacyLink: { en: 'Privacy policy', fr: 'Politique de confidentialité' },
+  nowTitle: { en: 'What you get now (free and public)', fr: 'Ce que vous avez déjà (gratuit et public)' },
+  nowItems: {
+    en: [
+      'Cited Québec fishing zones 1–33, reproduced from the MELCCFP with source links and retrieval dates.',
+      'Waterbody and species search on the public regulations hub.',
+      'Zone pages stay public for everyone and for search engines — Season Intel does not paywall them.',
+    ],
+    fr: [
+      'Zones de pêche du Québec 1 à 33, citées du MELCCFP, avec liens sources et dates de récupération.',
+      'Recherche par plan d’eau et par espèce sur le carrefour public des règlements.',
+      'Les pages de zone restent publiques pour tout le monde et pour le référencement — Season Intel ne les met pas derrière un paywall.',
+    ],
+  },
+  regsCta: { en: 'Browse Québec fishing regulations →', fr: 'Voir les règlements de pêche du Québec →' },
+  comingTitle: { en: 'What’s coming (not live yet)', fr: 'Ce qui s’en vient (pas encore en ligne)' },
+  comingIntro: {
+    en: 'Ontario fishing and hunting seasons are not on Outdoor Intel today. The items below are the product direction, not current coverage.',
+    fr: 'La pêche ontarienne et les saisons de chasse ne sont pas sur Outdoor Intel aujourd’hui. Ce qui suit est la direction du produit, pas une couverture actuelle.',
+  },
+  comingItems: {
+    en: [
+      'Ontario fishing regulations, cited from the official authority when that harvest ships.',
+      'Hunting seasons for Québec and Ontario.',
+      'Change-alert emails when published MELCCFP (and later Ontario) rules change.',
+    ],
+    fr: [
+      'Règlements de pêche de l’Ontario, cités de l’autorité officielle lorsque cette collecte sera en ligne.',
+      'Saisons de chasse pour le Québec et l’Ontario.',
+      'Courriels d’alerte lorsque les règles publiées par le MELCCFP (puis l’Ontario) changent.',
+    ],
+  },
+  freeTitle: { en: 'What stays free', fr: 'Ce qui reste gratuit' },
+  freeItems: {
+    en: [
+      'Public fishing zone pages and the regulations hub, including search.',
+      'Amazon affiliate packing lists on free spot pages.',
+    ],
+    fr: [
+      'Les pages publiques de zones de pêche et le carrefour des règlements, y compris la recherche.',
+      'Les listes d’équipement d’affiliation Amazon sur les pages de spots gratuites.',
+    ],
+  },
+  notTitle: { en: 'Not a legal authority', fr: 'Pas une autorité juridique' },
+  notBody: {
+    en: 'Outdoor Intel is not a government agency and is not a legal authority. Regulation text is reproduced from cited sources, including the MELCCFP, and can change. Always verify with the MELCCFP — and with the Ontario authority when that coverage exists — before you fish or hunt. We do not replace official bag limits, seasons, or closures.',
+    fr: 'Outdoor Intel n’est pas un organisme gouvernemental et n’est pas une autorité juridique. Les textes réglementaires sont reproduits de sources citées, dont le MELCCFP, et peuvent changer. Vérifiez toujours auprès du MELCCFP — et auprès de l’autorité ontarienne lorsque cette couverture existera — avant de pêcher ou de chasser. Nous ne remplaçons pas les limites de prise, saisons ou fermetures officielles.',
+  },
+  contact: {
+    en: 'Questions: hello@outdoorintel.ca.',
+    fr: 'Questions : hello@outdoorintel.ca.',
+  },
+  breadcrumbHome: { en: 'Home', fr: 'Accueil' },
+};
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: T.breadcrumbHome[L], item: `${SITE}/` },
+    { '@type': 'ListItem', position: 2, name: T.h1[L], item: url },
+  ],
+};
+---
+<html lang={lang}>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#14251a">
+    <title>{T.title[L]} | Outdoor Intel</title>
+    <meta name="description" content={T.metaDesc[L]}>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href={url}>
+    <meta property="og:title" content={`${T.title[L]} | Outdoor Intel`}>
+    <meta property="og:description" content={T.metaDesc[L]}>
+    <meta property="og:url" content={url}>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Outdoor Intel">
+    <meta property="og:locale" content={lang === 'en' ? 'en_CA' : 'fr_CA'}>
+    <meta property="og:locale:alternate" content={lang === 'en' ? 'fr_CA' : 'en_CA'}>
+    <link rel="alternate" hreflang="en" href={`${SITE}/en/season-intel`}>
+    <link rel="alternate" hreflang="fr" href={`${SITE}/fr/season-intel`}>
+    <link rel="alternate" hreflang="x-default" href={`${SITE}/en/season-intel`}>
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbLd)}></script>
+    <link rel="stylesheet" href="/assets/css/site.css?v=1">
+    <Fragment set:html={`<!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8Q00962P"><\/script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QY8Q00962P');
+    <\/script>`} />
+    <Fragment set:html={`<style id="oi-ds">.explore-dropdown{visibility:hidden;opacity:0;transform:translateY(6px);transition:opacity .15s ease,transform .15s ease,visibility .15s}.explore-group:hover .explore-dropdown,.explore-group:focus-within .explore-dropdown{visibility:visible;opacity:1;transform:translateY(0)}<\/style>`} />
+</head>
+<body class="bg-[#fbfaf7] text-[#1c2b21] font-sans leading-relaxed">
+    <Header lang={lang} altHref={altHref} />
+    <main class="pt-[88px]">
+        <section class="bg-[#14251a] text-white py-16 px-6">
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+                <div>
+                    <span class="inline-block bg-white/90 text-[#3d7a4d] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5">{T.badge[L]}</span>
+                    <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">{T.h1[L]}</h1>
+                    <p class="text-white/85 text-lg mb-4">{T.lead[L]}</p>
+                    <p class="text-[#a2c99a] font-semibold">{T.price[L]}</p>
+                </div>
+                <div id="waitlist" class="bg-white text-[#1c2b21] rounded-xl p-6 border border-[#305e3c]/10">
+                    <h2 class="text-2xl font-bold text-[#305e3c] mb-2">{T.waitTitle[L]}</h2>
+                    <p class="text-sm text-[#5c6b5f] mb-5">{T.waitIntro[L]}</p>
+                    <form class="js-newsletter-form flex flex-col gap-3" data-lang={lang} data-source="season-intel" data-ok-msg={T.waitOk[L]}>
+                        <input type="email" name="email" required placeholder={T.emailPh[L]} autocomplete="email" class="w-full px-3 py-2 rounded-lg text-sm text-[#1c2b21] bg-[#fbfaf7] border border-[#305e3c]/20 placeholder-[#5c6b5f] outline-none focus:ring-2 focus:ring-[#a2c99a]">
+                        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-5000px">
+                        <button type="submit" class="bg-[#305e3c] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#3d7a4d] transition-colors">{T.waitBtn[L]}</button>
+                    </form>
+                    <p class="js-newsletter-msg text-[#5c6b5f] text-xs mt-2">{T.waitHint[L]}</p>
+                    <p class="text-xs text-[#5c6b5f] mt-4 leading-relaxed">
+                        {T.privacy[L]}
+                        <a href={privacyHref} class="text-[#305e3c] font-semibold hover:underline">{T.privacyLink[L]}</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-5xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-xl p-6 border border-[#305e3c]/10">
+                <h2 class="text-2xl font-bold text-[#305e3c] mb-4">{T.nowTitle[L]}</h2>
+                <ul class="space-y-3 text-[#1c2b21]">
+                    {T.nowItems[L].map(item => (
+                    <li>{item}</li>
+                    ))}
+                </ul>
+                <a href={regsHref} class="inline-block mt-6 text-[#3d7a4d] font-semibold hover:underline">{T.regsCta[L]}</a>
+            </div>
+            <div class="bg-white rounded-xl p-6 border border-[#305e3c]/10">
+                <h2 class="text-2xl font-bold text-[#305e3c] mb-4">{T.comingTitle[L]}</h2>
+                <p class="text-sm text-[#5c6b5f] mb-4">{T.comingIntro[L]}</p>
+                <ul class="space-y-3 text-[#1c2b21]">
+                    {T.comingItems[L].map(item => (
+                    <li>{item}</li>
+                    ))}
+                </ul>
+            </div>
+            <div class="bg-white rounded-xl p-6 border border-[#305e3c]/10">
+                <h2 class="text-2xl font-bold text-[#305e3c] mb-4">{T.freeTitle[L]}</h2>
+                <ul class="space-y-3 text-[#1c2b21]">
+                    {T.freeItems[L].map(item => (
+                    <li>{item}</li>
+                    ))}
+                </ul>
+            </div>
+            <div class="bg-white rounded-xl p-6 border border-[#305e3c]/10">
+                <h2 class="text-2xl font-bold text-[#305e3c] mb-4">{T.notTitle[L]}</h2>
+                <p class="text-[#1c2b21] leading-relaxed mb-4">{T.notBody[L]}</p>
+                <p class="text-sm text-[#5c6b5f]">{T.contact[L]}</p>
+            </div>
+        </section>
+    </main>
+    <Footer lang={lang} altHref={altHref} />
+    <Fragment set:html={`<script>
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('mobile-menu');
+if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        toggle.setAttribute('aria-expanded', !menu.classList.contains('hidden'));
+    });
+}
+<\/script>`} />
+    <GlobalSearch />
+    <script is:inline defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
