@@ -6,7 +6,7 @@
   "source": {
     "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=1",
     "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=1",
-    "fetched_at": "2026-08-08",
+    "fetched_at": "2026-09-01",
     "note": "Rule text reproduced verbatim from the authority. Always verify against the source before fishing."
   },
   "coverage": {
@@ -21,78 +21,6 @@
   },
   "general": {
     "fr": [
-      {
-        "period": null,
-        "species": "Limite de prise",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Espèce:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de prise:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "Du 1er avril 2026 au 31 mars 2027",
         "species": "Chevalier cuivré",
@@ -167,78 +95,6 @@
       }
     ],
     "en": [
-      {
-        "period": null,
-        "species": "Catch limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Species:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Catch limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "From April 1st, 2026 to March 31st, 2027",
         "species": "Atlantic salmon",
@@ -8627,7 +8483,7 @@
       "id_endro": 1506,
       "name": {
         "fr": "Rivière à Gagnon",
-        "en": "River à Gagnon"
+        "en": "Rivière à Gagnon"
       },
       "coordinates": {
         "lat": 48.46639,
@@ -8696,7 +8552,7 @@
       "id_endro": 3280,
       "name": {
         "fr": "- La partie comprise entre sa confluence avec la rivière Cascapédia",
-        "en": "- That part between its confluence with the Cascapedia River"
+        "en": "- La partie comprise entre sa confluence avec la rivière Cascapédia"
       },
       "coordinates": null,
       "rules": {
@@ -8762,7 +8618,7 @@
       "id_endro": 208,
       "name": {
         "fr": "b) entre le côté en aval du pont de la route 132",
-        "en": "b) between and the downstream side of the Highway 132 bridge"
+        "en": "b) entre le côté en aval du pont de la route 132"
       },
       "coordinates": {
         "lat": 48.07889,
@@ -8799,7 +8655,7 @@
       "id_endro": 209,
       "name": {
         "fr": "c) entre sa confluence avec le ruisseau Creux",
-        "en": "c) between its confluence with Creux brook"
+        "en": "c) entre sa confluence avec le ruisseau Creux"
       },
       "coordinates": {
         "lat": 48.19111,
@@ -8884,7 +8740,7 @@
       "id_endro": 11699,
       "name": {
         "fr": "b) entre le côté en aval des anciens ponts de la route 132",
-        "en": "b) between the downstream side of the old bridges of Route 132"
+        "en": "b) entre le côté en aval des anciens ponts de la route 132"
       },
       "coordinates": {
         "lat": 48.04694,
@@ -8903,7 +8759,7 @@
       "id_endro": 56,
       "name": {
         "fr": "c) entre la fosse du Malin",
-        "en": "c) between fosse du Malin"
+        "en": "c) entre la fosse du Malin"
       },
       "coordinates": {
         "lat": 48.10306,
@@ -9020,7 +8876,7 @@
       "id_endro": 57,
       "name": {
         "fr": "d) entre un point situé à 100 m en amont de la fosse à saumon Double Crossing",
-        "en": "d) between a point situated 100 m upstream from the Double Crossing salmon pool"
+        "en": "d) entre un point situé à 100 m en amont de la fosse à saumon Double Crossing"
       },
       "coordinates": null,
       "rules": {
@@ -9102,7 +8958,7 @@
       "id_endro": 63,
       "name": {
         "fr": "f) entre la limite sud de la réserve faunique des Chic-Chocs",
-        "en": "f) between the southern boundary of the Chic-Chocs Wildlife Sanctuary"
+        "en": "f) entre la limite sud de la réserve faunique des Chic-Chocs"
       },
       "coordinates": {
         "lat": 48.82472,
@@ -9171,7 +9027,7 @@
       "id_endro": 1499,
       "name": {
         "fr": "Rivière Branche de l'Est",
-        "en": "River Branche de l'Est"
+        "en": "Rivière Branche de l'Est"
       },
       "coordinates": {
         "lat": 48.59167,
@@ -9240,7 +9096,7 @@
       "id_endro": 1198,
       "name": {
         "fr": "entre son embouchure",
-        "en": "between its mouth"
+        "en": "entre son embouchure"
       },
       "coordinates": {
         "lat": 48.67278,
@@ -9309,7 +9165,7 @@
       "id_endro": 68,
       "name": {
         "fr": "b) entre le côté en aval des assises de l'ancien pont de la route 132 (correspondant à une droite reliant les points",
-        "en": "b) between the foundations of the old Highway 132 bridge (corresponding to a straight line connecting the points"
+        "en": "b) entre le côté en aval des assises de l'ancien pont de la route 132 (correspondant à une droite reliant les points"
       },
       "coordinates": null,
       "rules": {
@@ -9423,7 +9279,7 @@
       "id_endro": 69,
       "name": {
         "fr": "c) entre un point situé à 30 m en amont de la fosse à saumon Pineault",
-        "en": "c) between a point 30 m upstream from the Pineault salmon pool"
+        "en": "c) entre un point situé à 30 m en amont de la fosse à saumon Pineault"
       },
       "coordinates": null,
       "rules": {
@@ -9489,7 +9345,7 @@
       "id_endro": 70,
       "name": {
         "fr": "d) entre l'embouchure du ruisseau Bascon",
-        "en": "d) between the mouth of the Bascon brook"
+        "en": "d) entre l'embouchure du ruisseau Bascon"
       },
       "coordinates": {
         "lat": 48.82972,
@@ -9558,7 +9414,7 @@
       "id_endro": 73,
       "name": {
         "fr": "b) entre les ponts Gérard-D.-Lévesque situés à Cascapédia-Saint-Jules et la chute du Dix-septième mille",
-        "en": "b) between Gérard-D.-Lévesque bridges located Cascapédia-Saint-Jules and the Dix-septième mille waterfall"
+        "en": "b) entre les ponts Gérard-D.-Lévesque situés à Cascapédia-Saint-Jules et la chute du Dix-septième mille"
       },
       "coordinates": null,
       "rules": {
@@ -9640,7 +9496,7 @@
       "id_endro": 76,
       "name": {
         "fr": "c) entre la chute du Dix-septième mille",
-        "en": "c) between the fall of Dix-septième mile"
+        "en": "c) entre la chute du Dix-septième mille"
       },
       "coordinates": null,
       "rules": {
@@ -9656,7 +9512,7 @@
       "id_endro": 212,
       "name": {
         "fr": "b) entre le côté en aval du pont de la route 132",
-        "en": "b) between the downstream side of the Highway 132 bridge"
+        "en": "b) entre le côté en aval du pont de la route 132"
       },
       "coordinates": {
         "lat": 48.35389,
@@ -9693,7 +9549,7 @@
       "id_endro": 213,
       "name": {
         "fr": "c) entre une ligne perpendiculaire au courant située à 50 m en amont de la fosse à saumon Martel",
-        "en": "c) between a straight line perpendicular to the current situated 50 m upstream from the Martel salmon pool"
+        "en": "c) entre une ligne perpendiculaire au courant située à 50 m en amont de la fosse à saumon Martel"
       },
       "coordinates": {
         "lat": 48.46472,
@@ -9778,7 +9634,7 @@
       "id_endro": 87,
       "name": {
         "fr": "b) entre le côté en aval du pont Bouchard, à Corte-Real, et la fin du secteur 6",
-        "en": "b) between the downstream side of the Bouchard bridge at Corte-Real, and the end of sector 6"
+        "en": "b) entre le côté en aval du pont Bouchard, à Corte-Real, et la fin du secteur 6"
       },
       "coordinates": null,
       "rules": {
@@ -9860,7 +9716,7 @@
       "id_endro": 3281,
       "name": {
         "fr": "c) entre la fin du secteur 6",
-        "en": "c) between the end of sector 6"
+        "en": "c) entre la fin du secteur 6"
       },
       "coordinates": {
         "lat": 49.02889,
@@ -9945,7 +9801,7 @@
       "id_endro": 89,
       "name": {
         "fr": "d) entre la fin du secteur 7",
-        "en": "d) between the end of sector 7"
+        "en": "d) entre la fin du secteur 7"
       },
       "coordinates": {
         "lat": 49.03278,
@@ -9964,7 +9820,7 @@
       "id_endro": 94,
       "name": {
         "fr": "b) entre le côté en aval du pont de la route 132 et l'embouchure du ruisseau Laroche",
-        "en": "b) between the downstream side of the Highway 132 bridge and the mouth of Laroche Brook"
+        "en": "b) entre le côté en aval du pont de la route 132 et l'embouchure du ruisseau Laroche"
       },
       "coordinates": {
         "lat": 48.31667,
@@ -9983,7 +9839,7 @@
       "id_endro": 95,
       "name": {
         "fr": "c) entre l'embouchure du ruisseau Laroche",
-        "en": "c) between the mouth of Laroche Brook"
+        "en": "c) entre l'embouchure du ruisseau Laroche"
       },
       "coordinates": {
         "lat": 48.31667,
@@ -10052,7 +9908,7 @@
       "id_endro": 98,
       "name": {
         "fr": "b) entre le côté en aval du pont de la route 132 et un point situé aux Grosses Chutes",
-        "en": "b) between the downstream side of the Highway 132 bridge and a point situated at Grosses Chutes"
+        "en": "b) entre le côté en aval du pont de la route 132 et un point situé aux Grosses Chutes"
       },
       "coordinates": {
         "lat": 48.40444,
@@ -10233,7 +10089,7 @@
       "id_endro": 99,
       "name": {
         "fr": "c) entre un point situé aux Grosses Chutes",
-        "en": "c) between a point situated at Grosses Chutes"
+        "en": "c) entre un point situé aux Grosses Chutes"
       },
       "coordinates": {
         "lat": 48.40444,
@@ -10302,7 +10158,7 @@
       "id_endro": 230,
       "name": {
         "fr": "b) entre le côté en aval du pont de la route 132 et l'embouchure du ruisseau du 18 milles",
-        "en": "b) between the downstream side of the Highway 132 bridge and the mouth of 18-mile brook"
+        "en": "b) entre le côté en aval du pont de la route 132 et l'embouchure du ruisseau du 18 milles"
       },
       "coordinates": {
         "lat": 48.47,
@@ -10611,7 +10467,7 @@
       "id_endro": 232,
       "name": {
         "fr": "c) entre l'embouchure du ruisseau du 18 milles",
-        "en": "c) between the mouth of 18-mile brook"
+        "en": "c) entre l'embouchure du ruisseau du 18 milles"
       },
       "coordinates": {
         "lat": 48.47,
@@ -10696,7 +10552,7 @@
       "id_endro": 1497,
       "name": {
         "fr": "Rivière Grande Rivière Est",
-        "en": "River Grande Rivière Est"
+        "en": "Rivière Grande Rivière Est"
       },
       "coordinates": {
         "lat": 48.49583,
@@ -10715,7 +10571,7 @@
       "id_endro": 1498,
       "name": {
         "fr": "Rivière Grande Rivière Nord",
-        "en": "River Grande Rivière Nord"
+        "en": "Rivière Grande Rivière Nord"
       },
       "coordinates": {
         "lat": 48.5925,
@@ -10784,7 +10640,7 @@
       "id_endro": 1507,
       "name": {
         "fr": "Rivière Grande Rivière Ouest",
-        "en": "River Grande Rivière Ouest"
+        "en": "Rivière Grande Rivière Ouest"
       },
       "coordinates": {
         "lat": 48.45583,
@@ -10853,7 +10709,7 @@
       "id_endro": 102,
       "name": {
         "fr": "b) entre un point situé à 25 m en aval de la barrière de rétention",
-        "en": "b) between a point 25 m downstream from the fish barrier"
+        "en": "b) entre un point situé à 25 m en aval de la barrière de rétention"
       },
       "coordinates": {
         "lat": 48.53361,
@@ -10938,7 +10794,7 @@
       "id_endro": 11719,
       "name": {
         "fr": "a) entre une droite passant par le Cap de la Madeleine au point",
-        "en": "a) between a straight line passing through Cap de la Madeleine at point"
+        "en": "a) entre une droite passant par le Cap de la Madeleine au point"
       },
       "coordinates": null,
       "rules": {
@@ -10954,7 +10810,7 @@
       "id_endro": 132,
       "name": {
         "fr": "c) entre une droite passant par un point situé à 23 m en aval de l'entrée inférieure de la passe migratoire de la rivière Madeleine et l'embouchure du ruisseau Tremblay",
-        "en": "c) between a straight line passing through a point situated 23 m downstream of the lower entrance of the Madeleine River fishway and the mouth of Tremblay brook"
+        "en": "c) entre une droite passant par un point situé à 23 m en aval de l'entrée inférieure de la passe migratoire de la rivière Madeleine et l'embouchure du ruisseau Tremblay"
       },
       "coordinates": {
         "lat": 49.18917,
@@ -11023,7 +10879,7 @@
       "id_endro": 135,
       "name": {
         "fr": "d) entre l'embouchure du ruisseau Tremblay",
-        "en": "d) between the mouth of Tremblay brook"
+        "en": "d) entre l'embouchure du ruisseau Tremblay"
       },
       "coordinates": {
         "lat": 49.18917,
@@ -11042,7 +10898,7 @@
       "id_endro": 142,
       "name": {
         "fr": "e) entre la limite sud du canton La Rivière",
-        "en": "e) between the southern limit of the La Rivière township"
+        "en": "e) entre la limite sud du canton La Rivière"
       },
       "coordinates": {
         "lat": 48.97278,
@@ -11287,7 +11143,7 @@
       "id_endro": 145,
       "name": {
         "fr": "a) entre le côté en aval du pont du CN, le côté en aval du pont de la rue de la plage (pont de la Crevette Rose",
-        "en": "a) between the downstream side of the rue de la Plage bridge (de la Crevette Rose bridge"
+        "en": "a) entre le côté en aval du pont du CN, le côté en aval du pont de la rue de la plage (pont de la Crevette Rose"
       },
       "coordinates": {
         "lat": 48.58222,
@@ -11436,7 +11292,7 @@
       "id_endro": 151,
       "name": {
         "fr": "a) la partie comprise entre le côté en aval du pont de la route 132",
-        "en": "a) that part between the downstream side of the Highway 132 bridge"
+        "en": "a) la partie comprise entre le côté en aval du pont de la route 132"
       },
       "coordinates": null,
       "rules": {
@@ -11614,7 +11470,7 @@
       "id_endro": 153,
       "name": {
         "fr": "b) la partie comprise entre une droite passant par un point situé à 45 m en aval du barrage Mathieu-d'Amours",
-        "en": "b) that part between a straight line passing through a point 45 m downstream from the Mathieu-d'Amours dam"
+        "en": "b) la partie comprise entre une droite passant par un point situé à 45 m en aval du barrage Mathieu-d'Amours"
       },
       "coordinates": null,
       "rules": {
@@ -11792,7 +11648,7 @@
       "id_endro": 154,
       "name": {
         "fr": "c) la partie comprise entre le barrage Mathieu-d'Amours",
-        "en": "c) that part between the Mathieu-d'Amours dam"
+        "en": "c) la partie comprise entre le barrage Mathieu-d'Amours"
       },
       "coordinates": null,
       "rules": {
@@ -11826,7 +11682,7 @@
       "id_endro": 12079,
       "name": {
         "fr": "d) la partie de la fosse Cap Seize comprise entre une droite joignant le point",
-        "en": "d) that part of the Cap Seize pool between a straight line joining the point"
+        "en": "d) la partie de la fosse Cap Seize comprise entre une droite joignant le point"
       },
       "coordinates": null,
       "rules": {
@@ -11842,7 +11698,7 @@
       "id_endro": 156,
       "name": {
         "fr": "e) la partie de la fosse Cap Seize comprise entre une droite joignant le point",
-        "en": "e) that part of Cap Seize pool between a straight line joining the point"
+        "en": "e) la partie de la fosse Cap Seize comprise entre une droite joignant le point"
       },
       "coordinates": {
         "lat": 48.64583,
@@ -11861,7 +11717,7 @@
       "id_endro": 166,
       "name": {
         "fr": "f) la partie comprise entre une droite joignant le point",
-        "en": "f) that part between a straight line joining the point"
+        "en": "f) la partie comprise entre une droite joignant le point"
       },
       "coordinates": {
         "lat": 48.64583,
@@ -12042,7 +11898,7 @@
       "id_endro": 167,
       "name": {
         "fr": "g) la partie comprise entre une droite passant par un point situé à 180 m en aval de l'embouchure de la rivière Bonjour",
-        "en": "g) that part between a straight line passing through a point 180 m downstream from the mouth of the rivière Bonjour"
+        "en": "g) la partie comprise entre une droite passant par un point situé à 180 m en aval de l'embouchure de la rivière Bonjour"
       },
       "coordinates": null,
       "rules": {
@@ -12124,7 +11980,7 @@
       "id_endro": 170,
       "name": {
         "fr": "a) entre la ligne de confluence avec la rivière Ristigouche",
-        "en": "a) between the line of confluence with the rivière Ristigouche"
+        "en": "a) entre la ligne de confluence avec la rivière Ristigouche"
       },
       "coordinates": null,
       "rules": {
@@ -12622,7 +12478,7 @@
       "id_endro": 171,
       "name": {
         "fr": "b) entre une droite perpendiculaire au courant située à 50 m en amont de son embouchure passant par le point",
-        "en": "b) between a line perpendicular to the current 50 m upstream from its mouth passing through the point"
+        "en": "b) entre une droite perpendiculaire au courant située à 50 m en amont de son embouchure passant par le point"
       },
       "coordinates": null,
       "rules": {
@@ -12656,7 +12512,7 @@
       "id_endro": 172,
       "name": {
         "fr": "c) entre le côté en aval du pont du CN à Millstream",
-        "en": "c) between the downstream side of the CN railway bridge at Millstream"
+        "en": "c) entre le côté en aval du pont du CN à Millstream"
       },
       "coordinates": null,
       "rules": {
@@ -12802,7 +12658,7 @@
       "id_endro": 205,
       "name": {
         "fr": "d) entre le côté en aval du pont de Causapscal",
-        "en": "d) between the downstream side of the Causapscal bridge"
+        "en": "d) entre le côté en aval du pont de Causapscal"
       },
       "coordinates": null,
       "rules": {
@@ -12818,7 +12674,7 @@
       "id_endro": 217,
       "name": {
         "fr": "b) entre le côté en aval du pont de la route 132",
-        "en": "b) between the downstream side of the Highway 132 bridge"
+        "en": "b) entre le côté en aval du pont de la route 132"
       },
       "coordinates": null,
       "rules": {
@@ -12916,7 +12772,7 @@
       "id_endro": 218,
       "name": {
         "fr": "c) entre la limite en amont de la propriété des Immeubles Boisbrillant",
-        "en": "c) between the farthest upstream limit of the Immeubles Boisbrillant property"
+        "en": "c) entre la limite en amont de la propriété des Immeubles Boisbrillant"
       },
       "coordinates": {
         "lat": 48.62,
@@ -13001,7 +12857,7 @@
       "id_endro": 219,
       "name": {
         "fr": "d) entre le barrage de la Mitis-2",
-        "en": "d) between the Mitis-2 dam"
+        "en": "d) entre le barrage de la Mitis-2"
       },
       "coordinates": null,
       "rules": {
@@ -13035,7 +12891,7 @@
       "id_endro": 50,
       "name": {
         "fr": "entre le côté en aval du pont de la rue de la plage (pont de la Crevette Rose",
-        "en": "between the downstream side of the rue de la Plage bridge (de la Crevette Rose bridge"
+        "en": "entre le côté en aval du pont de la rue de la plage (pont de la Crevette Rose"
       },
       "coordinates": {
         "lat": 48.58222,
@@ -13152,7 +13008,7 @@
       "id_endro": 224,
       "name": {
         "fr": "b) entre un point situé à 25 m en amont de l'embouchure de la Petite rivière Nouvelle",
-        "en": "b) between a point situated 25 m upstream from the mouth of Petite rivière Nouvelle"
+        "en": "b) entre un point situé à 25 m en amont de l'embouchure de la Petite rivière Nouvelle"
       },
       "coordinates": {
         "lat": 48.30222,
@@ -13221,7 +13077,7 @@
       "id_endro": 3171,
       "name": {
         "fr": "entre son embouchure",
-        "en": "between its mouth"
+        "en": "entre son embouchure"
       },
       "coordinates": {
         "lat": 48.36722,
@@ -13274,7 +13130,7 @@
       "id_endro": 84,
       "name": {
         "fr": "entre l'embouchure du ruisseau des Six Milles",
-        "en": "between the mouth of the Six Miles brook"
+        "en": "entre l'embouchure du ruisseau des Six Milles"
       },
       "coordinates": {
         "lat": 48.71639,
@@ -13343,7 +13199,7 @@
       "id_endro": 3172,
       "name": {
         "fr": "entre son embouchure",
-        "en": "between its mouth"
+        "en": "entre son embouchure"
       },
       "coordinates": {
         "lat": 48.36694,
@@ -13412,7 +13268,7 @@
       "id_endro": 79,
       "name": {
         "fr": "b) entre le côté en aval du pont de la route 132 et un point représentant le prolongement de la ligne de division des rangs V et VI du canton de New Richmond correspondant à la limite en aval de la zec Petite rivière Cascapédia",
-        "en": "b) between the downstream side of the Highway 132 and a point representing the extension of the limit line of rangs V and VI of the Township of New Richmond corresponding to the downstream boundary of Zec Petite rivière Cascapédia (48° 12'57\" N"
+        "en": "b) entre le côté en aval du pont de la route 132 et un point représentant le prolongement de la ligne de division des rangs V et VI du canton de New Richmond correspondant à la limite en aval de la zec Petite rivière Cascapédia"
       },
       "coordinates": {
         "lat": 48.21583,
@@ -13529,7 +13385,7 @@
       "id_endro": 80,
       "name": {
         "fr": "c) entre un point représentant le prolongement de la ligne de division des rangs V et VI du canton de New Richmond correspondant à la limite en aval de la zec Petite rivière Cascapédia",
-        "en": "c) between a point representing the extension of the limit line of rangs V and VI of the Township of New Richmond corresponding to the downstream boundary of Zec Petite rivière Cascapédia"
+        "en": "c) entre un point représentant le prolongement de la ligne de division des rangs V et VI du canton de New Richmond correspondant à la limite en aval de la zec Petite rivière Cascapédia"
       },
       "coordinates": {
         "lat": 48.21583,
@@ -13614,7 +13470,7 @@
       "id_endro": 1527,
       "name": {
         "fr": "entre son embouchure",
-        "en": "between its mouth"
+        "en": "entre son embouchure"
       },
       "coordinates": {
         "lat": 48.30222,
@@ -13683,7 +13539,7 @@
       "id_endro": 51,
       "name": {
         "fr": "entre le côté en aval du pont de la rue de la plage (pont de la Crevette Rose",
-        "en": "between the downstream side of the rue de la Plage bridge (de la Crevette Rose bridge"
+        "en": "entre le côté en aval du pont de la rue de la plage (pont de la Crevette Rose"
       },
       "coordinates": {
         "lat": 48.58222,
@@ -13800,7 +13656,7 @@
       "id_endro": 246,
       "name": {
         "fr": "Rivière Port-Daniel du Milieu",
-        "en": "River Port-Daniel du Milieu"
+        "en": "Rivière Port-Daniel du Milieu"
       },
       "coordinates": {
         "lat": 48.19694,
@@ -13819,7 +13675,7 @@
       "id_endro": 242,
       "name": {
         "fr": "b) entre le pont de la rivière Port-Daniel (rang VI) et la barrière d'arrêt située au point",
-        "en": "b) between the rivière Port-Daniel bridge (Rang VI) and the fish barrier at point"
+        "en": "b) entre le pont de la rivière Port-Daniel (rang VI) et la barrière d'arrêt située au point"
       },
       "coordinates": {
         "lat": 48.25111,
@@ -13856,7 +13712,7 @@
       "id_endro": 243,
       "name": {
         "fr": "c) entre la barrière d'arrêt au point",
-        "en": "c) between the fish barrier at point"
+        "en": "c) entre la barrière d'arrêt au point"
       },
       "coordinates": {
         "lat": 48.25111,
@@ -13925,7 +13781,7 @@
       "id_endro": 251,
       "name": {
         "fr": "a) entre une ligne transversale reliant les deux rives, de la Coulée Ferguson au Québec au Ruisseau Copeland au Nouveau- Brunswick et le pont du CN à Matapédia",
-        "en": "a) between a line running from one bank to the other from Coulée Ferguson in Québec to Ruisseau Copeland in New Brunswick and the CN railway bridge at Matapédia"
+        "en": "a) entre une ligne transversale reliant les deux rives, de la Coulée Ferguson au Québec au Ruisseau Copeland au Nouveau- Brunswick et le pont du CN à Matapédia"
       },
       "coordinates": null,
       "rules": {
@@ -13941,7 +13797,7 @@
       "id_endro": 253,
       "name": {
         "fr": "b) entre le pont du CN à Matapédia",
-        "en": "b) between the CN railway bridge at Matapédia"
+        "en": "b) entre le pont du CN à Matapédia"
       },
       "coordinates": null,
       "rules": {
@@ -14135,7 +13991,7 @@
       "id_endro": 264,
       "name": {
         "fr": "entre sa confluence avec la rivière Sainte-Anne",
-        "en": "between its confluence with the Sainte-Anne River"
+        "en": "entre sa confluence avec la rivière Sainte-Anne"
       },
       "coordinates": {
         "lat": 48.94861,
@@ -14154,7 +14010,7 @@
       "id_endro": 259,
       "name": {
         "fr": "b) entre le côté en aval du pont de la route 132 et la limite nord du parc national de la Gaspésie",
-        "en": "b) between the downstream side of the Highway 132 bridge and the northern limit of the parc national de la Gaspésie"
+        "en": "b) entre le côté en aval du pont de la route 132 et la limite nord du parc national de la Gaspésie"
       },
       "coordinates": {
         "lat": 48.9825,
@@ -14271,7 +14127,7 @@
       "id_endro": 261,
       "name": {
         "fr": "c) entre la limite nord du parc national de la Gaspésie",
-        "en": "c) between the northern limit of the parc national de la Gaspésie"
+        "en": "c) entre la limite nord du parc national de la Gaspésie"
       },
       "coordinates": {
         "lat": 48.9825,
@@ -14290,7 +14146,7 @@
       "id_endro": 267,
       "name": {
         "fr": "a) entre une droite joignant la limite de séparation des lots 1 et D (rang 1, Haldimand), à la limite de séparation des lots 12 et 13 (rang Nord-Ouest-de-la-Ville), correspondant à une droite joignant les points",
-        "en": "a) between a line drawn across the river from the boundary separating lots 1 and D (Rang 1, Haldimand) to the boundary separating lots 12 and 13 (Rang Nord-Ouest-de-la-Ville), corresponding to a straight line joining points"
+        "en": "a) entre une droite joignant la limite de séparation des lots 1 et D (rang 1, Haldimand), à la limite de séparation des lots 12 et 13 (rang Nord-Ouest-de-la-Ville), correspondant à une droite joignant les points"
       },
       "coordinates": null,
       "rules": {
@@ -14404,7 +14260,7 @@
       "id_endro": 268,
       "name": {
         "fr": "b) entre la limite de séparation des cantons York et Douglas, correspondant à une droite joignant les points",
-        "en": "b) between the boundary separating York and Douglas townships, corresponding to a straight line joining points"
+        "en": "b) entre la limite de séparation des cantons York et Douglas, correspondant à une droite joignant les points"
       },
       "coordinates": {
         "lat": 48.77167,
@@ -14489,7 +14345,7 @@
       "id_endro": 12239,
       "name": {
         "fr": "c) entre l'embouchure du ruisseau Sirois",
-        "en": "c) between the mouth of the Sirois brook"
+        "en": "c) entre l'embouchure du ruisseau Sirois"
       },
       "coordinates": null,
       "rules": {
@@ -14505,7 +14361,7 @@
       "id_endro": 269,
       "name": {
         "fr": "d) entre l'embouchure de la rivière Saint-Jean Sud",
-        "en": "d) between the mouth of the Saint-Jean South River"
+        "en": "d) entre l'embouchure de la rivière Saint-Jean Sud"
       },
       "coordinates": {
         "lat": 48.71833,
@@ -14590,7 +14446,7 @@
       "id_endro": 273,
       "name": {
         "fr": "a) entre le côté en aval du pont de la route 132 et une ligne joignant la limite de séparation des lots 22 et 23",
-        "en": "a) between the downstream side of the Highway 132 bridge and a line drawn across the river joining the boundary separating lots 22 and 23"
+        "en": "a) entre le côté en aval du pont de la route 132 et une ligne joignant la limite de séparation des lots 22 et 23"
       },
       "coordinates": {
         "lat": 48.83083,
@@ -14819,7 +14675,7 @@
       "id_endro": 275,
       "name": {
         "fr": "b) entre une ligne joignant la limite de séparation des lots 22 et 23",
-        "en": "b) between a line drawn across the river from the boundary separating lots 22 and 23"
+        "en": "b) entre une ligne joignant la limite de séparation des lots 22 et 23"
       },
       "coordinates": {
         "lat": 48.83083,
@@ -16232,7 +16088,7 @@
       "id_endro": 277,
       "name": {
         "fr": "c.1) entre le côté en aval du pont de Wakeham et l'embouchure du ruisseau Patch",
-        "en": "c.1) between the downstream side of the Wakeham bridge and the mouth of the Patch stream"
+        "en": "c.1) entre le côté en aval du pont de Wakeham et l'embouchure du ruisseau Patch"
       },
       "coordinates": {
         "lat": 48.92694,
@@ -16251,7 +16107,7 @@
       "id_endro": 279,
       "name": {
         "fr": "c.2) entre l'embouchure du ruisseau Patch",
-        "en": "c.2) between the mouth of Patch brook"
+        "en": "c.2) entre l'embouchure du ruisseau Patch"
       },
       "coordinates": {
         "lat": 48.92694,
@@ -16270,7 +16126,7 @@
       "id_endro": 280,
       "name": {
         "fr": "d) entre l'embouchure du ruisseau Castor",
-        "en": "d) between the mouth of Castor brook"
+        "en": "d) entre l'embouchure du ruisseau Castor"
       },
       "coordinates": {
         "lat": 48.88806,
@@ -16355,7 +16211,7 @@
       "id_endro": 1504,
       "name": {
         "fr": "(tributaire du ruisseau Malbaie)",
-        "en": "(tributary of Ruisseau Malbaie)"
+        "en": "(tributaire du ruisseau Malbaie)"
       },
       "coordinates": {
         "lat": 48.53,
@@ -16374,7 +16230,7 @@
       "id_endro": 2657,
       "name": {
         "fr": "a) entre sa confluence avec la rivière Cascapédia et la limite de la réserve faunique de Dunière",
-        "en": "a) between its confluence with the Cascapedia river and the limit of the Dunière wildlife reserve"
+        "en": "a) entre sa confluence avec la rivière Cascapédia et la limite de la réserve faunique de Dunière"
       },
       "coordinates": {
         "lat": 48.64306,
@@ -16393,7 +16249,7 @@
       "id_endro": 2658,
       "name": {
         "fr": "b) entre la limite de la réserve faunique de Dunière",
-        "en": "b) between the limit of the Dunière wildlife reserve"
+        "en": "b) entre la limite de la réserve faunique de Dunière"
       },
       "coordinates": {
         "lat": 48.64306,
@@ -16478,7 +16334,7 @@
       "id_endro": 1501,
       "name": {
         "fr": "Ruisseau Malbaie",
-        "en": "Brook Malbaie"
+        "en": "Ruisseau Malbaie"
       },
       "coordinates": {
         "lat": 48.51806,
@@ -16515,7 +16371,7 @@
       "id_endro": 10459,
       "name": {
         "fr": "Plan d’eau réglementé #10459 (voir la source)",
-        "en": "Regulated waterbody #10459 (see source)"
+        "en": "Plan d’eau réglementé #10459 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -16531,7 +16387,7 @@
       "id_endro": 41,
       "name": {
         "fr": "Plan d’eau réglementé #41 (voir la source)",
-        "en": "Regulated waterbody #41 (see source)"
+        "en": "Plan d’eau réglementé #41 (voir la source)"
       },
       "coordinates": null,
       "rules": {

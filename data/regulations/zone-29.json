@@ -6,7 +6,7 @@
   "source": {
     "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=29",
     "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=29",
-    "fetched_at": "2026-08-08",
+    "fetched_at": "2026-09-01",
     "note": "Rule text reproduced verbatim from the authority. Always verify against the source before fishing."
   },
   "coverage": {
@@ -21,78 +21,6 @@
   },
   "general": {
     "fr": [
-      {
-        "period": null,
-        "species": "Limite de prise",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Espèce:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de prise:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "Du 1er avril 2026 au 31 mars 2027",
         "species": "Anguille d'Amérique",
@@ -247,78 +175,6 @@
       }
     ],
     "en": [
-      {
-        "period": null,
-        "species": "Catch limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Species:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Catch limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "From April 1st, 2026 to March 31st, 2027",
         "species": "American eel",
@@ -2345,7 +2201,7 @@
       "id_endro": 2232,
       "name": {
         "fr": "La partie du lac McConnell comprise entre une droite reliant le point",
-        "en": "That part of McConnell Lake between a straight line connecting"
+        "en": "La partie du lac McConnell comprise entre une droite reliant le point"
       },
       "coordinates": null,
       "rules": {
@@ -2361,7 +2217,7 @@
       "id_endro": 1910,
       "name": {
         "fr": "Plan d’eau réglementé #1910 (voir la source)",
-        "en": "Regulated waterbody #1910 (see source)"
+        "en": "Plan d’eau réglementé #1910 (voir la source)"
       },
       "coordinates": null,
       "rules": {

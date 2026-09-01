@@ -6,7 +6,7 @@
   "source": {
     "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=13",
     "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=13",
-    "fetched_at": "2026-08-08",
+    "fetched_at": "2026-09-01",
     "note": "Rule text reproduced verbatim from the authority. Always verify against the source before fishing."
   },
   "coverage": {
@@ -21,78 +21,6 @@
   },
   "general": {
     "fr": [
-      {
-        "period": null,
-        "species": "Limite de prise",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Espèce:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de prise:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "Du 1er avril 2026 au 31 mars 2027",
         "species": "Chevalier cuivré",
@@ -183,78 +111,6 @@
       }
     ],
     "en": [
-      {
-        "period": null,
-        "species": "Catch limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Species:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Catch limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "From April 1st, 2026 to March 31st, 2027",
         "species": "Copper redhorse",
@@ -4234,7 +4090,7 @@
       "id_endro": 2677,
       "name": {
         "fr": "Lac Hoswart",
-        "en": "Lake Hoswart"
+        "en": "Lac Hoswart"
       },
       "coordinates": {
         "lat": 48.65,
@@ -4253,7 +4109,7 @@
       "id_endro": 2667,
       "name": {
         "fr": "Plan d’eau réglementé #2667 (voir la source)",
-        "en": "Regulated waterbody #2667 (see source)"
+        "en": "Plan d’eau réglementé #2667 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -4287,7 +4143,7 @@
       "id_endro": 740,
       "name": {
         "fr": "Plan d’eau réglementé #740 (voir la source)",
-        "en": "Regulated waterbody #740 (see source)"
+        "en": "Plan d’eau réglementé #740 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -4529,7 +4385,7 @@
       "id_endro": 2672,
       "name": {
         "fr": "Plan d’eau réglementé #2672 (voir la source)",
-        "en": "Regulated waterbody #2672 (see source)"
+        "en": "Plan d’eau réglementé #2672 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -4545,7 +4401,7 @@
       "id_endro": 2684,
       "name": {
         "fr": "Plan d’eau réglementé #2684 (voir la source)",
-        "en": "Regulated waterbody #2684 (see source)"
+        "en": "Plan d’eau réglementé #2684 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -4561,7 +4417,7 @@
       "id_endro": 2681,
       "name": {
         "fr": "Plan d’eau réglementé #2681 (voir la source)",
-        "en": "Regulated waterbody #2681 (see source)"
+        "en": "Plan d’eau réglementé #2681 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -4577,7 +4433,7 @@
       "id_endro": 2686,
       "name": {
         "fr": "Plan d’eau réglementé #2686 (voir la source)",
-        "en": "Regulated waterbody #2686 (see source)"
+        "en": "Plan d’eau réglementé #2686 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -4593,7 +4449,7 @@
       "id_endro": 10259,
       "name": {
         "fr": "Plan d’eau réglementé #10259 (voir la source)",
-        "en": "Regulated waterbody #10259 (see source)"
+        "en": "Plan d’eau réglementé #10259 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -4609,7 +4465,7 @@
       "id_endro": 2697,
       "name": {
         "fr": "Plan d’eau réglementé #2697 (voir la source)",
-        "en": "Regulated waterbody #2697 (see source)"
+        "en": "Plan d’eau réglementé #2697 (voir la source)"
       },
       "coordinates": null,
       "rules": {

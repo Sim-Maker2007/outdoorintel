@@ -6,7 +6,7 @@
   "source": {
     "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=7",
     "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=7",
-    "fetched_at": "2026-08-08",
+    "fetched_at": "2026-09-01",
     "note": "Rule text reproduced verbatim from the authority. Always verify against the source before fishing."
   },
   "coverage": {
@@ -21,78 +21,6 @@
   },
   "general": {
     "fr": [
-      {
-        "period": null,
-        "species": "Limite de prise",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Espèce:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de prise:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "Du 1er avril 2026 au 31 mars 2027",
         "species": "Bar rayé",
@@ -247,78 +175,6 @@
       }
     ],
     "en": [
-      {
-        "period": null,
-        "species": "Catch limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Species:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Catch limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "From April 1st, 2026 to March 31st, 2027",
         "species": "Atlantic salmon",
@@ -7131,11 +6987,11 @@
       "id_endro": 2507,
       "name": {
         "fr": "Fleuve Saint-Laurent (aire faunique communautaire du lac Saint-Pierre) b) Secteur du Chenal aux Corbeaux, entre une ligne reliant l'extrémité sud-ouest de l'île à la Pierre",
-        "en": "River Saint Laurent (communal wildlife area of lac Saint-Pierre) b) Sector Chenal aux Corbeaux sector, between the line linking the southwestern tip of île à la Pierre"
+        "en": "Fleuve Saint-Laurent (aire faunique communautaire du lac Saint-Pierre) b) Secteur du Chenal aux Corbeaux, entre une ligne reliant l'extrémité sud-ouest de l'île à la Pierre"
       },
       "coordinates": {
-        "lat": 46.07861,
-        "lng": -73.03028
+        "lat": 46.50083,
+        "lng": -72.24556
       },
       "rules": {
         "fr": [
@@ -7392,11 +7248,11 @@
       "id_endro": 2099,
       "name": {
         "fr": "Fleuve Saint-Laurent (aire faunique communautaire du lac Saint-Pierre) c) Secteur du Petit barrage entre l'île Ronde et l'île Madame, entre une ligne perpendiculaire à l'île Madame",
-        "en": "River Saint Laurent (communal wildlife area of lac Saint-Pierre) c) Sector Petit barrage sector between île Ronde and île Madame, between a line perpendicular to île Madame"
+        "en": "Fleuve Saint-Laurent (aire faunique communautaire du lac Saint-Pierre) c) Secteur du Petit barrage entre l'île Ronde et l'île Madame, entre une ligne perpendiculaire à l'île Madame"
       },
       "coordinates": {
-        "lat": 46.08083,
-        "lng": -73.08778
+        "lat": 46.50083,
+        "lng": -72.24556
       },
       "rules": {
         "fr": [],
@@ -7411,11 +7267,11 @@
       "id_endro": 2508,
       "name": {
         "fr": "Fleuve Saint-Laurent (aire faunique communautaire du lac Saint-Pierre) d) Secteur du Grand barrage entre l'île Ronde et l'île de Grâce, entre une ligne reliant les extrémités sud-ouest de l'île de Grâce",
-        "en": "River Saint Laurent (communal wildlife area of lac Saint-Pierre) d) Sector Grand barrage sector between île Ronde and île de Grâce, between a line linking the southwestern tips of île de Grâce"
+        "en": "Fleuve Saint-Laurent (aire faunique communautaire du lac Saint-Pierre) d) Secteur du Grand barrage entre l'île Ronde et l'île de Grâce, entre une ligne reliant les extrémités sud-ouest de l'île de Grâce"
       },
       "coordinates": {
-        "lat": 46.06944,
-        "lng": -73.06417
+        "lat": 46.50083,
+        "lng": -72.24556
       },
       "rules": {
         "fr": [
@@ -7656,9 +7512,12 @@
       "id_endro": 11499,
       "name": {
         "fr": "Fleuve Saint-Laurent (aire faunique communautaire du lac Saint-Pierre) e) Secteur du Refuge faunique de Pointe-du-Lac (secteur compris entre les points",
-        "en": "River Saint Laurent (communal wildlife area of lac Saint-Pierre) e) Pointe-du-Lac Wildlife Refuge area (area between points"
+        "en": "Fleuve Saint-Laurent (aire faunique communautaire du lac Saint-Pierre) e) Secteur du Refuge faunique de Pointe-du-Lac (secteur compris entre les points"
       },
-      "coordinates": null,
+      "coordinates": {
+        "lat": 46.50083,
+        "lng": -72.24556
+      },
       "rules": {
         "fr": [],
         "en": []
@@ -7672,7 +7531,7 @@
       "id_endro": 1155,
       "name": {
         "fr": "entre le côté en aval du pont Pierre-Laporte et une ligne joignant un point situé à 50 m en aval du quai de Batiscan sur la rive nord",
-        "en": "between the downstream side of Pierre-Laporte bridge and a line joining a point situated 50 m downstream of Batiscan wharf on the north shore"
+        "en": "entre le côté en aval du pont Pierre-Laporte et une ligne joignant un point situé à 50 m en aval du quai de Batiscan sur la rive nord"
       },
       "coordinates": {
         "lat": 46.50083,
@@ -7691,7 +7550,7 @@
       "id_endro": 1156,
       "name": {
         "fr": "entre une ligne joignant un point situé à 50 m en aval du quai de Batiscan sur la rive nord",
-        "en": "between a line joining a point 50 m downstream of Batiscan wharf on the north shore"
+        "en": "entre une ligne joignant un point situé à 50 m en aval du quai de Batiscan sur la rive nord"
       },
       "coordinates": {
         "lat": 46.50083,
@@ -7920,7 +7779,7 @@
       "id_endro": 111,
       "name": {
         "fr": "entre le premier rétrécissement en amont du pont de la route 112 situé au point",
-        "en": "between the first narrows upstream from Highway 112 bridge situated at point"
+        "en": "entre le premier rétrécissement en amont du pont de la route 112 situé au point"
       },
       "coordinates": {
         "lat": 45.91861,
@@ -8245,7 +8104,7 @@
       "id_endro": 130,
       "name": {
         "fr": "entre le premier pilier formé d'enrochement",
-        "en": "the part between the first pillar made ''of rocks"
+        "en": "entre le premier pilier formé d'enrochement"
       },
       "coordinates": {
         "lat": 46.55167,
@@ -8490,7 +8349,7 @@
       "id_endro": 10339,
       "name": {
         "fr": "- La partie entre la route 132 et le pont ferroviaire situé 4 km en amont",
-        "en": "- That part between route 132 and the railway bridge located 4 km upstream"
+        "en": "- La partie entre la route 132 et le pont ferroviaire situé 4 km en amont"
       },
       "coordinates": {
         "lat": 46.32889,
@@ -8509,7 +8368,7 @@
       "id_endro": 136,
       "name": {
         "fr": "- La partie entre le lac William et le lac à la Truite",
-        "en": "- That part between lac William and lac À la Truite"
+        "en": "- La partie entre le lac William et le lac à la Truite"
       },
       "coordinates": null,
       "rules": {
@@ -8575,7 +8434,7 @@
       "id_endro": 12139,
       "name": {
         "fr": "b) La partie comprise entre le côté amont du barrage du Parc des chutes à Lévis",
-        "en": "b) That part between the upstream side of the Parc des Chutes dam in Lévis"
+        "en": "b) La partie comprise entre le côté amont du barrage du Parc des chutes à Lévis"
       },
       "coordinates": null,
       "rules": {
@@ -8591,7 +8450,7 @@
       "id_endro": 146,
       "name": {
         "fr": "entre la pointe située à l'embouchure de la rivière Coleraine, au point",
-        "en": "between the point situated at the mouth of Rivière Coleraine, at the point"
+        "en": "entre la pointe située à l'embouchure de la rivière Coleraine, au point"
       },
       "coordinates": {
         "lat": 45.94306,
@@ -8708,7 +8567,7 @@
       "id_endro": 150,
       "name": {
         "fr": "entre le pont de la route 138 vers l'amont et le pont Masson",
-        "en": "between the Highway 138 bridge and the Masson bridge"
+        "en": "entre le pont de la route 138 vers l'amont et le pont Masson"
       },
       "coordinates": {
         "lat": 46.29694,
@@ -9097,7 +8956,7 @@
       "id_endro": 157,
       "name": {
         "fr": "entre le pont de la route 138 vers l'amont et le barrage du village de Saint-Joseph-de-Maskinongé",
-        "en": "between the Highway 138 bridge upstream and the dam of the village of Saint-Joseph-de-Maskinongé"
+        "en": "entre le pont de la route 138 vers l'amont et le barrage du village de Saint-Joseph-de-Maskinongé"
       },
       "coordinates": {
         "lat": 46.22889,
@@ -9134,7 +8993,7 @@
       "id_endro": 11519,
       "name": {
         "fr": "- La partie comprise entre le point",
-        "en": "- That part between the point"
+        "en": "- La partie comprise entre le point"
       },
       "coordinates": {
         "lat": 45.90417,
@@ -9153,7 +9012,7 @@
       "id_endro": 11520,
       "name": {
         "fr": "- La partie comprise entre le point",
-        "en": "- That part between the point"
+        "en": "- La partie comprise entre le point"
       },
       "coordinates": {
         "lat": 45.90667,
@@ -9206,7 +9065,7 @@
       "id_endro": 11521,
       "name": {
         "fr": "- La partie comprise entre le point",
-        "en": "- That part between the point"
+        "en": "- La partie comprise entre le point"
       },
       "coordinates": {
         "lat": 45.9375,
@@ -9259,7 +9118,7 @@
       "id_endro": 3163,
       "name": {
         "fr": "- La partie de de la rivière ainsi que ses tributaires bornés au sud par la portion de la route 132 comprise entre les rivières Richelieu",
-        "en": "- That part of the river and its tributaries bounded to the south by the portion of Route 132 between the Richelieu"
+        "en": "- La partie de de la rivière ainsi que ses tributaires bornés au sud par la portion de la route 132 comprise entre les rivières Richelieu"
       },
       "coordinates": {
         "lat": 46.04167,
@@ -9278,7 +9137,7 @@
       "id_endro": 165,
       "name": {
         "fr": "b) entre la pointe à Poulin (club de golf Ki-8-EB",
-        "en": "b) Between Pointe à Poulin (Golf Club Ki-8-EB"
+        "en": "b) entre la pointe à Poulin (club de golf Ki-8-EB"
       },
       "coordinates": {
         "lat": 46.38583,
@@ -9297,7 +9156,7 @@
       "id_endro": 3236,
       "name": {
         "fr": "c) entre le barrage de La Gabelle",
-        "en": "c) Between La Gabelle dam"
+        "en": "c) entre le barrage de La Gabelle"
       },
       "coordinates": {
         "lat": 46.44889,
@@ -9414,7 +9273,7 @@
       "id_endro": 12579,
       "name": {
         "fr": "Plan d’eau réglementé #12579 (voir la source)",
-        "en": "Regulated waterbody #12579 (see source)"
+        "en": "Plan d’eau réglementé #12579 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -9430,7 +9289,7 @@
       "id_endro": 116,
       "name": {
         "fr": "Plan d’eau réglementé #116 (voir la source)",
-        "en": "Regulated waterbody #116 (see source)"
+        "en": "Plan d’eau réglementé #116 (voir la source)"
       },
       "coordinates": null,
       "rules": {

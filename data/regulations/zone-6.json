@@ -6,7 +6,7 @@
   "source": {
     "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=6",
     "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=6",
-    "fetched_at": "2026-08-08",
+    "fetched_at": "2026-09-01",
     "note": "Rule text reproduced verbatim from the authority. Always verify against the source before fishing."
   },
   "coverage": {
@@ -21,78 +21,6 @@
   },
   "general": {
     "fr": [
-      {
-        "period": null,
-        "species": "Limite de prise",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Espèce:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de prise:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "Du 1er avril 2026 au 22 avril 2026",
         "species": "Éperlan arc-en-ciel",
@@ -239,78 +167,6 @@
       }
     ],
     "en": [
-      {
-        "period": null,
-        "species": "Catch limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Species:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Catch limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "From April 1st, 2026 to April 22nd, 2026",
         "species": "Rainbow smelt",
@@ -11269,7 +11125,7 @@
       "id_endro": 720,
       "name": {
         "fr": "entre le barrage Bombardier (lac Brompton)",
-        "en": "between Bombardier dam (lac Brompton)"
+        "en": "entre le barrage Bombardier (lac Brompton)"
       },
       "coordinates": null,
       "rules": {
@@ -11431,7 +11287,7 @@
       "id_endro": 724,
       "name": {
         "fr": "entre le lac Magog",
-        "en": "between lac Magog"
+        "en": "entre le lac Magog"
       },
       "coordinates": {
         "lat": 45.33389,
@@ -11450,7 +11306,7 @@
       "id_endro": 697,
       "name": {
         "fr": "entre le lac Memphrémagog",
-        "en": "between lac Memphrémagog"
+        "en": "entre le lac Memphrémagog"
       },
       "coordinates": {
         "lat": 45.26361,
@@ -11615,7 +11471,7 @@
       "id_endro": 744,
       "name": {
         "fr": "entre le pont du chemin de Way's Mills",
-        "en": "between the Way's Mills road bridge"
+        "en": "entre le pont du chemin de Way's Mills"
       },
       "coordinates": {
         "lat": 45.13389,
@@ -11652,7 +11508,7 @@
       "id_endro": 747,
       "name": {
         "fr": "b) entre le barrage à Bromptonville",
-        "en": "b) between the dam at Bromptonville"
+        "en": "b) entre le barrage à Bromptonville"
       },
       "coordinates": {
         "lat": 45.47833,
@@ -12057,7 +11913,7 @@
       "id_endro": 2315,
       "name": {
         "fr": "c) entre le pont du CN à Richmond",
-        "en": "c) between the CN railway bridge in Richmond"
+        "en": "c) entre le pont du CN à Richmond"
       },
       "coordinates": {
         "lat": 45.67417,
@@ -12190,7 +12046,7 @@
       "id_endro": 3235,
       "name": {
         "fr": "d) entre le pont ferroviaire de Drummondville",
-        "en": "d) between the Drummondville railway bridge"
+        "en": "d) entre le pont ferroviaire de Drummondville"
       },
       "coordinates": {
         "lat": 45.88722,
@@ -12294,7 +12150,7 @@
       "id_endro": 715,
       "name": {
         "fr": "entre le pont de la route 143 à Hatley",
-        "en": "between the Highway 143 bridge in Hatley"
+        "en": "entre le pont de la route 143 à Hatley"
       },
       "coordinates": {
         "lat": 45.18083,
@@ -12313,7 +12169,7 @@
       "id_endro": 1591,
       "name": {
         "fr": "Ruisseau Taylor",
-        "en": "Brook Taylor"
+        "en": "Ruisseau Taylor"
       },
       "coordinates": null,
       "rules": {
@@ -12395,7 +12251,7 @@
       "id_endro": 688,
       "name": {
         "fr": "Plan d’eau réglementé #688 (voir la source)",
-        "en": "Regulated waterbody #688 (see source)"
+        "en": "Plan d’eau réglementé #688 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -12525,7 +12381,7 @@
       "id_endro": 664,
       "name": {
         "fr": "Plan d’eau réglementé #664 (voir la source)",
-        "en": "Regulated waterbody #664 (see source)"
+        "en": "Plan d’eau réglementé #664 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -12541,7 +12397,7 @@
       "id_endro": 753,
       "name": {
         "fr": "Plan d’eau réglementé #753 (voir la source)",
-        "en": "Regulated waterbody #753 (see source)"
+        "en": "Plan d’eau réglementé #753 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -12879,7 +12735,7 @@
       "id_endro": 667,
       "name": {
         "fr": "Plan d’eau réglementé #667 (voir la source)",
-        "en": "Regulated waterbody #667 (see source)"
+        "en": "Plan d’eau réglementé #667 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -13105,7 +12961,7 @@
       "id_endro": 660,
       "name": {
         "fr": "Plan d’eau réglementé #660 (voir la source)",
-        "en": "Regulated waterbody #660 (see source)"
+        "en": "Plan d’eau réglementé #660 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -13251,7 +13107,7 @@
       "id_endro": 669,
       "name": {
         "fr": "Plan d’eau réglementé #669 (voir la source)",
-        "en": "Regulated waterbody #669 (see source)"
+        "en": "Plan d’eau réglementé #669 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -13267,7 +13123,7 @@
       "id_endro": 674,
       "name": {
         "fr": "Plan d’eau réglementé #674 (voir la source)",
-        "en": "Regulated waterbody #674 (see source)"
+        "en": "Plan d’eau réglementé #674 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -13493,7 +13349,7 @@
       "id_endro": 12124,
       "name": {
         "fr": "Plan d’eau réglementé #12124 (voir la source)",
-        "en": "Regulated waterbody #12124 (see source)"
+        "en": "Plan d’eau réglementé #12124 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -13623,7 +13479,7 @@
       "id_endro": 3008,
       "name": {
         "fr": "Plan d’eau réglementé #3008 (voir la source)",
-        "en": "Regulated waterbody #3008 (see source)"
+        "en": "Plan d’eau réglementé #3008 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -13639,7 +13495,7 @@
       "id_endro": 3009,
       "name": {
         "fr": "Plan d’eau réglementé #3009 (voir la source)",
-        "en": "Regulated waterbody #3009 (see source)"
+        "en": "Plan d’eau réglementé #3009 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -13945,7 +13801,7 @@
       "id_endro": 677,
       "name": {
         "fr": "Plan d’eau réglementé #677 (voir la source)",
-        "en": "Regulated waterbody #677 (see source)"
+        "en": "Plan d’eau réglementé #677 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -14171,7 +14027,7 @@
       "id_endro": 680,
       "name": {
         "fr": "Plan d’eau réglementé #680 (voir la source)",
-        "en": "Regulated waterbody #680 (see source)"
+        "en": "Plan d’eau réglementé #680 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -14301,7 +14157,7 @@
       "id_endro": 683,
       "name": {
         "fr": "Plan d’eau réglementé #683 (voir la source)",
-        "en": "Regulated waterbody #683 (see source)"
+        "en": "Plan d’eau réglementé #683 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -14431,7 +14287,7 @@
       "id_endro": 2972,
       "name": {
         "fr": "Plan d’eau réglementé #2972 (voir la source)",
-        "en": "Regulated waterbody #2972 (see source)"
+        "en": "Plan d’eau réglementé #2972 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -14447,7 +14303,7 @@
       "id_endro": 703,
       "name": {
         "fr": "Plan d’eau réglementé #703 (voir la source)",
-        "en": "Regulated waterbody #703 (see source)"
+        "en": "Plan d’eau réglementé #703 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -14609,7 +14465,7 @@
       "id_endro": 690,
       "name": {
         "fr": "Plan d’eau réglementé #690 (voir la source)",
-        "en": "Regulated waterbody #690 (see source)"
+        "en": "Plan d’eau réglementé #690 (voir la source)"
       },
       "coordinates": null,
       "rules": {

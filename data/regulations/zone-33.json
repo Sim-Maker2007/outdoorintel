@@ -6,7 +6,7 @@
   "source": {
     "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=33",
     "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=33",
-    "fetched_at": "2026-08-08",
+    "fetched_at": "2026-09-01",
     "note": "Rule text reproduced verbatim from the authority. Always verify against the source before fishing."
   },
   "coverage": {
@@ -21,78 +21,6 @@
   },
   "general": {
     "fr": [
-      {
-        "period": null,
-        "species": "Limite de prise",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Espèce:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de prise:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "Du 1er avril 2026 au 31 mars 2027",
         "species": "Chevalier cuivré",
@@ -167,78 +95,6 @@
       }
     ],
     "en": [
-      {
-        "period": null,
-        "species": "Catch limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Species:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Catch limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "From April 1st, 2026 to March 31st, 2027",
         "species": "Copper redhorse",
@@ -1109,7 +965,7 @@
       "id_endro": 3097,
       "name": {
         "fr": "Lac de l'Exil",
-        "en": "Lake de l'Exil"
+        "en": "Lac de l'Exil"
       },
       "coordinates": {
         "lat": 50.41889,
@@ -1128,7 +984,7 @@
       "id_endro": 3100,
       "name": {
         "fr": "Lac Goisard",
-        "en": "Lake Goisard"
+        "en": "Lac Goisard"
       },
       "coordinates": {
         "lat": 50.08722,
@@ -1213,7 +1069,7 @@
       "id_endro": 3101,
       "name": {
         "fr": "Lac La Brodeuse",
-        "en": "Lake La Brodeuse"
+        "en": "Lac La Brodeuse"
       },
       "coordinates": {
         "lat": 50.02778,
@@ -1250,7 +1106,7 @@
       "id_endro": 3095,
       "name": {
         "fr": "Lac Manouane",
-        "en": "Lake Manouane"
+        "en": "Lac Manouane"
       },
       "coordinates": {
         "lat": 50.69694,
@@ -1319,7 +1175,7 @@
       "id_endro": 3098,
       "name": {
         "fr": "Lac Onistagane",
-        "en": "Lake Onistagane"
+        "en": "Lac Onistagane"
       },
       "coordinates": {
         "lat": 50.71389,
@@ -1404,7 +1260,7 @@
       "id_endro": 3099,
       "name": {
         "fr": "Lac Péribonka",
-        "en": "Lake Péribonka"
+        "en": "Lac Péribonka"
       },
       "coordinates": {
         "lat": 50.15111,
@@ -1489,7 +1345,7 @@
       "id_endro": 3102,
       "name": {
         "fr": "Lac Sans nom",
-        "en": "Lake Sans nom"
+        "en": "Lac Sans nom"
       },
       "coordinates": {
         "lat": 50.04556,

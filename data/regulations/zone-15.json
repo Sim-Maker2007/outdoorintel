@@ -6,7 +6,7 @@
   "source": {
     "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=15",
     "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=15",
-    "fetched_at": "2026-08-08",
+    "fetched_at": "2026-09-01",
     "note": "Rule text reproduced verbatim from the authority. Always verify against the source before fishing."
   },
   "coverage": {
@@ -21,78 +21,6 @@
   },
   "general": {
     "fr": [
-      {
-        "period": null,
-        "species": "Limite de prise",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Espèce:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de prise:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "Du 1er avril 2026 au 15 avril 2026",
         "species": "Achigans",
@@ -231,78 +159,6 @@
       }
     ],
     "en": [
-      {
-        "period": null,
-        "species": "Catch limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Species:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Catch limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "From April 1st, 2026 to April 15th, 2026",
         "species": "Bass",
@@ -4364,7 +4220,7 @@
       "id_endro": 2268,
       "name": {
         "fr": "Baie du Rocket (aire faunique communautaire du réservoir Gouin) à l'ouest, d'une ligne reliant les points",
-        "en": "Bay du Rocket (Gouin Reservoir Communal Wildlife Area) to the west, from a line linking points"
+        "en": "Baie du Rocket (aire faunique communautaire du réservoir Gouin) à l'ouest, d'une ligne reliant les points"
       },
       "coordinates": {
         "lat": 48.54833,
@@ -4417,7 +4273,7 @@
       "id_endro": 1113,
       "name": {
         "fr": "Lac Chapman (aire faunique communautaire du réservoir Gouin) (Chapman Nord), entre une droite reliant les points",
-        "en": "Lake Chapman (Gouin Reservoir Communal Wildlife Area) (Chapman Nord), between a straight line linking points"
+        "en": "Lac Chapman (aire faunique communautaire du réservoir Gouin) (Chapman Nord), entre une droite reliant les points"
       },
       "coordinates": {
         "lat": 48.365,
@@ -4470,7 +4326,7 @@
       "id_endro": 2266,
       "name": {
         "fr": "Lac Magnan (aire faunique communautaire du réservoir Gouin) (Leclerc), les parties à l'est des rétrécissements situés au point",
-        "en": "Lake Magnan (Gouin Reservoir Communal Wildlife Area) (Leclerc), the parties to the strictures is located at point"
+        "en": "Lac Magnan (aire faunique communautaire du réservoir Gouin) (Leclerc), les parties à l'est des rétrécissements situés au point"
       },
       "coordinates": {
         "lat": 48.65806,
@@ -4489,7 +4345,7 @@
       "id_endro": 2267,
       "name": {
         "fr": "Lac Magnan (aire faunique communautaire du réservoir Gouin) (Passe Pirotew Pawctikw), à l'est d'une droite reliant les points",
-        "en": "Lake Magnan (Gouin Reservoir Communal Wildlife Area) (Pirotew Pawctikw pass), east of a line connecting the points"
+        "en": "Lac Magnan (aire faunique communautaire du réservoir Gouin) (Passe Pirotew Pawctikw), à l'est d'une droite reliant les points"
       },
       "coordinates": {
         "lat": 48.72556,
@@ -4542,7 +4398,7 @@
       "id_endro": 2742,
       "name": {
         "fr": "Plan d’eau réglementé #2742 (voir la source)",
-        "en": "Regulated waterbody #2742 (see source)"
+        "en": "Plan d’eau réglementé #2742 (voir la source)"
       },
       "coordinates": null,
       "rules": {

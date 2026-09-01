@@ -6,7 +6,7 @@
   "source": {
     "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=4",
     "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=4",
-    "fetched_at": "2026-08-08",
+    "fetched_at": "2026-09-01",
     "note": "Rule text reproduced verbatim from the authority. Always verify against the source before fishing."
   },
   "coverage": {
@@ -21,78 +21,6 @@
   },
   "general": {
     "fr": [
-      {
-        "period": null,
-        "species": "Limite de prise",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Espèce:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de prise:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "Du 1er avril 2026 au 22 avril 2026",
         "species": "Éperlan arc-en-ciel",
@@ -231,78 +159,6 @@
       }
     ],
     "en": [
-      {
-        "period": null,
-        "species": "Catch limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Species:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Catch limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "From April 1st, 2026 to April 22nd, 2026",
         "species": "Rainbow smelt",
@@ -6405,7 +6261,7 @@
       "id_endro": 12119,
       "name": {
         "fr": "et ses tributaires",
-        "en": "and its tributaries"
+        "en": "et ses tributaires"
       },
       "coordinates": {
         "lat": 45.74833,
@@ -6424,7 +6280,7 @@
       "id_endro": 533,
       "name": {
         "fr": "(incluant les parties du lac comprises dans le parc national de Frontenac)",
-        "en": "(including the parts of the lake included in Frontenac national park)"
+        "en": "(incluant les parties du lac comprises dans le parc national de Frontenac)"
       },
       "coordinates": {
         "lat": 45.89861,
@@ -6717,7 +6573,7 @@
       "id_endro": 2591,
       "name": {
         "fr": "Lac à la Barbue",
-        "en": "Lake à la Barbue"
+        "en": "Lac à la Barbue"
       },
       "coordinates": {
         "lat": 45.81944,
@@ -6754,7 +6610,7 @@
       "id_endro": 2592,
       "name": {
         "fr": "Lac des Îles",
-        "en": "Lake des Îles"
+        "en": "Lac des Îles"
       },
       "coordinates": {
         "lat": 45.79111,
@@ -6839,7 +6695,7 @@
       "id_endro": 2593,
       "name": {
         "fr": "Lac des Ours",
-        "en": "Lake des Ours"
+        "en": "Lac des Ours"
       },
       "coordinates": {
         "lat": 45.85222,
@@ -6924,7 +6780,7 @@
       "id_endro": 556,
       "name": {
         "fr": "entre le Grand lac Saint-François et le pont de la route 108",
-        "en": "between Grand lac Saint-François and the Highway 108 bridge"
+        "en": "entre le Grand lac Saint-François et le pont de la route 108"
       },
       "coordinates": {
         "lat": 45.88306,
@@ -6961,7 +6817,7 @@
       "id_endro": 12123,
       "name": {
         "fr": "c) La partie comprise entre la limite sud-est de l'emprise de la route 112 à Vallée-Jonction",
-        "en": "c) That part between the southeastern limit of the right-of-way for Route 112 at Vallée-Jonction"
+        "en": "c) La partie comprise entre la limite sud-est de l'emprise de la route 112 à Vallée-Jonction"
       },
       "coordinates": null,
       "rules": {
@@ -7011,7 +6867,7 @@
       "id_endro": 585,
       "name": {
         "fr": "d) La partie entre le pont de la voie ferrée et le barrage Mégantic (Lac Mégantic)",
-        "en": "d) That part between the railway bridge and Mégantic dam (Lac Mégantic)"
+        "en": "d) La partie entre le pont de la voie ferrée et le barrage Mégantic (Lac Mégantic)"
       },
       "coordinates": {
         "lat": 45.57333,
@@ -7176,7 +7032,7 @@
       "id_endro": 577,
       "name": {
         "fr": "du pont de la route 161 à son embouchure dans le lac Aylmer, y compris la baie à son embouchure",
-        "en": "from the Highway 161 bridge at its mouth into lac Aylmer, including the bay at its mouth"
+        "en": "du pont de la route 161 à son embouchure dans le lac Aylmer, y compris la baie à son embouchure"
       },
       "coordinates": null,
       "rules": {
@@ -7322,7 +7178,7 @@
       "id_endro": 564,
       "name": {
         "fr": "du Grand lac Saint-François jusqu'au pont de la route 267",
-        "en": "from Grand lac Saint-François until the Highway 267 bridge"
+        "en": "du Grand lac Saint-François jusqu'au pont de la route 267"
       },
       "coordinates": {
         "lat": 46.02389,
@@ -7359,7 +7215,7 @@
       "id_endro": 571,
       "name": {
         "fr": "du pont du 4e rang",
-        "en": "from 4th row bridge"
+        "en": "du pont du 4e rang"
       },
       "coordinates": {
         "lat": 45.99583,
@@ -7492,7 +7348,7 @@
       "id_endro": 592,
       "name": {
         "fr": "c) entre le pont de la route 161 à Saint-Gérard et la pointe aval de l'île qui est située aux coordonnées",
-        "en": "c) between the bridge on Highway 161 at Saint-Gérard and the downstream tip of the island which is located at coordinates"
+        "en": "c) entre le pont de la route 161 à Saint-Gérard et la pointe aval de l'île qui est située aux coordonnées"
       },
       "coordinates": {
         "lat": 45.75361,
@@ -8793,7 +8649,7 @@
       "id_endro": 593,
       "name": {
         "fr": "d) entre le barrage hydro-électrique à Westbury situé aux coordonnées",
-        "en": "d) between the hydroelectric dam at Westbury located at coordinates"
+        "en": "d) entre le barrage hydro-électrique à Westbury situé aux coordonnées"
       },
       "coordinates": {
         "lat": 45.4975,
@@ -8910,7 +8766,7 @@
       "id_endro": 594,
       "name": {
         "fr": "e) entre barrage d'East Angus situé aux coordonnées",
-        "en": "e) between the East Angus' dam located at coordinates"
+        "en": "e) entre barrage d'East Angus situé aux coordonnées"
       },
       "coordinates": {
         "lat": 45.48222,
@@ -9091,7 +8947,7 @@
       "id_endro": 582,
       "name": {
         "fr": "de sa source à son embouchure",
-        "en": "from their source to their mouth"
+        "en": "de sa source à son embouchure"
       },
       "coordinates": {
         "lat": 45.55,
@@ -9128,7 +8984,7 @@
       "id_endro": 528,
       "name": {
         "fr": "Plan d’eau réglementé #528 (voir la source)",
-        "en": "Regulated waterbody #528 (see source)"
+        "en": "Plan d’eau réglementé #528 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -9450,7 +9306,7 @@
       "id_endro": 12120,
       "name": {
         "fr": "Plan d’eau réglementé #12120 (voir la source)",
-        "en": "Regulated waterbody #12120 (see source)"
+        "en": "Plan d’eau réglementé #12120 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -9548,7 +9404,7 @@
       "id_endro": 543,
       "name": {
         "fr": "Plan d’eau réglementé #543 (voir la source)",
-        "en": "Regulated waterbody #543 (see source)"
+        "en": "Plan d’eau réglementé #543 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -9710,7 +9566,7 @@
       "id_endro": 534,
       "name": {
         "fr": "Plan d’eau réglementé #534 (voir la source)",
-        "en": "Regulated waterbody #534 (see source)"
+        "en": "Plan d’eau réglementé #534 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -10048,7 +9904,7 @@
       "id_endro": 540,
       "name": {
         "fr": "Plan d’eau réglementé #540 (voir la source)",
-        "en": "Regulated waterbody #540 (see source)"
+        "en": "Plan d’eau réglementé #540 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -10210,7 +10066,7 @@
       "id_endro": 524,
       "name": {
         "fr": "Plan d’eau réglementé #524 (voir la source)",
-        "en": "Regulated waterbody #524 (see source)"
+        "en": "Plan d’eau réglementé #524 (voir la source)"
       },
       "coordinates": null,
       "rules": {

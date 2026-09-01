@@ -6,7 +6,7 @@
   "source": {
     "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=10",
     "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=10",
-    "fetched_at": "2026-08-08",
+    "fetched_at": "2026-09-01",
     "note": "Rule text reproduced verbatim from the authority. Always verify against the source before fishing."
   },
   "coverage": {
@@ -21,78 +21,6 @@
   },
   "general": {
     "fr": [
-      {
-        "period": null,
-        "species": "Limite de prise",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Espèce:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de prise:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "Du 1er avril 2026 au 31 mars 2027",
         "species": "Bar rayé",
@@ -231,78 +159,6 @@
       }
     ],
     "en": [
-      {
-        "period": null,
-        "species": "Catch limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Species:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Catch limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "From April 1st, 2026 to March 31st, 2027",
         "species": "Black crappie",
@@ -22243,7 +22099,7 @@
       "id_endro": 11419,
       "name": {
         "fr": "Lac de l'Achigan",
-        "en": "Lake de l'Achigan"
+        "en": "Lac de l'Achigan"
       },
       "coordinates": {
         "lat": 46.38861,
@@ -22379,7 +22235,7 @@
       "id_endro": 3043,
       "name": {
         "fr": "(Municipalité de Notre-Dame-du-Laus)",
-        "en": "(Municipality of Notre-Dame-du-Laus)"
+        "en": "(Municipalité de Notre-Dame-du-Laus)"
       },
       "coordinates": {
         "lat": 46.19667,
@@ -22677,7 +22533,7 @@
       "id_endro": 3052,
       "name": {
         "fr": "(Municipalités de Messines et Kitigan Zibi)",
-        "en": "(Municipalities of Messines and Kitigan Zibi)"
+        "en": "(Municipalités de Messines et Kitigan Zibi)"
       },
       "coordinates": {
         "lat": 46.30111,
@@ -22730,7 +22586,7 @@
       "id_endro": 2886,
       "name": {
         "fr": "Lac Lafontaine",
-        "en": "Lake Lafontaine"
+        "en": "Lac Lafontaine"
       },
       "coordinates": {
         "lat": 46.07417,
@@ -22799,7 +22655,7 @@
       "id_endro": 441,
       "name": {
         "fr": "Lac Logue",
-        "en": "Lake Logue"
+        "en": "Lac Logue"
       },
       "coordinates": {
         "lat": 46.64,
@@ -23385,7 +23241,7 @@
       "id_endro": 3021,
       "name": {
         "fr": "(Municipalité de Lac-du-Cerf)",
-        "en": "(Municipalité of Lac-du-Cerf)"
+        "en": "(Municipalité de Lac-du-Cerf)"
       },
       "coordinates": null,
       "rules": {
@@ -26341,7 +26197,7 @@
       "id_endro": 405,
       "name": {
         "fr": "(Municipalités de Messines et Kitigan Zibi)",
-        "en": "(Municipalities of Messines and Kitigan Zibi)"
+        "en": "(Municipalités de Messines et Kitigan Zibi)"
       },
       "coordinates": {
         "lat": 46.29167,
@@ -27766,7 +27622,7 @@
       "id_endro": 3018,
       "name": {
         "fr": "(Municipalité de Amherst)",
-        "en": "(Amherst Municipality)"
+        "en": "(Municipalité de Amherst)"
       },
       "coordinates": null,
       "rules": {
@@ -27782,11 +27638,11 @@
       "id_endro": 10199,
       "name": {
         "fr": "Lac Rond",
-        "en": "Lake Rond"
+        "en": "Lac Rond"
       },
       "coordinates": {
-        "lat": 45.68722,
-        "lng": -75.83583
+        "lat": 45.87389,
+        "lng": -75.77417
       },
       "rules": {
         "fr": [],
@@ -28302,7 +28158,7 @@
       "id_endro": 460,
       "name": {
         "fr": "(Municipalité de Nominingue)",
-        "en": "(Municipality of Nominingue)"
+        "en": "(Municipalité de Nominingue)"
       },
       "coordinates": {
         "lat": 46.39944,
@@ -30571,7 +30427,7 @@
       "id_endro": 10204,
       "name": {
         "fr": "Lac Thorne",
-        "en": "Lake Thorne"
+        "en": "Lac Thorne"
       },
       "coordinates": {
         "lat": 45.68694,
@@ -31093,11 +30949,11 @@
       "id_endro": 473,
       "name": {
         "fr": "Lac Vert",
-        "en": "Lake Vert"
+        "en": "Lac Vert"
       },
       "coordinates": {
-        "lat": 45.90222,
-        "lng": -75.60639
+        "lat": 46.175,
+        "lng": -75.48361
       },
       "rules": {
         "fr": [
@@ -31146,11 +31002,11 @@
       "id_endro": 3010,
       "name": {
         "fr": "Lac Vert",
-        "en": "Lake Vert"
+        "en": "Lac Vert"
       },
       "coordinates": {
-        "lat": 45.99861,
-        "lng": -75.79944
+        "lat": 46.175,
+        "lng": -75.48361
       },
       "rules": {
         "fr": [
@@ -33706,7 +33562,7 @@
       "id_endro": 547,
       "name": {
         "fr": "la partie comprise entre le pont de la route 321 à Duhamel",
-        "en": "That part between the bridge on Route 321 in Duhamel"
+        "en": "la partie comprise entre le pont de la route 321 à Duhamel"
       },
       "coordinates": {
         "lat": 46.0225,
@@ -33887,7 +33743,7 @@
       "id_endro": 546,
       "name": {
         "fr": "la partie comprise entre son embouchure dans le lac Simon, correspondant à une droite joignant les points",
-        "en": "That part between its mouth in Lake Simon, corresponding to a straight line joining points"
+        "en": "la partie comprise entre son embouchure dans le lac Simon, correspondant à une droite joignant les points"
       },
       "coordinates": {
         "lat": 46.00167,
@@ -34068,7 +33924,7 @@
       "id_endro": 537,
       "name": {
         "fr": "entre le pont Paquette",
-        "en": "between Paquette"
+        "en": "entre le pont Paquette"
       },
       "coordinates": {
         "lat": 46.55,
@@ -34087,7 +33943,7 @@
       "id_endro": 538,
       "name": {
         "fr": "La partie comprise entre le côté aval des barrages de High Falls-1",
-        "en": "That part between the downstream side of the High Falls-1"
+        "en": "La partie comprise entre le côté aval des barrages de High Falls-1"
       },
       "coordinates": {
         "lat": 45.83444,
@@ -35370,7 +35226,7 @@
       "id_endro": 587,
       "name": {
         "fr": "(Municipalité de Lac-du-Cerf) entre le lac Lefebvre et le Grand lac du Cerf",
-        "en": "(Municipality of Lac-du-Cerf) between lakes Lefebvre and Grand lac du Cerf"
+        "en": "(Municipalité de Lac-du-Cerf) entre le lac Lefebvre et le Grand lac du Cerf"
       },
       "coordinates": {
         "lat": 46.31111,
@@ -35983,7 +35839,7 @@
       "id_endro": 542,
       "name": {
         "fr": "entre sa confluence avec la rivière des Outaouais",
-        "en": "between its confluence with rivière Des Outaouais"
+        "en": "entre sa confluence avec la rivière des Outaouais"
       },
       "coordinates": {
         "lat": 46.20583,
@@ -36308,7 +36164,7 @@
       "id_endro": 578,
       "name": {
         "fr": "entre son embouchure",
-        "en": "between its mouth"
+        "en": "entre son embouchure"
       },
       "coordinates": null,
       "rules": {
@@ -36667,7 +36523,7 @@
       "id_endro": 11459,
       "name": {
         "fr": "(Post Creek ou Passe Crique) La partie comprise entre son embouchure avec la rivière Gatineau correspondant à une droite joignant les points",
-        "en": "(Post Creek) That part between its mouth with Gatineau River corresponding to a straight line joining the points"
+        "en": "(Post Creek ou Passe Crique) La partie comprise entre son embouchure avec la rivière Gatineau correspondant à une droite joignant les points"
       },
       "coordinates": {
         "lat": 46.25333,
@@ -36686,7 +36542,7 @@
       "id_endro": 590,
       "name": {
         "fr": "entre le lac à la Truite",
-        "en": "between lac à la Truite"
+        "en": "entre le lac à la Truite"
       },
       "coordinates": {
         "lat": 46.0025,
@@ -36952,7 +36808,7 @@
       "id_endro": 10223,
       "name": {
         "fr": "Plan d’eau réglementé #10223 (voir la source)",
-        "en": "Regulated waterbody #10223 (see source)"
+        "en": "Plan d’eau réglementé #10223 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -37210,7 +37066,7 @@
       "id_endro": 3013,
       "name": {
         "fr": "Plan d’eau réglementé #3013 (voir la source)",
-        "en": "Regulated waterbody #3013 (see source)"
+        "en": "Plan d’eau réglementé #3013 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -37468,7 +37324,7 @@
       "id_endro": 2829,
       "name": {
         "fr": "Plan d’eau réglementé #2829 (voir la source)",
-        "en": "Regulated waterbody #2829 (see source)"
+        "en": "Plan d’eau réglementé #2829 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -37726,7 +37582,7 @@
       "id_endro": 2961,
       "name": {
         "fr": "Plan d’eau réglementé #2961 (voir la source)",
-        "en": "Regulated waterbody #2961 (see source)"
+        "en": "Plan d’eau réglementé #2961 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -37984,7 +37840,7 @@
       "id_endro": 2846,
       "name": {
         "fr": "Plan d’eau réglementé #2846 (voir la source)",
-        "en": "Regulated waterbody #2846 (see source)"
+        "en": "Plan d’eau réglementé #2846 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -38000,7 +37856,7 @@
       "id_endro": 2958,
       "name": {
         "fr": "Plan d’eau réglementé #2958 (voir la source)",
-        "en": "Regulated waterbody #2958 (see source)"
+        "en": "Plan d’eau réglementé #2958 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -38016,7 +37872,7 @@
       "id_endro": 2939,
       "name": {
         "fr": "Plan d’eau réglementé #2939 (voir la source)",
-        "en": "Regulated waterbody #2939 (see source)"
+        "en": "Plan d’eau réglementé #2939 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -38032,7 +37888,7 @@
       "id_endro": 2950,
       "name": {
         "fr": "Plan d’eau réglementé #2950 (voir la source)",
-        "en": "Regulated waterbody #2950 (see source)"
+        "en": "Plan d’eau réglementé #2950 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -38290,7 +38146,7 @@
       "id_endro": 2853,
       "name": {
         "fr": "Plan d’eau réglementé #2853 (voir la source)",
-        "en": "Regulated waterbody #2853 (see source)"
+        "en": "Plan d’eau réglementé #2853 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -38548,7 +38404,7 @@
       "id_endro": 2862,
       "name": {
         "fr": "Plan d’eau réglementé #2862 (voir la source)",
-        "en": "Regulated waterbody #2862 (see source)"
+        "en": "Plan d’eau réglementé #2862 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -38806,7 +38662,7 @@
       "id_endro": 3113,
       "name": {
         "fr": "Plan d’eau réglementé #3113 (voir la source)",
-        "en": "Regulated waterbody #3113 (see source)"
+        "en": "Plan d’eau réglementé #3113 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -38822,7 +38678,7 @@
       "id_endro": 2871,
       "name": {
         "fr": "Plan d’eau réglementé #2871 (voir la source)",
-        "en": "Regulated waterbody #2871 (see source)"
+        "en": "Plan d’eau réglementé #2871 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -39080,7 +38936,7 @@
       "id_endro": 2901,
       "name": {
         "fr": "Plan d’eau réglementé #2901 (voir la source)",
-        "en": "Regulated waterbody #2901 (see source)"
+        "en": "Plan d’eau réglementé #2901 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -39338,7 +39194,7 @@
       "id_endro": 2881,
       "name": {
         "fr": "Plan d’eau réglementé #2881 (voir la source)",
-        "en": "Regulated waterbody #2881 (see source)"
+        "en": "Plan d’eau réglementé #2881 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -39596,7 +39452,7 @@
       "id_endro": 504,
       "name": {
         "fr": "Plan d’eau réglementé #504 (voir la source)",
-        "en": "Regulated waterbody #504 (see source)"
+        "en": "Plan d’eau réglementé #504 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -39612,7 +39468,7 @@
       "id_endro": 2892,
       "name": {
         "fr": "Plan d’eau réglementé #2892 (voir la source)",
-        "en": "Regulated waterbody #2892 (see source)"
+        "en": "Plan d’eau réglementé #2892 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -39678,7 +39534,7 @@
       "id_endro": 2947,
       "name": {
         "fr": "Plan d’eau réglementé #2947 (voir la source)",
-        "en": "Regulated waterbody #2947 (see source)"
+        "en": "Plan d’eau réglementé #2947 (voir la source)"
       },
       "coordinates": null,
       "rules": {

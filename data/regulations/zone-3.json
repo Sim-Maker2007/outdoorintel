@@ -6,7 +6,7 @@
   "source": {
     "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=3",
     "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=3",
-    "fetched_at": "2026-08-08",
+    "fetched_at": "2026-09-01",
     "note": "Rule text reproduced verbatim from the authority. Always verify against the source before fishing."
   },
   "coverage": {
@@ -21,78 +21,6 @@
   },
   "general": {
     "fr": [
-      {
-        "period": null,
-        "species": "Limite de prise",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Espèce:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de prise:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "Du 1er avril 2026 au 31 mars 2027",
         "species": "Bar rayé",
@@ -223,78 +151,6 @@
       }
     ],
     "en": [
-      {
-        "period": null,
-        "species": "Catch limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Species:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Catch limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "From April 1st, 2026 to March 31st, 2027",
         "species": "Atlantic salmon",
@@ -3152,7 +3008,7 @@
       "id_endro": 442,
       "name": {
         "fr": "Lac Beaumont",
-        "en": "Lake Beaumont"
+        "en": "Lac Beaumont"
       },
       "coordinates": {
         "lat": 46.77833,
@@ -3301,7 +3157,7 @@
       "id_endro": 445,
       "name": {
         "fr": "Lac Bringé",
-        "en": "Lake Bringé"
+        "en": "Lac Bringé"
       },
       "coordinates": {
         "lat": 47.10972,
@@ -3320,7 +3176,7 @@
       "id_endro": 437,
       "name": {
         "fr": "Lac des Abénaquis",
-        "en": "Lake des Abénaquis"
+        "en": "Lac des Abénaquis"
       },
       "coordinates": {
         "lat": 46.16361,
@@ -3469,7 +3325,7 @@
       "id_endro": 451,
       "name": {
         "fr": "Lac Frontière",
-        "en": "Lake Frontière"
+        "en": "Lac Frontière"
       },
       "coordinates": {
         "lat": 46.70667,
@@ -3488,7 +3344,7 @@
       "id_endro": 456,
       "name": {
         "fr": "Lac Saint-Charles",
-        "en": "Lake Saint-Charles"
+        "en": "Lac Saint-Charles"
       },
       "coordinates": {
         "lat": 46.77972,
@@ -3637,7 +3493,7 @@
       "id_endro": 1607,
       "name": {
         "fr": "en amont du pont à Sainte-Claire",
-        "en": "upstream of the bridge at St. Clair"
+        "en": "en amont du pont à Sainte-Claire"
       },
       "coordinates": null,
       "rules": {

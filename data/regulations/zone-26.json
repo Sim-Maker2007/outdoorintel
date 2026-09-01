@@ -6,7 +6,7 @@
   "source": {
     "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=26",
     "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=26",
-    "fetched_at": "2026-08-08",
+    "fetched_at": "2026-09-01",
     "note": "Rule text reproduced verbatim from the authority. Always verify against the source before fishing."
   },
   "coverage": {
@@ -21,78 +21,6 @@
   },
   "general": {
     "fr": [
-      {
-        "period": null,
-        "species": "Limite de prise",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Espèce:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de prise:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "Du 1er avril 2026 au 31 mars 2027",
         "species": "Chevalier cuivré",
@@ -175,78 +103,6 @@
       }
     ],
     "en": [
-      {
-        "period": null,
-        "species": "Catch limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Species:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Catch limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "From April 1st, 2026 to March 31st, 2027",
         "species": "Copper redhorse",
@@ -18879,7 +18735,7 @@
       "id_endro": 2274,
       "name": {
         "fr": "(Terres II de Kangiqsualujjuaq)",
-        "en": "(Category II, Kangiqsualujjuaq)"
+        "en": "(Terres II de Kangiqsualujjuaq)"
       },
       "coordinates": {
         "lat": 58.96639,
@@ -19188,7 +19044,7 @@
       "id_endro": 2275,
       "name": {
         "fr": "Lac Aannaniavik",
-        "en": "Lake Aannaniavik"
+        "en": "Lac Aannaniavik"
       },
       "coordinates": {
         "lat": 58.66194,
@@ -19497,7 +19353,7 @@
       "id_endro": 2276,
       "name": {
         "fr": "Lac Amarutaliup",
-        "en": "Lake Amarutaliup"
+        "en": "Lac Amarutaliup"
       },
       "coordinates": {
         "lat": 58.63333,
@@ -19774,7 +19630,7 @@
       "id_endro": 3057,
       "name": {
         "fr": "Lac Annabel",
-        "en": "Lake Annabel"
+        "en": "Lac Annabel"
       },
       "coordinates": {
         "lat": 55.06167,
@@ -20035,7 +19891,7 @@
       "id_endro": 2278,
       "name": {
         "fr": "(Terres II)",
-        "en": "(Category II)"
+        "en": "(Terres II)"
       },
       "coordinates": {
         "lat": 55.46722,
@@ -20312,7 +20168,7 @@
       "id_endro": 1762,
       "name": {
         "fr": "(Terres II (Kuujjuaq)), entre les points",
-        "en": "(Category II (Kuujjuaq)), between points"
+        "en": "(Terres II (Kuujjuaq)), entre les points"
       },
       "coordinates": {
         "lat": 58.78333,
@@ -20331,7 +20187,7 @@
       "id_endro": 2287,
       "name": {
         "fr": "(Terres II de Tasiujaq -",
-        "en": "(Category II, Tasiujaq -"
+        "en": "(Terres II de Tasiujaq -"
       },
       "coordinates": {
         "lat": 58.47778,
@@ -20608,7 +20464,7 @@
       "id_endro": 3058,
       "name": {
         "fr": "Lac Cacher",
-        "en": "Lake Cacher"
+        "en": "Lac Cacher"
       },
       "coordinates": {
         "lat": 54.8,
@@ -20885,7 +20741,7 @@
       "id_endro": 2277,
       "name": {
         "fr": "Lac Ducreux",
-        "en": "Lake Ducreux"
+        "en": "Lac Ducreux"
       },
       "coordinates": {
         "lat": 57.75,
@@ -21162,7 +21018,7 @@
       "id_endro": 2288,
       "name": {
         "fr": "(Terres II de Tasiujaq -",
-        "en": "(Category II, Tasiujaq -"
+        "en": "(Terres II de Tasiujaq -"
       },
       "coordinates": {
         "lat": 58.67944,
@@ -21407,7 +21263,7 @@
       "id_endro": 2272,
       "name": {
         "fr": "(Terres II de Kangiqsualujjuaq)",
-        "en": "(Category II, Kangiqsualujjuaq)"
+        "en": "(Terres II de Kangiqsualujjuaq)"
       },
       "coordinates": {
         "lat": 58.525,
@@ -21716,7 +21572,7 @@
       "id_endro": 1768,
       "name": {
         "fr": "(Terres II (Salluit)), entre les points",
-        "en": "(Category II (Salluit)), between points"
+        "en": "(Terres II (Salluit)), entre les points"
       },
       "coordinates": {
         "lat": 62.11667,
@@ -21735,7 +21591,7 @@
       "id_endro": 2270,
       "name": {
         "fr": "(Terres II de Kangiqsujjuaq)",
-        "en": "(Category II, Kangiqsujjuaq)"
+        "en": "(Terres II de Kangiqsujjuaq)"
       },
       "coordinates": {
         "lat": 60.51472,
@@ -22044,7 +21900,7 @@
       "id_endro": 2273,
       "name": {
         "fr": "(Terres II de Kangiqsualujjuaq)",
-        "en": "(Category II, Kangiqsualujjuaq)"
+        "en": "(Terres II de Kangiqsualujjuaq)"
       },
       "coordinates": {
         "lat": 58.48444,
@@ -22353,7 +22209,7 @@
       "id_endro": 1771,
       "name": {
         "fr": "(Terres II (Kangiqsualujjuaq)), entre les points",
-        "en": "(Category II (Kangiqsualujjuaq)), between points"
+        "en": "(Terres II (Kangiqsualujjuaq)), entre les points"
       },
       "coordinates": {
         "lat": 58.38333,
@@ -22372,7 +22228,7 @@
       "id_endro": 2281,
       "name": {
         "fr": "(Terres III)",
-        "en": "(Category III)"
+        "en": "(Terres III)"
       },
       "coordinates": {
         "lat": 55.30333,
@@ -22649,7 +22505,7 @@
       "id_endro": 2282,
       "name": {
         "fr": "Lac Livaudière",
-        "en": "Lake Livaudière"
+        "en": "Lac Livaudière"
       },
       "coordinates": {
         "lat": 57.84167,
@@ -22958,7 +22814,7 @@
       "id_endro": 2283,
       "name": {
         "fr": "Lac Roberts",
-        "en": "Lake Roberts"
+        "en": "Lac Roberts"
       },
       "coordinates": {
         "lat": 60.37167,
@@ -23235,7 +23091,7 @@
       "id_endro": 2284,
       "name": {
         "fr": "Lac Tasiataq",
-        "en": "Lake Tasiataq"
+        "en": "Lac Tasiataq"
       },
       "coordinates": {
         "lat": 58.75444,
@@ -23464,7 +23320,7 @@
       "id_endro": 2271,
       "name": {
         "fr": "(Terres I de Tasiujaq -",
-        "en": "(Category I, Tasiujaq -"
+        "en": "(Terres I de Tasiujaq -"
       },
       "coordinates": {
         "lat": 58.59722,
@@ -23773,7 +23629,7 @@
       "id_endro": 2285,
       "name": {
         "fr": "(Terres III)",
-        "en": "(Category III)"
+        "en": "(Terres III)"
       },
       "coordinates": {
         "lat": 58.38278,
@@ -24002,7 +23858,7 @@
       "id_endro": 2286,
       "name": {
         "fr": "Lac Turcotte",
-        "en": "Lake Turcotte"
+        "en": "Lac Turcotte"
       },
       "coordinates": {
         "lat": 58.13333,
@@ -24364,7 +24220,7 @@
       "id_endro": 3059,
       "name": {
         "fr": "Lac Vacher",
-        "en": "Lake Vacher"
+        "en": "Lac Vacher"
       },
       "coordinates": {
         "lat": 54.91667,
@@ -24641,7 +24497,7 @@
       "id_endro": 1824,
       "name": {
         "fr": "entre une ligne reliant le point",
-        "en": "between a line joining point"
+        "en": "entre une ligne reliant le point"
       },
       "coordinates": {
         "lat": 56.83944,
@@ -24870,7 +24726,7 @@
       "id_endro": 1774,
       "name": {
         "fr": "* (Terres II Kangiqsualujjuaq), entre les points",
-        "en": "* (Category II Kangiqsualujjuaq), between points"
+        "en": "* (Terres II Kangiqsualujjuaq), entre les points"
       },
       "coordinates": null,
       "rules": {
@@ -24905,7 +24761,7 @@
       "id_endro": 1843,
       "name": {
         "fr": "entre le point",
-        "en": "between point"
+        "en": "entre le point"
       },
       "coordinates": {
         "lat": 57.2,
@@ -25134,7 +24990,7 @@
       "id_endro": 1842,
       "name": {
         "fr": "entre les points",
-        "en": "between points"
+        "en": "entre les points"
       },
       "coordinates": {
         "lat": 57.38639,
@@ -25171,7 +25027,7 @@
       "id_endro": 1806,
       "name": {
         "fr": "(Terres III), entre les points",
-        "en": "(Category III), between points"
+        "en": "(Terres III), entre les points"
       },
       "coordinates": null,
       "rules": {
@@ -25187,7 +25043,7 @@
       "id_endro": 1835,
       "name": {
         "fr": "entre le point",
-        "en": "between point"
+        "en": "entre le point"
       },
       "coordinates": {
         "lat": 55.475,
@@ -25416,7 +25272,7 @@
       "id_endro": 2314,
       "name": {
         "fr": "la partie de la rivière comprise entre son point de confluence avec la rivière aux Feuilles, délimité par une ligne reliant les points",
-        "en": "the portion of Goudalie river comprised between its point of confluence with rivière Aux Feuilles, delimited by a line joining points"
+        "en": "la partie de la rivière comprise entre son point de confluence avec la rivière aux Feuilles, délimité par une ligne reliant les points"
       },
       "coordinates": {
         "lat": 57.93833,

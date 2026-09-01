@@ -6,7 +6,7 @@
   "source": {
     "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=5",
     "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=5",
-    "fetched_at": "2026-08-08",
+    "fetched_at": "2026-09-01",
     "note": "Rule text reproduced verbatim from the authority. Always verify against the source before fishing."
   },
   "coverage": {
@@ -21,78 +21,6 @@
   },
   "general": {
     "fr": [
-      {
-        "period": null,
-        "species": "Limite de prise",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Espèce:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de prise:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "Du 1er avril 2026 au 22 avril 2026",
         "species": "Éperlan arc-en-ciel",
@@ -239,78 +167,6 @@
       }
     ],
     "en": [
-      {
-        "period": null,
-        "species": "Catch limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Species:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Catch limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "From April 1st, 2026 to April 22nd, 2026",
         "species": "Rainbow smelt",
@@ -6545,7 +6401,7 @@
       "id_endro": 619,
       "name": {
         "fr": "et ses tributaires",
-        "en": "and its tributaries"
+        "en": "et ses tributaires"
       },
       "coordinates": null,
       "rules": {
@@ -6561,7 +6417,7 @@
       "id_endro": 622,
       "name": {
         "fr": "b) entre le lac Brome",
-        "en": "b) between lac Brome"
+        "en": "b) entre le lac Brome"
       },
       "coordinates": {
         "lat": 45.24861,
@@ -6886,7 +6742,7 @@
       "id_endro": 615,
       "name": {
         "fr": "Plan d’eau réglementé #615 (voir la source)",
-        "en": "Regulated waterbody #615 (see source)"
+        "en": "Plan d’eau réglementé #615 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -6902,7 +6758,7 @@
       "id_endro": 597,
       "name": {
         "fr": "Plan d’eau réglementé #597 (voir la source)",
-        "en": "Regulated waterbody #597 (see source)"
+        "en": "Plan d’eau réglementé #597 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -6936,7 +6792,7 @@
       "id_endro": 3159,
       "name": {
         "fr": "Plan d’eau réglementé #3159 (voir la source)",
-        "en": "Regulated waterbody #3159 (see source)"
+        "en": "Plan d’eau réglementé #3159 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -6970,7 +6826,7 @@
       "id_endro": 610,
       "name": {
         "fr": "Plan d’eau réglementé #610 (voir la source)",
-        "en": "Regulated waterbody #610 (see source)"
+        "en": "Plan d’eau réglementé #610 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -6986,7 +6842,7 @@
       "id_endro": 613,
       "name": {
         "fr": "Plan d’eau réglementé #613 (voir la source)",
-        "en": "Regulated waterbody #613 (see source)"
+        "en": "Plan d’eau réglementé #613 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -7002,7 +6858,7 @@
       "id_endro": 607,
       "name": {
         "fr": "Plan d’eau réglementé #607 (voir la source)",
-        "en": "Regulated waterbody #607 (see source)"
+        "en": "Plan d’eau réglementé #607 (voir la source)"
       },
       "coordinates": null,
       "rules": {

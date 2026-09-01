@@ -6,7 +6,7 @@
   "source": {
     "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=8",
     "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=8",
-    "fetched_at": "2026-08-08",
+    "fetched_at": "2026-09-01",
     "note": "Rule text reproduced verbatim from the authority. Always verify against the source before fishing."
   },
   "coverage": {
@@ -21,78 +21,6 @@
   },
   "general": {
     "fr": [
-      {
-        "period": null,
-        "species": "Limite de prise",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Espèce:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de prise:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "Du 1er avril 2026 au 31 mars 2027",
         "species": "Aloses",
@@ -239,78 +167,6 @@
       }
     ],
     "en": [
-      {
-        "period": null,
-        "species": "Catch limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Species:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Catch limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "From April 1st, 2026 to March 31st, 2027",
         "species": "Black crappie",
@@ -11557,7 +11413,7 @@
       "id_endro": 12999,
       "name": {
         "fr": "- La partie comprise entre le pont Honoré-Mercier et le côté en aval des lignes de transport d'électricité de la centrale hydroélectrique d'Hydro-Québec à Tracy",
-        "en": "- The part between the Honoré-Mercier Bridge and the downstream side of the Hydro-Québec hydroelectric power lines at Tracy"
+        "en": "- La partie comprise entre le pont Honoré-Mercier et le côté en aval des lignes de transport d'électricité de la centrale hydroélectrique d'Hydro-Québec à Tracy"
       },
       "coordinates": null,
       "rules": {
@@ -11815,7 +11671,7 @@
       "id_endro": 231,
       "name": {
         "fr": "a) La partie comprise entre le barrage du Père Tarte",
-        "en": "a) That part between the Père Tarte dam"
+        "en": "a) La partie comprise entre le barrage du Père Tarte"
       },
       "coordinates": {
         "lat": 45.60278,
@@ -11884,7 +11740,7 @@
       "id_endro": 233,
       "name": {
         "fr": "b) La partie comprise entre le barrage d'Émileville",
-        "en": "b) That part between the Émileville dam"
+        "en": "b) La partie comprise entre le barrage d'Émileville"
       },
       "coordinates": {
         "lat": 45.48667,
@@ -11921,7 +11777,7 @@
       "id_endro": 235,
       "name": {
         "fr": "c) La partie comprise entre l'extrémité est de l'île",
-        "en": "c) That part between the eastern tip of the island"
+        "en": "c) La partie comprise entre l'extrémité est de l'île"
       },
       "coordinates": {
         "lat": 45.50111,
@@ -11958,7 +11814,7 @@
       "id_endro": 1075,
       "name": {
         "fr": "a) entre le côté en aval du pont de l'autoroute 30",
-        "en": "a) between the downstream side of the bridge of Highway 30"
+        "en": "a) entre le côté en aval du pont de l'autoroute 30"
       },
       "coordinates": {
         "lat": 46.02972,
@@ -11977,7 +11833,7 @@
       "id_endro": 254,
       "name": {
         "fr": "entre le pont de l'autoroute 40",
-        "en": "between the Highway 40"
+        "en": "entre le pont de l'autoroute 40"
       },
       "coordinates": {
         "lat": 45.48611,
@@ -12062,7 +11918,7 @@
       "id_endro": 272,
       "name": {
         "fr": "entre son embouchure dans le fleuve Saint-Laurent",
-        "en": "its mouth in the fleuve Saint-Laurent"
+        "en": "entre son embouchure dans le fleuve Saint-Laurent"
       },
       "coordinates": {
         "lat": 45.87306,
@@ -12419,7 +12275,7 @@
       "id_endro": 12541,
       "name": {
         "fr": "a) La partie comprise entre le pont de la route 132 à Yamaska et un point situé à 1 km en aval du pont de Saint-Hugues",
-        "en": "a) That part between the Route 132 bridge in Yamaska and a point located 1 km downstream from the Saint-Hugues bridge"
+        "en": "a) La partie comprise entre le pont de la route 132 à Yamaska et un point situé à 1 km en aval du pont de Saint-Hugues"
       },
       "coordinates": null,
       "rules": {
@@ -12435,7 +12291,7 @@
       "id_endro": 3203,
       "name": {
         "fr": "b) La partie comprise entre un point situé à 1 km en aval du pont à Saint-Hugues",
-        "en": "b) That part between a point located 1 km downstream of the bridge at Saint-Hugues"
+        "en": "b) La partie comprise entre un point situé à 1 km en aval du pont à Saint-Hugues"
       },
       "coordinates": null,
       "rules": {
@@ -12451,7 +12307,7 @@
       "id_endro": 12979,
       "name": {
         "fr": "c) La partie comprise entre un point situé à 1 km en amont du pont de Saint-Hugues",
-        "en": "c) That part between a point located 1 km upstream from the Saint-Hugues bridge"
+        "en": "c) La partie comprise entre un point situé à 1 km en amont du pont de Saint-Hugues"
       },
       "coordinates": null,
       "rules": {
@@ -12467,7 +12323,7 @@
       "id_endro": 12980,
       "name": {
         "fr": "d) La partie comprise entre le pont de la route 116",
-        "en": "d) That part between the Route 116 bridge"
+        "en": "d) La partie comprise entre le pont de la route 116"
       },
       "coordinates": null,
       "rules": {
@@ -12725,7 +12581,7 @@
       "id_endro": 282,
       "name": {
         "fr": "e) La partie comprise entre le barrage de la centrale hydroélectrique T.-D. Bouchard, à Saint-Hyacinthe",
-        "en": "e) That part between the T.-D. Bouchard hydroelectric power station dam in Saint-Hyacinthe"
+        "en": "e) La partie comprise entre le barrage de la centrale hydroélectrique T.-D. Bouchard, à Saint-Hyacinthe"
       },
       "coordinates": null,
       "rules": {
@@ -12741,7 +12597,7 @@
       "id_endro": 12545,
       "name": {
         "fr": "f) La partie comprise entre le pont de l'autoroute 10",
-        "en": "f) That part between the Highway 10 bridge"
+        "en": "f) La partie comprise entre le pont de l'autoroute 10"
       },
       "coordinates": {
         "lat": 45.37639,
@@ -12986,7 +12842,7 @@
       "id_endro": 12542,
       "name": {
         "fr": "Plan d’eau réglementé #12542 (voir la source)",
-        "en": "Regulated waterbody #12542 (see source)"
+        "en": "Plan d’eau réglementé #12542 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -13244,7 +13100,7 @@
       "id_endro": 12859,
       "name": {
         "fr": "Plan d’eau réglementé #12859 (voir la source)",
-        "en": "Regulated waterbody #12859 (see source)"
+        "en": "Plan d’eau réglementé #12859 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -13260,7 +13116,7 @@
       "id_endro": 12860,
       "name": {
         "fr": "Plan d’eau réglementé #12860 (voir la source)",
-        "en": "Regulated waterbody #12860 (see source)"
+        "en": "Plan d’eau réglementé #12860 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -13518,7 +13374,7 @@
       "id_endro": 12939,
       "name": {
         "fr": "Plan d’eau réglementé #12939 (voir la source)",
-        "en": "Regulated waterbody #12939 (see source)"
+        "en": "Plan d’eau réglementé #12939 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -13534,7 +13390,7 @@
       "id_endro": 12959,
       "name": {
         "fr": "Plan d’eau réglementé #12959 (voir la source)",
-        "en": "Regulated waterbody #12959 (see source)"
+        "en": "Plan d’eau réglementé #12959 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -13550,7 +13406,7 @@
       "id_endro": 12962,
       "name": {
         "fr": "Plan d’eau réglementé #12962 (voir la source)",
-        "en": "Regulated waterbody #12962 (see source)"
+        "en": "Plan d’eau réglementé #12962 (voir la source)"
       },
       "coordinates": null,
       "rules": {

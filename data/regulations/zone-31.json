@@ -6,7 +6,7 @@
   "source": {
     "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=31",
     "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=31",
-    "fetched_at": "2026-08-08",
+    "fetched_at": "2026-09-01",
     "note": "Rule text reproduced verbatim from the authority. Always verify against the source before fishing."
   },
   "coverage": {
@@ -21,78 +21,6 @@
   },
   "general": {
     "fr": [
-      {
-        "period": null,
-        "species": "Limite de prise",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Espèce:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de prise:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "Du 1er avril 2026 au 31 mars 2027",
         "species": "Bar rayé",
@@ -239,78 +167,6 @@
       }
     ],
     "en": [
-      {
-        "period": null,
-        "species": "Catch limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Species:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Catch limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "From April 1st, 2026 to March 31st, 2027",
         "species": "Atlantic salmon",
@@ -5286,7 +5142,7 @@
       "id_endro": 2786,
       "name": {
         "fr": "Rivière du Gouffre b) entre le côté en aval du pont du rang Saint-Jean-Baptiste et la fosse Antonien située au point",
-        "en": "River du Gouffre b) between the downstream side of the bridge rang Saint-Jean-Baptiste and Antonian pit located at"
+        "en": "Rivière du Gouffre b) entre le côté en aval du pont du rang Saint-Jean-Baptiste et la fosse Antonien située au point"
       },
       "coordinates": {
         "lat": 47.58528,
@@ -5305,7 +5161,7 @@
       "id_endro": 1977,
       "name": {
         "fr": "Rivière du Gouffre c) entre la fosse Antonien située au point",
-        "en": "River du Gouffre c) between the Antonien pool located at"
+        "en": "Rivière du Gouffre c) entre la fosse Antonien située au point"
       },
       "coordinates": {
         "lat": 47.58528,
@@ -5390,7 +5246,7 @@
       "id_endro": 1979,
       "name": {
         "fr": "Rivière du Gouffre e) entre le pont situé à l'extrémité nord du rang de Chicago Ouest et la chute située au point",
-        "en": "River du Gouffre e) between the bridge at the northern end of Rang from West Chicago , and the falls situated at"
+        "en": "Rivière du Gouffre e) entre le pont situé à l'extrémité nord du rang de Chicago Ouest et la chute située au point"
       },
       "coordinates": {
         "lat": 47.76972,
@@ -5459,7 +5315,7 @@
       "id_endro": 3129,
       "name": {
         "fr": "Rivière Jacques-Cartier c) entre le barrage de Donnacona",
-        "en": "River Jacques-Cartier c) between the Donnacona dam"
+        "en": "Rivière Jacques-Cartier c) entre le barrage de Donnacona"
       },
       "coordinates": {
         "lat": 46.6775,
@@ -5478,7 +5334,7 @@
       "id_endro": 3005,
       "name": {
         "fr": "à l'exception de la rivière Malbaie entre la limite sud du parc national des Hautes-Gorges-de-la-Rivière-Malbaie et le barrage des Érables situé au point",
-        "en": "with the exception of the Malbaie River between the southern boundary of the National Park of Hautes-Gorges-de-la-Rivière-Malbaie and the Érables Dam located at"
+        "en": "à l'exception de la rivière Malbaie entre la limite sud du parc national des Hautes-Gorges-de-la-Rivière-Malbaie et le barrage des Érables situé au point"
       },
       "coordinates": {
         "lat": 47.89194,
@@ -5771,7 +5627,7 @@
       "id_endro": 2015,
       "name": {
         "fr": "a) La partie comprise entre son embouchure et la limite est de la pourvoirie Raoul Lavoie",
-        "en": "a) That part between its mouth and the eastern boundary of the Raoul Lavoie outfitting"
+        "en": "a) La partie comprise entre son embouchure et la limite est de la pourvoirie Raoul Lavoie"
       },
       "coordinates": {
         "lat": 48.15917,
@@ -5790,7 +5646,7 @@
       "id_endro": 2016,
       "name": {
         "fr": "b) La partie comprise entre les limites est",
-        "en": "b) That part between the eastern limits"
+        "en": "b) La partie comprise entre les limites est"
       },
       "coordinates": {
         "lat": 48.15917,
@@ -5875,7 +5731,7 @@
       "id_endro": 12459,
       "name": {
         "fr": "b) entre une droite perpendiculaire à la rivière face à l'exutoire des étangs situés sur le parcours des Berges Alexis le Trotteur à Clermont",
-        "en": "b) between a straight line perpendicular to the river facing the outlet of the ponds located on the course of the Berges Alexis le Trotteur in Clermont"
+        "en": "b) entre une droite perpendiculaire à la rivière face à l'exutoire des étangs situés sur le parcours des Berges Alexis le Trotteur à Clermont"
       },
       "coordinates": null,
       "rules": {
@@ -5891,7 +5747,7 @@
       "id_endro": 12519,
       "name": {
         "fr": "c) entre une droite perpendiculaire situé en aval de l'embouchure de la rivière Jacob à Clermont",
-        "en": "c) between a straight line perpendicular located downstream from the outlet of the Jacob River at Clermont"
+        "en": "c) entre une droite perpendiculaire situé en aval de l'embouchure de la rivière Jacob à Clermont"
       },
       "coordinates": null,
       "rules": {
@@ -5907,7 +5763,7 @@
       "id_endro": 2001,
       "name": {
         "fr": "d) entre un point situé à 25 m en aval du barrage de l'usine de papier",
-        "en": "d) between a point 25 m downstream of the paper mill dam"
+        "en": "d) entre un point situé à 25 m en aval du barrage de l'usine de papier"
       },
       "coordinates": {
         "lat": 47.70444,
@@ -5926,7 +5782,7 @@
       "id_endro": 2790,
       "name": {
         "fr": "e) entre le câble en acier en amont du barrage de l'usine de papier",
-        "en": "e) between the steel cable above the dam of the paper mill"
+        "en": "e) entre le câble en acier en amont du barrage de l'usine de papier"
       },
       "coordinates": {
         "lat": 47.70444,
@@ -5995,7 +5851,7 @@
       "id_endro": 2003,
       "name": {
         "fr": "f) entre la limite sud de la zec des Martres",
-        "en": "f) between the southern limit of zec des Martres"
+        "en": "f) entre la limite sud de la zec des Martres"
       },
       "coordinates": {
         "lat": 47.74833,
@@ -6014,7 +5870,7 @@
       "id_endro": 2004,
       "name": {
         "fr": "g) entre la limite sud du parc national des Hautes-Gorges-de-la-Rivière-Malbaie et le barrage des Érables",
-        "en": "g) between the southern limit of Parc national des Hautes-Gorges-de-la-Rivière-Malbaie and a the Érables Dam"
+        "en": "g) entre la limite sud du parc national des Hautes-Gorges-de-la-Rivière-Malbaie et le barrage des Érables"
       },
       "coordinates": {
         "lat": 47.8925,
@@ -6067,7 +5923,7 @@
       "id_endro": 2238,
       "name": {
         "fr": "a) La partie comprise entre son embouchure",
-        "en": "a) That part between its mouth"
+        "en": "a) La partie comprise entre son embouchure"
       },
       "coordinates": null,
       "rules": {
@@ -6083,7 +5939,7 @@
       "id_endro": 2011,
       "name": {
         "fr": "b) La partie comprise entre le côté en aval du pont du chemin des Chutes",
-        "en": "b) That partbetween the downstream side Road Bridge Falls"
+        "en": "b) La partie comprise entre le côté en aval du pont du chemin des Chutes"
       },
       "coordinates": {
         "lat": 48.14694,
@@ -6102,7 +5958,7 @@
       "id_endro": 2012,
       "name": {
         "fr": "c) La partie comprise entre la limite est du Domaine Laforest et la limite est de la zec du Lac-au-Sable",
-        "en": "c) That part between the eastern boundary of Domaine Laforest property and the eastern boundary of zec du Lac-au-Sable"
+        "en": "c) La partie comprise entre la limite est du Domaine Laforest et la limite est de la zec du Lac-au-Sable"
       },
       "coordinates": {
         "lat": 47.99361,
@@ -6171,7 +6027,7 @@
       "id_endro": 11879,
       "name": {
         "fr": "à l'exclusion des eaux du lac au Chien",
-        "en": "excluding the waters of Lac au Chien"
+        "en": "à l'exclusion des eaux du lac au Chien"
       },
       "coordinates": {
         "lat": 46.94139,
@@ -6190,7 +6046,7 @@
       "id_endro": 1959,
       "name": {
         "fr": "Plan d’eau réglementé #1959 (voir la source)",
-        "en": "Regulated waterbody #1959 (see source)"
+        "en": "Plan d’eau réglementé #1959 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -6206,7 +6062,7 @@
       "id_endro": 2233,
       "name": {
         "fr": "Plan d’eau réglementé #2233 (voir la source)",
-        "en": "Regulated waterbody #2233 (see source)"
+        "en": "Plan d’eau réglementé #2233 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -6416,7 +6272,7 @@
       "id_endro": 1957,
       "name": {
         "fr": "Plan d’eau réglementé #1957 (voir la source)",
-        "en": "Regulated waterbody #1957 (see source)"
+        "en": "Plan d’eau réglementé #1957 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -6594,7 +6450,7 @@
       "id_endro": 3160,
       "name": {
         "fr": "Plan d’eau réglementé #3160 (voir la source)",
-        "en": "Regulated waterbody #3160 (see source)"
+        "en": "Plan d’eau réglementé #3160 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -6948,7 +6804,7 @@
       "id_endro": 1963,
       "name": {
         "fr": "Plan d’eau réglementé #1963 (voir la source)",
-        "en": "Regulated waterbody #1963 (see source)"
+        "en": "Plan d’eau réglementé #1963 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -7110,7 +6966,7 @@
       "id_endro": 10739,
       "name": {
         "fr": "Plan d’eau réglementé #10739 (voir la source)",
-        "en": "Regulated waterbody #10739 (see source)"
+        "en": "Plan d’eau réglementé #10739 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -7126,7 +6982,7 @@
       "id_endro": 1966,
       "name": {
         "fr": "Plan d’eau réglementé #1966 (voir la source)",
-        "en": "Regulated waterbody #1966 (see source)"
+        "en": "Plan d’eau réglementé #1966 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -7240,7 +7096,7 @@
       "id_endro": 2988,
       "name": {
         "fr": "Plan d’eau réglementé #2988 (voir la source)",
-        "en": "Regulated waterbody #2988 (see source)"
+        "en": "Plan d’eau réglementé #2988 (voir la source)"
       },
       "coordinates": null,
       "rules": {

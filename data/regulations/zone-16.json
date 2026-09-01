@@ -6,7 +6,7 @@
   "source": {
     "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=16",
     "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=16",
-    "fetched_at": "2026-08-08",
+    "fetched_at": "2026-09-01",
     "note": "Rule text reproduced verbatim from the authority. Always verify against the source before fishing."
   },
   "coverage": {
@@ -21,78 +21,6 @@
   },
   "general": {
     "fr": [
-      {
-        "period": null,
-        "species": "Limite de prise",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Espèce:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de prise:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "Du 1er avril 2026 au 22 avril 2026",
         "species": "Éperlan arc-en-ciel",
@@ -231,78 +159,6 @@
       }
     ],
     "en": [
-      {
-        "period": null,
-        "species": "Catch limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Species:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Catch limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "From April 1st, 2026 to April 22nd, 2026",
         "species": "Rainbow smelt",
@@ -3333,7 +3189,7 @@
       "id_endro": 3287,
       "name": {
         "fr": "Lac Sainte-Rose",
-        "en": "Lake Sainte-Rose"
+        "en": "Lac Sainte-Rose"
       },
       "coordinates": {
         "lat": 46.45111,
@@ -3386,7 +3242,7 @@
       "id_endro": 12339,
       "name": {
         "fr": "Plan d’eau réglementé #12339 (voir la source)",
-        "en": "Regulated waterbody #12339 (see source)"
+        "en": "Plan d’eau réglementé #12339 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -3402,7 +3258,7 @@
       "id_endro": 2743,
       "name": {
         "fr": "Plan d’eau réglementé #2743 (voir la source)",
-        "en": "Regulated waterbody #2743 (see source)"
+        "en": "Plan d’eau réglementé #2743 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -3644,7 +3500,7 @@
       "id_endro": 860,
       "name": {
         "fr": "Plan d’eau réglementé #860 (voir la source)",
-        "en": "Regulated waterbody #860 (see source)"
+        "en": "Plan d’eau réglementé #860 (voir la source)"
       },
       "coordinates": null,
       "rules": {

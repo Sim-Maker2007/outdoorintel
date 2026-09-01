@@ -6,7 +6,7 @@
   "source": {
     "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=25",
     "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=25",
-    "fetched_at": "2026-08-08",
+    "fetched_at": "2026-09-01",
     "note": "Rule text reproduced verbatim from the authority. Always verify against the source before fishing."
   },
   "coverage": {
@@ -21,78 +21,6 @@
   },
   "general": {
     "fr": [
-      {
-        "period": null,
-        "species": "Limite de prise",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Espèce:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de prise:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "Du 1er juin 2026 au 7 septembre 2026",
         "species": "Brochets",
@@ -143,78 +71,6 @@
       }
     ],
     "en": [
-      {
-        "period": null,
-        "species": "Catch limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Species:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Catch limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "From June 1st, 2026 to September 7th, 2026",
         "species": "Brook trout",
@@ -6328,7 +6184,7 @@
       "id_endro": 2416,
       "name": {
         "fr": "- La partie comprise entre la limite ouest de la réserve faunique Assinica",
-        "en": "- That part between the western boundary of the Assinica wildlife sanctuary"
+        "en": "- La partie comprise entre la limite ouest de la réserve faunique Assinica"
       },
       "coordinates": {
         "lat": 50.71694,
@@ -6397,7 +6253,7 @@
       "id_endro": 2545,
       "name": {
         "fr": "- La partie comprise entre une droite joignant les points",
-        "en": "- That part between a straight line joining points"
+        "en": "- La partie comprise entre une droite joignant les points"
       },
       "coordinates": null,
       "rules": {
@@ -6655,7 +6511,7 @@
       "id_endro": 1611,
       "name": {
         "fr": "Plan d’eau réglementé #1611 (voir la source)",
-        "en": "Regulated waterbody #1611 (see source)"
+        "en": "Plan d’eau réglementé #1611 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -6671,7 +6527,7 @@
       "id_endro": 1621,
       "name": {
         "fr": "Plan d’eau réglementé #1621 (voir la source)",
-        "en": "Regulated waterbody #1621 (see source)"
+        "en": "Plan d’eau réglementé #1621 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -6913,7 +6769,7 @@
       "id_endro": 2414,
       "name": {
         "fr": "Plan d’eau réglementé #2414 (voir la source)",
-        "en": "Regulated waterbody #2414 (see source)"
+        "en": "Plan d’eau réglementé #2414 (voir la source)"
       },
       "coordinates": null,
       "rules": {

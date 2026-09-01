@@ -6,7 +6,7 @@
   "source": {
     "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=19",
     "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=19",
-    "fetched_at": "2026-08-08",
+    "fetched_at": "2026-09-01",
     "note": "Rule text reproduced verbatim from the authority. Always verify against the source before fishing."
   },
   "coverage": {
@@ -21,78 +21,6 @@
   },
   "general": {
     "fr": [
-      {
-        "period": null,
-        "species": "Limite de prise",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Espèce:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de prise:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "Du 1er avril 2026 au 15 avril 2026",
         "species": "Brochets",
@@ -223,78 +151,6 @@
       }
     ],
     "en": [
-      {
-        "period": null,
-        "species": "Catch limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Species:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Catch limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "From April 1st, 2026 to April 15th, 2026",
         "species": "Pike",
@@ -11025,7 +10881,7 @@
       "id_endro": 1590,
       "name": {
         "fr": "Rivière de la Trinité b)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre le côté en aval du pont du 22 milles",
-        "en": "River de la Trinité b)(as well as the tributaries of this sector frequented by salmon) between the downstream side of the 22 miles"
+        "en": "Rivière de la Trinité b)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre le côté en aval du pont du 22 milles"
       },
       "coordinates": {
         "lat": 49.64111,
@@ -11110,7 +10966,7 @@
       "id_endro": 1592,
       "name": {
         "fr": "Rivière de la Trinité c)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre la ligne de transport d'énergie électrique",
-        "en": "River de la Trinité c)(as well as the tributaries of this sector frequented by salmon) between the electric transmission line"
+        "en": "Rivière de la Trinité c)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre la ligne de transport d'énergie électrique"
       },
       "coordinates": {
         "lat": 49.73194,
@@ -11147,7 +11003,7 @@
       "id_endro": 2609,
       "name": {
         "fr": "Rivière sans nom entre sa confluence avec la rivière de la Trinité",
-        "en": "River unnamed between its confluence with rivière de la Trinité"
+        "en": "Rivière sans nom entre sa confluence avec la rivière de la Trinité"
       },
       "coordinates": {
         "lat": 49.49611,
@@ -11166,7 +11022,7 @@
       "id_endro": 2611,
       "name": {
         "fr": "Rivière sans nom entre sa confluence avec la rivière de la Trinité",
-        "en": "River unnamed between its confluence with rivière de la Trinité"
+        "en": "Rivière sans nom entre sa confluence avec la rivière de la Trinité"
       },
       "coordinates": {
         "lat": 49.57472,
@@ -11185,7 +11041,7 @@
       "id_endro": 2613,
       "name": {
         "fr": "Rivière sans nom entre sa confluence avec la rivière de la Trinité",
-        "en": "River unnamed between its confluence with rivière de la Trinité"
+        "en": "Rivière sans nom entre sa confluence avec la rivière de la Trinité"
       },
       "coordinates": {
         "lat": 49.72778,
@@ -11204,7 +11060,7 @@
       "id_endro": 2616,
       "name": {
         "fr": "Rivière sans nom entre sa confluence avec la rivière de la Trinité",
-        "en": "River unnamed between its confluence with rivière de la Trinité"
+        "en": "Rivière sans nom entre sa confluence avec la rivière de la Trinité"
       },
       "coordinates": {
         "lat": 49.76722,
@@ -11223,7 +11079,7 @@
       "id_endro": 2618,
       "name": {
         "fr": "Rivière sans nom entre sa confluence avec la rivière de la Trinité",
-        "en": "River unnamed between its confluence with rivière de la Trinité"
+        "en": "Rivière sans nom entre sa confluence avec la rivière de la Trinité"
       },
       "coordinates": {
         "lat": 49.77972,
@@ -11242,7 +11098,7 @@
       "id_endro": 2619,
       "name": {
         "fr": "Rivière sans nom entre sa confluence avec le ruisseau Fafard et un point situé à 1,5 km en amont",
-        "en": "River unnamed between its confluence with ruisseau Fafard and a point situated 1.5 km upstream"
+        "en": "Rivière sans nom entre sa confluence avec le ruisseau Fafard et un point situé à 1,5 km en amont"
       },
       "coordinates": {
         "lat": 49.64611,
@@ -11449,7 +11305,7 @@
       "id_endro": 1541,
       "name": {
         "fr": "Rivière Étienne entre sa confluence avec la rivière Godbout et un lac sans nom",
-        "en": "River Étienne between its confluence with rivière Godbout and an unnamed lake"
+        "en": "Rivière Étienne entre sa confluence avec la rivière Godbout et un lac sans nom"
       },
       "coordinates": {
         "lat": 49.48556,
@@ -11486,7 +11342,7 @@
       "id_endro": 1523,
       "name": {
         "fr": "Rivière Godbout b)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre la ligne de transport d'énergie électrique et une ligne joignant le point",
-        "en": "River Godbout b)(as well as the tributaries of this sector frequented by salmon) between the electric power transmission line and a line joining point"
+        "en": "Rivière Godbout b)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre la ligne de transport d'énergie électrique et une ligne joignant le point"
       },
       "coordinates": {
         "lat": 49.33278,
@@ -11587,7 +11443,7 @@
       "id_endro": 1524,
       "name": {
         "fr": "Rivière Godbout c)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre une droite joignant le point",
-        "en": "River Godbout c)(as well as the tributaries of this sector frequented by salmon) between a line joining point"
+        "en": "Rivière Godbout c)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre une droite joignant le point"
       },
       "coordinates": {
         "lat": 49.33278,
@@ -11656,7 +11512,7 @@
       "id_endro": 1529,
       "name": {
         "fr": "Rivière Godbout f)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre la chute du 14 milles et la limite est de la pourvoirie du lac Cyprès formée par les points",
-        "en": "River Godbout f)(as well as the tributaries of this sector frequented by salmon) between the 14 miles falls and the eastern boundary of the outfitting of lac Cyprès formed by the points"
+        "en": "Rivière Godbout f)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre la chute du 14 milles et la limite est de la pourvoirie du lac Cyprès formée par les points"
       },
       "coordinates": {
         "lat": 49.69389,
@@ -11693,7 +11549,7 @@
       "id_endro": 2602,
       "name": {
         "fr": "Rivière sans nom entre sa confluence avec la rivière Beauzèle",
-        "en": "River unnamed between its confluence with rivière Beauzèle"
+        "en": "Rivière sans nom entre sa confluence avec la rivière Beauzèle"
       },
       "coordinates": {
         "lat": 49.76694,
@@ -11762,7 +11618,7 @@
       "id_endro": 2603,
       "name": {
         "fr": "Rivière sans nom entre sa confluence avec la rivière Beauzèle",
-        "en": "River unnamed between its confluence with rivière Beauzèle"
+        "en": "Rivière sans nom entre sa confluence avec la rivière Beauzèle"
       },
       "coordinates": {
         "lat": 49.78056,
@@ -11831,7 +11687,7 @@
       "id_endro": 2600,
       "name": {
         "fr": "Rivière sans nom entre sa confluence avec la rivière Étienne",
-        "en": "River unnamed between its confluence with rivière Étienne"
+        "en": "Rivière sans nom entre sa confluence avec la rivière Étienne"
       },
       "coordinates": {
         "lat": 49.46139,
@@ -11900,7 +11756,7 @@
       "id_endro": 2598,
       "name": {
         "fr": "Rivière sans nom entre sa confluence avec la rivière Godbout",
-        "en": "River unnamed between its confluence with rivière Godbout"
+        "en": "Rivière sans nom entre sa confluence avec la rivière Godbout"
       },
       "coordinates": {
         "lat": 49.70083,
@@ -12065,7 +11921,7 @@
       "id_endro": 2601,
       "name": {
         "fr": "Rivière sans nom entre sa confluence avec le ruisseau Frigon",
-        "en": "River unnamed between its confluence with ruisseau Frigon"
+        "en": "Rivière sans nom entre sa confluence avec le ruisseau Frigon"
       },
       "coordinates": {
         "lat": 49.72556,
@@ -12134,7 +11990,7 @@
       "id_endro": 2604,
       "name": {
         "fr": "Rivière sans nom entre sa confluence avec un tributaire sans nom de la rivière Beauzèle",
-        "en": "River unnamed between its confluence with an unnamed tributary of rivière Beauzèle"
+        "en": "Rivière sans nom entre sa confluence avec un tributaire sans nom de la rivière Beauzèle"
       },
       "coordinates": {
         "lat": 49.75194,
@@ -12410,7 +12266,7 @@
       "id_endro": 970,
       "name": {
         "fr": "Lac Anne",
-        "en": "Lake Anne"
+        "en": "Lac Anne"
       },
       "coordinates": {
         "lat": 49.55028,
@@ -12479,7 +12335,7 @@
       "id_endro": 977,
       "name": {
         "fr": "Lac au Brochet",
-        "en": "Lake au Brochet"
+        "en": "Lac au Brochet"
       },
       "coordinates": {
         "lat": 49.66667,
@@ -12516,7 +12372,7 @@
       "id_endro": 1014,
       "name": {
         "fr": "Lac aux Perles",
-        "en": "Lake aux Perles"
+        "en": "Lac aux Perles"
       },
       "coordinates": {
         "lat": 49.19167,
@@ -12535,7 +12391,7 @@
       "id_endro": 986,
       "name": {
         "fr": "Lac Dodier",
-        "en": "Lake Dodier"
+        "en": "Lac Dodier"
       },
       "coordinates": {
         "lat": 49.55,
@@ -12604,7 +12460,7 @@
       "id_endro": 991,
       "name": {
         "fr": "Lac Édouard",
-        "en": "Lake Édouard"
+        "en": "Lac Édouard"
       },
       "coordinates": {
         "lat": 49.59806,
@@ -12623,7 +12479,7 @@
       "id_endro": 1007,
       "name": {
         "fr": "Lac Petit lac Letemplier",
-        "en": "Lake Petit lac Letemplier"
+        "en": "Lac Petit lac Letemplier"
       },
       "coordinates": {
         "lat": 49.42556,
@@ -12642,11 +12498,11 @@
       "id_endro": 3103,
       "name": {
         "fr": "Lac Sans nom",
-        "en": "Lake Unnamed"
+        "en": "Lac Sans nom"
       },
       "coordinates": {
-        "lat": 49.63056,
-        "lng": -69.34444
+        "lat": 49.64167,
+        "lng": -69.35556
       },
       "rules": {
         "fr": [
@@ -12679,11 +12535,11 @@
       "id_endro": 3104,
       "name": {
         "fr": "Lac Sans nom",
-        "en": "Lake Unnamed"
+        "en": "Lac Sans nom"
       },
       "coordinates": {
-        "lat": 49.63333,
-        "lng": -69.36111
+        "lat": 49.64167,
+        "lng": -69.35556
       },
       "rules": {
         "fr": [
@@ -12780,7 +12636,7 @@
       "id_endro": 3105,
       "name": {
         "fr": "Lac Sans nom",
-        "en": "Lake Unnamed"
+        "en": "Lac Sans nom"
       },
       "coordinates": {
         "lat": 49.64167,
@@ -12881,7 +12737,7 @@
       "id_endro": 12260,
       "name": {
         "fr": "- La partie comprise entre le lac du Décès",
-        "en": "- That part between Lac du Décès"
+        "en": "- La partie comprise entre le lac du Décès"
       },
       "coordinates": null,
       "rules": {
@@ -12897,7 +12753,7 @@
       "id_endro": 1060,
       "name": {
         "fr": "b)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre le rapide situé à 350 mètres en amont du pont de la route 138",
-        "en": "b)(as well as the tributaries of this sector frequented by salmon) between fast 350 meters upstream from the Highway 138 bridge"
+        "en": "b)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre le rapide situé à 350 mètres en amont du pont de la route 138"
       },
       "coordinates": {
         "lat": 48.34472,
@@ -12982,7 +12838,7 @@
       "id_endro": 1500,
       "name": {
         "fr": "c)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre un point situé à 20 m en aval du Petit Sault",
-        "en": "c)(as well as the tributaries of this sector frequented by salmon) between a point 20 m downstream from Petit Sault"
+        "en": "c)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre un point situé à 20 m en aval du Petit Sault"
       },
       "coordinates": {
         "lat": 48.34583,
@@ -13051,7 +12907,7 @@
       "id_endro": 1502,
       "name": {
         "fr": "d)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre un point situé à 20 m en amont du Petit Sault",
-        "en": "d)(as well as the tributaries of this sector frequented by salmon) between a point 20 m upstream from Petit Sault"
+        "en": "d)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre un point situé à 20 m en amont du Petit Sault"
       },
       "coordinates": {
         "lat": 48.34583,
@@ -13120,7 +12976,7 @@
       "id_endro": 2478,
       "name": {
         "fr": "e)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre un point situé à 20 m en aval du Grand Sault",
-        "en": "e)(as well as the tributaries of this sector frequented by salmon) between a point 20 m downstream from Grand Sault"
+        "en": "e)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre un point situé à 20 m en aval du Grand Sault"
       },
       "coordinates": {
         "lat": 48.37139,
@@ -13139,7 +12995,7 @@
       "id_endro": 1505,
       "name": {
         "fr": "f)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre un point situé à 20 m en amont du Grand Sault",
-        "en": "f)(as well as the tributaries of this sector frequented by salmon) between a point 20 m upstream from Grand Sault"
+        "en": "f)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre un point situé à 20 m en amont du Grand Sault"
       },
       "coordinates": {
         "lat": 48.37139,
@@ -13208,7 +13064,7 @@
       "id_endro": 2303,
       "name": {
         "fr": "g)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre un point situé à 20 m en aval de la chute à Pinel",
-        "en": "g)(as well as the tributaries of this sector frequented by salmon) between a point 20 m downstream from Pinel falls"
+        "en": "g)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre un point situé à 20 m en aval de la chute à Pinel"
       },
       "coordinates": {
         "lat": 48.46889,
@@ -13227,7 +13083,7 @@
       "id_endro": 1509,
       "name": {
         "fr": "h)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre un point situé à 20 m en amont de la chute à Pinel",
-        "en": "h)(as well as the tributaries of this sector frequented by salmon) between a point 20 m upstream of Pinel falls"
+        "en": "h)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre un point situé à 20 m en amont de la chute à Pinel"
       },
       "coordinates": {
         "lat": 48.46889,
@@ -13246,7 +13102,7 @@
       "id_endro": 1057,
       "name": {
         "fr": "entre le côté en aval du pont de la route 138 et la chute située à",
-        "en": "between the downstream side of Highway 138 bridge and the falls situated at the point"
+        "en": "entre le côté en aval du pont de la route 138 et la chute située à"
       },
       "coordinates": {
         "lat": 49.62444,
@@ -13265,7 +13121,7 @@
       "id_endro": 2415,
       "name": {
         "fr": "entre son embouchure et la limite de montaison du saumon située au point",
-        "en": "between its mouth and the limit of the salmon run at point"
+        "en": "entre son embouchure et la limite de montaison du saumon située au point"
       },
       "coordinates": {
         "lat": 49.78556,
@@ -13510,7 +13366,7 @@
       "id_endro": 1568,
       "name": {
         "fr": "b)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre une droite joignant la pointe sud du bloc E en rive ouest",
-        "en": "b)(as well as the tributaries of this sector frequented by salmon) between a straight line joining the southern tip of block 'E' on the western bank"
+        "en": "b)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre une droite joignant la pointe sud du bloc E en rive ouest"
       },
       "coordinates": {
         "lat": 48.7725,
@@ -13643,7 +13499,7 @@
       "id_endro": 1569,
       "name": {
         "fr": "c)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre une droite perpendiculaire au courant située à 500 m en amont d'une droite joignant la pointe sud du bloc E en rive ouest",
-        "en": "c)(as well as the tributaries of this sector frequented by salmon) between a line perpendicular to the current 500 m upstream of a straight line joining the southern point of block \"E\" on the western bank"
+        "en": "c)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre une droite perpendiculaire au courant située à 500 m en amont d'une droite joignant la pointe sud du bloc E en rive ouest"
       },
       "coordinates": {
         "lat": 48.7725,
@@ -13760,7 +13616,7 @@
       "id_endro": 1572,
       "name": {
         "fr": "d)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre une droite reliant les points",
-        "en": "d)(as well as the tributaries of this sector frequented by salmon) between a line joining points"
+        "en": "d)(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre une droite reliant les points"
       },
       "coordinates": {
         "lat": 48.83556,
@@ -13779,7 +13635,7 @@
       "id_endro": 2306,
       "name": {
         "fr": "(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre une droite perpendiculaire au courant située à 300 m en aval du pont de la route 138 et la partie sud-est du lac Bourdon",
-        "en": "(as well as the tributaries of this sector frequented by salmon) between a straight line running perpendicular to the current 300 m downstream from the Highway 138 bridge and the southeast portion of lake Bourdon"
+        "en": "(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre une droite perpendiculaire au courant située à 300 m en aval du pont de la route 138 et la partie sud-est du lac Bourdon"
       },
       "coordinates": {
         "lat": 49.38611,
@@ -13798,7 +13654,7 @@
       "id_endro": 1584,
       "name": {
         "fr": "(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre le côté en aval du pont de la route 138 et la première chute",
-        "en": "(as well as the tributaries of this sector frequented by salmon) between the downstream side of bridge on Route 138 and the first falls"
+        "en": "(ainsi que les tributaires de ce secteur fréquenté par le saumon) entre le côté en aval du pont de la route 138 et la première chute"
       },
       "coordinates": {
         "lat": 49.79056,
@@ -13883,7 +13739,7 @@
       "id_endro": 3131,
       "name": {
         "fr": "La partie dans la zec Trinité (ainsi que les tributaires de ce secteur fréquenté par le saumon) entre une droite perpendiculaire au courant joignant les deux rives à 10 m en amont de la chute située à 100 m en aval du ruisseau Genest et la 4ième chute située au point",
-        "en": "The part in the Trinity ZEC (and tributaries in this area frequented by salmon) between a straight line perpendicular to the current joining the two banks 10 m upstream from the falls situated 100 m downstream from Genest Creek and the 4th fall located at point"
+        "en": "La partie dans la zec Trinité (ainsi que les tributaires de ce secteur fréquenté par le saumon) entre une droite perpendiculaire au courant joignant les deux rives à 10 m en amont de la chute située à 100 m en aval du ruisseau Genest et la 4ième chute située au point"
       },
       "coordinates": {
         "lat": 49.56028,
@@ -13902,7 +13758,7 @@
       "id_endro": 3384,
       "name": {
         "fr": "Entre sa source et une droite joignant le point",
-        "en": "That part between its source and a straight line joining point"
+        "en": "Entre sa source et une droite joignant le point"
       },
       "coordinates": {
         "lat": 49.09472,
@@ -14628,7 +14484,7 @@
       "id_endro": 2626,
       "name": {
         "fr": "Plan d’eau réglementé #2626 (voir la source)",
-        "en": "Regulated waterbody #2626 (see source)"
+        "en": "Plan d’eau réglementé #2626 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -14710,7 +14566,7 @@
       "id_endro": 12199,
       "name": {
         "fr": "Plan d’eau réglementé #12199 (voir la source)",
-        "en": "Regulated waterbody #12199 (see source)"
+        "en": "Plan d’eau réglementé #12199 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -14726,7 +14582,7 @@
       "id_endro": 2467,
       "name": {
         "fr": "Plan d’eau réglementé #2467 (voir la source)",
-        "en": "Regulated waterbody #2467 (see source)"
+        "en": "Plan d’eau réglementé #2467 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -14856,7 +14712,7 @@
       "id_endro": 2773,
       "name": {
         "fr": "Plan d’eau réglementé #2773 (voir la source)",
-        "en": "Regulated waterbody #2773 (see source)"
+        "en": "Plan d’eau réglementé #2773 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -14872,7 +14728,7 @@
       "id_endro": 2769,
       "name": {
         "fr": "Plan d’eau réglementé #2769 (voir la source)",
-        "en": "Regulated waterbody #2769 (see source)"
+        "en": "Plan d’eau réglementé #2769 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -14922,7 +14778,7 @@
       "id_endro": 10859,
       "name": {
         "fr": "Plan d’eau réglementé #10859 (voir la source)",
-        "en": "Regulated waterbody #10859 (see source)"
+        "en": "Plan d’eau réglementé #10859 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -14938,7 +14794,7 @@
       "id_endro": 2471,
       "name": {
         "fr": "Plan d’eau réglementé #2471 (voir la source)",
-        "en": "Regulated waterbody #2471 (see source)"
+        "en": "Plan d’eau réglementé #2471 (voir la source)"
       },
       "coordinates": null,
       "rules": {

@@ -6,7 +6,7 @@
   "source": {
     "fr": "https://peche.faune.gouv.qc.ca/regpec/fr/info/reglements?id_zone=2",
     "en": "https://peche.faune.gouv.qc.ca/regpec/en/info/reglements?id_zone=2",
-    "fetched_at": "2026-08-08",
+    "fetched_at": "2026-09-01",
     "note": "Rule text reproduced verbatim from the authority. Always verify against the source before fishing."
   },
   "coverage": {
@@ -21,78 +21,6 @@
   },
   "general": {
     "fr": [
-      {
-        "period": null,
-        "species": "Limite de prise",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Espèce:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de prise:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Limite de longueur:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Engin de pêche:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "Du 1er avril 2026 au 31 mars 2027",
         "species": "Bar rayé",
@@ -183,78 +111,6 @@
       }
     ],
     "en": [
-      {
-        "period": null,
-        "species": "Catch limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Species:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Catch limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Length limit:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Note:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
-      {
-        "period": null,
-        "species": "Fishing device:",
-        "limit": null,
-        "length": null,
-        "gear": null,
-        "notes": null
-      },
       {
         "period": "From April 1st, 2026 to March 31st, 2027",
         "species": "Atlantic salmon",
@@ -3860,7 +3716,7 @@
       "id_endro": 339,
       "name": {
         "fr": "entre sa confluence avec la rivière Humqui",
-        "en": "between its confluence with the rivière Humqui"
+        "en": "entre sa confluence avec la rivière Humqui"
       },
       "coordinates": {
         "lat": 48.32056,
@@ -3913,7 +3769,7 @@
       "id_endro": 374,
       "name": {
         "fr": "(Millstream) entre sa confluence avec la rivière Matapédia",
-        "en": "(Millstream) between its confluence with the rivière Matapédia"
+        "en": "(Millstream) entre sa confluence avec la rivière Matapédia"
       },
       "coordinates": {
         "lat": 48.06417,
@@ -3932,7 +3788,7 @@
       "id_endro": 336,
       "name": {
         "fr": "b) entre l'embouchure de la rivière Branche Nord (Humqui Nord)",
-        "en": "b) between and the mouth of rivière Branche Nord (Humqui Nord)"
+        "en": "b) entre l'embouchure de la rivière Branche Nord (Humqui Nord)"
       },
       "coordinates": {
         "lat": 48.32056,
@@ -4017,7 +3873,7 @@
       "id_endro": 344,
       "name": {
         "fr": "entre la frontière Québec - Nouveau-Brunswick",
-        "en": "between the Québec-New Brunswick border (48 ° 00'01 \"N., 67 ° 56'45\" W.) and Grand lac Kedgwick"
+        "en": "entre la frontière Québec - Nouveau-Brunswick"
       },
       "coordinates": {
         "lat": 48.00028,
@@ -4036,7 +3892,7 @@
       "id_endro": 383,
       "name": {
         "fr": "a) entre sa confluence avec la rivière Ouelle",
-        "en": "a) between its confluence with the rivière Ouelle"
+        "en": "a) entre sa confluence avec la rivière Ouelle"
       },
       "coordinates": {
         "lat": 47.35056,
@@ -4055,7 +3911,7 @@
       "id_endro": 384,
       "name": {
         "fr": "b) entre sa confluence avec la rivière Chaude",
-        "en": "b) between its confluence with the rivière Chaude river"
+        "en": "b) entre sa confluence avec la rivière Chaude"
       },
       "coordinates": {
         "lat": 47.30139,
@@ -4124,7 +3980,7 @@
       "id_endro": 360,
       "name": {
         "fr": "a) entre sa confluence avec la rivière Matapédia",
-        "en": "a) between its confluence with the Rivière Matapédia"
+        "en": "a) entre sa confluence avec la rivière Matapédia"
       },
       "coordinates": {
         "lat": 48.13722,
@@ -4241,7 +4097,7 @@
       "id_endro": 362,
       "name": {
         "fr": "b) entre le côté en aval du pont du CN",
-        "en": "b) between the downstream side of the CN railway bridge"
+        "en": "b) entre le côté en aval du pont du CN"
       },
       "coordinates": {
         "lat": 48.1375,
@@ -4358,7 +4214,7 @@
       "id_endro": 3259,
       "name": {
         "fr": "entre sa confluence avec la rivière Mitis",
-        "en": "between its confluence with the Mitis river"
+        "en": "entre sa confluence avec la rivière Mitis"
       },
       "coordinates": {
         "lat": 48.44889,
@@ -4411,7 +4267,7 @@
       "id_endro": 366,
       "name": {
         "fr": "entre le côté en aval du pont de la route 132 à Sainte-Angèle-de-Mérici",
-        "en": "between the downstream side of the Highway 132 bridge at Sainte-Angèle-de-Mérici"
+        "en": "entre le côté en aval du pont de la route 132 à Sainte-Angèle-de-Mérici"
       },
       "coordinates": {
         "lat": 48.54639,
@@ -4430,7 +4286,7 @@
       "id_endro": 391,
       "name": {
         "fr": "entre la frontière Québec - Nouveau-Brunswick",
-        "en": "between the Québec-New Brunswick border"
+        "en": "entre la frontière Québec - Nouveau-Brunswick"
       },
       "coordinates": {
         "lat": 48,
@@ -4515,7 +4371,7 @@
       "id_endro": 392,
       "name": {
         "fr": "entre sa confluence avec la rivière Patapédia-Est",
-        "en": "between the mouth of the rivière Patapédia-Est"
+        "en": "entre sa confluence avec la rivière Patapédia-Est"
       },
       "coordinates": {
         "lat": 48.07806,
@@ -4600,7 +4456,7 @@
       "id_endro": 395,
       "name": {
         "fr": "b) entre une droite perpendiculaire au courant située à 250 m en aval du barrage de la Pulpe",
-        "en": "b) between a straight line running perpendicular to the current 250 m downstream from the Pulpe dam"
+        "en": "b) entre une droite perpendiculaire au courant située à 250 m en aval du barrage de la Pulpe"
       },
       "coordinates": {
         "lat": 48.41194,
@@ -4685,7 +4541,7 @@
       "id_endro": 396,
       "name": {
         "fr": "c) entre le barrage de la Pulpe",
-        "en": "c) between the Pulpe dam"
+        "en": "c) entre le barrage de la Pulpe"
       },
       "coordinates": {
         "lat": 48.41028,
@@ -4722,7 +4578,7 @@
       "id_endro": 397,
       "name": {
         "fr": "d) entre la ligne de division nord du canton Macpès",
-        "en": "d) between the northern boundary line of Macpès township"
+        "en": "d) entre la ligne de division nord du canton Macpès"
       },
       "coordinates": {
         "lat": 48.34694,
@@ -4791,7 +4647,7 @@
       "id_endro": 308,
       "name": {
         "fr": "Plan d’eau réglementé #308 (voir la source)",
-        "en": "Regulated waterbody #308 (see source)"
+        "en": "Plan d’eau réglementé #308 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -4841,7 +4697,7 @@
       "id_endro": 315,
       "name": {
         "fr": "Plan d’eau réglementé #315 (voir la source)",
-        "en": "Regulated waterbody #315 (see source)"
+        "en": "Plan d’eau réglementé #315 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -4857,7 +4713,7 @@
       "id_endro": 286,
       "name": {
         "fr": "Plan d’eau réglementé #286 (voir la source)",
-        "en": "Regulated waterbody #286 (see source)"
+        "en": "Plan d’eau réglementé #286 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -4923,7 +4779,7 @@
       "id_endro": 321,
       "name": {
         "fr": "Plan d’eau réglementé #321 (voir la source)",
-        "en": "Regulated waterbody #321 (see source)"
+        "en": "Plan d’eau réglementé #321 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -4939,7 +4795,7 @@
       "id_endro": 297,
       "name": {
         "fr": "Plan d’eau réglementé #297 (voir la source)",
-        "en": "Regulated waterbody #297 (see source)"
+        "en": "Plan d’eau réglementé #297 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -5037,7 +4893,7 @@
       "id_endro": 299,
       "name": {
         "fr": "Plan d’eau réglementé #299 (voir la source)",
-        "en": "Regulated waterbody #299 (see source)"
+        "en": "Plan d’eau réglementé #299 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -5119,7 +4975,7 @@
       "id_endro": 12240,
       "name": {
         "fr": "Plan d’eau réglementé #12240 (voir la source)",
-        "en": "Regulated waterbody #12240 (see source)"
+        "en": "Plan d’eau réglementé #12240 (voir la source)"
       },
       "coordinates": null,
       "rules": {
@@ -5201,7 +5057,7 @@
       "id_endro": 10419,
       "name": {
         "fr": "Plan d’eau réglementé #10419 (voir la source)",
-        "en": "Regulated waterbody #10419 (see source)"
+        "en": "Plan d’eau réglementé #10419 (voir la source)"
       },
       "coordinates": null,
       "rules": {
