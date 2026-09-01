@@ -1,0 +1,97 @@
+---
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import GlobalSearch from '../../components/GlobalSearch.astro';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'en' } }, { params: { lang: 'fr' } }];
+}
+
+const { lang } = Astro.params;
+const L = lang === 'en' ? 'en' : 'fr';
+const SITE = 'https://outdoorintel.ca';
+const url = `${SITE}/${lang}/affiliate`;
+const altHref = `/${lang === 'en' ? 'fr' : 'en'}/affiliate`;
+
+const T = {
+  title: { en: 'Affiliate Disclosure', fr: 'Divulgation d’affiliation' },
+  metaDesc: {
+    en: 'Outdoor Intel Amazon Associates disclosure (tag outdoorintel2-20). Affiliate links do not change regulation or safety advice.',
+    fr: 'Divulgation Amazon Associates d’Outdoor Intel (balise outdoorintel2-20). Les liens d’affiliation ne changent pas les conseils de règlements ou de sécurité.',
+  },
+  h1: { en: 'Affiliate Disclosure', fr: 'Divulgation d’affiliation' },
+  updated: { en: 'Last updated: 1 September 2026 (placeholders pending legal review)', fr: 'Dernière mise à jour : 1er septembre 2026 (mentions en attente de révision juridique)' },
+};
+
+const sections = L === 'en' ? [
+  ['Who publishes this', 'This disclosure is published by [LEGAL NAME], mailing address [MAILING ADDRESS]. Contact: hello@outdoorintel.ca. Governing law placeholder: [GOVERNING LAW].'],
+  ['Amazon Associates', 'Outdoor Intel is a participant in the Amazon Associates Programme. We may earn from qualifying purchases when you follow product links that use tracking tag outdoorintel2-20. Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates. Purchases are made on Amazon’s site under Amazon’s terms.'],
+  ['What affiliation does not do', 'Affiliate relationships must not determine regulation advice, safety guidance, destination rankings, or verification labels. Outdoor Intel is not a legal authority. Catch limits, length limits, and seasons come from cited official sources such as the MELCCFP — not from retailers.'],
+  ['Other partners', 'Some gear links may point to a retail partner instead of Amazon, as configured on the site. Those relationships are also disclosed in context on gear checklists where they appear.'],
+  ['Privacy', 'Clicking an affiliate link may allow the retailer to collect data under their own privacy policy. Our newsletter and analytics practices (Google Analytics G-QY8Q00962P) are described in the Privacy Policy (PIPEDA and Québec Law 25). Retention placeholder: [RETENTION].'],
+] : [
+  ['Qui publie ceci', 'Cette divulgation est publiée par [LEGAL NAME], adresse postale [MAILING ADDRESS]. Contact : hello@outdoorintel.ca. Droit applicable (mention) : [GOVERNING LAW].'],
+  ['Amazon Associates', 'Outdoor Intel participe au programme Amazon Associates. Nous pouvons recevoir une commission sur les achats admissibles lorsque vous suivez un lien produit portant la balise outdoorintel2-20. Amazon et le logo Amazon sont des marques d’Amazon.com, Inc. ou de ses affiliés. Les achats se font sur le site d’Amazon, selon leurs conditions.'],
+  ['Ce que l’affiliation ne fait pas', 'Les relations d’affiliation ne doivent pas déterminer les conseils de règlements, de sécurité, les classements de destinations ou les étiquettes de vérification. Outdoor Intel n’est pas une autorité juridique. Les limites de prise, de longueur et les saisons proviennent de sources officielles citées (dont le MELCCFP) — pas des détaillants.'],
+  ['Autres partenaires', 'Certains liens d’équipement peuvent pointer vers un partenaire détaillant plutôt qu’Amazon, selon la configuration du site. Ces relations sont aussi indiquées dans le contexte des listes d’équipement.'],
+  ['Confidentialité', 'Un clic sur un lien d’affiliation peut permettre au détaillant de recueillir des données selon sa propre politique. L’infolettre et l’analytique (Google Analytics G-QY8Q00962P) sont décrites dans la politique de confidentialité (LPRPDE / PIPEDA et Loi 25 du Québec). Conservation (mention) : [RETENTION].'],
+];
+---
+<html lang={lang}>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#14251a">
+    <title>{T.title[L]} | Outdoor Intel</title>
+    <meta name="description" content={T.metaDesc[L]}>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href={url}>
+    <link rel="alternate" hreflang="en" href={`${SITE}/en/affiliate`}>
+    <link rel="alternate" hreflang="fr" href={`${SITE}/fr/affiliate`}>
+    <link rel="alternate" hreflang="x-default" href={`${SITE}/en/affiliate`}>
+    <link rel="stylesheet" href="/assets/css/site.css?v=1">
+    <Fragment set:html={`<!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8Q00962P"><\/script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QY8Q00962P');
+    <\/script>`} />
+    <Fragment set:html={`<style id="oi-ds">.explore-dropdown{visibility:hidden;opacity:0;transform:translateY(6px);transition:opacity .15s ease,transform .15s ease,visibility .15s}.explore-group:hover .explore-dropdown,.explore-group:focus-within .explore-dropdown{visibility:visible;opacity:1;transform:translateY(0)}<\/style>`} />
+</head>
+<body class="bg-[#fbfaf7] text-[#1c2b21] font-sans leading-relaxed">
+    <Header lang={lang} altHref={altHref} />
+    <main class="pt-[88px]">
+        <section class="bg-[#14251a] text-white py-14 px-6">
+            <div class="max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">{T.h1[L]}</h1>
+                <p class="text-white/80">{T.updated[L]}</p>
+            </div>
+        </section>
+        <section class="max-w-3xl mx-auto px-6 py-12 space-y-8">
+            {sections.map(([h, p]) => (
+            <div class="bg-white rounded-xl p-6 border border-[#305e3c]/10">
+                <h2 class="text-2xl font-bold text-[#305e3c] mb-3">{h}</h2>
+                <p class="text-[#1c2b21] leading-relaxed">{p}</p>
+            </div>
+            ))}
+        </section>
+    </main>
+    <Footer lang={lang} altHref={altHref} />
+    <Fragment set:html={`<script>
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('mobile-menu');
+if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        toggle.setAttribute('aria-expanded', !menu.classList.contains('hidden'));
+    });
+}
+<\/script>`} />
+    <GlobalSearch />
+    <script is:inline defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

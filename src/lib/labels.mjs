@@ -184,6 +184,9 @@ export const T = {
     trust: { en: 'Trust & sources', fr: 'Confiance et sources' },
     about: { en: 'About', fr: 'À propos' },
     licenses: { en: 'Licenses & regs', fr: 'Permis et règlements' },
+    privacy: { en: 'Privacy', fr: 'Confidentialité' },
+    terms: { en: 'Terms', fr: 'Conditions' },
+    affiliate: { en: 'Affiliate disclosure', fr: 'Divulgation d’affiliation' },
   },
   weatherStats: {
     feels: { en: 'Feels like', fr: 'Ressenti' },
@@ -205,6 +208,9 @@ export function chromeLinks(lang) {
     trust: `/${lang}/trust`,
     about: '/en/about',
     licenses: '/en/licenses',
+    privacy: `/${lang}/privacy`,
+    terms: `/${lang}/terms`,
+    affiliate: `/${lang}/affiliate`,
     directory: act => `/${lang}/${act}/directory`,
   };
 }

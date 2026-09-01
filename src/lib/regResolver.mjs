@@ -36,13 +36,26 @@ function ruleActiveOn(rule, isoDate) {
   return isoDate >= p.from && isoDate <= p.to;
 }
 
+const norm = s => (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+
 function matchesSpecies(rule, q) {
   if (!q) return true;
-  const hay = (rule.species || '').toLowerCase();
-  return q.toLowerCase().split(/[,;]/).some(term => hay.includes(term.trim()));
+  const hay = norm(rule.species);
+  return q.split(/[,;]/).some(term => {
+    const n = norm(term);
+    return n && hay.includes(n);
+  });
 }
 
-const norm = s => (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+// DevExpress grid headers harvested as fake "species" rows (EN+FR, optional colon).
+// Only drop when the rest of the rule is empty — "Fishing prohibited" has a limit.
+const GRID_JUNK_SPECIES = /^(Esp[eè]ce|Species|Limite de prise|Limite de longueur|Engin de p[eê]che|Catch limit|Length limit|Fishing device|Note)\s*:?\s*$/i;
+
+export function isGridJunkRule(rule) {
+  if (!rule) return false;
+  if (rule.limit || rule.length || rule.gear || rule.notes) return false;
+  return GRID_JUNK_SPECIES.test(String(rule.species || '').trim());
+}
 
 /**
  * Resolve applicable rules.
@@ -54,6 +67,7 @@ export function resolveRegs(zoneDoc, { lang = 'fr', date, species, waterbody } =
   const L = lang === 'en' ? 'en' : 'fr';
 
   const general = zoneDoc.general[L]
+    .filter(r => !isGridJunkRule(r))
     .filter(r => ruleActiveOn(r, date))
     .filter(r => matchesSpecies(r, species));
 
@@ -67,7 +81,10 @@ export function resolveRegs(zoneDoc, { lang = 'fr', date, species, waterbody } =
         name: found.name[L],
         coordinates: found.coordinates,
         source: found.source[L],
-        rules: found.rules[L].filter(r => ruleActiveOn(r, date)).filter(r => matchesSpecies(r, species)),
+        rules: found.rules[L]
+          .filter(r => !isGridJunkRule(r))
+          .filter(r => ruleActiveOn(r, date))
+          .filter(r => matchesSpecies(r, species)),
       };
     }
   }

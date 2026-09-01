@@ -1,0 +1,101 @@
+---
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import GlobalSearch from '../../components/GlobalSearch.astro';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'en' } }, { params: { lang: 'fr' } }];
+}
+
+const { lang } = Astro.params;
+const L = lang === 'en' ? 'en' : 'fr';
+const SITE = 'https://outdoorintel.ca';
+const url = `${SITE}/${lang}/terms`;
+const altHref = `/${lang === 'en' ? 'fr' : 'en'}/terms`;
+
+const T = {
+  title: { en: 'Terms of Use', fr: 'Conditions d’utilisation' },
+  metaDesc: {
+    en: 'Terms of use for Outdoor Intel. Placeholders pending legal identity. Not a legal authority.',
+    fr: 'Conditions d’utilisation d’Outdoor Intel. Mentions d’identité en attente. Pas une autorité juridique.',
+  },
+  h1: { en: 'Terms of Use', fr: 'Conditions d’utilisation' },
+  updated: { en: 'Last updated: 1 September 2026 (placeholders pending legal review)', fr: 'Dernière mise à jour : 1er septembre 2026 (mentions en attente de révision juridique)' },
+};
+
+const sections = L === 'en' ? [
+  ['Operator', 'These terms apply to outdoorintel.ca, operated by [LEGAL NAME], mailing address [MAILING ADDRESS]. Contact: hello@outdoorintel.ca. Governing law placeholder: [GOVERNING LAW].'],
+  ['Not a legal authority', 'Outdoor Intel is not a government agency and is not a legal authority. Fishing regulations and other official rules shown here are reproduced from cited sources (including the MELCCFP). Limits, seasons, and closures can change. You must verify the current official text before you fish, hunt, camp, or travel. We do not fabricate, paraphrase, or replace bag, length, or season limits.'],
+  ['The site', 'Content is provided for outdoor planning. It may be incomplete or out of date. Use of the map, directories, newsletter, and regulation lookup is at your own risk. Paid Season Intel, checkout, and account features described elsewhere are not part of these pages.'],
+  ['Affiliate links', 'Some gear links use the Amazon Associates tag outdoorintel2-20. Purchases are between you and the retailer. See the Affiliate disclosure page.'],
+  ['Acceptable use', 'Do not misuse the site, scrape in a way that harms the service, or submit unlawful content via forms. Newsletter signup is optional.'],
+  ['Privacy', 'Personal information is described in the Privacy Policy (PIPEDA and Québec Law 25). Analytics uses Google Analytics G-QY8Q00962P.'],
+  ['Contact', 'Questions: hello@outdoorintel.ca. Identity and jurisdiction details marked [LEGAL NAME], [MAILING ADDRESS], and [GOVERNING LAW] will be filled when legal review is complete.'],
+] : [
+  ['Exploitant', 'Ces conditions s’appliquent à outdoorintel.ca, exploité par [LEGAL NAME], adresse postale [MAILING ADDRESS]. Contact : hello@outdoorintel.ca. Droit applicable (mention) : [GOVERNING LAW].'],
+  ['Pas une autorité juridique', 'Outdoor Intel n’est pas un organisme gouvernemental et n’est pas une autorité juridique. Les règlements de pêche et autres règles officielles reproduits ici proviennent de sources citées (dont le MELCCFP). Les limites, périodes et fermetures peuvent changer. Vous devez vérifier le texte officiel en vigueur avant de pêcher, chasser, camper ou voyager. Nous n’inventons ni ne remplaçons les limites de prise, de longueur ou de saison.'],
+  ['Le site', 'Le contenu vise la planification de sorties. Il peut être incomplet ou périmé. L’usage de la carte, des répertoires, de l’infolettre et de la recherche de règlements se fait à vos risques. Les fonctions payantes décrites ailleurs ne font pas partie de ces pages.'],
+  ['Liens d’affiliation', 'Certains liens d’équipement utilisent la balise Amazon Associates outdoorintel2-20. Les achats se font entre vous et le détaillant. Voir la page de divulgation d’affiliation.'],
+  ['Usage acceptable', 'N’utilisez pas le site de façon abusive, ne le moissonnez pas au détriment du service et n’envoyez pas de contenu illicite via les formulaires. L’inscription à l’infolettre est facultative.'],
+  ['Confidentialité', 'Les renseignements personnels sont décrits dans la politique de confidentialité (LPRPDE / PIPEDA et Loi 25 du Québec). L’analytique utilise Google Analytics G-QY8Q00962P.'],
+  ['Contact', 'Questions : hello@outdoorintel.ca. Les mentions [LEGAL NAME], [MAILING ADDRESS] et [GOVERNING LAW] seront complétées après révision juridique.'],
+];
+---
+<html lang={lang}>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#14251a">
+    <title>{T.title[L]} | Outdoor Intel</title>
+    <meta name="description" content={T.metaDesc[L]}>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href={url}>
+    <link rel="alternate" hreflang="en" href={`${SITE}/en/terms`}>
+    <link rel="alternate" hreflang="fr" href={`${SITE}/fr/terms`}>
+    <link rel="alternate" hreflang="x-default" href={`${SITE}/en/terms`}>
+    <link rel="stylesheet" href="/assets/css/site.css?v=1">
+    <Fragment set:html={`<!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8Q00962P"><\/script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QY8Q00962P');
+    <\/script>`} />
+    <Fragment set:html={`<style id="oi-ds">.explore-dropdown{visibility:hidden;opacity:0;transform:translateY(6px);transition:opacity .15s ease,transform .15s ease,visibility .15s}.explore-group:hover .explore-dropdown,.explore-group:focus-within .explore-dropdown{visibility:visible;opacity:1;transform:translateY(0)}<\/style>`} />
+</head>
+<body class="bg-[#fbfaf7] text-[#1c2b21] font-sans leading-relaxed">
+    <Header lang={lang} altHref={altHref} />
+    <main class="pt-[88px]">
+        <section class="bg-[#14251a] text-white py-14 px-6">
+            <div class="max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">{T.h1[L]}</h1>
+                <p class="text-white/80">{T.updated[L]}</p>
+            </div>
+        </section>
+        <section class="max-w-3xl mx-auto px-6 py-12 space-y-8">
+            {sections.map(([h, p]) => (
+            <div class="bg-white rounded-xl p-6 border border-[#305e3c]/10">
+                <h2 class="text-2xl font-bold text-[#305e3c] mb-3">{h}</h2>
+                <p class="text-[#1c2b21] leading-relaxed">{p}</p>
+            </div>
+            ))}
+        </section>
+    </main>
+    <Footer lang={lang} altHref={altHref} />
+    <Fragment set:html={`<script>
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('mobile-menu');
+if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        toggle.setAttribute('aria-expanded', !menu.classList.contains('hidden'));
+    });
+}
+<\/script>`} />
+    <GlobalSearch />
+    <script is:inline defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

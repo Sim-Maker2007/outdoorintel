@@ -1,0 +1,103 @@
+---
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import GlobalSearch from '../../components/GlobalSearch.astro';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'en' } }, { params: { lang: 'fr' } }];
+}
+
+const { lang } = Astro.params;
+const L = lang === 'en' ? 'en' : 'fr';
+const SITE = 'https://outdoorintel.ca';
+const url = `${SITE}/${lang}/privacy`;
+const altHref = `/${lang === 'en' ? 'fr' : 'en'}/privacy`;
+
+const T = {
+  title: { en: 'Privacy Policy', fr: 'Politique de confidentialité' },
+  metaDesc: {
+    en: 'How Outdoor Intel collects, uses, and retains personal information under PIPEDA and Québec Law 25. Placeholders pending legal identity.',
+    fr: 'Comment Outdoor Intel recueille, utilise et conserve les renseignements personnels en vertu de la LPRPDE et de la Loi 25 du Québec. Mentions d’identité en attente.',
+  },
+  h1: { en: 'Privacy Policy', fr: 'Politique de confidentialité' },
+  updated: { en: 'Last updated: 1 September 2026 (placeholders pending legal review)', fr: 'Dernière mise à jour : 1er septembre 2026 (mentions en attente de révision juridique)' },
+  notAuthority: {
+    en: 'Outdoor Intel is not a legal authority. Regulation text on this site is reproduced from official sources (including the MELCCFP) and can change. Always verify with the authority before you go.',
+    fr: 'Outdoor Intel n’est pas une autorité juridique. Les textes réglementaires de ce site sont reproduits de sources officielles (dont le MELCCFP) et peuvent changer. Vérifiez toujours auprès de l’autorité avant votre sortie.',
+  },
+};
+
+const sections = L === 'en' ? [
+  ['Who we are', 'This policy is published by [LEGAL NAME], operating the Outdoor Intel website at outdoorintel.ca. Mailing address: [MAILING ADDRESS]. Privacy contact: hello@outdoorintel.ca ([PRIVACY EMAIL]).'],
+  ['Laws that apply', 'We handle personal information in line with Canada’s Personal Information Protection and Electronic Documents Act (PIPEDA) and Québec’s Act respecting the protection of personal information in the private sector as amended (Law 25 / Loi 25). Governing law placeholder: [GOVERNING LAW].'],
+  ['What we collect', 'Depending on how you use the site we may collect: (1) the email address you submit to the newsletter; (2) usage data via Google Analytics, measurement ID G-QY8Q00962P; (3) technical logs such as IP address, user agent, and pages requested, as needed to operate and secure the site. We do not ask for payment card data on this site in this version.'],
+  ['Why we collect it', 'Newsletter email is used only to send the weekly Outdoor Intel email you requested. Analytics (G-QY8Q00962P) helps us understand which public pages are used. We do not sell personal information. Affiliate shopping (Amazon Associates tag outdoorintel2-20) happens on Amazon’s site under Amazon’s privacy terms when you follow a product link.'],
+  ['Retention', 'We retain personal information for [RETENTION]. You may request access, correction, or deletion by writing to hello@outdoorintel.ca. Québec residents may also contact the Commission d’accès à l’information du Québec; anyone in Canada may contact the Office of the Privacy Commissioner of Canada.'],
+  ['Not legal advice', T.notAuthority.en],
+] : [
+  ['Qui nous sommes', 'Cette politique est publiée par [LEGAL NAME], qui exploite le site Outdoor Intel à outdoorintel.ca. Adresse postale : [MAILING ADDRESS]. Contact confidentialité : hello@outdoorintel.ca ([PRIVACY EMAIL]).'],
+  ['Lois applicables', 'Nous traitons les renseignements personnels conformément à la Loi sur la protection des renseignements personnels et les documents électroniques (LPRPDE / PIPEDA) et à la Loi sur la protection des renseignements personnels dans le secteur privé du Québec, telle que modifiée (Loi 25). Droit applicable (mention) : [GOVERNING LAW].'],
+  ['Ce que nous recueillons', 'Selon l’usage du site, nous pouvons recueillir : (1) l’adresse courriel soumise à l’infolettre; (2) des données d’utilisation via Google Analytics, identifiant de mesure G-QY8Q00962P; (3) des journaux techniques (adresse IP, agent utilisateur, pages demandées) nécessaires à l’exploitation et à la sécurité. Cette version du site ne demande pas de données de carte de paiement.'],
+  ['Pourquoi', 'Le courriel d’infolettre sert uniquement à l’envoi hebdomadaire demandé. L’analytique (G-QY8Q00962P) nous aide à comprendre quelles pages publiques sont utilisées. Nous ne vendons pas de renseignements personnels. Les achats d’affiliation (balise Amazon Associates outdoorintel2-20) se font sur le site d’Amazon, selon leurs règles, lorsque vous suivez un lien produit.'],
+  ['Conservation', 'Nous conservons les renseignements personnels pendant [RETENTION]. Vous pouvez demander l’accès, la correction ou la suppression à hello@outdoorintel.ca. Les résidents du Québec peuvent aussi s’adresser à la Commission d’accès à l’information du Québec; toute personne au Canada peut s’adresser au Commissariat à la protection de la vie privée du Canada.'],
+  ['Pas un avis juridique', T.notAuthority.fr],
+];
+---
+<html lang={lang}>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#14251a">
+    <title>{T.title[L]} | Outdoor Intel</title>
+    <meta name="description" content={T.metaDesc[L]}>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href={url}>
+    <link rel="alternate" hreflang="en" href={`${SITE}/en/privacy`}>
+    <link rel="alternate" hreflang="fr" href={`${SITE}/fr/privacy`}>
+    <link rel="alternate" hreflang="x-default" href={`${SITE}/en/privacy`}>
+    <link rel="stylesheet" href="/assets/css/site.css?v=1">
+    <Fragment set:html={`<!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8Q00962P"><\/script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QY8Q00962P');
+    <\/script>`} />
+    <Fragment set:html={`<style id="oi-ds">.explore-dropdown{visibility:hidden;opacity:0;transform:translateY(6px);transition:opacity .15s ease,transform .15s ease,visibility .15s}.explore-group:hover .explore-dropdown,.explore-group:focus-within .explore-dropdown{visibility:visible;opacity:1;transform:translateY(0)}<\/style>`} />
+</head>
+<body class="bg-[#fbfaf7] text-[#1c2b21] font-sans leading-relaxed">
+    <Header lang={lang} altHref={altHref} />
+    <main class="pt-[88px]">
+        <section class="bg-[#14251a] text-white py-14 px-6">
+            <div class="max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">{T.h1[L]}</h1>
+                <p class="text-white/80">{T.updated[L]}</p>
+            </div>
+        </section>
+        <section class="max-w-3xl mx-auto px-6 py-12 space-y-8">
+            {sections.map(([h, p]) => (
+            <div class="bg-white rounded-xl p-6 border border-[#305e3c]/10">
+                <h2 class="text-2xl font-bold text-[#305e3c] mb-3">{h}</h2>
+                <p class="text-[#1c2b21] leading-relaxed">{p}</p>
+            </div>
+            ))}
+        </section>
+    </main>
+    <Footer lang={lang} altHref={altHref} />
+    <Fragment set:html={`<script>
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('mobile-menu');
+if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        toggle.setAttribute('aria-expanded', !menu.classList.contains('hidden'));
+    });
+}
+<\/script>`} />
+    <GlobalSearch />
+    <script is:inline defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
