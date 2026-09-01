@@ -180,6 +180,7 @@ export const T = {
     explore: { en: 'Explore', fr: 'Explorer' },
     product: { en: 'Product', fr: 'Produit' },
     regs: { en: 'Fishing regulations', fr: 'Règlements de pêche' },
+    huntingRegs: { en: 'Hunting seasons', fr: 'Périodes de chasse' },
     seasonIntel: { en: 'Season Intel', fr: 'Season Intel' },
     aboutCol: { en: 'About', fr: 'À propos' },
     trust: { en: 'Trust & sources', fr: 'Confiance et sources' },
