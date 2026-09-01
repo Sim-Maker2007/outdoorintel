@@ -64,6 +64,11 @@ const T = {
   noRules: { en: 'No matching rules for this search.', fr: 'Aucune règle ne correspond à cette recherche.' },
   searching: { en: 'Loading…', fr: 'Chargement…' },
   searchError: { en: 'Could not load regulations. Try again.', fr: 'Impossible de charger les règlements. Réessayez.' },
+  seasonCta: { en: 'Get Season Intel', fr: 'Obtenir Season Intel' },
+  seasonCtaSub: {
+    en: 'Waitlist for seasons, exceptions, and change alerts. Planned price $29/year CAD — no checkout yet. Zone pages stay free.',
+    fr: 'Liste d’attente pour les saisons, exceptions et alertes. Prix prévu 29 $/an CAD — pas de paiement pour le moment. Les pages de zone restent gratuites.',
+  },
   cols: {
     species: { en: 'Species', fr: 'Espèce' },
     limit: { en: 'Catch limit', fr: 'Limite de prise' },
@@ -128,6 +133,8 @@ const breadcrumbLd = {
                 <span class="inline-block bg-white/90 text-[#3d7a4d] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5">{T.fishing[L]} · Québec</span>
                 <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">{T.h1[L]}</h1>
                 <p class="text-white/85 max-w-2xl text-lg">{T.intro[L]}</p>
+                <a href={`/${lang}/season-intel`} class="inline-block mt-6 bg-[#a2c99a] text-[#14251a] font-bold px-6 py-3 rounded-lg hover:bg-white transition-colors">{T.seasonCta[L]}</a>
+                <p class="text-white/70 text-sm mt-3 max-w-2xl">{T.seasonCtaSub[L]}</p>
             </div>
         </section>
 
