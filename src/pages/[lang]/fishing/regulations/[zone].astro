@@ -1,21 +1,23 @@
 ---
-// Regulation Resolver v1 — bilingual zone regulation pages (vision pillar 1).
-// Renders the harvested MELCCFP data verbatim with citation, fetch date,
-// coverage disclosure, and a verify-with-the-authority disclaimer.
+// Regulation Resolver v1 — bilingual zone / FMZ regulation pages (vision pillar 1).
+// Québec: harvested MELCCFP grids. Ontario: harvested ontario.ca FMZ HTML.
+// Rule text is verbatim with citation, fetch date, coverage, and disclaimer.
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import Header from '../../../../components/Header.astro';
 import Footer from '../../../../components/Footer.astro';
 import GlobalSearch from '../../../../components/GlobalSearch.astro';
 import { isGridJunkRule } from '../../../../lib/regResolver.mjs';
+import { regulationPageSlug, disclaimerFor } from '../../../../lib/regsLookup.mjs';
 
 export function getStaticPaths() {
   const dir = join(process.cwd(), 'data', 'regulations');
   const paths = [];
   for (const f of readdirSync(dir).filter(f => f.endsWith('.json'))) {
     const doc = JSON.parse(readFileSync(join(dir, f), 'utf-8'));
+    const slug = regulationPageSlug(doc);
     for (const lang of ['en', 'fr']) {
-      paths.push({ params: { lang, zone: `zone-${doc.zone_id}` }, props: { doc, lang } });
+      paths.push({ params: { lang, zone: slug }, props: { doc, lang } });
     }
   }
   return paths;
@@ -23,60 +25,122 @@ export function getStaticPaths() {
 
 const { doc, lang } = Astro.props;
 const L = lang === 'en' ? 'en' : 'fr';
+const isOn = doc.jurisdiction === 'ON';
 const SITE = 'https://outdoorintel.ca';
-const path = `/${lang}/fishing/regulations/zone-${doc.zone_id}`;
+const slug = regulationPageSlug(doc);
+const path = `/${lang}/fishing/regulations/${slug}`;
 const url = `${SITE}${path}`;
-const altHref = `/${lang === 'en' ? 'fr' : 'en'}/fishing/regulations/zone-${doc.zone_id}`;
+const altHref = `/${lang === 'en' ? 'fr' : 'en'}/fishing/regulations/${slug}`;
 
-const T = {
-  title: { en: `Zone ${doc.zone_id} Fishing Regulations — Limits, Seasons & Exceptions`, fr: `Règlements de pêche — Zone ${doc.zone_id} : périodes, limites et exceptions` },
-  metaDesc: {
-    en: `Québec sport-fishing rules for Zone ${doc.zone_id}: catch limits, length limits, seasons and per-waterbody exceptions — sourced verbatim from the MELCCFP, with citations and dates.`,
-    fr: `Règles de pêche sportive de la zone ${doc.zone_id} du Québec : limites de prise, limites de longueur, périodes et exceptions par plan d'eau — texte intégral du MELCCFP, avec sources et dates.`,
-  },
-  h1: { en: `Zone ${doc.zone_id} — Sport Fishing Regulations`, fr: `Zone ${doc.zone_id} — Règlements de pêche sportive` },
-  official: { en: 'Official source (MELCCFP)', fr: 'Source officielle (MELCCFP)' },
-  fetched: { en: 'Data retrieved', fr: 'Données récupérées le' },
-  disclaimer: {
-    en: 'Rule text below is reproduced verbatim from the official source. Regulations can change: always verify with the MELCCFP before your trip.',
-    fr: 'Le texte des règles ci-dessous est reproduit intégralement de la source officielle. Les règlements peuvent changer : vérifiez toujours auprès du MELCCFP avant votre sortie.',
-  },
-  general: { en: 'Zone-wide rules', fr: 'Règles générales de la zone' },
-  exceptions: { en: 'Waterbody exceptions', fr: 'Exceptions par plan d’eau' },
-  coverageNote: (() => {
-    const listed = doc.coverage.waterbodies_listed_by_zone_page;
-    const harvested = doc.coverage.waterbodies_harvested;
-    if (doc.coverage.complete) {
-      if (harvested > listed) {
-        return {
-          en: `All ${listed} waterbody exceptions listed by the authority for this zone are included (${listed} listed, ${harvested} harvested).`,
-          fr: `Les ${listed} exceptions de plans d'eau publiées par l'autorité pour cette zone sont toutes incluses (${listed} listées, ${harvested} récupérées).`,
-        };
-      }
+function qcCoverageNote() {
+  const listed = doc.coverage.waterbodies_listed_by_zone_page;
+  const harvested = doc.coverage.waterbodies_harvested;
+  if (doc.coverage.complete) {
+    if (harvested > listed) {
       return {
-        en: `All ${listed} waterbody exceptions listed by the authority for this zone are included.`,
-        fr: `Les ${listed} exceptions de plans d'eau publiées par l'autorité pour cette zone sont toutes incluses.`,
+        en: `All ${listed} waterbody exceptions listed by the authority for this zone are included (${listed} listed, ${harvested} harvested).`,
+        fr: `Les ${listed} exceptions de plans d'eau publiées par l'autorité pour cette zone sont toutes incluses (${listed} listées, ${harvested} récupérées).`,
       };
     }
     return {
-      en: `This page covers ${harvested} of the ${listed} waterbody exceptions listed by the authority for this zone.`,
-      fr: `Cette page couvre ${harvested} des ${listed} exceptions de plans d'eau publiées par l'autorité pour cette zone.`,
+      en: `All ${listed} waterbody exceptions listed by the authority for this zone are included.`,
+      fr: `Les ${listed} exceptions de plans d'eau publiées par l'autorité pour cette zone sont toutes incluses.`,
     };
-  })(),
+  }
+  return {
+    en: `This page covers ${harvested} of the ${listed} waterbody exceptions listed by the authority for this zone.`,
+    fr: `Cette page couvre ${harvested} des ${listed} exceptions de plans d'eau publiées par l'autorité pour cette zone.`,
+  };
+}
+
+function onCoverageNote() {
+  const listed = doc.coverage.waterbody_exceptions_listed ?? 0;
+  const harvested = doc.coverage.waterbody_exceptions_harvested ?? 0;
+  const zwL = doc.coverage.zone_wide_listed ?? 0;
+  const zwH = doc.coverage.zone_wide_harvested ?? 0;
+  const zw = {
+    en: `Licence year 2026 (calendar). ${zwH} of ${zwL} zone-wide species included.`,
+    fr: `Année de permis 2026 (calendrier). ${zwH} des ${zwL} espèces de toute la zone incluses.`,
+  };
+  const notComplete = {
+    en: 'This is not complete Ontario.',
+    fr: 'Ce n’est pas l’Ontario au complet.',
+  };
+  if (doc.coverage.complete) {
+    if (listed === 0) {
+      return {
+        en: `${zw.en} The Ontario HTML for this FMZ lists no waterbody exceptions. ${notComplete.en}`,
+        fr: `${zw.fr} Le HTML ontarien pour cette ZGP ne liste aucune exception de plan d’eau. ${notComplete.fr}`,
+      };
+    }
+    const extra = harvested > listed ? ` (${listed} listed, ${harvested} harvested)` : '';
+    return {
+      en: `${zw.en} All ${listed} waterbody exceptions listed on the Ontario HTML for this FMZ are included${extra}. ${notComplete.en}`,
+      fr: `${zw.fr} Les ${listed} exceptions de plans d’eau listées dans le HTML ontarien pour cette ZGP sont toutes incluses${extra}. ${notComplete.fr}`,
+    };
+  }
+  return {
+    en: `${zw.en} Waterbody exceptions: ${harvested} of ${listed} listed on the Ontario HTML. Coverage is incomplete for this FMZ. ${notComplete.en}`,
+    fr: `${zw.fr} Exceptions de plans d’eau : ${harvested} des ${listed} listées dans le HTML ontarien. Couverture incomplète pour cette ZGP. ${notComplete.fr}`,
+  };
+}
+
+const T = {
+  title: isOn
+    ? { en: `Ontario FMZ ${doc.fmz} Fishing Regulations — Limits, Seasons & Exceptions`, fr: `Règlements de pêche — ZGP ${doc.fmz} (Ontario) : saisons, limites et exceptions` }
+    : { en: `Zone ${doc.zone_id} Fishing Regulations — Limits, Seasons & Exceptions`, fr: `Règlements de pêche — Zone ${doc.zone_id} : périodes, limites et exceptions` },
+  metaDesc: isOn
+    ? {
+      en: `Ontario Fisheries Management Zone ${doc.fmz} (FMZ ${doc.fmz}) sport-fishing rules for licence year 2026: seasons, S-n and C-n limits, exceptions and sanctuaries — reproduced from the Ontario Fishing Regulations Summary HTML, with citations. The Summary is not the law.`,
+      fr: `Règles de pêche sportive de la zone de gestion des pêches ${doc.fmz} (ZGP ${doc.fmz}) de l’Ontario, année de permis 2026 : saisons, limites S-n et C-n, exceptions et sanctuaires — reproduites du HTML du Résumé des règlements de la pêche. Le Résumé n’est pas la loi.`,
+    }
+    : {
+      en: `Québec sport-fishing rules for Zone ${doc.zone_id}: catch limits, length limits, seasons and per-waterbody exceptions — sourced verbatim from the MELCCFP, with citations and dates.`,
+      fr: `Règles de pêche sportive de la zone ${doc.zone_id} du Québec : limites de prise, limites de longueur, périodes et exceptions par plan d'eau — texte intégral du MELCCFP, avec sources et dates.`,
+    },
+  h1: isOn
+    ? { en: `Ontario FMZ ${doc.fmz} — Sport Fishing Regulations`, fr: `ZGP ${doc.fmz} (Ontario) — Règlements de pêche sportive` }
+    : { en: `Zone ${doc.zone_id} — Sport Fishing Regulations`, fr: `Zone ${doc.zone_id} — Règlements de pêche sportive` },
+  kicker: isOn
+    ? { en: 'Fishing · Ontario', fr: 'Pêche · Ontario' }
+    : { en: 'Fishing · Québec', fr: 'Pêche · Québec' },
+  official: isOn
+    ? { en: 'Official source (Ontario Fishing Regulations Summary)', fr: 'Source officielle (Résumé des règlements de la pêche de l’Ontario)' }
+    : { en: 'Official source (MELCCFP)', fr: 'Source officielle (MELCCFP)' },
+  fetched: { en: 'Data retrieved', fr: 'Données récupérées le' },
+  htmlUpdated: { en: 'HTML last updated', fr: 'HTML mis à jour le' },
+  disclaimer: {
+    en: disclaimerFor(doc, 'en'),
+    fr: disclaimerFor(doc, 'fr'),
+  },
+  general: { en: 'Zone-wide rules', fr: 'Règles générales de la zone' },
+  notices: { en: 'General information', fr: 'Renseignements généraux' },
+  speciesEx: { en: 'Species exceptions', fr: 'Exceptions visant des espèces' },
+  waterEx: { en: 'Waterbody exceptions', fr: 'Exceptions visant des plans d’eau' },
+  bait: { en: 'Bait restrictions', fr: 'Restrictions sur les appâts' },
+  sanctuaries: { en: 'Fish sanctuaries', fr: 'Réserves (sanctuaires) de poissons' },
+  exceptions: { en: 'Waterbody exceptions', fr: 'Exceptions par plan d’eau' },
+  fishOnLine: { en: 'Verify on Fish ON-Line (map only) →', fr: 'Vérifier sur ON pêche en ligne (carte seulement) →' },
+  seasonCta: { en: 'Get Season Intel', fr: 'Obtenir Season Intel' },
+  seasonCtaSub: {
+    en: 'Waitlist for seasons, exceptions, and change alerts. Planned price $29/year CAD — no checkout yet. These pages stay free.',
+    fr: 'Liste d’attente pour les saisons, exceptions et alertes. Prix prévu 29 $/an CAD — pas de paiement pour le moment. Ces pages restent gratuites.',
+  },
+  coverageNote: isOn ? onCoverageNote() : qcCoverageNote(),
   cols: {
     species: { en: 'Species', fr: 'Espèce' },
     limit: { en: 'Catch limit', fr: 'Limite de prise' },
     length: { en: 'Length limit', fr: 'Limite de longueur' },
     gear: { en: 'Gear', fr: 'Engin' },
     notes: { en: 'Notes', fr: 'Note' },
+    waters: { en: 'Waters', fr: 'Plans d’eau' },
   },
   breadcrumbHome: { en: 'Home', fr: 'Accueil' },
   fishing: { en: 'Fishing', fr: 'Pêche' },
 };
 
-// group general rules by period, in first-seen order — skip DevExpress header junk
 const periods = [];
-for (const r of doc.general[L].filter(rule => !isGridJunkRule(rule))) {
+for (const r of (doc.general[L] || []).filter(rule => !isGridJunkRule(rule))) {
   let g = periods.find(p => p.period === r.period);
   if (!g) { g = { period: r.period, rules: [] }; periods.push(g); }
   g.rules.push(r);
@@ -92,7 +156,12 @@ const breadcrumbLd = {
   ],
 };
 
-const withRules = doc.waterbodies.filter(w => w.rules[L].length);
+const withRules = Array.isArray(doc.waterbodies) ? doc.waterbodies.filter(w => w.rules[L].length) : [];
+const notices = doc.notices?.[L] || [];
+const speciesEx = doc.species_exceptions?.[L] || [];
+const waterEx = doc.waterbody_exceptions?.[L] || [];
+const bait = doc.bait_restrictions?.[L] || [];
+const sanctuaries = doc.fish_sanctuaries?.[L] || [];
 ---
 <html lang={lang}>
 <head>
@@ -112,9 +181,9 @@ const withRules = doc.waterbodies.filter(w => w.rules[L].length);
     <meta property="og:site_name" content="Outdoor Intel">
     <meta property="og:locale" content={lang === 'en' ? 'en_CA' : 'fr_CA'}>
     <meta property="og:locale:alternate" content={lang === 'en' ? 'fr_CA' : 'en_CA'}>
-    <link rel="alternate" hreflang="en" href={`${SITE}/en/fishing/regulations/zone-${doc.zone_id}`}>
-    <link rel="alternate" hreflang="fr" href={`${SITE}/fr/fishing/regulations/zone-${doc.zone_id}`}>
-    <link rel="alternate" hreflang="x-default" href={`${SITE}/en/fishing/regulations/zone-${doc.zone_id}`}>
+    <link rel="alternate" hreflang="en" href={`${SITE}/en/fishing/regulations/${slug}`}>
+    <link rel="alternate" hreflang="fr" href={`${SITE}/fr/fishing/regulations/${slug}`}>
+    <link rel="alternate" hreflang="x-default" href={`${SITE}/en/fishing/regulations/${slug}`}>
     <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbLd)}></script>
     <link rel="stylesheet" href="/assets/css/site.css?v=1">
     <Fragment set:html={`<!-- Google Analytics (GA4) -->
@@ -133,19 +202,35 @@ const withRules = doc.waterbodies.filter(w => w.rules[L].length);
     <main class="pt-[88px]">
         <section class="bg-[#14251a] text-white py-14 px-6">
             <div class="max-w-5xl mx-auto">
-                <span class="inline-block bg-white/90 text-[#3d7a4d] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5">{T.fishing[L]} · Québec</span>
+                <span class="inline-block bg-white/90 text-[#3d7a4d] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5">{T.kicker[L]}</span>
                 <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">{T.h1[L]}</h1>
                 <p class="text-white/80 max-w-2xl">{T.metaDesc[L]}</p>
+                <a href={`/${lang}/season-intel`} class="inline-block mt-6 bg-[#a2c99a] text-[#14251a] font-bold px-6 py-3 rounded-lg hover:bg-white transition-colors">{T.seasonCta[L]}</a>
+                <p class="text-white/70 text-sm mt-3 max-w-2xl">{T.seasonCtaSub[L]}</p>
             </div>
         </section>
 
         <section class="bg-[#f4f3ec] py-6 px-6 border-b border-[#305e3c]/10">
             <div class="max-w-5xl mx-auto text-sm text-[#1c2b21]">
                 <p class="mb-1"><strong>{T.official[L]}:</strong> <a href={doc.source[L]} target="_blank" rel="noopener noreferrer" class="text-[#305e3c] underline">{doc.source[L]}</a></p>
-                <p class="mb-1"><strong>{T.fetched[L]}:</strong> {doc.source.fetched_at} · {T.coverageNote[L]}</p>
+                <p class="mb-1"><strong>{T.fetched[L]}:</strong> {doc.source.fetched_at}{doc.source.html_updated && ` · ${T.htmlUpdated[L]} ${doc.source.html_updated}`} · {T.coverageNote[L]}</p>
+                {isOn && doc.source.fish_on_line && (
+                <p class="mb-1"><a href={doc.source.fish_on_line} target="_blank" rel="noopener noreferrer" class="text-[#305e3c] underline">{T.fishOnLine[L]}</a></p>
+                )}
                 <p class="text-[#5c6b5f]">{T.disclaimer[L]}</p>
             </div>
         </section>
+
+        {isOn && notices.length > 0 && (
+        <section class="py-10 px-6">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold text-[#305e3c] mb-4">{T.notices[L]}</h2>
+                <ul class="list-disc pl-6 space-y-2 text-sm text-[#1c2b21]">
+                    {notices.map(n => <li>{n}</li>)}
+                </ul>
+            </div>
+        </section>
+        )}
 
         <section class="py-12 px-6">
             <div class="max-w-5xl mx-auto">
@@ -182,6 +267,95 @@ const withRules = doc.waterbodies.filter(w => w.rules[L].length);
             </div>
         </section>
 
+        {isOn && speciesEx.length > 0 && (
+        <section class="py-12 px-6 bg-[#f4f3ec]">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold text-[#305e3c] mb-6">{T.speciesEx[L]}</h2>
+                <div class="space-y-6">
+                {speciesEx.map(block => (
+                <details class="bg-white rounded-xl border border-[#305e3c]/10 p-5" open style="box-shadow: 0 4px 12px rgba(62,49,39,0.06)">
+                    <summary class="font-bold text-[#305e3c] cursor-pointer">{block.species}</summary>
+                    <p class="text-sm mt-2">{block.period}{block.limit && ` · ${block.limit}`}</p>
+                    {block.waters?.length > 0 && (
+                    <ul class="list-disc pl-6 mt-3 text-sm space-y-1">
+                        {block.waters.map(w => <li>{w}</li>)}
+                    </ul>
+                    )}
+                </details>
+                ))}
+                </div>
+            </div>
+        </section>
+        )}
+
+        {isOn && waterEx.length > 0 && (
+        <section class="py-12 px-6">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold text-[#305e3c] mb-2">{T.waterEx[L]}</h2>
+                <p class="text-sm text-[#5c6b5f] mb-8">{T.coverageNote[L]}</p>
+                <div class="space-y-6">
+                {waterEx.map(w => (
+                <details class="bg-white rounded-xl border border-[#305e3c]/10 p-5" style="box-shadow: 0 4px 12px rgba(62,49,39,0.06)">
+                    <summary class="font-bold text-[#305e3c] cursor-pointer">{w.name}{w.location && <span class="font-normal text-[#5c6b5f]"> — {w.location}</span>}</summary>
+                    <div class="overflow-x-auto mt-4">
+                        <table class="w-full text-sm" style="border-collapse:collapse">
+                            <thead>
+                                <tr class="bg-[#f4f3ec] text-left">
+                                    <th class="p-2 font-bold text-[#305e3c]">{T.cols.species[L]}</th>
+                                    <th class="p-2 font-bold text-[#305e3c]">{T.cols.limit[L]}</th>
+                                    <th class="p-2 font-bold text-[#305e3c]">{T.cols.length[L]}</th>
+                                    <th class="p-2 font-bold text-[#305e3c]">{T.cols.notes[L]}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {w.rules.map(r => (
+                                <tr class="border-t border-[#305e3c]/10 align-top">
+                                    <td class="p-2 font-semibold">{r.species}{r.period && <div class="text-xs font-normal text-[#5c6b5f]">{r.period}</div>}</td>
+                                    <td class="p-2">{r.limit}</td>
+                                    <td class="p-2">{r.length}</td>
+                                    <td class="p-2">{r.notes}</td>
+                                </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
+                ))}
+                </div>
+            </div>
+        </section>
+        )}
+
+        {isOn && bait.length > 0 && (
+        <section class="py-12 px-6 bg-[#f4f3ec]">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold text-[#305e3c] mb-4">{T.bait[L]}</h2>
+                <ul class="list-disc pl-6 space-y-2 text-sm">
+                    {bait.map(b => <li>{b.notes || b.raw}</li>)}
+                </ul>
+            </div>
+        </section>
+        )}
+
+        {isOn && sanctuaries.length > 0 && (
+        <section class="py-12 px-6">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold text-[#305e3c] mb-6">{T.sanctuaries[L]}</h2>
+                <div class="space-y-6">
+                {sanctuaries.map(s => (
+                <details class="bg-white rounded-xl border border-[#305e3c]/10 p-5" style="box-shadow: 0 4px 12px rgba(62,49,39,0.06)">
+                    <summary class="font-bold text-[#305e3c] cursor-pointer">{s.period}</summary>
+                    <ul class="list-disc pl-6 mt-3 text-sm space-y-1">
+                        {(s.waters || []).map(w => <li>{w}</li>)}
+                    </ul>
+                </details>
+                ))}
+                </div>
+            </div>
+        </section>
+        )}
+
+        {!isOn && (
         <section class="py-12 px-6 bg-[#f4f3ec]">
             <div class="max-w-5xl mx-auto">
                 <h2 class="text-3xl font-bold text-[#305e3c] mb-2">{T.exceptions[L]}</h2>
@@ -220,6 +394,7 @@ const withRules = doc.waterbodies.filter(w => w.rules[L].length);
                 </div>
             </div>
         </section>
+        )}
     </main>
 
     <Footer lang={lang} altHref={altHref} />

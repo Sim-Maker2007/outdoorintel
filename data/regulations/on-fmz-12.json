@@ -1,0 +1,560 @@
+{
+  "zone_id": 12,
+  "zone_key": "ON-12",
+  "activity": "fishing",
+  "jurisdiction": "ON",
+  "fmz": 12,
+  "licence_year": 2026,
+  "authority": "Ontario Ministry of Natural Resources (MNR); Ontario Fishing Regulations Summary 2026 (not the official law)",
+  "source": {
+    "en": "https://www.ontario.ca/document/ontario-fishing-regulations-summary/fisheries-management-zone-12",
+    "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-peche/zone-de-gestion-des-peches-12",
+    "pdf_en": "https://ontario.ca/files/2025-12/mnr-2026-fishing-regulations-summary-en-2025-12-08.pdf",
+    "fish_on_line": "https://www.gisapplication.lrc.gov.on.ca/FishONLine/Index.html?site=FishONLine&viewer=FishONLine&locale=en-US&FMZ=12",
+    "fetched_at": "2026-09-01",
+    "html_updated": "2026-08-04",
+    "note": "Rule text reproduced verbatim from the Ontario Fishing Regulations Summary HTML (not the PDF). The Summary is not the official law. Always verify with the MNR and Fish ON-Line before fishing. Crown copyright."
+  },
+  "coverage": {
+    "licence_year": 2026,
+    "skipped_fish_on_line_only": false,
+    "zone_wide_listed": 15,
+    "zone_wide_harvested": 15,
+    "species_exceptions_listed": 1,
+    "species_exceptions_harvested": 1,
+    "waterbody_exceptions_listed": 0,
+    "waterbody_exceptions_harvested": 0,
+    "fish_sanctuaries_listed": 5,
+    "fish_sanctuaries_harvested": 5,
+    "bait_restrictions_listed": 2,
+    "bait_restrictions_harvested": 2,
+    "complete": true,
+    "note": "Zone-wide seasons/limits and listed HTML exceptions/sanctuaries for this FMZ are included. The Ontario Fishing Regulations Summary is not the law; verify with Fish ON-Line. This is not complete Ontario."
+  },
+  "title": {
+    "en": "Fisheries Management Zone 12 — Ontario FMZ 12",
+    "fr": "Zone de gestion des pêches 12 — Ontario ZGP 12"
+  },
+  "notices": {
+    "en": [
+      "The Zone 12 boundary extends across the mouths of tributaries, except the Madawaska and Mississippi Rivers where the boundary extends upstream to the first dam.",
+      "Algonquin Park:",
+      "Dip nets and baitfish traps may not be used to harvest baitfish.",
+      "Refer to general fishing regulations for more information on how to use this summary.",
+      "Refer to the boundary waters section for information on licences and limits in boundary waters and remember that regulations differ between Ontario and Quebec. Anglers are responsible to ensure they are obeying the regulations of the waters where they are fishing.",
+      "American eel is a specially protected species and may not be caught or possessed under a recreational fishing licence.",
+      "The following species are not present in this Zone and are closed to fishing all year:",
+      "FMZ 12 is the Ottawa River. Baitfish and leeches that are both dead and preserved can be transported into and out of BMZs and the Ottawa River.",
+      "Baitfish and leeches that are not both dead and preserved may be transported out of:",
+      "the Great Lakes only to be disposed of immediately more than 30 metres from the water"
+    ],
+    "fr": [
+      "La limite de la zone 12 traverse les embouchures des tributaires, sauf celles des rivières Madawaska et Mississippi. Sur ces deux rivières, la limite se prolonge en amont jusqu'au premier barrage.",
+      "Rappel : Le règlements sont différents pour l'Ontario et le Québec. Les pêcheurs doivent s'assurer de respecter les règlements qui concernent les eaux où ils pêchent.",
+      "Parc Algonquin",
+      "Interdit d’utiliser des épuisettes et des pièges à poisson d’appât poiur récolter du poisson d’appât.",
+      "Voir les Règlements généraux concernant la pêche pour plus de renseignements sur l’utilisation de ce Résumé.",
+      "Voir la section sur les eaux frontalières pour obtenir des renseignements sur les permis et les limites dans ces eaux. Prenez note que les règlements diffèrent entre l’Ontario et le Québec. Les pêcheurs doivent obéir aux règlements visant les eaux dans lesquelles ils pêchent.",
+      "L’anguille d’Amérique est une espèce spécialement protégée et il est interdit de la capturer ou de la posséder en vertu d’un permis de pêche récréative.",
+      "On ne trouve pas l’espèce suivante dans cette zone et sa pêche est donc interdite toute l’année :",
+      "La ZGP 12 est la rivière des Outaouais. Les poissons d’appât et les sangsues qui sont morts et conservés peuvent être apportés et sortis des ZGA et de la rivière des Outaouais.",
+      "Les poissons d’appât et les sangsues qui ne sont pas morts et conservés peuvent être sortis :",
+      "des Grands Lacs seulement pour être immédiatement jetés à plus de 30 mètres du bord de l’eau"
+    ]
+  },
+  "general": {
+    "en": [
+      {
+        "period": null,
+        "species": "Aggregate limits for trout and salmon (including splake)",
+        "limit": "S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limits : S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined"
+      },
+      {
+        "period": "Friday before fourth Saturday in April to September 30",
+        "species": "Atlantic salmon",
+        "limit": "S-1 and C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : Friday before fourth Saturday in April to September 30 Limits : S-1 and C-0"
+      },
+      {
+        "period": "Friday before fourth Saturday in April to September 30",
+        "species": "Brook trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : Friday before fourth Saturday in April to September 30 Limits : S-5 and C-2"
+      },
+      {
+        "period": "Friday before fourth Saturday in April to September 30",
+        "species": "Brown trout and rainbow trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : Friday before fourth Saturday in April to September 30 Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Channel catfish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "open all year",
+        "species": "Crappie",
+        "limit": "S-30 and C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-30 and C-10"
+      },
+      {
+        "period": "closed all year",
+        "species": "Lake sturgeon",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : closed all year"
+      },
+      {
+        "period": "Friday before fourth Saturday in April to September 30",
+        "species": "Lake trout and splake",
+        "limit": "S-2 and C-1; must be greater than 45 centimetres",
+        "length": "must be greater than 45 centimetres",
+        "gear": null,
+        "notes": null,
+        "raw": "Season : Friday before fourth Saturday in April to September 30 Limits : S-2 and C-1; must be greater than 45 centimetres"
+      },
+      {
+        "period": "open all year",
+        "species": "Lake whitefish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "Friday before fourth Saturday in June to November 30",
+        "species": "Largemouth and smallmouth bass combined",
+        "limit": "S-6 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : Friday before fourth Saturday in June to November 30 Limits : S-6 and C-2"
+      },
+      {
+        "period": "Friday before third Saturday in June to December 15",
+        "species": "Muskellunge",
+        "limit": "S-1; must be greater than 137 centimetres, and C-0",
+        "length": "must be greater than 137 centimetres",
+        "gear": null,
+        "notes": null,
+        "raw": "Season : Friday before third Saturday in June to December 15 Limits : S-1; must be greater than 137 centimetres, and C-0"
+      },
+      {
+        "period": "January 1 to March 31 and Friday before third Saturday in May to December 31",
+        "species": "Northern pike",
+        "limit": "S-6 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to March 31 and Friday before third Saturday in May to December 31 Limits : S-6 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Sunfish",
+        "limit": "no limit",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : no limit"
+      },
+      {
+        "period": "January 1 to March 31 and Friday before third Saturday in May to December 31",
+        "species": "Walleye and sauger combined",
+        "limit": "S-5 and C-2; must be less than 40 centimetres from March 1 to June 15",
+        "length": "must be less than 40 centimetres from March 1 to June 15",
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to March 31 and Friday before third Saturday in May to December 31 Limits : S-5 and C-2; must be less than 40 centimetres from March 1 to June 15"
+      },
+      {
+        "period": "open all year",
+        "species": "Yellow perch",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50 and C-25"
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Limites combinées pour la truite et le saumon (y compris le touladi et l’omble de fontaine)",
+        "limit": "S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées.",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limites : S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées."
+      },
+      {
+        "period": "Du vendredi précédant le 4e samedi d’avril au 30 septembre",
+        "species": "Saumon Atlantique",
+        "limit": "S-1 et C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du vendredi précédant le 4e samedi d’avril au 30 septembre Limites : S-1 et C-0"
+      },
+      {
+        "period": "Du vendredi précédant le 4e samedi d’avril au 30 septembre",
+        "species": "Omble de fontaine",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du vendredi précédant le 4e samedi d’avril au 30 septembre Limites : S-5 et C-2"
+      },
+      {
+        "period": "Du vendredi précédant le 4e samedi d’avril au 30 septembre",
+        "species": "Truite brune et truite arc-en-ciel",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du vendredi précédant le 4e samedi d’avril au 30 septembre Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Barbue de rivière",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Marigane",
+        "limit": "S-30 et C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-30 et C-10"
+      },
+      {
+        "period": "Fermée toute l’année",
+        "species": "Esturgeon de lac (esturgeon jaune)",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Fermée toute l’année"
+      },
+      {
+        "period": "Du vendredi précédant le 4e samedi d’avril au 30 septembre",
+        "species": "Touladi et truite moulac",
+        "limit": "S-2 et C-1; doit mesurer plus de 45 centimètres",
+        "length": "doit mesurer plus de 45 centimètres",
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du vendredi précédant le 4e samedi d’avril au 30 septembre Limites : S-2 et C-1; doit mesurer plus de 45 centimètres"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Grand corégone",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Du vendredi précédant le 4e samedi de juin au 30 novembre",
+        "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+        "limit": "S-6 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du vendredi précédant le 4e samedi de juin au 30 novembre Limites : S-6 et C-2"
+      },
+      {
+        "period": "Du vendredi précédant le 3e samedi de juin au 15 décembre",
+        "species": "Maskinongé",
+        "limit": "S-1; doit mesurer plus de 137 centimètres, et C-0",
+        "length": "doit mesurer plus de 137 centimètres",
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du vendredi précédant le 3e samedi de juin au 15 décembre Limites : S-1; doit mesurer plus de 137 centimètres, et C-0"
+      },
+      {
+        "period": "Du 1er janvier au 31 mars et du vendredi précédant le 3e samedi de mai au 31 décembre",
+        "species": "Grand brochet",
+        "limit": "S-6 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 31 mars et du vendredi précédant le 3e samedi de mai au 31 décembre Limites : S-6 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Crapet",
+        "limit": "Aucune limite",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : Aucune limite"
+      },
+      {
+        "period": "Du 1er janvier au 31 mars et du vendredi précédant le 3e samedi de mai au 31 décembre",
+        "species": "Doré jaune et doré noir (toute combinaison)",
+        "limit": "S-5 et C-2; doit mesurer moins de 40 centimètres du 1er mars au 15 juin",
+        "length": "doit mesurer moins de 40 centimètres du 1er mars au 15 juin",
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 31 mars et du vendredi précédant le 3e samedi de mai au 31 décembre Limites : S-5 et C-2; doit mesurer moins de 40 centimètres du 1er mars au 15 juin"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Perchaude",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-50 et C-25"
+      }
+    ]
+  },
+  "species_exceptions": {
+    "en": [
+      {
+        "period": "open all year",
+        "species": "American shad",
+        "limit": "S-5 and C-2 Ottawa River - below Carillon Dam to Pointe Fortune",
+        "length": null,
+        "gear": null,
+        "notes": "Ottawa River - below Carillon Dam to Pointe Fortune",
+        "raw": "Season : open all year Limits : S-5 and C-2 Ottawa River - below Carillon Dam to Pointe Fortune",
+        "waters": [
+          "Ottawa River - below Carillon Dam to Pointe Fortune"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Alose savoureuse (d’Amérique)",
+        "limit": "S-5 et C-2 Rivière des Outaouais - en aval du barrage Carillon jusqu’à Pointe Fortune",
+        "length": null,
+        "gear": null,
+        "notes": "Rivière des Outaouais - en aval du barrage Carillon jusqu’à Pointe Fortune",
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2 Rivière des Outaouais - en aval du barrage Carillon jusqu’à Pointe Fortune",
+        "waters": [
+          "Rivière des Outaouais - en aval du barrage Carillon jusqu’à Pointe Fortune"
+        ]
+      }
+    ]
+  },
+  "waterbody_exceptions": {
+    "en": [],
+    "fr": []
+  },
+  "bait_restrictions": {
+    "en": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "FMZ 12 is the Ottawa River. Baitfish and leeches that are both dead and preserved can be transported into and out of BMZs and the Ottawa River.",
+        "raw": "FMZ 12 is the Ottawa River. Baitfish and leeches that are both dead and preserved can be transported into and out of BMZs and the Ottawa River."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Baitfish and leeches that are not both dead and preserved may be transported out of:",
+        "raw": "Baitfish and leeches that are not both dead and preserved may be transported out of:"
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Interdit d’utiliser des épuisettes et des pièges à poisson d’appât poiur récolter du poisson d’appât.",
+        "raw": "Interdit d’utiliser des épuisettes et des pièges à poisson d’appât poiur récolter du poisson d’appât."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "La ZGP 12 est la rivière des Outaouais. Les poissons d’appât et les sangsues qui sont morts et conservés peuvent être apportés et sortis des ZGA et de la rivière des Outaouais.",
+        "raw": "La ZGP 12 est la rivière des Outaouais. Les poissons d’appât et les sangsues qui sont morts et conservés peuvent être apportés et sortis des ZGA et de la rivière des Outaouais."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Les poissons d’appât et les sangsues qui ne sont pas morts et conservés peuvent être sortis :",
+        "raw": "Les poissons d’appât et les sangsues qui ne sont pas morts et conservés peuvent être sortis :"
+      }
+    ]
+  },
+  "fish_sanctuaries": {
+    "en": [
+      {
+        "period": "No fishing - March 1 to Thursday before third Saturday in May",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - March 1 to Thursday before third Saturday in May Lac des Chats (Ottawa River), - Madawaska River and Mississippi River - including waters of the Madawaska River downstream from the Arnprior Generating Station, Ottawa River from Dochart Creek to the lighthouse (45°27′03″ N , 76°21′02″ W ) and then east following the inter-provincial boundary to the south end of the CNR bridge at Lavergne Point (West Carleton Township), and the Mississippi River downstream from the Generating Station at the town of Galetta",
+        "waters": [
+          "Lac des Chats (Ottawa River), - Madawaska River and Mississippi River - including waters of the Madawaska River downstream from the Arnprior Generating Station, Ottawa River from Dochart Creek to the lighthouse (45°27′03″ N , 76°21′02″ W ) and then east following the inter-provincial boundary to the south end of the CNR bridge at Lavergne Point (West Carleton Township), and the Mississippi River downstream from the Generating Station at the town of Galetta"
+        ]
+      },
+      {
+        "period": "No fishing - March 15 to June 15",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - March 15 to June 15 Lake Timiskaming (Ottawa River) - Harris Township, Sutton Bay",
+        "waters": [
+          "Lake Timiskaming (Ottawa River) - Harris Township, Sutton Bay"
+        ]
+      },
+      {
+        "period": "No fishing - April 1 to June 15",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - April 1 to June 15 Lac la Cave (Ottawa River) - from the Lake Timiskaming dam downstream to a line drawn due east from the southernmost point of land at the mouth of Fournier Creek in Poitras Township",
+        "waters": [
+          "Lac la Cave (Ottawa River) - from the Lake Timiskaming dam downstream to a line drawn due east from the southernmost point of land at the mouth of Fournier Creek in Poitras Township"
+        ]
+      },
+      {
+        "period": "No fishing - April 1 to Thursday before second Friday in May",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - April 1 to Thursday before second Friday in May Ottawa River - between the Quebec Carillon Power House and Pointe Fortune",
+        "waters": [
+          "Ottawa River - between the Quebec Carillon Power House and Pointe Fortune"
+        ]
+      },
+      {
+        "period": "No fishing - April 1 to Friday before third Saturday in May",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - April 1 to Friday before third Saturday in May Muskrat River - Renfrew County, from Highway 17 downstream through the City of Pembroke to its confluence with the Ottawa River | Table of contents access the table of contents | Previous | Table of contents access the table of contents | Next",
+        "waters": [
+          "Muskrat River - Renfrew County, from Highway 17 downstream through the City of Pembroke to its confluence with the Ottawa River",
+          "Table of contents access the table of contents",
+          "Previous",
+          "Table of contents access the table of contents",
+          "Next"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "Pêche interdite - Du 1er mars au jeudi précédant le 3e samedi de mai",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er mars au jeudi précédant le 3e samedi de mai Lac des Chats (rivière des Outaouais), rivière Madawaska et rivière Mississippi - y compris les eaux de la rivière Madawaska en aval depuis la centrale d’Arnprior, la rivière des Outaouais depuis le ruisseau Dochart jusqu’au phare (45°27′03″ N , 76°21′02″ O ), puis vers l’est en suivant la frontière interprovinciale vers l’extrémité sud du pont du CN à la pointe Lavergne, canton de West Carleton, et la rivière Mississippi en aval depuis la centrale jusqu’à la ville de Galetta",
+        "waters": [
+          "Lac des Chats (rivière des Outaouais), rivière Madawaska et rivière Mississippi - y compris les eaux de la rivière Madawaska en aval depuis la centrale d’Arnprior, la rivière des Outaouais depuis le ruisseau Dochart jusqu’au phare (45°27′03″ N , 76°21′02″ O ), puis vers l’est en suivant la frontière interprovinciale vers l’extrémité sud du pont du CN à la pointe Lavergne, canton de West Carleton, et la rivière Mississippi en aval depuis la centrale jusqu’à la ville de Galetta"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 15 mars au 15 juin",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 15 mars au 15 juin Lac Timiskaming (rivière des Outaouais) - canton de Harris, baie Sutton",
+        "waters": [
+          "Lac Timiskaming (rivière des Outaouais) - canton de Harris, baie Sutton"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er avril au 15 juin",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er avril au 15 juin Lac la Cave (rivière des Outaouais) - depuis le barrage du lac Timiskaming en aval jusqu’à une ligne tracée plein est depuis la pointe de terre la plus au sud à l’embouchure du ruisseau Fournier dans le canton de Poitras",
+        "waters": [
+          "Lac la Cave (rivière des Outaouais) - depuis le barrage du lac Timiskaming en aval jusqu’à une ligne tracée plein est depuis la pointe de terre la plus au sud à l’embouchure du ruisseau Fournier dans le canton de Poitras"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er avril au jeudi précédant le 2e vendredi de mai",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er avril au jeudi précédant le 2e vendredi de mai Rivière des Outaouais - entre la centrale Carillon (Québec) et Pointe Fortune",
+        "waters": [
+          "Rivière des Outaouais - entre la centrale Carillon (Québec) et Pointe Fortune"
+        ]
+      },
+      {
+        "period": "Pêche interdite du 1er avril au vendredi précédant le 3e samedi de mai",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite du 1er avril au vendredi précédant le 3e samedi de mai Rivière Muskrat - comté de Renfrew, de la route 17 en aval, à travers la ville de Pembroke, jusqu’à sa confluence avec la rivière des Outaouais | Table des matières accéder à la table des matières | Précédent | Table des matières accéder à la table des matières | Suivant",
+        "waters": [
+          "Rivière Muskrat - comté de Renfrew, de la route 17 en aval, à travers la ville de Pembroke, jusqu’à sa confluence avec la rivière des Outaouais",
+          "Table des matières accéder à la table des matières",
+          "Précédent",
+          "Table des matières accéder à la table des matières",
+          "Suivant"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,652 @@
+{
+  "zone_id": 18,
+  "zone_key": "ON-18",
+  "activity": "fishing",
+  "jurisdiction": "ON",
+  "fmz": 18,
+  "licence_year": 2026,
+  "authority": "Ontario Ministry of Natural Resources (MNR); Ontario Fishing Regulations Summary 2026 (not the official law)",
+  "source": {
+    "en": "https://www.ontario.ca/document/ontario-fishing-regulations-summary/fisheries-management-zone-18",
+    "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-peche/zone-de-gestion-des-peches-18",
+    "pdf_en": "https://ontario.ca/files/2025-12/mnr-2026-fishing-regulations-summary-en-2025-12-08.pdf",
+    "fish_on_line": "https://www.gisapplication.lrc.gov.on.ca/FishONLine/Index.html?site=FishONLine&viewer=FishONLine&locale=en-US&FMZ=18",
+    "fetched_at": "2026-09-01",
+    "html_updated": "2026-08-04",
+    "note": "Rule text reproduced verbatim from the Ontario Fishing Regulations Summary HTML (not the PDF). The Summary is not the official law. Always verify with the MNR and Fish ON-Line before fishing. Crown copyright."
+  },
+  "coverage": {
+    "licence_year": 2026,
+    "skipped_fish_on_line_only": false,
+    "zone_wide_listed": 18,
+    "zone_wide_harvested": 18,
+    "species_exceptions_listed": 3,
+    "species_exceptions_harvested": 3,
+    "waterbody_exceptions_listed": 0,
+    "waterbody_exceptions_harvested": 0,
+    "fish_sanctuaries_listed": 3,
+    "fish_sanctuaries_harvested": 3,
+    "bait_restrictions_listed": 1,
+    "bait_restrictions_harvested": 1,
+    "complete": true,
+    "note": "Zone-wide seasons/limits and listed HTML exceptions/sanctuaries for this FMZ are included. The Ontario Fishing Regulations Summary is not the law; verify with Fish ON-Line. This is not complete Ontario."
+  },
+  "title": {
+    "en": "Fisheries Management Zone 18 — Ontario FMZ 18",
+    "fr": "Zone de gestion des pêches 18 — Ontario ZGP 18"
+  },
+  "notices": {
+    "en": [
+      "Refer to general fishing regulations for more information on how to use this summary.",
+      "FMZ 18 is part of the Southern Bait Management Zone ( BMZ ). Live or dead baitfish or leeches may not be transported into or out of a BMZ . These rules do not apply to baitfish and leeches which are both dead and preserved. Refer to bait for more details."
+    ],
+    "fr": [
+      "Voir les Règlements généraux concernant la pêche pour plus de renseignements sur l’utilisation de ce Résumé.",
+      "La ZGP 18 fait partie de la zone de gestion des appâts ( ZGA ) du Sud. On ne peut pas apporter ou sortir des poissons d’appât et des sangsues, morts ou vivants, d’une ZGA . Ces règles ne s’appliquent pas aux poissons d’appât et sangsues qui sont morts et conservés. Voir la section sur les appâts pour plus de renseignements."
+    ]
+  },
+  "general": {
+    "en": [
+      {
+        "period": null,
+        "species": "Aggregate limits for trout and salmon (including splake)",
+        "limit": "S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limits : S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined"
+      },
+      {
+        "period": "closed all year",
+        "species": "Atlantic salmon",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : closed all year"
+      },
+      {
+        "period": "open all year",
+        "species": "Brook trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Brown trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Channel catfish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "open all year",
+        "species": "Crappie",
+        "limit": "S-30 and C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-30 and C-10"
+      },
+      {
+        "period": "closed all year",
+        "species": "Lake sturgeon",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : closed all year"
+      },
+      {
+        "period": "fourth Saturday in May to September 8",
+        "species": "Lake trout",
+        "limit": "S-2 and C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : fourth Saturday in May to September 8 Limits : S-2 and C-1"
+      },
+      {
+        "period": "open all year",
+        "species": "Lake whitefish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "third Saturday in June to December 15",
+        "species": "Largemouth and smallmouth bass combined",
+        "limit": "S-6 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : third Saturday in June to December 15 Limits : S-6 and C-2"
+      },
+      {
+        "period": "1st Saturday in June to December 15",
+        "species": "Muskellunge",
+        "limit": "S-1; must be greater than 91 centimetres, and C-0",
+        "length": "must be greater than 91 centimetres",
+        "gear": null,
+        "notes": null,
+        "raw": "Season : 1st Saturday in June to December 15 Limits : S-1; must be greater than 91 centimetres, and C-0"
+      },
+      {
+        "period": "January 1 to March 31 and second Saturday in May to December 31",
+        "species": "Northern pike",
+        "limit": "S-6 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to March 31 and second Saturday in May to December 31 Limits : S-6 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Pacific salmon",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Rainbow trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Splake",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Sunfish",
+        "limit": "S-300; only 30 may be greater than 18 centimetres, and C-15",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-300; only 30 may be greater than 18 centimetres, and C-15"
+      },
+      {
+        "period": "January 1 to March 1 and second Saturday in May to December 31",
+        "species": "Walleye and sauger combined",
+        "limit": "S-4 and C-2; must be between 40-50 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to March 1 and second Saturday in May to December 31 Limits : S-4 and C-2; must be between 40-50 centimetres"
+      },
+      {
+        "period": "open all year",
+        "species": "Yellow perch",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50 and C-25"
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Limites combinées pour la truite et le saumon (y compris le touladi et l’omble de fontaine)",
+        "limit": "S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées.",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limites : S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées."
+      },
+      {
+        "period": "Fermée toute l’année",
+        "species": "Saumon atlantique",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Fermée toute l’année"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Omble de fontaine",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Truite brune",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Barbue de rivière",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Marigane",
+        "limit": "S-30 et C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-30 et C-10"
+      },
+      {
+        "period": "Fermée toute l’année",
+        "species": "Esturgeon de lac (esturgeon jaune)",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Fermée toute l’année"
+      },
+      {
+        "period": "Du 4e samedi de mai au 8 septembre",
+        "species": "Touladi",
+        "limit": "S-2 et C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 4e samedi de mai au 8 septembre Limites : S-2 et C-1"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Grand corégone",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Du 3e samedi de juin au 15 décembre",
+        "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+        "limit": "S-6 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 3e samedi de juin au 15 décembre Limites : S-6 et C-2"
+      },
+      {
+        "period": "Du 1er samedi de juin au 15 décembre",
+        "species": "Maskinongé",
+        "limit": "S-1; doit mesurer plus de 91 centimètres, et C-0",
+        "length": "doit mesurer plus de 91 centimètres",
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er samedi de juin au 15 décembre Limites : S-1; doit mesurer plus de 91 centimètres, et C-0"
+      },
+      {
+        "period": "Du 1er janvier au 31 mars et du 2e samedi de mai au 31 décembre",
+        "species": "Grand brochet",
+        "limit": "S-6 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 31 mars et du 2e samedi de mai au 31 décembre Limites : S-6 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Saumon du Pacifique",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Truite arc-en-ciel",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Truite moulac",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Crapet",
+        "limit": "S-300; seulement 30 peuvent mesurer plus de 18 centimètres, et C-15",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-300; seulement 30 peuvent mesurer plus de 18 centimètres, et C-15"
+      },
+      {
+        "period": "Du 1er janvier au 1er mars et du 2e samedi de mai au 31 décembre",
+        "species": "Doré jaune et doré noir (toute combinaison)",
+        "limit": "S-4 et C-2; doit mesurer entre 40 et 50 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 1er mars et du 2e samedi de mai au 31 décembre Limites : S-4 et C-2; doit mesurer entre 40 et 50 centimètres"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Perchaude",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-50 et C-25"
+      }
+    ]
+  },
+  "species_exceptions": {
+    "en": [
+      {
+        "period": "open all year Ashden Lake (Ashby White Lake) (45°08′59″ N , 77°22′00″ W ) Big Ohlmann (45°03′18″ N , 77°00′23″ W ) Camp Lake (45°04′54″ N , 76°57′39″ W ) Freen Lake (44°45′25″ N , 77°44′53″ W ) Grimsthorpe Lake (44°52′29″ N , 77°23′29″ W ) Hungry Lake (44°48′23″ N , 76°53′18″ W ) Little Green Lake (44°57′37″ N , 76°53′06″ W ) Long Mallory Lake (44°59′59″ N , 77°09′48″ W ) Long Schooner Lake (45°06′15″ N , 76°58′41″ W ) Loughborough Lake (44°27′00″ N , 76°25′00″ W ) Mackie Lake (45°04′38″ N , 76°59′18″ W ) Potspoon Lake (44°36′13″ N , 76°34′56″ W ) Redhorse Lake (44°32′21″ N , 76°05′02″ W ) Reid Lake (45°04′15″ N , 76°55′59″ W ) Round Schooner Lake (45°07′12″ N , 76°59′14″ W ) Shabomeka Lake (44°53′33″ N , 77°08′10″ W ) Silver Lake (44°49′48″ N , 76°35′46″ W ) Simpson Lake (45°09′24″ N , 77°24′13″ W ) Trout Lake (45°08′58″ N , 77°26′08″ W )",
+        "species": "Lake trout",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Additional fishing opportunities · Ashden Lake (Ashby White Lake) (45°08′59″ N , 77°22′00″ W ) · Big Ohlmann (45°03′18″ N , 77°00′23″ W ) · Camp Lake (45°04′54″ N , 76°57′39″ W ) · Freen Lake (44°45′25″ N , 77°44′53″ W ) · Grimsthorpe Lake (44°52′29″ N , 77°23′29″ W ) · Hungry Lake (44°48′23″ N , 76°53′18″ W ) · Little Green Lake (44°57′37″ N , 76°53′06″ W ) · Long Mallory Lake (44°59′59″ N , 77°09′48″ W ) · Long Schooner Lake (45°06′15″ N , 76°58′41″ W ) · Loughborough Lake (44°27′00″ N , 76°25′00″ W ) · Mackie Lake (45°04′38″ N , 76°59′18″ W ) · Potspoon Lake (44°36′13″ N , 76°34′56″ W ) · Redhorse Lake (44°32′21″ N , 76°05′02″ W ) · Reid Lake (45°04′15″ N , 76°55′59″ W ) · Round Schooner Lake (45°07′12″ N , 76°59′14″ W ) · Shabomeka Lake (44°53′33″ N , 77°08′10″ W ) · Silver Lake (44°49′48″ N , 76°35′46″ W ) · Simpson Lake (45°09′24″ N , 77°24′13″ W ) · Trout Lake (45°08′58″ N , 77°26′08″ W )",
+        "raw": "Additional fishing opportunities Season : open all year Ashden Lake (Ashby White Lake) (45°08′59″ N , 77°22′00″ W ) Big Ohlmann (45°03′18″ N , 77°00′23″ W ) Camp Lake (45°04′54″ N , 76°57′39″ W ) Freen Lake (44°45′25″ N , 77°44′53″ W ) Grimsthorpe Lake (44°52′29″ N , 77°23′29″ W ) Hungry Lake (44°48′23″ N , 76°53′18″ W ) Little Green Lake (44°57′37″ N , 76°53′06″ W ) Long Mallory Lake (44°59′59″ N , 77°09′48″ W ) Long Schooner Lake (45°06′15″ N , 76°58′41″ W ) Loughborough Lake (44°27′00″ N , 76°25′00″ W ) Mackie Lake (45°04′38″ N , 76°59′18″ W ) Potspoon Lake (44°36′13″ N , 76°34′56″ W ) Redhorse Lake (44°32′21″ N , 76°05′02″ W ) Reid Lake (45°04′15″ N , 76°55′59″ W ) Round Schooner Lake (45°07′12″ N , 76°59′14″ W ) Shabomeka Lake (44°53′33″ N , 77°08′10″ W ) Silver Lake (44°49′48″ N , 76°35′46″ W ) Simpson Lake (45°09′24″ N , 77°24′13″ W ) Trout Lake (45°08′58″ N , 77°26′08″ W )",
+        "waters": [
+          "Ashden Lake (Ashby White Lake) (45°08′59″ N , 77°22′00″ W )",
+          "Big Ohlmann (45°03′18″ N , 77°00′23″ W )",
+          "Camp Lake (45°04′54″ N , 76°57′39″ W )",
+          "Freen Lake (44°45′25″ N , 77°44′53″ W )",
+          "Grimsthorpe Lake (44°52′29″ N , 77°23′29″ W )",
+          "Hungry Lake (44°48′23″ N , 76°53′18″ W )",
+          "Little Green Lake (44°57′37″ N , 76°53′06″ W )",
+          "Long Mallory Lake (44°59′59″ N , 77°09′48″ W )",
+          "Long Schooner Lake (45°06′15″ N , 76°58′41″ W )",
+          "Loughborough Lake (44°27′00″ N , 76°25′00″ W )",
+          "Mackie Lake (45°04′38″ N , 76°59′18″ W )",
+          "Potspoon Lake (44°36′13″ N , 76°34′56″ W )",
+          "Redhorse Lake (44°32′21″ N , 76°05′02″ W )",
+          "Reid Lake (45°04′15″ N , 76°55′59″ W )",
+          "Round Schooner Lake (45°07′12″ N , 76°59′14″ W )",
+          "Shabomeka Lake (44°53′33″ N , 77°08′10″ W )",
+          "Silver Lake (44°49′48″ N , 76°35′46″ W )",
+          "Simpson Lake (45°09′24″ N , 77°24′13″ W )",
+          "Trout Lake (45°08′58″ N , 77°26′08″ W )"
+        ]
+      },
+      {
+        "period": null,
+        "species": "Muskellunge",
+        "limit": "S-1; must be greater than 102 centimetres, and C-0 Moira Lake (44°29′14″ N , 77°27′13″ W ) - Huntingdon Township Moira River - from the first dam above Lake Ontario (City of Belleville) upstream to Highway 7 Stoco Lake (44°28′15″ N , 77°17′29″ W ) Limits : S-1; must be greater than 112 centimetres, and C-0 Rideau River",
+        "length": "must be greater than 102 centimetres",
+        "gear": null,
+        "notes": "Moira Lake (44°29′14″ N , 77°27′13″ W ) - Huntingdon Township · Moira River - from the first dam above Lake Ontario (City of Belleville) upstream to Highway 7 · Stoco Lake (44°28′15″ N , 77°17′29″ W ) · Rideau River",
+        "raw": "Limits : S-1; must be greater than 102 centimetres, and C-0 Moira Lake (44°29′14″ N , 77°27′13″ W ) - Huntingdon Township Moira River - from the first dam above Lake Ontario (City of Belleville) upstream to Highway 7 Stoco Lake (44°28′15″ N , 77°17′29″ W ) Limits : S-1; must be greater than 112 centimetres, and C-0 Rideau River",
+        "waters": [
+          "Moira Lake (44°29′14″ N , 77°27′13″ W ) - Huntingdon Township",
+          "Moira River - from the first dam above Lake Ontario (City of Belleville) upstream to Highway 7",
+          "Stoco Lake (44°28′15″ N , 77°17′29″ W )",
+          "Rideau River"
+        ]
+      },
+      {
+        "period": "January 1 to March 31 and second Saturday in May to December 31 Lancaster and Charlottenburgh Townships (South Glengarry Township) and the City of Cornwall - all waters",
+        "species": "Yellow perch",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Lancaster and Charlottenburgh Townships (South Glengarry Township) and the City of Cornwall - all waters",
+        "raw": "Season : January 1 to March 31 and second Saturday in May to December 31 Lancaster and Charlottenburgh Townships (South Glengarry Township) and the City of Cornwall - all waters",
+        "waters": [
+          "Lancaster and Charlottenburgh Townships (South Glengarry Township) and the City of Cornwall - all waters"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "Ouverte toute l’année Lac Ashden (lac Ashby White) (45°08′59″ N , 77°22′00″ O ) Big Ohlmann (45°03′18″ N , 77°00′23″ O ) Lac Camp (45°04′54″ N , 76°57′39″ O ) Lac Freen (44°45′25″ N , 77°44′53″ O ) Lac Grimsthorpe (44°52′29″ N , 77°23′29″ O ) Lac Hungry (44°48′23″ N , 76°53′18″ O ) Lac Little Green (44°57′37″ N , 76°53′06″ O ) Lac Long Mallory (44°59′59″ N , 77°09′48″ O ) Lac Long Schooner (45°06′15″ N , 76°58′41″ O ) Lac Loughborough (44°27′00″ N , 76°25′00″ O ) Lac Mackie (45°04′38″ N , 76°59′18″ O ) Lac Potspoon (44°36′13″ N , 76°34′56″ O ) Lac Redhorse (44°32′21″ N , 76°05′02″ O ) Lac Reid (45°04′15″ N , 76°55′59″ O ) Lac Round Schooner (45°07′12″ N , 76°59′14″ O ) Lac Shabomeka (44°53′33″ N , 77°08′10″ O ) Lac Silver (44°49′48″ N , 76°35′46″ O ) Lac Simpson (45°09′24″ N , 77°24′13″ O ) Lac Trout (45°08′58″ N , 77°26′08″ O )",
+        "species": "Touladi",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Possibilités supplémentaires de pêche · Lac Ashden (lac Ashby White) (45°08′59″ N , 77°22′00″ O ) · Big Ohlmann (45°03′18″ N , 77°00′23″ O ) · Lac Camp (45°04′54″ N , 76°57′39″ O ) · Lac Freen (44°45′25″ N , 77°44′53″ O ) · Lac Grimsthorpe (44°52′29″ N , 77°23′29″ O ) · Lac Hungry (44°48′23″ N , 76°53′18″ O ) · Lac Little Green (44°57′37″ N , 76°53′06″ O ) · Lac Long Mallory (44°59′59″ N , 77°09′48″ O ) · Lac Long Schooner (45°06′15″ N , 76°58′41″ O ) · Lac Loughborough (44°27′00″ N , 76°25′00″ O ) · Lac Mackie (45°04′38″ N , 76°59′18″ O ) · Lac Potspoon (44°36′13″ N , 76°34′56″ O ) · Lac Redhorse (44°32′21″ N , 76°05′02″ O ) · Lac Reid (45°04′15″ N , 76°55′59″ O ) · Lac Round Schooner (45°07′12″ N , 76°59′14″ O ) · Lac Shabomeka (44°53′33″ N , 77°08′10″ O ) · Lac Silver (44°49′48″ N , 76°35′46″ O ) · Lac Simpson (45°09′24″ N , 77°24′13″ O ) · Lac Trout (45°08′58″ N , 77°26′08″ O )",
+        "raw": "Possibilités supplémentaires de pêche Saison : Ouverte toute l’année Lac Ashden (lac Ashby White) (45°08′59″ N , 77°22′00″ O ) Big Ohlmann (45°03′18″ N , 77°00′23″ O ) Lac Camp (45°04′54″ N , 76°57′39″ O ) Lac Freen (44°45′25″ N , 77°44′53″ O ) Lac Grimsthorpe (44°52′29″ N , 77°23′29″ O ) Lac Hungry (44°48′23″ N , 76°53′18″ O ) Lac Little Green (44°57′37″ N , 76°53′06″ O ) Lac Long Mallory (44°59′59″ N , 77°09′48″ O ) Lac Long Schooner (45°06′15″ N , 76°58′41″ O ) Lac Loughborough (44°27′00″ N , 76°25′00″ O ) Lac Mackie (45°04′38″ N , 76°59′18″ O ) Lac Potspoon (44°36′13″ N , 76°34′56″ O ) Lac Redhorse (44°32′21″ N , 76°05′02″ O ) Lac Reid (45°04′15″ N , 76°55′59″ O ) Lac Round Schooner (45°07′12″ N , 76°59′14″ O ) Lac Shabomeka (44°53′33″ N , 77°08′10″ O ) Lac Silver (44°49′48″ N , 76°35′46″ O ) Lac Simpson (45°09′24″ N , 77°24′13″ O ) Lac Trout (45°08′58″ N , 77°26′08″ O )",
+        "waters": [
+          "Lac Ashden (lac Ashby White) (45°08′59″ N , 77°22′00″ O )",
+          "Big Ohlmann (45°03′18″ N , 77°00′23″ O )",
+          "Lac Camp (45°04′54″ N , 76°57′39″ O )",
+          "Lac Freen (44°45′25″ N , 77°44′53″ O )",
+          "Lac Grimsthorpe (44°52′29″ N , 77°23′29″ O )",
+          "Lac Hungry (44°48′23″ N , 76°53′18″ O )",
+          "Lac Little Green (44°57′37″ N , 76°53′06″ O )",
+          "Lac Long Mallory (44°59′59″ N , 77°09′48″ O )",
+          "Lac Long Schooner (45°06′15″ N , 76°58′41″ O )",
+          "Lac Loughborough (44°27′00″ N , 76°25′00″ O )",
+          "Lac Mackie (45°04′38″ N , 76°59′18″ O )",
+          "Lac Potspoon (44°36′13″ N , 76°34′56″ O )",
+          "Lac Redhorse (44°32′21″ N , 76°05′02″ O )",
+          "Lac Reid (45°04′15″ N , 76°55′59″ O )",
+          "Lac Round Schooner (45°07′12″ N , 76°59′14″ O )",
+          "Lac Shabomeka (44°53′33″ N , 77°08′10″ O )",
+          "Lac Silver (44°49′48″ N , 76°35′46″ O )",
+          "Lac Simpson (45°09′24″ N , 77°24′13″ O )",
+          "Lac Trout (45°08′58″ N , 77°26′08″ O )"
+        ]
+      },
+      {
+        "period": null,
+        "species": "Maskinongé",
+        "limit": "S-1; doit mesurer plus de 102 centimètres, et C-0 Lac Moira (44°29′14″ N , 77°27′13″ O ) - canton de Huntingdon Rivière Moira - depuis le premier barrage en amont du lac Ontario (dans la ville de Belleville) en amont jusqu′à la route 7 Lac Stoco (44°28′15″ N , 77°17′29″ O ) Limites : S-1; doit mesurer plus de 112 centimètres, et C-0 Rivière Rideau",
+        "length": "doit mesurer plus de 102 centimètres",
+        "gear": null,
+        "notes": "Lac Moira (44°29′14″ N , 77°27′13″ O ) - canton de Huntingdon · Rivière Moira - depuis le premier barrage en amont du lac Ontario (dans la ville de Belleville) en amont jusqu′à la route 7 · Lac Stoco (44°28′15″ N , 77°17′29″ O ) · Rivière Rideau",
+        "raw": "Limites : S-1; doit mesurer plus de 102 centimètres, et C-0 Lac Moira (44°29′14″ N , 77°27′13″ O ) - canton de Huntingdon Rivière Moira - depuis le premier barrage en amont du lac Ontario (dans la ville de Belleville) en amont jusqu′à la route 7 Lac Stoco (44°28′15″ N , 77°17′29″ O ) Limites : S-1; doit mesurer plus de 112 centimètres, et C-0 Rivière Rideau",
+        "waters": [
+          "Lac Moira (44°29′14″ N , 77°27′13″ O ) - canton de Huntingdon",
+          "Rivière Moira - depuis le premier barrage en amont du lac Ontario (dans la ville de Belleville) en amont jusqu′à la route 7",
+          "Lac Stoco (44°28′15″ N , 77°17′29″ O )",
+          "Rivière Rideau"
+        ]
+      },
+      {
+        "period": "Du 1er janvier au 31 mars et du 2e samedi de mai au 31 décembre Cantons de Lancaster et Charlottenburgh (canton de South Glengarry) et ville de Cornwall - toutes les eaux",
+        "species": "Perchaude",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Cantons de Lancaster et Charlottenburgh (canton de South Glengarry) et ville de Cornwall - toutes les eaux",
+        "raw": "Saison : Du 1er janvier au 31 mars et du 2e samedi de mai au 31 décembre Cantons de Lancaster et Charlottenburgh (canton de South Glengarry) et ville de Cornwall - toutes les eaux",
+        "waters": [
+          "Cantons de Lancaster et Charlottenburgh (canton de South Glengarry) et ville de Cornwall - toutes les eaux"
+        ]
+      }
+    ]
+  },
+  "waterbody_exceptions": {
+    "en": [],
+    "fr": []
+  },
+  "bait_restrictions": {
+    "en": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "FMZ 18 is part of the Southern Bait Management Zone ( BMZ ). Live or dead baitfish or leeches may not be transported into or out of a BMZ . These rules do not apply to baitfish and leeches which are both dead and preserved. Refer to bait for more details.",
+        "raw": "FMZ 18 is part of the Southern Bait Management Zone ( BMZ ). Live or dead baitfish or leeches may not be transported into or out of a BMZ . These rules do not apply to baitfish and leeches which are both dead and preserved. Refer to bait for more details."
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "La ZGP 18 fait partie de la zone de gestion des appâts ( ZGA ) du Sud. On ne peut pas apporter ou sortir des poissons d’appât et des sangsues, morts ou vivants, d’une ZGA . Ces règles ne s’appliquent pas aux poissons d’appât et sangsues qui sont morts et conservés. Voir la section sur les appâts pour plus de renseignements.",
+        "raw": "La ZGP 18 fait partie de la zone de gestion des appâts ( ZGA ) du Sud. On ne peut pas apporter ou sortir des poissons d’appât et des sangsues, morts ou vivants, d’une ZGA . Ces règles ne s’appliquent pas aux poissons d’appât et sangsues qui sont morts et conservés. Voir la section sur les appâts pour plus de renseignements."
+      }
+    ]
+  },
+  "fish_sanctuaries": {
+    "en": [
+      {
+        "period": "No fishing - closed all year",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - closed all year Big Rideau Lake - Bastard and Burgess Townships, The Bog and Long Island | Newboro Lake - North Crosby and South Crosby Townships, Old Iron Mine Bay | Newboro Lake - South Crosby Township, The Bog | Opinicon Lake - Storrington Township, Darlings Bay | Opinicon Lake - South Crosby Township, Murphy Bay | Sand Lake - South Crosby Township, Freeman’s Bay | Westport Pond - North Crosby Township | White Lake - Olden Township | Whitefish Lake - South Crosby Township, Jones Falls Bay",
+        "waters": [
+          "Big Rideau Lake - Bastard and Burgess Townships, The Bog and Long Island",
+          "Newboro Lake - North Crosby and South Crosby Townships, Old Iron Mine Bay",
+          "Newboro Lake - South Crosby Township, The Bog",
+          "Opinicon Lake - Storrington Township, Darlings Bay",
+          "Opinicon Lake - South Crosby Township, Murphy Bay",
+          "Sand Lake - South Crosby Township, Freeman’s Bay",
+          "Westport Pond - North Crosby Township",
+          "White Lake - Olden Township",
+          "Whitefish Lake - South Crosby Township, Jones Falls Bay"
+        ]
+      },
+      {
+        "period": "No fishing - January 1 to Friday before third Saturday in June and December 16 to December 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - January 1 to Friday before third Saturday in June and December 16 to December 31 Lingham Lake - Grimsthorpe Township | Sand Lake - North Crosby Township, that part lying in Lots 15 and 16 in Concession 9 and Lot 15 in Concession 8, and the waters of the river flowing between Wolfe Lake and Sand Lake",
+        "waters": [
+          "Lingham Lake - Grimsthorpe Township",
+          "Sand Lake - North Crosby Township, that part lying in Lots 15 and 16 in Concession 9 and Lot 15 in Concession 8, and the waters of the river flowing between Wolfe Lake and Sand Lake"
+        ]
+      },
+      {
+        "period": "No fishing - March 1 to Friday before second Saturday in May",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - March 1 to Friday before second Saturday in May Christie Lake - in Lot 3, Concession 3 (Bathurst Township) and the Tay River from Christie Lake downstream to the bridge at Lot 7, Concession 2 (Bathurst Township) | Crotch Lake and Mississippi River - Palmerston Township, from Sidedam Rapids to north shore of Skull Island including McLean’s Bay | Dalhousie Lake and Mississippi River - Dalhousie Township, within a 300 metres radius of the bridge of the Township road crossing the Mississippi River where it enters Dalhousie Lake | Hoople Creek - Osnabruck Township | Indian River and Clayton Lake - within a 300 metres radius of the Command Bridge crossing the Indian River where it enters Clayton Lake (Lanark Township) | Mississippi River - Drummond Township, from 240.8 metres west of Main Street in Innisville to Mississippi Lake | Mississippi River - Pakenham Township, between the falls in the Town of Almonte and upstream side of bridge on Lanark County Road 20 | Raisin River - those portions of the river in the Village of Martintown and Lot 43, Concession 1, north side of Raisin River (Charlottenburgh Township) | South Nation River - Cambridge Township, Coupal’s dam in Casselman downstream to the westerly limit of Lot 11, Concession 5 | South Nation River - Hamlet of Crysler in Finch Township | South Nation River - North Plantagenet Township, between north side of Concession 4 and a point 30.5 metres upstream of C.P.R. right-of-way located south of Station Street | South Nation River - Village of Chesterville in Winchester Township | Table of contents access the table of contents | Previous | Table of contents access the table of contents | Next",
+        "waters": [
+          "Christie Lake - in Lot 3, Concession 3 (Bathurst Township) and the Tay River from Christie Lake downstream to the bridge at Lot 7, Concession 2 (Bathurst Township)",
+          "Crotch Lake and Mississippi River - Palmerston Township, from Sidedam Rapids to north shore of Skull Island including McLean’s Bay",
+          "Dalhousie Lake and Mississippi River - Dalhousie Township, within a 300 metres radius of the bridge of the Township road crossing the Mississippi River where it enters Dalhousie Lake",
+          "Hoople Creek - Osnabruck Township",
+          "Indian River and Clayton Lake - within a 300 metres radius of the Command Bridge crossing the Indian River where it enters Clayton Lake (Lanark Township)",
+          "Mississippi River - Drummond Township, from 240.8 metres west of Main Street in Innisville to Mississippi Lake",
+          "Mississippi River - Pakenham Township, between the falls in the Town of Almonte and upstream side of bridge on Lanark County Road 20",
+          "Raisin River - those portions of the river in the Village of Martintown and Lot 43, Concession 1, north side of Raisin River (Charlottenburgh Township)",
+          "South Nation River - Cambridge Township, Coupal’s dam in Casselman downstream to the westerly limit of Lot 11, Concession 5",
+          "South Nation River - Hamlet of Crysler in Finch Township",
+          "South Nation River - North Plantagenet Township, between north side of Concession 4 and a point 30.5 metres upstream of C.P.R. right-of-way located south of Station Street",
+          "South Nation River - Village of Chesterville in Winchester Township",
+          "Table of contents access the table of contents",
+          "Previous",
+          "Table of contents access the table of contents",
+          "Next"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "Pêche interdite - Fermée toute l’année",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Fermée toute l’année Lac Big Rideau - cantons de Bastard et Burgess, The Bog et île Long | Lac Newboro - cantons de North Crosby et South Crosby, baie Old Iron Mine | Lac Newboro - canton de South Crosby, The Bog | Lac Opinicon - canton de Storrington, baie Darlings | Lac Opinicon - canton de South Crosby, baie Murphy | Lac Sand - canton de South Crosby, baie Freeman’s | Étang Westport - canton de North Crosby | Lac White - canton d’Olden | Lac Whitefish - canton de South Crosby, baie Jones Falls",
+        "waters": [
+          "Lac Big Rideau - cantons de Bastard et Burgess, The Bog et île Long",
+          "Lac Newboro - cantons de North Crosby et South Crosby, baie Old Iron Mine",
+          "Lac Newboro - canton de South Crosby, The Bog",
+          "Lac Opinicon - canton de Storrington, baie Darlings",
+          "Lac Opinicon - canton de South Crosby, baie Murphy",
+          "Lac Sand - canton de South Crosby, baie Freeman’s",
+          "Étang Westport - canton de North Crosby",
+          "Lac White - canton d’Olden",
+          "Lac Whitefish - canton de South Crosby, baie Jones Falls"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er janvier au vendredi précédant le 3e samedi de juin et du 16 décembre au 31 décembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er janvier au vendredi précédant le 3e samedi de juin et du 16 décembre au 31 décembre Lac Lingham - canton de Grimsthorpe | Lac Sand - canton de North Crosby, la partie se trouvant dans les lots 15 et 16 de la concession 9, et le lot 15 dans la concession 8, et les eaux de la rivière qui coulent entre les lacs Wolfe et Sand",
+        "waters": [
+          "Lac Lingham - canton de Grimsthorpe",
+          "Lac Sand - canton de North Crosby, la partie se trouvant dans les lots 15 et 16 de la concession 9, et le lot 15 dans la concession 8, et les eaux de la rivière qui coulent entre les lacs Wolfe et Sand"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er mars au vendredi précédant le 2e samedi de mai",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er mars au vendredi précédant le 2e samedi de mai Lac Christie - lot 3, concession 3 (canton de Bathurst) et la rivière Tay du lac Christie en aval jusqu’au pont au lot 7, concession 2 (canton de Bathurst) | Lac Crotch et rivière Mississippi - canton de Palmerston, depuis les rapides Sidedam jusqu’à la rive nord de l’île Skull, y compris la baie McLean’s | Lac Dalhousie et rivière Mississippi - canton de Dalhousie, à l’intérieur d’un rayon de 300 mètres du pont du chemin de canton qui traverse la rivière Mississippi là où elle se jette dans le lac Dalhousie | Ruisseau Hoople - canton d’Osnabruck | Rivière Indian et lac Clayton - à l’intérieur d’un rayon de 300 mètres du pont Command qui traverse la rivière Indian là où elle se jette dans le lac Clayton dans le canton de Lanark | Rivière Mississippi - canton de Drummond, de 240,8 mètres à l’ouest de la rue Main, Innisville, jusqu’au lac Mississippi | Rivière Mississippi - canton de Pakenham, entre les chutes de la ville d’Almonte et le côté en amont du pont de la route 20du comté de Lanark | Rivière Raisin - les parties de la rivière qui se trouvent dans le village de Martintown et dans le lot 43, concession 1, sur la rive nord de la rivière Raisin, dans le canton de Charlottenburgh | Rivière South Nation - canton de Cambridge, du barrage de Coupal à Casselman en aval jusqu’à la limite ouest du lot 11, concession 5 | Rivière South Nation - hameau de Crysler dans le canton de Finch | Rivière South Nation - canton de North Plantagenet, entre le côté nord de la concession 4 et un point à 30,5 mètres en amont de l’emprise du CP , au sud de la rue Station | Rivière South Nation - village de Chesterville dans le canton de Winchester | Table des matières accéder à la table des matières | Précédent | Table des matières accéder à la table des matières | Suivant",
+        "waters": [
+          "Lac Christie - lot 3, concession 3 (canton de Bathurst) et la rivière Tay du lac Christie en aval jusqu’au pont au lot 7, concession 2 (canton de Bathurst)",
+          "Lac Crotch et rivière Mississippi - canton de Palmerston, depuis les rapides Sidedam jusqu’à la rive nord de l’île Skull, y compris la baie McLean’s",
+          "Lac Dalhousie et rivière Mississippi - canton de Dalhousie, à l’intérieur d’un rayon de 300 mètres du pont du chemin de canton qui traverse la rivière Mississippi là où elle se jette dans le lac Dalhousie",
+          "Ruisseau Hoople - canton d’Osnabruck",
+          "Rivière Indian et lac Clayton - à l’intérieur d’un rayon de 300 mètres du pont Command qui traverse la rivière Indian là où elle se jette dans le lac Clayton dans le canton de Lanark",
+          "Rivière Mississippi - canton de Drummond, de 240,8 mètres à l’ouest de la rue Main, Innisville, jusqu’au lac Mississippi",
+          "Rivière Mississippi - canton de Pakenham, entre les chutes de la ville d’Almonte et le côté en amont du pont de la route 20du comté de Lanark",
+          "Rivière Raisin - les parties de la rivière qui se trouvent dans le village de Martintown et dans le lot 43, concession 1, sur la rive nord de la rivière Raisin, dans le canton de Charlottenburgh",
+          "Rivière South Nation - canton de Cambridge, du barrage de Coupal à Casselman en aval jusqu’à la limite ouest du lot 11, concession 5",
+          "Rivière South Nation - hameau de Crysler dans le canton de Finch",
+          "Rivière South Nation - canton de North Plantagenet, entre le côté nord de la concession 4 et un point à 30,5 mètres en amont de l’emprise du CP , au sud de la rue Station",
+          "Rivière South Nation - village de Chesterville dans le canton de Winchester",
+          "Table des matières accéder à la table des matières",
+          "Précédent",
+          "Table des matières accéder à la table des matières",
+          "Suivant"
+        ]
+      }
+    ]
+  }
+}

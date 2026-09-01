@@ -28,6 +28,7 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { resolveRegs } from '../../src/lib/regResolver.mjs';
+import { lookupRegulation } from '../../src/lib/regsLookup.mjs';
 import { REGS } from '../../api/_data/regs-index.js';
 
 const REPO = process.cwd();
@@ -48,10 +49,33 @@ for (const q of questions) {
 
   if (c.all_zones) {
     for (const [zid, doc] of Object.entries(REGS)) {
+      if (c.jurisdiction && doc.jurisdiction !== c.jurisdiction) continue;
       ok(`${q.id}/z${zid}-general`, doc.general.fr.length > 0 && doc.general.en.length > 0, `zone ${zid} missing general rules`);
       ok(`${q.id}/z${zid}-citation`, !!doc.source.fr && !!doc.source.fetched_at, `zone ${zid} missing citation`);
-      ok(`${q.id}/z${zid}-coverage`, doc.coverage.complete === true, `zone ${zid} coverage incomplete (${doc.coverage.waterbodies_harvested}/${doc.coverage.waterbodies_listed_by_zone_page})`);
+      if (doc.jurisdiction === 'ON') {
+        ok(`${q.id}/z${zid}-on-key`, /^ON-\d+$/.test(zid) && doc.jurisdiction === 'ON' && doc.zone_key === zid, `ON doc ${zid} missing ON key/jurisdiction`);
+        ok(`${q.id}/z${zid}-not-numeric-key`, !/^\d+$/.test(zid), `ON doc indexed as numeric "${zid}"`);
+      } else {
+        ok(`${q.id}/z${zid}-coverage`, doc.coverage.complete === true, `zone ${zid} coverage incomplete (${doc.coverage.waterbodies_harvested}/${doc.coverage.waterbodies_listed_by_zone_page})`);
+      }
     }
+    continue;
+  }
+
+  if (c.collide) {
+    const qc = REGS[c.collide.qc];
+    const on = REGS[c.collide.on];
+    ok(`${q.id}/qc`, qc && qc.jurisdiction !== 'ON', `expected Québec at key ${c.collide.qc}`);
+    ok(`${q.id}/on`, on && on.jurisdiction === 'ON', `expected Ontario at key ${c.collide.on}`);
+    ok(`${q.id}/distinct`, qc && on && qc !== on && qc.authority !== on.authority, 'QC 12 and ON-12 collided');
+    continue;
+  }
+
+  if (c.on_zone_absent) {
+    const found = lookupRegulation(REGS, { zone: c.on_zone_absent, jurisdiction: 'ON' });
+    const qc = lookupRegulation(REGS, { zone: c.on_zone_absent });
+    ok(`${q.id}/on-404`, found.status === 'missing-on', `Ontario FMZ ${c.on_zone_absent} unexpectedly present`);
+    ok(`${q.id}/qc-numeric-not-on`, qc.status === 'ok' && qc.doc?.jurisdiction !== 'ON', `zone=${c.on_zone_absent} without jurisdiction must remain Québec, not Ontario`);
     continue;
   }
 
@@ -61,15 +85,22 @@ for (const q of questions) {
   }
   if (c.uncovered) { continue; } // e2e-only semantics
 
-  const doc = REGS[c.zone];
+  const looked = lookupRegulation(REGS, { zone: c.zone, jurisdiction: c.jurisdiction });
+  const doc = looked.status === 'ok' ? looked.doc : REGS[c.zone];
   ok(`${q.id}/zone-exists`, !!doc, `zone ${c.zone} missing from dataset`);
   if (!doc) continue;
 
   const r = resolveRegs(doc, { lang: c.lang || 'fr', date: c.date, species: c.species, waterbody: c.waterbody });
   ok(`${q.id}/citation`, !!r.citation.source && !!r.citation.fetched_at && !!r.disclaimer, 'missing citation/disclaimer');
+  if (doc.jurisdiction === 'ON') {
+    ok(`${q.id}/on-disclaimer`, /MNR|Richesses naturelles|Summary is not the law|n’est pas la loi|Fish ON-Line|ON pêche en ligne|Crown/i.test(r.disclaimer), 'ON disclaimer missing MNR / Summary / Fish ON-Line / Crown');
+  }
 
   if (c.expect_waterbody === true) {
     ok(q.id, !!r.waterbody && r.waterbody.rules.length > 0, `waterbody "${c.waterbody}" not found or has no rules`);
+    if (c.expect_text) {
+      ok(`${q.id}/text`, r.waterbody && JSON.stringify(r.waterbody).toLowerCase().includes(c.expect_text), `expected text "${c.expect_text}" absent from waterbody`);
+    }
   } else if (c.expect_waterbody === false) {
     ok(q.id, !r.waterbody, `phantom waterbody matched for "${c.waterbody}"`);
   } else if (c.expect_rules === true) {

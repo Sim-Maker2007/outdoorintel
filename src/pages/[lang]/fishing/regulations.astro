@@ -7,6 +7,7 @@ import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import GlobalSearch from '../../../components/GlobalSearch.astro';
 import { isGridJunkRule } from '../../../lib/regResolver.mjs';
+import { regulationPageSlug, regulationKey } from '../../../lib/regsLookup.mjs';
 
 export function getStaticPaths() {
   return [{ params: { lang: 'en' } }, { params: { lang: 'fr' } }];
@@ -16,23 +17,30 @@ const { lang } = Astro.params;
 const L = lang === 'en' ? 'en' : 'fr';
 const dir = join(process.cwd(), 'data', 'regulations');
 const zones = readdirSync(dir).filter(f => f.endsWith('.json'))
-  .map(f => JSON.parse(readFileSync(join(dir, f), 'utf-8')))
-  .sort((a, b) => a.zone_id - b.zone_id);
+  .map(f => JSON.parse(readFileSync(join(dir, f), 'utf-8')));
+const qcZones = zones.filter(z => z.jurisdiction !== 'ON').sort((a, b) => a.zone_id - b.zone_id);
+const onZones = zones.filter(z => z.jurisdiction === 'ON').sort((a, b) => a.fmz - b.fmz);
 
 const SITE = 'https://outdoorintel.ca';
 const url = `${SITE}/${lang}/fishing/regulations`;
 const altHref = `/${lang === 'en' ? 'fr' : 'en'}/fishing/regulations`;
 
 const T = {
-  title: { en: 'Québec Fishing Regulations — Zones, Limits & Exceptions', fr: 'Règlements de pêche du Québec — zones, limites et exceptions' },
+  title: { en: 'Fishing Regulations — Québec Zones & Ontario FMZs', fr: 'Règlements de pêche — zones du Québec et ZGP de l’Ontario' },
   metaDesc: {
-    en: 'Québec sport-fishing regulations as structured, cited data: zone-wide limits, seasons and per-waterbody exceptions, reproduced verbatim from the MELCCFP with source links and retrieval dates.',
-    fr: 'Les règlements de pêche sportive du Québec en données structurées et citées : limites par zone, périodes et exceptions par plan d’eau, reproduits intégralement du MELCCFP avec sources et dates.',
+    en: 'Cited sport-fishing regulations: all Québec MELCCFP zones, plus Ontario FMZ 12, 16, 17 and 18 from the 2026 Fishing Regulations Summary HTML. Public, bilingual, free. Not complete Ontario. Always verify with the official source.',
+    fr: 'Règlements de pêche sportive cités : toutes les zones MELCCFP du Québec, plus les ZGP 12, 16, 17 et 18 de l’Ontario d’après le HTML du Résumé 2026. Public, bilingue, gratuit. Pas l’Ontario au complet. Vérifiez toujours la source officielle.',
   },
-  h1: { en: 'Québec Fishing Regulations', fr: 'Règlements de pêche du Québec' },
+  h1: { en: 'Fishing Regulations', fr: 'Règlements de pêche' },
   intro: {
-    en: 'The official rules, made readable. Every rule below is reproduced verbatim from the MELCCFP with its source link and retrieval date — regulations can change, so always verify with the official source before your trip. Coverage starts with the zones around Gatineau and the Outaouais; more zones are coming.',
-    fr: 'Les règles officielles, enfin lisibles. Chaque règle est reproduite intégralement du MELCCFP avec son lien source et sa date de récupération — les règlements peuvent changer : vérifiez toujours la source officielle avant votre sortie. La couverture commence par les zones autour de Gatineau et de l’Outaouais; d’autres zones s’ajouteront.',
+    en: 'The official rules, made readable. Québec zone pages reproduce MELCCFP text. Ontario FMZ 12, 16, 17 and 18 reproduce the 2026 Ontario Fishing Regulations Summary HTML (the Summary is not the law). This is not complete Ontario. Always verify before you fish.',
+    fr: 'Les règles officielles, enfin lisibles. Les pages du Québec reproduisent le MELCCFP. Les ZGP 12, 16, 17 et 18 de l’Ontario reproduisent le HTML du Résumé des règlements de la pêche 2026 (le Résumé n’est pas la loi). Ce n’est pas l’Ontario au complet. Vérifiez toujours avant de pêcher.',
+  },
+  qcHeading: { en: 'Québec fishing zones', fr: 'Zones de pêche du Québec' },
+  onHeading: { en: 'Ontario fisheries management zones', fr: 'Zones de gestion des pêches de l’Ontario' },
+  onNote: {
+    en: 'Licence year 2026 (January 1–December 31). FMZ 12, 16, 17 and 18 only — not a complete Ontario harvest. Maps stay on Fish ON-Line.',
+    fr: 'Année de permis 2026 (1er janvier–31 décembre). ZGP 12, 16, 17 et 18 seulement — pas une collecte complète de l’Ontario. Les cartes restent sur ON pêche en ligne.',
   },
   zone: { en: 'Zone', fr: 'Zone' },
   generalCount: { en: 'zone-wide rules', fr: 'règles de zone' },
@@ -43,9 +51,11 @@ const T = {
   fishing: { en: 'Fishing', fr: 'Pêche' },
   searchTitle: { en: 'Look up a rule', fr: 'Chercher une règle' },
   searchIntro: {
-    en: 'Search the cited MELCCFP data for a zone, species, and optional waterbody. Results are verbatim source text — always verify with the official page before you fish.',
-    fr: 'Cherchez dans les données citées du MELCCFP par zone, espèce et plan d’eau (facultatif). Les résultats sont le texte intégral de la source — vérifiez toujours la page officielle avant de pêcher.',
+    en: 'Search cited Québec MELCCFP or Ontario MNR Summary data by zone/FMZ, species, and optional waterbody. Results are verbatim source text — always verify with the official page before you fish.',
+    fr: 'Cherchez dans les données citées du MELCCFP (Québec) ou du Résumé du MRN (Ontario) par zone/ZGP, espèce et plan d’eau (facultatif). Les résultats sont le texte intégral de la source — vérifiez toujours la page officielle avant de pêcher.',
   },
+  qcGroup: { en: 'Québec', fr: 'Québec' },
+  onGroup: { en: 'Ontario', fr: 'Ontario' },
   zoneLabel: { en: 'Zone', fr: 'Zone' },
   speciesLabel: { en: 'Species', fr: 'Espèce' },
   waterbodyLabel: { en: 'Waterbody (optional)', fr: 'Plan d’eau (facultatif)' },
@@ -55,7 +65,7 @@ const T = {
   waterbodyPh: { en: 'e.g. barbue', fr: 'ex. barbue' },
   generalHeading: { en: 'Zone-wide rules', fr: 'Règles générales de la zone' },
   wbHeading: { en: 'Waterbody exceptions', fr: 'Exceptions par plan d’eau' },
-  official: { en: 'Official source (MELCCFP)', fr: 'Source officielle (MELCCFP)' },
+  official: { en: 'Official source', fr: 'Source officielle' },
   fetched: { en: 'Data retrieved', fr: 'Données récupérées le' },
   wbNotFound: {
     en: 'No matching waterbody in this zone. Zone-wide rules are shown below — check the official source for that name.',
@@ -79,7 +89,15 @@ const T = {
 };
 
 const zoneLabel = (z) => (z.title[L] || z.title.en || `Zone ${z.zone_id}`).split('|')[0].trim();
-const generalCount = (z) => z.general[L].filter(r => !isGridJunkRule(r)).length;
+const generalCount = (z) => (z.general[L] || []).filter(r => !isGridJunkRule(r)).length;
+const exceptionCount = (z) => {
+  if (z.jurisdiction === 'ON') {
+    return (z.waterbody_exceptions?.[L] || []).length + (z.species_exceptions?.[L] || []).length;
+  }
+  return Array.isArray(z.waterbodies) ? z.waterbodies.length : 0;
+};
+const zoneHref = (z) => `/${lang}/fishing/regulations/${regulationPageSlug(z)}`;
+const zoneValue = (z) => regulationKey(z);
 
 const breadcrumbLd = {
   '@context': 'https://schema.org',
@@ -130,7 +148,7 @@ const breadcrumbLd = {
     <main class="pt-[88px]">
         <section class="bg-[#14251a] text-white py-16 px-6">
             <div class="max-w-5xl mx-auto">
-                <span class="inline-block bg-white/90 text-[#3d7a4d] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5">{T.fishing[L]} · Québec</span>
+                <span class="inline-block bg-white/90 text-[#3d7a4d] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5">{T.fishing[L]} · Québec · Ontario</span>
                 <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">{T.h1[L]}</h1>
                 <p class="text-white/85 max-w-2xl text-lg">{T.intro[L]}</p>
                 <a href={`/${lang}/season-intel`} class="inline-block mt-6 bg-[#a2c99a] text-[#14251a] font-bold px-6 py-3 rounded-lg hover:bg-white transition-colors">{T.seasonCta[L]}</a>
@@ -146,9 +164,18 @@ const breadcrumbLd = {
                     <label class="block text-sm">
                         <span class="font-semibold text-[#1c2b21]">{T.zoneLabel[L]}</span>
                         <select name="zone" required class="mt-1 w-full px-3 py-2 rounded-lg border border-[#305e3c]/20 bg-white text-[#1c2b21]">
-                            {zones.map(z => (
-                            <option value={z.zone_id}>{zoneLabel(z)}</option>
+                            <optgroup label={T.qcGroup[L]}>
+                            {qcZones.map(z => (
+                            <option value={zoneValue(z)}>{zoneLabel(z)}</option>
                             ))}
+                            </optgroup>
+                            {onZones.length > 0 && (
+                            <optgroup label={T.onGroup[L]}>
+                            {onZones.map(z => (
+                            <option value={zoneValue(z)}>{zoneLabel(z)}</option>
+                            ))}
+                            </optgroup>
+                            )}
                         </select>
                     </label>
                     <label class="block text-sm">
@@ -170,17 +197,40 @@ const breadcrumbLd = {
         </section>
 
         <section class="py-14 px-6">
-            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-                {zones.map(z => (
-                <a href={`/${lang}/fishing/regulations/zone-${z.zone_id}`} class="group bg-white rounded-xl border border-[#305e3c]/10 p-6 hover:shadow-lg transition-all hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
-                    <div class="text-[#3d7a4d] text-xs font-bold uppercase tracking-widest mb-2">Québec · MELCCFP</div>
-                    <h2 class="text-2xl font-bold text-[#305e3c] mb-3">{zoneLabel(z)}</h2>
-                    <p class="text-sm text-[#5c6b5f] mb-1">{generalCount(z)} {T.generalCount[L]}</p>
-                    <p class="text-sm text-[#5c6b5f] mb-1">{z.waterbodies.length} {T.wbCount[L]}</p>
-                    <p class="text-xs text-[#5c6b5f]/80 mb-4">{T.updated[L]} {z.source.fetched_at}</p>
-                    <div class="text-[#3d7a4d] text-sm font-semibold">{T.view[L]}</div>
-                </a>
-                ))}
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-2xl font-bold text-[#305e3c] mb-6">{T.qcHeading[L]}</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {qcZones.map(z => (
+                    <a href={zoneHref(z)} class="group bg-white rounded-xl border border-[#305e3c]/10 p-6 hover:shadow-lg transition-all hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                        <div class="text-[#3d7a4d] text-xs font-bold uppercase tracking-widest mb-2">Québec · MELCCFP</div>
+                        <h3 class="text-2xl font-bold text-[#305e3c] mb-3">{zoneLabel(z)}</h3>
+                        <p class="text-sm text-[#5c6b5f] mb-1">{generalCount(z)} {T.generalCount[L]}</p>
+                        <p class="text-sm text-[#5c6b5f] mb-1">{exceptionCount(z)} {T.wbCount[L]}</p>
+                        <p class="text-xs text-[#5c6b5f]/80 mb-4">{T.updated[L]} {z.source.fetched_at}</p>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">{T.view[L]}</div>
+                    </a>
+                    ))}
+                </div>
+
+                {onZones.length > 0 && (
+                <div class="mt-14">
+                    <h2 class="text-2xl font-bold text-[#305e3c] mb-2">{T.onHeading[L]}</h2>
+                    <p class="text-sm text-[#5c6b5f] mb-6 max-w-2xl">{T.onNote[L]}</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        {onZones.map(z => (
+                        <a href={zoneHref(z)} class="group bg-white rounded-xl border border-[#305e3c]/10 p-6 hover:shadow-lg transition-all hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                            <div class="text-[#3d7a4d] text-xs font-bold uppercase tracking-widest mb-2">Ontario · MNR</div>
+                            <h3 class="text-2xl font-bold text-[#305e3c] mb-3">{zoneLabel(z)}</h3>
+                            <p class="text-sm text-[#5c6b5f] mb-1">{generalCount(z)} {T.generalCount[L]}</p>
+                            <p class="text-sm text-[#5c6b5f] mb-1">{exceptionCount(z)} {T.wbCount[L]}</p>
+                            <p class="text-xs text-[#5c6b5f]/80 mb-1">{z.coverage?.complete ? (L === 'fr' ? 'Couverture HTML de cette ZGP : complète' : 'This FMZ HTML coverage: complete') : (L === 'fr' ? 'Couverture HTML de cette ZGP : partielle' : 'This FMZ HTML coverage: partial')}</p>
+                            <p class="text-xs text-[#5c6b5f]/80 mb-4">{T.updated[L]} {z.source.fetched_at}</p>
+                            <div class="text-[#3d7a4d] text-sm font-semibold">{T.view[L]}</div>
+                        </a>
+                        ))}
+                    </div>
+                </div>
+                )}
             </div>
         </section>
     </main>
