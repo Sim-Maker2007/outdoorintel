@@ -83,7 +83,13 @@ for (const q of questions) {
       ok(`${q.id}/${zid}-weapons`, en.weapon_classes.length >= 2, `${zid} weapon classes collapsed or missing`);
       const draw = (doc.notices?.en || []).some(n => n.draw_required && /through the draw/i.test(n.text || ''));
       const bag = (doc.notices?.en || []).some(n => n.kind === 'deer_bag' && /2 deer|two different zones/i.test(n.text || ''));
-      ok(`${q.id}/${zid}-draw`, draw, `${zid} missing draw_required notice`);
+      const is13 = String(doc.hunting_zone) === '13';
+      if (is13) {
+        const alt = (doc.notices?.en || []).some(n => /closed in 2026|restrictive year/i.test(n.text || ''));
+        ok(`${q.id}/${zid}-draw`, alt, `${zid} missing zone-13 alternating-year moose notice`);
+      } else {
+        ok(`${q.id}/${zid}-draw`, draw, `${zid} missing draw_required notice`);
+      }
       ok(`${q.id}/${zid}-bag`, bag, `${zid} missing statewide deer bag notice`);
     }
     continue;

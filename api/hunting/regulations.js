@@ -57,7 +57,7 @@ export default async function handler(req, res) {
     res.status(404).json({
       error: `hunting zone ${zone} not available`,
       available: huntingKeys(HUNTING),
-      note: 'Hunting v1 is Québec zones 10E/10W/11E/11W (plus 9E/9W/12 when harvested). Fishing stays on GET /api/regulations.',
+      note: 'Hunting coverage is Québec deer+moose 2026 for harvested QC-H-* keys (7N/7S, 8E/8N/8S, 9E/9W, 10E/10W, 11E/11W, 12, 13SW). Fishing stays on GET /api/regulations.',
     });
     return;
   }

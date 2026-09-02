@@ -179,6 +179,9 @@ const notices = doc.notices?.[L] || [];
                 <div class="bg-white rounded-xl border border-[#305e3c]/10 p-5" style="box-shadow: 0 4px 12px rgba(62,49,39,0.06)">
                     {n.draw_required && <p class="text-xs font-bold uppercase tracking-widest text-[#b3452e] mb-2">draw_required</p>}
                     <p class="text-sm leading-relaxed">{n.text}</p>
+                    {(n.related || []).map(t => (
+                    <p class="text-sm leading-relaxed text-[#5c6b5f] mt-2">{t}</p>
+                    ))}
                 </div>
                 ))}
                 </div>

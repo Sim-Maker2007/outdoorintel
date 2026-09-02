@@ -27,13 +27,17 @@ const altHref = `/${lang === 'en' ? 'fr' : 'en'}/hunting/regulations`;
 const T = {
   title: { en: 'Québec Hunting Seasons — Deer & Moose (2026)', fr: 'Périodes de chasse du Québec — cerf et orignal (2026)' },
   metaDesc: {
-    en: 'Cited Québec hunting seasons for white-tailed deer and moose in zones 10 East/West and 11 East/West (plus 9 and 12). 2026 column from Québec.ca HTML tables. Free, bilingual. Always verify with the MELCCFP.',
-    fr: 'Périodes de chasse citées du Québec pour le cerf de Virginie et l’orignal dans les zones 10 est/ouest et 11 est/ouest (plus 9 et 12). Colonne 2026 des tableaux HTML de Québec.ca. Gratuit, bilingue. Vérifiez toujours auprès du MELCCFP.',
+    en: 'Cited Québec hunting seasons for white-tailed deer and moose in zones 7 North/South, 8 East/North/South, 9 East/West, 10 East/West, 11 East/West, 12, and 13 Southwest. 2026 column from Québec.ca HTML tables. Free, bilingual. Always verify with the MELCCFP.',
+    fr: 'Périodes de chasse citées du Québec pour le cerf de Virginie et l’orignal dans les zones 7 nord/sud, 8 est/nord/sud, 9 est/ouest, 10 est/ouest, 11 est/ouest, 12 et 13 sud-ouest. Colonne 2026 des tableaux HTML de Québec.ca. Gratuit, bilingue. Vérifiez toujours auprès du MELCCFP.',
   },
   h1: { en: 'Québec Hunting Seasons', fr: 'Périodes de chasse du Québec' },
   intro: {
-    en: 'The 2026 white-tailed deer and moose seasons, reproduced verbatim from Québec.ca. Weapon class is the published heading (bow is not collapsed into firearms). This is not all 28 hunting zones and not small game. Always verify before you hunt.',
-    fr: 'Les périodes 2026 du cerf de Virginie et de l’orignal, reproduites intégralement de Québec.ca. La classe d’arme est le titre publié (l’arc n’est pas fusionné aux armes à feu). Ce n’est pas les 28 zones ni le petit gibier. Vérifiez toujours avant de chasser.',
+    en: 'The 2026 white-tailed deer and moose seasons, reproduced verbatim from Québec.ca. Weapon class is the published heading (bow is not collapsed into firearms). This is not all 28 hunting zones, not small game, and not Ontario hunting. Always verify before you hunt.',
+    fr: 'Les périodes 2026 du cerf de Virginie et de l’orignal, reproduites intégralement de Québec.ca. La classe d’arme est le titre publié (l’arc n’est pas fusionné aux armes à feu). Ce n’est pas les 28 zones, ni le petit gibier, ni la chasse en Ontario. Vérifiez toujours avant de chasser.',
+  },
+  coverageNote: {
+    en: 'Harvested keys are the splits published on Québec.ca for deer and moose 2026. 8 West and 13 East/West are not on those tables, so they are not listed. Bear, turkey, and small game are not harvested.',
+    fr: 'Les clés récupérées sont les segments publiés sur Québec.ca pour le cerf et l’orignal 2026. La 8 ouest et les 13 est/ouest n’y figurent pas, donc elles ne sont pas listées. L’ours, le dindon et le petit gibier ne sont pas récupérés.',
   },
   view: { en: 'View seasons →', fr: 'Voir les périodes →' },
   updated: { en: 'Data retrieved', fr: 'Données récupérées le' },
@@ -127,6 +131,7 @@ const breadcrumbLd = {
                 <span class="inline-block bg-white/90 text-[#3d7a4d] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5">{T.hunting[L]} · Québec</span>
                 <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">{T.h1[L]}</h1>
                 <p class="text-white/85 max-w-2xl text-lg">{T.intro[L]}</p>
+                <p class="text-white/70 text-sm mt-3 max-w-2xl">{T.coverageNote[L]}</p>
                 <a href={`/${lang}/season-intel`} class="inline-block mt-6 bg-[#a2c99a] text-[#14251a] font-bold px-6 py-3 rounded-lg hover:bg-white transition-colors">{T.seasonCta[L]}</a>
                 <p class="text-white/70 text-sm mt-3 max-w-2xl">{T.seasonCtaSub[L]}</p>
             </div>
