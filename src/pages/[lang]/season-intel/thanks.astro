@@ -1,6 +1,6 @@
 ---
 // Season Intel success page. Member perk v1: private "alerts coming" note.
-// Public QC zone pages and Ontario FMZ 12/16/17/18 stay free — no paywall.
+// Public QC zone pages and Ontario FMZ 10/11/12/15/16/17/18 stay free — no paywall.
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import GlobalSearch from '../../../components/GlobalSearch.astro';
@@ -19,7 +19,7 @@ const links = chromeLinks(lang);
 const regsHref = `/${lang}/fishing/regulations`;
 const huntHref = `/${lang}/hunting/regulations`;
 const privacyHref = links.privacy;
-const fmz = [12, 16, 17, 18].map((n) => ({
+const fmz = [10, 11, 12, 15, 16, 17, 18].map((n) => ({
   n,
   href: `/${lang}/fishing/regulations/on-fmz-${n}`,
 }));
@@ -38,8 +38,8 @@ const T = {
   },
   perkTitle: { en: 'Member perk (v1)', fr: 'Avantage membre (v1)' },
   perkBody: {
-    en: 'Change-alert emails are coming. This membership does not hide public regulations — Québec fishing zone pages, Ontario FMZ 12, 16, 17 and 18, and Québec hunting zone pages stay free for everyone.',
-    fr: 'Les courriels d’alerte de changement s’en viennent. Cet abonnement ne masque pas les règlements publics — les pages de zones de pêche du Québec, les ZGP 12, 16, 17 et 18 de l’Ontario, et les pages de zones de chasse du Québec restent gratuites pour tout le monde.',
+    en: 'Change-alert emails are coming. This membership does not hide public regulations — Québec fishing zone pages, Ontario FMZ 10, 11, 12, 15, 16, 17 and 18, and Québec hunting zone pages stay free for everyone.',
+    fr: 'Les courriels d’alerte de changement s’en viennent. Cet abonnement ne masque pas les règlements publics — les pages de zones de pêche du Québec, les ZGP 10, 11, 12, 15, 16, 17 et 18 de l’Ontario, et les pages de zones de chasse du Québec restent gratuites pour tout le monde.',
   },
   perkPending: {
     en: 'Confirming your Stripe checkout…',
