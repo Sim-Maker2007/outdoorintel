@@ -1,4 +1,4 @@
-const CACHE_NAME = 'outdoorintel-v1';
+const CACHE_NAME = 'outdoorintel-v2';
 
 // Core pages to pre-cache on install
 const PRECACHE_URLS = [
@@ -13,6 +13,7 @@ const PRECACHE_URLS = [
   '/en/hiking/directory.html',
   '/en/blog.html',
   '/assets/logo/logo.jpg',
+  '/assets/logo/mark.svg',
   '/assets/favicon.svg'
 ];
 
