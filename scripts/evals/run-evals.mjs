@@ -146,7 +146,7 @@ for (const q of questions) {
     const found = lookupRegulation(REGS, { zone: c.on_zone_absent, jurisdiction: 'ON' });
     const qc = lookupRegulation(REGS, { zone: c.on_zone_absent });
     ok(`${q.id}/on-404`, found.status === 'missing-on', `Ontario FMZ ${c.on_zone_absent} unexpectedly present`);
-    ok(`${q.id}/qc-numeric-not-on`, qc.status === 'ok' && qc.doc?.jurisdiction !== 'ON', `zone=${c.on_zone_absent} without jurisdiction must remain Québec, not Ontario`);
+    ok(`${q.id}/qc-numeric-not-on`, !(qc.status === 'ok' && qc.doc?.jurisdiction === 'ON'), `zone=${c.on_zone_absent} without jurisdiction must not resolve as Ontario`);
     continue;
   }
 

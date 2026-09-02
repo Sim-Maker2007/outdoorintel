@@ -86,12 +86,12 @@ function findOnWaterbody(zoneDoc, L, waterbody) {
   const source = zoneDoc.source?.[L];
 
   const exceptions = zoneDoc.waterbody_exceptions?.[L] || [];
-  const foundEx = exceptions.find(w => norm(w.name).includes(nq) || norm(w.location || '').includes(nq));
-  if (foundEx) {
+  const foundEx = exceptions.filter(w => norm(w.name).includes(nq) || norm(w.location || '').includes(nq));
+  if (foundEx.length) {
     return {
-      name: foundEx.name,
+      name: foundEx[0].name,
       source,
-      rules: foundEx.rules || [],
+      rules: foundEx.flatMap(w => w.rules || []),
     };
   }
 

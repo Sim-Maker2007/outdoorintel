@@ -20,11 +20,17 @@ Crawl-delay: **1 second**.
 
 HTML last updated **4 August 2026**. Never prefer the ~25 MB PDF over live HTML. Store `source.pdf_en` as a citation only. Fish ON-Line is map-only — **link out**, never scrape.
 
-## v1 FMZs
+## Harvested FMZs
 
-Ship **12** (Ottawa River, highest value), **18**, **17**, **16** only.
+v1 shipped **12** (Ottawa River), **18**, **17**, **16**.
+
+Inland expansion ships **10** (Sault Ste. Marie / Sudbury), **11** (North Bay / Nipissing), **15** (Parry Sound / Bancroft / Pembroke / Algonquin Park).
 
 If FMZ 16 exception/sanctuary lists fail, still ship 12+18+17 complete and FMZ 16 **zone-wide only** with `complete: false`. Never silently drop Simcoe/Couchiching (do not omit the FMZ 16 file).
+
+FMZ 15 cites the Algonquin Park bait/gear overlay from the official HTML waterbody exceptions. Do not invent park-only rules.
+
+**Skipped in the inland slice:** Great Lakes FMZs **9, 13, 14, 19, 20** (tributary/map-heavy). Ontario hunting WMU 12 / Rainy River is never harvested.
 
 Do not claim “complete Ontario”.
 
@@ -68,15 +74,16 @@ Disclaimer for ON: MNR / the Summary is not the law / verify Fish ON-Line / Crow
 
 ## Pages
 
-Hub lists **Québec zones** and **Ontario FMZs 12/16/17/18** as separate lists. Season Intel waitlist CTA stays. ON pages link out to Fish ON-Line.
+Hub lists **Québec zones** and **Ontario FMZs 10/11/12/15/16/17/18** as separate lists and still says this is not complete Ontario. Season Intel waitlist CTA stays. ON pages link out to Fish ON-Line.
 
 ## Evals
 
 - Keep `zone=12` as Québec (`z12-truite-fr`)
 - Add `on12-walleye-en` and `on12-dore-fr`
-- Refuse Ontario FMZ 5 (not QC 5): `refuse-on-fmz5`
+- Add `on11-nipissing-walleye` and `on15-algonquin-bait`
+- Refuse Ontario FMZ 5 (not QC 5): `refuse-on-fmz5`; refuse unharvested FMZ 20: `refuse-on-fmz20`
 - `coverage-all-zones` filters by jurisdiction (QC complete check does not run on ON docs)
-- Add `on-collide-qc12`
+- Add `on-collide-qc12` and `on-collide-qc10`
 
 ## Verify
 

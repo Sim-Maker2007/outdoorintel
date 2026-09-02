@@ -7,6 +7,8 @@
  * Does not write or rewrite Québec zone-*.json.
  *
  * Usage: node scripts/regs/harvest-ontario.mjs [--zones=12,16,17,18] [--html-dir=DIR]
+ * Inland slice (this PR): --zones=10,11,15. Default still 12,16,17,18 so a
+ * bare run does not rewrite already-shipped FMZ files.
  */
 import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -27,6 +29,7 @@ const htmlDirArg = (process.argv.find(a => a.startsWith('--html-dir=')) || '').r
 
 const EN_URL = n => `https://www.ontario.ca/document/ontario-fishing-regulations-summary/fisheries-management-zone-${n}`;
 const FR_URL = n => `https://www.ontario.ca/fr/document/resume-des-reglements-de-la-peche/zone-de-gestion-des-peches-${n}`;
+const FR_HUB = 'https://www.ontario.ca/fr/document/resume-des-reglements-de-la-peche';
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
@@ -152,15 +155,61 @@ function topLevelLis(html) {
   return lis;
 }
 
+function liInners(html) {
+  const s = String(html);
+  const inners = [];
+  const openRe = /<li\b[^>]*>/gi;
+  let m;
+  while ((m = openRe.exec(s))) {
+    const start = m.index + m[0].length;
+    let depth = 1;
+    const tagRe = /<\/?li\b[^>]*>/gi;
+    tagRe.lastIndex = start;
+    let t;
+    let end = s.length;
+    while ((t = tagRe.exec(s))) {
+      if (/^<\/li/i.test(t[0])) {
+        depth--;
+        if (depth === 0) { end = t.index; break; }
+      } else {
+        depth++;
+      }
+    }
+    inners.push(s.slice(start, end));
+  }
+  return inners;
+}
+
 function allLiTexts(html) {
   const out = [];
-  const re = /<li\b[^>]*>([\s\S]*?)<\/li>/gi;
-  let m;
-  while ((m = re.exec(html))) {
-    const t = text(m[1].replace(/<ul[\s\S]*$/i, ''));
-    if (t) out.push(t);
+  const seen = new Set();
+  for (const inner of liInners(html)) {
+    const own = text(inner.replace(/<(ul|ol)\b[\s\S]*?<\/\1>/gi, ' '));
+    if (own && !seen.has(own)) {
+      seen.add(own);
+      out.push(own);
+    }
   }
   return dropDrupalNavFragments(out);
+}
+
+/** Find the real FR FMZ slug on the FR hub TOC when the default FR URL 404s. */
+export function findFrFmzUrlFromHub(hubHtml, fmz) {
+  const n = String(fmz);
+  const re = /href="((?:https:\/\/www\.ontario\.ca)?\/fr\/document\/[^"]+)"/gi;
+  const hrefs = [];
+  let m;
+  while ((m = re.exec(hubHtml))) {
+    const href = decode(m[1].replace(/&amp;/g, '&'));
+    if (new RegExp(`(?:zone-de-gestion-des-peches-|zone-de-gestion[^"]*-)${n}(?:/|$|\\?|#|"|-)`).test(href)
+      || new RegExp(`peches-${n}(?:/|$|\\?|#)`).test(href)) {
+      hrefs.push(href);
+    }
+  }
+  const prefer = hrefs.find(h => /zone-de-gestion-des-peches/i.test(h));
+  const picked = prefer || hrefs[0];
+  if (!picked) return null;
+  return picked.startsWith('http') ? picked : `https://www.ontario.ca${picked}`;
 }
 
 function ruleFromSpeciesBlock(species, blockHtml) {
@@ -387,6 +436,7 @@ function parseLangPage(html, { lang, fmz }) {
   const bait = baitSection.rules.length
     ? baitSection.rules
     : nb.bait;
+  const baitListed = baitSection.rules.length ? baitSection.listed : (nb.baitListed ?? bait.length);
 
   return {
     title: pageTitle(html),
@@ -401,7 +451,7 @@ function parseLangPage(html, { lang, fmz }) {
     sanctFailed,
     notices: nb.notices,
     bait,
-    baitListed: bait.length,
+    baitListed,
     skippedFishOnLine: !!(waterEx.skippedFishOnLine || sanct.skippedFishOnLine),
   };
 }
@@ -426,8 +476,11 @@ function coverageFrom(en, fr) {
     coverage[`${name}_harvested`] = harvested;
     if (harvested < listed || (b.harvested || 0) < (b.listed || 0)) complete = false;
   }
-  coverage.bait_restrictions_listed = en.bait.length;
-  coverage.bait_restrictions_harvested = en.bait.length;
+  const baitListed = en.baitListed ?? en.bait.length;
+  const baitHarvested = en.bait.length;
+  coverage.bait_restrictions_listed = baitListed;
+  coverage.bait_restrictions_harvested = baitHarvested;
+  if (baitHarvested < baitListed || (fr.bait.length || 0) < (fr.baitListed ?? fr.bait.length ?? 0)) complete = false;
   coverage.complete = complete;
   coverage.note = complete
     ? 'Zone-wide seasons/limits and listed HTML exceptions/sanctuaries for this FMZ are included. The Ontario Fishing Regulations Summary is not the law; verify with Fish ON-Line. This is not complete Ontario.'
@@ -469,9 +522,30 @@ export function parseOntarioPair(enHtml, frHtml, fmz) {
 
 async function fetchUrl(url) {
   const res = await fetch(url, { headers: { 'User-Agent': UA } });
-  if (!res.ok) throw new Error(`${url} -> ${res.status}`);
   await sleep(CRAWL_DELAY_MS);
+  if (!res.ok) {
+    const err = new Error(`${url} -> ${res.status}`);
+    err.status = res.status;
+    err.url = url;
+    throw err;
+  }
   return await res.text();
+}
+
+async function fetchFrPage(fmz) {
+  const defaultUrl = FR_URL(fmz);
+  try {
+    const html = await fetchUrl(defaultUrl);
+    return { url: defaultUrl, html };
+  } catch (e) {
+    if (e.status !== 404) throw e;
+    console.warn(`FMZ ${fmz}: default FR URL 404, probing FR hub TOC for the real slug`);
+    const hubHtml = await fetchUrl(FR_HUB);
+    const resolved = findFrFmzUrlFromHub(hubHtml, fmz);
+    if (!resolved) throw new Error(`FMZ ${fmz}: FR 404 and no matching slug on ${FR_HUB}`);
+    const html = await fetchUrl(resolved);
+    return { url: resolved, html };
+  }
 }
 
 function loadLocal(fmz, lang) {
@@ -489,16 +563,19 @@ for (const zone of ZONES) {
   const enUrl = EN_URL(fmz);
   const frUrl = FR_URL(fmz);
   let enHtml, frHtml;
+  let resolvedFrUrl = frUrl;
   try {
     if (htmlDirArg) {
       enHtml = loadLocal(fmz, 'en');
       frHtml = loadLocal(fmz, 'fr');
     } else {
       enHtml = await fetchUrl(enUrl);
-      frHtml = await fetchUrl(frUrl);
+      const frPage = await fetchFrPage(fmz);
+      frHtml = frPage.html;
+      resolvedFrUrl = frPage.url;
     }
   } catch (e) {
-    console.error(`FMZ ${fmz}: fetch failed (${e.message})`);
+    console.error(`FMZ ${fmz}: fetch failed (${e.message}) — skipping (will not ship junk)`);
     fatal++;
     continue;
   }
@@ -507,7 +584,7 @@ for (const zone of ZONES) {
   try {
     ({ en, fr } = parseOntarioPair(enHtml, frHtml, fmz));
   } catch (e) {
-    console.error(`FMZ ${fmz}: parse failed (${e.message})`);
+    console.error(`FMZ ${fmz}: parse failed (${e.message}) — skipping (HTML too different to parse honestly)`);
     fatal++;
     continue;
   }
@@ -529,6 +606,20 @@ for (const zone of ZONES) {
     console.warn('FMZ 12 FR: Ottawa River ON–QC boundary warning not found in notices');
   }
 
+  if (fmz === 15) {
+    const hay = JSON.stringify(en.waterEx.entries).toLowerCase();
+    const baitHay = JSON.stringify(en.bait).toLowerCase();
+    const hasPark = /algonquin/.test(hay);
+    const citesBait = /algonquin/.test(hay + baitHay) && /live fish may not be used as bait|baitfish traps/.test(hay);
+    if (!hasPark || !citesBait) {
+      coverage.complete = false;
+      coverage.note = 'FMZ 15 zone-wide seasons and limits are included. Algonquin Park bait/park overlay was not harvested honestly from the official HTML — not inventing park-only rules. The Summary is not the law; verify with the official FMZ page and Fish ON-Line. This is not complete Ontario.';
+      console.warn('FMZ 15: Algonquin Park overlay missing from waterbody exceptions — not inventing park-only rules');
+    } else {
+      coverage.note = `${coverage.note} Algonquin Park bait and gear overlay is cited from this FMZ’s official HTML waterbody exceptions (not invented park-only rules). Official page: ${enUrl}`;
+    }
+  }
+
   const titleEn = en.title && /FMZ|Ontario|Fisheries Management Zone/i.test(en.title)
     ? `${en.title.replace(/\s*\|\s*.*$/, '')} — Ontario FMZ ${fmz}`
     : `Fisheries Management Zone ${fmz} (FMZ ${fmz}) — Ontario Fishing Regulations Summary ${LICENCE_YEAR}`;
@@ -546,7 +637,7 @@ for (const zone of ZONES) {
     authority: AUTHORITY,
     source: {
       en: enUrl,
-      fr: frUrl,
+      fr: resolvedFrUrl,
       pdf_en: en.pdf || PDF_EN,
       fish_on_line: en.fish_on_line || `https://www.gisapplication.lrc.gov.on.ca/FishONLine/Index.html?site=FishONLine&viewer=FishONLine&locale=en-US&FMZ=${fmz}`,
       fetched_at,
