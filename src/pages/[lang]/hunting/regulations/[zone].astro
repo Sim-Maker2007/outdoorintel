@@ -1,6 +1,7 @@
 ---
-// Hunting zone page — verbatim 2026 deer + moose seasons, weapon-class headings,
-// draw_required + deer bag notices, Forêt ouverte / PDF map links (no OCR).
+// Hunting zone page — verbatim 2026 deer + moose + black bear (where published)
+// seasons, weapon-class headings, draw_required + bag/bait notices,
+// Forêt ouverte / PDF map links (no OCR).
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import Header from '../../../../components/Header.astro';
@@ -32,15 +33,23 @@ const altHref = `/${lang === 'en' ? 'fr' : 'en'}/hunting/regulations/${slug}`;
 
 const listed = doc.coverage.season_rows_listed;
 const harvested = doc.coverage.season_rows_harvested;
+const hasBear = (doc.coverage.species?.en || []).includes('black-bear')
+  || (doc.seasons?.en || []).some(r => r.species_key === 'black-bear');
+const sliceEn = hasBear
+  ? 'white-tailed deer + moose + black bear, 2026 column'
+  : 'white-tailed deer + moose, 2026 column (black bear not on the published table)';
+const sliceFr = hasBear
+  ? 'cerf de Virginie + orignal + ours noir, colonne 2026'
+  : 'cerf de Virginie + orignal, colonne 2026 (ours noir absent du tableau publié)';
 const coverageNote = doc.coverage.complete
   ? (harvested > listed
     ? {
-      en: `This page covers the stated slice (white-tailed deer + moose, 2026 column): ${listed} listed, ${harvested} harvested. Not all 28 hunting zones.`,
-      fr: `Cette page couvre le périmètre annoncé (cerf de Virginie + orignal, colonne 2026) : ${listed} listées, ${harvested} récupérées. Pas les 28 zones de chasse.`,
+      en: `This page covers the stated slice (${sliceEn}): ${listed} listed, ${harvested} harvested. Not all 28 hunting zones.`,
+      fr: `Cette page couvre le périmètre annoncé (${sliceFr}) : ${listed} listées, ${harvested} récupérées. Pas les 28 zones de chasse.`,
     }
     : {
-      en: `This page covers the stated slice (white-tailed deer + moose, 2026 column): ${harvested} of ${listed} listed season rows. Not all 28 hunting zones.`,
-      fr: `Cette page couvre le périmètre annoncé (cerf de Virginie + orignal, colonne 2026) : ${harvested} des ${listed} lignes listées. Pas les 28 zones de chasse.`,
+      en: `This page covers the stated slice (${sliceEn}): ${harvested} of ${listed} listed season rows. Not all 28 hunting zones.`,
+      fr: `Cette page couvre le périmètre annoncé (${sliceFr}) : ${harvested} des ${listed} lignes listées. Pas les 28 zones de chasse.`,
     })
   : {
     en: `Coverage for this slice is incomplete: ${harvested} of ${listed} listed season rows harvested.`,
@@ -53,8 +62,12 @@ const T = {
     fr: `${doc.title.fr} — Périodes de chasse`,
   },
   metaDesc: {
-    en: `Québec hunting zone ${doc.zone_id}: 2026 white-tailed deer and moose seasons by weapon class, cited from Québec.ca. Always verify with the MELCCFP.`,
-    fr: `Zone de chasse ${doc.zone_id} du Québec : périodes 2026 du cerf de Virginie et de l’orignal par classe d’arme, citées de Québec.ca. Vérifiez toujours auprès du MELCCFP.`,
+    en: hasBear
+      ? `Québec hunting zone ${doc.zone_id}: 2026 white-tailed deer, moose, and black bear seasons by weapon class, cited from Québec.ca. Always verify with the MELCCFP.`
+      : `Québec hunting zone ${doc.zone_id}: 2026 white-tailed deer and moose seasons by weapon class, cited from Québec.ca. Black bear is not on the published table for this key. Always verify with the MELCCFP.`,
+    fr: hasBear
+      ? `Zone de chasse ${doc.zone_id} du Québec : périodes 2026 du cerf de Virginie, de l’orignal et de l’ours noir par classe d’arme, citées de Québec.ca. Vérifiez toujours auprès du MELCCFP.`
+      : `Zone de chasse ${doc.zone_id} du Québec : périodes 2026 du cerf de Virginie et de l’orignal par classe d’arme, citées de Québec.ca. L’ours noir n’est pas sur le tableau publié pour cette clé. Vérifiez toujours auprès du MELCCFP.`,
   },
   h1: { en: doc.title.en, fr: doc.title.fr },
   kicker: { en: 'Hunting · Québec', fr: 'Chasse · Québec' },
@@ -69,7 +82,9 @@ const T = {
   mapsIndex: { en: 'Hunting zone maps (Québec.ca)', fr: 'Cartes des zones de chasse (Québec.ca)' },
   deerSrc: { en: 'White-tailed deer seasons', fr: 'Périodes — cerf de Virginie' },
   mooseSrc: { en: 'Moose seasons', fr: 'Périodes — orignal' },
+  bearSrc: { en: 'Black bear seasons', fr: 'Périodes — ours noir' },
   bagSrc: { en: 'Deer bag limits', fr: 'Limites de prise — cerf' },
+  bearBagSrc: { en: 'Black bear bag & bait', fr: 'Limites et appâtage — ours' },
   seasonCta: { en: 'Get Season Intel', fr: 'Obtenir Season Intel' },
   seasonCtaSub: {
     en: 'Cited seasons and exceptions. $29 CAD/year via Stripe Checkout. Change-alert emails are coming. Zone pages stay free.',
@@ -164,7 +179,17 @@ const notices = doc.notices?.[L] || [];
                 <p class="mb-1"><strong>{T.official[L]}:</strong>
                     <a href={doc.source.deer[L]} target="_blank" rel="noopener noreferrer" class="text-[#305e3c] underline">{T.deerSrc[L]}</a>
                     · <a href={doc.source.moose[L]} target="_blank" rel="noopener noreferrer" class="text-[#305e3c] underline">{T.mooseSrc[L]}</a>
+                    {doc.source.bear?.[L] && (
+                    <>
+                    · <a href={doc.source.bear[L]} target="_blank" rel="noopener noreferrer" class="text-[#305e3c] underline">{T.bearSrc[L]}</a>
+                    </>
+                    )}
                     · <a href={doc.source.deer_bag[L]} target="_blank" rel="noopener noreferrer" class="text-[#305e3c] underline">{T.bagSrc[L]}</a>
+                    {doc.source.bear_bag?.[L] && (
+                    <>
+                    · <a href={doc.source.bear_bag[L]} target="_blank" rel="noopener noreferrer" class="text-[#305e3c] underline">{T.bearBagSrc[L]}</a>
+                    </>
+                    )}
                 </p>
                 <p class="mb-1"><strong>{T.fetched[L]}:</strong> {doc.source.fetched_at} · {coverageNote[L]}</p>
                 <p class="text-[#5c6b5f]">{T.disclaimer[L]}</p>

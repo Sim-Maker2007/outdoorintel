@@ -21,8 +21,10 @@ Crawl-delay: **1 second**.
 | Deer FR | https://www.quebec.ca/tourisme-loisirs-sport/activites-sportives-et-de-plein-air/chasse-sportive/periodes-limites/cerf-virginie |
 | Deer bag EN | https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/sport-hunting/game/white-tailed-deer |
 | Maps EN | https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/sport-hunting/hunting-zone-maps |
+| Black bear EN | https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/sport-hunting/seasons-bag-limits/black-bear |
+| Black bear FR | Discover from the FR seasons hub (`/chasse-sportive/periodes-limites/`) — do not guess a 404 slug |
 
-FR siblings live under `/chasse-sportive/periodes-limites/` (Québec.ca FR has **no** `/fr/` prefix). Harvest FR from FR HTML — never machine-translate.
+FR siblings live under `/chasse-sportive/periodes-limites/` (Québec.ca FR has **no** `/fr/` prefix). Harvest FR from FR HTML — never machine-translate. Store bag and bait notes verbatim from the black-bear game page. No invented quotas.
 
 ## v1 slice (must ship)
 
@@ -40,7 +42,7 @@ Same species slice (white-tailed deer + moose, 2026 column). Harvest **published
 - Zone 8 → `QC-H-8E`, `QC-H-8N`, `QC-H-8S`. Do not invent 8W.
 - Zone 13 → `QC-H-13SW` (deer lists 13 Southwest; moose lists undivided 13). Do not invent 13E/13W.
 
-Not small game, bear, turkey, or all 28 zones. Not Ontario hunting / WMU 12.
+Black bear 2026 is harvested on the **same existing QC-H-* keys only**, and only where the official black-bear table has rows. Do not invent a season if the key is absent. Do not add new hunting zones. Not small game, turkey, or all 28 zones. Not Ontario hunting / WMU 12.
 
 Default `--zones` includes v1 keys plus the adjacent splits. Titles say Québec hunting. Zone 13 stores the verbatim alternating-year moose-without-antlers notice (2026 restrictive), not the zones 1–12 draw flag.
 
@@ -70,7 +72,7 @@ Do **not** put hunting documents in `api/_data/regs-index.js`. New index: `api/_
 
 `scripts/regs/harvest-hunting-qc.mjs` (npm script `harvest:hunting-qc`). Default includes `10E,10W,11E,11W,9E,9W,12` plus adjacent `7N,7S,8E,8N,8S,13SW`.
 
-Parse quebec.ca HTML **tables**. Weapon class = heading immediately before the table. Skip ZEC tables. Keep 2026 column verbatim. Coverage counters are **listed vs harvested** (never inverted). `complete: true` only for the **stated slice** (deer + moose, 2026 column, this hunting zone) — never “all 28 hunting zones”.
+Parse quebec.ca HTML **tables**. Weapon class = heading immediately before the table. Skip ZEC tables. Keep 2026 column verbatim. Coverage counters are **listed vs harvested** (never inverted). `complete: true` only for the **stated slice** (deer + moose + black bear where the table has rows, 2026 column, this hunting zone) — never “all 28 hunting zones”.
 
 ## Document shape (`qc-h-10w.json`)
 
@@ -89,7 +91,8 @@ Hunting hub CTA → Season Intel **waitlist** URL only. Do not rewrite `season-i
 
 - Keep `z12-truite-fr` and `on12-walleye-en`
 - Add `hunt-qc10-deer-en` / `hunt-qc10-cerf-fr`
-- `hunt-qc12-moose` must not return fishing zone 12
+- Add `hunt-qc10-bear-en` / `hunt-qc10-ours-fr`
+- `hunt-qc12-bear-en` / hunting zone 12 must not return fishing zone 12
 - Refuse hunting key `ON-12`
 
 ## Verify

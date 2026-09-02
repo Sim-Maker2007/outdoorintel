@@ -80,6 +80,17 @@ for (const q of questions) {
       ok(`${q.id}/${zid}-moose-en`, en.seasons.some(r => r.species_key === 'moose' && /2026/.test(r.period_2026 || r.period || '')), `${zid} missing EN moose 2026`);
       ok(`${q.id}/${zid}-deer-fr`, fr.seasons.some(r => r.species_key === 'white-tailed-deer'), `${zid} missing FR deer`);
       ok(`${q.id}/${zid}-moose-fr`, fr.seasons.some(r => r.species_key === 'moose'), `${zid} missing FR moose`);
+      const bearListed = (doc.coverage.species?.en || []).includes('black-bear');
+      const notHarvested = doc.coverage.species_not_harvested || [];
+      if (bearListed) {
+        ok(`${q.id}/${zid}-bear-en`, en.seasons.some(r => r.species_key === 'black-bear' && /2026/.test(r.period_2026 || r.period || '')), `${zid} missing EN black bear 2026`);
+        ok(`${q.id}/${zid}-bear-fr`, fr.seasons.some(r => r.species_key === 'black-bear'), `${zid} missing FR black bear`);
+        ok(`${q.id}/${zid}-bear-weapons`, new Set(en.seasons.filter(r => r.species_key === 'black-bear').map(r => r.weapon_class)).size >= 1, `${zid} black bear missing weapon class`);
+        ok(`${q.id}/${zid}-bear-not-invented`, !notHarvested.includes('black bear'), `${zid} lists black bear as both harvested and not harvested`);
+      } else {
+        ok(`${q.id}/${zid}-bear-skipped`, notHarvested.includes('black bear') && !en.seasons.some(r => r.species_key === 'black-bear'), `${zid} must disclose skipped black bear and invent no rows`);
+      }
+      ok(`${q.id}/${zid}-not-small-game`, notHarvested.includes('small game') && notHarvested.includes('wild turkey'), `${zid} must still disclose small game and turkey are not harvested`);
       ok(`${q.id}/${zid}-weapons`, en.weapon_classes.length >= 2, `${zid} weapon classes collapsed or missing`);
       const draw = (doc.notices?.en || []).some(n => n.draw_required && /through the draw/i.test(n.text || ''));
       const bag = (doc.notices?.en || []).some(n => n.kind === 'deer_bag' && /2 deer|two different zones/i.test(n.text || ''));
