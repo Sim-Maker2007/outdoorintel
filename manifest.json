@@ -13,8 +13,13 @@
       "type": "image/svg+xml"
     },
     {
+      "src": "/assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
       "src": "/assets/logo/logo.jpg",
-      "sizes": "1280x720",
+      "sizes": "640x160",
       "type": "image/jpeg"
     }
   ]
