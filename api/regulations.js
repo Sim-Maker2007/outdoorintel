@@ -59,7 +59,7 @@ export default async function handler(req, res) {
       error: `Ontario FMZ ${String(found.zone).replace(/^ON-/, '')} is not harvested`,
       jurisdiction: 'ON',
       available: found.available.length ? found.available : onKeys(REGS),
-      note: 'Ontario v1 covers FMZ 12, 16, 17 and 18 only — not complete Ontario. zone=12 without jurisdiction is Québec Zone 12.',
+      note: `Ontario fishing harvest covers ${ (found.available.length ? found.available : onKeys(REGS)).join(', ') } — not complete Ontario. Unharvested FMZs (e.g. 5, 9, 13, 14, 19, 20) 404. zone=12 without jurisdiction is Québec Zone 12.`,
     });
     return;
   }

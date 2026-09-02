@@ -1,0 +1,1872 @@
+{
+  "zone_id": 11,
+  "zone_key": "ON-11",
+  "activity": "fishing",
+  "jurisdiction": "ON",
+  "fmz": 11,
+  "licence_year": 2026,
+  "authority": "Ontario Ministry of Natural Resources (MNR); Ontario Fishing Regulations Summary 2026 (not the official law)",
+  "source": {
+    "en": "https://www.ontario.ca/document/ontario-fishing-regulations-summary/fisheries-management-zone-11",
+    "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-peche/zone-de-gestion-des-peches-11",
+    "pdf_en": "https://ontario.ca/files/2025-12/mnr-2026-fishing-regulations-summary-en-2025-12-08.pdf",
+    "fish_on_line": "https://www.gisapplication.lrc.gov.on.ca/FishONLine/Index.html?site=FishONLine&viewer=FishONLine&locale=en-US&FMZ=11",
+    "fetched_at": "2026-09-02",
+    "html_updated": "2026-08-04",
+    "note": "Rule text reproduced verbatim from the Ontario Fishing Regulations Summary HTML (not the PDF). The Summary is not the official law. Always verify with the MNR and Fish ON-Line before fishing. Crown copyright."
+  },
+  "coverage": {
+    "licence_year": 2026,
+    "skipped_fish_on_line_only": false,
+    "zone_wide_listed": 18,
+    "zone_wide_harvested": 18,
+    "species_exceptions_listed": 2,
+    "species_exceptions_harvested": 2,
+    "waterbody_exceptions_listed": 11,
+    "waterbody_exceptions_harvested": 11,
+    "fish_sanctuaries_listed": 14,
+    "fish_sanctuaries_harvested": 14,
+    "bait_restrictions_listed": 2,
+    "bait_restrictions_harvested": 2,
+    "complete": true,
+    "note": "Zone-wide seasons/limits and listed HTML exceptions/sanctuaries for this FMZ are included. The Ontario Fishing Regulations Summary is not the law; verify with Fish ON-Line. This is not complete Ontario."
+  },
+  "title": {
+    "en": "Fisheries Management Zone 11 — Ontario FMZ 11",
+    "fr": "Zone de gestion des pêches 11 — Ontario ZGP 11"
+  },
+  "notices": {
+    "en": [
+      "Refer to general fishing regulations for more information on how to use this summary.",
+      "Some brook trout additional fishing opportunities in Zone 11 also have bait restrictions .",
+      "The following waterbodies, or portions of them, have different regulations that are listed in the waterbody exceptions :",
+      "Cut Lake",
+      "French River Provincial Park",
+      "Green Lake",
+      "Lake Nipissing",
+      "Lake Temagami",
+      "McConnell Lake",
+      "Shanty Lake",
+      "Surecatch Lake",
+      "Trout Lake",
+      "FMZ 11 is part of the Northeast Bait Management Zone ( BMZ ). Live or dead baitfish or leeches may not be transported into or out of a BMZ . These rules do not apply to baitfish and leeches which are both dead and preserved. Refer to bait for more details.",
+      "As of January 1, 2025 all waters where angling is permitted in Zone 11 are included in the dip netting season (October 1 to December 15) for lake herring (cisco) and lake whitefish."
+    ],
+    "fr": [
+      "Voir les Règlements généraux concernant la pêche pour plus de renseignements sur l’utilisation de ce Résumé.",
+      "Certaines possibilités supplémentaires de pêche à l’omble de fontaine dans la zone 11 sont également visées par des restrictions concernant les appâts .",
+      "Les plans d’eau suivants, ou des parties de ceux-ci, ont des règlements différents qui sont mentionnés dans les exceptions visant des plans d’eau particuliers :",
+      "lac Cut",
+      "parc provincial de la rivière des Français",
+      "lac Green",
+      "lac Nipissing",
+      "lac Temagami",
+      "lac McConnell",
+      "lac Shanty",
+      "lac Surecatch",
+      "lac Trout",
+      "La ZGP 11 fait partie de la zone de gestion des appâts ( ZGA ) du Nord-Est. On ne peut pas apporter ou sortir des poissons d’appât et des sangsues, morts ou vivants, d’une ZGA . Ces règles ne s’appliquent pas aux poissons d’appât et sangsues qui sont morts et conservés. Voir la section sur les appâts pour plus de renseignements.",
+      "À partir du 1er janvier 2025, toutes les eaux dans la zone 11 sont incluses dans la saison de pêche à l'épuisette (du 1er octobre au 15 décembre) pour le cisco de lac et le grand corégone."
+    ]
+  },
+  "general": {
+    "en": [
+      {
+        "period": null,
+        "species": "Aggregate limits for trout and salmon (including splake)",
+        "limit": "S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limits : S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined"
+      },
+      {
+        "period": "closed all year",
+        "species": "Atlantic salmon",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : closed all year"
+      },
+      {
+        "period": "February 15 to September 30",
+        "species": "Brook trout",
+        "limit": "S-5; not more than 1 greater than 31 centimetres, and C-2; none greater than 31 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : February 15 to September 30 Limits : S-5; not more than 1 greater than 31 centimetres, and C-2; none greater than 31 centimetres"
+      },
+      {
+        "period": "fourth Saturday in April to September 30",
+        "species": "Brown trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : fourth Saturday in April to September 30 Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Channel catfish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "open all year",
+        "species": "Crappie",
+        "limit": "S-30 and C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-30 and C-10"
+      },
+      {
+        "period": "closed all year",
+        "species": "Lake sturgeon",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : closed all year"
+      },
+      {
+        "period": "February 15 to third Sunday in March and third Saturday in May to Labour Day",
+        "species": "Lake trout",
+        "limit": "S-2; not more than 1 greater than 40 centimetres, and C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : February 15 to third Sunday in March and third Saturday in May to Labour Day Limits : S-2; not more than 1 greater than 40 centimetres, and C-1"
+      },
+      {
+        "period": "open all year",
+        "species": "Lake whitefish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "January 1 to third Sunday in March and third Saturday in May to December 31​​​",
+        "species": "Largemouth and smallmouth bass combined",
+        "limit": "S-6 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season: January 1 to third Sunday in March and third Saturday in May to December 31​​​ Limits : S-6 and C-2"
+      },
+      {
+        "period": "third Saturday in June to December 15",
+        "species": "Muskellunge",
+        "limit": "S-1; must be greater than 122 centimetres, and C-0",
+        "length": "must be greater than 122 centimetres",
+        "gear": null,
+        "notes": null,
+        "raw": "Season : third Saturday in June to December 15 Limits : S-1; must be greater than 122 centimetres, and C-0"
+      },
+      {
+        "period": "January 1 to third Sunday in March and third Saturday in May to December 31",
+        "species": "Northern pike",
+        "limit": "S-6; not more than two greater than 61 centimetres, of which not more than 1 is greater than 86 centimetres and C-2; not more than 1 greater than 61 centimetres, none greater than 86 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to third Sunday in March and third Saturday in May to December 31 Limits : S-6; not more than two greater than 61 centimetres, of which not more than 1 is greater than 86 centimetres and C-2; not more than 1 greater than 61 centimetres, none greater than 86 centimetres"
+      },
+      {
+        "period": "open all year",
+        "species": "Pacific salmon",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Rainbow trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Splake",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Sunfish",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50 and C-25"
+      },
+      {
+        "period": "January 1 to third Sunday in March and third Saturday in May to December 31",
+        "species": "Walleye and sauger combined",
+        "limit": "S-4 and C-2; none between 43-60 centimetres, not more than 1 greater than 60 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to third Sunday in March and third Saturday in May to December 31 Limits : S-4 and C-2; none between 43-60 centimetres, not more than 1 greater than 60 centimetres"
+      },
+      {
+        "period": "open all year",
+        "species": "Yellow perch",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50 and C-25"
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Limites combinées pour la truite et le saumon (y compris le touladi et l’omble de fontaine)",
+        "limit": "S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées.",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limites : S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées."
+      },
+      {
+        "period": "Fermée toute l’année",
+        "species": "Saumon atlantique",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Fermée toute l’année"
+      },
+      {
+        "period": "Du 15 février au 30 septembre",
+        "species": "Omble de fontaine",
+        "limit": "S-5; 1 seul dépassant 31 centimètres, et C-2; aucun dépassant 31 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 15 février au 30 septembre Limites : S-5; 1 seul dépassant 31 centimètres, et C-2; aucun dépassant 31 centimètres"
+      },
+      {
+        "period": "Du 4e samedi d’avril au 30 septembre",
+        "species": "Truite brune",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 4e samedi d’avril au 30 septembre Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Barbue de rivière",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Marigane",
+        "limit": "S-30 et C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-30 et C-10"
+      },
+      {
+        "period": "Fermée toute l’année",
+        "species": "Esturgeon de lac (esturgeon jaune)",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Fermée toute l’année"
+      },
+      {
+        "period": "Du 15 février au 3e dimanche de mars et du 3e samedi de mai jusqu’à la fête du Travail",
+        "species": "Touladi",
+        "limit": "S-2; pas plus de 1 dépassant 40 centimètres, et C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 15 février au 3e dimanche de mars et du 3e samedi de mai jusqu’à la fête du Travail Limites : S-2; pas plus de 1 dépassant 40 centimètres, et C-1"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Grand corégone",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Du 1er janvier au 3e dimanche de mars et du 3e samedi de mai au 31 décembre",
+        "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+        "limit": "S-6 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 3e dimanche de mars et du 3e samedi de mai au 31 décembre Limites : S-6 et C-2"
+      },
+      {
+        "period": "Du 3e samedi de juin au 15 décembre",
+        "species": "Maskinongé",
+        "limit": "S-1; doit mesurer plus de 122 centimètres, et C-0",
+        "length": "doit mesurer plus de 122 centimètres",
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 3e samedi de juin au 15 décembre Limites : S-1; doit mesurer plus de 122 centimètres, et C-0"
+      },
+      {
+        "period": "Du 1er janvier au 3e dimanche de mars et du 3e samedi de mai au 31 décembre",
+        "species": "Grand brochet",
+        "limit": "S-6; seulement deux dépassant 61 centimètres, 1 seul dépassant 86 centimètres et C-2; 1 seul dépassant 61 centimètres, aucun dépassant 86 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 3e dimanche de mars et du 3e samedi de mai au 31 décembre Limites : S-6; seulement deux dépassant 61 centimètres, 1 seul dépassant 86 centimètres et C-2; 1 seul dépassant 61 centimètres, aucun dépassant 86 centimètres"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Saumon du Pacifique",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Truite arc-en-ciel",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Truite moulac",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Crapet",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-50 et C-25"
+      },
+      {
+        "period": "Du 1er janvier au 3e dimanche de mars et du 3e samedi de mai au 31 décembre",
+        "species": "Doré jaune et doré noir (toute combinaison)",
+        "limit": "S-4 et C-2; aucun entre 43 et 60 centimètres, 1 seul dépassant 60 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 3e dimanche de mars et du 3e samedi de mai au 31 décembre Limites : S-4 et C-2; aucun entre 43 et 60 centimètres, 1 seul dépassant 60 centimètres"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Perchaude",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-50 et C-25"
+      }
+    ]
+  },
+  "species_exceptions": {
+    "en": [
+      {
+        "period": "open all year",
+        "species": "Brook trout",
+        "limit": "S-5 and C-2; no size limit View these waterbodies and additional information on Fish ON-Line . Barnett Lake (47°09′05″ N , 80°02′37″ W ) Bartle Lake (47°30′00″ N , 79°50′00″ W ) Bastien Lake (Tower Lake) (46°23′56″ N , 78°54′52″ W ) Beach Lake (46°44′11″ N , 79°47′48″ W ) Best Lake 73 (47°09′30″ N , 79°45′41″ W ) Brown’s Lake (47°06′57″ N , 80°05′18″ W ) Coppersand Lake (47°08′44″ N , 80°03′47″ W ) Dokis Pond (46°07′23″ N , 80°02′46″ W ) Fork Lake (46°09′13″ N , 78°43′53″ W ) Froggy Lake (46°17′12″ N , 79°07′22″ W ) Gillies Limit Lake 19 (47°16′04″ N , 79°46′59″ W ) Gillies Limit Lake 51 (47°16′57″ N , 79°42′44″ W ) Glassy Lake (46°23′16″ N , 79°06′50″ W ) Herbert Lake (46°58′48″ N , 80°08′17″ W ) High Lake (46°53′46″ N , 80°20′28″ W ) Hillcrest Lake (47°00′52″ N , 80°03′24″ W ) Hook Lake (47°08′10″ N , 79°50′47″ W ) Hush Hush Lake (47°08′12″ N , 80°02′54″ W ) Indian Lake (46°28′05″ N , 79°08′19″ W ) Lake 697 (46°29′51″ N , 79°04′00″ W ) Lake 2 (Pothole 2) (46°30′12″ N , 79°09′44″ W ) Little McConnell Lake (46°45′12″ N , 79°20′13″ W ) Love Lake (45°59′20″ N , 79°19′47″ W ) Malloch Lake (47°04′43″ N , 80°03′04″ W ) Mirror Lake (46°25′24″ N , 79°07′05″ W ) Montreuil Lake (46°25′54″ N , 78°54′28″ W ) Mowat Lake (47°28′51″ N , 79°57′37″ W ) Mug Lake (46°44′33″ N , 79°22′30″ W ) Norway Lake (46°45′08″ N , 79°15′08″ W ) Pine Lake (46°44′47″ N , 79°16′39″ W ) Pole Lake (46°43′45″ N , 79°21′50″ W ) Price Lake (46°58′03″ N , 80°07′32″ W ) Quarry Lake (46°43′43″ N , 79°21′12″ W ) Redbark Lake (46°59′45″ N , 80°09′55″ W ) Robert Lake (Head Lake) Roko Lake (47°07′12″ N , 80°02′52″ W ) Round Lake (46°46′34″ N , 79°18′55″ W ) Secord Lake (46°45′25″ N , 79°24′54″ W ) Side Rock Lake (47°04′36″ N , 80°03′34″ W ) Strathcona Lake 25 (47°01′23″ N , 79°46′40″ W ) Teasdale Lake (46°21′20″ N , 79°02′30″ W ) Turtle Lake (46°09′15″ N , 79°01′52″ W ) Whitefawn Lake (46°23′23″ N , 79°27′53″ W )",
+        "length": null,
+        "gear": "Hook Lake (47°08′10″ N , 79°50′47″ W )",
+        "notes": "Additional fishing opportunities · Barnett Lake (47°09′05″ N , 80°02′37″ W ) · Bartle Lake (47°30′00″ N , 79°50′00″ W ) · Bastien Lake (Tower Lake) (46°23′56″ N , 78°54′52″ W ) · Beach Lake (46°44′11″ N , 79°47′48″ W ) · Best Lake 73 (47°09′30″ N , 79°45′41″ W ) · Brown’s Lake (47°06′57″ N , 80°05′18″ W ) · Coppersand Lake (47°08′44″ N , 80°03′47″ W ) · Dokis Pond (46°07′23″ N , 80°02′46″ W ) · Fork Lake (46°09′13″ N , 78°43′53″ W ) · Froggy Lake (46°17′12″ N , 79°07′22″ W ) · Gillies Limit Lake 19 (47°16′04″ N , 79°46′59″ W ) · Gillies Limit Lake 51 (47°16′57″ N , 79°42′44″ W ) · Glassy Lake (46°23′16″ N , 79°06′50″ W ) · Herbert Lake (46°58′48″ N , 80°08′17″ W ) · High Lake (46°53′46″ N , 80°20′28″ W ) · Hillcrest Lake (47°00′52″ N , 80°03′24″ W ) · Hook Lake (47°08′10″ N , 79°50′47″ W ) · Hush Hush Lake (47°08′12″ N , 80°02′54″ W ) · Indian Lake (46°28′05″ N , 79°08′19″ W ) · Lake 697 (46°29′51″ N , 79°04′00″ W ) · Lake 2 (Pothole 2) (46°30′12″ N , 79°09′44″ W ) · Little McConnell Lake (46°45′12″ N , 79°20′13″ W ) · Love Lake (45°59′20″ N , 79°19′47″ W ) · Malloch Lake (47°04′43″ N , 80°03′04″ W ) · Mirror Lake (46°25′24″ N , 79°07′05″ W ) · Montreuil Lake (46°25′54″ N , 78°54′28″ W ) · Mowat Lake (47°28′51″ N , 79°57′37″ W ) · Mug Lake (46°44′33″ N , 79°22′30″ W ) · Norway Lake (46°45′08″ N , 79°15′08″ W ) · Pine Lake (46°44′47″ N , 79°16′39″ W ) · Pole Lake (46°43′45″ N , 79°21′50″ W ) · Price Lake (46°58′03″ N , 80°07′32″ W ) · Quarry Lake (46°43′43″ N , 79°21′12″ W ) · Redbark Lake (46°59′45″ N , 80°09′55″ W ) · Robert Lake (Head Lake) · Roko Lake (47°07′12″ N , 80°02′52″ W ) · Round Lake (46°46′34″ N , 79°18′55″ W ) · Secord Lake (46°45′25″ N , 79°24′54″ W ) · Side Rock Lake (47°04′36″ N , 80°03′34″ W ) · Strathcona Lake 25 (47°01′23″ N , 79°46′40″ W ) · Teasdale Lake (46°21′20″ N , 79°02′30″ W ) · Turtle Lake (46°09′15″ N , 79°01′52″ W ) · Whitefawn Lake (46°23′23″ N , 79°27′53″ W )",
+        "raw": "Additional fishing opportunities Season : open all year Limits : S-5 and C-2; no size limit View these waterbodies and additional information on Fish ON-Line . Barnett Lake (47°09′05″ N , 80°02′37″ W ) Bartle Lake (47°30′00″ N , 79°50′00″ W ) Bastien Lake (Tower Lake) (46°23′56″ N , 78°54′52″ W ) Beach Lake (46°44′11″ N , 79°47′48″ W ) Best Lake 73 (47°09′30″ N , 79°45′41″ W ) Brown’s Lake (47°06′57″ N , 80°05′18″ W ) Coppersand Lake (47°08′44″ N , 80°03′47″ W ) Dokis Pond (46°07′23″ N , 80°02′46″ W ) Fork Lake (46°09′13″ N , 78°43′53″ W ) Froggy Lake (46°17′12″ N , 79°07′22″ W ) Gillies Limit Lake 19 (47°16′04″ N , 79°46′59″ W ) Gillies Limit Lake 51 (47°16′57″ N , 79°42′44″ W ) Glassy Lake (46°23′16″ N , 79°06′50″ W ) Herbert Lake (46°58′48″ N , 80°08′17″ W ) High Lake (46°53′46″ N , 80°20′28″ W ) Hillcrest Lake (47°00′52″ N , 80°03′24″ W ) Hook Lake (47°08′10″ N , 79°50′47″ W ) Hush Hush Lake (47°08′12″ N , 80°02′54″ W ) Indian Lake (46°28′05″ N , 79°08′19″ W ) Lake 697 (46°29′51″ N , 79°04′00″ W ) Lake 2 (Pothole 2) (46°30′12″ N , 79°09′44″ W ) Little McConnell Lake (46°45′12″ N , 79°20′13″ W ) Love Lake (45°59′20″ N , 79°19′47″ W ) Malloch Lake (47°04′43″ N , 80°03′04″ W ) Mirror Lake (46°25′24″ N , 79°07′05″ W ) Montreuil Lake (46°25′54″ N , 78°54′28″ W ) Mowat Lake (47°28′51″ N , 79°57′37″ W ) Mug Lake (46°44′33″ N , 79°22′30″ W ) Norway Lake (46°45′08″ N , 79°15′08″ W ) Pine Lake (46°44′47″ N , 79°16′39″ W ) Pole Lake (46°43′45″ N , 79°21′50″ W ) Price Lake (46°58′03″ N , 80°07′32″ W ) Quarry Lake (46°43′43″ N , 79°21′12″ W ) Redbark Lake (46°59′45″ N , 80°09′55″ W ) Robert Lake (Head Lake) Roko Lake (47°07′12″ N , 80°02′52″ W ) Round Lake (46°46′34″ N , 79°18′55″ W ) Secord Lake (46°45′25″ N , 79°24′54″ W ) Side Rock Lake (47°04′36″ N , 80°03′34″ W ) Strathcona Lake 25 (47°01′23″ N , 79°46′40″ W ) Teasdale Lake (46°21′20″ N , 79°02′30″ W ) Turtle Lake (46°09′15″ N , 79°01′52″ W ) Whitefawn Lake (46°23′23″ N , 79°27′53″ W )",
+        "waters": [
+          "Barnett Lake (47°09′05″ N , 80°02′37″ W )",
+          "Bartle Lake (47°30′00″ N , 79°50′00″ W )",
+          "Bastien Lake (Tower Lake) (46°23′56″ N , 78°54′52″ W )",
+          "Beach Lake (46°44′11″ N , 79°47′48″ W )",
+          "Best Lake 73 (47°09′30″ N , 79°45′41″ W )",
+          "Brown’s Lake (47°06′57″ N , 80°05′18″ W )",
+          "Coppersand Lake (47°08′44″ N , 80°03′47″ W )",
+          "Dokis Pond (46°07′23″ N , 80°02′46″ W )",
+          "Fork Lake (46°09′13″ N , 78°43′53″ W )",
+          "Froggy Lake (46°17′12″ N , 79°07′22″ W )",
+          "Gillies Limit Lake 19 (47°16′04″ N , 79°46′59″ W )",
+          "Gillies Limit Lake 51 (47°16′57″ N , 79°42′44″ W )",
+          "Glassy Lake (46°23′16″ N , 79°06′50″ W )",
+          "Herbert Lake (46°58′48″ N , 80°08′17″ W )",
+          "High Lake (46°53′46″ N , 80°20′28″ W )",
+          "Hillcrest Lake (47°00′52″ N , 80°03′24″ W )",
+          "Hook Lake (47°08′10″ N , 79°50′47″ W )",
+          "Hush Hush Lake (47°08′12″ N , 80°02′54″ W )",
+          "Indian Lake (46°28′05″ N , 79°08′19″ W )",
+          "Lake 697 (46°29′51″ N , 79°04′00″ W )",
+          "Lake 2 (Pothole 2) (46°30′12″ N , 79°09′44″ W )",
+          "Little McConnell Lake (46°45′12″ N , 79°20′13″ W )",
+          "Love Lake (45°59′20″ N , 79°19′47″ W )",
+          "Malloch Lake (47°04′43″ N , 80°03′04″ W )",
+          "Mirror Lake (46°25′24″ N , 79°07′05″ W )",
+          "Montreuil Lake (46°25′54″ N , 78°54′28″ W )",
+          "Mowat Lake (47°28′51″ N , 79°57′37″ W )",
+          "Mug Lake (46°44′33″ N , 79°22′30″ W )",
+          "Norway Lake (46°45′08″ N , 79°15′08″ W )",
+          "Pine Lake (46°44′47″ N , 79°16′39″ W )",
+          "Pole Lake (46°43′45″ N , 79°21′50″ W )",
+          "Price Lake (46°58′03″ N , 80°07′32″ W )",
+          "Quarry Lake (46°43′43″ N , 79°21′12″ W )",
+          "Redbark Lake (46°59′45″ N , 80°09′55″ W )",
+          "Robert Lake (Head Lake)",
+          "Roko Lake (47°07′12″ N , 80°02′52″ W )",
+          "Round Lake (46°46′34″ N , 79°18′55″ W )",
+          "Secord Lake (46°45′25″ N , 79°24′54″ W )",
+          "Side Rock Lake (47°04′36″ N , 80°03′34″ W )",
+          "Strathcona Lake 25 (47°01′23″ N , 79°46′40″ W )",
+          "Teasdale Lake (46°21′20″ N , 79°02′30″ W )",
+          "Turtle Lake (46°09′15″ N , 79°01′52″ W )",
+          "Whitefawn Lake (46°23′23″ N , 79°27′53″ W )"
+        ]
+      },
+      {
+        "period": "open all year",
+        "species": "Lake Trout",
+        "limit": "S-2 and C-1; no size limit Crooked Lake (46°02′45″ N , 79°50′36″ W ) Hearst Lake (47°17′28″ N , 79°45′34″ W ) Justin Lake (First Justin) (47°20′36″ N , 79°53′27″ W ) Kingston Lake (47°35′17″ N , 80°05′39″ W ) Kitt Lake McNab Lake (47°09′48″ N , 79°40′18″ W ) Roosevelt Lake (47°15′38″ N , 79°42′45″ W ) Stormy Lake (46°04′47″ N , 79°46′29″ W ) Threetrails Lake (46°44′07″ N , 79°16′18″ W ) Tooth Lake (47°10′53″ N , 79°30′31″ W ) Season : closed all year Florence Lake (47°13′36″ N , 80°33′09″ W ) Limits : S-2; not more than 1 greater than 50 centimetres, and C-1 Cross Lake (46°52’19” N , 79°57’57” W ) Diamond Lake (47°12’12” N , 80°14’37” W ) Kokoko Lake (47°05’31” N , 80°01’45” W ) Makobe Lake (47°26’49” N , 80°25’47” W ) Limits : S-1 and C-0 Obabika Lake (47°00’60” N , 80°16’26” W )",
+        "length": null,
+        "gear": null,
+        "notes": "Additional fishing opportunities · Crooked Lake (46°02′45″ N , 79°50′36″ W ) · Hearst Lake (47°17′28″ N , 79°45′34″ W ) · Justin Lake (First Justin) (47°20′36″ N , 79°53′27″ W ) · Kingston Lake (47°35′17″ N , 80°05′39″ W ) · Kitt Lake · McNab Lake (47°09′48″ N , 79°40′18″ W ) · Roosevelt Lake (47°15′38″ N , 79°42′45″ W ) · Stormy Lake (46°04′47″ N , 79°46′29″ W ) · Threetrails Lake (46°44′07″ N , 79°16′18″ W ) · Tooth Lake (47°10′53″ N , 79°30′31″ W ) · Florence Lake (47°13′36″ N , 80°33′09″ W ) · Cross Lake (46°52’19” N , 79°57’57” W ) · Diamond Lake (47°12’12” N , 80°14’37” W ) · Kokoko Lake (47°05’31” N , 80°01’45” W ) · Makobe Lake (47°26’49” N , 80°25’47” W ) · Obabika Lake (47°00’60” N , 80°16’26” W )",
+        "raw": "Additional fishing opportunities Season : open all year Limits : S-2 and C-1; no size limit Crooked Lake (46°02′45″ N , 79°50′36″ W ) Hearst Lake (47°17′28″ N , 79°45′34″ W ) Justin Lake (First Justin) (47°20′36″ N , 79°53′27″ W ) Kingston Lake (47°35′17″ N , 80°05′39″ W ) Kitt Lake McNab Lake (47°09′48″ N , 79°40′18″ W ) Roosevelt Lake (47°15′38″ N , 79°42′45″ W ) Stormy Lake (46°04′47″ N , 79°46′29″ W ) Threetrails Lake (46°44′07″ N , 79°16′18″ W ) Tooth Lake (47°10′53″ N , 79°30′31″ W ) Season : closed all year Florence Lake (47°13′36″ N , 80°33′09″ W ) Limits : S-2; not more than 1 greater than 50 centimetres, and C-1 Cross Lake (46°52’19” N , 79°57’57” W ) Diamond Lake (47°12’12” N , 80°14’37” W ) Kokoko Lake (47°05’31” N , 80°01’45” W ) Makobe Lake (47°26’49” N , 80°25’47” W ) Limits : S-1 and C-0 Obabika Lake (47°00’60” N , 80°16’26” W )",
+        "waters": [
+          "Crooked Lake (46°02′45″ N , 79°50′36″ W )",
+          "Hearst Lake (47°17′28″ N , 79°45′34″ W )",
+          "Justin Lake (First Justin) (47°20′36″ N , 79°53′27″ W )",
+          "Kingston Lake (47°35′17″ N , 80°05′39″ W )",
+          "Kitt Lake",
+          "McNab Lake (47°09′48″ N , 79°40′18″ W )",
+          "Roosevelt Lake (47°15′38″ N , 79°42′45″ W )",
+          "Stormy Lake (46°04′47″ N , 79°46′29″ W )",
+          "Threetrails Lake (46°44′07″ N , 79°16′18″ W )",
+          "Tooth Lake (47°10′53″ N , 79°30′31″ W )",
+          "Florence Lake (47°13′36″ N , 80°33′09″ W )",
+          "Cross Lake (46°52’19” N , 79°57’57” W )",
+          "Diamond Lake (47°12’12” N , 80°14’37” W )",
+          "Kokoko Lake (47°05’31” N , 80°01’45” W )",
+          "Makobe Lake (47°26’49” N , 80°25’47” W )",
+          "Obabika Lake (47°00’60” N , 80°16’26” W )"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Omble de fontaine",
+        "limit": "S-5 et C-2; aucune limite de taille Voir ces plans d'eau et des renseignements additionnels sur On-Pêche en ligne . Lac Barnett (47°09′05″ N , 80°02′37″ O ) Lac Bartle (47°30′00″ N , 79°50′00″ O ) Lac Bastien (lac Tower) (46°23′56″ N , 78°54′52″ O ) Lac Beach (46°44′11″ N , 79°47′48″ O ) Lac Best 73 (47°09′30″ N , 79°45′41″ O ) Lac Brown’s (47°06′57″ N , 80°05′18″ O ) Lac Coppersand (47°08′44″ N , 80°03′47″ O ) Étang Dokis (46°07′23″ N , 80°02′46″ O ) Lac Fork (46°09′13″ N , 78°43′53″ O ) Lac Froggy (46°17′12″ N , 79°07′22″ O ) Lac Gillies Limit 19 (47°16′04″ N , 79°46′59″ O ) Lac Gillies Limit 51 (47°16′57″ N , 79°42′44″ O ) Lac Glassy (46°23′16″ N , 79°06′50″ O ) Lac Herbert (46°58′48″ N , 80°08′17″ O ) Lac High (46°53′46″ N , 80°20′28″ O ) Lac Hillcrest (47°00′52″ N , 80°03′24″ O ) Lac Hook (47°08′10″ N , 79°50′47″ O ) Lac Hush Hush (47°08′12″ N , 80°02′54″ O ) Lac Indian (46°28′05″ N , 79°08′19″ O ) Lac Little McConnell (46°45′12″ N , 79°20′13″ O ) Lac Love (45°59′20″ N , 79°19′47″ O ) Lac Malloch (47°04′43″ N , 80°03′04″ O ) Lac Mirror (46°25′24″ N , 79°07′05″ O ) Lac Montreuil (46°25′54″ N , 78°54′28″ O ) Lac Mowat (47°28′51″ N , 79°57′37″ O ) Lac Mug (46°44′33″ N , 79°22′30″ O ) Lac Norway (46°45′08″ N , 79°15′08″ O ) Lac Pine (46°44′47″ N , 79°16′39″ O ) Lac Pole (46°43′45″ N , 79°21′50″ O ) Lac Price (46°58′03″ N , 80°07′32″ O ) Lac Quarry (46°43′43″ N , 79°21′12″ O ) Lac Redbark (46°59′45″ N , 80°09′55″ O ) Lac Robert (lac Head) (47°16′01″ N , 79°51′36″ O ) Lac Roko (47°07′12″ N , 80°02′52″ O ) Lac Round (46°46′34″ N , 79°18′55″ O ) Lac Secord (46°45′25″ N , 79°24′54″ O ) Lac Side Rock (47°04′36″ N , 80°03′34″ O ) Lac Strathcona 25 (47°01′23″ N , 79°46′40″ O ) Lac Teasdale (46°21′20″ N , 79°02′30″ O ) Lac Turtle (46°09′15″ N , 79°01′52″ O ) Lac Whitefawn (46°23′23″ N , 79°27′53″ O ) Lac 2 (Pothole 2) (46°30′12″ N , 79°09′44″ O ) Lac 697 (46°29′51″ N , 79°04′00″ O )",
+        "length": null,
+        "gear": "Lac Hook (47°08′10″ N , 79°50′47″ O )",
+        "notes": "Possibilités supplémentaires de pêche · Lac Barnett (47°09′05″ N , 80°02′37″ O ) · Lac Bartle (47°30′00″ N , 79°50′00″ O ) · Lac Bastien (lac Tower) (46°23′56″ N , 78°54′52″ O ) · Lac Beach (46°44′11″ N , 79°47′48″ O ) · Lac Best 73 (47°09′30″ N , 79°45′41″ O ) · Lac Brown’s (47°06′57″ N , 80°05′18″ O ) · Lac Coppersand (47°08′44″ N , 80°03′47″ O ) · Étang Dokis (46°07′23″ N , 80°02′46″ O ) · Lac Fork (46°09′13″ N , 78°43′53″ O ) · Lac Froggy (46°17′12″ N , 79°07′22″ O ) · Lac Gillies Limit 19 (47°16′04″ N , 79°46′59″ O ) · Lac Gillies Limit 51 (47°16′57″ N , 79°42′44″ O ) · Lac Glassy (46°23′16″ N , 79°06′50″ O ) · Lac Herbert (46°58′48″ N , 80°08′17″ O ) · Lac High (46°53′46″ N , 80°20′28″ O ) · Lac Hillcrest (47°00′52″ N , 80°03′24″ O ) · Lac Hook (47°08′10″ N , 79°50′47″ O ) · Lac Hush Hush (47°08′12″ N , 80°02′54″ O ) · Lac Indian (46°28′05″ N , 79°08′19″ O ) · Lac Little McConnell (46°45′12″ N , 79°20′13″ O ) · Lac Love (45°59′20″ N , 79°19′47″ O ) · Lac Malloch (47°04′43″ N , 80°03′04″ O ) · Lac Mirror (46°25′24″ N , 79°07′05″ O ) · Lac Montreuil (46°25′54″ N , 78°54′28″ O ) · Lac Mowat (47°28′51″ N , 79°57′37″ O ) · Lac Mug (46°44′33″ N , 79°22′30″ O ) · Lac Norway (46°45′08″ N , 79°15′08″ O ) · Lac Pine (46°44′47″ N , 79°16′39″ O ) · Lac Pole (46°43′45″ N , 79°21′50″ O ) · Lac Price (46°58′03″ N , 80°07′32″ O ) · Lac Quarry (46°43′43″ N , 79°21′12″ O ) · Lac Redbark (46°59′45″ N , 80°09′55″ O ) · Lac Robert (lac Head) (47°16′01″ N , 79°51′36″ O ) · Lac Roko (47°07′12″ N , 80°02′52″ O ) · Lac Round (46°46′34″ N , 79°18′55″ O ) · Lac Secord (46°45′25″ N , 79°24′54″ O ) · Lac Side Rock (47°04′36″ N , 80°03′34″ O ) · Lac Strathcona 25 (47°01′23″ N , 79°46′40″ O ) · Lac Teasdale (46°21′20″ N , 79°02′30″ O ) · Lac Turtle (46°09′15″ N , 79°01′52″ O ) · Lac Whitefawn (46°23′23″ N , 79°27′53″ O ) · Lac 2 (Pothole 2) (46°30′12″ N , 79°09′44″ O ) · Lac 697 (46°29′51″ N , 79°04′00″ O )",
+        "raw": "Possibilités supplémentaires de pêche Saison : Ouverte toute l’année Limites : S-5 et C-2; aucune limite de taille Voir ces plans d'eau et des renseignements additionnels sur On-Pêche en ligne . Lac Barnett (47°09′05″ N , 80°02′37″ O ) Lac Bartle (47°30′00″ N , 79°50′00″ O ) Lac Bastien (lac Tower) (46°23′56″ N , 78°54′52″ O ) Lac Beach (46°44′11″ N , 79°47′48″ O ) Lac Best 73 (47°09′30″ N , 79°45′41″ O ) Lac Brown’s (47°06′57″ N , 80°05′18″ O ) Lac Coppersand (47°08′44″ N , 80°03′47″ O ) Étang Dokis (46°07′23″ N , 80°02′46″ O ) Lac Fork (46°09′13″ N , 78°43′53″ O ) Lac Froggy (46°17′12″ N , 79°07′22″ O ) Lac Gillies Limit 19 (47°16′04″ N , 79°46′59″ O ) Lac Gillies Limit 51 (47°16′57″ N , 79°42′44″ O ) Lac Glassy (46°23′16″ N , 79°06′50″ O ) Lac Herbert (46°58′48″ N , 80°08′17″ O ) Lac High (46°53′46″ N , 80°20′28″ O ) Lac Hillcrest (47°00′52″ N , 80°03′24″ O ) Lac Hook (47°08′10″ N , 79°50′47″ O ) Lac Hush Hush (47°08′12″ N , 80°02′54″ O ) Lac Indian (46°28′05″ N , 79°08′19″ O ) Lac Little McConnell (46°45′12″ N , 79°20′13″ O ) Lac Love (45°59′20″ N , 79°19′47″ O ) Lac Malloch (47°04′43″ N , 80°03′04″ O ) Lac Mirror (46°25′24″ N , 79°07′05″ O ) Lac Montreuil (46°25′54″ N , 78°54′28″ O ) Lac Mowat (47°28′51″ N , 79°57′37″ O ) Lac Mug (46°44′33″ N , 79°22′30″ O ) Lac Norway (46°45′08″ N , 79°15′08″ O ) Lac Pine (46°44′47″ N , 79°16′39″ O ) Lac Pole (46°43′45″ N , 79°21′50″ O ) Lac Price (46°58′03″ N , 80°07′32″ O ) Lac Quarry (46°43′43″ N , 79°21′12″ O ) Lac Redbark (46°59′45″ N , 80°09′55″ O ) Lac Robert (lac Head) (47°16′01″ N , 79°51′36″ O ) Lac Roko (47°07′12″ N , 80°02′52″ O ) Lac Round (46°46′34″ N , 79°18′55″ O ) Lac Secord (46°45′25″ N , 79°24′54″ O ) Lac Side Rock (47°04′36″ N , 80°03′34″ O ) Lac Strathcona 25 (47°01′23″ N , 79°46′40″ O ) Lac Teasdale (46°21′20″ N , 79°02′30″ O ) Lac Turtle (46°09′15″ N , 79°01′52″ O ) Lac Whitefawn (46°23′23″ N , 79°27′53″ O ) Lac 2 (Pothole 2) (46°30′12″ N , 79°09′44″ O ) Lac 697 (46°29′51″ N , 79°04′00″ O )",
+        "waters": [
+          "Lac Barnett (47°09′05″ N , 80°02′37″ O )",
+          "Lac Bartle (47°30′00″ N , 79°50′00″ O )",
+          "Lac Bastien (lac Tower) (46°23′56″ N , 78°54′52″ O )",
+          "Lac Beach (46°44′11″ N , 79°47′48″ O )",
+          "Lac Best 73 (47°09′30″ N , 79°45′41″ O )",
+          "Lac Brown’s (47°06′57″ N , 80°05′18″ O )",
+          "Lac Coppersand (47°08′44″ N , 80°03′47″ O )",
+          "Étang Dokis (46°07′23″ N , 80°02′46″ O )",
+          "Lac Fork (46°09′13″ N , 78°43′53″ O )",
+          "Lac Froggy (46°17′12″ N , 79°07′22″ O )",
+          "Lac Gillies Limit 19 (47°16′04″ N , 79°46′59″ O )",
+          "Lac Gillies Limit 51 (47°16′57″ N , 79°42′44″ O )",
+          "Lac Glassy (46°23′16″ N , 79°06′50″ O )",
+          "Lac Herbert (46°58′48″ N , 80°08′17″ O )",
+          "Lac High (46°53′46″ N , 80°20′28″ O )",
+          "Lac Hillcrest (47°00′52″ N , 80°03′24″ O )",
+          "Lac Hook (47°08′10″ N , 79°50′47″ O )",
+          "Lac Hush Hush (47°08′12″ N , 80°02′54″ O )",
+          "Lac Indian (46°28′05″ N , 79°08′19″ O )",
+          "Lac Little McConnell (46°45′12″ N , 79°20′13″ O )",
+          "Lac Love (45°59′20″ N , 79°19′47″ O )",
+          "Lac Malloch (47°04′43″ N , 80°03′04″ O )",
+          "Lac Mirror (46°25′24″ N , 79°07′05″ O )",
+          "Lac Montreuil (46°25′54″ N , 78°54′28″ O )",
+          "Lac Mowat (47°28′51″ N , 79°57′37″ O )",
+          "Lac Mug (46°44′33″ N , 79°22′30″ O )",
+          "Lac Norway (46°45′08″ N , 79°15′08″ O )",
+          "Lac Pine (46°44′47″ N , 79°16′39″ O )",
+          "Lac Pole (46°43′45″ N , 79°21′50″ O )",
+          "Lac Price (46°58′03″ N , 80°07′32″ O )",
+          "Lac Quarry (46°43′43″ N , 79°21′12″ O )",
+          "Lac Redbark (46°59′45″ N , 80°09′55″ O )",
+          "Lac Robert (lac Head) (47°16′01″ N , 79°51′36″ O )",
+          "Lac Roko (47°07′12″ N , 80°02′52″ O )",
+          "Lac Round (46°46′34″ N , 79°18′55″ O )",
+          "Lac Secord (46°45′25″ N , 79°24′54″ O )",
+          "Lac Side Rock (47°04′36″ N , 80°03′34″ O )",
+          "Lac Strathcona 25 (47°01′23″ N , 79°46′40″ O )",
+          "Lac Teasdale (46°21′20″ N , 79°02′30″ O )",
+          "Lac Turtle (46°09′15″ N , 79°01′52″ O )",
+          "Lac Whitefawn (46°23′23″ N , 79°27′53″ O )",
+          "Lac 2 (Pothole 2) (46°30′12″ N , 79°09′44″ O )",
+          "Lac 697 (46°29′51″ N , 79°04′00″ O )"
+        ]
+      },
+      {
+        "period": "Ouverte toute l’année Lac Crooked (46°02′45″ N , 79°50′36″ O ) Lac Hearst (47°17′28″ N , 79°45′34″ O ) Lac Justin (First Justin) (47°20′36″ N , 79°53′27″ O ) Lac Kingston (47°35′17″ N , 80°05′39″ O ) Lac Kitt (47°21′03″ N , 79°55′28″ O ) Lac McNab (47°09′48″ N , 79°40′18″ O ) Lac Roosevelt (47°15′38″ N , 79°42′45″ O ) Lac Stormy (46°04′47″ N , 79°46′29″ O ) Lac Threetrails (46°44′07″ N , 79°16′18″ O ) Lac Tooth (47°10′53″ N , 79°30′31″ O ) Saison : Fermée toute l’année Lac Florence (47°13′36″ N , 80°33′09″ O )",
+        "species": "Touladi",
+        "limit": "S-2; pas plus de 1 dépassant 50 centimètres, et C-1 Lac Cross (46°52′19” N , 79°57′57” O ) Lac Diamond (47°12′12” N , 80°14′37” O ) Lac Kokoko (47°05′31” N , 80°01′45” O ) Lac Makobe (47°26′49” N , 80°25′47” O ) Limites : S-1 et C-0 Lac Obabika (47°00′60” N , 80°16′26” O )",
+        "length": null,
+        "gear": null,
+        "notes": "Possibilités supplémentaires de pêche · Lac Crooked (46°02′45″ N , 79°50′36″ O ) · Lac Hearst (47°17′28″ N , 79°45′34″ O ) · Lac Justin (First Justin) (47°20′36″ N , 79°53′27″ O ) · Lac Kingston (47°35′17″ N , 80°05′39″ O ) · Lac Kitt (47°21′03″ N , 79°55′28″ O ) · Lac McNab (47°09′48″ N , 79°40′18″ O ) · Lac Roosevelt (47°15′38″ N , 79°42′45″ O ) · Lac Stormy (46°04′47″ N , 79°46′29″ O ) · Lac Threetrails (46°44′07″ N , 79°16′18″ O ) · Lac Tooth (47°10′53″ N , 79°30′31″ O ) · Lac Florence (47°13′36″ N , 80°33′09″ O ) · Lac Cross (46°52′19” N , 79°57′57” O ) · Lac Diamond (47°12′12” N , 80°14′37” O ) · Lac Kokoko (47°05′31” N , 80°01′45” O ) · Lac Makobe (47°26′49” N , 80°25′47” O ) · Lac Obabika (47°00′60” N , 80°16′26” O )",
+        "raw": "Possibilités supplémentaires de pêche Saison : Ouverte toute l’année Lac Crooked (46°02′45″ N , 79°50′36″ O ) Lac Hearst (47°17′28″ N , 79°45′34″ O ) Lac Justin (First Justin) (47°20′36″ N , 79°53′27″ O ) Lac Kingston (47°35′17″ N , 80°05′39″ O ) Lac Kitt (47°21′03″ N , 79°55′28″ O ) Lac McNab (47°09′48″ N , 79°40′18″ O ) Lac Roosevelt (47°15′38″ N , 79°42′45″ O ) Lac Stormy (46°04′47″ N , 79°46′29″ O ) Lac Threetrails (46°44′07″ N , 79°16′18″ O ) Lac Tooth (47°10′53″ N , 79°30′31″ O ) Saison : Fermée toute l’année Lac Florence (47°13′36″ N , 80°33′09″ O ) Limites : S-2; pas plus de 1 dépassant 50 centimètres, et C-1 Lac Cross (46°52′19” N , 79°57′57” O ) Lac Diamond (47°12′12” N , 80°14′37” O ) Lac Kokoko (47°05′31” N , 80°01′45” O ) Lac Makobe (47°26′49” N , 80°25′47” O ) Limites : S-1 et C-0 Lac Obabika (47°00′60” N , 80°16′26” O )",
+        "waters": [
+          "Lac Crooked (46°02′45″ N , 79°50′36″ O )",
+          "Lac Hearst (47°17′28″ N , 79°45′34″ O )",
+          "Lac Justin (First Justin) (47°20′36″ N , 79°53′27″ O )",
+          "Lac Kingston (47°35′17″ N , 80°05′39″ O )",
+          "Lac Kitt (47°21′03″ N , 79°55′28″ O )",
+          "Lac McNab (47°09′48″ N , 79°40′18″ O )",
+          "Lac Roosevelt (47°15′38″ N , 79°42′45″ O )",
+          "Lac Stormy (46°04′47″ N , 79°46′29″ O )",
+          "Lac Threetrails (46°44′07″ N , 79°16′18″ O )",
+          "Lac Tooth (47°10′53″ N , 79°30′31″ O )",
+          "Lac Florence (47°13′36″ N , 80°33′09″ O )",
+          "Lac Cross (46°52′19” N , 79°57′57” O )",
+          "Lac Diamond (47°12′12” N , 80°14′37” O )",
+          "Lac Kokoko (47°05′31” N , 80°01′45” O )",
+          "Lac Makobe (47°26′49” N , 80°25′47” O )",
+          "Lac Obabika (47°00′60” N , 80°16′26” O )"
+        ]
+      }
+    ]
+  },
+  "waterbody_exceptions": {
+    "en": [
+      {
+        "name": "Cut Lake",
+        "location": "(46°45′47” N , 79°16′02” W ) - McAuslan Township",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Live fish may not be used as bait or possessed for use as bait",
+            "raw": "Live fish may not be used as bait or possessed for use as bait"
+          },
+          {
+            "period": "no fishing from January 1 to Friday before third Saturday in May and day after Labour Day to December 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Friday before third Saturday in May and day after Labour Day to December 31",
+            "raw": "Fish sanctuary - no fishing from January 1 to Friday before third Saturday in May and day after Labour Day to December 31"
+          }
+        ],
+        "raw": "Cut Lake (46°45′47” N , 79°16′02” W ) - McAuslan Township Live fish may not be used as bait or possessed for use as bait | Fish sanctuary - no fishing from January 1 to Friday before third Saturday in May and day after Labour Day to December 31"
+      },
+      {
+        "name": "French River",
+        "location": "waters lying south of the Five Finger Rapids, and west of the Chaudière Dam downstream to the Highway 69 bridge including Wolseley Bay, the North Channel of the French River, 18 Mile Bay, Ranger Bay and Dry Pine Bay to the Highway 607 Bridge",
+        "rules": [
+          {
+            "period": null,
+            "species": "Largemouth and smallmouth bass combined",
+            "limit": "S-4 and C-2; any size",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 and C-2; any size",
+            "raw": "Largemouth and smallmouth bass combined - S-4 and C-2; any size"
+          },
+          {
+            "period": null,
+            "species": "Muskellunge",
+            "limit": "S-1; must be greater than 137 centimetres, and C-0",
+            "length": "must be greater than 137 centimetres",
+            "gear": null,
+            "notes": "S-1; must be greater than 137 centimetres, and C-0",
+            "raw": "Muskellunge - S-1; must be greater than 137 centimetres, and C-0"
+          },
+          {
+            "period": null,
+            "species": "Northern pike",
+            "limit": "S-4; not more than 1 greater than 61 centimetres, none greater than 86 centimetres, C-2; none greater than 61 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4; not more than 1 greater than 61 centimetres, none greater than 86 centimetres, C-2; none greater than 61 centimetres",
+            "raw": "Northern pike - S-4; not more than 1 greater than 61 centimetres, none greater than 86 centimetres, C-2; none greater than 61 centimetres"
+          }
+        ],
+        "raw": "French River waters lying south of the Five Finger Rapids, and west of the Chaudière Dam downstream to the Highway 69 bridge including Wolseley Bay, the North Channel of the French River, 18 Mile Bay, Ranger Bay and Dry Pine Bay to the Highway 607 Bridge Largemouth and smallmouth bass combined - S-4 and C-2; any size | Muskellunge - S-1; must be greater than 137 centimetres, and C-0 | Northern pike - S-4; not more than 1 greater than 61 centimetres, none greater than 86 centimetres, C-2; none greater than 61 centimetres"
+      },
+      {
+        "name": "Green Lake",
+        "location": "(46°48'26\" N , 79°14'50\" W ) - Parkman Township",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Live fish may not be used as bait or possessed for use as bait",
+            "raw": "Live fish may not be used as bait or possessed for use as bait"
+          },
+          {
+            "period": "open from May 1 to September 30",
+            "species": "Brook trout",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from May 1 to September 30",
+            "raw": "Brook trout - open from May 1 to September 30"
+          }
+        ],
+        "raw": "Green Lake (46°48'26\" N , 79°14'50\" W ) - Parkman Township Live fish may not be used as bait or possessed for use as bait | Brook trout - open from May 1 to September 30"
+      },
+      {
+        "name": "McConnell Lake",
+        "location": "(46°44'23\" N , 79°20'23\" W ) - McAuslan Township",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Live fish may not be used as bait or possessed for use as bait",
+            "raw": "Live fish may not be used as bait or possessed for use as bait"
+          },
+          {
+            "period": "no fishing from January 1 to Friday before third Saturday in May and day after Labour Day to December 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Friday before third Saturday in May and day after Labour Day to December 31",
+            "raw": "Fish sanctuary - no fishing from January 1 to Friday before third Saturday in May and day after Labour Day to December 31"
+          }
+        ],
+        "raw": "McConnell Lake (46°44'23\" N , 79°20'23\" W ) - McAuslan Township Live fish may not be used as bait or possessed for use as bait | Fish sanctuary - no fishing from January 1 to Friday before third Saturday in May and day after Labour Day to December 31"
+      },
+      {
+        "name": "Lake Nipissing",
+        "location": "Iron Island vicinity, 100 metres around shore",
+        "rules": [
+          {
+            "period": "no fishing from March 16 to Friday before third Saturday in May",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from March 16 to Friday before third Saturday in May",
+            "raw": "Fish sanctuary - no fishing from March 16 to Friday before third Saturday in May"
+          }
+        ],
+        "raw": "Lake Nipissing Iron Island vicinity, 100 metres around shore Fish sanctuary - no fishing from March 16 to Friday before third Saturday in May"
+      },
+      {
+        "name": "Lake Nipissing",
+        "location": "Wasi Falls, waters of Lake Nipissing lying east of the east boundary of Lot 9, Concession 24, and south of a line joining this projection where it meets Lake Nipissing to the northwest tip of Burford Point, and mouth of the Wistiswasing River (North Himsworth Township)",
+        "rules": [
+          {
+            "period": "no fishing from March 16 to May 31 and October 1 to November 30",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from March 16 to May 31 and October 1 to November 30",
+            "raw": "Fish sanctuary - no fishing from March 16 to May 31 and October 1 to November 30"
+          }
+        ],
+        "raw": "Lake Nipissing Wasi Falls, waters of Lake Nipissing lying east of the east boundary of Lot 9, Concession 24, and south of a line joining this projection where it meets Lake Nipissing to the northwest tip of Burford Point, and mouth of the Wistiswasing River (North Himsworth Township) Fish sanctuary - no fishing from March 16 to May 31 and October 1 to November 30"
+      },
+      {
+        "name": "Lake Nipissing",
+        "location": "including the waters of the French River from the Chaudière and the Little Chaudière dams to Lake Nipissing; the west bay of Lake Nipissing in Haddo Township; the northwest bay of Lake Nipissing to the falls of MacPherson Creek; the Sturgeon River from Lake Nipissing to the dam at Sturgeon Falls; the Veuve River from Lake Nipissing to the chutes located in Lot 5 in Concession 1 in Caldwell Township; the Lavase River from Lake Nipissing to the Champlain Park Boat Ramp (46°14'31\" N., 79°25'11\" W ) in the city of North Bay, the South River from Lake Nipissing to Highway 654; and the entire West Arm of Lake Nipissing including Cross Lake",
+        "rules": [
+          {
+            "period": null,
+            "species": "Closed to all species",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "from March 16 to Friday before third Saturday in May and December 1 to December 31",
+            "raw": "Closed to all species - from March 16 to Friday before third Saturday in May and December 1 to December 31"
+          },
+          {
+            "period": "open from third Saturday in June to November 30",
+            "species": "Muskellunge",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from third Saturday in June to November 30",
+            "raw": "Muskellunge - open from third Saturday in June to November 30"
+          },
+          {
+            "period": null,
+            "species": "Muskellunge",
+            "limit": "S-1 and C-0; must be greater than 137 centimetres",
+            "length": "must be greater than 137 centimetres",
+            "gear": null,
+            "notes": "S-1 and C-0; must be greater than 137 centimetres",
+            "raw": "Muskellunge - S-1 and C-0; must be greater than 137 centimetres"
+          },
+          {
+            "period": null,
+            "species": "Northern pike",
+            "limit": "S-4 and C-2; not more than 1 greater than 61 centimetres, none greater than 86 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 and C-2; not more than 1 greater than 61 centimetres, none greater than 86 centimetres",
+            "raw": "Northern pike - S-4 and C-2; not more than 1 greater than 61 centimetres, none greater than 86 centimetres"
+          },
+          {
+            "period": "open from January 1 to March 15 and third Saturday in May to October 15",
+            "species": "Walleye and yellow perch",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from January 1 to March 15 and third Saturday in May to October 15",
+            "raw": "Walleye and yellow perch - open from January 1 to March 15 and third Saturday in May to October 15"
+          },
+          {
+            "period": null,
+            "species": "Walleye",
+            "limit": "S-2 and C-1; must be between 40-45 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-2 and C-1; must be between 40-45 centimetres",
+            "raw": "Walleye - S-2 and C-1; must be between 40-45 centimetres"
+          }
+        ],
+        "raw": "Lake Nipissing including the waters of the French River from the Chaudière and the Little Chaudière dams to Lake Nipissing; the west bay of Lake Nipissing in Haddo Township; the northwest bay of Lake Nipissing to the falls of MacPherson Creek; the Sturgeon River from Lake Nipissing to the dam at Sturgeon Falls; the Veuve River from Lake Nipissing to the chutes located in Lot 5 in Concession 1 in Caldwell Township; the Lavase River from Lake Nipissing to the Champlain Park Boat Ramp (46°14'31\" N., 79°25'11\" W ) in the city of North Bay, the South River from Lake Nipissing to Highway 654; and the entire West Arm of Lake Nipissing including Cross Lake Closed to all species - from March 16 to Friday before third Saturday in May and December 1 to December 31 | Muskellunge - open from third Saturday in June to November 30 | Muskellunge - S-1 and C-0; must be greater than 137 centimetres | Northern pike - S-4 and C-2; not more than 1 greater than 61 centimetres, none greater than 86 centimetres | Walleye and yellow perch - open from January 1 to March 15 and third Saturday in May to October 15 | Walleye - S-2 and C-1; must be between 40-45 centimetres"
+      },
+      {
+        "name": "Lake Temagami",
+        "location": "(46°59'36\" N., , 80°04'15\" W )",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Only live or dead baitfish less than 13 centimetres in length may be used as bait",
+            "raw": "Only live or dead baitfish less than 13 centimetres in length may be used as bait"
+          },
+          {
+            "period": "open February 15 to third Sunday in March and third Saturday in May to September 30",
+            "species": "Lake trout",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open February 15 to third Sunday in March and third Saturday in May to September 30",
+            "raw": "Lake trout - open February 15 to third Sunday in March and third Saturday in May to September 30"
+          },
+          {
+            "period": null,
+            "species": "Lake trout",
+            "limit": "S-2; not more than 1 greater than 50 centimetres, and C-1, from February 15 to third Sunday in March and third Saturday in May to Labour Day",
+            "length": null,
+            "gear": null,
+            "notes": "S-2; not more than 1 greater than 50 centimetres, and C-1, from February 15 to third Sunday in March and third Saturday in May to Labour Day",
+            "raw": "Lake trout - S-2; not more than 1 greater than 50 centimetres, and C-1, from February 15 to third Sunday in March and third Saturday in May to Labour Day"
+          },
+          {
+            "period": null,
+            "species": "Lake trout",
+            "limit": "S-0 and C-0; day after Labour Day to September 30",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 and C-0; day after Labour Day to September 30",
+            "raw": "Lake trout - S-0 and C-0; day after Labour Day to September 30"
+          },
+          {
+            "period": null,
+            "species": "Lake whitefish",
+            "limit": "S-25 and C-12",
+            "length": null,
+            "gear": null,
+            "notes": "S-25 and C-12",
+            "raw": "Lake whitefish - S-25 and C-12"
+          },
+          {
+            "period": null,
+            "species": "Walleye",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "none between 46-60 centimetres, not more than 1 greater than 60 centimetres",
+            "raw": "Walleye - none between 46-60 centimetres, not more than 1 greater than 60 centimetres"
+          },
+          {
+            "period": "no fishing from Monday after third Sunday in March to June 15 in the following areas:",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from Monday after third Sunday in March to June 15 in the following areas:",
+            "raw": "Fish sanctuary - no fishing from Monday after third Sunday in March to June 15 in the following areas:"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Gull Creek from dam at outlet of Gull Lake to 200 metres in an arc extending into Lake Temagami",
+            "raw": "Gull Creek from dam at outlet of Gull Lake to 200 metres in an arc extending into Lake Temagami"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Kokoko Bay north of Island 1063",
+            "raw": "Kokoko Bay north of Island 1063"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Spawning Creek from Spawning Lake, including all waters of Spawning Bay and Loon Bay",
+            "raw": "Spawning Creek from Spawning Lake, including all waters of Spawning Bay and Loon Bay"
+          }
+        ],
+        "raw": "Lake Temagami (46°59'36\" N., , 80°04'15\" W ) Only live or dead baitfish less than 13 centimetres in length may be used as bait | Lake trout - open February 15 to third Sunday in March and third Saturday in May to September 30 | Lake trout - S-2; not more than 1 greater than 50 centimetres, and C-1, from February 15 to third Sunday in March and third Saturday in May to Labour Day | Lake trout - S-0 and C-0; day after Labour Day to September 30 | Lake whitefish - S-25 and C-12 | Walleye - none between 46-60 centimetres, not more than 1 greater than 60 centimetres | Fish sanctuary - no fishing from Monday after third Sunday in March to June 15 in the following areas: | Gull Creek from dam at outlet of Gull Lake to 200 metres in an arc extending into Lake Temagami | Kokoko Bay north of Island 1063 | Spawning Creek from Spawning Lake, including all waters of Spawning Bay and Loon Bay"
+      },
+      {
+        "name": "Shanty Lake",
+        "location": "(46°45'45″ N , 79°19'41″ W ) - McAuslan Township",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Live fish may not be used as bait or possessed for use as bait",
+            "raw": "Live fish may not be used as bait or possessed for use as bait"
+          },
+          {
+            "period": "no fishing from January 1 to April 30 and October 1 to December 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to April 30 and October 1 to December 31",
+            "raw": "Fish sanctuary - no fishing from January 1 to April 30 and October 1 to December 31"
+          }
+        ],
+        "raw": "Shanty Lake (46°45'45″ N , 79°19'41″ W ) - McAuslan Township Live fish may not be used as bait or possessed for use as bait | Fish sanctuary - no fishing from January 1 to April 30 and October 1 to December 31"
+      },
+      {
+        "name": "Surecatch Lake",
+        "location": "(46°48'07″ N , 79°15'15″ W ) - Parkman Township",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Live fish may not be used as bait or possessed for use as bait",
+            "raw": "Live fish may not be used as bait or possessed for use as bait"
+          },
+          {
+            "period": "open from May 1 to September 30",
+            "species": "Brook trout",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from May 1 to September 30",
+            "raw": "Brook trout - open from May 1 to September 30"
+          }
+        ],
+        "raw": "Surecatch Lake (46°48'07″ N , 79°15'15″ W ) - Parkman Township Live fish may not be used as bait or possessed for use as bait | Brook trout - open from May 1 to September 30"
+      },
+      {
+        "name": "Trout Lake",
+        "location": "(46°19′09″ N , 79°20′11″ W ) - City of North Bay and East Ferris Township",
+        "rules": [
+          {
+            "period": "open from third Saturday in June to Friday before fourth Saturday in June",
+            "species": "Lake trout and Atlantic salmon",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from third Saturday in June to Friday before fourth Saturday in June",
+            "raw": "Lake trout and Atlantic salmon - open from third Saturday in June to Friday before fourth Saturday in June"
+          },
+          {
+            "period": null,
+            "species": "Lake trout and Atlantic salmon",
+            "limit": "S-1 and C-1; must be less than 55 centimetres",
+            "length": "must be less than 55 centimetres",
+            "gear": null,
+            "notes": "S-1 and C-1; must be less than 55 centimetres",
+            "raw": "Lake trout and Atlantic salmon - S-1 and C-1; must be less than 55 centimetres"
+          },
+          {
+            "period": "no fishing from May 15 to July 31 in the following areas:",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from May 15 to July 31 in the following areas:",
+            "raw": "Fish sanctuary - no fishing from May 15 to July 31 in the following areas:"
+          },
+          {
+            "period": null,
+            "species": "Trout Lake",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "East Ferris Township, lying between the water’s edge and a line drawn 30 metres in perpendicular distance from Poplar Island along the west side of the island from the northwest tip of the island to the southwest tip of the island",
+            "raw": "Trout Lake - East Ferris Township, lying between the water’s edge and a line drawn 30 metres in perpendicular distance from Poplar Island along the west side of the island from the northwest tip of the island to the southwest tip of the island"
+          },
+          {
+            "period": null,
+            "species": "Trout Lake",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Widdifield Township, lying within a line drawn from the most westerly tip of Kirkwood Island, commonly known as Camp Island extending 50 metres into the water and paralleling the shore for a distance of 500 metres then back to the south shore",
+            "raw": "Trout Lake - Widdifield Township, lying within a line drawn from the most westerly tip of Kirkwood Island, commonly known as Camp Island extending 50 metres into the water and paralleling the shore for a distance of 500 metres then back to the south shore"
+          }
+        ],
+        "raw": "Trout Lake (46°19′09″ N , 79°20′11″ W ) - City of North Bay and East Ferris Township Lake trout and Atlantic salmon - open from third Saturday in June to Friday before fourth Saturday in June | Lake trout and Atlantic salmon - S-1 and C-1; must be less than 55 centimetres | Fish sanctuary - no fishing from May 15 to July 31 in the following areas: | Trout Lake - East Ferris Township, lying between the water’s edge and a line drawn 30 metres in perpendicular distance from Poplar Island along the west side of the island from the northwest tip of the island to the southwest tip of the island | Trout Lake - Widdifield Township, lying within a line drawn from the most westerly tip of Kirkwood Island, commonly known as Camp Island extending 50 metres into the water and paralleling the shore for a distance of 500 metres then back to the south shore"
+      }
+    ],
+    "fr": [
+      {
+        "name": "Lac Cut",
+        "location": "(46°45′47” N , 79°16′02” O ) - canton de McAuslan",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est interdit d’utiliser et de posséder du poisson vivant comme appât.",
+            "raw": "Il est interdit d’utiliser et de posséder du poisson vivant comme appât."
+          },
+          {
+            "period": "Pêche interdite du 1er janvier au vendredi précédant le 3e samedi de mai et du jour suivant la fête du Travail jusqu’au 31 décembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Pêche interdite du 1er janvier au vendredi précédant le 3e samedi de mai et du jour suivant la fête du Travail jusqu’au 31 décembre",
+            "raw": "Réserve de poissons - Pêche interdite du 1er janvier au vendredi précédant le 3e samedi de mai et du jour suivant la fête du Travail jusqu’au 31 décembre"
+          }
+        ],
+        "raw": "Lac Cut (46°45′47” N , 79°16′02” O ) - canton de McAuslan Il est interdit d’utiliser et de posséder du poisson vivant comme appât. | Réserve de poissons - Pêche interdite du 1er janvier au vendredi précédant le 3e samedi de mai et du jour suivant la fête du Travail jusqu’au 31 décembre"
+      },
+      {
+        "name": "Rivière des Français",
+        "location": "les eaux situées au sud des rapides Five Finger et à l’ouest du barrage Chaudière, en aval jusqu’au pont de la route 69, y compris la baie Wolseley, le chenal Nord de la rivière des Français, la baie 18 Mile, la baie Ranger et la baie Dry Pine jusqu’au pont de la route 607",
+        "rules": [
+          {
+            "period": null,
+            "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+            "limit": "S-4 et C-2, aucune limite de taille",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 et C-2, aucune limite de taille",
+            "raw": "Achigan à grande bouche et achigan à petite bouche (toute combinaison) - S-4 et C-2, aucune limite de taille"
+          },
+          {
+            "period": null,
+            "species": "Maskinongé",
+            "limit": "S-1, doit dépasser 137 centimètres; C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-1, doit dépasser 137 centimètres; C-0",
+            "raw": "Maskinongé - S-1, doit dépasser 137 centimètres; C-0"
+          },
+          {
+            "period": null,
+            "species": "Grand brochet",
+            "limit": "S-4, un seul dépassant 61 centimètres, aucun dépassant 86 centimètres; C-2, aucun dépassant 61 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4, un seul dépassant 61 centimètres, aucun dépassant 86 centimètres; C-2, aucun dépassant 61 centimètres",
+            "raw": "Grand brochet - S-4, un seul dépassant 61 centimètres, aucun dépassant 86 centimètres; C-2, aucun dépassant 61 centimètres"
+          }
+        ],
+        "raw": "Rivière des Français les eaux situées au sud des rapides Five Finger et à l’ouest du barrage Chaudière, en aval jusqu’au pont de la route 69, y compris la baie Wolseley, le chenal Nord de la rivière des Français, la baie 18 Mile, la baie Ranger et la baie Dry Pine jusqu’au pont de la route 607 Achigan à grande bouche et achigan à petite bouche (toute combinaison) - S-4 et C-2, aucune limite de taille | Maskinongé - S-1, doit dépasser 137 centimètres; C-0 | Grand brochet - S-4, un seul dépassant 61 centimètres, aucun dépassant 86 centimètres; C-2, aucun dépassant 61 centimètres"
+      },
+      {
+        "name": "Lac Green",
+        "location": "(46°48′26″ N , 79°14′50″ O ) - canton de Parkman",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est interdit d’utiliser et de posséder du poisson vivant comme appât.",
+            "raw": "Il est interdit d’utiliser et de posséder du poisson vivant comme appât."
+          },
+          {
+            "period": "ouverte du 1er mai au 30 septembre",
+            "species": "Omble de fontaine",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "ouverte du 1er mai au 30 septembre",
+            "raw": "Omble de fontaine - ouverte du 1er mai au 30 septembre"
+          }
+        ],
+        "raw": "Lac Green (46°48′26″ N , 79°14′50″ O ) - canton de Parkman Il est interdit d’utiliser et de posséder du poisson vivant comme appât. | Omble de fontaine - ouverte du 1er mai au 30 septembre"
+      },
+      {
+        "name": "Lac McConnell",
+        "location": "(46°44′23″ N , 79°20′23″ O ) - canton de McAuslan",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est interdit d’utiliser et de posséder du poisson vivant comme appât.",
+            "raw": "Il est interdit d’utiliser et de posséder du poisson vivant comme appât."
+          },
+          {
+            "period": "Pêche interdite du 1er janvier au vendredi précédant le 3e samedi de mai et du jour suivant la fête du Travail jusqu’au 31 décembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Pêche interdite du 1er janvier au vendredi précédant le 3e samedi de mai et du jour suivant la fête du Travail jusqu’au 31 décembre",
+            "raw": "Réserve de poissons - Pêche interdite du 1er janvier au vendredi précédant le 3e samedi de mai et du jour suivant la fête du Travail jusqu’au 31 décembre"
+          }
+        ],
+        "raw": "Lac McConnell (46°44′23″ N , 79°20′23″ O ) - canton de McAuslan Il est interdit d’utiliser et de posséder du poisson vivant comme appât. | Réserve de poissons - Pêche interdite du 1er janvier au vendredi précédant le 3e samedi de mai et du jour suivant la fête du Travail jusqu’au 31 décembre"
+      },
+      {
+        "name": "Lac Nipissing",
+        "location": "les environs de l’île Iron - 100 mètres autour de la rive",
+        "rules": [
+          {
+            "period": "Pêche interdite du 16 mars au vendredi précédant le 3e samedi de mai",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Pêche interdite du 16 mars au vendredi précédant le 3e samedi de mai",
+            "raw": "Réserve de poissons - Pêche interdite du 16 mars au vendredi précédant le 3e samedi de mai"
+          }
+        ],
+        "raw": "Lac Nipissing les environs de l’île Iron - 100 mètres autour de la rive Réserve de poissons - Pêche interdite du 16 mars au vendredi précédant le 3e samedi de mai"
+      },
+      {
+        "name": "Lac Nipissing",
+        "location": "(chutes Wasi) - les eaux du lac Nipissing qui sont à l’est de la limite est du lot 9, concession 24, et au sud d’une ligne qui la relie là où elle rencontre le lac Nipissing à l’extrémité nord-ouest de la pointe Burford, et l’embouchure de la rivière Wistiwasing - canton de North Himsworth",
+        "rules": [
+          {
+            "period": "Pêche interdite du 16 mars au 31 mai et du 1er octobre au 30 novembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Pêche interdite du 16 mars au 31 mai et du 1er octobre au 30 novembre",
+            "raw": "Réserve de poissons - Pêche interdite du 16 mars au 31 mai et du 1er octobre au 30 novembre"
+          }
+        ],
+        "raw": "Lac Nipissing (chutes Wasi) - les eaux du lac Nipissing qui sont à l’est de la limite est du lot 9, concession 24, et au sud d’une ligne qui la relie là où elle rencontre le lac Nipissing à l’extrémité nord-ouest de la pointe Burford, et l’embouchure de la rivière Wistiwasing - canton de North Himsworth Réserve de poissons - Pêche interdite du 16 mars au 31 mai et du 1er octobre au 30 novembre"
+      },
+      {
+        "name": "Lac Nipissing",
+        "location": "comprend les eaux de la rivière des Français depuis les barrages Chaudière et Little Chaudière jusqu’au lac Nipissing; la baie ouest du lac Nipissing dans le canton de Haddo; de la baie nord-ouest du lac Nipissing jusqu’aux chutes du ruisseau MacPherson; la rivière Sturgeon, depuis le lac Nipissing jusqu’au barrage à Sturgeon Falls; la rivière Veuve, depuis le lac Nipissing jusqu’aux chutes situées sur le lot 5, concession 1, dans le canton de Caldwell; la rivière Lavase à partir du lac Nipissing jusqu’à la rampe de mise à l’eau du parc Champlain (46°14' 31″ N , 79°25' 11″ O ) dans la ville de North Bay; la rivière South, depuis le lac Nipissing jusqu’à la route 654; la bras West du lac Nipissing au complet, y compris le lac Cross",
+        "rules": [
+          {
+            "period": null,
+            "species": "Fermée pour toutes espèces",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Du 16 mars au vendredi précédant le 3e samedi de mai et du 1er décembre au 31 décembre",
+            "raw": "Fermée pour toutes espèces - Du 16 mars au vendredi précédant le 3e samedi de mai et du 1er décembre au 31 décembre"
+          },
+          {
+            "period": "ouverte du 3e samedi de juin au 30 novembre",
+            "species": "Maskinongé",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "ouverte du 3e samedi de juin au 30 novembre",
+            "raw": "Maskinongé - ouverte du 3e samedi de juin au 30 novembre"
+          },
+          {
+            "period": null,
+            "species": "Maskinongé",
+            "limit": "S-1 et C-0; doit mesurer plus de 137 centimètres",
+            "length": "doit mesurer plus de 137 centimètres",
+            "gear": null,
+            "notes": "S-1 et C-0; doit mesurer plus de 137 centimètres",
+            "raw": "Maskinongé - S-1 et C-0; doit mesurer plus de 137 centimètres"
+          },
+          {
+            "period": null,
+            "species": "Grand brochet",
+            "limit": "S-4 et C-2; 1 seul dépassant 61 centimètres, aucun dépassant 86 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 et C-2; 1 seul dépassant 61 centimètres, aucun dépassant 86 centimètres",
+            "raw": "Grand brochet - S-4 et C-2; 1 seul dépassant 61 centimètres, aucun dépassant 86 centimètres"
+          },
+          {
+            "period": "ouverte du 1er janvier au 15 mars et du 3e samedi de mai au 15 octobre",
+            "species": "Doré jaune et perchaude",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "ouverte du 1er janvier au 15 mars et du 3e samedi de mai au 15 octobre",
+            "raw": "Doré jaune et perchaude - ouverte du 1er janvier au 15 mars et du 3e samedi de mai au 15 octobre"
+          },
+          {
+            "period": null,
+            "species": "Doré jaune",
+            "limit": "S-2 et C-1; doit mesurer entre 40 et 45 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "S-2 et C-1; doit mesurer entre 40 et 45 centimètres",
+            "raw": "Doré jaune - S-2 et C-1; doit mesurer entre 40 et 45 centimètres"
+          }
+        ],
+        "raw": "Lac Nipissing comprend les eaux de la rivière des Français depuis les barrages Chaudière et Little Chaudière jusqu’au lac Nipissing; la baie ouest du lac Nipissing dans le canton de Haddo; de la baie nord-ouest du lac Nipissing jusqu’aux chutes du ruisseau MacPherson; la rivière Sturgeon, depuis le lac Nipissing jusqu’au barrage à Sturgeon Falls; la rivière Veuve, depuis le lac Nipissing jusqu’aux chutes situées sur le lot 5, concession 1, dans le canton de Caldwell; la rivière Lavase à partir du lac Nipissing jusqu’à la rampe de mise à l’eau du parc Champlain (46°14' 31″ N , 79°25' 11″ O ) dans la ville de North Bay; la rivière South, depuis le lac Nipissing jusqu’à la route 654; la bras West du lac Nipissing au complet, y compris le lac Cross Fermée pour toutes espèces - Du 16 mars au vendredi précédant le 3e samedi de mai et du 1er décembre au 31 décembre | Maskinongé - ouverte du 3e samedi de juin au 30 novembre | Maskinongé - S-1 et C-0; doit mesurer plus de 137 centimètres | Grand brochet - S-4 et C-2; 1 seul dépassant 61 centimètres, aucun dépassant 86 centimètres | Doré jaune et perchaude - ouverte du 1er janvier au 15 mars et du 3e samedi de mai au 15 octobre | Doré jaune - S-2 et C-1; doit mesurer entre 40 et 45 centimètres"
+      },
+      {
+        "name": "Lac Shanty",
+        "location": "(46°45′45″ N , 79°19′41″ O ) - canton de McAuslan",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est interdit d’utiliser et de posséder du poisson vivant comme appât.",
+            "raw": "Il est interdit d’utiliser et de posséder du poisson vivant comme appât."
+          },
+          {
+            "period": "Pêche interdite du 1er janvier au 30 avril et du 1er octobre au 31 décembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Pêche interdite du 1er janvier au 30 avril et du 1er octobre au 31 décembre",
+            "raw": "Réserve de poissons - Pêche interdite du 1er janvier au 30 avril et du 1er octobre au 31 décembre"
+          }
+        ],
+        "raw": "Lac Shanty (46°45′45″ N , 79°19′41″ O ) - canton de McAuslan Il est interdit d’utiliser et de posséder du poisson vivant comme appât. | Réserve de poissons - Pêche interdite du 1er janvier au 30 avril et du 1er octobre au 31 décembre"
+      },
+      {
+        "name": "Lac Surecatch",
+        "location": "(46°48′07″ N , 79°15′15″ O ) - canton de Parkman",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est interdit d’utiliser et de posséder du poisson vivant comme appât.",
+            "raw": "Il est interdit d’utiliser et de posséder du poisson vivant comme appât."
+          },
+          {
+            "period": "ouverte du 1er mai au 30 septembre",
+            "species": "Omble de fontaine",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "ouverte du 1er mai au 30 septembre",
+            "raw": "Omble de fontaine - ouverte du 1er mai au 30 septembre"
+          }
+        ],
+        "raw": "Lac Surecatch (46°48′07″ N , 79°15′15″ O ) - canton de Parkman Il est interdit d’utiliser et de posséder du poisson vivant comme appât. | Omble de fontaine - ouverte du 1er mai au 30 septembre"
+      },
+      {
+        "name": "Lac Temagami",
+        "location": "(46°59′36″ N , 80°04′15″ O )",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Seuls des poissons d’appât morts ou vivants mesurant moins de 13 centimètres de longueur peuvent être utilisés comme appât.",
+            "raw": "Seuls des poissons d’appât morts ou vivants mesurant moins de 13 centimètres de longueur peuvent être utilisés comme appât."
+          },
+          {
+            "period": "ouverte du 15 février au 3e dimanche de mars et du 3e samedi de mai au 30 septembre",
+            "species": "Touladi",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "ouverte du 15 février au 3e dimanche de mars et du 3e samedi de mai au 30 septembre",
+            "raw": "Touladi - ouverte du 15 février au 3e dimanche de mars et du 3e samedi de mai au 30 septembre"
+          },
+          {
+            "period": null,
+            "species": "Touladi",
+            "limit": "S-2; pas plus de 1 dépassant 50 centimètres, et C-1 du 15 février au 3e dimanche de mars et du 3e samedi de mai jusqu’à la fête du Travail",
+            "length": null,
+            "gear": null,
+            "notes": "S-2; pas plus de 1 dépassant 50 centimètres, et C-1 du 15 février au 3e dimanche de mars et du 3e samedi de mai jusqu’à la fête du Travail",
+            "raw": "Touladi - S-2; pas plus de 1 dépassant 50 centimètres, et C-1 du 15 février au 3e dimanche de mars et du 3e samedi de mai jusqu’à la fête du Travail"
+          },
+          {
+            "period": null,
+            "species": "Touladi",
+            "limit": "S-0 et C-0; du jour suivant la fête du Travail jusqu’au 30 septembre",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 et C-0; du jour suivant la fête du Travail jusqu’au 30 septembre",
+            "raw": "Touladi - S-0 et C-0; du jour suivant la fête du Travail jusqu’au 30 septembre"
+          },
+          {
+            "period": null,
+            "species": "Grand corégone",
+            "limit": "S-25 et C-12",
+            "length": null,
+            "gear": null,
+            "notes": "S-25 et C-12",
+            "raw": "Grand corégone - S-25 et C-12"
+          },
+          {
+            "period": null,
+            "species": "Doré jaune",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "aucun entre 46 et 60 centimètres, 1 seul dépassant 60 centimètres",
+            "raw": "Doré jaune - aucun entre 46 et 60 centimètres, 1 seul dépassant 60 centimètres"
+          },
+          {
+            "period": "Pêche interdite du lundi après le 3e dimanche de mars jusqu’au 15 juin dans les zones suivantes :",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Pêche interdite du lundi après le 3e dimanche de mars jusqu’au 15 juin dans les zones suivantes :",
+            "raw": "Réserve de poissons - Pêche interdite du lundi après le 3e dimanche de mars jusqu’au 15 juin dans les zones suivantes :"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Ruisseau Gull, depuis le barrage à la décharge du lac Gull jusqu’à 200 mètres selon un arc se prolongeant dans le lac Temagami",
+            "raw": "Ruisseau Gull, depuis le barrage à la décharge du lac Gull jusqu’à 200 mètres selon un arc se prolongeant dans le lac Temagami"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Baie Kokoko au nord de l’île 1063",
+            "raw": "Baie Kokoko au nord de l’île 1063"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Ruisseau Spawning, depuis le lac Spawning, incluant toutes les eaux des baies Spawning et Loon",
+            "raw": "Ruisseau Spawning, depuis le lac Spawning, incluant toutes les eaux des baies Spawning et Loon"
+          }
+        ],
+        "raw": "Lac Temagami (46°59′36″ N , 80°04′15″ O ) Seuls des poissons d’appât morts ou vivants mesurant moins de 13 centimètres de longueur peuvent être utilisés comme appât. | Touladi - ouverte du 15 février au 3e dimanche de mars et du 3e samedi de mai au 30 septembre | Touladi - S-2; pas plus de 1 dépassant 50 centimètres, et C-1 du 15 février au 3e dimanche de mars et du 3e samedi de mai jusqu’à la fête du Travail | Touladi - S-0 et C-0; du jour suivant la fête du Travail jusqu’au 30 septembre | Grand corégone - S-25 et C-12 | Doré jaune - aucun entre 46 et 60 centimètres, 1 seul dépassant 60 centimètres | Réserve de poissons - Pêche interdite du lundi après le 3e dimanche de mars jusqu’au 15 juin dans les zones suivantes : | Ruisseau Gull, depuis le barrage à la décharge du lac Gull jusqu’à 200 mètres selon un arc se prolongeant dans le lac Temagami | Baie Kokoko au nord de l’île 1063 | Ruisseau Spawning, depuis le lac Spawning, incluant toutes les eaux des baies Spawning et Loon"
+      },
+      {
+        "name": "Lac Trout",
+        "location": "(46°19′09″ N , 79°20′11″ O ) - ville de North Bay et canton d’East Ferris",
+        "rules": [
+          {
+            "period": "ouverte du 3e samedi de juin au vendredi précédant le 4e samedi de juin",
+            "species": "Touladi et saumon atlantique",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "ouverte du 3e samedi de juin au vendredi précédant le 4e samedi de juin",
+            "raw": "Touladi et saumon atlantique - ouverte du 3e samedi de juin au vendredi précédant le 4e samedi de juin"
+          },
+          {
+            "period": null,
+            "species": "Touladi et saumon atlantique",
+            "limit": "S-1 et C-1; doit mesurer moins de 55 centimètres",
+            "length": "doit mesurer moins de 55 centimètres",
+            "gear": null,
+            "notes": "S-1 et C-1; doit mesurer moins de 55 centimètres",
+            "raw": "Touladi et saumon atlantique - S-1 et C-1; doit mesurer moins de 55 centimètres"
+          },
+          {
+            "period": "Pêche interdite du 15 mai au 31 juillet dans les zones suivantes :",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Pêche interdite du 15 mai au 31 juillet dans les zones suivantes :",
+            "raw": "Réserve de poissons - Pêche interdite du 15 mai au 31 juillet dans les zones suivantes :"
+          },
+          {
+            "period": null,
+            "species": "Lac Trout",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "canton d’East Ferris, entre la limite des eaux et une ligne tracée 30 mètres selon une distance perpendiculaire depuis l’île Poplar le long du côté ouest de l’île, depuis l’extrémité nord-ouest de l’île jusqu’à son extrémité sud-ouest",
+            "raw": "Lac Trout - canton d’East Ferris, entre la limite des eaux et une ligne tracée 30 mètres selon une distance perpendiculaire depuis l’île Poplar le long du côté ouest de l’île, depuis l’extrémité nord-ouest de l’île jusqu’à son extrémité sud-ouest"
+          },
+          {
+            "period": null,
+            "species": "Lac Trout",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "canton de Widdifield, à l’intérieur d’une ligne tracée depuis l’extrémité la plus à l’ouest de l’île Kirkwood, communément appelée l’île Camp, se prolongeant sur 50 mètres dans l’eau et suivant le rivage de façon parallèle sur une distance de 500 mètres, puis revenant vers la rive sud",
+            "raw": "Lac Trout - canton de Widdifield, à l’intérieur d’une ligne tracée depuis l’extrémité la plus à l’ouest de l’île Kirkwood, communément appelée l’île Camp, se prolongeant sur 50 mètres dans l’eau et suivant le rivage de façon parallèle sur une distance de 500 mètres, puis revenant vers la rive sud"
+          }
+        ],
+        "raw": "Lac Trout (46°19′09″ N , 79°20′11″ O ) - ville de North Bay et canton d’East Ferris Touladi et saumon atlantique - ouverte du 3e samedi de juin au vendredi précédant le 4e samedi de juin | Touladi et saumon atlantique - S-1 et C-1; doit mesurer moins de 55 centimètres | Réserve de poissons - Pêche interdite du 15 mai au 31 juillet dans les zones suivantes : | Lac Trout - canton d’East Ferris, entre la limite des eaux et une ligne tracée 30 mètres selon une distance perpendiculaire depuis l’île Poplar le long du côté ouest de l’île, depuis l’extrémité nord-ouest de l’île jusqu’à son extrémité sud-ouest | Lac Trout - canton de Widdifield, à l’intérieur d’une ligne tracée depuis l’extrémité la plus à l’ouest de l’île Kirkwood, communément appelée l’île Camp, se prolongeant sur 50 mètres dans l’eau et suivant le rivage de façon parallèle sur une distance de 500 mètres, puis revenant vers la rive sud"
+      }
+    ]
+  },
+  "bait_restrictions": {
+    "en": [
+      {
+        "period": null,
+        "species": "Live fish may not be used as bait or possessed for use as bait",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Big Webb Lake (46°49'07″ N , 79°16'15″ W ) · Camp Lake (46°45'20″ N , 79°17'16″ W ) · Cut Lake - refer to waterbody exceptions · Emerald Lake (46°47'39.75\"N, 79°18'4.73\"W) · Green Lake - refer to waterbody exceptions · Jimmie Lake (46°44'43″ N , 79°21'04″ W ) · Klock Lake (47°28'05″ N , 80°07'55″ W ) · Liberty Lake (47°10'56″ N , 80°03'37″ W ) · Little Clear Lake (46°08'07″ N , 79°01'44″ W ) · Little Webb Lake (46°49'49″ N , 79°16'26″ W ) · McConnell Lake - refer to waterbody exceptions · Modder Lake (46°45'30″ N , 79°22'52″ W ) · Mug Lake (46°44'33″ N , 79°22'30″ W ) · Norway Lake (46°45'08″ N , 79°15'08″ W ) · Orient Lake (46°45'29″ N , 79°18'30″ W ) · Otter Lake (46°49'01″ N , 79°18'07″ W ) · Pascal Lake (46°09'27″ N , 79°02'12″ W ) · Pine Lake (46°44'47″ N , 79°16'39″ W ) · Planet Lake (47°28'16″ N , 80°08'55″ W ) · Pole Lake (46°43'45″ N , 79°21'50″ W ) · Quarry Lake (46°43'43″ N , 79°21'12″ W ) · Rainbow Lake (47°25'27″ N , 80°10'54″ W ) · Round Lake (46°46’34”N., 79°18’56”W.) · Shanty Lake - refer to waterbody exceptions · Slade Lake (47°24'07″ N , 80°10'09″ W ) · Spring Lake (46°45'36″ N , 79°16'37″ W ) · Surecatch Lake - refer to waterbody exceptions · Troutbait Lake (46°48'04″ N , 79°17'14″ W ) · Turtle Lake (46°09'15″ N , 79°01'52″ W ) · Wolf Lake (46°46'49″ N , 79°52'39″ W ) - Sisk Township",
+        "raw": "Big Webb Lake (46°49'07″ N , 79°16'15″ W ) Camp Lake (46°45'20″ N , 79°17'16″ W ) Cut Lake - refer to waterbody exceptions Emerald Lake (46°47'39.75\"N, 79°18'4.73\"W) Green Lake - refer to waterbody exceptions Jimmie Lake (46°44'43″ N , 79°21'04″ W ) Klock Lake (47°28'05″ N , 80°07'55″ W ) Liberty Lake (47°10'56″ N , 80°03'37″ W ) Little Clear Lake (46°08'07″ N , 79°01'44″ W ) Little Webb Lake (46°49'49″ N , 79°16'26″ W ) McConnell Lake - refer to waterbody exceptions Modder Lake (46°45'30″ N , 79°22'52″ W ) Mug Lake (46°44'33″ N , 79°22'30″ W ) Norway Lake (46°45'08″ N , 79°15'08″ W ) Orient Lake (46°45'29″ N , 79°18'30″ W ) Otter Lake (46°49'01″ N , 79°18'07″ W ) Pascal Lake (46°09'27″ N , 79°02'12″ W ) Pine Lake (46°44'47″ N , 79°16'39″ W ) Planet Lake (47°28'16″ N , 80°08'55″ W ) Pole Lake (46°43'45″ N , 79°21'50″ W ) Quarry Lake (46°43'43″ N , 79°21'12″ W ) Rainbow Lake (47°25'27″ N , 80°10'54″ W ) Round Lake (46°46’34”N., 79°18’56”W.) Shanty Lake - refer to waterbody exceptions Slade Lake (47°24'07″ N , 80°10'09″ W ) Spring Lake (46°45'36″ N , 79°16'37″ W ) Surecatch Lake - refer to waterbody exceptions Troutbait Lake (46°48'04″ N , 79°17'14″ W ) Turtle Lake (46°09'15″ N , 79°01'52″ W ) Wolf Lake (46°46'49″ N , 79°52'39″ W ) - Sisk Township",
+        "waters": [
+          "Big Webb Lake (46°49'07″ N , 79°16'15″ W )",
+          "Camp Lake (46°45'20″ N , 79°17'16″ W )",
+          "Cut Lake - refer to waterbody exceptions",
+          "Emerald Lake (46°47'39.75\"N, 79°18'4.73\"W)",
+          "Green Lake - refer to waterbody exceptions",
+          "Jimmie Lake (46°44'43″ N , 79°21'04″ W )",
+          "Klock Lake (47°28'05″ N , 80°07'55″ W )",
+          "Liberty Lake (47°10'56″ N , 80°03'37″ W )",
+          "Little Clear Lake (46°08'07″ N , 79°01'44″ W )",
+          "Little Webb Lake (46°49'49″ N , 79°16'26″ W )",
+          "McConnell Lake - refer to waterbody exceptions",
+          "Modder Lake (46°45'30″ N , 79°22'52″ W )",
+          "Mug Lake (46°44'33″ N , 79°22'30″ W )",
+          "Norway Lake (46°45'08″ N , 79°15'08″ W )",
+          "Orient Lake (46°45'29″ N , 79°18'30″ W )",
+          "Otter Lake (46°49'01″ N , 79°18'07″ W )",
+          "Pascal Lake (46°09'27″ N , 79°02'12″ W )",
+          "Pine Lake (46°44'47″ N , 79°16'39″ W )",
+          "Planet Lake (47°28'16″ N , 80°08'55″ W )",
+          "Pole Lake (46°43'45″ N , 79°21'50″ W )",
+          "Quarry Lake (46°43'43″ N , 79°21'12″ W )",
+          "Rainbow Lake (47°25'27″ N , 80°10'54″ W )",
+          "Round Lake (46°46’34”N., 79°18’56”W.)",
+          "Shanty Lake - refer to waterbody exceptions",
+          "Slade Lake (47°24'07″ N , 80°10'09″ W )",
+          "Spring Lake (46°45'36″ N , 79°16'37″ W )",
+          "Surecatch Lake - refer to waterbody exceptions",
+          "Troutbait Lake (46°48'04″ N , 79°17'14″ W )",
+          "Turtle Lake (46°09'15″ N , 79°01'52″ W )",
+          "Wolf Lake (46°46'49″ N , 79°52'39″ W ) - Sisk Township"
+        ]
+      },
+      {
+        "period": null,
+        "species": "Only live or dead baitfish less than 13 centimetres in length may be used as bait",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Lake Temagami (46°59'36\" N , 80°04'15\" W ) - refer to waterbody exceptions",
+        "raw": "Lake Temagami (46°59'36\" N , 80°04'15\" W ) - refer to waterbody exceptions",
+        "waters": [
+          "Lake Temagami (46°59'36\" N , 80°04'15\" W ) - refer to waterbody exceptions"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Il est interdit d’utiliser et de posséder du poisson vivant comme appât.",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Lac Big Webb (46°49′07″ N , 79°16′15″ O ) · Lac Camp (46°45′20″ N , 79°17′16″ O ) · Lac Cut - voir les exceptions visant des plans d’eau particuliers · Lac Emerald (46°47′39,75\"N, 79°18′4,73″ O ) · Lac Green - voir les exceptions visant des plans d’eau particuliers · Lac Jimmie (46°44′43″ N , 79°21′04″ O ) · Lac Klock (47°28′05″ N , 80°07′55″ O ) · Lac Liberty (47°10′56″ N , 80°03′37″ O ) · Lac Little Clear (46°08′07″ N , 79°01′44″ O ) · Lac Little Webb (46°49' 49″ N , 79°16' 26″ O ) · Lac McConnell - voir les exceptions visant des plans d’eau particuliers · Lac Modder (46°45′30″ N , 79°22′52″ O ) · Lac Mug (46°44′33″ N , 79°22′30″ O ) · Lac Norway (46°45′08″ N , 79°15′08″ O ) · Lac Orient (46°45′29″ N , 79°18′30″ O ) · Lac Otter (46°49′01″ N , 79°18′07″ O ) · Lac Pascal (46°09′27″ N , 79°02′12″ O ) · Lac Pine (46°44′47″ N , 79°16′39″ O ) · Lac Planet (47°28′16″ N , 80°08′55″ O ) · Lac Pole (46°43′45″ N , 79°21′50″ O ) · Lac Quarry (46°43′43″ N , 79°21′12″ O ) · Lac Rainbow (47°25′27″ N , 80°10′54″ O ) · Lac Round (46°46′34” N , 79°18′56” O ) · Lac Shanty - voir les exceptions visant des plans d’eau particuliers · Lac Slade (47°24′07″ N , 80°10′09″ O ) · Lac Spring (46°45′36″ N , 79°16′37″ O ) · Lac Surecatch - voir les exceptions visant des plans d’eau particuliers · Lac Troutbait (46°48′04″ N , 79°17′14″ O ) · Lac Turtle (46°09' 15″ N , 79°01' 52″ O ) · Lac Wolf (46°46′49″ N , 79°52′39″ O )",
+        "raw": "Lac Big Webb (46°49′07″ N , 79°16′15″ O ) Lac Camp (46°45′20″ N , 79°17′16″ O ) Lac Cut - voir les exceptions visant des plans d’eau particuliers Lac Emerald (46°47′39,75\"N, 79°18′4,73″ O ) Lac Green - voir les exceptions visant des plans d’eau particuliers Lac Jimmie (46°44′43″ N , 79°21′04″ O ) Lac Klock (47°28′05″ N , 80°07′55″ O ) Lac Liberty (47°10′56″ N , 80°03′37″ O ) Lac Little Clear (46°08′07″ N , 79°01′44″ O ) Lac Little Webb (46°49' 49″ N , 79°16' 26″ O ) Lac McConnell - voir les exceptions visant des plans d’eau particuliers Lac Modder (46°45′30″ N , 79°22′52″ O ) Lac Mug (46°44′33″ N , 79°22′30″ O ) Lac Norway (46°45′08″ N , 79°15′08″ O ) Lac Orient (46°45′29″ N , 79°18′30″ O ) Lac Otter (46°49′01″ N , 79°18′07″ O ) Lac Pascal (46°09′27″ N , 79°02′12″ O ) Lac Pine (46°44′47″ N , 79°16′39″ O ) Lac Planet (47°28′16″ N , 80°08′55″ O ) Lac Pole (46°43′45″ N , 79°21′50″ O ) Lac Quarry (46°43′43″ N , 79°21′12″ O ) Lac Rainbow (47°25′27″ N , 80°10′54″ O ) Lac Round (46°46′34” N , 79°18′56” O ) Lac Shanty - voir les exceptions visant des plans d’eau particuliers Lac Slade (47°24′07″ N , 80°10′09″ O ) Lac Spring (46°45′36″ N , 79°16′37″ O ) Lac Surecatch - voir les exceptions visant des plans d’eau particuliers Lac Troutbait (46°48′04″ N , 79°17′14″ O ) Lac Turtle (46°09' 15″ N , 79°01' 52″ O ) Lac Wolf (46°46′49″ N , 79°52′39″ O )",
+        "waters": [
+          "Lac Big Webb (46°49′07″ N , 79°16′15″ O )",
+          "Lac Camp (46°45′20″ N , 79°17′16″ O )",
+          "Lac Cut - voir les exceptions visant des plans d’eau particuliers",
+          "Lac Emerald (46°47′39,75\"N, 79°18′4,73″ O )",
+          "Lac Green - voir les exceptions visant des plans d’eau particuliers",
+          "Lac Jimmie (46°44′43″ N , 79°21′04″ O )",
+          "Lac Klock (47°28′05″ N , 80°07′55″ O )",
+          "Lac Liberty (47°10′56″ N , 80°03′37″ O )",
+          "Lac Little Clear (46°08′07″ N , 79°01′44″ O )",
+          "Lac Little Webb (46°49' 49″ N , 79°16' 26″ O )",
+          "Lac McConnell - voir les exceptions visant des plans d’eau particuliers",
+          "Lac Modder (46°45′30″ N , 79°22′52″ O )",
+          "Lac Mug (46°44′33″ N , 79°22′30″ O )",
+          "Lac Norway (46°45′08″ N , 79°15′08″ O )",
+          "Lac Orient (46°45′29″ N , 79°18′30″ O )",
+          "Lac Otter (46°49′01″ N , 79°18′07″ O )",
+          "Lac Pascal (46°09′27″ N , 79°02′12″ O )",
+          "Lac Pine (46°44′47″ N , 79°16′39″ O )",
+          "Lac Planet (47°28′16″ N , 80°08′55″ O )",
+          "Lac Pole (46°43′45″ N , 79°21′50″ O )",
+          "Lac Quarry (46°43′43″ N , 79°21′12″ O )",
+          "Lac Rainbow (47°25′27″ N , 80°10′54″ O )",
+          "Lac Round (46°46′34” N , 79°18′56” O )",
+          "Lac Shanty - voir les exceptions visant des plans d’eau particuliers",
+          "Lac Slade (47°24′07″ N , 80°10′09″ O )",
+          "Lac Spring (46°45′36″ N , 79°16′37″ O )",
+          "Lac Surecatch - voir les exceptions visant des plans d’eau particuliers",
+          "Lac Troutbait (46°48′04″ N , 79°17′14″ O )",
+          "Lac Turtle (46°09' 15″ N , 79°01' 52″ O )",
+          "Lac Wolf (46°46′49″ N , 79°52′39″ O )"
+        ]
+      },
+      {
+        "period": null,
+        "species": "Seuls des poissons d’appât morts ou vivants mesurant moins de 13 centimètres de longueur peuvent être utilisés comme appât.",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Lac Temagami (46°59′36″ N , 80°04′15″ O ) - voir les exceptions visant des plans d’eau particuliers",
+        "raw": "Lac Temagami (46°59′36″ N , 80°04′15″ O ) - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Lac Temagami (46°59′36″ N , 80°04′15″ O ) - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      }
+    ]
+  },
+  "fish_sanctuaries": {
+    "en": [
+      {
+        "period": "No fishing - closed all year",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - closed all year Aurora Lake - Gamble Township | Four Mile Creek - Widdifield Township, within Lots 8 and 9 in Concession B | Little Aurora Lake - Gamble Township | Little Whitepine Lake - Gamble Township | Whirligig Lake - Gamble Township | Whitepine Lake - Gamble Township",
+        "waters": [
+          "Aurora Lake - Gamble Township",
+          "Four Mile Creek - Widdifield Township, within Lots 8 and 9 in Concession B",
+          "Little Aurora Lake - Gamble Township",
+          "Little Whitepine Lake - Gamble Township",
+          "Whirligig Lake - Gamble Township",
+          "Whitepine Lake - Gamble Township"
+        ]
+      },
+      {
+        "period": "No fishing - January 1 to April 30 and October 1 to December 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - January 1 to April 30 and October 1 to December 31 Blue Lake - McAuslan Township | Shanty Lake - refer to waterbody exceptions",
+        "waters": [
+          "Blue Lake - McAuslan Township",
+          "Shanty Lake - refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": "No fishing - January 1 to Friday before third Saturday in May",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - January 1 to Friday before third Saturday in May Wicksteed Lake - Kenny, Gladman, Flett, Gooderham and Milne Townships",
+        "waters": [
+          "Wicksteed Lake - Kenny, Gladman, Flett, Gooderham and Milne Townships"
+        ]
+      },
+      {
+        "period": "No fishing - January 1 to Friday before third Saturday in May and the day after Labour Day to December 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - January 1 to Friday before third Saturday in May and the day after Labour Day to December 31 Cut Lake - refer to waterbody exceptions | McConnell Lake - refer to waterbody exceptions",
+        "waters": [
+          "Cut Lake - refer to waterbody exceptions",
+          "McConnell Lake - refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": "No fishing - March 1 to Friday before third Saturday in May",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - March 1 to Friday before third Saturday in May Kaibuskong Bay - in front of Bonfield Township | Kaibuskong River - from Sheedy Lake to Kaibuskong Bay | Sharpes Creek - from Highway 17 to Kaibuskong Bay | Talon Lake - in front of Olrig and Calvin Townships, including Kaibuskong Bay",
+        "waters": [
+          "Kaibuskong Bay - in front of Bonfield Township",
+          "Kaibuskong River - from Sheedy Lake to Kaibuskong Bay",
+          "Sharpes Creek - from Highway 17 to Kaibuskong Bay",
+          "Talon Lake - in front of Olrig and Calvin Townships, including Kaibuskong Bay"
+        ]
+      },
+      {
+        "period": "No fishing - March 1 to June 15",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - March 1 to June 15 Restoule Lake and River - Patterson Township, that part in Lots 24 and 25, Concessions 3 and 4",
+        "waters": [
+          "Restoule Lake and River - Patterson Township, that part in Lots 24 and 25, Concessions 3 and 4"
+        ]
+      },
+      {
+        "period": "No fishing - March 16 to Friday before third Saturday in May",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - March 16 to Friday before third Saturday in May Duchesney Creek - City of North Bay and Commanda Township, from Lake Nipissing to the C.N.R. bridge | Lake Nipissing - refer to waterbody exceptions",
+        "waters": [
+          "Duchesney Creek - City of North Bay and Commanda Township, from Lake Nipissing to the C.N.R. bridge",
+          "Lake Nipissing - refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": "No fishing - March 16 to Friday before third Saturday in May and October 1 to November 30",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - March 16 to Friday before third Saturday in May and October 1 to November 30 South River - the waters of the South River lying between the bridge that forms part of Highway 654 and the northerly boundary of Concession 14 (Nipissing Township)",
+        "waters": [
+          "South River - the waters of the South River lying between the bridge that forms part of Highway 654 and the northerly boundary of Concession 14 (Nipissing Township)"
+        ]
+      },
+      {
+        "period": "No fishing - March 16 to May 31 and October 1 to November 30",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - March 16 to May 31 and October 1 to November 30 Lake Nipissing - refer to waterbody exceptions",
+        "waters": [
+          "Lake Nipissing - refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": "No fishing - Monday after third Sunday in March to Friday before third Saturday in May",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - Monday after third Sunday in March to Friday before third Saturday in May Ferrim Creek - Cynthia Township, from Ferrim Lake to 200 metres in an arc extending out into Kokoko Lake",
+        "waters": [
+          "Ferrim Creek - Cynthia Township, from Ferrim Lake to 200 metres in an arc extending out into Kokoko Lake"
+        ]
+      },
+      {
+        "period": "No fishing - Monday after third Sunday in March to June 15",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - Monday after third Sunday in March to June 15 Lake Temagami - refer to waterbody exceptions",
+        "waters": [
+          "Lake Temagami - refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": "No fishing - April 1 to June 15",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - April 1 to June 15 Anima-Nipissing River - Banting Township, from 100 metres in an arc extending out into Red Squirrel Lake to a point upstream 400 metres | Friday Creek - Cassels Township, including the waters in an arc extending 200 metres out into Obashkong Lake | Kanichee Creek - Strathy Township, from Kanichee Lake to 200 metres in an arc extending out into Net Lake | Mattawa River - Papineau and Mattawan Townships, from the face of Hurdman Dam to 200 metres downstream | Montreal River - Town of Latchford and Gillies Limit Township, Ontario Hydro dam to 30 metres south of the Ontario Northland Transportation Commission bridge | Montreal River (Ragged Chute Dam) – Gillies Limit Township, the waters from the Ragged Chute Dam (47°16′33.87″ N , 79°40′21.60″ W ) to 150 metres downstream of the concrete abutments at Fountain Falls (47°16′10.64″ N , 79°39′07.25″ W ). | Net Creek - Cassels Township, from dam on Net Lake to 200 metres in an arc extending out into Cassels Lake | Net Lake - Temagami Township, 100 metres easterly and westerly of the O.N.R. bridge | Thieving Bear Creek - Best Township, from Thieving Bear Lake to 200 metres in an arc extending out into Net Lake | Tomiko River - from the bridge in Lot 8, Concession 4, Grant Township to Tomiko Lake",
+        "waters": [
+          "Anima-Nipissing River - Banting Township, from 100 metres in an arc extending out into Red Squirrel Lake to a point upstream 400 metres",
+          "Friday Creek - Cassels Township, including the waters in an arc extending 200 metres out into Obashkong Lake",
+          "Kanichee Creek - Strathy Township, from Kanichee Lake to 200 metres in an arc extending out into Net Lake",
+          "Mattawa River - Papineau and Mattawan Townships, from the face of Hurdman Dam to 200 metres downstream",
+          "Montreal River - Town of Latchford and Gillies Limit Township, Ontario Hydro dam to 30 metres south of the Ontario Northland Transportation Commission bridge",
+          "Montreal River (Ragged Chute Dam) – Gillies Limit Township, the waters from the Ragged Chute Dam (47°16′33.87″ N , 79°40′21.60″ W ) to 150 metres downstream of the concrete abutments at Fountain Falls (47°16′10.64″ N , 79°39′07.25″ W ).",
+          "Net Creek - Cassels Township, from dam on Net Lake to 200 metres in an arc extending out into Cassels Lake",
+          "Net Lake - Temagami Township, 100 metres easterly and westerly of the O.N.R. bridge",
+          "Thieving Bear Creek - Best Township, from Thieving Bear Lake to 200 metres in an arc extending out into Net Lake",
+          "Tomiko River - from the bridge in Lot 8, Concession 4, Grant Township to Tomiko Lake"
+        ]
+      },
+      {
+        "period": "No fishing - April 1 to Friday before third Saturday in May",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - April 1 to Friday before third Saturday in May Memesagamesing Lake and Rainy Creek - Hardy Township, waters that fall within Lots 22, 23, 24, 25, Concession 7",
+        "waters": [
+          "Memesagamesing Lake and Rainy Creek - Hardy Township, waters that fall within Lots 22, 23, 24, 25, Concession 7"
+        ]
+      },
+      {
+        "period": "No fishing - May 15 to July 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - May 15 to July 31 Trout Lake - refer to waterbody exceptions",
+        "waters": [
+          "Trout Lake - refer to waterbody exceptions"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "Pêche interdite - Fermée toute l’année",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Fermée toute l’année Lac Aurora - canton de Gamble | Ruisseau Four Mile - canton de Widdifield, à l’intérieur des lots 8 et 9 dans la concession B | Lac Little Aurora - canton de Gamble | Lac Little Whitepine - canton de Gamble | Lac Whirligig - canton de Gamble | Lac Whitepine - canton de Gamble",
+        "waters": [
+          "Lac Aurora - canton de Gamble",
+          "Ruisseau Four Mile - canton de Widdifield, à l’intérieur des lots 8 et 9 dans la concession B",
+          "Lac Little Aurora - canton de Gamble",
+          "Lac Little Whitepine - canton de Gamble",
+          "Lac Whirligig - canton de Gamble",
+          "Lac Whitepine - canton de Gamble"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er janvier au 30 avril et du 1er octobre au 31 décembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er janvier au 30 avril et du 1er octobre au 31 décembre Lac Blue - canton de McAuslan | Lac Shanty - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Lac Blue - canton de McAuslan",
+          "Lac Shanty - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er janvier au vendredi précédant le 3e samedi de mai",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er janvier au vendredi précédant le 3e samedi de mai Lac Wicksteed - cantons de Kenny, Gladman, Flett, Gooderham et Milne",
+        "waters": [
+          "Lac Wicksteed - cantons de Kenny, Gladman, Flett, Gooderham et Milne"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er janvier au vendredi précédant le 3e samedi de mai et du jour suivant la fête du Travail jusqu’au 31 décembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er janvier au vendredi précédant le 3e samedi de mai et du jour suivant la fête du Travail jusqu’au 31 décembre Lac Cut - voir les exceptions visant des plans d’eau particuliers | Lac McConnell - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Lac Cut - voir les exceptions visant des plans d’eau particuliers",
+          "Lac McConnell - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er mars au vendredi précédant le 3e samedi de mai",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er mars au vendredi précédant le 3e samedi de mai Baie Kaibuskong - devant le canton de Bonfield | Rivière Kaibuskong - du lac Sheedy à la baie Kaibuskong | Ruisseau Sharpes - de la route 17 jusqu’à la baie Kaibuskong | Lac Talon - devant les cantons d’Olrig et Calvin, y compris la baie Kaibuskong",
+        "waters": [
+          "Baie Kaibuskong - devant le canton de Bonfield",
+          "Rivière Kaibuskong - du lac Sheedy à la baie Kaibuskong",
+          "Ruisseau Sharpes - de la route 17 jusqu’à la baie Kaibuskong",
+          "Lac Talon - devant les cantons d’Olrig et Calvin, y compris la baie Kaibuskong"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er mars au 15 juin",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er mars au 15 juin Lac et rivière Restoule - canton de Patterson, la partie sur les lots 24 et 25, concessions 3 et 4",
+        "waters": [
+          "Lac et rivière Restoule - canton de Patterson, la partie sur les lots 24 et 25, concessions 3 et 4"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 16 mars au vendredi précédant le 3e samedi de mai",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 16 mars au vendredi précédant le 3e samedi de mai Ruisseau Duchesney - ville de North Bay et canton de Commanda, du lac Nipissing jusqu’au pont du CN | Lac Nipissing - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Ruisseau Duchesney - ville de North Bay et canton de Commanda, du lac Nipissing jusqu’au pont du CN",
+          "Lac Nipissing - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 16 mars au vendredi précédant le 3e samedi de mai et du 1er octobre au 30 novembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 16 mars au vendredi précédant le 3e samedi de mai et du 1er octobre au 30 novembre Rivière South - les eaux de la rivière South entre le pont faisant partie de la route 654 et la limite nord de la concession 14, dans le canton de Nipissing",
+        "waters": [
+          "Rivière South - les eaux de la rivière South entre le pont faisant partie de la route 654 et la limite nord de la concession 14, dans le canton de Nipissing"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du lundi suivant le 3e dimanche de mars jusqu’au vendredi précédant le 3e samedi de mai",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du lundi suivant le 3e dimanche de mars jusqu’au vendredi précédant le 3e samedi de mai Ruisseau Ferrim - canton de Cynthia, du lac Ferrim jusqu’à 200 mètres, selon un arc se prolongeant dans le lac Kokoko",
+        "waters": [
+          "Ruisseau Ferrim - canton de Cynthia, du lac Ferrim jusqu’à 200 mètres, selon un arc se prolongeant dans le lac Kokoko"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du lundi suivant le 3e dimanche de mars jusqu’au 15 juin",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du lundi suivant le 3e dimanche de mars jusqu’au 15 juin Lac Temagami - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Lac Temagami - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 16 mars au 31 mai et du 1er octobre au 30 novembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 16 mars au 31 mai et du 1er octobre au 30 novembre Lac Nipissing - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Lac Nipissing - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er avril au 15 juin",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er avril au 15 juin Rivière Anima-Nipissing - canton de Banting, depuis 100 mètres selon un arc se prolongeant dans le lac Red Squirrel jusqu’à un point en amont à 400 mètres | Ruisseau Friday - canton de Cassels, incluant les eaux qui s’étendent selon un arc de 200 mètres se prolongeant dans le lac Obashkong | Ruisseau Kanichee - canton de Strathy, depuis le lac Kanichee sur 200 mètres selon un arc se prolongeant dans le lac Net | Rivière Mattawa - cantons de Papineau et Mattawan, depuis le devant du barrage Hurdman jusqu’à 200 mètres en aval | Rivière Montréal - ville de Latchford et canton de Gillies Limit, barrage d’Ontario Hydro jusqu’à 30nbsp;mètres au sud du pont de la Commission de transport Ontario Northland | Rivière Montréal – (barrage de Ragged Chute) - canton de Gillies Limit, les eaux allant du barrage de Ragged Chute (47°16′33,87″ N , 79°40′21,60″ O ) jusqu’à 150 mètres en aval des culées de béton aux Fountain Falls (47°16′10,64″ N , 79°39′07,25″ O ) | Ruisseau Net - canton de Cassels, depuis le barrage du lac Net sur 200 mètres selon un arc se prolongeant dans le lac Cassels | Lac Net - canton de Temagami, 100 mètres vers l’est et vers l’ouest du pont de l'ONR | Ruisseau Thieving Bear - canton de Best, depuis le lac Thieving Bear sur 200 mètres selon un arc se prolongeant dans le lac Net | Rivière Tomiko - depuis le pont sur le lot 8, concession 4, canton de Grant, jusqu’au lac Tomiko",
+        "waters": [
+          "Rivière Anima-Nipissing - canton de Banting, depuis 100 mètres selon un arc se prolongeant dans le lac Red Squirrel jusqu’à un point en amont à 400 mètres",
+          "Ruisseau Friday - canton de Cassels, incluant les eaux qui s’étendent selon un arc de 200 mètres se prolongeant dans le lac Obashkong",
+          "Ruisseau Kanichee - canton de Strathy, depuis le lac Kanichee sur 200 mètres selon un arc se prolongeant dans le lac Net",
+          "Rivière Mattawa - cantons de Papineau et Mattawan, depuis le devant du barrage Hurdman jusqu’à 200 mètres en aval",
+          "Rivière Montréal - ville de Latchford et canton de Gillies Limit, barrage d’Ontario Hydro jusqu’à 30nbsp;mètres au sud du pont de la Commission de transport Ontario Northland",
+          "Rivière Montréal – (barrage de Ragged Chute) - canton de Gillies Limit, les eaux allant du barrage de Ragged Chute (47°16′33,87″ N , 79°40′21,60″ O ) jusqu’à 150 mètres en aval des culées de béton aux Fountain Falls (47°16′10,64″ N , 79°39′07,25″ O )",
+          "Ruisseau Net - canton de Cassels, depuis le barrage du lac Net sur 200 mètres selon un arc se prolongeant dans le lac Cassels",
+          "Lac Net - canton de Temagami, 100 mètres vers l’est et vers l’ouest du pont de l'ONR",
+          "Ruisseau Thieving Bear - canton de Best, depuis le lac Thieving Bear sur 200 mètres selon un arc se prolongeant dans le lac Net",
+          "Rivière Tomiko - depuis le pont sur le lot 8, concession 4, canton de Grant, jusqu’au lac Tomiko"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er avril au vendredi précédant le 3e samedi de mai",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er avril au vendredi précédant le 3e samedi de mai Lac Memesagamesing et ruisseau à la Pluie (Rainy Creek) - canton de Hardy, les eaux qui sont à l’intérieur des lots 22, 23, 24, 25, concession 7",
+        "waters": [
+          "Lac Memesagamesing et ruisseau à la Pluie (Rainy Creek) - canton de Hardy, les eaux qui sont à l’intérieur des lots 22, 23, 24, 25, concession 7"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 15 mai au 31 juillet",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 15 mai au 31 juillet Lac Trout - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Lac Trout - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      }
+    ]
+  }
+}
