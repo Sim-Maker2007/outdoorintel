@@ -14,7 +14,8 @@ const PRECACHE_URLS = [
   '/en/blog.html',
   '/assets/logo/logo.jpg',
   '/assets/logo/mark.svg',
-  '/assets/favicon.svg'
+  '/assets/favicon.svg',
+  '/favicon.ico'
 ];
 
 // Install: pre-cache core pages

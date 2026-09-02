@@ -104,6 +104,7 @@ function generateHubPage(province, lang) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=2">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#2d5a3d">
     <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
@@ -274,6 +275,7 @@ function generateProvinceIndex(lang) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=2">
     <meta name="theme-color" content="#2d5a3d">
     <title>${title}</title>
     <meta name="description" content="${lang === 'fr' ? 'Explorez les meilleures destinations de plein air du Canada par province.' : "Explore Canada's best outdoor destinations by province and territory."}">

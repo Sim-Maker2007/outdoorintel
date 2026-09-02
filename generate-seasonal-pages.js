@@ -190,6 +190,7 @@ function generateSeasonalPage(season, lang) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=2">
     <meta name="theme-color" content="#2d5a3d">
     <title>${data.title}</title>
     <meta name="description" content="${data.subtitle}">
@@ -319,6 +320,7 @@ function generateGuidesIndex(lang) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=2">
     <meta name="theme-color" content="#2d5a3d">
     <title>${title}</title>
     <meta name="description" content="${lang === 'fr' ? 'Guides saisonniers pour le plein air au Canada.' : 'Seasonal outdoor guides for Canada.'}">
