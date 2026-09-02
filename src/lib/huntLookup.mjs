@@ -27,9 +27,10 @@ const PART = {
   w: 'W', ouest: 'W', west: 'W',
   n: 'N', nord: 'N', north: 'N',
   s: 'S', sud: 'S', south: 'S',
+  sw: 'SW', southwest: 'SW', 'sud-ouest': 'SW', sudouest: 'SW',
 };
 
-/** Normalize 10W / qc-h-10w / QC-H-10W / 10-west → QC-H-10W. */
+/** Normalize 10W / qc-h-10w / QC-H-10W / 7-north / 13SW → QC-H-*. */
 export function normalizeHuntingZoneToken(zone) {
   if (zone == null) return null;
   let raw = String(zone).trim();
@@ -49,10 +50,12 @@ export function normalizeHuntingZoneToken(zone) {
     return { key: `ON-H-${id}` };
   }
 
-  const qc = raw.match(/^(?:QC-H-|qc-h-)?(\d{1,2})\s*[- ]?\s*(East|West|Est|Ouest|E|W)?$/i);
+  // QC hunting first (7N / 8S / 13SW must not fall through to Ontario WMU keys).
+  const qc = raw.match(/^(?:QC-H-|qc-h-)?(\d{1,2})\s*[- ]?\s*(Southwest|Sud-ouest|Sudouest|East|West|North|South|Est|Ouest|Nord|Sud|SW|E|W|N|S)?$/i);
   if (qc) {
     const n = String(Number(qc[1]));
-    const part = qc[2] ? PART[qc[2].toLowerCase()] : '';
+    const partRaw = qc[2] ? qc[2].toLowerCase() : '';
+    const part = partRaw ? (PART[partRaw] || '') : '';
     return { key: `QC-H-${n}${part}` };
   }
 

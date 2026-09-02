@@ -32,6 +32,18 @@ Store `draw_required` for 2026 moose-without-antlers in zones 10/11 as the **ver
 
 Link **Forêt ouverte** and the official **zones 10 and 11 PDF** maps. Do not OCR maps. Do not scrape Forêt ouverte GIS.
 
+## Adjacent QC hunting (7 / 8 / 13)
+
+Same species slice (white-tailed deer + moose, 2026 column). Harvest **published splits only**:
+
+- Zone 7 → `QC-H-7N`, `QC-H-7S` (moose table lists undivided 7; deer lists 7 North / 7 South). Do not invent 7E/7W.
+- Zone 8 → `QC-H-8E`, `QC-H-8N`, `QC-H-8S`. Do not invent 8W.
+- Zone 13 → `QC-H-13SW` (deer lists 13 Southwest; moose lists undivided 13). Do not invent 13E/13W.
+
+Not small game, bear, turkey, or all 28 zones. Not Ontario hunting / WMU 12.
+
+Default `--zones` includes v1 keys plus the adjacent splits. Titles say Québec hunting. Zone 13 stores the verbatim alternating-year moose-without-antlers notice (2026 restrictive), not the zones 1–12 draw flag.
+
 ## Optional (only if 10/11 is complete)
 
 - QC hunting zones **9** (9E/9W) and **12**, deer + moose, same HTML tables.
@@ -56,7 +68,7 @@ Do **not** put hunting documents in `api/_data/regs-index.js`. New index: `api/_
 
 ## Parser
 
-`scripts/regs/harvest-hunting-qc.mjs` (npm script `harvest:hunting-qc`). Default `--zones=10E,10W,11E,11W,9E,9W,12`.
+`scripts/regs/harvest-hunting-qc.mjs` (npm script `harvest:hunting-qc`). Default includes `10E,10W,11E,11W,9E,9W,12` plus adjacent `7N,7S,8E,8N,8S,13SW`.
 
 Parse quebec.ca HTML **tables**. Weapon class = heading immediately before the table. Skip ZEC tables. Keep 2026 column verbatim. Coverage counters are **listed vs harvested** (never inverted). `complete: true` only for the **stated slice** (deer + moose, 2026 column, this hunting zone) — never “all 28 hunting zones”.
 

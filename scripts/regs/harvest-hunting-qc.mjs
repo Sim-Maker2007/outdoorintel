@@ -7,7 +7,7 @@
  * Does not write or rewrite data/regulations/zone-*.json or on-fmz-*.json.
  * Does not OCR maps. Does not scrape Forêt ouverte / Sépaq / Fish ON-Line.
  *
- * Usage: node scripts/regs/harvest-hunting-qc.mjs [--zones=10E,10W,11E,11W]
+ * Usage: node scripts/regs/harvest-hunting-qc.mjs [--zones=7N,7S,8E,8N,8S,13SW]
  *        node scripts/regs/harvest-hunting-qc.mjs --html-dir=DIR
  */
 import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'node:fs';
@@ -25,14 +25,26 @@ const SEASON_YEAR = 2026;
 const AUTHORITY = 'Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs (MELCCFP); Québec.ca sport hunting';
 
 const DEFAULT_ZONES = ['10E', '10W', '11E', '11W', '9E', '9W', '12'];
+/** Adjacent QC hunting zones (deer + moose 2026). Published splits only. */
+const ADJACENT_QC = ['7N', '7S', '8E', '8N', '8S', '13SW'];
 const OPTIONAL_QC = [];
 
 const zonesArg = (process.argv.find(a => a.startsWith('--zones=')) || '').replace('--zones=', '');
 const htmlDirArg = (process.argv.find(a => a.startsWith('--html-dir=')) || '').replace('--html-dir=', '');
 const includeOptional = process.argv.includes('--with-9-12') || process.argv.includes('--optional-qc');
-const ZONES = (zonesArg || (includeOptional ? DEFAULT_ZONES.concat(OPTIONAL_QC) : DEFAULT_ZONES).join(','))
+const includeAdjacent = !process.argv.includes('--core-only');
+const defaultList = DEFAULT_ZONES
+  .concat(includeAdjacent ? ADJACENT_QC : [])
+  .concat(includeOptional ? OPTIONAL_QC : []);
+const ZONES = (zonesArg || defaultList.join(','))
   .split(',')
-  .map(s => s.trim().toUpperCase().replace(/EAST$/, 'E').replace(/WEST$/, 'W'))
+  .map(s => s.trim().toUpperCase()
+    .replace(/SOUTHWEST$/, 'SW')
+    .replace(/SUD-?OUEST$/, 'SW')
+    .replace(/EAST$/, 'E').replace(/WEST$/, 'W')
+    .replace(/NORTH$/, 'N').replace(/SOUTH$/, 'S')
+    .replace(/EST$/, 'E').replace(/OUEST$/, 'W')
+    .replace(/NORD$/, 'N').replace(/SUD$/, 'S'))
   .filter(Boolean);
 
 const URLS = {
@@ -84,20 +96,22 @@ const DIR_MAP = {
   west: 'W', ouest: 'W', w: 'W',
   north: 'N', nord: 'N', n: 'N',
   south: 'S', sud: 'S', s: 'S',
+  southwest: 'SW', sw: 'SW',
 };
 
-/** Parse "1, 2, 10 West, 11 West, 15" → [{n:'10', part:'W'}, ...]. */
+/** Parse "1, 2, 10 West, 7 North, 13 Southwest" → [{n:'10', part:'W'}, ...]. */
 export function parseZoneCell(cell) {
   const s = String(cell || '');
   const out = [];
-  const re = /(?<!\d)(\d{1,2})\s*(East|West|North|South|Est|Ouest|Nord|Sud(?:-ouest)?|Southwest)?(?!\d)/gi;
+  // Southwest / sud-ouest MUST precede South / sud so "13 Southwest" is 13SW not 13S.
+  const re = /(?<!\d)(\d{1,2})\s*(Southwest|Sud-ouest|East|West|North|South|Est|Ouest|Nord|Sud)?(?!\d)/gi;
   let m;
   while ((m = re.exec(s))) {
     const n = String(Number(m[1]));
     let part = '';
     if (m[2]) {
-      const raw = m[2].toLowerCase().replace(/-ouest/, '');
-      if (/southwest|sud/.test(m[2].toLowerCase()) && /west|ouest/.test(m[2].toLowerCase())) part = 'SW';
+      const raw = m[2].toLowerCase();
+      if (/southwest/.test(raw) || (raw.includes('sud') && raw.includes('ouest'))) part = 'SW';
       else part = DIR_MAP[raw] || '';
     }
     out.push({ n, part, token: `${n}${part}` });
@@ -114,7 +128,7 @@ export function zoneMatches(tokens, zoneId) {
   return tokens.some(t => {
     if (t.n !== n) return false;
     if (t.part === part) return true;
-    // Undivided "9" / "12" applies to 9E and 9W files, and to undivided 12.
+    // Undivided "7" / "8" / "13" applies to published parts (7N, 8E, 13SW).
     if (!t.part && part) return true;
     if (!t.part && !part) return true;
     return false;
@@ -266,6 +280,8 @@ function parseMaps(html) {
     if (/10/.test(label) && /11/.test(label) || /zone-10-11|chasse-10-11/i.test(href)) pdfs['10-11'] = { href, label };
     if (/\b9\b/.test(label) && !/19/.test(label) || /zone-09|chasse-09/i.test(href)) pdfs['9'] = { href, label };
     if (/12/.test(label) && /13/.test(label) || /zone-12-13|chasse-12-13/i.test(href)) pdfs['12-13'] = { href, label };
+    if (/zone-07|chasse-07|hunting-map-zone-07/i.test(href) || /^Zone 7\b/i.test(label)) pdfs['7'] = { href, label };
+    if (/zone-08|chasse-08|hunting-map-zone-08/i.test(href) || /^Zone 8\b/i.test(label)) pdfs['8'] = { href, label };
   }
   return {
     foret_ouverte: foret ? decode(foret[1].replace(/&amp;/g, '&')) : 'https://www.foretouverte.gouv.qc.ca/?context=_chasse',
@@ -277,24 +293,52 @@ function pdfForZone(maps, zoneId, lang) {
   const n = String(zoneId).replace(/[A-Z]+$/i, '');
   if (n === '10' || n === '11') return maps[lang].pdfs['10-11'] || null;
   if (n === '9') return maps[lang].pdfs['9'] || null;
-  if (n === '12') return maps[lang].pdfs['12-13'] || null;
+  if (n === '12' || n === '13') return maps[lang].pdfs['12-13'] || null;
+  if (n === '7') return maps[lang].pdfs['7'] || null;
+  if (n === '8') return maps[lang].pdfs['8'] || null;
   return null;
 }
 
 function titleFor(zoneId, lang) {
   const label = zoneLabel(zoneId, lang);
   return lang === 'fr'
-    ? `Zone de chasse ${label} — cerf de Virginie et orignal (période 2026)`
-    : `Hunting zone ${label} — white-tailed deer and moose (2026 season)`;
+    ? `Zone de chasse ${label} du Québec — cerf de Virginie et orignal (période 2026)`
+    : `Québec hunting zone ${label} — white-tailed deer and moose (2026 season)`;
 }
 
 function zoneLabel(zoneId, lang) {
-  const m = String(zoneId).match(/^(\d+)([EWNS]?)$/);
+  const m = String(zoneId).match(/^(\d+)([EWNS]{0,2})$/);
   if (!m) return zoneId;
-  if (!m[2]) return m[1];
-  if (m[2] === 'E') return lang === 'fr' ? `${m[1]} est` : `${m[1]} East`;
-  if (m[2] === 'W') return lang === 'fr' ? `${m[1]} ouest` : `${m[1]} West`;
-  return zoneId;
+  const dir = m[2] || '';
+  if (!dir) return m[1];
+  const labels = {
+    en: { E: 'East', W: 'West', N: 'North', S: 'South', SW: 'Southwest' },
+    fr: { E: 'est', W: 'ouest', N: 'nord', S: 'sud', SW: 'sud-ouest' },
+  };
+  const d = (labels[lang] || labels.en)[dir];
+  return d ? `${m[1]} ${d}` : zoneId;
+}
+
+function unpublishedParts(zoneId) {
+  const n = String(zoneId).replace(/[A-Z]+$/i, '');
+  if (n === '7') return ['7E', '7W'];
+  if (n === '8') return ['8W'];
+  if (n === '13') return ['13E', '13W'];
+  return [];
+}
+
+function sliceNote(zoneId) {
+  const n = String(zoneId).replace(/[A-Z]+$/i, '');
+  if (n === '7') {
+    return 'Moose table lists undivided 7 (bow/crossbow only; no firearms moose row). Deer table lists 7 North and 7 South. 7 East/West are not on the page.';
+  }
+  if (n === '8') {
+    return 'Moose table lists undivided 8 (bow/crossbow only; no firearms moose row). Deer table lists 8 East, 8 North, 8 South. 8 West is not on the page.';
+  }
+  if (n === '13') {
+    return 'Moose table lists undivided 13. Deer table lists 13 Southwest only (no 13 East/West). 2026 is a restrictive year for moose without antlers except bow/crossbow.';
+  }
+  return '';
 }
 
 function coverageFor(zoneId, enRows, frRows) {
@@ -312,17 +356,21 @@ function coverageFor(zoneId, enRows, frRows) {
   const hasMoose = speciesEn.includes('moose') && speciesFr.includes('moose');
   const has2026 = enZ.every(r => r.period_2026) && frZ.every(r => r.period_2026);
   const weaponsNotCollapsed = weaponsEn.length === new Set(weaponsEn.map(w => w.toLowerCase().replace(/seasons?$/, '').trim())).size;
+  const extra = sliceNote(zoneId);
   let complete = listed > 0 && harvested >= listed && harvestedFr >= listedFr
     && hasDeer && hasMoose && has2026 && weaponsEn.length > 0 && weaponsFr.length > 0;
   // Honest: never invert listed vs harvested.
   if (harvested < listed || harvestedFr < listedFr) complete = false;
   const note = complete
-    ? `Québec hunting zone ${zoneId}: white-tailed deer and moose, 2026 season column, weapon classes kept as published headings. Not all 28 hunting zones. Not small game. Not GIS.`
-    : `Québec hunting zone ${zoneId}: harvest incomplete for the stated deer+moose 2026 slice (EN ${harvested}/${listed}, FR ${harvestedFr}/${listedFr}; deer=${hasDeer} moose=${hasMoose}).`;
+    ? `Québec hunting zone ${zoneId}: white-tailed deer and moose, 2026 season column, weapon classes kept as published headings. Not all 28 hunting zones. Not small game. Not Ontario hunting. Not GIS.${extra ? ` ${extra}` : ''}`
+    : `Québec hunting zone ${zoneId}: harvest incomplete for the stated deer+moose 2026 slice (EN ${harvested}/${listed}, FR ${harvestedFr}/${listedFr}; deer=${hasDeer} moose=${hasMoose}).${extra ? ` ${extra}` : ''}`;
+  const skippedParts = unpublishedParts(zoneId);
   return {
     slice: `QC hunting zone ${zoneId}; white-tailed deer + moose; 2026 season column`,
     species_listed: 2,
     species_harvested: (hasDeer ? 1 : 0) + (hasMoose ? 1 : 0),
+    species_not_harvested: ['black bear', 'small game', 'wild turkey'],
+    unpublished_parts: skippedParts,
     weapon_classes_listed: weaponsEn.length,
     weapon_classes_harvested: weaponsEn.length,
     weapon_classes_listed_fr: weaponsFr.length,
@@ -336,6 +384,49 @@ function coverageFor(zoneId, enRows, frRows) {
     weapon_classes: { en: weaponsEn, fr: weaponsFr },
     species: { en: speciesEn, fr: speciesFr },
     weapons_not_collapsed: weaponsNotCollapsed,
+  };
+}
+
+function noticesForZone(zoneId, drawEn, drawFr, bagEn, bagFr) {
+  const n = String(zoneId).replace(/[A-Z]+$/i, '');
+  if (n === '13') {
+    const enAlt = (drawEn.related || []).find(t => /zones 13, 18 and 28/i.test(t));
+    const frAlt = (drawFr.related || []).find(t => /zones 13, 18 et 28/i.test(t));
+    if (!enAlt || !frAlt) {
+      throw new Error('zone 13 alternating-year moose notice missing from Québec.ca HTML');
+    }
+    const restEn = [drawEn.text, ...(drawEn.related || [])].filter(t => t && t !== enAlt);
+    const restFr = [drawFr.text, ...(drawFr.related || [])].filter(t => t && t !== frAlt);
+    return {
+      en: [
+        {
+          kind: 'moose_alternating_year',
+          draw_required: false,
+          flag: false,
+          applies_to: 'moose_without_antlers',
+          year: 2026,
+          text: enAlt,
+          related: restEn,
+        },
+        { ...bagEn },
+      ],
+      fr: [
+        {
+          kind: 'moose_alternating_year',
+          draw_required: false,
+          flag: false,
+          applies_to: 'moose_without_antlers',
+          year: 2026,
+          text: frAlt,
+          related: restFr,
+        },
+        { ...bagFr },
+      ],
+    };
+  }
+  return {
+    en: [{ ...drawEn, flag: true }, { ...bagEn }],
+    fr: [{ ...drawFr, flag: true }, { ...bagFr }],
   };
 }
 
@@ -460,14 +551,7 @@ for (const zoneId of ZONES) {
   const pdfEn = pdfForZone(maps, zoneId, 'en');
   const pdfFr = pdfForZone(maps, zoneId, 'fr');
 
-  const noticesEn = [
-    { ...drawEn, flag: true },
-    { ...bagEn },
-  ];
-  const noticesFr = [
-    { ...drawFr, flag: true },
-    { ...bagFr },
-  ];
+  const { en: noticesEn, fr: noticesFr } = noticesForZone(zoneId, drawEn, drawFr, bagEn, bagFr);
 
   const doc = {
     zone_id: zoneId,
