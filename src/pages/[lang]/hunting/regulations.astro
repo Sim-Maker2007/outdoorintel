@@ -1,6 +1,6 @@
 ---
 // Hunting seasons hub — harvested Québec hunting zones (deer + moose, 2026).
-// CTA is Season Intel waitlist only; this page does not rewrite season-intel.
+// CTA points at Season Intel membership (/[lang]/season-intel).
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import Header from '../../../components/Header.astro';
@@ -58,8 +58,8 @@ const T = {
   searchError: { en: 'Could not load hunting seasons. Try again.', fr: 'Impossible de charger les périodes de chasse. Réessayez.' },
   seasonCta: { en: 'Get Season Intel', fr: 'Obtenir Season Intel' },
   seasonCtaSub: {
-    en: 'Waitlist for seasons, exceptions, and change alerts. Planned price $29/year CAD — no checkout yet. Zone pages stay free.',
-    fr: 'Liste d’attente pour les saisons, exceptions et alertes. Prix prévu 29 $/an CAD — pas de paiement pour le moment. Les pages de zone restent gratuites.',
+    en: 'Cited seasons and exceptions. $29 CAD/year via Stripe Checkout. Change-alert emails are coming. Zone pages stay free.',
+    fr: 'Saisons et exceptions citées. 29 $ CAD/an via Stripe Checkout. Les courriels d’alerte s’en viennent. Les pages de zone restent gratuites.',
   },
   maps: { en: 'Official maps (link only — not OCR’d)', fr: 'Cartes officielles (liens seulement — pas d’OCR)' },
   cols: {

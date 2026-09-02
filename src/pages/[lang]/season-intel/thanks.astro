@@ -17,6 +17,7 @@ const url = `${SITE}/${lang}/season-intel/thanks`;
 const altHref = `/${lang === 'en' ? 'fr' : 'en'}/season-intel/thanks`;
 const links = chromeLinks(lang);
 const regsHref = `/${lang}/fishing/regulations`;
+const huntHref = `/${lang}/hunting/regulations`;
 const privacyHref = links.privacy;
 const fmz = [12, 16, 17, 18].map((n) => ({
   n,
@@ -37,16 +38,16 @@ const T = {
   },
   perkTitle: { en: 'Member perk (v1)', fr: 'Avantage membre (v1)' },
   perkBody: {
-    en: 'Change-alert emails are coming. This membership does not hide public regulations — Québec zone pages and Ontario FMZ 12, 16, 17 and 18 stay free for everyone.',
-    fr: 'Les courriels d’alerte de changement s’en viennent. Cet abonnement ne masque pas les règlements publics — les pages de zone du Québec et les ZGP 12, 16, 17 et 18 de l’Ontario restent gratuites pour tout le monde.',
+    en: 'Change-alert emails are coming. This membership does not hide public regulations — Québec fishing zone pages, Ontario FMZ 12, 16, 17 and 18, and Québec hunting zone pages stay free for everyone.',
+    fr: 'Les courriels d’alerte de changement s’en viennent. Cet abonnement ne masque pas les règlements publics — les pages de zones de pêche du Québec, les ZGP 12, 16, 17 et 18 de l’Ontario, et les pages de zones de chasse du Québec restent gratuites pour tout le monde.',
   },
   perkPending: {
     en: 'Confirming your Stripe checkout…',
     fr: 'Confirmation du paiement Stripe…',
   },
   perkGuest: {
-    en: 'If you did not just pay, the public regulations below are still yours to use. Subscribe from the Season Intel page when checkout is live.',
-    fr: 'Si vous ne venez pas de payer, les règlements publics ci-dessous restent accessibles. Abonnez-vous depuis la page Season Intel lorsque le paiement est en ligne.',
+    en: 'If you did not just pay, the public regulations below are still yours to use. Subscribe from the Season Intel page.',
+    fr: 'Si vous ne venez pas de payer, les règlements publics ci-dessous restent accessibles. Abonnez-vous depuis la page Season Intel.',
   },
   regsTitle: { en: 'Public regulations (always free)', fr: 'Règlements publics (toujours gratuits)' },
   regsIntro: {
@@ -54,7 +55,8 @@ const T = {
     fr: 'Les mêmes pages publiques que tout le monde peut ouvrir. Season Intel ne les met pas derrière un paywall.',
   },
   regsHub: { en: 'Fishing regulations hub', fr: 'Carrefour des règlements de pêche' },
-  qcZones: { en: 'Québec zones 1–33', fr: 'Zones du Québec 1 à 33' },
+  huntHub: { en: 'Hunting seasons hub', fr: 'Carrefour des périodes de chasse' },
+  qcZones: { en: 'Québec fishing zones', fr: 'Zones de pêche du Québec' },
   onFmz: { en: 'Ontario FMZ', fr: 'ZGP Ontario' },
   casl: {
     en: 'Season Intel emails will include an unsubscribe note. Write to hello@outdoorintel.ca — there is no public unsubscribe URL yet. PIPEDA and Québec Law 25: questions to the same address. Stripe is the payment processor.',
@@ -128,6 +130,7 @@ const breadcrumbLd = {
                 <p class="text-[#5c6b5f] text-sm mb-4">{T.regsIntro[L]}</p>
                 <ul class="space-y-2 text-[#1c2b21]">
                     <li><a href={regsHref} class="text-[#3d7a4d] font-semibold hover:underline">{T.regsHub[L]} →</a></li>
+                    <li><a href={huntHref} class="text-[#3d7a4d] font-semibold hover:underline">{T.huntHub[L]} →</a></li>
                     <li><a href={`${regsHref}/zone-10`} class="hover:underline">{T.qcZones[L]}</a></li>
                     {fmz.map(({ n, href }) => (
                     <li><a href={href} class="hover:underline">{T.onFmz[L]} {n}</a></li>

@@ -1,6 +1,6 @@
 ---
-// Season Intel — waitlist by default; Stripe Checkout CTA when env keys exist.
-// Public QC zone pages and Ontario FMZ 12/16/17/18 stay free. No paywall.
+// Season Intel — Stripe Checkout CTA when env keys exist; waitlist fallback if not.
+// Public QC fishing, ON FMZ 12/16/17/18, and QC hunting 9E–12 stay free. No paywall.
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import GlobalSearch from '../../../components/GlobalSearch.astro';
@@ -17,6 +17,7 @@ const url = `${SITE}/${lang}/season-intel`;
 const altHref = `/${lang === 'en' ? 'fr' : 'en'}/season-intel`;
 const links = chromeLinks(lang);
 const regsHref = `/${lang}/fishing/regulations`;
+const huntHref = `/${lang}/hunting/regulations`;
 const privacyHref = links.privacy;
 
 const T = {
@@ -25,10 +26,10 @@ const T = {
     fr: 'Season Intel — abonnement saisons Québec et Ontario',
   },
   metaDesc: {
-    en: 'Season Intel is a $29 CAD/year membership for Québec and Ontario seasons and change alerts. Cited Québec fishing zones 1–33 and Ontario FMZ 12, 16, 17 and 18 stay public and free. Hunting seasons and remaining Ontario FMZs are coming.',
-    fr: 'Season Intel est un abonnement 29 $ CAD/an pour les saisons Québec et Ontario et les alertes de changement. Les zones de pêche du Québec 1 à 33 et les ZGP 12, 16, 17 et 18 de l’Ontario restent publiques et gratuites. Saisons de chasse et autres ZGP à venir.',
+    en: 'Season Intel is a $29 CAD/year Stripe Checkout membership. Cited Québec fishing zones, Ontario FMZ 12, 16, 17 and 18, and Québec hunting deer and moose 2026 for zones 9E, 9W, 10E, 10W, 11E, 11W and 12 stay public and free. Remaining coverage and change-alert emails are coming.',
+    fr: 'Season Intel est un abonnement 29 $ CAD/an via Stripe Checkout. Les zones de pêche du Québec, les ZGP 12, 16, 17 et 18 de l’Ontario, et la chasse au cerf et à l’orignal 2026 au Québec pour les zones 9E, 9W, 10E, 10W, 11E, 11W et 12 restent publiques et gratuites. Le reste de la couverture et les courriels d’alerte s’en viennent.',
   },
-  badge: { en: 'Paid membership · Waitlist', fr: 'Abonnement payant · Liste d’attente' },
+  badge: { en: 'Paid membership · News signup', fr: 'Abonnement payant · Infolettre' },
   badgeLive: { en: 'Paid membership · $29 CAD/year', fr: 'Abonnement payant · 29 $ CAD/an' },
   h1: { en: 'Season Intel', fr: 'Season Intel' },
   lead: {
@@ -36,8 +37,8 @@ const T = {
     fr: 'Un abonnement pour les règlements de pêche et de chasse du Québec et de l’Ontario, les exceptions par plan d’eau, les saisons et les alertes de changement. Pas de publicité. Pas un clone de carte iHunter.',
   },
   price: {
-    en: 'Planned price: $29 CAD per year. This is not a live charge — there is no payment form yet.',
-    fr: 'Prix prévu : 29 $ CAD par année. Ce n’est pas un paiement en direct — il n’y a pas de formulaire de paiement pour le moment.',
+    en: '$29 CAD per year. This news form does not take payment.',
+    fr: '29 $ CAD par année. Ce formulaire d’infolettre ne prend pas de paiement.',
   },
   priceLive: {
     en: '$29 CAD per year. Payment is handled on Stripe’s hosted Checkout — no card fields on this page.',
@@ -45,11 +46,11 @@ const T = {
   },
   waitTitle: { en: 'Get Season Intel news', fr: 'Recevoir les nouvelles de Season Intel' },
   waitIntro: {
-    en: 'Join the waitlist with the same Outdoor Intel newsletter. We will email you Season Intel news — including when checkout opens. No payment today.',
-    fr: 'Inscrivez-vous à la liste d’attente via la même infolettre Outdoor Intel. Nous vous enverrons les nouvelles de Season Intel — y compris l’ouverture du paiement. Aucun paiement aujourd’hui.',
+    en: 'Get Season Intel news with the same Outdoor Intel newsletter. This signup does not charge a card.',
+    fr: 'Recevez les nouvelles de Season Intel via la même infolettre Outdoor Intel. Cette inscription ne facture pas de carte.',
   },
   emailPh: { en: 'Your email', fr: 'Votre courriel' },
-  waitBtn: { en: 'Join the waitlist', fr: 'Rejoindre la liste d’attente' },
+  waitBtn: { en: 'Get Season Intel news', fr: 'Recevoir les nouvelles' },
   waitHint: {
     en: 'Same subscribe form as the rest of the site. We will send Season Intel news to this address.',
     fr: 'Le même formulaire d’abonnement que le reste du site. Les nouvelles de Season Intel partiront à cette adresse.',
@@ -65,8 +66,8 @@ const T = {
   privacyLink: { en: 'Privacy policy', fr: 'Politique de confidentialité' },
   checkoutTitle: { en: 'Subscribe to Season Intel', fr: 'S’abonner à Season Intel' },
   checkoutIntro: {
-    en: 'Annual membership. You will pay on Stripe’s Checkout page. Public zone and FMZ pages stay free.',
-    fr: 'Abonnement annuel. Vous paierez sur la page Checkout de Stripe. Les pages publiques de zone et de ZGP restent gratuites.',
+    en: 'Annual $29 CAD membership via Stripe Checkout. Public fishing zone, FMZ, and hunting pages stay free.',
+    fr: 'Abonnement annuel 29 $ CAD via Stripe Checkout. Les pages publiques de pêche, de ZGP et de chasse restent gratuites.',
   },
   checkoutBtn: { en: 'Subscribe — $29 CAD/year', fr: 'Subscribe — $29 CAD/year' },
   checkoutHint: {
@@ -88,44 +89,49 @@ const T = {
   nowTitle: { en: 'What you get now (free and public)', fr: 'Ce que vous avez déjà (gratuit et public)' },
   nowItems: {
     en: [
-      'Cited Québec fishing zones 1–33, reproduced from the MELCCFP with source links and retrieval dates.',
-      'Ontario FMZ 12, 16, 17 and 18 from the 2026 Ontario Fishing Regulations Summary HTML (not complete Ontario).',
-      'Waterbody and species search on the public regulations hub.',
-      'Zone and FMZ pages stay public for everyone and for search engines — Season Intel does not paywall them.',
+      'Cited Québec fishing zones already on the fishing regulations hub (MELCCFP), including zone 10 with listed vs harvested coverage.',
+      'Ontario fishing FMZ 12, 16, 17 and 18 from the 2026 Ontario Fishing Regulations Summary HTML (not complete Ontario).',
+      'Québec hunting deer and moose 2026 for zones 9E, 9W, 10E, 10W, 11E, 11W and 12. Not all 28 hunting zones, not small game, not Ontario hunting.',
+      'Waterbody and species search on the public fishing and hunting regulations hubs.',
+      'Fishing zone, FMZ, and hunting zone pages stay public for everyone and for search engines — Season Intel does not paywall them.',
     ],
     fr: [
-      'Zones de pêche du Québec 1 à 33, citées du MELCCFP, avec liens sources et dates de récupération.',
-      'ZGP 12, 16, 17 et 18 de l’Ontario d’après le HTML du Résumé des règlements de la pêche 2026 (pas l’Ontario au complet).',
-      'Recherche par plan d’eau et par espèce sur le carrefour public des règlements.',
-      'Les pages de zone et de ZGP restent publiques pour tout le monde et pour le référencement — Season Intel ne les met pas derrière un paywall.',
+      'Les zones de pêche du Québec déjà sur le carrefour des règlements (MELCCFP), y compris la zone 10 avec la couverture listée vs récupérée.',
+      'ZGP de pêche 12, 16, 17 et 18 de l’Ontario d’après le HTML du Résumé des règlements de la pêche 2026 (pas l’Ontario au complet).',
+      'Chasse au cerf et à l’orignal 2026 au Québec pour les zones 9E, 9W, 10E, 10W, 11E, 11W et 12. Pas les 28 zones, pas le petit gibier, pas la chasse ontarienne.',
+      'Recherche par plan d’eau et par espèce sur les carrefours publics des règlements de pêche et de chasse.',
+      'Les pages de zone de pêche, de ZGP et de zone de chasse restent publiques pour tout le monde et pour le référencement — Season Intel ne les met pas derrière un paywall.',
     ],
   },
   regsCta: { en: 'Browse fishing regulations →', fr: 'Voir les règlements de pêche →' },
+  huntCta: { en: 'Browse hunting seasons →', fr: 'Voir les périodes de chasse →' },
   comingTitle: { en: 'What’s coming (not live yet)', fr: 'Ce qui s’en vient (pas encore en ligne)' },
   comingIntro: {
-    en: 'Hunting seasons are not on Outdoor Intel today. Remaining Ontario FMZs beyond 12, 16, 17 and 18 are not harvested. The items below are the product direction, not current coverage.',
-    fr: 'Les saisons de chasse ne sont pas sur Outdoor Intel aujourd’hui. Les ZGP ontariennes autres que 12, 16, 17 et 18 ne sont pas collectées. Ce qui suit est la direction du produit, pas une couverture actuelle.',
+    en: 'The items below are not live. They are the product direction, not current coverage.',
+    fr: 'Les éléments ci-dessous ne sont pas en ligne. C’est la direction du produit, pas une couverture actuelle.',
   },
   comingItems: {
     en: [
       'Remaining Ontario fishing FMZs, cited from the official HTML when those harvests ship.',
-      'Hunting seasons for Québec and Ontario.',
+      'Remaining Québec hunting zones beyond 9E, 9W, 10E, 10W, 11E, 11W and 12.',
+      'Ontario hunting seasons.',
       'Change-alert emails when published MELCCFP (and later Ontario) rules change.',
     ],
     fr: [
       'Les autres ZGP de pêche de l’Ontario, citées du HTML officiel lorsque ces collectes seront en ligne.',
-      'Saisons de chasse pour le Québec et l’Ontario.',
+      'Les autres zones de chasse du Québec au-delà de 9E, 9W, 10E, 10W, 11E, 11W et 12.',
+      'Saisons de chasse de l’Ontario.',
       'Courriels d’alerte lorsque les règles publiées par le MELCCFP (puis l’Ontario) changent.',
     ],
   },
   freeTitle: { en: 'What stays free', fr: 'Ce qui reste gratuit' },
   freeItems: {
     en: [
-      'Public fishing zone pages, Ontario FMZ 12/16/17/18 pages, and the regulations hub, including search.',
+      'Public fishing zone pages, Ontario FMZ 12/16/17/18 pages, Québec hunting zone pages, and the regulations hubs, including search.',
       'Amazon affiliate packing lists on free spot pages.',
     ],
     fr: [
-      'Les pages publiques de zones de pêche, les pages ZGP 12/16/17/18 de l’Ontario, et le carrefour des règlements, y compris la recherche.',
+      'Les pages publiques de zones de pêche, les pages ZGP 12/16/17/18 de l’Ontario, les pages de zones de chasse du Québec, et les carrefours des règlements, y compris la recherche.',
       'Les listes d’équipement d’affiliation Amazon sur les pages de spots gratuites.',
     ],
   },
@@ -242,7 +248,10 @@ const breadcrumbLd = {
                     <li>{item}</li>
                     ))}
                 </ul>
-                <a href={regsHref} class="inline-block mt-6 text-[#3d7a4d] font-semibold hover:underline">{T.regsCta[L]}</a>
+                <p class="mt-6 space-y-2">
+                    <a href={regsHref} class="block text-[#3d7a4d] font-semibold hover:underline">{T.regsCta[L]}</a>
+                    <a href={huntHref} class="block text-[#3d7a4d] font-semibold hover:underline">{T.huntCta[L]}</a>
+                </p>
             </div>
             <div class="bg-white rounded-xl p-6 border border-[#305e3c]/10">
                 <h2 class="text-2xl font-bold text-[#305e3c] mb-4">{T.comingTitle[L]}</h2>
