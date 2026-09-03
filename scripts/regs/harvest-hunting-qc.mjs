@@ -3,15 +3,16 @@
  * Québec hunting-seasons harvest v1 (docs/HUNTING_SEASONS_HARVEST_V1.md).
  *
  * Fetches quebec.ca HTML tables for white-tailed deer, moose, and black bear
- * (EN+FR), extracts the 2026 season column, and writes data/hunting/qc-h-{id}.json
- * for already-harvested keys only. Black bear is added only where the official
- * table lists that zone/subzone; missing rows are skipped and disclosed.
+ * (EN+FR), extracts the 2026 season column, and writes data/hunting/qc-h-{id}.json.
+ * Black bear is added only where the official table lists that zone/subzone;
+ * missing species rows are skipped and disclosed. Published splits only.
  * Does not write or rewrite data/regulations/zone-*.json or on-fmz-*.json.
  * Does not OCR maps. Does not scrape Forêt ouverte / Sépaq / Fish ON-Line.
- * Does not harvest turkey or small game. Does not add new hunting zones.
+ * Does not harvest turkey or small game. Does not invent unpublished splits.
  *
- * Usage: node scripts/regs/harvest-hunting-qc.mjs [--zones=7N,7S,8E,8N,8S,13SW]
+ * Usage: node scripts/regs/harvest-hunting-qc.mjs [--zones=4,5E,5W,6N,6S,14,15E,15W,16]
  *        node scripts/regs/harvest-hunting-qc.mjs --html-dir=DIR
+ *        node scripts/regs/harvest-hunting-qc.mjs --rewrite-existing  (refresh live keys)
  */
 import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
@@ -30,14 +31,21 @@ const AUTHORITY = 'Ministère de l’Environnement, de la Lutte contre les chang
 const DEFAULT_ZONES = ['10E', '10W', '11E', '11W', '9E', '9W', '12'];
 /** Adjacent QC hunting zones (deer + moose 2026). Published splits only. */
 const ADJACENT_QC = ['7N', '7S', '8E', '8N', '8S', '13SW'];
+/** Southern / populated QC hunting zones. Published splits only — no invented 4E/4W, 5N/5S, 6E/6W, 14 E/W, 15 N/S, 16 E/W. */
+const SOUTHERN_QC = ['4', '5E', '5W', '6N', '6S', '14', '15E', '15W', '16'];
+/** Live keys from earlier PRs. Do not rewrite unless --rewrite-existing. */
+const LIVE_EXISTING_KEYS = new Set(['7N', '7S', '8E', '8N', '8S', '9E', '9W', '10E', '10W', '11E', '11W', '12', '13SW']);
 const OPTIONAL_QC = [];
 
 const zonesArg = (process.argv.find(a => a.startsWith('--zones=')) || '').replace('--zones=', '');
 const htmlDirArg = (process.argv.find(a => a.startsWith('--html-dir=')) || '').replace('--html-dir=', '');
 const includeOptional = process.argv.includes('--with-9-12') || process.argv.includes('--optional-qc');
 const includeAdjacent = !process.argv.includes('--core-only');
+const includeSouthern = !process.argv.includes('--core-only') && !process.argv.includes('--no-southern');
+const rewriteExisting = process.argv.includes('--rewrite-existing');
 const defaultList = DEFAULT_ZONES
   .concat(includeAdjacent ? ADJACENT_QC : [])
+  .concat(includeSouthern ? SOUTHERN_QC : [])
   .concat(includeOptional ? OPTIONAL_QC : []);
 const ZONES = (zonesArg || defaultList.join(','))
   .split(',')
@@ -360,6 +368,11 @@ function parseMaps(html) {
     if (/12/.test(label) && /13/.test(label) || /zone-12-13|chasse-12-13/i.test(href)) pdfs['12-13'] = { href, label };
     if (/zone-07|chasse-07|hunting-map-zone-07/i.test(href) || /^Zone 7\b/i.test(label)) pdfs['7'] = { href, label };
     if (/zone-08|chasse-08|hunting-map-zone-08/i.test(href) || /^Zone 8\b/i.test(label)) pdfs['8'] = { href, label };
+    if (/zone-04|chasse-04|hunting-map-zone-04|zone-chasse-04/i.test(href) || /^Zone 4\b/i.test(label)) pdfs['4'] = { href, label };
+    if (/05-06|chasse-05-06/i.test(href) || /Zones 5 and 6|Zones 5 et 6/i.test(label)) pdfs['5-6'] = { href, label };
+    if (/zone-14|chasse-14|hunting-map-zone-14|zone-chasse-14/i.test(href) || /^Zone 14\b/i.test(label)) pdfs['14'] = { href, label };
+    if (/zone-15|chasse-15|hunting-map-zone-15|zone-chasse-15/i.test(href) || /^Zone 15\b/i.test(label)) pdfs['15'] = { href, label };
+    if (/16-17|hunting-map-zone-16-17|zone-chasse-16-17/i.test(href) || /Zones 16 and 17|Zones 16 et 17/i.test(label)) pdfs['16-17'] = { href, label };
   }
   return {
     foret_ouverte: foret ? decode(foret[1].replace(/&amp;/g, '&')) : 'https://www.foretouverte.gouv.qc.ca/?context=_chasse',
@@ -374,19 +387,40 @@ function pdfForZone(maps, zoneId, lang) {
   if (n === '12' || n === '13') return maps[lang].pdfs['12-13'] || null;
   if (n === '7') return maps[lang].pdfs['7'] || null;
   if (n === '8') return maps[lang].pdfs['8'] || null;
+  if (n === '4') return maps[lang].pdfs['4'] || null;
+  if (n === '5' || n === '6') return maps[lang].pdfs['5-6'] || null;
+  if (n === '14') return maps[lang].pdfs['14'] || null;
+  if (n === '15') return maps[lang].pdfs['15'] || null;
+  if (n === '16') return maps[lang].pdfs['16-17'] || null;
   return null;
 }
 
-function titleFor(zoneId, lang, { bear = false } = {}) {
+function joinSpecies(parts, lang) {
+  if (!parts.length) return lang === 'fr' ? 'gibier' : 'game';
+  if (parts.length === 1) return parts[0];
+  if (parts.length === 2) return lang === 'fr' ? `${parts[0]} et ${parts[1]}` : `${parts[0]} and ${parts[1]}`;
+  const last = parts[parts.length - 1];
+  const head = parts.slice(0, -1).join(', ');
+  return lang === 'fr' ? `${head} et ${last}` : `${head} and ${last}`;
+}
+
+function titleFor(zoneId, lang, { bear = false, deer = true, moose = true } = {}) {
   const label = zoneLabel(zoneId, lang);
-  if (bear) {
-    return lang === 'fr'
-      ? `Zone de chasse ${label} du Québec — cerf de Virginie, orignal et ours noir (période 2026)`
-      : `Québec hunting zone ${label} — white-tailed deer, moose and black bear (2026 season)`;
-  }
+  const parts = lang === 'fr'
+    ? [
+      deer ? 'cerf de Virginie' : null,
+      moose ? 'orignal' : null,
+      bear ? 'ours noir' : null,
+    ].filter(Boolean)
+    : [
+      deer ? 'white-tailed deer' : null,
+      moose ? 'moose' : null,
+      bear ? 'black bear' : null,
+    ].filter(Boolean);
+  const species = joinSpecies(parts, lang);
   return lang === 'fr'
-    ? `Zone de chasse ${label} du Québec — cerf de Virginie et orignal (période 2026)`
-    : `Québec hunting zone ${label} — white-tailed deer and moose (2026 season)`;
+    ? `Zone de chasse ${label} du Québec — ${species} (période 2026)`
+    : `Québec hunting zone ${label} — ${species} (2026 season)`;
 }
 
 function zoneLabel(zoneId, lang) {
@@ -407,6 +441,9 @@ function unpublishedParts(zoneId) {
   if (n === '7') return ['7E', '7W'];
   if (n === '8') return ['8W'];
   if (n === '13') return ['13E', '13W'];
+  if (n === '5') return ['5N', '5S'];
+  if (n === '6') return ['6E', '6W'];
+  if (n === '15') return ['15N', '15S'];
   return [];
 }
 
@@ -421,6 +458,24 @@ function sliceNote(zoneId) {
   if (n === '13') {
     return 'Moose table lists undivided 13. Deer table lists 13 Southwest only (no 13 East/West). 2026 is a restrictive year for moose without antlers except bow/crossbow.';
   }
+  if (n === '4') {
+    return 'Deer, moose, and bear tables list undivided 4. 4 East/West/North/South are not on the page.';
+  }
+  if (n === '5') {
+    return 'Moose and bear tables list undivided 5. Deer table lists 5 East and 5 West. 5 North/South are not on the page.';
+  }
+  if (n === '6') {
+    return 'Moose and bear tables list undivided 6. Deer table lists 6 North and 6 South. 6 East/West are not on the page.';
+  }
+  if (n === '14') {
+    return 'Moose and bear tables list undivided 14. White-tailed deer has no 2026 table row for this zone (not invented). 14 East/West/North/South are not on the page.';
+  }
+  if (n === '15') {
+    return 'Moose and bear tables list undivided 15. Deer table lists 15 East and 15 West. 15 North/South are not on the page.';
+  }
+  if (n === '16') {
+    return 'Moose and bear tables list undivided 16. White-tailed deer has no 2026 table row for this zone (not invented). 16 East/West/North/South are not on the page.';
+  }
   return '';
 }
 
@@ -429,7 +484,13 @@ function bearSliceNote(zoneId, hasBear) {
     return 'Black bear: skipped — this key is not on the Québec.ca 2026 black-bear table; no bear rows invented.';
   }
   const n = String(zoneId).replace(/[A-Z]+$/i, '');
-  return `Black bear: 2026 column harvested where the table lists ${n} or ${zoneId}. Undivided ${n} applies only to this existing QC-H-* key.`;
+  const listed = String(zoneId) === n ? n : `${n} or ${zoneId}`;
+  return `Black bear: 2026 column harvested where the table lists ${listed}. Undivided ${n} applies to this QC-H-* key.`;
+}
+
+function deerSliceNote(zoneId, hasDeer) {
+  if (hasDeer) return '';
+  return 'White-tailed deer: skipped — this key is not on the Québec.ca 2026 deer table; no deer rows invented.';
 }
 
 function coverageFor(zoneId, enRows, frRows) {
@@ -448,23 +509,27 @@ function coverageFor(zoneId, enRows, frRows) {
   const hasBear = speciesEn.includes('black-bear') && speciesFr.includes('black-bear');
   const has2026 = enZ.every(r => r.period_2026) && frZ.every(r => r.period_2026);
   const weaponsNotCollapsed = weaponsEn.length === new Set(weaponsEn.map(w => w.toLowerCase().replace(/seasons?$/, '').trim())).size;
-  const extra = [sliceNote(zoneId), bearSliceNote(zoneId, hasBear)].filter(Boolean).join(' ');
+  const extra = [sliceNote(zoneId), deerSliceNote(zoneId, hasDeer), bearSliceNote(zoneId, hasBear)].filter(Boolean).join(' ');
+  const hasCoreSpecies = hasMoose || hasDeer;
   let complete = listed > 0 && harvested >= listed && harvestedFr >= listedFr
-    && hasDeer && hasMoose && has2026 && weaponsEn.length > 0 && weaponsFr.length > 0;
+    && hasCoreSpecies && has2026 && weaponsEn.length > 0 && weaponsFr.length > 0;
   // Honest: never invert listed vs harvested.
   if (harvested < listed || harvestedFr < listedFr) complete = false;
-  const sliceSpecies = hasBear
-    ? 'white-tailed deer + moose + black bear'
-    : 'white-tailed deer + moose';
+  const sliceBits = [];
+  if (hasDeer) sliceBits.push('white-tailed deer');
+  if (hasMoose) sliceBits.push('moose');
+  if (hasBear) sliceBits.push('black bear');
+  const sliceSpecies = sliceBits.join(' + ') || 'no published big-game rows';
   const note = complete
     ? `Québec hunting zone ${zoneId}: ${sliceSpecies}, 2026 season column, weapon classes kept as published headings. Not all 28 hunting zones. Not small game. Not Ontario hunting. Not GIS.${extra ? ` ${extra}` : ''}`
     : `Québec hunting zone ${zoneId}: harvest incomplete for the stated ${sliceSpecies} 2026 slice (EN ${harvested}/${listed}, FR ${harvestedFr}/${listedFr}; deer=${hasDeer} moose=${hasMoose} bear=${hasBear}).${extra ? ` ${extra}` : ''}`;
   const skippedParts = unpublishedParts(zoneId);
   const notHarvested = ['small game', 'wild turkey'];
+  if (!hasDeer) notHarvested.unshift('white-tailed deer');
   if (!hasBear) notHarvested.unshift('black bear');
   return {
     slice: `QC hunting zone ${zoneId}; ${sliceSpecies}; 2026 season column`,
-    species_listed: 2 + (hasBear ? 1 : 0),
+    species_listed: (hasDeer ? 1 : 0) + (hasMoose ? 1 : 0) + (hasBear ? 1 : 0),
     species_harvested: (hasDeer ? 1 : 0) + (hasMoose ? 1 : 0) + (hasBear ? 1 : 0),
     species_not_harvested: notHarvested,
     unpublished_parts: skippedParts,
@@ -659,11 +724,23 @@ mkdirSync(outDir, { recursive: true });
 let fatal = 0;
 const bearGot = [];
 const bearSkipped = [];
+const deerSkipped = [];
+const wrote = [];
+const skippedLive = [];
 for (const zoneId of ZONES) {
   if (/^12$/.test(zoneId) === false && !/^(9|10|11)[EW]$/.test(zoneId) && zoneId !== '12') {
     // still allow explicit ids; refuse Ontario WMU 12
   }
   if (zoneId === 'ON-12' || zoneId === '12A' && false) continue;
+
+  const slug = `qc-h-${zoneId.toLowerCase()}`;
+  const zone_key = `QC-H-${zoneId}`;
+  const outPath = join(outDir, `${slug}.json`);
+  if (LIVE_EXISTING_KEYS.has(zoneId) && existsSync(outPath) && !rewriteExisting) {
+    console.log(`${zone_key}: left existing live file unchanged`);
+    skippedLive.push(zone_key);
+    continue;
+  }
 
   const enRows = allEn.filter(r => zoneMatches(r.tokens, zoneId));
   const frRows = allFr.filter(r => zoneMatches(r.tokens, zoneId));
@@ -683,8 +760,6 @@ for (const zoneId of ZONES) {
     continue;
   }
 
-  const slug = `qc-h-${zoneId.toLowerCase()}`;
-  const zone_key = `QC-H-${zoneId}`;
   const n = zoneId.replace(/[A-Z]+$/i, '');
   const pdfEn = pdfForZone(maps, zoneId, 'en');
   const pdfFr = pdfForZone(maps, zoneId, 'fr');
@@ -694,6 +769,13 @@ for (const zoneId of ZONES) {
   const includeBear = bearEn.length > 0 && bearFr.length > 0;
   if (includeBear) bearGot.push(`QC-H-${zoneId}`);
   else bearSkipped.push(`QC-H-${zoneId}`);
+  const deerEn = enRows.filter(r => r.species_key === 'white-tailed-deer');
+  const deerFr = frRows.filter(r => r.species_key === 'white-tailed-deer');
+  const includeDeer = deerEn.length > 0 && deerFr.length > 0;
+  if (!includeDeer) deerSkipped.push(`QC-H-${zoneId}`);
+  const mooseEnZ = enRows.filter(r => r.species_key === 'moose');
+  const mooseFrZ = frRows.filter(r => r.species_key === 'moose');
+  const includeMoose = mooseEnZ.length > 0 && mooseFrZ.length > 0;
 
   const bearNotices = includeBear
     ? { en: [{ ...bearBagEn }, { ...bearBaitEn }], fr: [{ ...bearBagFr }, { ...bearBaitFr }] }
@@ -721,7 +803,7 @@ for (const zoneId of ZONES) {
       bear_bag: URLS.bear_game,
       maps: URLS.maps,
       fetched_at,
-      note: 'Season text reproduced verbatim from Québec.ca HTML tables (2026 column). Weapon class is the published section heading. Black bear rows added only where the official table lists this key. Maps are cited as links only — not OCR’d, not scraped from Forêt ouverte.',
+      note: 'Season text reproduced verbatim from Québec.ca HTML tables (2026 column). Weapon class is the published section heading. Black bear and white-tailed deer rows added only where the official table lists this key. Maps are cited as links only — not OCR’d, not scraped from Forêt ouverte.',
     },
     maps: {
       foret_ouverte: maps.en.foret_ouverte,
@@ -731,7 +813,10 @@ for (const zoneId of ZONES) {
       index_fr: URLS.maps.fr,
     },
     coverage,
-    title: { en: titleFor(zoneId, 'en', { bear: includeBear }), fr: titleFor(zoneId, 'fr', { bear: includeBear }) },
+    title: {
+      en: titleFor(zoneId, 'en', { bear: includeBear, deer: includeDeer, moose: includeMoose }),
+      fr: titleFor(zoneId, 'fr', { bear: includeBear, deer: includeDeer, moose: includeMoose }),
+    },
     notices: { en: noticesEn, fr: noticesFr },
     seasons: {
       en: enRows.map(toSeasonRow),
@@ -739,20 +824,23 @@ for (const zoneId of ZONES) {
     },
   };
 
-  const outPath = join(outDir, `${slug}.json`);
   writeFileSync(outPath, JSON.stringify(doc, null, 2) + '\n');
-  console.log(`${zone_key}: deer+moose+${includeBear ? `bear(${bearEn.length}/${bearFr.length})` : 'bear SKIPPED'} EN ${enRows.length} FR ${frRows.length} weapons EN ${coverage.weapon_classes_listed} complete=${coverage.complete} -> ${outPath}`);
+  wrote.push(zone_key);
+  console.log(`${zone_key}: deer=${includeDeer ? deerEn.length : 'SKIPPED'} moose=${includeMoose ? mooseEnZ.length : 'SKIPPED'} bear=${includeBear ? `${bearEn.length}/${bearFr.length}` : 'SKIPPED'} EN ${enRows.length} FR ${frRows.length} weapons EN ${coverage.weapon_classes_listed} complete=${coverage.complete} unpublished=${(coverage.unpublished_parts || []).join(',') || 'none'} -> ${outPath}`);
 }
 
+console.log(`HARVESTED KEYS: ${wrote.join(', ') || '(none)'}`);
+console.log(`LIVE KEYS LEFT UNCHANGED: ${skippedLive.join(', ') || '(none)'}`);
 console.log(`BEAR HARVESTED: ${bearGot.join(', ') || '(none)'}`);
 console.log(`BEAR SKIPPED (not on table): ${bearSkipped.join(', ') || '(none)'}`);
+console.log(`DEER SKIPPED (not on table): ${deerSkipped.join(', ') || '(none)'}`);
 
 if (fatal) {
   console.error(`harvest-hunting-qc: ${fatal} zone(s) failed`);
   process.exitCode = 1;
-  return { fatal, bearGot, bearSkipped };
+  return { fatal, bearGot, bearSkipped, deerSkipped, wrote, skippedLive };
 }
-return { fatal: 0, zones: ZONES, bearGot, bearSkipped };
+return { fatal: 0, zones: ZONES, bearGot, bearSkipped, deerSkipped, wrote, skippedLive };
 }
 
 if (isMain) await harvestHuntingQc();

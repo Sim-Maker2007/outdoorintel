@@ -35,12 +35,39 @@ const listed = doc.coverage.season_rows_listed;
 const harvested = doc.coverage.season_rows_harvested;
 const hasBear = (doc.coverage.species?.en || []).includes('black-bear')
   || (doc.seasons?.en || []).some(r => r.species_key === 'black-bear');
-const sliceEn = hasBear
-  ? 'white-tailed deer + moose + black bear, 2026 column'
-  : 'white-tailed deer + moose, 2026 column (black bear not on the published table)';
-const sliceFr = hasBear
-  ? 'cerf de Virginie + orignal + ours noir, colonne 2026'
-  : 'cerf de Virginie + orignal, colonne 2026 (ours noir absent du tableau publié)';
+const hasDeer = (doc.coverage.species?.en || []).includes('white-tailed-deer')
+  || (doc.seasons?.en || []).some(r => r.species_key === 'white-tailed-deer');
+const hasMoose = (doc.coverage.species?.en || []).includes('moose')
+  || (doc.seasons?.en || []).some(r => r.species_key === 'moose');
+function speciesList(lang) {
+  if (lang === 'fr') {
+    const bits = [];
+    if (hasDeer) bits.push('cerf de Virginie');
+    if (hasMoose) bits.push('orignal');
+    if (hasBear) bits.push('ours noir');
+    return bits.length <= 2 ? bits.join(' et ') : `${bits.slice(0, -1).join(', ')} et ${bits[bits.length - 1]}`;
+  }
+  const en = [];
+  if (hasDeer) en.push('white-tailed deer');
+  if (hasMoose) en.push('moose');
+  if (hasBear) en.push('black bear');
+  return en.length <= 2 ? en.join(' and ') : `${en.slice(0, -1).join(', ')} and ${en[en.length - 1]}`;
+}
+function sliceSpecies(lang) {
+  let s = speciesList(lang);
+  if (lang === 'fr') {
+    s = s ? `${s}, colonne 2026` : 'colonne 2026';
+    if (!hasDeer) s += ' (cerf de Virginie absent du tableau publié)';
+    if (!hasBear) s += ' (ours noir absent du tableau publié)';
+    return s;
+  }
+  s = s ? `${s}, 2026 column` : '2026 column';
+  if (!hasDeer) s += ' (white-tailed deer not on the published table)';
+  if (!hasBear) s += ' (black bear not on the published table)';
+  return s;
+}
+const sliceEn = sliceSpecies('en');
+const sliceFr = sliceSpecies('fr');
 const coverageNote = doc.coverage.complete
   ? (harvested > listed
     ? {
@@ -62,12 +89,8 @@ const T = {
     fr: `${doc.title.fr} — Périodes de chasse`,
   },
   metaDesc: {
-    en: hasBear
-      ? `Québec hunting zone ${doc.zone_id}: 2026 white-tailed deer, moose, and black bear seasons by weapon class, cited from Québec.ca. Always verify with the MELCCFP.`
-      : `Québec hunting zone ${doc.zone_id}: 2026 white-tailed deer and moose seasons by weapon class, cited from Québec.ca. Black bear is not on the published table for this key. Always verify with the MELCCFP.`,
-    fr: hasBear
-      ? `Zone de chasse ${doc.zone_id} du Québec : périodes 2026 du cerf de Virginie, de l’orignal et de l’ours noir par classe d’arme, citées de Québec.ca. Vérifiez toujours auprès du MELCCFP.`
-      : `Zone de chasse ${doc.zone_id} du Québec : périodes 2026 du cerf de Virginie et de l’orignal par classe d’arme, citées de Québec.ca. L’ours noir n’est pas sur le tableau publié pour cette clé. Vérifiez toujours auprès du MELCCFP.`,
+    en: `Québec hunting zone ${doc.zone_id}: 2026 ${speciesList('en')} seasons by weapon class, cited from Québec.ca. Always verify with the MELCCFP.`,
+    fr: `Zone de chasse ${doc.zone_id} du Québec : périodes 2026 (${speciesList('fr')}) par classe d’arme, citées de Québec.ca. Vérifiez toujours auprès du MELCCFP.`,
   },
   h1: { en: doc.title.en, fr: doc.title.fr },
   kicker: { en: 'Hunting · Québec', fr: 'Chasse · Québec' },
