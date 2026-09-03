@@ -11,6 +11,7 @@ const norm = s => (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u03
 const SPECIES_ALIASES = {
   deer: ['white-tailed deer', 'white tailed deer', 'deer', 'cerf de virginie', 'cerf'],
   moose: ['moose', 'orignal'],
+  bear: ['black bear', 'black-bear', 'bear', 'ours noir', 'ours'],
 };
 
 function speciesHay(row) {

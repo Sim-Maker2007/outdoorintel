@@ -38,7 +38,7 @@ export default async function handler(req, res) {
     res.status(200).json({
       api: 'Outdoor Intel — Hunting seasons v1 (Québec sport hunting, cited HTML)',
       zones: values.map(listing),
-      usage: '/api/hunting/regulations?zone=QC-H-10W&lang=en|fr&species=deer|moose&date=YYYY-MM-DD. zone=12 is QC hunting QC-H-12, not fishing. zone=ON-12 is refused.',
+      usage: '/api/hunting/regulations?zone=QC-H-10W&lang=en|fr&species=deer|moose|bear&date=YYYY-MM-DD. zone=12 is QC hunting QC-H-12, not fishing. zone=ON-12 is refused. Black bear is present only where the official table has rows.',
     });
     return;
   }
@@ -57,7 +57,7 @@ export default async function handler(req, res) {
     res.status(404).json({
       error: `hunting zone ${zone} not available`,
       available: huntingKeys(HUNTING),
-      note: 'Hunting coverage is Québec deer+moose 2026 for harvested QC-H-* keys (7N/7S, 8E/8N/8S, 9E/9W, 10E/10W, 11E/11W, 12, 13SW). Fishing stays on GET /api/regulations.',
+      note: 'Hunting coverage is Québec deer+moose 2026, plus black bear where the official table has rows, for harvested QC-H-* keys (7N/7S, 8E/8N/8S, 9E/9W, 10E/10W, 11E/11W, 12, 13SW). Not all 28 zones, not small game, not Ontario hunting. Fishing stays on GET /api/regulations. zone=12 is QC-H-12, never fishing zone 12.',
     });
     return;
   }

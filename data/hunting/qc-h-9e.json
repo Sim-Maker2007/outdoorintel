@@ -24,12 +24,20 @@
       "en": "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/sport-hunting/game/white-tailed-deer",
       "fr": "https://www.quebec.ca/tourisme-loisirs-sport/activites-sportives-et-de-plein-air/chasse-sportive/gibier/cerf-virginie"
     },
+    "bear": {
+      "en": "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/sport-hunting/seasons-bag-limits/black-bear",
+      "fr": "https://www.quebec.ca/tourisme-loisirs-sport/activites-sportives-et-de-plein-air/chasse-sportive/periodes-limites/ours-noir"
+    },
+    "bear_bag": {
+      "en": "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/sport-hunting/game/black-bear",
+      "fr": "https://www.quebec.ca/tourisme-loisirs-sport/activites-sportives-et-de-plein-air/chasse-sportive/gibier/ours-noir"
+    },
     "maps": {
       "en": "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/sport-hunting/hunting-zone-maps",
       "fr": "https://www.quebec.ca/tourisme-loisirs-sport/activites-sportives-et-de-plein-air/chasse-sportive/cartes-zones"
     },
-    "fetched_at": "2026-09-01",
-    "note": "Season text reproduced verbatim from Québec.ca HTML tables (2026 column). Weapon class is the published section heading. Maps are cited as links only — not OCR’d, not scraped from Forêt ouverte."
+    "fetched_at": "2026-09-02",
+    "note": "Season text reproduced verbatim from Québec.ca HTML tables (2026 column). Weapon class is the published section heading. Black bear rows added only where the official table lists this key. Maps are cited as links only — not OCR’d, not scraped from Forêt ouverte."
   },
   "maps": {
     "foret_ouverte": "https://www.foretouverte.gouv.qc.ca/?context=_chasse&zoom=6&center=-73,50.5&invisiblelayers=*&visiblelayers=hoverFeatureId,5d7a10cd6ffbbf709a33e93bd511e6ab,3017d862d5defbc724b8e4ad5d928e61,c9b990a0ef307210d15c272c14094dfd,f35facadb5c232cc432b90bb6bef7c91",
@@ -45,46 +53,55 @@
     "index_fr": "https://www.quebec.ca/tourisme-loisirs-sport/activites-sportives-et-de-plein-air/chasse-sportive/cartes-zones"
   },
   "coverage": {
-    "slice": "QC hunting zone 9E; white-tailed deer + moose; 2026 season column",
-    "species_listed": 2,
-    "species_harvested": 2,
-    "weapon_classes_listed": 3,
-    "weapon_classes_harvested": 3,
-    "weapon_classes_listed_fr": 3,
-    "weapon_classes_harvested_fr": 3,
-    "season_rows_listed": 4,
-    "season_rows_harvested": 4,
-    "season_rows_listed_fr": 4,
-    "season_rows_harvested_fr": 4,
+    "slice": "QC hunting zone 9E; white-tailed deer + moose + black bear; 2026 season column",
+    "species_listed": 3,
+    "species_harvested": 3,
+    "species_not_harvested": [
+      "small game",
+      "wild turkey"
+    ],
+    "unpublished_parts": [],
+    "weapon_classes_listed": 4,
+    "weapon_classes_harvested": 4,
+    "weapon_classes_listed_fr": 4,
+    "weapon_classes_harvested_fr": 4,
+    "season_rows_listed": 6,
+    "season_rows_harvested": 6,
+    "season_rows_listed_fr": 6,
+    "season_rows_harvested_fr": 6,
     "complete": true,
-    "note": "Québec hunting zone 9E: white-tailed deer and moose, 2026 season column, weapon classes kept as published headings. Not all 28 hunting zones. Not small game. Not GIS.",
+    "note": "Québec hunting zone 9E: white-tailed deer + moose + black bear, 2026 season column, weapon classes kept as published headings. Not all 28 hunting zones. Not small game. Not Ontario hunting. Not GIS. Black bear: 2026 column harvested where the table lists 9 or 9E. Undivided 9 applies only to this existing QC-H-* key.",
     "weapon_classes": {
       "en": [
         "Crossbow and bow hunting seasons",
         "Firearms (rifle, shotgun, muzzle loading firearm), crossbow and bow hunting seasons",
-        "Hunting periods for novice hunters only"
+        "Hunting periods for novice hunters only",
+        "Firearms, crossbow and bow hunting seasons"
       ],
       "fr": [
         "Périodes de chasse à l’arbalète et à l’arc",
         "Périodes de chasse aux armes à feu (carabine, fusil, arme à chargement par la bouche), à l’arbalète et à l’arc",
-        "Périodes de chasse réservée à la relève"
+        "Périodes de chasse réservée à la relève",
+        "Périodes de chasse aux armes à feu, à l’arbalète et à l’arc"
       ]
     },
     "species": {
       "en": [
         "moose",
-        "white-tailed-deer"
+        "white-tailed-deer",
+        "black-bear"
       ],
       "fr": [
         "moose",
-        "white-tailed-deer"
+        "white-tailed-deer",
+        "black-bear"
       ]
     },
     "weapons_not_collapsed": true
   },
   "title": {
-    "en": "Hunting zone 9 East — white-tailed deer and moose (2026 season)",
-    "fr": "Zone de chasse 9 est — cerf de Virginie et orignal (période 2026)"
+    "en": "Québec hunting zone 9 East — white-tailed deer, moose and black bear (2026 season)",
+    "fr": "Zone de chasse 9 est du Québec — cerf de Virginie, orignal et ours noir (période 2026)"
   },
   "notices": {
     "en": [
@@ -103,13 +120,34 @@
       {
         "kind": "deer_bag",
         "draw_required": false,
-        "text": "The white-tailed deer bag limit is now 2 deer per hunter per year , except in zone 20 (Anticosti Island), coming from two different zones, except in zones 4, 5 East, 5 West, 6 North, 6 South, 7 South, 8 East, 8 North and 8 South, where you may harvest your 2 deer, of which only one may be an antlered deer, within the same zone. The regular licence and additional licence each allow you to harvest one deer in any zone other than zone 20. Your first deer must come from a zone or part of a zone other than zone 20 (Anticosti Island). Once you have killed the first deer, you must then kill the second in a different zone from the zone in which you hunted (excluding zone 20). This requirement does not apply in zones 4, 5 East, 5 West, 6 North, 6 South, 7 South, 8 East, 8 North and 8 South, where you may harvest your 2 deer, of which no more than one may be an antlered deer, within the same zone. The bag limit in zone 20 (Anticosti Island) is 4 deer per stay with a maximum of 2 deer with antlers. Specific provisions apply in the wildlife reserves and outfitters with exclusive rights on the island regarding the sharing of antlerless deer hunting licences and group hunting of white-tailed deer .",
+        "text": "The white-tailed deer bag limit is now 2 deer per hunter per year , except in zone 20 (Anticosti Island), coming from two different zones, except in zones 4, 5 East, 5 West, 6 North, 6 South, 7 South, 8 East, 8 North and 8 South, where you may harvest your 2 deer, of which only one may be an antlered deer, within the same zone. The regular licence and additional licence each allow you to harvest one deer in any zone other than zone 20. Your first deer must come from a zone or part of a zone other than zone 20 (Anticosti Island). Once you have killed the first deer, you must then kill the second in a different zone from the zone in which you hunted (excluding zone 20). This requirement does not apply in zones 4, 5 East, 5 West, 6 North, 6 South, 7 South, 8 East, 8 North and 8 South, where you may harvest your 2 deer, of which no more than one may be an antlered deer, within the same zone.",
         "paras": [
           "The white-tailed deer bag limit is now 2 deer per hunter per year , except in zone 20 (Anticosti Island), coming from two different zones, except in zones 4, 5 East, 5 West, 6 North, 6 South, 7 South, 8 East, 8 North and 8 South, where you may harvest your 2 deer, of which only one may be an antlered deer, within the same zone.",
           "The regular licence and additional licence each allow you to harvest one deer in any zone other than zone 20.",
           "Your first deer must come from a zone or part of a zone other than zone 20 (Anticosti Island).",
-          "Once you have killed the first deer, you must then kill the second in a different zone from the zone in which you hunted (excluding zone 20). This requirement does not apply in zones 4, 5 East, 5 West, 6 North, 6 South, 7 South, 8 East, 8 North and 8 South, where you may harvest your 2 deer, of which no more than one may be an antlered deer, within the same zone.",
-          "The bag limit in zone 20 (Anticosti Island) is 4 deer per stay with a maximum of 2 deer with antlers. Specific provisions apply in the wildlife reserves and outfitters with exclusive rights on the island regarding the sharing of antlerless deer hunting licences and group hunting of white-tailed deer ."
+          "Once you have killed the first deer, you must then kill the second in a different zone from the zone in which you hunted (excluding zone 20). This requirement does not apply in zones 4, 5 East, 5 West, 6 North, 6 South, 7 South, 8 East, 8 North and 8 South, where you may harvest your 2 deer, of which no more than one may be an antlered deer, within the same zone."
+        ]
+      },
+      {
+        "kind": "bear_bag",
+        "draw_required": false,
+        "text": "A hunter may kill 2 black bears per year : one during the spring season and one in selected zones during the fall season. Harvesting is allocated by hunting zone, as follows: Spring season : one black bear in all hunting zones except zones 20 and 22 Fall season : one black bear in hunting zones 1, 4, 5, 6, 8, 9, 10, 11, 12, 15, 19, 23, 24, 26, the western portion of zone 27 and zone 29.",
+        "paras": [
+          "A hunter may kill 2 black bears per year : one during the spring season and one in selected zones during the fall season.",
+          "Harvesting is allocated by hunting zone, as follows:",
+          "Spring season : one black bear in all hunting zones except zones 20 and 22",
+          "Fall season : one black bear in hunting zones 1, 4, 5, 6, 8, 9, 10, 11, 12, 15, 19, 23, 24, 26, the western portion of zone 27 and zone 29."
+        ]
+      },
+      {
+        "kind": "bear_bait",
+        "draw_required": false,
+        "text": "Food may not be used as bait for black bear during the following periods: From July 1 to August 15 in zones 16, 17, 19, the western portion of zone 27 and zone 29 From July 1 to August 31 in zones 1 to 15, 18, 26, the eastern portion of zone 27 and zone 28. See the hunting zone maps .",
+        "paras": [
+          "Food may not be used as bait for black bear during the following periods:",
+          "From July 1 to August 15 in zones 16, 17, 19, the western portion of zone 27 and zone 29",
+          "From July 1 to August 31 in zones 1 to 15, 18, 26, the eastern portion of zone 27 and zone 28.",
+          "See the hunting zone maps ."
         ]
       }
     ],
@@ -131,14 +169,35 @@
       {
         "kind": "deer_bag",
         "draw_required": false,
-        "text": "La limite de prise du cerf de Virginie, ailleurs que dans la zone 20 (île d’Anticosti), est de 2 par chasseur par année en provenance de deux zones différentes, sauf dans les zones 4, 5 est, 5 ouest, 6 nord, 6 sud, 7 sud, 8 est, 8 nord et 8 sud, où vous pourriez récolter vos 2 cerfs, dont un seul cerf avec bois, à l’intérieur de la même zone. Certaines règles s’appliquent : Le permis régulier et le permis supplémentaire vous permettent chacun de récolter un cerf ailleurs que dans la zone 20. Votre premier cerf doit provenir d’une zone ou partie de zone autre que la zone 20 (île d’Anticosti). Une fois votre premier cerf abattu, votre second doit provenir d’une zone différente de celle où vous avez chassé, excluant la zone 20. Cette exigence ne s’applique pas dans les zones 4, 5 est, 5 ouest, 6 nord, 6 sud, 7 sud, 8 est, 8 nord et 8 sud, où vous pourriez récolter vos 2 cerfs, dont au maximum un cerf avec bois, à l’intérieur de la même zone. Dans la zone 20 (île d'Anticosti), la limite de prise est de 4 cerfs par séjour dont un maximum de 2 cerfs avec bois. Des dispositions particulières sont en vigueur dans les réserves fauniques et les pourvoiries à droits exclusifs de l’île quant au partage du permis de chasse au cerf sans bois et la chasse au cerf de Virginie en groupe .",
+        "text": "La limite de prise du cerf de Virginie, ailleurs que dans la zone 20 (île d’Anticosti), est de 2 par chasseur par année en provenance de deux zones différentes, sauf dans les zones 4, 5 est, 5 ouest, 6 nord, 6 sud, 7 sud, 8 est, 8 nord et 8 sud, où vous pourriez récolter vos 2 cerfs, dont un seul cerf avec bois, à l’intérieur de la même zone. Certaines règles s’appliquent : Le permis régulier et le permis supplémentaire vous permettent chacun de récolter un cerf ailleurs que dans la zone 20. Votre premier cerf doit provenir d’une zone ou partie de zone autre que la zone 20 (île d’Anticosti). Une fois votre premier cerf abattu, votre second doit provenir d’une zone différente de celle où vous avez chassé, excluant la zone 20. Cette exigence ne s’applique pas dans les zones 4, 5 est, 5 ouest, 6 nord, 6 sud, 7 sud, 8 est, 8 nord et 8 sud, où vous pourriez récolter vos 2 cerfs, dont au maximum un cerf avec bois, à l’intérieur de la même zone.",
         "paras": [
           "La limite de prise du cerf de Virginie, ailleurs que dans la zone 20 (île d’Anticosti), est de 2 par chasseur par année en provenance de deux zones différentes, sauf dans les zones 4, 5 est, 5 ouest, 6 nord, 6 sud, 7 sud, 8 est, 8 nord et 8 sud, où vous pourriez récolter vos 2 cerfs, dont un seul cerf avec bois, à l’intérieur de la même zone.",
           "Certaines règles s’appliquent :",
           "Le permis régulier et le permis supplémentaire vous permettent chacun de récolter un cerf ailleurs que dans la zone 20.",
           "Votre premier cerf doit provenir d’une zone ou partie de zone autre que la zone 20 (île d’Anticosti).",
-          "Une fois votre premier cerf abattu, votre second doit provenir d’une zone différente de celle où vous avez chassé, excluant la zone 20. Cette exigence ne s’applique pas dans les zones 4, 5 est, 5 ouest, 6 nord, 6 sud, 7 sud, 8 est, 8 nord et 8 sud, où vous pourriez récolter vos 2 cerfs, dont au maximum un cerf avec bois, à l’intérieur de la même zone.",
-          "Dans la zone 20 (île d'Anticosti), la limite de prise est de 4 cerfs par séjour dont un maximum de 2 cerfs avec bois. Des dispositions particulières sont en vigueur dans les réserves fauniques et les pourvoiries à droits exclusifs de l’île quant au partage du permis de chasse au cerf sans bois et la chasse au cerf de Virginie en groupe ."
+          "Une fois votre premier cerf abattu, votre second doit provenir d’une zone différente de celle où vous avez chassé, excluant la zone 20. Cette exigence ne s’applique pas dans les zones 4, 5 est, 5 ouest, 6 nord, 6 sud, 7 sud, 8 est, 8 nord et 8 sud, où vous pourriez récolter vos 2 cerfs, dont au maximum un cerf avec bois, à l’intérieur de la même zone."
+        ]
+      },
+      {
+        "kind": "bear_bag",
+        "draw_required": false,
+        "text": "Il est permis à un chasseur d'abattre 2 ours noirs par année , soit un lors de la saison du printemps et un dans certaines zones lors de la saison d’automne. Les captures se répartissent selon les zones de chasse fréquentées, soit : Saison printanière : un ours noir dans l’ensemble des zones de chasse, à l’exception des zones 20 et 22; Saison automnale : un ours noir dans l’ensemble des zones de chasse 1, 4, 5, 6, 8, 9, 10, 11, 12, 15, 19, 23, 24, 26, partie ouest de la zone 27 et 29.",
+        "paras": [
+          "Il est permis à un chasseur d'abattre 2 ours noirs par année , soit un lors de la saison du printemps et un dans certaines zones lors de la saison d’automne.",
+          "Les captures se répartissent selon les zones de chasse fréquentées, soit :",
+          "Saison printanière : un ours noir dans l’ensemble des zones de chasse, à l’exception des zones 20 et 22;",
+          "Saison automnale : un ours noir dans l’ensemble des zones de chasse 1, 4, 5, 6, 8, 9, 10, 11, 12, 15, 19, 23, 24, 26, partie ouest de la zone 27 et 29."
+        ]
+      },
+      {
+        "kind": "bear_bait",
+        "draw_required": false,
+        "text": "Une substance nutritive ne peut être déposée pour appâter l’ours au cours des périodes suivantes : Du 1er juillet au 15 août dans les zones 16, 17, 19, partie ouest de la zone 27 et 29. Du 1er juillet au 31 août dans les zones 1 à 15, 18, 26, partie est de la zone 27 et 28. Voir les cartes des zones de chasse .",
+        "paras": [
+          "Une substance nutritive ne peut être déposée pour appâter l’ours au cours des périodes suivantes :",
+          "Du 1er juillet au 15 août dans les zones 16, 17, 19, partie ouest de la zone 27 et 29.",
+          "Du 1er juillet au 31 août dans les zones 1 à 15, 18, 26, partie est de la zone 27 et 28.",
+          "Voir les cartes des zones de chasse ."
         ]
       }
     ]
@@ -200,6 +259,34 @@
         "year": 2026,
         "notes": null,
         "raw": "Hunting periods for novice hunters only · 1 North, 1 South, 2 East (except the Macpès and Duquesne townships), 2 West, 3 East, 3 West (except all islands and islets of the Fleuve Saint-Laurent downstream from the Pont Pierre-Laporte included in these zones), 4, 5 East, 5 West, 7 North, 7 South, 8 East, 8 North (excluding the territory of Montagne de Rigaud), 8 South, 9 East, 9 West, 10 East, 10 West, 11 East, 11 West, 12, 13 Southwest, 15 West · White-tailed deer with antlers (7 cm or more) · From October 31 to November 1, 2026"
+      },
+      {
+        "species": "Black bear",
+        "species_key": "black-bear",
+        "weapon_class": "Crossbow and bow hunting seasons",
+        "segment": null,
+        "period": "October 3 to October 16, 2026",
+        "period_2026": "October 3 to October 16, 2026",
+        "period_2027": "October 2 to October 15, 2027",
+        "period_from": "2026-10-03",
+        "period_to": "2026-10-16",
+        "year": 2026,
+        "notes": null,
+        "raw": "Crossbow and bow hunting seasons · 4, 5, 6, 8, 9, 10 · October 3 to October 16, 2026"
+      },
+      {
+        "species": "Black bear",
+        "species_key": "black-bear",
+        "weapon_class": "Firearms, crossbow and bow hunting seasons",
+        "segment": null,
+        "period": "May 15 to June 30, 2026",
+        "period_2026": "May 15 to June 30, 2026",
+        "period_2027": "May 15 to June 30, 2027",
+        "period_from": "2026-05-15",
+        "period_to": "2026-06-30",
+        "year": 2026,
+        "notes": null,
+        "raw": "Firearms, crossbow and bow hunting seasons · 1, 2, 3, 7, 9, 11, 12, 13, 14, 15, 16, 17, 18, 21, 27 East, 28 · May 15 to June 30, 2026"
       }
     ],
     "fr": [
@@ -258,6 +345,34 @@
         "year": 2026,
         "notes": null,
         "raw": "Périodes de chasse réservée à la relève · 1 nord, 1 sud, 2 est (sauf les cantons de Macpès, de Duquesne), 2 ouest, 3 est, 3 ouest (sauf l'ensemble des îles et îlots du fleuve Saint-Laurent en aval du pont Pierre-Laporte compris dans ces zones), 4, 5 est, 5 ouest, 7 nord, 7 sud, 8 est, 8 nord (excluant le territoire de la montagne de Rigaud), 8 sud, 9 est, 9 ouest, 10 est, 10 ouest, 11 est, 11 ouest, 12, 13 sud-ouest et 15 ouest · Cerf de Virginie avec bois (7 cm ou plus) · Du 31 octobre au 1er novembre 2026"
+      },
+      {
+        "species": "Ours noir",
+        "species_key": "black-bear",
+        "weapon_class": "Périodes de chasse à l’arbalète et à l’arc",
+        "segment": null,
+        "period": "Du 3 octobre au 16 octobre 2026",
+        "period_2026": "Du 3 octobre au 16 octobre 2026",
+        "period_2027": "Du 2 octobre au 15 octobre 2027",
+        "period_from": "2026-10-03",
+        "period_to": "2026-10-16",
+        "year": 2026,
+        "notes": null,
+        "raw": "Périodes de chasse à l’arbalète et à l’arc · 4, 5, 6, 8, 9, 10 · Du 3 octobre au 16 octobre 2026"
+      },
+      {
+        "species": "Ours noir",
+        "species_key": "black-bear",
+        "weapon_class": "Périodes de chasse aux armes à feu, à l’arbalète et à l’arc",
+        "segment": null,
+        "period": "Du 15 mai au 30 juin 2026",
+        "period_2026": "Du 15 mai au 30 juin 2026",
+        "period_2027": "Du 15 mai au 30 juin 2027",
+        "period_from": "2026-05-15",
+        "period_to": "2026-06-30",
+        "year": 2026,
+        "notes": null,
+        "raw": "Périodes de chasse aux armes à feu, à l’arbalète et à l’arc · 1, 2, 3, 7, 9, 11, 12, 13, 14, 15, 16, 17, 18, 21, 27 est, 28 · Du 15 mai au 30 juin 2026"
       }
     ]
   }
