@@ -7,8 +7,8 @@
  * Does not write or rewrite Québec zone-*.json.
  *
  * Usage: node scripts/regs/harvest-ontario.mjs [--zones=12,16,17,18] [--html-dir=DIR]
- * Inland slice (this PR): --zones=10,11,15. Default still 12,16,17,18 so a
- * bare run does not rewrite already-shipped FMZ files.
+ * Great Lakes slice: --zones=19,20. Inland: --zones=10,11,15.
+ * Default still 12,16,17,18 so a bare run does not rewrite already-shipped FMZ files.
  */
 import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -105,8 +105,8 @@ function h2Sections(html) {
   return sections;
 }
 
-function h3Blocks(sectionHtml) {
-  const re = /<h3\b[^>]*>([\s\S]*?)<\/h3>/gi;
+function headingBlocks(sectionHtml, tag) {
+  const re = new RegExp(`<${tag}\\b[^>]*>([\\s\\S]*?)</${tag}>`, 'gi');
   const matches = [...sectionHtml.matchAll(re)];
   const blocks = [];
   for (let i = 0; i < matches.length; i++) {
@@ -116,6 +116,14 @@ function h3Blocks(sectionHtml) {
     blocks.push({ title, html: sectionHtml.slice(start, end) });
   }
   return blocks;
+}
+
+function h3Blocks(sectionHtml) {
+  return headingBlocks(sectionHtml, 'h3');
+}
+
+function h4Blocks(sectionHtml) {
+  return headingBlocks(sectionHtml, 'h4');
 }
 
 function extractLength(limit) {
@@ -133,6 +141,115 @@ function parseSeasonLimits(blockHtml) {
   const period = seasonM ? seasonM[1].trim() : null;
   const limit = limitsM ? limitsM[1].trim() : null;
   return { period: period || null, limit: limit || null, length: extractLength(limit), raw: stripDrupalNavTail(t) || null };
+}
+
+// FMZ 20 (Lake Ontario) nests largemouth/smallmouth under h4 with
+// "Early season catch and release" / "Regular season" (FR: saison précoce / régulière).
+const SEASON_FIELD_RE = String.raw`Early season catch and release|Saison pr[eé]coce de prise et remise [àa] l['’]eau|Regular season|Saison r[eé]guli[eè]re|Season|Saison|Limits|Limites`;
+
+function isLimitsLabel(label) {
+  return /^(Limits|Limites)$/i.test(label);
+}
+
+function isNestedSeasonLabel(label) {
+  return /early season|regular season|pr[eé]coce|r[eé]guli[eè]re/i.test(label);
+}
+
+function parseLabeledSeasonRules(species, html) {
+  const t = text(html);
+  const fieldRe = new RegExp(`(${SEASON_FIELD_RE})\\s*:\\s*`, 'gi');
+  const matches = [...t.matchAll(fieldRe)];
+  if (!matches.length) return [];
+  const fields = matches.map((m, i) => ({
+    label: m[1],
+    value: t.slice(m.index + m[0].length, i + 1 < matches.length ? matches[i + 1].index : t.length).trim(),
+  }));
+  const rules = [];
+  let cur = null;
+  const pushCur = () => {
+    if (!cur) return;
+    const bits = [];
+    if (cur._label && cur.period) bits.push(`${cur._label} : ${cur.period}`);
+    else if (cur.period) bits.push(`Season : ${cur.period}`);
+    if (cur.limit) bits.push(`${cur._limitLabel || 'Limits'} : ${cur.limit}`);
+    cur.raw = stripDrupalNavTail(bits.join(' ') || t) || null;
+    delete cur._label;
+    delete cur._limitLabel;
+    rules.push(cur);
+    cur = null;
+  };
+  for (const f of fields) {
+    if (isLimitsLabel(f.label)) {
+      if (!cur) {
+        cur = {
+          period: null,
+          species,
+          limit: f.value || null,
+          length: extractLength(f.value),
+          gear: null,
+          notes: null,
+          raw: null,
+          _limitLabel: f.label,
+        };
+      } else {
+        cur.limit = f.value || null;
+        cur.length = extractLength(f.value);
+        cur._limitLabel = f.label;
+      }
+      continue;
+    }
+    pushCur();
+    cur = {
+      period: f.value || null,
+      species,
+      limit: null,
+      length: null,
+      gear: null,
+      notes: isNestedSeasonLabel(f.label) ? f.label : null,
+      raw: null,
+      _label: f.label,
+    };
+  }
+  pushCur();
+  return rules;
+}
+
+function isSeasonLabeledText(t) {
+  return new RegExp(`(?:${SEASON_FIELD_RE})\\s*:`, 'i').test(t);
+}
+
+function unlabeledParagraphs(html) {
+  const out = [];
+  const re = /<p\b[^>]*>([\s\S]*?)<\/p>/gi;
+  let m;
+  while ((m = re.exec(html))) {
+    const t = text(m[1]);
+    if (!t) continue;
+    if (isSeasonLabeledText(t)) continue;
+    out.push(t);
+  }
+  return out;
+}
+
+function htmlWithoutUnlabeledParagraphs(html) {
+  return String(html).replace(/<p\b[^>]*>[\s\S]*?<\/p>/gi, p => {
+    const t = text(p);
+    if (!t) return p;
+    return isSeasonLabeledText(t) ? p : '';
+  });
+}
+
+function simpleZoneWideRule(species, blockHtml) {
+  const sl = parseSeasonLimits(blockHtml);
+  return {
+    period: sl.period,
+    species,
+    limit: sl.limit,
+    length: sl.length,
+    gear: null,
+    notes: null,
+    raw: sl.raw,
+  };
 }
 
 function topLevelLis(html) {
@@ -213,7 +330,8 @@ export function findFrFmzUrlFromHub(hubHtml, fmz) {
 }
 
 function ruleFromSpeciesBlock(species, blockHtml) {
-  const sl = parseSeasonLimits(blockHtml);
+  const seasonHtml = String(blockHtml).replace(/<(ul|ol)\b[\s\S]*?<\/\1>/gi, ' ');
+  const sl = parseSeasonLimits(seasonHtml);
   const waters = allLiTexts(blockHtml);
   const h4 = text((blockHtml.match(/<h4\b[^>]*>([\s\S]*?)<\/h4>/i) || [])[1] || '');
   const notesParts = [];
@@ -232,23 +350,45 @@ function ruleFromSpeciesBlock(species, blockHtml) {
 }
 
 function parseZoneWide(section) {
-  const listed = h3Blocks(section.html);
-  if (listed.length === 0) {
+  const listedH3 = h3Blocks(section.html);
+  if (listedH3.length === 0) {
     throw new Error('zone-wide h3 count is 0');
   }
-  const rules = listed.map(b => {
-    const sl = parseSeasonLimits(b.html);
-    return {
-      period: sl.period,
-      species: b.title,
-      limit: sl.limit,
-      length: sl.length,
-      gear: null,
-      notes: null,
-      raw: sl.raw,
-    };
-  });
-  return { listed: listed.length, harvested: rules.length, rules };
+  const rules = [];
+  let listed = 0;
+  for (const b of listedH3) {
+    const nested = h4Blocks(b.html);
+    if (nested.length) {
+      for (const h4 of nested) {
+        const seasonHtml = htmlWithoutUnlabeledParagraphs(h4.html);
+        const rows = parseLabeledSeasonRules(h4.title, seasonHtml);
+        if (rows.length) {
+          listed += rows.length;
+          rules.push(...rows);
+        } else {
+          listed += 1;
+          rules.push(simpleZoneWideRule(h4.title, seasonHtml || h4.html));
+        }
+      }
+      for (const note of unlabeledParagraphs(b.html)) {
+        listed += 1;
+        const limit = /S-\d|C-\d/.test(note) ? note : null;
+        rules.push({
+          period: null,
+          species: b.title,
+          limit,
+          length: extractLength(note),
+          gear: null,
+          notes: note,
+          raw: stripDrupalNavTail(note),
+        });
+      }
+      continue;
+    }
+    listed += 1;
+    rules.push(simpleZoneWideRule(b.title, b.html));
+  }
+  return { listed, harvested: rules.length, rules };
 }
 
 function parseSpeciesExceptions(section) {
@@ -258,33 +398,61 @@ function parseSpeciesExceptions(section) {
   return { listed: blocks.length, harvested: rules.length, rules };
 }
 
+function waterbodyNameFromStrongP(pm) {
+  let name = text(pm[1]);
+  let location = text(pm[2]).replace(/^[-–—:]\s*/, '');
+  const fullP = text(pm[0]);
+  // ontario.ca splits "All waters of FMZ 20" across nested <strong>/abbr tags.
+  if (/all waters of|toutes les eaux/i.test(fullP) && /FMZ|ZGP/i.test(fullP)) {
+    name = fullP.replace(/\s+/g, ' ').trim();
+    location = '';
+  }
+  return { name, location };
+}
+
+function pushWaterbodyEntry(entries, seen, { name, location, lis, skippedRef, chunkHtml }) {
+  if (!name) return;
+  const key = name.toLowerCase();
+  if (seen.has(key)) return;
+  if (!lis.length && /fish on-line|on p[eê]che en ligne/i.test(chunkHtml) && !/walleye|dor[eé]|season|saison|limits|limites|sanctuar/i.test(text(chunkHtml))) {
+    skippedRef.skippedFishOnLine = true;
+    return;
+  }
+  seen.add(key);
+  entries.push({
+    name,
+    location: location || null,
+    rules: lis.map(li => parseExceptionLi(li)),
+    raw: stripDrupalNavTail(text(`${name} ${location || ''} ${lis.join(' | ')}`)),
+  });
+}
+
 function parseWaterbodyExceptions(section) {
   if (!section) return { listed: 0, harvested: 0, entries: [], skippedFishOnLine: false };
-  let skippedFishOnLine = false;
+  const skippedRef = { skippedFishOnLine: false };
   const chunks = section.html.split(/(?=<p>\s*<strong>)/i);
   const entries = [];
+  const seen = new Set();
   for (const chunk of chunks) {
     const pm = chunk.match(/<p>\s*<strong>([\s\S]*?)<\/strong>([\s\S]*?)<\/p>/i);
     if (!pm) continue;
-    const name = text(pm[1]);
+    const { name, location } = waterbodyNameFromStrongP(pm);
     if (!name) continue;
-    const location = text(pm[2]).replace(/^[-–—:]\s*/, '');
     const after = chunk.slice(chunk.indexOf('</p>') + 4);
     const lis = allLiTexts(after.split(/<p>\s*<strong>/i)[0] || after);
-    if (!lis.length && /fish on-line|on p[eê]che en ligne/i.test(chunk) && !/walleye|dor[eé]|season|saison|limits|limites|sanctuar/i.test(text(chunk))) {
-      skippedFishOnLine = true;
-      continue;
-    }
-    const rules = lis.map(li => parseExceptionLi(li));
-    entries.push({
-      name,
-      location: location || null,
-      rules,
-      raw: stripDrupalNavTail(text(`${name} ${location} ${lis.join(' | ')}`)),
-    });
+    pushWaterbodyEntry(entries, seen, { name, location, lis, skippedRef, chunkHtml: chunk });
+  }
+  // FR Great Lakes pages use h3 waterbody names instead of <p><strong>.
+  for (const b of h3Blocks(section.html)) {
+    const name = b.title;
+    if (!name) continue;
+    const lis = allLiTexts(b.html);
+    pushWaterbodyEntry(entries, seen, { name, location: null, lis, skippedRef, chunkHtml: b.html });
   }
   const strongCount = [...section.html.matchAll(/<p>\s*<strong>/gi)].length;
-  return { listed: strongCount, harvested: entries.length, entries, skippedFishOnLine };
+  const h3Count = h3Blocks(section.html).length;
+  const listed = Math.max(strongCount, h3Count, entries.length);
+  return { listed, harvested: entries.length, entries, skippedFishOnLine: skippedRef.skippedFishOnLine };
 }
 
 function parseExceptionLi(li) {

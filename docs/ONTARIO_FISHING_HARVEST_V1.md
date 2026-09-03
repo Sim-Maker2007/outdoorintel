@@ -26,11 +26,13 @@ v1 shipped **12** (Ottawa River), **18**, **17**, **16**.
 
 Inland expansion ships **10** (Sault Ste. Marie / Sudbury), **11** (North Bay / Nipissing), **15** (Parry Sound / Bancroft / Pembroke / Algonquin Park).
 
+Great Lakes expansion ships **19** (Lake Erie) and **20** (Lake Ontario / GTA south shore). FMZ 20 bass is nested (largemouth/smallmouth, early catch-and-release vs regular season) — harvest those h4 rows; do not collapse S/C. Do not invent lake-by-lake tributary regs; listed two-line / sanctuary HTML is enough.
+
 If FMZ 16 exception/sanctuary lists fail, still ship 12+18+17 complete and FMZ 16 **zone-wide only** with `complete: false`. Never silently drop Simcoe/Couchiching (do not omit the FMZ 16 file).
 
 FMZ 15 cites the Algonquin Park bait/gear overlay from the official HTML waterbody exceptions. Do not invent park-only rules.
 
-**Skipped in the inland slice:** Great Lakes FMZs **9, 13, 14, 19, 20** (tributary/map-heavy). Ontario hunting WMU 12 / Rainy River is never harvested.
+**Still skipped:** Great Lakes FMZs **9, 13, 14**. Ontario hunting WMU 12 / Rainy River is never harvested.
 
 Do not claim “complete Ontario”.
 
@@ -51,9 +53,9 @@ Unharvested Ontario FMZ (e.g. 5) **404s** with the available ON list — it must
 
 ## Parser
 
-`scripts/regs/harvest-ontario.mjs` (npm script `harvest:ontario`). Default `--zones=12,16,17,18`.
+`scripts/regs/harvest-ontario.mjs` (npm script `harvest:ontario`). Default `--zones=12,16,17,18`. Great Lakes slice: `--zones=19,20`.
 
-Parse ontario.ca **h2/h3 Season/Limits** blocks. Do not reuse Québec `parseGrid`. Harvest FR from FR HTML — never machine-translate limits. Keep raw Limits strings (`S-n` and `C-n` verbatim; never collapse to a single number). Fail a zone if zone-wide h3 count is 0.
+Parse ontario.ca **h2/h3 Season/Limits** blocks, including **h4** nested seasons (FMZ 20 bass early catch-and-release / regular). FR waterbody names may be `h3` instead of `<p><strong>`. Do not reuse Québec `parseGrid`. Harvest FR from FR HTML — never machine-translate limits. Keep raw Limits strings (`S-n` and `C-n` verbatim; never collapse to a single number). Fail a zone if zone-wide h3 count is 0.
 
 ## Document shape (`on-fmz-N.json`)
 
@@ -74,16 +76,17 @@ Disclaimer for ON: MNR / the Summary is not the law / verify Fish ON-Line / Crow
 
 ## Pages
 
-Hub lists **Québec zones** and **Ontario FMZs 10/11/12/15/16/17/18** as separate lists and still says this is not complete Ontario. Season Intel waitlist CTA stays. ON pages link out to Fish ON-Line.
+Hub lists **Québec zones** and **Ontario FMZs 10/11/12/15/16/17/18/19/20** as separate lists and still says this is not complete Ontario. Season Intel waitlist CTA stays. ON pages link out to Fish ON-Line.
 
 ## Evals
 
-- Keep `zone=12` as Québec (`z12-truite-fr`)
+- Keep `zone=12` as Québec (`z12-truite-fr`); keep `refuse-zone20` as unharvested Québec zone 20
 - Add `on12-walleye-en` and `on12-dore-fr`
 - Add `on11-nipissing-walleye` and `on15-algonquin-bait`
-- Refuse Ontario FMZ 5 (not QC 5): `refuse-on-fmz5`; refuse unharvested FMZ 20: `refuse-on-fmz20`
+- Add `on19-walleye-en` / `on19-dore-fr` (Lake Erie) and `on20-walleye-en` / `on20-dore-fr` / `on20-bass-en` (Lake Ontario)
+- Refuse Ontario FMZ 5 (not QC 5): `refuse-on-fmz5`; refuse unharvested Great Lakes FMZ 9/13/14
 - `coverage-all-zones` filters by jurisdiction (QC complete check does not run on ON docs)
-- Add `on-collide-qc12` and `on-collide-qc10`
+- Add `on-collide-qc12`, `on-collide-qc10`, and `on-collide-qc19`
 
 ## Verify
 

@@ -1,0 +1,548 @@
+{
+  "zone_id": 19,
+  "zone_key": "ON-19",
+  "activity": "fishing",
+  "jurisdiction": "ON",
+  "fmz": 19,
+  "licence_year": 2026,
+  "authority": "Ontario Ministry of Natural Resources (MNR); Ontario Fishing Regulations Summary 2026 (not the official law)",
+  "source": {
+    "en": "https://www.ontario.ca/document/ontario-fishing-regulations-summary/fisheries-management-zone-19",
+    "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-peche/zone-de-gestion-des-peches-19",
+    "pdf_en": "https://ontario.ca/files/2025-12/mnr-2026-fishing-regulations-summary-en-2025-12-08.pdf",
+    "fish_on_line": "https://www.gisapplication.lrc.gov.on.ca/FishONLine/Index.html?site=FishONLine&viewer=FishONLine&locale=en-US&FMZ=19",
+    "fetched_at": "2026-09-03",
+    "html_updated": "2026-08-04",
+    "note": "Rule text reproduced verbatim from the Ontario Fishing Regulations Summary HTML (not the PDF). The Summary is not the official law. Always verify with the MNR and Fish ON-Line before fishing. Crown copyright."
+  },
+  "coverage": {
+    "licence_year": 2026,
+    "skipped_fish_on_line_only": false,
+    "zone_wide_listed": 16,
+    "zone_wide_harvested": 16,
+    "species_exceptions_listed": 1,
+    "species_exceptions_harvested": 1,
+    "waterbody_exceptions_listed": 1,
+    "waterbody_exceptions_harvested": 1,
+    "fish_sanctuaries_listed": 2,
+    "fish_sanctuaries_harvested": 2,
+    "bait_restrictions_listed": 3,
+    "bait_restrictions_harvested": 3,
+    "complete": true,
+    "note": "Zone-wide seasons/limits and listed HTML exceptions/sanctuaries for this FMZ are included. The Ontario Fishing Regulations Summary is not the law; verify with Fish ON-Line. This is not complete Ontario."
+  },
+  "title": {
+    "en": "Fisheries Management Zone 19 — Ontario FMZ 19",
+    "fr": "Zone de gestion des pêches 19 — Ontario ZGP 19"
+  },
+  "notices": {
+    "en": [
+      "Detroit River and St. Clair River are in Zone 19.",
+      "The Niagara River upstream of the falls is in Zone 19.",
+      "Refer to general fishing regulations for more information on how to use this summary.",
+      "Warmouth is listed as endangered in Ontario and may not be caught or possessed under a recreational fishing licence.",
+      "The following species are not present in this Zone and are closed to fishing all year:",
+      "brook trout",
+      "splake",
+      "FMZ 19 is part of the Great Lakes. Baitfish and leeches that are both dead and preserved can be transported into and out of BMZs and the Great Lakes.",
+      "Baitfish and leeches that are not both dead and preserved may be transported out of: Refer to bait for more details.",
+      "an adjacent Bait Management Zone and used in the Great Lakes",
+      "the Great Lakes only to be disposed of immediately more than 30 metres from the water"
+    ],
+    "fr": [
+      "Les rivières Détroit et Saint-Claire sont dans la zone 19.",
+      "La partie de la rivière Niagara en amont des chutes se trouve dans la zone 19.",
+      "Voir les Règlements généraux concernant la pêche pour plus de renseignements sur l’utilisation de ce Résumé.",
+      "Le crapet sac-à-lait est classé comme une espèce en voie de disparition en Ontario et il est interdit de le capturer ou de le posséder avec un permis de pêche récréative.",
+      "On ne trouve pas les espèces suivantes dans cette zone et leur pêche est donc interdite toute l’année :",
+      "omble de fontaine",
+      "truite moulac",
+      "La ZGP 19 fait partie des Grands Lacs. Les poissons d’appât et les sangsues qui sont morts et conservés peuvent être apportés et sortis des ZGA et des Grands Lacs.",
+      "Les poissons d’appât et les sangsues qui ne sont pas morts et conservés peuvent être sortis : Voir la section sur les appâts pour plus de renseignements.",
+      "d’une zone de gestion des appâts adjacente et utilisés dans les Grands Lacs",
+      "des Grands Lacs seulement pour être immédiatement jetés à plus de 30 mètres du bord de l’eau"
+    ]
+  },
+  "general": {
+    "en": [
+      {
+        "period": null,
+        "species": "Aggregate limits for trout and salmon (including splake)",
+        "limit": "S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limits : S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined"
+      },
+      {
+        "period": "open all year",
+        "species": "Atlantic salmon",
+        "limit": "S-1 and C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-1 and C-0"
+      },
+      {
+        "period": "open all year",
+        "species": "Brown trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Channel catfish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "open all year",
+        "species": "Crappie",
+        "limit": "S-30 and C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-30 and C-10"
+      },
+      {
+        "period": "closed all year",
+        "species": "Lake sturgeon",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : closed all year"
+      },
+      {
+        "period": "January 1 to September 30 and December 1 to December 31",
+        "species": "Lake trout",
+        "limit": "S-3 and C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to September 30 and December 1 to December 31 Limits : S-3 and C-1"
+      },
+      {
+        "period": "open all year",
+        "species": "Lake whitefish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "fourth Saturday in June to November 30",
+        "species": "Largemouth and smallmouth bass combined",
+        "limit": "S-6 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : fourth Saturday in June to November 30 Limits : S-6 and C-2"
+      },
+      {
+        "period": "first Saturday in June to December 15",
+        "species": "Muskellunge",
+        "limit": "S-1; must be greater than 112 centimetres, and C-0",
+        "length": "must be greater than 112 centimetres",
+        "gear": null,
+        "notes": null,
+        "raw": "Season : first Saturday in June to December 15 Limits : S-1; must be greater than 112 centimetres, and C-0"
+      },
+      {
+        "period": "open all year",
+        "species": "Northern pike",
+        "limit": "S-6 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-6 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Pacific salmon",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Rainbow trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Sunfish",
+        "limit": "S-100 and C-50",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-100 and C-50"
+      },
+      {
+        "period": "open all year",
+        "species": "Walleye and sauger combined",
+        "limit": "S-6 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-6 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Yellow perch",
+        "limit": "S-50; in one day, possession limit of 100, and C-25; in one day, possession limit of 50",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50; in one day, possession limit of 100, and C-25; in one day, possession limit of 50"
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Limites combinées pour la truite et le saumon (y compris le touladi et l’omble de fontaine)",
+        "limit": "S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées.",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limites : S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées."
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Saumon atlantique",
+        "limit": "S-1 et C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-1 et C-0"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Truite brune",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Barbue de rivière",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Marigane",
+        "limit": "S-30 et C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-30 et C-10"
+      },
+      {
+        "period": "Fermée toute l’année",
+        "species": "Esturgeon de lac (esturgeon jaune)",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Fermée toute l’année"
+      },
+      {
+        "period": "Du 1er janvier au 30 septembre et du 1er décembre au 31 décembre",
+        "species": "Touladi",
+        "limit": "S-3 et C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 30 septembre et du 1er décembre au 31 décembre Limites : S-3 et C-1"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Grand corégone",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Du 4e samedi de juin au 30 novembre",
+        "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+        "limit": "S-6 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 4e samedi de juin au 30 novembre Limites : S-6 et C-2"
+      },
+      {
+        "period": "Du 1er samedi de juin au 15 décembre",
+        "species": "Maskinongé",
+        "limit": "S-1; doit mesurer plus de 112 centimètres, et C-0",
+        "length": "doit mesurer plus de 112 centimètres",
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er samedi de juin au 15 décembre Limites : S-1; doit mesurer plus de 112 centimètres, et C-0"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Grand brochet",
+        "limit": "S-6 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-6 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Saumon du Pacifique",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Truite arc-en-ciel",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Crapet",
+        "limit": "S-100 et C-50",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-100 et C-50"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Doré jaune et doré noir (toute combinaison)",
+        "limit": "S-6 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-6 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Perchaude",
+        "limit": "S-50; par jour, limite de possession de 100, et C-25; par jour, limite de possession de 50",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-50; par jour, limite de possession de 100, et C-25; par jour, limite de possession de 50"
+      }
+    ]
+  },
+  "species_exceptions": {
+    "en": [
+      {
+        "period": "open from third Saturday in June to December 15",
+        "species": "Muskellunge",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Niagara River from the Peace Bridge to Niagara Falls",
+        "raw": "Season : open from third Saturday in June to December 15",
+        "waters": [
+          "Niagara River from the Peace Bridge to Niagara Falls"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "Ouverte du 3e samedi de juin au 15 décembre",
+        "species": "Maskinongé",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Rivière Niagara, depuis le pont Peace jusqu’aux chutes Niagara",
+        "raw": "Saison : Ouverte du 3e samedi de juin au 15 décembre",
+        "waters": [
+          "Rivière Niagara, depuis le pont Peace jusqu’aux chutes Niagara"
+        ]
+      }
+    ]
+  },
+  "waterbody_exceptions": {
+    "en": [
+      {
+        "name": "All waters of FMZ 19",
+        "location": null,
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Two lines may be used when angling from a boat in open water",
+            "raw": "Two lines may be used when angling from a boat in open water"
+          }
+        ],
+        "raw": "All waters of FMZ 19 Two lines may be used when angling from a boat in open water"
+      }
+    ],
+    "fr": [
+      {
+        "name": "Toutes les eaux de la ZGP 19",
+        "location": null,
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est permis d’utiliser deux lignes quand on pêche à la traîne à bord d’un bateau en eau libre",
+            "raw": "Il est permis d’utiliser deux lignes quand on pêche à la traîne à bord d’un bateau en eau libre"
+          }
+        ],
+        "raw": "Toutes les eaux de la ZGP 19 Il est permis d’utiliser deux lignes quand on pêche à la traîne à bord d’un bateau en eau libre"
+      }
+    ]
+  },
+  "bait_restrictions": {
+    "en": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "FMZ 19 is part of the Great Lakes. Baitfish and leeches that are both dead and preserved can be transported into and out of BMZs and the Great Lakes.",
+        "raw": "FMZ 19 is part of the Great Lakes. Baitfish and leeches that are both dead and preserved can be transported into and out of BMZs and the Great Lakes."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Baitfish and leeches that are not both dead and preserved may be transported out of: Refer to bait for more details.",
+        "raw": "Baitfish and leeches that are not both dead and preserved may be transported out of: Refer to bait for more details."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "an adjacent Bait Management Zone and used in the Great Lakes",
+        "raw": "an adjacent Bait Management Zone and used in the Great Lakes"
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "La ZGP 19 fait partie des Grands Lacs. Les poissons d’appât et les sangsues qui sont morts et conservés peuvent être apportés et sortis des ZGA et des Grands Lacs.",
+        "raw": "La ZGP 19 fait partie des Grands Lacs. Les poissons d’appât et les sangsues qui sont morts et conservés peuvent être apportés et sortis des ZGA et des Grands Lacs."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Les poissons d’appât et les sangsues qui ne sont pas morts et conservés peuvent être sortis : Voir la section sur les appâts pour plus de renseignements.",
+        "raw": "Les poissons d’appât et les sangsues qui ne sont pas morts et conservés peuvent être sortis : Voir la section sur les appâts pour plus de renseignements."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "d’une zone de gestion des appâts adjacente et utilisés dans les Grands Lacs",
+        "raw": "d’une zone de gestion des appâts adjacente et utilisés dans les Grands Lacs"
+      }
+    ]
+  },
+  "fish_sanctuaries": {
+    "en": [
+      {
+        "period": "No fishing - May 15 to Friday before the fourth Saturday in June",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - May 15 to Friday before the fourth Saturday in June Lake Erie - Walsingham and Norfolk Townships, eastern half of the Inner Long Point Bay",
+        "waters": [
+          "Lake Erie - Walsingham and Norfolk Townships, eastern half of the Inner Long Point Bay"
+        ]
+      },
+      {
+        "period": "No fishing - June 1 to July 15",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - June 1 to July 15 Town of Fort Erie - bounded by lines starting at Stonemill Road (42°52'31.47\" N , 78°59'57.76\" W ), 750 metres south into Lake Erie to a point at 42°52'11.17\" N , 78°59'57.11\" W , 1.25 kilometres east to a point at 42°52'12.49\" N , 78°58'46.02\" W , north to Rosehill Road (42°52'46.83\" N , 78°58'47.12\" W ) and following the water's edge back to its original point of origin | Port Colborne - bounded by lines starting at Cassaday Point (42°52'1.79\" N , 79°13'4.8\" W ), 500 metres south into Lake Erie to a point at 42°51'45.71\" N , 79°13''4.19\" W , 1 kilometre east to a point at 42°51'46.72\" N , 79°12'14.73\" W , north to Weaver Road (42°52'17.66\" N , 79°12'15.88\" W ) and following the water's edge back to its original point of origin. | Gravelly Bay - from the breakwall on the east side of the Welland Canal, eastward 500 metres to a point at 42°52'7.9\" N , 79°14'9.87\" W , straight northward to the water's edge at 42°52''32.48\" N , 79°14'10.81\" W , then following the water's edge back to the east side of the Welland Canal (also includes the inlet north of Nickel's Beach) | Gravelly Bay - the waters of that part of Gravelly Bay of Lake Erie (City of Port Colborne) lying northwest of a line drawn from the southerly point of Sugar Loaf Point in a northeasterly direction to the southwest corner of the H. Knoll Lakeview Park Marina breakwall",
+        "waters": [
+          "Town of Fort Erie - bounded by lines starting at Stonemill Road (42°52'31.47\" N , 78°59'57.76\" W ), 750 metres south into Lake Erie to a point at 42°52'11.17\" N , 78°59'57.11\" W , 1.25 kilometres east to a point at 42°52'12.49\" N , 78°58'46.02\" W , north to Rosehill Road (42°52'46.83\" N , 78°58'47.12\" W ) and following the water's edge back to its original point of origin",
+          "Port Colborne - bounded by lines starting at Cassaday Point (42°52'1.79\" N , 79°13'4.8\" W ), 500 metres south into Lake Erie to a point at 42°51'45.71\" N , 79°13''4.19\" W , 1 kilometre east to a point at 42°51'46.72\" N , 79°12'14.73\" W , north to Weaver Road (42°52'17.66\" N , 79°12'15.88\" W ) and following the water's edge back to its original point of origin.",
+          "Gravelly Bay - from the breakwall on the east side of the Welland Canal, eastward 500 metres to a point at 42°52'7.9\" N , 79°14'9.87\" W , straight northward to the water's edge at 42°52''32.48\" N , 79°14'10.81\" W , then following the water's edge back to the east side of the Welland Canal (also includes the inlet north of Nickel's Beach)",
+          "Gravelly Bay - the waters of that part of Gravelly Bay of Lake Erie (City of Port Colborne) lying northwest of a line drawn from the southerly point of Sugar Loaf Point in a northeasterly direction to the southwest corner of the H. Knoll Lakeview Park Marina breakwall"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "Pêche interdite - Du 15 mai au vendredi précédant le 4e samedi de juin",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 15 mai au vendredi précédant le 4e samedi de juin Lac Érié - cantons de Walsingham et Norfolk, moitié est de la baie Inner Long Point",
+        "waters": [
+          "Lac Érié - cantons de Walsingham et Norfolk, moitié est de la baie Inner Long Point"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er juin au 16 juillet",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er juin au 16 juillet Ville de Fort Erie – zone délimitée par des lignes commençant au chemin Stonemill (42° 52’ 31,47” N. , 78° 59’ 57,76” O. ), puis 750 mètres vers le sud dans le lac Érié jusqu’à un point situé à 42° 52’ 11,17” N. et 78° 59’ 57,11” O. ; de là, vers l’est sur une distance de 1,5 kilomètres jusqu’à un point situé à 42° 52’ 12,49” N. et 78° 58’ 46,02” O. ; de là, vers le nord jusqu’au chemin Rosehill (42° 52’ 46,83” N. , 78° 58’ 47,12” O. ), le long du bord de l’eau jusqu’au point de départ. | Port Colborne - zone délimitée par des lignes commençant à la pointe Cassaday (42° 52’ 1,79” N. , 79° 13’ 4,8” O. ); de là, vers le sud sur une distance de 500 mètres dans le lac Érié jusqu’à un point situé à 42° 51’ 45,71″ N. et 79° 13’ 4,19″ O. ; de là, vers l’est sur une distance de 1 kilomètres jusqu’à un point situé à 42° 51’ 46,72″ N. et 79° 12’ 14,73″ O. ; de là, vers le nord jusqu’au chemin Weaver (42° 52’ 17,66″ N. et 79° 12’ 15,88″ O. ), le long du bord de l’eau jusqu’au point de départ. | Baie Gravelly - à partir du brise-lames du côté est du canal Welland de là, vers l’est sur 500 mètres jusqu’à un point situé à 42° 52’ 7,9″ N. et 79° 14’ 9,87″ O. ; de là, vers le nord en ligne droite jusqu’à l’intersection du bord de l’eau à un point situé à 42° 52’ 32,48″ N. et 79° 14’ 10,81″ O. , et le long du bord de l’eau, jusqu’au côté est du canal Welland (y compris le bras au nord de Nickel’s Beach). | Baie Gravelly - les eaux de la baie Gravelly du lac Érié de la ville de Port Colborne situées au nord-ouest d’une ligne tirée à partir de l’extrémité sud de la pointe Sugar Loaf en direction nord-est jusqu’au coin sud-ouest du brise-lames de la marina du parc H. Knoll Lakeview",
+        "waters": [
+          "Ville de Fort Erie – zone délimitée par des lignes commençant au chemin Stonemill (42° 52’ 31,47” N. , 78° 59’ 57,76” O. ), puis 750 mètres vers le sud dans le lac Érié jusqu’à un point situé à 42° 52’ 11,17” N. et 78° 59’ 57,11” O. ; de là, vers l’est sur une distance de 1,5 kilomètres jusqu’à un point situé à 42° 52’ 12,49” N. et 78° 58’ 46,02” O. ; de là, vers le nord jusqu’au chemin Rosehill (42° 52’ 46,83” N. , 78° 58’ 47,12” O. ), le long du bord de l’eau jusqu’au point de départ.",
+          "Port Colborne - zone délimitée par des lignes commençant à la pointe Cassaday (42° 52’ 1,79” N. , 79° 13’ 4,8” O. ); de là, vers le sud sur une distance de 500 mètres dans le lac Érié jusqu’à un point situé à 42° 51’ 45,71″ N. et 79° 13’ 4,19″ O. ; de là, vers l’est sur une distance de 1 kilomètres jusqu’à un point situé à 42° 51’ 46,72″ N. et 79° 12’ 14,73″ O. ; de là, vers le nord jusqu’au chemin Weaver (42° 52’ 17,66″ N. et 79° 12’ 15,88″ O. ), le long du bord de l’eau jusqu’au point de départ.",
+          "Baie Gravelly - à partir du brise-lames du côté est du canal Welland de là, vers l’est sur 500 mètres jusqu’à un point situé à 42° 52’ 7,9″ N. et 79° 14’ 9,87″ O. ; de là, vers le nord en ligne droite jusqu’à l’intersection du bord de l’eau à un point situé à 42° 52’ 32,48″ N. et 79° 14’ 10,81″ O. , et le long du bord de l’eau, jusqu’au côté est du canal Welland (y compris le bras au nord de Nickel’s Beach).",
+          "Baie Gravelly - les eaux de la baie Gravelly du lac Érié de la ville de Port Colborne situées au nord-ouest d’une ligne tirée à partir de l’extrémité sud de la pointe Sugar Loaf en direction nord-est jusqu’au coin sud-ouest du brise-lames de la marina du parc H. Knoll Lakeview"
+        ]
+      }
+    ]
+  }
+}
