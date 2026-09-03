@@ -65,6 +65,23 @@ for (const q of questions) {
     continue;
   }
 
+  if (c.season_intel_copy) {
+    const src = readFileSync(join(REPO, 'src/pages/[lang]/season-intel/index.astro'), 'utf-8');
+    const enNow = src.includes('Québec hunting deer, moose, and black bear 2026 for published splits 7N, 7S, 8E, 8N, 8S, 9E, 9W, 10E, 10W, 11E, 11W, 12 and 13SW');
+    const frNow = src.includes('Chasse au cerf, à l’orignal et à l’ours noir 2026 au Québec pour les segments publiés 7N, 7S, 8E, 8N, 8S, 9E, 9W, 10E, 10W, 11E, 11W, 12 et 13SW');
+    ok(`${q.id}/en-bear-now`, enNow && src.includes('Black bear is harvested only where the official table has rows for that key'), 'EN Season Intel now-item must include live black bear 2026 on the published splits');
+    ok(`${q.id}/fr-ours-now`, frNow && src.includes('L’ours noir n’est récupéré que là où le tableau officiel a des lignes pour cette clé'), 'FR Season Intel now-item must include live ours noir 2026 on the published splits');
+    ok(`${q.id}/en-not-deny-bear`, !/not bear or turkey/.test(src), 'EN Season Intel must not deny bear when it is harvested');
+    ok(`${q.id}/fr-not-deny-ours`, !/pas l’ours ni le dindon/.test(src), 'FR Season Intel must not deny ours when it is harvested');
+    ok(`${q.id}/en-gaps`, /not turkey/.test(src) && /not small game/.test(src) && /not Ontario hunting/.test(src) && /Not all 28 hunting zones/.test(src), 'EN must still disclose turkey, small game, Ontario hunting, and not-all-28 gaps');
+    ok(`${q.id}/fr-gaps`, /pas le dindon/.test(src) && /pas le petit gibier/.test(src) && /pas la chasse ontarienne/.test(src) && /Pas les 28 zones/.test(src), 'FR must still disclose dindon, petit gibier, chasse ontarienne, and not-all-28 gaps');
+    ok(`${q.id}/en-8w-13`, /Not 8 West/.test(src) && /not 13 East\/West/.test(src), 'EN must still disclose 8 West and 13 East/West as absent');
+    ok(`${q.id}/fr-8w-13`, /Pas la 8 ouest/.test(src) && /13 est\/ouest/.test(src), 'FR must still disclose 8 ouest and 13 est/ouest as absent');
+    ok(`${q.id}/price`, /\$29 CAD/.test(src) && /29 \$ CAD/.test(src), 'Season Intel must keep $29 CAD/year Stripe Checkout framing');
+    ok(`${q.id}/meta-bear`, src.includes('Québec hunting deer, moose, and black bear 2026') && src.includes('chasse au cerf, à l’orignal et à l’ours noir 2026'), 'EN+FR meta descriptions must include black bear / ours noir');
+    continue;
+  }
+
   if (c.all_hunting) {
     for (const [zid, doc] of Object.entries(HUNTING)) {
       ok(`${q.id}/${zid}-activity`, doc.activity === 'hunting' && doc.jurisdiction === 'QC', `${zid} must be hunting QC`);
