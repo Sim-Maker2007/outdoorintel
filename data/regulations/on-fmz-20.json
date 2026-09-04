@@ -1,0 +1,820 @@
+{
+  "zone_id": 20,
+  "zone_key": "ON-20",
+  "activity": "fishing",
+  "jurisdiction": "ON",
+  "fmz": 20,
+  "licence_year": 2026,
+  "authority": "Ontario Ministry of Natural Resources (MNR); Ontario Fishing Regulations Summary 2026 (not the official law)",
+  "source": {
+    "en": "https://www.ontario.ca/document/ontario-fishing-regulations-summary/fisheries-management-zone-20",
+    "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-peche/zone-de-gestion-des-peches-20",
+    "pdf_en": "https://ontario.ca/files/2025-12/mnr-2026-fishing-regulations-summary-en-2025-12-08.pdf",
+    "fish_on_line": "https://www.gisapplication.lrc.gov.on.ca/FishONLine/Index.html?site=FishONLine&viewer=FishONLine&locale=en-US&FMZ=20",
+    "fetched_at": "2026-09-03",
+    "html_updated": "2026-08-04",
+    "note": "Rule text reproduced verbatim from the Ontario Fishing Regulations Summary HTML (not the PDF). The Summary is not the official law. Always verify with the MNR and Fish ON-Line before fishing. Crown copyright."
+  },
+  "coverage": {
+    "licence_year": 2026,
+    "skipped_fish_on_line_only": false,
+    "zone_wide_listed": 20,
+    "zone_wide_harvested": 20,
+    "species_exceptions_listed": 2,
+    "species_exceptions_harvested": 2,
+    "waterbody_exceptions_listed": 1,
+    "waterbody_exceptions_harvested": 1,
+    "fish_sanctuaries_listed": 1,
+    "fish_sanctuaries_harvested": 1,
+    "bait_restrictions_listed": 3,
+    "bait_restrictions_harvested": 3,
+    "complete": true,
+    "note": "Zone-wide seasons/limits and listed HTML exceptions/sanctuaries for this FMZ are included. The Ontario Fishing Regulations Summary is not the law; verify with Fish ON-Line. This is not complete Ontario."
+  },
+  "title": {
+    "en": "Fisheries Management Zone 20 — Ontario FMZ 20",
+    "fr": "Zone de gestion des pêches 20 — Ontario ZGP 20"
+  },
+  "notices": {
+    "en": [
+      "Hamilton Harbour is in Zone 20.",
+      "The Niagara River downstream of the falls is in Zone 20.",
+      "Refer to general fishing regulations for more information on how to use this summary.",
+      "American eel is a specially protected species and may not be caught or possessed under a recreational fishing licence.",
+      "The following species are not present in this Zone and are closed to fishing all year:",
+      "brook trout",
+      "splake",
+      "FMZ 20, with the exception of the County of Prince Edward, is part of the Great Lakes. Baitfish and leeches that are both dead and preserved can be transported into and out of BMZs and the Great Lakes.",
+      "Baitfish and leeches that are not both dead and preserved may be transported out of: Refer to bait for more details.",
+      "an adjacent Bait Management Zone and used in the Great Lakes",
+      "the Great Lakes only when dead and preserved, or to be disposed of immediately more than 30 metres from the water"
+    ],
+    "fr": [
+      "Le havre Hamilton se trouve dans la zone 20.",
+      "La partie de la rivière Niagara en aval des chutes se trouve dans la zone 20.",
+      "Voir les Règlements généraux concernant la pêche pour plus de renseignements sur l’utilisation de ce Résumé.",
+      "L’ anguille d’Amérique est une espèce spécialement protégée et il est interdit de la capturer ou de la posséder avec un permis de pêche récréative.",
+      "On ne trouve pas les espèces suivantes dans cette zone et leur pêche est donc interdite toute l’année :",
+      "omble de fontaine",
+      "truite moulac",
+      "La ZGP 20, sauf le comté de Prince Edward, fait partie des Grands Lacs. Les poissons d’appât et les sangsues qui sont morts et conservés peuvent être apportés et sortis des ZGA et des Grands Lacs.",
+      "Les poissons d’appât et les sangsues qui ne sont pas morts et conservés peuvent être sortis : Voir la section sur les appâts pour plus de renseignements.",
+      "d’une zone de gestion des appâts adjacente et utilisés dans les Grands Lacs",
+      "des Grands Lacs seulement pour être immédiatement jetés à plus de 30 mètres du bord de l’eau"
+    ]
+  },
+  "general": {
+    "en": [
+      {
+        "period": null,
+        "species": "Aggregate limits for trout and salmon (including splake)",
+        "limit": "S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limits : S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined"
+      },
+      {
+        "period": "open all year",
+        "species": "Atlantic salmon",
+        "limit": "S-1; must be greater than 63 centimetres, and C-0",
+        "length": "must be greater than 63 centimetres",
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-1; must be greater than 63 centimetres, and C-0"
+      },
+      {
+        "period": "January 1 to May 10",
+        "species": "Largemouth bass",
+        "limit": "S-0 and C-0",
+        "length": null,
+        "gear": null,
+        "notes": "Early season catch and release",
+        "raw": "Early season catch and release : January 1 to May 10 Limits : S-0 and C-0"
+      },
+      {
+        "period": "third Saturday in June to December 31",
+        "species": "Largemouth bass",
+        "limit": "S-6 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": "Regular season",
+        "raw": "Regular season : third Saturday in June to December 31 Limits : S-6 and C-2"
+      },
+      {
+        "period": "January 1 to May 10",
+        "species": "Smallmouth bass",
+        "limit": "S-0 and C-0",
+        "length": null,
+        "gear": null,
+        "notes": "Early season catch and release",
+        "raw": "Early season catch and release : January 1 to May 10 Limits : S-0 and C-0"
+      },
+      {
+        "period": "first Saturday in July to December 31",
+        "species": "Smallmouth bass",
+        "limit": "S-6 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": "Regular season",
+        "raw": "Regular season : first Saturday in July to December 31 Limits : S-6 and C-2"
+      },
+      {
+        "period": null,
+        "species": "Bass",
+        "limit": "Aggregate bass limits apply ( S-6 and C-2)",
+        "length": null,
+        "gear": null,
+        "notes": "Aggregate bass limits apply ( S-6 and C-2)",
+        "raw": "Aggregate bass limits apply ( S-6 and C-2)"
+      },
+      {
+        "period": "open all year",
+        "species": "Brown trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Channel catfish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "open all year",
+        "species": "Crappie",
+        "limit": "S-30 and C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-30 and C-10"
+      },
+      {
+        "period": "closed all year",
+        "species": "Lake sturgeon",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : closed all year"
+      },
+      {
+        "period": "January 1 to September 30 and December 1 to December 31",
+        "species": "Lake trout",
+        "limit": "S-3 and C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to September 30 and December 1 to December 31 Limits : S-3 and C-1"
+      },
+      {
+        "period": "open all year",
+        "species": "Lake whitefish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "third Saturday in June to December 15",
+        "species": "Muskellunge",
+        "limit": "S-1; must be greater than 137 centimetres, and C-0",
+        "length": "must be greater than 137 centimetres",
+        "gear": null,
+        "notes": null,
+        "raw": "Season : third Saturday in June to December 15 Limits : S-1; must be greater than 137 centimetres, and C-0"
+      },
+      {
+        "period": "January 1 to March 31 and first Saturday in May to December 31",
+        "species": "Northern pike",
+        "limit": "S-6 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to March 31 and first Saturday in May to December 31 Limits : S-6 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Pacific salmon",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Rainbow trout",
+        "limit": "S-2 and C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-2 and C-1"
+      },
+      {
+        "period": "open all year",
+        "species": "Sunfish",
+        "limit": "S-100 and C-50",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-100 and C-50"
+      },
+      {
+        "period": "January 1 to March 1 and first Saturday in May to December 31",
+        "species": "Walleye and sauger combined",
+        "limit": "S-4 and C-2; not more than 1 greater than 63 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to March 1 and first Saturday in May to December 31 Limits : S-4 and C-2; not more than 1 greater than 63 centimetres"
+      },
+      {
+        "period": "open all year",
+        "species": "Yellow perch",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50 and C-25"
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Limites combinées pour la truite et le saumon (y compris le touladi et l’omble de fontaine)",
+        "limit": "S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées.",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limites : S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées."
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Saumon atlantique",
+        "limit": "S-1; doit mesurer plus de 63 centimètres, et C-0",
+        "length": "doit mesurer plus de 63 centimètres",
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-1; doit mesurer plus de 63 centimètres, et C-0"
+      },
+      {
+        "period": "Du 1er janvier au 10 mai",
+        "species": "Achigan à grande bouche",
+        "limit": "S-0 et C-0",
+        "length": null,
+        "gear": null,
+        "notes": "Saison précoce de prise et remise à l’eau",
+        "raw": "Saison précoce de prise et remise à l’eau : Du 1er janvier au 10 mai Limites : S-0 et C-0"
+      },
+      {
+        "period": "Du 3e samedi de juin au 31 décembre",
+        "species": "Achigan à grande bouche",
+        "limit": "S-6 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": "Saison régulière",
+        "raw": "Saison régulière : Du 3e samedi de juin au 31 décembre Limites : S-6 et C-2"
+      },
+      {
+        "period": "Du 1er janvier au 10 mai",
+        "species": "Achigan à petite bouche",
+        "limit": "S-0 et C-0",
+        "length": null,
+        "gear": null,
+        "notes": "Saison précoce de prise et remise à l’eau",
+        "raw": "Saison précoce de prise et remise à l’eau : Du 1er janvier au 10 mai Limites : S-0 et C-0"
+      },
+      {
+        "period": "Du 1er samedi de juillet au 31 décembre",
+        "species": "Achigan à petite bouche",
+        "limit": "S-6 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": "Saison régulière",
+        "raw": "Saison régulière : Du 1er samedi de juillet au 31 décembre Limites : S-6 et C-2"
+      },
+      {
+        "period": null,
+        "species": "Achigan",
+        "limit": "Des limites combinées s’appliquent ( S-6 et C-2)",
+        "length": null,
+        "gear": null,
+        "notes": "Des limites combinées s’appliquent ( S-6 et C-2)",
+        "raw": "Des limites combinées s’appliquent ( S-6 et C-2)"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Truite brune",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Barbue de rivière",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Marigane",
+        "limit": "S-30 et C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-30 et C-10"
+      },
+      {
+        "period": "Fermée toute l’année",
+        "species": "Esturgeon de lac (esturgeon jaune)",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Fermée toute l’année"
+      },
+      {
+        "period": "Du 1er janvier au 30 septembre et du 1er décembre au 31 décembre",
+        "species": "Touladi",
+        "limit": "S-3 et C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 30 septembre et du 1er décembre au 31 décembre Limites : S-3 et C-1"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Grand corégone",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Du 3e samedi de juin au 15 décembre",
+        "species": "Maskinongé",
+        "limit": "S-1; doit mesurer plus de 137 centimètres, et C-0",
+        "length": "doit mesurer plus de 137 centimètres",
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 3e samedi de juin au 15 décembre Limites : S-1; doit mesurer plus de 137 centimètres, et C-0"
+      },
+      {
+        "period": "Du 1er janvier au 31 mars et du 1er samedi de mai au 31 décembre",
+        "species": "Grand brochet",
+        "limit": "S-6 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 31 mars et du 1er samedi de mai au 31 décembre Limites : S-6 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Saumon du Pacifique",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Truite arc-en-ciel",
+        "limit": "S-2 et C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-2 et C-1"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Crapet",
+        "limit": "S-100 et C-50",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-100 et C-50"
+      },
+      {
+        "period": "Du 1er janvier au 1mars et du 1er samedi de mai au 31 décembre",
+        "species": "Doré jaune et doré noir (toute combinaison)",
+        "limit": "S-4 et C-2; un seul dépassant 63 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 1mars et du 1er samedi de mai au 31 décembre Limites : S-4 et C-2; un seul dépassant 63 centimètres"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Perchaude",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-50 et C-25"
+      }
+    ]
+  },
+  "species_exceptions": {
+    "en": [
+      {
+        "period": null,
+        "species": "Walleye",
+        "limit": "S-4 and C-2; no size limit",
+        "length": null,
+        "gear": null,
+        "notes": "St. Lawrence River, waters east of a line drawn between Bishops Point and the easternmost tips of Howe and Wolfe Islands, and including Lake St. Francis",
+        "raw": "Limits : S-4 and C-2; no size limit",
+        "waters": [
+          "St. Lawrence River, waters east of a line drawn between Bishops Point and the easternmost tips of Howe and Wolfe Islands, and including Lake St. Francis"
+        ]
+      },
+      {
+        "period": "open from January 1 to March 31 and second Saturday in May to December 31",
+        "species": "Yellow perch",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Lake St. Francis and the waters of the St. Lawrence River lying east of Robert H. Saunders Generating Station",
+        "raw": "Season : open from January 1 to March 31 and second Saturday in May to December 31",
+        "waters": [
+          "Lake St. Francis and the waters of the St. Lawrence River lying east of Robert H. Saunders Generating Station"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Doré jaune",
+        "limit": "S-4 et C-2; aucune limite de taille",
+        "length": null,
+        "gear": null,
+        "notes": "Fleuve Saint-Laurent, les eaux à l’est d’une ligne tirée entre la pointe Bishops et les extrémités les plus à l’est des îles Howe et Wolfe, y compris le lac St-François",
+        "raw": "Limites : S-4 et C-2; aucune limite de taille",
+        "waters": [
+          "Fleuve Saint-Laurent, les eaux à l’est d’une ligne tirée entre la pointe Bishops et les extrémités les plus à l’est des îles Howe et Wolfe, y compris le lac St-François"
+        ]
+      },
+      {
+        "period": "Ouverte du 1er janvier au 31 mars et du 2e samedi de mai au 31 décembre",
+        "species": "Perchaude",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Lac St-François et les eaux du fleuve Saint-Laurent qui s’étendent à l’est de la centrale Robert H. Saunders",
+        "raw": "Saison : Ouverte du 1er janvier au 31 mars et du 2e samedi de mai au 31 décembre",
+        "waters": [
+          "Lac St-François et les eaux du fleuve Saint-Laurent qui s’étendent à l’est de la centrale Robert H. Saunders"
+        ]
+      }
+    ]
+  },
+  "waterbody_exceptions": {
+    "en": [
+      {
+        "name": "All waters of FMZ 20",
+        "location": null,
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Two lines may be used when angling from a boat in open water, excluding:",
+            "raw": "Two lines may be used when angling from a boat in open water, excluding:"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Hamilton Harbour",
+            "raw": "Hamilton Harbour"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Toronto Harbour",
+            "raw": "Toronto Harbour"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Frenchman’s Bay",
+            "raw": "Frenchman’s Bay"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Murray Canal",
+            "raw": "Murray Canal"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Presqu’ile Bay",
+            "raw": "Presqu’ile Bay"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Weller’s Bay",
+            "raw": "Weller’s Bay"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "East Lake",
+            "raw": "East Lake"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "West Lake",
+            "raw": "West Lake"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Bay of Quinte (the waters lying west of the Glenora Ferry)",
+            "raw": "Bay of Quinte (the waters lying west of the Glenora Ferry)"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "St. Lawrence River (waters lying east of a line drawn between Bishops Point and the easternmost tips of Howe and Wolfe islands)",
+            "raw": "St. Lawrence River (waters lying east of a line drawn between Bishops Point and the easternmost tips of Howe and Wolfe islands)"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "all other tributaries to Lake Ontario",
+            "raw": "all other tributaries to Lake Ontario"
+          }
+        ],
+        "raw": "All waters of FMZ 20 Two lines may be used when angling from a boat in open water, excluding: | Hamilton Harbour | Toronto Harbour | Frenchman’s Bay | Murray Canal | Presqu’ile Bay | Weller’s Bay | East Lake | West Lake | Bay of Quinte (the waters lying west of the Glenora Ferry) | St. Lawrence River (waters lying east of a line drawn between Bishops Point and the easternmost tips of Howe and Wolfe islands) | all other tributaries to Lake Ontario"
+      }
+    ],
+    "fr": [
+      {
+        "name": "Toutes les eaux de la ZGP 20",
+        "location": null,
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est permis d’utiliser deux lignes quand on pêche à la traîne à bord d’un bateau en eau libre, sauf les eaux suivantes :",
+            "raw": "Il est permis d’utiliser deux lignes quand on pêche à la traîne à bord d’un bateau en eau libre, sauf les eaux suivantes :"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Havre de Hamilton",
+            "raw": "Havre de Hamilton"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Havre de Toronto",
+            "raw": "Havre de Toronto"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Baie Frenchman’s",
+            "raw": "Baie Frenchman’s"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Canal Murray",
+            "raw": "Canal Murray"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Baie Presqu’île",
+            "raw": "Baie Presqu’île"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Baie Weller’s",
+            "raw": "Baie Weller’s"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Lac Est",
+            "raw": "Lac Est"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Lac Ouest",
+            "raw": "Lac Ouest"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Baie de Quinte (les eaux qui s’étendent à l’ouest du traversier Glenora)",
+            "raw": "Baie de Quinte (les eaux qui s’étendent à l’ouest du traversier Glenora)"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Fleuve Saint-Laurent (les eaux à l’est d’une ligne tracée entre la pointe Bishops et les extrémités est des îles Howe et Wolfe)",
+            "raw": "Fleuve Saint-Laurent (les eaux à l’est d’une ligne tracée entre la pointe Bishops et les extrémités est des îles Howe et Wolfe)"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Tous les autres tributaires du lac Ontario",
+            "raw": "Tous les autres tributaires du lac Ontario"
+          }
+        ],
+        "raw": "Toutes les eaux de la ZGP 20 Il est permis d’utiliser deux lignes quand on pêche à la traîne à bord d’un bateau en eau libre, sauf les eaux suivantes : | Havre de Hamilton | Havre de Toronto | Baie Frenchman’s | Canal Murray | Baie Presqu’île | Baie Weller’s | Lac Est | Lac Ouest | Baie de Quinte (les eaux qui s’étendent à l’ouest du traversier Glenora) | Fleuve Saint-Laurent (les eaux à l’est d’une ligne tracée entre la pointe Bishops et les extrémités est des îles Howe et Wolfe) | Tous les autres tributaires du lac Ontario"
+      }
+    ]
+  },
+  "bait_restrictions": {
+    "en": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "FMZ 20, with the exception of the County of Prince Edward, is part of the Great Lakes. Baitfish and leeches that are both dead and preserved can be transported into and out of BMZs and the Great Lakes.",
+        "raw": "FMZ 20, with the exception of the County of Prince Edward, is part of the Great Lakes. Baitfish and leeches that are both dead and preserved can be transported into and out of BMZs and the Great Lakes."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Baitfish and leeches that are not both dead and preserved may be transported out of: Refer to bait for more details.",
+        "raw": "Baitfish and leeches that are not both dead and preserved may be transported out of: Refer to bait for more details."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "an adjacent Bait Management Zone and used in the Great Lakes",
+        "raw": "an adjacent Bait Management Zone and used in the Great Lakes"
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "La ZGP 20, sauf le comté de Prince Edward, fait partie des Grands Lacs. Les poissons d’appât et les sangsues qui sont morts et conservés peuvent être apportés et sortis des ZGA et des Grands Lacs.",
+        "raw": "La ZGP 20, sauf le comté de Prince Edward, fait partie des Grands Lacs. Les poissons d’appât et les sangsues qui sont morts et conservés peuvent être apportés et sortis des ZGA et des Grands Lacs."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Les poissons d’appât et les sangsues qui ne sont pas morts et conservés peuvent être sortis : Voir la section sur les appâts pour plus de renseignements.",
+        "raw": "Les poissons d’appât et les sangsues qui ne sont pas morts et conservés peuvent être sortis : Voir la section sur les appâts pour plus de renseignements."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "d’une zone de gestion des appâts adjacente et utilisés dans les Grands Lacs",
+        "raw": "d’une zone de gestion des appâts adjacente et utilisés dans les Grands Lacs"
+      }
+    ]
+  },
+  "fish_sanctuaries": {
+    "en": [
+      {
+        "period": "No fishing - April 1 to Friday before first Saturday in May",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - April 1 to Friday before first Saturday in May Consecon Creek - Hillier and Ameliasburgh Townships, from the dam in the Village of Consecon to Weller’s Bay | Consecon Creek - Hillier Township, from Lot 86 in Concession 5 to the mouth of the creek | Moira River and Bay of Quinte - from the Lott Dam downstream, including Belleville Harbour in the Bay of Quinte | Napanee River - Town of Napanee, from the waterfalls at Springside Park downstream to the bridge at Centre Street | Trent River - City of Quinte West, between the first dam north of Lake Ontario downstream to the south side of the Dundas Street bridge and the Trent Canal from Lock Number 1 downstream to where it joins the Trent River",
+        "waters": [
+          "Consecon Creek - Hillier and Ameliasburgh Townships, from the dam in the Village of Consecon to Weller’s Bay",
+          "Consecon Creek - Hillier Township, from Lot 86 in Concession 5 to the mouth of the creek",
+          "Moira River and Bay of Quinte - from the Lott Dam downstream, including Belleville Harbour in the Bay of Quinte",
+          "Napanee River - Town of Napanee, from the waterfalls at Springside Park downstream to the bridge at Centre Street",
+          "Trent River - City of Quinte West, between the first dam north of Lake Ontario downstream to the south side of the Dundas Street bridge and the Trent Canal from Lock Number 1 downstream to where it joins the Trent River"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "Pêche interdite - Du 1er avril au vendredi précédant le 1er samedi de mai",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er avril au vendredi précédant le 1er samedi de mai Ruisseau Consecon - cantons de Hillier et Ameliasburgh, depuis le barrage dans le village de Consecon jusqu’à la baie Wellers | Ruisseau Consecon - canton de Hillier, depuis le lot 86 dans la concession 5 jusqu’à l’embouchure du ruisseau | Rivière Moira et baie de Quinte - depuis le barrage Lott en aval, y compris le havre Belleville dans la baie de Quinte | Rivière Napanee - ville de Napanee, depuis les chutes du parc Springside en aval jusqu’au pont de la rue Centre | Rivière Trent - ville de Quinte West, entre le premier barrage au nord du lac Ontario en aval jusqu’au côté sud du pont de la rue Dundas, et le canal Trent de l’écluse 1 en aval jusqu’à la jonction avec la rivière Trent",
+        "waters": [
+          "Ruisseau Consecon - cantons de Hillier et Ameliasburgh, depuis le barrage dans le village de Consecon jusqu’à la baie Wellers",
+          "Ruisseau Consecon - canton de Hillier, depuis le lot 86 dans la concession 5 jusqu’à l’embouchure du ruisseau",
+          "Rivière Moira et baie de Quinte - depuis le barrage Lott en aval, y compris le havre Belleville dans la baie de Quinte",
+          "Rivière Napanee - ville de Napanee, depuis les chutes du parc Springside en aval jusqu’au pont de la rue Centre",
+          "Rivière Trent - ville de Quinte West, entre le premier barrage au nord du lac Ontario en aval jusqu’au côté sud du pont de la rue Dundas, et le canal Trent de l’écluse 1 en aval jusqu’à la jonction avec la rivière Trent"
+        ]
+      }
+    ]
+  }
+}
