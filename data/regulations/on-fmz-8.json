@@ -1,0 +1,1640 @@
+{
+  "zone_id": 8,
+  "zone_key": "ON-8",
+  "activity": "fishing",
+  "jurisdiction": "ON",
+  "fmz": 8,
+  "licence_year": 2026,
+  "authority": "Ontario Ministry of Natural Resources (MNR); Ontario Fishing Regulations Summary 2026 (not the official law)",
+  "source": {
+    "en": "https://www.ontario.ca/document/ontario-fishing-regulations-summary/fisheries-management-zone-8",
+    "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-peche/zone-de-gestion-des-peches-8",
+    "pdf_en": "https://ontario.ca/files/2025-12/mnr-2026-fishing-regulations-summary-en-2025-12-08.pdf",
+    "fish_on_line": "https://www.gisapplication.lrc.gov.on.ca/FishONLine/Index.html?site=FishONLine&viewer=FishONLine&locale=en-US&FMZ=8",
+    "fetched_at": "2026-09-04",
+    "html_updated": "2026-08-04",
+    "note": "Rule text reproduced verbatim from the Ontario Fishing Regulations Summary HTML (not the PDF). The Summary is not the official law. Always verify with the MNR and Fish ON-Line before fishing. Crown copyright."
+  },
+  "coverage": {
+    "licence_year": 2026,
+    "skipped_fish_on_line_only": false,
+    "zone_wide_listed": 12,
+    "zone_wide_harvested": 12,
+    "species_exceptions_listed": 4,
+    "species_exceptions_harvested": 4,
+    "waterbody_exceptions_listed": 10,
+    "waterbody_exceptions_harvested": 10,
+    "fish_sanctuaries_listed": 9,
+    "fish_sanctuaries_harvested": 9,
+    "bait_restrictions_listed": 1,
+    "bait_restrictions_harvested": 1,
+    "complete": true,
+    "note": "Zone-wide seasons/limits and listed HTML exceptions/sanctuaries for this FMZ are included. The Ontario Fishing Regulations Summary is not the law; verify with Fish ON-Line. This is not complete Ontario."
+  },
+  "title": {
+    "en": "Fisheries Management Zone 8 — Ontario FMZ 8",
+    "fr": "Zone de gestion des pêches 8 — Ontario ZGP 8"
+  },
+  "notices": {
+    "en": [
+      "Refer to general fishing regulations for more information on how to use this summary.",
+      "The following waterbodies, or portions of them, have different regulations that are listed in the waterbody exceptions :",
+      "Blanche River",
+      "Commando Lake",
+      "Edgar Lake",
+      "Groundhog River",
+      "Labyrinth Lake",
+      "Little Abitibi River",
+      "The following species are not present in this Zone and are closed to fishing all year:",
+      "Atlantic salmon",
+      "brown trout",
+      "channel catfish",
+      "crappie",
+      "Muskellunge",
+      "Pacific salmon",
+      "FMZ 8 is part of the Northeast Bait Management Zone ( BMZ ). Live or dead baitfish or leeches may not be transported into or out of a BMZ . These rules do not apply to baitfish and leeches which are both dead and preserved. Refer to bait for more details."
+    ],
+    "fr": [
+      "Voir les Règlements généraux concernant la pêche pour plus de renseignements sur l’utilisation de ce Résumé.",
+      "Les plans d’eau suivants, ou des parties de ceux-ci, ont des règlements différents qui sont mentionnés dans les exceptions visant des plans d’eau particuliers :",
+      "rivière Blanche",
+      "lac Commando",
+      "lac Edgar",
+      "rivière Groundhog",
+      "lac Labyrinth",
+      "rivière Little Abitibi",
+      "On ne trouve pas les espèces suivantes dans cette zone et leur pêche est donc interdite toute l’année :",
+      "saumon atlantique",
+      "truite brune",
+      "barbue de rivière",
+      "marigane",
+      "maskinongé",
+      "saumon du Pacifique",
+      "La ZGP 8 fait partie de la zone de gestion des appâts ( ZGA ) du Nord-Est. On ne peut pas apporter ou sortir des poissons d’appât et des sangsues, morts ou vivants, d’une ZGA . Ces règles ne s’appliquent pas aux poissons d’appât et sangsues qui sont morts et conservés. Voir la section sur les appâts pour plus de renseignements."
+    ]
+  },
+  "general": {
+    "en": [
+      {
+        "period": null,
+        "species": "Aggregate limits for trout and salmon (including splake)",
+        "limit": "S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limits : S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined"
+      },
+      {
+        "period": "January 1 to September 15",
+        "species": "Brook trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to September 15 Limits : S-5 and C-2"
+      },
+      {
+        "period": "January 1 to April 30 and July 1 to December 31",
+        "species": "Lake sturgeon",
+        "limit": "S-0 and C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to April 30 and July 1 to December 31 Limits : S-0 and C-0"
+      },
+      {
+        "period": "February 15 to March 15 and third Saturday in May to September 30",
+        "species": "Lake trout",
+        "limit": "S-3 and C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : February 15 to March 15 and third Saturday in May to September 30 Limits : S-3 and C-1"
+      },
+      {
+        "period": "open all year",
+        "species": "Lake whitefish",
+        "limit": "S-25 and C-12",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-25 and C-12"
+      },
+      {
+        "period": "open all year",
+        "species": "Largemouth and smallmouth bass combined",
+        "limit": "S-6 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-6 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Northern pike",
+        "limit": "S-6; not more than 2 greater than 61 centimetres, of which not more than 1 greater than 86 centimetres, and C-2; not more than 1 greater than 61 centimetres, none greater than 86 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-6; not more than 2 greater than 61 centimetres, of which not more than 1 greater than 86 centimetres, and C-2; not more than 1 greater than 61 centimetres, none greater than 86 centimetres"
+      },
+      {
+        "period": "open all year",
+        "species": "Rainbow trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Splake",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Sunfish",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50 and C-25"
+      },
+      {
+        "period": "January 1 to April 14 and third Saturday in May to December 31",
+        "species": "Walleye and sauger combined",
+        "limit": "S-4 and C-2; not more than 1 greater than 46 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to April 14 and third Saturday in May to December 31 Limits : S-4 and C-2; not more than 1 greater than 46 centimetres"
+      },
+      {
+        "period": "open all year",
+        "species": "Yellow perch",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50 and C-25"
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Limites combinées pour la truite et le saumon (y compris le touladi et l’omble de fontaine)",
+        "limit": "S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées.",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limites : S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées."
+      },
+      {
+        "period": "Du 1er janvier au 15 septembre",
+        "species": "Omble de fontaine",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 15 septembre Limites : S-5 et C-2"
+      },
+      {
+        "period": "Du 1er janvier au 30 avril et du 1er juillet au 31 décembre",
+        "species": "Esturgeon de lac (esturgeon jaune)",
+        "limit": "S-0 et C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 30 avril et du 1er juillet au 31 décembre Limites : S-0 et C-0"
+      },
+      {
+        "period": "Du 15 février au 15 mars et du 3e samedi de mai au 30 septembre",
+        "species": "Touladi",
+        "limit": "S-3 et C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 15 février au 15 mars et du 3e samedi de mai au 30 septembre Limites : S-3 et C-1"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Grand corégone",
+        "limit": "S-25 et C-12",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-25 et C-12"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+        "limit": "S-6 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-6 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Grand brochet",
+        "limit": "S-6; pas plus de deux dépassant 61 centimètres, dont 1 seul dépassant 86 centimètres, et C-2; 1 seul dépassant 61 centimètres, aucun dépassant 86 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-6; pas plus de deux dépassant 61 centimètres, dont 1 seul dépassant 86 centimètres, et C-2; 1 seul dépassant 61 centimètres, aucun dépassant 86 centimètres"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Truite arc-en-ciel",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Truite moulac",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Crapet",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-50 et C-25"
+      },
+      {
+        "period": "Du 1er janvier au 14 avril et du 3e samedi de mai au 31 décembre",
+        "species": "Doré jaune et doré noir (toute combinaison)",
+        "limit": "S-4 et C-2; 1 seul dépassant 46 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 14 avril et du 3e samedi de mai au 31 décembre Limites : S-4 et C-2; 1 seul dépassant 46 centimètres"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Perchaude",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-50 et C-25"
+      }
+    ]
+  },
+  "species_exceptions": {
+    "en": [
+      {
+        "period": "open all year View these waterbodies and additional information on Fish ON-Line .",
+        "species": "Brook trout",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Additional fishing opportunities · Alvin Lake (49°07′22″ N , 81°38′38″ W ) · Andrew Lake (48°26′25″ N , 80°28′57″ W ) · Armitage Lake (48°23′08″ N , 79°54′19″ W ) · Arnold Lake 6 (48°13′31″ N , 79°52′00″ W ) · Arrow Lake (48°23′23″ N , 80°46′45″ W ) · Babs Lake (47°40′38″ N , 80°42′51″ W ) · Bea Lake (48°20′44″ N , 79°51′57″ W ) · Bear Lake (Duff Lake) (49°12′23″ N , 81°17′15″ W ) · Bow Lake (48°23′14″ N , 80°46′58″ W ) · Briere Lake 30 (McEvay Lake 30) (48°19′04″ N , 80°35′42″ W ) · Brinnie Lake (48°25′14″ N , 79°58′13″ W ) · Burt Lake 4 (48°03′37″ N , 80°21′26″ W ) · Burt Lake 5 (48°04′15″ N , 80°21′06″ W ) · Camp 22 Lake (47°36′33″ N , 83°06′20″ W ) · Canyon Lake (47°54′54″ N , 80°43′07″ W ) · Carlyle Lake (48°32′47″ N , 79°49′50″ W ) · Charles Lake (47°52′03″ N , 80°41′11″ W ) · Chown Lake 15 (47°42′33″ N , 80°35′23″ W ) · Collacutt Lake (47°42′03″ N , 79°59′56″ W ) · Collins Lake (48°30′46″ N , 79°58′46″ W ) · Cootie Lake (48°16′37″ N , 80°34′28″ W ) · Deep Lake (48°31′21″ N , 80°50′16″ W ) · Devil’s Punch Bowl Lake (48°45′44″ N , 80°47′54″ W ) · Dewhirst Lake (48°27′43″ N , 80°00′33″ W ) · Docks Lake (47°52′29″ N , 81°54′49″ W ) · Dorothy Lake (48°14′03″ N , 80°00′28″ W ) · Downey Lake (47°52′39″ N , 83°21′15″ W ) · Driscoll Lake (48°23′06″ N , 79°53′55″ W ) · Else Lake (49°01′02″ N , 81°09′50″ W ) · Elspeth Lake (48°17′30″ N , 80°42′20″ W ) · New Emerald Lake (48°52′22″ N , 81°07′55″ W ) · Eno Lake (49°06′36″ N , 80°27′41″ W ) · Fade Lake (48°33′46″ N , 80°08′53″ W ) · Ferguson Lake (48°15′23″ N , 80°02′36″ W ) · Fisher Lake (48°35′35″ N , 80°53′03″ W ) · Flyline Lake (47°36′11″ N , 83°04′20″ W ) · Gale Lake (48°09′54″ N , 80°14′45″ W ) · Garrison Lake (48°28′59″ N , 80°00′15″ W ) · Gary Lake (47°35′26″ N , 81°25′44″ W ) · George Lake (47°31′15″ N , 81°51′38″ W ) · Gerry Lake (47°58′18″ N , 80°43′00″ W ) · Giunta Lake (48°22′41″ N , 79°53′48″ W ) · Green Lake (48°34′25″ N , 80°52′22″ W ) · Greenock Lake (48°18′33″ N , 80°44′03″ W ) · Grey Lake (48°17′31″ N , 80°34′46″ W ) · Harvey Lake (47°36′19″ N , 83°04′55″ W ) · Heart Lake (48°34′39″ N , 80°53′03″ W ) · Hewitt Lake (48°30′47″ N , 80°01′43″ W ) · Holster Lake (48°16′07″ N , 80°44′25″ W ) · Hope Lake (48°22′46″ N , 81°26′18″ W ) · Hornet Lake 42 (47°51′49″ N , 81°54′20″ W ) · Hutch Lake (48°19′15″ N , 80°43′16″ W ) · Imperial Lake (48°29′28″ N , 79°48′30″ W ) · Island Lake (48°47′44″ N , 80°33′26″ W ) · James Lake (47°52′40″ N , 80°41′08″ W ) · Jessup Lake (48°16′04″ N , 80°34′18″ W ) · John Lake (47°52′50″ N , 80°43′35″ W ) · June Lake (48°29′13″ N , 80°50′09″ W ) · Kidney Lake (49°14′34″ N , 81°18′38″ W ) · Knothole Lake (47°42′43″ N , 81°27′40″ W ) · La Violette Lake (48°33′46″ N , 80°51′41″ W ) · Lake 1 (48°07′41″ N , 82°31′35″ W ) - Ivanhoe Township · Lake 2 (A Lake) (47°40′28″ N , 81°51′32″ W ) - Somme Township · Lake 3 (Tahill Lake) (47°40′47″ N , 81°51′41″ W ) - Somme Township · Lake 4 (48°03′32″ N , 82°31′33″ W ) - Silk Township · Lake 5 (49°29′43″ N , 82°19′11″ W ) - Teetzel Township · Lake 9 (48°08′38″ N , 82°31′18″ W ) - Ivanhoe Township · Lake 9 (47°51′21″ N , 81°48′22″ W ) - Middleboro Township · Lake 9 (49°30′50″ N , 82°19′49″ W ) - Teetzel Township · Lake 10 (49°31′25″ N , 82°19′45″ W ) - Teetzel Township · Lake 11 (49°35′06″ N , 82°19′11″ W ) - Pearce Township · Lake 15 (47°38′30″ N , 83°08′25″ W ) - Nimitz Township · Lake 36B (47°41′11″ N , 81°52′07″ W ) - Somme Township · Lake 42 (48°05′56″ N , 82°31′47″ W ) - Ivanhoe Township · Lake 50 (48°04′12″ N , 82°31′24″ W ) - Ivanhoe Township · Lake 52 (48°03′43″ N , 82°31′33″ W ) - Ivanhoe Township · Lake 53 (48°03′42″ N , 82°31′23″ W ) - Ivanhoe Township · Lake 56 (48°01′27″ N , 81°17′13″ W ) - English Township · Lake 64 (49°49′14″ N , 82°19′49″ W ) - Guilfoyle Township · Lake 68 (49°49′49″ N , 82°19′60″ W ) - Guilfoyle Township · Lake 222412 (48°13′17″ N , 82°02′53″ W ) - Reeves Township · Leatherleaf Lake (47°40′30″ N , 83°11′31″ W ) · Little Club Lake (48°27′37″ N , 80°48′49″ W ) · Little Elephant Head 23 Lake (47°34′43″ N , 81°23′12″ W ) · Little Gibson Lake (48°27′07″ N , 80°49′01″ W ) · Mall Lake (48°20′30″ N , 79°53′00″ W ) · Matti Lake (47°48′17″ N , 83°08′41″ W ) · Maurice Lake (47°52′12″ N , 80°41′26″ W ) · McCulloch Lake (48°30′59″ N , 80°05′02″ W ) · McEvay Lake 18 (48°17′30″ N , 80°39′13″ W ) · Mearow Lake (47°45′42″ N , 80°06′13″ W ) · Midway Lake (48°10′01″ N , 82°29′04″ W ) · Milligan Lake (48°37′49″ N , 80°07′36″ W ) · Moon Lake (47°40′18″ N , 81°03′39″ W ) · Mountain Lake (47°49′37″ N , 80°09′60″ W ) · Neannin Lake (47°47′04″ N , 81°22′30″ W ) · Neezin Lake (47°49′08″ N , 81°21′09″ W ) · Nelson Lake (48°14′16″ N , 79°52′31″ W ) · Packsack Lake (48°50′21″ N , 80°17′13″ W ) · Pall Lake (48°20′56″ N , 79°53′03″ W ) · Partridge Lake (48°41′50″ N , 81°00′58″ W ) · Pearl Lake (47°52′02″ N , 81°53′01″ W ) · Pothole 6 (48°28′33″ N , 79°59′58″ W ) · Potvin Lake (48°17′51″ N , 80°35′09″ W ) · Price Lake (49°07′23″ N , 81°38′29″ W ) · Ramey Lake (48°18′02″ N , 79°53′13″ W ) · Ray Lake (47°29′05″ N , 81°51′45″ W ) · Regis Lake (47°45′36″ N , 83°14′30″ W ) · Roger Lake (Chester Lake 34) (47°31′02″ N , 81°51′38″ W ) · Round Lake (48°28′58″ N , 80°50′10″ W ) · Rozon Lake (48°15′47″ N , 79°52′48″ W ) · Scotties Lake 48 (47°40′14″ N , 81°12′47″ W ) · Seahorse Lake (48°18′45″ N , 79°52′49″ W ) · Sigs Lake (47°41′37″ N , 80°41′20″ W ) · Sootheran Lake (47°46′34″ N , 83°20′59″ W ) · South Triple Lake (48°26′18″ N , 80°48′14″ W ) · Strong Lake (47°59′24″ N , 80°42′18″ W ) · Sullivan Lake (48°16′40″ N , 79°42′22″ W ) · Susanne Lake (47°36′04″ N , 81°51′46″ W ) · Tailleurs Lake (49°03′32″ N , 81°12′29″ W ) · Taylor Lake 43 (47°51′59″ N , 81°54′21″ W ) · Thackeray Lake 9 (48°23′45″ N , 79°53′57″ W ) · Thrasher Lake (48°21′32″ N , 79°52′28″ W ) · Tracy Lake (49°16′02″ N , 81°17′48″ W ) · Trotter Lake (47°57′51″ N , 81°56′02″ W ) · Vannier Lake (48°18′13″ N , 79°52′58″ W ) · New Verte Lake (48°53′00.7″ N , 81°07′28″ W ) · Wanatangua Lake (47°37′42″ N , 81°27′23″ W ) · Wee Lake (47°57′12″ N , 81°55′07″ W ) · Whopper Lake (47°49′30″ N , 81°52′40″ W ) · Wine Lake (47°49′08″ N , 81°52′23″ W ) · Wiskin Lake (49°11′57″ N , 81°17′28″ W ) · Wolverton Lake (48°16′32″ N , 80°43′59″ W ) · Wright’s Lake (47°49′60″ N , 81°53′35″ W ) · Wuskwi Lake (47°50′34″ N , 83°13′58″ W ) · Yarrow Lake 10 (47°53′40″ N , 80°41′33″ W ) · Yarrow Lake 19 (47°54′09″ N , 80°43′51″ W )",
+        "raw": "Additional fishing opportunities Season : open all year View these waterbodies and additional information on Fish ON-Line .",
+        "waters": [
+          "Alvin Lake (49°07′22″ N , 81°38′38″ W )",
+          "Andrew Lake (48°26′25″ N , 80°28′57″ W )",
+          "Armitage Lake (48°23′08″ N , 79°54′19″ W )",
+          "Arnold Lake 6 (48°13′31″ N , 79°52′00″ W )",
+          "Arrow Lake (48°23′23″ N , 80°46′45″ W )",
+          "Babs Lake (47°40′38″ N , 80°42′51″ W )",
+          "Bea Lake (48°20′44″ N , 79°51′57″ W )",
+          "Bear Lake (Duff Lake) (49°12′23″ N , 81°17′15″ W )",
+          "Bow Lake (48°23′14″ N , 80°46′58″ W )",
+          "Briere Lake 30 (McEvay Lake 30) (48°19′04″ N , 80°35′42″ W )",
+          "Brinnie Lake (48°25′14″ N , 79°58′13″ W )",
+          "Burt Lake 4 (48°03′37″ N , 80°21′26″ W )",
+          "Burt Lake 5 (48°04′15″ N , 80°21′06″ W )",
+          "Camp 22 Lake (47°36′33″ N , 83°06′20″ W )",
+          "Canyon Lake (47°54′54″ N , 80°43′07″ W )",
+          "Carlyle Lake (48°32′47″ N , 79°49′50″ W )",
+          "Charles Lake (47°52′03″ N , 80°41′11″ W )",
+          "Chown Lake 15 (47°42′33″ N , 80°35′23″ W )",
+          "Collacutt Lake (47°42′03″ N , 79°59′56″ W )",
+          "Collins Lake (48°30′46″ N , 79°58′46″ W )",
+          "Cootie Lake (48°16′37″ N , 80°34′28″ W )",
+          "Deep Lake (48°31′21″ N , 80°50′16″ W )",
+          "Devil’s Punch Bowl Lake (48°45′44″ N , 80°47′54″ W )",
+          "Dewhirst Lake (48°27′43″ N , 80°00′33″ W )",
+          "Docks Lake (47°52′29″ N , 81°54′49″ W )",
+          "Dorothy Lake (48°14′03″ N , 80°00′28″ W )",
+          "Downey Lake (47°52′39″ N , 83°21′15″ W )",
+          "Driscoll Lake (48°23′06″ N , 79°53′55″ W )",
+          "Else Lake (49°01′02″ N , 81°09′50″ W )",
+          "Elspeth Lake (48°17′30″ N , 80°42′20″ W )",
+          "New Emerald Lake (48°52′22″ N , 81°07′55″ W )",
+          "Eno Lake (49°06′36″ N , 80°27′41″ W )",
+          "Fade Lake (48°33′46″ N , 80°08′53″ W )",
+          "Ferguson Lake (48°15′23″ N , 80°02′36″ W )",
+          "Fisher Lake (48°35′35″ N , 80°53′03″ W )",
+          "Flyline Lake (47°36′11″ N , 83°04′20″ W )",
+          "Gale Lake (48°09′54″ N , 80°14′45″ W )",
+          "Garrison Lake (48°28′59″ N , 80°00′15″ W )",
+          "Gary Lake (47°35′26″ N , 81°25′44″ W )",
+          "George Lake (47°31′15″ N , 81°51′38″ W )",
+          "Gerry Lake (47°58′18″ N , 80°43′00″ W )",
+          "Giunta Lake (48°22′41″ N , 79°53′48″ W )",
+          "Green Lake (48°34′25″ N , 80°52′22″ W )",
+          "Greenock Lake (48°18′33″ N , 80°44′03″ W )",
+          "Grey Lake (48°17′31″ N , 80°34′46″ W )",
+          "Harvey Lake (47°36′19″ N , 83°04′55″ W )",
+          "Heart Lake (48°34′39″ N , 80°53′03″ W )",
+          "Hewitt Lake (48°30′47″ N , 80°01′43″ W )",
+          "Holster Lake (48°16′07″ N , 80°44′25″ W )",
+          "Hope Lake (48°22′46″ N , 81°26′18″ W )",
+          "Hornet Lake 42 (47°51′49″ N , 81°54′20″ W )",
+          "Hutch Lake (48°19′15″ N , 80°43′16″ W )",
+          "Imperial Lake (48°29′28″ N , 79°48′30″ W )",
+          "Island Lake (48°47′44″ N , 80°33′26″ W )",
+          "James Lake (47°52′40″ N , 80°41′08″ W )",
+          "Jessup Lake (48°16′04″ N , 80°34′18″ W )",
+          "John Lake (47°52′50″ N , 80°43′35″ W )",
+          "June Lake (48°29′13″ N , 80°50′09″ W )",
+          "Kidney Lake (49°14′34″ N , 81°18′38″ W )",
+          "Knothole Lake (47°42′43″ N , 81°27′40″ W )",
+          "La Violette Lake (48°33′46″ N , 80°51′41″ W )",
+          "Lake 1 (48°07′41″ N , 82°31′35″ W ) - Ivanhoe Township",
+          "Lake 2 (A Lake) (47°40′28″ N , 81°51′32″ W ) - Somme Township",
+          "Lake 3 (Tahill Lake) (47°40′47″ N , 81°51′41″ W ) - Somme Township",
+          "Lake 4 (48°03′32″ N , 82°31′33″ W ) - Silk Township",
+          "Lake 5 (49°29′43″ N , 82°19′11″ W ) - Teetzel Township",
+          "Lake 9 (48°08′38″ N , 82°31′18″ W ) - Ivanhoe Township",
+          "Lake 9 (47°51′21″ N , 81°48′22″ W ) - Middleboro Township",
+          "Lake 9 (49°30′50″ N , 82°19′49″ W ) - Teetzel Township",
+          "Lake 10 (49°31′25″ N , 82°19′45″ W ) - Teetzel Township",
+          "Lake 11 (49°35′06″ N , 82°19′11″ W ) - Pearce Township",
+          "Lake 15 (47°38′30″ N , 83°08′25″ W ) - Nimitz Township",
+          "Lake 36B (47°41′11″ N , 81°52′07″ W ) - Somme Township",
+          "Lake 42 (48°05′56″ N , 82°31′47″ W ) - Ivanhoe Township",
+          "Lake 50 (48°04′12″ N , 82°31′24″ W ) - Ivanhoe Township",
+          "Lake 52 (48°03′43″ N , 82°31′33″ W ) - Ivanhoe Township",
+          "Lake 53 (48°03′42″ N , 82°31′23″ W ) - Ivanhoe Township",
+          "Lake 56 (48°01′27″ N , 81°17′13″ W ) - English Township",
+          "Lake 64 (49°49′14″ N , 82°19′49″ W ) - Guilfoyle Township",
+          "Lake 68 (49°49′49″ N , 82°19′60″ W ) - Guilfoyle Township",
+          "Lake 222412 (48°13′17″ N , 82°02′53″ W ) - Reeves Township",
+          "Leatherleaf Lake (47°40′30″ N , 83°11′31″ W )",
+          "Little Club Lake (48°27′37″ N , 80°48′49″ W )",
+          "Little Elephant Head 23 Lake (47°34′43″ N , 81°23′12″ W )",
+          "Little Gibson Lake (48°27′07″ N , 80°49′01″ W )",
+          "Mall Lake (48°20′30″ N , 79°53′00″ W )",
+          "Matti Lake (47°48′17″ N , 83°08′41″ W )",
+          "Maurice Lake (47°52′12″ N , 80°41′26″ W )",
+          "McCulloch Lake (48°30′59″ N , 80°05′02″ W )",
+          "McEvay Lake 18 (48°17′30″ N , 80°39′13″ W )",
+          "Mearow Lake (47°45′42″ N , 80°06′13″ W )",
+          "Midway Lake (48°10′01″ N , 82°29′04″ W )",
+          "Milligan Lake (48°37′49″ N , 80°07′36″ W )",
+          "Moon Lake (47°40′18″ N , 81°03′39″ W )",
+          "Mountain Lake (47°49′37″ N , 80°09′60″ W )",
+          "Neannin Lake (47°47′04″ N , 81°22′30″ W )",
+          "Neezin Lake (47°49′08″ N , 81°21′09″ W )",
+          "Nelson Lake (48°14′16″ N , 79°52′31″ W )",
+          "Packsack Lake (48°50′21″ N , 80°17′13″ W )",
+          "Pall Lake (48°20′56″ N , 79°53′03″ W )",
+          "Partridge Lake (48°41′50″ N , 81°00′58″ W )",
+          "Pearl Lake (47°52′02″ N , 81°53′01″ W )",
+          "Pothole 6 (48°28′33″ N , 79°59′58″ W )",
+          "Potvin Lake (48°17′51″ N , 80°35′09″ W )",
+          "Price Lake (49°07′23″ N , 81°38′29″ W )",
+          "Ramey Lake (48°18′02″ N , 79°53′13″ W )",
+          "Ray Lake (47°29′05″ N , 81°51′45″ W )",
+          "Regis Lake (47°45′36″ N , 83°14′30″ W )",
+          "Roger Lake (Chester Lake 34) (47°31′02″ N , 81°51′38″ W )",
+          "Round Lake (48°28′58″ N , 80°50′10″ W )",
+          "Rozon Lake (48°15′47″ N , 79°52′48″ W )",
+          "Scotties Lake 48 (47°40′14″ N , 81°12′47″ W )",
+          "Seahorse Lake (48°18′45″ N , 79°52′49″ W )",
+          "Sigs Lake (47°41′37″ N , 80°41′20″ W )",
+          "Sootheran Lake (47°46′34″ N , 83°20′59″ W )",
+          "South Triple Lake (48°26′18″ N , 80°48′14″ W )",
+          "Strong Lake (47°59′24″ N , 80°42′18″ W )",
+          "Sullivan Lake (48°16′40″ N , 79°42′22″ W )",
+          "Susanne Lake (47°36′04″ N , 81°51′46″ W )",
+          "Tailleurs Lake (49°03′32″ N , 81°12′29″ W )",
+          "Taylor Lake 43 (47°51′59″ N , 81°54′21″ W )",
+          "Thackeray Lake 9 (48°23′45″ N , 79°53′57″ W )",
+          "Thrasher Lake (48°21′32″ N , 79°52′28″ W )",
+          "Tracy Lake (49°16′02″ N , 81°17′48″ W )",
+          "Trotter Lake (47°57′51″ N , 81°56′02″ W )",
+          "Vannier Lake (48°18′13″ N , 79°52′58″ W )",
+          "New Verte Lake (48°53′00.7″ N , 81°07′28″ W )",
+          "Wanatangua Lake (47°37′42″ N , 81°27′23″ W )",
+          "Wee Lake (47°57′12″ N , 81°55′07″ W )",
+          "Whopper Lake (47°49′30″ N , 81°52′40″ W )",
+          "Wine Lake (47°49′08″ N , 81°52′23″ W )",
+          "Wiskin Lake (49°11′57″ N , 81°17′28″ W )",
+          "Wolverton Lake (48°16′32″ N , 80°43′59″ W )",
+          "Wright’s Lake (47°49′60″ N , 81°53′35″ W )",
+          "Wuskwi Lake (47°50′34″ N , 83°13′58″ W )",
+          "Yarrow Lake 10 (47°53′40″ N , 80°41′33″ W )",
+          "Yarrow Lake 19 (47°54′09″ N , 80°43′51″ W )"
+        ]
+      },
+      {
+        "period": "open all year View these waterbodies and additional information on Fish ON-Line .",
+        "species": "Lake Trout",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Additional fishing opportunities · Blue Lake (49°11′14″ N , 81°16′17″ W ) · Clearwater Lake (48°41′17″ N , 80°59′42″ W ) · Crawfish Lake (48°51′20″ N , 81°07′11″ W ) · Doucette Lake (48°54′51″ N , 80°38′27″ W ) · Duck Lake (49°20’22” N , 82°21’34” W ) · Elmer Lake (47°52′43″ N , 80°50′01″ W ) · Eva Lake (Clear Lake) (49°15′10″ N , 82°13′42″ W ) · Flipper Lake (48°49′42″ N , 80°16′30″ W ) · Jerry Lake (49°31′13″ N , 80°19′27″ W ) · Ketchini Lake (47°51′01″ N , 81°54′26″ W ) · Kwitosse Lake (47°47′06″ N , 81°22′52″ W ) · Laidlaw Lake (48°56′04″ N , 81°47′50″ W ) · Laughton Lake (Lake 15F-47) (49°15′04″ N , 80°43′46″ W ) · Long Lake (47°48′58″ N , 80°08′15″ W ) · Lulu Lake (48°19′44″ N , 79°52′52″ W ) · Macfie Lake (47°44′57″ N , 81°23′47″ W ) · Mary Lake (48°53′31″ N , 80°49′45″ W ) · Miller Lake (47°39′39″ N , 80°43′24″ W ) · Mistango Lake (49°07′23″ N , 80°27′12″ W ) · Nansen Lake (49°14′54″ N , 82°13′35″ W ) · Nellie Lake (48°47′43″ N , 80°47′34″ W ) · Nettie Lake (48°13′19″ N , 79°59′21″ W ) · Paddy Lake (48°52′58″ N , 81°08′15″ W ) · Pallet Lake (48°50′48″ N , 81°07′01″ W ) · Pearce 24 Lake (49°39’19” N , 82°18’22” W ) · Perry Lake (48°31′41″ N , 80°06′22″ W ) · Pine Lake (49°14′34″ N , 79°54′27″ W ) · Rancourt Lake (49°04′48″ N , 81°12′33″ W ) · Return Lake (48°59′22″ N , 81°46′43″ W ) · Secret Lake 38 (47°46′56″ N , 81°41′47″ W ) · Semple Lake (48°00′04″ N , 81°17′60″ W ) · Sibbald Lake (48°48′31″ N , 80°34′31″ W ) · Smith Lake (49°54′31″ N , 81°59′36″ W ) · Star Lake (49°21′24″ N , 81°47′20″ W ) · Starvation Lake (49°24′44″ N , 80°27′19″ W ) · Sunny Lake (48°09′40″ N , 80°31′60″ W ) · Traill Lake (48°51′25″ N , 80°18′23″ W ) · Wendigo Lake (47°52′12″ N , 79°41′57″ W ) · Zinger Lake (49°25′25″ N , 80°44′35″ W )",
+        "raw": "Additional fishing opportunities Season : open all year View these waterbodies and additional information on Fish ON-Line .",
+        "waters": [
+          "Blue Lake (49°11′14″ N , 81°16′17″ W )",
+          "Clearwater Lake (48°41′17″ N , 80°59′42″ W )",
+          "Crawfish Lake (48°51′20″ N , 81°07′11″ W )",
+          "Doucette Lake (48°54′51″ N , 80°38′27″ W )",
+          "Duck Lake (49°20’22” N , 82°21’34” W )",
+          "Elmer Lake (47°52′43″ N , 80°50′01″ W )",
+          "Eva Lake (Clear Lake) (49°15′10″ N , 82°13′42″ W )",
+          "Flipper Lake (48°49′42″ N , 80°16′30″ W )",
+          "Jerry Lake (49°31′13″ N , 80°19′27″ W )",
+          "Ketchini Lake (47°51′01″ N , 81°54′26″ W )",
+          "Kwitosse Lake (47°47′06″ N , 81°22′52″ W )",
+          "Laidlaw Lake (48°56′04″ N , 81°47′50″ W )",
+          "Laughton Lake (Lake 15F-47) (49°15′04″ N , 80°43′46″ W )",
+          "Long Lake (47°48′58″ N , 80°08′15″ W )",
+          "Lulu Lake (48°19′44″ N , 79°52′52″ W )",
+          "Macfie Lake (47°44′57″ N , 81°23′47″ W )",
+          "Mary Lake (48°53′31″ N , 80°49′45″ W )",
+          "Miller Lake (47°39′39″ N , 80°43′24″ W )",
+          "Mistango Lake (49°07′23″ N , 80°27′12″ W )",
+          "Nansen Lake (49°14′54″ N , 82°13′35″ W )",
+          "Nellie Lake (48°47′43″ N , 80°47′34″ W )",
+          "Nettie Lake (48°13′19″ N , 79°59′21″ W )",
+          "Paddy Lake (48°52′58″ N , 81°08′15″ W )",
+          "Pallet Lake (48°50′48″ N , 81°07′01″ W )",
+          "Pearce 24 Lake (49°39’19” N , 82°18’22” W )",
+          "Perry Lake (48°31′41″ N , 80°06′22″ W )",
+          "Pine Lake (49°14′34″ N , 79°54′27″ W )",
+          "Rancourt Lake (49°04′48″ N , 81°12′33″ W )",
+          "Return Lake (48°59′22″ N , 81°46′43″ W )",
+          "Secret Lake 38 (47°46′56″ N , 81°41′47″ W )",
+          "Semple Lake (48°00′04″ N , 81°17′60″ W )",
+          "Sibbald Lake (48°48′31″ N , 80°34′31″ W )",
+          "Smith Lake (49°54′31″ N , 81°59′36″ W )",
+          "Star Lake (49°21′24″ N , 81°47′20″ W )",
+          "Starvation Lake (49°24′44″ N , 80°27′19″ W )",
+          "Sunny Lake (48°09′40″ N , 80°31′60″ W )",
+          "Traill Lake (48°51′25″ N , 80°18′23″ W )",
+          "Wendigo Lake (47°52′12″ N , 79°41′57″ W )",
+          "Zinger Lake (49°25′25″ N , 80°44′35″ W )"
+        ]
+      },
+      {
+        "period": null,
+        "species": "Northern pike",
+        "limit": "S-2; not more than 1 greater than 71 centimetres and C-1; must be less than 71 centimetres",
+        "length": "must be less than 71 centimetres",
+        "gear": null,
+        "notes": "Kesagami Lake (50°19′33″ N , 80°14′24″ W )",
+        "raw": "Limits : S-2; not more than 1 greater than 71 centimetres and C-1; must be less than 71 centimetres",
+        "waters": [
+          "Kesagami Lake (50°19′33″ N , 80°14′24″ W )"
+        ]
+      },
+      {
+        "period": null,
+        "species": "Walleye",
+        "limit": "S-2 and C-2; none between 35-55 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": "Porcupine Lake (48°29′06″ N , 81°11′17″ W )",
+        "raw": "Limits : S-2 and C-2; none between 35-55 centimetres",
+        "waters": [
+          "Porcupine Lake (48°29′06″ N , 81°11′17″ W )"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "Ouverte toute l’année Voir ces plans d'eau et des renseignements additionnels sur On-Pêche en ligne .",
+        "species": "Omble de fontaine",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Possibilités supplémentaires de pêche · Lac Alvin (49°07′22″ N , 81°38′38″ O ) · Lac Andrew (48°26′25″ N , 80°28′57″ O ) · Lac Armitage (48°23′08″ N , 79°54′19″ O ) · Lac Arnold 6 (48°13′31″ N , 79°52′00″ O ) · Lac Arrow (48°23′23″ N , 80°46′45″ O ) · Lac Babs (47°40′38″ N , 80°42′51″ O ) · Lac Bea (48°20′44″ N , 79°51′57″ O ) · Lac Bear (lac Duff) (49°12′23″ N , 81°17′15″ O ) · Lac Bow (48°23′14″ N , 80°46′58″ O ) · Lac Briere 30 (lac McEvay 30) (48°19′04″ N , 80°35′42″ O ) · Lac Brinnie (48°25′14″ N , 79°58′13″ O ) · Lac Burt 4 (48°03′37″ N , 80°21′26″ O ) · Lac Burt 5 (48°04′15″ N , 80°21′06″ O ) · Lac Camp 22 (47°36′33″ N , 83°06′20″ O ) · Lac Canyon (47°54′54″ N , 80°43′07″ O ) · Lac Carlyle (48°32′47″ N , 79°49′50″ O ) · Lac Charles (47°52′03″ N , 80°41′11″ O ) · Lac Chown 15 (47°42′33″ N , 80°35′23″ O ) · Lac Collacutt (47°42′03″ N , 79°59′56″ O ) · Lac Collins (48°30′46″ N , 79°58′46″ O ) · Lac Cootie (48°16′37″ N , 80°34′28″ O ) · Lac Deep (48°31′21″ N , 80°50′16″ O ) · Lac Devil’s Punch Bowl (48°45′44″ N , 80°47′54″ O ) · Lac Dewhirst (48°27′43″ N , 80°00′33″ O ) · Lac Docks (47°52′29″ N , 81°54′49″ O ) · Lac Dorothy (48°14′03″ N , 80°00′28″ O ) · Lac Downey (47°52′39″ N , 83°21′15″ O ) · Lac Driscoll (48°23′06″ N , 79°53′55″ O ) · Lac Else (49°01′02″ N , 81°09′50″ O ) · Lac Elspeth (48°17′30″ N , 80°42′20″ O ) · Nouveau Lac Emerald (48°52′22″ N , 81°07′55″ O ) · Lac Eno (49°06′36″ N , 80°27′41″ O ) · Lac Fade (48°33′46″ N , 80°08′53″ O ) · Lac Ferguson (48°15′23″ N , 80°02′36″ O ) · Lac Fisher (48°35′35″ N , 80°53′03″ O ) · Lac Flyline (47°36′11″ N , 83°04′20″ O ) · Lac Gale (48°09′54″ N , 80°14′45″ O ) · Lac Garrison (48°28′59″ N , 80°00′15″ O ) · Lac Gary (47°35′26″ N , 81°25′44″ O ) · Lac George (47°31′15″ N , 81°51′38″ O ) · Lac Gerry (47°58′18″ N , 80°43′00″ O ) · Lac Giunta (48°22′41″ N , 79°53′48″ O ) · Lac Green (48°34′25″ N , 80°52′22″ O ) · Lac Greenock (48°18′33″ N , 80°44′03″ O ) · Lac Grey (48°17′31″ N , 80°34′46″ O ) · Lac Harvey (47°36′19″ N , 83°04′55″ O ) · Lac Heart (48°34′39″ N , 80°53′03″ O ) · Lac Hewitt (48°30′47″ N , 80°01′43″ O ) · Lac Holster (48°16′07″ N , 80°44′25″ O ) · Lac Hope (48°22′46″ N , 81°26′18″ O ) · Lac Hornet 42 (47°51 ′49″ N , 81°54′20″ O ) · Lac Hutch (48°19′15″ N , 80°43′16″ O ) · Lac Imperial (48°29′28″ N , 79°48′30″ O ) · Lac Island (48°47′44″ N , 80°33′26″ O ) · Lac James (47°52′40″ N , 80°41′08″ O ) · Lac Jessup (48°16′04″ N , 80°34′18″ O ) · Lac John (47°52′50″ N , 80°43′35″ O ) · Lac June (48°29′13″ N , 80°50′09″ O ) · Lac Kidney (49°14′34″ N , 81°18′38″ O ) · Lac Knothole (47°42′43″ N , 81°27′40″ O ) · Lac La Violette (48°33′46″ N , 80°51 ′41″ O ) · Lac Leatherleaf (47°40′30″ N , 83°11′31″ O ) · Lac Little Club (48°27′37″ N , 80°48′49″ O ) · Lac Little Elephant Head 23 (47°34′43″ N , 81°23′12″ O ) · Lac Little Gibson (48°27′07″ N , 80°49′01″ O ) · Lac Mall (48°20′30″ N , 79°53′00″ O ) · Lac Matti (47°48′17″ N , 83°08′41″ O ) · Lac Maurice (47°52′12″ N , 80°41′26″ O ) · Lac McCulloch (48°30′59″ N , 80°05′02″ O ) · Lac McEvay 18 (48°17′30″ N , 80°39′13″ O ) · Lac Mearow (47°45′42″ N , 80°06′13″ O ) · Lac Midway (48°10′01″ N , 82°29′04″ O ) · Lac Milligan (48°37′49″ N , 80°07′36″ O ) · Lac Moon (47°40′18″ N , 81°03′39″ O ) · Lac Mountain (47°49′37″ N , 80°09′60″ O ) · Lac Neannin (47°47′04″ N , 81°22′30″ O ) · Lac Neezin (47°49′08″ N , 81°21′09″ O ) · Lac Nelson (48°14′16″ N , 79°52′31″ O ) · Lac Packsack (48°50′21″ N , 80°17′13″ O ) · Lac Pall (48°20′56″ N , 79°53′03″ O ) · Lac Partridge (48°41′50″ N , 81°00′58″ O ) · Lac Pearl (47°52′02″ N , 81°53′01″ O ) · Pothole 6 (48°28′33″ N , 79°59′58″ O ) · Lac Potvin (48°17′51″ N , 80°35′09″ O ) · Lac Price (49°07′23″ N , 81°38′29″ O ) · Lac Ramey (48°18′02″ N , 79°53′13″ O ) · Lac Ray (47°29′05″ N , 81°51′45″ O ) · Lac Regis (47°45′36″ N , 83°14′30″ O ) · Lac Roger (lac Chester 34) (47°31′02″ N , 81°51′38″ O ) · Lac Round (48°28′58″ N , 80°50′10″ O ) · Lac Rozon (48°15′47″ N , 79°52′48″ O ) · Lac Scotties 48 (47°40′14″ N , 81°12′47″ O ) · Lac Seahorse (48°18′45″ N , 79°52′49″ O ) · Lac Sigs (47°41′37″ N , 80°41′20″ O ) · Lac Sootheran (47°46′34″ N , 83°20′59″ O ) · Lac South Triple (48°26′18″ N , 80°48′14″ O ) · Lac Strong (47°59′24″ N , 80°42′18″ O ) · Lac Sullivan (48°16′40″ N , 79°42′22″ O ) · Lac Susanne (47°36′04″ N , 81°51′46″ O ) · Lac Tailleurs (49°03′32″ N , 81°12′29″ O ) · Lac Taylor 43 (47°51′59″ N , 81°54′21″ O ) · Lac Thackeray 9 (48°23′45″ N , 79°53′57″ O ) · Lac Thrasher (48°21′32″ N , 79°52′28″ O ) · Lac Tracy (49°16′02″ N , 81°17′48″ O ) · Lac Trotter (47°57′51″ N , 81°56′02″ O ) · Lac Vannier (48°18′13″ N , 79°52′58″ O ) · Nouveau Lac Verte (48°53′07″ N , 81°07′28″ O ) · Lac Wanatangua (47°37′42″ N , 81°27′23″ O ) – canton de Connaught · Lac Wee (47°57′12″ N , 81°55′07″ O ) – canton de Regan · Lac Whopper (47°49′30″ N , 81°52′40″ O ) – canton de Whalen · Lac Wine (47°49′08″ N , 81°52′23″ O ) – canton de Whalen · Lac Wiskin (49°11′57″ N , 81°17′28″ O ) – canton de Colquhoun · Lac Wolverton (48°16′32″ N , 80°43′59″ O ) – canton de Michie · Lac Wright’s (47°49′60″ N , 81°53′35″ O ) – canton de Whalen · Lac Wuskwi (47°50′34″ N , 83°13′58″ O ) – canton de McNaught · Lac Yarrow 10 (47°53′40″ N , 80°41′33″ O ) – canton de Yarrow · Lac Yarrow 19 (47°54′09″ N , 80°43′51″ O ) – canton de Yarrow · Lac 1 (48°07′41″ N , 82°31′35″ O ) - canton d’Ivanhoe · Lac 2 (lac A) (47°40′28″ N , 81°51′32″ O ) - canton de Somme · Lac 3 (lac Tahill) (47°40′47″ N , 81°51′41″ O ) - canton de Somme · Lac 4 (48°03′32″ N , 82°31′33″ O ) - canton de Silk · Lac 5 (49°29′43″ N , 82°19′11″ O ) - canton de Teetzel · Lac 9 (48°08′38″ N , 82°31′18″ O ) - canton d’Ivanhoe · Lac 9 (47°51 ′21″ N , 81°48′22″ O ) - canton de Middleboro · Lac 9 (49°30′50″ N , 82°19′49″ O ) - canton de Teetzel · Lac 10 (49°31′25″ N , 82°19′45″ O ) - canton de Teetzel · Lac 11 (49°35′06″ N , 82°19′11″ O ) - canton de Pearce · Lac 15 (47°38′30″ N , 83°08′25″ O ) - canton de Nimitz · Lac 36B (47°41′11″ N , 81°52′07″ O ) - canton de Somme · Lac 42 (48°05′56″ N , 82°31′47″ O ) - canton d’Ivanhoe · Lac 50 (48°04′12″ N , 82°31′24″ O ) - canton d’Ivanhoe · Lac 52 (48°03′43″ N , 82°31′33″ O ) - canton d’Ivanhoe · Lac 53 (48°03′42″ N , 82°31′23″ O ) - canton d’Ivanhoe · Lac 56 (48°01′27″ N , 81°17′13″ O ) - canton d’English · Lac 64 (49°49′14″ N , 82°19′49″ O ) - canton de Guilfoyle · Lac 68 (49°49′49″ N , 82°19′60″ O ) - canton de Guilfoyle · Lac 222412 (48°13′17″ N , 82°02′53″ O ) - canton de Reeves",
+        "raw": "Possibilités supplémentaires de pêche Saison : Ouverte toute l’année Voir ces plans d'eau et des renseignements additionnels sur On-Pêche en ligne .",
+        "waters": [
+          "Lac Alvin (49°07′22″ N , 81°38′38″ O )",
+          "Lac Andrew (48°26′25″ N , 80°28′57″ O )",
+          "Lac Armitage (48°23′08″ N , 79°54′19″ O )",
+          "Lac Arnold 6 (48°13′31″ N , 79°52′00″ O )",
+          "Lac Arrow (48°23′23″ N , 80°46′45″ O )",
+          "Lac Babs (47°40′38″ N , 80°42′51″ O )",
+          "Lac Bea (48°20′44″ N , 79°51′57″ O )",
+          "Lac Bear (lac Duff) (49°12′23″ N , 81°17′15″ O )",
+          "Lac Bow (48°23′14″ N , 80°46′58″ O )",
+          "Lac Briere 30 (lac McEvay 30) (48°19′04″ N , 80°35′42″ O )",
+          "Lac Brinnie (48°25′14″ N , 79°58′13″ O )",
+          "Lac Burt 4 (48°03′37″ N , 80°21′26″ O )",
+          "Lac Burt 5 (48°04′15″ N , 80°21′06″ O )",
+          "Lac Camp 22 (47°36′33″ N , 83°06′20″ O )",
+          "Lac Canyon (47°54′54″ N , 80°43′07″ O )",
+          "Lac Carlyle (48°32′47″ N , 79°49′50″ O )",
+          "Lac Charles (47°52′03″ N , 80°41′11″ O )",
+          "Lac Chown 15 (47°42′33″ N , 80°35′23″ O )",
+          "Lac Collacutt (47°42′03″ N , 79°59′56″ O )",
+          "Lac Collins (48°30′46″ N , 79°58′46″ O )",
+          "Lac Cootie (48°16′37″ N , 80°34′28″ O )",
+          "Lac Deep (48°31′21″ N , 80°50′16″ O )",
+          "Lac Devil’s Punch Bowl (48°45′44″ N , 80°47′54″ O )",
+          "Lac Dewhirst (48°27′43″ N , 80°00′33″ O )",
+          "Lac Docks (47°52′29″ N , 81°54′49″ O )",
+          "Lac Dorothy (48°14′03″ N , 80°00′28″ O )",
+          "Lac Downey (47°52′39″ N , 83°21′15″ O )",
+          "Lac Driscoll (48°23′06″ N , 79°53′55″ O )",
+          "Lac Else (49°01′02″ N , 81°09′50″ O )",
+          "Lac Elspeth (48°17′30″ N , 80°42′20″ O )",
+          "Nouveau Lac Emerald (48°52′22″ N , 81°07′55″ O )",
+          "Lac Eno (49°06′36″ N , 80°27′41″ O )",
+          "Lac Fade (48°33′46″ N , 80°08′53″ O )",
+          "Lac Ferguson (48°15′23″ N , 80°02′36″ O )",
+          "Lac Fisher (48°35′35″ N , 80°53′03″ O )",
+          "Lac Flyline (47°36′11″ N , 83°04′20″ O )",
+          "Lac Gale (48°09′54″ N , 80°14′45″ O )",
+          "Lac Garrison (48°28′59″ N , 80°00′15″ O )",
+          "Lac Gary (47°35′26″ N , 81°25′44″ O )",
+          "Lac George (47°31′15″ N , 81°51′38″ O )",
+          "Lac Gerry (47°58′18″ N , 80°43′00″ O )",
+          "Lac Giunta (48°22′41″ N , 79°53′48″ O )",
+          "Lac Green (48°34′25″ N , 80°52′22″ O )",
+          "Lac Greenock (48°18′33″ N , 80°44′03″ O )",
+          "Lac Grey (48°17′31″ N , 80°34′46″ O )",
+          "Lac Harvey (47°36′19″ N , 83°04′55″ O )",
+          "Lac Heart (48°34′39″ N , 80°53′03″ O )",
+          "Lac Hewitt (48°30′47″ N , 80°01′43″ O )",
+          "Lac Holster (48°16′07″ N , 80°44′25″ O )",
+          "Lac Hope (48°22′46″ N , 81°26′18″ O )",
+          "Lac Hornet 42 (47°51 ′49″ N , 81°54′20″ O )",
+          "Lac Hutch (48°19′15″ N , 80°43′16″ O )",
+          "Lac Imperial (48°29′28″ N , 79°48′30″ O )",
+          "Lac Island (48°47′44″ N , 80°33′26″ O )",
+          "Lac James (47°52′40″ N , 80°41′08″ O )",
+          "Lac Jessup (48°16′04″ N , 80°34′18″ O )",
+          "Lac John (47°52′50″ N , 80°43′35″ O )",
+          "Lac June (48°29′13″ N , 80°50′09″ O )",
+          "Lac Kidney (49°14′34″ N , 81°18′38″ O )",
+          "Lac Knothole (47°42′43″ N , 81°27′40″ O )",
+          "Lac La Violette (48°33′46″ N , 80°51 ′41″ O )",
+          "Lac Leatherleaf (47°40′30″ N , 83°11′31″ O )",
+          "Lac Little Club (48°27′37″ N , 80°48′49″ O )",
+          "Lac Little Elephant Head 23 (47°34′43″ N , 81°23′12″ O )",
+          "Lac Little Gibson (48°27′07″ N , 80°49′01″ O )",
+          "Lac Mall (48°20′30″ N , 79°53′00″ O )",
+          "Lac Matti (47°48′17″ N , 83°08′41″ O )",
+          "Lac Maurice (47°52′12″ N , 80°41′26″ O )",
+          "Lac McCulloch (48°30′59″ N , 80°05′02″ O )",
+          "Lac McEvay 18 (48°17′30″ N , 80°39′13″ O )",
+          "Lac Mearow (47°45′42″ N , 80°06′13″ O )",
+          "Lac Midway (48°10′01″ N , 82°29′04″ O )",
+          "Lac Milligan (48°37′49″ N , 80°07′36″ O )",
+          "Lac Moon (47°40′18″ N , 81°03′39″ O )",
+          "Lac Mountain (47°49′37″ N , 80°09′60″ O )",
+          "Lac Neannin (47°47′04″ N , 81°22′30″ O )",
+          "Lac Neezin (47°49′08″ N , 81°21′09″ O )",
+          "Lac Nelson (48°14′16″ N , 79°52′31″ O )",
+          "Lac Packsack (48°50′21″ N , 80°17′13″ O )",
+          "Lac Pall (48°20′56″ N , 79°53′03″ O )",
+          "Lac Partridge (48°41′50″ N , 81°00′58″ O )",
+          "Lac Pearl (47°52′02″ N , 81°53′01″ O )",
+          "Pothole 6 (48°28′33″ N , 79°59′58″ O )",
+          "Lac Potvin (48°17′51″ N , 80°35′09″ O )",
+          "Lac Price (49°07′23″ N , 81°38′29″ O )",
+          "Lac Ramey (48°18′02″ N , 79°53′13″ O )",
+          "Lac Ray (47°29′05″ N , 81°51′45″ O )",
+          "Lac Regis (47°45′36″ N , 83°14′30″ O )",
+          "Lac Roger (lac Chester 34) (47°31′02″ N , 81°51′38″ O )",
+          "Lac Round (48°28′58″ N , 80°50′10″ O )",
+          "Lac Rozon (48°15′47″ N , 79°52′48″ O )",
+          "Lac Scotties 48 (47°40′14″ N , 81°12′47″ O )",
+          "Lac Seahorse (48°18′45″ N , 79°52′49″ O )",
+          "Lac Sigs (47°41′37″ N , 80°41′20″ O )",
+          "Lac Sootheran (47°46′34″ N , 83°20′59″ O )",
+          "Lac South Triple (48°26′18″ N , 80°48′14″ O )",
+          "Lac Strong (47°59′24″ N , 80°42′18″ O )",
+          "Lac Sullivan (48°16′40″ N , 79°42′22″ O )",
+          "Lac Susanne (47°36′04″ N , 81°51′46″ O )",
+          "Lac Tailleurs (49°03′32″ N , 81°12′29″ O )",
+          "Lac Taylor 43 (47°51′59″ N , 81°54′21″ O )",
+          "Lac Thackeray 9 (48°23′45″ N , 79°53′57″ O )",
+          "Lac Thrasher (48°21′32″ N , 79°52′28″ O )",
+          "Lac Tracy (49°16′02″ N , 81°17′48″ O )",
+          "Lac Trotter (47°57′51″ N , 81°56′02″ O )",
+          "Lac Vannier (48°18′13″ N , 79°52′58″ O )",
+          "Nouveau Lac Verte (48°53′07″ N , 81°07′28″ O )",
+          "Lac Wanatangua (47°37′42″ N , 81°27′23″ O ) – canton de Connaught",
+          "Lac Wee (47°57′12″ N , 81°55′07″ O ) – canton de Regan",
+          "Lac Whopper (47°49′30″ N , 81°52′40″ O ) – canton de Whalen",
+          "Lac Wine (47°49′08″ N , 81°52′23″ O ) – canton de Whalen",
+          "Lac Wiskin (49°11′57″ N , 81°17′28″ O ) – canton de Colquhoun",
+          "Lac Wolverton (48°16′32″ N , 80°43′59″ O ) – canton de Michie",
+          "Lac Wright’s (47°49′60″ N , 81°53′35″ O ) – canton de Whalen",
+          "Lac Wuskwi (47°50′34″ N , 83°13′58″ O ) – canton de McNaught",
+          "Lac Yarrow 10 (47°53′40″ N , 80°41′33″ O ) – canton de Yarrow",
+          "Lac Yarrow 19 (47°54′09″ N , 80°43′51″ O ) – canton de Yarrow",
+          "Lac 1 (48°07′41″ N , 82°31′35″ O ) - canton d’Ivanhoe",
+          "Lac 2 (lac A) (47°40′28″ N , 81°51′32″ O ) - canton de Somme",
+          "Lac 3 (lac Tahill) (47°40′47″ N , 81°51′41″ O ) - canton de Somme",
+          "Lac 4 (48°03′32″ N , 82°31′33″ O ) - canton de Silk",
+          "Lac 5 (49°29′43″ N , 82°19′11″ O ) - canton de Teetzel",
+          "Lac 9 (48°08′38″ N , 82°31′18″ O ) - canton d’Ivanhoe",
+          "Lac 9 (47°51 ′21″ N , 81°48′22″ O ) - canton de Middleboro",
+          "Lac 9 (49°30′50″ N , 82°19′49″ O ) - canton de Teetzel",
+          "Lac 10 (49°31′25″ N , 82°19′45″ O ) - canton de Teetzel",
+          "Lac 11 (49°35′06″ N , 82°19′11″ O ) - canton de Pearce",
+          "Lac 15 (47°38′30″ N , 83°08′25″ O ) - canton de Nimitz",
+          "Lac 36B (47°41′11″ N , 81°52′07″ O ) - canton de Somme",
+          "Lac 42 (48°05′56″ N , 82°31′47″ O ) - canton d’Ivanhoe",
+          "Lac 50 (48°04′12″ N , 82°31′24″ O ) - canton d’Ivanhoe",
+          "Lac 52 (48°03′43″ N , 82°31′33″ O ) - canton d’Ivanhoe",
+          "Lac 53 (48°03′42″ N , 82°31′23″ O ) - canton d’Ivanhoe",
+          "Lac 56 (48°01′27″ N , 81°17′13″ O ) - canton d’English",
+          "Lac 64 (49°49′14″ N , 82°19′49″ O ) - canton de Guilfoyle",
+          "Lac 68 (49°49′49″ N , 82°19′60″ O ) - canton de Guilfoyle",
+          "Lac 222412 (48°13′17″ N , 82°02′53″ O ) - canton de Reeves"
+        ]
+      },
+      {
+        "period": "Ouverte toute l’année Voir ces plans d'eau et des renseignements additionnels sur On-Pêche en ligne .",
+        "species": "Touladi",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Possibilités supplémentaires de pêche · Lac Blue (49°11′14″ N , 81°16′17″ O ) · Lac Clearwater (48°41′17″ N , 80°59′42″ O ) · Lac Crawfish (48°51′20″ N , 81°07′11″ O ) · Lac Doucette (48°54′51″ N , 80°38′27″ O ) · Lac Duck (49°20’ 22” N , 82°21’ 34” O ) · Lac Elmer (47°52′43″ N , 80°50′01″ O ) · Lac Eva (lac Clear) (49°15′10″ N , 83°13′42″ O ) · Lac Flipper (48°49′42″ N , 80°16′30″ O ) · Lac Jerry (49°31′13″ N , 80°19′27″ O ) · Lac Ketchini (47°51′01″ N , 81°54′26″ O ) · Lac Kwitosse (47°47′06″ N , 81°22′52″ O ) · Lac Laidlaw (48°56′04″ N , 81°47′50″ O ) · Lac Laughton (lac 15F-47) (49°15′04″ N , 80°43′46″ O ) · Lac Long (47°48′58″ N , 80°08′15″ O ) · Lac Lulu (48°19′44″ N , 79°52′52″ O ) · Lac Macfie (47°44′57″ N , 81°23′47″ O ) · Lac Mary (48°53′31″ N , 80°49′45″ O ) · Lac Miller (47°39′39″ N , 80°43′24″ O ) · Lac Mistango (49°07′23″ N , 80°27′12″ O ) · Lac Nansen (49°14′54″ N , 83°13′35″ O ) · Lac Nellie (48°47′43″ N , 80°47′34″ O ) · Lac Nettie (48°13′19″ N , 79°59′21″ O ) · Lac Paddy (48°52′58″ N , 81°08′15″ O ) · Lac Pallet (48°50′48″ N , 81°07′01″ O ) · Lac Pearce 24 (49°39’ 19” N , 82°18’ 22” O ) · Lac Perry (48°31′41″ N , 80°06′22″ O ) · Lac Pine (49°14′34″ N , 79°54′27″ O ) · Lac Rancourt (49°04′48″ N , 81°12′33″ O ) · Lac Return (48°59′22″ N , 81°46′43″ O ) · Lac Secret 38 (47°46′56″ N , 81°41′47″ O ) · Lac Semple (48°00′04″ N , 81°17′60″ O ) · Lac Sibbald (48°48′31″ N , 80°34′31″ O ) · Lac Smith (49°54′31″ N , 82°59′36″ O ) · Lac Star (49°21′24″ N , 81°47′20″ O ) · Lac Starvation (49°24′44″ N , 80°27′19″ O ) · Lac Sunny (48°09′40″ N , 80°31′60″ O ) · Lac Traill (48°51′25″ N , 80°18′23″ O ) · Lac Wendigo (47°52′12″ N , 79°41′57″ O ) · Lac Zinger (49°25′25″ N , 80°44′35″ O )",
+        "raw": "Possibilités supplémentaires de pêche Saison : Ouverte toute l’année Voir ces plans d'eau et des renseignements additionnels sur On-Pêche en ligne .",
+        "waters": [
+          "Lac Blue (49°11′14″ N , 81°16′17″ O )",
+          "Lac Clearwater (48°41′17″ N , 80°59′42″ O )",
+          "Lac Crawfish (48°51′20″ N , 81°07′11″ O )",
+          "Lac Doucette (48°54′51″ N , 80°38′27″ O )",
+          "Lac Duck (49°20’ 22” N , 82°21’ 34” O )",
+          "Lac Elmer (47°52′43″ N , 80°50′01″ O )",
+          "Lac Eva (lac Clear) (49°15′10″ N , 83°13′42″ O )",
+          "Lac Flipper (48°49′42″ N , 80°16′30″ O )",
+          "Lac Jerry (49°31′13″ N , 80°19′27″ O )",
+          "Lac Ketchini (47°51′01″ N , 81°54′26″ O )",
+          "Lac Kwitosse (47°47′06″ N , 81°22′52″ O )",
+          "Lac Laidlaw (48°56′04″ N , 81°47′50″ O )",
+          "Lac Laughton (lac 15F-47) (49°15′04″ N , 80°43′46″ O )",
+          "Lac Long (47°48′58″ N , 80°08′15″ O )",
+          "Lac Lulu (48°19′44″ N , 79°52′52″ O )",
+          "Lac Macfie (47°44′57″ N , 81°23′47″ O )",
+          "Lac Mary (48°53′31″ N , 80°49′45″ O )",
+          "Lac Miller (47°39′39″ N , 80°43′24″ O )",
+          "Lac Mistango (49°07′23″ N , 80°27′12″ O )",
+          "Lac Nansen (49°14′54″ N , 83°13′35″ O )",
+          "Lac Nellie (48°47′43″ N , 80°47′34″ O )",
+          "Lac Nettie (48°13′19″ N , 79°59′21″ O )",
+          "Lac Paddy (48°52′58″ N , 81°08′15″ O )",
+          "Lac Pallet (48°50′48″ N , 81°07′01″ O )",
+          "Lac Pearce 24 (49°39’ 19” N , 82°18’ 22” O )",
+          "Lac Perry (48°31′41″ N , 80°06′22″ O )",
+          "Lac Pine (49°14′34″ N , 79°54′27″ O )",
+          "Lac Rancourt (49°04′48″ N , 81°12′33″ O )",
+          "Lac Return (48°59′22″ N , 81°46′43″ O )",
+          "Lac Secret 38 (47°46′56″ N , 81°41′47″ O )",
+          "Lac Semple (48°00′04″ N , 81°17′60″ O )",
+          "Lac Sibbald (48°48′31″ N , 80°34′31″ O )",
+          "Lac Smith (49°54′31″ N , 82°59′36″ O )",
+          "Lac Star (49°21′24″ N , 81°47′20″ O )",
+          "Lac Starvation (49°24′44″ N , 80°27′19″ O )",
+          "Lac Sunny (48°09′40″ N , 80°31′60″ O )",
+          "Lac Traill (48°51′25″ N , 80°18′23″ O )",
+          "Lac Wendigo (47°52′12″ N , 79°41′57″ O )",
+          "Lac Zinger (49°25′25″ N , 80°44′35″ O )"
+        ]
+      },
+      {
+        "period": null,
+        "species": "Grand brochet",
+        "limit": "S-2; 1 seul dépassant 71 centimètres, et C-1; doit mesurer moins de 71 centimètres",
+        "length": "doit mesurer moins de 71 centimètres",
+        "gear": null,
+        "notes": "Lac Kesagami (50°19′33″ N , 80°14′24″ O )",
+        "raw": "Limites : S-2; 1 seul dépassant 71 centimètres, et C-1; doit mesurer moins de 71 centimètres",
+        "waters": [
+          "Lac Kesagami (50°19′33″ N , 80°14′24″ O )"
+        ]
+      },
+      {
+        "period": null,
+        "species": "Doré jaune",
+        "limit": "S-2 et C-2; aucun entre 35 et 55 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": "Lac Porcupine (48°29′06″ N , 81°11′17″ O )",
+        "raw": "Limites : S-2 et C-2; aucun entre 35 et 55 centimètres",
+        "waters": [
+          "Lac Porcupine (48°29′06″ N , 81°11′17″ O )"
+        ]
+      }
+    ]
+  },
+  "waterbody_exceptions": {
+    "en": [
+      {
+        "name": "Blanche River",
+        "location": "Marquis Township",
+        "rules": [
+          {
+            "period": "no fishing from April 1 to June 15",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from April 1 to June 15",
+            "raw": "Fish sanctuary - no fishing from April 1 to June 15"
+          }
+        ],
+        "raw": "Blanche River Marquis Township Fish sanctuary - no fishing from April 1 to June 15"
+      },
+      {
+        "name": "Blanche River and its tributaries",
+        "location": "including the Moose, Wright, Pontleroy and St. Jean Baptiste creeks, and the Englehart, Larder and Misema rivers, and the Wabi River and tributaries",
+        "rules": [
+          {
+            "period": "closed all year",
+            "species": "Lake sturgeon",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "closed all year",
+            "raw": "Lake sturgeon - closed all year"
+          }
+        ],
+        "raw": "Blanche River and its tributaries including the Moose, Wright, Pontleroy and St. Jean Baptiste creeks, and the Englehart, Larder and Misema rivers, and the Wabi River and tributaries Lake sturgeon - closed all year"
+      },
+      {
+        "name": "Commando Lake",
+        "location": "(49°04′ N , 81°01′ W ) - Glackmeyer Township",
+        "rules": [
+          {
+            "period": "no fishing from January 1 to Saturday before second Sunday in February and September 16 to December 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Saturday before second Sunday in February and September 16 to December 31",
+            "raw": "Fish sanctuary - no fishing from January 1 to Saturday before second Sunday in February and September 16 to December 31"
+          },
+          {
+            "period": "open from second Sunday in February to September 15",
+            "species": "Lake trout",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from second Sunday in February to September 15",
+            "raw": "Lake trout - open from second Sunday in February to September 15"
+          }
+        ],
+        "raw": "Commando Lake (49°04′ N , 81°01′ W ) - Glackmeyer Township Fish sanctuary - no fishing from January 1 to Saturday before second Sunday in February and September 16 to December 31 | Lake trout - open from second Sunday in February to September 15"
+      },
+      {
+        "name": "Edgar Lake",
+        "location": "(50°22′ N , 80°23′ W )",
+        "rules": [
+          {
+            "period": "no fishing from January 1 to Friday before third Saturday in May and November 1 to December 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Friday before third Saturday in May and November 1 to December 31",
+            "raw": "Fish sanctuary - no fishing from January 1 to Friday before third Saturday in May and November 1 to December 31"
+          },
+          {
+            "period": null,
+            "species": "Northern pike",
+            "limit": "S-2; not more than 1 greater than 71 centimetres, and C-1; must be less than 71 centimetres",
+            "length": "must be less than 71 centimetres",
+            "gear": null,
+            "notes": "S-2; not more than 1 greater than 71 centimetres, and C-1; must be less than 71 centimetres",
+            "raw": "Northern pike - S-2; not more than 1 greater than 71 centimetres, and C-1; must be less than 71 centimetres"
+          }
+        ],
+        "raw": "Edgar Lake (50°22′ N , 80°23′ W ) Fish sanctuary - no fishing from January 1 to Friday before third Saturday in May and November 1 to December 31 | Northern pike - S-2; not more than 1 greater than 71 centimetres, and C-1; must be less than 71 centimetres"
+      },
+      {
+        "name": "Groundhog River",
+        "location": "(The Pot) - Beardmore and Tucker Townships",
+        "rules": [
+          {
+            "period": "no fishing from April 15 to July 15",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from April 15 to July 15",
+            "raw": "Fish sanctuary - no fishing from April 15 to July 15"
+          }
+        ],
+        "raw": "Groundhog River (The Pot) - Beardmore and Tucker Townships Fish sanctuary - no fishing from April 15 to July 15"
+      },
+      {
+        "name": "Groundhog River",
+        "location": "Reeves, Melrose, Strachan, Montcalm and Poulett Townships, from the bridge on Highway 101, downstream to the mouth of the Nat River",
+        "rules": [
+          {
+            "period": "open from January 1 to April 14 and July 1 to December 31",
+            "species": "Lake sturgeon",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from January 1 to April 14 and July 1 to December 31",
+            "raw": "Lake sturgeon - open from January 1 to April 14 and July 1 to December 31"
+          }
+        ],
+        "raw": "Groundhog River Reeves, Melrose, Strachan, Montcalm and Poulett Townships, from the bridge on Highway 101, downstream to the mouth of the Nat River Lake sturgeon - open from January 1 to April 14 and July 1 to December 31"
+      },
+      {
+        "name": "Groundhog River",
+        "location": "Keith Township, between the base of the Horwood Dam downstream to where it enters Groundhog Lake",
+        "rules": [
+          {
+            "period": "no fishing from April 1 to June 15",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from April 1 to June 15",
+            "raw": "Fish sanctuary - no fishing from April 1 to June 15"
+          }
+        ],
+        "raw": "Groundhog River Keith Township, between the base of the Horwood Dam downstream to where it enters Groundhog Lake Fish sanctuary - no fishing from April 1 to June 15"
+      },
+      {
+        "name": "Labyrinth Lake",
+        "location": "(48°13′46″ N , 79°31′18″ W ) - including that part of Waterhen Creek downstream from the Access Road Bridge",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Live fish may not be used as bait or possessed for use as bait",
+            "raw": "Live fish may not be used as bait or possessed for use as bait"
+          },
+          {
+            "period": "open from January 1 to April 15 and third Friday in May to December 31",
+            "species": "Northern pike",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from January 1 to April 15 and third Friday in May to December 31",
+            "raw": "Northern pike - open from January 1 to April 15 and third Friday in May to December 31"
+          },
+          {
+            "period": "open from January 1 to April 15 and Friday before fourth Saturday in June to December 31",
+            "species": "Smallmouth bass",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from January 1 to April 15 and Friday before fourth Saturday in June to December 31",
+            "raw": "Smallmouth bass - open from January 1 to April 15 and Friday before fourth Saturday in June to December 31"
+          },
+          {
+            "period": "open from January 1 to March 31 and third Friday in May to December 31",
+            "species": "Walleye",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from January 1 to March 31 and third Friday in May to December 31",
+            "raw": "Walleye - open from January 1 to March 31 and third Friday in May to December 31"
+          }
+        ],
+        "raw": "Labyrinth Lake (48°13′46″ N , 79°31′18″ W ) - including that part of Waterhen Creek downstream from the Access Road Bridge Live fish may not be used as bait or possessed for use as bait | Northern pike - open from January 1 to April 15 and third Friday in May to December 31 | Smallmouth bass - open from January 1 to April 15 and Friday before fourth Saturday in June to December 31 | Walleye - open from January 1 to March 31 and third Friday in May to December 31"
+      },
+      {
+        "name": "Little Abitibi River",
+        "location": "McQuibban and Sangster Townships, from boundary between the two townships to a line at longitude 80°36′30″ W",
+        "rules": [
+          {
+            "period": "no fishing from April 1 to June 15",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from April 1 to June 15",
+            "raw": "Fish sanctuary - no fishing from April 1 to June 15"
+          }
+        ],
+        "raw": "Little Abitibi River McQuibban and Sangster Townships, from boundary between the two townships to a line at longitude 80°36′30″ W Fish sanctuary - no fishing from April 1 to June 15"
+      },
+      {
+        "name": "Little Abitibi River",
+        "location": null,
+        "rules": [
+          {
+            "period": "no fishing from April 15 to June 30 in the following areas:",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from April 15 to June 30 in the following areas:",
+            "raw": "Fish sanctuary - no fishing from April 15 to June 30 in the following areas:"
+          },
+          {
+            "period": null,
+            "species": "Little Abitibi River",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "McQuibban Township, from Pierre Lake Road to part of Pierre Lake lying east of longitude 80°39′30″ W",
+            "raw": "Little Abitibi River - McQuibban Township, from Pierre Lake Road to part of Pierre Lake lying east of longitude 80°39′30″ W"
+          },
+          {
+            "period": null,
+            "species": "Little Abitibi River and Montreuil Lake",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Swartman Township, between northern narrows of Pierre Lake to portion lying east of longitude 80°47′ W",
+            "raw": "Little Abitibi River and Montreuil Lake - Swartman Township, between northern narrows of Pierre Lake to portion lying east of longitude 80°47′ W"
+          }
+        ],
+        "raw": "Little Abitibi River Fish sanctuary - no fishing from April 15 to June 30 in the following areas: | Little Abitibi River - McQuibban Township, from Pierre Lake Road to part of Pierre Lake lying east of longitude 80°39′30″ W | Little Abitibi River and Montreuil Lake - Swartman Township, between northern narrows of Pierre Lake to portion lying east of longitude 80°47′ W"
+      }
+    ],
+    "fr": [
+      {
+        "name": "Rivière Blanche",
+        "location": "canton de Marquis",
+        "rules": [
+          {
+            "period": "Pêche interdite du 1er avril au 15 juin",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Pêche interdite du 1er avril au 15 juin",
+            "raw": "Réserve de poissons - Pêche interdite du 1er avril au 15 juin"
+          }
+        ],
+        "raw": "Rivière Blanche canton de Marquis Réserve de poissons - Pêche interdite du 1er avril au 15 juin"
+      },
+      {
+        "name": "Rivière Blanche et ses tributaires",
+        "location": "y compris les ruisseaux Moose, Wright, Pontleroy et St-Jean-Baptiste, les rivières Englehart, Larder et Misema, et la rivière Wabi et ses tributaires",
+        "rules": [
+          {
+            "period": "Fermée toute l’année",
+            "species": "Esturgeon de lac (esturgeon jaune)",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Fermée toute l’année",
+            "raw": "Esturgeon de lac (esturgeon jaune) - Fermée toute l’année"
+          }
+        ],
+        "raw": "Rivière Blanche et ses tributaires y compris les ruisseaux Moose, Wright, Pontleroy et St-Jean-Baptiste, les rivières Englehart, Larder et Misema, et la rivière Wabi et ses tributaires Esturgeon de lac (esturgeon jaune) - Fermée toute l’année"
+      },
+      {
+        "name": "Lac Commando",
+        "location": "(49°04′ N , 81°01′ O ) - canton de Glackmeyer",
+        "rules": [
+          {
+            "period": "Pêche interdite du 1er janvier au samedi précédant le 2e dimanche de février et du 16 septembre au 31 décembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Pêche interdite du 1er janvier au samedi précédant le 2e dimanche de février et du 16 septembre au 31 décembre",
+            "raw": "Réserve de poissons - Pêche interdite du 1er janvier au samedi précédant le 2e dimanche de février et du 16 septembre au 31 décembre"
+          },
+          {
+            "period": "Ouverte du 2e dimanche de février au 15 septembre",
+            "species": "Touladi",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Ouverte du 2e dimanche de février au 15 septembre",
+            "raw": "Touladi - Ouverte du 2e dimanche de février au 15 septembre"
+          }
+        ],
+        "raw": "Lac Commando (49°04′ N , 81°01′ O ) - canton de Glackmeyer Réserve de poissons - Pêche interdite du 1er janvier au samedi précédant le 2e dimanche de février et du 16 septembre au 31 décembre | Touladi - Ouverte du 2e dimanche de février au 15 septembre"
+      },
+      {
+        "name": "Lac Edgar",
+        "location": "(50°22′ N , 80°23′ O )",
+        "rules": [
+          {
+            "period": "Pêche interdite du 1er janvier au vendredi précédant le 3e samedi de mai et du 1er novembre au 31 décembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Pêche interdite du 1er janvier au vendredi précédant le 3e samedi de mai et du 1er novembre au 31 décembre",
+            "raw": "Réserve de poissons - Pêche interdite du 1er janvier au vendredi précédant le 3e samedi de mai et du 1er novembre au 31 décembre"
+          },
+          {
+            "period": null,
+            "species": "Grand brochet",
+            "limit": "S-2; 1 seul dépassant 71 centimètres, et C-1; doit mesurer moins de 71 centimètres",
+            "length": "doit mesurer moins de 71 centimètres",
+            "gear": null,
+            "notes": "S-2; 1 seul dépassant 71 centimètres, et C-1; doit mesurer moins de 71 centimètres",
+            "raw": "Grand brochet - S-2; 1 seul dépassant 71 centimètres, et C-1; doit mesurer moins de 71 centimètres"
+          }
+        ],
+        "raw": "Lac Edgar (50°22′ N , 80°23′ O ) Réserve de poissons - Pêche interdite du 1er janvier au vendredi précédant le 3e samedi de mai et du 1er novembre au 31 décembre | Grand brochet - S-2; 1 seul dépassant 71 centimètres, et C-1; doit mesurer moins de 71 centimètres"
+      },
+      {
+        "name": "Rivière Groundhog",
+        "location": "(The Pot) - cantons de Beardmore et Tucker",
+        "rules": [
+          {
+            "period": "Pêche interdite du 15 avril au 15 juillet",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Pêche interdite du 15 avril au 15 juillet",
+            "raw": "Réserve de poissons - Pêche interdite du 15 avril au 15 juillet"
+          }
+        ],
+        "raw": "Rivière Groundhog (The Pot) - cantons de Beardmore et Tucker Réserve de poissons - Pêche interdite du 15 avril au 15 juillet"
+      },
+      {
+        "name": "Rivière Groundhog",
+        "location": "cantons de Reeves, Melrose, Strachan, Montcalm et Poulett, depuis le pont de la route 101, en aval jusqu’à l’embouchure de la rivière Nat",
+        "rules": [
+          {
+            "period": "Ouverte du 1er janvier au 14 avril et du 1er juillet au 31 décembre",
+            "species": "Esturgeon de lac (esturgeon jaune)",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Ouverte du 1er janvier au 14 avril et du 1er juillet au 31 décembre",
+            "raw": "Esturgeon de lac (esturgeon jaune) - Ouverte du 1er janvier au 14 avril et du 1er juillet au 31 décembre"
+          }
+        ],
+        "raw": "Rivière Groundhog cantons de Reeves, Melrose, Strachan, Montcalm et Poulett, depuis le pont de la route 101, en aval jusqu’à l’embouchure de la rivière Nat Esturgeon de lac (esturgeon jaune) - Ouverte du 1er janvier au 14 avril et du 1er juillet au 31 décembre"
+      },
+      {
+        "name": "Rivière Groundhog",
+        "location": "canton de Keith, depuis la base du barrage Horwood, en aval jusqu’à l’endroit où elle se jette dans le lac Groundhog",
+        "rules": [
+          {
+            "period": "Pêche interdite du 1er avril au 15 juin",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Pêche interdite du 1er avril au 15 juin",
+            "raw": "Réserve de poissons - Pêche interdite du 1er avril au 15 juin"
+          }
+        ],
+        "raw": "Rivière Groundhog canton de Keith, depuis la base du barrage Horwood, en aval jusqu’à l’endroit où elle se jette dans le lac Groundhog Réserve de poissons - Pêche interdite du 1er avril au 15 juin"
+      },
+      {
+        "name": "Lac Labyrinth",
+        "location": "(48°13′46″ N , 79°31′18″ O ) - y compris la partie du ruisseau Waterhen en aval depuis le pont du chemin d’accès",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est interdit d’utiliser et de posséder du poisson vivant comme appât",
+            "raw": "Il est interdit d’utiliser et de posséder du poisson vivant comme appât"
+          },
+          {
+            "period": "Ouverte du 1er janvier au 15 avril et du 3e vendredi de mai au 31 décembre",
+            "species": "Grand brochet",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Ouverte du 1er janvier au 15 avril et du 3e vendredi de mai au 31 décembre",
+            "raw": "Grand brochet - Ouverte du 1er janvier au 15 avril et du 3e vendredi de mai au 31 décembre"
+          },
+          {
+            "period": "Ouverte du 1er janvier au 15 avril et du vendredi précédant le 4e samedi de juin au 31 décembre",
+            "species": "Achigan à petite bouche",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Ouverte du 1er janvier au 15 avril et du vendredi précédant le 4e samedi de juin au 31 décembre",
+            "raw": "Achigan à petite bouche - Ouverte du 1er janvier au 15 avril et du vendredi précédant le 4e samedi de juin au 31 décembre"
+          },
+          {
+            "period": "Ouverte du 1er janvier au 31 mars et du 3e vendredi de mai au 31 décembre",
+            "species": "Doré jaune",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Ouverte du 1er janvier au 31 mars et du 3e vendredi de mai au 31 décembre",
+            "raw": "Doré jaune - Ouverte du 1er janvier au 31 mars et du 3e vendredi de mai au 31 décembre"
+          }
+        ],
+        "raw": "Lac Labyrinth (48°13′46″ N , 79°31′18″ O ) - y compris la partie du ruisseau Waterhen en aval depuis le pont du chemin d’accès Il est interdit d’utiliser et de posséder du poisson vivant comme appât | Grand brochet - Ouverte du 1er janvier au 15 avril et du 3e vendredi de mai au 31 décembre | Achigan à petite bouche - Ouverte du 1er janvier au 15 avril et du vendredi précédant le 4e samedi de juin au 31 décembre | Doré jaune - Ouverte du 1er janvier au 31 mars et du 3e vendredi de mai au 31 décembre"
+      },
+      {
+        "name": "Rivière Little Abitibi",
+        "location": "cantons de McQuibban et Sangster, depuis la limite entre les deux cantons jusqu’à une ligne à la longitude 80°36′30″ O",
+        "rules": [
+          {
+            "period": "Pêche interdite du 1er avril au 15 juin",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Pêche interdite du 1er avril au 15 juin",
+            "raw": "Réserve de poissons - Pêche interdite du 1er avril au 15 juin"
+          }
+        ],
+        "raw": "Rivière Little Abitibi cantons de McQuibban et Sangster, depuis la limite entre les deux cantons jusqu’à une ligne à la longitude 80°36′30″ O Réserve de poissons - Pêche interdite du 1er avril au 15 juin"
+      },
+      {
+        "name": "Rivière Little Abitibi",
+        "location": null,
+        "rules": [
+          {
+            "period": "Pêche interdite du 1er avril au 30 juin dans les zones suivantes :",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Pêche interdite du 1er avril au 30 juin dans les zones suivantes :",
+            "raw": "Réserve de poissons - Pêche interdite du 1er avril au 30 juin dans les zones suivantes :"
+          },
+          {
+            "period": null,
+            "species": "Rivière Little Abitibi",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "canton de McQuibban, depuis le chemin du lac Pierre jusqu′à la partie du lac Pierre qui est à l’est de la longitude 80°39′30″ O",
+            "raw": "Rivière Little Abitibi - canton de McQuibban, depuis le chemin du lac Pierre jusqu′à la partie du lac Pierre qui est à l’est de la longitude 80°39′30″ O"
+          },
+          {
+            "period": null,
+            "species": "Rivière Little Abitibi et lac Montreuil",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "canton de Swartman, entre le passage nord du lac Pierre jusqu’à la partie à l’est de la longitude 80°47′ O",
+            "raw": "Rivière Little Abitibi et lac Montreuil - canton de Swartman, entre le passage nord du lac Pierre jusqu’à la partie à l’est de la longitude 80°47′ O"
+          }
+        ],
+        "raw": "Rivière Little Abitibi Réserve de poissons - Pêche interdite du 1er avril au 30 juin dans les zones suivantes : | Rivière Little Abitibi - canton de McQuibban, depuis le chemin du lac Pierre jusqu′à la partie du lac Pierre qui est à l’est de la longitude 80°39′30″ O | Rivière Little Abitibi et lac Montreuil - canton de Swartman, entre le passage nord du lac Pierre jusqu’à la partie à l’est de la longitude 80°47′ O"
+      }
+    ]
+  },
+  "bait_restrictions": {
+    "en": [
+      {
+        "period": null,
+        "species": "Live fish may not be used as bait or possessed for use as bait",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Big Club Lake (48°27’45″ N , 80°48’39″ W ) - Bond and Macklem Townships · Esker Lake Provincial Park - all lakes in or partially in the park · Labyrinth Lake - refer to waterbody exceptions · Lake 57 (48°17'46″ N , 80°40'29″ W ) - Timmins Township · Nayowin Lake (47°47’27″ N , 81°22’39″ W ) - Burrows Township · Pack Can Lake (48°27’54” N , 79°59’29” W ) - Garrison Township · Pallet Lake (48°16’05” N , 80°39’05” W ) - Nordica Township",
+        "raw": null,
+        "waters": [
+          "Big Club Lake (48°27’45″ N , 80°48’39″ W ) - Bond and Macklem Townships",
+          "Esker Lake Provincial Park - all lakes in or partially in the park",
+          "Labyrinth Lake - refer to waterbody exceptions",
+          "Lake 57 (48°17'46″ N , 80°40'29″ W ) - Timmins Township",
+          "Nayowin Lake (47°47’27″ N , 81°22’39″ W ) - Burrows Township",
+          "Pack Can Lake (48°27’54” N , 79°59’29” W ) - Garrison Township",
+          "Pallet Lake (48°16’05” N , 80°39’05” W ) - Nordica Township"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Il est interdit d’utiliser et de posséder du poisson vivant comme appât.",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Lac Big Club (48°27’ 45″ N , 80°48’ 39″ O ) - cantons de Bond et Macklem · Parc provincial Esker Lake - tous les lacs qui font partie du parc, de façon complète ou partielle · Lac Labyrinth - voir les exceptions visant des plans d’eau particuliers · Lac Nayowin (47°47’ 27″ N , 81°22’ 39″ O ) - canton de Burrows · Nouveau Lac Pack Can (48°27’ 54” N , 79°59’ 29” O ) - canton de Garrison · Lac Pallet (48°16’ 31″ N , 80°39’ 05″ O ) - canton de Nordica · Nouveau Lac 57 (48°17’ 46″ N , 80°40’ 29″ O ) - canton de Timmins",
+        "raw": null,
+        "waters": [
+          "Lac Big Club (48°27’ 45″ N , 80°48’ 39″ O ) - cantons de Bond et Macklem",
+          "Parc provincial Esker Lake - tous les lacs qui font partie du parc, de façon complète ou partielle",
+          "Lac Labyrinth - voir les exceptions visant des plans d’eau particuliers",
+          "Lac Nayowin (47°47’ 27″ N , 81°22’ 39″ O ) - canton de Burrows",
+          "Nouveau Lac Pack Can (48°27’ 54” N , 79°59’ 29” O ) - canton de Garrison",
+          "Lac Pallet (48°16’ 31″ N , 80°39’ 05″ O ) - canton de Nordica",
+          "Nouveau Lac 57 (48°17’ 46″ N , 80°40’ 29″ O ) - canton de Timmins"
+        ]
+      }
+    ]
+  },
+  "fish_sanctuaries": {
+    "en": [
+      {
+        "period": "No fishing - closed all year",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - closed all year Alexander Lake (48°17′ N , 80°35′ W ) - McEvay Township | Big Club Lake (48°27'45\" N , 80°48'39\" W ) | New Lake 57 (48°17' N , 80°40' W ) | Nayowin Lake (47°47'27\" N , 81°22'39\" W ) | New Pack Can Lake (48°27'54\" N , 79°59'29\" W ) | Pallet Lake (48°16'31\" N , 80°39'05\" W )",
+        "waters": [
+          "Alexander Lake (48°17′ N , 80°35′ W ) - McEvay Township",
+          "Big Club Lake (48°27'45\" N , 80°48'39\" W )",
+          "New Lake 57 (48°17' N , 80°40' W )",
+          "Nayowin Lake (47°47'27\" N , 81°22'39\" W )",
+          "New Pack Can Lake (48°27'54\" N , 79°59'29\" W )",
+          "Pallet Lake (48°16'31\" N , 80°39'05\" W )"
+        ]
+      },
+      {
+        "period": "No fishing - January 1 to Saturday before second Sunday in February and September 16 to December 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - January 1 to Saturday before second Sunday in February and September 16 to December 31 Commando Lake - refer to waterbody exceptions",
+        "waters": [
+          "Commando Lake - refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": "No fishing - January 1 to February 14 and October 1 to December 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - January 1 to February 14 and October 1 to December 31 Larder Lake - Hearst, McFadden, McVittie and McGarry Townships",
+        "waters": [
+          "Larder Lake - Hearst, McFadden, McVittie and McGarry Townships"
+        ]
+      },
+      {
+        "period": "No fishing - January 1 to Friday before third Saturday in May and November 1 to December 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - January 1 to Friday before third Saturday in May and November 1 to December 31 Anthead Lake (49°58′ N , 80°40′ W ) | Bateman Lake - Tomlinson Township | Bill’s Lake (50°07′ N , 80°36′ W ) | Bounce Lake (49°48′ N , 80°42′ W ) | Brayley Lake - Blakelock Township | Burnt Lake (49°42′ N , 80°33′ W ) | Deluxe Lake (49°52′ N , 80°45′ W ) | Echo Lake (50°00′ N , 80°36′ W ) | Edgar Lake - refer to waterbody exceptions | Esker Lake (49°50′ N , 80°45′ W ) | Floodwood Lake - Tweed and Blakelock Townships | French Lake (49°39′ N , 80°30′ W ) | Hill’s Lake (49°53′ N , 80°34′ W ) - Cochrane District | Keith Lake (Walter’s Lake) (49°45′ N , 80°38′ W ) | Larry Lake (49°44′ N , 80°34′ W ) | Lauzon Lake (49°49′ N , 80°48′ W ) | Little Wakwayowkastic Lake (49°49′ N , 80°33′ W ) | Louise Lake (Choppa Lake) (49°50′ N , 80°36′ W ) | Magiskan Lake - Blakelock Township | Marsh Lake (49°58′ N , 80°36′ W ) | McParlon Lake (50°09′ N , 80°42′ W ) | Mego Lake - Blakelock Township | Mikwam Lake - Blakelock Township | Moose Lake (49°40′ N , 80°34′ W ) | Moving Rock Lake (49°49′ N , 80°38′ W ) | Nettogami Lake (50°13′ N , 80°34′ W ) | North Choppa Lake (49°51′ N , 80°35′ W ) | North French Lake (49°45′ N , 80°38′ W ) | North Unknown Lake (49°48′ N , 80°41′ W ) | Partridge Lake (50°24′ N , 80°19′ W ) | Payntouk Lake - Tomlinson Township | Piyagoskogau Lake (50°14′ N , 80°25′ W ) | Pot Hole Lake (50°08′ N , 80°40′ W ) | Rainy Lake (50°05′ N , 80°36′ W ) | Sand Lake (49°44′ N , 80°43′ W ) | Snare Lake - Newman Township | South Choppa Lake (49°49′ N , 80°37′ W ) | South West Kesagami Lake (50°17′ N , 80°23′ W ) | Steve’s Lake (50°05′ N , 80°38′ W ) | Today Lake (49°51′ N , 80°41′ W ) | Tomorrow Lake (49°55′ N , 80°41′ W ) | Twopeak Lake - Newman Township | Unknown Lake (49°47′ N , 80°39′ W ) | Verana Lake (49°49′ N , 80°33′ W ) | West Choppa Lake (49°50′ N , 80°38′ W ) | Yesterday Lake (49°50′ N , 80°43′ W ) | Yesterday River Lake (49°49′ N , 80°46′ W )",
+        "waters": [
+          "Anthead Lake (49°58′ N , 80°40′ W )",
+          "Bateman Lake - Tomlinson Township",
+          "Bill’s Lake (50°07′ N , 80°36′ W )",
+          "Bounce Lake (49°48′ N , 80°42′ W )",
+          "Brayley Lake - Blakelock Township",
+          "Burnt Lake (49°42′ N , 80°33′ W )",
+          "Deluxe Lake (49°52′ N , 80°45′ W )",
+          "Echo Lake (50°00′ N , 80°36′ W )",
+          "Edgar Lake - refer to waterbody exceptions",
+          "Esker Lake (49°50′ N , 80°45′ W )",
+          "Floodwood Lake - Tweed and Blakelock Townships",
+          "French Lake (49°39′ N , 80°30′ W )",
+          "Hill’s Lake (49°53′ N , 80°34′ W ) - Cochrane District",
+          "Keith Lake (Walter’s Lake) (49°45′ N , 80°38′ W )",
+          "Larry Lake (49°44′ N , 80°34′ W )",
+          "Lauzon Lake (49°49′ N , 80°48′ W )",
+          "Little Wakwayowkastic Lake (49°49′ N , 80°33′ W )",
+          "Louise Lake (Choppa Lake) (49°50′ N , 80°36′ W )",
+          "Magiskan Lake - Blakelock Township",
+          "Marsh Lake (49°58′ N , 80°36′ W )",
+          "McParlon Lake (50°09′ N , 80°42′ W )",
+          "Mego Lake - Blakelock Township",
+          "Mikwam Lake - Blakelock Township",
+          "Moose Lake (49°40′ N , 80°34′ W )",
+          "Moving Rock Lake (49°49′ N , 80°38′ W )",
+          "Nettogami Lake (50°13′ N , 80°34′ W )",
+          "North Choppa Lake (49°51′ N , 80°35′ W )",
+          "North French Lake (49°45′ N , 80°38′ W )",
+          "North Unknown Lake (49°48′ N , 80°41′ W )",
+          "Partridge Lake (50°24′ N , 80°19′ W )",
+          "Payntouk Lake - Tomlinson Township",
+          "Piyagoskogau Lake (50°14′ N , 80°25′ W )",
+          "Pot Hole Lake (50°08′ N , 80°40′ W )",
+          "Rainy Lake (50°05′ N , 80°36′ W )",
+          "Sand Lake (49°44′ N , 80°43′ W )",
+          "Snare Lake - Newman Township",
+          "South Choppa Lake (49°49′ N , 80°37′ W )",
+          "South West Kesagami Lake (50°17′ N , 80°23′ W )",
+          "Steve’s Lake (50°05′ N , 80°38′ W )",
+          "Today Lake (49°51′ N , 80°41′ W )",
+          "Tomorrow Lake (49°55′ N , 80°41′ W )",
+          "Twopeak Lake - Newman Township",
+          "Unknown Lake (49°47′ N , 80°39′ W )",
+          "Verana Lake (49°49′ N , 80°33′ W )",
+          "West Choppa Lake (49°50′ N , 80°38′ W )",
+          "Yesterday Lake (49°50′ N , 80°43′ W )",
+          "Yesterday River Lake (49°49′ N , 80°46′ W )"
+        ]
+      },
+      {
+        "period": "No fishing - April 1 to June 15",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - April 1 to June 15 Blanche River - refer to waterbody exceptions | Borden Lake - Borden Township, waters east of a line drawn from a point on the south shore at 47°51′23″ N , 83°13′25″ W to a point on the north shore at 47°51′55″ N , 83°13′32″ W | Borden Lake - Cochrane Township, waters north of a line drawn from a point at the east shore at 47°51′58″ N , 83°16′55″ W to a point on the west shore at 47°51′58″ N , 83°17′25″ W | Chapleau River (Kebsquasheshing River) - Chapleau Township, from the centerline of the C.P.R. track upstream for 100 metres and downstream for 300 metres | Crooked Creek System - Marquis, Blain, and Eby Townships | Duckbreast and Groves Lakes - beginning at the narrowing of the south end of Duckbreast Lake (47°40′ N , 81°38′ W ), continuing in a southerly direction through the creek and extending 100 m into the north end of Groves Lake (47°38′ N , 81°36′ W ), encompassing the waters locally known as Spruce Lake | Firth Creek (Spawning Creek) - Milner Township | Floodwood River - McQuibban Township, the part of the river within McQuibban Township | Groundhog River - refer to waterbody exceptions | Horwood Lake - Dale Township, from a point on the Woman River 1 kilometre upstream from its confluence with the Rush River, downstream to Horwood Lake and all waters of Horwood Lake within Dale Township | Horwood Lake - Horwood and Keith Townships, Cornice Creek downstream from the Keith Township boundary to Horwood Lake including all waters of Horwood Lake within 2 kilometres of the Cornice Creek mouth | Horwood Lake - Horwood Township, from the outflow of Great Pike Lake downstream to Horwood Lake and including all waters of Horwood Lake within 300 metres of the creek mouth | Horwood Lake - Horwood Township, Marl Creek downstream from the Horwood Township boundary to Horwood Lake and including all waters of Horwood Lake within 1.8 kilometres of the Marl Creek mouth | Horwood Lake - Horwood Township, Swayze River downstream from the Horwood Township boundary to Horwood Lake and including all waters of Horwood Lake within 800 metres of the Swayze River mouth | Horwood Lake - Keith Township, the portion known as Hoodoo Lake or Hoodoo Bay | Kapakita Creek - Maisonville Township | Kenogaming Lake - Kenogaming Township, from the outflow of Kaneki Lake downstream to Kenogaming Lake and including the waters of the adjacent bay | Little Abitibi Lake - McQuibban Township, waters in the northern part of the lake within McQuibban Township | Little Abitibi River - refer to waterbody exceptions | Mattagami River - Gouin and Hassard Townships, between the dam at Kenogamissi Falls to a point on the Kenogamissi Lake at approximately (48°02′ N , 81°32′30″ W ) | Mattagami River - Mahaffy Township, lying between the Lower Sturgeon hydro dam and downstream to the northern boundary of Mahaffy Township | Mattagami River - Mountjoy Township, from the face of Sandy Falls power dam downstream to the boundary of Mountjoy Township | Mesomikenda Lake - waters known as the West Arm - Somme and Neville Townships including waters of the Somme River in Neville Township | Michiwakenda Lake - from the outflow of Okawakenda Lake downstream to Michiwakenda Lake and including the waters of the northwest bay | Minisinakwa Lake - from the northern point of the first island at the mouth of the Makami River (47°40′ N , 81°45′ W ) continuing north for 13 kilometres to 100 metres north of the top of the falls on the Makami River (47°46′ N , 81°46′ W ) | Minisinakwa Lake - from Benneweis Bay (47°34′ N , 81°43′ W ) and continuing west for 3 kilometres up Benneweis Creek to the first small pond excluding the unnamed Lake (47°34′ N , 81°44′ W ) | Minisinakwa River - Noble, Togo and Mattagami Townships | New Mollie River - Champagne Township, Territorial District of Sudbury | Mons Creek (Hay Creek) - Usnac Township | Nabakwasi River - all waters east of the power transmission line to the mouth of the Opikinimika River and upstream to the outflow of Ola Lake | Nabakwasi River - from the outflow of Nabakwasi Lake downstream to the confluence with the Minisinakwa River | Nebskwashi River - Chapleau Township, from Highway 129 downstream to a narrowing of the river at 47°49′34″ N , 83°23′36″ W | Opasatika River, Crow Creek, Wolfe Creek, Montcalm Creek, and South Crow Creek - McCrea Township | Opishing Lake - Hillary Township, waters of Kamiskotia River and Opishing Lake between Highway 101 and first narrows on Opishing Lake at latitude 48°14′06″ N | Porcupine River - from 200 metres upstream of the old N.R. Crossing on the South Porcupine River downstream to Porcupine Lake and all waters within 200 metres of the river mouth | Twenty-Six Mile Creek - Robb and Turnbull Townships, between Kamiskotia Lake and Christmas Lake | Waterhen Creek - Ossian Township, from Waterhen Lake to the mouth of the creek as it flows into Labyrinth Lake",
+        "waters": [
+          "Blanche River - refer to waterbody exceptions",
+          "Borden Lake - Borden Township, waters east of a line drawn from a point on the south shore at 47°51′23″ N , 83°13′25″ W to a point on the north shore at 47°51′55″ N , 83°13′32″ W",
+          "Borden Lake - Cochrane Township, waters north of a line drawn from a point at the east shore at 47°51′58″ N , 83°16′55″ W to a point on the west shore at 47°51′58″ N , 83°17′25″ W",
+          "Chapleau River (Kebsquasheshing River) - Chapleau Township, from the centerline of the C.P.R. track upstream for 100 metres and downstream for 300 metres",
+          "Crooked Creek System - Marquis, Blain, and Eby Townships",
+          "Duckbreast and Groves Lakes - beginning at the narrowing of the south end of Duckbreast Lake (47°40′ N , 81°38′ W ), continuing in a southerly direction through the creek and extending 100 m into the north end of Groves Lake (47°38′ N , 81°36′ W ), encompassing the waters locally known as Spruce Lake",
+          "Firth Creek (Spawning Creek) - Milner Township",
+          "Floodwood River - McQuibban Township, the part of the river within McQuibban Township",
+          "Groundhog River - refer to waterbody exceptions",
+          "Horwood Lake - Dale Township, from a point on the Woman River 1 kilometre upstream from its confluence with the Rush River, downstream to Horwood Lake and all waters of Horwood Lake within Dale Township",
+          "Horwood Lake - Horwood and Keith Townships, Cornice Creek downstream from the Keith Township boundary to Horwood Lake including all waters of Horwood Lake within 2 kilometres of the Cornice Creek mouth",
+          "Horwood Lake - Horwood Township, from the outflow of Great Pike Lake downstream to Horwood Lake and including all waters of Horwood Lake within 300 metres of the creek mouth",
+          "Horwood Lake - Horwood Township, Marl Creek downstream from the Horwood Township boundary to Horwood Lake and including all waters of Horwood Lake within 1.8 kilometres of the Marl Creek mouth",
+          "Horwood Lake - Horwood Township, Swayze River downstream from the Horwood Township boundary to Horwood Lake and including all waters of Horwood Lake within 800 metres of the Swayze River mouth",
+          "Horwood Lake - Keith Township, the portion known as Hoodoo Lake or Hoodoo Bay",
+          "Kapakita Creek - Maisonville Township",
+          "Kenogaming Lake - Kenogaming Township, from the outflow of Kaneki Lake downstream to Kenogaming Lake and including the waters of the adjacent bay",
+          "Little Abitibi Lake - McQuibban Township, waters in the northern part of the lake within McQuibban Township",
+          "Little Abitibi River - refer to waterbody exceptions",
+          "Mattagami River - Gouin and Hassard Townships, between the dam at Kenogamissi Falls to a point on the Kenogamissi Lake at approximately (48°02′ N , 81°32′30″ W )",
+          "Mattagami River - Mahaffy Township, lying between the Lower Sturgeon hydro dam and downstream to the northern boundary of Mahaffy Township",
+          "Mattagami River - Mountjoy Township, from the face of Sandy Falls power dam downstream to the boundary of Mountjoy Township",
+          "Mesomikenda Lake - waters known as the West Arm - Somme and Neville Townships including waters of the Somme River in Neville Township",
+          "Michiwakenda Lake - from the outflow of Okawakenda Lake downstream to Michiwakenda Lake and including the waters of the northwest bay",
+          "Minisinakwa Lake - from the northern point of the first island at the mouth of the Makami River (47°40′ N , 81°45′ W ) continuing north for 13 kilometres to 100 metres north of the top of the falls on the Makami River (47°46′ N , 81°46′ W )",
+          "Minisinakwa Lake - from Benneweis Bay (47°34′ N , 81°43′ W ) and continuing west for 3 kilometres up Benneweis Creek to the first small pond excluding the unnamed Lake (47°34′ N , 81°44′ W )",
+          "Minisinakwa River - Noble, Togo and Mattagami Townships",
+          "New Mollie River - Champagne Township, Territorial District of Sudbury",
+          "Mons Creek (Hay Creek) - Usnac Township",
+          "Nabakwasi River - all waters east of the power transmission line to the mouth of the Opikinimika River and upstream to the outflow of Ola Lake",
+          "Nabakwasi River - from the outflow of Nabakwasi Lake downstream to the confluence with the Minisinakwa River",
+          "Nebskwashi River - Chapleau Township, from Highway 129 downstream to a narrowing of the river at 47°49′34″ N , 83°23′36″ W",
+          "Opasatika River, Crow Creek, Wolfe Creek, Montcalm Creek, and South Crow Creek - McCrea Township",
+          "Opishing Lake - Hillary Township, waters of Kamiskotia River and Opishing Lake between Highway 101 and first narrows on Opishing Lake at latitude 48°14′06″ N",
+          "Porcupine River - from 200 metres upstream of the old N.R. Crossing on the South Porcupine River downstream to Porcupine Lake and all waters within 200 metres of the river mouth",
+          "Twenty-Six Mile Creek - Robb and Turnbull Townships, between Kamiskotia Lake and Christmas Lake",
+          "Waterhen Creek - Ossian Township, from Waterhen Lake to the mouth of the creek as it flows into Labyrinth Lake"
+        ]
+      },
+      {
+        "period": "No fishing - April 1 to June 30",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - April 1 to June 30 Departure Lake and Poplar Rapids River - Haggart Township, lying south of a line from a point on the west shore of Departure Lake at 49°13′22″ N , 81°48′22″ W and the peninsula on the east shore at 49°13′44″ N , 81°48′11″ W and the inflow of the Poplar Rapids River upstream to the first rapids, including 500 metres of Sydere Creek measured upstream from the mouth where it enters the Poplar Rapids River",
+        "waters": [
+          "Departure Lake and Poplar Rapids River - Haggart Township, lying south of a line from a point on the west shore of Departure Lake at 49°13′22″ N , 81°48′22″ W and the peninsula on the east shore at 49°13′44″ N , 81°48′11″ W and the inflow of the Poplar Rapids River upstream to the first rapids, including 500 metres of Sydere Creek measured upstream from the mouth where it enters the Poplar Rapids River"
+        ]
+      },
+      {
+        "period": "No fishing - April 15 to June 30",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - April 15 to June 30 Little Abitibi River - refer to waterbody exceptions | Thorning River - from the mouth of the river at Harris Lake upstream to the junction of the first creek",
+        "waters": [
+          "Little Abitibi River - refer to waterbody exceptions",
+          "Thorning River - from the mouth of the river at Harris Lake upstream to the junction of the first creek"
+        ]
+      },
+      {
+        "period": "No fishing - April 15 to July 15",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - April 15 to July 15 Groundhog River - refer to waterbody exceptions",
+        "waters": [
+          "Groundhog River - refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": "No fishing - from day after Labour Day to December 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - from day after Labour Day to December 31 Wakusimi River - Griffin, Seaton and Lisgar Townships",
+        "waters": [
+          "Wakusimi River - Griffin, Seaton and Lisgar Townships"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "Pêche interdite - Fermée toute l’année",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Fermée toute l’année Lac Alexander (48°17’ N , 80°35’ O ) | Lac Big Club (48°27’ 45″ N , 80°48’ 39″ O ) | Lac Nayowin (47°47’ 27″ N , 81°22’ 39″ O ) | Lac Pac Can (48°27’ 54″ N , 79°59’ 29″ O ) | Lac Pallet (48°16’ 31″ N , 80°39’ 05″ O ) | Lac 57 (48°17’ N , 80°40’ O )",
+        "waters": [
+          "Lac Alexander (48°17’ N , 80°35’ O )",
+          "Lac Big Club (48°27’ 45″ N , 80°48’ 39″ O )",
+          "Lac Nayowin (47°47’ 27″ N , 81°22’ 39″ O )",
+          "Lac Pac Can (48°27’ 54″ N , 79°59’ 29″ O )",
+          "Lac Pallet (48°16’ 31″ N , 80°39’ 05″ O )",
+          "Lac 57 (48°17’ N , 80°40’ O )"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er janvier au samedi précédant le 2e dimanche de février et du 16 septembre au 31 décembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er janvier au samedi précédant le 2e dimanche de février et du 16 septembre au 31 décembre Lac Commando - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Lac Commando - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er janvier au 14 février et du 1er octobre au 31 décembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er janvier au 14 février et du 1er octobre au 31 décembre Lac Larder - cantons de Hearst, McFadden, McVittie et McGarry",
+        "waters": [
+          "Lac Larder - cantons de Hearst, McFadden, McVittie et McGarry"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er janvier au vendredi précédant le 3e samedi de mai et du 1er novembre au 31 décembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er janvier au vendredi précédant le 3e samedi de mai et du 1er novembre au 31 décembre Lac Anthead (49°58′ N , 80°40′ O ) | Lac Bateman - canton de Tomlinson | Lac Bill’s (50°07′ N , 80°36′ O ) | Lac Bounce (49°48′ N , 80°42′ O ) | Lac Brayley - canton de Blakelock | Lac Burnt (49°42′ N , 80°33′ O ) | Lac Deluxe (49°52′ N , 80°45′ O ) | Lac Echo (50°00′ N , 80°36′ O ) | Lac Edgar - voir les exceptions visant des plans d’eau particuliers | Lac Esker (49°50′ N , 80°45′ O ) | Lac Floodwood - cantons de Tweed et Blakelock | Lac French (49°39′ N , 80°30′ O ) | Lac Hill’s (49°53′ N , 80°34′ O ) - district de Cochrane | Lac Keith (lac Walter’s) (49°45′ N , 80°38′ O ) | Lac Larry (49°44′ N , 80°34′ O ) | Lac Lauzon (49°49′ N , 80°48′ O ) | Lac Little Wakwayowkastic (49°49′ N , 80°33′ O ) | Lac Louise (lac Choppa) (49°50′ N , 80°36′ O ) | Lac Magiskan - canton de Blakelock | Lac Marsh (49°58′ N , 80°36′ O ) | Lac McParlon (50°09′ N., 80°42′ O ) | Lac Mego - canton de Blakelock | Lac Mikwam - canton de Blakelock | Lac Moose (49°40′ N , 80°34′ O ) | Lac Moving Rock (49°49′ N , 80°38′ O ) | Lac Nettogami (50°13′ N , 80°34′ O ) | Lac North Choppa (49°51′ N , 80°35′ O ) | Lac North French (49°45′ N , 80°38′ O ) | Lac North Unknown (49°48′ N , 80°41′ O ) | Lac Partridge (50°24′ N , 80°19′ O ) | Lac Payntouk - canton de Tomlinson | Lac Piyagoskogau (50°14′ N , 80°25′ O ) | Lac à la Pluie (Rainy Lake) (50°05′ N , 80°36′ O ) | Lac Pot Hole (50°08′ N , 80°40′ O ) | Lac Sand (49°44′ N , 80°43′ O ) | Lac sans nom (49°47′ N , 80°39′ O ) | Lac Snare - canton de Newman | Lac South Choppa (49°49′ N , 80°37′ O ) | Lac South West Kesagami (50°17′ N , 80°23′ O ) | Lac Steve’s (50°05′ N , 80°38′ O ) | Lac Today (49°51′ N , 80°41′ O ) | Lac Tomorrow (49°55′ N , 80°41′ O ) | Lac Twopeak - canton de Newman | Lac Verana (49°49′ N , 80°33′ O ) | Lac West Choppa (49°50′ N , 80°38′ O ) | Lac Yesterday (49°50′ N , 80°43′ O ) | Rivière Yesterday (49°49′ N , 80°46′ O )",
+        "waters": [
+          "Lac Anthead (49°58′ N , 80°40′ O )",
+          "Lac Bateman - canton de Tomlinson",
+          "Lac Bill’s (50°07′ N , 80°36′ O )",
+          "Lac Bounce (49°48′ N , 80°42′ O )",
+          "Lac Brayley - canton de Blakelock",
+          "Lac Burnt (49°42′ N , 80°33′ O )",
+          "Lac Deluxe (49°52′ N , 80°45′ O )",
+          "Lac Echo (50°00′ N , 80°36′ O )",
+          "Lac Edgar - voir les exceptions visant des plans d’eau particuliers",
+          "Lac Esker (49°50′ N , 80°45′ O )",
+          "Lac Floodwood - cantons de Tweed et Blakelock",
+          "Lac French (49°39′ N , 80°30′ O )",
+          "Lac Hill’s (49°53′ N , 80°34′ O ) - district de Cochrane",
+          "Lac Keith (lac Walter’s) (49°45′ N , 80°38′ O )",
+          "Lac Larry (49°44′ N , 80°34′ O )",
+          "Lac Lauzon (49°49′ N , 80°48′ O )",
+          "Lac Little Wakwayowkastic (49°49′ N , 80°33′ O )",
+          "Lac Louise (lac Choppa) (49°50′ N , 80°36′ O )",
+          "Lac Magiskan - canton de Blakelock",
+          "Lac Marsh (49°58′ N , 80°36′ O )",
+          "Lac McParlon (50°09′ N., 80°42′ O )",
+          "Lac Mego - canton de Blakelock",
+          "Lac Mikwam - canton de Blakelock",
+          "Lac Moose (49°40′ N , 80°34′ O )",
+          "Lac Moving Rock (49°49′ N , 80°38′ O )",
+          "Lac Nettogami (50°13′ N , 80°34′ O )",
+          "Lac North Choppa (49°51′ N , 80°35′ O )",
+          "Lac North French (49°45′ N , 80°38′ O )",
+          "Lac North Unknown (49°48′ N , 80°41′ O )",
+          "Lac Partridge (50°24′ N , 80°19′ O )",
+          "Lac Payntouk - canton de Tomlinson",
+          "Lac Piyagoskogau (50°14′ N , 80°25′ O )",
+          "Lac à la Pluie (Rainy Lake) (50°05′ N , 80°36′ O )",
+          "Lac Pot Hole (50°08′ N , 80°40′ O )",
+          "Lac Sand (49°44′ N , 80°43′ O )",
+          "Lac sans nom (49°47′ N , 80°39′ O )",
+          "Lac Snare - canton de Newman",
+          "Lac South Choppa (49°49′ N , 80°37′ O )",
+          "Lac South West Kesagami (50°17′ N , 80°23′ O )",
+          "Lac Steve’s (50°05′ N , 80°38′ O )",
+          "Lac Today (49°51′ N , 80°41′ O )",
+          "Lac Tomorrow (49°55′ N , 80°41′ O )",
+          "Lac Twopeak - canton de Newman",
+          "Lac Verana (49°49′ N , 80°33′ O )",
+          "Lac West Choppa (49°50′ N , 80°38′ O )",
+          "Lac Yesterday (49°50′ N , 80°43′ O )",
+          "Rivière Yesterday (49°49′ N , 80°46′ O )"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er avril au 15 juin",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er avril au 15 juin Rivière Blanche - voir les exceptions visant des plans d’eau particuliers | Lac Borden - canton de Borden, les eaux à l’est d’une ligne tracée à partir d’un point sur la rive sud à 47°51′23″ N , 83°13′25″ O jusqu’à un point sur la rive nord à 47°51′55″ N , 83°13′32″ O | Lac Borden - canton de Cochrane, les eaux au nord d’une ligne tracée depuis un point sur la rive est à 47°51′58″ N , 83°16′55″ O jusqu’à un point sur la rive ouest à 47°51′58″ N , 83°17′25″ O | Rivière Chapleau (rivière Kebsquasheshing) - canton de Chapleau, de la ligne médiane de la voie ferrée du CP en amont sur 100 mètres et en aval sur 300 mètres | Réseau du ruisseau Crooked - cantons de Marquis, Blain et Eby | Lacs Duckbreast et Groves - de là où l’extrémité sud du lac Duckbreast devient plus étroite (47°40′et 81°38′ O ), en continuant en direction du sud et en passant par le ruisseau pour s’étendre sur 100 mètres dans l’extrémité nord du lac Groves (47°38′ N , 81°36′ O ), y compris les eaux connues localement comme le lac Spruce | Ruisseau Firth (ruisseau Spawning) - canton de Milner | Rivière Floodwood - canton de McQuibban, la partie de la rivière à l’intérieur du canton de McQuibban | Rivière Groundhog - voir les exceptions visant des plans d’eau particuliers | Lac Horwood - canton de Dale, depuis un point sur la rivière Woman 1 kilomètres en amont depuis sa confluence avec la rivière Rush, en aval jusqu’au lac Horwood et toutes les eaux du lac Horwood qui sont dans le canton de Dale | Lac Horwood - cantons de Horwood et Keith, ruisseau Cornice en aval depuis la limite du canton de Keith jusqu’au lac Horwood, y compris toutes les eaux du lac Horwood dans un rayon de 2 kilomètres de l’embouchure du ruisseau Cornice | Lac Horwood - canton de Horwood, depuis le débit sortant du lac Great Pike en aval jusqu’au lac Horwood et incluant toutes les eaux du lac Horwood dans un rayon de 300 mètres de l’embouchure du ruisseau | Lac Horwood - canton de Horwood, ruisseau Marl en aval depuis la limite du canton de Horwood jusqu’au lac Horwood, y compris toutes les eaux du lac Horwood dans un rayon de 1,8 kilomètres de l’embouchure du ruisseau Marl | Lac Horwood - canton de Horwood, rivière Swayze en aval depuis la limite du canton de Horwood jusqu’au lac Horwood et incluant toutes les eaux du lac Horwood dans un rayon de 800 mètres de l’embouchure de la rivière Swayze | Lac Horwood - canton de Keith, la partie connue comme le lac Hoodoo ou la baie Hoodoo | Ruisseau Kapakita - canton de Maisonville | Lac Kenogaming - canton de Kenogaming, depuis le débit sortant du lac Kaneki en aval jusqu’au lac Kenogaming, y compris toutes les eaux de la baie adjacente | Lac Little Abitibi - canton de McQuibban, les eaux de la partie nord du lac qui sont dans le canton de McQuibban | Rivière Little Abitibi - voir les exceptions visant des plans d’eau particuliers | Rivière Mattagami - cantons de Gouin et Hassard, entre le barrage des chutes Kenogamissi jusqu’à un point sur le lac Kenogamissi à approximativement 48°02′ N , 81°32′30″ O | Rivière Mattagami - canton de Mahaffy, entre le barrage hydroélectrique Lower Sturgeon et en aval jusqu’à la limite nord du canton de Mahaffy | Rivière Mattagami - canton de Mountjoy, depuis le devant du barrage hydroélectrique aux chutes Sandy en aval jusqu’à la limite du canton de Mountjoy | Lac Mesomikenda - les eaux connues comme la baie West - cantons de Somme et Neville, incluant les eaux de la rivière Somme dans le canton de Neville | Lac Michiwakenda - depuis le débit sortant du lac Okawakenda, en aval jusqu’au lac Michiwakenda, y compris les eaux de la baie au nord-ouest | Lac Minisinakwa - depuis la pointe nord de la première île à l’embouchure de la rivière Makami (47°40′ N , 81°45′ O ), en remontant vers le nord sur 13 kilomètres jusqu’à 100 mètres au nord du sommet des chutes de la rivière Makami (47°46′ N , 81°46′ O ) | Lac Minisinakwa - depuis la baie Benneweis (47°34′ N , 81°43′ O ) vers l’ouest sur 3 km en remontant le ruisseau Benneweis jusqu’au premier petit étang, à l’exclusion du lac sans nom (47°34′ N , 81°44′ O ) | Rivière Minisinakwa - cantons de Noble, Togo et Mattagami | Nouveau Rivière Mollie - canton de Champagne, district territorial de Sudbury | Ruisseau Mons (ruisseau Hay) - canton d’Usnac | Rivière Nabakwasi - toutes les eaux à l’est de la ligne de transport d’énergie jusqu’à l’embouchure de la rivière Opikinimika et en amont jusqu’au débit sortant du lac Ola | Rivière Nabakwasi - depuis le débit sortant du lac Nabakwasi, en aval jusqu’à la confluence avec la rivière Minisinakwa | Rivière Nebskwashi - canton de Chapleau, à partir de la route 129 en aval jusqu’à un point où la rivière se rétrécit à 47°49′34″ N , 83°23′36″ O | Rivière Opasatika, ruisseau Crow, ruisseau Wolfe, ruisseau Montcalm et ruisseau South Crow - canton de McCrea | Lac Opishing - canton de Hillary, les eaux de la rivière Kamiskotia et du lac Opishing, entre la route 101 et le premier passage du lac Opishing à la latitude 48°14′06″ N | Rivière Porcupine - depuis 200 mètres en amont de l’ancien pont-rail de l'ONR qui traverse la rivière South Porcupine, en aval jusqu’au lac Porcupine, et toutes les eaux dans un rayon de 200 mètres de l’embouchure de la rivière | Ruisseau Twenty-Six Mile - cantons de Robb et Turnbull, entre le lac Kamiskotia et le lac Christmas | Ruisseau Waterhen - canton d’Ossian, depuis le lac Waterhen jusqu’à l’embouchure du ruisseau dans le lac Labyrinth",
+        "waters": [
+          "Rivière Blanche - voir les exceptions visant des plans d’eau particuliers",
+          "Lac Borden - canton de Borden, les eaux à l’est d’une ligne tracée à partir d’un point sur la rive sud à 47°51′23″ N , 83°13′25″ O jusqu’à un point sur la rive nord à 47°51′55″ N , 83°13′32″ O",
+          "Lac Borden - canton de Cochrane, les eaux au nord d’une ligne tracée depuis un point sur la rive est à 47°51′58″ N , 83°16′55″ O jusqu’à un point sur la rive ouest à 47°51′58″ N , 83°17′25″ O",
+          "Rivière Chapleau (rivière Kebsquasheshing) - canton de Chapleau, de la ligne médiane de la voie ferrée du CP en amont sur 100 mètres et en aval sur 300 mètres",
+          "Réseau du ruisseau Crooked - cantons de Marquis, Blain et Eby",
+          "Lacs Duckbreast et Groves - de là où l’extrémité sud du lac Duckbreast devient plus étroite (47°40′et 81°38′ O ), en continuant en direction du sud et en passant par le ruisseau pour s’étendre sur 100 mètres dans l’extrémité nord du lac Groves (47°38′ N , 81°36′ O ), y compris les eaux connues localement comme le lac Spruce",
+          "Ruisseau Firth (ruisseau Spawning) - canton de Milner",
+          "Rivière Floodwood - canton de McQuibban, la partie de la rivière à l’intérieur du canton de McQuibban",
+          "Rivière Groundhog - voir les exceptions visant des plans d’eau particuliers",
+          "Lac Horwood - canton de Dale, depuis un point sur la rivière Woman 1 kilomètres en amont depuis sa confluence avec la rivière Rush, en aval jusqu’au lac Horwood et toutes les eaux du lac Horwood qui sont dans le canton de Dale",
+          "Lac Horwood - cantons de Horwood et Keith, ruisseau Cornice en aval depuis la limite du canton de Keith jusqu’au lac Horwood, y compris toutes les eaux du lac Horwood dans un rayon de 2 kilomètres de l’embouchure du ruisseau Cornice",
+          "Lac Horwood - canton de Horwood, depuis le débit sortant du lac Great Pike en aval jusqu’au lac Horwood et incluant toutes les eaux du lac Horwood dans un rayon de 300 mètres de l’embouchure du ruisseau",
+          "Lac Horwood - canton de Horwood, ruisseau Marl en aval depuis la limite du canton de Horwood jusqu’au lac Horwood, y compris toutes les eaux du lac Horwood dans un rayon de 1,8 kilomètres de l’embouchure du ruisseau Marl",
+          "Lac Horwood - canton de Horwood, rivière Swayze en aval depuis la limite du canton de Horwood jusqu’au lac Horwood et incluant toutes les eaux du lac Horwood dans un rayon de 800 mètres de l’embouchure de la rivière Swayze",
+          "Lac Horwood - canton de Keith, la partie connue comme le lac Hoodoo ou la baie Hoodoo",
+          "Ruisseau Kapakita - canton de Maisonville",
+          "Lac Kenogaming - canton de Kenogaming, depuis le débit sortant du lac Kaneki en aval jusqu’au lac Kenogaming, y compris toutes les eaux de la baie adjacente",
+          "Lac Little Abitibi - canton de McQuibban, les eaux de la partie nord du lac qui sont dans le canton de McQuibban",
+          "Rivière Little Abitibi - voir les exceptions visant des plans d’eau particuliers",
+          "Rivière Mattagami - cantons de Gouin et Hassard, entre le barrage des chutes Kenogamissi jusqu’à un point sur le lac Kenogamissi à approximativement 48°02′ N , 81°32′30″ O",
+          "Rivière Mattagami - canton de Mahaffy, entre le barrage hydroélectrique Lower Sturgeon et en aval jusqu’à la limite nord du canton de Mahaffy",
+          "Rivière Mattagami - canton de Mountjoy, depuis le devant du barrage hydroélectrique aux chutes Sandy en aval jusqu’à la limite du canton de Mountjoy",
+          "Lac Mesomikenda - les eaux connues comme la baie West - cantons de Somme et Neville, incluant les eaux de la rivière Somme dans le canton de Neville",
+          "Lac Michiwakenda - depuis le débit sortant du lac Okawakenda, en aval jusqu’au lac Michiwakenda, y compris les eaux de la baie au nord-ouest",
+          "Lac Minisinakwa - depuis la pointe nord de la première île à l’embouchure de la rivière Makami (47°40′ N , 81°45′ O ), en remontant vers le nord sur 13 kilomètres jusqu’à 100 mètres au nord du sommet des chutes de la rivière Makami (47°46′ N , 81°46′ O )",
+          "Lac Minisinakwa - depuis la baie Benneweis (47°34′ N , 81°43′ O ) vers l’ouest sur 3 km en remontant le ruisseau Benneweis jusqu’au premier petit étang, à l’exclusion du lac sans nom (47°34′ N , 81°44′ O )",
+          "Rivière Minisinakwa - cantons de Noble, Togo et Mattagami",
+          "Nouveau Rivière Mollie - canton de Champagne, district territorial de Sudbury",
+          "Ruisseau Mons (ruisseau Hay) - canton d’Usnac",
+          "Rivière Nabakwasi - toutes les eaux à l’est de la ligne de transport d’énergie jusqu’à l’embouchure de la rivière Opikinimika et en amont jusqu’au débit sortant du lac Ola",
+          "Rivière Nabakwasi - depuis le débit sortant du lac Nabakwasi, en aval jusqu’à la confluence avec la rivière Minisinakwa",
+          "Rivière Nebskwashi - canton de Chapleau, à partir de la route 129 en aval jusqu’à un point où la rivière se rétrécit à 47°49′34″ N , 83°23′36″ O",
+          "Rivière Opasatika, ruisseau Crow, ruisseau Wolfe, ruisseau Montcalm et ruisseau South Crow - canton de McCrea",
+          "Lac Opishing - canton de Hillary, les eaux de la rivière Kamiskotia et du lac Opishing, entre la route 101 et le premier passage du lac Opishing à la latitude 48°14′06″ N",
+          "Rivière Porcupine - depuis 200 mètres en amont de l’ancien pont-rail de l'ONR qui traverse la rivière South Porcupine, en aval jusqu’au lac Porcupine, et toutes les eaux dans un rayon de 200 mètres de l’embouchure de la rivière",
+          "Ruisseau Twenty-Six Mile - cantons de Robb et Turnbull, entre le lac Kamiskotia et le lac Christmas",
+          "Ruisseau Waterhen - canton d’Ossian, depuis le lac Waterhen jusqu’à l’embouchure du ruisseau dans le lac Labyrinth"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er avril au 30 juin",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er avril au 30 juin Lac Departure et rivière Poplar Rapids - canton de Haggart, s’étendant au sud d’une ligne depuis un point sur la rive ouest du lac Departure à 49°13′22″ N , 81°48′22″ O et la péninsule sur la rive est à 49°13′44″ N , 81°48′11″ O et le débit entrant de la rivière Poplar Rapids en amont jusqu’aux premiers rapides, y compris 500 mètres du ruisseau Sydere mesuré en amont depuis l’embouchure où il se jette dans la rivière Poplar Rapids",
+        "waters": [
+          "Lac Departure et rivière Poplar Rapids - canton de Haggart, s’étendant au sud d’une ligne depuis un point sur la rive ouest du lac Departure à 49°13′22″ N , 81°48′22″ O et la péninsule sur la rive est à 49°13′44″ N , 81°48′11″ O et le débit entrant de la rivière Poplar Rapids en amont jusqu’aux premiers rapides, y compris 500 mètres du ruisseau Sydere mesuré en amont depuis l’embouchure où il se jette dans la rivière Poplar Rapids"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 15 avril au 30 juin",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 15 avril au 30 juin Rivière Little Abitibi - voir les exceptions visant des plans d’eau particuliers | Rivière Thorning - depuis l’embouchure de la rivière au lac Harris, en amont jusqu’à la confluence avec le premier ruisseau",
+        "waters": [
+          "Rivière Little Abitibi - voir les exceptions visant des plans d’eau particuliers",
+          "Rivière Thorning - depuis l’embouchure de la rivière au lac Harris, en amont jusqu’à la confluence avec le premier ruisseau"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 15 avril au 15 juillet",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 15 avril au 15 juillet Rivière Groundhog - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Rivière Groundhog - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du jour après la fête du Travail au 31 décembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du jour après la fête du Travail au 31 décembre Rivière Wakusimi - cantons de Griffin, Seaton et Lisgar",
+        "waters": [
+          "Rivière Wakusimi - cantons de Griffin, Seaton et Lisgar"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,3337 @@
+{
+  "zone_id": 5,
+  "zone_key": "ON-5",
+  "activity": "fishing",
+  "jurisdiction": "ON",
+  "fmz": 5,
+  "licence_year": 2026,
+  "authority": "Ontario Ministry of Natural Resources (MNR); Ontario Fishing Regulations Summary 2026 (not the official law)",
+  "source": {
+    "en": "https://www.ontario.ca/document/ontario-fishing-regulations-summary/fisheries-management-zone-5",
+    "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-peche/zone-de-gestion-des-peches-5",
+    "pdf_en": "https://ontario.ca/files/2025-12/mnr-2026-fishing-regulations-summary-en-2025-12-08.pdf",
+    "fish_on_line": "https://www.gisapplication.lrc.gov.on.ca/FishONLine/Index.html?site=FishONLine&viewer=FishONLine&locale=en-US&FMZ=5",
+    "fetched_at": "2026-09-04",
+    "html_updated": "2026-08-04",
+    "note": "Rule text reproduced verbatim from the Ontario Fishing Regulations Summary HTML (not the PDF). The Summary is not the official law. Always verify with the MNR and Fish ON-Line before fishing. Crown copyright."
+  },
+  "coverage": {
+    "licence_year": 2026,
+    "skipped_fish_on_line_only": false,
+    "zone_wide_listed": 15,
+    "zone_wide_harvested": 15,
+    "species_exceptions_listed": 2,
+    "species_exceptions_harvested": 2,
+    "waterbody_exceptions_listed": 23,
+    "waterbody_exceptions_harvested": 23,
+    "fish_sanctuaries_listed": 6,
+    "fish_sanctuaries_harvested": 6,
+    "bait_restrictions_listed": 2,
+    "bait_restrictions_harvested": 2,
+    "complete": true,
+    "note": "Zone-wide seasons/limits and listed HTML exceptions/sanctuaries for this FMZ are included. The Ontario Fishing Regulations Summary is not the law; verify with Fish ON-Line. This is not complete Ontario."
+  },
+  "title": {
+    "en": "Fisheries Management Zone 5 — Ontario FMZ 5",
+    "fr": "Zone de gestion des pêches 5 — Ontario ZGP 5"
+  },
+  "notices": {
+    "en": [
+      "Holders of non-Canadian resident recreational fishing licences who are camping on Crown land may not take fish in excess of the conservation catch and possession limits.",
+      "Conservation Fishing Licence limits must be followed when camping on Crown land in portions of Zone 5 (that is, within shaded area on map ).",
+      "The Zone-wide daily catch and retain limits and possession limits for walleye and sauger combined and lake trout is different for non-Canadian residents than for Ontario and Canadian residents.",
+      "Non-Canadian residents shall not possess more fish on board the vessel they are angling from than the applicable daily limit for that species."
+    ],
+    "fr": [
+      "Les détenteurs d’un permis de pêche récréative de non-résident canadien qui campent sur des terres de la Couronne ne peuvent pas prendre un nombre de poissons qui dépasse les limites de prise et de possession du permis de pêche écologique.",
+      "Les personnes qui font du camping sur les terres de la Couronne doivent respecter les limites du permis de pêche écologique (conservation) dans une portion de la zone 5 ( zone ombragée sur la carte).",
+      "La limite quotidienne de prise et de rétention ainsi que la limite de possession du doré jaune et du doré noir (toute combinaison) et du touladi pour toute la zone ne sont pas les mêmes pour les personnes résidant à l’extérieur du Canada que pour les résidents de l’Ontario et du Canada.",
+      "Les personnes résidant à l’extérieur du Canada faisant la pêche récréative à bord d’une embarcation ne peuvent avoir en leur possession plus de poissons à bord de l’embarcation que la limite permise par jour pour cette espèce."
+    ]
+  },
+  "general": {
+    "en": [
+      {
+        "period": null,
+        "species": "Aggregate limits for trout and salmon (including splake)",
+        "limit": "S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limits : S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined"
+      },
+      {
+        "period": "open all year",
+        "species": "Brook trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Brown trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Crappie",
+        "limit": "S-10 and C-5",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-10 and C-5"
+      },
+      {
+        "period": "closed all year",
+        "species": "Lake sturgeon",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : closed all year"
+      },
+      {
+        "period": "January 1 to September 30",
+        "species": "Lake trout",
+        "limit": "Ontario and Canadian residents S-2; not more than 1 greater than 56 centimetres from September 1 to September 30, and C-1; no size limit Limits : Non-Canadian residents Daily catch and retain limit: S-1 and C-1, no size limit Possession limit: S-2, not more than 1 greater than 56 centimetres from September 1 to September 30, and C-1, no size limit",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to September 30 Limits : Ontario and Canadian residents S-2; not more than 1 greater than 56 centimetres from September 1 to September 30, and C-1; no size limit Limits : Non-Canadian residents Daily catch and retain limit: S-1 and C-1, no size limit Possession limit: S-2, not more than 1 greater than 56 centimetres from September 1 to September 30, and C-1, no size limit"
+      },
+      {
+        "period": "open all year",
+        "species": "Lake whitefish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "open all year",
+        "species": "Largemouth and smallmouth bass combined",
+        "limit": "S-4 and C-2; must be less than 35 centimetres from January 1 to June 30",
+        "length": "must be less than 35 centimetres from January 1 to June 30",
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-4 and C-2; must be less than 35 centimetres from January 1 to June 30"
+      },
+      {
+        "period": "third Saturday in June to December 15",
+        "species": "Muskellunge",
+        "limit": "S-1; must be greater than 102 centimetres and C-0",
+        "length": "must be greater than 102 centimetres",
+        "gear": null,
+        "notes": null,
+        "raw": "Season : third Saturday in June to December 15 Limits : S-1; must be greater than 102 centimetres and C-0"
+      },
+      {
+        "period": "open all year",
+        "species": "Northern pike",
+        "limit": "S-4 and C-2; none greater than 75 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-4 and C-2; none greater than 75 centimetres"
+      },
+      {
+        "period": "open all year",
+        "species": "Rainbow trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Splake",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Sunfish",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50 and C-25"
+      },
+      {
+        "period": "January 1 to April 14 and third Saturday in May to December 31",
+        "species": "Walleye and sauger combined",
+        "limit": "Ontario and Canadian residents S-4 and C-2; not more than 1 greater than 46 centimetres Limits : Non-Canadian residents Daily catch and retain limit: S-2 and C-2; not more than 1 greater than 46 centimetres Possession limit: S-4 and C-2; not more than 1 greater than 46 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to April 14 and third Saturday in May to December 31 Limits : Ontario and Canadian residents S-4 and C-2; not more than 1 greater than 46 centimetres Limits : Non-Canadian residents Daily catch and retain limit: S-2 and C-2; not more than 1 greater than 46 centimetres Possession limit: S-4 and C-2; not more than 1 greater than 46 centimetres"
+      },
+      {
+        "period": "open all year",
+        "species": "Yellow perch",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50 and C-25"
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Limites combinées pour la truite et le saumon (y compris le touladi et l’omble de fontaine)",
+        "limit": "S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées.",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limites : S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées."
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Omble de fontaine",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Pêche ouverte toute l'année",
+        "species": "Truite brune",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l'année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Marigane",
+        "limit": "S-10 et C-5",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-10 et C-5"
+      },
+      {
+        "period": "Fermée toute l’année",
+        "species": "Esturgeon de lac (esturgeon jaune)",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Fermée toute l’année"
+      },
+      {
+        "period": "Du 1er janvier au 30 septembre",
+        "species": "Touladi",
+        "limit": "Résidents de l'Ontario et du Canada S-2; 1 seul dépassant 56 centimètres du 1er septembre au 30 septembre, et C-1 : aucune limite de taille Limites : Personnes résidant à l’extérieur du Canada Limite quotidienne de prise et de rétention : S-1 et C-1, aucune limite de taille Limite de possession : S-2, 1 seul dépassant 56 centimètres du 1er septembre au 30 septembre, et C-1 : aucune limite de taille",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 30 septembre Limites : Résidents de l'Ontario et du Canada S-2; 1 seul dépassant 56 centimètres du 1er septembre au 30 septembre, et C-1 : aucune limite de taille Limites : Personnes résidant à l’extérieur du Canada Limite quotidienne de prise et de rétention : S-1 et C-1, aucune limite de taille Limite de possession : S-2, 1 seul dépassant 56 centimètres du 1er septembre au 30 septembre, et C-1 : aucune limite de taille"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Grand corégone",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+        "limit": "S-4 et C-2; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin",
+        "length": "doit mesurer moins de 35 centimètres du 1er janvier au 30 juin",
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-4 et C-2; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin"
+      },
+      {
+        "period": "Du 3e samedi de juin au 15 décembre",
+        "species": "Maskinongé",
+        "limit": "S-1; doit dépasser 102 centimètres et C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 3e samedi de juin au 15 décembre Limites : S-1; doit dépasser 102 centimètres et C-0"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Grand brochet",
+        "limit": "S-4 et C-2; aucun dépassant 75 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-4 et C-2; aucun dépassant 75 centimètres"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Truite arc-en-ciel",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Truite moulac",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Crapet",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-50 et C-25"
+      },
+      {
+        "period": "Du 1er janvier au 14 avril et du 3e samedi de mai au 31 décembre",
+        "species": "Doré jaune et doré noir (toute combinaison)",
+        "limit": "Résidents de l'Ontario et du Canada S-4 et C-2; 1 seul dépassant 46 centimètres Limites : Personnes résidant à l’extérieur du Canada Limite quotidienne de prise et de rétention : S-2 et C-2, 1 seul dépassant 46 centimètres Limite de possession : S-4 et C-2, 1 seul dépassant 46nbsp;centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 14 avril et du 3e samedi de mai au 31 décembre Limites : Résidents de l'Ontario et du Canada S-4 et C-2; 1 seul dépassant 46 centimètres Limites : Personnes résidant à l’extérieur du Canada Limite quotidienne de prise et de rétention : S-2 et C-2, 1 seul dépassant 46 centimètres Limite de possession : S-4 et C-2, 1 seul dépassant 46nbsp;centimètres"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Perchaude",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-50 et C-25"
+      }
+    ]
+  },
+  "species_exceptions": {
+    "en": [
+      {
+        "period": "closed all year Seahorse Lake (49°06′03″ N , 93°18′03″ W )",
+        "species": "Lake trout",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Centre for Northern Forest Ecosystem Research Lakes: · Lake 20 (49°07′46″ N , 92°08′19″ W ) · Lake 26 (49°07′23″ N , 92°08′40″ W ) · Lake 39 (49°05′42″ N , 92°09′56″ W ) · Lake 42 (49°05′05″ N , 92°09′36″ W ) (research lakes) · contact Atikokan work centre for more information · Seahorse Lake (49°06′03″ N , 93°18′03″ W )",
+        "raw": "Season : closed all year Seahorse Lake (49°06′03″ N , 93°18′03″ W )",
+        "waters": [
+          "Centre for Northern Forest Ecosystem Research Lakes:",
+          "Lake 20 (49°07′46″ N , 92°08′19″ W )",
+          "Lake 26 (49°07′23″ N , 92°08′40″ W )",
+          "Lake 39 (49°05′42″ N , 92°09′56″ W )",
+          "Lake 42 (49°05′05″ N , 92°09′36″ W ) (research lakes)",
+          "contact Atikokan work centre for more information",
+          "Seahorse Lake (49°06′03″ N , 93°18′03″ W )"
+        ]
+      },
+      {
+        "period": null,
+        "species": "Muskellunge",
+        "limit": "S-1; must be greater than 122 centimetres and C-0 Limits : S-1; must be greater than 137 centimetres, and C-0",
+        "length": "must be greater than 122 centimetres",
+        "gear": null,
+        "notes": "Burditt Lake (48°57′13″ N , 93°46′43″ W ) · Despair Lake (48°52′31″ N , 93°39′34″ W ) · Esox Lake (49°06′02″ N , 93°15′54″ W ) · Feather Lake (Quill Lake) - Pipestone Chain (49°00′23″ N , 93°42′27″ W ) · Footprint Lake (48°54′01″ N , 93°36′30″ W ) · Lower Manitou Lake (49°15′15″ N , 92°59′19″ W ) · Manomin Lake (48°52′00″ N , 93°43′13″ W ) · Meggisi Lake (49°17′04″ N , 92°34′55″ W ) · Pipestone Lake - Pipestone Chain (49°04′60″ N , 93°33′00″ W ) · Schistose Lake (49°09′17″ N , 93°36′18″ W ) · Slender Lake (49°01′60″ N , 93°41′56″ W ) · Weld Lake (49°01′39″ N , 93°40′7″ W ) · Rowan Lake (49°19′00″ N , 93°33′00″ W )",
+        "raw": "Limits : S-1; must be greater than 122 centimetres and C-0 Limits : S-1; must be greater than 137 centimetres, and C-0",
+        "waters": [
+          "Burditt Lake (48°57′13″ N , 93°46′43″ W )",
+          "Despair Lake (48°52′31″ N , 93°39′34″ W )",
+          "Esox Lake (49°06′02″ N , 93°15′54″ W )",
+          "Feather Lake (Quill Lake) - Pipestone Chain (49°00′23″ N , 93°42′27″ W )",
+          "Footprint Lake (48°54′01″ N , 93°36′30″ W )",
+          "Lower Manitou Lake (49°15′15″ N , 92°59′19″ W )",
+          "Manomin Lake (48°52′00″ N , 93°43′13″ W )",
+          "Meggisi Lake (49°17′04″ N , 92°34′55″ W )",
+          "Pipestone Lake - Pipestone Chain (49°04′60″ N , 93°33′00″ W )",
+          "Schistose Lake (49°09′17″ N , 93°36′18″ W )",
+          "Slender Lake (49°01′60″ N , 93°41′56″ W )",
+          "Weld Lake (49°01′39″ N , 93°40′7″ W )",
+          "Rowan Lake (49°19′00″ N , 93°33′00″ W )"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "Fermée toute l’année Lac Seahorse (49°06′03″ N , 93°18′03″ O )",
+        "species": "Touladi",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Lacs pour la recherche du Centre de recherche sur l’écosystème des forêts du Nord : · Lacs 20 (49°07′46″ N , 92°08′19″ O ) · Lac 26 (49°07′23″ N , 92°08′40″ O ) · Lac 39 (49°05′42″ N , 92°09′56″ O ) · Lac 42 (49°05′05″ N , 92°09′36″ O ) · communiquez avec le centre de travail d’Atikokan pour plus de renseignements · Lac Seahorse (49°06′03″ N , 93°18′03″ O )",
+        "raw": "Saison : Fermée toute l’année Lac Seahorse (49°06′03″ N , 93°18′03″ O )",
+        "waters": [
+          "Lacs pour la recherche du Centre de recherche sur l’écosystème des forêts du Nord :",
+          "Lacs 20 (49°07′46″ N , 92°08′19″ O )",
+          "Lac 26 (49°07′23″ N , 92°08′40″ O )",
+          "Lac 39 (49°05′42″ N , 92°09′56″ O )",
+          "Lac 42 (49°05′05″ N , 92°09′36″ O )",
+          "communiquez avec le centre de travail d’Atikokan pour plus de renseignements",
+          "Lac Seahorse (49°06′03″ N , 93°18′03″ O )"
+        ]
+      },
+      {
+        "period": null,
+        "species": "Maskinongé",
+        "limit": "S-1; doit dépasser 122 centimètres, et C-0 Limites : S-1; doit dépasser 137 centimètres, et C-0",
+        "length": null,
+        "gear": null,
+        "notes": "Lac Burditt (48°57′13″ N , 93°46′43″ O ) · Lac Despair (48°52′31″ N , 93°39′34″ O ) · Lac Esox (49°06′02″ N , 93°15′54″ O ) · Lac Feather (lac Quill) - chaîne Pipestone (49°00′23″ N , 93°42′27″ O ) · Lac Footprint (48°54′01″ N , 93°36′30″ O ) · Lac Lower Manitou (49°15′15″ N , 92°59′19″ O ) · Lac Manomin (48°52′00″ N , 93°43′13″ O ) · Lac Meggisi (49°17′04″ N , 92°34′55″ O ) · Lac Pipestone - chaîne Pipestone (49°04′60″ N , 93°33′00″ O ) · Lac Schistose (49°09′17″ N , 93°36′18″ O ) · Lac Slender (49°01′60″ N , 93°41′56″ O ) · Lac Weld (49°01′39″ N , 93°40′17″ O ) · Lac Rowan (49°19′00″ N , 93°33′00″ O )",
+        "raw": "Limites : S-1; doit dépasser 122 centimètres, et C-0 Limites : S-1; doit dépasser 137 centimètres, et C-0",
+        "waters": [
+          "Lac Burditt (48°57′13″ N , 93°46′43″ O )",
+          "Lac Despair (48°52′31″ N , 93°39′34″ O )",
+          "Lac Esox (49°06′02″ N , 93°15′54″ O )",
+          "Lac Feather (lac Quill) - chaîne Pipestone (49°00′23″ N , 93°42′27″ O )",
+          "Lac Footprint (48°54′01″ N , 93°36′30″ O )",
+          "Lac Lower Manitou (49°15′15″ N , 92°59′19″ O )",
+          "Lac Manomin (48°52′00″ N , 93°43′13″ O )",
+          "Lac Meggisi (49°17′04″ N , 92°34′55″ O )",
+          "Lac Pipestone - chaîne Pipestone (49°04′60″ N , 93°33′00″ O )",
+          "Lac Schistose (49°09′17″ N , 93°36′18″ O )",
+          "Lac Slender (49°01′60″ N , 93°41′56″ O )",
+          "Lac Weld (49°01′39″ N , 93°40′17″ O )",
+          "Lac Rowan (49°19′00″ N , 93°33′00″ O )"
+        ]
+      }
+    ]
+  },
+  "waterbody_exceptions": {
+    "en": [
+      {
+        "name": "Dinorwic Lake",
+        "location": "(49°37′40″ N , 92°33′25″ W ) - including Minnehaha Lake (49°31′27″ N , 92°38′45″ W ) , Rock Lake (49°32′37\" N , 92°35′51\" W ) and Turtlepond Lake (49°32'43\" N , 92°36′46\" W )",
+        "rules": [
+          {
+            "period": null,
+            "species": "Crappie",
+            "limit": "S-15 and C-10",
+            "length": null,
+            "gear": null,
+            "notes": "S-15 and C-10",
+            "raw": "Crappie - S-15 and C-10"
+          },
+          {
+            "period": null,
+            "species": "Largemouth and smallmouth bass combined",
+            "limit": "S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30",
+            "length": "must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31",
+            "gear": null,
+            "notes": "S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30",
+            "raw": "Largemouth and smallmouth bass combined - S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30"
+          },
+          {
+            "period": null,
+            "species": "Muskellunge",
+            "limit": "S-1; must be greater than 137 centimetres, and C-0",
+            "length": "must be greater than 137 centimetres",
+            "gear": null,
+            "notes": "S-1; must be greater than 137 centimetres, and C-0",
+            "raw": "Muskellunge - S-1; must be greater than 137 centimetres, and C-0"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Walleye and Sauger combined",
+            "raw": "Walleye and Sauger combined"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Ontario and Canadian residents: S-4 and C-2; none between 46–58 centimetres, not more than 1 greater than 58 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "Ontario and Canadian residents: S-4 and C-2; none between 46–58 centimetres, not more than 1 greater than 58 centimetres",
+            "raw": "Ontario and Canadian residents: S-4 and C-2; none between 46–58 centimetres, not more than 1 greater than 58 centimetres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Non-Canadian residents:",
+            "raw": "Non-Canadian residents:"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Daily catch and retain limit: S-2 and C-2;none between 46–58 centimetres, not more than 1 greater than 58 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "Daily catch and retain limit: S-2 and C-2;none between 46–58 centimetres, not more than 1 greater than 58 centimetres",
+            "raw": "Daily catch and retain limit: S-2 and C-2;none between 46–58 centimetres, not more than 1 greater than 58 centimetres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Possession limit: S-4 and C-2;none between 46-58 centimetres, not more than 1 greater than 58 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "Possession limit: S-4 and C-2;none between 46-58 centimetres, not more than 1 greater than 58 centimetres",
+            "raw": "Possession limit: S-4 and C-2;none between 46-58 centimetres, not more than 1 greater than 58 centimetres"
+          }
+        ],
+        "raw": "Dinorwic Lake (49°37′40″ N , 92°33′25″ W ) - including Minnehaha Lake (49°31′27″ N , 92°38′45″ W ) , Rock Lake (49°32′37\" N , 92°35′51\" W ) and Turtlepond Lake (49°32'43\" N , 92°36′46\" W ) Crappie - S-15 and C-10 | Largemouth and smallmouth bass combined - S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30 | Muskellunge - S-1; must be greater than 137 centimetres, and C-0 | Walleye and Sauger combined | Ontario and Canadian residents: S-4 and C-2; none between 46–58 centimetres, not more than 1 greater than 58 centimetres | Non-Canadian residents: | Daily catch and retain limit: S-2 and C-2;none between 46–58 centimetres, not more than 1 greater than 58 centimetres | Possession limit: S-4 and C-2;none between 46-58 centimetres, not more than 1 greater than 58 centimetres"
+      },
+      {
+        "name": "Dryberry Lake",
+        "location": "(49°32'49\" N , 93°51'00\" W ) - including Northwest Bay (48°49'47\" N , 92°42'15\" W ), Point Bay (49°34'38\" N , 93°44'01\" W ) and Point Lake (48°09'40\" N , 91°32'15\" W )",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Fish or fish parts may not be possessed or used as bait from January 1 to Friday before third Saturday in May",
+            "raw": "Fish or fish parts may not be possessed or used as bait from January 1 to Friday before third Saturday in May"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Only barbless hooks may be used from January 1 to Friday before third Saturday in May",
+            "notes": "Only barbless hooks may be used from January 1 to Friday before third Saturday in May",
+            "raw": "Only barbless hooks may be used from January 1 to Friday before third Saturday in May"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Lake trout",
+            "raw": "Lake trout"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "All anglers:",
+            "raw": "All anglers:"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Daily catch and retain limit: S-1 and C-1; any size",
+            "length": null,
+            "gear": null,
+            "notes": "Daily catch and retain limit: S-1 and C-1; any size",
+            "raw": "Daily catch and retain limit: S-1 and C-1; any size"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Possession limit: S-2; not more than 1 greater than 65 centimetres, and C-1; any size",
+            "length": null,
+            "gear": null,
+            "notes": "Possession limit: S-2; not more than 1 greater than 65 centimetres, and C-1; any size",
+            "raw": "Possession limit: S-2; not more than 1 greater than 65 centimetres, and C-1; any size"
+          },
+          {
+            "period": null,
+            "species": "Muskellunge",
+            "limit": "S-1; must be greater than 137 centimetres, and C-0",
+            "length": "must be greater than 137 centimetres",
+            "gear": null,
+            "notes": "S-1; must be greater than 137 centimetres, and C-0",
+            "raw": "Muskellunge - S-1; must be greater than 137 centimetres, and C-0"
+          }
+        ],
+        "raw": "Dryberry Lake (49°32'49\" N , 93°51'00\" W ) - including Northwest Bay (48°49'47\" N , 92°42'15\" W ), Point Bay (49°34'38\" N , 93°44'01\" W ) and Point Lake (48°09'40\" N , 91°32'15\" W ) Fish or fish parts may not be possessed or used as bait from January 1 to Friday before third Saturday in May | Only barbless hooks may be used from January 1 to Friday before third Saturday in May | Lake trout | All anglers: | Daily catch and retain limit: S-1 and C-1; any size | Possession limit: S-2; not more than 1 greater than 65 centimetres, and C-1; any size | Muskellunge - S-1; must be greater than 137 centimetres, and C-0"
+      },
+      {
+        "name": "Eagle Lake",
+        "location": "(49°42'00\" N , 93°13'00\" W )",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "No angling at night for any species",
+            "raw": "No angling at night for any species"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Lake trout",
+            "raw": "Lake trout"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "All anglers:",
+            "raw": "All anglers:"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Daily catch and retain limit: S-1 and C-1; any size",
+            "length": null,
+            "gear": null,
+            "notes": "Daily catch and retain limit: S-1 and C-1; any size",
+            "raw": "Daily catch and retain limit: S-1 and C-1; any size"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Possession limit: S-2; not more than 1 greater than 65 centimetres, and C-1; any size",
+            "length": null,
+            "gear": null,
+            "notes": "Possession limit: S-2; not more than 1 greater than 65 centimetres, and C-1; any size",
+            "raw": "Possession limit: S-2; not more than 1 greater than 65 centimetres, and C-1; any size"
+          },
+          {
+            "period": null,
+            "species": "Largemouth and smallmouth bass combined",
+            "limit": "S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30",
+            "length": "must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31",
+            "gear": null,
+            "notes": "S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30",
+            "raw": "Largemouth and smallmouth bass combined - S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30"
+          },
+          {
+            "period": null,
+            "species": "Muskellunge",
+            "limit": "S-1; must be greater than 137 centimetres, and C-0",
+            "length": "must be greater than 137 centimetres",
+            "gear": null,
+            "notes": "S-1; must be greater than 137 centimetres, and C-0",
+            "raw": "Muskellunge - S-1; must be greater than 137 centimetres, and C-0"
+          },
+          {
+            "period": null,
+            "species": "Northern pike",
+            "limit": "S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres",
+            "raw": "Northern pike - S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Walleye and sauger combined",
+            "raw": "Walleye and sauger combined"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Ontario and Canadian residents: S-4 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "Ontario and Canadian residents: S-4 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres",
+            "raw": "Ontario and Canadian residents: S-4 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Non-Canadian residents:",
+            "raw": "Non-Canadian residents:"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Daily catch and retain limit: S-2 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "Daily catch and retain limit: S-2 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres",
+            "raw": "Daily catch and retain limit: S-2 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Possession limit: S-4 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "Possession limit: S-4 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres",
+            "raw": "Possession limit: S-4 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres"
+          }
+        ],
+        "raw": "Eagle Lake (49°42'00\" N , 93°13'00\" W ) No angling at night for any species | Lake trout | All anglers: | Daily catch and retain limit: S-1 and C-1; any size | Possession limit: S-2; not more than 1 greater than 65 centimetres, and C-1; any size | Largemouth and smallmouth bass combined - S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30 | Muskellunge - S-1; must be greater than 137 centimetres, and C-0 | Northern pike - S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres | Walleye and sauger combined | Ontario and Canadian residents: S-4 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres | Non-Canadian residents: | Daily catch and retain limit: S-2 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres | Possession limit: S-4 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres"
+      },
+      {
+        "name": "Eagle Lake",
+        "location": "portions of Eagle Lake including Whiteclay Narrows, Brule Narrows, Niven Bay, Bunyon Lake, Godson Creek, Kekekwa Creek, Wawapus Creek, Bear Narrows, Froghead Bay, Rice Bay, Violet Lake, One Mile Rapids, Two Mile Rapids, Meridian Bay",
+        "rules": [
+          {
+            "period": "no fishing from April 1 to May 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from April 1 to May 31",
+            "raw": "Fish sanctuary - no fishing from April 1 to May 31"
+          }
+        ],
+        "raw": "Eagle Lake portions of Eagle Lake including Whiteclay Narrows, Brule Narrows, Niven Bay, Bunyon Lake, Godson Creek, Kekekwa Creek, Wawapus Creek, Bear Narrows, Froghead Bay, Rice Bay, Violet Lake, One Mile Rapids, Two Mile Rapids, Meridian Bay Fish sanctuary - no fishing from April 1 to May 31"
+      },
+      {
+        "name": "Experimental Lakes Area -",
+        "location": "Pine Road Area, Dryden District, Lakes 111, 189, 191, 221, 222, 223, 224, 239, 260, 305, 373, 375, 377, 378, 382, 442, 622, 623, 626 and 658",
+        "rules": [
+          {
+            "period": null,
+            "species": "Closed to angling all year",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "contact the Dryden office for more details",
+            "raw": "Closed to angling all year – contact the Dryden office for more details"
+          }
+        ],
+        "raw": "Experimental Lakes Area - Pine Road Area, Dryden District, Lakes 111, 189, 191, 221, 222, 223, 224, 239, 260, 305, 373, 375, 377, 378, 382, 442, 622, 623, 626 and 658 Closed to angling all year – contact the Dryden office for more details"
+      },
+      {
+        "name": "Kakagi Lake",
+        "location": "(Crow Lake) (49°12′60″ N , 93°52′00″ W ) - Kenora District",
+        "rules": [
+          {
+            "period": null,
+            "species": "Largemouth and smallmouth bass",
+            "limit": "S-0 and C-0; from January 1 to June 30",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 and C-0; from January 1 to June 30",
+            "raw": "Largemouth and smallmouth bass - S-0 and C-0; from January 1 to June 30"
+          },
+          {
+            "period": null,
+            "species": "Muskellunge",
+            "limit": "S-1; must be greater than 137 centimetres, and C-0",
+            "length": "must be greater than 137 centimetres",
+            "gear": null,
+            "notes": "S-1; must be greater than 137 centimetres, and C-0",
+            "raw": "Muskellunge - S-1; must be greater than 137 centimetres, and C-0"
+          }
+        ],
+        "raw": "Kakagi Lake (Crow Lake) (49°12′60″ N , 93°52′00″ W ) - Kenora District Largemouth and smallmouth bass - S-0 and C-0; from January 1 to June 30 | Muskellunge - S-1; must be greater than 137 centimetres, and C-0"
+      },
+      {
+        "name": "Lake of the Woods",
+        "location": "all portions of Lake of the Woods excluding waters of Clearwater Bay (49°42'23\" N , 94°45'13\" W ), Deception Bay, Woodchuck Bay, Kendall Inlet, Echo Bay (49°39'00\" N , 94°53'58\" W ), Cul de Sac Lake (49°37'54\" N , 94°49'47\" W ) and Whitefish Bay (49°22'25\" N , 94°08'17\" W ), including Regina (49°24'32\" N , 94°02'13\" W ), Snake, Boot (48°43'13\" N , 93°23'05\" W ), Ghost (49°21'42\" N , 94°14'08\" W ), Brule (49°23'11\" N , 94°13'42\" W ), Devils (49°14'47\" N , 94°05'07\" W ), Atikaminike (49°14'29\" N , 94°02'36\" W ), Camp (49°15'11\" N , 94°02'26\" W ), Cloverleaf (49°25'12\" N , 94°07'58\" W ), Log (49°26'14\" N , 94°09'52\" W ), Reedy (49°25'15\" N , 94°05'27\" W ), Willow (48°36'33\" N , 92°47'13\" W ) and Sammons bays (49°23'45\" N , 93°59'28\" W ), and Knickerbocker (49°23'16\" N , 94°18'27\" W ), Louis (49°25'30\" N , 94°17'08\" W ), Cross (49°28'04\" N , 94°19'08\" W ), and Alfred inlets (49°13'34\" N , 94°07'25\" W )",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Lake Trout",
+            "raw": "Lake Trout"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "All anglers: S-0 and C-0",
+            "length": null,
+            "gear": null,
+            "notes": "All anglers: S-0 and C-0",
+            "raw": "All anglers: S-0 and C-0"
+          }
+        ],
+        "raw": "Lake of the Woods all portions of Lake of the Woods excluding waters of Clearwater Bay (49°42'23\" N , 94°45'13\" W ), Deception Bay, Woodchuck Bay, Kendall Inlet, Echo Bay (49°39'00\" N , 94°53'58\" W ), Cul de Sac Lake (49°37'54\" N , 94°49'47\" W ) and Whitefish Bay (49°22'25\" N , 94°08'17\" W ), including Regina (49°24'32\" N , 94°02'13\" W ), Snake, Boot (48°43'13\" N , 93°23'05\" W ), Ghost (49°21'42\" N , 94°14'08\" W ), Brule (49°23'11\" N , 94°13'42\" W ), Devils (49°14'47\" N , 94°05'07\" W ), Atikaminike (49°14'29\" N , 94°02'36\" W ), Camp (49°15'11\" N , 94°02'26\" W ), Cloverleaf (49°25'12\" N , 94°07'58\" W ), Log (49°26'14\" N , 94°09'52\" W ), Reedy (49°25'15\" N , 94°05'27\" W ), Willow (48°36'33\" N , 92°47'13\" W ) and Sammons bays (49°23'45\" N , 93°59'28\" W ), and Knickerbocker (49°23'16\" N , 94°18'27\" W ), Louis (49°25'30\" N , 94°17'08\" W ), Cross (49°28'04\" N , 94°19'08\" W ), and Alfred inlets (49°13'34\" N , 94°07'25\" W ) Lake Trout | All anglers: S-0 and C-0"
+      },
+      {
+        "name": "Lake of the Woods",
+        "location": "including waters of the Western Peninsula, Aulneau Peninsula, Cul de Sac Lake (49°37'54\" N , 94°49'47\" W ) and an unnamed lake at 49°36′ N , 94°51′ W",
+        "rules": [
+          {
+            "period": null,
+            "species": "Lake whitefish",
+            "limit": "S-4 and C-2",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 and C-2",
+            "raw": "Lake whitefish - S-4 and C-2"
+          },
+          {
+            "period": null,
+            "species": "Largemouth and smallmouth bass combined",
+            "limit": "S-0 and C-0; from January 1 to June 30",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 and C-0; from January 1 to June 30",
+            "raw": "Largemouth and smallmouth bass combined - S-0 and C-0; from January 1 to June 30"
+          },
+          {
+            "period": null,
+            "species": "Muskellunge",
+            "limit": "S-1; must be greater than 137 centimetres, and C-0",
+            "length": "must be greater than 137 centimetres",
+            "gear": null,
+            "notes": "S-1; must be greater than 137 centimetres, and C-0",
+            "raw": "Muskellunge - S-1; must be greater than 137 centimetres, and C-0"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Walleye and sauger combined",
+            "raw": "Walleye and sauger combined"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Canadian and Ontario Residents: S-4; none between 43–70 centimetres, not more than 1 greater than 70 centimetres, and C-2; none greater than 43 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "Canadian and Ontario Residents: S-4; none between 43–70 centimetres, not more than 1 greater than 70 centimetres, and C-2; none greater than 43 centimetres",
+            "raw": "Canadian and Ontario Residents: S-4; none between 43–70 centimetres, not more than 1 greater than 70 centimetres, and C-2; none greater than 43 centimetres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Non-Canadian residents:",
+            "raw": "Non-Canadian residents:"
+          },
+          {
+            "period": null,
+            "species": "Daily catch and retain limit",
+            "limit": "S-2; none between 43–70 centimetres, not more than 1 greater than 70 centimetres, and C-2; none greater than 43 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-2; none between 43–70 centimetres, not more than 1 greater than 70 centimetres, and C-2; none greater than 43 centimetres",
+            "raw": "Daily catch and retain limit - S-2; none between 43–70 centimetres, not more than 1 greater than 70 centimetres, and C-2; none greater than 43 centimetres"
+          },
+          {
+            "period": null,
+            "species": "Possession limit",
+            "limit": "S-4; none between 43–70 centimetres, not more than 1 greater than 70 centimetres and C-2; none greater than 43 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4; none between 43–70 centimetres, not more than 1 greater than 70 centimetres and C-2; none greater than 43 centimetres",
+            "raw": "Possession limit - S-4; none between 43–70 centimetres, not more than 1 greater than 70 centimetres and C-2; none greater than 43 centimetres"
+          },
+          {
+            "period": null,
+            "species": "Yellow perch",
+            "limit": "S-15 and C-10",
+            "length": null,
+            "gear": null,
+            "notes": "S-15 and C-10",
+            "raw": "Yellow perch - S-15 and C-10"
+          }
+        ],
+        "raw": "Lake of the Woods including waters of the Western Peninsula, Aulneau Peninsula, Cul de Sac Lake (49°37'54\" N , 94°49'47\" W ) and an unnamed lake at 49°36′ N , 94°51′ W Lake whitefish - S-4 and C-2 | Largemouth and smallmouth bass combined - S-0 and C-0; from January 1 to June 30 | Muskellunge - S-1; must be greater than 137 centimetres, and C-0 | Walleye and sauger combined | Canadian and Ontario Residents: S-4; none between 43–70 centimetres, not more than 1 greater than 70 centimetres, and C-2; none greater than 43 centimetres | Non-Canadian residents: | Daily catch and retain limit - S-2; none between 43–70 centimetres, not more than 1 greater than 70 centimetres, and C-2; none greater than 43 centimetres | Possession limit - S-4; none between 43–70 centimetres, not more than 1 greater than 70 centimetres and C-2; none greater than 43 centimetres | Yellow perch - S-15 and C-10"
+      },
+      {
+        "name": "Lake of the Woods",
+        "location": "Sabaskong Bay (49°09′ N , 94°09″ W ) - Godson Township, Kenora District",
+        "rules": [
+          {
+            "period": "no fishing from April 1 to June 14",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from April 1 to June 14",
+            "raw": "Fish sanctuary - no fishing from April 1 to June 14"
+          }
+        ],
+        "raw": "Lake of the Woods Sabaskong Bay (49°09′ N , 94°09″ W ) - Godson Township, Kenora District Fish sanctuary - no fishing from April 1 to June 14"
+      },
+      {
+        "name": "Lake of the Woods",
+        "location": "Echo Bay (49°39'00\" N , 94°53'58\" W ), Cul de Sac Lake (49°37'54\" N , 94°49'47\" W ), Clearwater Bay (49°42'23\" N , 94°45'13\" W ), Deception Bay (49°42′ N., 94°48′ W ), Woodchuck Bay (49°41′ N., 94°2′ W ) and Kendall Inlet (49°44′ N., 94°52′ W )",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Fish or fish parts may not be possessed or used as bait",
+            "raw": "Fish or fish parts may not be possessed or used as bait"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Barbless hooks only",
+            "notes": "Barbless hooks only",
+            "raw": "Barbless hooks only"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Lake trout",
+            "raw": "Lake trout"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "All anglers:",
+            "raw": "All anglers:"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "A lake trout tag is required to catch and retain lake trout. In addition to a sport or conservation fishing licence, anglers must have a valid lake trout tag to catch and retain them from these waters.",
+            "raw": "A lake trout tag is required to catch and retain lake trout. In addition to a sport or conservation fishing licence, anglers must have a valid lake trout tag to catch and retain them from these waters."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "For more information about lake trout tags or to apply for one, contact Kenora work centre.",
+            "raw": "For more information about lake trout tags or to apply for one, contact Kenora work centre."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "S-0 and C-0 (except for tag holders); open from third Saturday in May to September 30.",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 and C-0 (except for tag holders); open from third Saturday in May to September 30.",
+            "raw": "S-0 and C-0 (except for tag holders); open from third Saturday in May to September 30."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Only 1 barbless hook may be used and for lake trout.",
+            "notes": "Only 1 barbless hook may be used and for lake trout.",
+            "raw": "Only 1 barbless hook may be used and for lake trout."
+          }
+        ],
+        "raw": "Lake of the Woods Echo Bay (49°39'00\" N , 94°53'58\" W ), Cul de Sac Lake (49°37'54\" N , 94°49'47\" W ), Clearwater Bay (49°42'23\" N , 94°45'13\" W ), Deception Bay (49°42′ N., 94°48′ W ), Woodchuck Bay (49°41′ N., 94°2′ W ) and Kendall Inlet (49°44′ N., 94°52′ W ) Fish or fish parts may not be possessed or used as bait | Barbless hooks only | Lake trout | All anglers: | A lake trout tag is required to catch and retain lake trout. In addition to a sport or conservation fishing licence, anglers must have a valid lake trout tag to catch and retain them from these waters. | For more information about lake trout tags or to apply for one, contact Kenora work centre. | S-0 and C-0 (except for tag holders); open from third Saturday in May to September 30. | Only 1 barbless hook may be used and for lake trout."
+      },
+      {
+        "name": "Lake of the Woods",
+        "location": "Whitefish Bay (49°22'25\" N , 94°08'17\" W ) - including Regina (49°24'32\" N , 94°02'13\" W ), Snake, Boot (48°43'13\" N , 93°23'05\" W ), Ghost (49°21'42\" N , 94°14'08\" W ), Brule (49°23'11\" N , 94°13'42\" W ), Devils (49°14'47\" N , 94°05'07\" W ), Atikaminike (49°14'29\" N , 94°02'36\" W ), Camp (49°15'11\" N , 94°02'26\" W ), Cloverleaf (49°25'12\" N , 94°07'58\" W ), Log (49°26'14\" N , 94°09'52\" W ), Reedy (49°25'15\" N , 94°05'27\" W ), Clipper, Willow (48°36'33\" N , 92°47'13\" W ) and Sammons bays (49°23'45\" N , 93°59'28\" W ) and Knickerbocker (49°23'16\" N , 94°18'27\" W ), Louis (49°25'30\" N , 94°17'08\" W ), Cross (49°28'04\" N , 94°19'08\" W ), Alfred inlets (49°13'34\" N , 94°07'25\" W )",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Possession and/or use of fish or fish parts as bait is prohibited from January 1 to Friday before third Saturday in May",
+            "raw": "Possession and/or use of fish or fish parts as bait is prohibited from January 1 to Friday before third Saturday in May"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Only barbless hooks may be used from January 1 to Friday before the third Saturday in May",
+            "notes": "Only barbless hooks may be used from January 1 to Friday before the third Saturday in May",
+            "raw": "Only barbless hooks may be used from January 1 to Friday before the third Saturday in May"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Lake trout",
+            "raw": "Lake trout"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "All anglers:",
+            "raw": "All anglers:"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Daily catch and retain limit: S-1 and C-1; any size",
+            "length": null,
+            "gear": null,
+            "notes": "Daily catch and retain limit: S-1 and C-1; any size",
+            "raw": "Daily catch and retain limit: S-1 and C-1; any size"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Possession limit: S-2; not more than 1 greater than 65 centimetres, and C-1; any size",
+            "length": null,
+            "gear": null,
+            "notes": "Possession limit: S-2; not more than 1 greater than 65 centimetres, and C-1; any size",
+            "raw": "Possession limit: S-2; not more than 1 greater than 65 centimetres, and C-1; any size"
+          }
+        ],
+        "raw": "Lake of the Woods Whitefish Bay (49°22'25\" N , 94°08'17\" W ) - including Regina (49°24'32\" N , 94°02'13\" W ), Snake, Boot (48°43'13\" N , 93°23'05\" W ), Ghost (49°21'42\" N , 94°14'08\" W ), Brule (49°23'11\" N , 94°13'42\" W ), Devils (49°14'47\" N , 94°05'07\" W ), Atikaminike (49°14'29\" N , 94°02'36\" W ), Camp (49°15'11\" N , 94°02'26\" W ), Cloverleaf (49°25'12\" N , 94°07'58\" W ), Log (49°26'14\" N , 94°09'52\" W ), Reedy (49°25'15\" N , 94°05'27\" W ), Clipper, Willow (48°36'33\" N , 92°47'13\" W ) and Sammons bays (49°23'45\" N , 93°59'28\" W ) and Knickerbocker (49°23'16\" N , 94°18'27\" W ), Louis (49°25'30\" N , 94°17'08\" W ), Cross (49°28'04\" N , 94°19'08\" W ), Alfred inlets (49°13'34\" N , 94°07'25\" W ) Possession and/or use of fish or fish parts as bait is prohibited from January 1 to Friday before third Saturday in May | Only barbless hooks may be used from January 1 to Friday before the third Saturday in May | Lake trout | All anglers: | Daily catch and retain limit: S-1 and C-1; any size | Possession limit: S-2; not more than 1 greater than 65 centimetres, and C-1; any size"
+      },
+      {
+        "name": "Quetico Provincial Park",
+        "location": null,
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Only artificial lures may be used",
+            "notes": "Only artificial lures may be used",
+            "raw": "Only artificial lures may be used"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Only barbless hooks may be used",
+            "notes": "Only barbless hooks may be used",
+            "raw": "Only barbless hooks may be used"
+          }
+        ],
+        "raw": "Quetico Provincial Park Only artificial lures may be used | Only barbless hooks may be used"
+      },
+      {
+        "name": "Rainy Lake",
+        "location": "(48°43′20″ N , 93°15′41″ W )",
+        "rules": [
+          {
+            "period": null,
+            "species": "Largemouth and smallmouth bass combined",
+            "limit": "S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30",
+            "length": "must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31",
+            "gear": null,
+            "notes": "S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30",
+            "raw": "Largemouth and smallmouth bass combined - S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30"
+          },
+          {
+            "period": null,
+            "species": "Muskellunge",
+            "limit": "S-1; must be greater than 122 centimetres, and C-0",
+            "length": "must be greater than 122 centimetres",
+            "gear": null,
+            "notes": "S-1; must be greater than 122 centimetres, and C-0",
+            "raw": "Muskellunge - S-1; must be greater than 122 centimetres, and C-0"
+          },
+          {
+            "period": null,
+            "species": "Northern pike",
+            "limit": "S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres",
+            "raw": "Northern pike - S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Walleye and sauger combined",
+            "raw": "Walleye and sauger combined"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Ontario and Canadian residents: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size",
+            "length": null,
+            "gear": null,
+            "notes": "Ontario and Canadian residents: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size",
+            "raw": "Ontario and Canadian residents: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Non-Canadian residents:",
+            "raw": "Non-Canadian residents:"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Daily catch and retain limit: S-1 and C-1; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size",
+            "length": null,
+            "gear": null,
+            "notes": "Daily catch and retain limit: S-1 and C-1; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size",
+            "raw": "Daily catch and retain limit: S-1 and C-1; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Possession limit: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size",
+            "length": null,
+            "gear": null,
+            "notes": "Possession limit: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size",
+            "raw": "Possession limit: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size"
+          }
+        ],
+        "raw": "Rainy Lake (48°43′20″ N , 93°15′41″ W ) Largemouth and smallmouth bass combined - S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30 | Muskellunge - S-1; must be greater than 122 centimetres, and C-0 | Northern pike - S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres | Walleye and sauger combined | Ontario and Canadian residents: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size | Non-Canadian residents: | Daily catch and retain limit: S-1 and C-1; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size | Possession limit: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size"
+      },
+      {
+        "name": "Rainy Lake",
+        "location": "Squirrel Falls between Namakan Lake and Rainy Lake, downstream for 250 metres on the north shore and 200 metres on the south shore from the Canadian Kettle Falls Dam",
+        "rules": [
+          {
+            "period": "closed all year",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "closed all year",
+            "raw": "Fish sanctuary - closed all year"
+          }
+        ],
+        "raw": "Rainy Lake Squirrel Falls between Namakan Lake and Rainy Lake, downstream for 250 metres on the north shore and 200 metres on the south shore from the Canadian Kettle Falls Dam Fish sanctuary - closed all year"
+      },
+      {
+        "name": "Rainy Lake",
+        "location": "Stanjikoming Bay, Big Canoe River (48°48′ N , 93°13′ W ), Falls River and Pipestone River from Stokes Bay of Rainy Lake upstream to first rapids, Little Canoe River (48°54′ N , 93°18′ W ), Crooked Narrows to Sand Island Falls of Redgut Bay, Halfway Inlet and Lost Bay, Porter Inlet of Redgut Bay, Rat River Bay from the narrows and small island at the entrance to Rat River Bay, upstream to, and including the first rapids of both the West Branch Rat River and the East Branch Rat River",
+        "rules": [
+          {
+            "period": "no fishing from April 1 to June 14",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from April 1 to June 14",
+            "raw": "Fish sanctuary - no fishing from April 1 to June 14"
+          }
+        ],
+        "raw": "Rainy Lake Stanjikoming Bay, Big Canoe River (48°48′ N , 93°13′ W ), Falls River and Pipestone River from Stokes Bay of Rainy Lake upstream to first rapids, Little Canoe River (48°54′ N , 93°18′ W ), Crooked Narrows to Sand Island Falls of Redgut Bay, Halfway Inlet and Lost Bay, Porter Inlet of Redgut Bay, Rat River Bay from the narrows and small island at the entrance to Rat River Bay, upstream to, and including the first rapids of both the West Branch Rat River and the East Branch Rat River Fish sanctuary - no fishing from April 1 to June 14"
+      },
+      {
+        "name": "Rainy River",
+        "location": "from dam in Fort Frances downstream to Wheeler’s Point at Lake of the Woods",
+        "rules": [
+          {
+            "period": null,
+            "species": "Lake whitefish",
+            "limit": "S-4 and C-2",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 and C-2",
+            "raw": "Lake whitefish - S-4 and C-2"
+          },
+          {
+            "period": null,
+            "species": "Largemouth and smallmouth bass combined",
+            "limit": "S-0 and C-0; from January 1 to June 30",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 and C-0; from January 1 to June 30",
+            "raw": "Largemouth and smallmouth bass combined - S-0 and C-0; from January 1 to June 30"
+          },
+          {
+            "period": null,
+            "species": "Muskellunge",
+            "limit": "S-1; must be greater than 137 centimetres, and C-0",
+            "length": "must be greater than 137 centimetres",
+            "gear": null,
+            "notes": "S-1; must be greater than 137 centimetres, and C-0",
+            "raw": "Muskellunge - S-1; must be greater than 137 centimetres, and C-0"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Walleye and sauger combined Non-Canadian residents:",
+            "raw": "Walleye and sauger combined Non-Canadian residents:"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Ontario and Canadian residents:",
+            "raw": "Ontario and Canadian residents:"
+          },
+          {
+            "period": null,
+            "species": "from January 1 to the last day in February and third Saturday in May to December 31",
+            "limit": "S-4 and C-2; not more than 1 greater than 46 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 and C-2; not more than 1 greater than 46 centimetres",
+            "raw": "from January 1 to the last day in February and third Saturday in May to December 31 - S-4 and C-2; not more than 1 greater than 46 centimetres"
+          },
+          {
+            "period": null,
+            "species": "from March 1 to April 14",
+            "limit": "S-2 and C-2; must be less than 46 centimetres",
+            "length": "must be less than 46 centimetres",
+            "gear": null,
+            "notes": "S-2 and C-2; must be less than 46 centimetres",
+            "raw": "from March 1 to April 14 - S-2 and C-2; must be less than 46 centimetres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Non-Canadian residents:",
+            "raw": "Non-Canadian residents:"
+          },
+          {
+            "period": "January 1 to April 14 and third Saturday in May to December 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": null,
+            "raw": "season: January 1 to April 14 and third Saturday in May to December 31"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "daily catch and retain from January 1 to the last day in February, and third Saturday in May to December 31: S-2 and C-2; not more than 1 greater than 46 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "daily catch and retain from January 1 to the last day in February, and third Saturday in May to December 31: S-2 and C-2; not more than 1 greater than 46 centimetres",
+            "raw": "daily catch and retain from January 1 to the last day in February, and third Saturday in May to December 31: S-2 and C-2; not more than 1 greater than 46 centimetres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "daily catch and retain from March 1 to April 14: S-2 and C-2; must be less than 46 centimetres",
+            "length": "must be less than 46 centimetres",
+            "gear": null,
+            "notes": "daily catch and retain from March 1 to April 14: S-2 and C-2; must be less than 46 centimetres",
+            "raw": "daily catch and retain from March 1 to April 14: S-2 and C-2; must be less than 46 centimetres"
+          },
+          {
+            "period": null,
+            "species": "possession limit: January 1 to the last day in February and third Saturday in May to December 31",
+            "limit": "S-4 and C-2; not more than 1 greater than 46 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 and C-2; not more than 1 greater than 46 centimetres",
+            "raw": "possession limit: January 1 to the last day in February and third Saturday in May to December 31 - S-4 and C-2; not more than 1 greater than 46 centimetres"
+          },
+          {
+            "period": null,
+            "species": "possession Limit: March 1 to April 14",
+            "limit": "S-2 and C-2; must be less than 46 centimetres",
+            "length": "must be less than 46 centimetres",
+            "gear": null,
+            "notes": "S-2 and C-2; must be less than 46 centimetres",
+            "raw": "possession Limit: March 1 to April 14 - S-2 and C-2; must be less than 46 centimetres"
+          },
+          {
+            "period": null,
+            "species": "Yellow perch",
+            "limit": "S-15 and C-10",
+            "length": null,
+            "gear": null,
+            "notes": "S-15 and C-10",
+            "raw": "Yellow perch - S-15 and C-10"
+          }
+        ],
+        "raw": "Rainy River from dam in Fort Frances downstream to Wheeler’s Point at Lake of the Woods Lake whitefish - S-4 and C-2 | Largemouth and smallmouth bass combined - S-0 and C-0; from January 1 to June 30 | Muskellunge - S-1; must be greater than 137 centimetres, and C-0 | Walleye and sauger combined Non-Canadian residents: | Ontario and Canadian residents: | from January 1 to the last day in February and third Saturday in May to December 31 - S-4 and C-2; not more than 1 greater than 46 centimetres | from March 1 to April 14 - S-2 and C-2; must be less than 46 centimetres | Non-Canadian residents: | season: January 1 to April 14 and third Saturday in May to December 31 | daily catch and retain from January 1 to the last day in February, and third Saturday in May to December 31: S-2 and C-2; not more than 1 greater than 46 centimetres | daily catch and retain from March 1 to April 14: S-2 and C-2; must be less than 46 centimetres | possession limit: January 1 to the last day in February and third Saturday in May to December 31 - S-4 and C-2; not more than 1 greater than 46 centimetres | possession Limit: March 1 to April 14 - S-2 and C-2; must be less than 46 centimetres | Yellow perch - S-15 and C-10"
+      },
+      {
+        "name": "Rainy River",
+        "location": "from Rainy Lake downstream to the Fort Frances dam",
+        "rules": [
+          {
+            "period": null,
+            "species": "Largemouth and smallmouth bass combined",
+            "limit": "S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30",
+            "length": "must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31",
+            "gear": null,
+            "notes": "S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30",
+            "raw": "Largemouth and smallmouth bass combined - S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30"
+          },
+          {
+            "period": null,
+            "species": "Muskellunge",
+            "limit": "S-1; must be greater than 122 centimetres, and C-0",
+            "length": "must be greater than 122 centimetres",
+            "gear": null,
+            "notes": "S-1; must be greater than 122 centimetres, and C-0",
+            "raw": "Muskellunge - S-1; must be greater than 122 centimetres, and C-0"
+          },
+          {
+            "period": null,
+            "species": "Northern pike",
+            "limit": "S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres",
+            "raw": "Northern pike - S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Walleye and sauger combined",
+            "raw": "Walleye and sauger combined"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Ontario and Canadian residents: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size",
+            "length": null,
+            "gear": null,
+            "notes": "Ontario and Canadian residents: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size",
+            "raw": "Ontario and Canadian residents: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Non-Canadian residents:",
+            "raw": "Non-Canadian residents:"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Daily catch and retain limit: S-1 and C-1; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size",
+            "length": null,
+            "gear": null,
+            "notes": "Daily catch and retain limit: S-1 and C-1; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size",
+            "raw": "Daily catch and retain limit: S-1 and C-1; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Possession limit: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size",
+            "length": null,
+            "gear": null,
+            "notes": "Possession limit: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size",
+            "raw": "Possession limit: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size"
+          }
+        ],
+        "raw": "Rainy River from Rainy Lake downstream to the Fort Frances dam Largemouth and smallmouth bass combined - S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30 | Muskellunge - S-1; must be greater than 122 centimetres, and C-0 | Northern pike - S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres | Walleye and sauger combined | Ontario and Canadian residents: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size | Non-Canadian residents: | Daily catch and retain limit: S-1 and C-1; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size | Possession limit: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size"
+      },
+      {
+        "name": "Seine River System",
+        "location": "from Kettle Point of Rainy Lake upstream to Sturgeon Falls Dam (Crilly Dam), situated immediately north of Highway 11, including Little Grassy, Grassy (48°39'53\" N , 92°43'05\" W ), Shoal, Wild Potato (48°43'00\" N , 92°28'36\" W ) and Partridge Crop Lakes (48°43'46\" N , 92°22'12\" W )",
+        "rules": [
+          {
+            "period": null,
+            "species": "Largemouth and smallmouth bass combined",
+            "limit": "S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30",
+            "length": "must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31",
+            "gear": null,
+            "notes": "S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30",
+            "raw": "Largemouth and smallmouth bass combined - S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30"
+          },
+          {
+            "period": null,
+            "species": "Muskellunge",
+            "limit": "S-1; must be greater than 122 centimetres, and C-0",
+            "length": "must be greater than 122 centimetres",
+            "gear": null,
+            "notes": "S-1; must be greater than 122 centimetres, and C-0",
+            "raw": "Muskellunge - S-1; must be greater than 122 centimetres, and C-0"
+          },
+          {
+            "period": null,
+            "species": "Northern pike",
+            "limit": "S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres",
+            "raw": "Northern pike - S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Walleye and sauger combined",
+            "raw": "Walleye and sauger combined"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Ontario and Canadian residents: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size",
+            "length": null,
+            "gear": null,
+            "notes": "Ontario and Canadian residents: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size",
+            "raw": "Ontario and Canadian residents: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Non-Canadian residents:",
+            "raw": "Non-Canadian residents:"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Daily catch and retain limit: S-1 and C-1; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size",
+            "length": null,
+            "gear": null,
+            "notes": "Daily catch and retain limit: S-1 and C-1; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size",
+            "raw": "Daily catch and retain limit: S-1 and C-1; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Possession limit: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size",
+            "length": null,
+            "gear": null,
+            "notes": "Possession limit: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size",
+            "raw": "Possession limit: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size"
+          }
+        ],
+        "raw": "Seine River System from Kettle Point of Rainy Lake upstream to Sturgeon Falls Dam (Crilly Dam), situated immediately north of Highway 11, including Little Grassy, Grassy (48°39'53\" N , 92°43'05\" W ), Shoal, Wild Potato (48°43'00\" N , 92°28'36\" W ) and Partridge Crop Lakes (48°43'46\" N , 92°22'12\" W ) Largemouth and smallmouth bass combined - S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30 | Muskellunge - S-1; must be greater than 122 centimetres, and C-0 | Northern pike - S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres | Walleye and sauger combined | Ontario and Canadian residents: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size | Non-Canadian residents: | Daily catch and retain limit: S-1 and C-1; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size | Possession limit: S-4 and C-2; must be between 35-45 centimetres or greater than 70 centimetres, not more than 1 greater than 70 centimetres, and sauger any size"
+      },
+      {
+        "name": "Shoal Lake above Ash Rapids",
+        "location": "Kenora District",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Live baitfish may not be used as bait or possessed for use as bait",
+            "raw": "Live baitfish may not be used as bait or possessed for use as bait"
+          },
+          {
+            "period": null,
+            "species": "Lake whitefish",
+            "limit": "S-4 and C-2",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 and C-2",
+            "raw": "Lake whitefish - S-4 and C-2"
+          },
+          {
+            "period": null,
+            "species": "Largemouth and smallmouth bass",
+            "limit": "S-0 and C-0; from January 1 to June 30",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 and C-0; from January 1 to June 30",
+            "raw": "Largemouth and smallmouth bass - S-0 and C-0; from January 1 to June 30"
+          },
+          {
+            "period": null,
+            "species": "Muskellunge",
+            "limit": "S-1; must be greater than 137 centimetres, and C-0",
+            "length": "must be greater than 137 centimetres",
+            "gear": null,
+            "notes": "S-1; must be greater than 137 centimetres, and C-0",
+            "raw": "Muskellunge - S-1; must be greater than 137 centimetres, and C-0"
+          },
+          {
+            "period": "closed all year",
+            "species": "Walleye and sauger combined",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "closed all year",
+            "raw": "Walleye and sauger combined - closed all year"
+          },
+          {
+            "period": null,
+            "species": "Yellow perch",
+            "limit": "S-15 and C-10",
+            "length": null,
+            "gear": null,
+            "notes": "S-15 and C-10",
+            "raw": "Yellow perch - S-15 and C-10"
+          }
+        ],
+        "raw": "Shoal Lake above Ash Rapids Kenora District Live baitfish may not be used as bait or possessed for use as bait | Lake whitefish - S-4 and C-2 | Largemouth and smallmouth bass - S-0 and C-0; from January 1 to June 30 | Muskellunge - S-1; must be greater than 137 centimetres, and C-0 | Walleye and sauger combined - closed all year | Yellow perch - S-15 and C-10"
+      },
+      {
+        "name": "Wabigoon Lake",
+        "location": "(49°44′09″ N , 92°43′52″ W ) - including Butler Lake (49°40′24″ N , 92°39′02″ W ), Larson Lake (49°38′23″ N , 92°37′06″ W ), Mile Lake (49°40′53″ N , 92°46′43″ W ), Olsen Lake (49°39′06″ N , 92°37′47″ W ), Paulson Lake (49°37′26″ N , 92°36′54″ W ) and Trap Lake (49°39′34″ N , 92°47′19″ W )",
+        "rules": [
+          {
+            "period": null,
+            "species": "Crappie",
+            "limit": "S-15 and C-10",
+            "length": null,
+            "gear": null,
+            "notes": "S-15 and C-10",
+            "raw": "Crappie - S-15 and C-10"
+          },
+          {
+            "period": null,
+            "species": "Largemouth and smallmouth bass combined",
+            "limit": "S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30",
+            "length": "must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31",
+            "gear": null,
+            "notes": "S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30",
+            "raw": "Largemouth and smallmouth bass combined - S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30"
+          },
+          {
+            "period": null,
+            "species": "Muskellunge",
+            "limit": "S-1; must be greater than 137 centimetres, and C-0",
+            "length": "must be greater than 137 centimetres",
+            "gear": null,
+            "notes": "S-1; must be greater than 137 centimetres, and C-0",
+            "raw": "Muskellunge - S-1; must be greater than 137 centimetres, and C-0"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Walleye and sauger combined",
+            "raw": "Walleye and sauger combined"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Ontario and Canadian residents: S-4 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "Ontario and Canadian residents: S-4 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres",
+            "raw": "Ontario and Canadian residents: S-4 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Non-Canadian residents:",
+            "raw": "Non-Canadian residents:"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Daily catch and retain limit: S-2 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "Daily catch and retain limit: S-2 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres",
+            "raw": "Daily catch and retain limit: S-2 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Possession limit: S-4 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "Possession limit: S-4 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres",
+            "raw": "Possession limit: S-4 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres"
+          }
+        ],
+        "raw": "Wabigoon Lake (49°44′09″ N , 92°43′52″ W ) - including Butler Lake (49°40′24″ N , 92°39′02″ W ), Larson Lake (49°38′23″ N , 92°37′06″ W ), Mile Lake (49°40′53″ N , 92°46′43″ W ), Olsen Lake (49°39′06″ N , 92°37′47″ W ), Paulson Lake (49°37′26″ N , 92°36′54″ W ) and Trap Lake (49°39′34″ N , 92°47′19″ W ) Crappie - S-15 and C-10 | Largemouth and smallmouth bass combined - S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30 | Muskellunge - S-1; must be greater than 137 centimetres, and C-0 | Walleye and sauger combined | Ontario and Canadian residents: S-4 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres | Non-Canadian residents: | Daily catch and retain limit: S-2 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres | Possession limit: S-4 and C-2; none between 46-58 centimetres, not more than 1 greater than 58 centimetres"
+      },
+      {
+        "name": "Wabigoon Lake",
+        "location": "Zealand Township, 100 metres from Christie Island",
+        "rules": [
+          {
+            "period": "no fishing from April 1 to June 14",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from April 1 to June 14",
+            "raw": "Fish sanctuary – no fishing from April 1 to June 14"
+          }
+        ],
+        "raw": "Wabigoon Lake Zealand Township, 100 metres from Christie Island Fish sanctuary – no fishing from April 1 to June 14"
+      },
+      {
+        "name": "Winnipeg River System",
+        "location": "from outflow of Lake of the Woods to the Manitoba Border including the waters of Big Sand Lake (50°06'45\" N , 94°37'54\" W ), Eaglenest Lake (50°12'35\" N , 95°08'27\" W ), English River, from the Winnipeg and English Rivers upstream to the Caribou Falls dam, Gun Lake (49°56'41\" N , 94°40'12\" W ), Hidden Lake (50°04’56“N., 94°35’58“W.), Little Sand Lake (50°02'11\" N , 94°41'05\" W ), Lost Lake (50°01’16”N., 94°39’39”W.), MacFarlane River to Ena Lake Dam (49°58'35\" N , 94°32'03\" W ), Middle Lake (49°46'54\" N , 94°36'21\" W ), Muriel Lake (49°48'40\" N , 94°40'51\" W ), Pistol Lake (49°59'49\" N , 94°42'38\" W ) and Roughrock Lake (50°06'41\" N , 94°45'56\" W ), Swan Lake (50°03'57\" N , 94°54'43\" W ) and Tetu Lake (50°10'54\" N , 95°02'18\" W )",
+        "rules": [
+          {
+            "period": null,
+            "species": "Lake whitefish",
+            "limit": "S-4 and C-2",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 and C-2",
+            "raw": "Lake whitefish - S-4 and C-2"
+          },
+          {
+            "period": null,
+            "species": "Largemouth and smallmouth bass combined",
+            "limit": "S-0 and C-0; from January 1 to June 30",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 and C-0; from January 1 to June 30",
+            "raw": "Largemouth and smallmouth bass combined - S-0 and C-0; from January 1 to June 30"
+          },
+          {
+            "period": null,
+            "species": "Muskellunge",
+            "limit": "S-1; must be greater than 137 centimetres, and C-0",
+            "length": "must be greater than 137 centimetres",
+            "gear": null,
+            "notes": "S-1; must be greater than 137 centimetres, and C-0",
+            "raw": "Muskellunge - S-1; must be greater than 137 centimetres, and C-0"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Walleye and sauger combined",
+            "raw": "Walleye and sauger combined"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "All anglers: open from January 1 to March 14 and third Saturday in May to December 31",
+            "raw": "All anglers: open from January 1 to March 14 and third Saturday in May to December 31"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Ontario and Canadian residents: S-4 and C-2",
+            "length": null,
+            "gear": null,
+            "notes": "Ontario and Canadian residents: S-4 and C-2",
+            "raw": "Ontario and Canadian residents: S-4 and C-2"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Non-Canadian residents:",
+            "raw": "Non-Canadian residents:"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Daily catch and retain limit: S-2 and C-1",
+            "length": null,
+            "gear": null,
+            "notes": "Daily catch and retain limit: S-2 and C-1",
+            "raw": "Daily catch and retain limit: S-2 and C-1"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Possession limit: S-2 and C-1",
+            "length": null,
+            "gear": null,
+            "notes": "Possession limit: S-2 and C-1",
+            "raw": "Possession limit: S-2 and C-1"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Walleye",
+            "raw": "Walleye"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "All anglers: must be between 35-45 centimetres",
+            "raw": "All anglers: must be between 35-45 centimetres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Sauger",
+            "raw": "Sauger"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "All anglers: not more than 1 greater than 45 centimetres",
+            "raw": "All anglers: not more than 1 greater than 45 centimetres"
+          },
+          {
+            "period": null,
+            "species": "Yellow perch",
+            "limit": "S-15 and C-10",
+            "length": null,
+            "gear": null,
+            "notes": "S-15 and C-10",
+            "raw": "Yellow perch - S-15 and C-10"
+          }
+        ],
+        "raw": "Winnipeg River System from outflow of Lake of the Woods to the Manitoba Border including the waters of Big Sand Lake (50°06'45\" N , 94°37'54\" W ), Eaglenest Lake (50°12'35\" N , 95°08'27\" W ), English River, from the Winnipeg and English Rivers upstream to the Caribou Falls dam, Gun Lake (49°56'41\" N , 94°40'12\" W ), Hidden Lake (50°04’56“N., 94°35’58“W.), Little Sand Lake (50°02'11\" N , 94°41'05\" W ), Lost Lake (50°01’16”N., 94°39’39”W.), MacFarlane River to Ena Lake Dam (49°58'35\" N , 94°32'03\" W ), Middle Lake (49°46'54\" N , 94°36'21\" W ), Muriel Lake (49°48'40\" N , 94°40'51\" W ), Pistol Lake (49°59'49\" N , 94°42'38\" W ) and Roughrock Lake (50°06'41\" N , 94°45'56\" W ), Swan Lake (50°03'57\" N , 94°54'43\" W ) and Tetu Lake (50°10'54\" N , 95°02'18\" W ) Lake whitefish - S-4 and C-2 | Largemouth and smallmouth bass combined - S-0 and C-0; from January 1 to June 30 | Muskellunge - S-1; must be greater than 137 centimetres, and C-0 | Walleye and sauger combined | All anglers: open from January 1 to March 14 and third Saturday in May to December 31 | Ontario and Canadian residents: S-4 and C-2 | Non-Canadian residents: | Daily catch and retain limit: S-2 and C-1 | Possession limit: S-2 and C-1 | Walleye | All anglers: must be between 35-45 centimetres | Sauger | All anglers: not more than 1 greater than 45 centimetres | Yellow perch - S-15 and C-10"
+      },
+      {
+        "name": "Winnipeg River",
+        "location": "(west branch) - from Norman Dam to westerly tip of Tunnel Island, thence in a southwesterly direction to the north-east survey post Lot B, Plan M33 (part of Location A16)",
+        "rules": [
+          {
+            "period": "no fishing from April 1 to June 14",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from April 1 to June 14",
+            "raw": "Fish sanctuary - no fishing from April 1 to June 14"
+          }
+        ],
+        "raw": "Winnipeg River (west branch) - from Norman Dam to westerly tip of Tunnel Island, thence in a southwesterly direction to the north-east survey post Lot B, Plan M33 (part of Location A16) Fish sanctuary - no fishing from April 1 to June 14"
+      }
+    ],
+    "fr": [
+      {
+        "name": "Lac des Bois ( Lake of the Woods ) - toutes les parties du lac Bois sauf les eaux de la baie Clearwater (49°42′23″ N , 94°45′13″ O ), la baie Deception, la baie Woodchuck, l’anse Kendall, la baie Echo (49°39′00″ N , 94°53′58″ O ), le lac Cul de Sac (49°37′54″ N , 94°49′47″ O ) et la baie Whitefish (49°22′25″ N , 94°08′17″ O ), comprenant les baies Regina (49°24′32″ N , 94°02′13″ O ), Snake, Boot (48°43′13″ N , 93°23′05″ O ), Ghost (49°21′42″ N , 94°14′08″ O ), Brule (49°23′11″ N , 94°13′42″ O ), Devils (49°14′47″ N , 94°05′07″ O ), Camp (49°15′11″ N , 94°02′26″ O ), Cloverleaf (49°25′12″ N , 94°07′58″ O ), Log (49°26′14″ N , 94°09′52″ O ), Reedy (49°25′15″ N , 94°05′27″ O ), Willow (48°36′33″ N , 92°47′13″ O ) et Sammons (49°23′45″ N , 93°59′28″ O ) ainsi que les anses Knickerbocker (49°23′16″ N , 94°18′27″ O ), Louis (49°25′30″ N , 94°17′08″ O ), Cross (49°28′04″ N , 94°19′08″ O ) et Alfred (49°13′34″ N , 94°07′25″ O )",
+        "location": null,
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Touladi",
+            "raw": "Touladi"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Tous les pêcheurs : S-0 et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "Tous les pêcheurs : S-0 et C-0",
+            "raw": "Tous les pêcheurs : S-0 et C-0"
+          }
+        ],
+        "raw": "Lac des Bois ( Lake of the Woods ) - toutes les parties du lac Bois sauf les eaux de la baie Clearwater (49°42′23″ N , 94°45′13″ O ), la baie Deception, la baie Woodchuck, l’anse Kendall, la baie Echo (49°39′00″ N , 94°53′58″ O ), le lac Cul de Sac (49°37′54″ N , 94°49′47″ O ) et la baie Whitefish (49°22′25″ N , 94°08′17″ O ), comprenant les baies Regina (49°24′32″ N , 94°02′13″ O ), Snake, Boot (48°43′13″ N , 93°23′05″ O ), Ghost (49°21′42″ N , 94°14′08″ O ), Brule (49°23′11″ N , 94°13′42″ O ), Devils (49°14′47″ N , 94°05′07″ O ), Camp (49°15′11″ N , 94°02′26″ O ), Cloverleaf (49°25′12″ N , 94°07′58″ O ), Log (49°26′14″ N , 94°09′52″ O ), Reedy (49°25′15″ N , 94°05′27″ O ), Willow (48°36′33″ N , 92°47′13″ O ) et Sammons (49°23′45″ N , 93°59′28″ O ) ainsi que les anses Knickerbocker (49°23′16″ N , 94°18′27″ O ), Louis (49°25′30″ N , 94°17′08″ O ), Cross (49°28′04″ N , 94°19′08″ O ) et Alfred (49°13′34″ N , 94°07′25″ O ) Touladi | Tous les pêcheurs : S-0 et C-0"
+      },
+      {
+        "name": "Lac des Bois ( Lake of the Woods ) - comprenant les eaux de la péninsule Western, de la péninsule Aulneau, du lac Cul de Sac (49°37'54″ N. , 94°49'47″ O. ) et d’un lac sans nom à 49°36′ N , 94°51′ O",
+        "location": null,
+        "rules": [
+          {
+            "period": null,
+            "species": "Grand corégone",
+            "limit": "S-4 et C-2",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 et C-2",
+            "raw": "Grand corégone - S-4 et C-2"
+          },
+          {
+            "period": null,
+            "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+            "limit": "S-0 et C-0; du 1er janvier au 30 juin",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 et C-0; du 1er janvier au 30 juin",
+            "raw": "Achigan à grande bouche et achigan à petite bouche (toute combinaison) - S-0 et C-0; du 1er janvier au 30 juin"
+          },
+          {
+            "period": null,
+            "species": "Makinongé",
+            "limit": "S-1; doit dépasser 137 centimètres, et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-1; doit dépasser 137 centimètres, et C-0",
+            "raw": "Makinongé – S-1; doit dépasser 137 centimètres, et C-0"
+          },
+          {
+            "period": null,
+            "species": "Doré jaune",
+            "limit": "S-4; aucun entre 43 et 70 centimètres, 1 seul dépassant 70 centimètres, et C-2; aucun dépassant 43 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4; aucun entre 43 et 70 centimètres, 1 seul dépassant 70 centimètres, et C-2; aucun dépassant 43 centimètres",
+            "raw": "Doré jaune - S-4; aucun entre 43 et 70 centimètres, 1 seul dépassant 70 centimètres, et C-2; aucun dépassant 43 centimètres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Doré jaune et doré noir (toute combinaison)",
+            "raw": "Doré jaune et doré noir (toute combinaison)"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Résidents de l’Ontario et du Canada : S-4; aucun entre 43 et 70 centimètres, 1 seul dépassant 70 centimètres, et C-2; aucun dépassant 43 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "Résidents de l’Ontario et du Canada : S-4; aucun entre 43 et 70 centimètres, 1 seul dépassant 70 centimètres, et C-2; aucun dépassant 43 centimètres",
+            "raw": "Résidents de l’Ontario et du Canada : S-4; aucun entre 43 et 70 centimètres, 1 seul dépassant 70 centimètres, et C-2; aucun dépassant 43 centimètres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Personnes résidant à l’extérieur du Canada :",
+            "raw": "Personnes résidant à l’extérieur du Canada :"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite quotidienne de prise et de rétention : S-2; aucun entre 43 et 70 centimètres, 1 seul dépassant 70 centimètres, et C-2; aucun dépassant 43 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "Limite quotidienne de prise et de rétention : S-2; aucun entre 43 et 70 centimètres, 1 seul dépassant 70 centimètres, et C-2; aucun dépassant 43 centimètres",
+            "raw": "Limite quotidienne de prise et de rétention : S-2; aucun entre 43 et 70 centimètres, 1 seul dépassant 70 centimètres, et C-2; aucun dépassant 43 centimètres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite de possession : S-4; aucun entre 43 et 70 centimètres, 1 seul dépassant 70 centimètres, et C-2; aucun dépassant 43 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "Limite de possession : S-4; aucun entre 43 et 70 centimètres, 1 seul dépassant 70 centimètres, et C-2; aucun dépassant 43 centimètres",
+            "raw": "Limite de possession : S-4; aucun entre 43 et 70 centimètres, 1 seul dépassant 70 centimètres, et C-2; aucun dépassant 43 centimètres"
+          },
+          {
+            "period": null,
+            "species": "Perchaude",
+            "limit": "S-15 et C-10",
+            "length": null,
+            "gear": null,
+            "notes": "S-15 et C-10",
+            "raw": "Perchaude - S-15 et C-10"
+          }
+        ],
+        "raw": "Lac des Bois ( Lake of the Woods ) - comprenant les eaux de la péninsule Western, de la péninsule Aulneau, du lac Cul de Sac (49°37'54″ N. , 94°49'47″ O. ) et d’un lac sans nom à 49°36′ N , 94°51′ O Grand corégone - S-4 et C-2 | Achigan à grande bouche et achigan à petite bouche (toute combinaison) - S-0 et C-0; du 1er janvier au 30 juin | Makinongé – S-1; doit dépasser 137 centimètres, et C-0 | Doré jaune - S-4; aucun entre 43 et 70 centimètres, 1 seul dépassant 70 centimètres, et C-2; aucun dépassant 43 centimètres | Doré jaune et doré noir (toute combinaison) | Résidents de l’Ontario et du Canada : S-4; aucun entre 43 et 70 centimètres, 1 seul dépassant 70 centimètres, et C-2; aucun dépassant 43 centimètres | Personnes résidant à l’extérieur du Canada : | Limite quotidienne de prise et de rétention : S-2; aucun entre 43 et 70 centimètres, 1 seul dépassant 70 centimètres, et C-2; aucun dépassant 43 centimètres | Limite de possession : S-4; aucun entre 43 et 70 centimètres, 1 seul dépassant 70 centimètres, et C-2; aucun dépassant 43 centimètres | Perchaude - S-15 et C-10"
+      },
+      {
+        "name": "Lac des Bois ( Lake of the Woods ) - baie Sabaskong (49°09′ N , 94°09″ O ) - canton de Godson, district de Kenora",
+        "location": null,
+        "rules": [
+          {
+            "period": "pêche interdite du 1er avril au 14 juin",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er avril au 14 juin",
+            "raw": "Réserve de poissons - pêche interdite du 1er avril au 14 juin"
+          }
+        ],
+        "raw": "Lac des Bois ( Lake of the Woods ) - baie Sabaskong (49°09′ N , 94°09″ O ) - canton de Godson, district de Kenora Réserve de poissons - pêche interdite du 1er avril au 14 juin"
+      },
+      {
+        "name": "Lac des Bois ( Lake of the Woods ) - baie Echo (49°39′00″ N , 94°53′58″ O ), lac Cul de Sac (49°37′54″ N , 94°49′47″ O ), baie Clearwater (49°42′23″ N , 94°45′13″ O ), baie Deception (49°42’ N , 94°48’ O ), baie Woodchuck (49°41’ N., 94°2’ O.) et anse Kendall (49°44’ N , 94°52’ O )",
+        "location": null,
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est interdit de posséder ou d’utiliser du poisson ou des morceaux de poisson comme appâts.",
+            "raw": "Il est interdit de posséder ou d’utiliser du poisson ou des morceaux de poisson comme appâts."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Seuls les hameçons sans barbes sont permis.",
+            "notes": "Seuls les hameçons sans barbes sont permis.",
+            "raw": "Seuls les hameçons sans barbes sont permis."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Touladi",
+            "raw": "Touladi"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Tous les pêcheurs :",
+            "raw": "Tous les pêcheurs :"
+          },
+          {
+            "period": null,
+            "species": "Une vignette de pêche au touladi est requise pour attraper et garder du touladi. En plus d’un permis de pêche",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "version sportive ou écologique, les pêcheurs doivent également avoir une vignette valide de pêche au touladi pour prendre et garder ce poisson dans ces eaux.",
+            "raw": "Une vignette de pêche au touladi est requise pour attraper et garder du touladi. En plus d’un permis de pêche – version sportive ou écologique, les pêcheurs doivent également avoir une vignette valide de pêche au touladi pour prendre et garder ce poisson dans ces eaux."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Communiquez avec le centre de travail de Kenora pour vous renseigner sur les vignettes de pêche au touladi ou pour demander une telle vignette.",
+            "raw": "Communiquez avec le centre de travail de Kenora pour vous renseigner sur les vignettes de pêche au touladi ou pour demander une telle vignette."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "S-0 et C-0 (sauf pour les détenteurs de vignette); ouverte du 3e samedi de mai jusqu’au 30 septembre.",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 et C-0 (sauf pour les détenteurs de vignette); ouverte du 3e samedi de mai jusqu’au 30 septembre.",
+            "raw": "S-0 et C-0 (sauf pour les détenteurs de vignette); ouverte du 3e samedi de mai jusqu’au 30 septembre."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Un seul hameçon sans barbes peut être utilisé pour pêcher le touladi.",
+            "notes": "Un seul hameçon sans barbes peut être utilisé pour pêcher le touladi.",
+            "raw": "Un seul hameçon sans barbes peut être utilisé pour pêcher le touladi."
+          }
+        ],
+        "raw": "Lac des Bois ( Lake of the Woods ) - baie Echo (49°39′00″ N , 94°53′58″ O ), lac Cul de Sac (49°37′54″ N , 94°49′47″ O ), baie Clearwater (49°42′23″ N , 94°45′13″ O ), baie Deception (49°42’ N , 94°48’ O ), baie Woodchuck (49°41’ N., 94°2’ O.) et anse Kendall (49°44’ N , 94°52’ O ) Il est interdit de posséder ou d’utiliser du poisson ou des morceaux de poisson comme appâts. | Seuls les hameçons sans barbes sont permis. | Touladi | Tous les pêcheurs : | Une vignette de pêche au touladi est requise pour attraper et garder du touladi. En plus d’un permis de pêche – version sportive ou écologique, les pêcheurs doivent également avoir une vignette valide de pêche au touladi pour prendre et garder ce poisson dans ces eaux. | Communiquez avec le centre de travail de Kenora pour vous renseigner sur les vignettes de pêche au touladi ou pour demander une telle vignette. | S-0 et C-0 (sauf pour les détenteurs de vignette); ouverte du 3e samedi de mai jusqu’au 30 septembre. | Un seul hameçon sans barbes peut être utilisé pour pêcher le touladi."
+      },
+      {
+        "name": "Lac des Bois ( Lake of the Woods ) - baie Whitefish (49°22′25″ N , 94°08′17″ O ) - comprenant les baies Regina (49°24′32″ N , 94°02′13″ O ) Snake, Boot (48°43′13″ N , 93°23′05″ O ), Ghost (49°21′42″ N , 94°14′08″ O ), Brule (49°23′11″ N , 94°13′42″ O ), Devils (49°14′47″ N , 94°05′07″ O ), Atikaminike (49°14′29″ N , 94°02′36″ O ) Camp (49°15′11″ N , 94°02′26″ O ), Cloverleaf (49°25′12″ N , 94°07′58″ O ), Log (49°26′14″ N , 94°09′52″ O ), Reedy (49°25′15″ N , 94°05′27″ O ), Clipper, Willow (48°36′33″ N , 92°47′13″ O ) et Sammons (49°23′45″ N , 93°59′28″ O ), ainsi que les anses Knickerbocker (49°23′16″ N , 94°18′27″ O ), Louis (49°25′30″ N , 94°17′08″ O ), Cross (49°28′04″ N , 94°19′08″ O ) et Alfred (49°13′34″ N , 94°07′25″ O )",
+        "location": null,
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est interdit d’utiliser du poisson ou des morceaux de poisson comme appâts du 1er janvier au vendredi précédant le 3e samedi de mai.",
+            "raw": "Il est interdit d’utiliser du poisson ou des morceaux de poisson comme appâts du 1er janvier au vendredi précédant le 3e samedi de mai."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Seuls des hameçons sans barbes peuvent être utilisés du 1er janvier au vendredi précédant le 3e samedi de mai.",
+            "notes": "Seuls des hameçons sans barbes peuvent être utilisés du 1er janvier au vendredi précédant le 3e samedi de mai.",
+            "raw": "Seuls des hameçons sans barbes peuvent être utilisés du 1er janvier au vendredi précédant le 3e samedi de mai."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Touladi",
+            "raw": "Touladi"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Tous les pêcheurs :",
+            "raw": "Tous les pêcheurs :"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite quotidienne de prise et de rétention : S-1 et C-1, aucune limite de taille",
+            "length": null,
+            "gear": null,
+            "notes": "Limite quotidienne de prise et de rétention : S-1 et C-1, aucune limite de taille",
+            "raw": "Limite quotidienne de prise et de rétention : S-1 et C-1, aucune limite de taille"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite de possession : S-2, 1 seul dépassant 65 centimètres, et C-1, aucune limite de taille",
+            "length": null,
+            "gear": null,
+            "notes": "Limite de possession : S-2, 1 seul dépassant 65 centimètres, et C-1, aucune limite de taille",
+            "raw": "Limite de possession : S-2, 1 seul dépassant 65 centimètres, et C-1, aucune limite de taille"
+          }
+        ],
+        "raw": "Lac des Bois ( Lake of the Woods ) - baie Whitefish (49°22′25″ N , 94°08′17″ O ) - comprenant les baies Regina (49°24′32″ N , 94°02′13″ O ) Snake, Boot (48°43′13″ N , 93°23′05″ O ), Ghost (49°21′42″ N , 94°14′08″ O ), Brule (49°23′11″ N , 94°13′42″ O ), Devils (49°14′47″ N , 94°05′07″ O ), Atikaminike (49°14′29″ N , 94°02′36″ O ) Camp (49°15′11″ N , 94°02′26″ O ), Cloverleaf (49°25′12″ N , 94°07′58″ O ), Log (49°26′14″ N , 94°09′52″ O ), Reedy (49°25′15″ N , 94°05′27″ O ), Clipper, Willow (48°36′33″ N , 92°47′13″ O ) et Sammons (49°23′45″ N , 93°59′28″ O ), ainsi que les anses Knickerbocker (49°23′16″ N , 94°18′27″ O ), Louis (49°25′30″ N , 94°17′08″ O ), Cross (49°28′04″ N , 94°19′08″ O ) et Alfred (49°13′34″ N , 94°07′25″ O ) Il est interdit d’utiliser du poisson ou des morceaux de poisson comme appâts du 1er janvier au vendredi précédant le 3e samedi de mai. | Seuls des hameçons sans barbes peuvent être utilisés du 1er janvier au vendredi précédant le 3e samedi de mai. | Touladi | Tous les pêcheurs : | Limite quotidienne de prise et de rétention : S-1 et C-1, aucune limite de taille | Limite de possession : S-2, 1 seul dépassant 65 centimètres, et C-1, aucune limite de taille"
+      },
+      {
+        "name": "Lac Dinorwic",
+        "location": "(49°37′40″ N , 92°33′25″ O ) -y compris le lac Minnehaha (49°31′27″ N , 92°38′45″ O ) le lac Rock (49°32′37″ N , 92°35′51″ O ) et le lac Turtlepond (49°32’43″ N , 92°36’46″ O )",
+        "rules": [
+          {
+            "period": null,
+            "species": "Marigane",
+            "limit": "S-15 et C-10",
+            "length": null,
+            "gear": null,
+            "notes": "S-15 et C-10",
+            "raw": "Marigane - S-15 et C-10"
+          },
+          {
+            "period": null,
+            "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+            "limit": "S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre",
+            "length": "doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre",
+            "gear": null,
+            "notes": "S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre",
+            "raw": "Achigan à grande bouche et achigan à petite bouche (toute combinaison) - S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre"
+          },
+          {
+            "period": null,
+            "species": "Maskinongé",
+            "limit": "S-1; doit dépasser 137 centimètres, et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-1; doit dépasser 137 centimètres, et C-0",
+            "raw": "Maskinongé - S-1; doit dépasser 137 centimètres, et C-0"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Doré jaune et doré noir (toute combinaison)",
+            "raw": "Doré jaune et doré noir (toute combinaison)"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Résidents de l’Ontario et du Canada : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "Résidents de l’Ontario et du Canada : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres",
+            "raw": "Résidents de l’Ontario et du Canada : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Personnes résidant à l’extérieur du Canada :",
+            "raw": "Personnes résidant à l’extérieur du Canada :"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite quotidienne de prise et de rétention : S-2 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "Limite quotidienne de prise et de rétention : S-2 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres",
+            "raw": "Limite quotidienne de prise et de rétention : S-2 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite de possession : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "Limite de possession : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres",
+            "raw": "Limite de possession : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres"
+          }
+        ],
+        "raw": "Lac Dinorwic (49°37′40″ N , 92°33′25″ O ) -y compris le lac Minnehaha (49°31′27″ N , 92°38′45″ O ) le lac Rock (49°32′37″ N , 92°35′51″ O ) et le lac Turtlepond (49°32’43″ N , 92°36’46″ O ) Marigane - S-15 et C-10 | Achigan à grande bouche et achigan à petite bouche (toute combinaison) - S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre | Maskinongé - S-1; doit dépasser 137 centimètres, et C-0 | Doré jaune et doré noir (toute combinaison) | Résidents de l’Ontario et du Canada : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres | Personnes résidant à l’extérieur du Canada : | Limite quotidienne de prise et de rétention : S-2 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres | Limite de possession : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres"
+      },
+      {
+        "name": "Lac Dryberry",
+        "location": "(49°32′49″ N , 93°51′00″ O ) - comprenant la baie Northwest (48°49′47″ N , 92°42′15″ O ), la baie Point (49°34′38″ N , 93°44′01″ O ) et le lac Point (48°09′40″ N , 91°32′15″ O )",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est interdit de posséder ou d’utiliser du poisson ou des morceaux de poisson comme appâts du 1er janvier au vendredi précédant le 3e samedi de mai.",
+            "raw": "Il est interdit de posséder ou d’utiliser du poisson ou des morceaux de poisson comme appâts du 1er janvier au vendredi précédant le 3e samedi de mai."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Seuls des hameçons sans barbes peuvent être utilisés du 1er janvier au vendredi précédant le 3e samedi de mail.",
+            "notes": "Seuls des hameçons sans barbes peuvent être utilisés du 1er janvier au vendredi précédant le 3e samedi de mail.",
+            "raw": "Seuls des hameçons sans barbes peuvent être utilisés du 1er janvier au vendredi précédant le 3e samedi de mail."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Touladi",
+            "raw": "Touladi"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Tous les pêcheurs",
+            "raw": "Tous les pêcheurs"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite quotidienne de prise et de rétention : S-1 et C-1 : aucune limite de taille",
+            "length": null,
+            "gear": null,
+            "notes": "Limite quotidienne de prise et de rétention : S-1 et C-1 : aucune limite de taille",
+            "raw": "Limite quotidienne de prise et de rétention : S-1 et C-1 : aucune limite de taille"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite de possession : S-2 : 1 seul dépassant 65 centimètres, et C-1 : aucune limite de taille",
+            "length": null,
+            "gear": null,
+            "notes": "Limite de possession : S-2 : 1 seul dépassant 65 centimètres, et C-1 : aucune limite de taille",
+            "raw": "Limite de possession : S-2 : 1 seul dépassant 65 centimètres, et C-1 : aucune limite de taille"
+          },
+          {
+            "period": null,
+            "species": "Maskinongé",
+            "limit": "S-1; doit dépasser 137 centimètres, et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-1; doit dépasser 137 centimètres, et C-0",
+            "raw": "Maskinongé - S-1; doit dépasser 137 centimètres, et C-0"
+          }
+        ],
+        "raw": "Lac Dryberry (49°32′49″ N , 93°51′00″ O ) - comprenant la baie Northwest (48°49′47″ N , 92°42′15″ O ), la baie Point (49°34′38″ N , 93°44′01″ O ) et le lac Point (48°09′40″ N , 91°32′15″ O ) Il est interdit de posséder ou d’utiliser du poisson ou des morceaux de poisson comme appâts du 1er janvier au vendredi précédant le 3e samedi de mai. | Seuls des hameçons sans barbes peuvent être utilisés du 1er janvier au vendredi précédant le 3e samedi de mail. | Touladi | Tous les pêcheurs | Limite quotidienne de prise et de rétention : S-1 et C-1 : aucune limite de taille | Limite de possession : S-2 : 1 seul dépassant 65 centimètres, et C-1 : aucune limite de taille | Maskinongé - S-1; doit dépasser 137 centimètres, et C-0"
+      },
+      {
+        "name": "Lac Eagle",
+        "location": "(49°42′00″ N , 93°13′00″ O )",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Pêche interdite la nuit pour toutes les espèces",
+            "raw": "Pêche interdite la nuit pour toutes les espèces"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Touladi",
+            "raw": "Touladi"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Tous les pêcheurs",
+            "raw": "Tous les pêcheurs"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite quotidienne de prise et de rétention : S-1 et C-1 : aucune limite de taille",
+            "length": null,
+            "gear": null,
+            "notes": "Limite quotidienne de prise et de rétention : S-1 et C-1 : aucune limite de taille",
+            "raw": "Limite quotidienne de prise et de rétention : S-1 et C-1 : aucune limite de taille"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite de possession : S-2 : 1 seul dépassant 65 centimètres, et C-1 : aucune limite de taille",
+            "length": null,
+            "gear": null,
+            "notes": "Limite de possession : S-2 : 1 seul dépassant 65 centimètres, et C-1 : aucune limite de taille",
+            "raw": "Limite de possession : S-2 : 1 seul dépassant 65 centimètres, et C-1 : aucune limite de taille"
+          },
+          {
+            "period": null,
+            "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+            "limit": "S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre",
+            "length": "doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre",
+            "gear": null,
+            "notes": "S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre",
+            "raw": "Achigan à grande bouche et achigan à petite bouche (toute combinaison) - S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre"
+          },
+          {
+            "period": null,
+            "species": "Maskinongé",
+            "limit": "S-1; doit dépasser 137 centimètres, et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-1; doit dépasser 137 centimètres, et C-0",
+            "raw": "Maskinongé - S-1; doit dépasser 137 centimètres, et C-0"
+          },
+          {
+            "period": null,
+            "species": "Grand brochet",
+            "limit": "S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres",
+            "raw": "Grand brochet - S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Doré jaune et doré noir (toute combinaison)",
+            "raw": "Doré jaune et doré noir (toute combinaison)"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Résidents de l’Ontario et du Canada : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "Résidents de l’Ontario et du Canada : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres",
+            "raw": "Résidents de l’Ontario et du Canada : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Personnes résidant à l’extérieur du Canada :",
+            "raw": "Personnes résidant à l’extérieur du Canada :"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite quotidienne de prise et de rétention : S-2 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "Limite quotidienne de prise et de rétention : S-2 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres",
+            "raw": "Limite quotidienne de prise et de rétention : S-2 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite de possession : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "Limite de possession : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres",
+            "raw": "Limite de possession : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres"
+          }
+        ],
+        "raw": "Lac Eagle (49°42′00″ N , 93°13′00″ O ) Pêche interdite la nuit pour toutes les espèces | Touladi | Tous les pêcheurs | Limite quotidienne de prise et de rétention : S-1 et C-1 : aucune limite de taille | Limite de possession : S-2 : 1 seul dépassant 65 centimètres, et C-1 : aucune limite de taille | Achigan à grande bouche et achigan à petite bouche (toute combinaison) - S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre | Maskinongé - S-1; doit dépasser 137 centimètres, et C-0 | Grand brochet - S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres | Doré jaune et doré noir (toute combinaison) | Résidents de l’Ontario et du Canada : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres | Personnes résidant à l’extérieur du Canada : | Limite quotidienne de prise et de rétention : S-2 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres | Limite de possession : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres"
+      },
+      {
+        "name": "Lac Eagle",
+        "location": "les parties du lac Eagle comprenant le passage Whiteclay, le passage Brule, la baie Niven, le lac Bunyon, le ruisseau Godson, le ruisseau Kekekwa, le ruisseau Wawapus, le passage Bear, la baie Froghead, la baie Rice, le lac Violet, les rapides One Mile, es rapides Two Mile et la baie Meridian",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er avril au 31 mai",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er avril au 31 mai",
+            "raw": "Réserve de poissons - pêche interdite du 1er avril au 31 mai"
+          }
+        ],
+        "raw": "Lac Eagle les parties du lac Eagle comprenant le passage Whiteclay, le passage Brule, la baie Niven, le lac Bunyon, le ruisseau Godson, le ruisseau Kekekwa, le ruisseau Wawapus, le passage Bear, la baie Froghead, la baie Rice, le lac Violet, les rapides One Mile, es rapides Two Mile et la baie Meridian Réserve de poissons - pêche interdite du 1er avril au 31 mai"
+      },
+      {
+        "name": "Lac Kakagi (lac Crow)",
+        "location": "(49°12′60″ N , 93°52′00″ O ) - district de Kenora",
+        "rules": [
+          {
+            "period": null,
+            "species": "Achigan à grande bouche et achigan à petite bouche",
+            "limit": "S-0 et C-0; du 1er janvier au 30 juin",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 et C-0; du 1er janvier au 30 juin",
+            "raw": "Achigan à grande bouche et achigan à petite bouche - S-0 et C-0; du 1er janvier au 30 juin"
+          },
+          {
+            "period": null,
+            "species": "Maskinongé",
+            "limit": "S-1; doit dépasser 137 centimètres, et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-1; doit dépasser 137 centimètres, et C-0",
+            "raw": "Maskinongé - S-1; doit dépasser 137 centimètres, et C-0"
+          }
+        ],
+        "raw": "Lac Kakagi (lac Crow) (49°12′60″ N , 93°52′00″ O ) - district de Kenora Achigan à grande bouche et achigan à petite bouche - S-0 et C-0; du 1er janvier au 30 juin | Maskinongé - S-1; doit dépasser 137 centimètres, et C-0"
+      },
+      {
+        "name": "Lac à la Pluie (Rainy Lake)",
+        "location": "(48°43′20″ N , 93°15′41″ O )",
+        "rules": [
+          {
+            "period": null,
+            "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+            "limit": "S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre",
+            "length": "doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre",
+            "gear": null,
+            "notes": "S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre",
+            "raw": "Achigan à grande bouche et achigan à petite bouche (toute combinaison) - S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre"
+          },
+          {
+            "period": null,
+            "species": "Maskinongé",
+            "limit": "S-1; doit dépasser 122 centimètres, et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-1; doit dépasser 122 centimètres, et C-0",
+            "raw": "Maskinongé - S-1; doit dépasser 122 centimètres, et C-0"
+          },
+          {
+            "period": null,
+            "species": "Grand brochet",
+            "limit": "S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres",
+            "raw": "Grand brochet - S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Doré jaune et doré noir (toute combinaison)",
+            "raw": "Doré jaune et doré noir (toute combinaison)"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Résidents de l’Ontario et du Canada : S-4 et C-2; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille",
+            "length": null,
+            "gear": null,
+            "notes": "Résidents de l’Ontario et du Canada : S-4 et C-2; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille",
+            "raw": "Résidents de l’Ontario et du Canada : S-4 et C-2; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Personnes résidant à l’extérieur du Canada :",
+            "raw": "Personnes résidant à l’extérieur du Canada :"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite quotidienne de prise et de rétention : S-1 et C-1; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille",
+            "length": null,
+            "gear": null,
+            "notes": "Limite quotidienne de prise et de rétention : S-1 et C-1; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille",
+            "raw": "Limite quotidienne de prise et de rétention : S-1 et C-1; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite de possession : S-4 et C-2; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille",
+            "length": null,
+            "gear": null,
+            "notes": "Limite de possession : S-4 et C-2; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille",
+            "raw": "Limite de possession : S-4 et C-2; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille"
+          }
+        ],
+        "raw": "Lac à la Pluie (Rainy Lake) (48°43′20″ N , 93°15′41″ O ) Achigan à grande bouche et achigan à petite bouche (toute combinaison) - S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre | Maskinongé - S-1; doit dépasser 122 centimètres, et C-0 | Grand brochet - S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres | Doré jaune et doré noir (toute combinaison) | Résidents de l’Ontario et du Canada : S-4 et C-2; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille | Personnes résidant à l’extérieur du Canada : | Limite quotidienne de prise et de rétention : S-1 et C-1; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille | Limite de possession : S-4 et C-2; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille"
+      },
+      {
+        "name": "Lac à la Pluie (Rainy Lake)",
+        "location": "chutes Squirrel entre le lac Namakan et le lac à la Pluie, en aval sur 250 mètres sur la rive nord et 200 mètres sur la rive sud depuis le barrage des chutes Canadian Kettle",
+        "rules": [
+          {
+            "period": "Fermée toute l’année",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Fermée toute l’année",
+            "raw": "Réserve de poissons - Fermée toute l’année"
+          }
+        ],
+        "raw": "Lac à la Pluie (Rainy Lake) chutes Squirrel entre le lac Namakan et le lac à la Pluie, en aval sur 250 mètres sur la rive nord et 200 mètres sur la rive sud depuis le barrage des chutes Canadian Kettle Réserve de poissons - Fermée toute l’année"
+      },
+      {
+        "name": "Lac à la Pluie (Rainy Lake)",
+        "location": "baie Stanjikoming, rivière Big Canoe (48°48′ N , 93°13′ O ), rivière Falls et rivière Pipestone depuis la baie Stokes du lac à la Pluie en amont jusqu’aux premiers rapides, rivière Little Canoe (48°54′ N , 93°18′ O ), du passage Crooked jusqu’aux chutes de l’île Sand de la baie Redgut, anse Halfway et baie Lost, anse Porter de la baie Redgut, baie Rat River, depuis le passage et la petite île à l’entrée de la baie Rat River, en amont jusqu’aux premiers rapides du bras ouest et du bras est de la rivière Rat (ces premiers rapides étant compris)",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er avril au 14 juin",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er avril au 14 juin",
+            "raw": "Réserve de poissons - pêche interdite du 1er avril au 14 juin"
+          }
+        ],
+        "raw": "Lac à la Pluie (Rainy Lake) baie Stanjikoming, rivière Big Canoe (48°48′ N , 93°13′ O ), rivière Falls et rivière Pipestone depuis la baie Stokes du lac à la Pluie en amont jusqu’aux premiers rapides, rivière Little Canoe (48°54′ N , 93°18′ O ), du passage Crooked jusqu’aux chutes de l’île Sand de la baie Redgut, anse Halfway et baie Lost, anse Porter de la baie Redgut, baie Rat River, depuis le passage et la petite île à l’entrée de la baie Rat River, en amont jusqu’aux premiers rapides du bras ouest et du bras est de la rivière Rat (ces premiers rapides étant compris) Réserve de poissons - pêche interdite du 1er avril au 14 juin"
+      },
+      {
+        "name": "Rivière à la Pluie (Rainy River)",
+        "location": "depuis le barrage à Fort Frances en aval jusqu’à Wheeler’s Point, au lac des Bois",
+        "rules": [
+          {
+            "period": null,
+            "species": "Grand corégone",
+            "limit": "S-4 et C-2",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 et C-2",
+            "raw": "Grand corégone - S-4 et C-2"
+          },
+          {
+            "period": null,
+            "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+            "limit": "S-0 et C-0; du 1er janvier au 30 juin",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 et C-0; du 1er janvier au 30 juin",
+            "raw": "Achigan à grande bouche et achigan à petite bouche (toute combinaison) - S-0 et C-0; du 1er janvier au 30 juin"
+          },
+          {
+            "period": null,
+            "species": "Maskinongé",
+            "limit": "S-1; doit dépasser 137 centimètres, et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-1; doit dépasser 137 centimètres, et C-0",
+            "raw": "Maskinongé - S-1; doit dépasser 137 centimètres, et C-0"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Doré jaune et doré noir (toute combinaison) Personnes résidant à l’extérieur du Canada :",
+            "raw": "Doré jaune et doré noir (toute combinaison) Personnes résidant à l’extérieur du Canada :"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Résidents de l’Ontario et du Canada :",
+            "raw": "Résidents de l’Ontario et du Canada :"
+          },
+          {
+            "period": null,
+            "species": "du 1er janvier au dernier jour de février et du 3e samedi de mai jusqu’au 31 décembre",
+            "limit": "S-4 et C-2; 1 seul dépassant 46 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 et C-2; 1 seul dépassant 46 centimètres",
+            "raw": "du 1er janvier au dernier jour de février et du 3e samedi de mai jusqu’au 31 décembre - S-4 et C-2; 1 seul dépassant 46 centimètres"
+          },
+          {
+            "period": null,
+            "species": "du 1er mars au 14 avril",
+            "limit": "S-2 et C-2; doit mesurer moins de 46 centimètres",
+            "length": "doit mesurer moins de 46 centimètres",
+            "gear": null,
+            "notes": "S-2 et C-2; doit mesurer moins de 46 centimètres",
+            "raw": "du 1er mars au 14 avril - S-2 et C-2; doit mesurer moins de 46 centimètres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Personnes résidant à l’extérieur du Canada :",
+            "raw": "Personnes résidant à l’extérieur du Canada :"
+          },
+          {
+            "period": "du 1er janvier au 14 avril et du 3e samedi de mai jusqu’au 31 décembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": null,
+            "raw": "Saison : du 1er janvier au 14 avril et du 3e samedi de mai jusqu’au 31 décembre"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite quotidienne de prise et de rétention du 1er janvier au dernier jour de février et du 3e samedi de mai au 31 décembre : S-2 et C-2; un seul dépassant 46 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "Limite quotidienne de prise et de rétention du 1er janvier au dernier jour de février et du 3e samedi de mai au 31 décembre : S-2 et C-2; un seul dépassant 46 centimètres",
+            "raw": "Limite quotidienne de prise et de rétention du 1er janvier au dernier jour de février et du 3e samedi de mai au 31 décembre : S-2 et C-2; un seul dépassant 46 centimètres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite quotidienne de prise et de rétention du 1er mars au 14 avril : S-2 et C-2; doit mesurer moins de 46 centimètres",
+            "length": "doit mesurer moins de 46 centimètres",
+            "gear": null,
+            "notes": "Limite quotidienne de prise et de rétention du 1er mars au 14 avril : S-2 et C-2; doit mesurer moins de 46 centimètres",
+            "raw": "Limite quotidienne de prise et de rétention du 1er mars au 14 avril : S-2 et C-2; doit mesurer moins de 46 centimètres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite de possession : Du 1er janvier au dernier jour de février et du 3e samedi de mai au 31 décembre; S-4 et C-2; 1 seul dépassant 46 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "Limite de possession : Du 1er janvier au dernier jour de février et du 3e samedi de mai au 31 décembre; S-4 et C-2; 1 seul dépassant 46 centimètres",
+            "raw": "Limite de possession : Du 1er janvier au dernier jour de février et du 3e samedi de mai au 31 décembre; S-4 et C-2; 1 seul dépassant 46 centimètres"
+          },
+          {
+            "period": null,
+            "species": "Limite de possession : Du 1er mars au 14 avril",
+            "limit": "S-2 et C-2; doit mesurer moins de 46 centimètres",
+            "length": "doit mesurer moins de 46 centimètres",
+            "gear": null,
+            "notes": "S-2 et C-2; doit mesurer moins de 46 centimètres",
+            "raw": "Limite de possession : Du 1er mars au 14 avril - S-2 et C-2; doit mesurer moins de 46 centimètres"
+          },
+          {
+            "period": null,
+            "species": "Perchaude",
+            "limit": "S-15 et C-10",
+            "length": null,
+            "gear": null,
+            "notes": "S-15 et C-10",
+            "raw": "Perchaude - S-15 et C-10"
+          }
+        ],
+        "raw": "Rivière à la Pluie (Rainy River) depuis le barrage à Fort Frances en aval jusqu’à Wheeler’s Point, au lac des Bois Grand corégone - S-4 et C-2 | Achigan à grande bouche et achigan à petite bouche (toute combinaison) - S-0 et C-0; du 1er janvier au 30 juin | Maskinongé - S-1; doit dépasser 137 centimètres, et C-0 | Doré jaune et doré noir (toute combinaison) Personnes résidant à l’extérieur du Canada : | Résidents de l’Ontario et du Canada : | du 1er janvier au dernier jour de février et du 3e samedi de mai jusqu’au 31 décembre - S-4 et C-2; 1 seul dépassant 46 centimètres | du 1er mars au 14 avril - S-2 et C-2; doit mesurer moins de 46 centimètres | Personnes résidant à l’extérieur du Canada : | Saison : du 1er janvier au 14 avril et du 3e samedi de mai jusqu’au 31 décembre | Limite quotidienne de prise et de rétention du 1er janvier au dernier jour de février et du 3e samedi de mai au 31 décembre : S-2 et C-2; un seul dépassant 46 centimètres | Limite quotidienne de prise et de rétention du 1er mars au 14 avril : S-2 et C-2; doit mesurer moins de 46 centimètres | Limite de possession : Du 1er janvier au dernier jour de février et du 3e samedi de mai au 31 décembre; S-4 et C-2; 1 seul dépassant 46 centimètres | Limite de possession : Du 1er mars au 14 avril - S-2 et C-2; doit mesurer moins de 46 centimètres | Perchaude - S-15 et C-10"
+      },
+      {
+        "name": "Rivière à la Pluie (Rainy River)",
+        "location": "depuis le lac à la Pluie en aval jusqu’au barrage de Fort Frances",
+        "rules": [
+          {
+            "period": null,
+            "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+            "limit": "S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre",
+            "length": "doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre",
+            "gear": null,
+            "notes": "S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre",
+            "raw": "Achigan à grande bouche et achigan à petite bouche (toute combinaison) - S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre"
+          },
+          {
+            "period": null,
+            "species": "Maskinongé",
+            "limit": "S-1; doit dépasser 122 centimètres, et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-1; doit dépasser 122 centimètres, et C-0",
+            "raw": "Maskinongé - S-1; doit dépasser 122 centimètres, et C-0"
+          },
+          {
+            "period": null,
+            "species": "Grand brochet",
+            "limit": "S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres",
+            "raw": "Grand brochet - S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Doré jaune et doré noir (toute combinaison)",
+            "raw": "Doré jaune et doré noir (toute combinaison)"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Résidents de l’Ontario et du Canada : S-4 et C-2; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille",
+            "length": null,
+            "gear": null,
+            "notes": "Résidents de l’Ontario et du Canada : S-4 et C-2; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille",
+            "raw": "Résidents de l’Ontario et du Canada : S-4 et C-2; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Personnes résidant à l’extérieur du Canada :",
+            "raw": "Personnes résidant à l’extérieur du Canada :"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite quotidienne de prise et de rétention : S-1 et C-1; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille",
+            "length": null,
+            "gear": null,
+            "notes": "Limite quotidienne de prise et de rétention : S-1 et C-1; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille",
+            "raw": "Limite quotidienne de prise et de rétention : S-1 et C-1; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite de possession : S-4 et C-2; ; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille",
+            "length": null,
+            "gear": null,
+            "notes": "Limite de possession : S-4 et C-2; ; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille",
+            "raw": "Limite de possession : S-4 et C-2; ; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille"
+          }
+        ],
+        "raw": "Rivière à la Pluie (Rainy River) depuis le lac à la Pluie en aval jusqu’au barrage de Fort Frances Achigan à grande bouche et achigan à petite bouche (toute combinaison) - S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre | Maskinongé - S-1; doit dépasser 122 centimètres, et C-0 | Grand brochet - S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres | Doré jaune et doré noir (toute combinaison) | Résidents de l’Ontario et du Canada : S-4 et C-2; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille | Personnes résidant à l’extérieur du Canada : | Limite quotidienne de prise et de rétention : S-1 et C-1; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille | Limite de possession : S-4 et C-2; ; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir : aucune limite de taille"
+      },
+      {
+        "name": "Parc provincial Quetico",
+        "location": null,
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Seuls les leurres artificiels sont permis.",
+            "notes": "Seuls les leurres artificiels sont permis.",
+            "raw": "Seuls les leurres artificiels sont permis."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Seuls des hameçons sans barbes peuvent être utilisés.",
+            "notes": "Seuls des hameçons sans barbes peuvent être utilisés.",
+            "raw": "Seuls des hameçons sans barbes peuvent être utilisés."
+          }
+        ],
+        "raw": "Parc provincial Quetico Seuls les leurres artificiels sont permis. | Seuls des hameçons sans barbes peuvent être utilisés."
+      },
+      {
+        "name": "Réseau hydrographique de la rivière Seine",
+        "location": "depuis la pointe Kettle du lac à la Pluie, en amont jusqu’au barrage de Sturgeon Falls (barrage Crilly), situé immédiatement au nord de la route 11, y compris les lacs Little Grassy, Grassy (48°39′53″ N , 92°43′05″ O ), Shoal, Wild Potato (48°43′00″ N , 92°28′36″ O ) et Partridge Crop (48°43′46″ N , 92°22′12″ O )",
+        "rules": [
+          {
+            "period": null,
+            "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+            "limit": "S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre",
+            "length": "doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre",
+            "gear": null,
+            "notes": "S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre",
+            "raw": "Achigan à grande bouche et achigan à petite bouche (toute combinaison) - S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre"
+          },
+          {
+            "period": null,
+            "species": "Maskinongé",
+            "limit": "S-1; doit dépasser 122 centimètres, et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-1; doit dépasser 122 centimètres, et C-0",
+            "raw": "Maskinongé - S-1; doit dépasser 122 centimètres, et C-0"
+          },
+          {
+            "period": null,
+            "species": "Grand brochet",
+            "limit": "S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres",
+            "raw": "Grand brochet - S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Doré jaune et doré noir (toute combinaison)",
+            "raw": "Doré jaune et doré noir (toute combinaison)"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Résidents de l’Ontario et du Canada : S-4 et C-2; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir: aucune limite de taille",
+            "length": null,
+            "gear": null,
+            "notes": "Résidents de l’Ontario et du Canada : S-4 et C-2; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir: aucune limite de taille",
+            "raw": "Résidents de l’Ontario et du Canada : S-4 et C-2; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir: aucune limite de taille"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Personnes résidant à l’extérieur du Canada :",
+            "raw": "Personnes résidant à l’extérieur du Canada :"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite quotidienne de prise et de rétention : S-1 et C-1; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, un seul dépassant 70 centimètres; doré noir : aucune limite de taille",
+            "length": null,
+            "gear": null,
+            "notes": "Limite quotidienne de prise et de rétention : S-1 et C-1; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, un seul dépassant 70 centimètres; doré noir : aucune limite de taille",
+            "raw": "Limite quotidienne de prise et de rétention : S-1 et C-1; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, un seul dépassant 70 centimètres; doré noir : aucune limite de taille"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite de possession : S-4 et C-2; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, un seul dépassant 70 centimètres; doré noir : aucune limite de taille",
+            "length": null,
+            "gear": null,
+            "notes": "Limite de possession : S-4 et C-2; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, un seul dépassant 70 centimètres; doré noir : aucune limite de taille",
+            "raw": "Limite de possession : S-4 et C-2; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, un seul dépassant 70 centimètres; doré noir : aucune limite de taille"
+          }
+        ],
+        "raw": "Réseau hydrographique de la rivière Seine depuis la pointe Kettle du lac à la Pluie, en amont jusqu’au barrage de Sturgeon Falls (barrage Crilly), situé immédiatement au nord de la route 11, y compris les lacs Little Grassy, Grassy (48°39′53″ N , 92°43′05″ O ), Shoal, Wild Potato (48°43′00″ N , 92°28′36″ O ) et Partridge Crop (48°43′46″ N , 92°22′12″ O ) Achigan à grande bouche et achigan à petite bouche (toute combinaison) - S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre | Maskinongé - S-1; doit dépasser 122 centimètres, et C-0 | Grand brochet - S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres | Doré jaune et doré noir (toute combinaison) | Résidents de l’Ontario et du Canada : S-4 et C-2; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, 1 seul dépassant 70 centimètres; doré noir: aucune limite de taille | Personnes résidant à l’extérieur du Canada : | Limite quotidienne de prise et de rétention : S-1 et C-1; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, un seul dépassant 70 centimètres; doré noir : aucune limite de taille | Limite de possession : S-4 et C-2; doit mesurer entre 35 et 45 centimètres ou plus de 70 centimètres, un seul dépassant 70 centimètres; doré noir : aucune limite de taille"
+      },
+      {
+        "name": "Lac Shoal, en amont des rapides Ash",
+        "location": "district de Kenora",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est interdit d’utiliser et de posséder du poisson vivant comme appât.",
+            "raw": "Il est interdit d’utiliser et de posséder du poisson vivant comme appât."
+          },
+          {
+            "period": null,
+            "species": "Grand corégone",
+            "limit": "S-4 et C-2",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 et C-2",
+            "raw": "Grand corégone - S-4 et C-2"
+          },
+          {
+            "period": null,
+            "species": "Achigan à grande bouche et achigan à petite bouche",
+            "limit": "S-0 et C-0; du 1er janvier au 30 juin",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 et C-0; du 1er janvier au 30 juin",
+            "raw": "Achigan à grande bouche et achigan à petite bouche – S-0 et C-0; du 1er janvier au 30 juin"
+          },
+          {
+            "period": null,
+            "species": "Maskinongé",
+            "limit": "S-1; doit dépasser 137 centimètres, et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-1; doit dépasser 137 centimètres, et C-0",
+            "raw": "Maskinongé - S-1; doit dépasser 137 centimètres, et C-0"
+          },
+          {
+            "period": "Fermée toute l’année",
+            "species": "Doré jaune et doré noir (toute combinaison)",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Fermée toute l’année",
+            "raw": "Doré jaune et doré noir (toute combinaison) - Fermée toute l’année"
+          },
+          {
+            "period": null,
+            "species": "Perchaude",
+            "limit": "S-15 et C-10",
+            "length": null,
+            "gear": null,
+            "notes": "S-15 et C-10",
+            "raw": "Perchaude - S-15 et C-10"
+          }
+        ],
+        "raw": "Lac Shoal, en amont des rapides Ash district de Kenora Il est interdit d’utiliser et de posséder du poisson vivant comme appât. | Grand corégone - S-4 et C-2 | Achigan à grande bouche et achigan à petite bouche – S-0 et C-0; du 1er janvier au 30 juin | Maskinongé - S-1; doit dépasser 137 centimètres, et C-0 | Doré jaune et doré noir (toute combinaison) - Fermée toute l’année | Perchaude - S-15 et C-10"
+      },
+      {
+        "name": "Lac Wabigoon",
+        "location": "(49°44′09″ N , 92°43′52″ O ) - y compris le lac Butler (49°40′24″ N , 92°39′02″ O ), le lac Larson (49°38′23″ N , 92°37′06″ O ), le lac Mile (49°40′53″ N , 92°46′43″ O ), le lac Olsen (49°39′06″ N , 92°37′47″ O ), le lac Paulson (49°37′26″ N , 92°36′54″ O ) et le lac Trap (49°39′34″ N , 92°47′19″ O )",
+        "rules": [
+          {
+            "period": null,
+            "species": "Marigane",
+            "limit": "S-15 et C-10",
+            "length": null,
+            "gear": null,
+            "notes": "S-15 et C-10",
+            "raw": "Marigane - S-15 et C-10"
+          },
+          {
+            "period": null,
+            "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+            "limit": "S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre",
+            "length": "doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre",
+            "gear": null,
+            "notes": "S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre",
+            "raw": "Achigan à grande bouche et achigan à petite bouche (toute combinaison) - S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre"
+          },
+          {
+            "period": null,
+            "species": "Maskinongé",
+            "limit": "S-1; doit dépasser 137 centimètres, et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-1; doit dépasser 137 centimètres, et C-0",
+            "raw": "Maskinongé - S-1; doit dépasser 137 centimètres, et C-0"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Doré jaune et doré noir (toute combinaison)",
+            "raw": "Doré jaune et doré noir (toute combinaison)"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Résidents de l’Ontario et du Canada : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "Résidents de l’Ontario et du Canada : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres",
+            "raw": "Résidents de l’Ontario et du Canada : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Personnes résidant à l’extérieur du Canada :",
+            "raw": "Personnes résidant à l’extérieur du Canada :"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite quotidienne de prise et de rétention : S-2 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "Limite quotidienne de prise et de rétention : S-2 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres",
+            "raw": "Limite quotidienne de prise et de rétention : S-2 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite de possession : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "Limite de possession : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres",
+            "raw": "Limite de possession : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres"
+          }
+        ],
+        "raw": "Lac Wabigoon (49°44′09″ N , 92°43′52″ O ) - y compris le lac Butler (49°40′24″ N , 92°39′02″ O ), le lac Larson (49°38′23″ N , 92°37′06″ O ), le lac Mile (49°40′53″ N , 92°46′43″ O ), le lac Olsen (49°39′06″ N , 92°37′47″ O ), le lac Paulson (49°37′26″ N , 92°36′54″ O ) et le lac Trap (49°39′34″ N , 92°47′19″ O ) Marigane - S-15 et C-10 | Achigan à grande bouche et achigan à petite bouche (toute combinaison) - S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre | Maskinongé - S-1; doit dépasser 137 centimètres, et C-0 | Doré jaune et doré noir (toute combinaison) | Résidents de l’Ontario et du Canada : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres | Personnes résidant à l’extérieur du Canada : | Limite quotidienne de prise et de rétention : S-2 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres | Limite de possession : S-4 et C-2; aucun entre 46 et 58 centimètres, 1 seul dépassant 58 centimètres"
+      },
+      {
+        "name": "Lac Wabigoon",
+        "location": "canton de Zealand, 100 mètres depuis l’île Christie",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er avril au 14 juin",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er avril au 14 juin",
+            "raw": "Réserve de poissons - pêche interdite du 1er avril au 14 juin"
+          }
+        ],
+        "raw": "Lac Wabigoon canton de Zealand, 100 mètres depuis l’île Christie Réserve de poissons - pêche interdite du 1er avril au 14 juin"
+      },
+      {
+        "name": "Réseau de la rivière Winnipeg",
+        "location": "depuis le débit sortant du lac des Bois jusqu’à la frontière du Manitoba, y compris les eaux suivantes : lac Big Sand (50°06′45″ N , 94°37′54″ O ), lac Eaglenest (50°12′35″ N , 95°08′27″ O ), rivière English, depuis les rivières Winnipeg et English en amont jusqu’au barrage des chutes Caribou, lac Gun (49°56′41″ N , 94°40′12″ O ), lac Hidden (50°04’56“ N. , 94°35’58“ O. ), lac Little Sand (50°02′11″ N , 94°41′05″ O ), lac Lost (50°01’16” N. , 94°39’39” O. ), depuis la rivière MacFarlane jusqu’au barrage du lac Ena (49°58′35″ N , 94°32′03″ O ), lac Middle (49°46′54″ N , 94°36′21″ O ), lac Muriel (49°48′40″ N , 94°40′51″ O ), lac Pistol (49°59′49″ N , 94°42′38″ O ), lac Roughrock (50°06′41″ N , 94°45′56″ O ), lac Swan (50°03′57″ N , 94°54′43″ O ) et lac Tetu (50°10′54″ N , 95°02′18″ O )",
+        "rules": [
+          {
+            "period": null,
+            "species": "Grand corégone",
+            "limit": "S-4 et C-2",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 et C-2",
+            "raw": "Grand corégone - S-4 et C-2"
+          },
+          {
+            "period": null,
+            "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+            "limit": "S-0 et C-0; du 1er janvier au 30 juin",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 et C-0; du 1er janvier au 30 juin",
+            "raw": "Achigan à grande bouche et achigan à petite bouche (toute combinaison) - S-0 et C-0; du 1er janvier au 30 juin"
+          },
+          {
+            "period": null,
+            "species": "Maskinongé",
+            "limit": "S-1; doit dépasser 137 centimètres, et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-1; doit dépasser 137 centimètres, et C-0",
+            "raw": "Maskinongé - S-1; doit dépasser 137 centimètres, et C-0"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Doré jaune et doré noir (toute combinaison)",
+            "raw": "Doré jaune et doré noir (toute combinaison)"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Tous les pêcheurs : ouverte du 1er janvier au 14 mars et du 3e samedi de mai au 31 décembre",
+            "raw": "Tous les pêcheurs : ouverte du 1er janvier au 14 mars et du 3e samedi de mai au 31 décembre"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Résidents de l’Ontario et du Canada : S-4 et C-2",
+            "length": null,
+            "gear": null,
+            "notes": "Résidents de l’Ontario et du Canada : S-4 et C-2",
+            "raw": "Résidents de l’Ontario et du Canada : S-4 et C-2"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Personnes résidant à l’extérieur du Canada :",
+            "raw": "Personnes résidant à l’extérieur du Canada :"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite quotidienne de prise et de rétention : S-2 et C-1",
+            "length": null,
+            "gear": null,
+            "notes": "Limite quotidienne de prise et de rétention : S-2 et C-1",
+            "raw": "Limite quotidienne de prise et de rétention : S-2 et C-1"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": "Limite de possession : S-2 et C-1",
+            "length": null,
+            "gear": null,
+            "notes": "Limite de possession : S-2 et C-1",
+            "raw": "Limite de possession : S-2 et C-1"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Doré jaune",
+            "raw": "Doré jaune"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Tous les pêcheurs : doit mesurer entre 35 et 45 centimètres",
+            "raw": "Tous les pêcheurs : doit mesurer entre 35 et 45 centimètres"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Doré noir",
+            "raw": "Doré noir"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Tous les pêcheurs : 1 seul dépassant 45 centimètres",
+            "raw": "Tous les pêcheurs : 1 seul dépassant 45 centimètres"
+          },
+          {
+            "period": null,
+            "species": "Perchaude",
+            "limit": "S-15 et C-10",
+            "length": null,
+            "gear": null,
+            "notes": "S-15 et C-10",
+            "raw": "Perchaude - S-15 et C-10"
+          }
+        ],
+        "raw": "Réseau de la rivière Winnipeg depuis le débit sortant du lac des Bois jusqu’à la frontière du Manitoba, y compris les eaux suivantes : lac Big Sand (50°06′45″ N , 94°37′54″ O ), lac Eaglenest (50°12′35″ N , 95°08′27″ O ), rivière English, depuis les rivières Winnipeg et English en amont jusqu’au barrage des chutes Caribou, lac Gun (49°56′41″ N , 94°40′12″ O ), lac Hidden (50°04’56“ N. , 94°35’58“ O. ), lac Little Sand (50°02′11″ N , 94°41′05″ O ), lac Lost (50°01’16” N. , 94°39’39” O. ), depuis la rivière MacFarlane jusqu’au barrage du lac Ena (49°58′35″ N , 94°32′03″ O ), lac Middle (49°46′54″ N , 94°36′21″ O ), lac Muriel (49°48′40″ N , 94°40′51″ O ), lac Pistol (49°59′49″ N , 94°42′38″ O ), lac Roughrock (50°06′41″ N , 94°45′56″ O ), lac Swan (50°03′57″ N , 94°54′43″ O ) et lac Tetu (50°10′54″ N , 95°02′18″ O ) Grand corégone - S-4 et C-2 | Achigan à grande bouche et achigan à petite bouche (toute combinaison) - S-0 et C-0; du 1er janvier au 30 juin | Maskinongé - S-1; doit dépasser 137 centimètres, et C-0 | Doré jaune et doré noir (toute combinaison) | Tous les pêcheurs : ouverte du 1er janvier au 14 mars et du 3e samedi de mai au 31 décembre | Résidents de l’Ontario et du Canada : S-4 et C-2 | Personnes résidant à l’extérieur du Canada : | Limite quotidienne de prise et de rétention : S-2 et C-1 | Limite de possession : S-2 et C-1 | Doré jaune | Tous les pêcheurs : doit mesurer entre 35 et 45 centimètres | Doré noir | Tous les pêcheurs : 1 seul dépassant 45 centimètres | Perchaude - S-15 et C-10"
+      },
+      {
+        "name": "Rivière Winnipeg",
+        "location": "(bras ouest) - depuis le barrage Norman jusqu’à l’extrémité ouest de l’île Tunnel, puis dans une direction sud-ouest jusqu’au poteau d’arpentage nord-est, lot B, plan M33 (partie de l’emplacement A16)",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er avril au 14 juin",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er avril au 14 juin",
+            "raw": "Réserve de poissons - pêche interdite du 1er avril au 14 juin"
+          }
+        ],
+        "raw": "Rivière Winnipeg (bras ouest) - depuis le barrage Norman jusqu’à l’extrémité ouest de l’île Tunnel, puis dans une direction sud-ouest jusqu’au poteau d’arpentage nord-est, lot B, plan M33 (partie de l’emplacement A16) Réserve de poissons - pêche interdite du 1er avril au 14 juin"
+      },
+      {
+        "name": "Zone des lacs expérimentaux",
+        "location": "zone du chemin Pine, district de Dryden, Lacs 111, 189, 191, 221, 222, 223, 224, 239, 260, 305, 373, 375, 377, 378, 382, 442, 622, 623, 626 et 658",
+        "rules": [
+          {
+            "period": null,
+            "species": "Pêche interdite toute l’année",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "communiquez avec le bureau du ministère de Dryden pour plus de détails",
+            "raw": "Pêche interdite toute l’année - communiquez avec le bureau du ministère de Dryden pour plus de détails"
+          }
+        ],
+        "raw": "Zone des lacs expérimentaux zone du chemin Pine, district de Dryden, Lacs 111, 189, 191, 221, 222, 223, 224, 239, 260, 305, 373, 375, 377, 378, 382, 442, 622, 623, 626 et 658 Pêche interdite toute l’année - communiquez avec le bureau du ministère de Dryden pour plus de détails"
+      }
+    ]
+  },
+  "bait_restrictions": {
+    "en": [
+      {
+        "period": null,
+        "species": "Live fish may not be used as bait or possessed for use as bait",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "High Lake (49°42′00\" N , 95°08′00\" W ) - Territorial District of Kenora · Shoal Lake - refer to waterbody exceptions",
+        "raw": null,
+        "waters": [
+          "High Lake (49°42′00\" N , 95°08′00\" W ) - Territorial District of Kenora",
+          "Shoal Lake - refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": null,
+        "species": "Fish or fish parts may not be used as bait",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Dryberry Lake - refer to waterbody exceptions · Lake of the Woods - refer to waterbody exceptions",
+        "raw": null,
+        "waters": [
+          "Dryberry Lake - refer to waterbody exceptions",
+          "Lake of the Woods - refer to waterbody exceptions"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Il est interdit d’utiliser et de posséder du poisson vivant comme appât",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Lac High (49°42′00″ N , 95°08′00″ O ) - district territorial de Kenora · Lac Shoal - voir les exceptions visant des plans d’eau particuliers",
+        "raw": null,
+        "waters": [
+          "Lac High (49°42′00″ N , 95°08′00″ O ) - district territorial de Kenora",
+          "Lac Shoal - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": null,
+        "species": "Il est interdit d’utiliser du poisson ou des morceaux de poisson comme appâts",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Lac des Bois (Lake of the Woods) - voir les exceptions visant des plans d’eau particuliers · Lac Dryberry - voir les exceptions visant des plans d’eau particuliers",
+        "raw": null,
+        "waters": [
+          "Lac des Bois (Lake of the Woods) - voir les exceptions visant des plans d’eau particuliers",
+          "Lac Dryberry - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      }
+    ]
+  },
+  "fish_sanctuaries": {
+    "en": [
+      {
+        "period": "No fishing - closed all year",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - closed all year Grimshaw Lake (48°58′ N , 93°04′ W ) | Rainy Lake - refer to waterbody exceptions",
+        "waters": [
+          "Grimshaw Lake (48°58′ N , 93°04′ W )",
+          "Rainy Lake - refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": "No fishing - from January 1 to May 31 and October 1 to December 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - from January 1 to May 31 and October 1 to December 31 Lilac Lake (48°17′ N , 92°22′ W ) - between Little Vermilion Lake and Lac la Croix | Trout Lake (48°17′ N , 92°20′ W ) - between Little Vermilion Lake and Lac la Croix",
+        "waters": [
+          "Lilac Lake (48°17′ N , 92°22′ W ) - between Little Vermilion Lake and Lac la Croix",
+          "Trout Lake (48°17′ N , 92°20′ W ) - between Little Vermilion Lake and Lac la Croix"
+        ]
+      },
+      {
+        "period": "No fishing - from January 1 to July 31 and September 1 to December 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - from January 1 to July 31 and September 1 to December 31 Scattergood Lake (49°17′ N , 92°42′ W )",
+        "waters": [
+          "Scattergood Lake (49°17′ N , 92°42′ W )"
+        ]
+      },
+      {
+        "period": "No fishing - from February 1 to June 30 and August 1 to December 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - from February 1 to June 30 and August 1 to December 31 Crook Lake (49°04′ N , 92°08′ W ) | Little Grey Trout Lake (49°03′ N , 92°03′ W ) | Rutter Lake (49°04′ N , 92°12′ W ) | Secret Lake (49°04′ N , 92°08′ W )",
+        "waters": [
+          "Crook Lake (49°04′ N , 92°08′ W )",
+          "Little Grey Trout Lake (49°03′ N , 92°03′ W )",
+          "Rutter Lake (49°04′ N , 92°12′ W )",
+          "Secret Lake (49°04′ N , 92°08′ W )"
+        ]
+      },
+      {
+        "period": "No fishing - from April 1 to May 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - from April 1 to May 31 Eagle Lake - refer to waterbody exceptions | Passover Creek - between the southern end of Meridian Bay of Eagle Lake (49°42′00\" N , 93°13′00\" W ) and Chancellor Lake",
+        "waters": [
+          "Eagle Lake - refer to waterbody exceptions",
+          "Passover Creek - between the southern end of Meridian Bay of Eagle Lake (49°42′00\" N , 93°13′00\" W ) and Chancellor Lake"
+        ]
+      },
+      {
+        "period": "No fishing - from April 1 to June 14",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - from April 1 to June 14 Crowrock Lake - upstream from the narrows at 49º00′00″ N , 91º43′50″ W | Ladysmith Creek and Unnamed Creek - Ladysmith Township, between Rugby Lake and the confluence of Ladysmith Creek and the unnamed creek flowing out of Tent Lake | Lake of the Woods - refer to waterbody exceptions | Moose Creek - between Big Moose Lake and Cobble Lake including part of Cobble Lake | Nugget Creek - Zealand Township, between Hughes Creek and C.P.R. crossing at Wabigoon Lake | Rainy Lake - refer to waterbody exceptions | Rugby Lake (49°57′28″ N , 92°57′48″ W ) - the northern arm that falls within Ladysmith and Rowell Townships | Trout River (49°01′ N , 92°53′ W ) - from the falls of Sakwite Lake to Otukamamoan Lake | Wabigoon Lake - refer to waterbody exceptions | Wabigoon River - Satterly Township, Snake Bay Road to the Wabigoon Lake Indian Reserve | White Otter Lake (49°07′ N , 91°52′ W ) | Winnipeg River - refer to waterbody exceptions",
+        "waters": [
+          "Crowrock Lake - upstream from the narrows at 49º00′00″ N , 91º43′50″ W",
+          "Ladysmith Creek and Unnamed Creek - Ladysmith Township, between Rugby Lake and the confluence of Ladysmith Creek and the unnamed creek flowing out of Tent Lake",
+          "Lake of the Woods - refer to waterbody exceptions",
+          "Moose Creek - between Big Moose Lake and Cobble Lake including part of Cobble Lake",
+          "Nugget Creek - Zealand Township, between Hughes Creek and C.P.R. crossing at Wabigoon Lake",
+          "Rainy Lake - refer to waterbody exceptions",
+          "Rugby Lake (49°57′28″ N , 92°57′48″ W ) - the northern arm that falls within Ladysmith and Rowell Townships",
+          "Trout River (49°01′ N , 92°53′ W ) - from the falls of Sakwite Lake to Otukamamoan Lake",
+          "Wabigoon Lake - refer to waterbody exceptions",
+          "Wabigoon River - Satterly Township, Snake Bay Road to the Wabigoon Lake Indian Reserve",
+          "White Otter Lake (49°07′ N , 91°52′ W )",
+          "Winnipeg River - refer to waterbody exceptions"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "Pêche interdite - Fermée toute l’année",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Fermée toute l’année Lac Grimshaw (48°58′ N , 93°04′ O ) | Lac à la Pluie (Rainy Lake) - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Lac Grimshaw (48°58′ N , 93°04′ O )",
+          "Lac à la Pluie (Rainy Lake) - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er janvier au 31 mai et du 1er octobre au 31 décembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er janvier au 31 mai et du 1er octobre au 31 décembre Lac Lilac (48°17′ N , 92°22′ O ) - entre le lac Little Vermilion et le lac la Croix | Lac Trout (48°17′ N , 92°20′ O ) - entre le lac Little Vermilion et le lac la Croix",
+        "waters": [
+          "Lac Lilac (48°17′ N , 92°22′ O ) - entre le lac Little Vermilion et le lac la Croix",
+          "Lac Trout (48°17′ N , 92°20′ O ) - entre le lac Little Vermilion et le lac la Croix"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er janvier au 31 juillet et du 1er septembre au 31 décembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er janvier au 31 juillet et du 1er septembre au 31 décembre Lac Scattergood (49°17′ N , 92°42′ O )",
+        "waters": [
+          "Lac Scattergood (49°17′ N , 92°42′ O )"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er février au 30 juin et du 1er août au 31 décembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er février au 30 juin et du 1er août au 31 décembre Lac Crook (49°04′ N , 92°08′ O ) | Lac Little Grey Trout (49°03′ N , 92°03′ O ) | Lac Rutter (49°04′ N , 92°12′ O ) | Lac Secret (49°04′ N , 92°08′ O )",
+        "waters": [
+          "Lac Crook (49°04′ N , 92°08′ O )",
+          "Lac Little Grey Trout (49°03′ N , 92°03′ O )",
+          "Lac Rutter (49°04′ N , 92°12′ O )",
+          "Lac Secret (49°04′ N , 92°08′ O )"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er avril au 31 mai",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er avril au 31 mai Lac Eagle - voir les exceptions visant des plans d’eau particuliers | Ruisseau Passover - entre l’extrémité sud de la baie Meridian du lac Eagle (49°42′00″ N , 93°13′00″ O ), et le lac Chancellor",
+        "waters": [
+          "Lac Eagle - voir les exceptions visant des plans d’eau particuliers",
+          "Ruisseau Passover - entre l’extrémité sud de la baie Meridian du lac Eagle (49°42′00″ N , 93°13′00″ O ), et le lac Chancellor"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er avril au 14 juin",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er avril au 14 juin Lac des Bois (Lake of the Woods) - voir les exceptions visant des plans d’eau particuliers | Lac Crowrock - en amont depuis le passage à 49°00′00″ N , 91°43′50″ O | Ruisseau Ladysmith et ruisseau sans nom - canton de Ladysmith, entre le lac Rugby et la confluence du ruisseau Ladysmith et le ruisseau sans nom qui s’écoule à partir du lac Tent | Ruisseau Moose - entre le lac Big Moose et le lac Cobble, y compris des parties du lac Cobble | Ruisseau Nugget - canton de Zealand, entre le ruisseau Hughes et le passage à niveau du chemin de fer du CP situé au lac Wabigoon | Lac à la Pluie (Rainy Lake) - voir les exceptions visant des plans d’eau particuliers | Lac Rugby (49°57′28″ N , 92°57′48″ O ) - le bras nord qui se trouve à l’intérieur des cantons Ladysmith et Rowell | Rivière Trout (49°01′ N , 92°53′ O ) - depuis les chutes du lac Sakwite jusqu’au lac Otukamamoan | Lac Wabigoon - voir les exceptions visant des plans d’eau particuliers | Rivière Wabigoon - canton de Satterly, depuis le chemin de la baie Snake jusqu’à la réserve indienne du lac Wabigoon | Lac White Otter (49°07′ N , 91°52′ O ) | Rivière Winnipeg - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Lac des Bois (Lake of the Woods) - voir les exceptions visant des plans d’eau particuliers",
+          "Lac Crowrock - en amont depuis le passage à 49°00′00″ N , 91°43′50″ O",
+          "Ruisseau Ladysmith et ruisseau sans nom - canton de Ladysmith, entre le lac Rugby et la confluence du ruisseau Ladysmith et le ruisseau sans nom qui s’écoule à partir du lac Tent",
+          "Ruisseau Moose - entre le lac Big Moose et le lac Cobble, y compris des parties du lac Cobble",
+          "Ruisseau Nugget - canton de Zealand, entre le ruisseau Hughes et le passage à niveau du chemin de fer du CP situé au lac Wabigoon",
+          "Lac à la Pluie (Rainy Lake) - voir les exceptions visant des plans d’eau particuliers",
+          "Lac Rugby (49°57′28″ N , 92°57′48″ O ) - le bras nord qui se trouve à l’intérieur des cantons Ladysmith et Rowell",
+          "Rivière Trout (49°01′ N , 92°53′ O ) - depuis les chutes du lac Sakwite jusqu’au lac Otukamamoan",
+          "Lac Wabigoon - voir les exceptions visant des plans d’eau particuliers",
+          "Rivière Wabigoon - canton de Satterly, depuis le chemin de la baie Snake jusqu’à la réserve indienne du lac Wabigoon",
+          "Lac White Otter (49°07′ N , 91°52′ O )",
+          "Rivière Winnipeg - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      }
+    ]
+  }
+}

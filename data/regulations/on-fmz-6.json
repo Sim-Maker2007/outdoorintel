@@ -1,0 +1,2120 @@
+{
+  "zone_id": 6,
+  "zone_key": "ON-6",
+  "activity": "fishing",
+  "jurisdiction": "ON",
+  "fmz": 6,
+  "licence_year": 2026,
+  "authority": "Ontario Ministry of Natural Resources (MNR); Ontario Fishing Regulations Summary 2026 (not the official law)",
+  "source": {
+    "en": "https://www.ontario.ca/document/ontario-fishing-regulations-summary/fisheries-management-zone-6",
+    "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-peche/zone-de-gestion-des-peches-6",
+    "pdf_en": "https://ontario.ca/files/2025-12/mnr-2026-fishing-regulations-summary-en-2025-12-08.pdf",
+    "fish_on_line": "https://www.gisapplication.lrc.gov.on.ca/FishONLine/Index.html?site=FishONLine&viewer=FishONLine&locale=en-US&FMZ=6",
+    "fetched_at": "2026-09-04",
+    "html_updated": "2026-08-04",
+    "note": "Rule text reproduced verbatim from the Ontario Fishing Regulations Summary HTML (not the PDF). The Summary is not the official law. Always verify with the MNR and Fish ON-Line before fishing. Crown copyright."
+  },
+  "coverage": {
+    "licence_year": 2026,
+    "skipped_fish_on_line_only": false,
+    "zone_wide_listed": 18,
+    "zone_wide_harvested": 18,
+    "species_exceptions_listed": 4,
+    "species_exceptions_harvested": 4,
+    "waterbody_exceptions_listed": 14,
+    "waterbody_exceptions_harvested": 14,
+    "fish_sanctuaries_listed": 3,
+    "fish_sanctuaries_harvested": 3,
+    "bait_restrictions_listed": 2,
+    "bait_restrictions_harvested": 2,
+    "complete": true,
+    "note": "Zone-wide seasons/limits and listed HTML exceptions/sanctuaries for this FMZ are included. The Ontario Fishing Regulations Summary is not the law; verify with Fish ON-Line. This is not complete Ontario."
+  },
+  "title": {
+    "en": "Fisheries Management Zone 6 — Ontario FMZ 6",
+    "fr": "Zone de gestion des pêches 6 — Ontario ZGP 6"
+  },
+  "notices": {
+    "en": [
+      "Refer to general fishing regulations for more information on how to use this summary.",
+      "Non-Canadian residents camping on Crown land must follow conservation fishing licence limits.",
+      "Rainbow smelt may not be used as bait or possessed for use as bait.",
+      "The following waterbodies, or portions of them, have different regulations that are listed in the waterbody exceptions :",
+      "New Arrow River",
+      "Jessie Lake",
+      "New Lac des Mille Lacs including Casino, Cushing, Panache, and Pike Lakes and their connected waters",
+      "Lake Helen",
+      "Lake Nipigon",
+      "New Little Savanne River",
+      "McIntyre River",
+      "Nipigon River",
+      "Polly Lake",
+      "Savanne River",
+      "FMZ 6, with the exception of St. Ignace Island and Simpson Island, is part of the Northwest Bait Management Zone ( BMZ ). Live or dead baitfish or leeches may not be transported into or out of a BMZ . These rules do not apply to baitfish and leeches which are both dead and preserved. Refer to bait for more details."
+    ],
+    "fr": [
+      "Voir les Règlements généraux concernant la pêche pour plus de renseignements sur l’utilisation de ce Résumé.",
+      "Les personnes qui résident à l’extérieur du Canada et qui font du camping sur les terres de la Couronne doivent respecter les limites du permis de pêche écologique (conservation).",
+      "Il est interdit d’utiliser ou de posséder des éperlans arc-en-ciel comme poisson d’appât.",
+      "Les plans d’eau suivants, ou des parties de ceux-ci, ont des règlements différents qui sont mentionnés dans les exceptions visant des plans d’eau particuliers :",
+      "Nouveau rivière Arrow",
+      "lac Jessie",
+      "Nouveau lac des Mille Lacs, y compris les lacs Casino, Cushing, Panache et Pike ainsi que toutes les eaux de communication",
+      "lac Helen",
+      "lac Nipigon",
+      "Nouveau rivière Little Savanne",
+      "rivière McIntyre",
+      "rivière Nipigon",
+      "lac Polly",
+      "rivière Savanne",
+      "La ZGP 6, à l’exception de l’île St. Ignace et de l’île Simpson, fait partie de la zone de gestion des appâts ( ZGA ) du Nord-Ouest. On ne peut pas apporter ou sortir des poissons d’appât et des sangsues, morts ou vivants, d’une ZGA . Ces règles ne s’appliquent pas aux poissons d’appât et sangsues qui sont morts et conservés. Voir la section sur les appâts pour plus de renseignements."
+    ]
+  },
+  "general": {
+    "en": [
+      {
+        "period": null,
+        "species": "Aggregate limits for trout and salmon (including splake)",
+        "limit": "S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limits : S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined"
+      },
+      {
+        "period": "open all year",
+        "species": "Atlantic salmon",
+        "limit": "S-1 and C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-1 and C-0"
+      },
+      {
+        "period": "fourth Saturday in April to Labour Day",
+        "species": "Brook trout",
+        "limit": "S-5 and C-2; not more than 1 greater than 30 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : fourth Saturday in April to Labour Day Limits : S-5 and C-2; not more than 1 greater than 30 centimetres"
+      },
+      {
+        "period": "open all year",
+        "species": "Brown trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Channel catfish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "open all year",
+        "species": "Crappie",
+        "limit": "S-15 and C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-15 and C-10"
+      },
+      {
+        "period": "closed all year",
+        "species": "Lake sturgeon",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : closed all year"
+      },
+      {
+        "period": "January 1 to September 30",
+        "species": "Lake trout",
+        "limit": "S-2; not more than 1 greater than 56 centimetres from September 1 to September 30, no size limit the rest of the season and C-1; no size limit",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season: January 1 to September 30 Limits: S-2; not more than 1 greater than 56 centimetres from September 1 to September 30, no size limit the rest of the season and C-1; no size limit"
+      },
+      {
+        "period": "open all year",
+        "species": "Lake whitefish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "open all year",
+        "species": "Largemouth and smallmouth bass combined",
+        "limit": "S-4 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-4 and C-2"
+      },
+      {
+        "period": "third Saturday in June to December 15",
+        "species": "Muskellunge",
+        "limit": "S-1; must be greater than 91 centimetres, and C-0",
+        "length": "must be greater than 91 centimetres",
+        "gear": null,
+        "notes": null,
+        "raw": "Season : third Saturday in June to December 15 Limits : S-1; must be greater than 91 centimetres, and C-0"
+      },
+      {
+        "period": "open all year",
+        "species": "Northern pike",
+        "limit": "S-4 and C-2; not more than 1 greater than or equal to 70 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-4 and C-2; not more than 1 greater than or equal to 70 centimetres"
+      },
+      {
+        "period": "open all year",
+        "species": "Pacific salmon",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Rainbow trout",
+        "limit": "S-1 and C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-1 and C-0"
+      },
+      {
+        "period": "open all year",
+        "species": "Splake",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Sunfish",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50 and C-25"
+      },
+      {
+        "period": "January 1 to April 14 and third Saturday in May to December 31",
+        "species": "Walleye and sauger combined",
+        "limit": "S-4 and C-2; not more than 1 greater than 46 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to April 14 and third Saturday in May to December 31 Limits : S-4 and C-2; not more than 1 greater than 46 centimetres"
+      },
+      {
+        "period": "open all year",
+        "species": "Yellow perch",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50 and C-25"
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Limites combinées pour la truite et le saumon (y compris le touladi et l’omble de fontaine)",
+        "limit": "S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées.",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limites : S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées."
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Saumon Atlantique",
+        "limit": "S-1 et C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-1 et C-0"
+      },
+      {
+        "period": "Du 4e samedi d’avril à la fête du Travail",
+        "species": "Omble de fontaine",
+        "limit": "S-5 et C-2; un seul dépassant 30 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 4e samedi d’avril à la fête du Travail Limites : S-5 et C-2; un seul dépassant 30 centimètres"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Truite brune",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Barbue de rivière",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Marigane",
+        "limit": "S-15 et C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-15 et C-10"
+      },
+      {
+        "period": "Fermée toute l’année",
+        "species": "Esturgeon de lac (esturgeon jaune)",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Fermée toute l’année"
+      },
+      {
+        "period": "Du 1er janvier au 30 septembre",
+        "species": "Touladi",
+        "limit": "S-2; 1 seul dépassant 56 centimètres du 1er septembre au 30 septembre, aucune limite de taille le reste de la saison, et C-1 : aucune limite de taille",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 30 septembre Limites : S-2; 1 seul dépassant 56 centimètres du 1er septembre au 30 septembre, aucune limite de taille le reste de la saison, et C-1 : aucune limite de taille"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Grand corégone",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+        "limit": "S-4 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-4 et C-2"
+      },
+      {
+        "period": "Du 3e samedi de juin au 15 décembre",
+        "species": "Maskinongé",
+        "limit": "S-1; doit mesurer plus de 91 centimètres, et C-0",
+        "length": "doit mesurer plus de 91 centimètres",
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 3e samedi de juin au 15 décembre Limites : S-1; doit mesurer plus de 91 centimètres, et C-0"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Grand brochet",
+        "limit": "S-4 et C-2; 1 seul mesurant 70 centimètres ou plus",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-4 et C-2; 1 seul mesurant 70 centimètres ou plus"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Saumon du Pacifique",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Truite arc-en-ciel",
+        "limit": "S-1 et C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-1 et C-0"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Omble de fontaine",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Crapet",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-50 et C-25"
+      },
+      {
+        "period": "Du 1er janvier au 14 avril et du 3e samedi de mai au 31 décembre",
+        "species": "Doré jaune et doré noir (toute combinaison)",
+        "limit": "S-4 et C-2; 1 seul dépassant 46 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 14 avril et du 3e samedi de mai au 31 décembre Limites : S-4 et C-2; 1 seul dépassant 46 centimètres"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Perchaude",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-50 et C-25"
+      }
+    ]
+  },
+  "species_exceptions": {
+    "en": [
+      {
+        "period": "open all year",
+        "species": "Brook trout",
+        "limit": "S-5 and C-2; no size limit View these waterbodies and additional information on Fish ON-Line . Limits : S-1; must be greater than 56 centimetres, and C-0",
+        "length": "must be greater than 56 centimetres",
+        "gear": null,
+        "notes": "Additional fishing opportunities · Adrian Lake (48°27′10″ N , 89°48′58″ W ) · Aldina Lake (48°21′31″ N , 89°58′41″ W ) · Annette Lake (49°26′06″ N , 89°39′49″ W ) · Bateman Lake (48°30′33″ N , 89°45′17″ W ) · Bell Lake (48°06′16″ N , 89°42′26″ W ) · Birch Lake (48°10′28″ N , 90°07′18″ W ) · Blake’s Lake (48°56′57″ N , 88°28′11″ W ) · Caribou Lake (48°37′23″ N , 88°40′14″ W ) · Caro Lake (49°06′13″ N , 88°57′50″ W ) · Cavern Lake (48°50′04″ N , 88°39′35″ W ) · Chub Lake (48°16′54″ N , 89°34′22″ W ) · Deer Lake (49°03′36″ N , 88°20′23″ W ) · Devon Lake (48°09′18″ N , 89°50′45″ W ) · Devonline Lake (48°09′33″ N , 89°50′58″ W ) · Downy Lake (48°14′23″ N , 89°52′10″ W ) · Duchess Lake (Dutchies Lake) (48°52′26″ N , 88°34′18″ W ) · Echo Lake (48°19′30″ N , 89°53′33″ W ) · Elbow Lake (48°10′56″ N , 90°16′23″ W ) · Fall Lake (48°47′51″ N , 88°38′02″ W ) · Five Minute Lake (48°40′28″ N , 88°48′04″ W ) · Float Lake (48°20′37″ N , 89°53′20″ W ) · Forrest Lake (48°07′24″ N , 90°15′14″ W ) · Furcate Lake (48°47′11″ N , 88°45′50″ W ) · Goddard Lake (49°42′22″ N , 87°43′38″ W ) · Gold Lake (48°30′05″ N , 89°45′08″ W ) · Golding Lake (48°35′49″ N , 89°14′00″ W ) · Goodmorning Lakes North (48°47'11″ N , 88°42'03″ W ) · Goodmorning Lakes South (48°46'41″ N , 88°41'47″ W ) · Grande Lake (48°49′09″ N , 88°40′52″ W ) · Hans’ Lake (McMaster Lake 79) (49°01′53″ N , 88°35′04″ W ) · Hartington Lake 1 (48°09′04″ N , 89°56′37″ W ) – Hartington Township · Hartington Lake 2 (48°08′32″ N , 89°57′18″ W ) – Hartington Township · Hartington Lake 3 (48°08′49″ N , 89°56′57″ W ) – Hartington Township · Head Lake (48°16′50″ N , 90°09′30″ W ) · Himdick Lake (48°45′22″ N , 88°43′30″ W ) · Inwood Lake (49°01′10″ N , 90°26′45″ W ) · Jeff Lake (48°43′14″ N , 88°39′58″ W ) · Joan Lake (48°06′19″ N , 89°43′38″ W ) · Lauries Lakes 1 (48°15′01″ N , 90°16′32″ W ) · Lauries Lake 3 (Larrys Lake 3) (48°14′16″ N , 90°17′18″ W ) · Lauries Lake 4 (Larrys Lake 4) (48°14′30″ N , 90°17′16″ W ) · Lismore Lake 1 (48°09′28″ N , 89°56′42″ W ) · Lismore Lake 2 (48°09′21″ N , 89°57′06″ W ) · Little Addie Lake (48°09′18″ N , 90°25′02″ W ) · Little Hawkeye Lake (48°40′08″ N , 89°27′40″ W ) · Little Head Lake (48°16′20″ N , 90°08′21″ W ) · Liver Lake (48°36′33″ N , 88°56′28″ W ) · Lizard Lake (48°14′33″ N , 89°52′23″ W ) · Loch Muich Lake (48°36′14″ N , 90°20′39″ W ) · Lofquist Lake (49°02′18″ N , 88°20′21″ W ) · Lorne’s Lake (49°03′47″ N , 88°35′57″ W ) · Lower Moonshine Lake (48°52′25″ N , 88°35′59″ W ) · Malborne Lake (49°11′52″ N , 88°25′15″ W ) · Male Lake (49°13′11″ N , 88°22′33″ W ) · Matson Lake (48°05′48″ N , 89°42′04″ W ) · McKecknie Lake (48°07′25″ N , 90°14′21″ W ) · Middle Moonshine Lake (48°52′39″ N , 88°36′04″ W ) · Moonshine Lake (48°52′53″ N , 88°36′12″ W ) · Morrison Lake (48°11′09″ N , 89°52′44″ W ) · Mutt Lake (48°43′25″ N , 88°40′09″ W ) · No Good Lake (49°03′00″ N , 88°21′00″ W ) · Nunya Lake (49°28'59″ N , 89°35'27″ W ) · Paradise Lake (48°40′55″ N , 88°48′20″ W ) · Peridotite Lake (48°29′34″ N , 89°46′50″ W ) · Peter’s Lake (48°57′13″ N , 88°28′58″ W ) · Pocket Lake (48°52′19″ N , 88°40′39″ W ) · Ranger Lake (48°23′16″ N , 89°52′10″ W ) · Rock Lake (48°11′13″ N , 90°05′29″ W ) · Roll Lake (Lake 19) (48°38′30″ N , 88°57′37″ W ) · Sand Lake North (48°15′18″ N , 90°14′25″ W ) · Scott Lake 1 (48°10′51″ N , 90°18′47″ W ) · Scott Lake 2 (48°10′41″ N , 90°17′49″ W ) · Shale Lake (48°53′36″ N , 88°43′16″ W ) · Shoepac Lake (49°00′50″ N , 88°22′47″ W ) · Sitches Lake (48°39′24″ N , 90°38′27″ W ) · South Fallingsnow East Lake (48°08′21″ N , 89°47′46″ W ) · South Fallingsnow West Lake (48°08′33″ N , 89°48′00″ W ) · Stillwater Lake (49°02′07″ N , 88°24′17″ W ) · Sunset Lake (48°44′19″ N , 88°40′55″ W ) · Sunset Lake (48°12′11″ N , 89°56′20″ W ) · Tear Drop Lake (48°37′17″ N , 90°21′60″ W ) · Ten Minute Lake (48°22′38″ N , 89°52′14″ W ) · Thompson Lake (48°52′52″ N , 88°34′42″ W ) · Thompson Lake 2 (48°17′37″ N , 89°35′06″ W ) · Thunder Lake (48°29′55″ N , 89°45′55″ W ) · Tuesday Lake (48°44′15″ N , 89°05′16″ W ) · Twin Mountain Lake (48°10′47″ N , 89°49′33″ W ) · Unnamed Lake 9 (49°02′12″ N , 88°28′20″ W ) · Unnamed Lake 19 (49°02′11″ N , 88°26′23″ W ) · Unnamed Lake 20 (49°00′31″ N , 88°28′44″ W ) · Unnamed Lake 21 (49°00′03″ N , 88°28′08″ W ) · Unnamed Lake 22 (48°58′05″ N , 88°32′09″ W ) · Unnamed Lake 34 (49°01′55″ N , 88°25′13″ W ) · Unnamed Lake 39 (48°56′32″ N , 88°25′45″ W ) · Wasp Lake (48°13′31″ N , 90°11′12″ W ) · West Arrow Lake (48°07′35″ N , 90°26′13″ W ) · West Greenhue Lake (48°42′01″ N , 89°27′03″ W ) · West MacDonald Lake (48°50′16″ N , 88°38′45″ W ) · All tributaries to Lake Superior in Zone 6 described as follows: · Current River downstream from the Boulevard Lake Dam (48°27′ N , 89°11′ W ) · Coldwater Creek downstream from Ouimet Canyon Road (48°45′ N , 88°36′ W ) · Spring Creek downstream from Dorion Fish Culture Station (48°50′ N , 88°36′ W ) · Wolf River downstream from the lower falls (48°50′58″ N , 88°34′87″ W ) · Black Sturgeon River downstream from the dam (48°55′ N , 88°23′ W ) · Nipigon River, entire length including Jessie Lake, Polly Lake and Lake Helen (49°04'20″ N , 88°16'17″ W ) · from the Pigeon River to the Nipigon River, all tributaries lying downstream from Highway 61 and Highway 11/17, including Sibley and Black Bay Peninsula and all islands and excluding those listed in the first 6 sub-bullets above",
+        "raw": "Additional fishing opportunities Season : open all year Limits : S-5 and C-2; no size limit View these waterbodies and additional information on Fish ON-Line . Limits : S-1; must be greater than 56 centimetres, and C-0",
+        "waters": [
+          "Adrian Lake (48°27′10″ N , 89°48′58″ W )",
+          "Aldina Lake (48°21′31″ N , 89°58′41″ W )",
+          "Annette Lake (49°26′06″ N , 89°39′49″ W )",
+          "Bateman Lake (48°30′33″ N , 89°45′17″ W )",
+          "Bell Lake (48°06′16″ N , 89°42′26″ W )",
+          "Birch Lake (48°10′28″ N , 90°07′18″ W )",
+          "Blake’s Lake (48°56′57″ N , 88°28′11″ W )",
+          "Caribou Lake (48°37′23″ N , 88°40′14″ W )",
+          "Caro Lake (49°06′13″ N , 88°57′50″ W )",
+          "Cavern Lake (48°50′04″ N , 88°39′35″ W )",
+          "Chub Lake (48°16′54″ N , 89°34′22″ W )",
+          "Deer Lake (49°03′36″ N , 88°20′23″ W )",
+          "Devon Lake (48°09′18″ N , 89°50′45″ W )",
+          "Devonline Lake (48°09′33″ N , 89°50′58″ W )",
+          "Downy Lake (48°14′23″ N , 89°52′10″ W )",
+          "Duchess Lake (Dutchies Lake) (48°52′26″ N , 88°34′18″ W )",
+          "Echo Lake (48°19′30″ N , 89°53′33″ W )",
+          "Elbow Lake (48°10′56″ N , 90°16′23″ W )",
+          "Fall Lake (48°47′51″ N , 88°38′02″ W )",
+          "Five Minute Lake (48°40′28″ N , 88°48′04″ W )",
+          "Float Lake (48°20′37″ N , 89°53′20″ W )",
+          "Forrest Lake (48°07′24″ N , 90°15′14″ W )",
+          "Furcate Lake (48°47′11″ N , 88°45′50″ W )",
+          "Goddard Lake (49°42′22″ N , 87°43′38″ W )",
+          "Gold Lake (48°30′05″ N , 89°45′08″ W )",
+          "Golding Lake (48°35′49″ N , 89°14′00″ W )",
+          "Goodmorning Lakes North (48°47'11″ N , 88°42'03″ W )",
+          "Goodmorning Lakes South (48°46'41″ N , 88°41'47″ W )",
+          "Grande Lake (48°49′09″ N , 88°40′52″ W )",
+          "Hans’ Lake (McMaster Lake 79) (49°01′53″ N , 88°35′04″ W )",
+          "Hartington Lake 1 (48°09′04″ N , 89°56′37″ W ) – Hartington Township",
+          "Hartington Lake 2 (48°08′32″ N , 89°57′18″ W ) – Hartington Township",
+          "Hartington Lake 3 (48°08′49″ N , 89°56′57″ W ) – Hartington Township",
+          "Head Lake (48°16′50″ N , 90°09′30″ W )",
+          "Himdick Lake (48°45′22″ N , 88°43′30″ W )",
+          "Inwood Lake (49°01′10″ N , 90°26′45″ W )",
+          "Jeff Lake (48°43′14″ N , 88°39′58″ W )",
+          "Joan Lake (48°06′19″ N , 89°43′38″ W )",
+          "Lauries Lakes 1 (48°15′01″ N , 90°16′32″ W )",
+          "Lauries Lake 3 (Larrys Lake 3) (48°14′16″ N , 90°17′18″ W )",
+          "Lauries Lake 4 (Larrys Lake 4) (48°14′30″ N , 90°17′16″ W )",
+          "Lismore Lake 1 (48°09′28″ N , 89°56′42″ W )",
+          "Lismore Lake 2 (48°09′21″ N , 89°57′06″ W )",
+          "Little Addie Lake (48°09′18″ N , 90°25′02″ W )",
+          "Little Hawkeye Lake (48°40′08″ N , 89°27′40″ W )",
+          "Little Head Lake (48°16′20″ N , 90°08′21″ W )",
+          "Liver Lake (48°36′33″ N , 88°56′28″ W )",
+          "Lizard Lake (48°14′33″ N , 89°52′23″ W )",
+          "Loch Muich Lake (48°36′14″ N , 90°20′39″ W )",
+          "Lofquist Lake (49°02′18″ N , 88°20′21″ W )",
+          "Lorne’s Lake (49°03′47″ N , 88°35′57″ W )",
+          "Lower Moonshine Lake (48°52′25″ N , 88°35′59″ W )",
+          "Malborne Lake (49°11′52″ N , 88°25′15″ W )",
+          "Male Lake (49°13′11″ N , 88°22′33″ W )",
+          "Matson Lake (48°05′48″ N , 89°42′04″ W )",
+          "McKecknie Lake (48°07′25″ N , 90°14′21″ W )",
+          "Middle Moonshine Lake (48°52′39″ N , 88°36′04″ W )",
+          "Moonshine Lake (48°52′53″ N , 88°36′12″ W )",
+          "Morrison Lake (48°11′09″ N , 89°52′44″ W )",
+          "Mutt Lake (48°43′25″ N , 88°40′09″ W )",
+          "No Good Lake (49°03′00″ N , 88°21′00″ W )",
+          "Nunya Lake (49°28'59″ N , 89°35'27″ W )",
+          "Paradise Lake (48°40′55″ N , 88°48′20″ W )",
+          "Peridotite Lake (48°29′34″ N , 89°46′50″ W )",
+          "Peter’s Lake (48°57′13″ N , 88°28′58″ W )",
+          "Pocket Lake (48°52′19″ N , 88°40′39″ W )",
+          "Ranger Lake (48°23′16″ N , 89°52′10″ W )",
+          "Rock Lake (48°11′13″ N , 90°05′29″ W )",
+          "Roll Lake (Lake 19) (48°38′30″ N , 88°57′37″ W )",
+          "Sand Lake North (48°15′18″ N , 90°14′25″ W )",
+          "Scott Lake 1 (48°10′51″ N , 90°18′47″ W )",
+          "Scott Lake 2 (48°10′41″ N , 90°17′49″ W )",
+          "Shale Lake (48°53′36″ N , 88°43′16″ W )",
+          "Shoepac Lake (49°00′50″ N , 88°22′47″ W )",
+          "Sitches Lake (48°39′24″ N , 90°38′27″ W )",
+          "South Fallingsnow East Lake (48°08′21″ N , 89°47′46″ W )",
+          "South Fallingsnow West Lake (48°08′33″ N , 89°48′00″ W )",
+          "Stillwater Lake (49°02′07″ N , 88°24′17″ W )",
+          "Sunset Lake (48°44′19″ N , 88°40′55″ W )",
+          "Sunset Lake (48°12′11″ N , 89°56′20″ W )",
+          "Tear Drop Lake (48°37′17″ N , 90°21′60″ W )",
+          "Ten Minute Lake (48°22′38″ N , 89°52′14″ W )",
+          "Thompson Lake (48°52′52″ N , 88°34′42″ W )",
+          "Thompson Lake 2 (48°17′37″ N , 89°35′06″ W )",
+          "Thunder Lake (48°29′55″ N , 89°45′55″ W )",
+          "Tuesday Lake (48°44′15″ N , 89°05′16″ W )",
+          "Twin Mountain Lake (48°10′47″ N , 89°49′33″ W )",
+          "Unnamed Lake 9 (49°02′12″ N , 88°28′20″ W )",
+          "Unnamed Lake 19 (49°02′11″ N , 88°26′23″ W )",
+          "Unnamed Lake 20 (49°00′31″ N , 88°28′44″ W )",
+          "Unnamed Lake 21 (49°00′03″ N , 88°28′08″ W )",
+          "Unnamed Lake 22 (48°58′05″ N , 88°32′09″ W )",
+          "Unnamed Lake 34 (49°01′55″ N , 88°25′13″ W )",
+          "Unnamed Lake 39 (48°56′32″ N , 88°25′45″ W )",
+          "Wasp Lake (48°13′31″ N , 90°11′12″ W )",
+          "West Arrow Lake (48°07′35″ N , 90°26′13″ W )",
+          "West Greenhue Lake (48°42′01″ N , 89°27′03″ W )",
+          "West MacDonald Lake (48°50′16″ N , 88°38′45″ W )",
+          "All tributaries to Lake Superior in Zone 6 described as follows:",
+          "Current River downstream from the Boulevard Lake Dam (48°27′ N , 89°11′ W )",
+          "Coldwater Creek downstream from Ouimet Canyon Road (48°45′ N , 88°36′ W )",
+          "Spring Creek downstream from Dorion Fish Culture Station (48°50′ N , 88°36′ W )",
+          "Wolf River downstream from the lower falls (48°50′58″ N , 88°34′87″ W )",
+          "Black Sturgeon River downstream from the dam (48°55′ N , 88°23′ W )",
+          "Nipigon River, entire length including Jessie Lake, Polly Lake and Lake Helen (49°04'20″ N , 88°16'17″ W )",
+          "from the Pigeon River to the Nipigon River, all tributaries lying downstream from Highway 61 and Highway 11/17, including Sibley and Black Bay Peninsula and all islands and excluding those listed in the first 6 sub-bullets above"
+        ]
+      },
+      {
+        "period": "open all year",
+        "species": "Lake trout",
+        "limit": "S-2 and C-1; no size limit Season : closed all year",
+        "length": null,
+        "gear": null,
+        "notes": "Additional fishing opportunities · Black Sturgeon Lake (49°19′27″ N , 88°51′34″ W ) · Keemle Lake (49°17′00″ N , 88°07′00″ W ) · Pasha Lake (49°42′00″ N , 87°43′00″ W ) – Walters Township · Pass Lake (48°33′45″ N , 88°44′05″ W ) · Shebandowan Lakes (48°38′53″ N , 90°19′22″ W )",
+        "raw": "Additional fishing opportunities Season : open all year Limits : S-2 and C-1; no size limit Season : closed all year",
+        "waters": [
+          "Black Sturgeon Lake (49°19′27″ N , 88°51′34″ W )",
+          "Keemle Lake (49°17′00″ N , 88°07′00″ W )",
+          "Pasha Lake (49°42′00″ N , 87°43′00″ W ) – Walters Township",
+          "Pass Lake (48°33′45″ N , 88°44′05″ W )",
+          "Shebandowan Lakes (48°38′53″ N , 90°19′22″ W )"
+        ]
+      },
+      {
+        "period": null,
+        "species": "Rainbow Trout",
+        "limit": "S-5 and C-2 Limits : S-1; must be greater than 69 centimetres, and C-0",
+        "length": "must be greater than 69 centimetres",
+        "gear": null,
+        "notes": "Additional fishing opportunities · Amanda Lake (49°29′01″ N , 89°34′06″ W ) · Badger Lake (49°29′48″ N , 89°31′39″ W ) · Danielle Lake (49°29'16″ N , 89°34'38″ W ) · D'Arcy Lake (48°35′49″ N , 88°39′38″ W ) · Dayle Lake (49°24′52″ N , 89°41′47″ W ) · Dennis Lake (49°28'55″ N , 89°35'56″ W ) · Hades Lake (48°44′10″ N , 88°48′58″ W ) · Lake 81E (48°13′42″ N , 89°54′17″ W ) · Pothole Lake (48°13′47″ N , 89°53′45″ W ) · Sandybeach Lake (48°46'42″ N , 88°46'09″ W ) · Uncle Al’s Lake (48°26′32″ N , 89°50′02″ W ) · Ursus Lake (48°35'35″ N , 89°01'11″ W ) · Wednesday Lake (48°44′13″ N , 89°05′47″ W ) · Neebing River",
+        "raw": "Additional fishing opportunities Limits : S-5 and C-2 Limits : S-1; must be greater than 69 centimetres, and C-0",
+        "waters": [
+          "Amanda Lake (49°29′01″ N , 89°34′06″ W )",
+          "Badger Lake (49°29′48″ N , 89°31′39″ W )",
+          "Danielle Lake (49°29'16″ N , 89°34'38″ W )",
+          "D'Arcy Lake (48°35′49″ N , 88°39′38″ W )",
+          "Dayle Lake (49°24′52″ N , 89°41′47″ W )",
+          "Dennis Lake (49°28'55″ N , 89°35'56″ W )",
+          "Hades Lake (48°44′10″ N , 88°48′58″ W )",
+          "Lake 81E (48°13′42″ N , 89°54′17″ W )",
+          "Pothole Lake (48°13′47″ N , 89°53′45″ W )",
+          "Sandybeach Lake (48°46'42″ N , 88°46'09″ W )",
+          "Uncle Al’s Lake (48°26′32″ N , 89°50′02″ W )",
+          "Ursus Lake (48°35'35″ N , 89°01'11″ W )",
+          "Wednesday Lake (48°44′13″ N , 89°05′47″ W )",
+          "Neebing River"
+        ]
+      },
+      {
+        "period": "closed all year",
+        "species": "Walleye",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Black Sturgeon River – downstream from the dam (48°55′ N , 88°23′ W ) to Lake Superior",
+        "raw": "Season : closed all year",
+        "waters": [
+          "Black Sturgeon River – downstream from the dam (48°55′ N , 88°23′ W ) to Lake Superior"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Omble de fontaine",
+        "limit": "S-5 et C-2; aucune limite de taille Voir ces plans d'eau et des renseignements additionnels sur On-Pêche en ligne . Limites : S-1; doit mesurer plus de 56 centimètres, et C-0",
+        "length": "doit mesurer plus de 56 centimètres",
+        "gear": null,
+        "notes": "Possibilités supplémentaires de pêche · Lac Adrian (48°27′10″ N , 89°48′58″ O ) · Lac Aldina (48°21′31″ N , 89°58′41″ O ) · Lac Annette (49°26′06″ N , 89°39′49″ O ) · Lac Bateman (48°30′33″ N , 89°45′17″ O ) · Lac Bell (48°06′16″ N , 89°42′26″ O ) · Lac Birch (48°10′28″ N , 90°07′18″ O ) · Lac Blake′s (48°56′57″ N , 88°28′11″ O ) · Lac Caribou (48°37′43″ N , 88°40′14″ O ) · Lac Caro (49°06′13″ N , 88°57′50″ O ) · Lac Cavern (48°50′04″ N , 88°39′35″ O ) · Lac Chub (48°16′54″ N , 89°34′22″ O ) · Lac Deer (49°03′36″ N , 88°20′23″ O ) · Lac Devon (48°09′18″ N , 89°50′45″ O ) · Lac Devonline (48°09′33″ N , 89°50′58″ O ) · Lac Downy (48°14′23″ N , 89°52′10″ O ) · Lac Duchess (lac Dutchies) (48°52′26″ N , 88°34′18″ O ) · Lac Echo (48°19′30″ N , 89°53′33″ O ) · Lac Elbow (48°10′56″ N , 90°16′23″ O ) · Lac Fall (48°47′51″ N , 88°38′02″ O ) · Lac Five Minute (48°40′28″ N , 88°48′04″ O ) · Lac Float (48°20′37″ N , 89°53′20″ O ) · Lac Forrest (48°07′24″ N , 90°15′14″ O ) · Lac Furcate (48°47′11″ N , 88°45′50″ O ) · Lac Goddard (49°42′22″ N , 87°43′38″ O ) · Lac Gold (48°30′05″ N , 89°45′08″ O ) · Lac Golding (48°35′49″ N , 89°14′00″ O ) · Lacs Goodmorning North (48°47'11″ N , 88°42'03″ O ) — canton de Dorion · Lacs Goodmorning South (48°46'41″ N , 88°41'47″ O ) — canton de Dorion · Lac Grande (48°49′09″ N , 88°40′52″ O ) · Lac Hans′ (lac McMaster 79) (49°01′53″ N , 88°35′04″ O ) · Lac Hartington 1 (48°09′04″ N , 89°56′37″ O ) – canton de Hartington · Lac Hartington 2 (48°08′32″ N , 89°57′18″ O ) – canton de Hartington · Lac Hartington 3 (48°08′49″ N , 89°56′57″ O ) – canton de Hartington · Lac Head (48°16′50″ N , 90°09′ 30″ O ) · Lac Himdick (48°45′22″ N , 88°43′30″ O ) · Lac Inwood (49°01′10″ N , 90°26′45″ O ) · Lac Jeff (48°43′14″ N , 88°39′58″ O ) · Lac Joan (48°06′19″ N , 89°43′38″ O ) · Lac Lauries 1(48°15′01″ N , 90°16′32″ O ) · Lac Lauries 3(lac Larrys 3) (48°14′16″ N , 90°17′18″ O ) · Lac Lauries 4(lac Larrys 4) (48°14′30″ N , 90°17′16″ O ) · Lac Lismore 1(48°09′28″ N , 89°56′42″ O ) · Lac Lismore 2(48°09′21″ N , 89°57′06″ O ) · Lac Little Addie (48°09′18″ N , 90°25′02″ O ) · Lac Little Hawkeye (48°40′08″ N , 89°27′40″ O ) · Lac Little Head (48°16′20″ N , 90°08′21″ O ) · Lac Liver (48°36′33″ N , 88°56′28″ O ) · Lac Lizard (48°14′33″ N , 89°52′23″ O ) · Lac Loch Muich (48°36′14″ N , 90°20′39″ O ) · Lac Lofquist (49°02′18″ N , 88°20′21″ O ) · Lac Lorne’s (49°03′47″ N , 88°35′57″ O ) · Lac Lower Moonshine (48°52′25″ N , 88°35′59″ O ) · Lac Malborne (49°11′52″ N , 88°25′15″ O ) · Lac Male (49°13′11″ N , 88°22′33″ O ) · Lac Matson (48°05′48″ N , 89°42′04″ O ) · Lac McKecknie (48°07′25″ N , 90°14′21″ O ) · Lac Middle Moonshine (48°52′39″ N , 88°36′04″ O ) · Lac Moonshine (48°52′53″ N , 88°36′12″ O ) · Lac Morrison (48°11′09″ N , 89°52′44″ O ) · Lac Mutt (48°43′25″ N , 88°40′09″ O ) · Lac No Good (49°03′00″ N , 88°21′00″ O ) · Lac Nunya (49° 28' 59″ N , 89° 35' 27″ O ) · Lac Paradise (48°40′55″ N , 88°48′20″ O ) · Lac Peridotite (48°29′34″ N , 89°46′50″ O ) · Lac Peter’s (48°57′13″ N , 88°28′58″ O ) · Lac Pocket (48°52′19″ N , 88°40′39″ O ) · Lac Ranger (48°23′16″ N , 89°52′10″ O ) · Lac Rock (48°11′13″ N , 90°05′29″ O ) · Lac Roll (Lac 19) (48°38′30″ N , 88°57′37″ O ) · Lac Sand Nord (48°15′18″ N , 90°14′25″ O ) · Lac sans nom 9(49°02’12″ N , 88°28’20″ O ) · Lac sans nom 19(49°02′11″ N , 88°26′23″ O ) · Lac sans nom 20(49°00′31″ N , 88°28′44″ O ) · Lac sans nom 21(49°00′03″ N , 88°28′08″ O ) · Lac sans nom 22(48°58′05″ N , 88°32′09″ O ) · Lac sans nom 34(49°01′55″ N , 88°25′13″ O ) · Lac sans nom 39(48°56′32″ N , 88°25′45″ O ) · Lac Scott 1(48°10′51″ N , 90°18′47″ O ) · Lac Scott 2(48°10′41″ N , 90°17′49″ O ) · Lac Shale (48°53′36″ N , 88°43′16″ O ) · Lac Shoepac (49°00′50″ N , 88°22′47″ O ) · Lac Sitches (48°39′24″ N , 90°38′27″ O ) · Lac South Fallingsnow Est (48°08′21″ N , 89°47′46″ O ) · Lac South Fallingsnow Ouest (48°08′33″ N , 89°48′00″ O ) · Lac Stillwater (49°02′07″ N , 88°24′17″ O ) · Lac Sunset (48°44′19″ N , 88°40′55″ O ) · Lac Sunset (48°12′11″ N , 89°56′20″ O ) · Lac Tear Drop (48°37′17″ N , 90°21′60″ O ) · Lac Ten Minute (48°22′38″ N , 89°52′14″ O ) · Lac Thompson (48°52′52″ N , 88°34′42″ O ) · Lac Thompson 2(48°17′37″ N , 89°35′06″ O ) · Lac Thunder (48°29′55″ N , 89°45′55″ O ) · Lac Tuesday (48°44′15″ N , 89°05′16″ O ) · Lac Twin Mountain (48°10′47″ N , 89°49′33″ O ) · Lac Wasp (48°13′31″ N , 90°11′12″ O ) · Lac West Arrow (48°07′35″ N , 90°26′13″ O ) · Lac West Greenhue (48°42′01″ N , 89°27′03″ O ) · Lac West MacDonald (48°50′16″ N , 88°38′45″ O ) · Tous les tributaires du lac Supérieur se trouvant dans la zone 6 et décrits ci-dessous : · Rivière Current, en aval du barrage du lac Boulevard (48°27′ N , 89°11′ O ) · Ruisseau Coldwater, en aval du chemin Ouimet Canyon (48°45′ N , 88°36′ O ) · Ruisseau Spring, en aval de la station piscicole Dorion (48°50′ N , 88°36′ O ) · Rivière Wolf, en aval des dernières chutes (48°50′ 58″ N , 88°34′87″ O ) · Rivière Black Sturgeon, en aval du barrage (48°55′ N , 88°23′ O ) · Rivière Nipigon sur toute sa longueur, y compris les lacs Jessie, Polly et Helen (49°04'20″ N , 88°16'17″ O ) · Depuis la rivière Pigeon jusqu’à la rivière Nipigon, tous les tributaires en aval des routes 61 et 11/17, y compris les péninsules Sibley et Black Bay et toutes les îles, mais excluant les tributaires répertoriés dans les six premiers points ci-dessus",
+        "raw": "Possibilités supplémentaires de pêche Saison : Ouverte toute l’année Limites : S-5 et C-2; aucune limite de taille Voir ces plans d'eau et des renseignements additionnels sur On-Pêche en ligne . Limites : S-1; doit mesurer plus de 56 centimètres, et C-0",
+        "waters": [
+          "Lac Adrian (48°27′10″ N , 89°48′58″ O )",
+          "Lac Aldina (48°21′31″ N , 89°58′41″ O )",
+          "Lac Annette (49°26′06″ N , 89°39′49″ O )",
+          "Lac Bateman (48°30′33″ N , 89°45′17″ O )",
+          "Lac Bell (48°06′16″ N , 89°42′26″ O )",
+          "Lac Birch (48°10′28″ N , 90°07′18″ O )",
+          "Lac Blake′s (48°56′57″ N , 88°28′11″ O )",
+          "Lac Caribou (48°37′43″ N , 88°40′14″ O )",
+          "Lac Caro (49°06′13″ N , 88°57′50″ O )",
+          "Lac Cavern (48°50′04″ N , 88°39′35″ O )",
+          "Lac Chub (48°16′54″ N , 89°34′22″ O )",
+          "Lac Deer (49°03′36″ N , 88°20′23″ O )",
+          "Lac Devon (48°09′18″ N , 89°50′45″ O )",
+          "Lac Devonline (48°09′33″ N , 89°50′58″ O )",
+          "Lac Downy (48°14′23″ N , 89°52′10″ O )",
+          "Lac Duchess (lac Dutchies) (48°52′26″ N , 88°34′18″ O )",
+          "Lac Echo (48°19′30″ N , 89°53′33″ O )",
+          "Lac Elbow (48°10′56″ N , 90°16′23″ O )",
+          "Lac Fall (48°47′51″ N , 88°38′02″ O )",
+          "Lac Five Minute (48°40′28″ N , 88°48′04″ O )",
+          "Lac Float (48°20′37″ N , 89°53′20″ O )",
+          "Lac Forrest (48°07′24″ N , 90°15′14″ O )",
+          "Lac Furcate (48°47′11″ N , 88°45′50″ O )",
+          "Lac Goddard (49°42′22″ N , 87°43′38″ O )",
+          "Lac Gold (48°30′05″ N , 89°45′08″ O )",
+          "Lac Golding (48°35′49″ N , 89°14′00″ O )",
+          "Lacs Goodmorning North (48°47'11″ N , 88°42'03″ O ) — canton de Dorion",
+          "Lacs Goodmorning South (48°46'41″ N , 88°41'47″ O ) — canton de Dorion",
+          "Lac Grande (48°49′09″ N , 88°40′52″ O )",
+          "Lac Hans′ (lac McMaster 79) (49°01′53″ N , 88°35′04″ O )",
+          "Lac Hartington 1 (48°09′04″ N , 89°56′37″ O ) – canton de Hartington",
+          "Lac Hartington 2 (48°08′32″ N , 89°57′18″ O ) – canton de Hartington",
+          "Lac Hartington 3 (48°08′49″ N , 89°56′57″ O ) – canton de Hartington",
+          "Lac Head (48°16′50″ N , 90°09′ 30″ O )",
+          "Lac Himdick (48°45′22″ N , 88°43′30″ O )",
+          "Lac Inwood (49°01′10″ N , 90°26′45″ O )",
+          "Lac Jeff (48°43′14″ N , 88°39′58″ O )",
+          "Lac Joan (48°06′19″ N , 89°43′38″ O )",
+          "Lac Lauries 1(48°15′01″ N , 90°16′32″ O )",
+          "Lac Lauries 3(lac Larrys 3) (48°14′16″ N , 90°17′18″ O )",
+          "Lac Lauries 4(lac Larrys 4) (48°14′30″ N , 90°17′16″ O )",
+          "Lac Lismore 1(48°09′28″ N , 89°56′42″ O )",
+          "Lac Lismore 2(48°09′21″ N , 89°57′06″ O )",
+          "Lac Little Addie (48°09′18″ N , 90°25′02″ O )",
+          "Lac Little Hawkeye (48°40′08″ N , 89°27′40″ O )",
+          "Lac Little Head (48°16′20″ N , 90°08′21″ O )",
+          "Lac Liver (48°36′33″ N , 88°56′28″ O )",
+          "Lac Lizard (48°14′33″ N , 89°52′23″ O )",
+          "Lac Loch Muich (48°36′14″ N , 90°20′39″ O )",
+          "Lac Lofquist (49°02′18″ N , 88°20′21″ O )",
+          "Lac Lorne’s (49°03′47″ N , 88°35′57″ O )",
+          "Lac Lower Moonshine (48°52′25″ N , 88°35′59″ O )",
+          "Lac Malborne (49°11′52″ N , 88°25′15″ O )",
+          "Lac Male (49°13′11″ N , 88°22′33″ O )",
+          "Lac Matson (48°05′48″ N , 89°42′04″ O )",
+          "Lac McKecknie (48°07′25″ N , 90°14′21″ O )",
+          "Lac Middle Moonshine (48°52′39″ N , 88°36′04″ O )",
+          "Lac Moonshine (48°52′53″ N , 88°36′12″ O )",
+          "Lac Morrison (48°11′09″ N , 89°52′44″ O )",
+          "Lac Mutt (48°43′25″ N , 88°40′09″ O )",
+          "Lac No Good (49°03′00″ N , 88°21′00″ O )",
+          "Lac Nunya (49° 28' 59″ N , 89° 35' 27″ O )",
+          "Lac Paradise (48°40′55″ N , 88°48′20″ O )",
+          "Lac Peridotite (48°29′34″ N , 89°46′50″ O )",
+          "Lac Peter’s (48°57′13″ N , 88°28′58″ O )",
+          "Lac Pocket (48°52′19″ N , 88°40′39″ O )",
+          "Lac Ranger (48°23′16″ N , 89°52′10″ O )",
+          "Lac Rock (48°11′13″ N , 90°05′29″ O )",
+          "Lac Roll (Lac 19) (48°38′30″ N , 88°57′37″ O )",
+          "Lac Sand Nord (48°15′18″ N , 90°14′25″ O )",
+          "Lac sans nom 9(49°02’12″ N , 88°28’20″ O )",
+          "Lac sans nom 19(49°02′11″ N , 88°26′23″ O )",
+          "Lac sans nom 20(49°00′31″ N , 88°28′44″ O )",
+          "Lac sans nom 21(49°00′03″ N , 88°28′08″ O )",
+          "Lac sans nom 22(48°58′05″ N , 88°32′09″ O )",
+          "Lac sans nom 34(49°01′55″ N , 88°25′13″ O )",
+          "Lac sans nom 39(48°56′32″ N , 88°25′45″ O )",
+          "Lac Scott 1(48°10′51″ N , 90°18′47″ O )",
+          "Lac Scott 2(48°10′41″ N , 90°17′49″ O )",
+          "Lac Shale (48°53′36″ N , 88°43′16″ O )",
+          "Lac Shoepac (49°00′50″ N , 88°22′47″ O )",
+          "Lac Sitches (48°39′24″ N , 90°38′27″ O )",
+          "Lac South Fallingsnow Est (48°08′21″ N , 89°47′46″ O )",
+          "Lac South Fallingsnow Ouest (48°08′33″ N , 89°48′00″ O )",
+          "Lac Stillwater (49°02′07″ N , 88°24′17″ O )",
+          "Lac Sunset (48°44′19″ N , 88°40′55″ O )",
+          "Lac Sunset (48°12′11″ N , 89°56′20″ O )",
+          "Lac Tear Drop (48°37′17″ N , 90°21′60″ O )",
+          "Lac Ten Minute (48°22′38″ N , 89°52′14″ O )",
+          "Lac Thompson (48°52′52″ N , 88°34′42″ O )",
+          "Lac Thompson 2(48°17′37″ N , 89°35′06″ O )",
+          "Lac Thunder (48°29′55″ N , 89°45′55″ O )",
+          "Lac Tuesday (48°44′15″ N , 89°05′16″ O )",
+          "Lac Twin Mountain (48°10′47″ N , 89°49′33″ O )",
+          "Lac Wasp (48°13′31″ N , 90°11′12″ O )",
+          "Lac West Arrow (48°07′35″ N , 90°26′13″ O )",
+          "Lac West Greenhue (48°42′01″ N , 89°27′03″ O )",
+          "Lac West MacDonald (48°50′16″ N , 88°38′45″ O )",
+          "Tous les tributaires du lac Supérieur se trouvant dans la zone 6 et décrits ci-dessous :",
+          "Rivière Current, en aval du barrage du lac Boulevard (48°27′ N , 89°11′ O )",
+          "Ruisseau Coldwater, en aval du chemin Ouimet Canyon (48°45′ N , 88°36′ O )",
+          "Ruisseau Spring, en aval de la station piscicole Dorion (48°50′ N , 88°36′ O )",
+          "Rivière Wolf, en aval des dernières chutes (48°50′ 58″ N , 88°34′87″ O )",
+          "Rivière Black Sturgeon, en aval du barrage (48°55′ N , 88°23′ O )",
+          "Rivière Nipigon sur toute sa longueur, y compris les lacs Jessie, Polly et Helen (49°04'20″ N , 88°16'17″ O )",
+          "Depuis la rivière Pigeon jusqu’à la rivière Nipigon, tous les tributaires en aval des routes 61 et 11/17, y compris les péninsules Sibley et Black Bay et toutes les îles, mais excluant les tributaires répertoriés dans les six premiers points ci-dessus"
+        ]
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Touladi",
+        "limit": "S-2 et C-1; aucune limite de taille Saison : Fermée toute l’année",
+        "length": null,
+        "gear": null,
+        "notes": "Possibilités supplémentaires de pêche · Lac Black Sturgeon (49°19’27″ N , 88°51’34″ O ) · Lac Keemle (49°17′00″ N , 88°07′00″ O ) · Lac Pasha (49°42′00″ N , 87°43′00″ O ) - canton de Walters · Lac Pass (48°33′45″ N , 88°44′05″ O ) · Lacs Shebandowan (48°38′53″ N , 90°19′22″ O )",
+        "raw": "Possibilités supplémentaires de pêche Saison : Ouverte toute l’année Limites : S-2 et C-1; aucune limite de taille Saison : Fermée toute l’année",
+        "waters": [
+          "Lac Black Sturgeon (49°19’27″ N , 88°51’34″ O )",
+          "Lac Keemle (49°17′00″ N , 88°07′00″ O )",
+          "Lac Pasha (49°42′00″ N , 87°43′00″ O ) - canton de Walters",
+          "Lac Pass (48°33′45″ N , 88°44′05″ O )",
+          "Lacs Shebandowan (48°38′53″ N , 90°19′22″ O )"
+        ]
+      },
+      {
+        "period": null,
+        "species": "Truite arc-en-ciel",
+        "limit": "S-5 et C-2 Limites : S-1; doit mesurer plus de 69 centimètres, et C-0",
+        "length": "doit mesurer plus de 69 centimètres",
+        "gear": null,
+        "notes": "Possibilités supplémentaires de pêche · Lac Amanda (49°29′01″ N , 89°34′06″ O ) · Lac Badger (49°29′48″ N , 89°31′39″ O ) · Lac Danielle (49° 29' 16\" N., 89° 34' 38″ O ) · Lac D'Arcy (48°35′49″ N , 88°39′38″ O ) · Lac Dayle (49°24′52″ N , 89°41′47″ O ) · Lac Dennis (49° 28' 55″ N , 89° 35' 56″ O ) · Lac Hades (48°44′10″ N , 88°48′58″ O ) · Lac Pothole (48°13′47″ N , 89°53′45″ O ) · Lac Sandybeach (48° 46' 42″ N , 88° 46' 09″ O ) · Lac Uncle Al's (48°26′32″ N , 89°50′02″ O ) · Lac Ursus (48°35′35″ N , 89°01'11″ O ) · Lac Wednesday (48°44′13″ N , 89°05′47″ O ) · Lac 81E (48°13′42″ N , 89°54′17″ O ) · Rivière Neebing",
+        "raw": "Possibilités supplémentaires de pêche Limites : S-5 et C-2 Limites : S-1; doit mesurer plus de 69 centimètres, et C-0",
+        "waters": [
+          "Lac Amanda (49°29′01″ N , 89°34′06″ O )",
+          "Lac Badger (49°29′48″ N , 89°31′39″ O )",
+          "Lac Danielle (49° 29' 16\" N., 89° 34' 38″ O )",
+          "Lac D'Arcy (48°35′49″ N , 88°39′38″ O )",
+          "Lac Dayle (49°24′52″ N , 89°41′47″ O )",
+          "Lac Dennis (49° 28' 55″ N , 89° 35' 56″ O )",
+          "Lac Hades (48°44′10″ N , 88°48′58″ O )",
+          "Lac Pothole (48°13′47″ N , 89°53′45″ O )",
+          "Lac Sandybeach (48° 46' 42″ N , 88° 46' 09″ O )",
+          "Lac Uncle Al's (48°26′32″ N , 89°50′02″ O )",
+          "Lac Ursus (48°35′35″ N , 89°01'11″ O )",
+          "Lac Wednesday (48°44′13″ N , 89°05′47″ O )",
+          "Lac 81E (48°13′42″ N , 89°54′17″ O )",
+          "Rivière Neebing"
+        ]
+      },
+      {
+        "period": "Fermée toute l’année",
+        "species": "Doré jaune",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Rivière Black Sturgeon - en aval depuis le barrage (48°55′ N , 88°23′ O ) jusqu’au lac Supérieur",
+        "raw": "Saison : Fermée toute l’année",
+        "waters": [
+          "Rivière Black Sturgeon - en aval depuis le barrage (48°55′ N , 88°23′ O ) jusqu’au lac Supérieur"
+        ]
+      }
+    ]
+  },
+  "waterbody_exceptions": {
+    "en": [
+      {
+        "name": "Arrow River",
+        "location": null,
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Live fish may not be used as bait or possessed for use as bait",
+            "raw": "Live fish may not be used as bait or possessed for use as bait"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Only barbless hooks may be used",
+            "notes": "Only barbless hooks may be used",
+            "raw": "Only barbless hooks may be used"
+          },
+          {
+            "period": null,
+            "species": "Brown trout",
+            "limit": "S-0 and C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 and C-0",
+            "raw": "Brown trout – S-0 and C-0"
+          },
+          {
+            "period": "open from fourth Saturday in April to September 30",
+            "species": "Brown trout",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from fourth Saturday in April to September 30",
+            "raw": "Brown trout – open from fourth Saturday in April to September 30"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Only artificial flies may be used",
+            "notes": "Only artificial flies may be used",
+            "raw": "Only artificial flies may be used"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Only artificial lures may be used",
+            "notes": "Only artificial lures may be used",
+            "raw": "Only artificial lures may be used"
+          }
+        ],
+        "raw": "Arrow River Live fish may not be used as bait or possessed for use as bait | Only barbless hooks may be used | Brown trout – S-0 and C-0 | Brown trout – open from fourth Saturday in April to September 30 | Only artificial flies may be used | Only artificial lures may be used"
+      },
+      {
+        "name": "Jessie Lake",
+        "location": "(49°11′19″ N , 88°19′52″ W ) – Purdom Township",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Dead rainbow smelt may be used as bait or possessed for use as bait",
+            "raw": "Dead rainbow smelt may be used as bait or possessed for use as bait"
+          },
+          {
+            "period": null,
+            "species": "Brook trout",
+            "limit": "S-1; must be greater than 56 centimetres, and C-0",
+            "length": "must be greater than 56 centimetres",
+            "gear": null,
+            "notes": "S-1; must be greater than 56 centimetres, and C-0",
+            "raw": "Brook trout – S-1; must be greater than 56 centimetres, and C-0"
+          },
+          {
+            "period": "open from February 15 to March 15 and fourth Saturday in May to September 30",
+            "species": "Lake trout",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from February 15 to March 15 and fourth Saturday in May to September 30",
+            "raw": "Lake trout – open from February 15 to March 15 and fourth Saturday in May to September 30"
+          },
+          {
+            "period": null,
+            "species": "Northern pike",
+            "limit": "S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres",
+            "raw": "Northern pike – S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres"
+          },
+          {
+            "period": "open from January 1 to April 14 and second Saturday in May to December 31",
+            "species": "Northern pike",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from January 1 to April 14 and second Saturday in May to December 31",
+            "raw": "Northern pike – open from January 1 to April 14 and second Saturday in May to December 31"
+          },
+          {
+            "period": null,
+            "species": "Walleye",
+            "limit": "S-4 and C-2; must be greater than 33 centimetres, not more than 1 greater than 46 centimetres",
+            "length": "must be greater than 33 centimetres",
+            "gear": null,
+            "notes": "S-4 and C-2; must be greater than 33 centimetres, not more than 1 greater than 46 centimetres",
+            "raw": "Walleye – S-4 and C-2; must be greater than 33 centimetres, not more than 1 greater than 46 centimetres"
+          }
+        ],
+        "raw": "Jessie Lake (49°11′19″ N , 88°19′52″ W ) – Purdom Township Dead rainbow smelt may be used as bait or possessed for use as bait | Brook trout – S-1; must be greater than 56 centimetres, and C-0 | Lake trout – open from February 15 to March 15 and fourth Saturday in May to September 30 | Northern pike – S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres | Northern pike – open from January 1 to April 14 and second Saturday in May to December 31 | Walleye – S-4 and C-2; must be greater than 33 centimetres, not more than 1 greater than 46 centimetres"
+      },
+      {
+        "name": "Lake Helen",
+        "location": "(49°04′20″ N , 88°16′17″ W )",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Dead rainbow smelt may be used as bait or possessed for use as bait",
+            "raw": "Dead rainbow smelt may be used as bait or possessed for use as bait"
+          },
+          {
+            "period": null,
+            "species": "Brook trout",
+            "limit": "S-1; must be greater than 56 centimetres, and C-0",
+            "length": "must be greater than 56 centimetres",
+            "gear": null,
+            "notes": "S-1; must be greater than 56 centimetres, and C-0",
+            "raw": "Brook trout – S-1; must be greater than 56 centimetres, and C-0"
+          },
+          {
+            "period": null,
+            "species": "Northern pike",
+            "limit": "S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres",
+            "raw": "Northern pike – S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres"
+          },
+          {
+            "period": "closed all year",
+            "species": "Walleye and sauger",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "closed all year",
+            "raw": "Walleye and sauger – closed all year"
+          }
+        ],
+        "raw": "Lake Helen (49°04′20″ N , 88°16′17″ W ) Dead rainbow smelt may be used as bait or possessed for use as bait | Brook trout – S-1; must be greater than 56 centimetres, and C-0 | Northern pike – S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres | Walleye and sauger – closed all year"
+      },
+      {
+        "name": "Lake Nipigon",
+        "location": "and its tributaries downstream from the first falls, rapids, dams or lakes or the entire stream if there are no falls, rapids, dams or lakes",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Also including:",
+            "raw": "Also including:"
+          },
+          {
+            "period": null,
+            "species": "waters on the islands of Lake Nipigon",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "including Forgan Lake, Bonner Lake, Little Bonner Lake and Jackpot Lake (Madeline Lake)",
+            "raw": "waters on the islands of Lake Nipigon – including Forgan Lake, Bonner Lake, Little Bonner Lake and Jackpot Lake (Madeline Lake)"
+          },
+          {
+            "period": null,
+            "species": "Gull River",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "downstream from the Highway 527 bridge",
+            "raw": "Gull River – downstream from the Highway 527 bridge"
+          },
+          {
+            "period": null,
+            "species": "Kabitotikwia River",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "downstream from the Highway 527 bridge",
+            "raw": "Kabitotikwia River – downstream from the Highway 527 bridge"
+          },
+          {
+            "period": null,
+            "species": "Poshkokagan River",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "downstream from and including the rapids (49°25′45″ N , 89°04′55″ W ) located 13 kilometres upstream from the Black Sturgeon Road bridge",
+            "raw": "Poshkokagan River – downstream from and including the rapids (49°25′45″ N , 89°04′55″ W ) located 13 kilometres upstream from the Black Sturgeon Road bridge"
+          },
+          {
+            "period": null,
+            "species": "Wabinosh River",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "downstream from Wabinosh Lake",
+            "raw": "Wabinosh River – downstream from Wabinosh Lake"
+          },
+          {
+            "period": null,
+            "species": "Little Jackfish River",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "downstream from the centre line of the CN railway bridge",
+            "raw": "Little Jackfish River – downstream from the centre line of the CN railway bridge"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Dead rainbow smelt may be used as bait or possessed for use as bait",
+            "raw": "Dead rainbow smelt may be used as bait or possessed for use as bait"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Only artificial lures may be used when angling through the ice",
+            "notes": "Only artificial lures may be used when angling through the ice",
+            "raw": "Only artificial lures may be used when angling through the ice"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Only 1 barbless hook may be used",
+            "notes": "Only 1 barbless hook may be used",
+            "raw": "Only 1 barbless hook may be used"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "No person shall use stringers, impounding devices or live holding boxes",
+            "raw": "No person shall use stringers, impounding devices or live holding boxes"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "A person may hold fish, other than Brook Trout or Lake Trout, in a livewell",
+            "raw": "A person may hold fish, other than Brook Trout or Lake Trout, in a livewell"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "No possession of live Lake Trout or Brook Trout permitted",
+            "raw": "No possession of live Lake Trout or Brook Trout permitted"
+          },
+          {
+            "period": "open from fourth Saturday in April to September 15",
+            "species": "Brook trout",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from fourth Saturday in April to September 15",
+            "raw": "Brook trout – open from fourth Saturday in April to September 15"
+          },
+          {
+            "period": null,
+            "species": "Brook trout",
+            "limit": "S-1; must be greater than 56 centimetres, and C-0",
+            "length": "must be greater than 56 centimetres",
+            "gear": null,
+            "notes": "S-1; must be greater than 56 centimetres, and C-0",
+            "raw": "Brook trout – S-1; must be greater than 56 centimetres, and C-0"
+          },
+          {
+            "period": "open from March 1 to September 30",
+            "species": "Lake trout",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from March 1 to September 30",
+            "raw": "Lake trout – open from March 1 to September 30"
+          },
+          {
+            "period": null,
+            "species": "Lake trout",
+            "limit": "S-2 and C-1; not more than 1 greater than 70 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-2 and C-1; not more than 1 greater than 70 centimetres",
+            "raw": "Lake trout – S-2 and C-1; not more than 1 greater than 70 centimetres"
+          },
+          {
+            "period": "open from January 1 to April 14 and third Saturday in May to December 31",
+            "species": "Northern pike",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from January 1 to April 14 and third Saturday in May to December 31",
+            "raw": "Northern pike – open from January 1 to April 14 and third Saturday in May to December 31"
+          },
+          {
+            "period": null,
+            "species": "Northern pike",
+            "limit": "S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres",
+            "raw": "Northern pike – S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres"
+          },
+          {
+            "period": "open from January 1 to April 14 and June 10 to December 31",
+            "species": "Walleye and sauger",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from January 1 to April 14 and June 10 to December 31",
+            "raw": "Walleye and sauger – open from January 1 to April 14 and June 10 to December 31"
+          }
+        ],
+        "raw": "Lake Nipigon and its tributaries downstream from the first falls, rapids, dams or lakes or the entire stream if there are no falls, rapids, dams or lakes Also including: | waters on the islands of Lake Nipigon – including Forgan Lake, Bonner Lake, Little Bonner Lake and Jackpot Lake (Madeline Lake) | Gull River – downstream from the Highway 527 bridge | Kabitotikwia River – downstream from the Highway 527 bridge | Poshkokagan River – downstream from and including the rapids (49°25′45″ N , 89°04′55″ W ) located 13 kilometres upstream from the Black Sturgeon Road bridge | Wabinosh River – downstream from Wabinosh Lake | Little Jackfish River – downstream from the centre line of the CN railway bridge | Dead rainbow smelt may be used as bait or possessed for use as bait | Only artificial lures may be used when angling through the ice | Only 1 barbless hook may be used | No person shall use stringers, impounding devices or live holding boxes | A person may hold fish, other than Brook Trout or Lake Trout, in a livewell | No possession of live Lake Trout or Brook Trout permitted | Brook trout – open from fourth Saturday in April to September 15 | Brook trout – S-1; must be greater than 56 centimetres, and C-0 | Lake trout – open from March 1 to September 30 | Lake trout – S-2 and C-1; not more than 1 greater than 70 centimetres | Northern pike – open from January 1 to April 14 and third Saturday in May to December 31 | Northern pike – S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres | Walleye and sauger – open from January 1 to April 14 and June 10 to December 31"
+      },
+      {
+        "name": "Lake Nipigon",
+        "location": "Ombabika Bay (50°15′ N , 88°15′ W ) and Wabinosh Bay (50°02′ N , 88°50′ W ) and the tributaries of the bays up to the first barrier including the Little Jackfish River downstream from the centre line of the CN railway bridge and Wabinosh River downstream of Wabinosh Lake",
+        "rules": [
+          {
+            "period": null,
+            "species": "Walleye and sauger combined",
+            "limit": "S-2 and C-2; not more than 1 greater than 46 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-2 and C-2; not more than 1 greater than 46 centimetres",
+            "raw": "Walleye and sauger combined – S-2 and C-2; not more than 1 greater than 46 centimetres"
+          }
+        ],
+        "raw": "Lake Nipigon Ombabika Bay (50°15′ N , 88°15′ W ) and Wabinosh Bay (50°02′ N , 88°50′ W ) and the tributaries of the bays up to the first barrier including the Little Jackfish River downstream from the centre line of the CN railway bridge and Wabinosh River downstream of Wabinosh Lake Walleye and sauger combined – S-2 and C-2; not more than 1 greater than 46 centimetres"
+      },
+      {
+        "name": "Lake Nipigon",
+        "location": "West Bay, the waters lying north and west of the north tip of Boles Island",
+        "rules": [
+          {
+            "period": "closed all year",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "closed all year",
+            "raw": "Fish sanctuary – closed all year"
+          },
+          {
+            "period": null,
+            "species": "Walleye",
+            "limit": "S-4 and C-2; must be greater than 33 centimetres, not more than 1 greater than 46 centimetres",
+            "length": "must be greater than 33 centimetres",
+            "gear": null,
+            "notes": "S-4 and C-2; must be greater than 33 centimetres, not more than 1 greater than 46 centimetres",
+            "raw": "Walleye – S-4 and C-2; must be greater than 33 centimetres, not more than 1 greater than 46 centimetres"
+          },
+          {
+            "period": "no fishing from April 1 to May 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from April 1 to May 31",
+            "raw": "Fish sanctuary – no fishing from April 1 to May 31"
+          }
+        ],
+        "raw": "Lake Nipigon West Bay, the waters lying north and west of the north tip of Boles Island Fish sanctuary – closed all year | Walleye – S-4 and C-2; must be greater than 33 centimetres, not more than 1 greater than 46 centimetres | Fish sanctuary – no fishing from April 1 to May 31"
+      },
+      {
+        "name": "McIntyre River",
+        "location": null,
+        "rules": [
+          {
+            "period": null,
+            "species": "Rainbow trout",
+            "limit": "S-1; must be greater than 69 centimetres, and C-0",
+            "length": "must be greater than 69 centimetres",
+            "gear": null,
+            "notes": "S-1; must be greater than 69 centimetres, and C-0",
+            "raw": "Rainbow trout – S-1; must be greater than 69 centimetres, and C-0"
+          }
+        ],
+        "raw": "McIntyre River Rainbow trout – S-1; must be greater than 69 centimetres, and C-0"
+      },
+      {
+        "name": "McIntyre River",
+        "location": "from the footbridge to the dam on the University property in the City of Thunder Bay",
+        "rules": [
+          {
+            "period": "closed all year",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "closed all year",
+            "raw": "Fish sanctuary – closed all year"
+          }
+        ],
+        "raw": "McIntyre River from the footbridge to the dam on the University property in the City of Thunder Bay Fish sanctuary – closed all year"
+      },
+      {
+        "name": "Nipigon River",
+        "location": null,
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Dead Rainbow Smelt may be used as bait or possessed for use as bait",
+            "raw": "Dead Rainbow Smelt may be used as bait or possessed for use as bait"
+          },
+          {
+            "period": null,
+            "species": "Northern pike",
+            "limit": "S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres",
+            "raw": "Northern pike – S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres"
+          }
+        ],
+        "raw": "Nipigon River Dead Rainbow Smelt may be used as bait or possessed for use as bait | Northern pike – S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres"
+      },
+      {
+        "name": "Nipigon River and Nipigon Bay",
+        "location": "the Nipigon River from the Alexander Falls Dam in Zone 6 to Nipigon Bay in Zone 9, and the waters of Nipigon Bay in Zone 9 north of a line drawn from Simpson Island (48°49'48″ N , 87°40'40″ W ) across the bay to the mainland at 48°51'21″ N , 87°38'47″ W",
+        "rules": [
+          {
+            "period": "closed all year",
+            "species": "Walleye and sauger",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "closed all year",
+            "raw": "Walleye and sauger – closed all year"
+          }
+        ],
+        "raw": "Nipigon River and Nipigon Bay the Nipigon River from the Alexander Falls Dam in Zone 6 to Nipigon Bay in Zone 9, and the waters of Nipigon Bay in Zone 9 north of a line drawn from Simpson Island (48°49'48″ N , 87°40'40″ W ) across the bay to the mainland at 48°51'21″ N , 87°38'47″ W Walleye and sauger – closed all year"
+      },
+      {
+        "name": "Nipigon River",
+        "location": null,
+        "rules": [
+          {
+            "period": "no fishing from January 1 to Friday before fourth Saturday in May and Tuesday after Labour Day to December 31 in the following areas:",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Friday before fourth Saturday in May and Tuesday after Labour Day to December 31 in the following areas:",
+            "raw": "Fish sanctuary – no fishing from January 1 to Friday before fourth Saturday in May and Tuesday after Labour Day to December 31 in the following areas:"
+          },
+          {
+            "period": null,
+            "species": "Nipigon River",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Backpool below the Alexander Dam east of a line drawn south from the Alexander Dam Log Chute to the northernmost tip of the point of land on the east shore of the Nipigon River",
+            "raw": "Nipigon River – Backpool below the Alexander Dam east of a line drawn south from the Alexander Dam Log Chute to the northernmost tip of the point of land on the east shore of the Nipigon River"
+          },
+          {
+            "period": null,
+            "species": "Nipigon River",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Gapen's Pool (49°01′ N , 88°15′ W ) that part of the Nipigon River lying east of a line drawn north from the eastern shore abutment of Highway 11/17 bridges to the western tip of a point of land on the eastern shore of the outflow from Lake Helen",
+            "raw": "Nipigon River – Gapen's Pool (49°01′ N , 88°15′ W ) that part of the Nipigon River lying east of a line drawn north from the eastern shore abutment of Highway 11/17 bridges to the western tip of a point of land on the eastern shore of the outflow from Lake Helen"
+          },
+          {
+            "period": null,
+            "species": "Nipigon River",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Parmacheene (49°05′ N , 88°19′ W ) from the downstream edge of the Parmacheene C.N.R. bridge abutments, upstream approximately 400 metres to the first narrows",
+            "raw": "Nipigon River – Parmacheene (49°05′ N , 88°19′ W ) from the downstream edge of the Parmacheene C.N.R. bridge abutments, upstream approximately 400 metres to the first narrows"
+          }
+        ],
+        "raw": "Nipigon River Fish sanctuary – no fishing from January 1 to Friday before fourth Saturday in May and Tuesday after Labour Day to December 31 in the following areas: | Nipigon River – Backpool below the Alexander Dam east of a line drawn south from the Alexander Dam Log Chute to the northernmost tip of the point of land on the east shore of the Nipigon River | Nipigon River – Gapen's Pool (49°01′ N , 88°15′ W ) that part of the Nipigon River lying east of a line drawn north from the eastern shore abutment of Highway 11/17 bridges to the western tip of a point of land on the eastern shore of the outflow from Lake Helen | Nipigon River – Parmacheene (49°05′ N , 88°19′ W ) from the downstream edge of the Parmacheene C.N.R. bridge abutments, upstream approximately 400 metres to the first narrows"
+      },
+      {
+        "name": "Polly Lake",
+        "location": "(49°07′52″ N , 88°15′58″ W )",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Dead rainbow smelt may be used as bait or possessed for use as bait",
+            "raw": "Dead rainbow smelt may be used as bait or possessed for use as bait"
+          },
+          {
+            "period": null,
+            "species": "Brook trout",
+            "limit": "S-1; must be greater than 56 centimetres, and C-0",
+            "length": "must be greater than 56 centimetres",
+            "gear": null,
+            "notes": "S-1; must be greater than 56 centimetres, and C-0",
+            "raw": "Brook trout – S-1; must be greater than 56 centimetres, and C-0"
+          },
+          {
+            "period": null,
+            "species": "Northern pike",
+            "limit": "S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres",
+            "raw": "Northern pike – S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres"
+          },
+          {
+            "period": "closed all year",
+            "species": "Walleye and sauger",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "closed all year",
+            "raw": "Walleye and sauger – closed all year"
+          }
+        ],
+        "raw": "Polly Lake (49°07′52″ N , 88°15′58″ W ) Dead rainbow smelt may be used as bait or possessed for use as bait | Brook trout – S-1; must be greater than 56 centimetres, and C-0 | Northern pike – S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres | Walleye and sauger – closed all year"
+      },
+      {
+        "name": "Savanne River",
+        "location": "(48°56′ N , 90°17′ W )",
+        "rules": [
+          {
+            "period": null,
+            "species": "Walleye",
+            "limit": "S-4 and C-2; must be greater than 33 centimetres, not more than 1 greater than 46 centimetres",
+            "length": "must be greater than 33 centimetres",
+            "gear": null,
+            "notes": "S-4 and C-2; must be greater than 33 centimetres, not more than 1 greater than 46 centimetres",
+            "raw": "Walleye – S-4 and C-2; must be greater than 33 centimetres, not more than 1 greater than 46 centimetres"
+          }
+        ],
+        "raw": "Savanne River (48°56′ N , 90°17′ W ) Walleye – S-4 and C-2; must be greater than 33 centimetres, not more than 1 greater than 46 centimetres"
+      },
+      {
+        "name": "Savanne River",
+        "location": "(48°56′ N , 90°17′ W ) - from One Mile Creek to Dexter Creek.",
+        "rules": [
+          {
+            "period": "no fishing from April 1 to May 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from April 1 to May 31",
+            "raw": "Fish sanctuary – no fishing from April 1 to May 31"
+          }
+        ],
+        "raw": "Savanne River (48°56′ N , 90°17′ W ) - from One Mile Creek to Dexter Creek. Fish sanctuary – no fishing from April 1 to May 31"
+      }
+    ],
+    "fr": [
+      {
+        "name": "Rivière Arrow",
+        "location": null,
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est interdit d’utiliser et de posséder du poisson vivant comme appât.",
+            "raw": "Il est interdit d’utiliser et de posséder du poisson vivant comme appât."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Seuls des hameçons sans barbes peuvent être utilisés.",
+            "notes": "Seuls des hameçons sans barbes peuvent être utilisés.",
+            "raw": "Seuls des hameçons sans barbes peuvent être utilisés."
+          },
+          {
+            "period": null,
+            "species": "Truite brune",
+            "limit": "S-0 et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 et C-0",
+            "raw": "Truite brune - S-0 et C-0"
+          },
+          {
+            "period": "Ouverte du 4e samedi d’avril au 30 septembre",
+            "species": "Truite brune",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Ouverte du 4e samedi d’avril au 30 septembre",
+            "raw": "Truite brune - Ouverte du 4e samedi d’avril au 30 septembre"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Seules les mouches artificielles sont permises.",
+            "raw": "Seules les mouches artificielles sont permises."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Seuls les leurres artificiels sont permis.",
+            "notes": "Seuls les leurres artificiels sont permis.",
+            "raw": "Seuls les leurres artificiels sont permis."
+          }
+        ],
+        "raw": "Rivière Arrow Il est interdit d’utiliser et de posséder du poisson vivant comme appât. | Seuls des hameçons sans barbes peuvent être utilisés. | Truite brune - S-0 et C-0 | Truite brune - Ouverte du 4e samedi d’avril au 30 septembre | Seules les mouches artificielles sont permises. | Seuls les leurres artificiels sont permis."
+      },
+      {
+        "name": "Lac Helen",
+        "location": "(49°04′20″ N , 88°16′17″ O )",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est permis d’utiliser ou de posséder des éperlans arc-en-ciel morts comme poisson d’appât.",
+            "raw": "Il est permis d’utiliser ou de posséder des éperlans arc-en-ciel morts comme poisson d’appât."
+          },
+          {
+            "period": null,
+            "species": "Omble de fontaine",
+            "limit": "S-1; doit mesurer plus de 56 centimètres, et C-0",
+            "length": "doit mesurer plus de 56 centimètres",
+            "gear": null,
+            "notes": "S-1; doit mesurer plus de 56 centimètres, et C-0",
+            "raw": "Omble de fontaine - S-1; doit mesurer plus de 56 centimètres, et C-0"
+          },
+          {
+            "period": null,
+            "species": "Grand brochet",
+            "limit": "S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres",
+            "raw": "Grand brochet - S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres"
+          },
+          {
+            "period": "Fermée toute l’année",
+            "species": "Doré jaune et doré noir",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Fermée toute l’année",
+            "raw": "Doré jaune et doré noir - Fermée toute l’année"
+          }
+        ],
+        "raw": "Lac Helen (49°04′20″ N , 88°16′17″ O ) Il est permis d’utiliser ou de posséder des éperlans arc-en-ciel morts comme poisson d’appât. | Omble de fontaine - S-1; doit mesurer plus de 56 centimètres, et C-0 | Grand brochet - S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres | Doré jaune et doré noir - Fermée toute l’année"
+      },
+      {
+        "name": "Lac Jessie",
+        "location": "(49°11′19″ N , 88°19′52″ O ) - canton de Purdom",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est permis d’utiliser ou de posséder des éperlans arc-en-ciel morts comme poisson d’appât.",
+            "raw": "Il est permis d’utiliser ou de posséder des éperlans arc-en-ciel morts comme poisson d’appât."
+          },
+          {
+            "period": null,
+            "species": "Omble de fontaine",
+            "limit": "S-1; doit mesurer plus de 56 centimètres, et C-0",
+            "length": "doit mesurer plus de 56 centimètres",
+            "gear": null,
+            "notes": "S-1; doit mesurer plus de 56 centimètres, et C-0",
+            "raw": "Omble de fontaine - S-1; doit mesurer plus de 56 centimètres, et C-0"
+          },
+          {
+            "period": "Ouverte du 15 février au 15 mars et du 4e samedi de mai au 30 septembre",
+            "species": "Touladi",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Ouverte du 15 février au 15 mars et du 4e samedi de mai au 30 septembre",
+            "raw": "Touladi - Ouverte du 15 février au 15 mars et du 4e samedi de mai au 30 septembre"
+          },
+          {
+            "period": null,
+            "species": "Grand brochet",
+            "limit": "S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres",
+            "raw": "Grand brochet - S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres"
+          },
+          {
+            "period": null,
+            "species": "Doré jaune",
+            "limit": "S-4 et C-2; doit mesurer plus de 33 centimètres, 1 seul dépassant 46 centimètres",
+            "length": "doit mesurer plus de 33 centimètres",
+            "gear": null,
+            "notes": "S-4 et C-2; doit mesurer plus de 33 centimètres, 1 seul dépassant 46 centimètres",
+            "raw": "Doré jaune - S-4 et C-2; doit mesurer plus de 33 centimètres, 1 seul dépassant 46 centimètres"
+          },
+          {
+            "period": "Pêche interdite du 1er avril au 31 mai",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Pêche interdite du 1er avril au 31 mai",
+            "raw": "Réserve de poissons - Pêche interdite du 1er avril au 31 mai"
+          }
+        ],
+        "raw": "Lac Jessie (49°11′19″ N , 88°19′52″ O ) - canton de Purdom Il est permis d’utiliser ou de posséder des éperlans arc-en-ciel morts comme poisson d’appât. | Omble de fontaine - S-1; doit mesurer plus de 56 centimètres, et C-0 | Touladi - Ouverte du 15 février au 15 mars et du 4e samedi de mai au 30 septembre | Grand brochet - S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres | Doré jaune - S-4 et C-2; doit mesurer plus de 33 centimètres, 1 seul dépassant 46 centimètres | Réserve de poissons - Pêche interdite du 1er avril au 31 mai"
+      },
+      {
+        "name": "Rivière McIntyre",
+        "location": null,
+        "rules": [
+          {
+            "period": null,
+            "species": "Truite arc-en-ciel",
+            "limit": "S-1; doit mesurer plus de 69 centimètres, et C-0",
+            "length": "doit mesurer plus de 69 centimètres",
+            "gear": null,
+            "notes": "S-1; doit mesurer plus de 69 centimètres, et C-0",
+            "raw": "Truite arc-en-ciel - S-1; doit mesurer plus de 69 centimètres, et C-0"
+          }
+        ],
+        "raw": "Rivière McIntyre Truite arc-en-ciel - S-1; doit mesurer plus de 69 centimètres, et C-0"
+      },
+      {
+        "name": "Rivière McIntyre",
+        "location": "depuis la passerelle du barrage sur la propriété de l’université dans la ville de Thunder Bay",
+        "rules": [
+          {
+            "period": "Fermée toute l’année",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Fermée toute l’année",
+            "raw": "Réserve de poissons - Fermée toute l’année"
+          },
+          {
+            "period": "Ouverte du 1er janvier au 14 avril et du 2e samedi de mai au 31 décembre",
+            "species": "Grand brochet",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Ouverte du 1er janvier au 14 avril et du 2e samedi de mai au 31 décembre",
+            "raw": "Grand brochet - Ouverte du 1er janvier au 14 avril et du 2e samedi de mai au 31 décembre"
+          },
+          {
+            "period": null,
+            "species": "Doré jaune",
+            "limit": "S-4 et C-2; doit mesurer plus de 33 centimètres, 1 seul dépassant 46 centimètres",
+            "length": "doit mesurer plus de 33 centimètres",
+            "gear": null,
+            "notes": "S-4 et C-2; doit mesurer plus de 33 centimètres, 1 seul dépassant 46 centimètres",
+            "raw": "Doré jaune - S-4 et C-2; doit mesurer plus de 33 centimètres, 1 seul dépassant 46 centimètres"
+          }
+        ],
+        "raw": "Rivière McIntyre depuis la passerelle du barrage sur la propriété de l’université dans la ville de Thunder Bay Réserve de poissons - Fermée toute l’année | Grand brochet - Ouverte du 1er janvier au 14 avril et du 2e samedi de mai au 31 décembre | Doré jaune - S-4 et C-2; doit mesurer plus de 33 centimètres, 1 seul dépassant 46 centimètres"
+      },
+      {
+        "name": "Lac Nipigon",
+        "location": "et ses tributaires en aval des premiers, rapides, chutes, barrages ou lacs, ou le cours d’eau tout entier s’il n’y a pas de rapides, chutes, barrages ou lacs",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Comprend aussi :",
+            "raw": "Comprend aussi :"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "les eaux sur les îles du lac Nipigon, y compris les lacs Forgan, Bonner, Little Bonner et Jackpot (lac Madeline)",
+            "raw": "les eaux sur les îles du lac Nipigon, y compris les lacs Forgan, Bonner, Little Bonner et Jackpot (lac Madeline)"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "la rivière Gull, en aval du pont de la route 527",
+            "raw": "la rivière Gull, en aval du pont de la route 527"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "la rivière Kabitotikwia, en aval du pont de la route 527",
+            "raw": "la rivière Kabitotikwia, en aval du pont de la route 527"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "la rivière Poshkokagan, en aval et incluant les rapides (49°25′45″ N , 89°04′55″ O ) situés à 13 kilomètres en amont du pont du chemin Black Sturgeon",
+            "raw": "la rivière Poshkokagan, en aval et incluant les rapides (49°25′45″ N , 89°04′55″ O ) situés à 13 kilomètres en amont du pont du chemin Black Sturgeon"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "la rivière Wabinosh, en aval du lac Wabinosh",
+            "raw": "la rivière Wabinosh, en aval du lac Wabinosh"
+          },
+          {
+            "period": null,
+            "species": "la rivière Little Jackfish",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "en aval à partir de la ligne médiane du pont du CN .",
+            "raw": "la rivière Little Jackfish - en aval à partir de la ligne médiane du pont du CN ."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est permis d’utiliser ou de posséder des éperlans arc-en-ciel morts comme poisson d’appât.",
+            "raw": "Il est permis d’utiliser ou de posséder des éperlans arc-en-ciel morts comme poisson d’appât."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Seuls les leurres artificiels sont permis pour pêcher sur la glace.",
+            "notes": "Seuls les leurres artificiels sont permis pour pêcher sur la glace.",
+            "raw": "Seuls les leurres artificiels sont permis pour pêcher sur la glace."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Un seul hameçon sans barbes est permis.",
+            "notes": "Un seul hameçon sans barbes est permis.",
+            "raw": "Un seul hameçon sans barbes est permis."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est interdit d’utiliser un enfiloir, un dispositif de capture ou une boîte de retenue de poissons vivants.",
+            "raw": "Il est interdit d’utiliser un enfiloir, un dispositif de capture ou une boîte de retenue de poissons vivants."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est permis de conserver du poisson vivant, autre que de l’omble de fontaine ou du touladi, dans un vivier.",
+            "raw": "Il est permis de conserver du poisson vivant, autre que de l’omble de fontaine ou du touladi, dans un vivier."
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est interdit d’avoir en sa possession des ombles de fontaine ou des touladis vivants.",
+            "raw": "Il est interdit d’avoir en sa possession des ombles de fontaine ou des touladis vivants."
+          },
+          {
+            "period": "Ouverte du 4e samedi d’avril au 15 septembre",
+            "species": "Omble de fontaine",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Ouverte du 4e samedi d’avril au 15 septembre",
+            "raw": "Omble de fontaine - Ouverte du 4e samedi d’avril au 15 septembre"
+          },
+          {
+            "period": null,
+            "species": "Omble de fontaine",
+            "limit": "S-1; doit mesurer plus de 56 centimètres, et C-0",
+            "length": "doit mesurer plus de 56 centimètres",
+            "gear": null,
+            "notes": "S-1; doit mesurer plus de 56 centimètres, et C-0",
+            "raw": "Omble de fontaine - S-1; doit mesurer plus de 56 centimètres, et C-0"
+          },
+          {
+            "period": "Ouverte du 1er mars au 30 septembre",
+            "species": "Touladi",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Ouverte du 1er mars au 30 septembre",
+            "raw": "Touladi - Ouverte du 1er mars au 30 septembre"
+          },
+          {
+            "period": null,
+            "species": "Touladi",
+            "limit": "S-2 et C-1; 1 seul dépassant 70 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "S-2 et C-1; 1 seul dépassant 70 centimètres",
+            "raw": "Touladi - S-2 et C-1; 1 seul dépassant 70 centimètres"
+          },
+          {
+            "period": "Ouverte du 1er janvier au 14 avril et du 3e samedi de mai au 31 décembre",
+            "species": "Grand brochet",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Ouverte du 1er janvier au 14 avril et du 3e samedi de mai au 31 décembre",
+            "raw": "Grand brochet - Ouverte du 1er janvier au 14 avril et du 3e samedi de mai au 31 décembre"
+          },
+          {
+            "period": null,
+            "species": "Grand brochet",
+            "limit": "S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres",
+            "raw": "Grand brochet - S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres"
+          },
+          {
+            "period": "Ouverte du 1er janvier au 14 avril et du 10 juin au 31 décembre",
+            "species": "Doré jaune et doré noir",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Ouverte du 1er janvier au 14 avril et du 10 juin au 31 décembre",
+            "raw": "Doré jaune et doré noir - Ouverte du 1er janvier au 14 avril et du 10 juin au 31 décembre"
+          }
+        ],
+        "raw": "Lac Nipigon et ses tributaires en aval des premiers, rapides, chutes, barrages ou lacs, ou le cours d’eau tout entier s’il n’y a pas de rapides, chutes, barrages ou lacs Comprend aussi : | les eaux sur les îles du lac Nipigon, y compris les lacs Forgan, Bonner, Little Bonner et Jackpot (lac Madeline) | la rivière Gull, en aval du pont de la route 527 | la rivière Kabitotikwia, en aval du pont de la route 527 | la rivière Poshkokagan, en aval et incluant les rapides (49°25′45″ N , 89°04′55″ O ) situés à 13 kilomètres en amont du pont du chemin Black Sturgeon | la rivière Wabinosh, en aval du lac Wabinosh | la rivière Little Jackfish - en aval à partir de la ligne médiane du pont du CN . | Il est permis d’utiliser ou de posséder des éperlans arc-en-ciel morts comme poisson d’appât. | Seuls les leurres artificiels sont permis pour pêcher sur la glace. | Un seul hameçon sans barbes est permis. | Il est interdit d’utiliser un enfiloir, un dispositif de capture ou une boîte de retenue de poissons vivants. | Il est permis de conserver du poisson vivant, autre que de l’omble de fontaine ou du touladi, dans un vivier. | Il est interdit d’avoir en sa possession des ombles de fontaine ou des touladis vivants. | Omble de fontaine - Ouverte du 4e samedi d’avril au 15 septembre | Omble de fontaine - S-1; doit mesurer plus de 56 centimètres, et C-0 | Touladi - Ouverte du 1er mars au 30 septembre | Touladi - S-2 et C-1; 1 seul dépassant 70 centimètres | Grand brochet - Ouverte du 1er janvier au 14 avril et du 3e samedi de mai au 31 décembre | Grand brochet - S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres | Doré jaune et doré noir - Ouverte du 1er janvier au 14 avril et du 10 juin au 31 décembre"
+      },
+      {
+        "name": "Lac Nipigon",
+        "location": "baie Obabika (50°15′ N , 88°15′ O ) et baie Wabinosh (50°02′ N , 88°50′ O ) et les tributaires des baies jusqu’à la première barrière de poissons, y compris la rivière Little Jackfish, en aval à partir de la ligne médiane du pont du CN et de la rivière Wabinosh en aval du lac Wabinosh",
+        "rules": [
+          {
+            "period": null,
+            "species": "Doré jaune et doré noir (toute combinaison)",
+            "limit": "S-2 et C-2; 1 seul dépassant 46 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "S-2 et C-2; 1 seul dépassant 46 centimètres",
+            "raw": "Doré jaune et doré noir (toute combinaison) - S-2 et C-2; 1 seul dépassant 46 centimètres"
+          }
+        ],
+        "raw": "Lac Nipigon baie Obabika (50°15′ N , 88°15′ O ) et baie Wabinosh (50°02′ N , 88°50′ O ) et les tributaires des baies jusqu’à la première barrière de poissons, y compris la rivière Little Jackfish, en aval à partir de la ligne médiane du pont du CN et de la rivière Wabinosh en aval du lac Wabinosh Doré jaune et doré noir (toute combinaison) - S-2 et C-2; 1 seul dépassant 46 centimètres"
+      },
+      {
+        "name": "Lac Nipigon",
+        "location": "(baie West), les eaux qui s’étendent au nord et à l’ouest de la pointe nord de l’île Boles",
+        "rules": [
+          {
+            "period": "Fermée toute l’année",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Fermée toute l’année",
+            "raw": "Réserve de poissons - Fermée toute l’année"
+          }
+        ],
+        "raw": "Lac Nipigon (baie West), les eaux qui s’étendent au nord et à l’ouest de la pointe nord de l’île Boles Réserve de poissons - Fermée toute l’année"
+      },
+      {
+        "name": "Rivière Nipigon",
+        "location": null,
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est permis d’utiliser ou de posséder des éperlans arc-en-ciel morts comme poisson d’appât",
+            "raw": "Il est permis d’utiliser ou de posséder des éperlans arc-en-ciel morts comme poisson d’appât"
+          },
+          {
+            "period": null,
+            "species": "Grand brochet",
+            "limit": "S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres",
+            "raw": "Grand brochet - S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres"
+          }
+        ],
+        "raw": "Rivière Nipigon Il est permis d’utiliser ou de posséder des éperlans arc-en-ciel morts comme poisson d’appât | Grand brochet - S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres"
+      },
+      {
+        "name": "Rivière Nipigon et baie Nipigon",
+        "location": "La rivière Nipigon du barrage des chutes Alexander dans la zone 6 jusqu’à la baie Nipigon dans la zone 9, et les eaux de la baie Nipigon dans la zone 9 au nord d’une ligne tirée de l’île Simpson (48°49′48″ N , 87°40′40″ O ) en travers de la baie jusqu’à la terre ferme à 48°51′21″ N , 87°38′47″ O",
+        "rules": [
+          {
+            "period": "Fermée toute l'année",
+            "species": "Doré jaune et doré noir",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Fermée toute l'année",
+            "raw": "Doré jaune et doré noir - Fermée toute l'année"
+          }
+        ],
+        "raw": "Rivière Nipigon et baie Nipigon La rivière Nipigon du barrage des chutes Alexander dans la zone 6 jusqu’à la baie Nipigon dans la zone 9, et les eaux de la baie Nipigon dans la zone 9 au nord d’une ligne tirée de l’île Simpson (48°49′48″ N , 87°40′40″ O ) en travers de la baie jusqu’à la terre ferme à 48°51′21″ N , 87°38′47″ O Doré jaune et doré noir - Fermée toute l'année"
+      },
+      {
+        "name": "Rivière Nipigon",
+        "location": null,
+        "rules": [
+          {
+            "period": "Pêche interdite du 1er janvier au vendredi précédant le 4e samedi de mai et du mardi après la fête du Travail jusqu’au 31 décembre dans les zones suivantes :",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Pêche interdite du 1er janvier au vendredi précédant le 4e samedi de mai et du mardi après la fête du Travail jusqu’au 31 décembre dans les zones suivantes :",
+            "raw": "Réserve de poissons - Pêche interdite du 1er janvier au vendredi précédant le 4e samedi de mai et du mardi après la fête du Travail jusqu’au 31 décembre dans les zones suivantes :"
+          },
+          {
+            "period": null,
+            "species": "Rivière Nipigon",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Backpool en aval du barrage des chutes Alexander, à l’est d’une ligne tracée vers le sud depuis la passe à bois du barrage des chutes Alexander jusqu’à la pointe la plus au nord du point terrestre sur la rive est de la rivière Nipigon",
+            "raw": "Rivière Nipigon - Backpool en aval du barrage des chutes Alexander, à l’est d’une ligne tracée vers le sud depuis la passe à bois du barrage des chutes Alexander jusqu’à la pointe la plus au nord du point terrestre sur la rive est de la rivière Nipigon"
+          },
+          {
+            "period": null,
+            "species": "Rivière Nipigon",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Bassin Gapen's (49°01′ N , 88°15′ O ), la partie de la rivière Nipigon qui s’étend à l’est d’une ligne tracée au nord depuis la butée (rive est) des ponts de la route 11/17 jusqu’à la pointe ouest d’un point terrestre sur la rive est du débit sortant du lac Helen",
+            "raw": "Rivière Nipigon - Bassin Gapen's (49°01′ N , 88°15′ O ), la partie de la rivière Nipigon qui s’étend à l’est d’une ligne tracée au nord depuis la butée (rive est) des ponts de la route 11/17 jusqu’à la pointe ouest d’un point terrestre sur la rive est du débit sortant du lac Helen"
+          },
+          {
+            "period": null,
+            "species": "Rivière Nipigon",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Parmacheene (49°05′ N , 88°19′ O ), depuis le bord, en aval, des butées du pont du CN Parmacheene, puis en amont sur environ 400 mètres jusqu’au premier rétrécissement",
+            "raw": "Rivière Nipigon - Parmacheene (49°05′ N , 88°19′ O ), depuis le bord, en aval, des butées du pont du CN Parmacheene, puis en amont sur environ 400 mètres jusqu’au premier rétrécissement"
+          }
+        ],
+        "raw": "Rivière Nipigon Réserve de poissons - Pêche interdite du 1er janvier au vendredi précédant le 4e samedi de mai et du mardi après la fête du Travail jusqu’au 31 décembre dans les zones suivantes : | Rivière Nipigon - Backpool en aval du barrage des chutes Alexander, à l’est d’une ligne tracée vers le sud depuis la passe à bois du barrage des chutes Alexander jusqu’à la pointe la plus au nord du point terrestre sur la rive est de la rivière Nipigon | Rivière Nipigon - Bassin Gapen's (49°01′ N , 88°15′ O ), la partie de la rivière Nipigon qui s’étend à l’est d’une ligne tracée au nord depuis la butée (rive est) des ponts de la route 11/17 jusqu’à la pointe ouest d’un point terrestre sur la rive est du débit sortant du lac Helen | Rivière Nipigon - Parmacheene (49°05′ N , 88°19′ O ), depuis le bord, en aval, des butées du pont du CN Parmacheene, puis en amont sur environ 400 mètres jusqu’au premier rétrécissement"
+      },
+      {
+        "name": "Lac Polly",
+        "location": "(49°07′52″ N , 88°15′58″ O )",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est permis d’utiliser ou de posséder des éperlans arc-en-ciel morts comme poisson d’appât.",
+            "raw": "Il est permis d’utiliser ou de posséder des éperlans arc-en-ciel morts comme poisson d’appât."
+          },
+          {
+            "period": null,
+            "species": "Omble de fontaine",
+            "limit": "S-1; doit mesurer plus de 56 centimètres, et C-0",
+            "length": "doit mesurer plus de 56 centimètres",
+            "gear": null,
+            "notes": "S-1; doit mesurer plus de 56 centimètres, et C-0",
+            "raw": "Omble de fontaine - S-1; doit mesurer plus de 56 centimètres, et C-0"
+          },
+          {
+            "period": null,
+            "species": "Grand brochet",
+            "limit": "S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres",
+            "raw": "Grand brochet - S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres"
+          },
+          {
+            "period": null,
+            "species": "Doré jaune et doré noir",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Fermée toute année",
+            "raw": "Doré jaune et doré noir - Fermée toute année"
+          }
+        ],
+        "raw": "Lac Polly (49°07′52″ N , 88°15′58″ O ) Il est permis d’utiliser ou de posséder des éperlans arc-en-ciel morts comme poisson d’appât. | Omble de fontaine - S-1; doit mesurer plus de 56 centimètres, et C-0 | Grand brochet - S-4 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres | Doré jaune et doré noir - Fermée toute année"
+      },
+      {
+        "name": "Rivière Savanne",
+        "location": "(48°56′ N , 90°17′ O )",
+        "rules": [
+          {
+            "period": null,
+            "species": "Doré jaune",
+            "limit": "S-4 et C-2; doit mesurer plus de 33 centimètres, 1 seul dépassant 46 centimètres",
+            "length": "doit mesurer plus de 33 centimètres",
+            "gear": null,
+            "notes": "S-4 et C-2; doit mesurer plus de 33 centimètres, 1 seul dépassant 46 centimètres",
+            "raw": "Doré jaune - S-4 et C-2; doit mesurer plus de 33 centimètres, 1 seul dépassant 46 centimètres"
+          }
+        ],
+        "raw": "Rivière Savanne (48°56′ N , 90°17′ O ) Doré jaune - S-4 et C-2; doit mesurer plus de 33 centimètres, 1 seul dépassant 46 centimètres"
+      },
+      {
+        "name": "Rivière Savanne",
+        "location": "(48°56′ N , 90°17′ O ) - du ruisseau One Mile au ruisseau Dexter",
+        "rules": [
+          {
+            "period": "Pêche interdite du 1er avril au 31 mai",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Pêche interdite du 1er avril au 31 mai",
+            "raw": "Réserve de poissons - Pêche interdite du 1er avril au 31 mai"
+          }
+        ],
+        "raw": "Rivière Savanne (48°56′ N , 90°17′ O ) - du ruisseau One Mile au ruisseau Dexter Réserve de poissons - Pêche interdite du 1er avril au 31 mai"
+      }
+    ]
+  },
+  "bait_restrictions": {
+    "en": [
+      {
+        "period": null,
+        "species": "Live fish may not be used as bait or possessed for use as bait – refer to waterbody exceptions",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Arrow River",
+        "raw": null,
+        "waters": [
+          "Arrow River"
+        ]
+      },
+      {
+        "period": null,
+        "species": "Dead Rainbow Smelt may be used as bait or possessed for use as bait – refer to waterbody exceptions",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Jessie Lake (49°11'19″ N , 88°19'52″ W ) · Lake Helen (49°04'20″ N , 88°16'17″ W ) · Nipigon River · Polly Lake (49°07'52″ N , 88°15'58″ W )",
+        "raw": null,
+        "waters": [
+          "Jessie Lake (49°11'19″ N , 88°19'52″ W )",
+          "Lake Helen (49°04'20″ N , 88°16'17″ W )",
+          "Nipigon River",
+          "Polly Lake (49°07'52″ N , 88°15'58″ W )"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Il est interdit d’utiliser et de posséder du poisson vivant comme appât - voir les exceptions visant des plans d’eau particuliers",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Rivière Arrow",
+        "raw": null,
+        "waters": [
+          "Rivière Arrow"
+        ]
+      },
+      {
+        "period": null,
+        "species": "Il est permis d’utiliser ou de posséder des éperlans arc-en-ciel morts comme poisson d’appât - voir les exceptions visant des plans d’eau particuliers",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Lac Helen (49°04′20\" N , 88°16′17\" O ) · Lac Jessie (49°11′19\" N , 88°19′52\" O ) · Rivière Nipigon · Lac Polly (49°07′52\" N , 88°15′58\" O )",
+        "raw": null,
+        "waters": [
+          "Lac Helen (49°04′20\" N , 88°16′17\" O )",
+          "Lac Jessie (49°11′19\" N , 88°19′52\" O )",
+          "Rivière Nipigon",
+          "Lac Polly (49°07′52\" N , 88°15′58\" O )"
+        ]
+      }
+    ]
+  },
+  "fish_sanctuaries": {
+    "en": [
+      {
+        "period": "No fishing – closed all year",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing – closed all year Argon Lake – Grand Trunk Pacific Block 2 | Gessie Lake | Henderson Lake – Grand Trunk Pacific Block 2 | Ice Lake | Lake Nipigon – refer to waterbody exceptions | McIntyre River – refer to waterbody exceptions | Savanne Lake – Grand Trunk Pacific Block 2 | Squeers Lake (48°31′ N , 90°33′ W )",
+        "waters": [
+          "Argon Lake – Grand Trunk Pacific Block 2",
+          "Gessie Lake",
+          "Henderson Lake – Grand Trunk Pacific Block 2",
+          "Ice Lake",
+          "Lake Nipigon – refer to waterbody exceptions",
+          "McIntyre River – refer to waterbody exceptions",
+          "Savanne Lake – Grand Trunk Pacific Block 2",
+          "Squeers Lake (48°31′ N , 90°33′ W )"
+        ]
+      },
+      {
+        "period": "No fishing – from January 1 to Friday before fourth Saturday in May and Tuesday after Labour Day to December 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing – from January 1 to Friday before fourth Saturday in May and Tuesday after Labour Day to December 31 Nipigon River – refer to waterbody exceptions",
+        "waters": [
+          "Nipigon River – refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": "No fishing – April 1 to May 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing – April 1 to May 31 Granite River and Saganaga Lake – Saganaga Falls | Greenwater Creek – from the dam on Greenwater Creek to the first island in Upper Shebandowan Lake | Kashabowie River – from the dam on Kashabowie Lake to the island in Upper Shebandowan Lake | Little Gunflint Lake | Little North Lake | Little Savanne River – refer to waterbody exceptions | Maligne River and Curran Bay (Saganaga Lake) | Pine River – near Gunflint Lake | Savanne River – refer to waterbody exceptions | Sawmill Creek and Sawmill Bay – Upper Shebandowan Lake | Swamp River and Swamp Bay of Lower Shebandowan Lake – Conacher and Hagey Townships | Weikwabinonaw River – between Marks Lake and Weikwabinonaw Lake | Weikwabinonaw River – from Marks Lake upstream to the Weikwabinonaw Lake Road | Weikwabinonaw River – from Trafalgar Bay on Northern Light Lake extending upstream to its confluence with Nelson Creek, including the unnamed lake known locally as Lily Lake",
+        "waters": [
+          "Granite River and Saganaga Lake – Saganaga Falls",
+          "Greenwater Creek – from the dam on Greenwater Creek to the first island in Upper Shebandowan Lake",
+          "Kashabowie River – from the dam on Kashabowie Lake to the island in Upper Shebandowan Lake",
+          "Little Gunflint Lake",
+          "Little North Lake",
+          "Little Savanne River – refer to waterbody exceptions",
+          "Maligne River and Curran Bay (Saganaga Lake)",
+          "Pine River – near Gunflint Lake",
+          "Savanne River – refer to waterbody exceptions",
+          "Sawmill Creek and Sawmill Bay – Upper Shebandowan Lake",
+          "Swamp River and Swamp Bay of Lower Shebandowan Lake – Conacher and Hagey Townships",
+          "Weikwabinonaw River – between Marks Lake and Weikwabinonaw Lake",
+          "Weikwabinonaw River – from Marks Lake upstream to the Weikwabinonaw Lake Road",
+          "Weikwabinonaw River – from Trafalgar Bay on Northern Light Lake extending upstream to its confluence with Nelson Creek, including the unnamed lake known locally as Lily Lake"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "Pêche interdite - Fermée toute l’année",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Fermée toute l’année Lac Argon - Grand Trunk Pacific, bloc 2 | Lac Gessie | Lac Henderson - Grand Trunk Pacific, bloc 2 | Lac Ice | Rivière McIntyre - voir les exceptions visant des plans d’eau particuliers | Lac Nipigon - voir les exceptions visant des plans d’eau particuliers | Lac Savanne - Grand Trunk Pacific, bloc 2 | Lac Squeers (48°31′ N , 90°33′ O )",
+        "waters": [
+          "Lac Argon - Grand Trunk Pacific, bloc 2",
+          "Lac Gessie",
+          "Lac Henderson - Grand Trunk Pacific, bloc 2",
+          "Lac Ice",
+          "Rivière McIntyre - voir les exceptions visant des plans d’eau particuliers",
+          "Lac Nipigon - voir les exceptions visant des plans d’eau particuliers",
+          "Lac Savanne - Grand Trunk Pacific, bloc 2",
+          "Lac Squeers (48°31′ N , 90°33′ O )"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er janvier au vendredi précédant le 4e samedi de mai et du mardi après la fête du Travail jusqu’ au 31 décembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er janvier au vendredi précédant le 4e samedi de mai et du mardi après la fête du Travail jusqu’ au 31 décembre Rivière Nipigon - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Rivière Nipigon - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er avril au 31 mai",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er avril au 31 mai Rivière Granite et lac Saganaga - Saganaga Falls | Ruisseau Greenwater - depuis le barrage du ruisseau Greenwater jusqu’à la première île dans le lac Upper Shebandowan | Rivière Kashabowie - depuis le barrage du lac Kashabowie jusqu’à l’île dans le lac Upper Shebandowan | Lac Little Gunflint | Lac Little North | Rivière Little Savanne - voir les exceptions visant des plans d’eau particuliers | Rivière Maligne et baie Curran (lac Saganaga) | Rivière Pine - près du lac Gunflint | Rivière Savanne - voir les exceptions visant des plans d’eau particuliers | Ruisseau Sawmill et baie Sawmill - lac Upper Shebandowan | Rivière Swamp et baie Swamp au lac Lower Shebandowan - cantons de Conacher et Hagey | Rivière Weikwabinonaw - entre le lac Marks et le lac Weikwabinonaw | Rivière Weikwabinonaw - depuis le lac Marks en amont jusqu’au chemin du lac Weikwabinonaw | Rivière Weikwabinonaw - depuis la baie Trafalgar au lac Northern Light, en continuant en amont jusqu’à sa confluence avec le ruisseau Nelson, y compris le lac sans nom connu localement sous le nom de lac Lily",
+        "waters": [
+          "Rivière Granite et lac Saganaga - Saganaga Falls",
+          "Ruisseau Greenwater - depuis le barrage du ruisseau Greenwater jusqu’à la première île dans le lac Upper Shebandowan",
+          "Rivière Kashabowie - depuis le barrage du lac Kashabowie jusqu’à l’île dans le lac Upper Shebandowan",
+          "Lac Little Gunflint",
+          "Lac Little North",
+          "Rivière Little Savanne - voir les exceptions visant des plans d’eau particuliers",
+          "Rivière Maligne et baie Curran (lac Saganaga)",
+          "Rivière Pine - près du lac Gunflint",
+          "Rivière Savanne - voir les exceptions visant des plans d’eau particuliers",
+          "Ruisseau Sawmill et baie Sawmill - lac Upper Shebandowan",
+          "Rivière Swamp et baie Swamp au lac Lower Shebandowan - cantons de Conacher et Hagey",
+          "Rivière Weikwabinonaw - entre le lac Marks et le lac Weikwabinonaw",
+          "Rivière Weikwabinonaw - depuis le lac Marks en amont jusqu’au chemin du lac Weikwabinonaw",
+          "Rivière Weikwabinonaw - depuis la baie Trafalgar au lac Northern Light, en continuant en amont jusqu’à sa confluence avec le ruisseau Nelson, y compris le lac sans nom connu localement sous le nom de lac Lily"
+        ]
+      }
+    ]
+  }
+}
