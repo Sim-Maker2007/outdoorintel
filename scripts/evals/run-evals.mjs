@@ -76,12 +76,17 @@ for (const q of questions) {
       ok(`${q.id}/${zid}-complete-slice`, doc.coverage.complete === true, `${zid} coverage incomplete for stated slice`);
       const en = resolveHunting(doc, { lang: 'en' });
       const fr = resolveHunting(doc, { lang: 'fr' });
-      ok(`${q.id}/${zid}-deer-en`, en.seasons.some(r => r.species_key === 'white-tailed-deer' && /2026/.test(r.period_2026 || r.period || '')), `${zid} missing EN deer 2026`);
+      const notHarvested = doc.coverage.species_not_harvested || [];
+      const deerListed = (doc.coverage.species?.en || []).includes('white-tailed-deer');
+      if (deerListed) {
+        ok(`${q.id}/${zid}-deer-en`, en.seasons.some(r => r.species_key === 'white-tailed-deer' && /2026/.test(r.period_2026 || r.period || '')), `${zid} missing EN deer 2026`);
+        ok(`${q.id}/${zid}-deer-fr`, fr.seasons.some(r => r.species_key === 'white-tailed-deer'), `${zid} missing FR deer`);
+      } else {
+        ok(`${q.id}/${zid}-deer-skipped`, notHarvested.includes('white-tailed deer') && !en.seasons.some(r => r.species_key === 'white-tailed-deer'), `${zid} must disclose skipped white-tailed deer and invent no rows`);
+      }
       ok(`${q.id}/${zid}-moose-en`, en.seasons.some(r => r.species_key === 'moose' && /2026/.test(r.period_2026 || r.period || '')), `${zid} missing EN moose 2026`);
-      ok(`${q.id}/${zid}-deer-fr`, fr.seasons.some(r => r.species_key === 'white-tailed-deer'), `${zid} missing FR deer`);
       ok(`${q.id}/${zid}-moose-fr`, fr.seasons.some(r => r.species_key === 'moose'), `${zid} missing FR moose`);
       const bearListed = (doc.coverage.species?.en || []).includes('black-bear');
-      const notHarvested = doc.coverage.species_not_harvested || [];
       if (bearListed) {
         ok(`${q.id}/${zid}-bear-en`, en.seasons.some(r => r.species_key === 'black-bear' && /2026/.test(r.period_2026 || r.period || '')), `${zid} missing EN black bear 2026`);
         ok(`${q.id}/${zid}-bear-fr`, fr.seasons.some(r => r.species_key === 'black-bear'), `${zid} missing FR black bear`);
