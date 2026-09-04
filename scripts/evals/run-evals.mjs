@@ -67,8 +67,10 @@ for (const q of questions) {
 
   if (c.season_intel_copy) {
     const src = readFileSync(join(REPO, 'src/pages/[lang]/season-intel/index.astro'), 'utf-8');
-    const enNow = src.includes('Québec hunting deer, moose, and black bear 2026 for published splits 7N, 7S, 8E, 8N, 8S, 9E, 9W, 10E, 10W, 11E, 11W, 12 and 13SW');
-    const frNow = src.includes('Chasse au cerf, à l’orignal et à l’ours noir 2026 au Québec pour les segments publiés 7N, 7S, 8E, 8N, 8S, 9E, 9W, 10E, 10W, 11E, 11W, 12 et 13SW');
+    const huntKeys = '4, 5E/5W, 6N/6S, 7N/7S, 8E/8N/8S, 9E/9W, 10E/10W, 11E/11W, 12, 13SW, 14, 15E/15W and 16';
+    const huntKeysFr = '4, 5E/5W, 6N/6S, 7N/7S, 8E/8N/8S, 9E/9W, 10E/10W, 11E/11W, 12, 13SW, 14, 15E/15W et 16';
+    const enNow = src.includes(`Québec hunting deer, moose, and black bear 2026 for published splits ${huntKeys}`);
+    const frNow = src.includes(`Chasse au cerf, à l’orignal et à l’ours noir 2026 au Québec pour les segments publiés ${huntKeysFr}`);
     ok(`${q.id}/en-bear-now`, enNow && src.includes('Black bear is harvested only where the official table has rows for that key'), 'EN Season Intel now-item must include live black bear 2026 on the published splits');
     ok(`${q.id}/fr-ours-now`, frNow && src.includes('L’ours noir n’est récupéré que là où le tableau officiel a des lignes pour cette clé'), 'FR Season Intel now-item must include live ours noir 2026 on the published splits');
     ok(`${q.id}/en-not-deny-bear`, !/not bear or turkey/.test(src), 'EN Season Intel must not deny bear when it is harvested');
@@ -77,6 +79,10 @@ for (const q of questions) {
     ok(`${q.id}/fr-gaps`, /pas le dindon/.test(src) && /pas le petit gibier/.test(src) && /pas la chasse ontarienne/.test(src) && /Pas les 28 zones/.test(src), 'FR must still disclose dindon, petit gibier, chasse ontarienne, and not-all-28 gaps');
     ok(`${q.id}/en-8w-13`, /Not 8 West/.test(src) && /not 13 East\/West/.test(src), 'EN must still disclose 8 West and 13 East/West as absent');
     ok(`${q.id}/fr-8w-13`, /Pas la 8 ouest/.test(src) && /13 est\/ouest/.test(src), 'FR must still disclose 8 ouest and 13 est/ouest as absent');
+    ok(`${q.id}/en-on-fmz-now`, src.includes('Ontario fishing FMZ 10, 11, 12, 15, 16, 17, 18, 19 and 20') && src.includes('Great Lakes FMZs 9, 13 and 14 are not harvested'), 'EN Season Intel must list live FMZ 19 and 20 and only skip Great Lakes 9, 13 and 14');
+    ok(`${q.id}/fr-on-zgp-now`, src.includes('ZGP de pêche 10, 11, 12, 15, 16, 17, 18, 19 et 20') && src.includes('Les ZGP des Grands Lacs 9, 13 et 14 ne sont pas collectées'), 'FR Season Intel must list live ZGP 19 and 20 and only skip Great Lakes 9, 13 and 14');
+    ok(`${q.id}/en-not-stale-gl`, !/Great Lakes FMZs 9, 13, 14, 19 and 20 are not harvested/.test(src), 'EN Season Intel must not still call FMZ 19 and 20 unharvested');
+    ok(`${q.id}/fr-not-stale-gl`, !/Les ZGP des Grands Lacs 9, 13, 14, 19 et 20 ne sont pas collectées/.test(src), 'FR Season Intel must not still call ZGP 19 and 20 unharvested');
     ok(`${q.id}/price`, /\$29 CAD/.test(src) && /29 \$ CAD/.test(src), 'Season Intel must keep $29 CAD/year Stripe Checkout framing');
     ok(`${q.id}/meta-bear`, src.includes('Québec hunting deer, moose, and black bear 2026') && src.includes('chasse au cerf, à l’orignal et à l’ours noir 2026'), 'EN+FR meta descriptions must include black bear / ours noir');
     continue;
