@@ -1,6 +1,6 @@
 ---
 // Season Intel — Stripe Checkout CTA when env keys exist; waitlist fallback if not.
-// Public QC fishing, ON FMZ 10/11/12/15/16/17/18, and QC hunting deer+moose 2026 published splits stay free. No paywall.
+// Public QC fishing, ON FMZ 10/11/12/15/16/17/18, and QC hunting deer+moose+black bear 2026 published splits stay free. No paywall.
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import GlobalSearch from '../../../components/GlobalSearch.astro';
@@ -26,8 +26,8 @@ const T = {
     fr: 'Season Intel — abonnement saisons Québec et Ontario',
   },
   metaDesc: {
-    en: 'Season Intel is a $29 CAD/year Stripe Checkout membership. Cited Québec fishing zones, Ontario FMZ 10, 11, 12, 15, 16, 17 and 18, and Québec hunting deer and moose 2026 for published splits 7N, 7S, 8E, 8N, 8S, 9E, 9W, 10E, 10W, 11E, 11W, 12 and 13SW stay public and free. Remaining coverage and change-alert emails are coming.',
-    fr: 'Season Intel est un abonnement 29 $ CAD/an via Stripe Checkout. Les zones de pêche du Québec, les ZGP 10, 11, 12, 15, 16, 17 et 18 de l’Ontario, et la chasse au cerf et à l’orignal 2026 au Québec pour les segments publiés 7N, 7S, 8E, 8N, 8S, 9E, 9W, 10E, 10W, 11E, 11W, 12 et 13SW restent publiques et gratuites. Le reste de la couverture et les courriels d’alerte s’en viennent.',
+    en: 'Season Intel is a $29 CAD/year Stripe Checkout membership. Cited Québec fishing zones, Ontario FMZ 10, 11, 12, 15, 16, 17 and 18, and Québec hunting deer, moose, and black bear 2026 for published splits 7N, 7S, 8E, 8N, 8S, 9E, 9W, 10E, 10W, 11E, 11W, 12 and 13SW stay public and free. Remaining coverage and change-alert emails are coming.',
+    fr: 'Season Intel est un abonnement 29 $ CAD/an via Stripe Checkout. Les zones de pêche du Québec, les ZGP 10, 11, 12, 15, 16, 17 et 18 de l’Ontario, et la chasse au cerf, à l’orignal et à l’ours noir 2026 au Québec pour les segments publiés 7N, 7S, 8E, 8N, 8S, 9E, 9W, 10E, 10W, 11E, 11W, 12 et 13SW restent publiques et gratuites. Le reste de la couverture et les courriels d’alerte s’en viennent.',
   },
   badge: { en: 'Paid membership · News signup', fr: 'Abonnement payant · Infolettre' },
   badgeLive: { en: 'Paid membership · $29 CAD/year', fr: 'Abonnement payant · 29 $ CAD/an' },
@@ -91,14 +91,14 @@ const T = {
     en: [
       'Cited Québec fishing zones already on the fishing regulations hub (MELCCFP), including zone 10 with listed vs harvested coverage.',
       'Ontario fishing FMZ 10, 11, 12, 15, 16, 17 and 18 from the 2026 Ontario Fishing Regulations Summary HTML (not complete Ontario). Great Lakes FMZs 9, 13, 14, 19 and 20 are not harvested.',
-      'Québec hunting deer and moose 2026 for published splits 7N, 7S, 8E, 8N, 8S, 9E, 9W, 10E, 10W, 11E, 11W, 12 and 13SW. Not 8 West, not 13 East/West (not on the official tables). Not all 28 hunting zones, not small game, not Ontario hunting, not bear or turkey.',
+      'Québec hunting deer, moose, and black bear 2026 for published splits 7N, 7S, 8E, 8N, 8S, 9E, 9W, 10E, 10W, 11E, 11W, 12 and 13SW. Black bear is harvested only where the official table has rows for that key. Not 8 West, not 13 East/West (not on the official tables). Not all 28 hunting zones, not turkey, not small game, not Ontario hunting.',
       'Waterbody and species search on the public fishing and hunting regulations hubs.',
       'Fishing zone, FMZ, and hunting zone pages stay public for everyone and for search engines — Season Intel does not paywall them.',
     ],
     fr: [
       'Les zones de pêche du Québec déjà sur le carrefour des règlements (MELCCFP), y compris la zone 10 avec la couverture listée vs récupérée.',
       'ZGP de pêche 10, 11, 12, 15, 16, 17 et 18 de l’Ontario d’après le HTML du Résumé des règlements de la pêche 2026 (pas l’Ontario au complet). Les ZGP des Grands Lacs 9, 13, 14, 19 et 20 ne sont pas collectées.',
-      'Chasse au cerf et à l’orignal 2026 au Québec pour les segments publiés 7N, 7S, 8E, 8N, 8S, 9E, 9W, 10E, 10W, 11E, 11W, 12 et 13SW. Pas la 8 ouest, pas les 13 est/ouest (absentes des tableaux officiels). Pas les 28 zones, pas le petit gibier, pas la chasse ontarienne, pas l’ours ni le dindon.',
+      'Chasse au cerf, à l’orignal et à l’ours noir 2026 au Québec pour les segments publiés 7N, 7S, 8E, 8N, 8S, 9E, 9W, 10E, 10W, 11E, 11W, 12 et 13SW. L’ours noir n’est récupéré que là où le tableau officiel a des lignes pour cette clé. Pas la 8 ouest, pas les 13 est/ouest (absentes des tableaux officiels). Pas les 28 zones, pas le dindon, pas le petit gibier, pas la chasse ontarienne.',
       'Recherche par plan d’eau et par espèce sur les carrefours publics des règlements de pêche et de chasse.',
       'Les pages de zone de pêche, de ZGP et de zone de chasse restent publiques pour tout le monde et pour le référencement — Season Intel ne les met pas derrière un paywall.',
     ],
