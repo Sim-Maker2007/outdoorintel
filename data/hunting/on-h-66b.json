@@ -1,0 +1,254 @@
+{
+  "zone_id": "66B",
+  "zone_key": "ON-H-66B",
+  "slug": "on-h-66b",
+  "activity": "hunting",
+  "jurisdiction": "ON",
+  "wmu": "66B",
+  "licence_year": 2026,
+  "season_column": 2026,
+  "hunting_zone": "66B",
+  "hunting_part": null,
+  "authority": "Ontario Ministry of Natural Resources (MNR); Ontario Hunting Regulations Summary 2026 (not the official law)",
+  "source": {
+    "en": "https://www.ontario.ca/document/ontario-hunting-regulations-summary/white-tailed-deer",
+    "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-chasse/chevreuil-cerf-de-virginie",
+    "moose": {
+      "en": "https://www.ontario.ca/document/ontario-hunting-regulations-summary/moose",
+      "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-chasse/orignal"
+    },
+    "deer": {
+      "en": "https://www.ontario.ca/document/ontario-hunting-regulations-summary/white-tailed-deer",
+      "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-chasse/chevreuil-cerf-de-virginie"
+    },
+    "bear": {
+      "en": "https://www.ontario.ca/document/ontario-hunting-regulations-summary/black-bear",
+      "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-chasse/ours-noir"
+    },
+    "how": {
+      "en": "https://www.ontario.ca/document/ontario-hunting-regulations-summary/how-use-this-summary",
+      "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-chasse/comment-utiliser-ce-resume"
+    },
+    "maps": {
+      "en": "https://www.ontario.ca/document/ontario-hunting-regulations-summary/wildlife-management-unit-map-2-southeastern-ontario",
+      "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-chasse/carte-2-des-unites-de-gestion-de-la-faune-sud-est-de",
+      "finder": "https://www.ontario.ca/page/find-wildlife-management-unit-wmu-map"
+    },
+    "pdf": {
+      "en": "https://ontario.ca/files/2026-03/mnr-2026-ontario-hunting-regulations-summary-en-2026-03-10.pdf",
+      "fr": "https://ontario.ca/files/2026-03/mnr-2026-ontario-hunting-regulations-summary-fr-2026-03-10.pdf"
+    },
+    "fetched_at": "2026-09-05",
+    "note": "Season text reproduced verbatim from the Ontario Hunting Regulations Summary HTML (2026). Weapon class is the published section heading. Moose and black bear rows added only where the official table lists this WMU or an undivided parent/range that applies. Maps and the Summary PDF are cited as links only — not OCR’d, not scraped from Fish ON-Line. The Summary is not the law. WMU 12 is never harvested."
+  },
+  "maps": {
+    "wmu_finder": "https://www.ontario.ca/page/find-wildlife-management-unit-wmu-map",
+    "pdf_en": {
+      "href": "https://ontario.ca/files/2026-03/mnr-2026-ontario-hunting-regulations-summary-en-2026-03-10.pdf",
+      "label": "2026 Ontario Hunting Regulations Summary (PDF)"
+    },
+    "pdf_fr": {
+      "href": "https://ontario.ca/files/2026-03/mnr-2026-ontario-hunting-regulations-summary-fr-2026-03-10.pdf",
+      "label": "Résumé des règlements de la chasse 2026 (PDF)"
+    },
+    "index_en": "https://www.ontario.ca/document/ontario-hunting-regulations-summary/wildlife-management-unit-map-2-southeastern-ontario",
+    "index_fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-chasse/carte-2-des-unites-de-gestion-de-la-faune-sud-est-de"
+  },
+  "coverage": {
+    "slice": "Ontario WMU 66B; white-tailed deer + black bear; 2026 Hunting Regulations Summary",
+    "species_listed": 2,
+    "species_harvested": 2,
+    "species_not_harvested": [
+      "moose",
+      "small game",
+      "wild turkey"
+    ],
+    "unpublished_parts": [],
+    "weapon_classes_listed": 3,
+    "weapon_classes_harvested": 3,
+    "weapon_classes_listed_fr": 3,
+    "weapon_classes_harvested_fr": 3,
+    "season_rows_listed": 4,
+    "season_rows_harvested": 4,
+    "season_rows_listed_fr": 4,
+    "season_rows_harvested_fr": 4,
+    "complete": true,
+    "note": "Ontario WMU 66B: white-tailed deer + black bear, 2026 Hunting Regulations Summary HTML, weapon classes kept as published headings. Not all Ontario WMUs. Not small game. Not turkey. WMU 12 (Rainy River) is never harvested. Not GIS. White-tailed deer: official tables list a bows-only row for 66B only. No rifle or muzzle-loading deer rows invented. Moose: skipped — this WMU is not on the official 2026 moose season tables (published moose seasons are 46–50, 53–63 and explicit 65). No moose rows invented. Black bear: official tables list undivided parent numbers/ranges (spring 53–64 and 66–69; fall 64 / 66, 67 / 68), not lettered children. Undivided parent applied to this ON-H-* key.",
+    "weapon_classes": {
+      "en": [
+        "Bows only",
+        "Spring black bear seasons",
+        "Fall black bear seasons"
+      ],
+      "fr": [
+        "Arc seulement",
+        "Saisons de chasse à l’ours noir — Printemps",
+        "Saisons de chasse à l’ours noir — Automne"
+      ]
+    },
+    "species": {
+      "en": [
+        "white-tailed-deer",
+        "black-bear"
+      ],
+      "fr": [
+        "white-tailed-deer",
+        "black-bear"
+      ]
+    },
+    "parent_match": {
+      "moose_undivided_63": false,
+      "bear_undivided_parent": true
+    }
+  },
+  "title": {
+    "en": "Ontario WMU 66B — white-tailed deer and black bear (2026 season)",
+    "fr": "UGF 66B de l’Ontario — cerf de Virginie et ours noir (saison 2026)"
+  },
+  "notices": {
+    "en": [
+      {
+        "kind": "summary_not_law",
+        "draw_required": false,
+        "text": "This is a summary of information dealing with hunting licences and hunting laws in Ontario. This summary is neither a legal document nor a complete collection of the current regulations. It is meant to be a convenient reference only. For complete details:",
+        "related": []
+      },
+      {
+        "kind": "bear_cubs",
+        "draw_required": false,
+        "text": "The shooting of cubs or female bears accompanied by a cub is not permitted during the spring season."
+      }
+    ],
+    "fr": [
+      {
+        "kind": "summary_not_law",
+        "draw_required": false,
+        "text": "Voici des renseignements sommaires sur les permis de chasse et les lois sur la chasse en Ontario. Ceci n'est ni un document juridique ni un recueil complet des règlements en vigueur. Il ne doit être consulté qu'à titre de référence pratique. Pour obtenir plus de renseignements, consultez la :",
+        "related": []
+      },
+      {
+        "kind": "bear_cubs",
+        "draw_required": false,
+        "text": "Il est interdit d’abattre des oursons ou des femelles accompagnées d’un ourson pendant la chasse du printemps."
+      }
+    ]
+  },
+  "seasons": {
+    "en": [
+      {
+        "species": "White-tailed deer",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Bows only",
+        "segment": "Resident",
+        "period": "November 9 to November 14",
+        "period_2026": "November 9 to November 14",
+        "period_from": "2026-11-09",
+        "period_to": "2026-11-14",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Bows only · 66B · Resident · November 9 to November 14"
+      },
+      {
+        "species": "White-tailed deer",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Bows only",
+        "segment": "Non-resident",
+        "period": "November 9 to November 14",
+        "period_2026": "November 9 to November 14",
+        "period_from": "2026-11-09",
+        "period_to": "2026-11-14",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Bows only · 66B · Non-resident · November 9 to November 14"
+      },
+      {
+        "species": "Black bear",
+        "species_key": "black-bear",
+        "weapon_class": "Spring black bear seasons",
+        "segment": "Resident and non-resident",
+        "period": "May 1 to June 15",
+        "period_2026": "May 1 to June 15",
+        "period_from": "2026-05-01",
+        "period_to": "2026-06-15",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Spring black bear seasons · 1A, 1C, 1D, 2–6, 7A [1] , 7B, 8–10, 11A, 11B, 12–19, 21–50, 53–64, 66–69, 71–76 · Resident and non-resident · May 1 to June 15"
+      },
+      {
+        "species": "Black bear",
+        "species_key": "black-bear",
+        "weapon_class": "Fall black bear seasons",
+        "segment": "Resident and non-resident",
+        "period": "September 8 to November 30",
+        "period_2026": "September 8 to November 30",
+        "period_from": "2026-09-08",
+        "period_to": "2026-11-30",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Fall black bear seasons · 46, 47, 49, 50, 53, 64, 66, 67, 69, 71–76 · Resident and non-resident · September 8 to November 30"
+      }
+    ],
+    "fr": [
+      {
+        "species": "Cerf de Virginie",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Arc seulement",
+        "segment": "Résident",
+        "period": "9 novembre–14 novembre",
+        "period_2026": "9 novembre–14 novembre",
+        "period_from": "2026-11-09",
+        "period_to": "2026-11-14",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Arc seulement · 66B · Résident · 9 novembre–14 novembre"
+      },
+      {
+        "species": "Cerf de Virginie",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Arc seulement",
+        "segment": "Non-résident",
+        "period": "9 novembre–14 novembre",
+        "period_2026": "9 novembre–14 novembre",
+        "period_from": "2026-11-09",
+        "period_to": "2026-11-14",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Arc seulement · 66B · Non-résident · 9 novembre–14 novembre"
+      },
+      {
+        "species": "Ours noir",
+        "species_key": "black-bear",
+        "weapon_class": "Saisons de chasse à l’ours noir — Printemps",
+        "segment": "Résidents et non-résidents",
+        "period": "1er mai–15 juin",
+        "period_2026": "1er mai–15 juin",
+        "period_from": "2026-05-01",
+        "period_to": "2026-06-15",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Saisons de chasse à l’ours noir — Printemps · 1A, 1C, 1D, 2-6, 7A [1] , 7B, 8–10, 11A, 11B, 12–19, 21–50, 53–64, 66–69, 71–76 · Résidents et non-résidents · 1er mai–15 juin"
+      },
+      {
+        "species": "Ours noir",
+        "species_key": "black-bear",
+        "weapon_class": "Saisons de chasse à l’ours noir — Automne",
+        "segment": "Résidents et non-résidents",
+        "period": "8 septembre–30 novembre",
+        "period_2026": "8 septembre–30 novembre",
+        "period_from": "2026-09-08",
+        "period_to": "2026-11-30",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Saisons de chasse à l’ours noir — Automne · 46, 47, 49, 50, 53, 64, 66, 67, 69, 71–76 · Résidents et non-résidents · 8 septembre–30 novembre"
+      }
+    ]
+  }
+}
