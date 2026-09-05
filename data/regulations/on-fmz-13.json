@@ -1,0 +1,432 @@
+{
+  "zone_id": 13,
+  "zone_key": "ON-13",
+  "activity": "fishing",
+  "jurisdiction": "ON",
+  "fmz": 13,
+  "licence_year": 2026,
+  "authority": "Ontario Ministry of Natural Resources (MNR); Ontario Fishing Regulations Summary 2026 (not the official law)",
+  "source": {
+    "en": "https://www.ontario.ca/document/ontario-fishing-regulations-summary/fisheries-management-zone-13",
+    "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-peche/zone-de-gestion-des-peches-13",
+    "pdf_en": "https://ontario.ca/files/2025-12/mnr-2026-fishing-regulations-summary-en-2025-12-08.pdf",
+    "fish_on_line": "https://www.gisapplication.lrc.gov.on.ca/FishONLine/Index.html?site=FishONLine&viewer=FishONLine&locale=en-US&FMZ=13",
+    "fetched_at": "2026-09-05",
+    "html_updated": "2026-08-04",
+    "note": "Rule text reproduced verbatim from the Ontario Fishing Regulations Summary HTML (not the PDF). The Summary is not the official law. Always verify with the MNR and Fish ON-Line before fishing. Crown copyright."
+  },
+  "coverage": {
+    "licence_year": 2026,
+    "skipped_fish_on_line_only": false,
+    "zone_wide_listed": 16,
+    "zone_wide_harvested": 16,
+    "species_exceptions_listed": 0,
+    "species_exceptions_harvested": 0,
+    "waterbody_exceptions_listed": 0,
+    "waterbody_exceptions_harvested": 0,
+    "fish_sanctuaries_listed": 0,
+    "fish_sanctuaries_harvested": 0,
+    "bait_restrictions_listed": 3,
+    "bait_restrictions_harvested": 3,
+    "complete": true,
+    "note": "Zone-wide seasons/limits and listed HTML exceptions/sanctuaries for this FMZ are included. The Ontario Fishing Regulations Summary is not the law; verify with Fish ON-Line. This is not complete Ontario."
+  },
+  "title": {
+    "en": "Fisheries Management Zone 13 — Ontario FMZ 13",
+    "fr": "Zone de gestion des pêches 13 — Ontario ZGP 13"
+  },
+  "notices": {
+    "en": [
+      "All lakes on Manitoulin Island are a part of Zone 10 except South Bay (Zone 13) and Lake Wolsey (Zone 14). There are some regulatory exceptions in place on Manitoulin Island. Please refer to the Manitoulin Island - inland waters under Exceptions to Zone 10 Regulations .",
+      "St. Mary’s River west of the compensating works gate and the canal lock in Sault Ste. Marie is in Zone 14.",
+      "Refer to general fishing regulations for more information on how to use this summary.",
+      "Two lines may be used when trolling from a boat in open water in Lake Huron (Main Basin).",
+      "The following species are not present in this Zone and are closed to fishing all year:",
+      "brook trout",
+      "splake",
+      "FMZ 13 part of the Great Lakes. Baitfish and leeches that are both dead and preserved can be transported into and out of BMZs and the Great Lakes.",
+      "Baitfish and leeches that are not both dead and preserved may be transported out of: Refer to bait for more details.",
+      "an adjacent bait management zone and used in the Great Lakes",
+      "the Great Lakes only to be disposed of immediately more than 30 metres from the water"
+    ],
+    "fr": [
+      "Tous les lacs sure l’île Manitoulin font partie de la zone 10 sauf la baie South (zone 13) et le lac Wolsey (zone 14). Il existe certaines exceptions règlementaires touchant l’île Manitoulin. Veuillez consulter « île Manitoulin les eaux à l'intérieur des terres » sous Exceptions aux règlements - zone 10.",
+      "À l'est de la porte d'écluse de l'ouvrage de compensation et de l'écluse de Sault Ste. Marie, la rivière Ste-Marie est dans la zone 14.",
+      "Voir les Règlements généraux concernant la pêche pour plus de renseignements sur l’utilisation de ce Résumé.",
+      "Il est permis d’utiliser deux lignes quand on pêche à la traîne à bord d’une embarcation dans les eaux du lac Huron (bassin principal).",
+      "On ne trouve pas les espèces suivantes dans cette zone et leur pêche est donc interdite toute l’année :",
+      "omble de fontaine",
+      "truite moulac",
+      "La ZGP 13 fait partie des Grands Lacs. Les poissons d’appât et les sangsues qui sont morts et conservés peuvent être apportés et sortis des ZGA et des Grands Lacs.",
+      "Les poissons d’appât et les sangsues qui ne sont pas morts et conservés peuvent être sortis : Voir la section sur les appâts pour plus de renseignements.",
+      "d’une zone de gestion des appâts adjacente et utilisés dans les Grands Lacs",
+      "des Grands Lacs seulement pour être immédiatement jetés à plus de 30 mètres du bord de l’eau"
+    ]
+  },
+  "general": {
+    "en": [
+      {
+        "period": null,
+        "species": "Aggregate limits for trout and salmon (including splake)",
+        "limit": "S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limits : S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined"
+      },
+      {
+        "period": "open all year",
+        "species": "Atlantic salmon",
+        "limit": "S-1 and C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-1 and C-0"
+      },
+      {
+        "period": "open all year",
+        "species": "Brown trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Channel catfish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "open all year",
+        "species": "Crappie",
+        "limit": "S-30 and C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-30 and C-10"
+      },
+      {
+        "period": "closed all year",
+        "species": "Lake sturgeon",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : closed all year"
+      },
+      {
+        "period": "January 1 to September 30 and December 1 to December 31",
+        "species": "Lake trout",
+        "limit": "S-2 and C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to September 30 and December 1 to December 31 Limits : S-2 and C-1"
+      },
+      {
+        "period": "open all year",
+        "species": "Lake whitefish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "fourth Saturday in June to November 30",
+        "species": "Largemouth and smallmouth bass combined",
+        "limit": "S-6 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : fourth Saturday in June to November 30 Limits : S-6 and C-2"
+      },
+      {
+        "period": "third Saturday in June to December 15",
+        "species": "Muskellunge",
+        "limit": "S-1; must be greater than 102 centimetres, and C-0",
+        "length": "must be greater than 102 centimetres",
+        "gear": null,
+        "notes": null,
+        "raw": "Season : third Saturday in June to December 15 Limits : S-1; must be greater than 102 centimetres, and C-0"
+      },
+      {
+        "period": "open all year",
+        "species": "Northern pike",
+        "limit": "S-4 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-4 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Pacific salmon",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Rainbow trout",
+        "limit": "S-2 and C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-2 and C-1"
+      },
+      {
+        "period": "open all year",
+        "species": "Sunfish",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50 and C-25"
+      },
+      {
+        "period": "open all year",
+        "species": "Walleye and sauger combined",
+        "limit": "S-6 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-6 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Yellow perch",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50 and C-25"
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Limites combinées pour la truite et le saumon (y compris le touladi et l’omble de fontaine)",
+        "limit": "S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées.",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limites : S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées."
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Saumon atlantique",
+        "limit": "S-1 et C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-1 et C-0"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Truite brune",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Barbue de rivière",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Marigane",
+        "limit": "S-30 et C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-30 et C-10"
+      },
+      {
+        "period": "Fermée toute l’année",
+        "species": "Esturgeon de lac (esturgeon jaune)",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Fermée toute l’année"
+      },
+      {
+        "period": "Du 1er janvier au 30 septembre et du 1er décembre au 31 décembre",
+        "species": "Touladi",
+        "limit": "S-2 et C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 30 septembre et du 1er décembre au 31 décembre Limites : S-2 et C-1"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Grand corégone",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Du 4e samedi de juin au 30 novembre",
+        "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+        "limit": "S-6 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 4e samedi de juin au 30 novembre Limites : S-6 et C-2"
+      },
+      {
+        "period": "Du 3e samedi de juin au 15 décembre",
+        "species": "Maskinongé",
+        "limit": "S-1; doit mesurer plus de 102 centimètres, et C-0",
+        "length": "doit mesurer plus de 102 centimètres",
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 3e samedi de juin au 15 décembre Limites : S-1; doit mesurer plus de 102 centimètres, et C-0"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Grand brochet",
+        "limit": "S-4 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-4 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Saumon du Pacifique",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Truite arc-en-ciel",
+        "limit": "S-2 et C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-2 et C-1"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Crapet",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-50 et C-25"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Doré jaune et doré noir (toute combinaison)",
+        "limit": "S-6 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-6 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Perchaude",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-50 et C-25"
+      }
+    ]
+  },
+  "species_exceptions": {
+    "en": [],
+    "fr": []
+  },
+  "waterbody_exceptions": {
+    "en": [],
+    "fr": []
+  },
+  "bait_restrictions": {
+    "en": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "FMZ 13 part of the Great Lakes. Baitfish and leeches that are both dead and preserved can be transported into and out of BMZs and the Great Lakes.",
+        "raw": "FMZ 13 part of the Great Lakes. Baitfish and leeches that are both dead and preserved can be transported into and out of BMZs and the Great Lakes."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Baitfish and leeches that are not both dead and preserved may be transported out of: Refer to bait for more details.",
+        "raw": "Baitfish and leeches that are not both dead and preserved may be transported out of: Refer to bait for more details."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "an adjacent bait management zone and used in the Great Lakes",
+        "raw": "an adjacent bait management zone and used in the Great Lakes"
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "La ZGP 13 fait partie des Grands Lacs. Les poissons d’appât et les sangsues qui sont morts et conservés peuvent être apportés et sortis des ZGA et des Grands Lacs.",
+        "raw": "La ZGP 13 fait partie des Grands Lacs. Les poissons d’appât et les sangsues qui sont morts et conservés peuvent être apportés et sortis des ZGA et des Grands Lacs."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Les poissons d’appât et les sangsues qui ne sont pas morts et conservés peuvent être sortis : Voir la section sur les appâts pour plus de renseignements.",
+        "raw": "Les poissons d’appât et les sangsues qui ne sont pas morts et conservés peuvent être sortis : Voir la section sur les appâts pour plus de renseignements."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "d’une zone de gestion des appâts adjacente et utilisés dans les Grands Lacs",
+        "raw": "d’une zone de gestion des appâts adjacente et utilisés dans les Grands Lacs"
+      }
+    ]
+  },
+  "fish_sanctuaries": {
+    "en": [],
+    "fr": []
+  }
+}

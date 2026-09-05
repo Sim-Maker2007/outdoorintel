@@ -7,7 +7,7 @@
 //   GET /api/regulations?zone=ON-12&lang=en      -> Ontario FMZ 12
 //   GET /api/regulations?jurisdiction=ON&zone=12 -> Ontario FMZ 12
 //   GET /api/regulations?jurisdiction=ON&zone=5  -> Ontario FMZ 5
-//   GET /api/regulations?jurisdiction=ON&zone=9  -> 404 (unharvested Great Lakes FMZ; not QC 9)
+//   GET /api/regulations?jurisdiction=ON&zone=9  -> Ontario FMZ 9 (bare zone=9 stays Québec)
 //        &date=2026-06-15   filter to rules active on a date
 //        &species=doré      filter by species substring
 //        &waterbody=barbue  include a waterbody's exception rules
@@ -60,7 +60,7 @@ export default async function handler(req, res) {
       error: `Ontario FMZ ${String(found.zone).replace(/^ON-/, '')} is not harvested`,
       jurisdiction: 'ON',
       available: found.available.length ? found.available : onKeys(REGS),
-      note: `Ontario fishing harvest covers ${ (found.available.length ? found.available : onKeys(REGS)).join(', ') } — not complete Ontario. Unharvested FMZs (e.g. 9, 13, 14) 404. zone=12 without jurisdiction is Québec Zone 12.`,
+      note: `Ontario fishing harvest covers ${ (found.available.length ? found.available : onKeys(REGS)).join(', ') } — not complete Ontario. Unharvested Ontario FMZs 404. zone=12 without jurisdiction is Québec Zone 12.`,
     });
     return;
   }

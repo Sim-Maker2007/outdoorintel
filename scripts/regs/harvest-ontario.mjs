@@ -7,9 +7,9 @@
  * Does not write or rewrite Québec zone-*.json.
  *
  * Usage: node scripts/regs/harvest-ontario.mjs [--zones=12,16,17,18] [--html-dir=DIR]
- * Great Lakes slice: --zones=19,20. Far-north inland: --zones=1,2,3.
- * Northwest/northeast inland: --zones=4,5,6,7,8. Other inland: --zones=10,11,15.
- * Default still 12,16,17,18 so a bare run does not rewrite already-shipped FMZ files.
+ * Great Lakes slice: --zones=9,13,14 (Huron/Superior/Georgian) or --zones=19,20 (Erie/Ontario).
+ * Far-north inland: --zones=1,2,3. Northwest/northeast inland: --zones=4,5,6,7,8.
+ * Other inland: --zones=10,11,15. Default still 12,16,17,18 so a bare run does not rewrite shipped files.
  */
 import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -409,12 +409,17 @@ function parseSpeciesExceptions(section) {
   return { listed: blocks.length, harvested: rules.length, rules };
 }
 
+/** Optional ontario.ca New/Nouveau badge (or other leading spans) before a waterbody <strong>. */
+const WATERBODY_P_PREFIX = String.raw`<p>(?:\s*<span\b[^>]*>[\s\S]*?<\/span>)*\s*`;
+const WATERBODY_P_MATCH_RE = new RegExp(`${WATERBODY_P_PREFIX}<strong\\b[^>]*>([\\s\\S]*?)<\\/strong>([\\s\\S]*?)<\\/p>`, 'i');
+
 function waterbodyNameFromStrongP(pm) {
-  let name = text(pm[1]);
+  let name = text(pm[1]).replace(/^(?:New|Nouveau)\s+/i, '');
   let location = text(pm[2]).replace(/^[-–—:]\s*/, '');
-  const fullP = text(pm[0]);
+  const fullP = text(pm[0]).replace(/^(?:New|Nouveau)\s+/i, '');
   // ontario.ca splits "All waters of FMZ 20" across nested <strong>/abbr tags.
-  if (/all waters of|toutes les eaux/i.test(fullP) && /FMZ|ZGP/i.test(fullP)) {
+  // FMZ 9 FR HTML uses ZGA (bait-zone abbr) on the all-waters heading — keep verbatim.
+  if (/all waters of|toutes les eaux/i.test(fullP) && /FMZ|ZGP|ZGA/i.test(fullP)) {
     name = fullP.replace(/\s+/g, ' ').trim();
     location = '';
   }
@@ -452,16 +457,17 @@ function pushWaterbodyEntry(entries, seen, { name, location, lis, skippedRef, ch
 function parseWaterbodyExceptions(section) {
   if (!section) return { listed: 0, harvested: 0, entries: [], skippedFishOnLine: false };
   const skippedRef = { skippedFishOnLine: false };
-  const chunks = section.html.split(/(?=<p>\s*<strong\b)/i);
+  // Split on <p><strong> and <p><span class="badge">New</span> <strong>… (FMZ 9 Black Bay).
+  const chunks = section.html.split(new RegExp(`(?=${WATERBODY_P_PREFIX}<strong\\b)`, 'i'));
   const entries = [];
   const seen = new Set();
   for (const chunk of chunks) {
-    const pm = chunk.match(/<p>\s*<strong\b[^>]*>([\s\S]*?)<\/strong>([\s\S]*?)<\/p>/i);
+    const pm = chunk.match(WATERBODY_P_MATCH_RE);
     if (!pm) continue;
     const { name, location } = waterbodyNameFromStrongP(pm);
     if (!name) continue;
     const after = chunk.slice(chunk.indexOf('</p>') + 4);
-    const lis = allLiTexts(after.split(/<p>\s*<strong\b/i)[0] || after);
+    const lis = allLiTexts(after.split(new RegExp(WATERBODY_P_PREFIX + '<strong\\b', 'i'))[0] || after);
     pushWaterbodyEntry(entries, seen, { name, location, lis, skippedRef, chunkHtml: chunk });
   }
   // FR Great Lakes pages use h3 waterbody names instead of <p><strong>.
@@ -475,7 +481,7 @@ function parseWaterbodyExceptions(section) {
       pushWaterbodyEntry(entries, seen, { name, location: null, lis, skippedRef, chunkHtml: b.html });
     }
   }
-  const strongCount = [...section.html.matchAll(/<p>\s*<strong\b/gi)].length;
+  const strongCount = [...section.html.matchAll(new RegExp(`${WATERBODY_P_PREFIX}<strong\\b`, 'gi'))].length;
   const h3Count = h3Blocks(section.html).length;
   const listed = Math.max(strongCount, h3Count, entries.length);
   return { listed, harvested: entries.length, entries, skippedFishOnLine: skippedRef.skippedFishOnLine };
