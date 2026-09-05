@@ -1,0 +1,625 @@
+{
+  "zone_id": 9,
+  "zone_key": "ON-9",
+  "activity": "fishing",
+  "jurisdiction": "ON",
+  "fmz": 9,
+  "licence_year": 2026,
+  "authority": "Ontario Ministry of Natural Resources (MNR); Ontario Fishing Regulations Summary 2026 (not the official law)",
+  "source": {
+    "en": "https://www.ontario.ca/document/ontario-fishing-regulations-summary/fisheries-management-zone-9",
+    "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-peche/zone-de-gestion-des-peches-9",
+    "pdf_en": "https://ontario.ca/files/2025-12/mnr-2026-fishing-regulations-summary-en-2025-12-08.pdf",
+    "fish_on_line": "https://www.gisapplication.lrc.gov.on.ca/FishONLine/Index.html?site=FishONLine&viewer=FishONLine&locale=en-US&FMZ=9",
+    "fetched_at": "2026-09-05",
+    "html_updated": "2026-08-04",
+    "note": "Rule text reproduced verbatim from the Ontario Fishing Regulations Summary HTML (not the PDF). The Summary is not the official law. Always verify with the MNR and Fish ON-Line before fishing. Crown copyright."
+  },
+  "coverage": {
+    "licence_year": 2026,
+    "skipped_fish_on_line_only": false,
+    "zone_wide_listed": 18,
+    "zone_wide_harvested": 18,
+    "species_exceptions_listed": 2,
+    "species_exceptions_harvested": 2,
+    "waterbody_exceptions_listed": 2,
+    "waterbody_exceptions_harvested": 2,
+    "fish_sanctuaries_listed": 0,
+    "fish_sanctuaries_harvested": 0,
+    "bait_restrictions_listed": 3,
+    "bait_restrictions_harvested": 3,
+    "complete": true,
+    "note": "Zone-wide seasons/limits and listed HTML exceptions/sanctuaries for this FMZ are included. The Ontario Fishing Regulations Summary is not the law; verify with Fish ON-Line. This is not complete Ontario."
+  },
+  "title": {
+    "en": "Fisheries Management Zone 9 — Ontario FMZ 9",
+    "fr": "Zone de gestion des pêches 9 — Ontario ZGP 9"
+  },
+  "notices": {
+    "en": [
+      "St. Mary’s River west of the compensating works gate and the canal lock in Sault Ste. Marie is in Zone 9.",
+      "Refer to general fishing regulations for more information on how to use this summary.",
+      "New As of Jan 1, 2026, the zone-wide minimum size limit for Muskellunge is 137 centimetres.",
+      "New Waterbody exception for walleye and sauger combined, and northern pike in Lake Superior, Black Bay",
+      "FMZ 9 is part of the Great Lakes. Baitfish and leeches that are both dead and preserved can be transported into and out of BMZs and the Great Lakes.",
+      "Baitfish and leeches that are not both dead and preserved may be transported out of: Refer to bait for more details.",
+      "an adjacent bait management zone and used in the Great Lakes",
+      "the Great Lakes only to be disposed of immediately more than 30 metres from the water"
+    ],
+    "fr": [
+      "La rivière Ste-Maria à l'ouest de la vanne de l'ouvrage de compensation et l'écluse située à Sault Ste. Marie se trouvent dans la zone 9.",
+      "Voir les Règlements généraux concernant la pêche pour plus de renseignements sur l’utilisation de ce Résumé.",
+      "Nouveau À partir du 1er janvier 2026, la limite de taille minimale visant toute la zone pour le maskinongé est 137 centimètres.",
+      "Nouveau Exceptions visant des plans d'eau particuliers pour le doré jaune et le doré noir (toute combinaison) et pour le grand brochet dans le lac Supérieur, baie Black.",
+      "La ZGP 9 fait partie des Grands Lacs. Les poissons d’appât et les sangsues qui sont morts et conservés peuvent être apportés et sortis des ZGA et des Grands Lacs.",
+      "Les poissons d’appât et les sangsues qui ne sont pas morts et conservés peuvent être sortis : Voir la section sur les appâts pour plus de renseignements.",
+      "d’une zone de gestion des appâts adjacente et utilisés dans les Grands Lacs",
+      "des Grands Lacs seulement pour être immédiatement jetés à plus de 30 mètres du bord de l’eau"
+    ]
+  },
+  "general": {
+    "en": [
+      {
+        "period": null,
+        "species": "Aggregate limits for trout and salmon (including splake)",
+        "limit": "S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limits: S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined"
+      },
+      {
+        "period": "open all year",
+        "species": "Atlantic salmon",
+        "limit": "S-1 and C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-1 and C-0"
+      },
+      {
+        "period": "fourth Saturday in April to Labour Day",
+        "species": "Brook trout",
+        "limit": "S-1; must be greater than 56 centimetres, and C-0",
+        "length": "must be greater than 56 centimetres",
+        "gear": null,
+        "notes": null,
+        "raw": "Season : fourth Saturday in April to Labour Day Limits : S-1; must be greater than 56 centimetres, and C-0"
+      },
+      {
+        "period": "open all year",
+        "species": "Brown trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Channel catfish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "open all year",
+        "species": "Crappie",
+        "limit": "S-30 and C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-30 and C-10"
+      },
+      {
+        "period": "closed all year",
+        "species": "Lake sturgeon",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : closed all year"
+      },
+      {
+        "period": "January 1 to September 30",
+        "species": "Lake trout",
+        "limit": "S-3 and C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to September 30 Limits : S-3 and C-1"
+      },
+      {
+        "period": "open all year",
+        "species": "Lake whitefish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "open all year",
+        "species": "Largemouth and smallmouth bass combined",
+        "limit": "S-6 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-6 and C-2"
+      },
+      {
+        "period": "third Saturday in June to December 15",
+        "species": "Muskellunge",
+        "limit": "S-1; New must be greater than 137 centimetres, and C-0",
+        "length": "must be greater than 137 centimetres",
+        "gear": null,
+        "notes": null,
+        "raw": "Season : third Saturday in June to December 15 Limits : S-1; New must be greater than 137 centimetres, and C-0"
+      },
+      {
+        "period": "open all year",
+        "species": "Northern pike",
+        "limit": "S-4 and C-2; none between 70–90 centimetres, not more than 1 greater than 90 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-4 and C-2; none between 70–90 centimetres, not more than 1 greater than 90 centimetres"
+      },
+      {
+        "period": "open all year",
+        "species": "Pacific salmon",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Rainbow trout",
+        "limit": "S-1 and C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-1 and C-0"
+      },
+      {
+        "period": "January 1 to September 30",
+        "species": "Splake",
+        "limit": "S-3 and C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to September 30 Limits : S-3 and C-1"
+      },
+      {
+        "period": "open all year",
+        "species": "Sunfish",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50 and C-25"
+      },
+      {
+        "period": "January 1 to April 14 and third Saturday in May to December 31",
+        "species": "Walleye and sauger combined",
+        "limit": "S-2 and C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to April 14 and third Saturday in May to December 31 Limits : S-2 and C-1"
+      },
+      {
+        "period": "open all year",
+        "species": "Yellow perch",
+        "limit": "S-25 and C-12",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-25 and C-12"
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Limites combinées pour la truite et le saumon (y compris le touladi et l’omble de fontaine)",
+        "limit": "S-5 et C-2; limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées.",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limites : S-5 et C-2; limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées."
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Saumon atlantique",
+        "limit": "S-1 et C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-1 et C-0"
+      },
+      {
+        "period": "Du 4e samedi d’avril à la fête du Travail",
+        "species": "Omble de fontaine",
+        "limit": "S-1; doit mesurer plus de 56 centimètres, et C-0",
+        "length": "doit mesurer plus de 56 centimètres",
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 4e samedi d’avril à la fête du Travail Limites : S-1; doit mesurer plus de 56 centimètres, et C-0"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Truite brune",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Barbue de rivière",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Marigane",
+        "limit": "S-30 et C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-30 et C-10"
+      },
+      {
+        "period": "Fermée toute l’année",
+        "species": "Esturgeon de lac (esturgeon jaune)",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Fermée toute l’année"
+      },
+      {
+        "period": "Du 1er janvier au 30 septembre",
+        "species": "Touladi",
+        "limit": "S-3 et C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 30 septembre Limites : S-3 et C-1"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Grand corégone",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+        "limit": "S-6 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-6 et C-2"
+      },
+      {
+        "period": "Du 3e samedi de juin au 15 décembre",
+        "species": "Maskinongé",
+        "limit": "S-1; Nouveau doit mesurer plus de 137 centimètres, et C-0",
+        "length": "doit mesurer plus de 137 centimètres",
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 3e samedi de juin au 15 décembre Limites : S-1; Nouveau doit mesurer plus de 137 centimètres, et C-0"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Grand brochet",
+        "limit": "S-4 et C-2; aucun entre 70 et 90 centimètres, un seul dépassant 90 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-4 et C-2; aucun entre 70 et 90 centimètres, un seul dépassant 90 centimètres"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Saumon du Pacifique",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Truite arc-en-ciel",
+        "limit": "S-1 et C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-1 et C-0"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Crapet",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-50 et C-25"
+      },
+      {
+        "period": "Du 1er janvier au 14 avril et du 3e samedi de mai au 31 décembre",
+        "species": "Doré jaune et doré noir (toute combinaison)",
+        "limit": "S-2 et C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 14 avril et du 3e samedi de mai au 31 décembre Limites : S-2 et C-1"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Perchaude",
+        "limit": "S-25 et C-12",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-25 et C-12"
+      }
+    ]
+  },
+  "species_exceptions": {
+    "en": [
+      {
+        "period": null,
+        "species": "Rainbow trout",
+        "limit": "S-2 and C-1",
+        "length": null,
+        "gear": null,
+        "notes": "Lake Superior, east of the Pic River (Zone 9)",
+        "raw": "Limits : S-2 and C-1",
+        "waters": [
+          "Lake Superior, east of the Pic River (Zone 9)"
+        ]
+      },
+      {
+        "period": "closed all year Season : open from January 1 to March 31 and July 1 to December 31",
+        "species": "Walleye and sauger",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Nipigon River and Nipigon Bay — The Nipigon River from the Alexander Falls Dam in Zone 6 to Nipigon Bay in Zone 9, and the waters of Nipigon Bay in Zone 9 north of a line drawn from Simpson Island (48°49'48\" N , 87°40'40\" W ) across the bay to the mainland at 48°51'21\" N , 87°38'47\" W · Montreal River — from the first Great Lakes Power Dam to Lake Superior",
+        "raw": "Season : closed all year Season : open from January 1 to March 31 and July 1 to December 31",
+        "waters": [
+          "Nipigon River and Nipigon Bay — The Nipigon River from the Alexander Falls Dam in Zone 6 to Nipigon Bay in Zone 9, and the waters of Nipigon Bay in Zone 9 north of a line drawn from Simpson Island (48°49'48\" N , 87°40'40\" W ) across the bay to the mainland at 48°51'21\" N , 87°38'47\" W",
+          "Montreal River — from the first Great Lakes Power Dam to Lake Superior"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Truite arc-en-ciel",
+        "limit": "S-2 et C-1",
+        "length": null,
+        "gear": null,
+        "notes": "Lac Supérieur, à l’est de la rivière Pic (zone 9)",
+        "raw": "Limites : S-2 et C-1",
+        "waters": [
+          "Lac Supérieur, à l’est de la rivière Pic (zone 9)"
+        ]
+      },
+      {
+        "period": "Fermée toute l’année Saison : Ouverte du 1er janvier au 31 mars et du 1er juillet au 31 décembre",
+        "species": "Doré jaune et doré noir",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Rivière Nipigon et baie Nipigon — La rivière Nipigon du barrage des chutes Alexander dans la zone 6 jusqu’à la baie Nipigon dans la zone 9, et les eaux de la baie Nipigon dans la zone 9 au nord d’une ligne tirée de l’île Simpson (48°49′48″ N , 87°40′40″ O ) en travers de la baie jusqu’à la terre ferme à 48°51′21″ N , 87°38′47″ O · Rivière Montréal — du premier barrage électrique sur les Grands Lacs jusqu’au lac Supérieur",
+        "raw": "Saison : Fermée toute l’année Saison : Ouverte du 1er janvier au 31 mars et du 1er juillet au 31 décembre",
+        "waters": [
+          "Rivière Nipigon et baie Nipigon — La rivière Nipigon du barrage des chutes Alexander dans la zone 6 jusqu’à la baie Nipigon dans la zone 9, et les eaux de la baie Nipigon dans la zone 9 au nord d’une ligne tirée de l’île Simpson (48°49′48″ N , 87°40′40″ O ) en travers de la baie jusqu’à la terre ferme à 48°51′21″ N , 87°38′47″ O",
+          "Rivière Montréal — du premier barrage électrique sur les Grands Lacs jusqu’au lac Supérieur"
+        ]
+      }
+    ]
+  },
+  "waterbody_exceptions": {
+    "en": [
+      {
+        "name": "All waters of FMZ 9",
+        "location": null,
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Two lines may be used when trolling from a boat in open water",
+            "raw": "Two lines may be used when trolling from a boat in open water"
+          }
+        ],
+        "raw": "All waters of FMZ 9 Two lines may be used when trolling from a boat in open water"
+      },
+      {
+        "name": "Lake Superior — Black Bay",
+        "location": "to the southern tip of the Black Bay Peninsula (48°24'35\" N , 88°33'37\" W ) to Magnet Island, to Porphyry Island, to an unnamed point (48°20'28\" N , 88°46'09\" W ) on the southeast side of Sibley Peninsula",
+        "rules": [
+          {
+            "period": "open all year",
+            "species": "Northern pike",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open all year",
+            "raw": "Northern pike — open all year"
+          },
+          {
+            "period": null,
+            "species": "Northern pike",
+            "limit": "S-2, not more than 1 greater than 70 centimetres, none greater than 90 centimetres, and C-1; none greater than 90 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-2, not more than 1 greater than 70 centimetres, none greater than 90 centimetres, and C-1; none greater than 90 centimetres",
+            "raw": "Northern pike — S-2, not more than 1 greater than 70 centimetres, none greater than 90 centimetres, and C-1; none greater than 90 centimetres"
+          },
+          {
+            "period": "open July 1 to December 31",
+            "species": "Walleye and sauger",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open July 1 to December 31",
+            "raw": "Walleye and sauger — open July 1 to December 31"
+          },
+          {
+            "period": null,
+            "species": "Walleye and sauger",
+            "limit": "S-2 and C-1; must be between 40–50 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-2 and C-1; must be between 40–50 centimetres",
+            "raw": "Walleye and sauger — S-2 and C-1; must be between 40–50 centimetres"
+          }
+        ],
+        "raw": "Lake Superior — Black Bay to the southern tip of the Black Bay Peninsula (48°24'35\" N , 88°33'37\" W ) to Magnet Island, to Porphyry Island, to an unnamed point (48°20'28\" N , 88°46'09\" W ) on the southeast side of Sibley Peninsula Northern pike — open all year | Northern pike — S-2, not more than 1 greater than 70 centimetres, none greater than 90 centimetres, and C-1; none greater than 90 centimetres | Walleye and sauger — open July 1 to December 31 | Walleye and sauger — S-2 and C-1; must be between 40–50 centimetres"
+      }
+    ],
+    "fr": [
+      {
+        "name": "Toutes les eaux de la ZGA 9",
+        "location": null,
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est permis d’utiliser 2 lignes quand on pêche à la traîne à bord d’un bateau en eau libre",
+            "raw": "Il est permis d’utiliser 2 lignes quand on pêche à la traîne à bord d’un bateau en eau libre"
+          }
+        ],
+        "raw": "Toutes les eaux de la ZGA 9 Il est permis d’utiliser 2 lignes quand on pêche à la traîne à bord d’un bateau en eau libre"
+      },
+      {
+        "name": "Du lac Supérieur — baie Black",
+        "location": "jusqu’à l’extrémité la plus au sud de la péninsule de la baie Black (48°24'35\" N , 88°33'37\" O ) jusqu’à l’île Magnet, jusqu’à l’île Porphyry, jusqu’à un point sans nom (48°20'28\" N , 88°46'09\" O ) à l’extrémité sud-est de la péninsule Sibley",
+        "rules": [
+          {
+            "period": "ouverte toute l’année",
+            "species": "Grand brochet",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "ouverte toute l’année",
+            "raw": "Grand brochet — ouverte toute l’année"
+          },
+          {
+            "period": null,
+            "species": "Grand brochet",
+            "limit": "S-2, un seul dépassant 70 centimètres, aucun dépassant 90 centimètres, et C-1, aucun dépassant 90 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "S-2, un seul dépassant 70 centimètres, aucun dépassant 90 centimètres, et C-1, aucun dépassant 90 centimètres",
+            "raw": "Grand brochet — S-2, un seul dépassant 70 centimètres, aucun dépassant 90 centimètres, et C-1, aucun dépassant 90 centimètres"
+          },
+          {
+            "period": "ouverte du 1er juillet au 31 décembre",
+            "species": "Doré jaune et doré noir",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "ouverte du 1er juillet au 31 décembre",
+            "raw": "Doré jaune et doré noir — ouverte du 1er juillet au 31 décembre"
+          },
+          {
+            "period": null,
+            "species": "Doré jaune et doré noir",
+            "limit": "S-2 et C-1, doit mesurer entre 40 et 50 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "S-2 et C-1, doit mesurer entre 40 et 50 centimètres",
+            "raw": "Doré jaune et doré noir — S-2 et C-1, doit mesurer entre 40 et 50 centimètres"
+          }
+        ],
+        "raw": "Du lac Supérieur — baie Black jusqu’à l’extrémité la plus au sud de la péninsule de la baie Black (48°24'35\" N , 88°33'37\" O ) jusqu’à l’île Magnet, jusqu’à l’île Porphyry, jusqu’à un point sans nom (48°20'28\" N , 88°46'09\" O ) à l’extrémité sud-est de la péninsule Sibley Grand brochet — ouverte toute l’année | Grand brochet — S-2, un seul dépassant 70 centimètres, aucun dépassant 90 centimètres, et C-1, aucun dépassant 90 centimètres | Doré jaune et doré noir — ouverte du 1er juillet au 31 décembre | Doré jaune et doré noir — S-2 et C-1, doit mesurer entre 40 et 50 centimètres"
+      }
+    ]
+  },
+  "bait_restrictions": {
+    "en": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "FMZ 9 is part of the Great Lakes. Baitfish and leeches that are both dead and preserved can be transported into and out of BMZs and the Great Lakes.",
+        "raw": "FMZ 9 is part of the Great Lakes. Baitfish and leeches that are both dead and preserved can be transported into and out of BMZs and the Great Lakes."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Baitfish and leeches that are not both dead and preserved may be transported out of: Refer to bait for more details.",
+        "raw": "Baitfish and leeches that are not both dead and preserved may be transported out of: Refer to bait for more details."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "an adjacent bait management zone and used in the Great Lakes",
+        "raw": "an adjacent bait management zone and used in the Great Lakes"
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "La ZGP 9 fait partie des Grands Lacs. Les poissons d’appât et les sangsues qui sont morts et conservés peuvent être apportés et sortis des ZGA et des Grands Lacs.",
+        "raw": "La ZGP 9 fait partie des Grands Lacs. Les poissons d’appât et les sangsues qui sont morts et conservés peuvent être apportés et sortis des ZGA et des Grands Lacs."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Les poissons d’appât et les sangsues qui ne sont pas morts et conservés peuvent être sortis : Voir la section sur les appâts pour plus de renseignements.",
+        "raw": "Les poissons d’appât et les sangsues qui ne sont pas morts et conservés peuvent être sortis : Voir la section sur les appâts pour plus de renseignements."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "d’une zone de gestion des appâts adjacente et utilisés dans les Grands Lacs",
+        "raw": "d’une zone de gestion des appâts adjacente et utilisés dans les Grands Lacs"
+      }
+    ]
+  },
+  "fish_sanctuaries": {
+    "en": [],
+    "fr": []
+  }
+}

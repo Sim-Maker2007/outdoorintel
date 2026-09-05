@@ -1,0 +1,1018 @@
+{
+  "zone_id": 14,
+  "zone_key": "ON-14",
+  "activity": "fishing",
+  "jurisdiction": "ON",
+  "fmz": 14,
+  "licence_year": 2026,
+  "authority": "Ontario Ministry of Natural Resources (MNR); Ontario Fishing Regulations Summary 2026 (not the official law)",
+  "source": {
+    "en": "https://www.ontario.ca/document/ontario-fishing-regulations-summary/fisheries-management-zone-14",
+    "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-peche/zone-de-gestion-des-peches-14",
+    "pdf_en": "https://ontario.ca/files/2025-12/mnr-2026-fishing-regulations-summary-en-2025-12-08.pdf",
+    "fish_on_line": "https://www.gisapplication.lrc.gov.on.ca/FishONLine/Index.html?site=FishONLine&viewer=FishONLine&locale=en-US&FMZ=14",
+    "fetched_at": "2026-09-05",
+    "html_updated": "2026-08-04",
+    "note": "Rule text reproduced verbatim from the Ontario Fishing Regulations Summary HTML (not the PDF). The Summary is not the official law. Always verify with the MNR and Fish ON-Line before fishing. Crown copyright."
+  },
+  "coverage": {
+    "licence_year": 2026,
+    "skipped_fish_on_line_only": false,
+    "zone_wide_listed": 17,
+    "zone_wide_harvested": 17,
+    "species_exceptions_listed": 4,
+    "species_exceptions_harvested": 4,
+    "waterbody_exceptions_listed": 6,
+    "waterbody_exceptions_harvested": 6,
+    "fish_sanctuaries_listed": 3,
+    "fish_sanctuaries_harvested": 3,
+    "bait_restrictions_listed": 3,
+    "bait_restrictions_harvested": 3,
+    "complete": true,
+    "note": "Zone-wide seasons/limits and listed HTML exceptions/sanctuaries for this FMZ are included. The Ontario Fishing Regulations Summary is not the law; verify with Fish ON-Line. This is not complete Ontario."
+  },
+  "title": {
+    "en": "Fisheries Management Zone 14 — Ontario FMZ 14",
+    "fr": "Zone de gestion des pêches 14 — Ontario ZGP 14"
+  },
+  "notices": {
+    "en": [
+      "All lakes on Manitoulin Island are a part of Zone 10 except South Bay (Zone 13) and Lake Wolsey (Zone 14). There are some regulatory exceptions in place on Manitoulin Island. Please refer to Manitoulin Island - inland waters under Exceptions to Zone 10 Regulations .",
+      "St. Mary’s River west of the compensating works gate and the canal lock in Sault Ste. Marie is in Zone 14.",
+      "Refer to general fishing regulations for more information on how to use this summary.",
+      "The following species are not present in this Zone and are closed to fishing all year:",
+      "brook trout",
+      "splake",
+      "The following areas of Georgian Bay have different regulations that are listed in the waterbody exceptions :",
+      "Big Sound of Parry Sound",
+      "Iroquois Bay",
+      "St. Marys River",
+      "FMZ 14 is part of the Great Lakes. Baitfish and leeches that are both dead and preserved can be transported into and out of BMZs and the Great Lakes.",
+      "Baitfish and leeches that are not both dead and preserved may be transported out of: Refer to bait for more details.",
+      "an adjacent Bait Management Zone and used in the Great Lakes",
+      "the Great Lakes only to be disposed of immediately more than 30 metres from the water"
+    ],
+    "fr": [
+      "Tous les lacs sure l’île Manitoulin font partie de la zone 10 sauf la baie South (zone 13) et le lac Wolsey (zone 14). Il existe certaines exceptions règlementaires touchant l’île Manitoulin. Veuillez consulter « île Manitoulin les eaux à l'intérieur des terres » sous Exceptions aux règlements - zone 10.",
+      "À l'est de la porte d'écluse de l'ouvrage de compensation et de l'écluse de Sault Ste. Marie, la rivière Ste-Marie est dans la zone 14.",
+      "Voir les Règlements généraux concernant la pêche pour plus de renseignements sur l’utilisation de ce Résumé.",
+      "On ne trouve pas les espèces suivantes dans cette zone et leur pêche est donc interdite toute l’année :",
+      "omble de fontaine",
+      "truite moulac",
+      "Les parties suivantes de la baie Georgienne ont des règlements différents qui sont mentionnés dans les exceptions visant des plans d’eau particuliers :",
+      "Big Sound de Parry Sound",
+      "baie Iroquois",
+      "rivière Ste-Marie",
+      "La ZGP 14 fait partie des Grands Lacs. Les poissons d’appât et les sangsues qui sont morts et conservés peuvent être apportés et sortis des ZGA et des Grands Lacs.",
+      "Les poissons d’appât et les sangsues qui ne sont pas morts et conservés peuvent être sortis : Voir la section sur les appâts pour plus de renseignements.",
+      "d’une zone de gestion des appâts adjacente et utilisés dans les Grands Lacs",
+      "des Grands Lacs seulement pour être immédiatement jetés à plus de 30 mètres du bord de l’eau"
+    ]
+  },
+  "general": {
+    "en": [
+      {
+        "period": null,
+        "species": "Aggregate limits for trout and salmon (including splake)",
+        "limit": "S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limits : S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined"
+      },
+      {
+        "period": "open all year",
+        "species": "Atlantic salmon",
+        "limit": "S-1 and C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-1 and C-0"
+      },
+      {
+        "period": "open all year",
+        "species": "Brown trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Channel catfish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "open all year",
+        "species": "Crappie",
+        "limit": "S-30 and C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-30 and C-10"
+      },
+      {
+        "period": "open all year",
+        "species": "Lake herring (cisco)",
+        "limit": "S-25 and C-12",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-25 and C-12"
+      },
+      {
+        "period": "closed all year",
+        "species": "Lake sturgeon",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : closed all year"
+      },
+      {
+        "period": "January 1 to September 30 and December 1 to December 31",
+        "species": "Lake trout",
+        "limit": "S-2 and C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to September 30 and December 1 to December 31 Limits : S-2 and C-1"
+      },
+      {
+        "period": "open all year",
+        "species": "Lake whitefish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "fourth Saturday in June to November 30",
+        "species": "Largemouth and smallmouth bass combined",
+        "limit": "S-3 and C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : fourth Saturday in June to November 30 Limits : S-3 and C-1"
+      },
+      {
+        "period": "third Saturday in June to December 15",
+        "species": "Muskellunge",
+        "limit": "S-1; must be greater than 137 centimetres, and C-0",
+        "length": "must be greater than 137 centimetres",
+        "gear": null,
+        "notes": null,
+        "raw": "Season : third Saturday in June to December 15 Limits : S-1; must be greater than 137 centimetres, and C-0"
+      },
+      {
+        "period": "January 1 to March 1 and May 1 to December 31",
+        "species": "Northern pike",
+        "limit": "S-2; in one day, possession limit of four, not more than one greater than 86 centimetres, and C-1; in one day, possession limit of two, not more than one greater than 86 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to March 1 and May 1 to December 31 Limits : S-2; in one day, possession limit of four, not more than one greater than 86 centimetres, and C-1; in one day, possession limit of two, not more than one greater than 86 centimetres"
+      },
+      {
+        "period": "open all year",
+        "species": "Pacific salmon",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Rainbow trout",
+        "limit": "S-2 and C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-2 and C-1"
+      },
+      {
+        "period": "open all year",
+        "species": "Sunfish",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50 and C-25"
+      },
+      {
+        "period": "January 1 to March 1 and May 1 to December 31",
+        "species": "Walleye and sauger combined",
+        "limit": "S-2; in one day, possession limit of four, none between 41-56 centimetres, not more than one greater than 56 centimetres, and C-1; in one day, possession limit of two, none between 41-56 centimetres, not more than one greater than 56 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to March 1 and May 1 to December 31 Limits : S-2; in one day, possession limit of four, none between 41-56 centimetres, not more than one greater than 56 centimetres, and C-1; in one day, possession limit of two, none between 41-56 centimetres, not more than one greater than 56 centimetres"
+      },
+      {
+        "period": "open all year",
+        "species": "Yellow perch",
+        "limit": "S-25; in one day, possession limit of 50, and C-12; in one day, possession limit of 25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-25; in one day, possession limit of 50, and C-12; in one day, possession limit of 25"
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Limites combinées pour la truite et le saumon (y compris le touladi et l’omble de fontaine)",
+        "limit": "S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées.",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limites : S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées."
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Saumon atlantique",
+        "limit": "S-1 et C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-1 et C-0"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Truite brune",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Barbue de rivière",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Marigane",
+        "limit": "S-30 et C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-30 et C-10"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Cisco de lac",
+        "limit": "S-25 et C-12",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-25 et C-12"
+      },
+      {
+        "period": "Fermée toute l’année",
+        "species": "Esturgeon de lac (esturgeon jaune)",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Fermée toute l’année"
+      },
+      {
+        "period": "Du 1er janvier au 30 septembre et du 1er décembre au 31 décembre",
+        "species": "Touladi",
+        "limit": "S-2 et C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 30 septembre et du 1er décembre au 31 décembre Limites : S-2 et C-1"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Grand corégone",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Du 4e samedi de juin au 30 novembre",
+        "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+        "limit": "S-3 et C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 4e samedi de juin au 30 novembre Limites : S-3 et C-1"
+      },
+      {
+        "period": "Du 3e samedi de juin au 15 décembre",
+        "species": "Maskinongé",
+        "limit": "S-1; doit mesurer plus de 137 centimètres, et C-0",
+        "length": "doit mesurer plus de 137 centimètres",
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 3e samedi de juin au 15 décembre Limites : S-1; doit mesurer plus de 137 centimètres, et C-0"
+      },
+      {
+        "period": "Du 1er janvier au 1er mars et du 1er mai au 31 décembre",
+        "species": "Grand brochet",
+        "limit": "S-2; par jour, limite de possession de quatre, un seul dépassant 86 centimètres, et C-1; par jour, limite de possession de deux, un seul dépassant 86 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 1er mars et du 1er mai au 31 décembre Limites : S-2; par jour, limite de possession de quatre, un seul dépassant 86 centimètres, et C-1; par jour, limite de possession de deux, un seul dépassant 86 centimètres"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Saumon du Pacifique",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Truite arc-en-ciel",
+        "limit": "S-2 et C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-2 et C-1"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Crapet",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-50 et C-25"
+      },
+      {
+        "period": "Du 1er janvier au 1er mars et du 1er mai au 31 décembre",
+        "species": "Doré jaune et doré noir (toute combinaison)",
+        "limit": "S-2; par jour, limite de possession de quatre, aucun entre 41 et 56 centimètres, un seul dépassant 56 centimètres, et C-1; par jour, limite de possession de deux, aucun entre 41 et 56 centimètres, un seul dépassant 56 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 1er mars et du 1er mai au 31 décembre Limites : S-2; par jour, limite de possession de quatre, aucun entre 41 et 56 centimètres, un seul dépassant 56 centimètres, et C-1; par jour, limite de possession de deux, aucun entre 41 et 56 centimètres, un seul dépassant 56 centimètres"
+      },
+      {
+        "period": "Ouverte toute l’année",
+        "species": "Perchaude",
+        "limit": "S-25; par jour, limite de possession de 50, et C-12; par jour, limite de possession de 25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Ouverte toute l’année Limites : S-25; par jour, limite de possession de 50, et C-12; par jour, limite de possession de 25"
+      }
+    ]
+  },
+  "species_exceptions": {
+    "en": [
+      {
+        "period": null,
+        "species": "Lake trout",
+        "limit": "S-1 and C-0",
+        "length": null,
+        "gear": null,
+        "notes": "Georgian Bay - waters west and south of the Killbear Channel in Georgian Bay, in the District of Parry Sound. Western boundary from Green Point to the most northerly point of Hertzberg Island to Colin Rock to the most westerly point of North Limestone Island to the southwestern point of Sandy Island to the most northern point of the largest of the Umbrella Islands to the most northern point of Frying Pan Island to the most southern point of Sans Souci Island to Mainland Point. Eastern boundary from Oak Point to the lighthouse on Jones Islands to the lighthouse on Gordon Rocks to the most northerly point of Snake Island to the lighthouse on Snug Island due east to the mainland and the swing bridge connecting Rose Point to Parry Island. Includes Five Mile Bay and waters around McLaren and Isabella Island. · For additional clarity on Lake Trout regulations in Georgian Bay please refer to the map located at Fisheries Management Zone 14 ( FMZ 14)",
+        "raw": "Limits : S-1 and C-0",
+        "waters": [
+          "Georgian Bay - waters west and south of the Killbear Channel in Georgian Bay, in the District of Parry Sound. Western boundary from Green Point to the most northerly point of Hertzberg Island to Colin Rock to the most westerly point of North Limestone Island to the southwestern point of Sandy Island to the most northern point of the largest of the Umbrella Islands to the most northern point of Frying Pan Island to the most southern point of Sans Souci Island to Mainland Point. Eastern boundary from Oak Point to the lighthouse on Jones Islands to the lighthouse on Gordon Rocks to the most northerly point of Snake Island to the lighthouse on Snug Island due east to the mainland and the swing bridge connecting Rose Point to Parry Island. Includes Five Mile Bay and waters around McLaren and Isabella Island.",
+          "For additional clarity on Lake Trout regulations in Georgian Bay please refer to the map located at Fisheries Management Zone 14 ( FMZ 14)"
+        ]
+      },
+      {
+        "period": null,
+        "species": "Rainbow trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": "North Channel (Lake Huron) - waters lying west of a straight line from the most northerly point (45°48′28″ N , 81°35′44″ W ) on the water’s edge of Cape Smith (on Manitoulin Island) to the most southerly point (45°58′05″ N , 81°29′20″ W ) on the water’s edge of Red Rock Point (east of the Town of Killarney), and east of a straight line from the most southerly point (46°10′31″ N , 82°53′06″ W ) on the water’s edge along the shore of Mary Point (east of Blind River) to the most northerly point (45°59′52″ N , 82°48′40″ W ) on the water’s edge of Cape Roberts (on the west side of Bayfield Sound on Manitoulin Island)",
+        "raw": "Limits : S-5 and C-2",
+        "waters": [
+          "North Channel (Lake Huron) - waters lying west of a straight line from the most northerly point (45°48′28″ N , 81°35′44″ W ) on the water’s edge of Cape Smith (on Manitoulin Island) to the most southerly point (45°58′05″ N , 81°29′20″ W ) on the water’s edge of Red Rock Point (east of the Town of Killarney), and east of a straight line from the most southerly point (46°10′31″ N , 82°53′06″ W ) on the water’s edge along the shore of Mary Point (east of Blind River) to the most northerly point (45°59′52″ N , 82°48′40″ W ) on the water’s edge of Cape Roberts (on the west side of Bayfield Sound on Manitoulin Island)"
+        ]
+      },
+      {
+        "period": "closed all year Season : January 1 to March 1 and third Saturday in May to December 31",
+        "species": "Walleye",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "McGregor Bay (Lake Huron) - north of a line drawn from the most westerly point of McGregor Point to the most easterly point of land of Little La Cloche Island, including Iroquois Bay · Whitefish River-Curtin Township from the mouth at the North Channel of Lake Huron, upstream to the Frood Lake Dam, east of Highway 6",
+        "raw": "Season : closed all year Season : January 1 to March 1 and third Saturday in May to December 31",
+        "waters": [
+          "McGregor Bay (Lake Huron) - north of a line drawn from the most westerly point of McGregor Point to the most easterly point of land of Little La Cloche Island, including Iroquois Bay",
+          "Whitefish River-Curtin Township from the mouth at the North Channel of Lake Huron, upstream to the Frood Lake Dam, east of Highway 6"
+        ]
+      },
+      {
+        "period": "January 1 to March 31 and third Saturday in May to December 31",
+        "species": "Yellow perch",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Lake Wolsey (45°49′22″ N , 82°31′29″ W ) - Gordon and Mills Townships",
+        "raw": "Season : January 1 to March 31 and third Saturday in May to December 31",
+        "waters": [
+          "Lake Wolsey (45°49′22″ N , 82°31′29″ W ) - Gordon and Mills Townships"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Touladi",
+        "limit": "S-1 et C-0",
+        "length": null,
+        "gear": null,
+        "notes": "Baie Georgienne - les eaux à l’ouest et au sud du chenal Killbear dans la baie Georgienne, dans le district de Parry Sound. Limite ouest à partir de la pointe Green jusqu’au point le plus au nord de l’île Hertzberg, jusqu’au rocher Colin, jusqu’au point le plus à l’ouest de l’île North Limestone, jusqu’au point sud-ouest de l’île Sandy, jusqu’au point le plus au nord de la plus grosse des îles Umbrella, jusqu’au point le plus au nord de l’île Frying Pan, jusqu’au point le plus au sud de l’île Sans Souci, jusqu’à la limite est de la pointe Mainland, à partir de la pointe Oak jusqu’au phare sur les îles Jones, jusqu’au phare sur les rochers Gordon, jusqu’au point le plus au nord de l’île Snake, jusqu’au phare sur l’île Snug, en allant plein est jusqu’à la terre ferme et le pont pivotant qui relie la pointe Rose jusqu’à l’île Parry; comprend la baie Five Mile et les eaux entourant les îles McLaren et Isabella · Pour mieux comprendre les règlements visant la pêche au touladi dans la baie Georgienne, voir la carte qui se trouve à Zone de gestion des pêches 14 ( ZGP 14 )",
+        "raw": "Limites : S-1 et C-0",
+        "waters": [
+          "Baie Georgienne - les eaux à l’ouest et au sud du chenal Killbear dans la baie Georgienne, dans le district de Parry Sound. Limite ouest à partir de la pointe Green jusqu’au point le plus au nord de l’île Hertzberg, jusqu’au rocher Colin, jusqu’au point le plus à l’ouest de l’île North Limestone, jusqu’au point sud-ouest de l’île Sandy, jusqu’au point le plus au nord de la plus grosse des îles Umbrella, jusqu’au point le plus au nord de l’île Frying Pan, jusqu’au point le plus au sud de l’île Sans Souci, jusqu’à la limite est de la pointe Mainland, à partir de la pointe Oak jusqu’au phare sur les îles Jones, jusqu’au phare sur les rochers Gordon, jusqu’au point le plus au nord de l’île Snake, jusqu’au phare sur l’île Snug, en allant plein est jusqu’à la terre ferme et le pont pivotant qui relie la pointe Rose jusqu’à l’île Parry; comprend la baie Five Mile et les eaux entourant les îles McLaren et Isabella",
+          "Pour mieux comprendre les règlements visant la pêche au touladi dans la baie Georgienne, voir la carte qui se trouve à Zone de gestion des pêches 14 ( ZGP 14 )"
+        ]
+      },
+      {
+        "period": null,
+        "species": "Truite arc-en-ciel",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": "Chenal du nord du lac Huron - les eaux à l’ouest d’une ligne droite entre le point le plus au nord (45°48′28″ N , 81°35′44″ O ) sur la ligne des eaux du cap Smith (sur l’île Manitoulin) jusqu’au point le plus au sud (45°58′05″ N , 81°29′20″ O ) sur la ligne des eaux de la pointe Red Rock (à l’est de la ville de Killarney), et à l’est d’une ligne droite entre le point le plus au sud (46°10′31″ N , 82°53′06″ O ) sur la ligne des eaux le long de la rive de la pointe Mary (à l’est de la rivière Blind) jusqu’au point le plus au nord (45°59′52″ N , 82°48′40″ O ) sur la ligne des eaux du cap Roberts (du côté ouest du bras Bayfield, sur l’île Manitoulin)",
+        "raw": "Limites : S-5 et C-2",
+        "waters": [
+          "Chenal du nord du lac Huron - les eaux à l’ouest d’une ligne droite entre le point le plus au nord (45°48′28″ N , 81°35′44″ O ) sur la ligne des eaux du cap Smith (sur l’île Manitoulin) jusqu’au point le plus au sud (45°58′05″ N , 81°29′20″ O ) sur la ligne des eaux de la pointe Red Rock (à l’est de la ville de Killarney), et à l’est d’une ligne droite entre le point le plus au sud (46°10′31″ N , 82°53′06″ O ) sur la ligne des eaux le long de la rive de la pointe Mary (à l’est de la rivière Blind) jusqu’au point le plus au nord (45°59′52″ N , 82°48′40″ O ) sur la ligne des eaux du cap Roberts (du côté ouest du bras Bayfield, sur l’île Manitoulin)"
+        ]
+      },
+      {
+        "period": "fermée toute l’année Saison : du 1er janvier au 1er mars et du 3e samedi de mai au 31 décembre",
+        "species": "Doré jaune",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Baie McGregor (lac Huron) - au nord d’une ligne tracée entre le point le plus à l’ouest de la pointe McGregor jusqu’au point terrestre le plus à l’est de l'île Little La Cloche, incluant la baie Iroquois · Rivière Whitefish - canton de Curtin, de son embouchure au chenal nord du lac Huron, en amont jusqu’au barrage du lac Frood, à l’est de la route 6",
+        "raw": "Saison : fermée toute l’année Saison : du 1er janvier au 1er mars et du 3e samedi de mai au 31 décembre",
+        "waters": [
+          "Baie McGregor (lac Huron) - au nord d’une ligne tracée entre le point le plus à l’ouest de la pointe McGregor jusqu’au point terrestre le plus à l’est de l'île Little La Cloche, incluant la baie Iroquois",
+          "Rivière Whitefish - canton de Curtin, de son embouchure au chenal nord du lac Huron, en amont jusqu’au barrage du lac Frood, à l’est de la route 6"
+        ]
+      },
+      {
+        "period": "du 1er janvier au 31 mars et du 3e samedi de mai au 31 décembre",
+        "species": "Perchaude",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Lac Wolsey (45°49′22″ N , 82°31′29″ O ) - cantons de Gordon et Mills",
+        "raw": "Saison : du 1er janvier au 31 mars et du 3e samedi de mai au 31 décembre",
+        "waters": [
+          "Lac Wolsey (45°49′22″ N , 82°31′29″ O ) - cantons de Gordon et Mills"
+        ]
+      }
+    ]
+  },
+  "waterbody_exceptions": {
+    "en": [
+      {
+        "name": "Big Sound of Parry Sound",
+        "location": "waters of the Big Sound in Georgian Bay, in the District of Parry Sound. Western boundary line from Cadotte Point on Parry Island to the easternmost point of Killbear Provincial Park. Southern boundary is the swing bridge connecting Rose Point to Parry Island, including Parry Sound Harbour, Hay Bay, Deep Bay and Depot Harbour.",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Only one line may be used when angling through the ice",
+            "raw": "Only one line may be used when angling through the ice"
+          },
+          {
+            "period": "open from January 1 to September 30",
+            "species": "Lake trout",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from January 1 to September 30",
+            "raw": "Lake trout - open from January 1 to September 30"
+          },
+          {
+            "period": null,
+            "species": "Lake trout",
+            "limit": "S-0 and C-0; from January 1 to February 7 and April 1 to June 23 and September 1 to September 30",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 and C-0; from January 1 to February 7 and April 1 to June 23 and September 1 to September 30",
+            "raw": "Lake trout - S-0 and C-0; from January 1 to February 7 and April 1 to June 23 and September 1 to September 30"
+          },
+          {
+            "period": null,
+            "species": "Lake trout",
+            "limit": "S-1 and C-1; must be less than 61 centimetres from February 8 to March 31 and June 24 to August 31",
+            "length": "must be less than 61 centimetres from February 8 to March 31 and June 24 to August 31",
+            "gear": null,
+            "notes": "S-1 and C-1; must be less than 61 centimetres from February 8 to March 31 and June 24 to August 31",
+            "raw": "Lake trout - S-1 and C-1; must be less than 61 centimetres from February 8 to March 31 and June 24 to August 31"
+          }
+        ],
+        "raw": "Big Sound of Parry Sound waters of the Big Sound in Georgian Bay, in the District of Parry Sound. Western boundary line from Cadotte Point on Parry Island to the easternmost point of Killbear Provincial Park. Southern boundary is the swing bridge connecting Rose Point to Parry Island, including Parry Sound Harbour, Hay Bay, Deep Bay and Depot Harbour. Only one line may be used when angling through the ice | Lake trout - open from January 1 to September 30 | Lake trout - S-0 and C-0; from January 1 to February 7 and April 1 to June 23 and September 1 to September 30 | Lake trout - S-1 and C-1; must be less than 61 centimetres from February 8 to March 31 and June 24 to August 31"
+      },
+      {
+        "name": "Big Sound of Parry Sound",
+        "location": "waters west of the Killbear Channel in Georgian Bay, in the District of Parry Sound. Eastern boundary from Cyril Point to the southwestern most point of Spruce Island to the lighthouse located immediately north of the Nias Islands to Liddon Point of Parry Island. Western boundary from Oak Point to the lighthouse on Jones Islands to the lighthouse on Gordon Rocks to the most northerly point of Snake Island to the lighthouse on Snug Island due east to the mainland.",
+        "rules": [
+          {
+            "period": "open from January 1 to September 30",
+            "species": "Lake trout",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from January 1 to September 30",
+            "raw": "Lake trout - open from January 1 to September 30"
+          },
+          {
+            "period": null,
+            "species": "Lake trout",
+            "limit": "S-0 and C-0; from January 1 to February 7 and April 1 to June 23 and September 1 to September 30",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 and C-0; from January 1 to February 7 and April 1 to June 23 and September 1 to September 30",
+            "raw": "Lake trout - S-0 and C-0; from January 1 to February 7 and April 1 to June 23 and September 1 to September 30"
+          },
+          {
+            "period": null,
+            "species": "Lake trout",
+            "limit": "S-1 and C-1; must be less than 61 centimetres from February 8 to March 31 and June 24 to August 31",
+            "length": "must be less than 61 centimetres from February 8 to March 31 and June 24 to August 31",
+            "gear": null,
+            "notes": "S-1 and C-1; must be less than 61 centimetres from February 8 to March 31 and June 24 to August 31",
+            "raw": "Lake trout - S-1 and C-1; must be less than 61 centimetres from February 8 to March 31 and June 24 to August 31"
+          }
+        ],
+        "raw": "Big Sound of Parry Sound waters west of the Killbear Channel in Georgian Bay, in the District of Parry Sound. Eastern boundary from Cyril Point to the southwestern most point of Spruce Island to the lighthouse located immediately north of the Nias Islands to Liddon Point of Parry Island. Western boundary from Oak Point to the lighthouse on Jones Islands to the lighthouse on Gordon Rocks to the most northerly point of Snake Island to the lighthouse on Snug Island due east to the mainland. Lake trout - open from January 1 to September 30 | Lake trout - S-0 and C-0; from January 1 to February 7 and April 1 to June 23 and September 1 to September 30 | Lake trout - S-1 and C-1; must be less than 61 centimetres from February 8 to March 31 and June 24 to August 31"
+      },
+      {
+        "name": "Big Sound of Parry Sound",
+        "location": "(Killbear Channel) - The waters of the Killbear Channel in Georgian Bay, in the District of Parry Sound. Eastern boundary line from Cadotte Point on Parry Island across the channel to the easternmost point of Killbear Provincial Park. Western boundary line from Cyril Point to the southernmost point of Spruce Island to the lighthouse located immediately north of the Nias Islands to the southernmost point of Rose Island to Liddon Point on Parry Island.",
+        "rules": [
+          {
+            "period": "closed all year",
+            "species": "Lake Trout",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "closed all year",
+            "raw": "Lake Trout - closed all year"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "For additional clarity on regulations in Big Sound of Parry Sound please refert to the map located at Fisheries Management Zone 14 ( FMZ 14)",
+            "raw": "For additional clarity on regulations in Big Sound of Parry Sound please refert to the map located at Fisheries Management Zone 14 ( FMZ 14)"
+          }
+        ],
+        "raw": "Big Sound of Parry Sound (Killbear Channel) - The waters of the Killbear Channel in Georgian Bay, in the District of Parry Sound. Eastern boundary line from Cadotte Point on Parry Island across the channel to the easternmost point of Killbear Provincial Park. Western boundary line from Cyril Point to the southernmost point of Spruce Island to the lighthouse located immediately north of the Nias Islands to the southernmost point of Rose Island to Liddon Point on Parry Island. Lake Trout - closed all year | For additional clarity on regulations in Big Sound of Parry Sound please refert to the map located at Fisheries Management Zone 14 ( FMZ 14)"
+      },
+      {
+        "name": "Iroquois Bay",
+        "location": "of the North Channel of Lake Huron",
+        "rules": [
+          {
+            "period": "no fishing from January 1 to April 30",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to April 30",
+            "raw": "Fish sanctuary - no fishing from January 1 to April 30"
+          },
+          {
+            "period": null,
+            "species": "Lake trout",
+            "limit": "S-1 and C-0; must be less than 51 centimetres and possessing a fin clip with a healed scar",
+            "length": "must be less than 51 centimetres",
+            "gear": null,
+            "notes": "S-1 and C-0; must be less than 51 centimetres and possessing a fin clip with a healed scar",
+            "raw": "Lake trout - S-1 and C-0; must be less than 51 centimetres and possessing a fin clip with a healed scar"
+          }
+        ],
+        "raw": "Iroquois Bay of the North Channel of Lake Huron Fish sanctuary - no fishing from January 1 to April 30 | Lake trout - S-1 and C-0; must be less than 51 centimetres and possessing a fin clip with a healed scar"
+      },
+      {
+        "name": "St. Marys River",
+        "location": "from the gates of the Compensating Works downstream to longitude 83°45′ W , which extends from Eagle Point (Hay Bay) south to the international boundary with the United States",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Two lines may be used when trolling from a boat in open water",
+            "raw": "Two lines may be used when trolling from a boat in open water"
+          },
+          {
+            "period": null,
+            "species": "Northern pike",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "any size",
+            "raw": "Northern pike - any size"
+          },
+          {
+            "period": "open from January 1 to last day in February and May 15 to December 31",
+            "species": "Walleye",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from January 1 to last day in February and May 15 to December 31",
+            "raw": "Walleye - open from January 1 to last day in February and May 15 to December 31"
+          },
+          {
+            "period": null,
+            "species": "Walleye",
+            "limit": "S-4 and C-2; any size",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 and C-2; any size",
+            "raw": "Walleye - S-4 and C-2; any size"
+          }
+        ],
+        "raw": "St. Marys River from the gates of the Compensating Works downstream to longitude 83°45′ W , which extends from Eagle Point (Hay Bay) south to the international boundary with the United States Two lines may be used when trolling from a boat in open water | Northern pike - any size | Walleye - open from January 1 to last day in February and May 15 to December 31 | Walleye - S-4 and C-2; any size"
+      },
+      {
+        "name": "St. Marys River (Lake George)",
+        "location": "Laird Township, from Pumpkin Point upstream to the Laird Township boundary",
+        "rules": [
+          {
+            "period": null,
+            "species": "Walleye",
+            "limit": "S-0 and C-0 from April 1 to June 15, Zone-wide seasons and limits apply for remainder of year",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 and C-0 from April 1 to June 15, Zone-wide seasons and limits apply for remainder of year",
+            "raw": "Walleye - S-0 and C-0 from April 1 to June 15, Zone-wide seasons and limits apply for remainder of year"
+          }
+        ],
+        "raw": "St. Marys River (Lake George) Laird Township, from Pumpkin Point upstream to the Laird Township boundary Walleye - S-0 and C-0 from April 1 to June 15, Zone-wide seasons and limits apply for remainder of year"
+      }
+    ],
+    "fr": [
+      {
+        "name": "Big Sound de Parry Sound",
+        "location": "les eaux de Big Sound dans la baie Georgienne, dans le district de Parry Sound. Limite ouest à partir de la pointe Gadotte sur l’île Parry jusqu’au point le plus à l’est du parc provincial Killbear. La limite sud est le pont pivotant qui relie la pointe Rose jusqu’à l’île Parry, y compris Parry Sound Harbour, la baie Hay, la baie Deep et Depot Harbour",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Une seule ligne peut être utilisée pour pêcher sur la glace",
+            "raw": "Une seule ligne peut être utilisée pour pêcher sur la glace"
+          },
+          {
+            "period": "ouverte du 1er janvier au 30 septembre",
+            "species": "Touladi",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "ouverte du 1er janvier au 30 septembre",
+            "raw": "Touladi - ouverte du 1er janvier au 30 septembre"
+          },
+          {
+            "period": null,
+            "species": "Touladi",
+            "limit": "S-0 et C-0; du 1er janvier au 7 février, du 1er avril au 23 juin et du 1er septembre au 30 septembre",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 et C-0; du 1er janvier au 7 février, du 1er avril au 23 juin et du 1er septembre au 30 septembre",
+            "raw": "Touladi - S-0 et C-0; du 1er janvier au 7 février, du 1er avril au 23 juin et du 1er septembre au 30 septembre"
+          },
+          {
+            "period": null,
+            "species": "Touladi",
+            "limit": "S-1 et C-1; doit mesurer moins de 61 centimètres du 8 février au 31 mars et du 24 juin au 31 août",
+            "length": "doit mesurer moins de 61 centimètres du 8 février au 31 mars et du 24 juin au 31 août",
+            "gear": null,
+            "notes": "S-1 et C-1; doit mesurer moins de 61 centimètres du 8 février au 31 mars et du 24 juin au 31 août",
+            "raw": "Touladi - S-1 et C-1; doit mesurer moins de 61 centimètres du 8 février au 31 mars et du 24 juin au 31 août"
+          }
+        ],
+        "raw": "Big Sound de Parry Sound les eaux de Big Sound dans la baie Georgienne, dans le district de Parry Sound. Limite ouest à partir de la pointe Gadotte sur l’île Parry jusqu’au point le plus à l’est du parc provincial Killbear. La limite sud est le pont pivotant qui relie la pointe Rose jusqu’à l’île Parry, y compris Parry Sound Harbour, la baie Hay, la baie Deep et Depot Harbour Une seule ligne peut être utilisée pour pêcher sur la glace | Touladi - ouverte du 1er janvier au 30 septembre | Touladi - S-0 et C-0; du 1er janvier au 7 février, du 1er avril au 23 juin et du 1er septembre au 30 septembre | Touladi - S-1 et C-1; doit mesurer moins de 61 centimètres du 8 février au 31 mars et du 24 juin au 31 août"
+      },
+      {
+        "name": "Big Sound de Parry Sound",
+        "location": "les eaux à l’ouest du chenal Killbear dans la baie Georgienne, dans le district de Parry Sound. Limite est à partir de la pointe Cyril jusqu’au point le plus au sud-ouest de l’île Spruce, jusqu’au phare situé immédiatement au nord des îles Nias, jusqu’à la pointe Liddon de l’île Parry. Limite ouest à partir de la pointe Oak jusqu’au phare sur les îles Jones, jusqu’au phare sur les rochers Gordon, jusqu’au point le plus au nord de l’île Snake, jusqu’au phare sur l’île Snug, en allant plein est jusqu’à la terre ferme",
+        "rules": [
+          {
+            "period": "ouverte du 1er janvier au 30 septembre",
+            "species": "Touladi",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "ouverte du 1er janvier au 30 septembre",
+            "raw": "Touladi - ouverte du 1er janvier au 30 septembre"
+          },
+          {
+            "period": null,
+            "species": "Touladi",
+            "limit": "S-0 et C-0; du 1er janvier au 7 février, du 1er avril au 23 juin et du 1er septembre au 30 septembre",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 et C-0; du 1er janvier au 7 février, du 1er avril au 23 juin et du 1er septembre au 30 septembre",
+            "raw": "Touladi - S-0 et C-0; du 1er janvier au 7 février, du 1er avril au 23 juin et du 1er septembre au 30 septembre"
+          },
+          {
+            "period": null,
+            "species": "Touladi",
+            "limit": "S-1 et C-1; doit mesurer moins de 61 centimètres du 8 février au 31 mars et du 24 juin au 31 août",
+            "length": "doit mesurer moins de 61 centimètres du 8 février au 31 mars et du 24 juin au 31 août",
+            "gear": null,
+            "notes": "S-1 et C-1; doit mesurer moins de 61 centimètres du 8 février au 31 mars et du 24 juin au 31 août",
+            "raw": "Touladi - S-1 et C-1; doit mesurer moins de 61 centimètres du 8 février au 31 mars et du 24 juin au 31 août"
+          }
+        ],
+        "raw": "Big Sound de Parry Sound les eaux à l’ouest du chenal Killbear dans la baie Georgienne, dans le district de Parry Sound. Limite est à partir de la pointe Cyril jusqu’au point le plus au sud-ouest de l’île Spruce, jusqu’au phare situé immédiatement au nord des îles Nias, jusqu’à la pointe Liddon de l’île Parry. Limite ouest à partir de la pointe Oak jusqu’au phare sur les îles Jones, jusqu’au phare sur les rochers Gordon, jusqu’au point le plus au nord de l’île Snake, jusqu’au phare sur l’île Snug, en allant plein est jusqu’à la terre ferme Touladi - ouverte du 1er janvier au 30 septembre | Touladi - S-0 et C-0; du 1er janvier au 7 février, du 1er avril au 23 juin et du 1er septembre au 30 septembre | Touladi - S-1 et C-1; doit mesurer moins de 61 centimètres du 8 février au 31 mars et du 24 juin au 31 août"
+      },
+      {
+        "name": "Big Sound de Parry Sound",
+        "location": "(chenal Killbear) - les eaux à l’ouest du chenal Killbear dans la baie Georgienne, dans le district de Parry Sound. Limite est à partir de la pointe Cyril jusqu’au point le plus au sud-ouest de l’île Spruce,jusqu’au phare situé immédiatement au nord des îles Nias, jusqu’à la pointe Liddon de l’île Parry. Limite ouest à partir de la pointe Oak jusqu’au phare sur les îles Jones, jusqu’au phare sur les rochers Gordon, jusqu’au point le plus au nord de l’île Snake, jusqu’au phare sur l’île Snug, en allant plein est jusqu’à la terre ferme",
+        "rules": [
+          {
+            "period": "fermée toute l’année",
+            "species": "Touladi",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "fermée toute l’année",
+            "raw": "Touladi - fermée toute l’année"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Pour mieux comprendre les règlements visant la pêche dans Big Sound de Parry Sound, voir la carte qui se trouve à Zone de gestion des pêches 14 ( ZGP 14)",
+            "raw": "Pour mieux comprendre les règlements visant la pêche dans Big Sound de Parry Sound, voir la carte qui se trouve à Zone de gestion des pêches 14 ( ZGP 14)"
+          }
+        ],
+        "raw": "Big Sound de Parry Sound (chenal Killbear) - les eaux à l’ouest du chenal Killbear dans la baie Georgienne, dans le district de Parry Sound. Limite est à partir de la pointe Cyril jusqu’au point le plus au sud-ouest de l’île Spruce,jusqu’au phare situé immédiatement au nord des îles Nias, jusqu’à la pointe Liddon de l’île Parry. Limite ouest à partir de la pointe Oak jusqu’au phare sur les îles Jones, jusqu’au phare sur les rochers Gordon, jusqu’au point le plus au nord de l’île Snake, jusqu’au phare sur l’île Snug, en allant plein est jusqu’à la terre ferme Touladi - fermée toute l’année | Pour mieux comprendre les règlements visant la pêche dans Big Sound de Parry Sound, voir la carte qui se trouve à Zone de gestion des pêches 14 ( ZGP 14)"
+      },
+      {
+        "name": "Baie Iroquois",
+        "location": "du chenal du nord du lac Huron",
+        "rules": [
+          {
+            "period": "Pêche interdite du 1er janvier au 30 avril",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Pêche interdite du 1er janvier au 30 avril",
+            "raw": "Réserve de poissons - Pêche interdite du 1er janvier au 30 avril"
+          },
+          {
+            "period": null,
+            "species": "Touladi",
+            "limit": "S-1 et C-0; doit mesurer moins de 51 centimètres et doit avoir une nageoire amputée bien cicatrisée",
+            "length": "doit mesurer moins de 51 centimètres",
+            "gear": null,
+            "notes": "S-1 et C-0; doit mesurer moins de 51 centimètres et doit avoir une nageoire amputée bien cicatrisée",
+            "raw": "Touladi - S-1 et C-0; doit mesurer moins de 51 centimètres et doit avoir une nageoire amputée bien cicatrisée"
+          }
+        ],
+        "raw": "Baie Iroquois du chenal du nord du lac Huron Réserve de poissons - Pêche interdite du 1er janvier au 30 avril | Touladi - S-1 et C-0; doit mesurer moins de 51 centimètres et doit avoir une nageoire amputée bien cicatrisée"
+      },
+      {
+        "name": "Rivière Ste-Marie",
+        "location": "entre les vannes des ouvrages compensateurs en aval jusqu’à la longitude 83°45′ O qui se prolonge entre la pointe Eagle (baie Hay) au sud jusqu’à la frontière internationale avec les États-Unis",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est permis d’utiliser deux lignes quand on pêche à la traîne à bord d’une embarcation en eau libre.",
+            "raw": "Il est permis d’utiliser deux lignes quand on pêche à la traîne à bord d’une embarcation en eau libre."
+          },
+          {
+            "period": null,
+            "species": "Grand brochet",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "aucune limite de taille",
+            "raw": "Grand brochet - aucune limite de taille"
+          },
+          {
+            "period": "ouverte du 1er janvier au dernier jour de février et du 15 mai au 31 décembre",
+            "species": "Doré jaune",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "ouverte du 1er janvier au dernier jour de février et du 15 mai au 31 décembre",
+            "raw": "Doré jaune - ouverte du 1er janvier au dernier jour de février et du 15 mai au 31 décembre"
+          },
+          {
+            "period": null,
+            "species": "Doré jaune",
+            "limit": "S-4 et C-2; aucune limite de taille",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 et C-2; aucune limite de taille",
+            "raw": "Doré jaune - S-4 et C-2; aucune limite de taille"
+          }
+        ],
+        "raw": "Rivière Ste-Marie entre les vannes des ouvrages compensateurs en aval jusqu’à la longitude 83°45′ O qui se prolonge entre la pointe Eagle (baie Hay) au sud jusqu’à la frontière internationale avec les États-Unis Il est permis d’utiliser deux lignes quand on pêche à la traîne à bord d’une embarcation en eau libre. | Grand brochet - aucune limite de taille | Doré jaune - ouverte du 1er janvier au dernier jour de février et du 15 mai au 31 décembre | Doré jaune - S-4 et C-2; aucune limite de taille"
+      },
+      {
+        "name": "Rivière Ste-Marie (lac George)",
+        "location": "dans les eaux du canton de Laird, entre la pointe Pumpkin en amont jusqu’à la limite du canton de Laird",
+        "rules": [
+          {
+            "period": null,
+            "species": "Doré jaune",
+            "limit": "S-0 et C-0, du 1er avril au 15 juin; les saisons et limites visant toute la zone s’appliquent pendant le restant de l’année",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 et C-0, du 1er avril au 15 juin; les saisons et limites visant toute la zone s’appliquent pendant le restant de l’année",
+            "raw": "Doré jaune - S-0 et C-0, du 1er avril au 15 juin; les saisons et limites visant toute la zone s’appliquent pendant le restant de l’année"
+          }
+        ],
+        "raw": "Rivière Ste-Marie (lac George) dans les eaux du canton de Laird, entre la pointe Pumpkin en amont jusqu’à la limite du canton de Laird Doré jaune - S-0 et C-0, du 1er avril au 15 juin; les saisons et limites visant toute la zone s’appliquent pendant le restant de l’année"
+      }
+    ]
+  },
+  "bait_restrictions": {
+    "en": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "FMZ 14 is part of the Great Lakes. Baitfish and leeches that are both dead and preserved can be transported into and out of BMZs and the Great Lakes.",
+        "raw": "FMZ 14 is part of the Great Lakes. Baitfish and leeches that are both dead and preserved can be transported into and out of BMZs and the Great Lakes."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Baitfish and leeches that are not both dead and preserved may be transported out of: Refer to bait for more details.",
+        "raw": "Baitfish and leeches that are not both dead and preserved may be transported out of: Refer to bait for more details."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "an adjacent Bait Management Zone and used in the Great Lakes",
+        "raw": "an adjacent Bait Management Zone and used in the Great Lakes"
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "La ZGP 14 fait partie des Grands Lacs. Les poissons d’appât et les sangsues qui sont morts et conservés peuvent être apportés et sortis des ZGA et des Grands Lacs.",
+        "raw": "La ZGP 14 fait partie des Grands Lacs. Les poissons d’appât et les sangsues qui sont morts et conservés peuvent être apportés et sortis des ZGA et des Grands Lacs."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Les poissons d’appât et les sangsues qui ne sont pas morts et conservés peuvent être sortis : Voir la section sur les appâts pour plus de renseignements.",
+        "raw": "Les poissons d’appât et les sangsues qui ne sont pas morts et conservés peuvent être sortis : Voir la section sur les appâts pour plus de renseignements."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "d’une zone de gestion des appâts adjacente et utilisés dans les Grands Lacs",
+        "raw": "d’une zone de gestion des appâts adjacente et utilisés dans les Grands Lacs"
+      }
+    ]
+  },
+  "fish_sanctuaries": {
+    "en": [
+      {
+        "period": "No fishing - closed all year",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - closed all year Georgian Bay - waters locally known as the Dawson Rock, Grand Bank Area in the Territorial District of Manitoulin bounded by lines starting at 45°35′ N , 81°10′ W , then northward to 45°45′ N , 81°10′ W , then westward to 45°45′ N , 81°25′ W , then southward to 45°35′ N , 81°25′ W , then eastward to the place of beginning",
+        "waters": [
+          "Georgian Bay - waters locally known as the Dawson Rock, Grand Bank Area in the Territorial District of Manitoulin bounded by lines starting at 45°35′ N , 81°10′ W , then northward to 45°45′ N , 81°10′ W , then westward to 45°45′ N , 81°25′ W , then southward to 45°35′ N , 81°25′ W , then eastward to the place of beginning"
+        ]
+      },
+      {
+        "period": "No fishing - January 1 to April 30",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - January 1 to April 30 Iroquois Bay - refer to waterbody exceptions",
+        "waters": [
+          "Iroquois Bay - refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": "No fishing - April 1 to Friday before the third Saturday in May",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - April 1 to Friday before the third Saturday in May Blackstone River and Harbour - Archipelago Township, Lot 37, Concession 5 | Moon River - Freeman Township, Lots 33, 34, 35, 36 in Concession 8, 9 and 10 | North River - Matchedash Township, from Laughlin Falls downstream to Coldwater River | Seguin River - Town of Parry Sound | Shawanaga River - Shawanaga Township, west of C.P.R. right-of-way | Sucker Creek - Harrison Township, from Highway 69 downstream to a point 250 metres west of the C.P.R. | Tug Channel and unnamed channel - Tay and Georgian Bay Townships, between Little Lake and Georgian Bay",
+        "waters": [
+          "Blackstone River and Harbour - Archipelago Township, Lot 37, Concession 5",
+          "Moon River - Freeman Township, Lots 33, 34, 35, 36 in Concession 8, 9 and 10",
+          "North River - Matchedash Township, from Laughlin Falls downstream to Coldwater River",
+          "Seguin River - Town of Parry Sound",
+          "Shawanaga River - Shawanaga Township, west of C.P.R. right-of-way",
+          "Sucker Creek - Harrison Township, from Highway 69 downstream to a point 250 metres west of the C.P.R.",
+          "Tug Channel and unnamed channel - Tay and Georgian Bay Townships, between Little Lake and Georgian Bay"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "Pêche interdite - Fermée toute l’année",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Fermée toute l’année Baie Georgienne - les eaux connues localement sous le nom de Dawson Rock - Grand Bank dans le district territorial de Manitoulin, et délimitées par des lignes tracées de la façon suivante : départ à 45°35′ N , 81°10′ O , puis vers le nord jusqu’à 45°45′ N , 81°10′ O , puis vers l’ouest jusqu’à 45°45′ N , 81°25′ O , puis vers le sud jusqu’à 45°35′ N , 81°25′ O , puis vers l’est jusqu’au point de départ",
+        "waters": [
+          "Baie Georgienne - les eaux connues localement sous le nom de Dawson Rock - Grand Bank dans le district territorial de Manitoulin, et délimitées par des lignes tracées de la façon suivante : départ à 45°35′ N , 81°10′ O , puis vers le nord jusqu’à 45°45′ N , 81°10′ O , puis vers l’ouest jusqu’à 45°45′ N , 81°25′ O , puis vers le sud jusqu’à 45°35′ N , 81°25′ O , puis vers l’est jusqu’au point de départ"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er janvier au 30 avril",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er janvier au 30 avril Baie Iroquois - voir les exceptions visant des plans d’eau particuliers",
+        "waters": [
+          "Baie Iroquois - voir les exceptions visant des plans d’eau particuliers"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er avril au vendredi précédant le 3e samedi de mai",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er avril au vendredi précédant le 3e samedi de mai Rivière et havre Blackstone - canton d’Archipelago, lot 37, concession 5 | Rivière Moon - canton de Freeman, lots 33, 34, 35 et 36, concessions 8, 9 et 10 | Rivière North - canton de Matchedash, depuis les chutes Laughlin en aval jusqu’à la rivière Coldwater | Rivière Seguin - ville de Parry Sound | Rivière Shawanaga - canton de Shawanaga, à l’ouest de l’emprise de la voie ferrée du CP | Ruisseau Sucker - canton de Harrison, depuis la route 69 en aval jusqu’à un point 250 mètres à l’ouest de la voie ferrée du CP | Chenal Tug et chenal sans nom - cantons de Tay et Georgian Bay, entre le lac Little et la baie Georgienne",
+        "waters": [
+          "Rivière et havre Blackstone - canton d’Archipelago, lot 37, concession 5",
+          "Rivière Moon - canton de Freeman, lots 33, 34, 35 et 36, concessions 8, 9 et 10",
+          "Rivière North - canton de Matchedash, depuis les chutes Laughlin en aval jusqu’à la rivière Coldwater",
+          "Rivière Seguin - ville de Parry Sound",
+          "Rivière Shawanaga - canton de Shawanaga, à l’ouest de l’emprise de la voie ferrée du CP",
+          "Ruisseau Sucker - canton de Harrison, depuis la route 69 en aval jusqu’à un point 250 mètres à l’ouest de la voie ferrée du CP",
+          "Chenal Tug et chenal sans nom - cantons de Tay et Georgian Bay, entre le lac Little et la baie Georgienne"
+        ]
+      }
+    ]
+  }
+}
