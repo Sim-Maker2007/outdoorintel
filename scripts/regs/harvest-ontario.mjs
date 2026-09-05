@@ -7,7 +7,8 @@
  * Does not write or rewrite Québec zone-*.json.
  *
  * Usage: node scripts/regs/harvest-ontario.mjs [--zones=12,16,17,18] [--html-dir=DIR]
- * Great Lakes slice: --zones=19,20. Inland: --zones=10,11,15 or --zones=4,5,6,7,8.
+ * Great Lakes slice: --zones=19,20. Far-north inland: --zones=1,2,3.
+ * Northwest/northeast inland: --zones=4,5,6,7,8. Other inland: --zones=10,11,15.
  * Default still 12,16,17,18 so a bare run does not rewrite already-shipped FMZ files.
  */
 import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
@@ -56,6 +57,14 @@ function text(html) {
 const DRUPAL_NAV_TOKEN = String.raw`(?:table of contents(?:\s+access the table of contents)?|table des mati[eè]res(?:\s+acc[eé]der [àa] la table des mati[eè]res)?|previous|next|pr[eé]c[eé]dent|suivant)`;
 const DRUPAL_NAV_CRUMB_RE = new RegExp(`^${DRUPAL_NAV_TOKEN}$`, 'i');
 const DRUPAL_NAV_TAIL_RE = new RegExp(`(?:\\s*\\|\\s*${DRUPAL_NAV_TOKEN})+\\s*$`, 'i');
+// FMZ 1 has no later waterbody/sanctuary h2, so the Drupal pager + Updated/Published
+// footer concatenates onto the last zone-wide Limits string without pipe separators.
+const DRUPAL_NAV_INLINE_TAIL_RE = new RegExp(
+  `(?:\\s+${DRUPAL_NAV_TOKEN})+(?:\\s+(?:Updated|Published|Mis [àa] jour|Date de publication)\\s*:[^\\n]*)*\\s*$`,
+  'i'
+);
+const DRUPAL_DATE_FOOTER_RE = /\s+(?:Updated|Published|Mis [àa] jour|Date de publication)\s*:[^\n]*$/i;
+const DRUPAL_NAV_LEAK_RE = /table of contents|table des mati[eè]res|(?:Updated|Published):\s*(?:January|February|March|April|May|June|July|August|September|October|November|December)|Mis [àa] jour\s*:\s*\d|Date de publication\s*:/i;
 
 export function isDrupalNavCrumb(s) {
   return DRUPAL_NAV_CRUMB_RE.test(String(s).trim());
@@ -74,7 +83,9 @@ export function dropDrupalNavFragments(items) {
 
 export function stripDrupalNavTail(s) {
   if (s == null || s === '') return s;
-  const stripped = String(s).replace(DRUPAL_NAV_TAIL_RE, '').trim();
+  let stripped = String(s).replace(DRUPAL_NAV_TAIL_RE, '').trim();
+  stripped = stripped.replace(DRUPAL_NAV_INLINE_TAIL_RE, '').trim();
+  stripped = stripped.replace(DRUPAL_DATE_FOOTER_RE, '').trim();
   return dropDrupalNavFragments([stripped]).join(' | ');
 }
 
@@ -138,8 +149,8 @@ function parseSeasonLimits(blockHtml) {
   const t = text(blockHtml);
   const seasonM = t.match(/(?:Season|Saison)\s*:\s*(.*?)(?=\s(?:Limits|Limites)\s*:|$)/i);
   const limitsM = t.match(/(?:Limits|Limites)\s*:\s*(.*)$/i);
-  const period = seasonM ? seasonM[1].trim() : null;
-  const limit = limitsM ? limitsM[1].trim() : null;
+  const period = seasonM ? stripDrupalNavTail(seasonM[1].trim()) : null;
+  const limit = limitsM ? stripDrupalNavTail(limitsM[1].trim()) : null;
   return { period: period || null, limit: limit || null, length: extractLength(limit), raw: stripDrupalNavTail(t) || null };
 }
 
@@ -184,16 +195,16 @@ function parseLabeledSeasonRules(species, html) {
         cur = {
           period: null,
           species,
-          limit: f.value || null,
-          length: extractLength(f.value),
+          limit: stripDrupalNavTail(f.value) || null,
+          length: extractLength(stripDrupalNavTail(f.value)),
           gear: null,
           notes: null,
           raw: null,
           _limitLabel: f.label,
         };
       } else {
-        cur.limit = f.value || null;
-        cur.length = extractLength(f.value);
+        cur.limit = stripDrupalNavTail(f.value) || null;
+        cur.length = extractLength(cur.limit);
         cur._limitLabel = f.label;
       }
       continue;
@@ -441,16 +452,16 @@ function pushWaterbodyEntry(entries, seen, { name, location, lis, skippedRef, ch
 function parseWaterbodyExceptions(section) {
   if (!section) return { listed: 0, harvested: 0, entries: [], skippedFishOnLine: false };
   const skippedRef = { skippedFishOnLine: false };
-  const chunks = section.html.split(/(?=<p>\s*<strong>)/i);
+  const chunks = section.html.split(/(?=<p>\s*<strong\b)/i);
   const entries = [];
   const seen = new Set();
   for (const chunk of chunks) {
-    const pm = chunk.match(/<p>\s*<strong>([\s\S]*?)<\/strong>([\s\S]*?)<\/p>/i);
+    const pm = chunk.match(/<p>\s*<strong\b[^>]*>([\s\S]*?)<\/strong>([\s\S]*?)<\/p>/i);
     if (!pm) continue;
     const { name, location } = waterbodyNameFromStrongP(pm);
     if (!name) continue;
     const after = chunk.slice(chunk.indexOf('</p>') + 4);
-    const lis = allLiTexts(after.split(/<p>\s*<strong>/i)[0] || after);
+    const lis = allLiTexts(after.split(/<p>\s*<strong\b/i)[0] || after);
     pushWaterbodyEntry(entries, seen, { name, location, lis, skippedRef, chunkHtml: chunk });
   }
   // FR Great Lakes pages use h3 waterbody names instead of <p><strong>.
@@ -464,7 +475,7 @@ function parseWaterbodyExceptions(section) {
       pushWaterbodyEntry(entries, seen, { name, location: null, lis, skippedRef, chunkHtml: b.html });
     }
   }
-  const strongCount = [...section.html.matchAll(/<p>\s*<strong>/gi)].length;
+  const strongCount = [...section.html.matchAll(/<p>\s*<strong\b/gi)].length;
   const h3Count = h3Blocks(section.html).length;
   const listed = Math.max(strongCount, h3Count, entries.length);
   return { listed, harvested: entries.length, entries, skippedFishOnLine: skippedRef.skippedFishOnLine };
@@ -701,7 +712,7 @@ function ensureBoundaryWarning(notices, lang) {
 function findDrupalNavHits(value, path = '') {
   const hits = [];
   if (typeof value === 'string') {
-    if (isDrupalNavCrumb(value) || DRUPAL_NAV_TAIL_RE.test(value)) hits.push(path || '(root)');
+    if (isDrupalNavCrumb(value) || DRUPAL_NAV_TAIL_RE.test(value) || DRUPAL_NAV_LEAK_RE.test(value)) hits.push(path || '(root)');
     return hits;
   }
   if (Array.isArray(value)) {
