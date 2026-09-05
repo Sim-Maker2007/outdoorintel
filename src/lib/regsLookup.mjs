@@ -50,7 +50,8 @@ export function parseOnZoneToken(zone) {
  *   zone=12                 → Québec 12
  *   zone=ON-12              → Ontario FMZ 12
  *   jurisdiction=ON&zone=12 → Ontario FMZ 12
- *   jurisdiction=ON&zone=5  → missing ON (do not fall through to QC 5)
+ *   jurisdiction=ON&zone=5  → Ontario FMZ 5 (not QC 5)
+ *   jurisdiction=ON&zone=9  → missing ON (do not fall through to QC 9)
  */
 export function lookupRegulation(regs, { zone, jurisdiction } = {}) {
   if (zone == null || String(zone).trim() === '') {

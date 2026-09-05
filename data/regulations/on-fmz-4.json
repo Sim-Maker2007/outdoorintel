@@ -1,0 +1,1470 @@
+{
+  "zone_id": 4,
+  "zone_key": "ON-4",
+  "activity": "fishing",
+  "jurisdiction": "ON",
+  "fmz": 4,
+  "licence_year": 2026,
+  "authority": "Ontario Ministry of Natural Resources (MNR); Ontario Fishing Regulations Summary 2026 (not the official law)",
+  "source": {
+    "en": "https://www.ontario.ca/document/ontario-fishing-regulations-summary/fisheries-management-zone-4",
+    "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-peche/zone-de-gestion-des-peches-4",
+    "pdf_en": "https://ontario.ca/files/2025-12/mnr-2026-fishing-regulations-summary-en-2025-12-08.pdf",
+    "fish_on_line": "https://www.gisapplication.lrc.gov.on.ca/FishONLine/Index.html?site=FishONLine&viewer=FishONLine&locale=en-US&FMZ=4",
+    "fetched_at": "2026-09-04",
+    "html_updated": "2026-09-02",
+    "note": "Rule text reproduced verbatim from the Ontario Fishing Regulations Summary HTML (not the PDF). The Summary is not the official law. Always verify with the MNR and Fish ON-Line before fishing. Crown copyright."
+  },
+  "coverage": {
+    "licence_year": 2026,
+    "skipped_fish_on_line_only": false,
+    "zone_wide_listed": 14,
+    "zone_wide_harvested": 14,
+    "species_exceptions_listed": 4,
+    "species_exceptions_harvested": 4,
+    "waterbody_exceptions_listed": 11,
+    "waterbody_exceptions_harvested": 11,
+    "fish_sanctuaries_listed": 4,
+    "fish_sanctuaries_harvested": 4,
+    "bait_restrictions_listed": 2,
+    "bait_restrictions_harvested": 2,
+    "complete": true,
+    "note": "Zone-wide seasons/limits and listed HTML exceptions/sanctuaries for this FMZ are included. The Ontario Fishing Regulations Summary is not the law; verify with Fish ON-Line. This is not complete Ontario."
+  },
+  "title": {
+    "en": "Fisheries Management Zone 4 — Ontario FMZ 4",
+    "fr": "Zone de gestion des pêches 4 — Ontario ZGP 4"
+  },
+  "notices": {
+    "en": [
+      "The part of the Berens River that is between Zone 2 and Zone 4, is wholly within Zone 4.",
+      "Refer to general fishing regulations for more information on how to use this summary.",
+      "Non-Canadian residents camping on Crown land must follow conservation fishing licence limits.",
+      "Rainbow smelt may not be used as bait or possessed for use as bait.",
+      "The following waterbodies, or portions of them, have different regulations that are listed in the waterbody exceptions :",
+      "Big Vermilion Lake",
+      "Cedar Lake",
+      "Cloudlet Lake",
+      "Hooch Lake",
+      "Lac Seul",
+      "Maskinonge Lake",
+      "Minnitaki, Abram, Pelican, and Botsford Lakes (including Duck Lake, Hidden Lake, English River and Rice River)",
+      "Red Lake and Gullrock System (including Chukuni River, Keg Lake, Ranger Lake and Two Island Lake)",
+      "Sydney Lake Area",
+      "The following species are not present in this Zone and are closed to fishing all year:",
+      "Atlantic salmon",
+      "brown trout",
+      "channel catfish",
+      "Pacific salmon",
+      "FMZ 4 is part of the Northwest Bait Management Zone ( BMZ ). Live or dead baitfish or leeches may not be transported into or out of a BMZ . These rules do not apply to baitfish and leeches which are both dead and preserved. Refer to bait for more details."
+    ],
+    "fr": [
+      "La rivière Berens là où elle constitue la limite entre la zone 2 et la zone 4 se trouve entièrement dans la zone 4.",
+      "Voir les Règlements généraux concernant la pêche pour plus de renseignements sur l’utilisation de ce Résumé.",
+      "Les personnes qui résident à l’extérieur du Canada et qui font du camping sur les terres de la Couronne doivent respecter les limites du permis de pêche écologique (conservation).",
+      "Il est interdit d’utiliser ou de posséder des éperlans arc-en-ciel comme poisson d’appât.",
+      "Les plans d’eau suivants, ou des parties de ceux-ci, ont des règlements différents qui sont mentionnés dans les exceptions visant des plans d’eau particuliers :",
+      "lac Big Vermilion",
+      "lac Cedar",
+      "lac Cloudlet",
+      "lac Hooch",
+      "lac Seul",
+      "lac Maskinonge",
+      "lac Minnitaki, lac Abram, lac Pelican et lac Botsford (y compris le lac Duck, le lac Hidden, la rivière English et la rivière Rice)",
+      "réseau hydrographique des lacs Red et Gullrock (y compris la rivière Chukuni, le lac Keg, le lac Ranger et le lac Two Island)",
+      "la zone du lac Sydney",
+      "On ne trouve pas les espèces suivantes dans cette zone et leur pêche est donc interdite toute l’année :",
+      "saumon atlantique",
+      "truite brune",
+      "barbue de rivière",
+      "saumon du Pacifique",
+      "La ZGP 4 fait partie de la zone de gestion des appâts ( ZGA ) du Nord-Ouest. On ne peut pas apporter ou sortir des poissons d’appât et des sangsues, morts ou vivants, d’une ZGA . Ces règles ne s’appliquent pas aux poissons d’appât et sangsues qui sont morts et conservés. Voir la section sur les appâts pour plus de renseignements."
+    ]
+  },
+  "general": {
+    "en": [
+      {
+        "period": null,
+        "species": "Aggregate limits for trout and salmon (including splake)",
+        "limit": "S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limits : S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined"
+      },
+      {
+        "period": "January 1 to Labour Day",
+        "species": "Brook trout",
+        "limit": "S-5 and C-2; not more than 1 greater than 30 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to Labour Day Limits : S-5 and C-2; not more than 1 greater than 30 centimetres"
+      },
+      {
+        "period": "open all year",
+        "species": "Crappie",
+        "limit": "S-15 and C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-15 and C-10"
+      },
+      {
+        "period": "closed all year",
+        "species": "Lake sturgeon",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : closed all year"
+      },
+      {
+        "period": "January 1 to September 30",
+        "species": "Lake trout",
+        "limit": "S-2; not more than 1 greater than 56 centimetres, and C-1; no size limit",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to September 30 Limits : S-2; not more than 1 greater than 56 centimetres, and C-1; no size limit"
+      },
+      {
+        "period": "open all year",
+        "species": "Lake whitefish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "open all year",
+        "species": "Largemouth and smallmouth bass combined",
+        "limit": "S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30",
+        "length": "must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31",
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-2 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31, S-4 and C-2; no size limit from July 1 to November 30"
+      },
+      {
+        "period": "third Saturday in June to December 15",
+        "species": "Muskellunge",
+        "limit": "S-1; must be greater than 102 centimetres, and C-0",
+        "length": "must be greater than 102 centimetres",
+        "gear": null,
+        "notes": null,
+        "raw": "Season : third Saturday in June to December 15 Limits : S-1; must be greater than 102 centimetres, and C-0"
+      },
+      {
+        "period": "open all year",
+        "species": "Northern pike",
+        "limit": "S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-4 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres"
+      },
+      {
+        "period": "open all year",
+        "species": "Rainbow trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Splake",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Sunfish",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50 and C-25"
+      },
+      {
+        "period": "January 1 to April 14 and third Saturday in May to December 31",
+        "species": "Walleye and sauger combined",
+        "limit": "S-4 and C-2; not more than 1 greater than 46 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to April 14 and third Saturday in May to December 31 Limits : S-4 and C-2; not more than 1 greater than 46 centimetres"
+      },
+      {
+        "period": "open all year",
+        "species": "Yellow perch",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50 and C-25"
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Limites combinées pour la truite et le saumon (y compris le touladi et l’omble de fontaine)",
+        "limit": "S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées.",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limites : S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées."
+      },
+      {
+        "period": "Du 1er janvier jusqu’à la fête du Travail",
+        "species": "Omble de fontaine",
+        "limit": "S-5 et C-2; 1 seul dépassant 30 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier jusqu’à la fête du Travail Limites : S-5 et C-2; 1 seul dépassant 30 centimètres"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Marigane",
+        "limit": "S-15 et C-10",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-15 et C-10"
+      },
+      {
+        "period": "Fermée toute l’année",
+        "species": "Esturgeon de lac (esturgeon jaune)",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Fermée toute l’année"
+      },
+      {
+        "period": "Du 1er janvier au 30 septembre",
+        "species": "Touladi",
+        "limit": "S-2; 1 seul dépassant 56 centimètres, et C-1; aucune limite de taille",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 30 septembre Limites : S-2; 1 seul dépassant 56 centimètres, et C-1; aucune limite de taille"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Grand corégone",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+        "limit": "S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre",
+        "length": "doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre",
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-2 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre, S-4 et C-2; aucune limite de taille du 1er juillet au 30 novembre"
+      },
+      {
+        "period": "Du 3e samedi de juin au 15 décembre",
+        "species": "Maskinongé",
+        "limit": "S-1; doit dépasser 102 centimètres, et C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 3e samedi de juin au 15 décembre Limites : S-1; doit dépasser 102 centimètres, et C-0"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Grand brochet",
+        "limit": "S-4 et C-2; aucun entre 70 et 90 centimètres, un seul dépassant 90 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-4 et C-2; aucun entre 70 et 90 centimètres, un seul dépassant 90 centimètres"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Truite arc-en-ciel",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Truite moulac",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Crapet",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-50 et C-25"
+      },
+      {
+        "period": "Du 1er janvier au 14 avril et du 3e samedi de mai au 31 décembre",
+        "species": "Doré jaune et doré noir (toute combinaison)",
+        "limit": "S-4 et C-2; 1 seul dépassant 46 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 14 avril et du 3e samedi de mai au 31 décembre Limites : S-4 et C-2; 1 seul dépassant 46 centimètres"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Perchaude",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-50 et C-25"
+      }
+    ]
+  },
+  "species_exceptions": {
+    "en": [
+      {
+        "period": "open all year",
+        "species": "Brook trout",
+        "limit": "S-5 and C-2; no size limit",
+        "length": null,
+        "gear": null,
+        "notes": "Additional fishing opportunities · Berglund Lake (49°35′50″ N , 91°38′27″ W ) · Bill Lake (50°04′02″ N , 93°58′07″ W ) · Butler Lake (49°29′10″ N , 91°50′13″ W ) · Dog Lake (50°00′51″ N , 94°00′49″ W ) · Highway Lake (50°04′16″ N , 92°01′30″ W ) · Krisko Lake (49°42′33″ N , 91°12′60″ W ) · Little Butler Lake (49°28′41″ N , 91°50′29″ W ) · Little Snowstorm Lake (49°37′26″ N , 91°43′06″ W ) · McLaurin Lake (49°43′13″ N , 91°12′05″ W ) · Nyilas Lake (50°03′57″ N , 92°04′20″ W ) · O’Dell Lake (49°24′01″ N , 91°35′10″ W ) · Reguly Lake (49°38′01″ N , 91°43′40″ W ) · Shrimp Lake (49°35′26″ N , 91°38′55″ W ) · Snowstorm Lake (49°37′17″ N , 91°43′27″ W ) · Snyder Lake (50°03′52″ N , 92°04′40″ W ) · Wreck Lake (50°02′50″ N , 94°08′13″ W )",
+        "raw": "Additional fishing opportunities Season : open all year Limits : S-5 and C-2; no size limit",
+        "waters": [
+          "Berglund Lake (49°35′50″ N , 91°38′27″ W )",
+          "Bill Lake (50°04′02″ N , 93°58′07″ W )",
+          "Butler Lake (49°29′10″ N , 91°50′13″ W )",
+          "Dog Lake (50°00′51″ N , 94°00′49″ W )",
+          "Highway Lake (50°04′16″ N , 92°01′30″ W )",
+          "Krisko Lake (49°42′33″ N , 91°12′60″ W )",
+          "Little Butler Lake (49°28′41″ N , 91°50′29″ W )",
+          "Little Snowstorm Lake (49°37′26″ N , 91°43′06″ W )",
+          "McLaurin Lake (49°43′13″ N , 91°12′05″ W )",
+          "Nyilas Lake (50°03′57″ N , 92°04′20″ W )",
+          "O’Dell Lake (49°24′01″ N , 91°35′10″ W )",
+          "Reguly Lake (49°38′01″ N , 91°43′40″ W )",
+          "Shrimp Lake (49°35′26″ N , 91°38′55″ W )",
+          "Snowstorm Lake (49°37′17″ N , 91°43′27″ W )",
+          "Snyder Lake (50°03′52″ N , 92°04′40″ W )",
+          "Wreck Lake (50°02′50″ N , 94°08′13″ W )"
+        ]
+      },
+      {
+        "period": "closed all year",
+        "species": "Lake trout",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Cedarbough Lake (49°58′49″ N , 92°11′37″ W ) and all connecting streams to Little Vermilion Lake (50°00'06″ N , 92°09′18″ W ) · Little Vermilion Lake (50°00′06″ N , 92°09′18″ W ) and all connecting streams to Cedarbough Lake (49°58′49″ N , 92°11′37″ W )",
+        "raw": "Season : closed all year",
+        "waters": [
+          "Cedarbough Lake (49°58′49″ N , 92°11′37″ W ) and all connecting streams to Little Vermilion Lake (50°00'06″ N , 92°09′18″ W )",
+          "Little Vermilion Lake (50°00′06″ N , 92°09′18″ W ) and all connecting streams to Cedarbough Lake (49°58′49″ N , 92°11′37″ W )"
+        ]
+      },
+      {
+        "period": null,
+        "species": "Muskellunge",
+        "limit": "S-1; must be greater than 91 centimetres, and C-0 Limits : S-1; must be greater than 137 centimetres, and C-0",
+        "length": "must be greater than 91 centimetres",
+        "gear": null,
+        "notes": "Confusion Lake (50°40′00″ N , 94°09′00″ W ) · Flat Lake (50°57′43″ N , 93°57′12″ W ) - Baird Township · Russett Lake (50°58′31″ N , 93°55′45″ W ) - Baird Township · Unnamed Lake (Paul-Orr Lake) (50°59′24″ N , 93°56′02″ W ) · Unnamed Lake (Spires Lake) (50°58′42″ N , 93°58′45″ W ) · Cliff Lake (50°10′08″ N , 93°17′60″ W ) - at Highway 105 · Longlegged Lake (50°45′00″ N , 94°05′00″ W ) · Perrault Lake (50°17′ N , 93°08′ W )",
+        "raw": "Limits : S-1; must be greater than 91 centimetres, and C-0 Limits : S-1; must be greater than 137 centimetres, and C-0",
+        "waters": [
+          "Confusion Lake (50°40′00″ N , 94°09′00″ W )",
+          "Flat Lake (50°57′43″ N , 93°57′12″ W ) - Baird Township",
+          "Russett Lake (50°58′31″ N , 93°55′45″ W ) - Baird Township",
+          "Unnamed Lake (Paul-Orr Lake) (50°59′24″ N , 93°56′02″ W )",
+          "Unnamed Lake (Spires Lake) (50°58′42″ N , 93°58′45″ W )",
+          "Cliff Lake (50°10′08″ N , 93°17′60″ W ) - at Highway 105",
+          "Longlegged Lake (50°45′00″ N , 94°05′00″ W )",
+          "Perrault Lake (50°17′ N , 93°08′ W )"
+        ]
+      },
+      {
+        "period": "January 1 to March 31 and June 15 to December 31",
+        "species": "Walleye",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Graystone Lake (49°59′11″ N , 91°02′38″ W ) - from Highway 599 to a line drawn across Graystone Lake at 91°03′13″ W · Post Creek - from the base of the waterfall in Post Bay to latitude 49°55′36″ N on Sturgeon Lake · Sturgeon Lake (49°55′38″ N , 90°53′49″ W ) - described as Trappers Point Bay from 50°11′55″ N to the intersection of Trout Creek and Second Creek with Highway 599",
+        "raw": "Season : January 1 to March 31 and June 15 to December 31",
+        "waters": [
+          "Graystone Lake (49°59′11″ N , 91°02′38″ W ) - from Highway 599 to a line drawn across Graystone Lake at 91°03′13″ W",
+          "Post Creek - from the base of the waterfall in Post Bay to latitude 49°55′36″ N on Sturgeon Lake",
+          "Sturgeon Lake (49°55′38″ N , 90°53′49″ W ) - described as Trappers Point Bay from 50°11′55″ N to the intersection of Trout Creek and Second Creek with Highway 599"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Omble de fontaine",
+        "limit": "S-5 et C-2; aucune limite de taille",
+        "length": null,
+        "gear": null,
+        "notes": "Possibilités supplémentaires de pêche · Lac Berglund (49°35′50″ N , 91°38′27″ O ) · Lac Bill (50°04′02″ N , 93°58′07″ O ) · Lac Butler (49°29′10″ N , 91°50′13″ O ) · Lac Dog (50°00′51″ N , 94°00′49″ O ) · Lac Highway (50°04′16″ N , 92°01′30″ O ) · Lac Krisko (49°42′33″ N , 91°12′60″ O ) · Lac Little Butler (49°28′41″, 91°50′29″ O ) · Lac Little Snowstorm (49°37′26″, 91°43′06″ O ) · Lac McLaurin (49°43′13″ N , 91°12′05″ O ) · Lac Nyilas (50°03′57″ N , 92°04′20″ O ) · Lac O’Dell (49°24′01″ N , 91°35′10″ O ) · Lac Reguly (49°38′01″ N , 91°43′40″ O ) · Lac Shrimp (49°35′26″ N , 91°38′55″ O ) · Lac Snowstorm (49°37′17″, 91°43′27″ O ) · Lac Snyder (50°03′52″ N , 92°04′40″ O ) · Lac Wreck (50°02′50″ N , 94°08′13″ O )",
+        "raw": "Possibilités supplémentaires de pêche Saison : Pêche ouverte toute l’année Limites : S-5 et C-2; aucune limite de taille",
+        "waters": [
+          "Lac Berglund (49°35′50″ N , 91°38′27″ O )",
+          "Lac Bill (50°04′02″ N , 93°58′07″ O )",
+          "Lac Butler (49°29′10″ N , 91°50′13″ O )",
+          "Lac Dog (50°00′51″ N , 94°00′49″ O )",
+          "Lac Highway (50°04′16″ N , 92°01′30″ O )",
+          "Lac Krisko (49°42′33″ N , 91°12′60″ O )",
+          "Lac Little Butler (49°28′41″, 91°50′29″ O )",
+          "Lac Little Snowstorm (49°37′26″, 91°43′06″ O )",
+          "Lac McLaurin (49°43′13″ N , 91°12′05″ O )",
+          "Lac Nyilas (50°03′57″ N , 92°04′20″ O )",
+          "Lac O’Dell (49°24′01″ N , 91°35′10″ O )",
+          "Lac Reguly (49°38′01″ N , 91°43′40″ O )",
+          "Lac Shrimp (49°35′26″ N , 91°38′55″ O )",
+          "Lac Snowstorm (49°37′17″, 91°43′27″ O )",
+          "Lac Snyder (50°03′52″ N , 92°04′40″ O )",
+          "Lac Wreck (50°02′50″ N , 94°08′13″ O )"
+        ]
+      },
+      {
+        "period": "Fermée toute l’année",
+        "species": "Touladi",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Lac Cedarbough (49°58′49″ N , 92°11′37″ O ) et tous les ruisseaux de communication jusqu’au lac Little Vermilion (50°00′06″ N , 92°09′18″ O ) · Lac Little Vermilion (50°00′06″ N , 92°09′18″ O ) et tous les ruisseaux de communication jusqu’au lac Cedarbough (49°58′49″ N , 92°11′37″ O )",
+        "raw": "Saison : Fermée toute l’année",
+        "waters": [
+          "Lac Cedarbough (49°58′49″ N , 92°11′37″ O ) et tous les ruisseaux de communication jusqu’au lac Little Vermilion (50°00′06″ N , 92°09′18″ O )",
+          "Lac Little Vermilion (50°00′06″ N , 92°09′18″ O ) et tous les ruisseaux de communication jusqu’au lac Cedarbough (49°58′49″ N , 92°11′37″ O )"
+        ]
+      },
+      {
+        "period": null,
+        "species": "Maskinongé",
+        "limit": "S-1; doit dépasser 91 centimètres, et C-0 Limites : S-1; doit dépasser 137 centimètres, et C-0",
+        "length": null,
+        "gear": null,
+        "notes": "Lac Confusion (50°40′00″ N , 94°09′00″ O ) · Lac Flat (50°57′43″ N , 93°57′12″ O ) - canton de Baird · Lac Russett (50°58′31″ N , 93°55′45″ O ) - canton de Baird · Lac sans nom (lac Paul-Orr) (50°59′24″ N , 93°56′02″ O ) · Lac sans nom (lac Spires) (50°58′42″ N , 93°58′45″ O ) · Lac Cliff (50°10′08″ N , 93°17′60″ O ) - au niveau de la route 105 · Lac Longlegged (50°45′00″, 94°05′00″ O ) · Lac Perrault (50°17′ N , 93°08′ O )",
+        "raw": "Limites : S-1; doit dépasser 91 centimètres, et C-0 Limites : S-1; doit dépasser 137 centimètres, et C-0",
+        "waters": [
+          "Lac Confusion (50°40′00″ N , 94°09′00″ O )",
+          "Lac Flat (50°57′43″ N , 93°57′12″ O ) - canton de Baird",
+          "Lac Russett (50°58′31″ N , 93°55′45″ O ) - canton de Baird",
+          "Lac sans nom (lac Paul-Orr) (50°59′24″ N , 93°56′02″ O )",
+          "Lac sans nom (lac Spires) (50°58′42″ N , 93°58′45″ O )",
+          "Lac Cliff (50°10′08″ N , 93°17′60″ O ) - au niveau de la route 105",
+          "Lac Longlegged (50°45′00″, 94°05′00″ O )",
+          "Lac Perrault (50°17′ N , 93°08′ O )"
+        ]
+      },
+      {
+        "period": "Du 1er janvier au 31 mars et du 15 juin au 31 décembre",
+        "species": "Doré jaune",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Lac Graystone (49°59′11″, 91°02′38″ O ) - depuis la route 599 jusqu’à une ligne traversant le lac Graystone à 91°03′13″ O · Ruisseau Post - depuis la base de la chute dans la baie Post jusqu’au point de latitude 49°55′36″ N sur le lac Sturgeon · Lac Sturgeon (49°55′38″, 90°53′49″ O ) - décrit comme la baie Trappers Point, depuis 50°11′55″ N jusqu’à l’intersection des ruisseaux Trout et Second et la route 599",
+        "raw": "Saison : Du 1er janvier au 31 mars et du 15 juin au 31 décembre",
+        "waters": [
+          "Lac Graystone (49°59′11″, 91°02′38″ O ) - depuis la route 599 jusqu’à une ligne traversant le lac Graystone à 91°03′13″ O",
+          "Ruisseau Post - depuis la base de la chute dans la baie Post jusqu’au point de latitude 49°55′36″ N sur le lac Sturgeon",
+          "Lac Sturgeon (49°55′38″, 90°53′49″ O ) - décrit comme la baie Trappers Point, depuis 50°11′55″ N jusqu’à l’intersection des ruisseaux Trout et Second et la route 599"
+        ]
+      }
+    ]
+  },
+  "waterbody_exceptions": {
+    "en": [
+      {
+        "name": "Big Vermilion Lake",
+        "location": "(50°02'00\" N , 92°13'00\" W )",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Only artificial lures may be used",
+            "notes": "Only artificial lures may be used",
+            "raw": "Only artificial lures may be used"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Only 1 line may be used when angling through the ice",
+            "raw": "Only 1 line may be used when angling through the ice"
+          },
+          {
+            "period": null,
+            "species": "Lake trout",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "none between 45-60 centimetres, not more than 1 greater than 60 centimetres",
+            "raw": "Lake trout - none between 45-60 centimetres, not more than 1 greater than 60 centimetres"
+          }
+        ],
+        "raw": "Big Vermilion Lake (50°02'00\" N , 92°13'00\" W ) Only artificial lures may be used | Only 1 line may be used when angling through the ice | Lake trout - none between 45-60 centimetres, not more than 1 greater than 60 centimetres"
+      },
+      {
+        "name": "Cedar Lake",
+        "location": "(50°10′08″ N , 93°07′11″ W )",
+        "rules": [
+          {
+            "period": null,
+            "species": "Muskellunge",
+            "limit": "S-1; must be greater than 137 centimetres and C-0",
+            "length": "must be greater than 137 centimetres",
+            "gear": null,
+            "notes": "S-1; must be greater than 137 centimetres and C-0",
+            "raw": "Muskellunge - S-1; must be greater than 137 centimetres and C-0"
+          }
+        ],
+        "raw": "Cedar Lake (50°10′08″ N , 93°07′11″ W ) Muskellunge - S-1; must be greater than 137 centimetres and C-0"
+      },
+      {
+        "name": "Cedar Lake",
+        "location": "Louise Rapids and Nelson Lake",
+        "rules": [
+          {
+            "period": "no fishing from April 1 to June 14",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from April 1 to June 14",
+            "raw": "Fish sanctuary - no fishing from April 1 to June 14"
+          }
+        ],
+        "raw": "Cedar Lake Louise Rapids and Nelson Lake Fish sanctuary - no fishing from April 1 to June 14"
+      },
+      {
+        "name": "Cloudlet Lake (49°58'50\" N. , 92°21'13\" W. ), Hooch Lake (49°57'57\" N. , 92°19'20\" W. ), Muskie (Maskinonge) Lake (49°56'58\" N. , 92°17'41\" W. ) and all connecting waters - Echo, Lomond, Pickerel and Vermilion Townships",
+        "location": null,
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Only artificial lures and 1 barbless hook may be used",
+            "notes": "Only artificial lures and 1 barbless hook may be used",
+            "raw": "Only artificial lures and 1 barbless hook may be used"
+          },
+          {
+            "period": "no fishing from January 1 to Friday before the third Saturday in June and December 1 to December 31",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from January 1 to Friday before the third Saturday in June and December 1 to December 31",
+            "raw": "Fish sanctuary - no fishing from January 1 to Friday before the third Saturday in June and December 1 to December 31"
+          },
+          {
+            "period": null,
+            "species": "Muskellunge",
+            "limit": "S-0 and C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 and C-0",
+            "raw": "Muskellunge - S-0 and C-0"
+          },
+          {
+            "period": null,
+            "species": "Northern pike",
+            "limit": "S-0 and C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 and C-0",
+            "raw": "Northern pike - S-0 and C-0"
+          },
+          {
+            "period": null,
+            "species": "Smallmouth bass",
+            "limit": "S-0 and C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 and C-0",
+            "raw": "Smallmouth bass - S-0 and C-0"
+          }
+        ],
+        "raw": "Cloudlet Lake (49°58'50\" N. , 92°21'13\" W. ), Hooch Lake (49°57'57\" N. , 92°19'20\" W. ), Muskie (Maskinonge) Lake (49°56'58\" N. , 92°17'41\" W. ) and all connecting waters - Echo, Lomond, Pickerel and Vermilion Townships Only artificial lures and 1 barbless hook may be used | Fish sanctuary - no fishing from January 1 to Friday before the third Saturday in June and December 1 to December 31 | Muskellunge - S-0 and C-0 | Northern pike - S-0 and C-0 | Smallmouth bass - S-0 and C-0"
+      },
+      {
+        "name": "Lac Seul",
+        "location": "and all connecting waters including, but not limited to Broad (50°26'32\" N , 92°37'50\" W ), Sunlight (50°29'14\" N , 92°34'17\" W ), Root River, Vaughan (Whitefish Lake) and Lost Lakes, and Wenasaga River, from the first rapids upstream from Lac Seul approximately three kilometres downstream to the last group of islands.",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "No person may possess any live fish taken by angling other than baitfish",
+            "raw": "No person may possess any live fish taken by angling other than baitfish"
+          },
+          {
+            "period": null,
+            "species": "Muskellunge",
+            "limit": "S-0 and C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 and C-0",
+            "raw": "Muskellunge - S-0 and C-0"
+          },
+          {
+            "period": null,
+            "species": "Walleye and sauger combined",
+            "limit": "S-4 and C-2; none between 46-53 centimetres, not more than 1 greater than 53 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 and C-2; none between 46-53 centimetres, not more than 1 greater than 53 centimetres",
+            "raw": "Walleye and sauger combined - S-4 and C-2; none between 46-53 centimetres, not more than 1 greater than 53 centimetres"
+          }
+        ],
+        "raw": "Lac Seul and all connecting waters including, but not limited to Broad (50°26'32\" N , 92°37'50\" W ), Sunlight (50°29'14\" N , 92°34'17\" W ), Root River, Vaughan (Whitefish Lake) and Lost Lakes, and Wenasaga River, from the first rapids upstream from Lac Seul approximately three kilometres downstream to the last group of islands. No person may possess any live fish taken by angling other than baitfish | Muskellunge - S-0 and C-0 | Walleye and sauger combined - S-4 and C-2; none between 46-53 centimetres, not more than 1 greater than 53 centimetres"
+      },
+      {
+        "name": "Minnitaki",
+        "location": "(49°58'19\" N , 91°57'29\" W ), Abram (50°03'33\" N ,91°55'44\" W ), Pelican (50°06'41\" N , 91°57'40\" W ), and Botsford Lakes (50°08'19\" N , 91°39'32\" W ) - including Duck Lake, Hidden Lake (50°07'26\" N , 91°44'33\" W ), English River, and Rice River",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "No person may possess any live fish taken by angling other than baitfish",
+            "raw": "No person may possess any live fish taken by angling other than baitfish"
+          },
+          {
+            "period": "open from January 1 to April 14 and the third Saturday in May to December 31",
+            "species": "Northern pike",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "open from January 1 to April 14 and the third Saturday in May to December 31",
+            "raw": "Northern pike - open from January 1 to April 14 and the third Saturday in May to December 31"
+          },
+          {
+            "period": null,
+            "species": "Walleye and sauger combined",
+            "limit": "S-4 and C-2; none between 46-53 centimetres, not more than 1 greater than 53 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 and C-2; none between 46-53 centimetres, not more than 1 greater than 53 centimetres",
+            "raw": "Walleye and sauger combined - S-4 and C-2; none between 46-53 centimetres, not more than 1 greater than 53 centimetres"
+          }
+        ],
+        "raw": "Minnitaki (49°58'19\" N , 91°57'29\" W ), Abram (50°03'33\" N ,91°55'44\" W ), Pelican (50°06'41\" N , 91°57'40\" W ), and Botsford Lakes (50°08'19\" N , 91°39'32\" W ) - including Duck Lake, Hidden Lake (50°07'26\" N , 91°44'33\" W ), English River, and Rice River No person may possess any live fish taken by angling other than baitfish | Northern pike - open from January 1 to April 14 and the third Saturday in May to December 31 | Walleye and sauger combined - S-4 and C-2; none between 46-53 centimetres, not more than 1 greater than 53 centimetres"
+      },
+      {
+        "name": "Minnitaki Lake -",
+        "location": "Red Pine Bay",
+        "rules": [
+          {
+            "period": null,
+            "species": "All species",
+            "limit": "S-0 and C-0; from third Saturday in May to June 14",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 and C-0; from third Saturday in May to June 14",
+            "raw": "All species - S-0 and C-0; from third Saturday in May to June 14"
+          }
+        ],
+        "raw": "Minnitaki Lake - Red Pine Bay All species - S-0 and C-0; from third Saturday in May to June 14"
+      },
+      {
+        "name": "Minnitaki Lake",
+        "location": "(49°58'19\" N , 91°57'29\" W )",
+        "rules": [
+          {
+            "period": "no fishing from April 1 to June 14 in the following areas:",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from April 1 to June 14 in the following areas:",
+            "raw": "Fish sanctuary - no fishing from April 1 to June 14 in the following areas:"
+          },
+          {
+            "period": null,
+            "species": "Grassy Bay and English River",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "between English Falls downstream to include all of Grassy Bay of Minnitaki Lake",
+            "raw": "Grassy Bay and English River - between English Falls downstream to include all of Grassy Bay of Minnitaki Lake"
+          },
+          {
+            "period": null,
+            "species": "Twin Bay and the Rice River",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "including Twill Lake (49°56'38\" N , 91°59'02\" W ), Flower Lake (49°56'47\" N , 91°57'19\" W ), Twinflower Lake (49°56'27\" N , 91°55'44\" W .), Purity Lake, Parnes Lake (49°56'27\" N , 91°54'23\" W ) and connecting streams, Twinflower Creek, and Twin Bay of Minnitaki Lake (49°57'48\" N , 91°52'56\" W ) (collectively known as the Rice River) and waters extending approximately 300 m north, to the parallel of latitude 49°58’34” N , drawn across Minnitaki Lake",
+            "raw": "Twin Bay and the Rice River - including Twill Lake (49°56'38\" N , 91°59'02\" W ), Flower Lake (49°56'47\" N , 91°57'19\" W ), Twinflower Lake (49°56'27\" N , 91°55'44\" W .), Purity Lake, Parnes Lake (49°56'27\" N , 91°54'23\" W ) and connecting streams, Twinflower Creek, and Twin Bay of Minnitaki Lake (49°57'48\" N , 91°52'56\" W ) (collectively known as the Rice River) and waters extending approximately 300 m north, to the parallel of latitude 49°58’34” N , drawn across Minnitaki Lake"
+          }
+        ],
+        "raw": "Minnitaki Lake (49°58'19\" N , 91°57'29\" W ) Fish sanctuary - no fishing from April 1 to June 14 in the following areas: | Grassy Bay and English River - between English Falls downstream to include all of Grassy Bay of Minnitaki Lake | Twin Bay and the Rice River - including Twill Lake (49°56'38\" N , 91°59'02\" W ), Flower Lake (49°56'47\" N , 91°57'19\" W ), Twinflower Lake (49°56'27\" N , 91°55'44\" W .), Purity Lake, Parnes Lake (49°56'27\" N , 91°54'23\" W ) and connecting streams, Twinflower Creek, and Twin Bay of Minnitaki Lake (49°57'48\" N , 91°52'56\" W ) (collectively known as the Rice River) and waters extending approximately 300 m north, to the parallel of latitude 49°58’34” N , drawn across Minnitaki Lake"
+      },
+      {
+        "name": "Red Lake and Gullrock System",
+        "location": "those waters upstream of Snowshoe Dam (50°54′22″ N , 93°31′05″ W ) on the Chukuni River, including Red Lake (51°03′21″ N , 93°57′12″ W ), Gullrock Lake (50°58′28″ N , 93°37′00″ W ), Keg Lake (50°59′32″ N , 93°41′01″ W ), Ranger Lake (51°03′54″ N , 93°34′33″ W ), Two Island Lake (50º55′30″ N , 93º34′53″ W ) and all portions of the Chukuni River in between these lakes and any waters flowing into the Red Lake/Gullrock System",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Only artificial lures and 1 single-pointed barbless hook may be used while angling for lake trout",
+            "notes": "Only artificial lures and 1 single-pointed barbless hook may be used while angling for lake trout",
+            "raw": "Only artificial lures and 1 single-pointed barbless hook may be used while angling for lake trout"
+          },
+          {
+            "period": null,
+            "species": "Lake trout",
+            "limit": "S-0 and C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 and C-0",
+            "raw": "Lake trout - S-0 and C-0"
+          }
+        ],
+        "raw": "Red Lake and Gullrock System those waters upstream of Snowshoe Dam (50°54′22″ N , 93°31′05″ W ) on the Chukuni River, including Red Lake (51°03′21″ N , 93°57′12″ W ), Gullrock Lake (50°58′28″ N , 93°37′00″ W ), Keg Lake (50°59′32″ N , 93°41′01″ W ), Ranger Lake (51°03′54″ N , 93°34′33″ W ), Two Island Lake (50º55′30″ N , 93º34′53″ W ) and all portions of the Chukuni River in between these lakes and any waters flowing into the Red Lake/Gullrock System Only artificial lures and 1 single-pointed barbless hook may be used while angling for lake trout | Lake trout - S-0 and C-0"
+      },
+      {
+        "name": "Red Lake",
+        "location": "(51°03'21\" N , 93°57'12\" W ) - Fairlie Township",
+        "rules": [
+          {
+            "period": "no fishing from April 1 to June 14 in the following areas:",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from April 1 to June 14 in the following areas:",
+            "raw": "Fish sanctuary - no fishing from April 1 to June 14 in the following areas:"
+          },
+          {
+            "period": null,
+            "species": "Red Lake and Chukuni River",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "McDonough and Bateman Townships, from Little Vermilion Lake south to Red Lake, including part of Hoyles Bay",
+            "raw": "Red Lake and Chukuni River - McDonough and Bateman Townships, from Little Vermilion Lake south to Red Lake, including part of Hoyles Bay"
+          },
+          {
+            "period": null,
+            "species": "Red Lake and Golden Creek",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Bateman Township, from the Pine Ridge Road, south to Red Lake, including part of East Bay",
+            "raw": "Red Lake and Golden Creek - Bateman Township, from the Pine Ridge Road, south to Red Lake, including part of East Bay"
+          },
+          {
+            "period": null,
+            "species": "Red Lake and Parker Creek",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Fairlie Township, from Parker Lake to Red Lake, including an unnamed bay",
+            "raw": "Red Lake and Parker Creek - Fairlie Township, from Parker Lake to Red Lake, including an unnamed bay"
+          },
+          {
+            "period": null,
+            "species": "Red Lake and Ranger Lake",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Ranger Creek and part of North Bay of Gullrock Lake",
+            "raw": "Red Lake and Ranger Lake - Ranger Creek and part of North Bay of Gullrock Lake"
+          }
+        ],
+        "raw": "Red Lake (51°03'21\" N , 93°57'12\" W ) - Fairlie Township Fish sanctuary - no fishing from April 1 to June 14 in the following areas: | Red Lake and Chukuni River - McDonough and Bateman Townships, from Little Vermilion Lake south to Red Lake, including part of Hoyles Bay | Red Lake and Golden Creek - Bateman Township, from the Pine Ridge Road, south to Red Lake, including part of East Bay | Red Lake and Parker Creek - Fairlie Township, from Parker Lake to Red Lake, including an unnamed bay | Red Lake and Ranger Lake - Ranger Creek and part of North Bay of Gullrock Lake"
+      },
+      {
+        "name": "Sydney Lake Area",
+        "location": "North Kenora Pilot Project area - Waters within boundaries of Manitoba/Ontario border to south shore of the English River System including Goshawk (50°13'07\" N , 94°48'48\" W ) and Tourist (50°16'05\" N , 94°41'58\" W ) lakes to Separation Rapids Bridge and South Pakwash Road to Leano Lake (50°47'10\" N , 94°26'39\" W ), south boundary of Woodland Caribou Provincial Park to Manitoba/Ontario border",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Regulations for all non-Canadian anglers:",
+            "raw": "Regulations for all non-Canadian anglers:"
+          },
+          {
+            "period": null,
+            "species": "lake trout",
+            "limit": "S-1 and C-1",
+            "length": null,
+            "gear": null,
+            "notes": "S-1 and C-1",
+            "raw": "lake trout - S-1 and C-1"
+          },
+          {
+            "period": null,
+            "species": "lake whitefish",
+            "limit": "S-6 and C-6",
+            "length": null,
+            "gear": null,
+            "notes": "S-6 and C-6",
+            "raw": "lake whitefish - S-6 and C-6"
+          },
+          {
+            "period": null,
+            "species": "largemouth and smallmouth bass combined",
+            "limit": "S-1 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31",
+            "length": "must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31",
+            "gear": null,
+            "notes": "S-1 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31",
+            "raw": "largemouth and smallmouth bass combined - S-1 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31"
+          },
+          {
+            "period": null,
+            "species": "Muskellunge",
+            "limit": "S-0 and C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 and C-0",
+            "raw": "Muskellunge - S-0 and C-0"
+          },
+          {
+            "period": null,
+            "species": "Northern pike",
+            "limit": "S-2 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-2 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres",
+            "raw": "Northern pike - S-2 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres"
+          },
+          {
+            "period": null,
+            "species": "walleye and sauger combined",
+            "limit": "S-2 and C-2; not more than 1 greater than 46 centimetres",
+            "length": null,
+            "gear": null,
+            "notes": "S-2 and C-2; not more than 1 greater than 46 centimetres",
+            "raw": "walleye and sauger combined - S-2 and C-2; not more than 1 greater than 46 centimetres"
+          },
+          {
+            "period": null,
+            "species": "yellow perch",
+            "limit": "S-25 and C-25",
+            "length": null,
+            "gear": null,
+            "notes": "S-25 and C-25",
+            "raw": "yellow perch - S-25 and C-25"
+          }
+        ],
+        "raw": "Sydney Lake Area North Kenora Pilot Project area - Waters within boundaries of Manitoba/Ontario border to south shore of the English River System including Goshawk (50°13'07\" N , 94°48'48\" W ) and Tourist (50°16'05\" N , 94°41'58\" W ) lakes to Separation Rapids Bridge and South Pakwash Road to Leano Lake (50°47'10\" N , 94°26'39\" W ), south boundary of Woodland Caribou Provincial Park to Manitoba/Ontario border Regulations for all non-Canadian anglers: | lake trout - S-1 and C-1 | lake whitefish - S-6 and C-6 | largemouth and smallmouth bass combined - S-1 and C-1; must be less than 35 centimetres from January 1 to June 30 and December 1 to December 31 | Muskellunge - S-0 and C-0 | Northern pike - S-2 and C-2; none between 70-90 centimetres, not more than 1 greater than 90 centimetres | walleye and sauger combined - S-2 and C-2; not more than 1 greater than 46 centimetres | yellow perch - S-25 and C-25"
+      }
+    ],
+    "fr": [
+      {
+        "name": "Lac Big Vermilion",
+        "location": "(50°02′00″ N , 92°13′00″ O )",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Seuls les leurres artificiels sont permis",
+            "notes": "Seuls les leurres artificiels sont permis",
+            "raw": "Seuls les leurres artificiels sont permis"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Une seule ligne est permise pour la pêche sur la glace",
+            "raw": "Une seule ligne est permise pour la pêche sur la glace"
+          },
+          {
+            "period": null,
+            "species": "Touladi",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "aucun entre 45 et 60 centimètres, 1 seul dépassant 60 centimètres",
+            "raw": "Touladi - aucun entre 45 et 60 centimètres, 1 seul dépassant 60 centimètres"
+          }
+        ],
+        "raw": "Lac Big Vermilion (50°02′00″ N , 92°13′00″ O ) Seuls les leurres artificiels sont permis | Une seule ligne est permise pour la pêche sur la glace | Touladi - aucun entre 45 et 60 centimètres, 1 seul dépassant 60 centimètres"
+      },
+      {
+        "name": "Lac Cedar",
+        "location": "(50°10′08″ N , 93°07′11″ O )",
+        "rules": [
+          {
+            "period": null,
+            "species": "Maskinongé",
+            "limit": "S-1; doit dépasser 137 centimètres, et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-1; doit dépasser 137 centimètres, et C-0",
+            "raw": "Maskinongé - S-1; doit dépasser 137 centimètres, et C-0"
+          }
+        ],
+        "raw": "Lac Cedar (50°10′08″ N , 93°07′11″ O ) Maskinongé - S-1; doit dépasser 137 centimètres, et C-0"
+      },
+      {
+        "name": "Lac Cedar -",
+        "location": "Rapides Louise et lac Nelson",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er avril au 14 juin",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er avril au 14 juin",
+            "raw": "Réserve de poissons - pêche interdite du 1er avril au 14 juin"
+          }
+        ],
+        "raw": "Lac Cedar - Rapides Louise et lac Nelson Réserve de poissons - pêche interdite du 1er avril au 14 juin"
+      },
+      {
+        "name": "Lac Cloudlet (49°58'50\" N. , 92°21'13\" O. ), lac Hooch (49°57'57\" N. , 92°19'20\" O. ), lac Muskie (Maskinonge) (49°56'58\" N. , 92°17'41\" O. ) et toutes les eaux de communication cantons d’Echo, Lomond, Pickerel et Vermilion",
+        "location": null,
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Seuls les leurres artificiels sont permis. Un seul hameçon sans barbes est permis",
+            "notes": "Seuls les leurres artificiels sont permis. Un seul hameçon sans barbes est permis",
+            "raw": "Seuls les leurres artificiels sont permis. Un seul hameçon sans barbes est permis"
+          },
+          {
+            "period": "pêche interdite du 1er janvier au vendredi précédant le 3e samedi de juin et du 1er décembre au 31 décembre",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er janvier au vendredi précédant le 3e samedi de juin et du 1er décembre au 31 décembre",
+            "raw": "Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 3e samedi de juin et du 1er décembre au 31 décembre"
+          },
+          {
+            "period": null,
+            "species": "Maskinongé",
+            "limit": "S-0 et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 et C-0",
+            "raw": "Maskinongé - S-0 et C-0"
+          },
+          {
+            "period": null,
+            "species": "Grand brochet",
+            "limit": "S-0 et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 et C-0",
+            "raw": "Grand brochet - S-0 et C-0"
+          },
+          {
+            "period": null,
+            "species": "Achigan à petite bouche",
+            "limit": "S-0 et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 et C-0",
+            "raw": "Achigan à petite bouche - S-0 et C-0"
+          }
+        ],
+        "raw": "Lac Cloudlet (49°58'50\" N. , 92°21'13\" O. ), lac Hooch (49°57'57\" N. , 92°19'20\" O. ), lac Muskie (Maskinonge) (49°56'58\" N. , 92°17'41\" O. ) et toutes les eaux de communication cantons d’Echo, Lomond, Pickerel et Vermilion Seuls les leurres artificiels sont permis. Un seul hameçon sans barbes est permis | Réserve de poissons - pêche interdite du 1er janvier au vendredi précédant le 3e samedi de juin et du 1er décembre au 31 décembre | Maskinongé - S-0 et C-0 | Grand brochet - S-0 et C-0 | Achigan à petite bouche - S-0 et C-0"
+      },
+      {
+        "name": "Lacs Minnitaki (49°58' 19\" N. , 91°57' 29\" O. ), Abram (50°03' 33\" N. , 91°55' 44\" O. ), Pelican (50°06' 41\" N. , 91°57' 40\" O. ) et Botsford (50°08' 19\" N. , 91°39' 32\" O. ) - y compris le lac Duck, le lac Hidden (50°07' 26\" N , 91°44' 33\" O ), la rivière English et la rivière Rice",
+        "location": null,
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est interdit de posséder des poissons vivants pris à la ligne, sauf des poissons d’appât",
+            "raw": "Il est interdit de posséder des poissons vivants pris à la ligne, sauf des poissons d’appât"
+          },
+          {
+            "period": "ouverte du 1er janvier au 14 avril et du 3e samedi de mai au 31 décembre",
+            "species": "Grand brochet",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "ouverte du 1er janvier au 14 avril et du 3e samedi de mai au 31 décembre",
+            "raw": "Grand brochet - ouverte du 1er janvier au 14 avril et du 3e samedi de mai au 31 décembre"
+          },
+          {
+            "period": null,
+            "species": "Doré jaune et doré noir (toute combinaison)",
+            "limit": "S-4 et C-2; aucun entre 46 et 53 centimètres, 1 seul dépassant 53 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 et C-2; aucun entre 46 et 53 centimètres, 1 seul dépassant 53 centimètres",
+            "raw": "Doré jaune et doré noir (toute combinaison) - S-4 et C-2; aucun entre 46 et 53 centimètres, 1 seul dépassant 53 centimètres"
+          }
+        ],
+        "raw": "Lacs Minnitaki (49°58' 19\" N. , 91°57' 29\" O. ), Abram (50°03' 33\" N. , 91°55' 44\" O. ), Pelican (50°06' 41\" N. , 91°57' 40\" O. ) et Botsford (50°08' 19\" N. , 91°39' 32\" O. ) - y compris le lac Duck, le lac Hidden (50°07' 26\" N , 91°44' 33\" O ), la rivière English et la rivière Rice Il est interdit de posséder des poissons vivants pris à la ligne, sauf des poissons d’appât | Grand brochet - ouverte du 1er janvier au 14 avril et du 3e samedi de mai au 31 décembre | Doré jaune et doré noir (toute combinaison) - S-4 et C-2; aucun entre 46 et 53 centimètres, 1 seul dépassant 53 centimètres"
+      },
+      {
+        "name": "Lac Minnitaki -",
+        "location": "baie Red Pine",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": "Toutes les espèces : S-0 et C-0; du 3e samedi de mai au 14 juin",
+            "length": null,
+            "gear": null,
+            "notes": "Toutes les espèces : S-0 et C-0; du 3e samedi de mai au 14 juin",
+            "raw": "Toutes les espèces : S-0 et C-0; du 3e samedi de mai au 14 juin"
+          }
+        ],
+        "raw": "Lac Minnitaki - baie Red Pine Toutes les espèces : S-0 et C-0; du 3e samedi de mai au 14 juin"
+      },
+      {
+        "name": "Lac Minnitaki",
+        "location": "(49°58' 19\" N , 91°57' 29\" O )",
+        "rules": [
+          {
+            "period": "pêche interdite du 1er avril au 14 juin dans les zones",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er avril au 14 juin dans les zones",
+            "raw": "Réserve de poissons - pêche interdite du 1er avril au 14 juin dans les zones"
+          },
+          {
+            "period": null,
+            "species": "baie Grassy et rivière English",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "entre les chutes English en aval, incluant toute la baie Grassy du lac Minnitaki",
+            "raw": "baie Grassy et rivière English - entre les chutes English en aval, incluant toute la baie Grassy du lac Minnitaki"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "baie Twin et rivière Rice incluant les lacs Twill (49°56' 38\" N , 91°59' 02\" O ), Flower (49°56' 47\" N , 91°57' 19\" O ), Twinflower (49°56' 27\" N , 91°55' 44\" O ), Purity et Parnes (49°56' 27\" N , 91°54' 23\" O ) et leurs eaux de communication, le ruisseau Twinflower et la baie Twin du lac Minnitaki (49°57' 48\" N , 91°52' 56\" O ) (collectivement connus sous le nom de rivière Rice) et les eaux s’étendant sur environ 300 mètres vers le nord, jusqu’à la latitude 49°58′34″ N traversant le lac Minnitaki",
+            "raw": "baie Twin et rivière Rice incluant les lacs Twill (49°56' 38\" N , 91°59' 02\" O ), Flower (49°56' 47\" N , 91°57' 19\" O ), Twinflower (49°56' 27\" N , 91°55' 44\" O ), Purity et Parnes (49°56' 27\" N , 91°54' 23\" O ) et leurs eaux de communication, le ruisseau Twinflower et la baie Twin du lac Minnitaki (49°57' 48\" N , 91°52' 56\" O ) (collectivement connus sous le nom de rivière Rice) et les eaux s’étendant sur environ 300 mètres vers le nord, jusqu’à la latitude 49°58′34″ N traversant le lac Minnitaki"
+          }
+        ],
+        "raw": "Lac Minnitaki (49°58' 19\" N , 91°57' 29\" O ) Réserve de poissons - pêche interdite du 1er avril au 14 juin dans les zones | baie Grassy et rivière English - entre les chutes English en aval, incluant toute la baie Grassy du lac Minnitaki | baie Twin et rivière Rice incluant les lacs Twill (49°56' 38\" N , 91°59' 02\" O ), Flower (49°56' 47\" N , 91°57' 19\" O ), Twinflower (49°56' 27\" N , 91°55' 44\" O ), Purity et Parnes (49°56' 27\" N , 91°54' 23\" O ) et leurs eaux de communication, le ruisseau Twinflower et la baie Twin du lac Minnitaki (49°57' 48\" N , 91°52' 56\" O ) (collectivement connus sous le nom de rivière Rice) et les eaux s’étendant sur environ 300 mètres vers le nord, jusqu’à la latitude 49°58′34″ N traversant le lac Minnitaki"
+      },
+      {
+        "name": "Lac Red (51°03' 21\" N. , 93°57' 12\" O. ) - canton de Fairlie",
+        "location": null,
+        "rules": [
+          {
+            "period": "pêche interdite du 1er avril au 14 juin dans les zones suivantes :",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "pêche interdite du 1er avril au 14 juin dans les zones suivantes :",
+            "raw": "Réserve de poissons - pêche interdite du 1er avril au 14 juin dans les zones suivantes :"
+          },
+          {
+            "period": null,
+            "species": "Lac Red et rivière Chukuni",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "cantons de McDonough et Bateman, du lac Little Vermilion vers le sud jusqu’au lac Red, incluant une partie de la baie Hoyles",
+            "raw": "Lac Red et rivière Chukuni - cantons de McDonough et Bateman, du lac Little Vermilion vers le sud jusqu’au lac Red, incluant une partie de la baie Hoyles"
+          },
+          {
+            "period": null,
+            "species": "Lac Red et ruisseau Golden",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "canton de Bateman, du chemin Pine Ridge vers le sud jusqu’au lac Red, incluant une partie de la baie East",
+            "raw": "Lac Red et ruisseau Golden - canton de Bateman, du chemin Pine Ridge vers le sud jusqu’au lac Red, incluant une partie de la baie East"
+          },
+          {
+            "period": null,
+            "species": "Lac Red et ruisseau Parker",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "canton de Fairlie, du lac Parker jusqu’au lac Red, incluant une baie sans nom",
+            "raw": "Lac Red et ruisseau Parker - canton de Fairlie, du lac Parker jusqu’au lac Red, incluant une baie sans nom"
+          },
+          {
+            "period": null,
+            "species": "Lac Red et lac Ranger",
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "ruisseau Ranger et une partie de la baie North du lac Gullrock",
+            "raw": "Lac Red et lac Ranger - ruisseau Ranger et une partie de la baie North du lac Gullrock"
+          }
+        ],
+        "raw": "Lac Red (51°03' 21\" N. , 93°57' 12\" O. ) - canton de Fairlie Réserve de poissons - pêche interdite du 1er avril au 14 juin dans les zones suivantes : | Lac Red et rivière Chukuni - cantons de McDonough et Bateman, du lac Little Vermilion vers le sud jusqu’au lac Red, incluant une partie de la baie Hoyles | Lac Red et ruisseau Golden - canton de Bateman, du chemin Pine Ridge vers le sud jusqu’au lac Red, incluant une partie de la baie East | Lac Red et ruisseau Parker - canton de Fairlie, du lac Parker jusqu’au lac Red, incluant une baie sans nom | Lac Red et lac Ranger - ruisseau Ranger et une partie de la baie North du lac Gullrock"
+      },
+      {
+        "name": "Réseau hydrographique des lacs Red et Gullrock",
+        "location": "les eaux en amont du barrage Snowshoe (50°54′22″ N , 93°31′05″ O ) sur la rivière Chukuni, qui comprennent le lac Red (51°03′21″ N , 93°57′12″ O ), le lac Keg (50°59′32″ N , 93°41′01″ O ), le lac Gullrock (50°58′28″ N , 93°37′00″ O ), le lac Ranger (51°03′54″ N , 93°34′33″ O ), le lac Two Island (50°55′30″ N , 93°34′53″ O ) ettoutes les parties de la rivière Chukuni entre ces lacs et tous les cours d’eau se déversant dans le réseau des lacs Red et Gullrock",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Seuls les leurres artificiels et 1 seul hameçon sans barbes et à pointe unique sont permis lors de la pêche au touladi.",
+            "notes": "Seuls les leurres artificiels et 1 seul hameçon sans barbes et à pointe unique sont permis lors de la pêche au touladi.",
+            "raw": "Seuls les leurres artificiels et 1 seul hameçon sans barbes et à pointe unique sont permis lors de la pêche au touladi."
+          },
+          {
+            "period": null,
+            "species": "Touladi",
+            "limit": "S-0 et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 et C-0",
+            "raw": "Touladi - S-0 et C-0"
+          }
+        ],
+        "raw": "Réseau hydrographique des lacs Red et Gullrock les eaux en amont du barrage Snowshoe (50°54′22″ N , 93°31′05″ O ) sur la rivière Chukuni, qui comprennent le lac Red (51°03′21″ N , 93°57′12″ O ), le lac Keg (50°59′32″ N , 93°41′01″ O ), le lac Gullrock (50°58′28″ N , 93°37′00″ O ), le lac Ranger (51°03′54″ N , 93°34′33″ O ), le lac Two Island (50°55′30″ N , 93°34′53″ O ) ettoutes les parties de la rivière Chukuni entre ces lacs et tous les cours d’eau se déversant dans le réseau des lacs Red et Gullrock Seuls les leurres artificiels et 1 seul hameçon sans barbes et à pointe unique sont permis lors de la pêche au touladi. | Touladi - S-0 et C-0"
+      },
+      {
+        "name": "Lac Seul",
+        "location": "et toutes les eaux de communication - y compris le lac Broad (50°26' 32\" N , 92°37' 50\" O ), le lac Sunlight (50°29' 14\" N , 92°34' 17\" O ), la rivière Root, le lac Vaughan (lac Whitefish) et le lac Lost, ainsi que la rivière Wenasaga, depuis les premiers rapides en amont du lac Seul, environ 3 kilomètres en aval jusqu’au dernier groupe d’îles",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Il est interdit de posséder des poissons vivants pris à la ligne, sauf des poissons d’appât.",
+            "raw": "Il est interdit de posséder des poissons vivants pris à la ligne, sauf des poissons d’appât."
+          },
+          {
+            "period": null,
+            "species": "Maskinongé",
+            "limit": "S-0 et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 et C-0",
+            "raw": "Maskinongé - S-0 et C-0"
+          },
+          {
+            "period": null,
+            "species": "Doré jaune et doré noir (toute combinaison)",
+            "limit": "S-4 et C-2; aucun entre 46 et 53 centimètres, un seul dépassant 53 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "S-4 et C-2; aucun entre 46 et 53 centimètres, un seul dépassant 53 centimètres",
+            "raw": "Doré jaune et doré noir (toute combinaison) - S-4 et C-2; aucun entre 46 et 53 centimètres, un seul dépassant 53 centimètres"
+          }
+        ],
+        "raw": "Lac Seul et toutes les eaux de communication - y compris le lac Broad (50°26' 32\" N , 92°37' 50\" O ), le lac Sunlight (50°29' 14\" N , 92°34' 17\" O ), la rivière Root, le lac Vaughan (lac Whitefish) et le lac Lost, ainsi que la rivière Wenasaga, depuis les premiers rapides en amont du lac Seul, environ 3 kilomètres en aval jusqu’au dernier groupe d’îles Il est interdit de posséder des poissons vivants pris à la ligne, sauf des poissons d’appât. | Maskinongé - S-0 et C-0 | Doré jaune et doré noir (toute combinaison) - S-4 et C-2; aucun entre 46 et 53 centimètres, un seul dépassant 53 centimètres"
+      },
+      {
+        "name": "Zone du lac Sydney",
+        "location": "zone du projet pilote Kenora Nord; les eaux à l’intérieur de la frontière Ontario-Manitoba jusqu’au rivage sud du réseau hydrographique de la rivière English, y compris les lacs Goshawk (50°13' 07\" N , 94°48' 48\" O ) et Tourist (50°16' 05\" N , 94°41' 58\" O ) jusqu’au pont des rapides Separation, et du chemin South Pakwash jusqu’au lac Leano (50°47' 10\" N , 94°26' 39\" O ), de la limite sud du parc provincial Woodland Caribou jusqu’à la frontière Ontario-Manitoba",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Règlements pour tous les pêcheurs qui ne résident pas au Canada :",
+            "raw": "Règlements pour tous les pêcheurs qui ne résident pas au Canada :"
+          },
+          {
+            "period": null,
+            "species": "touladi",
+            "limit": "S-1 et C-1",
+            "length": null,
+            "gear": null,
+            "notes": "S-1 et C-1",
+            "raw": "touladi - S-1 et C-1"
+          },
+          {
+            "period": null,
+            "species": "grand corégone",
+            "limit": "S-6 et C-6",
+            "length": null,
+            "gear": null,
+            "notes": "S-6 et C-6",
+            "raw": "grand corégone - S-6 et C-6"
+          },
+          {
+            "period": null,
+            "species": "achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+            "limit": "S-1 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre",
+            "length": "doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre",
+            "gear": null,
+            "notes": "S-1 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre",
+            "raw": "achigan à grande bouche et achigan à petite bouche (toute combinaison) - S-1 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre"
+          },
+          {
+            "period": null,
+            "species": "Maskinongé",
+            "limit": "S-0 et C-0",
+            "length": null,
+            "gear": null,
+            "notes": "S-0 et C-0",
+            "raw": "Maskinongé - S-0 et C-0"
+          },
+          {
+            "period": null,
+            "species": "grand brochet",
+            "limit": "S-2 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "S-2 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres",
+            "raw": "grand brochet - S-2 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres"
+          },
+          {
+            "period": null,
+            "species": "doré jaune et doré noir (toute combinaison)",
+            "limit": "S-2 et C-2; 1 seul dépassant 46 centimètres",
+            "length": null,
+            "gear": null,
+            "notes": "S-2 et C-2; 1 seul dépassant 46 centimètres",
+            "raw": "doré jaune et doré noir (toute combinaison) - S-2 et C-2; 1 seul dépassant 46 centimètres"
+          },
+          {
+            "period": null,
+            "species": "perchaude",
+            "limit": "S-25 et C-25",
+            "length": null,
+            "gear": null,
+            "notes": "S-25 et C-25",
+            "raw": "perchaude - S-25 et C-25"
+          }
+        ],
+        "raw": "Zone du lac Sydney zone du projet pilote Kenora Nord; les eaux à l’intérieur de la frontière Ontario-Manitoba jusqu’au rivage sud du réseau hydrographique de la rivière English, y compris les lacs Goshawk (50°13' 07\" N , 94°48' 48\" O ) et Tourist (50°16' 05\" N , 94°41' 58\" O ) jusqu’au pont des rapides Separation, et du chemin South Pakwash jusqu’au lac Leano (50°47' 10\" N , 94°26' 39\" O ), de la limite sud du parc provincial Woodland Caribou jusqu’à la frontière Ontario-Manitoba Règlements pour tous les pêcheurs qui ne résident pas au Canada : | touladi - S-1 et C-1 | grand corégone - S-6 et C-6 | achigan à grande bouche et achigan à petite bouche (toute combinaison) - S-1 et C-1; doit mesurer moins de 35 centimètres du 1er janvier au 30 juin et du 1er décembre au 31 décembre | Maskinongé - S-0 et C-0 | grand brochet - S-2 et C-2; aucun entre 70 et 90 centimètres, 1 seul dépassant 90 centimètres | doré jaune et doré noir (toute combinaison) - S-2 et C-2; 1 seul dépassant 46 centimètres | perchaude - S-25 et C-25"
+      }
+    ]
+  },
+  "bait_restrictions": {
+    "en": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Rainbow smelt may not be used as bait or possessed for use as bait.",
+        "raw": "Rainbow smelt may not be used as bait or possessed for use as bait."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "FMZ 4 is part of the Northwest Bait Management Zone ( BMZ ). Live or dead baitfish or leeches may not be transported into or out of a BMZ . These rules do not apply to baitfish and leeches which are both dead and preserved. Refer to bait for more details.",
+        "raw": "FMZ 4 is part of the Northwest Bait Management Zone ( BMZ ). Live or dead baitfish or leeches may not be transported into or out of a BMZ . These rules do not apply to baitfish and leeches which are both dead and preserved. Refer to bait for more details."
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Il est interdit d’utiliser ou de posséder des éperlans arc-en-ciel comme poisson d’appât.",
+        "raw": "Il est interdit d’utiliser ou de posséder des éperlans arc-en-ciel comme poisson d’appât."
+      },
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "La ZGP 4 fait partie de la zone de gestion des appâts ( ZGA ) du Nord-Ouest. On ne peut pas apporter ou sortir des poissons d’appât et des sangsues, morts ou vivants, d’une ZGA . Ces règles ne s’appliquent pas aux poissons d’appât et sangsues qui sont morts et conservés. Voir la section sur les appâts pour plus de renseignements.",
+        "raw": "La ZGP 4 fait partie de la zone de gestion des appâts ( ZGA ) du Nord-Ouest. On ne peut pas apporter ou sortir des poissons d’appât et des sangsues, morts ou vivants, d’une ZGA . Ces règles ne s’appliquent pas aux poissons d’appât et sangsues qui sont morts et conservés. Voir la section sur les appâts pour plus de renseignements."
+      }
+    ]
+  },
+  "fish_sanctuaries": {
+    "en": [
+      {
+        "period": "No fishing - January 1 to Friday before the third Saturday in June and December 1 to December 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - January 1 to Friday before the third Saturday in June and December 1 to December 31 Cloudlet Lake, Hooch Lake and Maskinonge Lake - refer to waterbody exceptions",
+        "waters": [
+          "Cloudlet Lake, Hooch Lake and Maskinonge Lake - refer to waterbody exceptions"
+        ]
+      },
+      {
+        "period": "No fishing - from April 1 to June 14",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - from April 1 to June 14 Agimak River and Little Indian Lake - Gour Township, downstream from Sandbar Lake to the mouth of the Agimak River where it enters Indian Lake | Barnard Creek (50°06′ N , 90°51′ W ) - between Fourbay Lake and Eady Lake | Bruce Lake - from Bruce Creek at Highway 105 north to, and including, the south half of Bruce Lake | Camp Creek and part of Indian Lake - Gour Township | Cedar Lake - refer to waterbody exceptions | English River - from an unnamed island at Talking Falls to latitude 49°33′45″ N drawn across Franks Lake | Jackfish Creek - from the outflow of Jackfish Lake to the inflow of Perrault Lake | Megikons River and Sowden Lake - that part downstream from confluence of Megikons River and Reba River to longitude 91°10′ W drawn through Sowden Lake | Minnitaki Lake - refer to waterbody exceptions | Mud Lake (50°25′25″ N , 93°14′07″ W ) - Kenora District, all waters in the unsurveyed portion of the territorial District of Kenora starting from where its mouth enters Wabaskang Lake | Nelson Lake - Kenora District, from a line between the western shoreline at approximately 50°13′09″ N , 93°09′44″ W and the eastern shoreline at 50°13′05″ N , 93°09′26″ W upstream including the north part of Nelson Lake and the creek and Richmond Lake | Ord River - Kenora District, from 50°15′22″ N , 93°01′40″ W upstream to the top of first set of rapids at 50°12′55″ N , 93°01′08″ W | Pakwash Lake - Fisherman’s Bay | Perrault Falls and Wabaskang Lake - Town of Perrault Falls, between Highway 105 bridge and a point 500 metres northeast of the bridge | Puzzle Bay of Ord Lake - south of the narrows at latitude 50°08′18″ N | Red Lake - refer to waterbody exceptions | Richmond Lake - Kenora District | Savant Lake (North Arm) (50°28′ N , 90°25′ W ) - Savant Township | Troutlake River - from the top of Whitefish Falls to a point 2 kilometres downstream where the river intersects Latitude 50°52′ N | Vermilion River - and tributaries between Elbow Lake and Expanse Lake | Wenasaga River - from the first rapids upstream from Lac Seul approximately 3 kilometres downstream to the last group of islands",
+        "waters": [
+          "Agimak River and Little Indian Lake - Gour Township, downstream from Sandbar Lake to the mouth of the Agimak River where it enters Indian Lake",
+          "Barnard Creek (50°06′ N , 90°51′ W ) - between Fourbay Lake and Eady Lake",
+          "Bruce Lake - from Bruce Creek at Highway 105 north to, and including, the south half of Bruce Lake",
+          "Camp Creek and part of Indian Lake - Gour Township",
+          "Cedar Lake - refer to waterbody exceptions",
+          "English River - from an unnamed island at Talking Falls to latitude 49°33′45″ N drawn across Franks Lake",
+          "Jackfish Creek - from the outflow of Jackfish Lake to the inflow of Perrault Lake",
+          "Megikons River and Sowden Lake - that part downstream from confluence of Megikons River and Reba River to longitude 91°10′ W drawn through Sowden Lake",
+          "Minnitaki Lake - refer to waterbody exceptions",
+          "Mud Lake (50°25′25″ N , 93°14′07″ W ) - Kenora District, all waters in the unsurveyed portion of the territorial District of Kenora starting from where its mouth enters Wabaskang Lake",
+          "Nelson Lake - Kenora District, from a line between the western shoreline at approximately 50°13′09″ N , 93°09′44″ W and the eastern shoreline at 50°13′05″ N , 93°09′26″ W upstream including the north part of Nelson Lake and the creek and Richmond Lake",
+          "Ord River - Kenora District, from 50°15′22″ N , 93°01′40″ W upstream to the top of first set of rapids at 50°12′55″ N , 93°01′08″ W",
+          "Pakwash Lake - Fisherman’s Bay",
+          "Perrault Falls and Wabaskang Lake - Town of Perrault Falls, between Highway 105 bridge and a point 500 metres northeast of the bridge",
+          "Puzzle Bay of Ord Lake - south of the narrows at latitude 50°08′18″ N",
+          "Red Lake - refer to waterbody exceptions",
+          "Richmond Lake - Kenora District",
+          "Savant Lake (North Arm) (50°28′ N , 90°25′ W ) - Savant Township",
+          "Troutlake River - from the top of Whitefish Falls to a point 2 kilometres downstream where the river intersects Latitude 50°52′ N",
+          "Vermilion River - and tributaries between Elbow Lake and Expanse Lake",
+          "Wenasaga River - from the first rapids upstream from Lac Seul approximately 3 kilometres downstream to the last group of islands"
+        ]
+      },
+      {
+        "period": "No fishing - from January 1 to June 14 and September 1 to December 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - from January 1 to June 14 and September 1 to December 31 Root River - between latitudes 50°42′30″ N , and 50°52′30″ N",
+        "waters": [
+          "Root River - between latitudes 50°42′30″ N , and 50°52′30″ N"
+        ]
+      },
+      {
+        "period": "No fishing - from January 1 to June 14 and December 1 to December 31",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - from January 1 to June 14 and December 1 to December 31 Root River (Adamhay River) - between latitudes 50°39′00″ N and 50°42′30″ N | Vaughan Lake (Whitefish Lake) (50°13′ N , 92°22′ W )",
+        "waters": [
+          "Root River (Adamhay River) - between latitudes 50°39′00″ N and 50°42′30″ N",
+          "Vaughan Lake (Whitefish Lake) (50°13′ N , 92°22′ W )"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "Pêche interdite - Du 1er janvier au vendredi avant le 3e samedi de juin et du 1er décembre au 31 décembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er janvier au vendredi avant le 3e samedi de juin et du 1er décembre au 31 décembre Lac Cloudlet, lac Hooch et lac Maskinonge - voir les exceptions visant des plans d’eau particuliers pour plus de détails",
+        "waters": [
+          "Lac Cloudlet, lac Hooch et lac Maskinonge - voir les exceptions visant des plans d’eau particuliers pour plus de détails"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er avril au 14 juin",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er avril au 14 juin Rivière Agimak et lac Little Indian - canton de Gour, en aval depuis le lac Sandbar jusqu’à l’embouchure de la rivière Agimak, là où elle se jette dans le lac Indian | Ruisseau Barnard (50°06′ N , 90°51′ O ) - entre le lac Fourbay et le lac Eady | Lac Bruce - depuis le ruisseau Bruce, à la route 105 nord, jusqu’à et y compris la moitié sud du lac Bruce | Ruisseau Camp et une partie du lac Indian - canton de Gour | Lac Cedar - voir les exceptions visant des plans d’eau particuliers pour plus de détails | Rivière English - à partir d’une île sans nom aux chutes Talking jusqu’à la latitude 49°33′45″ N traversant le lac Franks | Ruisseau Jackfish - depuis le débit sortant du lac Jackfish jusqu’au débit entrant du lac Perrault | Rivière Megikons et lac Sowden - la partie en aval depuis la confluence des rivières Megikons et Reba jusqu’au point de longitude 91°10′ O qui traverse le lac Sowden | Lac Minnitaki - voir les exceptions visant des plans d’eau particuliers pour plus de détails | Lac Mud (50°25′25″ N , 93°14′07″ O ) - district de Kenora, toutes les eaux de la partie non arpentée du district territorial de Kenora, depuis son embouchure dans le lac Wabaskang | Lac Nelson - district de Kenora, depuis une ligne qui passe entre le rivage ouest (à environ 50°13′09″ N , 93°09′44″ O ) et le rivage est (à 50°13′05″ N , 93°09′26″ O ), en amont et incluant la partie nord du lac Nelson et le ruisseau et le lac Richmond | Rivière Ord - district de Kenora, depuis 50°15′22″ N , 93°01′40″ O en amont jusqu’au début du premier groupe de rapides à 50°12′55″ N , 93°01′08″ O | Lac Pakwash - baie Fisherman’s | Chutes Perrault et lac Wabaskang - ville de Perrault Falls, entre le pont de la route 105 et un point situé à 500 mètres au nord-est du pont | Baie Puzzle du lac Ord - au sud du passage au point de latitude 50°08′18″ N | Lac Red - voir les exceptions visant des plans d’eau particuliers pour plus de détails | Lac Richmond (bras nord) - district de Kenora | Lac Savant (50°28′ N , 90°25′ O ) - canton de Savant | Rivière Troutlake - depuis le dessus des chutes Whitefish jusqu’à un point situé à 2 kilomètres en aval, où la rivière croise la latitude 50°52′ N | Rivière Vermilion - et ses tributaires entre les lacs Elbow et Expanse | Rivière Wenasaga - depuis les premiers rapides en amont du lac Seul, et 3 kilomètres en aval jusqu’au dernier groupe d’îles",
+        "waters": [
+          "Rivière Agimak et lac Little Indian - canton de Gour, en aval depuis le lac Sandbar jusqu’à l’embouchure de la rivière Agimak, là où elle se jette dans le lac Indian",
+          "Ruisseau Barnard (50°06′ N , 90°51′ O ) - entre le lac Fourbay et le lac Eady",
+          "Lac Bruce - depuis le ruisseau Bruce, à la route 105 nord, jusqu’à et y compris la moitié sud du lac Bruce",
+          "Ruisseau Camp et une partie du lac Indian - canton de Gour",
+          "Lac Cedar - voir les exceptions visant des plans d’eau particuliers pour plus de détails",
+          "Rivière English - à partir d’une île sans nom aux chutes Talking jusqu’à la latitude 49°33′45″ N traversant le lac Franks",
+          "Ruisseau Jackfish - depuis le débit sortant du lac Jackfish jusqu’au débit entrant du lac Perrault",
+          "Rivière Megikons et lac Sowden - la partie en aval depuis la confluence des rivières Megikons et Reba jusqu’au point de longitude 91°10′ O qui traverse le lac Sowden",
+          "Lac Minnitaki - voir les exceptions visant des plans d’eau particuliers pour plus de détails",
+          "Lac Mud (50°25′25″ N , 93°14′07″ O ) - district de Kenora, toutes les eaux de la partie non arpentée du district territorial de Kenora, depuis son embouchure dans le lac Wabaskang",
+          "Lac Nelson - district de Kenora, depuis une ligne qui passe entre le rivage ouest (à environ 50°13′09″ N , 93°09′44″ O ) et le rivage est (à 50°13′05″ N , 93°09′26″ O ), en amont et incluant la partie nord du lac Nelson et le ruisseau et le lac Richmond",
+          "Rivière Ord - district de Kenora, depuis 50°15′22″ N , 93°01′40″ O en amont jusqu’au début du premier groupe de rapides à 50°12′55″ N , 93°01′08″ O",
+          "Lac Pakwash - baie Fisherman’s",
+          "Chutes Perrault et lac Wabaskang - ville de Perrault Falls, entre le pont de la route 105 et un point situé à 500 mètres au nord-est du pont",
+          "Baie Puzzle du lac Ord - au sud du passage au point de latitude 50°08′18″ N",
+          "Lac Red - voir les exceptions visant des plans d’eau particuliers pour plus de détails",
+          "Lac Richmond (bras nord) - district de Kenora",
+          "Lac Savant (50°28′ N , 90°25′ O ) - canton de Savant",
+          "Rivière Troutlake - depuis le dessus des chutes Whitefish jusqu’à un point situé à 2 kilomètres en aval, où la rivière croise la latitude 50°52′ N",
+          "Rivière Vermilion - et ses tributaires entre les lacs Elbow et Expanse",
+          "Rivière Wenasaga - depuis les premiers rapides en amont du lac Seul, et 3 kilomètres en aval jusqu’au dernier groupe d’îles"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er janvier au 14 juin et du 1er septembre au 31 décembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er janvier au 14 juin et du 1er septembre au 31 décembre Rivière Root - entre les latitudes 50°42′30″ N , 50°52′30″ N",
+        "waters": [
+          "Rivière Root - entre les latitudes 50°42′30″ N , 50°52′30″ N"
+        ]
+      },
+      {
+        "period": "Pêche interdite - Du 1er janvier au 14 juin et du 1er décembre au 31 décembre",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er janvier au 14 juin et du 1er décembre au 31 décembre Rivière Root (rivière Adamhay) - entre les latitudes 50°39′00″ N , 50°42′30″ N | Lac Vaughan (lac Whitefish) (50°13′ N , 92°22′ O )",
+        "waters": [
+          "Rivière Root (rivière Adamhay) - entre les latitudes 50°39′00″ N , 50°42′30″ N",
+          "Lac Vaughan (lac Whitefish) (50°13′ N , 92°22′ O )"
+        ]
+      }
+    ]
+  }
+}

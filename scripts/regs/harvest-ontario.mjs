@@ -7,7 +7,7 @@
  * Does not write or rewrite Québec zone-*.json.
  *
  * Usage: node scripts/regs/harvest-ontario.mjs [--zones=12,16,17,18] [--html-dir=DIR]
- * Great Lakes slice: --zones=19,20. Inland: --zones=10,11,15.
+ * Great Lakes slice: --zones=19,20. Inland: --zones=10,11,15 or --zones=4,5,6,7,8.
  * Default still 12,16,17,18 so a bare run does not rewrite already-shipped FMZ files.
  */
 import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
@@ -407,12 +407,23 @@ function waterbodyNameFromStrongP(pm) {
     name = fullP.replace(/\s+/g, ' ').trim();
     location = '';
   }
+  // Nested <strong> inside N/W <abbr> can close the first strong mid-coordinate
+  // (e.g. FMZ 4 "Cloudlet Lake (49°58'50"" as name, remaining lakes as location).
+  const open = (name.match(/\(/g) || []).length;
+  const close = (name.match(/\)/g) || []).length;
+  if (open > close) {
+    name = fullP.replace(/\s+/g, ' ').trim();
+    location = '';
+  }
   return { name, location };
 }
 
 function pushWaterbodyEntry(entries, seen, { name, location, lis, skippedRef, chunkHtml }) {
   if (!name) return;
-  const key = name.toLowerCase();
+  // Same heading can appear more than once (Lake of the Woods portions, two
+  // Nipigon River blocks with no location). Fingerprint the whole block so later
+  // portions stay; only skip an exact copy (e.g. h3 + strong-p on one page).
+  const key = `${String(name).toLowerCase()}\n${String(location || '').toLowerCase()}\n${lis.join('\n').toLowerCase()}`;
   if (seen.has(key)) return;
   if (!lis.length && /fish on-line|on p[eê]che en ligne/i.test(chunkHtml) && !/walleye|dor[eé]|season|saison|limits|limites|sanctuar/i.test(text(chunkHtml))) {
     skippedRef.skippedFishOnLine = true;
@@ -443,11 +454,15 @@ function parseWaterbodyExceptions(section) {
     pushWaterbodyEntry(entries, seen, { name, location, lis, skippedRef, chunkHtml: chunk });
   }
   // FR Great Lakes pages use h3 waterbody names instead of <p><strong>.
-  for (const b of h3Blocks(section.html)) {
-    const name = b.title;
-    if (!name) continue;
-    const lis = allLiTexts(b.html);
-    pushWaterbodyEntry(entries, seen, { name, location: null, lis, skippedRef, chunkHtml: b.html });
+  // Only fall through to h3 when the strong-p pass found nothing, so mixed
+  // pages do not double-count and same-name strong-p blocks stay distinct.
+  if (entries.length === 0) {
+    for (const b of h3Blocks(section.html)) {
+      const name = b.title;
+      if (!name) continue;
+      const lis = allLiTexts(b.html);
+      pushWaterbodyEntry(entries, seen, { name, location: null, lis, skippedRef, chunkHtml: b.html });
+    }
   }
   const strongCount = [...section.html.matchAll(/<p>\s*<strong>/gi)].length;
   const h3Count = h3Blocks(section.html).length;
@@ -496,23 +511,42 @@ function parseExceptionLi(li) {
   };
 }
 
+function sanctuaryEntry(period, html) {
+  const waters = allLiTexts(html);
+  return {
+    period,
+    species: null,
+    limit: null,
+    length: null,
+    gear: null,
+    notes: null,
+    raw: stripDrupalNavTail(text(`${period} ${waters.join(' | ')}`)),
+    waters,
+  };
+}
+
 function parseSanctuaries(section) {
   if (!section) return { listed: 0, harvested: 0, entries: [], skippedFishOnLine: false };
   const blocks = h3Blocks(section.html);
-  const entries = blocks.map(b => {
-    const waters = allLiTexts(b.html);
-    return {
-      period: b.title,
-      species: null,
-      limit: null,
-      length: null,
-      gear: null,
-      notes: null,
-      raw: stripDrupalNavTail(text(`${b.title} ${waters.join(' | ')}`)),
-      waters,
-    };
-  });
-  return { listed: blocks.length, harvested: entries.length, entries, skippedFishOnLine: false };
+  const entries = [];
+  for (const b of blocks) {
+    const nested = h4Blocks(b.html);
+    if (nested.length) {
+      // FR pages (FMZ 5/8) nest later sanctuary periods as h4 under the first h3.
+      const beforeH4 = b.html.search(/<h4\b/i);
+      const ownHtml = beforeH4 >= 0 ? b.html.slice(0, beforeH4) : b.html;
+      const ownWaters = allLiTexts(ownHtml);
+      if (ownWaters.length || !nested.length) {
+        entries.push(sanctuaryEntry(b.title, ownHtml));
+      }
+      for (const h4 of nested) {
+        entries.push(sanctuaryEntry(h4.title, h4.html));
+      }
+    } else {
+      entries.push(sanctuaryEntry(b.title, b.html));
+    }
+  }
+  return { listed: entries.length, harvested: entries.length, entries, skippedFishOnLine: false };
 }
 
 const BAIT_RE = /\bbait\b|leech|app[aâ]t|sangsue|\bBMZ\b|\bZPMA\b|bait management|gestion des app[aâ]ts/i;
