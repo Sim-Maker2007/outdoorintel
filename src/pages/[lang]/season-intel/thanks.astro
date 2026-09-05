@@ -1,6 +1,6 @@
 ---
 // Season Intel success page. Member perk v1: private "alerts coming" note.
-// Public QC fishing, ON FMZ 1–20, QC hunting, and ON hunting WMU 63A/63B/65/66A/67 pages stay free — no paywall.
+// Public QC fishing, ON FMZ 1–20, QC hunting, and ON hunting WMU 63A/63B/64A/64B/65/66A/66B/67/68A/68B pages stay free — no paywall.
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import GlobalSearch from '../../../components/GlobalSearch.astro';
@@ -23,7 +23,7 @@ const fmz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 
   n,
   href: `/${lang}/fishing/regulations/on-fmz-${n}`,
 }));
-const onWmus = ['63A', '63B', '65', '66A', '67'].map((id) => ({
+const onWmus = ['63A', '63B', '64A', '64B', '65', '66A', '66B', '67', '68A', '68B'].map((id) => ({
   id,
   href: `/${lang}/hunting/regulations/on-h-${id.toLowerCase()}`,
 }));
@@ -45,8 +45,8 @@ const T = {
   subscribeCta: { en: 'Subscribe — $29 CAD/year', fr: 'S’abonner — 29 $ CAD/an' },
   perkTitle: { en: 'Member perk (v1)', fr: 'Avantage membre (v1)' },
   perkBody: {
-    en: 'Change-alert emails are coming. This membership does not hide public regulations — Québec fishing zone pages, Ontario FMZ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 and 20, Québec hunting zone pages, and Ontario hunting WMUs 63A, 63B, 65, 66A and 67 stay free for everyone.',
-    fr: 'Les courriels d’alerte de changement s’en viennent. Cet abonnement ne masque pas les règlements publics — les pages de zones de pêche du Québec, les ZGP 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 et 20 de l’Ontario, les pages de zones de chasse du Québec, et les UGF de chasse 63A, 63B, 65, 66A et 67 de l’Ontario restent gratuites pour tout le monde.',
+    en: 'Change-alert emails are coming. This membership does not hide public regulations — Québec fishing zone pages, Ontario FMZ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 and 20, Québec hunting zone pages, and Ontario hunting WMUs 63A, 63B, 64A, 64B, 65, 66A, 66B, 67, 68A and 68B stay free for everyone.',
+    fr: 'Les courriels d’alerte de changement s’en viennent. Cet abonnement ne masque pas les règlements publics — les pages de zones de pêche du Québec, les ZGP 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 et 20 de l’Ontario, les pages de zones de chasse du Québec, et les UGF de chasse 63A, 63B, 64A, 64B, 65, 66A, 66B, 67, 68A et 68B de l’Ontario restent gratuites pour tout le monde.',
   },
   perkPending: {
     en: 'Confirming your Stripe checkout…',
