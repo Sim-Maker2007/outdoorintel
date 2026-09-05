@@ -59,11 +59,13 @@ function sliceSpecies(lang) {
   if (lang === 'fr') {
     s = s ? `${s}, colonne 2026` : 'colonne 2026';
     if (!hasDeer) s += ' (cerf de Virginie absent du tableau publié)';
+    if (!hasMoose) s += ' (orignal absent du tableau publié)';
     if (!hasBear) s += ' (ours noir absent du tableau publié)';
     return s;
   }
   s = s ? `${s}, 2026 column` : '2026 column';
   if (!hasDeer) s += ' (white-tailed deer not on the published table)';
+  if (!hasMoose) s += ' (moose not on the published table)';
   if (!hasBear) s += ' (black bear not on the published table)';
   return s;
 }
