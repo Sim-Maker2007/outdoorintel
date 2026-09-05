@@ -225,20 +225,20 @@ const breadcrumbLd = {
             <p id="checkout-cancelled" class="hidden scroll-mt-[96px] text-sm text-[#14251a] bg-[#f2e6c9] border border-[#d4b56a] rounded-lg px-4 py-3 mb-6 font-semibold" role="status">{T.cancelled[L]}</p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
                 <div>
-                    <div class="js-si-badge-wait mb-5">
+                    <div class="js-si-badge-wait hidden mb-5">
                         <span class="inline-block bg-white/90 text-[#3d7a4d] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full">{T.badge[L]}</span>
                     </div>
-                    <div class="js-si-badge-live hidden mb-5">
+                    <div class="js-si-badge-live mb-5">
                         <span class="inline-block bg-white/90 text-[#3d7a4d] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full">{T.badgeLive[L]}</span>
                     </div>
                     <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">{T.h1[L]}</h1>
                     <p class="text-white/85 text-lg mb-4">{T.lead[L]}</p>
-                    <p class="js-si-price-wait text-[#a2c99a] font-semibold mb-5">{T.price[L]}</p>
-                    <p class="js-si-price-live hidden text-[#a2c99a] font-semibold mb-5">{T.priceLive[L]}</p>
-                    <a href="#checkout" class="js-si-checkout-only hidden inline-block bg-[#a2c99a] text-[#14251a] font-bold px-6 py-3 rounded-lg hover:bg-white transition-colors">{T.checkoutBtn[L]}</a>
+                    <p class="js-si-price-wait hidden text-[#a2c99a] font-semibold mb-5">{T.price[L]}</p>
+                    <p class="js-si-price-live text-[#a2c99a] font-semibold mb-5">{T.priceLive[L]}</p>
+                    <a href="#checkout" class="js-si-checkout-only inline-block bg-[#a2c99a] text-[#14251a] font-bold px-6 py-3 rounded-lg hover:bg-white transition-colors">{T.checkoutBtn[L]}</a>
                 </div>
                 <div>
-                    <div id="checkout" class="hidden scroll-mt-[96px] bg-white text-[#1c2b21] rounded-xl p-6 border border-[#305e3c]/15 mb-4" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div id="checkout" class="scroll-mt-[96px] bg-white text-[#1c2b21] rounded-xl p-6 border border-[#305e3c]/15 mb-4" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
                         <h2 class="text-2xl font-bold text-[#305e3c] mb-2">{T.checkoutTitle[L]}</h2>
                         <p class="text-sm text-[#5c6b5f] mb-5">{T.checkoutIntro[L]}</p>
                         <form class="js-season-checkout-form flex flex-col gap-3" data-lang={lang} data-err-msg={T.checkoutErr[L]}>
@@ -255,7 +255,7 @@ const breadcrumbLd = {
                             <button type="button" class="js-si-show-news text-sm font-semibold text-[#305e3c] hover:underline">{T.newsAlt[L]}</button>
                         </p>
                     </div>
-                    <div id="waitlist" class="bg-white text-[#1c2b21] rounded-xl p-6 border border-[#305e3c]/10" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                    <div id="waitlist" class="hidden bg-white text-[#1c2b21] rounded-xl p-6 border border-[#305e3c]/10" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
                         <h2 class="text-2xl font-bold text-[#305e3c] mb-2">{T.waitTitle[L]}</h2>
                         <p class="text-sm text-[#5c6b5f] mb-5">{T.waitIntro[L]}</p>
                         <form class="js-newsletter-form flex flex-col gap-3" data-lang={lang} data-source="season-intel" data-ok-msg={T.waitOk[L]}>
@@ -330,8 +330,8 @@ const breadcrumbLd = {
                     <p class="text-white/80">{T.bottomLead[L]}</p>
                 </div>
                 <div class="flex-shrink-0">
-                    <a href="#checkout" class="js-si-bottom-cta hidden inline-block bg-[#a2c99a] text-[#14251a] font-bold px-6 py-3 rounded-lg hover:bg-white transition-colors">{T.checkoutBtn[L]}</a>
-                    <p class="js-si-bottom-wait text-sm text-white/70">{T.bottomWait[L]}</p>
+                    <a href="#checkout" class="js-si-bottom-cta inline-block bg-[#a2c99a] text-[#14251a] font-bold px-6 py-3 rounded-lg hover:bg-white transition-colors">{T.checkoutBtn[L]}</a>
+                    <p class="js-si-bottom-wait hidden text-sm text-white/70">{T.bottomWait[L]}</p>
                 </div>
             </div>
         </section>

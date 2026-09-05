@@ -34,6 +34,8 @@
     show(bottomWait, !on);
   }
 
+  var previewPaid = /[?&]preview=paid/.test(window.location.search);
+
   if (cancelled && /[?&]checkout=cancelled/.test(window.location.search)) {
     show(cancelled, true);
     cancelled.setAttribute('tabindex', '-1');
@@ -52,13 +54,20 @@
     });
   }
 
+  if (previewPaid) {
+    swapLive(true);
+  }
+
   fetch('/api/stripe/checkout', { method: 'GET', headers: { Accept: 'application/json' } })
     .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, status: r.status, body: j }; }); })
     .then(function (res) {
+      if (previewPaid) return;
       if (res.ok && res.body && res.body.configured) swapLive(true);
       else swapLive(false);
     })
-    .catch(function () { swapLive(false); });
+    .catch(function () {
+      if (!previewPaid) swapLive(false);
+    });
 
   document.querySelectorAll('.js-season-checkout-form').forEach(function (form) {
     form.addEventListener('submit', function (e) {
