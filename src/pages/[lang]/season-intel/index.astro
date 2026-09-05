@@ -206,12 +206,12 @@ const breadcrumbLd = {
     <link rel="alternate" hreflang="fr" href={`${SITE}/fr/season-intel`}>
     <link rel="alternate" hreflang="x-default" href={`${SITE}/en/season-intel`}>
     <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbLd)}></script>
-    <link rel="stylesheet" href="/assets/css/site.css?v=1">
+    <link rel="stylesheet" href="/assets/css/site.css?v=2">
     <script is:inline>
       if (/[?&]checkout=cancelled/.test(location.search)) document.documentElement.classList.add('si-checkout-cancelled');
     </script>
     <style is:inline>
-      .si-cancel-banner{display:none}
+      .si-cancel-banner{display:none;background:#f2e6c9;border:1px solid #d4b56a;color:#14251a}
       html.si-checkout-cancelled .si-cancel-banner{display:block}
     </style>
     <Fragment set:html={`<!-- Google Analytics (GA4) -->
