@@ -79,12 +79,25 @@ for (const q of questions) {
     ok(`${q.id}/fr-gaps`, /pas le dindon/.test(src) && /pas le petit gibier/.test(src) && /pas la chasse ontarienne/.test(src) && /Pas les 28 zones/.test(src), 'FR must still disclose dindon, petit gibier, chasse ontarienne, and not-all-28 gaps');
     ok(`${q.id}/en-8w-13`, /Not 8 West/.test(src) && /not 13 East\/West/.test(src), 'EN must still disclose 8 West and 13 East/West as absent');
     ok(`${q.id}/fr-8w-13`, /Pas la 8 ouest/.test(src) && /13 est\/ouest/.test(src), 'FR must still disclose 8 ouest and 13 est/ouest as absent');
-    ok(`${q.id}/en-on-fmz-now`, src.includes('Ontario fishing FMZ 10, 11, 12, 15, 16, 17, 18, 19 and 20') && src.includes('Great Lakes FMZs 9, 13 and 14 are not harvested'), 'EN Season Intel must list live FMZ 19 and 20 and only skip Great Lakes 9, 13 and 14');
-    ok(`${q.id}/fr-on-zgp-now`, src.includes('ZGP de pêche 10, 11, 12, 15, 16, 17, 18, 19 et 20') && src.includes('Les ZGP des Grands Lacs 9, 13 et 14 ne sont pas collectées'), 'FR Season Intel must list live ZGP 19 and 20 and only skip Great Lakes 9, 13 and 14');
+    const liveFmz = '4, 5, 6, 7, 8, 10, 11, 12, 15, 16, 17, 18, 19 and 20';
+    const liveZgp = '4, 5, 6, 7, 8, 10, 11, 12, 15, 16, 17, 18, 19 et 20';
+    const thanks = readFileSync(join(REPO, 'src/pages/[lang]/season-intel/thanks.astro'), 'utf-8');
+    ok(`${q.id}/en-on-fmz-now`, src.includes(`Ontario fishing FMZ ${liveFmz}`) && src.includes('Great Lakes FMZs 9, 13 and 14 are not harvested'), 'EN Season Intel must list live FMZ 4–8 plus 10–12/15–20 and only skip Great Lakes 9, 13 and 14');
+    ok(`${q.id}/fr-on-zgp-now`, src.includes(`ZGP de pêche ${liveZgp}`) && src.includes('Les ZGP des Grands Lacs 9, 13 et 14 ne sont pas collectées'), 'FR Season Intel must list live ZGP 4–8 plus 10–12/15–20 and only skip Great Lakes 9, 13 and 14');
+    ok(`${q.id}/en-not-stale-inland`, !src.includes('Ontario fishing FMZ 10, 11, 12, 15, 16, 17, 18, 19 and 20') && !src.includes('Ontario FMZ 10/11/12/15/16/17/18/19/20'), 'EN Season Intel must not still omit FMZ 4–8 from the live list');
+    ok(`${q.id}/fr-not-stale-inland`, !src.includes('ZGP de pêche 10, 11, 12, 15, 16, 17, 18, 19 et 20') && !src.includes('pages ZGP 10/11/12/15/16/17/18/19/20'), 'FR Season Intel must not still omit ZGP 4–8 from the live list');
     ok(`${q.id}/en-not-stale-gl`, !/Great Lakes FMZs 9, 13, 14, 19 and 20 are not harvested/.test(src), 'EN Season Intel must not still call FMZ 19 and 20 unharvested');
     ok(`${q.id}/fr-not-stale-gl`, !/Les ZGP des Grands Lacs 9, 13, 14, 19 et 20 ne sont pas collectées/.test(src), 'FR Season Intel must not still call ZGP 19 and 20 unharvested');
+    ok(`${q.id}/en-coming-remaining`, src.includes('remaining inland FMZs 1, 2 and 3') && src.includes('Great Lakes FMZs 9, 13 and 14'), 'EN What’s coming must name remaining inland 1, 2 and 3 and Great Lakes 9, 13 and 14');
+    ok(`${q.id}/fr-coming-remaining`, src.includes('ZGP intérieures restantes 1, 2 et 3') && src.includes('ZGP des Grands Lacs 9, 13 et 14'), 'FR Ce qui s’en vient must name remaining inland 1, 2 et 3 and Great Lakes 9, 13 et 14');
+    ok(`${q.id}/en-coming-not-4-8`, !/remaining inland zones and Great Lakes FMZs 9, 13 and 14/.test(src), 'EN What’s coming must not lump FMZ 4–8 into remaining inland');
+    ok(`${q.id}/fr-coming-not-4-8`, !/zones intérieures restantes et ZGP des Grands Lacs 9, 13 et 14/.test(src), 'FR Ce qui s’en vient must not lump ZGP 4–8 into remaining inland');
+    ok(`${q.id}/thanks-fmz-links`, thanks.includes('[4, 5, 6, 7, 8, 10, 11, 12, 15, 16, 17, 18, 19, 20]'), 'thanks page FMZ link list must include live 4–8');
+    ok(`${q.id}/thanks-not-stale`, !thanks.includes('[10, 11, 12, 15, 16, 17, 18, 19, 20]') && !thanks.includes('Ontario FMZ 10, 11, 12, 15, 16, 17, 18, 19 and 20'), 'thanks page must not still omit FMZ 4–8');
+    ok(`${q.id}/thanks-perk`, thanks.includes(`Ontario FMZ ${liveFmz}`) && thanks.includes(`ZGP ${liveZgp}`), 'thanks perk copy must list live FMZ/ZGP 4–8 plus 10–12/15–20');
     ok(`${q.id}/price`, /\$29 CAD/.test(src) && /29 \$ CAD/.test(src), 'Season Intel must keep $29 CAD/year Stripe Checkout framing');
     ok(`${q.id}/meta-bear`, src.includes('Québec hunting deer, moose, and black bear 2026') && src.includes('chasse au cerf, à l’orignal et à l’ours noir 2026'), 'EN+FR meta descriptions must include black bear / ours noir');
+    ok(`${q.id}/meta-on-fmz`, src.includes(`Ontario FMZ ${liveFmz}`) && src.includes(`ZGP ${liveZgp}`), 'EN+FR meta descriptions must list live FMZ/ZGP 4–8 plus 10–12/15–20');
     continue;
   }
 
