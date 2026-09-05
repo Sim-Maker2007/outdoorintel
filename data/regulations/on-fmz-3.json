@@ -1,0 +1,422 @@
+{
+  "zone_id": 3,
+  "zone_key": "ON-3",
+  "activity": "fishing",
+  "jurisdiction": "ON",
+  "fmz": 3,
+  "licence_year": 2026,
+  "authority": "Ontario Ministry of Natural Resources (MNR); Ontario Fishing Regulations Summary 2026 (not the official law)",
+  "source": {
+    "en": "https://www.ontario.ca/document/ontario-fishing-regulations-summary/fisheries-management-zone-3",
+    "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-peche/zones-de-gestion-des-peches-3",
+    "pdf_en": "https://ontario.ca/files/2025-12/mnr-2026-fishing-regulations-summary-en-2025-12-08.pdf",
+    "fish_on_line": "https://www.gisapplication.lrc.gov.on.ca/FishONLine/Index.html?site=FishONLine&viewer=FishONLine&locale=en-US&FMZ=3",
+    "fetched_at": "2026-09-05",
+    "html_updated": "2026-08-04",
+    "note": "Rule text reproduced verbatim from the Ontario Fishing Regulations Summary HTML (not the PDF). The Summary is not the official law. Always verify with the MNR and Fish ON-Line before fishing. Crown copyright."
+  },
+  "coverage": {
+    "licence_year": 2026,
+    "skipped_fish_on_line_only": false,
+    "zone_wide_listed": 11,
+    "zone_wide_harvested": 11,
+    "species_exceptions_listed": 3,
+    "species_exceptions_harvested": 3,
+    "waterbody_exceptions_listed": 0,
+    "waterbody_exceptions_harvested": 0,
+    "fish_sanctuaries_listed": 1,
+    "fish_sanctuaries_harvested": 1,
+    "bait_restrictions_listed": 1,
+    "bait_restrictions_harvested": 1,
+    "complete": true,
+    "note": "Zone-wide seasons/limits and listed HTML exceptions/sanctuaries for this FMZ are included. The Ontario Fishing Regulations Summary is not the law; verify with Fish ON-Line. This is not complete Ontario."
+  },
+  "title": {
+    "en": "Fisheries Management Zone 3 — Ontario FMZ 3",
+    "fr": "Zone de gestion des pêches 3 (ZGP 3) — Résumé des règlements de la pêche de l'Ontario 2026"
+  },
+  "notices": {
+    "en": [
+      "That part of the Berens River that is between Zone 2 and Zone 4, is wholly within Zone 4.",
+      "That part of the Missinaibi River and Moose River that is between Zone 3 and Zone 8, is wholly within Zone 8.",
+      "Universal Transverse Mercator ( UTM ) coordinates are in UTM Zone 16.",
+      "Refer to general fishing regulations for more information on how to use this summary.",
+      "The following species are not present in this Zone and are closed to fishing all year:",
+      "Atlantic salmon",
+      "brown trout",
+      "channel catfish",
+      "crappie",
+      "muskellunge",
+      "Pacific salmon",
+      "FMZ 3 is part of the Northeast Bait Management Zone ( BMZ ). Live or dead baitfish or leeches may not be transported into or out of a BMZ . These rules do not apply to baitfish and leeches which are both dead and preserved. Refer to bait for more details."
+    ],
+    "fr": [
+      "La rivière Berens là où elle constitue la limite entre la zone 2 et la zone 4 se trouve entièrement dans la zone 4.",
+      "Les parties de la rivière Missinaibi et de la rivière Moose qui se trouvent entre les zones 3 et 8 sont entièrement dans le zone 8.",
+      "Les coordonnées de transverse universelle de Mercator ( UTM ) sont en UTM zone 16.",
+      "Voir les Règlements généraux concernant la pêche pour plus de renseignements sur l’utilisation de ce Résumé.",
+      "On ne trouve pas les espèces suivantes dans cette zone et leur pêche est donc interdite toute l’année :",
+      "saumon atlantique",
+      "truite brune",
+      "barbue de rivière",
+      "marigane",
+      "maskinongé",
+      "saumon du Pacifique",
+      "La ZGP 3 fait partie de la zone de gestion des appâts ( ZGA ) du Nord-Est. On ne peut pas apporter ou sortir des poissons d’appât et des sangsues, morts ou vivants, d’une ZGA . Ces règles ne s’appliquent pas aux poissons d’appât et sangsues qui sont morts et conservés. Voir la section sur les appâts pour plus de renseignements."
+    ]
+  },
+  "general": {
+    "en": [
+      {
+        "period": null,
+        "species": "Aggregate limits for trout and salmon (including splake)",
+        "limit": "S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limits : S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined"
+      },
+      {
+        "period": "January 1 to September 15",
+        "species": "Brook trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to September 15 Limits : S-5 and C-2"
+      },
+      {
+        "period": "January 1 to April 15 and July 1 to December 31",
+        "species": "Lake sturgeon",
+        "limit": "S-0 and C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to April 15 and July 1 to December 31 Limits : S-0 and C-0"
+      },
+      {
+        "period": "January 1 to September 30",
+        "species": "Lake trout",
+        "limit": "S-3 and C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to September 30 Limits : S-3 and C-1"
+      },
+      {
+        "period": "open all year",
+        "species": "Lake whitefish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "open all year",
+        "species": "Largemouth and smallmouth bass combined",
+        "limit": "S-6 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-6 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Northern pike",
+        "limit": "S-6; not more than 2 greater than 61 centimetres, of which not more than one greater than 86 centimetres, and C-2; not more than one greater than 61 centimetres, none greater than 86 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-6; not more than 2 greater than 61 centimetres, of which not more than one greater than 86 centimetres, and C-2; not more than one greater than 61 centimetres, none greater than 86 centimetres"
+      },
+      {
+        "period": "open all year",
+        "species": "Splake",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-5 and C-2"
+      },
+      {
+        "period": "open all year",
+        "species": "Sunfish",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50 and C-25"
+      },
+      {
+        "period": "January 1 to April 14 and third Saturday in May to December 31",
+        "species": "Walleye and sauger combined",
+        "limit": "S-4 and C-2; not more than one greater than 46 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to April 14 and third Saturday in May to December 31 Limits : S-4 and C-2; not more than one greater than 46 centimetres"
+      },
+      {
+        "period": "open all year",
+        "species": "Yellow perch",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : open all year Limits : S-50 and C-25"
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Limites combinées pour la truite et le saumon (y compris le touladi et l’omble de fontaine)",
+        "limit": "S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées.",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limites : S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées."
+      },
+      {
+        "period": "Du 1er janvier au 15 septembre",
+        "species": "Omble de fontaine",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 15 septembre Limites : S-5 et C-2"
+      },
+      {
+        "period": "Du 1er janvier au 15 avril et du 1er juillet au 31 décembre",
+        "species": "Esturgeon de lac (esturgeon jaune)",
+        "limit": "S-0 et C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 15 avril et du 1er juillet au 31 décembre Limites : S-0 et C-0"
+      },
+      {
+        "period": "Du 1er janvier au 30 septembre",
+        "species": "Touladi",
+        "limit": "S-3 et C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 30 septembre Limites : S-3 et C-1"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Grand corégone",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Achigan à grande bouche et achigan à petite bouche (toute combinaison)",
+        "limit": "S-6 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-6 et C-2"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Grand brochet",
+        "limit": "S-6; pas plus de deux dépassant 61 centimètres, dont un seul dépassant 86 centimètres, et C-2; un seul dépassant 61 centimètres, aucun dépassant 86 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-6; pas plus de deux dépassant 61 centimètres, dont un seul dépassant 86 centimètres, et C-2; un seul dépassant 61 centimètres, aucun dépassant 86 centimètres"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Truite moulac",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-5 et C-2"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Crapet",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-50 et C-25"
+      },
+      {
+        "period": "Du 1er janvier au 14 avril et du 3e samedi de mai au 31 décembre",
+        "species": "Doré jaune et doré noir (toute combinaison)",
+        "limit": "S-4 et C-2; un seul dépassant 46 cm",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 14 avril et du 3e samedi de mai au 31 décembre Limites : S-4 et C-2; un seul dépassant 46 cm"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Perchaude",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-50 et C-25"
+      }
+    ]
+  },
+  "species_exceptions": {
+    "en": [
+      {
+        "period": "open all year",
+        "species": "Brook trout",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Additional fishing opportunities · Pelican Lake (49°54′41″ N , 84°08′09″ W ) · Scaup Lake (50°01′58″ N , 84°09′01″ W )",
+        "raw": "Additional fishing opportunities Season : open all year",
+        "waters": [
+          "Pelican Lake (49°54′41″ N , 84°08′09″ W )",
+          "Scaup Lake (50°01′58″ N , 84°09′01″ W )"
+        ]
+      },
+      {
+        "period": "open all year",
+        "species": "Lake trout",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Additional fishing opportunities · Brave Lake (49°51′15″ N , 84°20′43″ W )",
+        "raw": "Additional fishing opportunities Season : open all year",
+        "waters": [
+          "Brave Lake (49°51′15″ N , 84°20′43″ W )"
+        ]
+      },
+      {
+        "period": "open all year",
+        "species": "Rainbow Trout",
+        "limit": "S-5 and C-2",
+        "length": null,
+        "gear": null,
+        "notes": "Additional fishing opportunities · Swallow Lake (49°55′14″ N , 84°08′11″ W )",
+        "raw": "Additional fishing opportunities Season : open all year Limits : S-5 and C-2",
+        "waters": [
+          "Swallow Lake (49°55′14″ N , 84°08′11″ W )"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Omble de fontaine",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Possibilités supplémentaires de pêche · Lac Pelican (49°54′41″ N , 84°08′09″ O ) · Lac Scaup (50°01′58″ N , 84°09′01″ O )",
+        "raw": "Possibilités supplémentaires de pêche Saison : Pêche ouverte toute l’année",
+        "waters": [
+          "Lac Pelican (49°54′41″ N , 84°08′09″ O )",
+          "Lac Scaup (50°01′58″ N , 84°09′01″ O )"
+        ]
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Touladi",
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Possibilités supplémentaires de pêche · Lac Brave (49°51′15″ N , 84°20′43″ O )",
+        "raw": "Possibilités supplémentaires de pêche Saison : Pêche ouverte toute l’année",
+        "waters": [
+          "Lac Brave (49°51′15″ N , 84°20′43″ O )"
+        ]
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Truite arc-en-ciel",
+        "limit": "S-5 et C-2",
+        "length": null,
+        "gear": null,
+        "notes": "Possibilités supplémentaires de pêche · Lac Swallow (49°55′14″ N , 84°08′11″ O )",
+        "raw": "Possibilités supplémentaires de pêche Saison : Pêche ouverte toute l’année Limites : S-5 et C-2",
+        "waters": [
+          "Lac Swallow (49°55′14″ N , 84°08′11″ O )"
+        ]
+      }
+    ]
+  },
+  "waterbody_exceptions": {
+    "en": [],
+    "fr": []
+  },
+  "bait_restrictions": {
+    "en": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "FMZ 3 is part of the Northeast Bait Management Zone ( BMZ ). Live or dead baitfish or leeches may not be transported into or out of a BMZ . These rules do not apply to baitfish and leeches which are both dead and preserved. Refer to bait for more details.",
+        "raw": "FMZ 3 is part of the Northeast Bait Management Zone ( BMZ ). Live or dead baitfish or leeches may not be transported into or out of a BMZ . These rules do not apply to baitfish and leeches which are both dead and preserved. Refer to bait for more details."
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "La ZGP 3 fait partie de la zone de gestion des appâts ( ZGA ) du Nord-Est. On ne peut pas apporter ou sortir des poissons d’appât et des sangsues, morts ou vivants, d’une ZGA . Ces règles ne s’appliquent pas aux poissons d’appât et sangsues qui sont morts et conservés. Voir la section sur les appâts pour plus de renseignements.",
+        "raw": "La ZGP 3 fait partie de la zone de gestion des appâts ( ZGA ) du Nord-Est. On ne peut pas apporter ou sortir des poissons d’appât et des sangsues, morts ou vivants, d’une ZGA . Ces règles ne s’appliquent pas aux poissons d’appât et sangsues qui sont morts et conservés. Voir la section sur les appâts pour plus de renseignements."
+      }
+    ]
+  },
+  "fish_sanctuaries": {
+    "en": [
+      {
+        "period": "No fishing - from April 1 to June 15",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "No fishing - from April 1 to June 15 French Creek - Hanlan Township, from its outflow at French Lake to the area between Hanlan and Wolverine lakes from Lot 13, Concession 10 to Lot 16, Concession 11 (known locally as Hanlan Narrows) and Ryland Creek from its outflow at French Lake to its intersection with the Concession 7 road | Fushimi Lake, Valentine River and Hanlan Lake – The embayment of Fushimi Lake northeast of the narrows (49°49'44\" N , 83°52'20\" W ), the Valentine River, and the northwest embayment of Hanlan Lake at the mouth of the Valentine River (49°50'39\" N , 83°49'49\" W ) | Holland Lake and Holland Creek - Stoddart Township | Pivabiska River - lying between its outflow from Pivabiska Lake in Lot 28, Concession 12 (Casgrain Township) downstream to the point where it intersects 49°52′ N (Ritchie Township) | Sainte Therese Creek - from its mouth at Lac Sainte Therese upstream to the point where it crosses the south boundary of Lot 26, Concession 7 (Casgrain Township) and the unnamed tributary lying between Sainte Therese Creek and Highway 583 in Lots 25 and 26, Concession 8 | Stoddart Creek - Stoddart Township, between Stoddart Lake and the Valentine River | Valentine River - from Wolverine Lake to Pivabiska Lake",
+        "waters": [
+          "French Creek - Hanlan Township, from its outflow at French Lake to the area between Hanlan and Wolverine lakes from Lot 13, Concession 10 to Lot 16, Concession 11 (known locally as Hanlan Narrows) and Ryland Creek from its outflow at French Lake to its intersection with the Concession 7 road",
+          "Fushimi Lake, Valentine River and Hanlan Lake – The embayment of Fushimi Lake northeast of the narrows (49°49'44\" N , 83°52'20\" W ), the Valentine River, and the northwest embayment of Hanlan Lake at the mouth of the Valentine River (49°50'39\" N , 83°49'49\" W )",
+          "Holland Lake and Holland Creek - Stoddart Township",
+          "Pivabiska River - lying between its outflow from Pivabiska Lake in Lot 28, Concession 12 (Casgrain Township) downstream to the point where it intersects 49°52′ N (Ritchie Township)",
+          "Sainte Therese Creek - from its mouth at Lac Sainte Therese upstream to the point where it crosses the south boundary of Lot 26, Concession 7 (Casgrain Township) and the unnamed tributary lying between Sainte Therese Creek and Highway 583 in Lots 25 and 26, Concession 8",
+          "Stoddart Creek - Stoddart Township, between Stoddart Lake and the Valentine River",
+          "Valentine River - from Wolverine Lake to Pivabiska Lake"
+        ]
+      }
+    ],
+    "fr": [
+      {
+        "period": "Pêche interdite - Du 1er avril au 15 juin",
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Pêche interdite - Du 1er avril au 15 juin Ruisseau French - canton de Hanlan, depuis son débit sortant au lac French jusqu’à la zone entre les lacs Hanlan et Wolverine, depuis le lot 13, concession 10 jusqu’au lot 16, concession 11 (zone connue localement sous le nom de Hanlan Narrows) et le ruisseau Ryland, depuis son débit sortant au lac French jusqu’à l’endroit où il croise le chemin de la concession 7 | Lac Fushimi, rivière Valentine et lac Hanlan – l’échancrure du lac Fushimi au nord-est du défilé (49°49′44″ N , 83°52’20” O. ), la rivière Valentine et l’échancrure au nord-ouest du lac Hanlan à l’embouchure de la rivière Valentine (49°50′39″ N , 83°49′49″ O ) | Lac Holland et ruisseau Holland - canton de Stoddart | Rivière Pivabiska, entre son débit sortant depuis le lac Pivabiska, sur le lot 28, concession 12, canton de Casgrain, en aval jusqu’au point d’intersection avec 49° 52′ N (canton de Ritchie) | Ruisseau Ste-Thérèse - depuis son embouchure au lac Ste-Thérèse, en amont jusqu’à son point d’intersection avec la limite sud du lot 26, concession 7 (canton de Casgrain), et le tributaire sans nom se trouvant entre le ruisseau Ste-Thérèse et la route 583, dans les lots 25 et 26, concession 8 | Ruisseau Stoddart - canton de Stoddart, entre le lac Stoddart et la rivière Valentine | Rivière Valentine - du lac Wolverine au lac Pivabiska",
+        "waters": [
+          "Ruisseau French - canton de Hanlan, depuis son débit sortant au lac French jusqu’à la zone entre les lacs Hanlan et Wolverine, depuis le lot 13, concession 10 jusqu’au lot 16, concession 11 (zone connue localement sous le nom de Hanlan Narrows) et le ruisseau Ryland, depuis son débit sortant au lac French jusqu’à l’endroit où il croise le chemin de la concession 7",
+          "Lac Fushimi, rivière Valentine et lac Hanlan – l’échancrure du lac Fushimi au nord-est du défilé (49°49′44″ N , 83°52’20” O. ), la rivière Valentine et l’échancrure au nord-ouest du lac Hanlan à l’embouchure de la rivière Valentine (49°50′39″ N , 83°49′49″ O )",
+          "Lac Holland et ruisseau Holland - canton de Stoddart",
+          "Rivière Pivabiska, entre son débit sortant depuis le lac Pivabiska, sur le lot 28, concession 12, canton de Casgrain, en aval jusqu’au point d’intersection avec 49° 52′ N (canton de Ritchie)",
+          "Ruisseau Ste-Thérèse - depuis son embouchure au lac Ste-Thérèse, en amont jusqu’à son point d’intersection avec la limite sud du lot 26, concession 7 (canton de Casgrain), et le tributaire sans nom se trouvant entre le ruisseau Ste-Thérèse et la route 583, dans les lots 25 et 26, concession 8",
+          "Ruisseau Stoddart - canton de Stoddart, entre le lac Stoddart et la rivière Valentine",
+          "Rivière Valentine - du lac Wolverine au lac Pivabiska"
+        ]
+      }
+    ]
+  }
+}

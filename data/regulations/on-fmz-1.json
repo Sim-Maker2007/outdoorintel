@@ -1,0 +1,262 @@
+{
+  "zone_id": 1,
+  "zone_key": "ON-1",
+  "activity": "fishing",
+  "jurisdiction": "ON",
+  "fmz": 1,
+  "licence_year": 2026,
+  "authority": "Ontario Ministry of Natural Resources (MNR); Ontario Fishing Regulations Summary 2026 (not the official law)",
+  "source": {
+    "en": "https://www.ontario.ca/document/ontario-fishing-regulations-summary/fisheries-management-zone-1",
+    "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-peche/zones-de-gestion-des-peches-1",
+    "pdf_en": "https://ontario.ca/files/2025-12/mnr-2026-fishing-regulations-summary-en-2025-12-08.pdf",
+    "fish_on_line": "https://www.gisapplication.lrc.gov.on.ca/FishONLine/Index.html?site=FishONLine&viewer=FishONLine&locale=en-US&FMZ=1",
+    "fetched_at": "2026-09-05",
+    "html_updated": "2026-08-04",
+    "note": "Rule text reproduced verbatim from the Ontario Fishing Regulations Summary HTML (not the PDF). The Summary is not the official law. Always verify with the MNR and Fish ON-Line before fishing. Crown copyright."
+  },
+  "coverage": {
+    "licence_year": 2026,
+    "skipped_fish_on_line_only": false,
+    "zone_wide_listed": 8,
+    "zone_wide_harvested": 8,
+    "species_exceptions_listed": 0,
+    "species_exceptions_harvested": 0,
+    "waterbody_exceptions_listed": 0,
+    "waterbody_exceptions_harvested": 0,
+    "fish_sanctuaries_listed": 0,
+    "fish_sanctuaries_harvested": 0,
+    "bait_restrictions_listed": 1,
+    "bait_restrictions_harvested": 1,
+    "complete": true,
+    "note": "Zone-wide seasons/limits and listed HTML exceptions/sanctuaries for this FMZ are included. The Ontario Fishing Regulations Summary is not the law; verify with Fish ON-Line. This is not complete Ontario."
+  },
+  "title": {
+    "en": "Fisheries Management Zone 1 — Ontario FMZ 1",
+    "fr": "Zone de gestion des pêches 1 (ZGP 1) — Résumé des règlements de la pêche de l'Ontario 2026"
+  },
+  "notices": {
+    "en": [
+      "That part of the Berens River that is between Zone 2 and Zone 4, is wholly within Zone 4.",
+      "That part of the Missinaibi River and Moose River that is between Zone 3 and Zone 8, is wholly within Zone 8.",
+      "Universal Transverse Mercator ( UTM ) coordinates are in UTM Zone 16.",
+      "Refer to general fishing regulations for more information on how to use this summary.",
+      "In Zone 1, only one barbless hook may be used and live fish may not be used as bait or possessed for use as bait.",
+      "The following species are not present in this Zone and are closed to fishing all year:",
+      "Atlantic salmon",
+      "brown trout",
+      "channel catfish",
+      "crappie",
+      "largemouth and smallmouth bass",
+      "muskellunge",
+      "rainbow trout",
+      "splake",
+      "sunfish",
+      "Pacific salmon"
+    ],
+    "fr": [
+      "La rivière Berens là où elle constitue la limite entre la zone 2 et la zone 4 se trouve entièrement dans la zone 4.",
+      "Les parties de la rivière Missinaibi et de la rivière Moose qui se trouvent entre les zones 3 et 8 sont entièrement dans le zone 8.",
+      "Les coordonnées de transverse universelle de Mercator ( UTM ) sont en UTM zone 16.",
+      "Voir les Règlements généraux concernant la pêche pour plus de renseignements sur l’utilisation de ce Résumé.",
+      "Dans la zone 1, seulement un hameçon sans barbes peut être utilisé et Il est interdit d’utiliser et de posséder du poisson vivant comme appât.",
+      "On ne trouve pas les espèces suivantes dans cette zone et leur pêche est donc interdite toute l’année :",
+      "saumon atlantique",
+      "truite brune",
+      "barbue de rivière",
+      "marigane",
+      "achigan à grande bouche et achigan à petite bouche",
+      "maskinongé",
+      "truite arc-en-ciel",
+      "truite moulac",
+      "crapet",
+      "saumon du Pacifique"
+    ]
+  },
+  "general": {
+    "en": [
+      {
+        "period": null,
+        "species": "Aggregate limits for trout and salmon (including splake)",
+        "limit": "S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limits : S-5 and C-2; total daily catch and possession limit for all trout and salmon species combined"
+      },
+      {
+        "period": "January 1 to September 30",
+        "species": "Brook trout",
+        "limit": "S-5 and C-2; not more than one greater than 40 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to September 30 Limits : S-5 and C-2; not more than one greater than 40 centimetres"
+      },
+      {
+        "period": "January 1 to April 30 and July 1 to December 31",
+        "species": "Lake sturgeon",
+        "limit": "S-0 and C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : January 1 to April 30 and July 1 to December 31 Limits : S-0 and C-0"
+      },
+      {
+        "period": "Open all year",
+        "species": "Lake trout",
+        "limit": "S-3 and C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : Open all year Limits : S-3 and C-1"
+      },
+      {
+        "period": "Open all year",
+        "species": "Lake whitefish",
+        "limit": "S-12 and C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : Open all year Limits : S-12 and C-6"
+      },
+      {
+        "period": "Open all year",
+        "species": "Northern pike",
+        "limit": "S-6; not more than two greater than 61 centimetres, of which not more than one greater than 86 centimetres, and C-2; not more than one greater than 61 centimetres, none greater than 86 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : Open all year Limits : S-6; not more than two greater than 61 centimetres, of which not more than one greater than 86 centimetres, and C-2; not more than one greater than 61 centimetres, none greater than 86 centimetres"
+      },
+      {
+        "period": "Open all year",
+        "species": "Walleye and sauger combined",
+        "limit": "S-4 and C-2; not more than one greater than 46 centimetres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : Open all year Limits : S-4 and C-2; not more than one greater than 46 centimetres"
+      },
+      {
+        "period": "Open all year",
+        "species": "Yellow perch",
+        "limit": "S-50 and C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Season : Open all year Limits : S-50 and C-25"
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": "Limites combinées pour la truite et le saumon (y compris le touladi et l’omble de fontaine)",
+        "limit": "S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées.",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Limites : S-5 et C-2 - limites quotidiennes de prise et de possession pour toutes les espèces de truites et de saumons combinées."
+      },
+      {
+        "period": "Du 1er janvier au 30 septembre",
+        "species": "Omble de fontaine",
+        "limit": "S-5 et C-2; un seul dépassant 40 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 30 septembre Limites : S-5 et C-2; un seul dépassant 40 centimètres"
+      },
+      {
+        "period": "Du 1er janvier au 30 avril et du 1er juillet au 31 décembre",
+        "species": "Esturgeon de lac (esturgeon jaune)",
+        "limit": "S-0 et C-0",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Du 1er janvier au 30 avril et du 1er juillet au 31 décembre Limites : S-0 et C-0"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Touladi",
+        "limit": "S-3 et C-1",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-3 et C-1"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Grand corégone",
+        "limit": "S-12 et C-6",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-12 et C-6"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Grand brochet",
+        "limit": "S-6; pas plus de deux dépassant 61 centimètres, dont un seul dépassant 86 centimètres, et C-2; un seul dépassant 61 centimètres, aucun dépassant 86 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-6; pas plus de deux dépassant 61 centimètres, dont un seul dépassant 86 centimètres, et C-2; un seul dépassant 61 centimètres, aucun dépassant 86 centimètres"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Doré jaune et doré noir (toute combinaison)",
+        "limit": "S-4 et C-2; un seul dépassant 46 centimètres",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-4 et C-2; un seul dépassant 46 centimètres"
+      },
+      {
+        "period": "Pêche ouverte toute l’année",
+        "species": "Perchaude",
+        "limit": "S-50 et C-25",
+        "length": null,
+        "gear": null,
+        "notes": null,
+        "raw": "Saison : Pêche ouverte toute l’année Limites : S-50 et C-25"
+      }
+    ]
+  },
+  "species_exceptions": {
+    "en": [],
+    "fr": []
+  },
+  "waterbody_exceptions": {
+    "en": [],
+    "fr": []
+  },
+  "bait_restrictions": {
+    "en": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "In Zone 1, only one barbless hook may be used and live fish may not be used as bait or possessed for use as bait.",
+        "raw": "In Zone 1, only one barbless hook may be used and live fish may not be used as bait or possessed for use as bait."
+      }
+    ],
+    "fr": [
+      {
+        "period": null,
+        "species": null,
+        "limit": null,
+        "length": null,
+        "gear": null,
+        "notes": "Dans la zone 1, seulement un hameçon sans barbes peut être utilisé et Il est interdit d’utiliser et de posséder du poisson vivant comme appât.",
+        "raw": "Dans la zone 1, seulement un hameçon sans barbes peut être utilisé et Il est interdit d’utiliser et de posséder du poisson vivant comme appât."
+      }
+    ]
+  },
+  "fish_sanctuaries": {
+    "en": [],
+    "fr": []
+  }
+}
