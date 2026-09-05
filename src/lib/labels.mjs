@@ -165,6 +165,7 @@ export const T = {
     map: { en: 'Map', fr: 'Carte' },
     planner: { en: 'Trip Planner', fr: 'Planificateur' },
     blog: { en: 'Blog', fr: 'Blogue' },
+    seasonIntel: { en: 'Season Intel', fr: 'Season Intel' },
     trust: { en: 'Trust & sources', fr: 'Confiance et sources' },
     otherLang: { en: 'Français', fr: 'English' },
   },
