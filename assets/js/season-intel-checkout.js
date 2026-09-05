@@ -40,9 +40,6 @@
     show(cancelled, true);
     cancelled.setAttribute('tabindex', '-1');
     try { cancelled.focus({ preventScroll: true }); } catch (e) {}
-    if (typeof cancelled.scrollIntoView === 'function') {
-      cancelled.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
   }
 
   if (newsToggle && wait) {
