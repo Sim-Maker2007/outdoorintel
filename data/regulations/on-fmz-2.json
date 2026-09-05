@@ -22,8 +22,8 @@
     "zone_wide_harvested": 14,
     "species_exceptions_listed": 4,
     "species_exceptions_harvested": 4,
-    "waterbody_exceptions_listed": 2,
-    "waterbody_exceptions_harvested": 2,
+    "waterbody_exceptions_listed": 3,
+    "waterbody_exceptions_harvested": 3,
     "fish_sanctuaries_listed": 3,
     "fish_sanctuaries_harvested": 3,
     "bait_restrictions_listed": 3,
@@ -461,6 +461,49 @@
   },
   "waterbody_exceptions": {
     "en": [
+      {
+        "name": "Lake St. Joseph",
+        "location": "(51°03'13\" N , 90°49'37\" W )",
+        "rules": [
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": "Only one barbless hook may be used",
+            "notes": "Only one barbless hook may be used",
+            "raw": "Only one barbless hook may be used"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Non-Canadian residents require a special tag which is available at no charge from the Lake St. Joseph tourist operators",
+            "raw": "Non-Canadian residents require a special tag which is available at no charge from the Lake St. Joseph tourist operators"
+          },
+          {
+            "period": "no fishing from March 1 to June 14 in the following areas:",
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "no fishing from March 1 to June 14 in the following areas:",
+            "raw": "Fish sanctuary - no fishing from March 1 to June 14 in the following areas:"
+          },
+          {
+            "period": null,
+            "species": null,
+            "limit": null,
+            "length": null,
+            "gear": null,
+            "notes": "Twiname Bay east of a line beginning at the north shore at 51°09′10″ N , 90°27′10″ W , southeast to 51°08′54″ N , 90°25′52″ W and south to 51°08′30″ N , 90°25′35″ W",
+            "raw": "Twiname Bay east of a line beginning at the north shore at 51°09′10″ N , 90°27′10″ W , southeast to 51°08′54″ N , 90°25′52″ W and south to 51°08′30″ N , 90°25′35″ W"
+          }
+        ],
+        "raw": "Lake St. Joseph (51°03'13\" N , 90°49'37\" W ) Only one barbless hook may be used | Non-Canadian residents require a special tag which is available at no charge from the Lake St. Joseph tourist operators | Fish sanctuary - no fishing from March 1 to June 14 in the following areas: | Twiname Bay east of a line beginning at the north shore at 51°09′10″ N , 90°27′10″ W , southeast to 51°08′54″ N , 90°25′52″ W and south to 51°08′30″ N , 90°25′35″ W"
+      },
       {
         "name": "Opapimiskan Lake",
         "location": "(52°37′39″ N , 90°24′27″ W )",

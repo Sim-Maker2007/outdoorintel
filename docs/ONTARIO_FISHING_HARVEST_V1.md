@@ -91,7 +91,7 @@ Hub lists **Québec zones** and **Ontario FMZs 1/2/3/4/5/6/7/8/10/11/12/15/16/17
 - Add `on11-nipissing-walleye` and `on15-algonquin-bait`
 - Add `on19-walleye-en` / `on19-dore-fr` (Lake Erie) and `on20-walleye-en` / `on20-dore-fr` / `on20-bass-en` (Lake Ontario)
 - Add `on5-shoal-walleye` (Shoal Lake walleye closed all year) and `on8-walleye-en`
-- Add `on1-walleye-en` / `on1-dore-fr`, `on2-walleye-en` / `on2-opapimiskan`, `on3-walleye-en` / `on3-fushimi-sanctuary`
+- Add `on1-walleye-en` / `on1-dore-fr`, `on2-walleye-en` / `on2-opapimiskan` / `on2-st-joseph`, `on3-walleye-en` / `on3-fushimi-sanctuary`
 - Refuse unharvested Great Lakes FMZ 9/13/14 (`refuse-on-fmz9` / `13` / `14`)
 - `coverage-all-zones` filters by jurisdiction (QC complete check does not run on ON docs)
 - Add `on-collide-qc12`, `on-collide-qc10`, `on-collide-qc19`, `on-collide-qc5`, `on-collide-qc8`, `on-collide-qc1`, `on-collide-qc2`, and `on-collide-qc3`

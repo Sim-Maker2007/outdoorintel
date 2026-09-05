@@ -452,16 +452,16 @@ function pushWaterbodyEntry(entries, seen, { name, location, lis, skippedRef, ch
 function parseWaterbodyExceptions(section) {
   if (!section) return { listed: 0, harvested: 0, entries: [], skippedFishOnLine: false };
   const skippedRef = { skippedFishOnLine: false };
-  const chunks = section.html.split(/(?=<p>\s*<strong>)/i);
+  const chunks = section.html.split(/(?=<p>\s*<strong\b)/i);
   const entries = [];
   const seen = new Set();
   for (const chunk of chunks) {
-    const pm = chunk.match(/<p>\s*<strong>([\s\S]*?)<\/strong>([\s\S]*?)<\/p>/i);
+    const pm = chunk.match(/<p>\s*<strong\b[^>]*>([\s\S]*?)<\/strong>([\s\S]*?)<\/p>/i);
     if (!pm) continue;
     const { name, location } = waterbodyNameFromStrongP(pm);
     if (!name) continue;
     const after = chunk.slice(chunk.indexOf('</p>') + 4);
-    const lis = allLiTexts(after.split(/<p>\s*<strong>/i)[0] || after);
+    const lis = allLiTexts(after.split(/<p>\s*<strong\b/i)[0] || after);
     pushWaterbodyEntry(entries, seen, { name, location, lis, skippedRef, chunkHtml: chunk });
   }
   // FR Great Lakes pages use h3 waterbody names instead of <p><strong>.
@@ -475,7 +475,7 @@ function parseWaterbodyExceptions(section) {
       pushWaterbodyEntry(entries, seen, { name, location: null, lis, skippedRef, chunkHtml: b.html });
     }
   }
-  const strongCount = [...section.html.matchAll(/<p>\s*<strong>/gi)].length;
+  const strongCount = [...section.html.matchAll(/<p>\s*<strong\b/gi)].length;
   const h3Count = h3Blocks(section.html).length;
   const listed = Math.max(strongCount, h3Count, entries.length);
   return { listed, harvested: entries.length, entries, skippedFishOnLine: skippedRef.skippedFishOnLine };
