@@ -1,0 +1,615 @@
+{
+  "zone_id": "63B",
+  "zone_key": "ON-H-63B",
+  "slug": "on-h-63b",
+  "activity": "hunting",
+  "jurisdiction": "ON",
+  "wmu": "63B",
+  "licence_year": 2026,
+  "season_column": 2026,
+  "hunting_zone": "63B",
+  "hunting_part": null,
+  "authority": "Ontario Ministry of Natural Resources (MNR); Ontario Hunting Regulations Summary 2026 (not the official law)",
+  "source": {
+    "en": "https://www.ontario.ca/document/ontario-hunting-regulations-summary/white-tailed-deer",
+    "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-chasse/chevreuil-cerf-de-virginie",
+    "moose": {
+      "en": "https://www.ontario.ca/document/ontario-hunting-regulations-summary/moose",
+      "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-chasse/orignal"
+    },
+    "deer": {
+      "en": "https://www.ontario.ca/document/ontario-hunting-regulations-summary/white-tailed-deer",
+      "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-chasse/chevreuil-cerf-de-virginie"
+    },
+    "bear": {
+      "en": "https://www.ontario.ca/document/ontario-hunting-regulations-summary/black-bear",
+      "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-chasse/ours-noir"
+    },
+    "how": {
+      "en": "https://www.ontario.ca/document/ontario-hunting-regulations-summary/how-use-this-summary",
+      "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-chasse/comment-utiliser-ce-resume"
+    },
+    "maps": {
+      "en": "https://www.ontario.ca/document/ontario-hunting-regulations-summary/wildlife-management-unit-map-2-southeastern-ontario",
+      "fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-chasse/carte-2-des-unites-de-gestion-de-la-faune-sud-est-de",
+      "finder": "https://www.ontario.ca/page/find-wildlife-management-unit-wmu-map"
+    },
+    "pdf": {
+      "en": "https://ontario.ca/files/2026-03/mnr-2026-ontario-hunting-regulations-summary-en-2026-03-10.pdf",
+      "fr": "https://ontario.ca/files/2026-03/mnr-2026-ontario-hunting-regulations-summary-fr-2026-03-10.pdf"
+    },
+    "fetched_at": "2026-09-05",
+    "note": "Season text reproduced verbatim from the Ontario Hunting Regulations Summary HTML (2026). Weapon class is the published section heading. Moose and black bear rows added only where the official table lists this WMU or an undivided parent/range that applies. Maps and the Summary PDF are cited as links only — not OCR’d, not scraped from Fish ON-Line. The Summary is not the law. WMU 12 is never harvested."
+  },
+  "maps": {
+    "wmu_finder": "https://www.ontario.ca/page/find-wildlife-management-unit-wmu-map",
+    "pdf_en": {
+      "href": "https://ontario.ca/files/2026-03/mnr-2026-ontario-hunting-regulations-summary-en-2026-03-10.pdf",
+      "label": "2026 Ontario Hunting Regulations Summary (PDF)"
+    },
+    "pdf_fr": {
+      "href": "https://ontario.ca/files/2026-03/mnr-2026-ontario-hunting-regulations-summary-fr-2026-03-10.pdf",
+      "label": "Résumé des règlements de la chasse 2026 (PDF)"
+    },
+    "index_en": "https://www.ontario.ca/document/ontario-hunting-regulations-summary/wildlife-management-unit-map-2-southeastern-ontario",
+    "index_fr": "https://www.ontario.ca/fr/document/resume-des-reglements-de-la-chasse/carte-2-des-unites-de-gestion-de-la-faune-sud-est-de"
+  },
+  "coverage": {
+    "slice": "Ontario WMU 63B; white-tailed deer + moose + black bear; 2026 Hunting Regulations Summary",
+    "species_listed": 3,
+    "species_harvested": 3,
+    "species_not_harvested": [
+      "small game",
+      "wild turkey"
+    ],
+    "unpublished_parts": [],
+    "weapon_classes_listed": 7,
+    "weapon_classes_harvested": 7,
+    "weapon_classes_listed_fr": 7,
+    "weapon_classes_harvested_fr": 7,
+    "season_rows_listed": 16,
+    "season_rows_harvested": 16,
+    "season_rows_listed_fr": 16,
+    "season_rows_harvested_fr": 16,
+    "complete": true,
+    "note": "Ontario WMU 63B: white-tailed deer + moose + black bear, 2026 Hunting Regulations Summary HTML, weapon classes kept as published headings. Not all Ontario WMUs. Not small game. Not turkey. WMU 12 (Rainy River) is never harvested. Not GIS. Moose: official tables list undivided 63 / range 53–63, not 63A/63B. Undivided parent applied to this ON-H-* key. Black bear: official tables list undivided parent numbers/ranges (53–64 / 54–63 / 66–69 / 66, 67), not lettered 63A/63B/66A. Undivided parent applied to this ON-H-* key.",
+    "weapon_classes": {
+      "en": [
+        "Rifles, shotguns, muzzle-loading guns and bows",
+        "Muzzle-loading guns and bows",
+        "Bows only",
+        "Rifles, shotguns, muzzle-loading guns and bows | (the \"gun\" seasons when \"gun tags\" are valid)",
+        "Bows only | (season when \"bow tags\" are valid)",
+        "Spring black bear seasons",
+        "Fall black bear seasons"
+      ],
+      "fr": [
+        "Carabine, fusil de chasse, fusil à chargement par la bouche et arc",
+        "Fusil à chargement par la bouche et à l’arc",
+        "Arc seulement",
+        "Carabine, fusil de chasse, fusil à chargement par la bouche et arc | (saisons où les vignettes de chasse au fusil sont valides)",
+        "Arc seulement | (saisons où les vignettes de chasse à l’arc sont valides)",
+        "Saisons de chasse à l’ours noir — Printemps",
+        "Saisons de chasse à l’ours noir — Automne"
+      ]
+    },
+    "species": {
+      "en": [
+        "white-tailed-deer",
+        "moose",
+        "black-bear"
+      ],
+      "fr": [
+        "white-tailed-deer",
+        "moose",
+        "black-bear"
+      ]
+    },
+    "parent_match": {
+      "moose_undivided_63": true,
+      "bear_undivided_parent": true
+    }
+  },
+  "title": {
+    "en": "Ontario WMU 63B — white-tailed deer, moose and black bear (2026 season)",
+    "fr": "UGF 63B de l’Ontario — cerf de Virginie, orignal et ours noir (saison 2026)"
+  },
+  "notices": {
+    "en": [
+      {
+        "kind": "summary_not_law",
+        "draw_required": false,
+        "text": "This is a summary of information dealing with hunting licences and hunting laws in Ontario. This summary is neither a legal document nor a complete collection of the current regulations. It is meant to be a convenient reference only. For complete details:",
+        "related": []
+      },
+      {
+        "kind": "moose_tag",
+        "draw_required": true,
+        "flag": true,
+        "applies_to": "moose",
+        "text": "Moose tags are valid only for the Wildlife Management Unit, moose type(s) and season(s) indicated on the tag. A bull tag or a cow/calf tag valid for the bows only season (a “bow tag”) is valid only during the bows only season. A bull tag or a cow/calf tag valid for the every firearm/”gun” season is valid only during that season. Calf tags are valid for the full length of the moose hunting season(s) in the WMU they are issued for (in both the bows only and “gun” seasons).",
+        "related": []
+      },
+      {
+        "kind": "bear_cubs",
+        "draw_required": false,
+        "text": "The shooting of cubs or female bears accompanied by a cub is not permitted during the spring season."
+      }
+    ],
+    "fr": [
+      {
+        "kind": "summary_not_law",
+        "draw_required": false,
+        "text": "Voici des renseignements sommaires sur les permis de chasse et les lois sur la chasse en Ontario. Ceci n'est ni un document juridique ni un recueil complet des règlements en vigueur. Il ne doit être consulté qu'à titre de référence pratique. Pour obtenir plus de renseignements, consultez la :",
+        "related": []
+      },
+      {
+        "kind": "moose_tag",
+        "draw_required": true,
+        "flag": true,
+        "applies_to": "moose",
+        "text": "Les vignettes d’orignal sont valides seulement pour l’unité de gestion de la faune ( UGF ), le type d’orignal et la saison indiqués sur la vignette. Une vignette de mâle ou de femelle/veau valide pour la saison de chasse à l’arc seulement est valide uniquement pour cette saison. Une vignette de mâle ou de femelle/veau valide pour la saison de chasse à toutes les armes à feu/fusils est valide uniquement pour cette saison. Les vignettes de veau sont valides pendant toute la saison de chasse à l’orignal dans l’ UGF précisée (pour les saisons de chasse à l’arc seulement et de chasse au fusil).",
+        "related": []
+      },
+      {
+        "kind": "bear_cubs",
+        "draw_required": false,
+        "text": "Il est interdit d’abattre des oursons ou des femelles accompagnées d’un ourson pendant la chasse du printemps."
+      }
+    ]
+  },
+  "seasons": {
+    "en": [
+      {
+        "species": "White-tailed deer",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Rifles, shotguns, muzzle-loading guns and bows",
+        "segment": "Resident",
+        "period": "November 2 to November 15",
+        "period_2026": "November 2 to November 15",
+        "period_from": "2026-11-02",
+        "period_to": "2026-11-15",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Rifles, shotguns, muzzle-loading guns and bows · 28, 29, 31, 32, 35, 36, 37, 38, 39, 40, 41, 42, 44, 46, | 47, 48, 49, 50, 53A, 54, 55A, 55B, 56, 57, 58, 59, 60, | 61, 62, 63A, 63B, 64A, 64B footnote 1 [1] , 65 footnote 1 [1] , 66A, 67, 68A, | 68B footnote 1 [1] , 69B footnote 1 [1] , 71 footnote 1 [1] , 72A footnote 1 [1] , 73 footnote 1 [1] , 74A footnote 1 [1] , 74B, 75 footnote 1 [1] · Resident · November 2 to November 15"
+      },
+      {
+        "species": "White-tailed deer",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Rifles, shotguns, muzzle-loading guns and bows",
+        "segment": "Non-resident",
+        "period": "November 2 to November 15",
+        "period_2026": "November 2 to November 15",
+        "period_from": "2026-11-02",
+        "period_to": "2026-11-15",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Rifles, shotguns, muzzle-loading guns and bows · 28, 29, 31, 32, 35, 36, 37, 38, 39, 40, 41, 42, 44, 46, | 47, 48, 49, 50, 53A, 54, 55A, 55B, 56, 57, 58, 59, 60, | 61, 62, 63A, 63B, 64A, 64B footnote 1 [1] , 65 footnote 1 [1] , 66A, 67, 68A, | 68B footnote 1 [1] , 69B footnote 1 [1] , 71 footnote 1 [1] , 72A footnote 1 [1] , 73 footnote 1 [1] , 74A footnote 1 [1] , 74B, 75 footnote 1 [1] · Non-resident · November 2 to November 15"
+      },
+      {
+        "species": "White-tailed deer",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Muzzle-loading guns and bows",
+        "segment": "Resident",
+        "period": "November 30 to December 6",
+        "period_2026": "November 30 to December 6",
+        "period_from": "2026-11-30",
+        "period_to": "2026-12-06",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Muzzle-loading guns and bows · 36, 37, 42, 43A, 43B, 45, 59, 60, | 61, 62, 63A, 63B, 64A, 64B, 65, | 66A, 67, 68A, 68B, 69B, 71, 72A, 73, | 74A, 74B, 75, 82A, 83A, 84 · Resident · November 30 to December 6"
+      },
+      {
+        "species": "White-tailed deer",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Muzzle-loading guns and bows",
+        "segment": "Non-resident",
+        "period": "November 30 to December 6",
+        "period_2026": "November 30 to December 6",
+        "period_from": "2026-11-30",
+        "period_to": "2026-12-06",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Muzzle-loading guns and bows · 36, 37, 42, 43A, 43B, 45, 59, 60, | 61, 62, 63A, 63B, 64A, 64B, 65, | 66A, 67, 68A, 68B, 69B, 71, 72A, 73, | 74A, 74B, 75, 82A, 83A, 84 · Non-resident · November 30 to December 6"
+      },
+      {
+        "species": "White-tailed deer",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Bows only",
+        "segment": "Resident",
+        "period": "October 1 to November 1",
+        "period_2026": "October 1 to November 1",
+        "period_from": "2026-10-01",
+        "period_to": "2026-11-01",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Bows only · 59, 63B, 64A, 64B, 66A, 67, | 68A, 68B, 69B, 71, 72A, 73, | 74A, 74B, 75 · Resident · October 1 to November 1"
+      },
+      {
+        "species": "White-tailed deer",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Bows only",
+        "segment": "Resident",
+        "period": "November 16 to November 29",
+        "period_2026": "November 16 to November 29",
+        "period_from": "2026-11-16",
+        "period_to": "2026-11-29",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Bows only · 59, 63B, 64A, 64B, 66A, 67, | 68A, 68B, 69B, 71, 72A, 73, | 74A, 74B, 75 · Resident · November 16 to November 29"
+      },
+      {
+        "species": "White-tailed deer",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Bows only",
+        "segment": "Resident",
+        "period": "December 7 to December 31",
+        "period_2026": "December 7 to December 31",
+        "period_from": "2026-12-07",
+        "period_to": "2026-12-31",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Bows only · 59, 63B, 64A, 64B, 66A, 67, | 68A, 68B, 69B, 71, 72A, 73, | 74A, 74B, 75 · Resident · December 7 to December 31"
+      },
+      {
+        "species": "White-tailed deer",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Bows only",
+        "segment": "Non-resident",
+        "period": "October 1 to November 1",
+        "period_2026": "October 1 to November 1",
+        "period_from": "2026-10-01",
+        "period_to": "2026-11-01",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Bows only · 59, 63B, 64A, 64B, 66A, 67, | 68A, 68B, 69B, 71, 72A, 73, | 74A, 74B, 75 · Non-resident · October 1 to November 1"
+      },
+      {
+        "species": "White-tailed deer",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Bows only",
+        "segment": "Non-resident",
+        "period": "November 16 to November 29",
+        "period_2026": "November 16 to November 29",
+        "period_from": "2026-11-16",
+        "period_to": "2026-11-29",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Bows only · 59, 63B, 64A, 64B, 66A, 67, | 68A, 68B, 69B, 71, 72A, 73, | 74A, 74B, 75 · Non-resident · November 16 to November 29"
+      },
+      {
+        "species": "White-tailed deer",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Bows only",
+        "segment": "Non-resident",
+        "period": "December 7 to December 31",
+        "period_2026": "December 7 to December 31",
+        "period_from": "2026-12-07",
+        "period_to": "2026-12-31",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Bows only · 59, 63B, 64A, 64B, 66A, 67, | 68A, 68B, 69B, 71, 72A, 73, | 74A, 74B, 75 · Non-resident · December 7 to December 31"
+      },
+      {
+        "species": "Moose",
+        "species_key": "moose",
+        "weapon_class": "Rifles, shotguns, muzzle-loading guns and bows | (the \"gun\" seasons when \"gun tags\" are valid)",
+        "segment": "Resident",
+        "period": "October 19 to October 25",
+        "period_2026": "October 19 to October 25",
+        "period_from": "2026-10-19",
+        "period_to": "2026-10-25",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Rifles, shotguns, muzzle-loading guns and bows | (the \"gun\" seasons when \"gun tags\" are valid) · 46–50, 53–63 · Resident · October 19 to October 25"
+      },
+      {
+        "species": "Moose",
+        "species_key": "moose",
+        "weapon_class": "Rifles, shotguns, muzzle-loading guns and bows | (the \"gun\" seasons when \"gun tags\" are valid)",
+        "segment": "Non-resident",
+        "period": "None",
+        "period_2026": "None",
+        "period_from": null,
+        "period_to": null,
+        "year": 2026,
+        "open": false,
+        "notes": null,
+        "raw": "Rifles, shotguns, muzzle-loading guns and bows | (the \"gun\" seasons when \"gun tags\" are valid) · 46–50, 53–63 · Non-resident · None"
+      },
+      {
+        "species": "Moose",
+        "species_key": "moose",
+        "weapon_class": "Bows only | (season when \"bow tags\" are valid)",
+        "segment": "Resident",
+        "period": "October 3 to October 9",
+        "period_2026": "October 3 to October 9",
+        "period_from": "2026-10-03",
+        "period_to": "2026-10-09",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Bows only | (season when \"bow tags\" are valid) · 46–50, 53–63 · Resident · October 3 to October 9"
+      },
+      {
+        "species": "Moose",
+        "species_key": "moose",
+        "weapon_class": "Bows only | (season when \"bow tags\" are valid)",
+        "segment": "Non-resident",
+        "period": "none",
+        "period_2026": "none",
+        "period_from": null,
+        "period_to": null,
+        "year": 2026,
+        "open": false,
+        "notes": null,
+        "raw": "Bows only | (season when \"bow tags\" are valid) · 46–50, 53–63 · Non-resident · none"
+      },
+      {
+        "species": "Black bear",
+        "species_key": "black-bear",
+        "weapon_class": "Spring black bear seasons",
+        "segment": "Resident and non-resident",
+        "period": "May 1 to June 15",
+        "period_2026": "May 1 to June 15",
+        "period_from": "2026-05-01",
+        "period_to": "2026-06-15",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Spring black bear seasons · 1A, 1C, 1D, 2–6, 7A [1] , 7B, 8–10, 11A, 11B, 12–19, 21–50, 53–64, 66–69, 71–76 · Resident and non-resident · May 1 to June 15"
+      },
+      {
+        "species": "Black bear",
+        "species_key": "black-bear",
+        "weapon_class": "Fall black bear seasons",
+        "segment": "Resident and non-resident",
+        "period": "September 1 to November 30",
+        "period_2026": "September 1 to November 30",
+        "period_from": "2026-09-01",
+        "period_to": "2026-11-30",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Fall black bear seasons · 48, 54–63, 68 · Resident and non-resident · September 1 to November 30"
+      }
+    ],
+    "fr": [
+      {
+        "species": "Cerf de Virginie",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Carabine, fusil de chasse, fusil à chargement par la bouche et arc",
+        "segment": "Résident",
+        "period": "2 novembre–15 novembre",
+        "period_2026": "2 novembre–15 novembre",
+        "period_from": "2026-11-02",
+        "period_to": "2026-11-15",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Carabine, fusil de chasse, fusil à chargement par la bouche et arc · 28, 29, 31, 32, 35, 36, 37, 38, 39, 40, 41, 42, 44, 46, | 47, 48, 49, 50, 53A, 54, 55A, 55B, 56, 57, 58, 59, 60, | 61, 62, 63A, 63B, 64A, 64B footnote 1 [1] , 65 footnote 1 [1] , 66A, 67, 68A, | 68B footnote 1 [1] , 69B footnote 1 [1] , 71 footnote 1 [1] , 72A footnote 1 [1] , 73 footnote 1 [1] , 74A footnote 1 [1] , 74B, 75 footnote 1 [1] · Résident · 2 novembre–15 novembre"
+      },
+      {
+        "species": "Cerf de Virginie",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Carabine, fusil de chasse, fusil à chargement par la bouche et arc",
+        "segment": "Non-résident",
+        "period": "2 novembre–15 novembre",
+        "period_2026": "2 novembre–15 novembre",
+        "period_from": "2026-11-02",
+        "period_to": "2026-11-15",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Carabine, fusil de chasse, fusil à chargement par la bouche et arc · 28, 29, 31, 32, 35, 36, 37, 38, 39, 40, 41, 42, 44, 46, | 47, 48, 49, 50, 53A, 54, 55A, 55B, 56, 57, 58, 59, 60, | 61, 62, 63A, 63B, 64A, 64B footnote 1 [1] , 65 footnote 1 [1] , 66A, 67, 68A, | 68B footnote 1 [1] , 69B footnote 1 [1] , 71 footnote 1 [1] , 72A footnote 1 [1] , 73 footnote 1 [1] , 74A footnote 1 [1] , 74B, 75 footnote 1 [1] · Non-résident · 2 novembre–15 novembre"
+      },
+      {
+        "species": "Cerf de Virginie",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Fusil à chargement par la bouche et à l’arc",
+        "segment": "Résident",
+        "period": "30 novembre–6 décembre",
+        "period_2026": "30 novembre–6 décembre",
+        "period_from": "2026-11-30",
+        "period_to": "2026-12-06",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Fusil à chargement par la bouche et à l’arc · 36, 37, 42, 43A, 43B, 45, 59, 60, | 61, 62, 63A, 63B, 64A, 64B, 65, 66A, | 67, 68A, 68B, 69B, 71, 72A, 73, 74A, | 74B, 75, 82A, 83A, 84 · Résident · 30 novembre–6 décembre"
+      },
+      {
+        "species": "Cerf de Virginie",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Fusil à chargement par la bouche et à l’arc",
+        "segment": "Non-résident",
+        "period": "30 novembre–6 décembre",
+        "period_2026": "30 novembre–6 décembre",
+        "period_from": "2026-11-30",
+        "period_to": "2026-12-06",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Fusil à chargement par la bouche et à l’arc · 36, 37, 42, 43A, 43B, 45, 59, 60, | 61, 62, 63A, 63B, 64A, 64B, 65, 66A, | 67, 68A, 68B, 69B, 71, 72A, 73, 74A, | 74B, 75, 82A, 83A, 84 · Non-résident · 30 novembre–6 décembre"
+      },
+      {
+        "species": "Cerf de Virginie",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Arc seulement",
+        "segment": "Résident",
+        "period": "1er octobre–1er novembre",
+        "period_2026": "1er octobre–1er novembre",
+        "period_from": "2026-10-01",
+        "period_to": "2026-11-01",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Arc seulement · 59, 63B, 64A, 64B, 66A, 67, 68A, 68B, 69B, 71, 72A, 73, 74A, 74B, 75 · Résident · 1er octobre–1er novembre"
+      },
+      {
+        "species": "Cerf de Virginie",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Arc seulement",
+        "segment": "Résident",
+        "period": "16 novembre–29 novembre",
+        "period_2026": "16 novembre–29 novembre",
+        "period_from": "2026-11-16",
+        "period_to": "2026-11-29",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Arc seulement · 59, 63B, 64A, 64B, 66A, 67, 68A, 68B, 69B, 71, 72A, 73, 74A, 74B, 75 · Résident · 16 novembre–29 novembre"
+      },
+      {
+        "species": "Cerf de Virginie",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Arc seulement",
+        "segment": "Résident",
+        "period": "7 décembre–31 décembre",
+        "period_2026": "7 décembre–31 décembre",
+        "period_from": "2026-12-07",
+        "period_to": "2026-12-31",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Arc seulement · 59, 63B, 64A, 64B, 66A, 67, 68A, 68B, 69B, 71, 72A, 73, 74A, 74B, 75 · Résident · 7 décembre–31 décembre"
+      },
+      {
+        "species": "Cerf de Virginie",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Arc seulement",
+        "segment": "Non-résident",
+        "period": "1er octobre–1er novembre",
+        "period_2026": "1er octobre–1er novembre",
+        "period_from": "2026-10-01",
+        "period_to": "2026-11-01",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Arc seulement · 59, 63B, 64A, 64B, 66A, 67, 68A, 68B, 69B, 71, 72A, 73, 74A, 74B, 75 · Non-résident · 1er octobre–1er novembre"
+      },
+      {
+        "species": "Cerf de Virginie",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Arc seulement",
+        "segment": "Non-résident",
+        "period": "16 novembre–29 novembre",
+        "period_2026": "16 novembre–29 novembre",
+        "period_from": "2026-11-16",
+        "period_to": "2026-11-29",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Arc seulement · 59, 63B, 64A, 64B, 66A, 67, 68A, 68B, 69B, 71, 72A, 73, 74A, 74B, 75 · Non-résident · 16 novembre–29 novembre"
+      },
+      {
+        "species": "Cerf de Virginie",
+        "species_key": "white-tailed-deer",
+        "weapon_class": "Arc seulement",
+        "segment": "Non-résident",
+        "period": "7 décembre–31 décembre",
+        "period_2026": "7 décembre–31 décembre",
+        "period_from": "2026-12-07",
+        "period_to": "2026-12-31",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Arc seulement · 59, 63B, 64A, 64B, 66A, 67, 68A, 68B, 69B, 71, 72A, 73, 74A, 74B, 75 · Non-résident · 7 décembre–31 décembre"
+      },
+      {
+        "species": "Orignal",
+        "species_key": "moose",
+        "weapon_class": "Carabine, fusil de chasse, fusil à chargement par la bouche et arc | (saisons où les vignettes de chasse au fusil sont valides)",
+        "segment": "Résident",
+        "period": "19 octobre–25 octobre",
+        "period_2026": "19 octobre–25 octobre",
+        "period_from": "2026-10-19",
+        "period_to": "2026-10-25",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Carabine, fusil de chasse, fusil à chargement par la bouche et arc | (saisons où les vignettes de chasse au fusil sont valides) · 46–50, 53–63 · Résident · 19 octobre–25 octobre"
+      },
+      {
+        "species": "Orignal",
+        "species_key": "moose",
+        "weapon_class": "Carabine, fusil de chasse, fusil à chargement par la bouche et arc | (saisons où les vignettes de chasse au fusil sont valides)",
+        "segment": "Non-résident",
+        "period": "Aucune",
+        "period_2026": "Aucune",
+        "period_from": null,
+        "period_to": null,
+        "year": 2026,
+        "open": false,
+        "notes": null,
+        "raw": "Carabine, fusil de chasse, fusil à chargement par la bouche et arc | (saisons où les vignettes de chasse au fusil sont valides) · 46–50, 53–63 · Non-résident · Aucune"
+      },
+      {
+        "species": "Orignal",
+        "species_key": "moose",
+        "weapon_class": "Arc seulement | (saisons où les vignettes de chasse à l’arc sont valides)",
+        "segment": "Résident",
+        "period": "3 octobre–9 octobre",
+        "period_2026": "3 octobre–9 octobre",
+        "period_from": "2026-10-03",
+        "period_to": "2026-10-09",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Arc seulement | (saisons où les vignettes de chasse à l’arc sont valides) · 46–50, 53–63 · Résident · 3 octobre–9 octobre"
+      },
+      {
+        "species": "Orignal",
+        "species_key": "moose",
+        "weapon_class": "Arc seulement | (saisons où les vignettes de chasse à l’arc sont valides)",
+        "segment": "Non-résident",
+        "period": "Aucune",
+        "period_2026": "Aucune",
+        "period_from": null,
+        "period_to": null,
+        "year": 2026,
+        "open": false,
+        "notes": null,
+        "raw": "Arc seulement | (saisons où les vignettes de chasse à l’arc sont valides) · 46–50, 53–63 · Non-résident · Aucune"
+      },
+      {
+        "species": "Ours noir",
+        "species_key": "black-bear",
+        "weapon_class": "Saisons de chasse à l’ours noir — Printemps",
+        "segment": "Résidents et non-résidents",
+        "period": "1er mai–15 juin",
+        "period_2026": "1er mai–15 juin",
+        "period_from": "2026-05-01",
+        "period_to": "2026-06-15",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Saisons de chasse à l’ours noir — Printemps · 1A, 1C, 1D, 2-6, 7A [1] , 7B, 8–10, 11A, 11B, 12–19, 21–50, 53–64, 66–69, 71–76 · Résidents et non-résidents · 1er mai–15 juin"
+      },
+      {
+        "species": "Ours noir",
+        "species_key": "black-bear",
+        "weapon_class": "Saisons de chasse à l’ours noir — Automne",
+        "segment": "Résidents et non-résidents",
+        "period": "1er septembre–30 novembre",
+        "period_2026": "1er septembre–30 novembre",
+        "period_from": "2026-09-01",
+        "period_to": "2026-11-30",
+        "year": 2026,
+        "open": true,
+        "notes": null,
+        "raw": "Saisons de chasse à l’ours noir — Automne · 48, 54–63, 68 · Résidents et non-résidents · 1er septembre–30 novembre"
+      }
+    ]
+  }
+}

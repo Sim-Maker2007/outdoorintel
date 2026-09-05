@@ -17,6 +17,7 @@
     "evals": "node scripts/evals/run-evals.mjs",
     "harvest:ontario": "node scripts/regs/harvest-ontario.mjs",
     "harvest:hunting-qc": "node scripts/regs/harvest-hunting-qc.mjs",
+    "harvest:hunting-on": "node scripts/regs/harvest-hunting-on.mjs",
     "build:css": "tailwindcss -c tailwind.config.js -i assets/css/tailwind.input.css -o assets/css/site.css --minify",
     "build:scout-index": "node scripts/build-spots-index.js",
     "build:scout-page": "node scripts/build-scout-page.js",
