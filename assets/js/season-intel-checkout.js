@@ -37,7 +37,9 @@
   var previewPaid = /[?&]preview=paid/.test(window.location.search);
 
   if (cancelled && /[?&]checkout=cancelled/.test(window.location.search)) {
+    document.documentElement.classList.add('si-checkout-cancelled');
     show(cancelled, true);
+    cancelled.style.display = 'block';
     cancelled.setAttribute('tabindex', '-1');
     try { cancelled.focus({ preventScroll: true }); } catch (e) {}
   }

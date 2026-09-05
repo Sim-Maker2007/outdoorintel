@@ -44,6 +44,8 @@
     return;
   }
 
+  say((statusEl && statusEl.getAttribute('data-pending')) || 'Confirming your Stripe checkout…');
+
   fetch('/api/stripe/session', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },

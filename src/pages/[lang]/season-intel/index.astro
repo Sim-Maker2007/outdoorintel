@@ -207,6 +207,13 @@ const breadcrumbLd = {
     <link rel="alternate" hreflang="x-default" href={`${SITE}/en/season-intel`}>
     <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbLd)}></script>
     <link rel="stylesheet" href="/assets/css/site.css?v=1">
+    <script is:inline>
+      if (/[?&]checkout=cancelled/.test(location.search)) document.documentElement.classList.add('si-checkout-cancelled');
+    </script>
+    <style is:inline>
+      .si-cancel-banner{display:none}
+      html.si-checkout-cancelled .si-cancel-banner{display:block}
+    </style>
     <Fragment set:html={`<!-- Google Analytics (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8Q00962P"><\/script>
     <script>
@@ -222,7 +229,7 @@ const breadcrumbLd = {
     <main class="pt-[88px]">
         <section class="bg-[#14251a] text-white py-16 px-6">
             <div class="max-w-5xl mx-auto">
-            <p id="checkout-cancelled" class="hidden scroll-mt-[96px] text-sm text-[#14251a] bg-[#f2e6c9] border border-[#d4b56a] rounded-lg px-4 py-3 mb-6 font-semibold" role="status">{T.cancelled[L]}</p>
+            <p id="checkout-cancelled" class="si-cancel-banner scroll-mt-[96px] text-sm text-[#14251a] bg-[#f2e6c9] border border-[#d4b56a] rounded-lg px-4 py-3 mb-6 font-semibold" role="status">{T.cancelled[L]}</p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
                 <div>
                     <div class="js-si-badge-wait hidden mb-5">
@@ -327,7 +334,7 @@ const breadcrumbLd = {
             <div class="max-w-5xl mx-auto">
                 <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-3">{T.bottomTitle[L]}</h2>
                 <p class="text-white/80 max-w-2xl mb-6">{T.bottomLead[L]}</p>
-                <a href="#checkout" class="js-si-bottom-cta inline-block bg-[#a2c99a] text-[#14251a] font-bold px-6 py-3 rounded-lg hover:bg-white transition-colors">{T.checkoutBtn[L]}</a>
+                <a href="#checkout" class="js-si-bottom-cta inline-block bg-white text-[#14251a] font-bold px-6 py-3 rounded-lg hover:bg-[#a2c99a] transition-colors">{T.checkoutBtn[L]}</a>
                 <p class="js-si-bottom-wait hidden text-sm text-white/70">{T.bottomWait[L]}</p>
             </div>
         </section>
@@ -344,7 +351,7 @@ if (toggle && menu) {
 }
 <\/script>`} />
     <GlobalSearch />
-    <script is:inline defer src="/assets/js/season-intel-checkout.js?v=3"></script>
+    <script is:inline defer src="/assets/js/season-intel-checkout.js?v=4"></script>
     <script is:inline defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
