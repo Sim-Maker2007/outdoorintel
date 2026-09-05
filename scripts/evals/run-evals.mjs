@@ -33,6 +33,7 @@ import { lookupHunting } from '../../src/lib/huntLookup.mjs';
 import { resolveHunting } from '../../src/lib/huntResolver.mjs';
 import { REGS } from '../../api/_data/regs-index.js';
 import { HUNTING } from '../../api/_data/hunting-index.js';
+import { parseWmuCell, wmuMatches, isRefusedWmu } from '../regs/harvest-hunting-on.mjs';
 
 const REPO = process.cwd();
 const { questions } = JSON.parse(readFileSync(join(REPO, 'scripts', 'evals', 'golden-questions.json'), 'utf-8'));
@@ -75,8 +76,12 @@ for (const q of questions) {
     ok(`${q.id}/fr-ours-now`, frNow && src.includes('L’ours noir n’est récupéré que là où le tableau officiel a des lignes pour cette clé'), 'FR Season Intel now-item must include live ours noir 2026 on the published splits');
     ok(`${q.id}/en-not-deny-bear`, !/not bear or turkey/.test(src), 'EN Season Intel must not deny bear when it is harvested');
     ok(`${q.id}/fr-not-deny-ours`, !/pas l’ours ni le dindon/.test(src), 'FR Season Intel must not deny ours when it is harvested');
-    ok(`${q.id}/en-gaps`, /not turkey/.test(src) && /not small game/.test(src) && /not Ontario hunting/.test(src) && /Not all 28 hunting zones/.test(src), 'EN must still disclose turkey, small game, Ontario hunting, and not-all-28 gaps');
-    ok(`${q.id}/fr-gaps`, /pas le dindon/.test(src) && /pas le petit gibier/.test(src) && /pas la chasse ontarienne/.test(src) && /Pas les 28 zones/.test(src), 'FR must still disclose dindon, petit gibier, chasse ontarienne, and not-all-28 gaps');
+    ok(`${q.id}/en-gaps`, /not turkey/.test(src) && /not small game/.test(src) && /Not all 28 hunting zones/.test(src), 'EN must still disclose turkey, small game, and not-all-28 QC gaps');
+    ok(`${q.id}/fr-gaps`, /pas le dindon/.test(src) && /pas le petit gibier/.test(src) && /Pas les 28 zones/.test(src), 'FR must still disclose dindon, petit gibier, and not-all-28 QC gaps');
+    ok(`${q.id}/en-on-hunt-now`, src.includes('Ontario hunting white-tailed deer, moose, and black bear 2026 for Ottawa-adjacent WMUs 63A, 63B, 65, 66A and 67') && src.includes('65 has no bear row') && src.includes('66A and 67 have no moose row') && src.includes('WMU 12 (Rainy River) is never harvested'), 'EN Season Intel now-item must include live ON WMUs 63A/63B/65/66A/67 with honest moose/bear/WMU 12 scope');
+    ok(`${q.id}/fr-on-hunt-now`, src.includes('UGF adjacentes à Ottawa 63A, 63B, 65, 66A et 67') && src.includes('65 n’a pas de ligne d’ours') && src.includes('66A et 67 n’ont pas de ligne d’orignal') && src.includes('L’UGF 12 (Rainy River) n’est jamais collectée'), 'FR Season Intel now-item must include live UGF 63A/63B/65/66A/67 with honest moose/bear/UGF 12 scope');
+    ok(`${q.id}/en-not-deny-on-hunt`, !/not Ontario hunting/.test(src), 'EN Season Intel must not still deny Ontario hunting when WMUs shipped');
+    ok(`${q.id}/fr-not-deny-on-hunt`, !/pas la chasse ontarienne/.test(src), 'FR Season Intel must not still deny chasse ontarienne when UGF shipped');
     ok(`${q.id}/en-8w-13`, /Not 8 West/.test(src) && /not 13 East\/West/.test(src), 'EN must still disclose 8 West and 13 East/West as absent');
     ok(`${q.id}/fr-8w-13`, /Pas la 8 ouest/.test(src) && /13 est\/ouest/.test(src), 'FR must still disclose 8 ouest and 13 est/ouest as absent');
     const liveFmz = '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 and 20';
@@ -88,21 +93,62 @@ for (const q of questions) {
     ok(`${q.id}/fr-not-stale-inland`, !src.includes('ZGP de pêche 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 15, 16, 17, 18, 19 et 20') && !src.includes('pages ZGP 1/2/3/4/5/6/7/8/10/11/12/15/16/17/18/19/20'), 'FR Season Intel must not still omit ZGP 9/13/14 from the live list');
     ok(`${q.id}/en-not-stale-gl`, !/Great Lakes FMZs 9, 13 and 14 are not harvested/.test(src) && !/Great Lakes FMZs 9, 13, 14, 19 and 20 are not harvested/.test(src), 'EN Season Intel must not still call Great Lakes FMZs unharvested');
     ok(`${q.id}/fr-not-stale-gl`, !/Les ZGP des Grands Lacs 9, 13 et 14 ne sont pas collectées/.test(src) && !/Les ZGP des Grands Lacs 9, 13, 14, 19 et 20 ne sont pas collectées/.test(src), 'FR Season Intel must not still call Great Lakes ZGPs unharvested');
-    ok(`${q.id}/en-coming-remaining`, !src.includes('Great Lakes FMZs 9, 13 and 14') && src.includes('Remaining Québec hunting zones') && src.includes('Ontario hunting seasons.') && src.includes('Change-alert emails'), 'EN What’s coming must not still name Great Lakes 9, 13 and 14 and must keep remaining QC hunt, ON hunting, and change alerts');
-    ok(`${q.id}/fr-coming-remaining`, !src.includes('ZGP des Grands Lacs 9, 13 et 14') && src.includes('Les autres zones et segments de chasse du Québec') && src.includes('Saisons de chasse de l’Ontario.') && src.includes('Courriels d’alerte'), 'FR Ce qui s’en vient must not still name Great Lakes 9, 13 et 14 and must keep remaining QC hunt, ON hunting, and alerts');
+    ok(`${q.id}/en-coming-remaining`, !src.includes('Great Lakes FMZs 9, 13 and 14') && src.includes('Remaining Québec hunting zones') && src.includes('Remaining Ontario hunting WMUs not in 63A, 63B, 65, 66A and 67') && src.includes('Change-alert emails') && !src.includes('Ontario hunting seasons.'), 'EN What’s coming must keep remaining QC hunt, remaining ON WMUs, and change alerts — not the stale all-ON-hunting line');
+    ok(`${q.id}/fr-coming-remaining`, !src.includes('ZGP des Grands Lacs 9, 13 et 14') && src.includes('Les autres zones et segments de chasse du Québec') && src.includes('Les autres UGF de chasse de l’Ontario hors 63A, 63B, 65, 66A et 67') && src.includes('Courriels d’alerte') && !src.includes('Saisons de chasse de l’Ontario.'), 'FR Ce qui s’en vient must keep remaining QC hunt, remaining ON UGF, and alerts — not the stale all-ON-hunting line');
     ok(`${q.id}/en-coming-not-4-8`, !/remaining inland zones and Great Lakes FMZs 9, 13 and 14/.test(src) && !src.includes('remaining inland FMZs 1, 2 and 3'), 'EN What’s coming must not list harvested inland or Great Lakes FMZs as remaining');
     ok(`${q.id}/fr-coming-not-4-8`, !/zones intérieures restantes et ZGP des Grands Lacs 9, 13 et 14/.test(src) && !src.includes('ZGP intérieures restantes 1, 2 et 3'), 'FR Ce qui s’en vient must not list harvested inland or Great Lakes ZGPs as remaining');
     ok(`${q.id}/thanks-fmz-links`, thanks.includes('[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]'), 'thanks page FMZ link list must include live 1–20');
     ok(`${q.id}/thanks-not-stale`, !thanks.includes('[1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 15, 16, 17, 18, 19, 20]') && !thanks.includes('Ontario FMZ 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 15, 16, 17, 18, 19 and 20'), 'thanks page must not still omit FMZ 9/13/14');
-    ok(`${q.id}/thanks-perk`, thanks.includes(`Ontario FMZ ${liveFmz}`) && thanks.includes(`ZGP ${liveZgp}`), 'thanks perk copy must list live FMZ/ZGP 1–20');
+    ok(`${q.id}/thanks-perk`, thanks.includes(`Ontario FMZ ${liveFmz}`) && thanks.includes(`ZGP ${liveZgp}`) && thanks.includes('Ontario hunting WMUs 63A, 63B, 65, 66A and 67') && thanks.includes('UGF de chasse 63A, 63B, 65, 66A et 67'), 'thanks perk copy must list live FMZ/ZGP 1–20 and ON hunting WMUs');
+    ok(`${q.id}/thanks-wmu-links`, thanks.includes("['63A', '63B', '65', '66A', '67']"), 'thanks page must link harvested Ontario hunting WMUs');
     ok(`${q.id}/price`, /\$29 CAD/.test(src) && /29 \$ CAD/.test(src), 'Season Intel must keep $29 CAD/year Stripe Checkout framing');
     ok(`${q.id}/meta-bear`, src.includes('Québec hunting deer, moose, and black bear 2026') && src.includes('chasse au cerf, à l’orignal et à l’ours noir 2026'), 'EN+FR meta descriptions must include black bear / ours noir');
     ok(`${q.id}/meta-on-fmz`, src.includes(`Ontario FMZ ${liveFmz}`) && src.includes(`ZGP ${liveZgp}`), 'EN+FR meta descriptions must list live FMZ/ZGP 1–20');
+    ok(`${q.id}/meta-on-hunt`, src.includes('Ontario hunting WMUs 63A, 63B, 65, 66A and 67') && src.includes('UGF de chasse 63A, 63B, 65, 66A et 67'), 'EN+FR meta descriptions must include harvested Ontario hunting WMUs');
     continue;
   }
 
   if (c.all_hunting) {
     for (const [zid, doc] of Object.entries(HUNTING)) {
+      if (doc.jurisdiction === 'ON') {
+        ok(`${q.id}/${zid}-activity`, doc.activity === 'hunting' && doc.jurisdiction === 'ON', `${zid} must be hunting ON`);
+        ok(`${q.id}/${zid}-key`, /^ON-H-/.test(zid) && zid !== 'ON-12' && zid !== 'ON-H-12' && zid !== '12', `${zid} is not an Ontario hunting namespace key`);
+        ok(`${q.id}/${zid}-citation`, !!doc.source.fr && !!doc.source.fetched_at, `${zid} missing citation`);
+        const listed = doc.coverage.season_rows_listed;
+        const harvested = doc.coverage.season_rows_harvested;
+        ok(`${q.id}/${zid}-counters`, harvested >= listed && listed >= 0, `${zid} inverted coverage (${harvested}/${listed})`);
+        ok(`${q.id}/${zid}-complete-slice`, doc.coverage.complete === true, `${zid} coverage incomplete for stated slice`);
+        const en = resolveHunting(doc, { lang: 'en' });
+        const fr = resolveHunting(doc, { lang: 'fr' });
+        const notHarvested = doc.coverage.species_not_harvested || [];
+        const deerListed = (doc.coverage.species?.en || []).includes('white-tailed-deer');
+        const mooseListed = (doc.coverage.species?.en || []).includes('moose');
+        const bearListed = (doc.coverage.species?.en || []).includes('black-bear');
+        if (deerListed) {
+          ok(`${q.id}/${zid}-deer-en`, en.seasons.some(r => r.species_key === 'white-tailed-deer' && Number(r.year) === 2026), `${zid} missing EN deer 2026`);
+          ok(`${q.id}/${zid}-deer-fr`, fr.seasons.some(r => r.species_key === 'white-tailed-deer'), `${zid} missing FR deer`);
+        } else {
+          ok(`${q.id}/${zid}-deer-skipped`, notHarvested.includes('white-tailed deer') && !en.seasons.some(r => r.species_key === 'white-tailed-deer'), `${zid} must disclose skipped deer`);
+        }
+        if (mooseListed) {
+          ok(`${q.id}/${zid}-moose-en`, en.seasons.some(r => r.species_key === 'moose' && Number(r.year) === 2026), `${zid} missing EN moose 2026`);
+          ok(`${q.id}/${zid}-moose-fr`, fr.seasons.some(r => r.species_key === 'moose'), `${zid} missing FR moose`);
+        } else {
+          ok(`${q.id}/${zid}-moose-skipped`, notHarvested.includes('moose') && !en.seasons.some(r => r.species_key === 'moose'), `${zid} must disclose skipped moose and invent no rows`);
+        }
+        if (bearListed) {
+          ok(`${q.id}/${zid}-bear-en`, en.seasons.some(r => r.species_key === 'black-bear' && Number(r.year) === 2026), `${zid} missing EN black bear 2026`);
+          ok(`${q.id}/${zid}-bear-fr`, fr.seasons.some(r => r.species_key === 'black-bear'), `${zid} missing FR black bear`);
+          ok(`${q.id}/${zid}-bear-not-invented`, !notHarvested.includes('black bear'), `${zid} lists black bear as both harvested and not harvested`);
+        } else {
+          ok(`${q.id}/${zid}-bear-skipped`, notHarvested.includes('black bear') && !en.seasons.some(r => r.species_key === 'black-bear'), `${zid} must disclose skipped black bear and invent no rows`);
+        }
+        ok(`${q.id}/${zid}-not-small-game`, notHarvested.includes('small game') && notHarvested.includes('wild turkey'), `${zid} must still disclose small game and turkey are not harvested`);
+        ok(`${q.id}/${zid}-weapons`, en.weapon_classes.length >= 2, `${zid} weapon classes collapsed or missing`);
+        ok(`${q.id}/${zid}-not-law`, (doc.notices?.en || []).some(n => n.kind === 'summary_not_law' && /neither a legal document/i.test(n.text || '')), `${zid} missing Summary-is-not-the-law notice`);
+        ok(`${q.id}/${zid}-disclaimer`, /Summary is not the law/i.test(en.disclaimer || ''), `${zid} ON disclaimer missing Summary-is-not-the-law`);
+        continue;
+      }
       ok(`${q.id}/${zid}-activity`, doc.activity === 'hunting' && doc.jurisdiction === 'QC', `${zid} must be hunting QC`);
       ok(`${q.id}/${zid}-key`, /^QC-H-/.test(zid) && zid !== '12' && zid !== 'ON-12', `${zid} is not a hunting namespace key`);
       ok(`${q.id}/${zid}-citation`, !!doc.source.fr && !!doc.source.fetched_at, `${zid} missing citation`);
@@ -147,6 +193,30 @@ for (const q of questions) {
     continue;
   }
 
+  if (c.on_hunt_parse) {
+    ok(`${q.id}/refuse-12`, isRefusedWmu('12') && !isRefusedWmu('63A') && !isRefusedWmu('65'), 'WMU 12 must be refused; 63A/65 must not');
+    const deerCell = parseWmuCell('28, 29, 63A, 63B, 64Bfootnote 1, 65footnote 1, 66A, 67');
+    ok(`${q.id}/parse-63a`, wmuMatches(deerCell, '63A') && wmuMatches(deerCell, '67'), 'explicit 63A/67 must match deer cell');
+    ok(`${q.id}/parse-not-12`, !wmuMatches(parseWmuCell('12–19, 21–50'), '12'), 'range 12–19 must never match refused WMU 12');
+    const mooseRange = parseWmuCell('46–50, 53–63');
+    ok(`${q.id}/parent-63`, wmuMatches(mooseRange, '63A') && wmuMatches(mooseRange, '63B') && !wmuMatches(mooseRange, '65') && !wmuMatches(mooseRange, '66A'), 'moose 53–63 applies to 63A/63B only');
+    const bearSpring = parseWmuCell('53–64, 66–69');
+    ok(`${q.id}/bear-gap-65`, wmuMatches(bearSpring, '63A') && wmuMatches(bearSpring, '66A') && wmuMatches(bearSpring, '67') && !wmuMatches(bearSpring, '65'), 'bear spring skips 65 between 64 and 66');
+    continue;
+  }
+
+  if (c.hunt_on_collide) {
+    const hunt = lookupHunting(HUNTING, { zone: c.hunt_on_collide.hunt });
+    const fish = lookupRegulation(REGS, { zone: c.hunt_on_collide.fish });
+    const qcBare = lookupHunting(HUNTING, { zone: c.hunt_on_collide.not_qc });
+    ok(`${q.id}/hunt-on`, hunt.status === 'ok' && hunt.doc.jurisdiction === 'ON' && hunt.doc.activity === 'hunting' && hunt.doc.zone_key === c.hunt_on_collide.hunt, `hunting ${c.hunt_on_collide.hunt} missing or not ON`);
+    ok(`${q.id}/fish-untouched`, fish.status === 'ok' && fish.doc?.activity === 'fishing', `fishing ${c.hunt_on_collide.fish} must stay fishing`);
+    ok(`${q.id}/distinct`, hunt.doc && fish.doc && hunt.doc !== fish.doc, 'ON hunting overwrote fishing');
+    ok(`${q.id}/not-qc`, qcBare.status === 'missing', `bare ${c.hunt_on_collide.not_qc} must not resolve as Ontario hunting`);
+    ok(`${q.id}/qc12-still-qc`, lookupHunting(HUNTING, { zone: '12' }).doc?.zone_key === 'QC-H-12', 'zone=12 must remain QC-H-12');
+    continue;
+  }
+
   if (c.hunt_collide) {
     const fish = REGS[c.hunt_collide.fish];
     const hunt = lookupHunting(HUNTING, { zone: c.hunt_collide.hunt });
@@ -162,6 +232,9 @@ for (const q of questions) {
     const found = lookupHunting(HUNTING, { zone: c.hunt_zone });
     ok(`${q.id}/refuse`, found.status === 'refuse-on-12', `hunting key ${c.hunt_zone} must be refused, got ${found.status}`);
     ok(`${q.id}/not-in-index`, !HUNTING['ON-12'] && !HUNTING['ON-H-12'] && !HUNTING['12'], 'ON-12 or numeric 12 leaked into hunting index');
+    if (String(c.hunt_zone).toUpperCase() === 'ON-H-12') {
+      ok(`${q.id}/refuse-on-h-12`, found.status === 'refuse-on-12', `hunting key ON-H-12 must be refused, got ${found.status}`);
+    }
     const fishOn = lookupRegulation(REGS, { zone: 'ON-12' });
     ok(`${q.id}/fishing-on12-untouched`, fishOn.status === 'ok' && fishOn.doc?.jurisdiction === 'ON' && fishOn.doc?.activity === 'fishing', 'fishing ON-12 must remain Ontario fishing');
     continue;
@@ -178,7 +251,9 @@ for (const q of questions) {
         const fish = lookupRegulation(REGS, { zone: c.must_not_fishing_zone });
         ok(`${q.id}/not-fishing`, fish.status === 'ok' && fish.doc.activity === 'fishing' && r.zone.activity === 'hunting' && String(fish.doc.authority) !== String(found.doc.authority), `hunt-qc12-moose returned fishing zone ${c.must_not_fishing_zone}`);
       }
-      if (c.expect_rules === true) {
+      if (c.expect_rules === false) {
+        ok(q.id, r.seasons.length === 0, `expected zero hunting seasons for species="${c.species || 'any'}" but got ${r.seasons.length}`);
+      } else if (c.expect_rules === true) {
         ok(q.id, r.seasons.length > 0, `no hunting seasons for species="${c.species || 'any'}"`);
         if (c.expect_year) {
           ok(`${q.id}/year`, r.seasons.some(x => String(x.year) === String(c.expect_year) || /2026/.test(x.period_2026 || x.period || '')), `no ${c.expect_year} season column`);

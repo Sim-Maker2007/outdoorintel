@@ -1,6 +1,6 @@
 ---
 // Season Intel success page. Member perk v1: private "alerts coming" note.
-// Public QC fishing, ON FMZ 1–20, and QC hunting pages stay free — no paywall.
+// Public QC fishing, ON FMZ 1–20, QC hunting, and ON hunting WMU 63A/63B/65/66A/67 pages stay free — no paywall.
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import GlobalSearch from '../../../components/GlobalSearch.astro';
@@ -23,6 +23,10 @@ const fmz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 
   n,
   href: `/${lang}/fishing/regulations/on-fmz-${n}`,
 }));
+const onWmus = ['63A', '63B', '65', '66A', '67'].map((id) => ({
+  id,
+  href: `/${lang}/hunting/regulations/on-h-${id.toLowerCase()}`,
+}));
 
 const T = {
   title: { en: 'Thanks — Season Intel', fr: 'Merci — Season Intel' },
@@ -38,8 +42,8 @@ const T = {
   },
   perkTitle: { en: 'Member perk (v1)', fr: 'Avantage membre (v1)' },
   perkBody: {
-    en: 'Change-alert emails are coming. This membership does not hide public regulations — Québec fishing zone pages, Ontario FMZ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 and 20, and Québec hunting zone pages stay free for everyone.',
-    fr: 'Les courriels d’alerte de changement s’en viennent. Cet abonnement ne masque pas les règlements publics — les pages de zones de pêche du Québec, les ZGP 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 et 20 de l’Ontario, et les pages de zones de chasse du Québec restent gratuites pour tout le monde.',
+    en: 'Change-alert emails are coming. This membership does not hide public regulations — Québec fishing zone pages, Ontario FMZ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 and 20, Québec hunting zone pages, and Ontario hunting WMUs 63A, 63B, 65, 66A and 67 stay free for everyone.',
+    fr: 'Les courriels d’alerte de changement s’en viennent. Cet abonnement ne masque pas les règlements publics — les pages de zones de pêche du Québec, les ZGP 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 et 20 de l’Ontario, les pages de zones de chasse du Québec, et les UGF de chasse 63A, 63B, 65, 66A et 67 de l’Ontario restent gratuites pour tout le monde.',
   },
   perkPending: {
     en: 'Confirming your Stripe checkout…',
@@ -58,6 +62,7 @@ const T = {
   huntHub: { en: 'Hunting seasons hub', fr: 'Carrefour des périodes de chasse' },
   qcZones: { en: 'Québec fishing zones', fr: 'Zones de pêche du Québec' },
   onFmz: { en: 'Ontario FMZ', fr: 'ZGP Ontario' },
+  onWmu: { en: 'Ontario hunting WMU', fr: 'UGF de chasse Ontario' },
   casl: {
     en: 'Season Intel emails will include an unsubscribe note. Write to hello@outdoorintel.ca — there is no public unsubscribe URL yet. PIPEDA and Québec Law 25: questions to the same address. Stripe is the payment processor.',
     fr: 'Les courriels Season Intel indiqueront comment se désabonner. Écrivez à hello@outdoorintel.ca — il n’y a pas encore d’URL de désabonnement public. LPRPDE et Loi 25 du Québec : mêmes coordonnées. Stripe est le processeur de paiement.',
@@ -135,6 +140,9 @@ const breadcrumbLd = {
                     <li><a href={`${regsHref}/zone-10`} class="hover:underline">{T.qcZones[L]}</a></li>
                     {fmz.map(({ n, href }) => (
                     <li><a href={href} class="hover:underline">{T.onFmz[L]} {n}</a></li>
+                    ))}
+                    {onWmus.map(({ id, href }) => (
+                    <li><a href={href} class="hover:underline">{T.onWmu[L]} {id}</a></li>
                     ))}
                 </ul>
             </div>

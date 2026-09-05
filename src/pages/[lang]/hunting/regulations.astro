@@ -19,25 +19,33 @@ const zones = readdirSync(dir).filter(f => f.endsWith('.json'))
   .map(f => JSON.parse(readFileSync(join(dir, f), 'utf-8')))
   .filter(z => z.activity === 'hunting')
   .sort((a, b) => String(a.zone_key).localeCompare(String(b.zone_key), 'en', { numeric: true }));
+const qcZones = zones.filter(z => z.jurisdiction !== 'ON');
+const onZones = zones.filter(z => z.jurisdiction === 'ON');
 
 const SITE = 'https://outdoorintel.ca';
 const url = `${SITE}/${lang}/hunting/regulations`;
 const altHref = `/${lang === 'en' ? 'fr' : 'en'}/hunting/regulations`;
 
 const T = {
-  title: { en: 'Québec Hunting Seasons — Deer, Moose & Black Bear (2026)', fr: 'Périodes de chasse du Québec — cerf, orignal et ours noir (2026)' },
+  title: { en: 'Hunting Seasons — Québec & Ontario (2026)', fr: 'Périodes de chasse — Québec et Ontario (2026)' },
   metaDesc: {
-    en: 'Cited Québec hunting seasons for white-tailed deer, moose, and black bear (where the official table has rows) in published splits of zones 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 and 16. 2026 column from Québec.ca HTML tables. Free, bilingual. Always verify with the MELCCFP.',
-    fr: 'Périodes de chasse citées du Québec pour le cerf de Virginie, l’orignal et l’ours noir (là où le tableau officiel a des lignes) dans les segments publiés des zones 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 et 16. Colonne 2026 des tableaux HTML de Québec.ca. Gratuit, bilingue. Vérifiez toujours auprès du MELCCFP.',
+    en: 'Cited hunting seasons: Québec deer, moose, and black bear 2026 published splits, plus Ontario WMUs 63A, 63B, 65, 66A and 67 from the Hunting Regulations Summary HTML. Free, bilingual. Not all zones or WMUs. Always verify with the official source.',
+    fr: 'Périodes de chasse citées : cerf, orignal et ours noir 2026 du Québec (segments publiés), plus les UGF 63A, 63B, 65, 66A et 67 de l’Ontario d’après le HTML du Résumé des règlements de la chasse. Gratuit, bilingue. Pas toutes les zones ni toutes les UGF. Vérifiez toujours la source officielle.',
   },
-  h1: { en: 'Québec Hunting Seasons', fr: 'Périodes de chasse du Québec' },
+  h1: { en: 'Hunting Seasons', fr: 'Périodes de chasse' },
   intro: {
-    en: 'The 2026 white-tailed deer, moose, and black bear seasons, reproduced verbatim from Québec.ca. Black bear is harvested only where the official table has rows for that key. Weapon class is the published heading (bow is not collapsed into firearms). This is not all 28 hunting zones, not small game, and not Ontario hunting. Always verify before you hunt.',
-    fr: 'Les périodes 2026 du cerf de Virginie, de l’orignal et de l’ours noir, reproduites intégralement de Québec.ca. L’ours noir n’est récupéré que là où le tableau officiel a des lignes pour cette clé. La classe d’arme est le titre publié (l’arc n’est pas fusionné aux armes à feu). Ce n’est pas les 28 zones, ni le petit gibier, ni la chasse en Ontario. Vérifiez toujours avant de chasser.',
+    en: 'The 2026 white-tailed deer, moose, and black bear seasons, reproduced verbatim from Québec.ca and the Ontario Hunting Regulations Summary. Black bear and moose are harvested only where the official table has rows (Ontario also applies an undivided parent or published range to a lettered WMU). Weapon class is the published heading. This is not all 28 Québec zones, not all Ontario WMUs, not WMU 12, and not small game. Always verify before you hunt.',
+    fr: 'Les périodes 2026 du cerf de Virginie, de l’orignal et de l’ours noir, reproduites intégralement de Québec.ca et du Résumé des règlements de la chasse de l’Ontario. L’ours et l’orignal ne sont récupérés que là où le tableau officiel a des lignes (l’Ontario applique aussi un parent non divisé ou une plage publiée à une UGF lettrée). La classe d’arme est le titre publié. Ce n’est pas les 28 zones du Québec, ni toutes les UGF, ni l’UGF 12, ni le petit gibier. Vérifiez toujours avant de chasser.',
   },
   coverageNote: {
-    en: 'Harvested keys are the splits published on Québec.ca for deer and moose 2026 (plus black bear only where that table has a row): 4, 5E/5W, 6N/6S, 7N/7S, 8E/8N/8S, 9E/9W, 10E/10W, 11E/11W, 12, 13SW, 14, 15E/15W, 16. Skipped because they are not on the tables: 4 E/W/N/S, 5 N/S, 6 E/W, 8 West, 13 East/West, 14 E/W, 15 N/S, 16 E/W. Zones 14 and 16 have no deer row. Still not all 28 zones, not turkey, not small game, and not Ontario hunting.',
-    fr: 'Les clés récupérées sont les segments publiés sur Québec.ca pour le cerf et l’orignal 2026 (plus l’ours noir seulement là où ce tableau a une ligne) : 4, 5E/5W, 6N/6S, 7N/7S, 8E/8N/8S, 9E/9W, 10E/10W, 11E/11W, 12, 13SW, 14, 15E/15W, 16. Absentes des tableaux donc non listées : 4 E/O/N/S, 5 N/S, 6 E/O, 8 ouest, 13 est/ouest, 14 E/O, 15 N/S, 16 E/O. Les zones 14 et 16 n’ont pas de ligne de cerf. Ce n’est toujours pas les 28 zones, ni le dindon, ni le petit gibier, ni la chasse en Ontario.',
+    en: 'Québec harvested keys: 4, 5E/5W, 6N/6S, 7N/7S, 8E/8N/8S, 9E/9W, 10E/10W, 11E/11W, 12, 13SW, 14, 15E/15W, 16. Ontario harvested WMUs: 63A, 63B, 65, 66A and 67. WMU 65 has no bear row. 66A and 67 have no moose row. Not 8 West, not 13 East/West, not WMU 12, not turkey, not small game, not all Ontario WMUs.',
+    fr: 'Clés du Québec : 4, 5E/5W, 6N/6S, 7N/7S, 8E/8N/8S, 9E/9W, 10E/10W, 11E/11W, 12, 13SW, 14, 15E/15W, 16. UGF de l’Ontario : 63A, 63B, 65, 66A et 67. L’UGF 65 n’a pas de ligne d’ours. Les UGF 66A et 67 n’ont pas de ligne d’orignal. Pas la 8 ouest, pas les 13 est/ouest, pas l’UGF 12, pas le dindon, pas le petit gibier, pas toutes les UGF.',
+  },
+  qcHeading: { en: 'Québec hunting zones', fr: 'Zones de chasse du Québec' },
+  onHeading: { en: 'Ontario wildlife management units', fr: 'Unités de gestion de la faune de l’Ontario' },
+  onNote: {
+    en: 'Licence year 2026. Ottawa-adjacent WMUs 63A, 63B, 65, 66A and 67 from the Ontario Hunting Regulations Summary HTML. The Summary is not the law. Not all Ontario WMUs. WMU 12 (Rainy River) is never harvested.',
+    fr: 'Année 2026. UGF adjacentes à Ottawa 63A, 63B, 65, 66A et 67 d’après le HTML du Résumé des règlements de la chasse. Le Résumé n’est pas la loi. Pas toutes les UGF. L’UGF 12 (Rainy River) n’est jamais collectée.',
   },
   view: { en: 'View seasons →', fr: 'Voir les périodes →' },
   updated: { en: 'Data retrieved', fr: 'Données récupérées le' },
@@ -47,8 +55,8 @@ const T = {
   hunting: { en: 'Hunting', fr: 'Chasse' },
   searchTitle: { en: 'Look up a season', fr: 'Chercher une période' },
   searchIntro: {
-    en: 'Search cited Québec.ca hunting tables by zone, species, and optional date. Results are verbatim source text.',
-    fr: 'Cherchez dans les tableaux cités de Québec.ca par zone, espèce et date (facultatif). Les résultats sont le texte intégral de la source.',
+    en: 'Search cited Québec.ca or Ontario Hunting Regulations Summary tables by zone/WMU, species, and optional date. Results are verbatim source text.',
+    fr: 'Cherchez dans les tableaux cités de Québec.ca ou du Résumé ontarien par zone/UGF, espèce et date (facultatif). Les résultats sont le texte intégral de la source.',
   },
   zoneLabel: { en: 'Hunting zone', fr: 'Zone de chasse' },
   speciesLabel: { en: 'Species', fr: 'Espèce' },
@@ -128,7 +136,7 @@ const breadcrumbLd = {
     <main class="pt-[88px]">
         <section class="bg-[#14251a] text-white py-16 px-6">
             <div class="max-w-5xl mx-auto">
-                <span class="inline-block bg-white/90 text-[#3d7a4d] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5">{T.hunting[L]} · Québec</span>
+                <span class="inline-block bg-white/90 text-[#3d7a4d] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5">{T.hunting[L]} · Québec · Ontario</span>
                 <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">{T.h1[L]}</h1>
                 <p class="text-white/85 max-w-2xl text-lg">{T.intro[L]}</p>
                 <p class="text-white/70 text-sm mt-3 max-w-2xl">{T.coverageNote[L]}</p>
@@ -145,9 +153,18 @@ const breadcrumbLd = {
                     <label class="block text-sm">
                         <span class="font-semibold text-[#1c2b21]">{T.zoneLabel[L]}</span>
                         <select name="zone" required class="mt-1 w-full px-3 py-2 rounded-lg border border-[#305e3c]/20 bg-white text-[#1c2b21]">
-                            {zones.map(z => (
+                            <optgroup label="Québec">
+                            {qcZones.map(z => (
                             <option value={zoneValue(z)}>{zoneLabel(z)}</option>
                             ))}
+                            </optgroup>
+                            {onZones.length > 0 && (
+                            <optgroup label="Ontario">
+                            {onZones.map(z => (
+                            <option value={zoneValue(z)}>{zoneLabel(z)}</option>
+                            ))}
+                            </optgroup>
+                            )}
                         </select>
                     </label>
                     <label class="block text-sm">
@@ -165,8 +182,10 @@ const breadcrumbLd = {
         </section>
 
         <section class="py-14 px-6">
-            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-                {zones.map(z => (
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-2xl font-bold text-[#305e3c] mb-6">{T.qcHeading[L]}</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {qcZones.map(z => (
                 <a href={zoneHref(z)} class="group bg-white rounded-xl border border-[#305e3c]/10 p-6 hover:shadow-lg transition-all hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
                     <div class="text-[#3d7a4d] text-xs font-bold uppercase tracking-widest mb-2">Québec · MELCCFP · {z.zone_key}</div>
                     <h2 class="text-2xl font-bold text-[#305e3c] mb-3">{zoneLabel(z)}</h2>
@@ -176,6 +195,25 @@ const breadcrumbLd = {
                     <div class="text-[#3d7a4d] text-sm font-semibold">{T.view[L]}</div>
                 </a>
                 ))}
+                </div>
+                {onZones.length > 0 && (
+                <div class="mt-14">
+                    <h2 class="text-2xl font-bold text-[#305e3c] mb-2">{T.onHeading[L]}</h2>
+                    <p class="text-sm text-[#5c6b5f] mb-6 max-w-2xl">{T.onNote[L]}</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {onZones.map(z => (
+                    <a href={zoneHref(z)} class="group bg-white rounded-xl border border-[#305e3c]/10 p-6 hover:shadow-lg transition-all hover:-translate-y-1" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
+                        <div class="text-[#3d7a4d] text-xs font-bold uppercase tracking-widest mb-2">Ontario · MNR · {z.zone_key}</div>
+                        <h2 class="text-2xl font-bold text-[#305e3c] mb-3">{zoneLabel(z)}</h2>
+                        <p class="text-sm text-[#5c6b5f] mb-1">{(z.seasons[L] || []).length} {T.rows[L]}</p>
+                        <p class="text-sm text-[#5c6b5f] mb-1">{z.coverage.weapon_classes_harvested} {T.weapons[L]}</p>
+                        <p class="text-xs text-[#5c6b5f]/80 mb-4">{T.updated[L]} {z.source.fetched_at} · listed {z.coverage.season_rows_listed} / harvested {z.coverage.season_rows_harvested}</p>
+                        <div class="text-[#3d7a4d] text-sm font-semibold">{T.view[L]}</div>
+                    </a>
+                    ))}
+                    </div>
+                </div>
+                )}
             </div>
         </section>
     </main>

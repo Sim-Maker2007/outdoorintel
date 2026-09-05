@@ -7,6 +7,8 @@
 //   Fishing GET /api/regulations?zone=ON-12 → Ontario FMZ 12
 //   Hunting GET /api/hunting/regulations?zone=12 → QC hunting QC-H-12 (not fishing)
 //   Hunting GET /api/hunting/regulations?zone=ON-12 → refused (fishing key; not WMU 12)
+//   Hunting GET /api/hunting/regulations?zone=ON-H-63A → Ontario WMU 63A
+//   Hunting GET /api/hunting/regulations?zone=WMU-65 → Ontario WMU 65
 //   Ontario WMU 12 (Rainy River) is never harvested.
 
 export function huntingKey(doc) {
@@ -50,6 +52,13 @@ export function normalizeHuntingZoneToken(zone) {
     return { key: `ON-H-${id}` };
   }
 
+  const wmuPrefixed = raw.match(/^WMU[-\s]+(\d{1,3}[A-Z]?)$/i);
+  if (wmuPrefixed) {
+    const id = wmuPrefixed[1].toUpperCase();
+    if (id === '12') return { refuse: 'ON-12' };
+    return { key: `ON-H-${id}` };
+  }
+
   // QC hunting first (7N / 8S / 13SW must not fall through to Ontario WMU keys).
   const qc = raw.match(/^(?:QC-H-|qc-h-)?(\d{1,2})\s*[- ]?\s*(Southwest|Sud-ouest|Sudouest|East|West|North|South|Est|Ouest|Nord|Sud|SW|E|W|N|S)?$/i);
   if (qc) {
@@ -59,8 +68,8 @@ export function normalizeHuntingZoneToken(zone) {
     return { key: `QC-H-${n}${part}` };
   }
 
-  const wmu = raw.match(/^(?:WMU-?)?(\d{1,3}[A-Z]?)$/i);
-  if (wmu && /[A-Z]/i.test(wmu[1]) && !/^12$/i.test(wmu[1])) {
+  const wmu = raw.match(/^(\d{1,3}[A-Z])$/i);
+  if (wmu && !/^12$/i.test(wmu[1])) {
     return { key: `ON-H-${wmu[1].toUpperCase()}` };
   }
 
@@ -94,8 +103,13 @@ export function lookupHunting(regs, { zone } = {}) {
   return { status: 'ok', doc, key };
 }
 
-export function huntingDisclaimer(lang) {
+export function huntingDisclaimer(lang, jurisdiction) {
   const L = lang === 'en' ? 'en' : 'fr';
+  if (jurisdiction === 'ON') {
+    return L === 'fr'
+      ? 'Texte reproduit intégralement du Résumé des règlements de la chasse de l’Ontario. Le Résumé n’est pas la loi. Les règlements peuvent changer : vérifiez toujours auprès du ministère des Richesses naturelles de l’Ontario avant de chasser. Les cartes officielles et le PDF sont des liens — ce site n’interprète pas les polygones. L’UGF 12 (Rainy River) n’est jamais collectée.'
+      : 'Text reproduced verbatim from the Ontario Hunting Regulations Summary. The Summary is not the law. Regulations can change: always verify with the Ontario Ministry of Natural Resources before you hunt. Official maps and the Summary PDF are links — this site does not interpret map polygons. WMU 12 (Rainy River) is never harvested.';
+  }
   return L === 'fr'
     ? 'Texte reproduit intégralement des pages de chasse sportive de Québec.ca. Les règlements peuvent changer : vérifiez toujours auprès du MELCCFP avant de chasser. Les cartes (Forêt ouverte et PDF officiels) sont des liens — ce site n’interprète pas les polygones.'
     : 'Text reproduced verbatim from Québec.ca sport-hunting pages. Regulations can change: always verify with the MELCCFP before you hunt. Maps (Forêt ouverte and official PDFs) are links — this site does not interpret map polygons.';
