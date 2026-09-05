@@ -221,7 +221,9 @@ const breadcrumbLd = {
     <Header lang={lang} altHref={altHref} />
     <main class="pt-[88px]">
         <section class="bg-[#14251a] text-white py-16 px-6">
-            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+            <div class="max-w-5xl mx-auto">
+            <p id="checkout-cancelled" class="hidden scroll-mt-[96px] text-sm text-[#14251a] bg-[#f2e6c9] border border-[#d4b56a] rounded-lg px-4 py-3 mb-6 font-semibold" role="status">{T.cancelled[L]}</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
                 <div>
                     <div class="js-si-badge-wait mb-5">
                         <span class="inline-block bg-white/90 text-[#3d7a4d] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full">{T.badge[L]}</span>
@@ -236,7 +238,6 @@ const breadcrumbLd = {
                     <a href="#checkout" class="js-si-checkout-only hidden inline-block bg-[#a2c99a] text-[#14251a] font-bold px-6 py-3 rounded-lg hover:bg-white transition-colors">{T.checkoutBtn[L]}</a>
                 </div>
                 <div>
-                    <p id="checkout-cancelled" class="hidden scroll-mt-[96px] text-sm text-[#14251a] bg-[#f2e6c9] border border-[#d4b56a] rounded-lg px-4 py-3 mb-4 font-semibold" role="status">{T.cancelled[L]}</p>
                     <div id="checkout" class="hidden scroll-mt-[96px] bg-white text-[#1c2b21] rounded-xl p-6 border border-[#305e3c]/15 mb-4" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
                         <h2 class="text-2xl font-bold text-[#305e3c] mb-2">{T.checkoutTitle[L]}</h2>
                         <p class="text-sm text-[#5c6b5f] mb-5">{T.checkoutIntro[L]}</p>
@@ -269,6 +270,7 @@ const breadcrumbLd = {
                         </p>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 
@@ -346,7 +348,7 @@ if (toggle && menu) {
 }
 <\/script>`} />
     <GlobalSearch />
-    <script is:inline defer src="/assets/js/season-intel-checkout.js?v=2"></script>
+    <script is:inline defer src="/assets/js/season-intel-checkout.js?v=3"></script>
     <script is:inline defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

@@ -28,8 +28,13 @@
     applyText(badgeEl, isMember);
     applyText(h1El, isMember);
     if (subscribeEl) {
-      if (isMember) subscribeEl.classList.add('hidden');
-      else subscribeEl.classList.remove('hidden');
+      if (isMember) {
+        subscribeEl.classList.add('hidden');
+        subscribeEl.style.display = 'none';
+      } else {
+        subscribeEl.classList.remove('hidden');
+        subscribeEl.style.display = 'inline-block';
+      }
     }
   }
 

@@ -11,8 +11,13 @@
 
   function show(el, on) {
     if (!el) return;
-    if (on) el.classList.remove('hidden');
-    else el.classList.add('hidden');
+    if (on) {
+      el.classList.remove('hidden');
+      el.style.removeProperty('display');
+    } else {
+      el.classList.add('hidden');
+      el.style.display = 'none';
+    }
   }
 
   function swapLive(on) {
@@ -25,6 +30,7 @@
       el.classList.toggle('hidden', !on);
     });
     show(bottomCta, on);
+    if (bottomCta && on) bottomCta.style.display = 'inline-block';
     show(bottomWait, !on);
   }
 
