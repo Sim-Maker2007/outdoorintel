@@ -14,7 +14,7 @@ const other = lang === 'en' ? 'fr' : 'en';
             <img src="/assets/logo/mark.svg" alt="" width="36" height="36" class="w-9 h-9" decoding="async" />
             <span class="text-white font-bold text-lg tracking-tight">Outdoor Intel</span>
         </a>
-        <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-white/90">
+        <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-white/90">
             <div class="explore-group relative">
                 <button class="flex items-center gap-1.5 py-2 hover:text-white transition-colors" aria-haspopup="true">
                     {T.nav.explore[lang]}
@@ -31,6 +31,7 @@ const other = lang === 'en' ? 'fr' : 'en';
             <a href={L.map} class="py-2 hover:text-white transition-colors">{T.nav.map[lang]}</a>
             <a href={L.planner} class="py-2 hover:text-white transition-colors">{T.nav.planner[lang]}</a>
             <a href={L.blog} class="py-2 hover:text-white transition-colors">{T.nav.blog[lang]}</a>
+            <a href={L.seasonIntel} class="py-2 text-[#a2c99a] hover:text-white transition-colors">{T.nav.seasonIntel[lang]}</a>
             {lang === 'en'
               ? <span class="inline-flex items-center gap-1.5 border border-white/25 rounded-full px-4 py-1.5 text-xs font-bold"><span class="text-white">EN</span><span class="text-white/30">|</span><a href={altHref} class="text-[#a2c99a] hover:text-white transition-colors" lang="fr">FR</a></span>
               : <span class="inline-flex items-center gap-1.5 border border-white/25 rounded-full px-4 py-1.5 text-xs font-bold"><a href={altHref} class="text-[#a2c99a] hover:text-white transition-colors" lang="en">EN</a><span class="text-white/30">|</span><span class="text-white">FR</span></span>}
@@ -53,6 +54,7 @@ const other = lang === 'en' ? 'fr' : 'en';
             <a href={L.planner} class="block py-2 hover:text-[#a2c99a]">{T.nav.planner[lang]}</a>
             <a href={L.trust} class="block py-2 hover:text-[#a2c99a]">{T.nav.trust[lang]}</a>
             <a href={L.blog} class="block py-2 font-semibold hover:text-[#a2c99a]">{T.nav.blog[lang]}</a>
+            <a href={L.seasonIntel} class="block py-2 font-semibold text-[#a2c99a] hover:text-white">{T.nav.seasonIntel[lang]}</a>
             <a href={altHref} class="block py-2 text-[#a2c99a] font-bold mt-2" lang={other}>{T.nav.otherLang[lang]}</a>
         </div>
     </nav>

@@ -35,11 +35,14 @@ const T = {
     fr: 'Confirmation d’abonnement Season Intel. Les règlements de pêche publics restent gratuits. Les alertes de changement s’en viennent.',
   },
   badge: { en: 'Season Intel member', fr: 'Membre Season Intel' },
+  badgeGuest: { en: 'Season Intel', fr: 'Season Intel' },
   h1: { en: 'You’re in', fr: 'C’est fait' },
+  h1Guest: { en: 'This page confirms a payment', fr: 'Cette page confirme un paiement' },
   lead: {
     en: 'If you just subscribed, Stripe will send a receipt from their checkout. Outdoor Intel never sees your card number.',
     fr: 'Si vous venez de vous abonner, Stripe enverra un reçu depuis sa page de paiement. Outdoor Intel ne voit jamais votre numéro de carte.',
   },
+  subscribeCta: { en: 'Subscribe — $29 CAD/year', fr: 'S’abonner — 29 $ CAD/an' },
   perkTitle: { en: 'Member perk (v1)', fr: 'Avantage membre (v1)' },
   perkBody: {
     en: 'Change-alert emails are coming. This membership does not hide public regulations — Québec fishing zone pages, Ontario FMZ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 and 20, Québec hunting zone pages, and Ontario hunting WMUs 63A, 63B, 65, 66A and 67 stay free for everyone.',
@@ -104,7 +107,7 @@ const breadcrumbLd = {
     <link rel="alternate" hreflang="fr" href={`${SITE}/fr/season-intel/thanks`}>
     <link rel="alternate" hreflang="x-default" href={`${SITE}/en/season-intel/thanks`}>
     <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbLd)}></script>
-    <link rel="stylesheet" href="/assets/css/site.css?v=1">
+    <link rel="stylesheet" href="/assets/css/site.css?v=2">
     <Fragment set:html={`<!-- Google Analytics (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8Q00962P"><\/script>
     <script>
@@ -119,32 +122,37 @@ const breadcrumbLd = {
     <Header lang={lang} altHref={altHref} />
     <main class="pt-[88px]">
         <section class="bg-[#14251a] text-white py-16 px-6">
-            <div class="max-w-3xl mx-auto">
-                <span class="inline-block bg-white/90 text-[#3d7a4d] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5">{T.badge[L]}</span>
-                <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">{T.h1[L]}</h1>
-                <p class="text-white/85 text-lg">{T.lead[L]}</p>
+            <div class="max-w-3xl mx-auto" data-si-hero>
+                <span class="js-si-thanks-badge inline-block bg-white/90 text-[#3d7a4d] text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5" data-member={T.badge[L]} data-guest={T.badgeGuest[L]}>{T.badgeGuest[L]}</span>
+                <h1 class="js-si-thanks-h1 text-4xl md:text-5xl font-bold tracking-tight mb-4" data-member={T.h1[L]} data-guest={T.h1Guest[L]}>{T.h1Guest[L]}</h1>
+                <p class="js-si-thanks-lead text-white/85 text-lg">{T.lead[L]}</p>
+                <a href={`/${lang}/season-intel`} class="js-si-thanks-subscribe inline-block mt-6 bg-[#a2c99a] text-[#14251a] font-bold px-6 py-3 rounded-lg hover:bg-white transition-colors">{T.subscribeCta[L]}</a>
             </div>
         </section>
         <section class="max-w-3xl mx-auto px-6 py-12 space-y-6">
-            <div class="bg-white rounded-xl p-6 border border-[#305e3c]/10">
+            <div class="bg-white rounded-xl p-6 border border-[#305e3c]/10" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
                 <h2 class="text-2xl font-bold text-[#305e3c] mb-3">{T.perkTitle[L]}</h2>
-                <p id="si-thanks-status" class="text-[#5c6b5f] text-sm mb-3">{T.perkPending[L]}</p>
-                <p class="text-[#1c2b21] leading-relaxed" data-perk-member={T.perkBody[L]} data-perk-guest={T.perkGuest[L]}>{T.perkBody[L]}</p>
+                <p id="si-thanks-status" class="text-[#5c6b5f] text-sm mb-3" data-pending={T.perkPending[L]}></p>
+                <p class="text-[#1c2b21] leading-relaxed" data-perk-member={T.perkBody[L]} data-perk-guest={T.perkGuest[L]}>{T.perkGuest[L]}</p>
             </div>
-            <div class="bg-white rounded-xl p-6 border border-[#305e3c]/10">
+            <div class="bg-white rounded-xl p-6 border border-[#305e3c]/10" style="box-shadow: 0 4px 12px rgba(62,49,39,0.08)">
                 <h2 class="text-2xl font-bold text-[#305e3c] mb-3">{T.regsTitle[L]}</h2>
                 <p class="text-[#5c6b5f] text-sm mb-4">{T.regsIntro[L]}</p>
-                <ul class="space-y-2 text-[#1c2b21]">
-                    <li><a href={regsHref} class="text-[#3d7a4d] font-semibold hover:underline">{T.regsHub[L]} →</a></li>
-                    <li><a href={huntHref} class="text-[#3d7a4d] font-semibold hover:underline">{T.huntHub[L]} →</a></li>
-                    <li><a href={`${regsHref}/zone-10`} class="hover:underline">{T.qcZones[L]}</a></li>
+                <p class="mb-3"><a href={regsHref} class="text-[#3d7a4d] font-semibold hover:underline">{T.regsHub[L]} →</a></p>
+                <p class="mb-3"><a href={huntHref} class="text-[#3d7a4d] font-semibold hover:underline">{T.huntHub[L]} →</a></p>
+                <p class="mb-4"><a href={`${regsHref}/zone-10`} class="text-[#3d7a4d] font-semibold hover:underline">{T.qcZones[L]} →</a></p>
+                <p class="text-xs font-bold uppercase tracking-widest text-[#5c6b5f] mb-2">{T.onFmz[L]}</p>
+                <div class="flex flex-wrap gap-2 mb-5">
                     {fmz.map(({ n, href }) => (
-                    <li><a href={href} class="hover:underline">{T.onFmz[L]} {n}</a></li>
+                    <a href={href} class="text-sm font-semibold text-[#305e3c] bg-[#f4f3ec] px-2.5 py-1 rounded-lg hover:bg-[#e6eadf]">{n}</a>
                     ))}
+                </div>
+                <p class="text-xs font-bold uppercase tracking-widest text-[#5c6b5f] mb-2">{T.onWmu[L]}</p>
+                <div class="flex flex-wrap gap-2">
                     {onWmus.map(({ id, href }) => (
-                    <li><a href={href} class="hover:underline">{T.onWmu[L]} {id}</a></li>
+                    <a href={href} class="text-sm font-semibold text-[#305e3c] bg-[#f4f3ec] px-2.5 py-1 rounded-lg hover:bg-[#e6eadf]">{id}</a>
                     ))}
-                </ul>
+                </div>
             </div>
             <div class="bg-white rounded-xl p-6 border border-[#305e3c]/10">
                 <p class="text-[#1c2b21] leading-relaxed mb-4">{T.casl[L]}</p>
@@ -169,7 +177,7 @@ if (toggle && menu) {
 }
 <\/script>`} />
     <GlobalSearch />
-    <script is:inline defer src="/assets/js/season-intel-thanks.js?v=1"></script>
+    <script is:inline defer src="/assets/js/season-intel-thanks.js?v=4"></script>
     <script is:inline defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

@@ -121,6 +121,7 @@ const T = {
   bearSrc: { en: 'Black bear seasons', fr: 'Périodes — ours noir' },
   bagSrc: { en: 'Deer bag limits', fr: 'Limites de prise — cerf' },
   bearBagSrc: { en: 'Black bear bag & bait', fr: 'Limites et appâtage — ours' },
+  drawRequired: { en: 'Draw required', fr: 'Tirage requis' },
   seasonCta: { en: 'Get Season Intel', fr: 'Obtenir Season Intel' },
   seasonCtaSub: {
     en: 'Cited seasons and exceptions. $29 CAD/year via Stripe Checkout. Change-alert emails are coming. Zone pages stay free.',
@@ -248,7 +249,7 @@ const notices = doc.notices?.[L] || [];
                 <div class="space-y-4">
                 {notices.map(n => (
                 <div class="bg-white rounded-xl border border-[#305e3c]/10 p-5" style="box-shadow: 0 4px 12px rgba(62,49,39,0.06)">
-                    {n.draw_required && <p class="text-xs font-bold uppercase tracking-widest text-[#b3452e] mb-2">draw_required</p>}
+                    {n.draw_required && <p class="text-xs font-bold uppercase tracking-widest text-[#b3452e] mb-2">{T.drawRequired[L]}</p>}
                     <p class="text-sm leading-relaxed">{n.text}</p>
                     {(n.related || []).map(t => (
                     <p class="text-sm leading-relaxed text-[#5c6b5f] mt-2">{t}</p>

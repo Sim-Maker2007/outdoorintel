@@ -105,6 +105,11 @@ for (const q of questions) {
     ok(`${q.id}/meta-bear`, src.includes('Québec hunting deer, moose, and black bear 2026') && src.includes('chasse au cerf, à l’orignal et à l’ours noir 2026'), 'EN+FR meta descriptions must include black bear / ours noir');
     ok(`${q.id}/meta-on-fmz`, src.includes(`Ontario FMZ ${liveFmz}`) && src.includes(`ZGP ${liveZgp}`), 'EN+FR meta descriptions must list live FMZ/ZGP 1–20');
     ok(`${q.id}/meta-on-hunt`, src.includes('Ontario hunting WMUs 63A, 63B, 65, 66A and 67') && src.includes('UGF de chasse 63A, 63B, 65, 66A et 67'), 'EN+FR meta descriptions must include harvested Ontario hunting WMUs');
+    ok(`${q.id}/paid-vs-free`, src.includes('What you pay for') && src.includes('Ce que vous payez') && src.includes('What stays free') && src.includes('Ce qui reste gratuit'), 'Season Intel must keep a paid-vs-free hierarchy');
+    ok(`${q.id}/alerts-not-live`, src.includes('they are not live yet') && src.includes('ils ne sont pas encore en ligne') && !src.includes('seasons, and change alerts.'), 'Season Intel must not treat change-alert emails as live');
+    ok(`${q.id}/fr-subscribe-cta`, src.includes('S’abonner — 29 $ CAD/an'), 'FR Subscribe CTA must be translated');
+    const huntZone = readFileSync(join(REPO, 'src/pages/[lang]/hunting/regulations/[zone].astro'), 'utf-8');
+    ok(`${q.id}/draw-label`, huntZone.includes('Draw required') && huntZone.includes('Tirage requis') && !huntZone.includes('>draw_required<'), 'Hunting zone pages must not show raw draw_required');
     continue;
   }
 
