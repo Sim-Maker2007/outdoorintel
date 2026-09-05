@@ -29,33 +29,38 @@ export function matchesHuntSpecies(row, q) {
   });
 }
 
-/** Parse "From September 26 to October 4, 2026" where the year is only on the end date. */
-export function parseHuntingPeriod(str) {
+function isoRange(year, mo1, d1, mo2, d2) {
+  if (!year || !mo1 || !mo2) return null;
+  return {
+    from: `${year}-${String(mo1).padStart(2, '0')}-${String(d1).padStart(2, '0')}`,
+    to: `${year}-${String(mo2).padStart(2, '0')}-${String(d2).padStart(2, '0')}`,
+  };
+}
+
+/** Parse "From September 26 to October 4, 2026" or Ontario yearless "November 2 to November 15". */
+export function parseHuntingPeriod(str, year = null) {
   if (!str) return null;
+  if (/^(none|aucune|n\/a|closed)$/i.test(String(str).trim())) return null;
   const via = parsePeriod(str);
   if (via) return via;
-  const s = String(str).toLowerCase();
-  const fr = s.match(/(\d{1,2})(?:er)?\s+([a-zéû]+)\s+au\s+(\d{1,2})(?:er)?\s+([a-zéû]+)\s+(\d{4})/);
+  const s = String(str).toLowerCase().replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
+  const fr = s.match(/(\d{1,2})(?:er)?\s+([a-zéû]+)\s+au\s+(\d{1,2})(?:er)?\s+([a-zéû]+)(?:\s+(\d{4}))?/);
   if (fr) {
-    const mo1 = FR_MONTHS[fr[2]];
-    const mo2 = FR_MONTHS[fr[4]];
-    if (mo1 && mo2) {
-      return {
-        from: `${fr[5]}-${String(mo1).padStart(2, '0')}-${String(fr[1]).padStart(2, '0')}`,
-        to: `${fr[5]}-${String(mo2).padStart(2, '0')}-${String(fr[3]).padStart(2, '0')}`,
-      };
-    }
+    const y = fr[5] || year;
+    const range = isoRange(y, FR_MONTHS[fr[2]], fr[1], FR_MONTHS[fr[4]], fr[3]);
+    if (range) return range;
   }
-  const en = s.match(/([a-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?\s+to\s+([a-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(\d{4})/);
+  const frDash = s.match(/(\d{1,2})(?:er)?\s+([a-zéû]+)\s*[–—-]\s*(\d{1,2})(?:er)?\s+([a-zéû]+)(?:\s+(\d{4}))?/);
+  if (frDash) {
+    const y = frDash[5] || year;
+    const range = isoRange(y, FR_MONTHS[frDash[2]], frDash[1], FR_MONTHS[frDash[4]], frDash[3]);
+    if (range) return range;
+  }
+  const en = s.match(/([a-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?\s+to\s+([a-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?,?(?:\s+(\d{4}))?/);
   if (en) {
-    const mo1 = EN_MONTHS[en[1]];
-    const mo2 = EN_MONTHS[en[3]];
-    if (mo1 && mo2) {
-      return {
-        from: `${en[5]}-${String(mo1).padStart(2, '0')}-${String(en[2]).padStart(2, '0')}`,
-        to: `${en[5]}-${String(mo2).padStart(2, '0')}-${String(en[4]).padStart(2, '0')}`,
-      };
-    }
+    const y = en[5] || year;
+    const range = isoRange(y, EN_MONTHS[en[1]], en[2], EN_MONTHS[en[3]], en[4]);
+    if (range) return range;
   }
   return null;
 }
@@ -63,10 +68,11 @@ export function parseHuntingPeriod(str) {
 function rowActiveOn(row, isoDate) {
   if (!isoDate) return true;
   const period = row.period_2026 || row.period;
+  if (row.open === false || /^(none|aucune|n\/a|closed)$/i.test(String(period || '').trim())) return false;
   if (!period) return true;
   const p = row.period_from && row.period_to
     ? { from: row.period_from, to: row.period_to }
-    : parseHuntingPeriod(period);
+    : parseHuntingPeriod(period, row.year || docYear(row));
   if (!p) return true;
   return isoDate >= p.from && isoDate <= p.to;
 }
@@ -76,8 +82,12 @@ function matchesWeapon(row, q) {
   return norm(row.weapon_class).includes(norm(q));
 }
 
+function docYear(row) {
+  return row?.year || 2026;
+}
+
 /**
- * @param {object} doc  parsed data/hunting/qc-h-*.json
+ * @param {object} doc  parsed data/hunting/qc-h-*.json or on-h-*.json
  * @param {object} q  { lang, date?, species?, weapon_class? }
  */
 export function resolveHunting(doc, { lang = 'fr', date, species, weapon_class } = {}) {
@@ -107,7 +117,7 @@ export function resolveHunting(doc, { lang = 'fr', date, species, weapon_class }
       coverage: doc.coverage,
     },
     maps: doc.maps,
-    disclaimer: huntingDisclaimer(L),
+    disclaimer: huntingDisclaimer(L, doc.jurisdiction),
     notices,
     seasons,
     weapon_classes: [...new Set(seasons.map(r => r.weapon_class).filter(Boolean))],

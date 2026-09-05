@@ -25,6 +25,7 @@ export function getStaticPaths() {
 
 const { doc, lang } = Astro.props;
 const L = lang === 'en' ? 'en' : 'fr';
+const isOn = doc.jurisdiction === 'ON';
 const SITE = 'https://outdoorintel.ca';
 const slug = huntingPageSlug(doc);
 const path = `/${lang}/hunting/regulations/${slug}`;
@@ -58,25 +59,29 @@ function sliceSpecies(lang) {
   if (lang === 'fr') {
     s = s ? `${s}, colonne 2026` : 'colonne 2026';
     if (!hasDeer) s += ' (cerf de Virginie absent du tableau publié)';
+    if (!hasMoose) s += ' (orignal absent du tableau publié)';
     if (!hasBear) s += ' (ours noir absent du tableau publié)';
     return s;
   }
   s = s ? `${s}, 2026 column` : '2026 column';
   if (!hasDeer) s += ' (white-tailed deer not on the published table)';
+  if (!hasMoose) s += ' (moose not on the published table)';
   if (!hasBear) s += ' (black bear not on the published table)';
   return s;
 }
 const sliceEn = sliceSpecies('en');
 const sliceFr = sliceSpecies('fr');
+const scopeEn = isOn ? 'Not all Ontario WMUs. WMU 12 is never harvested.' : 'Not all 28 hunting zones.';
+const scopeFr = isOn ? 'Pas toutes les UGF de l’Ontario. L’UGF 12 n’est jamais collectée.' : 'Pas les 28 zones de chasse.';
 const coverageNote = doc.coverage.complete
   ? (harvested > listed
     ? {
-      en: `This page covers the stated slice (${sliceEn}): ${listed} listed, ${harvested} harvested. Not all 28 hunting zones.`,
-      fr: `Cette page couvre le périmètre annoncé (${sliceFr}) : ${listed} listées, ${harvested} récupérées. Pas les 28 zones de chasse.`,
+      en: `This page covers the stated slice (${sliceEn}): ${listed} listed, ${harvested} harvested. ${scopeEn}`,
+      fr: `Cette page couvre le périmètre annoncé (${sliceFr}) : ${listed} listées, ${harvested} récupérées. ${scopeFr}`,
     }
     : {
-      en: `This page covers the stated slice (${sliceEn}): ${harvested} of ${listed} listed season rows. Not all 28 hunting zones.`,
-      fr: `Cette page couvre le périmètre annoncé (${sliceFr}) : ${harvested} des ${listed} lignes listées. Pas les 28 zones de chasse.`,
+      en: `This page covers the stated slice (${sliceEn}): ${harvested} of ${listed} listed season rows. ${scopeEn}`,
+      fr: `Cette page couvre le périmètre annoncé (${sliceFr}) : ${harvested} des ${listed} lignes listées. ${scopeFr}`,
     })
   : {
     en: `Coverage for this slice is incomplete: ${harvested} of ${listed} listed season rows harvested.`,
@@ -89,20 +94,28 @@ const T = {
     fr: `${doc.title.fr} — Périodes de chasse`,
   },
   metaDesc: {
-    en: `Québec hunting zone ${doc.zone_id}: 2026 ${speciesList('en')} seasons by weapon class, cited from Québec.ca. Always verify with the MELCCFP.`,
-    fr: `Zone de chasse ${doc.zone_id} du Québec : périodes 2026 (${speciesList('fr')}) par classe d’arme, citées de Québec.ca. Vérifiez toujours auprès du MELCCFP.`,
+    en: isOn
+      ? `Ontario WMU ${doc.zone_id}: 2026 ${speciesList('en')} seasons by weapon class, cited from the Ontario Hunting Regulations Summary. The Summary is not the law. Always verify with the MNR.`
+      : `Québec hunting zone ${doc.zone_id}: 2026 ${speciesList('en')} seasons by weapon class, cited from Québec.ca. Always verify with the MELCCFP.`,
+    fr: isOn
+      ? `UGF ${doc.zone_id} de l’Ontario : périodes 2026 (${speciesList('fr')}) par classe d’arme, citées du Résumé des règlements de la chasse. Le Résumé n’est pas la loi. Vérifiez toujours auprès du MRN.`
+      : `Zone de chasse ${doc.zone_id} du Québec : périodes 2026 (${speciesList('fr')}) par classe d’arme, citées de Québec.ca. Vérifiez toujours auprès du MELCCFP.`,
   },
   h1: { en: doc.title.en, fr: doc.title.fr },
-  kicker: { en: 'Hunting · Québec', fr: 'Chasse · Québec' },
-  official: { en: 'Official sources (Québec.ca)', fr: 'Sources officielles (Québec.ca)' },
+  kicker: { en: isOn ? 'Hunting · Ontario' : 'Hunting · Québec', fr: isOn ? 'Chasse · Ontario' : 'Chasse · Québec' },
+  official: { en: isOn ? 'Official sources (ontario.ca)' : 'Official sources (Québec.ca)', fr: isOn ? 'Sources officielles (ontario.ca)' : 'Sources officielles (Québec.ca)' },
   fetched: { en: 'Data retrieved', fr: 'Données récupérées le' },
-  disclaimer: { en: huntingDisclaimer('en'), fr: huntingDisclaimer('fr') },
+  disclaimer: { en: huntingDisclaimer('en', doc.jurisdiction), fr: huntingDisclaimer('fr', doc.jurisdiction) },
   seasons: { en: '2026 seasons', fr: 'Périodes 2026' },
   notices: { en: 'Notices (verbatim)', fr: 'Avis (texte intégral)' },
   maps: { en: 'Maps (links only — not OCR’d)', fr: 'Cartes (liens seulement — pas d’OCR)' },
   foret: { en: 'Interactive map Forêt ouverte', fr: 'Carte interactive Forêt ouverte' },
-  pdf: { en: 'Official PDF map', fr: 'Carte PDF officielle' },
-  mapsIndex: { en: 'Hunting zone maps (Québec.ca)', fr: 'Cartes des zones de chasse (Québec.ca)' },
+  pdf: { en: 'Official PDF', fr: 'PDF officiel' },
+  mapsIndex: {
+    en: isOn ? 'Southeastern Ontario WMU map (ontario.ca)' : 'Hunting zone maps (Québec.ca)',
+    fr: isOn ? 'Carte des UGF du sud-est de l’Ontario (ontario.ca)' : 'Cartes des zones de chasse (Québec.ca)',
+  },
+  wmuFinder: { en: 'Find a WMU map', fr: 'Trouver une carte d’UGF' },
   deerSrc: { en: 'White-tailed deer seasons', fr: 'Périodes — cerf de Virginie' },
   mooseSrc: { en: 'Moose seasons', fr: 'Périodes — orignal' },
   bearSrc: { en: 'Black bear seasons', fr: 'Périodes — ours noir' },
@@ -200,14 +213,24 @@ const notices = doc.notices?.[L] || [];
         <section class="bg-[#f4f3ec] py-6 px-6 border-b border-[#305e3c]/10">
             <div class="max-w-5xl mx-auto text-sm text-[#1c2b21]">
                 <p class="mb-1"><strong>{T.official[L]}:</strong>
+                    {doc.source.deer?.[L] && (
                     <a href={doc.source.deer[L]} target="_blank" rel="noopener noreferrer" class="text-[#305e3c] underline">{T.deerSrc[L]}</a>
+                    )}
+                    {doc.source.moose?.[L] && (
+                    <>
                     · <a href={doc.source.moose[L]} target="_blank" rel="noopener noreferrer" class="text-[#305e3c] underline">{T.mooseSrc[L]}</a>
+                    </>
+                    )}
                     {doc.source.bear?.[L] && (
                     <>
                     · <a href={doc.source.bear[L]} target="_blank" rel="noopener noreferrer" class="text-[#305e3c] underline">{T.bearSrc[L]}</a>
                     </>
                     )}
+                    {doc.source.deer_bag?.[L] && (
+                    <>
                     · <a href={doc.source.deer_bag[L]} target="_blank" rel="noopener noreferrer" class="text-[#305e3c] underline">{T.bagSrc[L]}</a>
+                    </>
+                    )}
                     {doc.source.bear_bag?.[L] && (
                     <>
                     · <a href={doc.source.bear_bag[L]} target="_blank" rel="noopener noreferrer" class="text-[#305e3c] underline">{T.bearBagSrc[L]}</a>
@@ -241,8 +264,9 @@ const notices = doc.notices?.[L] || [];
                 <h2 class="text-3xl font-bold text-[#305e3c] mb-2">{T.maps[L]}</h2>
                 <ul class="text-sm space-y-2">
                     {doc.maps?.foret_ouverte && <li><a href={doc.maps.foret_ouverte} target="_blank" rel="noopener noreferrer" class="text-[#305e3c] underline">{T.foret[L]}</a></li>}
+                    {doc.maps?.wmu_finder && <li><a href={doc.maps.wmu_finder} target="_blank" rel="noopener noreferrer" class="text-[#305e3c] underline">{T.wmuFinder[L]}</a></li>}
                     {pdf?.href && <li><a href={pdf.href} target="_blank" rel="noopener noreferrer" class="text-[#305e3c] underline">{pdf.label || T.pdf[L]}</a></li>}
-                    <li><a href={L === 'fr' ? doc.maps.index_fr : doc.maps.index_en} target="_blank" rel="noopener noreferrer" class="text-[#305e3c] underline">{T.mapsIndex[L]}</a></li>
+                    {(L === 'fr' ? doc.maps?.index_fr : doc.maps?.index_en) && <li><a href={L === 'fr' ? doc.maps.index_fr : doc.maps.index_en} target="_blank" rel="noopener noreferrer" class="text-[#305e3c] underline">{T.mapsIndex[L]}</a></li>}
                 </ul>
             </div>
         </section>

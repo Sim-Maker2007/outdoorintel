@@ -36,9 +36,9 @@ export default async function handler(req, res) {
   if (!zone) {
     const values = Object.values(HUNTING);
     res.status(200).json({
-      api: 'Outdoor Intel — Hunting seasons v1 (Québec sport hunting, cited HTML)',
+      api: 'Outdoor Intel — Hunting seasons v1 (Québec sport hunting + Ontario WMU slice, cited HTML)',
       zones: values.map(listing),
-      usage: '/api/hunting/regulations?zone=QC-H-10W&lang=en|fr&species=deer|moose|bear&date=YYYY-MM-DD. zone=12 is QC hunting QC-H-12, not fishing. zone=ON-12 is refused. Black bear is present only where the official table has rows.',
+      usage: '/api/hunting/regulations?zone=QC-H-10W|ON-H-63A&lang=en|fr&species=deer|moose|bear&date=YYYY-MM-DD. zone=12 is QC hunting QC-H-12, not fishing. zone=ON-12 and ON-H-12 are refused. Ontario WMUs 63A/63B/65/66A/67 are harvested from the Hunting Regulations Summary. Black bear and moose are present only where the official table has rows (or an undivided parent/range that applies).',
     });
     return;
   }
@@ -48,7 +48,7 @@ export default async function handler(req, res) {
     res.status(404).json({
       error: 'hunting key ON-12 is refused',
       zone: found.zone,
-      reason: 'ON-12 is Ontario fishing FMZ 12. Ontario WMU 12 (Rainy River) is never harvested. Ottawa-adjacent WMUs are a later slice.',
+      reason: 'ON-12 is Ontario fishing FMZ 12. Ontario WMU 12 (Rainy River) is never harvested. Harvested Ontario hunting keys are ON-H-63A, ON-H-63B, ON-H-65, ON-H-66A, ON-H-67.',
       available: found.available.length ? found.available : huntingKeys(HUNTING),
     });
     return;
@@ -57,7 +57,7 @@ export default async function handler(req, res) {
     res.status(404).json({
       error: `hunting zone ${zone} not available`,
       available: huntingKeys(HUNTING),
-      note: 'Hunting coverage is Québec deer+moose 2026, plus black bear where the official table has rows, for harvested QC-H-* keys (4, 5E/5W, 6N/6S, 7N/7S, 8E/8N/8S, 9E/9W, 10E/10W, 11E/11W, 12, 13SW, 14, 15E/15W, 16). Not all 28 zones, not small game, not Ontario hunting. Fishing stays on GET /api/regulations. zone=12 is QC-H-12, never fishing zone 12. zone=16 is QC-H-16, never fishing zone 16.',
+      note: 'Hunting coverage is Québec deer+moose 2026 plus black bear where the official table has rows for harvested QC-H-* keys (4, 5E/5W, 6N/6S, 7N/7S, 8E/8N/8S, 9E/9W, 10E/10W, 11E/11W, 12, 13SW, 14, 15E/15W, 16), and Ontario WMUs 63A, 63B, 65, 66A and 67 from the Hunting Regulations Summary HTML (moose/bear only where the table has a row or undivided parent/range). Not all 28 QC zones, not all Ontario WMUs, not WMU 12, not small game. Fishing stays on GET /api/regulations. zone=12 is QC-H-12, never fishing zone 12. zone=16 is QC-H-16, never fishing zone 16. zone=ON-12 is refused.',
     });
     return;
   }
