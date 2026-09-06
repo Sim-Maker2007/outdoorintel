@@ -62,7 +62,7 @@ Default `--zones` includes v1 keys, adjacent splits, and these southern keys. Ti
 ## Optional (only if 10/11 is complete)
 
 - QC hunting zones **9** (9E/9W) and **12**, deer + moose, same HTML tables.
-- Ottawa-adjacent Ontario WMUs **63A, 63B, 65, 66A, 67** shipped in `docs/ONTARIO_HUNTING_HARVEST_V1.md` (`ON-H-*` keys). Remaining Ontario WMUs stay unharvested.
+- Ottawa-adjacent Ontario WMUs **63A, 63B, 65, 66A, 67** shipped in `docs/ONTARIO_HUNTING_HARVEST_V1.md` (`ON-H-*` keys). Southeastern neighbours **64A, 64B, 66B, 68A, 68B** shipped in `docs/ONTARIO_HUNTING_HARVEST_V2.md`. Remaining Ontario WMUs stay unharvested.
 - **NEVER** harvest Ontario WMU 12 (Rainy River).
 - Do not machine-translate.
 

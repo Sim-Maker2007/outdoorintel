@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 /**
- * Ontario hunting-seasons harvest v1 (docs/ONTARIO_HUNTING_HARVEST_V1.md).
+ * Ontario hunting-seasons harvest (docs/ONTARIO_HUNTING_HARVEST_V1.md + V2.md).
  *
  * Fetches ontario.ca Hunting Regulations Summary HTML for white-tailed deer,
  * moose, and black bear (EN+FR), and writes data/hunting/on-h-{wmu}.json for
- * Ottawa-adjacent WMUs 63A, 63B, 65, 66A, 67.
+ * v1 Ottawa-adjacent 63A, 63B, 65, 66A, 67 plus v2 southeastern neighbours
+ * 64A, 64B, 66B, 68A, 68B.
  *
  * Does not write or rewrite Québec qc-h-*.json or fishing on-fmz-*.json.
  * Does not OCR maps. Does not scrape Fish ON-Line / Forêt ouverte / Sépaq.
@@ -12,7 +13,7 @@
  * Does not invent seasons when a WMU is absent from the official table.
  *
  * Usage: node scripts/regs/harvest-hunting-on.mjs
- *        node scripts/regs/harvest-hunting-on.mjs --wmus=63A,65
+ *        node scripts/regs/harvest-hunting-on.mjs --wmus=64A,64B,66B,68A,68B
  *        node scripts/regs/harvest-hunting-on.mjs --html-dir=DIR
  */
 import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'node:fs';
@@ -29,8 +30,10 @@ const LICENCE_YEAR = 2026;
 const SEASON_YEAR = 2026;
 const AUTHORITY = 'Ontario Ministry of Natural Resources (MNR); Ontario Hunting Regulations Summary 2026 (not the official law)';
 
-/** Ottawa-adjacent slice from docs/HUNTING_SEASONS_HARVEST_V1.md. Never 12. */
-export const DEFAULT_WMUS = ['63A', '63B', '65', '66A', '67'];
+/** Ottawa-adjacent v1 + southeastern neighbours v2. Never 12. */
+export const V1_WMUS = ['63A', '63B', '65', '66A', '67'];
+export const V2_WMUS = ['64A', '64B', '66B', '68A', '68B'];
+export const DEFAULT_WMUS = [...V1_WMUS, ...V2_WMUS];
 export const REFUSED_WMUS = new Set(['12']);
 
 const wmusArg = (process.argv.find(a => a.startsWith('--wmus=')) || '').replace('--wmus=', '');
@@ -444,12 +447,15 @@ function coverageFor(wmuId, enRows, frRows) {
   const hasBear = speciesEn.includes('black-bear') && speciesFr.includes('black-bear');
   const extras = [];
   if (!hasDeer) extras.push('White-tailed deer: skipped — this WMU is not on the official 2026 deer tables; no deer rows invented.');
-  if (!hasMoose) extras.push('Moose: skipped — this WMU is not on the official 2026 moose season tables (no 66A/67 row; range 53–63 does not include 66/67). No moose rows invented.');
+  if (hasDeer && wmuId === '66B') {
+    extras.push('White-tailed deer: official tables list a bows-only row for 66B only. No rifle or muzzle-loading deer rows invented.');
+  }
+  if (!hasMoose) extras.push('Moose: skipped — this WMU is not on the official 2026 moose season tables (published moose seasons are 46–50, 53–63 and explicit 65). No moose rows invented.');
   if (hasMoose && /63A|63B/.test(wmuId)) {
     extras.push('Moose: official tables list undivided 63 / range 53–63, not 63A/63B. Undivided parent applied to this ON-H-* key.');
   }
-  if (hasBear && /63A|63B|66A/.test(wmuId)) {
-    extras.push('Black bear: official tables list undivided parent numbers/ranges (53–64 / 54–63 / 66–69 / 66, 67), not lettered 63A/63B/66A. Undivided parent applied to this ON-H-* key.');
+  if (hasBear && /[A-Z]$/.test(wmuId)) {
+    extras.push('Black bear: official tables list undivided parent numbers/ranges (spring 53–64 and 66–69; fall 64 / 66, 67 / 68), not lettered children. Undivided parent applied to this ON-H-* key.');
   }
   if (!hasBear) extras.push('Black bear: skipped — this WMU is not on the official 2026 black-bear tables (65 sits in the published gap between 64 and 66). No bear rows invented.');
   const hasCore = hasDeer || hasMoose || hasBear;
@@ -488,7 +494,7 @@ function coverageFor(wmuId, enRows, frRows) {
     species: { en: speciesEn, fr: speciesFr },
     parent_match: {
       moose_undivided_63: hasMoose && /63A|63B/.test(wmuId),
-      bear_undivided_parent: hasBear && /63A|63B|66A/.test(wmuId),
+      bear_undivided_parent: hasBear && /[A-Z]$/.test(wmuId),
     },
   };
 }

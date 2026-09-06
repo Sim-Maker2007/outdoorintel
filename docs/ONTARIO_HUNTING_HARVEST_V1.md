@@ -42,6 +42,8 @@ Ottawa-adjacent Wildlife Management Units named in `docs/HUNTING_SEASONS_HARVEST
 
 **63A, 63B, 65, 66A, 67**
 
+Follow-on southeastern neighbours **64A, 64B, 66B, 68A, 68B** are harvested in `docs/ONTARIO_HUNTING_HARVEST_V2.md`. Do not re-harvest this v1 slice when extending coverage.
+
 Species: **white-tailed deer + moose + black bear**, and **only** where the official 2026 HTML table has a row (or an undivided parent / numeric range that applies). Weapon class is the **section heading** (do not collapse bows vs firearms).
 
 **NEVER** harvest Ontario WMU 12 (Rainy River). Refuse hunting keys `ON-12`, `ON-H-12`, and `WMU-12`.

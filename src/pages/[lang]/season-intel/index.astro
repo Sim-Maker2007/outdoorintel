@@ -1,6 +1,6 @@
 ---
 // Season Intel — Stripe Checkout CTA when env keys exist; waitlist fallback if not.
-// Public QC fishing, ON FMZ 1–20, QC hunting deer+moose+black bear 2026 published splits, and ON hunting WMUs 63A/63B/65/66A/67 stay free. No paywall.
+// Public QC fishing, ON FMZ 1–20, QC hunting deer+moose+black bear 2026 published splits, and ON hunting WMUs 63A/63B/64A/64B/65/66A/66B/67/68A/68B stay free. No paywall.
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import GlobalSearch from '../../../components/GlobalSearch.astro';
@@ -26,8 +26,8 @@ const T = {
     fr: 'Season Intel — abonnement saisons Québec et Ontario',
   },
   metaDesc: {
-    en: 'Season Intel is a $29 CAD/year Stripe Checkout membership. Cited Québec fishing zones, Ontario FMZ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 and 20, Québec hunting deer, moose, and black bear 2026 for published splits 4, 5E/5W, 6N/6S, 7N/7S, 8E/8N/8S, 9E/9W, 10E/10W, 11E/11W, 12, 13SW, 14, 15E/15W and 16, and Ontario hunting WMUs 63A, 63B, 65, 66A and 67 stay public and free. Remaining coverage and change-alert emails are coming.',
-    fr: 'Season Intel est un abonnement 29 $ CAD/an via Stripe Checkout. Les zones de pêche du Québec, les ZGP 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 et 20 de l’Ontario, la chasse au cerf, à l’orignal et à l’ours noir 2026 au Québec pour les segments publiés 4, 5E/5W, 6N/6S, 7N/7S, 8E/8N/8S, 9E/9W, 10E/10W, 11E/11W, 12, 13SW, 14, 15E/15W et 16, et les UGF de chasse 63A, 63B, 65, 66A et 67 de l’Ontario restent publiques et gratuites. Le reste de la couverture et les courriels d’alerte s’en viennent.',
+    en: 'Season Intel is a $29 CAD/year Stripe Checkout membership. Cited Québec fishing zones, Ontario FMZ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 and 20, Québec hunting deer, moose, and black bear 2026 for published splits 4, 5E/5W, 6N/6S, 7N/7S, 8E/8N/8S, 9E/9W, 10E/10W, 11E/11W, 12, 13SW, 14, 15E/15W and 16, and Ontario hunting WMUs 63A, 63B, 64A, 64B, 65, 66A, 66B, 67, 68A and 68B stay public and free. Remaining coverage and change-alert emails are coming.',
+    fr: 'Season Intel est un abonnement 29 $ CAD/an via Stripe Checkout. Les zones de pêche du Québec, les ZGP 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 et 20 de l’Ontario, la chasse au cerf, à l’orignal et à l’ours noir 2026 au Québec pour les segments publiés 4, 5E/5W, 6N/6S, 7N/7S, 8E/8N/8S, 9E/9W, 10E/10W, 11E/11W, 12, 13SW, 14, 15E/15W et 16, et les UGF de chasse 63A, 63B, 64A, 64B, 65, 66A, 66B, 67, 68A et 68B de l’Ontario restent publiques et gratuites. Le reste de la couverture et les courriels d’alerte s’en viennent.',
   },
   badge: { en: 'Paid membership · News signup', fr: 'Abonnement payant · Infolettre' },
   badgeLive: { en: 'Paid membership · $29 CAD/year', fr: 'Abonnement payant · 29 $ CAD/an' },
@@ -109,7 +109,7 @@ const T = {
       'Cited Québec fishing zones already on the fishing regulations hub (MELCCFP), including zone 10 with listed vs harvested coverage.',
       'Ontario fishing FMZ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 and 20 from the 2026 Ontario Fishing Regulations Summary HTML (not complete Ontario).',
       'Québec hunting deer, moose, and black bear 2026 for published splits 4, 5E/5W, 6N/6S, 7N/7S, 8E/8N/8S, 9E/9W, 10E/10W, 11E/11W, 12, 13SW, 14, 15E/15W and 16. Black bear is harvested only where the official table has rows for that key. Zones 14 and 16 have no deer row. Not 8 West, not 13 East/West (not on the official tables). Not all 28 hunting zones, not turkey, not small game.',
-      'Ontario hunting white-tailed deer, moose, and black bear 2026 for Ottawa-adjacent WMUs 63A, 63B, 65, 66A and 67 from the Ontario Hunting Regulations Summary HTML (the Summary is not the law). Moose is harvested only where the official table lists that WMU or an undivided parent/range that applies (65 is listed; 63A/63B receive moose from published range 53–63 / WMU 63; 66A and 67 have no moose row). Black bear is harvested only where the official table has a row or range for that WMU (65 has no bear row). Not all Ontario WMUs. WMU 12 (Rainy River) is never harvested. Not turkey, not small game.',
+      'Ontario hunting white-tailed deer, moose, and black bear 2026 for southeastern WMUs 63A, 63B, 64A, 64B, 65, 66A, 66B, 67, 68A and 68B from the Ontario Hunting Regulations Summary HTML (the Summary is not the law). Moose is harvested only where the official table lists that WMU or an undivided parent/range that applies (65 is listed; 63A/63B receive moose from published range 53–63 / WMU 63; 64A, 64B, 66A, 66B, 67, 68A and 68B have no moose row). Black bear is harvested only where the official table has a row or range for that WMU (65 has no bear row; 64A/64B, 66A/66B and 68A/68B receive bear from undivided parent/range). WMU 66B has a bows-only deer row only — no rifle or muzzle-loading deer row was invented. Not all Ontario WMUs. WMU 12 (Rainy River) is never harvested. Not turkey, not small game.',
       'Waterbody and species search on the public fishing and hunting regulations hubs.',
       'Fishing zone, FMZ, and hunting zone pages stay public for everyone and for search engines — Season Intel does not paywall them.',
     ],
@@ -117,7 +117,7 @@ const T = {
       'Les zones de pêche du Québec déjà sur le carrefour des règlements (MELCCFP), y compris la zone 10 avec la couverture listée vs récupérée.',
       'ZGP de pêche 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 et 20 de l’Ontario d’après le HTML du Résumé des règlements de la pêche 2026 (pas l’Ontario au complet).',
       'Chasse au cerf, à l’orignal et à l’ours noir 2026 au Québec pour les segments publiés 4, 5E/5W, 6N/6S, 7N/7S, 8E/8N/8S, 9E/9W, 10E/10W, 11E/11W, 12, 13SW, 14, 15E/15W et 16. L’ours noir n’est récupéré que là où le tableau officiel a des lignes pour cette clé. Les zones 14 et 16 n’ont pas de ligne de cerf. Pas la 8 ouest, pas les 13 est/ouest (absentes des tableaux officiels). Pas les 28 zones, pas le dindon, pas le petit gibier.',
-      'Chasse au cerf de Virginie, à l’orignal et à l’ours noir 2026 en Ontario pour les UGF adjacentes à Ottawa 63A, 63B, 65, 66A et 67 d’après le HTML du Résumé des règlements de la chasse (le Résumé n’est pas la loi). L’orignal n’est récupéré que là où le tableau officiel liste cette UGF ou un parent/plage non divisé qui s’applique (65 est listée ; 63A/63B reçoivent l’orignal de la plage publiée 53–63 / UGF 63 ; 66A et 67 n’ont pas de ligne d’orignal). L’ours noir n’est récupéré que là où le tableau officiel a une ligne ou une plage pour cette UGF (65 n’a pas de ligne d’ours). Pas toutes les UGF. L’UGF 12 (Rainy River) n’est jamais collectée. Pas le dindon, pas le petit gibier.',
+      'Chasse au cerf de Virginie, à l’orignal et à l’ours noir 2026 en Ontario pour les UGF du sud-est 63A, 63B, 64A, 64B, 65, 66A, 66B, 67, 68A et 68B d’après le HTML du Résumé des règlements de la chasse (le Résumé n’est pas la loi). L’orignal n’est récupéré que là où le tableau officiel liste cette UGF ou un parent/plage non divisé qui s’applique (65 est listée ; 63A/63B reçoivent l’orignal de la plage publiée 53–63 / UGF 63 ; 64A, 64B, 66A, 66B, 67, 68A et 68B n’ont pas de ligne d’orignal). L’ours noir n’est récupéré que là où le tableau officiel a une ligne ou une plage pour cette UGF (65 n’a pas de ligne d’ours ; 64A/64B, 66A/66B et 68A/68B reçoivent l’ours d’un parent/plage non divisé). L’UGF 66B n’a qu’une ligne de cerf à l’arc — aucune ligne carabine ou fusil à chargement par la bouche n’a été inventée. Pas toutes les UGF. L’UGF 12 (Rainy River) n’est jamais collectée. Pas le dindon, pas le petit gibier.',
       'Recherche par plan d’eau et par espèce sur les carrefours publics des règlements de pêche et de chasse.',
       'Les pages de zone de pêche, de ZGP et de zone de chasse restent publiques pour tout le monde et pour le référencement — Season Intel ne les met pas derrière un paywall.',
     ],
@@ -132,23 +132,23 @@ const T = {
   comingItems: {
     en: [
       'Remaining Québec hunting zones and splits that are not on the official deer and moose 2026 tables (including 8 West and 13 East/West).',
-      'Remaining Ontario hunting WMUs not in 63A, 63B, 65, 66A and 67. WMU 12 (Rainy River) is never harvested.',
+      'Remaining Ontario hunting WMUs not in 63A, 63B, 64A, 64B, 65, 66A, 66B, 67, 68A and 68B. WMU 12 (Rainy River) is never harvested.',
       'Change-alert emails when published MELCCFP (and later Ontario) rules change.',
     ],
     fr: [
       'Les autres zones et segments de chasse du Québec absents des tableaux officiels cerf et orignal 2026 (dont la 8 ouest et les 13 est/ouest).',
-      'Les autres UGF de chasse de l’Ontario hors 63A, 63B, 65, 66A et 67. L’UGF 12 (Rainy River) n’est jamais collectée.',
+      'Les autres UGF de chasse de l’Ontario hors 63A, 63B, 64A, 64B, 65, 66A, 66B, 67, 68A et 68B. L’UGF 12 (Rainy River) n’est jamais collectée.',
       'Courriels d’alerte lorsque les règles publiées par le MELCCFP (puis l’Ontario) changent.',
     ],
   },
   freeTitle: { en: 'What stays free', fr: 'Ce qui reste gratuit' },
   freeItems: {
     en: [
-      'Public fishing zone pages, Ontario FMZ 1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20 pages, Québec hunting zone pages, Ontario hunting WMU 63A/63B/65/66A/67 pages, and the regulations hubs, including search.',
+      'Public fishing zone pages, Ontario FMZ 1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20 pages, Québec hunting zone pages, Ontario hunting WMU 63A/63B/64A/64B/65/66A/66B/67/68A/68B pages, and the regulations hubs, including search.',
       'Amazon affiliate packing lists on free spot pages.',
     ],
     fr: [
-      'Les pages publiques de zones de pêche, les pages ZGP 1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20 de l’Ontario, les pages de zones de chasse du Québec, les pages UGF 63A/63B/65/66A/67 de l’Ontario, et les carrefours des règlements, y compris la recherche.',
+      'Les pages publiques de zones de pêche, les pages ZGP 1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20 de l’Ontario, les pages de zones de chasse du Québec, les pages UGF 63A/63B/64A/64B/65/66A/66B/67/68A/68B de l’Ontario, et les carrefours des règlements, y compris la recherche.',
       'Les listes d’équipement d’affiliation Amazon sur les pages de spots gratuites.',
     ],
   },
