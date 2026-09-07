@@ -5,15 +5,16 @@
  * Fetches ontario.ca Hunting Regulations Summary HTML for white-tailed deer,
  * moose, and black bear (EN+FR), and writes data/hunting/on-h-{wmu}.json for
  * v1 Ottawa-adjacent 63A, 63B, 65, 66A, 67 plus v2 southeastern neighbours
- * 64A, 64B, 66B, 68A, 68B.
+ * 64A, 64B, 66B, 68A, 68B plus v3 69A splits 69A1/69A2/69A3 and 69B.
  *
  * Does not write or rewrite Québec qc-h-*.json or fishing on-fmz-*.json.
  * Does not OCR maps. Does not scrape Fish ON-Line / Forêt ouverte / Sépaq.
  * Does not harvest turkey, small game, or WMU 12 (Rainy River).
+ * Does not invent undivided ON-H-69A — deer tables list 69A1/69A2/69A3.
  * Does not invent seasons when a WMU is absent from the official table.
  *
  * Usage: node scripts/regs/harvest-hunting-on.mjs
- *        node scripts/regs/harvest-hunting-on.mjs --wmus=64A,64B,66B,68A,68B
+ *        node scripts/regs/harvest-hunting-on.mjs --wmus=69A1,69A2,69A3,69B
  *        node scripts/regs/harvest-hunting-on.mjs --html-dir=DIR
  */
 import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'node:fs';
@@ -30,11 +31,14 @@ const LICENCE_YEAR = 2026;
 const SEASON_YEAR = 2026;
 const AUTHORITY = 'Ontario Ministry of Natural Resources (MNR); Ontario Hunting Regulations Summary 2026 (not the official law)';
 
-/** Ottawa-adjacent v1 + southeastern neighbours v2. Never 12. */
+/** Ottawa-adjacent v1 + southeastern neighbours v2 + v3 69A splits / 69B. Never 12. Never undivided 69A. */
 export const V1_WMUS = ['63A', '63B', '65', '66A', '67'];
 export const V2_WMUS = ['64A', '64B', '66B', '68A', '68B'];
-export const DEFAULT_WMUS = [...V1_WMUS, ...V2_WMUS];
+export const V3_WMUS = ['69A1', '69A2', '69A3', '69B'];
+export const DEFAULT_WMUS = [...V1_WMUS, ...V2_WMUS, ...V3_WMUS];
 export const REFUSED_WMUS = new Set(['12']);
+/** Deer tables list 69A1/69A2/69A3. Do not invent a rollup ON-H-69A page. */
+export const SPLIT_PARENTS_REFUSED = new Set(['69A']);
 
 const wmusArg = (process.argv.find(a => a.startsWith('--wmus=')) || '').replace('--wmus=', '');
 const htmlDirArg = (process.argv.find(a => a.startsWith('--html-dir=')) || '').replace('--html-dir=', '');
@@ -109,9 +113,9 @@ function headingBefore(html, pos) {
 }
 
 export function normalizeWmuId(id) {
-  const m = String(id || '').trim().toUpperCase().match(/^(\d{1,3})([A-Z])?$/);
+  const m = String(id || '').trim().toUpperCase().match(/^(\d{1,3})([A-Z])?(\d)?$/);
   if (!m) return '';
-  return `${Number(m[1])}${m[2] || ''}`;
+  return `${Number(m[1])}${m[2] || ''}${m[3] || ''}`;
 }
 
 export function isRefusedWmu(id) {
@@ -120,8 +124,9 @@ export function isRefusedWmu(id) {
 }
 
 /**
- * Parse "63A, 63B, 65footnote 1, 66A, 67" or "53–64, 66–69" or "54–63".
- * Ranges and bare numbers are undivided parents (QC-style: undivided 63 → 63A/63B).
+ * Parse "63A, 63B, 65footnote 1, 66A, 67" or "53–64, 66–69" or "69A1, 69A3".
+ * Ranges and bare numbers are undivided parents (QC-style: undivided 63 → 63A/63B,
+ * undivided 69 → 69A1/69A2/69A3/69B). Lettered 69A is NOT a parent of 69A1.
  */
 export function parseWmuCell(cell) {
   const s = String(cell || '')
@@ -129,14 +134,14 @@ export function parseWmuCell(cell) {
     .replace(/\[[0-9]+\]/g, ' ')
     .replace(/&nbsp;/gi, ' ');
   const out = [];
-  const re = /(?<![A-Z0-9])(\d{1,3})([A-Z])?(?:\s*[–—-]\s*(\d{1,3})([A-Z])?)?(?![A-Z0-9])/gi;
+  const re = /(?<![A-Z0-9])(\d{1,3})([A-Z])?(\d)?(?:\s*[–—-]\s*(\d{1,3})([A-Z])?(\d)?)?(?![A-Z0-9])/gi;
   let m;
   while ((m = re.exec(s))) {
     const aNum = Number(m[1]);
-    const aLet = (m[2] || '').toUpperCase();
-    if (m[3]) {
-      const bNum = Number(m[3]);
-      const bLet = (m[4] || '').toUpperCase();
+    const aLet = `${(m[2] || '').toUpperCase()}${m[3] || ''}`;
+    if (m[4]) {
+      const bNum = Number(m[4]);
+      const bLet = `${(m[5] || '').toUpperCase()}${m[6] || ''}`;
       out.push({
         kind: 'range',
         fromNum: Math.min(aNum, bNum),
@@ -183,7 +188,11 @@ export function isClosedPeriod(period) {
 }
 
 function skipHeading(heading) {
-  return /last year|l['’]an dernier|draw results|allocation results|tag allocation|hunt codes|points-based|cervid|chronic wasting|farmer/i.test(heading || '');
+  const h = heading || '';
+  // 2026 controlled deer hunt *seasons* are real open-season rows (69A2 hunt code 301).
+  // Still skip last-year draw/allocation tables even when they mention hunt codes.
+  if (/controlled deer hunt seasons|chasse au chevreuil réglementée \(avec/i.test(h)) return false;
+  return /last year|l['’]an dernier|draw results|allocation results|tag allocation|hunt codes|points-based|cervid|chronic wasting|farmer/i.test(h);
 }
 
 function classifySpecies(pageSpecies) {
@@ -288,6 +297,10 @@ function parseSeasonTables(html, { pageSpecies, lang }) {
         }
       }
       const restrictNote = restrictIdx >= 0 && cells[restrictIdx] ? cells[restrictIdx] : null;
+      const huntCodeRaw = huntCodeIdx >= 0 ? (cells[huntCodeIdx] || '') : '';
+      const huntCodeNote = huntCodeRaw
+        ? (lang === 'fr' ? `Code de chasse ${huntCodeRaw}` : `Hunt code ${huntCodeRaw}`)
+        : null;
       const weapon = firearmIdx >= 0 && cells[firearmIdx]
         ? `${heading} — ${cells[firearmIdx]}`
         : heading;
@@ -311,9 +324,10 @@ function parseSeasonTables(html, { pageSpecies, lang }) {
             period_to: iso?.to || null,
             year: SEASON_YEAR,
             open: !closed,
-            notes: restrictNote,
+            notes: [restrictNote, huntCodeNote].filter(Boolean).join(' ') || null,
             restrictNote,
-            raw: [heading, zoneCell, col.segment, period].filter(Boolean).join(' · '),
+            huntCodeNote,
+            raw: [heading, zoneCell, col.segment, period, huntCodeNote].filter(Boolean).join(' · '),
           });
         }
       }
@@ -419,6 +433,32 @@ function bearNotes(html, lang) {
   return out;
 }
 
+function controlledDeerNotices(html, lang) {
+  const tests = lang === 'fr'
+    ? [
+      t => /sauf indication contraire, seuls les fusils de chasse/i.test(t),
+      t => /interdit de chasser avec un chien durant la chasse au chevreuil réglementée/i.test(t),
+      t => /Pour chasser pendant une saison de chasse au chevreuil réglementée/i.test(t),
+    ]
+    : [
+      t => /only shotguns, muzzle-loading guns and bows are permitted in controlled deer hunts/i.test(t),
+      t => /dogs is not permitted during controlled deer hunts/i.test(t),
+      t => /To hunt in a controlled deer hunt/i.test(t) && /Ontario resident/i.test(t),
+    ];
+  const out = [];
+  for (const testFn of tests) {
+    const hits = extractParagraphs(html, testFn);
+    if (hits[0]) {
+      out.push({
+        kind: 'controlled_deer',
+        draw_required: /resident|résident/i.test(hits[0]),
+        text: hits[0],
+      });
+    }
+  }
+  return out;
+}
+
 function titleFor(wmuId, lang, { deer, moose, bear }) {
   const parts = lang === 'fr'
     ? [deer ? 'cerf de Virginie' : null, moose ? 'orignal' : null, bear ? 'ours noir' : null].filter(Boolean)
@@ -447,15 +487,21 @@ function coverageFor(wmuId, enRows, frRows) {
   const hasBear = speciesEn.includes('black-bear') && speciesFr.includes('black-bear');
   const extras = [];
   if (!hasDeer) extras.push('White-tailed deer: skipped — this WMU is not on the official 2026 deer tables; no deer rows invented.');
-  if (hasDeer && wmuId === '66B') {
-    extras.push('White-tailed deer: official tables list a bows-only row for 66B only. No rifle or muzzle-loading deer rows invented.');
+  if (hasDeer && /^(66B|69A1|69A3)$/.test(wmuId)) {
+    extras.push(`White-tailed deer: official tables list a bows-only row for ${wmuId} only. No rifle or muzzle-loading deer rows invented.`);
+  }
+  if (hasDeer && wmuId === '69A2') {
+    extras.push('White-tailed deer: official tables list bows-only rows plus a controlled deer hunt (hunt code 301). No rifle-table or muzzle-loading deer row invented. Official tables label this split 69A2, not undivided 69A.');
+  }
+  if (hasDeer && /^69A[13]$/.test(wmuId)) {
+    extras.push('Official deer tables list 69A as splits 69A1/69A2/69A3. This key is the published split, not a rollup ON-H-69A.');
   }
   if (!hasMoose) extras.push('Moose: skipped — this WMU is not on the official 2026 moose season tables (published moose seasons are 46–50, 53–63 and explicit 65). No moose rows invented.');
   if (hasMoose && /63A|63B/.test(wmuId)) {
     extras.push('Moose: official tables list undivided 63 / range 53–63, not 63A/63B. Undivided parent applied to this ON-H-* key.');
   }
-  if (hasBear && /[A-Z]$/.test(wmuId)) {
-    extras.push('Black bear: official tables list undivided parent numbers/ranges (spring 53–64 and 66–69; fall 64 / 66, 67 / 68), not lettered children. Undivided parent applied to this ON-H-* key.');
+  if (hasBear && /[A-Z]/.test(wmuId)) {
+    extras.push('Black bear: official tables list undivided parent numbers/ranges (spring 53–64 and 66–69; fall 64 / 66, 67 / 68 / 69), not lettered or split children. Undivided parent applied to this ON-H-* key.');
   }
   if (!hasBear) extras.push('Black bear: skipped — this WMU is not on the official 2026 black-bear tables (65 sits in the published gap between 64 and 66). No bear rows invented.');
   const hasCore = hasDeer || hasMoose || hasBear;
@@ -494,14 +540,15 @@ function coverageFor(wmuId, enRows, frRows) {
     species: { en: speciesEn, fr: speciesFr },
     parent_match: {
       moose_undivided_63: hasMoose && /63A|63B/.test(wmuId),
-      bear_undivided_parent: hasBear && /[A-Z]$/.test(wmuId),
+      bear_undivided_parent: hasBear && /[A-Z]/.test(wmuId),
+      deer_split_69a: /^69A[123]$/.test(wmuId),
     },
   };
 }
 
 function toSeasonRow(r, wmuId) {
   const wmuNote = r.notesByWmu?.[normalizeWmuId(wmuId)] || null;
-  const notes = [wmuNote, r.restrictNote].filter(Boolean).join(' ') || null;
+  const notes = [wmuNote, r.restrictNote, r.huntCodeNote].filter(Boolean).join(' ') || null;
   return {
     species: r.species,
     species_key: r.species_key,
@@ -613,6 +660,11 @@ export async function harvestHuntingOn() {
       fatal++;
       continue;
     }
+    if (SPLIT_PARENTS_REFUSED.has(normalizeWmuId(wmuId))) {
+      console.error(`WMU ${wmuId}: official deer tables list splits 69A1/69A2/69A3 — do not invent undivided ON-H-69A`);
+      fatal++;
+      continue;
+    }
     const zone_key = `ON-H-${wmuId}`;
     if (zone_key === 'ON-H-12') {
       console.error('ON-H-12 refused');
@@ -648,6 +700,11 @@ export async function harvestHuntingOn() {
     if (hasBear) {
       noticesEn.push(...bearNotesEn);
       noticesFr.push(...bearNotesFr);
+    }
+    const hasControlledDeer = enRows.some(r => /controlled deer hunt seasons/i.test(r.heading || r.weapon_class || ''));
+    if (hasControlledDeer) {
+      noticesEn.push(...controlledDeerNotices(pages.deer_en, 'en'));
+      noticesFr.push(...controlledDeerNotices(pages.deer_fr, 'fr'));
     }
     const rifleNote = enRows.map(r => r.notesByWmu?.[wmuId]).find(n => n && /rifles are not permitted/i.test(n));
     const rifleNoteFr = frRows.map(r => r.notesByWmu?.[wmuId]).find(n => n && /carabines? ne sont pas perm/i.test(n));

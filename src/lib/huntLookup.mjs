@@ -45,14 +45,14 @@ export function normalizeHuntingZoneToken(zone) {
   const onFishing = raw.match(/^ON-(\d+)$/i);
   if (onFishing) return { refuse: 'ON-fishing-key', token: `ON-${onFishing[1]}` };
 
-  const onHunt = raw.match(/^ON-H-([0-9]+[A-Z]?)$/i);
+  const onHunt = raw.match(/^ON-H-([0-9]+(?:[A-Z]\d?)?)$/i);
   if (onHunt) {
     const id = onHunt[1].toUpperCase();
     if (id === '12') return { refuse: 'ON-12' };
     return { key: `ON-H-${id}` };
   }
 
-  const wmuPrefixed = raw.match(/^WMU[-\s]+(\d{1,3}[A-Z]?)$/i);
+  const wmuPrefixed = raw.match(/^WMU[-\s]+(\d{1,3}(?:[A-Z]\d?)?)$/i);
   if (wmuPrefixed) {
     const id = wmuPrefixed[1].toUpperCase();
     if (id === '12') return { refuse: 'ON-12' };
@@ -68,7 +68,7 @@ export function normalizeHuntingZoneToken(zone) {
     return { key: `QC-H-${n}${part}` };
   }
 
-  const wmu = raw.match(/^(\d{1,3}[A-Z])$/i);
+  const wmu = raw.match(/^(\d{1,3}[A-Z]\d?)$/i);
   if (wmu && !/^12$/i.test(wmu[1])) {
     return { key: `ON-H-${wmu[1].toUpperCase()}` };
   }
