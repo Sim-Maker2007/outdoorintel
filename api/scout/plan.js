@@ -8,6 +8,7 @@ import { REGS } from '../_data/regs-index.js';
 import { resolveRegs } from '../../src/lib/regResolver.mjs';
 import { chat, aiConfigured } from '../_lib/ai.js';
 import { readBody, json, methodGuard, clip, aiGuard } from '../_lib/community.js';
+import { parseScoutIntent, rankSpots, assembleHeuristicPlan } from '../../src/lib/scoutHeuristic.mjs';
 
 export const config = { runtime: 'nodejs' };
 
@@ -144,9 +145,39 @@ function sanitizeMessages(raw) {
     .slice(-16).map(m => ({ role: m.role, content: m.content.slice(0, 4000) }));
 }
 
+function heuristicReply(history, origin) {
+  const last = [...history].reverse().find(m => m.role === 'user') || history[history.length - 1];
+  const text = last && last.content ? last.content : '';
+  const lang = /[àâéèêëîïôùûç]|pêche|chasse|québec/i.test(text) ? 'fr' : 'en';
+  const intent = parseScoutIntent(text);
+  const ranked = rankSpots(SPOTS, intent, origin && typeof origin.lat === 'number' ? origin : null);
+  const plan = assembleHeuristicPlan(ranked, intent, lang);
+  if (!plan.stops.length) {
+    return {
+      ok: true,
+      type: 'message',
+      fallback: true,
+      reply: lang === 'fr'
+        ? 'Aucun spot sourcé ne correspond assez pour une liste. Essayez une activité et une province (ex. pêche au Québec), ou ouvrez le planificateur.'
+        : 'No sourced spots matched closely enough for a shortlist. Try an activity and a province (e.g. fishing in Quebec), or open the trip planner.',
+    };
+  }
+  const addParam = plan.stops.map(s => s.activity + ':' + s.slug).join(',');
+  return { ok: true, type: 'plan', fallback: true, plan, addParam };
+}
+
 export default async function handler(req, res) {
   if (!methodGuard(req, res, 'POST')) return;
-  if (!aiConfigured()) { json(res, 503, { ok: false, error: 'Scout is not configured yet.' }); return; }
+  if (!aiConfigured()) {
+    const body = readBody(req);
+    const history = sanitizeMessages(body.messages);
+    if (!history.length || history[history.length - 1].role !== 'user') {
+      json(res, 400, { ok: false, error: 'Ask Scout a question to plan a trip.' });
+      return;
+    }
+    json(res, 200, heuristicReply(history, body.origin));
+    return;
+  }
   // Eval bypass: the golden-question suite (scripts/evals) sends more
   // requests per run than the public per-IP allowance. When SCOUT_EVAL_KEY
   // is set in the environment and the request presents it, skip the guard.

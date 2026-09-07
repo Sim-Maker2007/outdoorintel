@@ -16,6 +16,7 @@
   var T = FR ? {
     thinking: 'Scout explore le terrain…', addAll: 'Ajouter au planificateur', view: 'Voir', notes: 'À savoir',
     err: 'Scout a eu un souci. Réessayez.', warmup: 'Scout se prépare — revenez bientôt.',
+    fallback: 'Liste sourcée du registre (l’IA conversationnelle n’est pas configurée ici). Aucun lieu inventé.',
     you: 'Vous', placeholder: 'Décrivez votre sortie idéale…',
     regTitle: 'Règlement officiel', regSrc: 'Source officielle (MELCCFP)', regFetched: 'Données du',
     regZonePage: 'Tous les règlements de la zone', regSpecies: 'Espèce', regLimit: 'Limite',
@@ -23,6 +24,7 @@
   } : {
     thinking: 'Scout is scouting the map…', addAll: 'Add to Trip Planner', view: 'View', notes: 'Good to know',
     err: 'Scout hit a snag. Please try again.', warmup: 'Scout is warming up — check back soon.',
+    fallback: 'Sourced shortlist from the registry (conversational AI is not configured here). No invented places.',
     you: 'You', placeholder: 'Describe your ideal trip…',
     regTitle: 'Official regulation', regSrc: 'Official source (MELCCFP)', regFetched: 'Data from',
     regZonePage: 'All zone regulations', regSpecies: 'Species', regLimit: 'Limit',
@@ -67,7 +69,11 @@
     }).join('');
     var notes = plan.notes ? '<div class="scout-notes"><div class="scout-notes-h">' + esc(T.notes) + '</div>' + esc(plan.notes).replace(/\n/g, '<br>') + '</div>' : '';
     var planUrl = '/en/trip-planner?add=' + encodeURIComponent(addParam);
+    var fallbackNote = plan._fallback
+      ? '<p style="font-size:12px;color:#7c4a12;margin-bottom:10px">' + esc(T.fallback) + '</p>'
+      : '';
     var html = '<div class="scout-bubble scout-bubble-ai" style="max-width:none;width:100%">' +
+      fallbackNote +
       (plan.summary ? '<p style="margin-bottom:14px;line-height:1.6">' + esc(plan.summary).replace(/\n/g, '<br>') + '</p>' : '') +
       '<div style="font-weight:800;color:#1c2b21;font-size:15px;margin-bottom:10px">' + esc(plan.title) + '</div>' +
       '<div class="scout-stops">' + stopsHtml + '</div>' + notes +
@@ -129,6 +135,7 @@
         if (res.status === 503) { aiText(T.warmup); busy = false; return; }
         if (!d.ok) { aiText(d.error || T.err); busy = false; return; }
         if (d.type === 'plan' && d.plan) {
+          if (d.fallback) d.plan._fallback = true;
           renderPlan(d.plan, d.addParam || '');
           history.push({ role: 'assistant', content: d.plan.summary || d.plan.title || 'Here is a plan.' });
         } else {

@@ -31,8 +31,10 @@ import { resolveRegs } from '../../src/lib/regResolver.mjs';
 import { lookupRegulation } from '../../src/lib/regsLookup.mjs';
 import { lookupHunting } from '../../src/lib/huntLookup.mjs';
 import { resolveHunting } from '../../src/lib/huntResolver.mjs';
+import { parseScoutIntent, rankSpots, assembleHeuristicPlan } from '../../src/lib/scoutHeuristic.mjs';
 import { REGS } from '../../api/_data/regs-index.js';
 import { HUNTING } from '../../api/_data/hunting-index.js';
+import SPOTS from '../../api/_data/spots-index.js';
 import { parseWmuCell, wmuMatches, isRefusedWmu } from '../regs/harvest-hunting-on.mjs';
 
 const REPO = process.cwd();
@@ -63,6 +65,40 @@ for (const q of questions) {
         ok(`${q.id}/z${zid}-coverage`, doc.coverage.complete === true, `zone ${zid} coverage incomplete (${doc.coverage.waterbodies_harvested}/${doc.coverage.waterbodies_listed_by_zone_page})`);
       }
     }
+    continue;
+  }
+
+  if (c.prep_demo) {
+    const src = readFileSync(join(REPO, 'src/pages/[lang]/prep/demo.astro'), 'utf-8');
+    const header = readFileSync(join(REPO, 'src/components/Header.astro'), 'utf-8');
+    const plan = readFileSync(join(REPO, 'api/scout/plan.js'), 'utf-8');
+    ok(`${q.id}/en-fish-z10`, src.includes('/${lang}/fishing/regulations/zone-10') || src.includes('fishing/regulations/zone-10'), 'prep demo must link live fishing zone 10');
+    ok(`${q.id}/en-hunt-10w`, src.includes('hunting/regulations/qc-h-10w'), 'prep demo must link live hunting zone qc-h-10w');
+    ok(`${q.id}/demo-banner`, src.includes('not a live lodge booking') && src.includes('pas une réservation réelle'), 'prep demo must keep an honest demo banner EN+FR');
+    ok(`${q.id}/outfitter-brand`, src.includes('Demo Outfitter') && src.includes('Pourvoirie Démo') && src.includes('Outaouais'), 'prep demo must keep Demo Outfitter / Outaouais branding');
+    ok(`${q.id}/pilot-price`, src.includes('C$199') && src.includes('199 $ CA'), 'prep demo must name the ~C$199/mo pilot');
+    ok(`${q.id}/scout-cta`, src.includes('links.scout') || src.includes('/scout'), 'prep demo must hand off to Scout');
+    ok(`${q.id}/planner-cta`, src.includes('/en/trip-planner?add=') && src.includes('fishing:poisson-blanc-lac-du') && src.includes('hunting:laurentian-mountains'), 'prep demo must hand off live spots into the trip planner');
+    ok(`${q.id}/no-invented-limit`, !/limit of \d+|limite de \d+ doré|6 walleye/i.test(src), 'prep demo must not invent numeric bag limits');
+    ok(`${q.id}/arrival`, src.includes('Arrival notes') && src.includes('Notes d’arrivée'), 'prep demo must keep an arrival-notes section');
+    ok(`${q.id}/checklist`, src.includes('Equipment checklist') && src.includes('Liste d’équipement'), 'prep demo must keep a mixed hunt/fish checklist');
+    ok(`${q.id}/header-scout`, header.includes('L.scout') && header.includes('L.seasonIntel'), 'shared header must keep Scout entry and Season Intel');
+    ok(`${q.id}/scout-no-503`, plan.includes('heuristicReply') && !plan.includes("error: 'Scout is not configured yet.'"), 'Scout plan API must not 503 when AI is unset');
+    continue;
+  }
+
+  if (c.scout_heuristic) {
+    const intent = parseScoutIntent('Brook trout lakes in Quebec');
+    ok(`${q.id}/intent-act`, intent.activities.includes('fishing'), 'Quebec brook trout query should parse as fishing');
+    ok(`${q.id}/intent-prov`, intent.province === 'Quebec', 'Quebec brook trout query should parse province Quebec');
+    ok(`${q.id}/intent-sp`, intent.species === 'brook trout', 'Quebec brook trout query should parse species brook trout');
+    const ranked = rankSpots(SPOTS, intent, null);
+    ok(`${q.id}/ranked`, ranked.length >= 2, `heuristic must return sourced spots, got ${ranked.length}`);
+    const keys = new Set(SPOTS.map(s => s.c + '/' + s.s));
+    ok(`${q.id}/real-slugs`, ranked.every(s => keys.has(s.c + '/' + s.s)), 'heuristic stops must exist in the sourced index');
+    const plan = assembleHeuristicPlan(ranked, intent, 'en');
+    ok(`${q.id}/plan-stops`, plan.stops.length >= 2 && plan.stops.every(st => keys.has(st.activity + '/' + st.slug)), 'assembled plan must use real slugs');
+    ok(`${q.id}/honest`, /not configured/i.test(plan.summary), 'heuristic summary must disclose that conversational AI is not configured');
     continue;
   }
 
