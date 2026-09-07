@@ -36,7 +36,7 @@ Species: **white-tailed deer + moose + black bear**, and **only** where the offi
 | 68A | Explicit lettered rows (rifle / muzzle+bow / bows-only). | **No row.** Do not invent. | Spring range **66–69**. Fall undivided **68**. Apply parent to 68A. Disclose. |
 | 68B | Explicit lettered rows. Rifle-table **footnote 1**: rifles not permitted. | **No row.** Do not invent. | Same undivided **68** / range **66–69** as 68A. Apply parent. Disclose. |
 
-Do not harvest last year’s draw / allocation / hunter-number tables as if they were 2026 seasons. Do not invent bag limits. Do not harvest turkey, small game, elk, wolf, 69A/69B (69A is split 69A1/69A2/69A3), or WMU 12.
+Do not harvest last year’s draw / allocation / hunter-number tables as if they were 2026 seasons. Do not invent bag limits. Do not harvest turkey, small game, elk, wolf, or WMU 12. 69A/69B follow-on is `docs/ONTARIO_HUNTING_HARVEST_V3.md` (69A harvested as published splits 69A1/69A2/69A3).
 
 ## Namespace
 
@@ -70,4 +70,4 @@ Spot-check `/en/hunting/regulations/on-h-64a` and `/en/hunting/regulations/on-h-
 
 ## Out of scope
 
-GIS / Fish ON-Line scrape, Forêt ouverte, Sépaq, Stripe, Scout, trip planner, ads, paywall, turkey, small game, elk, wolf, 69A/69B, all Ontario WMUs, Ontario WMU 12, Québec fishing/hunting JSON rewrites, invented bag limits, rewriting v1 `on-h-{63a,63b,65,66a,67}.json`.
+GIS / Fish ON-Line scrape, Forêt ouverte, Sépaq, Stripe, Scout, trip planner, ads, paywall, turkey, small game, elk, wolf, all remaining Ontario WMUs, Ontario WMU 12, Québec fishing/hunting JSON rewrites, invented bag limits, rewriting v1 `on-h-{63a,63b,65,66a,67}.json`.

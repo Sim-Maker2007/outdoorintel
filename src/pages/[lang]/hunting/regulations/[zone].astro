@@ -291,7 +291,10 @@ const notices = doc.notices?.[L] || [];
                                 {group.rules.map(r => (
                                 <tr class="border-t border-[#305e3c]/10 align-top">
                                     <td class="p-3 font-semibold">{r.segment}</td>
-                                    <td class="p-3">{r.period_2026 || r.period}</td>
+                                    <td class="p-3">
+                                        {r.period_2026 || r.period}
+                                        {r.notes && <span class="block text-[#5c6b5f] text-xs mt-1">{r.notes}</span>}
+                                    </td>
                                 </tr>
                                 ))}
                             </tbody>
