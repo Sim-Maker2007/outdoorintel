@@ -1,0 +1,189 @@
+---
+// Shared outfitter guest-prep chrome. Copy and lodge facts come from prepLodges.mjs.
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+import GlobalSearch from './GlobalSearch.astro';
+import {
+  PREP_UI,
+  listSampleLodges,
+  localizeLodge,
+  prepHref,
+  prepRegHref,
+  plannerAddHref,
+  scoutHref,
+} from '../lib/prepLodges.mjs';
+
+const { lang, lodge } = Astro.props;
+const L = lang === 'en' ? 'en' : 'fr';
+const loc = localizeLodge(lodge, L);
+const SITE = 'https://outdoorintel.ca';
+const url = `${SITE}/${lang}/prep/${lodge.slug}`;
+const altHref = `/${lang === 'en' ? 'fr' : 'en'}/prep/${lodge.slug}`;
+const plannerAdd = plannerAddHref(lodge.plannerStops);
+const scoutLink = scoutHref(lang, loc.scoutQuery);
+const samples = listSampleLodges();
+const otherSamples = samples.filter(s => s.slug !== lodge.slug);
+const isDemo = lodge.kind === 'demo';
+const kicker = isDemo ? PREP_UI.demoBannerKicker[L] : PREP_UI.bannerKicker[L];
+const bannerTitle = isDemo ? PREP_UI.demoBannerTitle[L] : PREP_UI.bannerTitle[L];
+
+const huntLabels = {
+  hunt10e: PREP_UI.hunt10e[L],
+  hunt10w: PREP_UI.hunt10w[L],
+};
+---
+<html lang={lang}>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=2">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#14251a">
+    <title>{loc.title}</title>
+    <meta name="description" content={loc.metaDesc}>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href={url}>
+    <link rel="alternate" hreflang="en" href={`${SITE}/en/prep/${lodge.slug}`}>
+    <link rel="alternate" hreflang="fr" href={`${SITE}/fr/prep/${lodge.slug}`}>
+    <link rel="alternate" hreflang="x-default" href={`${SITE}/en/prep/${lodge.slug}`}>
+    <meta property="og:title" content={loc.title}>
+    <meta property="og:description" content={loc.metaDesc}>
+    <meta property="og:url" content={url}>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Outdoor Intel">
+    <link rel="stylesheet" href="/assets/css/site.css?v=1">
+    <Fragment set:html={`<!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY8Q00962P"><\/script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QY8Q00962P');
+    <\/script>`} />
+    <Fragment set:html={`<style id="oi-ds">.explore-dropdown{visibility:hidden;opacity:0;transform:translateY(6px);transition:opacity .15s ease,transform .15s ease,visibility .15s}.explore-group:hover .explore-dropdown,.explore-group:focus-within .explore-dropdown{visibility:visible;opacity:1;transform:translateY(0)}<\/style>`} />
+</head>
+<body class="bg-[#fbfaf7] text-[#1c2b21] font-sans leading-relaxed">
+    <Header lang={lang} altHref={altHref} />
+    <main class="pt-[72px]">
+        <div class="bg-[#f4a825] text-[#1c2b21]">
+            <div class="max-w-4xl mx-auto px-6 py-4">
+                <p class="text-xs font-bold uppercase tracking-[0.18em] mb-1">{kicker}</p>
+                <p class="font-extrabold text-lg md:text-xl mb-2">{bannerTitle}</p>
+                <p class="text-sm md:text-[15px] leading-relaxed">{loc.bannerBody}</p>
+            </div>
+        </div>
+        <section class="bg-[#14251a] text-white py-14 px-6">
+            <div class="max-w-4xl mx-auto">
+                <p class="text-[#a2c99a] text-xs font-bold uppercase tracking-[0.2em] mb-3">{loc.name} · {loc.region}</p>
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">{loc.h1}</h1>
+                <p class="text-white/80 text-lg max-w-2xl">{loc.lead}</p>
+                {lodge.website && (
+                <p class="mt-6">
+                    <a href={lodge.website} target="_blank" rel="noopener noreferrer" class="inline-block text-[#a2c99a] font-semibold hover:underline">{PREP_UI.websiteCta[L]} →</a>
+                </p>
+                )}
+            </div>
+        </section>
+        <section class="max-w-4xl mx-auto px-6 py-12 space-y-10">
+            <div class="bg-white rounded-2xl p-6 md:p-8 border border-[#305e3c]/10" style="box-shadow: 0 4px 24px rgba(62,49,39,0.08)">
+                <h2 class="text-2xl font-bold text-[#305e3c] mb-2">{PREP_UI.arrivalTitle[L]}</h2>
+                <p class="text-[#5c6b5f] mb-5">{loc.arrivalIntro}</p>
+                <ul class="list-disc pl-5 space-y-3 text-[#1c2b21] marker:text-[#3d7a4d]">
+                    {loc.arrival.map(item => <li>{item}</li>)}
+                </ul>
+            </div>
+            <div class="bg-white rounded-2xl p-6 md:p-8 border border-[#305e3c]/10" style="box-shadow: 0 4px 24px rgba(62,49,39,0.08)">
+                <h2 class="text-2xl font-bold text-[#305e3c] mb-2">{PREP_UI.regsTitle[L]}</h2>
+                <p class="text-[#5c6b5f] mb-5">{PREP_UI.regsIntro[L]}</p>
+                <ul class="space-y-3">
+                    {lodge.fishZones.map(id => (
+                    <li><a href={prepRegHref(lang, 'fish', id)} class="text-[#3d7a4d] font-semibold hover:underline">{PREP_UI.fish10[L]}</a></li>
+                    ))}
+                    {lodge.huntZones.map(id => (
+                    <li><a href={prepRegHref(lang, 'hunt', id)} class="text-[#3d7a4d] font-semibold hover:underline">{huntLabels[id === 'qc-h-10e' ? 'hunt10e' : 'hunt10w']}</a></li>
+                    ))}
+                    <li><a href={prepRegHref(lang, 'fishHub')} class="text-[#3d7a4d] hover:underline">{PREP_UI.fishHub[L]}</a></li>
+                    <li><a href={prepRegHref(lang, 'huntHub')} class="text-[#3d7a4d] hover:underline">{PREP_UI.huntHub[L]}</a></li>
+                </ul>
+            </div>
+            <div class="bg-white rounded-2xl p-6 md:p-8 border border-[#305e3c]/10" style="box-shadow: 0 4px 24px rgba(62,49,39,0.08)">
+                <h2 class="text-2xl font-bold text-[#305e3c] mb-2">{loc.packTitle}</h2>
+                <p class="text-[#5c6b5f] mb-6">{loc.packIntro}</p>
+                <div class="space-y-6">
+                    {loc.packGroups.map(group => (
+                    <div>
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-[#305e3c] mb-2">{group.h}</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-[#1c2b21] marker:text-[#3d7a4d]">
+                            {group.items.map(item => <li>{item}</li>)}
+                        </ul>
+                    </div>
+                    ))}
+                </div>
+            </div>
+            <div class="bg-[#f4f3ec] rounded-2xl p-6 md:p-8 border border-[#305e3c]/10">
+                <h2 class="text-2xl font-bold text-[#305e3c] mb-2">{PREP_UI.nextTitle[L]}</h2>
+                <p class="text-[#5c6b5f] mb-4">{PREP_UI.nextBody[L]}</p>
+                <p class="text-sm text-[#5c6b5f] mb-6">{loc.spotsNote}</p>
+                <div class="flex flex-wrap gap-3">
+                    <a href={scoutLink} class="inline-block bg-[#305e3c] text-white font-bold px-5 py-3 rounded-lg hover:bg-[#3d7a4d] transition-colors">{PREP_UI.scoutCta[L]}</a>
+                    <a href={plannerAdd} class="inline-block bg-[#f4a825] text-[#1c2b21] font-bold px-5 py-3 rounded-lg hover:bg-[#f7b943] transition-colors">{PREP_UI.plannerCta[L]}</a>
+                </div>
+            </div>
+            {isDemo && (
+            <div class="bg-white rounded-2xl p-6 md:p-8 border border-[#305e3c]/10" style="box-shadow: 0 4px 24px rgba(62,49,39,0.08)">
+                <h2 class="text-2xl font-bold text-[#305e3c] mb-2">{PREP_UI.samplesTitle[L]}</h2>
+                <p class="text-[#5c6b5f] mb-5">{PREP_UI.samplesIntro[L]}</p>
+                <ul class="space-y-3">
+                    {samples.map(s => {
+                      const n = s.name[L];
+                      const r = s.region[L];
+                      return (
+                    <li>
+                        <a href={prepHref(lang, s.slug)} class="text-[#3d7a4d] font-semibold hover:underline">{n}</a>
+                        <span class="text-[#5c6b5f]"> — {r}</span>
+                    </li>
+                      );
+                    })}
+                </ul>
+            </div>
+            )}
+            {!isDemo && (
+            <div class="bg-white rounded-2xl p-6 md:p-8 border border-[#305e3c]/10">
+                <h2 class="text-2xl font-bold text-[#305e3c] mb-2">{PREP_UI.moreSamplesTitle[L]}</h2>
+                <p class="text-[#5c6b5f] mb-4">{PREP_UI.demoIndexNote[L]}</p>
+                <ul class="space-y-3">
+                    <li>
+                        <a href={prepHref(lang, 'demo')} class="text-[#3d7a4d] font-semibold hover:underline">{L === 'en' ? 'Demo Outfitter (generic product shape)' : 'Pourvoirie Démo (forme générique)'}</a>
+                    </li>
+                    {otherSamples.map(s => (
+                    <li>
+                        <a href={prepHref(lang, s.slug)} class="text-[#3d7a4d] font-semibold hover:underline">{s.name[L]}</a>
+                        <span class="text-[#5c6b5f]"> — {s.region[L]}</span>
+                    </li>
+                    ))}
+                </ul>
+            </div>
+            )}
+            <div class="bg-white rounded-2xl p-6 md:p-8 border border-[#305e3c]/10">
+                <h2 class="text-2xl font-bold text-[#305e3c] mb-2">{PREP_UI.pilotsTitle[L]}</h2>
+                <p class="text-[#1c2b21] leading-relaxed mb-4">{loc.pilotsBody}</p>
+                <a href="mailto:hello@outdoorintel.ca" class="inline-block bg-[#305e3c] text-white font-bold px-5 py-3 rounded-lg hover:bg-[#3d7a4d] transition-colors">{PREP_UI.contactCta[L]}</a>
+            </div>
+        </section>
+    </main>
+    <Footer lang={lang} altHref={altHref} />
+    <Fragment set:html={`<script>
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('mobile-menu');
+if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        toggle.setAttribute('aria-expanded', !menu.classList.contains('hidden'));
+    });
+}
+<\/script>`} />
+    <GlobalSearch />
+    <script is:inline defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

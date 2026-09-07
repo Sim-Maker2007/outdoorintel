@@ -70,20 +70,47 @@ for (const q of questions) {
 
   if (c.prep_demo) {
     const src = readFileSync(join(REPO, 'src/pages/[lang]/prep/demo.astro'), 'utf-8');
+    const lodges = readFileSync(join(REPO, 'src/lib/prepLodges.mjs'), 'utf-8');
+    const page = readFileSync(join(REPO, 'src/components/PrepPage.astro'), 'utf-8');
+    const blob = src + lodges + page;
     const header = readFileSync(join(REPO, 'src/components/Header.astro'), 'utf-8');
     const plan = readFileSync(join(REPO, 'api/scout/plan.js'), 'utf-8');
-    ok(`${q.id}/en-fish-z10`, src.includes('/${lang}/fishing/regulations/zone-10') || src.includes('fishing/regulations/zone-10'), 'prep demo must link live fishing zone 10');
-    ok(`${q.id}/en-hunt-10w`, src.includes('hunting/regulations/qc-h-10w'), 'prep demo must link live hunting zone qc-h-10w');
-    ok(`${q.id}/demo-banner`, src.includes('not a live lodge booking') && src.includes('pas une réservation réelle'), 'prep demo must keep an honest demo banner EN+FR');
-    ok(`${q.id}/outfitter-brand`, src.includes('Demo Outfitter') && src.includes('Pourvoirie Démo') && src.includes('Outaouais'), 'prep demo must keep Demo Outfitter / Outaouais branding');
-    ok(`${q.id}/pilot-price`, src.includes('C$199') && src.includes('199 $ CA'), 'prep demo must name the ~C$199/mo pilot');
-    ok(`${q.id}/scout-cta`, src.includes('links.scout') || src.includes('/scout'), 'prep demo must hand off to Scout');
-    ok(`${q.id}/planner-cta`, src.includes('/en/trip-planner?add=') && src.includes('fishing:poisson-blanc-lac-du') && src.includes('hunting:laurentian-mountains'), 'prep demo must hand off live spots into the trip planner');
-    ok(`${q.id}/no-invented-limit`, !/limit of \d+|limite de \d+ doré|6 walleye/i.test(src), 'prep demo must not invent numeric bag limits');
-    ok(`${q.id}/arrival`, src.includes('Arrival notes') && src.includes('Notes d’arrivée'), 'prep demo must keep an arrival-notes section');
-    ok(`${q.id}/checklist`, src.includes('Equipment checklist') && src.includes('Liste d’équipement'), 'prep demo must keep a mixed hunt/fish checklist');
+    ok(`${q.id}/wired`, src.includes('getPrepLodge') && src.includes('demo'), 'prep demo page must render the demo lodge through PrepPage');
+    ok(`${q.id}/en-fish-z10`, blob.includes('zone-10') && page.includes("prepRegHref(lang, 'fish'"), 'prep demo must link live fishing zone 10');
+    ok(`${q.id}/en-hunt-10w`, blob.includes('qc-h-10w') && page.includes("prepRegHref(lang, 'hunt'"), 'prep demo must link live hunting zone qc-h-10w');
+    ok(`${q.id}/demo-banner`, blob.includes('not a live lodge booking') && blob.includes('pas une réservation réelle'), 'prep demo must keep an honest demo banner EN+FR');
+    ok(`${q.id}/outfitter-brand`, blob.includes('Demo Outfitter') && blob.includes('Pourvoirie Démo') && blob.includes('Outaouais'), 'prep demo must keep Demo Outfitter / Outaouais branding');
+    ok(`${q.id}/pilot-price`, blob.includes('C$199') && blob.includes('199 $ CA'), 'prep demo must name the ~C$199/mo pilot');
+    ok(`${q.id}/scout-cta`, blob.includes('/scout') || blob.includes('scoutHref'), 'prep demo must hand off to Scout');
+    ok(`${q.id}/planner-cta`, blob.includes('/en/trip-planner?add=') && blob.includes('fishing:poisson-blanc-lac-du') && blob.includes('hunting:laurentian-mountains'), 'prep demo must hand off live spots into the trip planner');
+    ok(`${q.id}/no-invented-limit`, !/limit of \d+|limite de \d+ doré|6 walleye/i.test(blob), 'prep demo must not invent numeric bag limits');
+    ok(`${q.id}/arrival`, blob.includes('Arrival notes') && blob.includes('Notes d’arrivée'), 'prep demo must keep an arrival-notes section');
+    ok(`${q.id}/checklist`, blob.includes('Equipment checklist') && blob.includes('Liste d’équipement'), 'prep demo must keep a mixed hunt/fish checklist');
     ok(`${q.id}/header-scout`, header.includes('L.scout') && header.includes('L.seasonIntel'), 'shared header must keep Scout entry and Season Intel');
     ok(`${q.id}/scout-no-503`, plan.includes('heuristicReply') && !plan.includes("error: 'Scout is not configured yet.'"), 'Scout plan API must not 503 when AI is unset');
+    continue;
+  }
+
+  if (c.prep_pilots) {
+    const lodges = readFileSync(join(REPO, 'src/lib/prepLodges.mjs'), 'utf-8');
+    const page = readFileSync(join(REPO, 'src/components/PrepPage.astro'), 'utf-8');
+    const slugPage = readFileSync(join(REPO, 'src/pages/[lang]/prep/[slug].astro'), 'utf-8');
+    const demo = readFileSync(join(REPO, 'src/pages/[lang]/prep/demo.astro'), 'utf-8');
+    const blob = lodges + page + slugPage + demo;
+    ok(`${q.id}/slugs`, ['kenauk', 'eastern-canadian-outfitters', 'legendes-des-bois'].every(s => lodges.includes(s) && slugPage.includes('PREP_SAMPLE_SLUGS')), 'pilot slugs must be in config and [slug] routes');
+    ok(`${q.id}/data-driven`, slugPage.includes('PrepPage') && demo.includes('PrepPage') && page.includes('localizeLodge'), 'pilot and demo pages must share PrepPage');
+    ok(`${q.id}/fish-z10`, lodges.includes('zone-10') && page.includes("prepRegHref(lang, 'fish'"), 'pilots must link live fishing zone 10');
+    ok(`${q.id}/hunt-10`, lodges.includes('qc-h-10e') && lodges.includes('qc-h-10w'), 'pilots must link live hunting 10 East and 10 West');
+    ok(`${q.id}/sample-banner`, blob.includes('Sample / pilot preview') && blob.includes('Aperçu échantillon / pilote') && blob.includes('not a live paid partnership'), 'pilots must keep an honest sample/pilot banner');
+    ok(`${q.id}/names`, lodges.includes('Kenauk Nature') && lodges.includes('Eastern Canadian Outfitters (Mer Bleue)') && lodges.includes('Pourvoirie Légendes des Bois'), 'pilots must keep lodge-specific public names');
+    ok(`${q.id}/places`, lodges.includes('Montebello') && lodges.includes('Cayamant') && lodges.includes('Duhamel'), 'pilots must keep public Outaouais place names');
+    ok(`${q.id}/pilot-price`, lodges.includes('C$199') && lodges.includes('199 $ CA') && lodges.includes('hello@outdoorintel.ca'), 'pilots must name ~C$199/mo and hello@outdoorintel.ca');
+    ok(`${q.id}/no-stripe-b2b`, !/stripe checkout for outfitter|B2B checkout|stripe.com\/b2b/i.test(blob), 'pilots must not invent Stripe B2B checkout');
+    ok(`${q.id}/no-wmu-12`, !/ON-H-12|hunting\/regulations\/(?:on-h-)?12\b|WMU 12 is harvested/i.test(blob), 'pilots must not invent WMU 12 coverage');
+    ok(`${q.id}/no-invented-limit`, !/limit of \d+|limite de \d+ doré|6 walleye|quota of five|ONE \(1\) walleye/i.test(blob), 'pilots must not invent numeric bag limits');
+    ok(`${q.id}/demo-index`, page.includes('samplesTitle') && lodges.includes('kenauk') && demo.includes('getPrepLodge'), 'demo page must index the three sample lodges');
+    ok(`${q.id}/scout-handoff`, page.includes('scoutHref') && lodges.includes('/scout'), 'pilots must hand off to Scout');
+    ok(`${q.id}/planner`, lodges.includes('fishing:baskatong-reservoir') && lodges.includes('fishing:poisson-blanc-lac-du') && lodges.includes('hunting:laurentian-mountains'), 'pilots must hand off sourced public spots only');
     continue;
   }
 
