@@ -168,4 +168,8 @@
   });
 
   input.setAttribute('placeholder', T.placeholder);
+
+  var params = new URLSearchParams(location.search);
+  var q = params.get('q');
+  if (q) input.value = q;
 })();

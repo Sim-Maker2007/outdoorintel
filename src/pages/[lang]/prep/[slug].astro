@@ -1,0 +1,16 @@
+---
+// Lodge-specific guest-prep samples for Outaouais outreach (not live partnerships).
+import PrepPage from '../../../components/PrepPage.astro';
+import { PREP_SAMPLE_SLUGS, getPrepLodge } from '../../../lib/prepLodges.mjs';
+
+export function getStaticPaths() {
+  return ['en', 'fr'].flatMap(lang =>
+    PREP_SAMPLE_SLUGS.map(slug => ({ params: { lang, slug } }))
+  );
+}
+
+const { lang, slug } = Astro.params;
+const lodge = getPrepLodge(slug);
+if (!lodge) throw new Error(`Unknown prep lodge: ${slug}`);
+---
+<PrepPage lang={lang} lodge={lodge} />
