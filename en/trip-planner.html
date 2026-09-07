@@ -166,7 +166,7 @@ body{overflow:hidden;background:#fbfaf7;color:#1c2b21;font-family:system-ui,-app
 <!-- Activity Picker -->
 <div id="activity-picker">
     <div style="text-align:center;max-width:600px;width:100%;padding:0 20px">
-        <div style="margin-bottom:8px"><img src="../assets/logo/logo.jpg" alt="Outdoor Intel" style="height:40px;display:inline-block"></div>
+        <div style="margin-bottom:8px"><img src="/assets/logo/mark.svg" alt="Outdoor Intel" style="height:40px;display:inline-block"></div>
         <h1 style="font-size:28px;font-weight:800;color:#305e3c;margin-bottom:6px">Plan Your Adventure</h1>
         <p style="font-size:14px;color:#5c6b5f;margin-bottom:32px">What activity are you planning? You can add more later.</p>
         <div class="act-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px" id="act-grid"></div>
@@ -190,11 +190,12 @@ body{overflow:hidden;background:#fbfaf7;color:#1c2b21;font-family:system-ui,-app
 <!-- Header -->
 <div id="header">
     <div style="display:flex;align-items:center;gap:12px">
-        <a href="/" style="display:flex;align-items:center"><img src="../assets/logo/logo.jpg" alt="Outdoor Intel" style="height:30px"></a>
+        <a href="/" style="display:flex;align-items:center"><img src="/assets/logo/mark.svg" alt="Outdoor Intel" style="height:30px"></a>
         <div style="height:16px;width:1px;background:#e8e4df"></div>
         <span style="font-size:12px;font-weight:700;color:#305e3c;letter-spacing:1px;text-transform:uppercase">Trip Planner</span>
     </div>
     <div style="display:flex;align-items:center;gap:12px">
+        <a href="/en/scout" style="font-size:13px;color:#5c6b5f;transition:color .2s;text-decoration:none" onmouseenter="this.style.color='#3d7a4d'" onmouseleave="this.style.color='#5c6b5f'">Scout</a>
         <a href="/en/map" style="font-size:13px;color:#5c6b5f;transition:color .2s;text-decoration:none" onmouseenter="this.style.color='#3d7a4d'" onmouseleave="this.style.color='#5c6b5f'">Full Map</a>
         <button id="sidebar-toggle" style="padding:7px 16px;background:#305e3c;border:none;border-radius:8px;color:#fff;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:8px;transition:all .2s" onmouseenter="this.style.background='#3d7a4d'" onmouseleave="this.style.background='#305e3c'">
             My Trip <span id="trip-count" style="min-width:20px;height:20px;display:flex;align-items:center;justify-content:center;border-radius:10px;background:rgba(255,255,255,.2);font-size:11px;font-weight:700">0</span>
@@ -211,6 +212,7 @@ body{overflow:hidden;background:#fbfaf7;color:#1c2b21;font-family:system-ui,-app
         <div id="address-search-results" style="position:absolute;bottom:calc(100% + 4px);left:0;right:0;background:#fff;border:1px solid #e0dbd5;border-radius:8px;box-shadow:0 -8px 24px rgba(0,0,0,.12);max-height:260px;overflow-y:auto;z-index:1000;display:none;text-align:left"></div>
     </div>
     <button id="generate-btn" onclick="window.generateTrip()">Generate My Trip</button>
+    <button id="start-from-first-btn" onclick="window.startFromFirstStop()" style="display:none;margin-top:10px;padding:10px 18px;background:#fff;color:#305e3c;border:1px solid #305e3c;border-radius:10px;font-size:13px;font-weight:700;cursor:pointer;width:100%">Use first destination as start</button>
 </div>
 
 <!-- Sidebar -->
@@ -385,8 +387,18 @@ function renderGeocodeResults(results) {
 
 function updateGenerateBtn() {
     const btn = document.getElementById('generate-btn');
+    const startBtn = document.getElementById('start-from-first-btn');
     btn.style.display = (state.trip.length >= 1 && state.startPoint) ? 'block' : 'none';
+    if (startBtn) startBtn.style.display = (state.trip.length >= 1 && !state.startPoint) ? 'block' : 'none';
 }
+
+window.startFromFirstStop = function() {
+    const first = state.trip.find(s => s.coordinates && s.coordinates.lat != null);
+    if (!first) { showToast('Add a mapped destination first'); return; }
+    setStartPoint(first.coordinates.lat, first.coordinates.lng, first.name || 'First stop');
+    map.setView([first.coordinates.lat, first.coordinates.lng], 8);
+    showToast('Start set at ' + (first.name || 'first stop'));
+};
 
 // ==================== MARKER ICONS ====================
 function createCircleIcon(color) {
@@ -418,7 +430,10 @@ function popupContent(spot) {
 // ==================== DATA ====================
 async function loadAllData() {
     const results = await Promise.all(CATEGORIES.map(cat =>
-        fetch(`../data/${cat}.json`).then(r=>r.json()).then(data=>data.spots.map(s=>({...s,cat})))
+        fetch(`/data/${cat}.json`).then(r => {
+            if (!r.ok) throw new Error('spot data ' + cat);
+            return r.json();
+        }).then(data=>(data.spots||[]).map(s=>({...s,cat})))
     ));
     return results.flat();
 }
@@ -452,6 +467,7 @@ window.selectActivity = function(cat) {
     document.getElementById('step-sub').textContent = 'This is where your adventure begins';
     document.getElementById('address-search-wrap').style.display = 'block';
     persistTrip();
+    updateTripUI();
 };
 
 window.showActivityPicker = function() {
@@ -471,6 +487,7 @@ window.exploreAll = function() {
     document.getElementById('step-sub').textContent = 'This is where your adventure begins';
     document.getElementById('address-search-wrap').style.display = 'block';
     persistTrip();
+    updateTripUI();
 };
 
 // ==================== CATEGORY PILLS (multi-activity) ====================
@@ -576,6 +593,8 @@ function clearTrip() {
     document.getElementById('step-sub').textContent = 'This is where your adventure begins';
     document.getElementById('address-search-wrap').style.display = 'block';
     document.getElementById('generate-btn').style.display = 'none';
+    const startBtn = document.getElementById('start-from-first-btn');
+    if (startBtn) startBtn.style.display = 'none';
     document.getElementById('services-panel').style.display = 'none';
     document.getElementById('weather-panel').style.display = 'none';
     try { localStorage.removeItem(LS_KEY); } catch(e){}
@@ -642,7 +661,7 @@ window.generateTrip = async function() {
         if (!state.sidebarOpen) { state.sidebarOpen = true; document.getElementById('sidebar').classList.add('open'); }
         document.getElementById('services-panel').style.display = 'block';
         updateTripUI();
-    }, 4800);
+    }, 1600);
 };
 
 function drawFallbackRoute(pts) {
@@ -1014,8 +1033,12 @@ function updateTripUI() {
     { const bb = document.getElementById('brief-btn'), bp = document.getElementById('brief-panel'); if (bb) bb.style.display = 'none'; if (bp && !state.trip.length) { bp.style.display = 'none'; bp.innerHTML = ''; } }
 
     if (state.trip.length === 0) {
-        const hint = state.startPoint ? 'Click coloured spots on the map to add destinations' : 'Pick a starting point, then add spots along the way';
-        list.innerHTML = `<div style="text-align:center;padding:48px 16px;color:#999"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5" style="margin:0 auto 16px"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg><p style="font-size:13px;line-height:1.5">${hint}</p></div>`;
+        const hint = state.startPoint
+            ? 'Click coloured spots on the map to add destinations'
+            : (state.phase === 'pick-activity'
+                ? 'Select an activity to get started'
+                : 'Set a start on the map, search an address, or ask Scout for a sourced shortlist');
+        list.innerHTML = `<div style="text-align:center;padding:36px 16px;color:#999"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5" style="margin:0 auto 16px"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg><p style="font-size:13px;line-height:1.5">${hint}</p><p style="margin-top:14px"><a href="/en/scout" style="display:inline-block;padding:9px 16px;background:#305e3c;color:#fff;border-radius:9px;font-size:12px;font-weight:700;text-decoration:none">Plan with Scout</a></p></div>`;
         stats.style.display = 'none';
         persistTrip();
         return;
@@ -1363,6 +1386,7 @@ function handleAddParam(param) {
         document.getElementById('sidebar').classList.add('open');
         if (firstSpot && firstSpot.coordinates) map.setView([firstSpot.coordinates.lat, firstSpot.coordinates.lng], 7);
         showToast('&#10003; Added ' + added + ' spot' + (added>1?'s':'') + ' to your trip');
+        persistTrip();
     }
     // strip the param so a refresh doesn't re-add
     const url = new URL(location.href);
@@ -1391,7 +1415,11 @@ async function init() {
         // 3) Deep-link add (?add=cat:slug) — layers on top of whatever is loaded
         const addParam = new URLSearchParams(location.search).get('add');
         if (addParam) handleAddParam(addParam);
-    } catch(e) { console.error('Init failed:', e); }
+    } catch(e) {
+        console.error('Init failed:', e);
+        const grid = document.getElementById('act-grid');
+        if (grid) grid.innerHTML = '<p style="grid-column:1/-1;color:#92400e;font-size:14px;line-height:1.5">Could not load spots. Open <a href="/en/scout">Scout</a> or try refreshing.</p>';
+    }
 }
 init();
 </script>

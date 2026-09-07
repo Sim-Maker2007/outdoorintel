@@ -64,7 +64,9 @@
     "/en/fishing/regulations/zone-32",
     "/fr/fishing/regulations/zone-32",
     "/en/fishing/regulations/zone-33",
-    "/fr/fishing/regulations/zone-33"
+    "/fr/fishing/regulations/zone-33",
+    "/en/prep/demo",
+    "/fr/prep/demo"
   ],
   "explained": {
     "/en/camping/gros-morne-national-park": [
@@ -215,6 +217,20 @@
       "og",
       "twitter",
       "geo",
+      "jsonld"
+    ],
+    "/en/scout": [
+      "meta",
+      "og",
+      "twitter",
+      "hreflang",
+      "jsonld"
+    ],
+    "/fr/scout": [
+      "meta",
+      "og",
+      "twitter",
+      "hreflang",
       "jsonld"
     ]
   }
